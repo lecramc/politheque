@@ -1,0 +1,80 @@
+import React, { useState } from 'react';
+import { ScrollView, View } from 'react-native';
+
+import { useTheme } from '@/components/ThemeContext';
+import { Text } from '@/components/Themed';
+import { Pressable } from '@/components/ui/Pressable';
+import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { Page } from '@/src/programmes/components/Page';
+import { PartyRow, RowGroup } from '@/src/programmes/components/PartyRow';
+import { partiesViewModel } from '@/src/programmes/view-models/parties.view-model';
+
+const ELECTION_ID = 'presidentielle-2027';
+
+export default function PartiesScreen() {
+  const vm = useViewModel(partiesViewModel);
+  const { colors, effects, fonts } = useTheme();
+  const [onlyRunning, setOnlyRunning] = useState(false);
+  const parties = onlyRunning ? vm.parties.filter((p) => p.candidacies[ELECTION_ID]) : vm.parties;
+
+  const chip = (label: string, active: boolean, onPress: () => void) => (
+    <Pressable
+      onPress={onPress}
+      accessibilityRole="button"
+      accessibilityState={{ selected: active }}
+      style={{
+        minHeight: 44,
+        justifyContent: 'center',
+        paddingHorizontal: 16,
+        borderRadius: effects.borderRadius.round,
+        borderWidth: 1.5,
+        borderColor: active ? colors.tint : colors.surface.border.tertiary,
+        backgroundColor: active ? colors.tintSoft : 'transparent',
+      }}
+    >
+      <Text
+        style={{
+          ...(active ? fonts.bold : fonts.regular),
+          color: active ? colors.tint : colors.text.primary,
+        }}
+      >
+        {label}
+      </Text>
+    </Pressable>
+  );
+
+  return (
+    <Page loading={vm.status !== 'loaded'}>
+      <View style={{ gap: 6 }}>
+        <Text variant="title">Les partis</Text>
+        <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
+          {vm.parties.length} partis, par ordre alphabétique.
+        </Text>
+      </View>
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        contentContainerStyle={{ gap: 8 }}
+      >
+        {chip('Tous', !onlyRunning, () => setOnlyRunning(false))}
+        {chip('Avec un candidat en 2027', onlyRunning, () => setOnlyRunning(true))}
+      </ScrollView>
+      <RowGroup>
+        {parties.map((party, index) => {
+          const candidacy = party.candidacies[ELECTION_ID];
+          const founded = party.history
+            ? `Fondé en ${party.history.founded.match(/\d{4}/)?.[0] ?? ''}`
+            : '';
+          return (
+            <PartyRow
+              key={party.id}
+              party={party}
+              first={index === 0}
+              subtitle={[founded, candidacy?.candidateName].filter(Boolean).join(' · ')}
+            />
+          );
+        })}
+      </RowGroup>
+    </Page>
+  );
+}

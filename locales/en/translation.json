@@ -1,0 +1,32 @@
+{
+  "auth": {
+    "email_placeholder": "Email",
+    "update_button": "Update",
+    "loading_button": "Loading ...",
+    "sign-out_button": "Sign out",
+    "error_no_user": "No user on the session!",
+    "login_title": "Welcome",
+    "login_subtitle": "Sign in to continue",
+    "login_with_email": "Send me a sign-in link",
+    "loading_email": "Sending...",
+    "login_error": "Login failed. Please try again.",
+    "or": "or",
+    "magic_link_sent_title": "You're almost in!",
+    "magic_link_sent_body": "A sign-in link has been sent to your email. Tap the link on this device to finish logging in.",
+    "resend_email": "Re-send mail"
+  },
+  "common": {
+    "loading": "Loading ...",
+    "theme": {
+      "title": "Theme",
+      "light": "Light",
+      "dark": "Dark"
+    },
+    "modal": {
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    },
+    "apply": "Apply",
+    "error_loading": "Error while loading."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(npm install:*)",
+      "Bash(npx expo install:*)",
+      "Bash(npx jest:*)",
+      "Bash(npx eslint:*)",
+      "Bash(npx tsc:*)",
+      "Bash(find:*)",
+      "Bash(grep:*)",
+      "Bash(cat:*)",
+      "Bash(ls:*)",
+      "WebFetch(domain:docs.expo.dev)",
+      "WebFetch(domain:expo.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:registry.npmjs.org)",
+      "WebSearch"
+    ]
+  }
+}

@@ -1,0 +1,1730 @@
+{
+  "id": "rn",
+  "name": "Rassemblement national",
+  "shortName": "RN",
+  "color": "#0D378A",
+  "family": "Extrême droite (qualification de la presse de référence et de nombreux politistes ; le parti récuse ce terme et se présente comme « national » et « patriote »)",
+  "description": "Parti fondé en 1972 sous le nom de Front national, renommé Rassemblement national en 2018 ; présidé par Jordan Bardella, réélu le 24 octobre 2026 au congrès d'Orléans. Marine Le Pen a obtenu 23,15 % au premier tour de la présidentielle 2022 ; aux législatives 2024, le RN et ses alliés ont recueilli 33,15 % au premier tour, et le groupe RN compte environ 122 députés. Le 7 juillet 2026, la cour d'appel de Paris a condamné Marine Le Pen pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN à 3 ans d'emprisonnement dont 2 avec sursis (1 an ferme aménageable sous bracelet électronique), 100 000 € d'amende et 45 mois d'inéligibilité dont 30 avec sursis ; la cour ayant considéré les 15 mois fermes comme exécutés depuis le jugement de première instance du 31 mars 2025 (assorti de l'exécution provisoire), elle est présentée comme éligible. Elle a formé un pourvoi en cassation : la Cour de cassation a indiqué le 8 juillet 2026 pouvoir statuer « au plus tard début avril 2027 », calendrier « susceptible d'évoluer », et des questions prioritaires de constitutionnalité doivent être examinées le 16 décembre 2026. L'effet du pourvoi est discuté : le procureur général près la Cour de cassation, Rémy Heitz, a déclaré le 9 juillet 2026 que le pourvoi « suspend l'exécution de l'arrêt », tandis que Didier Guérin, président de chambre honoraire à la Cour de cassation, a soutenu dans Le Monde le 27 octobre 2026 qu'elle serait « actuellement inéligible » (ses avocats l'ont signalé au Conseil supérieur de la magistrature). Marine Le Pen conteste sa condamnation. Jordan Bardella a déclaré qu'il serait le candidat du parti si Marine Le Pen était « empêchée ».",
+  "lastVerified": "2026-11-03",
+  "history": {
+    "founded": "1972 (sous le nom Front national ; renommé Rassemblement national en 2018)",
+    "origins": {
+      "text": "Le Front national pour l'unité française est créé le 5 octobre 1972 par des membres du mouvement Ordre nouveau, en vue des législatives de 1973, et Jean-Marie Le Pen en prend la présidence. Celui-ci dirige le parti jusqu'en janvier 2011, date à laquelle sa fille Marine Le Pen lui succède et engage une stratégie dite de « dédiabolisation » ; Jean-Marie Le Pen est exclu du parti en août 2015. Le parti prend le nom de Rassemblement national le 1er juin 2018, à l'issue d'une consultation des adhérents. Jordan Bardella le préside depuis 2021 (d'abord par intérim).",
+      "sources": [
+        {
+          "title": "Encyclopédie Larousse, « Front national (FN) »",
+          "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Wikipédia, « Rassemblement national »",
+          "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Encyclopædia Universalis, « Marine Le Pen – Du Front national au Rassemblement national »",
+          "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/3-du-front-national-au-rassemblement-national/",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "ideals": [
+      {
+        "text": "Le parti se définit, à l'article 1er de ses statuts (congrès d'Orléans, octobre 2026), comme une formation « attaché[e] à l'égalité devant la loi de tous les citoyens français sans distinction d'origine, de race ou de religion », qui « défend la souveraineté, l'indépendance et l'identité de la nation », protège « le caractère indivisible, laïc, démocratique et social de la République » et se dit « favorable au gouvernement du peuple, par le peuple et pour le peuple ».",
+        "sources": [
+          {
+            "title": "Statuts du Rassemblement national (XIXe congrès, Orléans, 24-25 octobre 2026), article 1er",
+            "url": "https://rassemblementnational.fr/documents/261026_STATUTS_RN.pdf",
+            "date": "2026-10-25",
+            "kind": "programme"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Dans sa communication, il met en avant la « priorité nationale », la maîtrise de l'immigration, la sécurité et la laïcité, et se présente comme « patriote » ; ses représentants récusent généralement l'appellation d'« extrême droite ».",
+        "sources": [
+          {
+            "title": "Site officiel du Rassemblement national (page d'accueil)",
+            "url": "https://rassemblementnational.fr/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Les encyclopédies et la presse de référence le classent à l'extrême droite : Larousse décrit le FN comme un « mouvement d'extrême droite » qui défend l'identité française, s'oppose à l'immigration et promeut la « préférence nationale » ; Universalis le présente comme un parti d'extrême droite dont le programme reste centré sur la critique de l'immigration et de l'islam, tout en relevant l'abandon de certaines positions traditionalistes et un discours économique plus étatiste depuis 2011.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Marine Le Pen – Du Front national au Rassemblement national »",
+            "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/3-du-front-national-au-rassemblement-national/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Certains politistes emploient aussi la catégorie de « droite radicale » : Gilles Ivaldi (CNRS, CEVIPOF) range Marine Le Pen parmi les « candidats de droite radicale » et qualifie son programme 2022 de « social-populisme » ; Wikipédia relève le rattachement fréquent du parti au courant « national-populiste ».",
+        "sources": [
+          {
+            "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
+            "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
+            "date": "2022-03",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Sur le plan administratif, la grille de nuances du ministère de l'Intérieur rattache la nuance « RN » au bloc « extrême droite » ; le RN a contesté ce rattachement et le Conseil d'État a rejeté son recours le 11 mars 2024 (décision n° 488378), en jugeant la circulaire légale sans procéder à une qualification politique générale du parti.",
+        "sources": [
+          {
+            "title": "Conseil d'État, décision n° 488378 du 11 mars 2024 (nuances politiques, Rassemblement national)",
+            "url": "https://conseil-etat.fr/fr/arianeweb/CE/decision/2024-03-11/488378",
+            "date": "2024-03-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Le Conseil d'État a-t-il qualifié le RN « d'extrême droite » ? (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/justice/le-conseil-detat-a-t-il-qualifie-le-rn-dextreme-droite-6426/",
+            "date": "2024-03",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "1972-10-05",
+        "event": "Création du Front national pour l'unité française par des membres d'Ordre nouveau ; Jean-Marie Le Pen en devient président.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "1986-03-16",
+        "event": "Après un score proche de 11 % aux européennes de 1984 (10,95 %), le FN obtient 35 députés aux législatives organisées à la proportionnelle.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2002-04-21",
+        "event": "Jean-Marie Le Pen obtient 16,86 % au premier tour de la présidentielle et accède au second tour, où il est battu par Jacques Chirac.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2011-01",
+        "event": "Marine Le Pen est élue présidente du FN (67,65 % des voix), succédant à son père ; ce dernier est exclu du parti en août 2015.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Marine Le Pen – Du Front national au Rassemblement national »",
+            "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/3-du-front-national-au-rassemblement-national/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2018-06-01",
+        "event": "Le Front national devient le Rassemblement national, après une consultation des adhérents.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Marine Le Pen – Du Front national au Rassemblement national »",
+            "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/3-du-front-national-au-rassemblement-national/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2022-04-10",
+        "event": "Marine Le Pen obtient 23,15 % des suffrages exprimés au premier tour de la présidentielle (8 133 828 voix) et se qualifie pour le second tour face à Emmanuel Macron, qui l'emporte le 24 avril.",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel, décision n° 2022-195 PDR du 13 avril 2022 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022195PDR.htm",
+            "date": "2022-04-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Le Conseil constitutionnel proclame les résultats du 1er tour : Macron, Le Pen au second (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/le-conseil-constitutionnel-proclame-les-resultats-du-1er-tour-macron-le-pen-au",
+            "date": "2022-04-13",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-09",
+        "event": "La liste RN conduite par Jordan Bardella arrive en tête des élections européennes en France (31,37 % selon les résultats de la soirée électorale, 31,5 % arrondi).",
+        "sources": [
+          {
+            "title": "Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+            "date": "2024-06-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Les élections européennes de 2024 (Datan)",
+            "url": "https://datan.fr/elections/europeennes-2024",
+            "date": "2024-06",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2026-07-07",
+        "event": "La cour d'appel de Paris confirme la condamnation de Marine Le Pen pour détournement de fonds publics (assistants parlementaires européens du FN) : 3 ans d'emprisonnement dont 2 avec sursis, 100 000 € d'amende et 45 mois d'inéligibilité dont 30 avec sursis, contre cinq ans d'inéligibilité avec exécution provisoire en première instance (31 mars 2025). Les 15 mois fermes étant considérés comme exécutés, elle est présentée comme éligible ; elle forme un pourvoi en cassation, sur lequel la Cour de cassation indique pouvoir statuer « au plus tard début avril 2027 » (calendrier « susceptible d'évoluer ») ; des questions prioritaires de constitutionnalité doivent y être examinées le 16 décembre 2026.",
+        "sources": [
+          {
+            "title": "Marine Le Pen condamnée dans l'affaire des assistants parlementaires, reste éligible pour 2027 (LCP)",
+            "url": "https://lcp.fr/actualites/marine-le-pen-condamnee-dans-l-affaire-des-assistants-parlementaires-reste-eligible-pour",
+            "date": "2026-07-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Marine Le Pen condamnée à 45 mois d'inéligibilité dont 30 mois assortis de sursis (Euronews)",
+            "url": "https://fr.euronews.com/2026/07/07/marine-le-pen-condamnee-a-45-mois-dineligibilite-dont-30-mois-assortis-de-sursis",
+            "date": "2026-07-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Marine Le Pen candidate à la présidentielle de 2027 malgré sa condamnation en appel (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-candidate-a-la-presidentielle-de-2027-malgre-sa-condamnation-en-appel-16843/",
+            "date": "2026-07-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Pourvoi de Marine Le Pen : la Cour de cassation « pourrait être en mesure » de se prononcer avant l'élection présidentielle (LCP)",
+            "url": "https://lcp.fr/actualites/pourvoi-de-marine-le-pen-la-cour-de-cassation-pourrait-etre-en-mesure-de-se-prononcer",
+            "date": "2026-07-08",
+            "kind": "presse"
+          },
+          {
+            "title": "Marine Le Pen est-elle vraiment inéligible à l'élection présidentielle, comme l'affirme un magistrat honoraire de la Cour de cassation ? (franceinfo)",
+            "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-est-elle-vraiment-ineligible-a-l-election-presidentielle-comme-l-affirme-un-magistrat-honoraire-de-la-cour-de-cassation_8257378.html",
+            "date": "2026-10-30",
+            "kind": "presse"
+          },
+          {
+            "title": "Le Pen face à une échéance judiciaire clé avant la présidentielle (24matins) – audience QPC du 16 décembre 2026",
+            "url": "https://www.24matins.fr/le-pen-face-a-une-echeance-judiciaire-cle-avant-la-presidentielle-1422589",
+            "date": "2026-10-17",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "whyCreated": {
+      "text": "Le Front national pour l'unité française est lancé le 5 octobre 1972 à Paris, lors d'une réunion d'une soixantaine à soixante-dix personnes, à l'initiative du mouvement Ordre nouveau, dont le deuxième congrès (juin 1972) avait décidé de créer un parti pour les législatives de mars 1973 ; l'étude publiée par la Fondation Jean-Jaurès présente Ordre nouveau comme « le principal mouvement néofasciste français » de l'époque. L'objectif déclaré est de rassembler la « droite nationale » dans un front électoral ; selon Larousse, la direction initiale mêle anciens partisans de l'Algérie française, nostalgiques du régime de Vichy, catholiques traditionalistes, nationalistes et centristes antigaullistes. Ordre nouveau confie la présidence à Jean-Marie Le Pen, ancien député poujadiste, choisi selon les historiens pour donner au parti une image plus respectable. Après la dissolution d'Ordre nouveau (28 juin 1973), une partie de ses cadres, autour d'Alain Robert, rompt avec le FN et fonde en 1974 le Parti des forces nouvelles, tandis que le FN, réduit à quelques centaines d'adhérents, reste dirigé par Le Pen ; le parti prend le nom de Rassemblement national en 2018.",
+      "sources": [
+        {
+          "title": "Encyclopédie Larousse, « Front national (FN) »",
+          "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Fondation Jean-Jaurès, « Aux racines du FN. L'histoire du mouvement Ordre nouveau » (J. Beauregard, N. Lebourg, J. Preda ; préface de J.-Y. Camus)",
+          "url": "https://www.jean-jaures.org/publication/aux-racines-du-fn-lhistoire-du-mouvement-ordre-nouveau/",
+          "date": "2014-11-21",
+          "kind": "statistique"
+        },
+        {
+          "title": "Comment est né le Front national ? (RTBF)",
+          "url": "https://www.rtbf.be/article/comment-est-ne-le-front-national-10853858",
+          "date": "2021-10-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Wikipédia, « Front national (parti français) »",
+          "url": "https://fr.wikipedia.org/wiki/Front_national_(parti_fran%C3%A7ais)",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Changer le nom des partis, une passion française (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/changer-le-nom-des-partis-une-passion-francaise-83759",
+          "date": "2018-03-16",
+          "kind": "presse"
+        }
+      ]
+    },
+    "figures": [
+      {
+        "name": "Jean-Marie Le Pen",
+        "role": "Cofondateur et président du FN (1972-2011), président d'honneur jusqu'en 2018 ; exclu du parti en 2015 ; mort le 7 janvier 2025",
+        "background": "Ancien parachutiste de la Légion étrangère en Indochine (1954) puis en Algérie, il est élu député de la Seine en 1956 sur les listes poujadistes (UDCA de Pierre Poujade), réélu en 1958 et battu en 1962. Il a été condamné à plusieurs reprises pour ses propos : au civil en 1991 et 1999 pour avoir qualifié les chambres à gaz de « point de détail » de l'histoire de la Seconde Guerre mondiale (1987), puis au pénal pour contestation de crime contre l'humanité (2012, propos de 2005 sur l'Occupation ; 2017, confirmé en cassation en 2018, après la réitération du « détail » en 2015), ainsi que pour injure (« Durafour crématoire », 1993) et provocation à la haine. En 2002, le journal Le Monde a publié les témoignages de quatre Algériens l'accusant d'avoir pris part à des actes de torture en 1957 pendant la guerre d'Algérie, accusations qu'il a contestées.",
+        "sources": [
+          {
+            "title": "Jean-Marie Le Pen, cofondateur et figure emblématique du Front national, est mort (LCP)",
+            "url": "https://lcp.fr/actualites/jean-marie-le-pen-cofondateur-et-figure-emblematique-du-front-national-est-mort-182012",
+            "date": "2025-01-07",
+            "kind": "presse"
+          },
+          {
+            "title": "France : les principales condamnations et provocations de Jean-Marie Le Pen (Justice Info, dépêche AFP)",
+            "url": "https://www.justiceinfo.net/fr?p=139986",
+            "date": "2025-01-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Jean-Marie Le Pen »",
+            "url": "https://fr.wikipedia.org/wiki/Jean-Marie_Le_Pen",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "'Le Monde' says Le Pen tortured Algerian POWs (The Irish Times)",
+            "url": "https://www.irishtimes.com/news/le-monde-says-le-pen-tortured-algerian-pows-1.1059382",
+            "date": "2002-06-04",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "François Brigneau",
+        "role": "Cofondateur et premier vice-président du FN (1972), représentant d'Ordre nouveau",
+        "background": "Journaliste, il s'engage dans la Milice en juin 1944 et est emprisonné à Fresnes à la Libération. Éditorialiste de l'hebdomadaire Minute, il vient d'Ordre nouveau et devient vice-président du FN à sa fondation, le 5 octobre 1972 ; à la suite d'un conflit avec Jean-Marie Le Pen, il démissionne et rejoint le Parti des forces nouvelles. Mort en 2012.",
+        "sources": [
+          {
+            "title": "Wikipédia, « François Brigneau »",
+            "url": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Brigneau",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Comment est né le Front national ? (RTBF)",
+            "url": "https://www.rtbf.be/article/comment-est-ne-le-front-national-10853858",
+            "date": "2021-10-08",
+            "kind": "presse"
+          },
+          {
+            "title": "Mort du cofondateur du Front national (Le Figaro, AFP)",
+            "url": "http://www.lefigaro.fr/flash-actu/2012/04/11/97001-20120411FILWWW00443-mort-du-cofondateur-du-front-national.php",
+            "date": "2012-04-11",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Pierre Bousquet",
+        "role": "Cofondateur et premier trésorier du FN",
+        "background": "Il s'engage dans la Waffen-SS en 1943. Après la guerre, il milite dans des groupes nationalistes ; il dépose avec Jean-Marie Le Pen les statuts du FN en 1972 et en devient le premier trésorier, avant de quitter le parti au début des années 1980. Mort en 1991.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Pierre Bousquet »",
+            "url": "https://fr.wikipedia.org/wiki/Pierre_Bousquet",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Front national (parti français) »",
+            "url": "https://fr.wikipedia.org/wiki/Front_national_(parti_fran%C3%A7ais)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Comment est né le Front national ? (RTBF)",
+            "url": "https://www.rtbf.be/article/comment-est-ne-le-front-national-10853858",
+            "date": "2021-10-08",
+            "kind": "presse"
+          },
+          {
+            "title": "De l'activisme radical à la normalisation, retour sur les 50 ans du FN (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/de-l-activisme-radical-a-la-normalisation-retour-sur-les-50-ans-du-fn-222269",
+            "date": "2022-10-04",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Roger Holeindre",
+        "role": "Cofondateur, secrétaire général adjoint (1972) puis vice-président du FN (1973-1978) ; député de Seine-Saint-Denis (1986-1988)",
+        "background": "Engagé à 15 ans dans des actions de résistance (1944), volontaire en Indochine puis en Algérie, partisan de l'Algérie française, il crée en décembre 1961, après la création de l'OAS, le maquis « Bonaparte » dans le Constantinois ; incarcéré en métropole en février 1962 et condamné à quatorze ans de détention, il est amnistié en 1965. Soutien de la campagne présidentielle de Jean-Louis Tixier-Vignancour (1965), il quitte le FN en 2011, à l'arrivée de Marine Le Pen, et suit Carl Lang au Parti de la France. L'historien Nicolas Lebourg le décrit comme « national populiste », anticommuniste et défenseur de l'Algérie française. Mort en 2020.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, base Sycomore des députés, « Roger Holeindre »",
+            "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/3851",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Décès de Roger Holeindre, figure historique du Front national (Public Sénat, AFP)",
+            "url": "https://www.publicsenat.fr/actualites/politique/deces-de-roger-holeindre-figure-historique-du-front-national-180341",
+            "date": "2020-01-30",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Roger Holeindre »",
+            "url": "https://fr.wikipedia.org/wiki/Roger_Holeindre",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "François Duprat",
+        "role": "Dirigeant d'Ordre nouveau associé à la fondation du FN ; membre du bureau politique du FN jusqu'à sa mort (1978), chef de file de la tendance « nationaliste-révolutionnaire »",
+        "background": "Ancien militant d'Occident puis dirigeant d'Ordre nouveau, il participe à la création du FN. Les historiens (Valérie Igounet ; Nicolas Lebourg et Joseph Beauregard, auteurs de François Duprat, l'homme qui inventa le Front national, 2012) le décrivent comme un stratège du parti et comme l'un des premiers diffuseurs de textes négationnistes en France. Il meurt le 18 mars 1978 dans l'explosion d'une bombe placée dans sa voiture ; l'attentat n'a pas été élucidé.",
+        "sources": [
+          {
+            "title": "Wikipédia, « François Duprat (homme politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Duprat_(homme_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Duprat, tout pour déplaire (Politis, recension de N. Lebourg et J. Beauregard, François Duprat, l'homme qui inventa le Front national, Denoël, 2012)",
+            "url": "https://www.politis.fr/articles/2012/03/duprat-tout-pour-deplaire-17338",
+            "date": "2012-03-01",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Front national (parti français) »",
+            "url": "https://fr.wikipedia.org/wiki/Front_national_(parti_fran%C3%A7ais)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "L'assassinat de François Duprat et la liberté de l'histoire (Politis)",
+            "url": "https://www.politis.fr/articles/2010/04/lassassinat-de-francois-duprat-et-la-liberte-de-lhistoire-10080/",
+            "date": "2010-04",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Marine Le Pen",
+        "role": "Présidente du FN puis du RN (2011-2021) ; candidate du parti à la présidentielle de 2022",
+        "background": "Fille de Jean-Marie Le Pen, née en 1968, avocate au barreau de Paris (1992), elle adhère au FN à 18 ans, en devient la responsable juridique (1994) et est élue conseillère régionale du Nord-Pas-de-Calais en 1998. Élue présidente au congrès de Tours (janvier 2011, 67,65 % des voix), elle engage la stratégie dite de « dédiabolisation » ; son père est exclu en 2015. Elle a été condamnée en appel le 7 juillet 2026 pour détournement de fonds publics (assistants parlementaires européens du FN) et s'est pourvue en cassation ; elle conteste sa condamnation.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Marine Le Pen »",
+            "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Marine Le Pen condamnée dans l'affaire des assistants parlementaires, reste éligible pour 2027 (LCP)",
+            "url": "https://lcp.fr/actualites/marine-le-pen-condamnee-dans-l-affaire-des-assistants-parlementaires-reste-eligible-pour",
+            "date": "2026-07-07",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Jordan Bardella",
+        "role": "Président du RN (par intérim à partir de septembre 2021, élu le 5 novembre 2022) ; tête de liste aux européennes de 2019 et 2024",
+        "background": "Né en 1995 à Drancy (Seine-Saint-Denis), il a fait l'essentiel de son parcours au FN-RN : porte-parole (2017), directeur de Génération nation (mouvement de jeunesse du parti), tête de liste aux européennes de 2019 puis de 2024 (31,37 %). Il est élu président du parti en novembre 2022 avec 84,84 % des voix face à Louis Aliot.",
+        "sources": [
+          {
+            "title": "French far-right RN picks Jordan Bardella as Le Pen successor (Al Jazeera)",
+            "url": "https://www.aljazeera.com/news/2022/11/5/french-far-right-picks-jordan-bardella-as-le-pen-successor",
+            "date": "2022-11-05",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Jordan Bardella »",
+            "url": "https://fr.wikipedia.org/wiki/Jordan_Bardella",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+            "date": "2024-06-09",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "thought": [
+      {
+        "text": "Origines nationalistes : les historiens décrivent la fondation du FN comme une initiative d'Ordre nouveau, mouvement que Serge Berstein et Pierre Milza, cités par Jean-Yves Camus, qualifient de « fer de lance du néofascisme français » des années 1970 ; le FN agrège à ses débuts plusieurs familles de l'extrême droite (nationalistes, nostalgiques de Vichy, anciens de l'Algérie française, catholiques traditionalistes) et abrite jusqu'en 1978 une tendance « nationaliste-révolutionnaire » animée par François Duprat.",
+        "sources": [
+          {
+            "title": "Fondation Jean-Jaurès, « Aux racines du FN. L'histoire du mouvement Ordre nouveau » (J. Beauregard, N. Lebourg, J. Preda ; préface de J.-Y. Camus)",
+            "url": "https://www.jean-jaures.org/publication/aux-racines-du-fn-lhistoire-du-mouvement-ordre-nouveau/",
+            "date": "2014-11-21",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « François Duprat (homme politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Duprat_(homme_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "National-populisme : le politiste Pierre-André Taguieff a popularisé dans les années 1980 la notion de « national-populisme » pour décrire le FN de Jean-Marie Le Pen, qu'il présente comme un « national-populisme autoritaire » mêlant bonapartisme et populisme réactionnaire à forte composante nationaliste et xénophobe ; Larousse décrit le programme de cette période comme ultralibéral en économie (admiration pour Ronald Reagan), ultraconservateur sur les mœurs, anticommuniste puis antiaméricain après 1990.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « national-populisme » (dictionnaire) et article « Populisme » de Pierre-André Taguieff",
+            "url": "https://www.universalis.fr/dictionnaire/national-populisme/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "« Dédiabolisation » et tournant social : à partir de 2011, Marine Le Pen engage une stratégie dite de « dédiabolisation » visant à rendre le parti apte à gouverner (Larousse), en tentant de « gommer les aspects les plus polémiques » du programme (Universalis) ; cette période voit l'exclusion de Jean-Marie Le Pen (2015) et le changement de nom (2018). Le politiste Gilles Ivaldi (CEVIPOF) qualifie le programme de 2022 de « social-populisme », plus protecteur en économie que celui des années 1980.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Marine Le Pen »",
+            "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Marine Le Pen – Du Front national au Rassemblement national »",
+            "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/3-du-front-national-au-rassemblement-national/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
+            "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
+            "date": "2022-03",
+            "kind": "statistique"
+          },
+          {
+            "title": "Jean-Marie Le Pen, cofondateur et figure emblématique du Front national, est mort (LCP)",
+            "url": "https://lcp.fr/actualites/jean-marie-le-pen-cofondateur-et-figure-emblematique-du-front-national-est-mort-182012",
+            "date": "2025-01-07",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Souverainisme et « priorité nationale » : le parti revendique dans ses statuts la défense de « la souveraineté, l'indépendance et l'identité de la nation » et récuse le qualificatif d'« extrême droite » ; les politistes le rangent selon les cas à l'extrême droite, dans la « droite radicale » (Gilles Ivaldi) ou dans le courant « national-populiste », sans consensus sur une étiquette unique.",
+        "sources": [
+          {
+            "title": "Statuts du Rassemblement national (XIXe congrès, Orléans, 24-25 octobre 2026), article 1er",
+            "url": "https://rassemblementnational.fr/documents/261026_STATUTS_RN.pdf",
+            "date": "2026-10-25",
+            "kind": "programme"
+          },
+          {
+            "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
+            "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
+            "date": "2022-03",
+            "kind": "statistique"
+          },
+          {
+            "title": "Le Conseil d'État a-t-il qualifié le RN « d'extrême droite » ? (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/justice/le-conseil-detat-a-t-il-qualifie-le-rn-dextreme-droite-6426/",
+            "date": "2024-03",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement national »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ]
+  },
+  "stances": {
+    "q01-isf": {
+      "stance": 0,
+      "justification": "Le RN propose de remplacer l'IFI par un « impôt sur la fortune financière » (4 Md€), mais son groupe a voté contre la taxe Zucman (scrutin n° 3300 du 31/10/2025, 88 contre) : position intermédiaire.",
+      "sources": [
+        {
+          "title": "Contre-budget 2026 du Rassemblement national",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        },
+        {
+          "title": "Scrutin n° 3300 – amendement taxe Zucman (PLF 2026)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q02-depenses": {
+      "stance": 1,
+      "justification": "Le RN annonce « 140 milliards net » d'économies d'ici 2032 et un déficit inférieur à 3 % en 2030, ciblées sur l'immigration, l'UE et les agences, tout en prévoyant 30 Md€ de baisses d'impôts et le retour de la retraite à 62 ans (coût chiffré à 9 Md€ par Marine Le Pen).",
+      "sources": [
+        {
+          "title": "Le budget RN promet 140 milliards d'économies (Parlons Politique)",
+          "url": "https://www.parlons-politique.fr/economie-societe/le-budget-rn-promet-140-milliards-deconomies-les-baisses-dimpots-tiendront-elles-face-aux-coupes-annoncees_28920/",
+          "date": "2026-10-08",
+          "kind": "presse"
+        },
+        {
+          "title": "140 milliards d'euros d'économies d'ici 2032 : « l'effort radical » proposé par Marine Le Pen (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+          "date": "2026-10-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle : en quête de crédibilité budgétaire, Le Pen promet un « effort radical » de « 140 milliards net » (AFP via Sud Radio)",
+          "url": "https://www.sudradio.fr/societe/presidentielle-en-quete-de-credibilite-budgetaire-le-pen-promet-un-effort-radical-de-140-milliards-net",
+          "date": "2026-10-06",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q03-charges": {
+      "stance": 2,
+      "justification": "Le contre-budget 2026 prévoit 16,2 Md€ de baisse des impôts de production (CFE, C3S, CVAE).",
+      "sources": [
+        {
+          "title": "Contre-budget 2026 du Rassemblement national",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        },
+        {
+          "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+          "date": "2025-10-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q04-retraite": {
+      "stance": 2,
+      "justification": "Le RN propose le retour à 62 ans (60 ans pour les carrières commencées avant 20 ans), réaffirmé par Marine Le Pen le 27 août 2026, et a voté la suspension de la réforme de 2023 (scrutin n° 3684 du 12/11/2025, 112 pour).",
+      "sources": [
+        {
+          "title": "Scrutin n° 3684 – article 45 bis du PLFSS 2026 (suspension de la réforme des retraites)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3684",
+          "date": "2025-11-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Présidentielle 2027 : dette, retraites... Ce qu'il faut retenir du premier débat des candidats (MoneyVox, avec AFP)",
+          "url": "https://www.moneyvox.fr/votre-argent/actualites/110159/presidentielle-2027-dette-retraites-ce-quil-faut-retenir-du-premier-debat-des-candidats",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q05-smic": {
+      "stance": -1,
+      "justification": "En 2024, Jordan Bardella a critiqué la hausse du SMIC proposée par le Nouveau Front populaire en estimant que « beaucoup (de patrons) ne pourront pas supporter une hausse des charges » ; le RN propose à la place d'exonérer de cotisations patronales les hausses de salaires de 10 % jusqu'à 3 SMIC. Position de 2024, pas de déclaration plus récente identifiée.",
+      "sources": [
+        {
+          "title": "Législatives 2024 : qui veut augmenter le SMIC ? (MoneyVox)",
+          "url": "https://www.moneyvox.fr/actu/98555/legislatives-2024-qui-veut-augmenter-le-smic",
+          "date": "2024-07-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Législatives 2024 : le grand oral des forces en présence devant le patronat (LCP)",
+          "url": "https://lcp.fr/actualites/legislatives-2024-salaires-fiscalite-finances-publiques-le-grand-oral-des-forces-en",
+          "date": "2024-06-20",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q06-chomage": {
+      "stance": null,
+      "justification": "Position non tranchée : le groupe RN a voté contre la loi « pour le plein emploi » qui conditionne le RSA à 15 heures d'activité (vote n° 2965 du 14/11/2023 : 49 contre), mais contre la suppression de l'article réduisant l'indemnisation chômage après une rupture conventionnelle (vote n° 6283 du 16/04/2026 : 10 contre la suppression). Pas de proposition programmatique identifiée sur ce point.",
+      "sources": [
+        {
+          "title": "Projet de loi pour le plein emploi – vote n° 2965 du 14/11/2023 (Datan)",
+          "url": "https://datan.fr/votes/legislature-16/vote_2965",
+          "date": "2023-11-14",
+          "kind": "vote"
+        },
+        {
+          "title": "Projet de loi ruptures conventionnelles – amendement de suppression, vote n° 6283 du 16/04/2026 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
+          "kind": "vote"
+        },
+        {
+          "title": "Ruptures conventionnelles : l'Assemblée rejette la réduction de la durée d'indemnisation (LCP)",
+          "url": "https://lcp.fr/actualites/ruptures-conventionnelles-l-assemblee-rejette-la-reduction-de-la-duree-d-indemnisation",
+          "date": "2026-04-16",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q07-immigration": {
+      "stance": 2,
+      "justification": "Le RN promet de réduire « drastiquement l'immigration légale et illégale » et d'encadrer ou d'interdire le regroupement familial par référendum.",
+      "sources": [
+        {
+          "title": "Élections législatives : les propositions du Rassemblement national sur l'immigration (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/elections-legislatives-les-propositions-du-rassemblement-national-sur-limmigration",
+          "date": "2024-06-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q08-preference": {
+      "stance": 2,
+      "justification": "La « priorité nationale » pour l'emploi et le logement et la réservation des prestations de solidarité figurent au programme ; le contre-budget 2026 conditionne ces prestations à 5 ans de travail pour les étrangers.",
+      "sources": [
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Contre-budget 2026 du Rassemblement national",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        },
+        {
+          "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+          "date": "2025-10-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q09-regularisation": {
+      "stance": -2,
+      "justification": "Le programme 2022 prévoit que la régularisation d'un étranger en situation irrégulière « ne sera pas possible », sauf décision individuelle exceptionnelle.",
+      "sources": [
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q10-peines-planchers": {
+      "stance": 2,
+      "justification": "Le rétablissement des peines planchers figure au programme 2022 et au programme des législatives 2024.",
+      "sources": [
+        {
+          "title": "22 mesures pour 2022 – Marine Le Pen",
+          "url": "https://rassemblementnational.fr/22-mesures",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+          "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+          "date": "2024-06-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q11-police": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée sur le récépissé ou un organe de contrôle indépendant de la police ; le groupe a voté contre un amendement exigeant un « élément objectif » pour les contrôles d'identité (vote n° 8174 du 10/07/2026, 11 contre), ce qui ne porte pas directement sur ces deux points. Le programme 2022 propose une « présomption de légitime défense » pour les forces de l'ordre.",
+      "sources": [
+        {
+          "title": "Amendement sur les conditions des contrôles d'identité – vote n° 8174 du 10/07/2026 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8174",
+          "date": "2026-07-10",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q12-nucleaire": {
+      "stance": 2,
+      "justification": "La relance du nucléaire figure au programme 2022 et au programme des législatives 2024.",
+      "sources": [
+        {
+          "title": "22 mesures pour 2022 – Marine Le Pen",
+          "url": "https://rassemblementnational.fr/22-mesures",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+          "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+          "date": "2024-06-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
+          "date": "2022-04",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q13-renouvelables": {
+      "stance": -2,
+      "justification": "Le RN propose un moratoire sur l'éolien (2024), le démantèlement des parcs (2022) et la suppression des tarifs de rachat des énergies intermittentes (2025).",
+      "sources": [
+        {
+          "title": "22 mesures pour 2022 – Marine Le Pen",
+          "url": "https://rassemblementnational.fr/22-mesures",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Contre-budget 2026 du Rassemblement national",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
+          "date": "2022-04",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q14-normes-agricoles": {
+      "stance": 2,
+      "justification": "Le groupe RN a voté la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 119 pour, 0 contre) ; le programme 2024 prévoit une pause réglementaire sur les surtranspositions européennes.",
+      "sources": [
+        {
+          "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2957",
+          "date": "2025-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+          "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+          "date": "2024-06-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q15-medecins": {
+      "stance": -1,
+      "justification": "Le groupe s'est abstenu sur la PPL Garot (07/05/2025), en souhaitant la suppression de son article 1 régulant l'installation ; le programme 2022 privilégie les incitations financières.",
+      "sources": [
+        {
+          "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins (LCP)",
+          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+          "date": "2025-05-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « La santé »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-la-sante.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q16-fin-de-vie": {
+      "stance": -1,
+      "justification": "Le groupe a voté majoritairement contre la loi en lecture définitive (scrutin n° 8280 du 15/07/2026 : 106 contre, 12 pour, liberté de vote) ; Marine Le Pen a voté contre mais n'a pas annoncé d'abrogation (« On ne va pas revenir sur toutes les lois », selon le porte-parole Laurent Jacobelli).",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+          "date": "2026-07-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q17-ecole-privee": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée et sourcée sur le financement ou les obligations de mixité de l'enseignement privé sous contrat.",
+      "sources": []
+    },
+    "q18-ukraine": {
+      "stance": 0,
+      "justification": "Le groupe s'est abstenu sur l'accord de sécurité franco-ukrainien (vote n° 3461 du 12/03/2024, 88 abstentions) ; le RN exclut l'envoi de troupes, et en septembre 2026 Louis Aliot a proposé de « couper le robinet » tandis que Jordan Bardella promettait d'« honorer » les engagements de la France.",
+      "sources": [
+        {
+          "title": "Déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien – vote n° 3461 (Datan)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Le RN parle de « couper le robinet » à l'Ukraine (AFP via Sud Radio)",
+          "url": "https://www.sudradio.fr/societe/le-rn-parle-de-couper-le-robinet-a-lukraine-ses-adversaires-laccusent-de-servir-la-russie",
+          "date": "2026-09-04",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q19-droit-europeen": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit une révision constitutionnelle pour que la Constitution « prévale sur le droit international », dans toutes les matières.",
+      "sources": [
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q20-defense-europe": {
+      "stance": null,
+      "justification": "Pas de position explicite identifiée sur un endettement commun de l'UE (type NextGenerationEU ou instrument SAFE) dans les sources consultées ; le RN propose de réduire la contribution française au budget européen.",
+      "sources": []
+    },
+    "q21-libre-echange": {
+      "stance": 2,
+      "justification": "Le groupe a voté pour la déclaration du gouvernement opposée à l'accord UE-Mercosur (scrutin n° 456 du 26/11/2024, 122 pour) ; le programme prévoit l'interdiction des importations agricoles non conformes aux standards français.",
+      "sources": [
+        {
+          "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
+          "date": "2024-11-26",
+          "kind": "vote"
+        },
+        {
+          "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+          "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+          "date": "2024-06-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q22-vie-republique": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée et sourcée sur un changement de Constitution réduisant les pouvoirs du président ; le RN propose des révisions ciblées (RIC, proportionnelle, référendum sur l'immigration).",
+      "sources": []
+    },
+    "q23-referendum": {
+      "stance": 2,
+      "justification": "Le RN propose un référendum révisant la Constitution sur l'immigration, la nationalité et l'identité.",
+      "sources": [
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "22 mesures pour 2022 – Marine Le Pen",
+          "url": "https://rassemblementnational.fr/22-mesures",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q24-proportionnelle": {
+      "stance": 2,
+      "justification": "L'instauration de la proportionnelle figure dans les 22 mesures du programme présidentiel 2022 ; en avril 2025, Marine Le Pen a jugé le scrutin de 1986 (proportionnelle départementale) « un moindre mal » lors des consultations de François Bayrou.",
+      "sources": [
+        {
+          "title": "22 mesures pour 2022 – Marine Le Pen",
+          "url": "https://rassemblementnational.fr/22-mesures",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Proportionnelle aux législatives : François Bayrou consulte, les avis divergent sur le principe et sur les modalités (LCP)",
+          "url": "https://lcp.fr/actualites/proportionnelle-aux-legislatives-francois-bayrou-consulte-les-avis-divergent-sur-le",
+          "date": "2025-04-30",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "candidacies": {
+    "presidentielle-2027": {
+      "candidateName": "Marine Le Pen",
+      "status": "declare",
+      "statusLabel": "Candidate déclarée",
+      "candidate": "Marine Le Pen (statut : candidature annoncée le 2026-07-07, jour de l'arrêt d'appel ; pourvoi en cassation pendant, décision annoncée « au plus tard début avril 2027 »)",
+      "programmeStatus": "Programme présidentiel 2027 non publié à date. Fiche fondée sur le contre-budget 2026 (octobre 2025), la trajectoire budgétaire 2027-2032 présentée le 6 octobre 2026, le programme des législatives 2024, le programme présidentiel 2022 (22 mesures et livrets thématiques) et les votes du groupe RN à l'Assemblée (XVIIe législature). Les positions de 2022 sont signalées comme telles. Les chiffres de la trajectoire 2027-2032 proviennent de comptes rendus de presse (Public Sénat, AFP) de la conférence de presse du 6 octobre 2026.",
+      "themes": {
+        "economie": {
+          "summary": "Le RN propose un plan d'économies centré sur l'immigration, la contribution française à l'UE et les agences de l'État, combiné à des baisses de TVA et d'impôts de production. Il propose de remplacer l'IFI par un impôt sur la fortune financière.",
+          "measures": [
+            {
+              "text": "Trajectoire 2027-2032 présentée le 6 octobre 2026 : « 140 milliards net » d'économies d'ici 2032, 30 Md€ de baisses d'impôts et un déficit public « inférieur à 3 % » en 2030 (contre 5,4 % prévus en 2026) ; l'objectif dépasse de 15 Md€ celui annoncé fin août 2026 devant le Medef (125 Md€).",
+              "sources": [
+                {
+                  "title": "Le budget RN promet 140 milliards d'économies (Parlons Politique)",
+                  "url": "https://www.parlons-politique.fr/economie-societe/le-budget-rn-promet-140-milliards-deconomies-les-baisses-dimpots-tiendront-elles-face-aux-coupes-annoncees_28920/",
+                  "date": "2026-10-08",
+                  "kind": "presse"
+                },
+                {
+                  "title": "140 milliards d'euros d'économies d'ici 2032 : « l'effort radical » proposé par Marine Le Pen (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+                  "date": "2026-10-06",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : en quête de crédibilité budgétaire, Le Pen promet un « effort radical » de « 140 milliards net » (AFP via Sud Radio)",
+                  "url": "https://www.sudradio.fr/societe/presidentielle-en-quete-de-credibilite-budgetaire-le-pen-promet-un-effort-radical-de-140-milliards-net",
+                  "date": "2026-10-06",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Baisse de la TVA sur les énergies (gaz, électricité, carburants, bois, fioul) et suppression de la TVA sur « 100 produits de première nécessité » (3,5 Md€ pour ce second volet selon le contre-budget 2026 ; plus de 14 Md€ pour l'ensemble selon Public Sénat).",
+              "sources": [
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+                  "date": "2025-10-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Baisse des impôts de production (CFE, C3S, CVAE) chiffrée à 16,2 Md€.",
+              "sources": [
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+                  "date": "2025-10-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suppression de l'IFI et création d'un « impôt sur la fortune financière » (4 Md€ attendus selon le contre-budget 2026), présenté comme alternative à la « taxe Zucman ».",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Contre-budget du RN : des propositions… (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+                  "date": "2025-10-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Hausse de la taxe sur les rachats d'actions (8,4 Md€ attendus en 2026 ; 11,4 Md€ annoncés pour 2027) et création d'une taxe sur les « superdividendes ».",
+              "sources": [
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Le budget RN promet 140 milliards d'économies (Parlons Politique)",
+                  "url": "https://www.parlons-politique.fr/economie-societe/le-budget-rn-promet-140-milliards-deconomies-les-baisses-dimpots-tiendront-elles-face-aux-coupes-annoncees_28920/",
+                  "date": "2026-10-08",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+                  "date": "2025-10-24",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "travail": {
+          "summary": "Le RN propose un retour de l'âge légal à 62 ans, avec un départ à 60 ans pour les carrières commencées avant 20 ans. Il privilégie des exonérations de cotisations pour favoriser les hausses de salaires.",
+          "measures": [
+            {
+              "text": "Retour de l'âge légal de départ à 62 ans, avec départ à 60 ans pour ceux ayant commencé à travailler avant 20 ans (40 annuités, puis progressivement jusqu'à 42) ; coût chiffré par Marine Le Pen à 9 Md€ lors du débat du Medef du 27 août 2026, qu'elle défend comme « un choix de société ». Divergence : la trajectoire budgétaire du 6 octobre 2026 annonce par ailleurs 15 à 20 Md€ d'économies sur les retraites (« corrections de mesures injustes », « pilier de capitalisation »), sans réforme détaillée.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2027 : dette, retraites... Ce qu'il faut retenir du premier débat des candidats (MoneyVox, avec AFP)",
+                  "url": "https://www.moneyvox.fr/votre-argent/actualites/110159/presidentielle-2027-dette-retraites-ce-quil-faut-retenir-du-premier-debat-des-candidats",
+                  "date": "2026-08-27",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Marine Le Pen et la délicate opération séduction du monde économique (AFP via La Gazette France)",
+                  "url": "https://www.lagazettefrance.fr/article/marine-le-pen-et-la-delicate-operation-seduction-du-monde-economique",
+                  "date": "2026-08-28",
+                  "kind": "presse"
+                },
+                {
+                  "title": "140 milliards d'euros d'économies d'ici 2032 : « l'effort radical » proposé par Marine Le Pen (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
+                  "date": "2026-10-06",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Exonération de cotisations patronales, pendant 5 ans, sur les hausses de salaire allant jusqu'à 10 %, dans la limite de trois fois le SMIC.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Exonération d'impôt sur le revenu pour les actifs de moins de 30 ans (programme 2022).",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Indexation des pensions sur l'inflation et minimum vieillesse porté à 1 000 € par mois (programme 2022) ; dégel des prestations sociales inscrit au contre-budget 2026 (3,61 Md€).",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+                  "date": "2025-10-24",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "immigration": {
+          "summary": "Le RN propose un référendum révisant la Constitution pour instaurer la « priorité nationale », restreindre le regroupement familial et supprimer le droit du sol. Il chiffre à 12 à 15 Md€ par an les économies attendues sur l'immigration.",
+          "measures": [
+            {
+              "text": "Référendum portant révision de la Constitution permettant d'instaurer la « priorité nationale » pour l'emploi et le logement, d'encadrer ou d'interdire le regroupement familial et de réserver aux Français les prestations de solidarité non contributives (programme 2022).",
+              "sources": [
+                {
+                  "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+                  "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Prestations de solidarité réservées aux étrangers justifiant d'au moins 5 ans de travail à temps plein en France (6,1 Md€ d'économies attendues selon le contre-budget 2026).",
+              "sources": [
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Le budget RN promet 140 milliards d'économies (Parlons Politique)",
+                  "url": "https://www.parlons-politique.fr/economie-societe/le-budget-rn-promet-140-milliards-deconomies-les-baisses-dimpots-tiendront-elles-face-aux-coupes-annoncees_28920/",
+                  "date": "2026-10-08",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+                  "date": "2025-10-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suppression du droit du sol et rétablissement du délit de séjour irrégulier.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Élections législatives : les propositions du Rassemblement national sur l'immigration (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/elections-legislatives-les-propositions-du-rassemblement-national-sur-limmigration",
+                  "date": "2024-06-18",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Remplacement de l'aide médicale de l'État (AME) par une aide médicale d'urgence (AMU), chiffré à 1,3 Md€ d'économies, fin de l'accord franco-algérien de 1968 et suppression du visa pour soins (contre-budget 2026).",
+              "sources": [
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+                  "date": "2025-10-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Régularisation des étrangers en situation irrégulière rendue impossible sauf décision individuelle exceptionnelle prise en Conseil des ministres (programme 2022).",
+              "sources": [
+                {
+                  "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+                  "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "securite": {
+          "summary": "Le RN propose des peines minimales, une hausse des places de prison et une présomption de légitime défense pour les forces de l'ordre. Plusieurs mesures visent la responsabilité des parents de mineurs délinquants.",
+          "measures": [
+            {
+              "text": "Rétablissement des peines planchers et instauration de peines minimales.",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Porter la capacité carcérale à 85 000 places (horizon 2027 dans les 22 mesures, 2028 dans le livret sécurité) et doubler le nombre de magistrats (programme 2022).",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Projet pour la France de Marine Le Pen – livret « La sécurité »",
+                  "url": "https://rassemblementnational.fr/documents/projet/projet-la-securite.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Instauration d'une « présomption de légitime défense » pour les policiers et gendarmes (programme 2022).",
+              "sources": [
+                {
+                  "title": "Projet pour la France de Marine Le Pen – livret « La sécurité »",
+                  "url": "https://rassemblementnational.fr/documents/projet/projet-la-securite.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Suspension des allocations familiales pour les parents de mineurs récidivistes.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "ecologie": {
+          "summary": "Le RN mise sur le nucléaire et l'hydroélectricité et s'oppose au développement de l'éolien. En agriculture, il propose des clauses miroirs et une priorité aux produits français dans la restauration collective.",
+          "measures": [
+            {
+              "text": "Moratoire sur les chantiers éoliens (2024) ; le programme 2022 prévoyait aussi le démantèlement progressif des parcs existants, avec relance du nucléaire et de l'hydroélectricité.",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suppression des tarifs préférentiels de rachat de l'électricité des énergies intermittentes (7,2 Md€ d'économies selon le contre-budget 2026).",
+              "sources": [
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Sortie du marché européen de l'électricité (programme 2022) ; en 2024, le RN propose plutôt de négocier une dérogation aux règles européennes de fixation des prix.",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "80 % de produits français dans les cantines scolaires d'ici 2027 et interdiction des importations agricoles ne respectant pas les standards français.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Vote du groupe RN pour la loi Duplomb « visant à lever les contraintes à l'exercice du métier d'agriculteur » (scrutin n° 2957 du 08/07/2025 : 119 pour, 2 abstentions).",
+              "sources": [
+                {
+                  "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_2957",
+                  "date": "2025-07-08",
+                  "kind": "vote"
+                }
+              ]
+            }
+          ]
+        },
+        "sante": {
+          "summary": "Le RN propose un plan d'investissement hospitalier, la suppression des agences régionales de santé et des incitations financières contre les déserts médicaux plutôt qu'une régulation de l'installation.",
+          "measures": [
+            {
+              "text": "Plan d'urgence de 20 Md€ pour la santé, arrêt des fermetures d'hôpitaux et de maternités, plafonnement des postes administratifs hospitaliers à 10 % (programme 2022 ; l'Institut Montaigne résume cette dernière mesure comme une réduction de 10 % de ces postes).",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suppression des agences régionales de santé (ARS).",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Lutte contre les déserts médicaux par des « incitations financières fortes » et le développement de la télémédecine et des maisons de santé (programme 2022) ; abstention du groupe sur la proposition de loi Garot régulant l'installation (07/05/2025).",
+              "sources": [
+                {
+                  "title": "Projet pour la France de Marine Le Pen – livret « La santé »",
+                  "url": "https://rassemblementnational.fr/documents/projet/projet-la-sante.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins (LCP)",
+                  "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+                  "date": "2025-05-07",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Aide à mourir : liberté de vote ; le groupe a voté majoritairement contre en lecture définitive (scrutin n° 8280 du 15/07/2026 : 106 contre, 12 pour). Marine Le Pen a voté contre « à titre personnel » mais n'a pas annoncé d'abrogation.",
+              "sources": [
+                {
+                  "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+                  "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+                  "date": "2026-07-15",
+                  "kind": "vote"
+                },
+                {
+                  "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+                  "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+                  "date": "2026-07-17",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "education": {
+          "summary": "Le RN propose un recentrage sur les savoirs fondamentaux, la fin du collège unique et un renforcement de la discipline. Ces mesures datent principalement du programme des législatives 2024.",
+          "measures": [
+            {
+              "text": "Remplacement du collège unique par un « collège modulaire », en revenant sur la loi Haby de 1975, et maîtrise des savoirs fondamentaux dès le primaire.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Interdiction des téléphones portables dans tous les établissements, lycées compris, et vouvoiement obligatoire des enseignants.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Uniforme à l'école primaire et au collège ; recentrage sur le français, les mathématiques et l'histoire (programme 2022).",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Centres spécialisés pour les élèves perturbateurs ou harceleurs et suspension des allocations familiales et des bourses en cas de perturbations graves et répétées.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "europe": {
+          "summary": "Le RN propose de réduire la contribution française au budget de l'UE et d'affirmer la primauté de la Constitution sur le droit international. Il s'oppose à l'accord UE-Mercosur et fixe des limites au soutien militaire à l'Ukraine.",
+          "measures": [
+            {
+              "text": "Baisse de la contribution française au budget de l'UE : 8,7 Md€ dans le contre-budget 2026, 11,1 Md€ annoncés pour 2027 puis jusqu'à 20 Md€.",
+              "sources": [
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Le budget RN promet 140 milliards d'économies (Parlons Politique)",
+                  "url": "https://www.parlons-politique.fr/economie-societe/le-budget-rn-promet-140-milliards-deconomies-les-baisses-dimpots-tiendront-elles-face-aux-coupes-annoncees_28920/",
+                  "date": "2026-10-08",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Révision de la Constitution pour qu'elle prévale sur le droit international et européen, en citant les exemples allemand (2019) et polonais (2021) (programme 2022).",
+              "sources": [
+                {
+                  "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+                  "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Opposition à l'accord UE-Mercosur : vote du groupe pour la déclaration du gouvernement s'y opposant (scrutin n° 456 du 26/11/2024 : 122 pour).",
+              "sources": [
+                {
+                  "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",
+                  "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
+                  "date": "2024-11-26",
+                  "kind": "vote"
+                }
+              ]
+            },
+            {
+              "text": "Ukraine : refus de l'envoi de troupes (« ligne rouge ») et réserves sur la livraison de missiles longue portée (2024) ; en septembre 2026, Louis Aliot a proposé de « couper le robinet » de l'aide, tandis que Jordan Bardella a déclaré que la France « continuera évidemment d'honorer ses engagements internationaux ».",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Le RN parle de « couper le robinet » à l'Ukraine (AFP via Sud Radio)",
+                  "url": "https://www.sudradio.fr/societe/le-rn-parle-de-couper-le-robinet-a-lukraine-ses-adversaires-laccusent-de-servir-la-russie",
+                  "date": "2026-09-04",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "institutions": {
+          "summary": "Le RN propose le référendum d'initiative citoyenne et la proportionnelle aux législatives, ainsi qu'un référendum constitutionnel sur l'immigration. Il propose aussi un ministère dédié à la lutte contre la fraude.",
+          "measures": [
+            {
+              "text": "Instauration du référendum d'initiative citoyenne (RIC) et de la proportionnelle aux élections législatives (programme 2022).",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Proportionnelle aux législatives : François Bayrou consulte, les avis divergent sur le principe et sur les modalités (LCP)",
+                  "url": "https://lcp.fr/actualites/proportionnelle-aux-legislatives-francois-bayrou-consulte-les-avis-divergent-sur-le",
+                  "date": "2025-04-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Référendum soumettant aux Français une révision de la Constitution et des lois sur l'immigration, la nationalité et l'identité (programme 2022) ; en 2024, Jordan Bardella évoquait un référendum sur la base de l'article 11.",
+              "sources": [
+                {
+                  "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+                  "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Création d'un ministère de la lutte contre les fraudes (fiscale, sociale, douanière) ; plan de lutte contre la fraude chiffré à 3,5 Md€ dans le contre-budget 2026.",
+              "sources": [
+                {
+                  "title": "22 mesures pour 2022 – Marine Le Pen",
+                  "url": "https://rassemblementnational.fr/22-mesures",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Contre-budget 2026 du Rassemblement national",
+                  "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+                  "date": "2025-10-23",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Postes les plus stratégiques de l'État (sécurité, défense) réservés aux citoyens français et accès des binationaux aux « emplois sensibles » interdit.",
+              "sources": [
+                {
+                  "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
+                  "date": "2024-06-24",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

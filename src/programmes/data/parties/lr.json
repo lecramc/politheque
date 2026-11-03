@@ -1,0 +1,1570 @@
+{
+  "id": "lr",
+  "name": "Les Républicains",
+  "shortName": "LR",
+  "color": "#0066CC",
+  "family": "Droite (droite libérale-conservatrice, héritière du gaullisme et de l'UMP)",
+  "description": "Parti fondé en 2015 en succession de l'UMP, présidé depuis mai 2025 par Bruno Retailleau, ancien ministre de l'Intérieur (2024-2025). Valérie Pécresse a obtenu 4,78 % au premier tour de la présidentielle 2022 ; à l'Assemblée, le groupe Droite républicaine compte environ 50 députés. Le 19 avril 2026, environ 46 000 adhérents votants ont choisi à 73,8 % la désignation directe de Bruno Retailleau plutôt qu'une primaire ouverte (14 %) ou fermée (12,2 %). Xavier Bertrand, président (LR) de la région Hauts-de-France, a confirmé le 27 août 2026 qu'il serait candidat (« Je le serai ») et a indiqué qu'il se présenterait en « candidat indépendant », LR ayant déjà désigné Bruno Retailleau ; il annonçait une déclaration formelle « à la fin de l'année », non intervenue à date.",
+  "lastVerified": "2026-11-03",
+  "history": {
+    "founded": "2015 (succède à l'UMP, fondée en 2002)",
+    "origins": {
+      "text": "Les Républicains succèdent en mai 2015 à l'Union pour un mouvement populaire (UMP), à l'initiative de Nicolas Sarkozy, avec de nouveaux statuts adoptés lors du congrès fondateur des 29 et 30 mai 2015. L'UMP avait été constituée au printemps 2002 pour soutenir Jacques Chirac, puis transformée en novembre 2002 en parti de la droite et du centre réunissant notamment l'ancien RPR, Démocratie libérale et des membres de l'UDF. Le parti se présente comme héritier des formations gaullistes successives (UNR, UDR, RPR). Il est présidé depuis le 18 mai 2025 par Bruno Retailleau.",
+      "sources": [
+        {
+          "title": "Encyclopédie Larousse, « Les Républicains, jusqu'en mai 2015 Union pour un mouvement populaire (UMP) »",
+          "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Encyclopædia Universalis, « Les Républicains, parti politique »",
+          "url": "https://www.universalis.fr/encyclopedie/les-republicains-parti-politique/",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Encyclopædia Universalis, « France. Congrès fondateur des Républicains. 29-30 mai 2015 »",
+          "url": "https://www.universalis.fr/evenement/29-30-mai-2015-congres-fondateur-des-republicains/",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Wikipédia, « Les Républicains »",
+          "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "ideals": [
+      {
+        "text": "Le parti se définit, dans ses statuts, comme rassemblant, « dans la fidélité au gaullisme, et au service de l'épanouissement des personnes », les Français qui s'engagent à « continuer l'histoire de France en défendant l'intérêt national au sein de l'Union européenne comme sur la scène internationale », et se réfère à une Charte adoptée en octobre 2019 ; sur son site, il se présente comme « la droite qui défend la France des honnêtes gens ».",
+        "sources": [
+          {
+            "title": "Statuts du mouvement « Les Républicains », article 2 « Objet et valeurs » (projet soumis au Ve congrès)",
+            "url": "https://republicains.fr/wp-content/uploads/2025/11/2025-08-29-lR-congres-statuts-projet.pdf",
+            "date": "2025-08-29",
+            "kind": "programme"
+          },
+          {
+            "title": "Les Républicains, « Qui sommes-nous ? »",
+            "url": "https://republicains.fr/qui-sommes-nous/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Les encyclopédies le classent à droite : Universalis le décrit comme réunissant des sensibilités allant « de la droite libérale au centre droit » ainsi que les héritiers du gaullisme ; Larousse présentait l'UMP comme « un grand parti politique de la droite et du centre ».",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Les Républicains, parti politique »",
+            "url": "https://www.universalis.fr/encyclopedie/les-republicains-parti-politique/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Les Républicains, jusqu'en mai 2015 Union pour un mouvement populaire (UMP) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Wikipédia le situe à droite et mentionne conservatisme, gaullisme, libéralisme économique et libéral-conservatisme ; le parti revendique lui-même l'étiquette de « droite ». Aucun désaccord de classement notable n'a été relevé dans les sources consultées.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Les Républicains, « Qui sommes-nous ? »",
+            "url": "https://republicains.fr/qui-sommes-nous/",
+            "date": "2026-11",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "text": "En juin 2024, le parti a refusé l'alliance électorale avec le RN annoncée par son président Éric Ciotti : le bureau politique a voté son exclusion, dont le tribunal judiciaire de Paris a suspendu les effets en référé le 14 juin 2024 ; Éric Ciotti a ensuite fondé l'Union des droites pour la République (UDR), alliée au RN, et annoncé son départ de LR le 22 septembre 2024.",
+        "sources": [
+          {
+            "title": "Alliance avec le RN : Éric Ciotti exclu des Républicains (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/alliance-avec-le-rn-eric-ciotti-exclu-des-republicains",
+            "date": "2024-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Alliance avec le RN : avalanche de critiques après la déclaration d'Éric Ciotti, qui apparaît isolé au sein de LR (LCP)",
+            "url": "https://lcp.fr/actualites/alliance-avec-le-rn-avalanche-de-critiques-apres-la-declaration-d-eric-ciotti-qui",
+            "date": "2024-06-11",
+            "kind": "presse"
+          },
+          {
+            "title": "FLASH : Le tribunal judiciaire de Paris suspend les effets de l'exclusion d'Éric Ciotti (Actu-Juridique)",
+            "url": "https://www.actu-juridique.fr/civil/flash-le-tribunal-judiciaire-de-paris-suspend-les-effets-de-lexclusion-deric-ciotti/",
+            "date": "2024-06-14",
+            "kind": "presse"
+          },
+          {
+            "title": "L'exclusion d'Eric Ciotti de la présidence de LR invalidée par la justice (La Libre Belgique)",
+            "url": "https://www.lalibre.be/international/europe/2024/06/14/lexclusion-deric-ciotti-de-la-presidence-de-lr-invalidee-par-la-justice-7ERWYDTHE5DF3CPBCLVXCLSNOU/",
+            "date": "2024-06-14",
+            "kind": "presse"
+          },
+          {
+            "title": "Éric Ciotti annonce qu'il quitte Les Républicains (Europe 1)",
+            "url": "https://www.europe1.fr/politique/eric-ciotti-annonce-quil-quitte-les-republicains-4268889",
+            "date": "2024-09-22",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2002-11",
+        "event": "Fondation de l'Union pour un mouvement populaire (UMP), grand parti de la droite et du centre issu du rapprochement du RPR, de Démocratie libérale et de membres de l'UDF ; Alain Juppé en est le premier président.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Les Républicains, jusqu'en mai 2015 Union pour un mouvement populaire (UMP) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « UMP (Union pour un mouvement populaire) – Une machine électorale au service de son leader »",
+            "url": "https://www.universalis.fr/encyclopedie/ump-union-pour-un-mouvement-populaire-parti-politique/2-une-machine-electorale-au-service-de-son-leader/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2007-05-06",
+        "event": "Nicolas Sarkozy, président de l'UMP depuis novembre 2004, est élu président de la République avec 53,06 % des voix au second tour.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Les Républicains, jusqu'en mai 2015 Union pour un mouvement populaire (UMP) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « UMP (Union pour un mouvement populaire) – Une machine électorale au service de son leader »",
+            "url": "https://www.universalis.fr/encyclopedie/ump-union-pour-un-mouvement-populaire-parti-politique/2-une-machine-electorale-au-service-de-son-leader/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2015-05-30",
+        "event": "Congrès fondateur : l'UMP devient Les Républicains, après un vote des adhérents approuvant le nouveau nom et les statuts.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « France. Congrès fondateur des Républicains. 29-30 mai 2015 »",
+            "url": "https://www.universalis.fr/evenement/29-30-mai-2015-congres-fondateur-des-republicains/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Les Républicains, jusqu'en mai 2015 Union pour un mouvement populaire (UMP) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2022-04-10",
+        "event": "Valérie Pécresse obtient 4,78 % des suffrages exprimés au premier tour de la présidentielle (1 679 001 voix).",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel, décision n° 2022-195 PDR du 13 avril 2022 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022195PDR.htm",
+            "date": "2022-04-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-11",
+        "event": "Le président du parti Éric Ciotti annonce une alliance avec le RN pour les législatives anticipées ; le bureau politique vote son exclusion, suspendue en référé par la justice le 14 juin, et il fonde ensuite l'UDR avant d'annoncer son départ de LR en septembre 2024. Aux législatives, LR obtient environ 50 députés.",
+        "sources": [
+          {
+            "title": "Alliance avec le RN : Éric Ciotti exclu des Républicains (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/alliance-avec-le-rn-eric-ciotti-exclu-des-republicains",
+            "date": "2024-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Alliance avec le RN : avalanche de critiques après la déclaration d'Éric Ciotti, qui apparaît isolé au sein de LR (LCP)",
+            "url": "https://lcp.fr/actualites/alliance-avec-le-rn-avalanche-de-critiques-apres-la-declaration-d-eric-ciotti-qui",
+            "date": "2024-06-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "FLASH : Le tribunal judiciaire de Paris suspend les effets de l'exclusion d'Éric Ciotti (Actu-Juridique)",
+            "url": "https://www.actu-juridique.fr/civil/flash-le-tribunal-judiciaire-de-paris-suspend-les-effets-de-lexclusion-deric-ciotti/",
+            "date": "2024-06-14",
+            "kind": "presse"
+          },
+          {
+            "title": "Éric Ciotti annonce qu'il quitte Les Républicains (Europe 1)",
+            "url": "https://www.europe1.fr/politique/eric-ciotti-annonce-quil-quitte-les-republicains-4268889",
+            "date": "2024-09-22",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2024-09",
+        "event": "LR entre au gouvernement de Michel Barnier, Bruno Retailleau devenant ministre de l'Intérieur ; il quitte ses fonctions le 12 octobre 2025, LR se retirant du « socle commun » à l'annonce du gouvernement Lecornu.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Bruno Retailleau favorable aux courtes peines de prison : « Ce n'est pas une solution magique » (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/bruno-retailleau-favorable-aux-courtes-peines-de-prison-ce-nest-pas-une-solution-magique",
+            "date": "2024-10-10",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2025-05-18",
+        "event": "Bruno Retailleau est élu président des Républicains avec 74,31 % des voix face à Laurent Wauquiez.",
+        "sources": [
+          {
+            "title": "Présidence de LR : Bruno Retailleau élu avec 74,31 % des voix (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidence-de-lr-bruno-retailleau-elu-avec-7431-des-voix",
+            "date": "2025-05-18",
+            "kind": "presse"
+          },
+          {
+            "title": "Présidence des Républicains : Bruno Retailleau s'impose largement face à Laurent Wauquiez (LCP)",
+            "url": "https://lcp.fr/actualites/presidence-des-republicains-bruno-retailleau-s-impose-largement-face-a-laurent-wauquiez",
+            "date": "2025-05-18",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2026-04-19",
+        "event": "Les adhérents choisissent à 73,8 % la désignation directe de Bruno Retailleau comme candidat à la présidentielle de 2027, plutôt qu'une primaire.",
+        "sources": [
+          {
+            "title": "Présidentielle : Bruno Retailleau désigné candidat par les adhérents LR (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-bruno-retailleau-designe-candidat-par-les-adherents-lr",
+            "date": "2026-04-19",
+            "kind": "presse"
+          },
+          {
+            "title": "France : les adhérents LR propulsent Bruno Retailleau comme candidat pour la présidentielle (Le Temps)",
+            "url": "https://www.letemps.ch/monde/france-les-adherents-lr-propulsent-bruno-retailleau-comme-candidat-pour-la-presidentielle",
+            "date": "2026-04-19",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "whyCreated": {
+      "text": "Les Républicains naissent au congrès des 29 et 30 mai 2015, lorsque l'UMP, présidée par Nicolas Sarkozy, adopte ce nouveau nom et de nouveaux statuts. L'UMP avait été créée en 2002 (Union pour la majorité présidentielle au printemps, puis Union pour un mouvement populaire en novembre) pour réunir derrière Jacques Chirac le RPR, Démocratie libérale et une large partie de l'UDF ; Jean-François Copé, cité par Public Sénat, rapporte que Chirac avait jugé nécessaire de « réunir le centre droit et le RPR ». La lignée gaulliste remonte au Rassemblement du peuple français fondé par Charles de Gaulle en 1947, puis à l'UNR (octobre 1958), à l'UDR (1968, renommée Union des démocrates pour la République en 1971) et au RPR, constitué le 5 décembre 1976 par Jacques Chirac « dans le but de rénover le mouvement gaulliste » (Larousse). L'autre composante, l'UDF, est fondée le 1er février 1978 par le Parti républicain, le Centre des démocrates sociaux et le Parti radical pour soutenir la politique de Valéry Giscard d'Estaing.",
+      "sources": [
+        {
+          "title": "Encyclopédie Larousse, « gaullisme »",
+          "url": "https://www.larousse.fr/encyclopedie/divers/gaullisme/54752",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Encyclopédie Larousse, « Rassemblement pour la République (RPR) »",
+          "url": "https://www.larousse.fr/encyclopedie/divers/RPR/141728",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Encyclopédie Larousse, « Union pour la démocratie française (UDF) »",
+          "url": "https://www.larousse.fr/encyclopedie/divers/UDF/147896",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "INA, discours de Jacques Chirac à la naissance du RPR (Porte de Versailles, 5 décembre 1976)",
+          "url": "https://mediaclip.ina.fr/en/i20155579-speech-by-jacques-chirac-on-the-birth-of-the-rpr.html",
+          "date": "1976-12-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Changer le nom des partis, une passion française (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/changer-le-nom-des-partis-une-passion-francaise-83759",
+          "date": "2018-03-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Bundeszentrale für politische Bildung, Politiklexikon, « Les Républicains (LR) »",
+          "url": "https://www.bpb.de/kurz-knapp/lexika/politiklexikon/225601/les-republicains-lr/",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Encyclopædia Universalis, « France. Congrès fondateur des Républicains. 29-30 mai 2015 »",
+          "url": "https://www.universalis.fr/evenement/29-30-mai-2015-congres-fondateur-des-republicains/",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "figures": [
+      {
+        "name": "Charles de Gaulle",
+        "role": "Fondateur du Rassemblement du peuple français (1947), référence revendiquée par le parti",
+        "background": "Chef de la France libre à partir de 1940 puis du Gouvernement provisoire, il fonde le RPF en avril 1947, un an après avoir quitté le pouvoir ; le politiste Pascal Perrineau, cité par Public Sénat, le décrit comme « pas tout à fait un parti, mais plutôt un rassemblement derrière un homme ». Revenu au pouvoir en 1958, il préside la République jusqu'en 1969, période où l'UNR puis l'UDR constituent le parti gaulliste.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « gaullisme »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/gaullisme/54752",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Changer le nom des partis, une passion française (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/changer-le-nom-des-partis-une-passion-francaise-83759",
+            "date": "2018-03-16",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Rassemblement du peuple français »",
+            "url": "https://fr.wikipedia.org/wiki/Rassemblement_du_peuple_fran%C3%A7ais",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Valéry Giscard d'Estaing",
+        "role": "Président de la République (1974-1981) ; inspirateur de l'UDF (1978), qu'il préside à partir de 1988",
+        "background": "Élu député du Puy-de-Dôme en 1956 au sein du Centre national des indépendants et paysans (CNIP, droite libérale), ministre des Finances, il fonde la Fédération nationale des républicains indépendants, alliée aux gaullistes mais distincte d'eux. L'UDF est créée en 1978 pour soutenir sa politique ; une large partie des élus de l'UDF rejoint l'UMP en 2002.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Valéry Giscard d'Estaing »",
+            "url": "https://www.larousse.fr/encyclopedie/personnage/wd/121520",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Présidence de la République, « Valéry Giscard d'Estaing » (portrait officiel)",
+            "url": "https://www.elysee.fr/la-presidence/valery-giscard-d-estaing",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Union pour la démocratie française (UDF) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UDF/147896",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Jacques Chirac",
+        "role": "Fondateur et président du RPR (1976-1994), président de la République (1995-2007), à l'origine de l'UMP (2002)",
+        "background": "Premier ministre de Valéry Giscard d'Estaing, il démissionne en août 1976 et transforme l'UDR en RPR le 5 décembre 1976, en le présentant comme gaulliste et membre de la majorité. Le 15 décembre 2011, il est condamné à deux ans de prison avec sursis pour détournement de fonds publics, abus de confiance et prise illégale d'intérêts dans l'affaire des emplois fictifs de la Ville de Paris, les poursuites n'ayant pu être engagées qu'après la fin de son mandat présidentiel ; il n'a pas fait appel.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Rassemblement pour la République (RPR) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/RPR/141728",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "INA, discours de Jacques Chirac à la naissance du RPR (Porte de Versailles, 5 décembre 1976)",
+            "url": "https://mediaclip.ina.fr/en/i20155579-speech-by-jacques-chirac-on-the-birth-of-the-rpr.html",
+            "date": "1976-12-05",
+            "kind": "presse"
+          },
+          {
+            "title": "Emplois fictifs : un classique en politique (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/emplois-fictifs-un-classique-en-politique-54089",
+            "date": "2017-02-01",
+            "kind": "presse"
+          },
+          {
+            "title": "Emplois fictifs : Chirac jugé coupable, condamné à deux ans de prison avec sursis (Slate)",
+            "url": "https://www.slate.fr/story/47527/jacques-chirac-coupable-emplois-fictifs",
+            "date": "2011-12-15",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Alain Juppé",
+        "role": "Premier président de l'UMP (2002-2004)",
+        "background": "Proche collaborateur de Jacques Chirac, Premier ministre de 1995 à 1997 et maire de Bordeaux, il devient en novembre 2002 le premier président de l'UMP, à la tête de laquelle Nicolas Sarkozy lui succède en novembre 2004. Le 1er décembre 2004, la cour d'appel de Versailles le condamne à quatorze mois de prison avec sursis et un an d'inéligibilité (contre dix ans en première instance) pour des emplois de la Ville de Paris occupés par des salariés du RPR, dont il était secrétaire général au moment des faits.",
+        "sources": [
+          {
+            "title": "Emplois fictifs : un classique en politique (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/emplois-fictifs-un-classique-en-politique-54089",
+            "date": "2017-02-01",
+            "kind": "presse"
+          },
+          {
+            "title": "INA, « Emplois fictifs de la Ville de Paris : Alain Juppé condamné en appel, peine réduite »",
+            "url": "https://mediaclip.ina.fr/en/2716231001002-fictitious-jobs-in-the-city-of-paris-alain-juppe-sentenced-on-appeal-but-sentence-reduced.html",
+            "date": "2004-12-01",
+            "kind": "presse"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Les Républicains, jusqu'en mai 2015 Union pour un mouvement populaire (UMP) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Nicolas Sarkozy",
+        "role": "Président de l'UMP (2004-2007, 2014-2015), président de la République (2007-2012), fondateur des Républicains (2015)",
+        "background": "Élu président de l'UMP en novembre 2004 puis président de la République en 2007, il revient à la tête du parti en 2014 et le rebaptise Les Républicains en 2015. Il a été condamné définitivement dans l'affaire des écoutes, dite « Bismuth » (corruption et trafic d'influence ; trois ans dont un ferme sous bracelet électronique, pourvoi rejeté le 18 décembre 2024), puis dans l'affaire Bygmalion (financement illégal de la campagne de 2012, pourvoi rejeté en novembre 2025). Condamné en première instance le 25 septembre 2025 à cinq ans d'emprisonnement, avec mandat de dépôt à effet différé et exécution provisoire, et 100 000 € d'amende pour association de malfaiteurs dans l'affaire du financement libyen de la campagne de 2007 (relaxé des chefs de corruption passive, de détournement de fonds publics libyens et de financement illicite de campagne), il a été incarcéré une vingtaine de jours ; il conteste les faits, le parquet général a requis sept ans en appel et l'arrêt de la cour d'appel de Paris est attendu le 30 novembre 2026 (condamnation non définitive).",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Les Républicains, parti politique »",
+            "url": "https://www.universalis.fr/encyclopedie/les-republicains-parti-politique/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Affaire des écoutes : Nicolas Sarkozy condamné définitivement à un an sous bracelet électronique, une première pour un ex-président (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/societe/affaire-des-ecoutes-nicolas-sarkozy-condamne-definitivement-a-un-an-sous-bracelet-electronique-une-premiere-pour-un-ex-president",
+            "date": "2024-12-18",
+            "kind": "presse"
+          },
+          {
+            "title": "Affaire des écoutes : Nicolas Sarkozy définitivement condamné à trois ans de prison dont un ferme sous bracelet électronique (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/en-bref/affaire-des-ecoutes-nicolas-sarkozy-definitivement-condamne-a-trois-ans-de-prison-dont-un-ferme-sous-bracelet-electronique-8502/",
+            "date": "2024-12-18",
+            "kind": "presse"
+          },
+          {
+            "title": "France's top court upholds Sarkozy's conviction for illegal campaign financing in 2012 (PBS NewsHour, AP)",
+            "url": "https://www.pbs.org/newshour/world/frances-top-court-upholds-sarkozys-conviction-for-illegal-campaign-financing-in-2012",
+            "date": "2025-11-26",
+            "kind": "presse"
+          },
+          {
+            "title": "Procès libyen en appel : condamnation intégrale requise contre Nicolas Sarkozy (France 24)",
+            "url": "https://www.france24.com/fr/france/20260512-proc%C3%A8s-libyen-appel-condamnation-int%C3%A9grale-requise-contre-nicolas-sarkozy-justice",
+            "date": "2026-05-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Financement libyen : sept ans de prison requis en appel contre Nicolas Sarkozy (Euronews)",
+            "url": "https://fr.euronews.com/my-europe/2026/05/13/financement-libyen-7-ans-de-prison-requis-en-appel-contre-nicolas-sarkozy",
+            "date": "2026-05-13",
+            "kind": "presse"
+          },
+          {
+            "title": "Nicolas Sarkozy reconnu coupable d'association de malfaiteurs dans l'affaire des soupçons de financement libyen (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/en-bref/nicolas-sarkozy-reconnu-coupable-dassociation-de-malfaiteurs-dans-laffaire-des-soupcons-de-financement-libyen-12133/",
+            "date": "2025-09-25",
+            "kind": "presse"
+          },
+          {
+            "title": "Fin du procès en appel de Nicolas Sarkozy dans l'affaire libyenne, verdict attendu le 30 novembre (Euronews)",
+            "url": "https://fr.euronews.com/my-europe/2026/05/27/fin-du-proces-en-appel-de-nicolas-sarkozy-dans-laffaire-libyenne-verdict-attendu-le-30-nov",
+            "date": "2026-05-27",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Bruno Retailleau",
+        "role": "Président des Républicains depuis le 18 mai 2025 ; candidat désigné pour la présidentielle de 2027",
+        "background": "Il commence sa carrière aux côtés de Philippe de Villiers, adhère au Mouvement pour la France en 1994, rompt avec lui en 2010 et rejoint l'UMP en 2012. Sénateur de la Vendée, il préside le groupe UMP puis LR au Sénat de 2014 à 2024 et est ministre de l'Intérieur de septembre 2024 à octobre 2025.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Bruno Retailleau »",
+            "url": "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "La biographie et le CV de Bruno Retailleau (Sud Radio)",
+            "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-bruno-retailleau",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Présidence de LR : Bruno Retailleau élu avec 74,31 % des voix (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidence-de-lr-bruno-retailleau-elu-avec-7431-des-voix",
+            "date": "2025-05-18",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "thought": [
+      {
+        "text": "Gaullisme : le parti se réclame dans ses statuts de « la fidélité au gaullisme » ; Larousse définit le gaullisme comme un courant se réclamant de l'action et de la pensée du général de Gaulle (indépendance nationale, exécutif fort et recours au référendum, participation et rôle de l'État dans l'économie), en notant qu'il est « moins une doctrine politique originale » que l'héritage d'un homme.",
+        "sources": [
+          {
+            "title": "Statuts du mouvement « Les Républicains », article 2 « Objet et valeurs » (projet soumis au Ve congrès)",
+            "url": "https://republicains.fr/wp-content/uploads/2025/11/2025-08-29-lR-congres-statuts-projet.pdf",
+            "date": "2025-08-29",
+            "kind": "programme"
+          },
+          {
+            "title": "Encyclopédie Larousse, « gaullisme »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/gaullisme/54752",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Changer le nom des partis, une passion française (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/changer-le-nom-des-partis-une-passion-francaise-83759",
+            "date": "2018-03-16",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Libéralisme et démocratie chrétienne : par l'UDF (Parti républicain puis Démocratie libérale, de tradition libérale ; Centre des démocrates sociaux, de tradition démocrate-chrétienne) et par la fusion de 2002, le parti réunit les gaullistes du RPR, des libéraux et des centristes ; la Centrale fédérale allemande pour l'éducation civique (bpb) le décrit comme un parti de droite rassemblant anciens gaullistes, membres de l'UDF et libéraux.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Union pour la démocratie française (UDF) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UDF/147896",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Bundeszentrale für politische Bildung, Politiklexikon, « Les Républicains (LR) »",
+            "url": "https://www.bpb.de/kurz-knapp/lexika/politiklexikon/225601/les-republicains-lr/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Les Républicains, parti politique »",
+            "url": "https://www.universalis.fr/encyclopedie/les-republicains-parti-politique/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Centre des démocrates sociaux »",
+            "url": "https://fr.wikipedia.org/wiki/Centre_des_d%C3%A9mocrates_sociaux",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Droite conservatrice et « droitisation » : la politiste Florence Haegel (Sciences Po) décrit, à partir de la présidence de Nicolas Sarkozy à l'UMP (2004), une « droitisation » sur les thèmes identitaires, dite « ligne Buisson », puis la motion de Laurent Wauquiez ; au congrès de 2012, les motions les plus à droite recueillent environ 60 % des voix des adhérents, contre 12,3 % pour la motion gaulliste. Édouard Philippe a critiqué en 2017 cette « droitisation » comme contraire au pacte fondateur réunissant droite et centre.",
+        "sources": [
+          {
+            "title": "Florence Haegel (Sciences Po, CEE), « Où va la droite ? », Revue politique et parlementaire, n° 1083-1084",
+            "url": "https://www.revuepolitique.fr/?p=6009",
+            "date": "2018-01-15",
+            "kind": "statistique"
+          },
+          {
+            "title": "Philippe critique la « droitisation » des Républicains (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/philippe-critique-la-droitisation-des-republicains-76835",
+            "date": "2017-09-03",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Rapport au RN : le parti revendique l'identité de « la droite » et a refusé en juin 2024 l'alliance avec le RN annoncée par son président Éric Ciotti ; celui-ci a quitté le parti en septembre 2024 et fondé l'Union des droites pour la République (UDR), alliée au RN, la question d'une « union des droites » demeurant un point de clivage.",
+        "sources": [
+          {
+            "title": "Les Républicains, « Qui sommes-nous ? »",
+            "url": "https://republicains.fr/qui-sommes-nous/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Alliance avec le RN : Éric Ciotti exclu des Républicains (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/alliance-avec-le-rn-eric-ciotti-exclu-des-republicains",
+            "date": "2024-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Éric Ciotti annonce qu'il quitte Les Républicains (Europe 1)",
+            "url": "https://www.europe1.fr/politique/eric-ciotti-annonce-quil-quitte-les-republicains-4268889",
+            "date": "2024-09-22",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ]
+  },
+  "stances": {
+    "q01-isf": {
+      "stance": -2,
+      "justification": "Le groupe Droite républicaine a voté contre la taxe Zucman (scrutin n° 3300 du 31/10/2025 : 28 contre, 0 pour) ; Laurent Wauquiez s'est dit « contre les augmentations d'impôts qui vont tuer de l'emploi ».",
+      "sources": [
+        {
+          "title": "Scrutin n° 3300 – amendement taxe Zucman (PLF 2026)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Budget 2026 : les députés rejettent la taxe Zucman à l'Assemblée nationale (Europe 1)",
+          "url": "https://www.europe1.fr/politique/budget-2026-les-deputes-rejettent-la-taxe-zucman-a-lassemblee-nationale-869616",
+          "date": "2025-10-31",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q02-depenses": {
+      "stance": 2,
+      "justification": "LR présente la réduction de l'« assistanat » et des dépenses sociales comme la source de ses économies (13 Md€ par an sur l'assurance chômage, 40 Md€ sur cinq ans sur les retraites) et propose de ne pas remplacer une partie des fonctionnaires.",
+      "sources": [
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        },
+        {
+          "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
+          "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
+          "date": "2026-02-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q03-charges": {
+      "stance": 2,
+      "justification": "LR propose de « réduire substantiellement les prélèvements obligatoires » et une baisse du coût du travail d'environ 15 Md€ pour les entreprises.",
+      "sources": [
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        },
+        {
+          "title": "Nos propositions (Les Républicains)",
+          "url": "https://republicains.fr/nos-propositions/",
+          "date": "2026-02",
+          "kind": "programme"
+        },
+        {
+          "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+          "date": "2026-01-07",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q04-retraite": {
+      "stance": -2,
+      "justification": "Bruno Retailleau propose un âge minimal de 63 ans et un taux plein à 65 ans ; le groupe a majoritairement voté contre la suspension de la réforme de 2023 (scrutin n° 3684 du 12/11/2025 : 25 contre, 8 pour, 9 abstentions).",
+      "sources": [
+        {
+          "title": "S'il est élu, Bruno Retailleau veut instaurer un âge minimal de départ à la retraite à 63 ans (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html",
+          "date": "2026-09-22",
+          "kind": "presse"
+        },
+        {
+          "title": "Scrutin n° 3684 – article 45 bis du PLFSS 2026 (suspension de la réforme des retraites)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3684",
+          "date": "2025-11-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q05-smic": {
+      "stance": null,
+      "justification": "Pas de position publique primaire identifiée sur un « coup de pouce » au SMIC ; LR privilégie la baisse des cotisations et le seuil « zéro cotisation ». Un site agrégateur (France-Vote) lui attribue une opposition à une hausse imposée du SMIC, sans source primaire datée.",
+      "sources": []
+    },
+    "q06-chomage": {
+      "stance": 2,
+      "justification": "LR propose de resserrer l'indemnisation chômage (ruptures conventionnelles limitées à 6 mois), de conditionner un complément du revenu minimal à 15 heures d'activité et de plafonner les aides à 70 % du SMIC ; le groupe LR avait voté la loi « pour le plein emploi » conditionnant le RSA à 15 heures d'activité (vote n° 2965 du 14/11/2023 : 36 pour).",
+      "sources": [
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        },
+        {
+          "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+          "date": "2026-01-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Projet de loi pour le plein emploi – vote n° 2965 du 14/11/2023 (Datan)",
+          "url": "https://datan.fr/votes/legislature-16/vote_2965",
+          "date": "2023-11-14",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q07-immigration": {
+      "stance": 2,
+      "justification": "Bruno Retailleau propose un référendum pour « réduire drastiquement l'immigration ».",
+      "sources": [
+        {
+          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+          "date": "2026-02-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Immigration : que contiennent les deux propositions de loi LR ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/immigration-ce-que-contiennent-les-deux-propositions-de-loi-lr",
+          "date": "2023-06-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q08-preference": {
+      "stance": null,
+      "justification": "Position non tranchée au sens de l'énoncé : Bruno Retailleau a défendu en 2023 des conditions de durée de résidence pour certaines prestations, tout en réfutant le terme de « préférence nationale » ; pas de proposition identifiée réservant les aides aux Français.",
+      "sources": []
+    },
+    "q09-regularisation": {
+      "stance": -2,
+      "justification": "En 2023, Bruno Retailleau, alors président du groupe LR au Sénat, a obtenu la suppression de l'article 3 du projet de loi immigration créant un titre de séjour « métiers en tension » (191 voix contre 138), remplacé par un dispositif plus restrictif ; ministre de l'Intérieur, il a signé le 23 janvier 2025 une circulaire durcissant l'admission exceptionnelle au séjour (sept ans de présence exigés au lieu de cinq), tout en demandant aux préfets de privilégier, dans ce cadre, la voie « métiers en tension ».",
+      "sources": [
+        {
+          "title": "Immigration : le Sénat supprime l'article 3 sur la régularisation des sans-papiers dans les métiers en tension (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/immigration-le-senat-supprime-larticle-3-sur-la-regularisation-des-sans-papiers-dans-les-metiers-en-tension",
+          "date": "2023-11-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Ce que contient la circulaire Retailleau sur la régularisation des étrangers en situation irrégulière (Maire-info)",
+          "url": "https://www.maire-info.com/immigration/ce-que-contient-la-circulaire-retailleau-sur-la-regularisation-des-etrangers-en-situation-irreguliere-article-29333",
+          "date": "2025-01-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q10-peines-planchers": {
+      "stance": 1,
+      "justification": "Bruno Retailleau a co-déposé au Sénat avec François-Noël Buffet une proposition de loi « tendant à renforcer l'efficacité de la justice pénale », dont la version adoptée en commission en janvier 2017 rétablissait les peines planchers ; en 2024, des députés Droite républicaine qualifiaient les peines planchers de « proposition de droite ». Pas d'engagement explicite identifié dans le programme 2027, dont les propositions sourcées portent sur les courtes peines.",
+      "sources": [
+        {
+          "title": "Sénat, communiqué : « La commission des lois du Sénat renforce l'efficacité de la justice pénale » (PPL n° 126 Buffet-Retailleau)",
+          "url": "https://www.senat.fr/presse/cp20170125b.html",
+          "date": "2017-01-25",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Expulsions, peines planchers : quelle réponse de la droite face à la stratégie piégeuse du Rassemblement national ? (LCP)",
+          "url": "https://lcp.fr/actualites/expulsions-peines-planchers-quelle-reponse-de-la-droite-face-a-la-strategie-piegeuse-du",
+          "date": "2024-10-31",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q11-police": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée du candidat ou du parti sur le récépissé ou un contrôle indépendant de la police ; les deux députés Droite républicaine présents ont voté contre un amendement exigeant un « élément objectif » pour les contrôles d'identité (vote n° 8174 du 10/07/2026), ce qui ne porte pas directement sur ces deux points.",
+      "sources": [
+        {
+          "title": "Amendement sur les conditions des contrôles d'identité – vote n° 8174 du 10/07/2026 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8174",
+          "date": "2026-07-10",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q12-nucleaire": {
+      "stance": 2,
+      "justification": "LR propose de maîtriser les coûts des EPR2, de prolonger le parc à 80 ans et de relancer un prototype de 4e génération.",
+      "sources": [
+        {
+          "title": "Nos propositions (Les Républicains) – livret « Faire baisser la facture d'électricité »",
+          "url": "https://republicains.fr/nos-propositions/",
+          "date": "2026-05",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q13-renouvelables": {
+      "stance": -2,
+      "justification": "LR propose d'« arrêter de subventionner » les nouvelles capacités éoliennes et solaires.",
+      "sources": [
+        {
+          "title": "Nos propositions (Les Républicains) – livret « Faire baisser la facture d'électricité »",
+          "url": "https://republicains.fr/nos-propositions/",
+          "date": "2026-05",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q14-normes-agricoles": {
+      "stance": 2,
+      "justification": "Le groupe a voté la loi Duplomb (scrutin n° 2957 : 47 pour) et LR propose d'aligner les normes françaises sur les normes européennes, « pas plus ».",
+      "sources": [
+        {
+          "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2957",
+          "date": "2025-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Nos propositions (Les Républicains) – livret « Réarmer l'agriculture »",
+          "url": "https://republicains.fr/nos-propositions/",
+          "date": "2026-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q15-medecins": {
+      "stance": 1,
+      "justification": "Le Sénat a adopté le 13 mai 2025 (190 voix contre 29) la proposition de loi du sénateur LR Philippe Mouiller, qui subordonne l'installation d'un médecin en zone « sur-dense » à un engagement d'exercer une partie de son activité dans un territoire moins bien doté ; la droite sénatoriale présente ce texte comme plus souple que la PPL Garot. Pas de position identifiée du candidat lui-même.",
+      "sources": [
+        {
+          "title": "Installation des médecins, déserts médicaux… Le Sénat adopte la proposition de loi pour « améliorer l'accès aux soins dans les territoires » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/sante/installation-des-medecins-deserts-medicaux-le-senat-adopte-la-proposition-de-loi-pour-ameliorer-lacces-aux-soins-dans-les-territoires",
+          "date": "2025-05-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Sénat, proposition de loi n° 494 (2024-2025) visant à améliorer l'accès aux soins dans les territoires (P. Mouiller et plusieurs collègues)",
+          "url": "https://www.senat.fr/dossier-legislatif/ppl24-494.html",
+          "date": "2025-03-28",
+          "kind": "proposition-de-loi"
+        }
+      ]
+    },
+    "q16-fin-de-vie": {
+      "stance": -1,
+      "justification": "Le groupe a voté majoritairement contre la loi en lecture définitive (scrutin n° 8280 : 41 contre, 5 pour) ; Bruno Retailleau ne promet pas d'abrogation directe mais envisage un référendum après « un bilan au bout d'un an ».",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+          "date": "2026-07-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q17-ecole-privee": {
+      "stance": null,
+      "justification": "Pas de position identifiée sur le financement du privé sous contrat ; le livret école prévoit seulement son évaluation publique au même titre que le public.",
+      "sources": []
+    },
+    "q18-ukraine": {
+      "stance": 2,
+      "justification": "Le groupe LR a voté majoritairement pour l'accord de sécurité franco-ukrainien (vote n° 3461 du 12/03/2024 : 49 pour, 11 abstentions) ; position de 2024, pas de vote plus récent identifié.",
+      "sources": [
+        {
+          "title": "Déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien – vote n° 3461 (Datan)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q19-droit-europeen": {
+      "stance": 2,
+      "justification": "Bruno Retailleau propose un référendum pour donner la primauté au droit national sur le droit européen lorsque des intérêts fondamentaux sont en jeu.",
+      "sources": [
+        {
+          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+          "date": "2026-02-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
+          "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
+          "date": "2026-02-16",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q20-defense-europe": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée et sourcée sur l'endettement commun de l'UE.",
+      "sources": []
+    },
+    "q21-libre-echange": {
+      "stance": 2,
+      "justification": "Le groupe a voté pour la déclaration s'opposant à l'accord UE-Mercosur (scrutin n° 456 : 46 pour) et Bruno Retailleau le qualifie de « destructeur » ; pas de position identifiée sur l'application provisoire depuis mai 2026.",
+      "sources": [
+        {
+          "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
+          "date": "2024-11-26",
+          "kind": "vote"
+        },
+        {
+          "title": "Mercosur : un accord « destructeur » et une « capitulation environnementale » dénonce Bruno Retailleau (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/mercosur-un-accord-destructeur-et-une-capitulation-environnementale-denonce-bruno",
+          "date": "2019-07-04",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q22-vie-republique": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée et sourcée sur une VIe République ; les révisions proposées portent sur l'extension du référendum.",
+      "sources": []
+    },
+    "q23-referendum": {
+      "stance": 2,
+      "justification": "Bruno Retailleau propose de réviser la Constitution pour permettre un référendum sur l'immigration.",
+      "sources": [
+        {
+          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+          "date": "2026-02-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Immigration : que contiennent les deux propositions de loi LR ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/immigration-ce-que-contiennent-les-deux-propositions-de-loi-lr",
+          "date": "2023-06-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q24-proportionnelle": {
+      "stance": -2,
+      "justification": "Le bureau politique de LR a réaffirmé le 28/05/2025 sa « ferme opposition à l'introduction de la proportionnelle » ; Bruno Retailleau la juge « le plus sûr moyen de ne pas donner à la France une majorité » (avril 2025).",
+      "sources": [
+        {
+          "title": "Hostile à la proportionnelle, Bruno Retailleau n'écarte pas une démission du gouvernement (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/hostile-a-la-proportionnelle-bruno-retailleau-necarte-pas-une-demission-du-gouvernement",
+          "date": "2025-06-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Proportionnelle aux législatives : François Bayrou consulte, les avis divergent sur le principe et sur les modalités (LCP)",
+          "url": "https://lcp.fr/actualites/proportionnelle-aux-legislatives-francois-bayrou-consulte-les-avis-divergent-sur-le",
+          "date": "2025-04-30",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "candidacies": {
+    "presidentielle-2027": {
+      "candidateName": "Bruno Retailleau",
+      "status": "investi",
+      "statusLabel": "Candidat investi",
+      "candidate": "Bruno Retailleau (statut : déclaré le 2026-02-12 ; désigné candidat par les adhérents LR le 2026-04-19)",
+      "programmeStatus": "Programme présidentiel 2027 en cours de publication par livrets thématiques (« Le travail gagnant », réindustrialisation, agriculture, famille, électricité, logement, IA, école, décembre 2025 à septembre 2026), complété par les annonces de Bruno Retailleau (référendums, retraites) et les votes du groupe Droite républicaine. Pas de document programmatique identifié sur la santé.",
+      "themes": {
+        "economie": {
+          "summary": "LR propose de baisser les prélèvements obligatoires et de restituer au moins 30 Md€ aux salariés et aux entreprises, financés par des économies sur les dépenses sociales. Le parti met l'accent sur la simplification normative.",
+          "measures": [
+            {
+              "text": "Restituer « au moins 30 milliards d'euros » aux salariés et aux entreprises, pour moitié en pouvoir d'achat (environ 500 € par an au salaire médian) et pour moitié en baisse du coût du travail.",
+              "sources": [
+                {
+                  "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+                  "date": "2025-12",
+                  "kind": "programme"
+                },
+                {
+                  "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+                  "date": "2026-01-07",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Seuil « zéro cotisation » : au-delà de 1 623 heures travaillées par an, exonération totale de cotisations salariales et patronales (hors CSG-CRDS), avec annualisation du temps de travail.",
+              "sources": [
+                {
+                  "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+                  "date": "2025-12",
+                  "kind": "programme"
+                },
+                {
+                  "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+                  "date": "2026-01-07",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Supprimer dès le lendemain de l'élection les 50 normes les plus pénalisantes pour les entreprises et refonder le code du travail autour de 50 principes.",
+              "sources": [
+                {
+                  "title": "Nos propositions (Les Républicains) – livret « Produire plus pour vivre mieux »",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-02",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Réduction des effectifs de la fonction publique par le non-remplacement d'une partie des départs à la retraite ; lors du débat du Medef du 27 août 2026, Bruno Retailleau a évoqué « 250 à 300 000 fonctionnaires » de moins et la suppression des agences de l'État ne justifiant pas leur existence tous les trois ans.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
+                  "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
+                  "date": "2026-02-16",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+                  "date": "2026-08-27",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Opposition à la « taxe Zucman » : le groupe Droite républicaine a voté contre (scrutin n° 3300 du 31/10/2025 : 28 contre).",
+              "sources": [
+                {
+                  "title": "Scrutin n° 3300 – amendement taxe Zucman (PLF 2026)",
+                  "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
+                  "date": "2025-10-31",
+                  "kind": "vote"
+                },
+                {
+                  "title": "Budget 2026 : les députés rejettent la taxe Zucman à l'Assemblée nationale (Europe 1)",
+                  "url": "https://www.europe1.fr/politique/budget-2026-les-deputes-rejettent-la-taxe-zucman-a-lassemblee-nationale-869616",
+                  "date": "2025-10-31",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "travail": {
+          "summary": "Bruno Retailleau propose un âge minimal de départ à 63 ans et un taux plein automatique à 65 ans, avec une part de capitalisation pour les jeunes. LR propose de fusionner les minima sociaux et de plafonner le cumul des aides.",
+          "measures": [
+            {
+              "text": "Retraites : âge minimal de départ à 63 ans (exceptions pour les métiers pénibles), taux plein automatique à 65 ans indexé ensuite sur l'espérance de vie, décote de 7 % par an avant 65 ans, pilier de capitalisation pour les jeunes (25 à 30 % de leur pension) ; 40 Md€ d'économies cumulées sur cinq ans annoncées.",
+              "sources": [
+                {
+                  "title": "S'il est élu, Bruno Retailleau veut instaurer un âge minimal de départ à la retraite à 63 ans, et le taux plein à 65 ans (franceinfo)",
+                  "url": "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html",
+                  "date": "2026-09-22",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+                  "date": "2026-08-27",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Revenu d'incitation à l'activité (RIA) remplaçant RSA, prime d'activité et ASS : 300 € par mois (« RIA Socle »), plus 250 € sous condition de 15 heures d'activité hebdomadaires ; l'allocation est réduite de 30 % du salaire en cas de reprise d'emploi.",
+              "sources": [
+                {
+                  "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+                  "date": "2025-12",
+                  "kind": "programme"
+                },
+                {
+                  "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+                  "date": "2026-01-07",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Compte social unique : le total des aides sociales non contributives par adulte (RSA, aides au logement, aides locales) ne devrait pas dépasser 70 % du SMIC net, hors dépendance et handicap.",
+              "sources": [
+                {
+                  "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+                  "date": "2025-12",
+                  "kind": "programme"
+                },
+                {
+                  "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+                  "date": "2026-01-07",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Assurance chômage : application des règles de juin 2024, indemnisation des ruptures conventionnelles limitée à six mois et plafonnée, alignement de l'indemnisation des frontaliers ; environ 13 Md€ d'économies par an annoncées.",
+              "sources": [
+                {
+                  "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+                  "date": "2025-12",
+                  "kind": "programme"
+                },
+                {
+                  "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+                  "date": "2026-01-07",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Exonération de cotisations retraite et chômage pour les salariés ayant tous leurs trimestres avant l'âge légal, et cumul emploi-retraite rénové remplaçant la surcote.",
+              "sources": [
+                {
+                  "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+                  "date": "2025-12",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "immigration": {
+          "summary": "Bruno Retailleau fait d'un référendum visant à « réduire drastiquement l'immigration » le premier acte de son éventuel mandat, ce qui suppose une révision de la Constitution. Il réfute le terme de « préférence nationale ».",
+          "measures": [
+            {
+              "text": "Référendum sur des lois visant à « réduire drastiquement l'immigration », après une révision constitutionnelle élargissant le champ de l'article 11.",
+              "sources": [
+                {
+                  "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+                  "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+                  "date": "2026-02-12",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
+                  "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
+                  "date": "2026-02-16",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Immigration : que contiennent les deux propositions de loi LR ? (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/immigration-ce-que-contiennent-les-deux-propositions-de-loi-lr",
+                  "date": "2023-06-02",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Primauté du droit national sur le droit européen en matière d'immigration et lorsque des intérêts nationaux fondamentaux sont en jeu, soumise à référendum.",
+              "sources": [
+                {
+                  "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+                  "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+                  "date": "2026-02-12",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Proposition de loi sénatoriale du 1er juin 2023 « pour reprendre le contrôle de la politique d'immigration, d'intégration et d'asile », co-déposée par François-Noël Buffet et Bruno Retailleau : suppression du droit du sol pour les enfants nés en France de parents en situation irrégulière, impossibilité de régulariser un étranger entré illégalement (hors demandeurs d'asile), rétablissement du délit de séjour irrégulier ; elle était accompagnée d'une proposition de loi constitutionnelle élargissant l'article 11 à la politique migratoire.",
+              "sources": [
+                {
+                  "title": "Sénat, proposition de loi n° 677 (2022-2023) pour reprendre le contrôle de la politique d'immigration, d'intégration et d'asile (F.-N. Buffet, B. Retailleau et plusieurs collègues)",
+                  "url": "https://www.senat.fr/dossier-legislatif/ppl22-677.html",
+                  "date": "2023-06-01",
+                  "kind": "proposition-de-loi"
+                },
+                {
+                  "title": "Immigration : que contiennent les deux propositions de loi LR ? (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/immigration-ce-que-contiennent-les-deux-propositions-de-loi-lr",
+                  "date": "2023-06-02",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "securite": {
+          "summary": "Bruno Retailleau se présente comme le candidat « de la loi et de l'ordre » et propose une réforme de la justice pénale soumise à référendum. Il propose un régime d'urgence pour les quartiers touchés par le narcotrafic.",
+          "measures": [
+            {
+              "text": "Réforme (« révolution ») de la justice pénale soumise à référendum.",
+              "sources": [
+                {
+                  "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+                  "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+                  "date": "2026-02-12",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Rétablissement des courtes peines de prison, dès les premiers délits, et retour sur la loi Belloubet de 2019, que Bruno Retailleau dit avoir « toujours combattue » ; la suppression ou l'encadrement strict du juge de l'application des peines lui est également attribué par Planet.fr (non recoupé).",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
+                  "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
+                  "date": "2026-02-16",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Bruno Retailleau favorable aux courtes peines de prison : « Ce n'est pas une solution magique » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/bruno-retailleau-favorable-aux-courtes-peines-de-prison-ce-nest-pas-une-solution-magique",
+                  "date": "2024-10-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "« État d'urgence » pour les quartiers touchés par le narcotrafic.",
+              "sources": [
+                {
+                  "title": "« Je trace ma route » : Bruno Retailleau dévoile les grandes lignes de son programme (Europe 1)",
+                  "url": "https://www.europe1.fr/politique/je-trace-ma-route-candidat-a-la-presidentielle-2027-bruno-retailleau-devoile-les-grandes-lignes-de-son-programme-895492",
+                  "date": "2026-02-13",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "ecologie": {
+          "summary": "LR fait du nucléaire et de l'hydroélectricité le socle de sa politique énergétique et propose de cesser de subventionner de nouvelles capacités éoliennes et solaires. En agriculture, il propose de ne pas aller au-delà des normes européennes.",
+          "measures": [
+            {
+              "text": "Inscrire le parc nucléaire dans une trajectoire de « 80 ans », maîtriser les coûts et délais des EPR2 et relancer les études d'un prototype de réacteur à neutrons rapides de 4e génération.",
+              "sources": [
+                {
+                  "title": "Nos propositions (Les Républicains) – livret « Faire baisser la facture d'électricité »",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-05",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Arrêter de subventionner les nouvelles capacités éoliennes et solaires et contenir les coûts de réseau ; augmenter la production hydroélectrique et les capacités de stockage.",
+              "sources": [
+                {
+                  "title": "Nos propositions (Les Républicains) – livret « Faire baisser la facture d'électricité »",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-05",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Agriculture : aligner les règles françaises sur les règles européennes, « pas plus », reprendre le contrôle politique des agences de l'État et faire de l'eau une ressource agricole stratégique.",
+              "sources": [
+                {
+                  "title": "Nos propositions (Les Républicains) – livret « Réarmer l'agriculture »",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Fin des interdictions de location liées au diagnostic de performance énergétique (DPE).",
+              "sources": [
+                {
+                  "title": "Nos propositions (Les Républicains) – livret « Logement »",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-05",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Vote du groupe Droite républicaine pour la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 47 pour, 1 abstention).",
+              "sources": [
+                {
+                  "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_2957",
+                  "date": "2025-07-08",
+                  "kind": "vote"
+                }
+              ]
+            }
+          ]
+        },
+        "sante": {
+          "summary": "LR n'a pas publié de livret programmatique sur la santé à date. Les positions identifiées portent sur la fin de vie, à laquelle Bruno Retailleau et la majorité du groupe se sont opposés.",
+          "measures": [
+            {
+              "text": "Vote majoritaire du groupe Droite républicaine contre la loi sur l'aide à mourir en lecture définitive (scrutin n° 8280 du 15/07/2026 : 41 contre, 5 pour, 2 abstentions).",
+              "sources": [
+                {
+                  "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+                  "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+                  "date": "2026-07-15",
+                  "kind": "vote"
+                }
+              ]
+            },
+            {
+              "text": "Bruno Retailleau a voté contre le texte au Sénat et appelé en mai 2026 à un référendum sur l'aide à mourir.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+                  "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+                  "date": "2026-07-17",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "S'il est élu, il dit vouloir faire « un bilan au bout d'un an » de la loi et envisager de « demander aux Français de trancher par eux-mêmes », sans promettre d'abrogation directe.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+                  "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+                  "date": "2026-07-17",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "education": {
+          "summary": "Le livret école de LR (septembre 2026) propose une revalorisation salariale des enseignants, la fin du collège unique au profit de groupes de niveau et un examen d'entrée en sixième. Il prévoit une instance d'évaluation publique des établissements publics et privés sous contrat.",
+          "measures": [
+            {
+              "text": "Revalorisation du traitement des professeurs : +135 € nets par mois en début de carrière et environ +300 € en milieu de carrière, financée par la baisse démographique (1,7 million d'élèves de moins en dix ans) (Public Sénat rapporte une revalorisation « significative », sans chiffres).",
+              "sources": [
+                {
+                  "title": "Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+                  "date": "2026-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Bruno Retailleau veut « refonder l'école » autour de quatre axes principaux (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux",
+                  "date": "2026-08-31",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Fin du collège unique au profit de groupes de niveau, examen d'entrée en sixième, retour de la note chiffrée et brevet conditionnant l'orientation au lycée.",
+              "sources": [
+                {
+                  "title": "Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+                  "date": "2026-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Bruno Retailleau veut « refonder l'école » autour de quatre axes principaux (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux",
+                  "date": "2026-08-31",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Vacances scolaires ramenées de seize à quatorze semaines et « mille écoles libres » au sein du service public.",
+              "sources": [
+                {
+                  "title": "Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+                  "date": "2026-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Nos propositions (Les Républicains)",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Bruno Retailleau veut « refonder l'école » autour de quatre axes principaux (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-bruno-retailleau-veut-refonder-lecole-autour-de-quatre-axes-principaux",
+                  "date": "2026-08-31",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Création d'une instance nationale d'évaluation, sur le modèle de l'Ofsted britannique, certifiant publiquement chaque établissement public ou privé sous contrat ; uniforme « encouragé » et neutralité étendue aux accompagnateurs de sorties scolaires.",
+              "sources": [
+                {
+                  "title": "Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté (Les Républicains)",
+                  "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+                  "date": "2026-09",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "europe": {
+          "summary": "Bruno Retailleau propose de « redonner la primauté » au droit national, par référendum. LR s'oppose à l'accord UE-Mercosur et son groupe a voté en faveur du soutien à l'Ukraine en 2024.",
+          "measures": [
+            {
+              "text": "Référendum pour donner la priorité au droit national lorsque des intérêts nationaux fondamentaux sont en jeu.",
+              "sources": [
+                {
+                  "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+                  "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+                  "date": "2026-02-12",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Opposition à l'accord UE-Mercosur, jugé « destructeur » par Bruno Retailleau dès 2019 ; vote du groupe pour la déclaration du gouvernement s'y opposant (scrutin n° 456 du 26/11/2024 : 46 pour).",
+              "sources": [
+                {
+                  "title": "Mercosur : un accord « destructeur » et une « capitulation environnementale » dénonce Bruno Retailleau (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/mercosur-un-accord-destructeur-et-une-capitulation-environnementale-denonce-bruno",
+                  "date": "2019-07-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",
+                  "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
+                  "date": "2024-11-26",
+                  "kind": "vote"
+                }
+              ]
+            },
+            {
+              "text": "Soutien à l'Ukraine : vote majoritaire du groupe LR pour l'accord de sécurité franco-ukrainien (vote n° 3461 du 12/03/2024 : 49 pour, 11 abstentions).",
+              "sources": [
+                {
+                  "title": "Déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien – vote n° 3461 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-16/vote_3461",
+                  "date": "2024-03-12",
+                  "kind": "vote"
+                }
+              ]
+            },
+            {
+              "text": "« Acheter européen d'abord » dans la commande publique pour l'intelligence artificielle, et souveraineté française sur le mix énergétique au sein de l'UE (subsidiarité).",
+              "sources": [
+                {
+                  "title": "Nos propositions (Les Républicains) – livrets « IA » et « Électricité »",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-07",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "institutions": {
+          "summary": "Bruno Retailleau veut faire du référendum le principal outil législatif, ce qui suppose d'élargir l'article 11 de la Constitution. LR est opposé à l'introduction de la proportionnelle aux législatives.",
+          "measures": [
+            {
+              "text": "Recours au référendum comme principal outil pour adopter les réformes (immigration, justice pénale, primauté du droit national), avec révision constitutionnelle de l'article 11.",
+              "sources": [
+                {
+                  "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+                  "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+                  "date": "2026-02-12",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "« Ferme opposition à l'introduction de la proportionnelle » (bureau politique du 28/05/2025) ; proposition de loi constitutionnelle d'Alexandre Portier visant à inscrire le scrutin majoritaire à deux tours dans la Constitution.",
+              "sources": [
+                {
+                  "title": "Hostile à la proportionnelle, Bruno Retailleau n'écarte pas une démission du gouvernement (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/hostile-a-la-proportionnelle-bruno-retailleau-necarte-pas-une-demission-du-gouvernement",
+                  "date": "2025-06-02",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Proportionnelle aux législatives : François Bayrou consulte, les avis divergent sur le principe et sur les modalités (LCP)",
+                  "url": "https://lcp.fr/actualites/proportionnelle-aux-legislatives-francois-bayrou-consulte-les-avis-divergent-sur-le",
+                  "date": "2025-04-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Reprendre le contrôle politique sur l'État et ses agences, et simplifier l'État par l'intelligence artificielle.",
+              "sources": [
+                {
+                  "title": "Nos propositions (Les Républicains)",
+                  "url": "https://republicains.fr/nos-propositions/",
+                  "date": "2026-07",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

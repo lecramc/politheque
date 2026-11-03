@@ -1,0 +1,32 @@
+{
+  "auth": {
+    "email_placeholder": "E-mail",
+    "update_button": "Mettre à jour",
+    "loading_button": "Chargement...",
+    "sign-out_button": "Se déconnecter",
+    "error_no_user": "Aucun utilisateur dans la session !",
+    "login_title": "Bienvenue",
+    "login_subtitle": "Connectez-vous pour continuer",
+    "login_with_email": "Recevoir un lien de connexion",
+    "loading_email": "Envoi...",
+    "login_error": "Erreur de connexion. Veuillez réessayer.",
+    "or": "ou",
+    "magic_link_sent_title": "Vous y êtes presque !",
+    "magic_link_sent_body": "Un lien de connexion a été envoyé à votre adresse e-mail. Appuyez sur le lien sur cet appareil pour terminer la connexion.",
+    "resend_email": "Renvoyer le mail"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "theme": {
+      "title": "Thème",
+      "light": "Claire",
+      "dark": "Sombre"
+    },
+    "modal": {
+      "cancel": "Annuler",
+      "confirm": "Confirmer"
+    },
+    "apply": "Appliquer",
+    "error_loading": "Erreur lors du chargement."
+  }
+}

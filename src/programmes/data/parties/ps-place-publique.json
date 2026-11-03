@@ -1,0 +1,1561 @@
+{
+  "id": "ps-place-publique",
+  "name": "Place publique – PS (primaire de la gauche)",
+  "shortName": "PS-PP",
+  "color": "#E4467C",
+  "family": "Centre gauche, social-démocratie",
+  "description": "Raphaël Glucksmann, député européen et cofondateur de Place publique (2018), a remporté le 11 octobre 2026 dès le premier tour la primaire organisée par le Parti socialiste, Place publique et la Gauche républicaine et socialiste (GRS), avec 66,17 % des voix selon Public Sénat et Euronews (66,13 % dans la proclamation initiale reprise par l'AFP), devant Olivier Faure (14,46 % selon Public Sénat). Il est le premier candidat soutenu par le PS à la présidentielle à ne pas être issu de ses rangs ; le PS met à sa disposition ses moyens militants et financiers. Aux européennes de 2024, la liste PS–Place publique « Réveiller l'Europe » qu'il conduisait a obtenu 13,83 % (13 sièges, résultats officiels publiés par le Parlement européen) ; à la présidentielle 2022, la candidate PS Anne Hidalgo avait obtenu 1,75 % (Conseil constitutionnel).",
+  "lastVerified": "2026-11-03",
+  "history": {
+    "founded": "Parti socialiste : 1969 (congrès d'Alfortville), refondé au congrès d'Épinay en 1971, héritier de la SFIO (1905) ; Place publique : 2018",
+    "origins": {
+      "text": "Le Parti socialiste naît, selon Larousse, de la fusion de la SFIO et de divers clubs entre le congrès d'Alfortville (mai 1969) et le congrès d'Épinay (11-13 juin 1971), où François Mitterrand devient premier secrétaire ; le PS présente la SFIO, fondée en 1905 au congrès du Globe, comme son ancêtre. Place publique est fondée à l'automne 2018 par Raphaël Glucksmann, Claire Nouvian, Thomas Porcher et Jo Spiegel, et s'allie au PS dès les européennes de 2019. Pour la présidentielle 2027, le PS, Place publique et la Gauche républicaine et socialiste ont organisé en octobre 2026 une primaire commune, remportée par Raphaël Glucksmann.",
+      "sources": [
+        {
+          "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+          "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Parti socialiste – L'histoire du PS",
+          "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Fondation Jean-Jaurès – « Congrès de l'Unité » à Épinay-sur-Seine (juin 1971) : pour la renaissance du Parti socialiste",
+          "url": "https://www.jean-jaures.org/publication/congres-de-lunite-a-epinay-sur-seine-juin-1971-pour-la-renaissance-du-parti-socialiste/",
+          "date": "2021-06",
+          "kind": "statistique"
+        },
+        {
+          "title": "Wikipédia (en) – Place Publique",
+          "url": "https://en.wikipedia.org/wiki/Place_Publique",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Peut-on savoir ce dont ont besoin les classes populaires sans vivre leur condition ? (premier meeting de Place publique, Montreuil, 15/11/2018)",
+          "url": "https://www.slate.fr/story/170961/place-publique-glucksmann-gilets-jaunes-intellectuels-classes-populaires-comprehension",
+          "date": "2018-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 %",
+          "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
+          "date": "2026-10-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Primaire socialiste : comment la gauche sociale-démocrate va choisir son candidat pour la présidentielle 2027",
+          "url": "https://www.sudradio.fr/sud-radio/primaire-socialiste-comment-la-gauche-sociale-democrate-va-choisir-son-candidat-pour-la-presidentielle-2027",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ideals": [
+      {
+        "text": "Le PS se définit sur son site comme porteur d'un « avenir social, écologique & démocratique » et se réclame du « combat historique pour la justice sociale et le progrès humain » depuis 1905 ; sa déclaration de principes de 2008, la cinquième de son histoire, se réfère au socialisme démocratique.",
+        "sources": [
+          {
+            "title": "Parti socialiste – Site officiel (« Pour un avenir social, écologique & démocratique »)",
+            "url": "https://www.parti-socialiste.fr/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Parti socialiste – Nos valeurs",
+            "url": "https://parti-socialiste.fr/nos-valeurs/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Parti socialiste – Projet de déclaration de principes (23 avril 2008)",
+            "url": "https://www.astrid-online.it/static/upload/protected/PS-d/PS-declaration_principes_23_04_08.pdf",
+            "date": "2008-04-23",
+            "kind": "programme"
+          },
+          {
+            "title": "La déclaration de principes du PS, vous en pensez quoi ?",
+            "url": "https://www.politis.fr/articles/2008/04/la-declaration-de-principes-du-ps-vous-en-pensez-quoi-6127/",
+            "date": "2008-04",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Place publique se définit comme « un parti né des causes et de l'énergie citoyenne », « devenu un parti politique ancré dans les territoires », qui se réclame de « la vieille flamme humaniste française », de la « révolution écologique » et d'une « Europe souveraine ».",
+        "sources": [
+          {
+            "title": "Place publique – Site officiel",
+            "url": "https://place-publique.eu/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Place publique – Le parti",
+            "url": "https://place-publique.eu/pages/73JdS8sbLKotY7BBp1fXdZ/le-parti",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Wikipédia (en) – Place Publique",
+            "url": "https://en.wikipedia.org/wiki/Place_Publique",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Les ouvrages de référence situent le PS à gauche et décrivent son évolution vers la social-démocratie : Larousse s'interroge sur une évolution vers « la social-démocratie version Hollande » et une ligne économique « sociale-libérale » sous Manuel Valls ; le politiste Étienne Schweisguth (CEVIPOF) jugeait en 2007 que le PS « n'a toujours pas choisi de ligne claire ».",
+        "sources": [
+          {
+            "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Le Parti socialiste à l'heure du recentrage",
+            "url": "https://acteurspublics.fr/articles/le-parti-socialiste-a-lheure-du-recentrage/",
+            "date": "2026-11",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Raphaël Glucksmann et Place publique sont généralement présentés par la presse et les encyclopédies comme sociaux-démocrates, au centre gauche.",
+        "sources": [
+          {
+            "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+            "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+            "date": "2025-06-23",
+            "kind": "presse"
+          },
+          {
+            "title": "Centre-left Raphaël Glucksmann announces French presidency bid",
+            "url": "https://www.connexionfrance.com/news/centre-left-raphal-glucksmann-announces-french-presidency-bid/809506",
+            "date": "2026-08",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia (en) – Place Publique",
+            "url": "https://en.wikipedia.org/wiki/Place_Publique",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "1971-06",
+        "event": "Congrès d'Épinay (11-13 juin 1971) : après le congrès d'Alfortville (mai 1969), unification des courants socialistes dans le Parti socialiste ; François Mitterrand en devient premier secrétaire.",
+        "sources": [
+          {
+            "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Parti socialiste – L'histoire du PS",
+            "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Fondation Jean-Jaurès – « Congrès de l'Unité » à Épinay-sur-Seine (juin 1971) : pour la renaissance du Parti socialiste",
+            "url": "https://www.jean-jaures.org/publication/congres-de-lunite-a-epinay-sur-seine-juin-1971-pour-la-renaissance-du-parti-socialiste/",
+            "date": "2021-06",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis – Gauche socialiste en France depuis 1945 : la préparation de la conquête du pouvoir (1971-1981)",
+            "url": "https://www.universalis.fr/encyclopedie/gauche-socialiste-en-france-depuis-1945/2-la-preparation-de-la-conquete-du-pouvoir-1971-1981/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "1981-05-10",
+        "event": "François Mitterrand est élu président de la République au second tour (15 708 262 voix, soit 51,76 % des suffrages exprimés) ; le PS obtient la majorité absolue aux législatives de juin et Pierre Mauroy forme le gouvernement.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis – 10-29 mai 1981 : élection de François Mitterrand à la présidence de la République",
+            "url": "https://www.universalis.fr/evenement/10-29-mai-1981-election-de-francois-mitterrand-a-la-presidence-de-la-republique/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Revue générale de droit – L'élection présidentielle française de 1981 (résultats du second tour : 15 708 262 voix contre 14 642 306)",
+            "url": "https://www.erudit.org/en/revue/rgd/1981/v12/n2/1059413ar.pdf",
+            "date": "1981",
+            "kind": "statistique"
+          },
+          {
+            "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2012-05-06",
+        "event": "François Hollande est élu président de la République avec 18 000 668 voix, soit 51,64 % des suffrages exprimés proclamés par le Conseil constitutionnel (51,63 % selon Larousse, écart d'arrondi) ; le PS obtient ensuite la majorité absolue à l'Assemblée.",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel – Décision n° 2012-154 PDR du 10 mai 2012 (proclamation des résultats de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012154PDR.htm",
+            "date": "2012-05-10",
+            "kind": "statistique"
+          },
+          {
+            "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2018-11",
+        "event": "Fondation de Place publique par Raphaël Glucksmann, Claire Nouvian, Thomas Porcher et Jo Spiegel ; premier meeting à Montreuil mi-novembre 2018.",
+        "sources": [
+          {
+            "title": "Peut-on savoir ce dont ont besoin les classes populaires sans vivre leur condition ? (premier meeting de Place publique, Montreuil, 15/11/2018)",
+            "url": "https://www.slate.fr/story/170961/place-publique-glucksmann-gilets-jaunes-intellectuels-classes-populaires-comprehension",
+            "date": "2018-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia (en) – Place Publique",
+            "url": "https://en.wikipedia.org/wiki/Place_Publique",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Place publique face à une vague de départs de fondateurs déçus",
+            "url": "https://www.publicsenat.fr/actualites/politique/place-publique-face-a-une-vague-de-departs-de-fondateurs-decus-140175",
+            "date": "2019-05",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2019-05-26",
+        "event": "Européennes : la liste commune PS–Place publique conduite par Raphaël Glucksmann obtient 6,19 %.",
+        "sources": [
+          {
+            "title": "Européennes 2024 : des résultats sans surprise en France, avant le grand big bang national",
+            "url": "https://www.slate.fr/story/267145/elections-europeennes-2024-politique-france-bilan-resultats-sans-surprise-rn-bardella-grand-big-bang-dissolution-assemblee-nationale-macron",
+            "date": "2024-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Encyclopædia Universalis – France, l'année politique 2019 : élections européennes, un test pour les partis",
+            "url": "https://www.universalis.fr/encyclopedie/france-l-annee-politique-2019/3-elections-europeennes-un-test-pour-les-partis/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2022-04-10",
+        "event": "Présidentielle : la candidate PS Anne Hidalgo obtient 1,75 % des suffrages exprimés au premier tour (après 6,36 % pour Benoît Hamon en 2017).",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel – Décision n° 2022-195 PDR du 13 avril 2022 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022195PDR.htm",
+            "date": "2022-04-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Premier tour : découvrez les résultats définitifs",
+            "url": "https://lcp.fr/actualites/premier-tour-decouvrez-les-resultats-definitifs-109262",
+            "date": "2022-04-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Conseil constitutionnel – Décision n° 2017-169 PDR du 26 avril 2017 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2017/2017169PDR.htm",
+            "date": "2017-04-26",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-09",
+        "event": "Européennes : la liste PS–Place publique « Réveiller l'Europe » conduite par Raphaël Glucksmann obtient 13,83 % et 13 sièges.",
+        "sources": [
+          {
+            "title": "Parlement européen – Résultats des élections européennes 2024 : France (résultats officiels)",
+            "url": "https://www.results.elections.europa.eu/fr/resultats-nationaux/france/2024-2029/",
+            "date": "2024-06",
+            "kind": "statistique"
+          },
+          {
+            "title": "Datan – Les élections européennes de 2024",
+            "url": "https://datan.fr/elections/europeennes-2024",
+            "date": "2024-06",
+            "kind": "statistique"
+          },
+          {
+            "title": "Retour sur les élections européennes 2024",
+            "url": "https://ufe.org/article-feed/retour-sur-les-elections-europeennes-2024/",
+            "date": "2024-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2026-10-11",
+        "event": "Raphaël Glucksmann remporte dès le premier tour la primaire organisée par le PS, Place publique et la GRS : 66,17 % selon Public Sénat et Euronews (66,13 % dans la proclamation initiale reprise par l'AFP) ; 120 787 votants.",
+        "sources": [
+          {
+            "title": "Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 %",
+            "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
+            "date": "2026-10-11",
+            "kind": "presse"
+          },
+          {
+            "title": "French social democratic primary: Raphaël Glucksmann wins big in first round",
+            "url": "https://www.euronews.com/2026/10/11/french-social-democratic-primary-raphael-glucksmann-wins-big-in-first-round",
+            "date": "2026-10-11",
+            "kind": "presse"
+          },
+          {
+            "title": "France : Glucksmann remporte la primaire sociale-démocrate en vue de la présidentielle 2027 (AFP)",
+            "url": "https://www.leconomistemaghrebin.com/2026/10/12/france-glucksmann-remporte-la-primaire-sociale-democrate-en-vue-de-la-presidentielle-2027/",
+            "date": "2026-10-12",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "whyCreated": {
+      "text": "La filiation remonte à la SFIO, fondée à Paris (salle du Globe) en avril 1905 par la fusion, demandée par le congrès d'Amsterdam de l'Internationale socialiste (1904), du Parti socialiste français de Jean Jaurès, du Parti socialiste de France de Jules Guesde et d'autres organisations ; amputée de sa majorité au congrès de Tours (1920), elle est maintenue par la minorité de Léon Blum. Le Parti socialiste naît de la refondation de la SFIO : aux congrès d'Alfortville (mai 1969) et d'Issy-les-Moulineaux (juillet 1969), la SFIO et l'UCRG d'Alain Savary forment un « nouveau Parti socialiste », puis le congrès d'Épinay (11-13 juin 1971) y intègre la Convention des institutions républicaines de François Mitterrand et des clubs. À Épinay, la motion de synthèse Mitterrand-Mauroy-Defferre-Chevènement (CERES) l'emporte de justesse (51,26 % contre 48,73 % à la motion Savary-Poperen-Mollet) ; elle porte une ligne d'union de la gauche avec le PCF, qui aboutit au Programme commun signé le 27 juin 1972. Place publique est fondée en novembre 2018 par 22 membres fondateurs, dont Raphaël Glucksmann, Claire Nouvian, Thomas Porcher, Jo Spiegel et Diana Filippova, avec l'objectif déclaré de rassembler la gauche ; faute d'accord avec EELV et Génération·s, le mouvement fait liste commune avec le PS aux européennes de 2019, ce qui entraîne plusieurs départs de fondateurs, dont Thomas Porcher.",
+      "sources": [
+        {
+          "title": "Larousse – Encyclopédie : SFIO (Section française de l'Internationale ouvrière)",
+          "url": "https://www.larousse.fr/encyclopedie/divers/wd/144647",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Hérodote.net, « 23-26 avril 1905 : fondation de la SFIO »",
+          "url": "https://www.herodote.net/23_26_avril_1905-evenement-19050426.php",
+          "date": "2026-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+          "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Fondation Jean-Jaurès – « Congrès de l'Unité » à Épinay-sur-Seine (juin 1971) : pour la renaissance du Parti socialiste",
+          "url": "https://www.jean-jaures.org/publication/congres-de-lunite-a-epinay-sur-seine-juin-1971-pour-la-renaissance-du-parti-socialiste/",
+          "date": "2021-06",
+          "kind": "statistique"
+        },
+        {
+          "title": "Public Sénat, « Place publique face à une vague de départs de fondateurs déçus »",
+          "url": "https://www.publicsenat.fr/actualites/politique/place-publique-face-a-une-vague-de-departs-de-fondateurs-decus-140175",
+          "date": "2019-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Wikipédia (en) – Place Publique",
+          "url": "https://en.wikipedia.org/wiki/Place_Publique",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Parti socialiste – L'histoire du PS",
+          "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "figures": [
+      {
+        "name": "Jean Jaurès",
+        "role": "Cofondateur de la SFIO (1905) et fondateur de L'Humanité (1904) ; assassiné en 1914",
+        "background": "Élu député du Tarn en 1885 comme républicain de centre gauche, sans appartenance socialiste, il évolue vers le socialisme au contact des mineurs de Carmaux, dont il défend la grève en 1892. Chef du Parti socialiste français, de tendance réformiste, il devient la figure centrale de la SFIO unifiée, où ses positions l'emportent le plus souvent sur celles de Guesde dès 1906.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Jaurès Jean (1859-1914) »",
+            "url": "https://www.universalis.fr/encyclopedie/jean-jaures/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Hérodote.net, « 23-26 avril 1905 : fondation de la SFIO »",
+            "url": "https://www.herodote.net/23_26_avril_1905-evenement-19050426.php",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipedia (en), « Jean Jaurès »",
+            "url": "https://en.wikipedia.org/wiki/Jean_Jaur%C3%A8s",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Larousse – Encyclopédie : SFIO (Section française de l'Internationale ouvrière)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/wd/144647",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Jules Guesde",
+        "role": "Cofondateur de la SFIO (1905), chef du courant marxiste ; ministre pendant la Première Guerre mondiale",
+        "background": "Républicain devenu socialiste au moment de la Commune, il découvre le marxisme en exil et fonde en 1879 avec Paul Lafargue le Parti ouvrier, d'orientation marxiste, révolutionnaire et collectiviste. À la tête du Parti socialiste de France, il voit sa ligne doctrinale prévaloir lors de l'unification de 1905 ; en 1914, il soutient l'« Union sacrée » et entre au gouvernement.",
+        "sources": [
+          {
+            "title": "Hérodote.net, « Jules Guesde (1845-1922) »",
+            "url": "https://www.herodote.net/Bio/Guesde-biographie-R3Vlc2Rl.php",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Larousse – Encyclopédie : SFIO (Section française de l'Internationale ouvrière)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/wd/144647",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « Décembre 1920 : la scission du congrès de Tours »",
+            "url": "https://www.jean-jaures.org/publication/decembre-1920-la-scission-du-congres-de-tours/",
+            "date": "2020-12",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Léon Blum",
+        "role": "Chef de la minorité restée à la SFIO au congrès de Tours (1920) ; président du Conseil du Front populaire (1936) et en 1946-1947",
+        "background": "Socialiste de la SFIO, il défend à Tours le maintien dans la IIe Internationale (discours « Pour la vieille maison ») contre l'adhésion à l'Internationale communiste, puis dirige le quotidien Le Populaire. Il théorise la distinction entre l'« exercice » du pouvoir dans la société existante et sa « conquête ».",
+        "sources": [
+          {
+            "title": "Larousse – Encyclopédie : SFIO (Section française de l'Internationale ouvrière)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/wd/144647",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « Décembre 1920 : la scission du congrès de Tours »",
+            "url": "https://www.jean-jaures.org/publication/decembre-1920-la-scission-du-congres-de-tours/",
+            "date": "2020-12",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Congrès de Tours »",
+            "url": "https://fr.wikipedia.org/wiki/Congr%C3%A8s_de_Tours",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "François Mitterrand",
+        "role": "Premier secrétaire (1971-1981), président de la République (1981-1995)",
+        "background": "Dans sa jeunesse, il adhère aux Volontaires nationaux, organisation de jeunesse liée aux Croix-de-Feu du colonel de La Rocque (pendant un à trois ans selon les sources), un engagement documenté notamment par Pierre Péan (Une jeunesse française, 1994). Il travaille à Vichy en 1942-1943, notamment au service chargé des prisonniers de guerre, et reçoit la francisque au printemps 1943 (mars ou avril selon les sources) ; son engagement dans la Résistance est établi à partir de 1943, certaines sources le faisant remonter à 1942 ; ministre dès 1947 sous la IVe République, opposant à de Gaulle à partir de 1958, il est le candidat unique de la gauche en 1965. Il rejoint le PS à Épinay en 1971 à la tête de la Convention des institutions républicaines (CIR), qui n'appartenait pas à la SFIO.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Mitterrand François (1916-1996) »",
+            "url": "https://www.universalis.fr/encyclopedie/francois-mitterrand/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipedia (en), « Mitterrand and the far right »",
+            "url": "https://en.wikipedia.org/wiki/Mitterrand_and_the_far_right",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "The New York Review of Books, « Truth and Consequences » (sur Pierre Péan, Une jeunesse française)",
+            "url": "https://www.nybooks.com/articles/1994/11/03/truth-and-consequences/",
+            "date": "1994-11-03",
+            "kind": "presse"
+          },
+          {
+            "title": "Fondation Jean-Jaurès – « Congrès de l'Unité » à Épinay-sur-Seine (juin 1971) : pour la renaissance du Parti socialiste",
+            "url": "https://www.jean-jaures.org/publication/congres-de-lunite-a-epinay-sur-seine-juin-1971-pour-la-renaissance-du-parti-socialiste/",
+            "date": "2021-06",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Lionel Jospin",
+        "role": "Premier secrétaire (1981-1988), Premier ministre de « gauche plurielle » (1997-2002)",
+        "background": "Diplomate issu de l'ENA, il entretient dans les années 1960 des liens avec l'Organisation communiste internationaliste (OCI, trotskiste), qu'il conserve au moins jusqu'à son adhésion au PS en 1971 ; il ne reconnaît publiquement ce passé qu'en 2001. Il succède à Mitterrand à la tête du parti en janvier 1981. Il meurt le 22 mars 2026, à 88 ans.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Jospin Lionel (1937-2026) »",
+            "url": "https://www.universalis.fr/encyclopedie/lionel-jospin/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Paris Match Belgique (AFP), « L'ancien Premier ministre français Lionel Jospin est décédé à l'âge de 88 ans »",
+            "url": "https://www.parismatch.be/actualites/monde/2026/03/23/lancien-premier-ministre-francais-lionel-jospin-est-decede-a-lage-de-88-ans-FXUH7Z2VAZFIJLDX5ITBOJZ5PQ/",
+            "date": "2026-03-23",
+            "kind": "presse"
+          },
+          {
+            "title": "The Irish Times, « Jospin lays the ghost of long past Trotskyism »",
+            "url": "https://www.irishtimes.com/news/jospin-lays-the-ghost-of-long-past-trotskyism-1.311641",
+            "date": "2001-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Olivier Faure",
+        "role": "Premier secrétaire depuis avril 2018 ; candidat à la primaire d'octobre 2026 (2e, environ 14 %)",
+        "background": "Adhérent du PS depuis l'âge de 16 ans, ancien responsable des jeunes rocardiens, il conseille Martine Aubry au ministère du Travail puis est directeur adjoint du cabinet de François Hollande, premier secrétaire, de 2000 à 2007. Député de Seine-et-Marne depuis 2012 et président du groupe socialiste (2016-2018), il engage le PS dans l'alliance avec LFI en 2022 puis dans le Nouveau Front populaire en 2024.",
+        "sources": [
+          {
+            "title": "Wikipedia (en), « Olivier Faure »",
+            "url": "https://en.wikipedia.org/wiki/Olivier_Faure",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, « Olivier Faure bientôt premier secrétaire du Parti socialiste »",
+            "url": "https://www.publicsenat.fr/actualites/politique/olivier-faure-bientot-premier-secretaire-du-parti-socialiste-83738",
+            "date": "2018-03",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % »",
+            "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
+            "date": "2026-10-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Euronews, « French social democratic primary: Raphaël Glucksmann wins big in first round »",
+            "url": "https://www.euronews.com/2026/10/11/french-social-democratic-primary-raphael-glucksmann-wins-big-in-first-round",
+            "date": "2026-10-11",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Raphaël Glucksmann",
+        "role": "Cofondateur de Place publique (2018), tête de liste PS-Place publique aux européennes de 2019 et 2024 ; vainqueur de la primaire d'octobre 2026",
+        "background": "Fils du philosophe André Glucksmann (ancien maoïste), diplômé de Sciences Po, documentariste et essayiste, il est de 2008 ou 2009 (selon les sources) à 2012 conseiller du président géorgien Mikheil Saakachvili, chargé notamment des réformes liées à l'intégration européenne. En 2017, il coécrit un discours de Benoît Hamon avant de fonder Place publique.",
+        "sources": [
+          {
+            "title": "Public Sénat (AFP), « Raphaël Glucksmann, un intellectuel jeté dans le grand bain de la politique »",
+            "url": "https://www.publicsenat.fr/actualites/politique/raphael-glucksmann-un-intellectuel-jete-dans-le-grand-bain-de-la-politique-139254",
+            "date": "2019-03-15",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia (en) – Place Publique",
+            "url": "https://en.wikipedia.org/wiki/Place_Publique",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, « Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % »",
+            "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
+            "date": "2026-10-11",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "thought": [
+      {
+        "text": "Aux origines, la SFIO associe deux traditions : le marxisme révolutionnaire et collectiviste de Jules Guesde, dont la doctrine domine le texte d'unification de 1905, et le socialisme républicain et réformiste de Jean Jaurès, qui l'emporte le plus souvent dans la pratique ; Léon Blum ajoute ensuite la distinction entre « exercice » et « conquête » du pouvoir.",
+        "sources": [
+          {
+            "title": "Larousse – Encyclopédie : SFIO (Section française de l'Internationale ouvrière)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/wd/144647",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Hérodote.net, « 23-26 avril 1905 : fondation de la SFIO »",
+            "url": "https://www.herodote.net/23_26_avril_1905-evenement-19050426.php",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Jaurès Jean (1859-1914) »",
+            "url": "https://www.universalis.fr/encyclopedie/jean-jaures/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "À Épinay (1971), le PS refondé revendique la « rupture avec la société capitaliste » — François Mitterrand déclare que celui qui ne l'accepte pas ne peut être adhérent du parti — et la stratégie d'union de la gauche, matérialisée par le Programme commun avec le PCF (1972).",
+        "sources": [
+          {
+            "title": "Fondation Jean-Jaurès – « Congrès de l'Unité » à Épinay-sur-Seine (juin 1971) : pour la renaissance du Parti socialiste",
+            "url": "https://www.jean-jaures.org/publication/congres-de-lunite-a-epinay-sur-seine-juin-1971-pour-la-renaissance-du-parti-socialiste/",
+            "date": "2021-06",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis – Gauche socialiste en France depuis 1945 : la préparation de la conquête du pouvoir (1971-1981)",
+            "url": "https://www.universalis.fr/encyclopedie/gauche-socialiste-en-france-depuis-1945/2-la-preparation-de-la-conquete-du-pouvoir-1971-1981/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Parti socialiste – L'histoire du PS",
+            "url": "https://parti-socialiste.fr/lhistoire-du-ps/",
+            "date": "2026-11",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "text": "Le « tournant de la rigueur » : après la relance de 1981, le gouvernement opère un premier virage en juin 1982 (blocage des prix et des salaires), puis, en mars 1983, maintient le franc dans le Système monétaire européen avec un plan d'austérité et une politique de « désinflation compétitive ». Lu à l'époque comme un reniement de la doctrine socialiste, il est décrit par certains historiens comme une réorientation plus progressive, amorcée dès 1982.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « France : un siècle de politique économique – le revirement des années 1980 et ses suites »",
+            "url": "https://www.universalis.fr/encyclopedie/france-le-territoire-et-les-hommes-un-siecle-de-politique-economique/4-le-revirement-des-annees-1980-et-ses-suites/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « 1983 : le “tournant” en question »",
+            "url": "https://www.jean-jaures.org/publication/1983-le-tournant-en-question/",
+            "date": "2011-05-02",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Le PS se réfère au « socialisme démocratique » dans sa déclaration de principes de 2008 ; les encyclopédies et politistes décrivent son évolution vers la social-démocratie (« social-démocratie version Hollande », ligne « sociale-libérale » sous Manuel Valls) puis, après l'effondrement de 2017 (6,36 % pour Benoît Hamon), une hésitation persistante entre alliance avec la gauche radicale (NUPES 2022, NFP 2024) et recentrage.",
+        "sources": [
+          {
+            "title": "Parti socialiste – Projet de déclaration de principes (23 avril 2008)",
+            "url": "https://www.astrid-online.it/static/upload/protected/PS-d/PS-declaration_principes_23_04_08.pdf",
+            "date": "2008-04-23",
+            "kind": "programme"
+          },
+          {
+            "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Le Parti socialiste à l'heure du recentrage",
+            "url": "https://acteurspublics.fr/articles/le-parti-socialiste-a-lheure-du-recentrage/",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Conseil constitutionnel – Décision n° 2017-169 PDR du 26 avril 2017 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2017/2017169PDR.htm",
+            "date": "2017-04-26",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipedia (en), « Olivier Faure »",
+            "url": "https://en.wikipedia.org/wiki/Olivier_Faure",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Place publique se définit comme « un parti né des causes et de l'énergie citoyenne », humaniste, écologiste et européen ; la presse et les encyclopédies le classent au centre gauche, dans la famille sociale-démocrate.",
+        "sources": [
+          {
+            "title": "Place publique – Le parti",
+            "url": "https://place-publique.eu/pages/73JdS8sbLKotY7BBp1fXdZ/le-parti",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Wikipédia (en) – Place Publique",
+            "url": "https://en.wikipedia.org/wiki/Place_Publique",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat (AFP), « Raphaël Glucksmann, un intellectuel jeté dans le grand bain de la politique »",
+            "url": "https://www.publicsenat.fr/actualites/politique/raphael-glucksmann-un-intellectuel-jete-dans-le-grand-bain-de-la-politique-139254",
+            "date": "2019-03-15",
+            "kind": "presse"
+          }
+        ]
+      }
+    ]
+  },
+  "stances": {
+    "q01-isf": {
+      "stance": 2,
+      "justification": "A fait de la « taxe Zucman » la « base de tout accord » en 2025 et propose en 2026 de taxer davantage les « méga-héritages ». Le groupe Socialistes a voté pour la taxe Zucman le 31/10/2025 (scrutin n° 3300 : 61 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Taxe Zucman : « la base de tout accord » pour Glucksmann, « une illusion » pour Larcher",
+          "url": "https://www.france24.com/fr/info-en-continu/20250911-taxe-zucman-c-est-non-pour-larcher-la-base-de-tout-accord-pour-glucksmann",
+          "date": "2025-09-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+          "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+          "date": "2026-08-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31/10/2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros »",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q02-depenses": {
+      "stance": null,
+      "justification": "Pas de position publique explicite du candidat identifiée sur la priorité à donner à la baisse des dépenses publiques : il propose des dépenses nouvelles financées par la fiscalité des héritages et la réorientation des aides aux entreprises, sans s'être prononcé sur l'arbitrage dépenses / dette (position précédemment déduite de ses priorités, retirée conformément à la règle 4).",
+      "sources": []
+    },
+    "q03-charges": {
+      "stance": -1,
+      "justification": "A qualifié les aides publiques aux entreprises de « 211 milliards de cadeaux fiscaux ou d'exonération » et annoncé vouloir les réduire et les « réorienter » (franceinfo, 29/09/2026) ; pas de déclaration identifiée sur les impôts de production ou le taux de l'impôt sur les sociétés.",
+      "sources": [
+        {
+          "title": "Que proposent les candidats à la présidentielle pour réduire la dette publique ?",
+          "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html",
+          "date": "2026-09-29",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q04-retraite": {
+      "stance": 1,
+      "justification": "Veut abroger la réforme de 2023 : « On ne pourra pas faire 60 ans, ce sera 62 ans » (débat du 4 octobre 2026) ; il souhaite aussi fonder la réforme sur la pénibilité et a indiqué que certains Français devront travailler plus longtemps, d'où la nuance.",
+      "sources": [
+        {
+          "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+          "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+          "date": "2026-10-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Reculer ou avancer l'âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats",
+          "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites",
+          "date": "2026-09-30",
+          "kind": "presse"
+        },
+        {
+          "title": "Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ?",
+          "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html",
+          "date": "2026-09-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q05-smic": {
+      "stance": 2,
+      "justification": "Promet un SMIC à 1 700 € net par mois (octobre 2026) ; en juin 2025, il proposait déjà de le porter à 1 600 € en deux ans.",
+      "sources": [
+        {
+          "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+          "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+          "date": "2025-06-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q06-chomage": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur les règles de l'assurance chômage ou du RSA.",
+      "sources": []
+    },
+    "q07-immigration": {
+      "stance": null,
+      "justification": "Renvoie la question des niveaux d'immigration à une convention citoyenne ; parle d'une régulation « réaliste et cohérente » sans objectif de baisse ou de hausse.",
+      "sources": [
+        {
+          "title": "Glucksmann veut une convention citoyenne sur l'immigration",
+          "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
+          "date": "2026-05-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q08-preference": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur la « préférence nationale » dans les sources consultées.",
+      "sources": []
+    },
+    "q09-regularisation": {
+      "stance": 2,
+      "justification": "S'est engagé à régulariser les travailleurs sans papiers : « Nous le ferons et ce sera populaire » (débat de la primaire, 4 octobre 2026).",
+      "sources": [
+        {
+          "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+          "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+          "date": "2026-10-05",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q10-peines-planchers": {
+      "stance": -1,
+      "justification": "Pas de déclaration du candidat identifiée. Le groupe Socialistes a voté pour l'amendement de suppression de l'article instaurant une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (forme de peines planchers) dans la proposition de loi « Restaurer l'autorité de l'État » (vote n° 1263 du 03/04/2025 : 5 pour sur 5 députés socialistes votants) ; participation faible et vote sur un amendement, d'où « plutôt défavorable ».",
+      "sources": [
+        {
+          "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1263",
+          "date": "2025-04-03",
+          "kind": "vote"
+        },
+        {
+          "title": "Assemblée nationale – Compte rendu intégral, deuxième séance du jeudi 3 avril 2025",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/deuxieme-seance-du-jeudi-03-avril-2025.pdf",
+          "date": "2025-04-03",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q11-police": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur le contrôle indépendant de la police ou le récépissé.",
+      "sources": []
+    },
+    "q12-nucleaire": {
+      "stance": 1,
+      "justification": "Estime qu'il faut construire de nouveaux EPR, contrairement à Yannick Jadot, chargé de la planification écologique ; il reconnaît que « la question des nouveaux réacteurs nucléaires » reste « à discuter » entre eux (25/08/2026).",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : s'il gagne, Raphaël Glucksmann engagera « les 100 jours de la révolution écologique »",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-gagne-raphael-glucksmann-engagera-les-100-jours-de-la",
+          "date": "2026-08-25",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle : Glucksmann promet « la révolution écologique » dès sa victoire (AFP)",
+          "url": "https://www.linfodurable.fr/presidentielle-glucksmann-promet-la-revolution-ecologique-des-sa-victoire-58691",
+          "date": "2026-08-25",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q13-renouvelables": {
+      "stance": 2,
+      "justification": "Défend le développement des renouvelables (« La France a besoin des deux ») et pointe le retard français ; le programme européen 2024 visait 45 % de renouvelables dans l'UE en 2030.",
+      "sources": [
+        {
+          "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+          "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+          "date": "2026-10-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+          "date": "2024-05",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q14-normes-agricoles": {
+      "stance": -2,
+      "justification": "Le groupe Socialistes a voté unanimement contre la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 0 pour, 65 contre).",
+      "sources": [
+        {
+          "title": "Datan – Vote final, proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (vote n° 2957)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2957",
+          "date": "2025-07-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q15-medecins": {
+      "stance": 1,
+      "justification": "Position du groupe Socialistes, pas du candidat : la proposition de loi Garot (PS) régulant l'installation des médecins a été adoptée le 07/05/2025 avec le vote favorable du groupe (vote n° 1607 : 26 pour, 1 contre). Aucune déclaration de Raphaël Glucksmann sur ce sujet n'a été identifiée.",
+      "sources": [
+        {
+          "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins",
+          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Proposition de loi visant à lutter contre les déserts médicaux, ensemble du texte (vote n° 1607)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q16-fin-de-vie": {
+      "stance": 2,
+      "justification": "Position du groupe Socialistes, pas du candidat : le groupe a voté majoritairement pour la loi en lecture définitive (vote n° 8280 du 15/07/2026 : 57 pour, 4 contre, 6 abstentions), comme en deuxième lecture (25/02/2026 : 60 pour, 4 contre, 3 abstentions). Aucune déclaration de Raphaël Glucksmann sur le maintien de la loi n'a été identifiée.",
+      "sources": [
+        {
+          "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
+          "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
+          "date": "2026-02-25",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q17-ecole-privee": {
+      "stance": 2,
+      "justification": "Propose d'appliquer le principe de mixité sociale à tous les établissements financés par le contribuable, « y compris donc le privé ».",
+      "sources": [
+        {
+          "title": "Glucksmann veut une convention citoyenne sur l'immigration",
+          "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
+          "date": "2026-05-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q18-ukraine": {
+      "stance": 2,
+      "justification": "Veut renforcer l'aide à l'Ukraine, financée par les avoirs publics russes gelés (débat du 4 octobre 2026), mesure déjà inscrite dans le programme européen PS–Place publique de 2024.",
+      "sources": [
+        {
+          "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+          "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+          "date": "2026-10-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste Parti socialiste (PS) – Place publique (PP)",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+          "date": "2024-05",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q19-droit-europeen": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur la primauté du droit français ou européen en cas de conflit.",
+      "sources": []
+    },
+    "q20-defense-europe": {
+      "stance": 2,
+      "justification": "A proposé un fonds de défense européen de 100 Md€ que l'UE « pourrait » financer par un nouvel emprunt commun (programme des européennes 2024).",
+      "sources": [
+        {
+          "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+          "date": "2024-05",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q21-libre-echange": {
+      "stance": 1,
+      "justification": "A salué la saisine de la Cour de justice de l'UE qui suspend la ratification de l'accord UE-Mercosur (21/01/2026) ; son programme européen 2024 demandait d'exclure l'agriculture des accords de libre-échange. Pas de déclaration identifiée depuis l'application provisoire de l'accord (01/05/2026).",
+      "sources": [
+        {
+          "title": "Accord UE-Mercosur : le Parlement européen repousse la ratification du traité en saisissant la Cour de justice de l'UE",
+          "url": "https://www.touteleurope.eu/l-ue-dans-le-monde/accord-ue-mercosur-le-parlement-europeen-repousse-la-ratification-du-traite-en-saisissant-la-cour-de-justice-de-l-ue/",
+          "date": "2026-01-21",
+          "kind": "presse"
+        },
+        {
+          "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+          "date": "2024-05",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q22-vie-republique": {
+      "stance": null,
+      "justification": "Défend la proportionnelle et l'investiture du Premier ministre par l'Assemblée, mais pas de position identifiée sur un changement de Constitution (VIe République).",
+      "sources": []
+    },
+    "q23-referendum": {
+      "stance": null,
+      "justification": "Pas de position identifiée sur un référendum sur l'immigration ; le candidat propose à la place une convention citoyenne dont les conclusions seraient votées par le Parlement.",
+      "sources": []
+    },
+    "q24-proportionnelle": {
+      "stance": 2,
+      "justification": "Défend la proportionnelle aux législatives dans sa « vision pour la France » (juin 2025).",
+      "sources": [
+        {
+          "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+          "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+          "date": "2025-06-23",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "candidacies": {
+    "presidentielle-2027": {
+      "candidateName": "Raphaël Glucksmann",
+      "status": "investi",
+      "statusLabel": "Candidat investi (primaire)",
+      "candidate": "Raphaël Glucksmann (déclaré le 2026-08-23 ; désigné le 2026-10-11 par la primaire organisée par le PS, Place publique et la GRS)",
+      "programmeStatus": "Programme présidentiel 2027 non publié à date (en cours de rédaction, une trentaine de groupes de travail selon franceinfo, 13/10/2026). Fiche fondée sur les déclarations du candidat (2025-2026), son livre « Nous avons encore envie » (mai 2026) tel que rapporté par la presse, le programme européen PS–Place publique 2024 et les votes du groupe Socialistes à l'Assemblée.",
+      "themes": {
+        "economie": {
+          "summary": "Le candidat propose de rééquilibrer la fiscalité entre travail, capital et héritage, en taxant davantage les « méga-héritages » pour financer une hausse du salaire net. Il a défendu en 2025 la « taxe Zucman » et souhaite réorienter les aides publiques aux entreprises.",
+          "measures": [
+            {
+              "text": "Hausse de l'imposition des plus gros héritages (le 1 % le plus élevé, au-delà de 2 M€ selon son porte-parole), chiffrée à 15 Md€ reversés aux salariés via une baisse des prélèvements sur les salaires.",
+              "sources": [
+                {
+                  "title": "Raphaël Glucksmann officialise sa candidature à l'élection présidentielle « pour relever la France »",
+                  "url": "https://www.franceinfo.fr/elections/presidentielle/le-cofondateur-de-place-publique-raphael-glucksmann-officialise-sa-candidature-a-l-election-presidentielle-pour-relever-la-france_8158841.html",
+                  "date": "2026-08-23",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+                  "date": "2026-10-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Réduire et « réorienter » les aides publiques aux entreprises, qu'il évalue à « 211 milliards de cadeaux fiscaux ou d'exonération ».",
+              "sources": [
+                {
+                  "title": "Que proposent les candidats à la présidentielle pour réduire la dette publique ?",
+                  "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html",
+                  "date": "2026-09-29",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Soutien à un impôt plancher sur les très hauts patrimoines (« taxe Zucman »), présenté en septembre 2025 comme « la base de tout accord » de non-censure, modalités ouvertes à discussion.",
+              "sources": [
+                {
+                  "title": "Taxe Zucman : « la base de tout accord » pour Glucksmann, « une illusion » pour Larcher",
+                  "url": "https://www.france24.com/fr/info-en-continu/20250911-taxe-zucman-c-est-non-pour-larcher-la-base-de-tout-accord-pour-glucksmann",
+                  "date": "2025-09-11",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Relocalisation de productions stratégiques (par exemple les panneaux photovoltaïques) pour ne pas dépendre de la Chine.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : s'il gagne, Raphaël Glucksmann engagera « les 100 jours de la révolution écologique »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-gagne-raphael-glucksmann-engagera-les-100-jours-de-la",
+                  "date": "2026-08-25",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "travail": {
+          "summary": "Le candidat met en avant la hausse du salaire net (SMIC, baisse de la CSG) et l'abrogation de la réforme des retraites de 2023, avec une réforme fondée sur la pénibilité.",
+          "measures": [
+            {
+              "text": "Porter le SMIC à 1 700 € net par mois (proposition d'octobre 2026 ; en juin 2025, le candidat évoquait 1 600 € en deux ans).",
+              "sources": [
+                {
+                  "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+                  "date": "2026-10-30",
+                  "kind": "presse"
+                },
+                {
+                  "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+                  "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+                  "date": "2025-06-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Baisser la CSG sur les salaires pour rapprocher le net du brut, financé par la taxation des « méga-héritiers ».",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : ce qu'il faut retenir du débat entre les candidats devant le Medef",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+                  "date": "2026-08-27",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Raphaël Glucksmann officiellement candidat du PS, un « cap clair » et des zones d'ombre",
+                  "url": "https://www.france24.com/fr/france/20261011-rapha%C3%ABl-glucksmann-officiellement-candidat-un-cap-clair-et-des-zones-d-ombre",
+                  "date": "2026-10-11",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Abroger la réforme des retraites de 2023 (« On ne pourra pas faire 60 ans, ce sera 62 ans »), avec une réforme fondée sur la pénibilité et les « parcours hachés » et la création d'un Haut Conseil du pilotage des retraites.",
+              "sources": [
+                {
+                  "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+                  "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+                  "date": "2026-10-05",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Reculer ou avancer l'âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats à l'élection présidentielle sur les retraites",
+                  "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites",
+                  "date": "2026-09-30",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ?",
+                  "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html",
+                  "date": "2026-09-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Rémunération minimale de 1 000 € pour tout stage de plus de deux mois.",
+              "sources": [
+                {
+                  "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+                  "date": "2026-10-30",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "immigration": {
+          "summary": "Le candidat propose de confier le débat migratoire à une convention citoyenne dont les conclusions seraient votées par le Parlement. Il s'est prononcé pour la régularisation des travailleurs sans papiers.",
+          "measures": [
+            {
+              "text": "Organiser une convention citoyenne sur l'immigration, composée de citoyens tirés au sort, dont les propositions seraient soumises au vote du Parlement.",
+              "sources": [
+                {
+                  "title": "Glucksmann veut une convention citoyenne sur l'immigration",
+                  "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
+                  "date": "2026-05-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+                  "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+                  "date": "2026-08-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Régulariser les travailleurs sans papiers : « Nous le ferons et ce sera populaire ».",
+              "sources": [
+                {
+                  "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+                  "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+                  "date": "2026-10-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Appliquer les obligations de quitter le territoire (OQTF), sans objectif chiffré ; une régulation « réaliste et cohérente ».",
+              "sources": [
+                {
+                  "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+                  "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+                  "date": "2026-08-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Soutiens, sondages, programme… Sur quoi s'appuie la candidature de Raphaël Glucksmann",
+                  "url": "https://www.franceinfo.fr/politique/raphael-glucksmann/soutiens-sondages-programme-sur-quoi-s-appuie-la-candidature-de-raphael-glucksmann-qui-lance-sa-campagne-pour-la-presidentielle-2027_8153303.html",
+                  "date": "2026-08-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Programme européen 2024 : relancer les opérations de sauvetage en Méditerranée et mettre fin aux accords d'externalisation du contrôle migratoire vers des pays tiers.",
+              "sources": [
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "securite": {
+          "summary": "Le candidat a peu détaillé ses propositions de sécurité. En novembre 2025, il a mis l'accent sur la lutte contre le narcotrafic et le blanchiment, et sur le rôle des maires.",
+          "measures": [
+            {
+              "text": "Lutter contre le blanchiment de l'argent du narcotrafic, y compris via les cryptomonnaies.",
+              "sources": [
+                {
+                  "title": "Narcotrafic : Raphaël Glucksmann défend « une politique sans naïveté aucune sur la sécurité »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/narcotrafic-raphael-glucksmann-defend-une-politique-sans-naivete-aucune-sur-la-securite",
+                  "date": "2025-11-19",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Laisser aux maires le choix d'armer ou non leur police municipale (« faire confiance aux maires »).",
+              "sources": [
+                {
+                  "title": "Narcotrafic : Raphaël Glucksmann défend « une politique sans naïveté aucune sur la sécurité »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/narcotrafic-raphael-glucksmann-defend-une-politique-sans-naivete-aucune-sur-la-securite",
+                  "date": "2025-11-19",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Encadrer par la loi l'usage de la vidéosurveillance.",
+              "sources": [
+                {
+                  "title": "Narcotrafic : Raphaël Glucksmann défend « une politique sans naïveté aucune sur la sécurité »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/narcotrafic-raphael-glucksmann-defend-une-politique-sans-naivete-aucune-sur-la-securite",
+                  "date": "2025-11-19",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "ecologie": {
+          "summary": "Le candidat place la « révolution écologique » au centre de son projet, avec un plan des « 100 jours » confié à Yannick Jadot et un objectif de sortie de la dépendance au gaz et au pétrole. Il défend à la fois le nucléaire et les renouvelables ; la construction de nouveaux EPR n'est pas tranchée avec Yannick Jadot.",
+          "measures": [
+            {
+              "text": "« Les 100 jours de la révolution écologique » dès l'élection, planifiés par Yannick Jadot, pour sortir de la dépendance au gaz et au pétrole.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : s'il gagne, Raphaël Glucksmann engagera « les 100 jours de la révolution écologique »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-gagne-raphael-glucksmann-engagera-les-100-jours-de-la",
+                  "date": "2026-08-25",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann promet « la révolution écologique » dès sa victoire (AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-promet-la-revolution-ecologique-des-sa-victoire-58691",
+                  "date": "2026-08-25",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Maintien du parc nucléaire et développement des renouvelables (« La France a besoin des deux ») ; favorable à de nouveaux EPR, point « qui reste à discuter » avec Yannick Jadot (25/08/2026).",
+              "sources": [
+                {
+                  "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+                  "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+                  "date": "2026-10-05",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2027 : s'il gagne, Raphaël Glucksmann engagera « les 100 jours de la révolution écologique »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-gagne-raphael-glucksmann-engagera-les-100-jours-de-la",
+                  "date": "2026-08-25",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann promet « la révolution écologique » dès sa victoire (AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-promet-la-revolution-ecologique-des-sa-victoire-58691",
+                  "date": "2026-08-25",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Mettre à disposition un million de véhicules électriques en leasing social pour les ménages modestes (environ 100 € par mois), pour un coût annoncé de 6 Md€.",
+              "sources": [
+                {
+                  "title": "En Seine-Maritime, Glucksmann défend les voitures électriques et la transition écologique",
+                  "url": "https://www.france24.com/fr/info-en-continu/20261002-en-seine-maritime-glucksmann-d%C3%A9fend-les-voitures-%C3%A9lectriques-et-la-transition-%C3%A9cologique",
+                  "date": "2026-10-02",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Programme européen 2024 : au moins 45 % de renouvelables dans le mix de l'UE en 2030 et 75 % en 2040 ; sortie du charbon en 2030, du gaz fossile en 2035 et du pétrole en 2045.",
+              "sources": [
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Programme européen 2024 : aides agricoles conditionnées à des critères environnementaux ou d'emploi, prix planchers et exclusion de l'agriculture des accords de libre-échange.",
+              "sources": [
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "sante": {
+          "summary": "Aucune proposition de santé du candidat n'a été identifiée à date. Les positions ci-dessous sont celles du groupe Socialistes à l'Assemblée (votes) et du programme européen 2024, et non des déclarations du candidat.",
+          "measures": [
+            {
+              "text": "Régulation de l'installation des médecins : proposition de loi transpartisane portée par le député PS Guillaume Garot, adoptée par l'Assemblée le 7 mai 2025 (99 pour, 9 contre, 10 abstentions ; groupe Socialistes : 26 pour, 1 contre).",
+              "sources": [
+                {
+                  "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins",
+                  "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+                  "date": "2025-05-07",
+                  "kind": "vote"
+                },
+                {
+                  "title": "Datan – Proposition de loi visant à lutter contre les déserts médicaux, ensemble du texte (vote n° 1607)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_1607",
+                  "date": "2025-05-07",
+                  "kind": "vote"
+                }
+              ]
+            },
+            {
+              "text": "Aide à mourir : le groupe Socialistes a voté majoritairement pour la loi en lecture définitive (57 pour, 4 contre, 6 abstentions, 15/07/2026).",
+              "sources": [
+                {
+                  "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_8280",
+                  "date": "2026-07-15",
+                  "kind": "vote"
+                },
+                {
+                  "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
+                  "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
+                  "date": "2026-02-25",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Programme européen 2024 : inscrire le droit à l'avortement et à la contraception dans la Charte des droits fondamentaux de l'UE.",
+              "sources": [
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "education": {
+          "summary": "Le candidat propose un « plan de sauvetage de l'école publique » sur cinq ans (salaires des enseignants, effectifs, bâti) et l'extension de l'obligation de mixité sociale à l'enseignement privé sous contrat. Il propose aussi un service civique obligatoire.",
+          "measures": [
+            {
+              "text": "Hausse de 10 % du salaire de tous les enseignants, jusqu'à 25 % selon la carrière, pour un coût annoncé de 6 Md€.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : que proposent les candidats pour l'école ?",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
+                  "date": "2026-08-31",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Baisse du nombre d'élèves par classe en primaire et rénovation du bâti scolaire, dans une loi de programmation sur cinq ans présentée comme le « premier acte » du mandat.",
+              "sources": [
+                {
+                  "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+                  "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+                  "date": "2026-08-24",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+                  "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+                  "date": "2026-10-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Appliquer « le principe de mixité sociale à tous les établissements financés par le contribuable, y compris donc le privé ».",
+              "sources": [
+                {
+                  "title": "Glucksmann veut une convention citoyenne sur l'immigration",
+                  "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
+                  "date": "2026-05-24",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Service civique obligatoire de dix mois et un séjour collectif garanti pour chaque enfant.",
+              "sources": [
+                {
+                  "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+                  "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+                  "date": "2026-08-24",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "europe": {
+          "summary": "Le candidat défend une intégration européenne accrue (fin du droit de veto, emprunt commun pour la défense) et un soutien renforcé à l'Ukraine. Il a soutenu la saisine de la Cour de justice de l'UE sur l'accord UE-Mercosur.",
+          "measures": [
+            {
+              "text": "Renforcer l'aide à l'Ukraine, financée par les avoirs publics russes gelés (le programme européen 2024 proposait d'« utiliser la totalité des 206 milliards » de ces avoirs).",
+              "sources": [
+                {
+                  "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+                  "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+                  "date": "2026-10-05",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Fonds européen de défense de 100 Md€, que l'UE « pourrait » financer par un nouvel emprunt commun (programme des européennes 2024).",
+              "sources": [
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Programme européen 2024 : fin du droit de veto des États au Conseil (politique étrangère, défense, fiscalité) et possibilité d'un droit d'initiative législative pour le Parlement européen.",
+              "sources": [
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Programme européen 2024 : un « Buy European Act » réservant en priorité la commande publique aux productions européennes (défense, industries vertes, numérique).",
+              "sources": [
+                {
+                  "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+                  "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+                  "date": "2024-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Soutien à la saisine de la Cour de justice de l'UE sur l'accord UE-Mercosur, votée par le Parlement européen le 21/01/2026 (« la mobilisation a payé »).",
+              "sources": [
+                {
+                  "title": "Accord UE-Mercosur : le Parlement européen repousse la ratification du traité en saisissant la Cour de justice de l'UE",
+                  "url": "https://www.touteleurope.eu/l-ue-dans-le-monde/accord-ue-mercosur-le-parlement-europeen-repousse-la-ratification-du-traite-en-saisissant-la-cour-de-justice-de-l-ue/",
+                  "date": "2026-01-21",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "institutions": {
+          "summary": "Le candidat défend la proportionnelle aux législatives, l'investiture du Premier ministre par un vote de l'Assemblée et un recours accru aux conventions citoyennes.",
+          "measures": [
+            {
+              "text": "Instaurer la proportionnelle aux élections législatives.",
+              "sources": [
+                {
+                  "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+                  "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+                  "date": "2025-06-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Investiture du Premier ministre par un vote de confiance de l'Assemblée nationale.",
+              "sources": [
+                {
+                  "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+                  "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+                  "date": "2025-06-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Financement des partis par un « fléchage » des fonds publics choisi par chaque contribuable lors de sa déclaration d'impôt.",
+              "sources": [
+                {
+                  "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+                  "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+                  "date": "2025-06-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Convention citoyenne tirée au sort sur l'immigration, dont les propositions seraient débattues et votées par le Parlement.",
+              "sources": [
+                {
+                  "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
+                  "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+                  "date": "2026-08-24",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

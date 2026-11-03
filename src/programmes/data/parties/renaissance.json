@@ -1,0 +1,1409 @@
+{
+  "id": "renaissance",
+  "name": "Renaissance",
+  "shortName": "RE",
+  "color": "#FFD600",
+  "family": "Centre, libéral (bloc central)",
+  "description": "Renaissance est le parti fondé en 2016 sous le nom d'En marche par Emmanuel Macron, dirigé depuis décembre 2024 par Gabriel Attal, ancien Premier ministre (2024) et président du groupe Ensemble pour la République (EPR) à l'Assemblée. Emmanuel Macron avait obtenu 27,85 % au premier tour de la présidentielle 2022 (résultats proclamés par le Conseil constitutionnel ; 27,84 % dans les résultats publiés le 11 avril par le ministère de l'Intérieur) ; aux européennes de 2024, la liste « Besoin d'Europe » conduite par Valérie Hayer (Renaissance, MoDem, Horizons, Parti radical, UDI) a obtenu 14,60 % et 13 sièges (résultats officiels publiés par le Parlement européen). Gabriel Attal a déclaré sa candidature le 22 mai 2026 à Mur-de-Barrez (Aveyron) et a proposé le 28 octobre 2026 une « grande primaire des démocrates ».",
+  "lastVerified": "2026-11-03",
+  "history": {
+    "founded": "2016 (fondé sous le nom En marche), devenu La République en marche (2017) puis Renaissance (2022)",
+    "origins": {
+      "text": "Emmanuel Macron, alors ministre de l'Économie, annonce le 6 avril 2016 à Amiens la création d'« En marche », présenté comme un « mouvement politique nouveau » « pas à droite, pas à gauche ». Devenu La République en marche après l'élection présidentielle de 2017, le mouvement obtient la majorité absolue aux législatives de juin 2017. Le 17 septembre 2022, il se transforme en Renaissance, qui rassemble LREM et deux partis de la majorité, Agir et Territoires de progrès ; Horizons et le MoDem restent des partis distincts.",
+      "sources": [
+        {
+          "title": "Amiens (AFP) – Macron lance « En marche », un mouvement politique nouveau « ni à droite ni à gauche »",
+          "url": "https://www.tendanceouest.com/actualite-135035-amiens-afp-macron-lance-en-marche-un-mouvement-politique-nouveau-ni-a-droite-ni-a-gauche",
+          "date": "2016-04-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Dix ans de Macronie : du « en même temps » à l'impasse",
+          "url": "https://www.politis.fr/articles/2026/04/politique-analyse-dix-ans-de-macronie-du-en-meme-temps-a-limpasse/",
+          "date": "2026-04",
+          "kind": "presse"
+        },
+        {
+          "title": "Encyclopædia Universalis – Renaissance, anc. La République en marche (LRM), parti politique",
+          "url": "https://www.universalis.fr/index/renaissance-anc-la-republique-en-marche-lrm-parti-politique/",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp",
+          "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+          "date": "2022-09-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ideals": [
+      {
+        "text": "À sa fondation, Emmanuel Macron présente En marche comme un « mouvement politique nouveau », « ni de droite ni de gauche », visant à dépasser le clivage gauche-droite.",
+        "sources": [
+          {
+            "title": "Amiens (AFP) – Macron lance « En marche », un mouvement politique nouveau « ni à droite ni à gauche »",
+            "url": "https://www.tendanceouest.com/actualite-135035-amiens-afp-macron-lance-en-marche-un-mouvement-politique-nouveau-ni-a-droite-ni-a-gauche",
+            "date": "2016-04-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Dix ans de Macronie : du « en même temps » à l'impasse",
+            "url": "https://www.politis.fr/articles/2026/04/politique-analyse-dix-ans-de-macronie-du-en-meme-temps-a-limpasse/",
+            "date": "2026-04",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Le parti se définit comme le « parti du dépassement et de l'unité » (congrès fondateur de 2022) et comme un parti « résolument européen » ; sa charte énumère douze valeurs, dont le progrès, le travail, la laïcité, le féminisme, l'Europe, la nation, l'écologie et la liberté.",
+        "sources": [
+          {
+            "title": "Renaissance – Site officiel (charte des valeurs)",
+            "url": "https://parti-renaissance.fr/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Renaissance – Le parti",
+            "url": "https://parti-renaissance.fr/le-parti",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp",
+            "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+            "date": "2022-09-17",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Les analystes classent généralement le parti au centre, comme libéral et pro-européen, certains le situant au centre droit ; une analyse de Yoann Taïeb publiée par La Grande Conversation (revue de Terra Nova, 23/10/2024) décrit Emmanuel Macron comme « un politique inspiré par l'universalisme républicain français et le social-libéralisme européen ».",
+        "sources": [
+          {
+            "title": "La Grande Conversation (Terra Nova) – Macronisme, centrisme et bloc central",
+            "url": "https://www.lagrandeconversation.com/app/uploads/2024/10/macronisme-centrisme-et-bloc-central-la-grande-conversation.pdf",
+            "date": "2024-10",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia (en) – Renaissance (French political party)",
+            "url": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-04-06",
+        "event": "Emmanuel Macron, ministre de l'Économie, lance le mouvement En marche à Amiens.",
+        "sources": [
+          {
+            "title": "Amiens (AFP) – Macron lance « En marche », un mouvement politique nouveau « ni à droite ni à gauche »",
+            "url": "https://www.tendanceouest.com/actualite-135035-amiens-afp-macron-lance-en-marche-un-mouvement-politique-nouveau-ni-a-droite-ni-a-gauche",
+            "date": "2016-04-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Dix ans de Macronie : du « en même temps » à l'impasse",
+            "url": "https://www.politis.fr/articles/2026/04/politique-analyse-dix-ans-de-macronie-du-en-meme-temps-a-limpasse/",
+            "date": "2026-04",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2017-05-07",
+        "event": "Emmanuel Macron, fondateur d'En marche, est élu président de la République (24,01 % au premier tour, 66,10 % au second tour).",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel – Décision n° 2017-169 PDR du 26 avril 2017 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2017/2017169PDR.htm",
+            "date": "2017-04-26",
+            "kind": "statistique"
+          },
+          {
+            "title": "Conseil constitutionnel – Décision n° 2017-171 PDR du 10 mai 2017 (proclamation des résultats de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2017/2017171PDR.htm",
+            "date": "2017-05-10",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis – Renaissance, anc. La République en marche (LRM), parti politique",
+            "url": "https://www.universalis.fr/index/renaissance-anc-la-republique-en-marche-lrm-parti-politique/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2017-06-18",
+        "event": "Législatives : La République en marche obtient la majorité absolue avec 308 sièges sur 577 (350 avec le MoDem).",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis – 11-29 juin 2017 : victoire de La République en marche aux élections législatives",
+            "url": "https://www.universalis.fr/evenement/11-29-juin-2017-victoire-de-la-republique-en-marche-aux-elections-legislatives/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Macron marches on with absolute majority",
+            "url": "https://www.connexionfrance.com/news/macron-marches-on-with-absolute-majority/468711",
+            "date": "2017-06-19",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2022-04-24",
+        "event": "Emmanuel Macron est réélu (27,85 % au premier tour selon le Conseil constitutionnel, 58,55 % au second tour face à Marine Le Pen).",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel – Décision n° 2022-195 PDR du 13 avril 2022 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022195PDR.htm",
+            "date": "2022-04-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Conseil constitutionnel – Décision n° 2022-197 PDR du 27 avril 2022 (proclamation des résultats de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022197PDR.htm",
+            "date": "2022-04-27",
+            "kind": "statistique"
+          },
+          {
+            "title": "Résultats du premier tour des présidentielles 2022 en France et à l'étranger",
+            "url": "https://lepetitjournal.com/expat-politique/actualites/resultats-premier-tour-presidentielles-2022-france-etranger-335450",
+            "date": "2022-04",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2022-09-17",
+        "event": "Congrès fondateur de Renaissance, qui réunit LREM, Agir et Territoires de progrès ; Stéphane Séjourné est secrétaire général, Emmanuel Macron président d'honneur.",
+        "sources": [
+          {
+            "title": "Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp",
+            "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+            "date": "2022-09-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Renaissance – Le parti",
+            "url": "https://parti-renaissance.fr/le-parti",
+            "date": "2026-11",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-09",
+        "event": "Européennes : la liste « Besoin d'Europe » (Renaissance, MoDem, Horizons, Parti radical, UDI) conduite par Valérie Hayer obtient 14,60 % et 13 sièges ; Emmanuel Macron dissout l'Assemblée le soir même.",
+        "sources": [
+          {
+            "title": "Parlement européen – Résultats des élections européennes 2024 : France (résultats officiels)",
+            "url": "https://www.results.elections.europa.eu/fr/resultats-nationaux/france/2024-2029/",
+            "date": "2024-06",
+            "kind": "statistique"
+          },
+          {
+            "title": "Datan – Les élections européennes de 2024",
+            "url": "https://datan.fr/elections/europeennes-2024",
+            "date": "2024-06",
+            "kind": "statistique"
+          },
+          {
+            "title": "Retour sur les élections européennes 2024",
+            "url": "https://ufe.org/article-feed/retour-sur-les-elections-europeennes-2024/",
+            "date": "2024-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2024-12-08",
+        "event": "Gabriel Attal, ancien Premier ministre (janvier-septembre 2024) et président du groupe EPR, est élu secrétaire général de Renaissance, seul candidat après le retrait d'Élisabeth Borne.",
+        "sources": [
+          {
+            "title": "« Je serai toujours libre » : Gabriel Attal s'empare de Renaissance",
+            "url": "https://www.lagazettefrance.fr/article/je-serai-toujours-libre-gabriel-attal-s-empare-de-renaissance",
+            "date": "2024-12-08",
+            "kind": "presse"
+          },
+          {
+            "title": "Renaissance : Gabriel Attal a-t-il déjà plié le match face à Élisabeth Borne pour prendre la tête du parti ?",
+            "url": "https://www.publicsenat.fr/actualites/politique/renaissance-gabriel-attal-a-t-il-deja-plie-le-match-face-a-elisabeth-borne-pour-prendre-la-tete-du-parti",
+            "date": "2024-11",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "event": "Gabriel Attal annonce sa candidature à l'élection présidentielle à Mur-de-Barrez (Aveyron) ; le 28 octobre 2026, il propose une « grande primaire des démocrates ».",
+        "sources": [
+          {
+            "title": "Présidentielle 2027 : Gabriel Attal officialise sa candidature",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721",
+            "date": "2026-05-22",
+            "kind": "presse"
+          },
+          {
+            "title": "Présidentielle 2027 : Gabriel Attal officialise sa candidature en Aveyron",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-gabriel-attal-officialise-sa-candidature-en-aveyron",
+            "date": "2026-05-22",
+            "kind": "presse"
+          },
+          {
+            "title": "Présidentielle 2027 : Gabriel Attal veut une « grande primaire des démocrates »",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-veut-une-grande-primaire-des-democrates-444417",
+            "date": "2026-10-28",
+            "kind": "presse"
+          },
+          {
+            "title": "En France, Gabriel Attal propose d'organiser une primaire des démocrates",
+            "url": "https://www.letemps.ch/monde/en-france-gabriel-attal-propose-d-organiser-une-primaire-des-democrates",
+            "date": "2026-10-28",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "whyCreated": {
+      "text": "Emmanuel Macron, ministre de l'Économie du gouvernement Valls, lance « En marche » le 6 avril 2016 à Amiens, alors que plusieurs de ses positions (35 heures, statut des fonctionnaires) le mettent en porte-à-faux avec une partie de la majorité socialiste. Il le présente comme un « mouvement politique nouveau », « pas à droite, pas à gauche », destiné à dépasser le clivage gauche-droite et à renouveler la vie politique. Il quitte le gouvernement le 30 août 2016 et déclare sa candidature en novembre. Le mouvement, rebaptisé La République en marche après l'élection de 2017, devient Renaissance le 17 septembre 2022 en absorbant deux partis de la majorité, Agir et Territoires de progrès.",
+      "sources": [
+        {
+          "title": "Amiens (AFP) – Macron lance « En marche », un mouvement politique nouveau « ni à droite ni à gauche »",
+          "url": "https://www.tendanceouest.com/actualite-135035-amiens-afp-macron-lance-en-marche-un-mouvement-politique-nouveau-ni-a-droite-ni-a-gauche",
+          "date": "2016-04-06",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP, « L'été d'avant présidentielle : 2016, l'année où Emmanuel Macron s'est mis en marche vers l'Élysée »",
+          "url": "https://lcp.fr/actualites/l-ete-d-avant-presidentielle-2016-l-annee-ou-emmanuel-macron-s-est-mis-en-marche-vers-l",
+          "date": "2021",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp »",
+          "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+          "date": "2022-09-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Encyclopædia Universalis, « Macron Emmanuel (1977- ) »",
+          "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "figures": [
+      {
+        "name": "Emmanuel Macron",
+        "role": "Fondateur d'En marche (2016), président de la République depuis 2017, président d'honneur de Renaissance",
+        "background": "Né en 1977 à Amiens, diplômé de Sciences Po et de l'ENA, il entre à l'Inspection générale des finances en 2004. Membre du Parti socialiste de 2006 à 2009 selon Universalis (Wikipédia indique que la date de fin est contestée), il participe en 2007 aux travaux de la commission Attali, puis devient en 2008 banquier d'affaires chez Rothschild & Cie. Il est ensuite secrétaire général adjoint de l'Élysée auprès de François Hollande (2012-2014), puis ministre de l'Économie, de l'Industrie et du Numérique (août 2014 - août 2016).",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Macron Emmanuel (1977- ) »",
+            "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Élysée – Biographie d'Emmanuel Macron",
+            "url": "https://www.elysee.fr/en/emmanuel-macron",
+            "date": "2026-11",
+            "kind": "declaration"
+          },
+          {
+            "title": "Wikipédia, « Emmanuel Macron »",
+            "url": "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Richard Ferrand",
+        "role": "Secrétaire général d'En marche (2016-2017), président de l'Assemblée nationale (2018-2022) ; président du Conseil constitutionnel depuis mars 2025",
+        "background": "Élu socialiste du Finistère, ancien soutien de Martine Aubry au PS, il est rapporteur de la loi Macron puis, en avril 2016, le premier parlementaire à rejoindre En marche. Mis en examen en septembre 2019 pour prise illégale d'intérêts dans l'affaire des Mutuelles de Bretagne, qu'il dirigeait (location en 2011 de locaux appartenant à sa compagne), il conteste toute irrégularité ; la cour d'appel de Douai constate en mars 2021 la prescription de l'action publique, sans jugement sur le fond.",
+        "sources": [
+          {
+            "title": "Europe 1, « Alliés politiques, proches : qui fait partie de la galaxie Macron ? »",
+            "url": "https://www.europe1.fr/politique/allies-politiques-proches-qui-fait-partie-de-la-galaxie-macron-3322685",
+            "date": "2017-05-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « L'écurie Macron : des strauss-kahniens, chiraquiens, centristes… »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/l-ecurie-macron-des-strauss-kahniens-chiraquiens-centristes-58326",
+            "date": "2017-04-05",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Mutuelles de Bretagne : Ferrand, mis en examen, entend rester à son poste »",
+            "url": "https://www.publicsenat.fr/actualites/politique/mutuelles-de-bretagne-ferrand-mis-en-examen-entend-rester-a-son-poste-145289",
+            "date": "2019-09-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Encyclopædia Universalis, chronologie France 2021 (31 mars 2021)",
+            "url": "https://www.universalis.fr/chronologie/france/2021/15/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "LCP, « Présidence du Conseil constitutionnel : Richard Ferrand nommé, à une voix près »",
+            "url": "https://lcp.fr/actualites/presidence-du-conseil-constitutionnel-richard-ferrand-nomme-a-une-voix-pres-a-l-issue-de",
+            "date": "2025-02",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Ismaël Emelien",
+        "role": "Cofondateur d'En marche, chargé de la stratégie et de la communication (2016-2017), puis conseiller spécial à l'Élysée",
+        "background": "Diplômé de Sciences Po, il participe en 2006 à la campagne de Dominique Strauss-Kahn pour la primaire socialiste, travaille ensuite à la Fondation Jean-Jaurès et à l'agence Euro RSCG. Conseiller stratégique d'Emmanuel Macron à Bercy à partir de 2014, il quitte le ministère fin avril 2016 pour se consacrer au mouvement créé deux semaines plus tôt.",
+        "sources": [
+          {
+            "title": "Europe 1, « Qui est Ismaël Emelien, le très discret stratège de Macron ? »",
+            "url": "https://www.europe1.fr/politique/qui-est-ismael-emelien-le-tres-discret-stratege-de-macron-3325154",
+            "date": "2017-05",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « L'écurie Macron : des strauss-kahniens, chiraquiens, centristes… »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/l-ecurie-macron-des-strauss-kahniens-chiraquiens-centristes-58326",
+            "date": "2017-04-05",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Julien Denormandie",
+        "role": "Secrétaire général adjoint d'En marche (2016-2017), puis ministre (2017-2022)",
+        "background": "Ingénieur, ancien directeur adjoint du cabinet d'Emmanuel Macron au ministère de l'Économie, il rejoint le mouvement à l'été 2016, avant la démission du ministre. Les sources consultées ne lui attribuent pas d'engagement partisan antérieur.",
+        "sources": [
+          {
+            "title": "Europe 1, « Alliés politiques, proches : qui fait partie de la galaxie Macron ? »",
+            "url": "https://www.europe1.fr/politique/allies-politiques-proches-qui-fait-partie-de-la-galaxie-macron-3322685",
+            "date": "2017-05-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « L'écurie Macron : des strauss-kahniens, chiraquiens, centristes… »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/l-ecurie-macron-des-strauss-kahniens-chiraquiens-centristes-58326",
+            "date": "2017-04-05",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Stéphane Séjourné",
+        "role": "Cofondateur d'En marche, secrétaire général de Renaissance (2022-2024) ; vice-président exécutif de la Commission européenne depuis 2024",
+        "background": "Né en 1985, il commence son engagement au Parti socialiste dans la mouvance de Dominique Strauss-Kahn, puis devient conseiller parlementaire d'Emmanuel Macron à Bercy et participe au lancement du mouvement. Conseiller politique à l'Élysée, il est élu député européen en 2019, préside à partir de 2021 le groupe Renew Europe au Parlement européen et devient ministre de l'Europe et des Affaires étrangères en janvier 2024.",
+        "sources": [
+          {
+            "title": "Le Petit Journal, « Qui est Stéphane Séjourné, nouveau ministre de l'Europe et des Affaires étrangères ? »",
+            "url": "https://lepetitjournal.com/expat-politique/actualites/qui-est-stephane-sejourne-nouveau-ministre-de-leurope-et-des-affaires-etrangeres-376583",
+            "date": "2024-01",
+            "kind": "presse"
+          },
+          {
+            "title": "Europe 1, « Alliés politiques, proches : qui fait partie de la galaxie Macron ? »",
+            "url": "https://www.europe1.fr/politique/allies-politiques-proches-qui-fait-partie-de-la-galaxie-macron-3322685",
+            "date": "2017-05-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Commission européenne – Stéphane Séjourné, vice-président exécutif",
+            "url": "https://commission.europa.eu/about-european-commission/organisation-european-commission/college-commissioners/stephane-sejourne_fr",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Gabriel Attal",
+        "role": "Premier ministre (janvier-septembre 2024), secrétaire général de Renaissance depuis décembre 2024",
+        "background": "Il adhère au Parti socialiste en 2006 pour soutenir Ségolène Royal et travaille au cabinet de la ministre de la Santé Marisol Touraine à partir de 2012. Il quitte le PS pour En marche en 2016, est élu député des Hauts-de-Seine en 2017, puis occupe plusieurs fonctions gouvernementales (secrétaire d'État, porte-parole du gouvernement, ministre des Comptes publics puis de l'Éducation nationale) avant de devenir, à 34 ans, le plus jeune Premier ministre de la Ve République.",
+        "sources": [
+          {
+            "title": "Public Sénat, « Nommé à Matignon, Gabriel Attal devient le plus jeune Premier ministre de la Ve République »",
+            "url": "https://www.publicsenat.fr/actualites/politique/nomme-a-matignon-gabriel-attal-devient-le-plus-jeune-premier-ministre-de-la-ve-republique",
+            "date": "2024-01-09",
+            "kind": "presse"
+          },
+          {
+            "title": "The Irish Times, « Gabriel Attal: a rise through the ranks as rapid as Macron's »",
+            "url": "https://www.irishtimes.com/world/europe/2024/01/09/gabriel-attal-a-rise-through-the-ranks-as-rapid-as-macrons",
+            "date": "2024-01-09",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "thought": [
+      {
+        "text": "Le parti revendique depuis sa fondation le « dépassement » du clivage gauche-droite : En marche se présente en 2016 comme « ni de droite ni de gauche », et le congrès de 2022 définit Renaissance comme le « parti du dépassement et de l'unité ». La formule « en même temps », associée au discours d'Emmanuel Macron, est devenue l'emblème de cette démarche.",
+        "sources": [
+          {
+            "title": "Amiens (AFP) – Macron lance « En marche », un mouvement politique nouveau « ni à droite ni à gauche »",
+            "url": "https://www.tendanceouest.com/actualite-135035-amiens-afp-macron-lance-en-marche-un-mouvement-politique-nouveau-ni-a-droite-ni-a-gauche",
+            "date": "2016-04-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Politis, « Dix ans de Macronie : du « en même temps » à l'impasse »",
+            "url": "https://www.politis.fr/articles/2026/04/politique-analyse-dix-ans-de-macronie-du-en-meme-temps-a-limpasse/",
+            "date": "2026-04-15",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp »",
+            "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+            "date": "2022-09-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Corpus (OpenEdition Journals), C. Bouzereau, compte rendu de D. Mayaffre, Macron ou le mystère du verbe",
+            "url": "https://journals.openedition.org/corpus/6759",
+            "date": "2022-02-02",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Le linguiste Damon Mayaffre, dont l'analyse du discours macronien est résumée par la revue Corpus (2022), le situe au croisement de « l'ultra-libéralisme et du social-réformisme » et relève, face au Covid-19, une stratégie de « libéralisme solidaire », expression employée par Emmanuel Macron lui-même le 16 mars 2020. Le parti se présente par ailleurs comme « résolument européen ».",
+        "sources": [
+          {
+            "title": "Corpus (OpenEdition Journals), C. Bouzereau, compte rendu de D. Mayaffre, Macron ou le mystère du verbe",
+            "url": "https://journals.openedition.org/corpus/6759",
+            "date": "2022-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, « Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp »",
+            "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+            "date": "2022-09-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Macron Emmanuel (1977- ) »",
+            "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Renaissance – site officiel (« Renaissance est un parti résolument européen »)",
+            "url": "https://parti-renaissance.fr/",
+            "date": "2026-11",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "text": "La coalition d'origine est composite : la presse de 2017 recense des anciens socialistes (proches de Dominique Strauss-Kahn, de la « deuxième gauche » ou de Martine Aubry), des centristes (alliance avec François Bayrou et le MoDem, resté un parti distinct), d'anciens ministres chiraquiens et quelques élus venus de LR.",
+        "sources": [
+          {
+            "title": "Public Sénat, « L'écurie Macron : des strauss-kahniens, chiraquiens, centristes… »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/l-ecurie-macron-des-strauss-kahniens-chiraquiens-centristes-58326",
+            "date": "2017-04-05",
+            "kind": "presse"
+          },
+          {
+            "title": "Europe 1, « Alliés politiques, proches : qui fait partie de la galaxie Macron ? »",
+            "url": "https://www.europe1.fr/politique/allies-politiques-proches-qui-fait-partie-de-la-galaxie-macron-3322685",
+            "date": "2017-05-07",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Les observateurs décrivent une évolution vers la droite après la perte de la majorité absolue en 2022 : réforme des retraites (âge légal porté à 64 ans) adoptée par l'article 49.3, loi immigration de 2023 votée avec les voix de LR et du RN, abandon partiel de l'ambition de dépasser le clivage gauche-droite selon Universalis ; Politis parle d'un « virage assumé à droite ».",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Macron Emmanuel – La droitisation d'une présidence entravée »",
+            "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/3-la-droitisation-d-une-presidence-entravee/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Politis, « Dix ans de Macronie : du « en même temps » à l'impasse »",
+            "url": "https://www.politis.fr/articles/2026/04/politique-analyse-dix-ans-de-macronie-du-en-meme-temps-a-limpasse/",
+            "date": "2026-04-15",
+            "kind": "presse"
+          }
+        ]
+      }
+    ]
+  },
+  "stances": {
+    "q01-isf": {
+      "stance": -2,
+      "justification": "Promet « aucune hausse d'impôts pendant 5 ans » ; un responsable du groupe EPR qu'il préside a déclaré le 28/10/2025 : « La taxe Zucman, peu importe la version, c'est non ». Le groupe EPR a voté contre la taxe Zucman le 31/10/2025 (scrutin n° 3300 : 0 pour, 60 contre, 3 abstentions).",
+      "sources": [
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Budget 2026 : la taxe Zucman, dans sa version initiale ou remaniée, toujours au cœur du bras de fer budgétaire",
+          "url": "https://lcp.fr/actualites/budget-2026-la-taxe-zucman-dans-sa-version-initiale-ou-remaniee-toujours-au-coeur-du",
+          "date": "2025-10-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31/10/2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros »",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q02-depenses": {
+      "stance": 2,
+      "justification": "Propose 150 Md€ d'économies sur cinq ans et 100 000 postes publics en moins, sans hausse d'impôts.",
+      "sources": [
+        {
+          "title": "Que proposent les candidats à la présidentielle pour réduire la dette publique ?",
+          "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html",
+          "date": "2026-09-29",
+          "kind": "presse"
+        },
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Gabriel Attal propose 100 000 fonctionnaires en moins et « l'impunité zéro » pour les ministres dépensiers",
+          "url": "https://acteurspublics.fr/articles/gabriel-attal-propose-100-000-fonctionnaires-en-moins-et-limpunite-zero-pour-les-ministres-depensiers/",
+          "date": "2026-07-03",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q03-charges": {
+      "stance": 2,
+      "justification": "Fait du retour sur les hausses du coût du travail depuis 2024 son « premier engagement » et propose une baisse des charges compensée par une TVA sociale.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : ce qu'il faut retenir du débat entre les candidats devant le Medef",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q04-retraite": {
+      "stance": -1,
+      "justification": "Propose de supprimer l'âge légal au profit de la durée de cotisation avec décote et surcote, sans retour à 62 ans ; n'a pas précisé d'âge pivot.",
+      "sources": [
+        {
+          "title": "Reculer ou avancer l'âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats",
+          "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites",
+          "date": "2026-09-30",
+          "kind": "presse"
+        },
+        {
+          "title": "Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ?",
+          "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html",
+          "date": "2026-09-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q05-smic": {
+      "stance": null,
+      "justification": "Pas de position identifiée sur un « coup de pouce » au SMIC ; le candidat propose d'augmenter le net par la baisse des charges et un « treizième mois » pour les classes moyennes.",
+      "sources": []
+    },
+    "q06-chomage": {
+      "stance": 2,
+      "justification": "Propose une réforme de l'assurance chômage générant 5 Md€ d'économies et évoque un « durcissement » des règles pour financer la baisse des charges.",
+      "sources": [
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q07-immigration": {
+      "stance": 1,
+      "justification": "Propose un système à points, des quotas révisés tous les deux ans et un durcissement du regroupement familial, sans objectif chiffré de réduction.",
+      "sources": [
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q08-preference": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur la « préférence nationale » dans les sources consultées.",
+      "sources": []
+    },
+    "q09-regularisation": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur la régularisation des travailleurs sans papiers dans les métiers en tension.",
+      "sources": []
+    },
+    "q10-peines-planchers": {
+      "stance": 1,
+      "justification": "Pas de déclaration du candidat identifiée. Le groupe EPR a voté contre l'amendement de suppression de l'article instaurant une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (forme de peines planchers) dans la proposition de loi Horizons « Restaurer l'autorité de l'État » (vote n° 1263 du 03/04/2025 : 6 contre sur 6 députés EPR votants) ; participation faible et vote sur un amendement, d'où « plutôt favorable ».",
+      "sources": [
+        {
+          "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1263",
+          "date": "2025-04-03",
+          "kind": "vote"
+        },
+        {
+          "title": "Assemblée nationale – Compte rendu intégral, deuxième séance du jeudi 3 avril 2025",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/seance/session-ordinaire-de-2024-2025/deuxieme-seance-du-jeudi-03-avril-2025.pdf",
+          "date": "2025-04-03",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q11-police": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur le contrôle indépendant de la police ou le récépissé.",
+      "sources": []
+    },
+    "q12-nucleaire": {
+      "stance": 2,
+      "justification": "Comme Premier ministre, a proposé en juin 2024 la mise en chantier de 14 nouveaux réacteurs ; défend en 2025 un mix nucléaire-renouvelables. Aucune déclaration de 2026 sur le nombre de réacteurs n'a été vérifiée sur une source primaire : les 96 mesures publiées sur attalpresident.fr ne mentionnent pas les réacteurs (seulement la fusion nucléaire).",
+      "sources": [
+        {
+          "title": "Législatives anticipées : que proposent les trois blocs sur l'écologie ?",
+          "url": "https://www.publicsenat.fr/actualites/politique/legislatives-anticipees-que-proposent-les-trois-blocs-sur-lecologie",
+          "date": "2024-06-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Attal propose une « nouvelle donne » écologique en même temps qu'économique",
+          "url": "https://www.france24.com/fr/info-en-continu/20250721-attal-propose-une-nouvelle-donne-%C3%A9cologique-en-m%C3%AAme-temps-qu-%C3%A9conomique",
+          "date": "2025-07-21",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q13-renouvelables": {
+      "stance": 1,
+      "justification": "Défend un mix entre nucléaire et renouvelables (juillet 2025), sans objectif chiffré d'accélération identifié.",
+      "sources": [
+        {
+          "title": "Attal propose une « nouvelle donne » écologique en même temps qu'économique",
+          "url": "https://www.france24.com/fr/info-en-continu/20250721-attal-propose-une-nouvelle-donne-%C3%A9cologique-en-m%C3%AAme-temps-qu-%C3%A9conomique",
+          "date": "2025-07-21",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q14-normes-agricoles": {
+      "stance": 2,
+      "justification": "Gabriel Attal et la majorité du groupe EPR ont voté pour la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 64 pour, 14 contre, 10 abstentions).",
+      "sources": [
+        {
+          "title": "Datan – Vote final, proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (vote n° 2957)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2957",
+          "date": "2025-07-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q15-medecins": {
+      "stance": null,
+      "justification": "Groupe divisé : lors du vote de la proposition de loi Garot (07/05/2025, vote n° 1607), les députés EPR présents se sont partagés à égalité (4 pour, 4 contre) ; pas de position du candidat identifiée.",
+      "sources": [
+        {
+          "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins",
+          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Proposition de loi visant à lutter contre les déserts médicaux, ensemble du texte (vote n° 1607)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q16-fin-de-vie": {
+      "stance": 2,
+      "justification": "Gabriel Attal a voté pour la loi en lecture définitive, comme la majorité du groupe EPR (vote n° 8280 du 15/07/2026 : 64 pour, 18 contre, 9 abstentions ; en deuxième lecture le 25/02/2026 : 64 pour, 14 contre, 9 abstentions) ; aucune intention d'abrogation identifiée.",
+      "sources": [
+        {
+          "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
+          "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
+          "date": "2026-02-25",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q17-ecole-privee": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur le financement ou la mixité sociale de l'enseignement privé sous contrat.",
+      "sources": []
+    },
+    "q18-ukraine": {
+      "stance": 2,
+      "justification": "Défend la poursuite de l'aide à l'Ukraine et critique la proposition de Marine Le Pen d'y mettre fin (octobre 2026).",
+      "sources": [
+        {
+          "title": "Le RN a « toujours défendu les intérêts de la Russie » (Gabriel Attal)",
+          "url": "https://www.franceinfo.fr/politique/le-rn-a-toujours-defendu-les-interets-de-la-russie-gabriel-attal_8238646.html",
+          "date": "2026-10-15",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q19-droit-europeen": {
+      "stance": null,
+      "justification": "Pas de position publique du candidat identifiée sur la primauté du droit français ou européen.",
+      "sources": []
+    },
+    "q20-defense-europe": {
+      "stance": null,
+      "justification": "Propose une préférence européenne et un « dôme de fer » européen, mais pas de position identifiée sur un endettement commun de l'UE.",
+      "sources": []
+    },
+    "q21-libre-echange": {
+      "stance": 2,
+      "justification": "Son programme inscrit le « refus du traité Mercosur » et des clauses miroirs dans tous les accords commerciaux.",
+      "sources": [
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q22-vie-republique": {
+      "stance": -1,
+      "justification": "Ne propose pas de VIe République : il appelle à « une Ve République du XXIe siècle » (Arras, 21/09/2025) et à une réforme constitutionnelle « profonde » pour « mieux partager le pouvoir » (01/09/2026), présentée comme « la plus grande réforme institutionnelle depuis 1958 » (référendum annuel, moins de parlementaires). Maintien de la Ve République avec réformes, d'où « plutôt défavorable » à un changement de Constitution.",
+      "sources": [
+        {
+          "title": "En meeting à Arras, Gabriel Attal appelle à une « Ve République du XXIe siècle »",
+          "url": "https://www.franceinfo.fr/politique/gabriel-attal/en-meeting-a-arras-gabriel-attal-appelle-a-une-ve-republique-du-21e-siecle_7505410.html",
+          "date": "2025-09-21",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : « Il faut une réforme constitutionnelle profonde, pour mieux partager le pouvoir », défend Gabriel Attal",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-il-faut-une-reforme-constitutionnelle-profonde-pour-mieux-partager-le-pouvoir-defend-gabriel-attal-au-20-heures-de-france-2_8172656.html",
+          "date": "2026-09-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
+          "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
+          "date": "2026-08-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q23-referendum": {
+      "stance": null,
+      "justification": "Propose une journée référendaire annuelle sans en préciser les thèmes ; pas de position datée et vérifiée identifiée sur un référendum consacré à l'immigration.",
+      "sources": []
+    },
+    "q24-proportionnelle": {
+      "stance": 1,
+      "justification": "S'est dit favorable « à titre personnel » à la proportionnelle en juin 2025, sans engager le groupe EPR, dont plusieurs députés redoutaient « une perte de stabilité » (Europe 1). Aucune déclaration plus récente identifiée ; ses propositions institutionnelles de 2026 (référendum annuel, réduction du nombre de parlementaires) ne mentionnent pas le mode de scrutin.",
+      "sources": [
+        {
+          "title": "Proportionnelle : François Bayrou annonce un texte avant la fin de l'année, un projet qui divise le socle commun",
+          "url": "https://www.europe1.fr/politique/proportionnelle-francois-bayrou-annonce-un-texte-avant-la-fin-de-lannee-un-projet-qui-divise-le-socle-commun-761497",
+          "date": "2025-06-29",
+          "kind": "presse"
+        },
+        {
+          "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
+          "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
+          "date": "2026-08-02",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "candidacies": {
+    "presidentielle-2027": {
+      "candidateName": "Gabriel Attal",
+      "status": "declare",
+      "statusLabel": "Candidat déclaré",
+      "candidate": "Gabriel Attal (déclaré le 2026-05-22)",
+      "programmeStatus": "Pas de programme complet chiffré à date ; le site de campagne attalpresident.fr présente 96 mesures (« chantiers capitaux »). Fiche fondée sur ces mesures, les déclarations du candidat (2025-2026) et les votes du groupe EPR, avec mention de la date quand la position est antérieure à 2026.",
+      "themes": {
+        "economie": {
+          "summary": "Le candidat vise un déficit sous 3 % avant 2032 sans hausse d'impôts, par 150 Md€ d'économies sur cinq ans, et une baisse du coût du travail. Il propose un investissement de 200 Md€ dans l'intelligence artificielle.",
+          "measures": [
+            {
+              "text": "Ramener le déficit public sous 3 % avant 2032, sans aucune hausse d'impôts pendant cinq ans.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Plan de 150 Md€ d'économies sur cinq ans (assurance chômage, retraites, « plan de départs volontaires dans nos administrations », simplification territoriale).",
+              "sources": [
+                {
+                  "title": "Que proposent les candidats à la présidentielle pour réduire la dette publique ?",
+                  "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html",
+                  "date": "2026-09-29",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Gabriel Attal propose 100 000 fonctionnaires en moins et « l'impunité zéro » pour les ministres dépensiers",
+                  "url": "https://acteurspublics.fr/articles/gabriel-attal-propose-100-000-fonctionnaires-en-moins-et-limpunite-zero-pour-les-ministres-depensiers/",
+                  "date": "2026-07-03",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "100 000 postes en moins dans l'État et les collectivités et suppression d'un échelon de collectivité.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Gabriel Attal propose 100 000 fonctionnaires en moins et « l'impunité zéro » pour les ministres dépensiers",
+                  "url": "https://acteurspublics.fr/articles/gabriel-attal-propose-100-000-fonctionnaires-en-moins-et-limpunite-zero-pour-les-ministres-depensiers/",
+                  "date": "2026-07-03",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Revenir sur les hausses du coût du travail décidées depuis 2024 (« premier engagement ») ; baisse des charges compensée par une TVA sociale ou un durcissement de l'assurance chômage.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : ce qu'il faut retenir du débat entre les candidats devant le Medef",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
+                  "date": "2026-08-27",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+                  "date": "2026-10-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Investir 200 Md€ dans l'intelligence artificielle et adopter une loi de programmation économique, fiscale et énergétique sur dix ans.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "travail": {
+          "summary": "Le candidat propose de supprimer l'âge légal de départ en retraite au profit de la seule durée de cotisation, d'ajouter un pilier de capitalisation et de remplacer le Code du travail par une « Constitution du travail ».",
+          "measures": [
+            {
+              "text": "Supprimer l'âge légal de départ : seule la durée de cotisation compterait, avec « une vraie décote si vous partez tôt, une vraie surcote si vous partez tard », dans un « nouveau système universel » à points.",
+              "sources": [
+                {
+                  "title": "Reculer ou avancer l'âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats",
+                  "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites",
+                  "date": "2026-09-30",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ?",
+                  "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html",
+                  "date": "2026-09-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Ajouter une part de capitalisation aux retraites (piste évoquée : 1 000 € versés par l'État pour chaque nouveau-né ; moitié de l'intéressement fléchée vers l'épargne retraite).",
+              "sources": [
+                {
+                  "title": "Que proposent les principaux candidats à l'élection présidentielle pour les retraites ?",
+                  "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html",
+                  "date": "2026-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Remplacer le Code du travail par une « Constitution du travail » rédigée avec les partenaires sociaux, « structurée autour de quelques articles fondamentaux ».",
+              "sources": [
+                {
+                  "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+                  "date": "2026-10-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Réformer l'assurance chômage pour 5 Md€ d'économies.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Un « treizième mois » pour les classes moyennes qui travaillent (« Droit au brut ») et l'extension de l'intéressement aux petites structures.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "immigration": {
+          "summary": "Le candidat propose une immigration choisie par un système à points et des quotas, ainsi qu'un durcissement du regroupement familial.",
+          "measures": [
+            {
+              "text": "Instaurer un système à points pour l'immigration.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Définir des quotas migratoires révisés tous les deux ans.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Durcir les règles du regroupement familial.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "securite": {
+          "summary": "Le candidat met l'accent sur la justice des mineurs, la protection de l'enfance et les moyens de la justice. Il est l'auteur de la loi de 2025 visant à « renforcer l'autorité de la justice à l'égard des mineurs délinquants et de leurs parents », « largement censurée » par le Conseil constitutionnel le 19 juin 2025 (dont la comparution immédiate des mineurs).",
+          "measures": [
+            {
+              "text": "Instaurer la comparution immédiate pour les mineurs. La mesure figurait déjà, pour les plus de 16 ans récidivistes, dans sa proposition de loi de 2025, mais le Conseil constitutionnel l'a censurée le 19 juin 2025.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Délinquance des mineurs : que contient la proposition de loi de Gabriel Attal ?",
+                  "url": "https://lcp.fr/actualites/delinquance-des-mineurs-que-contient-la-proposition-de-loi-de-gabriel-attal-que-le",
+                  "date": "2025-05-12",
+                  "kind": "proposition-de-loi"
+                },
+                {
+                  "title": "Public Sénat, « Justice des mineurs : le Conseil constitutionnel censure largement le texte Attal, notamment la dérogation de l'excuse de minorité »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/justice-des-mineurs-le-conseil-constitutionnel-censure-largement-le-texte-attal-notamment-la-derogation-de-lexcuse-de-minorite",
+                  "date": "2025-06-19",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Recruter 3 000 magistrats et greffiers.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Perpétuité réelle pour les prédateurs sexuels en série, imprescriptibilité des crimes sexuels sur mineurs et création d'un parquet national dédié à la pédocriminalité.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Gens du voyage : création d'un délit de maintien illicite, amendes majorées et saisie des véhicules en cas d'occupation illégale.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "ecologie": {
+          "summary": "Le candidat veut « concilier écologie et économie », défend un mix nucléaire-renouvelables et propose des mesures sur l'eau, les véhicules électriques et des prix planchers agricoles. Il rejette l'accord UE-Mercosur.",
+          "measures": [
+            {
+              "text": "Mix nucléaire et renouvelables, avec « les trois quarts » de l'énergie produits en France (2025) ; en 2024, il avait proposé la mise en chantier de 14 nouveaux réacteurs.",
+              "sources": [
+                {
+                  "title": "Attal propose une « nouvelle donne » écologique en même temps qu'économique",
+                  "url": "https://www.france24.com/fr/info-en-continu/20250721-attal-propose-une-nouvelle-donne-%C3%A9cologique-en-m%C3%AAme-temps-qu-%C3%A9conomique",
+                  "date": "2025-07-21",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Législatives anticipées : que proposent les trois blocs sur l'écologie ?",
+                  "url": "https://www.publicsenat.fr/actualites/politique/legislatives-anticipees-que-proposent-les-trois-blocs-sur-lecologie",
+                  "date": "2024-06-20",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "TVA à 5,5 % pendant cinq ans sur l'achat d'un véhicule électrique et leasing social étendu aux véhicules d'occasion.",
+              "sources": [
+                {
+                  "title": "Attal, en déplacement à Bordeaux, veut concilier « écologie » et « économie »",
+                  "url": "https://www.france24.com/fr/info-en-continu/20260505-attal-en-d%C3%A9placement-%C3%A0-bordeaux-veut-concilier-%C3%A9cologie-et-%C3%A9conomie",
+                  "date": "2026-05-05",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Créer un ministère de l'Eau, un bouclier tarifaire sur le prix de l'eau, réparer les 500 réseaux les plus vétustes et dépister automatiquement les PFAS dans les captages.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Agriculture : prix planchers indexés sur les coûts de production, clauses miroirs dans tous les accords commerciaux.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Garantir la stabilité des prix de l'électricité sur cinq ans et multiplier par cinq les capacités de géoénergie d'ici 2035.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "sante": {
+          "summary": "Les propositions de santé publiées à date sont peu nombreuses. Le candidat a voté pour la loi sur l'aide à mourir.",
+          "measures": [
+            {
+              "text": "Un assistant médical fondé sur l'IA pour chaque Français.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Équilibrer les comptes de la Sécurité sociale.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Aide à mourir : Gabriel Attal et la majorité du groupe EPR ont voté pour la loi en lecture définitive (64 pour, 18 contre, 9 abstentions, 15/07/2026).",
+              "sources": [
+                {
+                  "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_8280",
+                  "date": "2026-07-15",
+                  "kind": "vote"
+                },
+                {
+                  "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
+                  "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
+                  "date": "2026-02-25",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "education": {
+          "summary": "L'école est un thème central du candidat, ancien ministre de l'Éducation nationale : hausse des salaires des enseignants, classes de moins de 20 élèves en primaire, retour du redoublement et d'un certificat d'études.",
+          "measures": [
+            {
+              "text": "Revalorisation de 200 à 500 € nets par mois des enseignants (milieu de carrière), pour un coût évalué par son équipe à 2,5 Md€.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : que proposent les candidats pour l'école ?",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
+                  "date": "2026-08-31",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Passer sous 20 élèves par classe en primaire en profitant de la baisse démographique.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : que proposent les candidats pour l'école ?",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
+                  "date": "2026-08-31",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Rétablir le redoublement, un certificat d'études en fin de CM2 et les groupes de niveau au collège.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Un seul ministre de l'Éducation pendant cinq ans ; conseil de discipline dès l'école primaire et barème national des sanctions.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Un tuteur numérique souverain et gratuit pour chaque élève et la maîtrise de l'IA intégrée aux savoirs fondamentaux.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "europe": {
+          "summary": "Le candidat soutient l'aide à l'Ukraine et propose une préférence européenne dans la défense et une politique commune de l'IA. Il refuse l'accord UE-Mercosur.",
+          "measures": [
+            {
+              "text": "Poursuite du soutien à l'Ukraine ; critique de l'annonce de Marine Le Pen d'arrêter l'aide six mois après une élection.",
+              "sources": [
+                {
+                  "title": "Le RN a « toujours défendu les intérêts de la Russie » (Gabriel Attal)",
+                  "url": "https://www.franceinfo.fr/politique/le-rn-a-toujours-defendu-les-interets-de-la-russie-gabriel-attal_8238646.html",
+                  "date": "2026-10-15",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Préférence européenne dans la commande publique de défense, « dôme de fer » européen contre missiles et drones, fonds d'investissement pour les PME de défense.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Politique européenne commune de l'IA et multiplication par sept de la puissance de calcul européenne.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Refus du traité UE-Mercosur.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "institutions": {
+          "summary": "Le candidat appelle à une « Ve République du XXIe siècle » et à une « réforme constitutionnelle profonde, pour mieux partager le pouvoir », avec des référendums réguliers et moins de parlementaires.",
+          "measures": [
+            {
+              "text": "Réforme constitutionnelle « pour mieux partager le pouvoir », notamment avec les collectivités territoriales.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : « Il faut une réforme constitutionnelle profonde, pour mieux partager le pouvoir », défend Gabriel Attal",
+                  "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-il-faut-une-reforme-constitutionnelle-profonde-pour-mieux-partager-le-pouvoir-defend-gabriel-attal-au-20-heures-de-france-2_8172656.html",
+                  "date": "2026-09-01",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
+                  "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
+                  "date": "2026-08-02",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Une journée référendaire par an et des référendums locaux facilités.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
+                  "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
+                  "date": "2026-08-02",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Réduire le nombre de parlementaires (577 à 350 députés et 348 à 200 sénateurs selon la proposition détaillée en 2026) et inscrire dans la Constitution un principe de « non-régression sociétale » (2025).",
+              "sources": [
+                {
+                  "title": "En meeting à Arras, Gabriel Attal appelle à une « Ve République du XXIe siècle »",
+                  "url": "https://www.franceinfo.fr/politique/gabriel-attal/en-meeting-a-arras-gabriel-attal-appelle-a-une-ve-republique-du-21e-siecle_7505410.html",
+                  "date": "2025-09-21",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
+                  "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
+                  "date": "2026-08-02",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "« Faire du maire l'élu le plus puissant de France » et réformer les nominations aux hautes fonctions de l'État.",
+              "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

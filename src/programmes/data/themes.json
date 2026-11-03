@@ -1,0 +1,622 @@
+[
+  {
+    "id": "economie",
+    "title": "Économie, impôts et dette",
+    "icon": "cash-outline",
+    "context": "Ce thème couvre la fiscalité (impôts des ménages et des entreprises), le niveau de la dépense publique et la trajectoire de la dette. La France a un déficit public parmi les plus élevés de la zone euro et une dette qui augmente depuis plusieurs années. Les règles budgétaires européennes demandent de ramener le déficit sous 3 % du PIB. Les débats portent sur la manière de réduire le déficit : baisser les dépenses, augmenter certains impôts (par exemple sur les hauts patrimoines ou les grandes entreprises), ou miser sur la croissance. La répartition de l'effort entre ménages, entreprises, retraités et collectivités est au cœur des désaccords.",
+    "keyFigures": [
+      {
+        "label": "Dette publique (fin du 2e trimestre 2026)",
+        "value": "119,0 % du PIB (3 595,5 Md€)",
+        "source": {
+          "title": "Insee – Dette trimestrielle de Maastricht des administrations publiques, 2e trimestre 2026",
+          "url": "https://www.insee.fr/fr/statistiques/9053525",
+          "date": "2026-09-29",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Déficit public (2025)",
+        "value": "5,1 % du PIB (5,8 % en 2024)",
+        "source": {
+          "title": "Insee – Comptes nationaux des administrations publiques : premiers résultats, année 2025",
+          "url": "https://www.insee.fr/fr/statistiques/8956575",
+          "date": "2026-03-27",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Taux de prélèvements obligatoires (2025)",
+        "value": "43,6 % du PIB (42,8 % en 2024)",
+        "source": {
+          "title": "Insee – Comptes nationaux des administrations publiques : premiers résultats, année 2025",
+          "url": "https://www.insee.fr/fr/statistiques/8956575",
+          "date": "2026-03-27",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Dépenses publiques (2025)",
+        "value": "57,3 % du PIB",
+        "source": {
+          "title": "Insee Première n° 2106 – Le compte des administrations publiques en 2025",
+          "url": "https://www.insee.fr/fr/statistiques/8997691",
+          "date": "2026-05-29",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Comment réduire le déficit public ?",
+        "options": [
+          "Principalement par une baisse des dépenses publiques",
+          "Principalement par de nouvelles recettes fiscales",
+          "Par un mélange de baisses de dépenses et de hausses d'impôts",
+          "En étalant l'effort dans le temps pour préserver la croissance"
+        ]
+      },
+      {
+        "question": "Faut-il taxer davantage les très hauts patrimoines ?",
+        "options": [
+          "Oui, par un impôt minimum sur les très grandes fortunes (type « taxe Zucman »)",
+          "Oui, en rétablissant un impôt sur la fortune (ISF)",
+          "Non, en conservant l'impôt sur la fortune immobilière (IFI) actuel",
+          "Non, et en allégeant la fiscalité du capital"
+        ]
+      },
+      {
+        "question": "Quelle fiscalité pour les entreprises ?",
+        "options": [
+          "Baisser les impôts de production et les cotisations patronales",
+          "Conditionner les aides publiques à des engagements (emploi, investissement, climat)",
+          "Augmenter la contribution des grandes entreprises les plus profitables"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "travail",
+    "title": "Travail, salaires et retraites",
+    "icon": "briefcase-outline",
+    "context": "Ce thème regroupe l'emploi, les salaires (dont le SMIC), l'assurance chômage, le RSA et le système de retraites. La réforme de 2023 a prévu de porter progressivement l'âge légal de départ de 62 à 64 ans ; la loi de financement de la Sécurité sociale pour 2026 a suspendu ce relèvement, l'âge restant fixé à 62 ans et 9 mois jusqu'au 1er janvier 2028. Le système de retraite par répartition dépend du rapport entre actifs et retraités, qui se dégrade avec le vieillissement de la population. Les règles de l'assurance chômage ont été resserrées à plusieurs reprises depuis 2019, en dernier lieu pour les ruptures conventionnelles en 2026. Le chômage est reparti à la hausse depuis 2025, ce qui alimente les débats sur le pouvoir d'achat et l'emploi.",
+    "keyFigures": [
+      {
+        "label": "Taux de chômage au sens du BIT (2e trimestre 2026)",
+        "value": "8,3 % de la population active (2,7 millions de personnes)",
+        "source": {
+          "title": "Insee – Informations rapides : chômage au sens du BIT, 2e trimestre 2026",
+          "url": "https://www.insee.fr/fr/statistiques/9032359",
+          "date": "2026-08-07",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "SMIC brut mensuel (35 h, depuis le 1er juin 2026)",
+        "value": "1 867,02 € (12,31 € brut de l'heure)",
+        "source": {
+          "title": "Info.gouv.fr – Le SMIC revalorisé le 1er juin 2026",
+          "url": "https://www.info.gouv.fr/actualite/le-smic-revalorise-le-1er-juin-2026",
+          "date": "2026-05-13",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Dépenses de retraite (2023)",
+        "value": "Environ 370 Md€, soit 13,1 % du PIB",
+        "source": {
+          "title": "DREES – Les retraités et les retraites, édition 2025",
+          "url": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-documents-de-reference/250731_PANORAMAS-retraites",
+          "date": "2025-07-31",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Âge légal de départ après la suspension de la réforme",
+        "value": "62 ans et 9 mois, gelé jusqu'au 1er janvier 2028",
+        "source": {
+          "title": "OFCE – Note sur la suspension de la réforme des retraites (LFSS 2026)",
+          "url": "https://www.ofce.sciences-po.fr/blog2024/fr/2026/20260129_MD/20260129_MD.fr.pdf",
+          "date": "2026-01-29",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Quel âge légal de départ à la retraite ?",
+        "options": [
+          "Revenir à 62 ans, voire 60 ans",
+          "Maintenir la réforme de 2023 (64 ans) après la suspension",
+          "Aller au-delà de 64 ans ou allonger la durée de cotisation",
+          "Passer à un système par points ou introduire une part de capitalisation"
+        ]
+      },
+      {
+        "question": "Comment augmenter les salaires ?",
+        "options": [
+          "Par une hausse du SMIC décidée par l'État",
+          "Par une baisse des cotisations salariales pour augmenter le net",
+          "Par la négociation de branche et l'indexation des salaires sur les prix",
+          "Par l'intéressement, la participation et le partage de la valeur"
+        ]
+      },
+      {
+        "question": "Quelles règles pour l'assurance chômage et le RSA ?",
+        "options": [
+          "Durcir les conditions (durée d'indemnisation, contreparties)",
+          "Maintenir les règles actuelles",
+          "Revenir sur les réformes récentes et élargir les droits"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "immigration",
+    "title": "Immigration",
+    "icon": "earth-outline",
+    "context": "Ce thème porte sur l'immigration légale (titres de séjour pour études, famille, travail ou motifs humanitaires), l'asile, l'immigration irrégulière et l'intégration. Le cadre a été modifié par la loi du 26 janvier 2024, dont une partie a été censurée par le Conseil constitutionnel, puis par une circulaire de janvier 2025 restreignant les régularisations. Le nombre de premiers titres de séjour a augmenté en 2025, notamment pour motifs humanitaires. Une partie de l'encadrement relève du droit européen (pacte asile et migration, convention européenne des droits de l'homme). Les débats portent sur le niveau d'immigration souhaitable, les besoins de main-d'œuvre, l'exécution des mesures d'éloignement et l'accès des étrangers aux prestations sociales.",
+    "keyFigures": [
+      {
+        "label": "Premiers titres de séjour délivrés (2025)",
+        "value": "384 230 (+11 % par rapport à 2024 ; données provisoires publiées en janvier 2026)",
+        "source": {
+          "title": "Ministère de l'Intérieur (DGEF) – Les titres de séjour en 2025",
+          "url": "https://www.immigration.interieur.gouv.fr/documentation/etudes-et-statistiques/titres-de-sejour-en-2025-protections-subsidiaires-ont-plus-que-double.html",
+          "date": "2026-01-27",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Personnes immigrées vivant en France (2024)",
+        "value": "7,7 millions, soit 11,3 % de la population",
+        "source": {
+          "title": "Insee Première n° 2076 – En 2024, 6,0 millions d'étrangers vivent en France",
+          "url": "https://www.insee.fr/fr/statistiques/8651304",
+          "date": "2025-10-07",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Demandes d'asile introduites à l'OFPRA (2025)",
+        "value": "145 270 (-5,5 % par rapport à 2024)",
+        "source": {
+          "title": "EUAA – OFPRA publishes its annual report for 2025",
+          "url": "https://dip.euaa.europa.eu/node/13714",
+          "date": "2026-07-27",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Quel niveau d'immigration légale ?",
+        "options": [
+          "Réduire fortement (regroupement familial, titres étudiants, quotas)",
+          "Maintenir le niveau actuel en le pilotant selon les besoins économiques",
+          "Faciliter l'accueil et la régularisation des personnes déjà présentes"
+        ]
+      },
+      {
+        "question": "Faut-il réserver certaines prestations aux nationaux ?",
+        "options": [
+          "Oui, par une « préférence nationale » inscrite dans la Constitution",
+          "Oui, en exigeant une durée de résidence plus longue avant l'accès aux aides",
+          "Non, au nom du principe d'égalité de traitement"
+        ]
+      },
+      {
+        "question": "Comment traiter l'immigration irrégulière ?",
+        "options": [
+          "Augmenter les expulsions et conditionner les visas aux pays qui reprennent leurs ressortissants",
+          "Renforcer la coopération européenne aux frontières extérieures",
+          "Régulariser les travailleurs dans les métiers qui recrutent difficilement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "securite",
+    "title": "Sécurité et justice",
+    "icon": "shield-outline",
+    "context": "Ce thème couvre la délinquance, la police et la gendarmerie, le fonctionnement de la justice et la politique pénale, y compris les prisons. Les statistiques du ministère de l'Intérieur montrent des évolutions contrastées selon les infractions : hausse des violences physiques et sexuelles enregistrées en 2025, stabilité des homicides. La population carcérale atteint des niveaux record, avec une forte surpopulation dans les maisons d'arrêt. Les débats opposent souvent le renforcement des sanctions (peines minimales, construction de places de prison) à la prévention, aux alternatives à l'incarcération et au contrôle de l'action policière. Les moyens de la justice et les délais de jugement sont également discutés.",
+    "keyFigures": [
+      {
+        "label": "Personnes détenues (1er juillet 2026)",
+        "value": "89 500, dont 1 500 dans les collectivités d'outre-mer (+5,2 % sur un an)",
+        "source": {
+          "title": "Ministère de la Justice (SSER) – Infos rapides Justice n° 42 : au 1er juillet 2026, +5,2 % de personnes détenues sur un an",
+          "url": "https://www.justice.gouv.fr/documentation/etudes-et-statistiques/au-1er-juillet-2026-52-personnes-detenues",
+          "date": "2026-07-16",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Victimes de violences physiques enregistrées (2025)",
+        "value": "473 000 (+5 % sur un an)",
+        "source": {
+          "title": "Ministère de l'Intérieur (SSMSI) – Victimes de violences physiques et sexuelles enregistrées en hausse en 2025",
+          "url": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/victimes-de-violences-physiques-et-sexuelles-enregistrees-en-hausse-en-2025-en-particulier-pour",
+          "date": "2026-07",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Victimes de violences sexuelles enregistrées (2025)",
+        "value": "132 300 (+8 % sur un an)",
+        "source": {
+          "title": "Ministère de l'Intérieur (SSMSI) – Victimes de violences physiques et sexuelles enregistrées en hausse en 2025",
+          "url": "https://www.interieur.gouv.fr/actualites/communiques-de-presse/victimes-de-violences-physiques-et-sexuelles-enregistrees-en-hausse-en-2025-en-particulier-pour",
+          "date": "2026-07",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Budget du ministère de la Justice (projet de loi de finances 2026, hors pensions)",
+        "value": "Environ 10,6 Md€ (+3,8 %)",
+        "source": {
+          "title": "Assemblée nationale – Rapport sur le projet de loi de finances pour 2026, mission Justice",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/rapports/cion_fin/l17b1996-tiii-a29_rapport-fond.pdf",
+          "date": "2025-10",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Quelle réponse pénale ?",
+        "options": [
+          "Rétablir des peines minimales (peines planchers) et construire davantage de places de prison",
+          "Développer les alternatives à la prison (travail d'intérêt général, bracelet électronique)",
+          "Donner la priorité à la rapidité des jugements et aux moyens de la justice"
+        ]
+      },
+      {
+        "question": "Comment encadrer l'action de la police ?",
+        "options": [
+          "Renforcer les moyens et la protection juridique des forces de l'ordre",
+          "Conserver le contrôle actuel par les inspections (IGPN, IGGN)",
+          "Créer un organe de contrôle indépendant du ministère de l'Intérieur et instaurer un récépissé lors des contrôles d'identité"
+        ]
+      },
+      {
+        "question": "Quelle politique face au trafic de drogue ?",
+        "options": [
+          "Durcir la répression des trafiquants et des consommateurs",
+          "Légaliser et encadrer le cannabis",
+          "Concentrer les moyens sur les réseaux et la prévention"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ecologie",
+    "title": "Écologie et énergie",
+    "icon": "leaf-outline",
+    "context": "Ce thème concerne la lutte contre le changement climatique, la production d'énergie, l'agriculture et la protection de la biodiversité. La France s'est engagée à atteindre la neutralité carbone en 2050 ; ses émissions continuent de baisser (-1,5 % en 2025 selon une estimation du Citepa), mais moins vite que les quelque 5 % par an nécessaires pour atteindre l'objectif de 2030. L'électricité française est très majoritairement bas carbone grâce au nucléaire, et la programmation pluriannuelle de l'énergie adoptée en février 2026 prévoit six nouveaux réacteurs EPR2. La France est en retard sur son objectif légal d'énergies renouvelables (23 % de la consommation finale en 2024, pour 33 % visés en 2030). Les débats portent sur la répartition entre nucléaire et renouvelables, le coût de la transition pour les ménages et les entreprises, et le niveau des normes environnementales, notamment agricoles.",
+    "keyFigures": [
+      {
+        "label": "Émissions de gaz à effet de serre (2025, estimation d'avril 2026)",
+        "value": "Environ 364 Mt CO₂e (-1,5 % sur un an)",
+        "source": {
+          "title": "Citepa – Baromètre des émissions, communiqué d'avril 2026",
+          "url": "https://www.citepa.org/wp-content/uploads/2026/04/CP-Citepa_Barometre_avril2026.pdf",
+          "date": "2026-04",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Part du nucléaire dans la production d'électricité (2025)",
+        "value": "Environ 68 % (373 TWh) ; 95,2 % d'électricité bas carbone (nucléaire et renouvelables)",
+        "source": {
+          "title": "RTE – Bilan électrique 2025, principaux résultats",
+          "url": "https://analysesetdonnees.rte-france.com/bilan-electrique-2025/synthese",
+          "date": "2026-02-25",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Part des renouvelables dans la consommation finale brute d'énergie (2024)",
+        "value": "23,0 % (objectif légal : 33 % en 2030)",
+        "source": {
+          "title": "SDES – Les énergies renouvelables en France en 2024 (suivi de la directive UE 2018/2001)",
+          "url": "https://www.statistiques.developpement-durable.gouv.fr/les-energies-renouvelables-en-france-en-2024-dans-le-cadre-du-suivi-de-la-directive-ue-20182001",
+          "date": "2025",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Quel mix électrique pour l'avenir ?",
+        "options": [
+          "Priorité au nucléaire, avec de nouveaux réacteurs et un frein à l'éolien",
+          "Nucléaire et renouvelables développés en parallèle",
+          "Sortie progressive du nucléaire et 100 % renouvelables à terme"
+        ]
+      },
+      {
+        "question": "Quelles règles pour l'agriculture ?",
+        "options": [
+          "Alléger les normes environnementales et réautoriser certains pesticides",
+          "Maintenir les normes et mieux protéger les agriculteurs de la concurrence étrangère",
+          "Renforcer la transition agroécologique avec des aides dédiées"
+        ]
+      },
+      {
+        "question": "Comment financer la transition écologique ?",
+        "options": [
+          "Par une fiscalité écologique (taxe carbone, taxation des gros émetteurs)",
+          "Par l'investissement public et l'endettement",
+          "Par des incitations et des normes plutôt que par de nouvelles taxes"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sante",
+    "title": "Santé et fin de vie",
+    "icon": "medkit-outline",
+    "context": "Ce thème couvre l'accès aux soins, l'hôpital, le financement de l'Assurance maladie et les questions de fin de vie. Plusieurs millions de personnes n'ont pas de médecin traitant et une partie du territoire est qualifiée de « désert médical ». La Sécurité sociale est en déficit, ce qui pèse sur les choix de remboursement et de financement de l'hôpital. Une loi créant un droit à l'aide à mourir a été adoptée définitivement en juillet 2026 et validée sous réserves par le Conseil constitutionnel en août 2026, aux côtés d'une loi sur les soins palliatifs. Les débats portent sur la régulation de l'installation des médecins, le reste à charge des patients, les moyens de l'hôpital et la mise en œuvre ou la remise en cause de la loi sur la fin de vie.",
+    "keyFigures": [
+      {
+        "label": "Espérance de vie à la naissance (2025)",
+        "value": "85,9 ans pour les femmes, 80,3 ans pour les hommes",
+        "source": {
+          "title": "Insee Première n° 2087 – Bilan démographique 2025",
+          "url": "https://www.insee.fr/fr/statistiques/8721209",
+          "date": "2026-01",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Consommation de soins et de biens médicaux (2024)",
+        "value": "255 Md€",
+        "source": {
+          "title": "DREES – Les dépenses de santé en 2024, résultats des comptes de la santé, édition 2025",
+          "url": "https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse-infographie-documents-de-reference/250930-Panorama-depenses-de-sante",
+          "date": "2025-09-30",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Déficit de la Sécurité sociale (2025)",
+        "value": "21,6 Md€ (15,3 Md€ en 2024)",
+        "source": {
+          "title": "Sénat – Avis sur le projet de loi d'approbation des comptes de la Sécurité sociale 2025 (synthèse)",
+          "url": "https://www.senat.fr/rap/a25-747/a25-747-syn.pdf",
+          "date": "2026",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Comment lutter contre les déserts médicaux ?",
+        "options": [
+          "Réguler l'installation des médecins dans les zones déjà bien dotées",
+          "Développer les incitations financières et les maisons de santé",
+          "Former davantage de médecins et élargir les compétences des autres soignants"
+        ]
+      },
+      {
+        "question": "Quelle position sur la loi relative à l'aide à mourir ?",
+        "options": [
+          "La maintenir et l'appliquer telle qu'adoptée",
+          "La compléter ou en élargir les conditions",
+          "La restreindre ou l'abroger en privilégiant les soins palliatifs"
+        ]
+      },
+      {
+        "question": "Comment financer l'Assurance maladie ?",
+        "options": [
+          "Maîtriser les dépenses (franchises, déremboursements, efficience)",
+          "Augmenter les recettes (cotisations, CSG, taxes comportementales)",
+          "Réduire la place des complémentaires au profit d'une prise en charge publique"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "education",
+    "title": "Éducation",
+    "icon": "school-outline",
+    "context": "Ce thème couvre l'école, le collège, le lycée, l'enseignement supérieur et la place de l'enseignement privé. Les évaluations internationales (PISA) montrent une baisse du niveau des élèves français en mathématiques depuis 2012, comme dans de nombreux pays de l'OCDE. Le nombre d'élèves diminue sous l'effet de la baisse des naissances, ce qui pose la question des moyens et des fermetures de classes. L'enseignement privé sous contrat, financé majoritairement par l'État, scolarise une part importante des élèves et fait l'objet de débats sur la mixité sociale. Les autres sujets récurrents sont l'attractivité du métier d'enseignant, l'uniforme, les groupes de niveau et l'orientation.",
+    "keyFigures": [
+      {
+        "label": "Dépense intérieure d'éducation (2024)",
+        "value": "197,1 Md€, soit 6,8 % du PIB",
+        "source": {
+          "title": "DEPP – En 2024, 197,1 milliards d'euros consacrés à l'éducation, soit 6,8 % du PIB",
+          "url": "https://www.education.gouv.fr/depp/en-2024-1971-milliards-d-euros-consacres-l-education-soit-68-du-pib-452853",
+          "date": "2025-09",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Score PISA en mathématiques (2022)",
+        "value": "474 points (495 en 2012 ; moyenne OCDE : 472)",
+        "source": {
+          "title": "DEPP – PISA 2022 : la France ne fait pas exception à la baisse généralisée des performances en culture mathématique",
+          "url": "https://www.education.gouv.fr/pisa-2022-la-france-ne-fait-pas-exception-la-baisse-generalisee-des-performances-en-culture-380205",
+          "date": "2023-12",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Élèves du premier degré (rentrée 2025)",
+        "value": "6,155 millions",
+        "source": {
+          "title": "Ministère de l'Éducation nationale – Les effectifs dans le premier degré à la rentrée 2025",
+          "url": "https://www.education.gouv.fr/les-effectifs-dans-le-premier-degre-6155-millions-d-eleves-scolarises-la-rentree-2025-451624",
+          "date": "2025",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Quelle place pour l'enseignement privé sous contrat ?",
+        "options": [
+          "Conditionner son financement à des objectifs de mixité sociale",
+          "Maintenir le cadre actuel de la loi Debré (1959)",
+          "Étendre la liberté de choix des familles (chèque éducation)"
+        ]
+      },
+      {
+        "question": "Quelles priorités pédagogiques ?",
+        "options": [
+          "Recentrer sur les savoirs fondamentaux et l'autorité (groupes de niveau, uniforme)",
+          "Réduire les effectifs par classe et renforcer l'accompagnement",
+          "Donner plus d'autonomie aux établissements"
+        ]
+      },
+      {
+        "question": "Comment rendre le métier d'enseignant plus attractif ?",
+        "options": [
+          "Revaloriser les salaires de manière générale",
+          "Lier une partie de la rémunération à des missions supplémentaires",
+          "Réformer la formation et le recrutement"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "europe",
+    "title": "Europe, défense et international",
+    "icon": "flag-outline",
+    "context": "Ce thème couvre la place de la France dans l'Union européenne, la défense, le soutien à l'Ukraine et la politique commerciale. Depuis l'invasion de l'Ukraine par la Russie en 2022, la France et ses partenaires augmentent leurs budgets militaires, et l'UE a créé en 2025 un instrument de prêts pour la défense (SAFE). L'accord commercial UE-Mercosur, signé en janvier 2026 malgré le vote contre de la France, s'applique provisoirement depuis le 1er mai 2026, tandis que la Cour de justice de l'UE doit rendre un avis sur sa compatibilité avec les traités. Les débats portent sur le degré d'intégration européenne souhaitable, le rapport entre droit national et droit européen, le financement commun de la défense et le libre-échange.",
+    "keyFigures": [
+      {
+        "label": "Budget des armées (projet de loi de finances 2026, hors pensions)",
+        "value": "57,1 Md€ (+6,7 Md€ par rapport à 2025)",
+        "source": {
+          "title": "Sénat – Rapport sur le projet de loi de finances pour 2026, mission Défense (synthèse)",
+          "url": "https://www.senat.fr/rap/l25-139-38/l25-139-38-syn.pdf",
+          "date": "2025-11",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Dépenses militaires de la France (2025, SIPRI)",
+        "value": "68,0 Md$ (+1,5 % sur un an)",
+        "source": {
+          "title": "SIPRI – Communiqué : dépenses militaires mondiales en 2025",
+          "url": "https://www.sipri.org/sites/default/files/2026%20Milex%20PR%20FRE.pdf",
+          "date": "2026-04-27",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Contribution de la France au budget de l'UE (2026, prévision)",
+        "value": "Environ 28,8 Md€",
+        "source": {
+          "title": "Sénat – Commission des finances, PLF 2026, mission Affaires européennes (L'essentiel)",
+          "url": "https://www.senat.fr/fileadmin/cru-1762483659/Commissions/Finances/2025-2026/PLF_2026/Essentiel/Mission_Affaires_europeennes_Essentiel_post-commission.pdf",
+          "date": "2025-11",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Prêt européen SAFE accordé à la France",
+        "value": "Jusqu'à 15,1 Md€ (sur 150 Md€ au total pour l'UE) ; prêt approuvé en avril 2026",
+        "source": {
+          "title": "Conseil de l'UE – SAFE : feu vert définitif à l'aide financière à la Tchéquie et à la France (communiqué)",
+          "url": "https://www.consilium.europa.eu/it/press/press-releases/2026/04/10/safe-final-green-light-for-financial-assistance-to-czechia-and-france/",
+          "date": "2026-04-10",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Quelle relation entre la France et l'Union européenne ?",
+        "options": [
+          "Renforcer l'intégration (budget commun, décisions à la majorité)",
+          "Rester dans l'UE en rapatriant certaines compétences et en faisant primer le droit national",
+          "Renégocier les traités, voire « désobéir » à certaines règles européennes"
+        ]
+      },
+      {
+        "question": "Comment financer la défense européenne ?",
+        "options": [
+          "Par un endettement commun de l'UE",
+          "Par les budgets nationaux, sans mutualisation",
+          "Par une préférence européenne dans les achats d'armement"
+        ]
+      },
+      {
+        "question": "Quelle politique commerciale ?",
+        "options": [
+          "Rejeter les accords de libre-échange de type Mercosur",
+          "Accepter ces accords avec des clauses miroirs (normes sanitaires et environnementales)",
+          "Poursuivre l'ouverture commerciale pour soutenir les exportations"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "institutions",
+    "title": "Institutions et démocratie",
+    "icon": "business-outline",
+    "context": "Ce thème concerne le fonctionnement de la Ve République, le mode d'élection des députés, le référendum et la participation des citoyens. Depuis la dissolution de juin 2024, aucune force politique ne dispose de la majorité absolue à l'Assemblée nationale. Un gouvernement a été renversé par une motion de censure en décembre 2024, pour la première fois depuis 1962, et plusieurs Premiers ministres se sont succédé. Le recours à l'article 49.3 pour faire adopter les budgets reste fréquent. La confiance des Français envers les partis et les institutions nationales est faible selon les enquêtes. Les débats portent sur le mode de scrutin, les pouvoirs du président, le référendum d'initiative citoyenne et un éventuel changement de Constitution.",
+    "keyFigures": [
+      {
+        "label": "Participation au 1er tour des législatives (juin 2024)",
+        "value": "66,71 % (47,5 % en 2022)",
+        "source": {
+          "title": "LCP – Législatives 2024 : les résultats définitifs du 1er tour",
+          "url": "https://lcp.fr/actualites/legislatives-2024-les-resultats-definitifs-du-1er-tour-le-rn-et-ses-allies-en-tete",
+          "date": "2024-07-01",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Motion de censure adoptée contre le gouvernement Barnier",
+        "value": "331 voix le 4 décembre 2024 (majorité requise : 288)",
+        "source": {
+          "title": "Vie-publique.fr – Motion de censure du gouvernement de Michel Barnier",
+          "url": "https://www.vie-publique.fr/node/296487",
+          "date": "2024-12-05",
+          "kind": "statistique"
+        }
+      },
+      {
+        "label": "Confiance déclarée dans les partis politiques (2026)",
+        "value": "15 % des Français",
+        "source": {
+          "title": "Sciences Po CEVIPOF – Baromètre de la confiance politique 2026 (vague 17)",
+          "url": "https://www.sciencespo.fr/cevipof/fr/actualites/barometre-de-la-confiance-politique-cevipof-2026-la-confiance-s-effondre-en-politique-la-proximite-fait-figure-de-refuge/",
+          "date": "2026-02-09",
+          "kind": "statistique"
+        }
+      }
+    ],
+    "debates": [
+      {
+        "question": "Quel mode de scrutin pour les législatives ?",
+        "options": [
+          "Conserver le scrutin majoritaire à deux tours",
+          "Introduire une dose de proportionnelle",
+          "Passer à la proportionnelle intégrale"
+        ]
+      },
+      {
+        "question": "Faut-il changer la Constitution ?",
+        "options": [
+          "Passer à une VIe République avec moins de pouvoirs pour le président",
+          "Conserver la Ve République avec des ajustements",
+          "Élargir le champ du référendum (immigration, initiative citoyenne)"
+        ]
+      },
+      {
+        "question": "Quelle place pour la participation directe des citoyens ?",
+        "options": [
+          "Créer un référendum d'initiative citoyenne (RIC)",
+          "Développer les conventions citoyennes tirées au sort",
+          "Privilégier la démocratie représentative existante"
+        ]
+      }
+    ]
+  }
+]

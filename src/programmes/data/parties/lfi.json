@@ -1,0 +1,1700 @@
+{
+  "id": "lfi",
+  "name": "La France insoumise",
+  "shortName": "LFI",
+  "color": "#CC2443",
+  "family": "Gauche radicale (gauche populiste selon une partie des politistes)",
+  "description": "Mouvement fondé en 2016 autour de Jean-Luc Mélenchon, coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel). Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP de la 17e législature (Datan).",
+  "lastVerified": "2026-11-03",
+  "history": {
+    "founded": "2016 (lancée le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; association de financement créée en janvier 2017)",
+    "origins": {
+      "text": "La France insoumise est lancée en février 2016 par Jean-Luc Mélenchon pour porter sa candidature à la présidentielle de 2017 « hors cadre de parti ». Elle prolonge l'expérience du Front de gauche (2009-2016), alliance entre le Parti de gauche et le Parti communiste. Le Parti de gauche en constitue la principale force organisée lors de la campagne de 2017, tandis que le PCF mène une campagne autonome. Le mouvement se présente comme un mouvement citoyen plutôt que comme un parti classique.",
+      "sources": [
+        {
+          "title": "Wikipédia, « La France insoumise »",
+          "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
+          "date": "2019-08",
+          "kind": "programme"
+        },
+        {
+          "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
+          "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "ideals": [
+      {
+        "text": "Le mouvement se présente comme lancé « hors cadre de parti » et appelle de ses vœux une « Révolution citoyenne », qui suppose une « réappropriation massive de la chose politique par le peuple » ; son programme « L'Avenir en commun » porte notamment une 6e République et la planification écologique.",
+        "sources": [
+          {
+            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
+            "date": "2019-08",
+            "kind": "programme"
+          },
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Les politistes le classent généralement à la gauche radicale ; le classement à l'« extrême gauche », parfois employé dans le débat public, est contesté. Les références idéologiques le plus souvent relevées sont l'écosocialisme, l'antilibéralisme et l'altermondialisme.",
+        "sources": [
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
+            "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
+            "date": "2019-03-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Une partie des chercheurs le décrit comme un « populisme de gauche », Jean-Luc Mélenchon s'inspirant explicitement de la théoricienne Chantal Mouffe ; d'autres auteurs (Annie Collovald, Catherine Colliot-Thélène) jugent la notion de populisme trop élastique ou peu éclairante.",
+        "sources": [
+          {
+            "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
+            "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
+            "date": "2019-03-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Sur l'international, le mouvement revendique le non-alignement et la sortie de l'OTAN ; sur l'Europe, une stratégie de « désobéissance » aux traités, ce qui conduit certains observateurs à le classer parmi les forces eurosceptiques ou souverainistes de gauche.",
+        "sources": [
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
+            "url": "https://monvote2027.fr/candidat/melenchon",
+            "date": "2026-11",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2016-02-10",
+        "event": "Lancement de La France insoumise pour soutenir la candidature de Jean-Luc Mélenchon à la présidentielle de 2017.",
+        "sources": [
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
+            "date": "2019-08",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "date": "2017-04-23",
+        "event": "Présidentielle : Jean-Luc Mélenchon arrive 4e du premier tour avec 19,58 % des suffrages exprimés (7 059 951 voix).",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel, décision n° 2017-169 PDR du 26 avril 2017 (résultats du 1er tour)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2017/2017169PDR.htm",
+            "date": "2017-04-26",
+            "kind": "statistique"
+          },
+          {
+            "title": "info.gouv.fr, « Résultats définitifs du premier tour de l'élection présidentielle 2017 établis par le Conseil constitutionnel »",
+            "url": "https://www.info.gouv.fr/actualite/resultats-definitifs-du-premier-tour-de-l-election-presidentielle-2017-etablis-par-le-conseil",
+            "date": "2017-04",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2017-06",
+        "event": "Législatives : 17 députés insoumis élus, qui forment un groupe à l'Assemblée nationale.",
+        "sources": [
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
+            "date": "2019-08",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "date": "2022-04-10",
+        "event": "Présidentielle : Jean-Luc Mélenchon arrive 3e du premier tour avec 21,95 % des suffrages exprimés.",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel, décision n° 2022-195 PDR du 13 avril 2022 (résultats du 1er tour)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022195PDR.htm",
+            "date": "2022-04-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "info.gouv.fr, « Élection présidentielle 2022 : les résultats du premier tour »",
+            "url": "https://www.info.gouv.fr/actualite/election-presidentielle-2022-les-resultats-du-premier-tour",
+            "date": "2022-04",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2022-05",
+        "event": "Accord de la Nouvelle Union populaire écologique et sociale (NUPES) avec EELV, le PCF et le PS ; aux législatives de juin, LFI devient la première force de gauche à l'Assemblée.",
+        "sources": [
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "LCP, « La NUPES présente son programme pour les législatives »",
+            "url": "https://lcp.fr/actualites/la-nupes-presente-son-programme-pour-les-legislatives-114431",
+            "date": "2022-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-09",
+        "event": "Européennes : la liste conduite par Manon Aubry obtient environ 9,9 % des suffrages (contre 6,3 % en 2019).",
+        "sources": [
+          {
+            "title": "Public Sénat, « Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième »",
+            "url": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+            "date": "2024-06-10",
+            "kind": "presse"
+          },
+          {
+            "title": "Datan, « Les élections européennes de 2024 »",
+            "url": "https://datan.fr/elections/europeennes-2024",
+            "date": "2024-06",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2024-07-07",
+        "event": "Législatives anticipées : LFI concourt au sein du Nouveau Front populaire, arrivé en tête en nombre de sièges ; le groupe LFI compte 72 députés à l'ouverture de la législature (71 en octobre 2024), et des députés en rupture fondent L'Après.",
+        "sources": [
+          {
+            "title": "Public Sénat, « Les résultats du second tour des élections législatives 2024 : le Nouveau Front populaire en tête »",
+            "url": "https://www.publicsenat.fr/actualites/politique/resultat-des-legislatives-2024-le-nouveau-front-populaire-en-tete-suivi-par-le-camp-presidentiel-le-rn-trebuche",
+            "date": "2024-07-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ],
+    "whyCreated": {
+      "text": "La France insoumise est l'aboutissement d'une lignée ouverte par Jean-Luc Mélenchon en novembre 2008 : après le congrès de Reims, il quitte le PS avec le député Marc Dolez et lance le Parti de gauche (PG), sur le modèle allemand de Die Linke d'Oskar Lafontaine, officiellement fondé début 2009. Le PG s'allie la même année au PCF dans le Front de gauche, dont Mélenchon est le candidat à la présidentielle de 2012 (11,1 %). Après le revers des européennes de 2014, il théorise dans L'Ère du peuple (2014) un appel au « peuple » plutôt qu'aux partis ; le 10 février 2016, sur TF1, il propose sa candidature à la présidentielle de 2017 « hors cadre de partis » et sans primaire, rompant avec la logique de cartel du Front de gauche, et lance à cette occasion le mouvement La France insoumise pour la porter.",
+      "sources": [
+        {
+          "title": "Encyclopédie Larousse, « Jean-Luc Mélenchon »",
+          "url": "https://www.larousse.fr/encyclopedie/personnage/wd/185944",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Politis, « Mélenchon et Dolez ne jouent plus »",
+          "url": "https://www.politis.fr/articles/2008/11/melenchon-et-dolez-ne-jouent-plus-6168/",
+          "date": "2008-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Politis (Michel Soudais), « La double rupture de Mélenchon »",
+          "url": "https://www.politis.fr/articles/2016/02/la-double-rupture-de-melenchon-34132/",
+          "date": "2016-02-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Slate, « Le mystérieux et désespéré appel au peuple de Mélenchon » (sur L'Ère du peuple)",
+          "url": "https://www.slate.fr/story/94267/appel-au-peuple-melenchon",
+          "date": "2014",
+          "kind": "presse"
+        },
+        {
+          "title": "Wikipédia, « La France insoumise »",
+          "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "figures": [
+      {
+        "name": "Jean-Luc Mélenchon",
+        "role": "Fondateur (2016) et candidat à la présidentielle en 2017 (19,58 %) et 2022 (21,95 %)",
+        "background": "Né à Tanger en 1951, il milite dans les années 1970 à Besançon à l'Organisation communiste internationaliste (OCI), groupe trotskiste de tendance lambertiste, puis adhère en 1977 au PS, dans son aile gauche. Sénateur de l'Essonne (1986-2010) et ministre délégué à l'Enseignement professionnel du gouvernement Jospin (2000-2002), il anime les courants de gauche du PS avant de le quitter en novembre 2008 pour fonder le Parti de gauche. Le 9 décembre 2019, le tribunal correctionnel de Bobigny le condamne à trois mois d'emprisonnement avec sursis et 8 000 € d'amende pour rébellion et provocation lors de la perquisition du siège de LFI en octobre 2018 ; il dénonce un « jugement politique » et ne fait pas appel.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Jean-Luc Mélenchon »",
+            "url": "https://www.larousse.fr/encyclopedie/personnage/wd/185944",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Mélenchon Jean-Luc (1951- ) »",
+            "url": "https://www.universalis.fr/encyclopedie/jean-luc-melenchon/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Politis, « Mélenchon et Dolez ne jouent plus »",
+            "url": "https://www.politis.fr/articles/2008/11/melenchon-et-dolez-ne-jouent-plus-6168/",
+            "date": "2008-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Mélenchon condamné à trois mois avec sursis pour la perquisition houleuse à LFI »",
+            "url": "https://www.publicsenat.fr/actualites/politique/melenchon-condamne-a-trois-mois-avec-sursis-pour-la-perquisition-houleuse-a-lfi",
+            "date": "2019-12-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Tendance Ouest (AFP), « Perquisition à LFI : Jean-Luc Mélenchon condamné à trois mois de prison avec sursis »",
+            "url": "https://www.tendanceouest.com/actualite-344047-perquisition-a-lfi-jean-luc-melenchon-condamne-a-trois-mois-de-prison-avec-sursis",
+            "date": "2019-12-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Manuel Bompard",
+        "role": "Coordinateur national (2017-2019, puis depuis décembre 2022) ; directeur des campagnes présidentielles de 2017 et 2022",
+        "background": "Ingénieur et docteur en mathématiques appliquées, il est membre fondateur du Parti de gauche en 2009 et secrétaire national à partir de 2010. Député européen (2019-2022) puis député des Bouches-du-Rhône depuis 2022, il prend la tête de la direction collégiale présentée le 10 décembre 2022, désignée sans vote des adhérents.",
+        "sources": [
+          {
+            "title": "Wikipedia (en), « Manuel Bompard »",
+            "url": "https://en.wikipedia.org/wiki/Manuel_Bompard",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, chronologie France 2022 (10 décembre : nouvelle direction de LFI)",
+            "url": "https://www.universalis.fr/chronologie/france/2022/2/",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "name": "Éric Coquerel",
+        "role": "Député de Seine-Saint-Denis depuis 2017, président de la commission des finances de l'Assemblée depuis 2022",
+        "background": "Militant de la Ligue communiste révolutionnaire (trotskiste) jusqu'en 1998, il passe brièvement par le Mouvement républicain et citoyen de Jean-Pierre Chevènement puis fonde en 2003 le Mouvement pour une alternative républicaine et sociale (MARS). Cofondateur du Parti de gauche avec Jean-Luc Mélenchon en 2008, il en est le coordinateur de 2014 à 2021.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Éric Coquerel »",
+            "url": "https://fr.wikipedia.org/wiki/%C3%89ric_Coquerel",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "VL Média, « Qui est Éric Coquerel, le nouveau président de la commission des finances ? »",
+            "url": "https://vl-media.fr/qui-est-eric-coquerel-le-nouveau-president-de-la-commission-des-finances/",
+            "date": "2022-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Adrien Quatennens",
+        "role": "Coordinateur du mouvement (juin 2019 - septembre 2022), député du Nord (2017-2024)",
+        "background": "Engagé à 16 ans contre le contrat première embauche, il adhère au Parti de gauche en 2013. Il se retire de la coordination en septembre 2022 après des accusations de violences portées par son épouse ; le 13 décembre 2022, il est condamné par le tribunal de Lille, dans le cadre d'une procédure de plaider-coupable, à quatre mois d'emprisonnement avec sursis pour violences conjugales, puis suspendu quatre mois du groupe LFI. Investi par LFI en 2024 hors accord du Nouveau Front populaire, il retire sa candidature.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Adrien Quatennens »",
+            "url": "https://fr.wikipedia.org/wiki/Adrien_Quatennens",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, « La loi n'oblige pas Adrien Quatennens à démissionner, la morale devrait l'y pousser »",
+            "url": "https://www.publicsenat.fr/actualites/politique/la-loi-n-oblige-pas-adrien-quatennens-a-demissionner-la-morale-devrait-l",
+            "date": "2022-12",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "François Ruffin",
+        "role": "Député de la Somme depuis 2017, membre du groupe LFI jusqu'en 2024",
+        "background": "Journaliste, fondateur du journal Fakir et réalisateur du documentaire « Merci patron ! » (2016), il est élu en 2017 sous l'étiquette Picardie debout et siège avec le groupe insoumis tout en marquant des désaccords. Il rompt avec LFI et Jean-Luc Mélenchon en 2024, quitte le groupe et rejoint le groupe écologiste ; son mouvement devient Debout ! en 2025.",
+        "sources": [
+          {
+            "title": "Wikipedia (en), « François Ruffin »",
+            "url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Ruffin",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Reporterre, « François Ruffin rêve de bâtir une “maison commune” à la gauche »",
+            "url": "https://reporterre.net/Francois-Ruffin-reve-de-batir-une-maison-commune-a-la-gauche",
+            "date": "2024-09-02",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "thought": [
+      {
+        "text": "Une partie des chercheurs et de la presse décrit LFI comme un « populisme de gauche » : Jean-Luc Mélenchon s'inspire explicitement de la théorie d'Ernesto Laclau et Chantal Mouffe et de l'exemple de Podemos, et retourne la connotation négative du mot « populisme ». D'autres chercheurs jugent cette notion peu éclairante.",
+        "sources": [
+          {
+            "title": "Slate, « Qui est Chantal Mouffe, la penseuse qui inspire Hamon et Mélenchon ? »",
+            "url": "https://www.slate.fr/story/138602/chantal-mouffe",
+            "date": "2017",
+            "kind": "presse"
+          },
+          {
+            "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
+            "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
+            "date": "2019-03-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Le mouvement revendique une « révolution citoyenne » et une Assemblée constituante pour une 6e République ; dans L'Ère du peuple (Fayard, 2014), Mélenchon définit le « peuple » comme la « multitude urbaine » prenant conscience d'elle-même, plutôt que la seule classe ouvrière, un choix que des commentateurs jugent peu défini.",
+        "sources": [
+          {
+            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
+            "date": "2019-08",
+            "kind": "programme"
+          },
+          {
+            "title": "Hérodote.net, bibliographie : Jean-Luc Mélenchon, L'Ère du peuple (Fayard, 2014)",
+            "url": "https://www.herodote.net/L_ere_du_peuple-bibliographie-568.php",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Slate, « Le mystérieux et désespéré appel au peuple de Mélenchon » (sur L'Ère du peuple)",
+            "url": "https://www.slate.fr/story/94267/appel-au-peuple-melenchon",
+            "date": "2014",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "L'écosocialisme et la « planification écologique » sont revendiqués depuis le Parti de gauche : dès 2008, Mélenchon fait de la planification un marqueur, présenté comme une synthèse de Jaurès et de l'écologie politique ; le PG adopte en décembre 2012 un « Manifeste pour l'écosocialisme », réédité depuis.",
+        "sources": [
+          {
+            "title": "Politis, « L'écosocialisme, réponse à l'impasse capitaliste »",
+            "url": "https://www.politis.fr/articles/2012/11/lecosocialisme-reponse-a-limpasse-capitaliste-20235/",
+            "date": "2012-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Reporterre, « Planification écologique : l'imposture Macron »",
+            "url": "https://reporterre.net/Planification-ecologique-l-imposture-Macron",
+            "date": "2022",
+            "kind": "presse"
+          },
+          {
+            "title": "Parti de gauche, « Manifeste pour l'écosocialisme – 27 thèses » (3e édition)",
+            "url": "https://www.lepartidegauche.fr/wp-content/uploads/2025/10/27-th%C3%A8ses-2025.pdf",
+            "date": "2025-07",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "text": "Depuis la campagne de 2022, Mélenchon reprend la notion de « créolisation » du poète martiniquais Édouard Glissant, qu'il présente comme un « fait » et non un programme (« Nous sommes tous créoles ») et oppose aux thèses de l'assimilation.",
+        "sources": [
+          {
+            "title": "Reporterre, « Jean-Luc Mélenchon : “Nous sommes tous créoles” »",
+            "url": "https://reporterre.net/Jean-Luc-Melenchon-Nous-sommes-tous-creoles",
+            "date": "2021-11-26",
+            "kind": "presse"
+          },
+          {
+            "title": "Slate, « Qu'est-ce que la créolisation, nouvel étendard de Jean-Luc Mélenchon ? »",
+            "url": "https://www.slate.fr/story/216753/creolisation-concept-edouard-glissant-marotte-jean-luc-melenchon-france-insoumise",
+            "date": "2021",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Évolution stratégique : après le cartel de partis du Front de gauche (2009-2016), le mouvement se construit en 2016 « hors cadre de partis » et sans primaire, avant de revenir à des alliances électorales avec le PS, les écologistes et le PCF au sein de la NUPES (2022) puis du Nouveau Front populaire (2024).",
+        "sources": [
+          {
+            "title": "Politis (Michel Soudais), « La double rupture de Mélenchon »",
+            "url": "https://www.politis.fr/articles/2016/02/la-double-rupture-de-melenchon-34132/",
+            "date": "2016-02-17",
+            "kind": "presse"
+          },
+          {
+            "title": "LCP, « La NUPES présente son programme pour les législatives »",
+            "url": "https://lcp.fr/actualites/la-nupes-presente-son-programme-pour-les-legislatives-114431",
+            "date": "2022-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « La France insoumise »",
+            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ]
+  },
+  "stances": {
+    "q01-isf": {
+      "stance": 2,
+      "justification": "LFI propose un ISF « renforcé » et la taxe Zucman ; le groupe a voté pour l'impôt plancher de 2 % (scrutin n° 881 du 20/02/2025, 37 voix pour).",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Scrutin n° 881 du 20/02/2025, proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
+          "url": "https://datan.fr/votes/legislature-17/vote_881",
+          "date": "2025-02-20",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q02-depenses": {
+      "stance": -2,
+      "justification": "Le document budgétaire 2027 qualifie la stratégie des coupes budgétaires d'« impasse » et prévoit de réduire le déficit par 106 Md€ de recettes nouvelles.",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q03-charges": {
+      "stance": -2,
+      "justification": "LFI propose de rétablir la CVAE pour les grandes entreprises, de réformer l'impôt sur les sociétés et d'interrompre les exonérations de cotisations au-dessus de 2 SMIC.",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q04-retraite": {
+      "stance": 2,
+      "justification": "Abrogation de la réforme des 64 ans et objectif de retraite à 60 ans avec 40 annuités sur le mandat.",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q05-smic": {
+      "stance": 2,
+      "justification": "LFI propose de porter le SMIC à 1 700 € net.",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q06-chomage": {
+      "stance": -2,
+      "justification": "Abrogation des réformes de l'assurance chômage et du RSA ; le groupe a voté contre la transposition de l'avenant assurance chômage (scrutin n° 7260 du 02/06/2026, 63 voix contre).",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Scrutin n° 7260 du 02/06/2026, projet de loi transposant l'avenant n° 3 au protocole d'accord sur l'assurance chômage, vote final",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q07-immigration": {
+      "stance": -2,
+      "justification": "Le programme prévoit de faciliter l'accès aux visas, d'instaurer la carte de séjour de dix ans comme titre de référence et d'abroger les lois immigration récentes.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "L'Avenir en commun (édition 2022), section 76 « Pour une politique migratoire humaniste et réaliste »",
+          "url": "https://laec.fr/section/76/pour-une-politique-migratoire-humaniste-et-realiste",
+          "date": "2021-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q08-preference": {
+      "stance": -2,
+      "justification": "Le programme NFP soutenu par LFI garantit l'accès aux services publics « sans condition de nationalité ».",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q09-regularisation": {
+      "stance": 2,
+      "justification": "Régularisation des travailleurs, étudiants et parents d'enfants scolarisés.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "L'Avenir en commun (édition 2022), section 76 « Pour une politique migratoire humaniste et réaliste »",
+          "url": "https://laec.fr/section/76/pour-une-politique-migratoire-humaniste-et-realiste",
+          "date": "2021-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q10-peines-planchers": {
+      "stance": -2,
+      "justification": "Le groupe LFI-NFP a déposé en octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262), jugé « grave politiquement » et inefficace contre la récidive ; Europe 1 rapporte en juin 2025 l'opposition de la gauche aux peines minimales.",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° 1 (groupe LFI-NFP, M. Bernalicis et al.) de suppression de l'article 1er de la PPL n° 262 « Instauration de peines planchers »",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0262/AN/1.pdf",
+          "date": "2024-10-23",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Europe 1, « Peines minimales : le gouvernement plaide pour, la gauche s'y oppose »",
+          "url": "https://www.europe1.fr/politique/peines-minimales-le-gouvernement-plaide-pour-la-gauche-sy-oppose-756857",
+          "date": "2025-06-04",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q11-police": {
+      "stance": 2,
+      "justification": "Récépissés lors des contrôles d'identité et remplacement de l'IGPN/IGGN par un organisme indépendant rattaché à la Défenseure des droits.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Europe 1, programme du Nouveau Front populaire et forces de l'ordre (récépissés, LBD, grenades)",
+          "url": "https://www.europe1.fr/node/12705",
+          "date": "2024-06",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q12-nucleaire": {
+      "stance": -2,
+      "justification": "« L'Avenir en commun » (2022) prévoit de sortir du nucléaire et d'abandonner les projets d'EPR ; selon MonVote2027, Jean-Luc Mélenchon a réaffirmé en mai 2026 l'objectif de sortie du nucléaire. Édition 2027 du programme non encore publiée.",
+      "sources": [
+        {
+          "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
+          "url": "https://laec.fr/section/19/organiser-le-100-denergies-renouvelables-en-2050-et-la-renovation-energetique",
+          "date": "2021-11",
+          "kind": "programme"
+        },
+        {
+          "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
+          "url": "https://monvote2027.fr/candidat/melenchon",
+          "date": "2026-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q13-renouvelables": {
+      "stance": 2,
+      "justification": "Objectif de 100 % d'énergies renouvelables en 2050 ; le NFP vise à faire de la France le leader européen de l'éolien en mer.",
+      "sources": [
+        {
+          "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
+          "url": "https://laec.fr/section/19/organiser-le-100-denergies-renouvelables-en-2050-et-la-renovation-energetique",
+          "date": "2021-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q14-normes-agricoles": {
+      "stance": -2,
+      "justification": "Le groupe a voté contre la loi Duplomb (scrutin n° 2957 du 08/07/2025, 71 voix contre) ; le programme prévoit d'interdire glyphosate et néonicotinoïdes.",
+      "sources": [
+        {
+          "title": "Scrutin n° 2957 du 08/07/2025, loi Duplomb « lever les contraintes à l'exercice du métier d'agriculteur », vote final (texte de CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2957",
+          "date": "2025-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q15-medecins": {
+      "stance": 2,
+      "justification": "Le programme prévoit de réguler l'installation des médecins ; le groupe a voté pour la PPL transpartisane contre les déserts médicaux (scrutin n° 1607 du 07/05/2025, 23 voix pour).",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Scrutin n° 1607 du 07/05/2025, proposition de loi transpartisane contre les déserts médicaux (régulation de l'installation), vote final en première lecture",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q16-fin-de-vie": {
+      "stance": 2,
+      "justification": "Le groupe a voté majoritairement pour la loi sur l'aide à mourir en lecture définitive (scrutin n° 8280 du 15/07/2026 : 61 pour, 3 abstentions, 2 contre) ; « L'Avenir en commun » propose de constitutionnaliser le droit de mourir dans la dignité.",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 du 15/07/2026, proposition de loi relative au droit à l'aide à mourir, lecture définitive (adoptée par 291 voix contre 241)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "L'Avenir en commun (édition 2022), section 56 « Une nouvelle étape des libertés et de l'émancipation individuelle »",
+          "url": "https://laec.fr/section/56/une-nouvelle-etape-des-libertes-et-de-lemancipation-individuelle",
+          "date": "2021-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q17-ecole-privee": {
+      "stance": 2,
+      "justification": "Moduler les dotations des établissements, y compris privés, selon la mixité sociale et abroger la loi Carle.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "L'Avenir en commun (édition 2022), section 65 « Reconstruire une école globale pour l'égalité et l'émancipation »",
+          "url": "https://laec.fr/section/65/reconstruire-une-ecole-globale-pour-legalite-et-lemancipation",
+          "date": "2021-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q18-ukraine": {
+      "stance": null,
+      "justification": "Signaux contradictoires : le programme NFP 2024 prévoit la « livraison d'armes nécessaires », mais le groupe a voté contre l'accord de sécurité franco-ukrainien (scrutin n° 3461 du 12/03/2024) et contre la résolution appelant au renforcement du soutien (scrutin n° 988 du 12/03/2025) ; en 2026, LFI met en avant un cessez-le-feu et des négociations sans position explicite sur la poursuite des livraisons d'armes.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Scrutin n° 3461 du 12/03/2024, déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Scrutin n° 988 du 12/03/2025, proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        },
+        {
+          "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
+          "url": "https://monvote2027.fr/candidat/melenchon",
+          "date": "2026-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q19-droit-europeen": {
+      "stance": 2,
+      "justification": "« L'Avenir en commun » prévoit de « désobéir » aux règles européennes et d'affirmer la supériorité des principes constitutionnels sur le droit européen (édition 2022).",
+      "sources": [
+        {
+          "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
+          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+          "date": "2021-11",
+          "kind": "programme"
+        },
+        {
+          "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
+          "url": "https://monvote2027.fr/candidat/melenchon",
+          "date": "2026-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q20-defense-europe": {
+      "stance": null,
+      "justification": "« L'Avenir en commun » (2022) prévoit de suspendre la participation de la France à « l'Europe de la défense », mais aucune position explicite sur un endettement commun de l'UE (défense ou investissements) n'a été identifiée. Position précédemment déduite (-1), ramenée à null par cohérence avec les autres fiches.",
+      "sources": [
+        {
+          "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
+          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+          "date": "2021-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q21-libre-echange": {
+      "stance": 2,
+      "justification": "Le programme prévoit de renoncer à l'accord UE-Mercosur ; LFI a déposé une motion de censure contre sa signature (scrutin n° 4986 du 14/01/2026, 71 voix pour).",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Scrutin n° 4986 du 14/01/2026, motion de censure déposée par LFI contre la signature de l'accord UE-Mercosur",
+          "url": "https://datan.fr/votes/legislature-17/vote_4986",
+          "date": "2026-01-14",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q22-vie-republique": {
+      "stance": 2,
+      "justification": "Passage à une 6e République par une Assemblée constituante pour abolir la « monarchie présidentielle ».",
+      "sources": [
+        {
+          "title": "L'Avenir en commun (édition 2022), section 1 « Réunir une Assemblée constituante pour passer à la 6e République »",
+          "url": "https://laec.fr/section/1/reunir-une-assemblee-constituante-pour-passer-a-la-6e-republique",
+          "date": "2021-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q23-referendum": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée sur un référendum consacré à l'immigration.",
+      "sources": []
+    },
+    "q24-proportionnelle": {
+      "stance": 2,
+      "justification": "Le programme NFP soutenu par LFI prévoit d'instaurer la proportionnelle.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Le programme des 100 premiers jours du \"Nouveau Front populaire\" »",
+          "url": "https://www.publicsenat.fr/actualites/politique/le-programme-des-100-premiers-jours-du-nouveau-front-populaire",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "candidacies": {
+    "presidentielle-2027": {
+      "candidateName": "Jean-Luc Mélenchon",
+      "status": "declare",
+      "statusLabel": "Candidat déclaré",
+      "candidate": "Jean-Luc Mélenchon (statut : déclaré le 2026-05-03, au journal de 20 h de TF1, après désignation le même jour par les élus du mouvement)",
+      "programmeStatus": "Une nouvelle édition de « L'Avenir en commun » (programme 2027, intitulée « Nouvelle France » selon LCP) est annoncée en librairie le 6 novembre 2026 et présentée le 7 novembre au Bourget : elle n'était pas publiée au 2026-11-03. Fiche fondée sur le document d'orientations budgétaires 2027 publié en octobre 2026, sur « L'Avenir en commun » édition 2022 (une mise à jour de janvier 2025, 831 mesures selon LCP, n'a pas été exploitée ici), sur le contrat de législature du Nouveau Front populaire (2024) et sur les votes du groupe LFI-NFP.",
+      "themes": {
+        "economie": {
+          "summary": "LFI propose d'augmenter les recettes fiscales d'environ 106 Md€ en 2027 en ciblant les plus hauts patrimoines, les revenus du capital et les grandes entreprises, et de financer des investissements via un « pôle public bancaire ». Elle rejette la réduction des dépenses publiques comme moyen de réduire la dette.",
+          "measures": [
+            {
+              "text": "Rétablir un « impôt sur la fortune renforcé » (10 Md€ attendus) et instaurer la taxe Zucman sur les patrimoines de plus de 100 M€ (15 Md€).",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Supprimer la « flat tax » sur les revenus du capital (9 Md€) et porter l'impôt sur le revenu à 14 tranches au cours du mandat.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Réformer les droits de succession (20 Md€ la première année) et instaurer un « héritage maximum » (NFP 2024).",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Créer un « pôle public bancaire » (Caisse des dépôts, Bpifrance, Banque postale…) mobilisant 100 Md€ d'investissements supplémentaires par an.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Réduire le déficit de 24,7 Md€ en 2027 : 106,4 Md€ de recettes nouvelles pour 81,7 Md€ de dépenses d'urgence.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "travail": {
+          "summary": "Le mouvement propose une hausse du SMIC, l'abrogation de la réforme des retraites de 2023 avec un objectif de retraite à 60 ans, et l'abrogation des réformes récentes de l'assurance chômage et du RSA.",
+          "measures": [
+            {
+              "text": "Porter le SMIC à 1 700 € net, convoquer une conférence sur les salaires et indexer les salaires sur l'inflation.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+                  "date": "2026-10-30",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Abroger la réforme portant l'âge légal à 64 ans (9 Md€), « premier pas » vers la retraite à 60 ans avec 40 annuités sur le mandat.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Abroger les réformes de l'assurance chômage (3 Md€) et les réformes du RSA.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Augmenter de 10 % le point d'indice des fonctionnaires (17 Md€).",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Rétablir la durée effective de 35 heures et passer aux 32 heures dans les métiers pénibles ou de nuit.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "immigration": {
+          "summary": "LFI défend une politique d'accueil qu'elle qualifie d'« humaniste et réaliste » : abrogation des lois asile-immigration récentes, régularisations, carte de séjour de dix ans comme titre de référence et voies légales d'immigration.",
+          "measures": [
+            {
+              "text": "Abroger les lois asile et immigration adoptées sous Emmanuel Macron.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Législatives 2024 : quelles propositions en matière d'immigration ? Tour d'horizon des programmes »",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-quelles-propositions-en-matiere-d-immigration-tour-d-horizon-des",
+                  "date": "2024-06",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Régulariser les travailleurs, les étudiants et les parents d'enfants scolarisés ; faire de la carte de séjour de dix ans le titre de référence.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 76 « Pour une politique migratoire humaniste et réaliste »",
+                  "url": "https://laec.fr/section/76/pour-une-politique-migratoire-humaniste-et-realiste",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Législatives 2024 : quelles propositions en matière d'immigration ? Tour d'horizon des programmes »",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-quelles-propositions-en-matiere-d-immigration-tour-d-horizon-des",
+                  "date": "2024-06",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Garantir le droit du sol intégral et faciliter l'obtention de la nationalité française.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Législatives 2024 : quelles propositions en matière d'immigration ? Tour d'horizon des programmes »",
+                  "url": "https://lcp.fr/actualites/legislatives-2024-quelles-propositions-en-matiere-d-immigration-tour-d-horizon-des",
+                  "date": "2024-06",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suspendre le règlement de Dublin et renégocier les accords du Touquet.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 76 « Pour une politique migratoire humaniste et réaliste »",
+                  "url": "https://laec.fr/section/76/pour-une-politique-migratoire-humaniste-et-realiste",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Garantir l'accès à l'aide médicale d'État et l'accès aux services publics « sans condition de nationalité ».",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "securite": {
+          "summary": "Le programme met l'accent sur la police de proximité, un contrôle indépendant de la police et les moyens de la justice. Le groupe a voté contre la loi sur la justice criminelle et le respect des victimes (juillet 2026).",
+          "measures": [
+            {
+              "text": "Rétablir la police de proximité et augmenter les effectifs de police judiciaire et des unités chargées du narcotrafic.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Supprimer l'IGPN et l'IGGN et les remplacer par un organisme indépendant rattaché à la Défenseure des droits.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Mettre en place des récépissés lors des contrôles d'identité.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Europe 1, programme du Nouveau Front populaire et forces de l'ordre (récépissés, LBD, grenades)",
+                  "url": "https://www.europe1.fr/node/12705",
+                  "date": "2024-06",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Interdire les LBD et les grenades mutilantes et démanteler les BRAV-M.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Doubler les effectifs des services de lutte contre la délinquance financière et supprimer le « verrou de Bercy ».",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 8 « Une politique de justice efficace »",
+                  "url": "https://laec.fr/section/8/une-politique-de-justice-efficace",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "ecologie": {
+          "summary": "LFI défend une « planification écologique » visant 100 % d'énergies renouvelables en 2050 et une sortie du nucléaire. Elle s'oppose aux traités de libre-échange et à la loi Duplomb.",
+          "measures": [
+            {
+              "text": "Sortir du nucléaire : abandonner les projets d'EPR et planifier le démantèlement des sites.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
+                  "url": "https://laec.fr/section/19/organiser-le-100-denergies-renouvelables-en-2050-et-la-renovation-energetique",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
+                  "url": "https://monvote2027.fr/candidat/melenchon",
+                  "date": "2026-11",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Atteindre 100 % d'énergies renouvelables en 2050 et rénover 700 000 logements par an.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
+                  "url": "https://laec.fr/section/19/organiser-le-100-denergies-renouvelables-en-2050-et-la-renovation-energetique",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Interdire le glyphosate et les néonicotinoïdes avec accompagnement financier des agriculteurs.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 21 « Souveraineté alimentaire et révolution agricole »",
+                  "url": "https://laec.fr/section/21/souverainete-alimentaire-et-revolution-agricole-pour-une-agriculture-ecologique-et-paysanne",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Pleinchamp, « Législatives 2024 : les simili-programmes agricoles et agro-environnementaux »",
+                  "url": "https://www.pleinchamp.com/actualite/legislatives-2024-les-simili-programmes-agricoles-et-agro-environnementaux",
+                  "date": "2024-06",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Investir 10 Md€ dès la première année dans l'adaptation au dérèglement climatique.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Annuler le CETA et renoncer à l'accord UE-Mercosur.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Pleinchamp, « Législatives 2024 : les simili-programmes agricoles et agro-environnementaux »",
+                  "url": "https://www.pleinchamp.com/actualite/legislatives-2024-les-simili-programmes-agricoles-et-agro-environnementaux",
+                  "date": "2024-06",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "sante": {
+          "summary": "Le programme prévoit davantage de moyens pour l'hôpital public, la régulation de l'installation des médecins et la création d'un droit à l'aide à mourir, que le groupe a voté en lecture définitive en juillet 2026.",
+          "measures": [
+            {
+              "text": "Augmenter de 3 Md€ le budget des hôpitaux avec au moins 10 000 créations de postes de soignants.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Réguler l'installation des médecins dans les déserts médicaux et rétablir des permanences de soins.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Créer un pôle public du médicament avec obligations de stocks.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Inscrire dans la Constitution le droit de mourir dans la dignité, y compris avec assistance.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 56 « Une nouvelle étape des libertés et de l'émancipation individuelle »",
+                  "url": "https://laec.fr/section/56/une-nouvelle-etape-des-libertes-et-de-lemancipation-individuelle",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Supprimer la tarification à l'acte et revenir à une dotation globale de fonctionnement des hôpitaux.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 32 « Faire passer la santé d'abord et reconstruire les établissements de santé publics »",
+                  "url": "https://laec.fr/section/32/faire-passer-la-sante-dabord-et-reconstruire-les-etablissements-de-sante-publics-notamment-les-hopitaux",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "education": {
+          "summary": "LFI propose de réduire les effectifs par classe, la gratuité de la cantine, l'abolition de Parcoursup et une modulation des dotations des établissements, y compris privés, selon la mixité sociale.",
+          "measures": [
+            {
+              "text": "Se rapprocher en un mandat de 19 élèves par classe (moyenne européenne) ; ouvrir 10 000 postes dès 2027.",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Rendre la cantine scolaire gratuite (3,6 Md€).",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Abolir Parcoursup et MonMaster et créer 250 000 places à l'université (3,5 Md€).",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
+                  "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
+                  "date": "2024-07-08",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Moduler les dotations des établissements, y compris privés, selon des objectifs de mixité sociale ; abroger la loi Carle.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 65 « Reconstruire une école globale pour l'égalité et l'émancipation »",
+                  "url": "https://laec.fr/section/65/reconstruire-une-ecole-globale-pour-legalite-et-lemancipation",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
+                  "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
+                  "date": "2024-07-08",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Créer une garantie d'autonomie pour les jeunes, fixée au seuil de pauvreté de 1 337 € par mois (9,5 Md€).",
+              "sources": [
+                {
+                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+                  "date": "2026-10",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+                  "date": "2026-10-14",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "europe": {
+          "summary": "LFI propose de « désobéir » aux règles européennes jugées incompatibles avec son programme et d'affirmer la supériorité de la Constitution sur le droit européen. Le mouvement est opposé aux traités de libre-échange ; sur l'Ukraine, le programme NFP 2024 prévoyait des livraisons d'armes, mais le groupe a voté contre les textes de soutien de 2024 et 2025.",
+          "measures": [
+            {
+              "text": "Cesser d'appliquer unilatéralement les règles européennes jugées incompatibles (règles budgétaires, concurrence, travail détaché).",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
+                  "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Réaffirmer la supériorité des principes de la Constitution de la 6e République sur le droit européen.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
+                  "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Refuser le pacte de stabilité budgétaire et mettre fin aux traités de libre-échange.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suspendre la participation de la France à « l'Europe de la défense » (opt-out) ; sortir des alliances militaires permanentes comme l'OTAN.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
+                  "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 72 « Construire une défense indépendante, républicaine et populaire »",
+                  "url": "https://laec.fr/section/72/construire-une-defense-independante-republicaine-et-populaire",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
+                  "url": "https://monvote2027.fr/candidat/melenchon",
+                  "date": "2026-11",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Défendre la souveraineté de l'Ukraine « par la livraison d'armes nécessaires », la saisie des avoirs des oligarques et l'annulation de sa dette extérieure (programme NFP 2024).",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "institutions": {
+          "summary": "LFI propose de convoquer une Assemblée constituante pour passer à une 6e République, d'instaurer la proportionnelle et le référendum d'initiative citoyenne, et d'abroger l'article 49.3.",
+          "measures": [
+            {
+              "text": "Convoquer par référendum (article 11) une Assemblée constituante dont le projet serait soumis à référendum après deux ans.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 1 « Réunir une Assemblée constituante pour passer à la 6e République »",
+                  "url": "https://laec.fr/section/1/reunir-une-assemblee-constituante-pour-passer-a-la-6e-republique",
+                  "date": "2021-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat, « Le programme des 100 premiers jours du \"Nouveau Front populaire\" »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/le-programme-des-100-premiers-jours-du-nouveau-front-populaire",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Instaurer la proportionnelle et abroger le 49.3.",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat, « Le programme des 100 premiers jours du \"Nouveau Front populaire\" »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/le-programme-des-100-premiers-jours-du-nouveau-front-populaire",
+                  "date": "2024-06-14",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Instaurer le référendum d'initiative citoyenne (RIC).",
+              "sources": [
+                {
+                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+                  "date": "2024-06",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Reconnaître le vote blanc, instaurer le vote obligatoire et des parrainages citoyens pour la présidentielle.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 4 « Une République permettant l'intervention populaire »",
+                  "url": "https://laec.fr/section/4/une-republique-permettant-lintervention-populaire",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Rendre obligatoire le référendum pour toute révision constitutionnelle ou nouveau traité européen.",
+              "sources": [
+                {
+                  "title": "L'Avenir en commun (édition 2022), section 4 « Une République permettant l'intervention populaire »",
+                  "url": "https://laec.fr/section/4/une-republique-permettant-lintervention-populaire",
+                  "date": "2021-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

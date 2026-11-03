@@ -1,0 +1,160 @@
+import React from 'react';
+import { View } from 'react-native';
+
+import { useTheme } from '@/components/ThemeContext';
+import { Icon, Text } from '@/components/Themed';
+import { Accordion } from '@/src/programmes/components/Accordion';
+import { Page } from '@/src/programmes/components/Page';
+import { RowGroup } from '@/src/programmes/components/PartyRow';
+import { SourceChip } from '@/src/programmes/components/SourceChip';
+import type { Source } from '@/src/programmes/models/programme.model';
+
+const COMMITMENTS = [
+  { icon: 'checkmark', title: 'Chaque information a sa source', text: 'Avec sa date et sa nature' },
+  {
+    icon: 'calendar-outline',
+    title: 'Les programmes sont datés',
+    text: 'Un programme pas encore publié est signalé',
+  },
+  {
+    icon: 'people-outline',
+    title: 'Même traitement pour tous',
+    text: 'Mêmes thèmes, ordre alphabétique',
+  },
+  {
+    icon: 'help-circle-outline',
+    title: 'Pas de position devinée',
+    text: "Un trou plutôt qu'une approximation",
+  },
+  {
+    icon: 'shield-checkmark-outline',
+    title: 'Vos réponses restent chez vous',
+    text: "Le site est statique, rien n'est envoyé",
+  },
+];
+
+const RULES: { title: string; body: string }[] = [
+  {
+    title: 'Les programmes de 2027 pas encore publiés',
+    body: "À la date de vérification, la plupart des candidats n'ont pas publié leur programme définitif. Chaque fiche l'indique et s'appuie sur le dernier programme officiel (législatives 2024, européennes 2024, présidentielle 2022) et sur les déclarations récentes, toujours datées.",
+  },
+  {
+    title: 'Le calcul de proximité',
+    body: "Pour chaque question, l'écart entre votre réponse et la position du parti (de −2 à +2) donne un accord de 0 à 100 %. Exemple : vous répondez « Plutôt d'accord » (+1) et le parti est « Pour » (+2) : écart de 1, accord de 75 %. La moyenne est pondérée : une question « compte double » pèse deux fois. Les questions sans avis, ou sans position connue du parti, sont ignorées ; le nombre de questions comparées est toujours affiché.",
+  },
+  {
+    title: 'Les axes de la carte',
+    body: "Chaque affirmation peut être rattachée à un axe (économie, société, Europe) avec un sens. Votre position sur un axe est la moyenne de vos réponses sur ces affirmations. Certaines questions ne sont rattachées à aucun axe parce qu'elles ne s'y rangent pas clairement (nucléaire, libre-échange, proportionnelle).",
+  },
+  {
+    title: 'Les étiquettes politiques',
+    body: "Les qualifications (« extrême droite », « gauche radicale »…) suivent l'usage de la presse de référence, des politistes et du nuancier du ministère de l'Intérieur. La position du parti sur sa propre étiquette est toujours indiquée, de la même façon pour tous.",
+  },
+  {
+    title: 'Corrections',
+    body: 'Les données sont versionnées et chaque correction est datée. Une erreur signalée avec une source est vérifiée puis corrigée.',
+  },
+];
+
+const EXAMPLE: Record<'croisee' | 'unique', Source[]> = {
+  croisee: [
+    {
+      title: 'Exemple : programme officiel',
+      url: 'https://exemple-parti.fr',
+      date: '2026-01',
+      kind: 'programme',
+    },
+    {
+      title: 'Exemple : article de presse',
+      url: 'https://exemple-journal.fr',
+      date: '2026-01',
+      kind: 'presse',
+    },
+  ],
+  unique: [
+    {
+      title: 'Exemple : déclaration',
+      url: 'https://exemple-parti.fr',
+      date: '2026-01',
+      kind: 'declaration',
+    },
+  ],
+};
+
+export default function MethodologyScreen() {
+  const { colors, effects, fonts } = useTheme();
+  return (
+    <Page back={{ label: 'Retour', href: '/' }}>
+      <View style={{ gap: 6 }}>
+        <Text variant="title">Méthodologie</Text>
+        <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
+          Comment les informations sont choisies, vérifiées et présentées.
+        </Text>
+      </View>
+
+      <RowGroup>
+        {COMMITMENTS.map((item, index) => (
+          <View
+            key={item.title}
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              gap: 14,
+              padding: effects.spacing.md,
+              borderTopWidth: index === 0 ? 0 : 1,
+              borderColor: colors.surface.border.primary,
+            }}
+          >
+            <View
+              style={{
+                width: 40,
+                height: 40,
+                borderRadius: 20,
+                alignItems: 'center',
+                justifyContent: 'center',
+                backgroundColor: colors.tintSoft,
+              }}
+            >
+              <Icon name={item.icon} variant="onGlass" size="small" />
+            </View>
+            <View style={{ flex: 1 }}>
+              <Text style={{ ...fonts.bold, fontSize: 16 }}>{item.title}</Text>
+              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>{item.text}</Text>
+            </View>
+          </View>
+        ))}
+      </RowGroup>
+
+      <View
+        style={{
+          gap: effects.spacing.sm,
+          backgroundColor: colors.surface.primary,
+          borderRadius: effects.borderRadius.small,
+          borderWidth: 1,
+          borderColor: colors.surface.border.primary,
+          padding: effects.spacing.md,
+        }}
+      >
+        <Text variant="caption">Les niveaux de source</Text>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <SourceChip sources={EXAMPLE.croisee} />
+          <Text style={{ flex: 1, fontSize: 15 }}>
+            Recoupée : au moins 2 sites différents, dont un indépendant du parti
+          </Text>
+        </View>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+          <SourceChip sources={EXAMPLE.unique} />
+          <Text style={{ flex: 1, fontSize: 15 }}>Source unique : une seule source trouvée</Text>
+        </View>
+      </View>
+
+      <View style={{ gap: effects.spacing.xs }}>
+        {RULES.map((rule) => (
+          <Accordion key={rule.title} title={rule.title}>
+            <Text style={{ fontSize: 16, lineHeight: 25 }}>{rule.body}</Text>
+          </Accordion>
+        ))}
+      </View>
+    </Page>
+  );
+}

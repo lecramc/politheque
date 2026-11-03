@@ -1,0 +1,50 @@
+#!/bin/sh
+# Auto-bump package.json version based on conventional commit type.
+#   fix:               → patch
+#   feat:              → minor
+#   feat!: / BREAKING CHANGE → major
+#   build: / refactor: / release: / others → no bump
+
+FIRST_LINE=$(head -1 "$1")
+
+# Skip merge commits, release commits, fixup/squash
+case "$FIRST_LINE" in
+  Merge\ *|release:\ *|fixup!\ *|squash!\ *) exit 0 ;;
+esac
+
+# Detect breaking change: trailing ! before colon (first line),
+# or "BREAKING CHANGE:" footer at the start of a line (conventional commits spec)
+IS_BREAKING=0
+echo "$FIRST_LINE" | grep -qE '^[a-z]+(\([^)]+\))?!:' && IS_BREAKING=1
+grep -qE '^BREAKING CHANGE:' "$1" && IS_BREAKING=1
+
+# Extract commit type (feat, fix, build, refactor, …)
+TYPE=$(echo "$FIRST_LINE" | sed 's/^\([a-z]*\).*/\1/')
+
+if [ "$IS_BREAKING" -eq 1 ]; then
+  BUMP="major"
+elif [ "$TYPE" = "feat" ]; then
+  BUMP="minor"
+elif [ "$TYPE" = "fix" ]; then
+  BUMP="patch"
+else
+  exit 0
+fi
+
+# Read current version
+CURRENT=$(node -e "process.stdout.write(require('./package.json').version)")
+MAJOR=$(echo "$CURRENT" | cut -d. -f1)
+MINOR=$(echo "$CURRENT" | cut -d. -f2)
+PATCH=$(echo "$CURRENT" | cut -d. -f3)
+
+case "$BUMP" in
+  major) NEW="$((MAJOR + 1)).0.0" ;;
+  minor) NEW="${MAJOR}.$((MINOR + 1)).0" ;;
+  patch) NEW="${MAJOR}.${MINOR}.$((PATCH + 1))" ;;
+esac
+
+# Bump in place and stage with the commit
+sed -i '' "s/\"version\": \"$CURRENT\"/\"version\": \"$NEW\"/" package.json
+git add package.json
+
+echo "  bump $CURRENT → $NEW ($BUMP)"

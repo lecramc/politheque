@@ -1,0 +1,1581 @@
+{
+  "id": "reconquete",
+  "name": "Reconquête",
+  "shortName": "REC",
+  "color": "#1F1F3D",
+  "family": "Extrême droite (qualification de la presse de référence et de nombreux politistes)",
+  "description": "Parti fondé fin 2021 par Éric Zemmour, qui le préside. Éric Zemmour a obtenu 7,07 % au premier tour de la présidentielle 2022 ; la liste Reconquête a recueilli 5,47 % aux européennes de 2024, mais quatre de ses cinq eurodéputés, dont Marion Maréchal, ont été exclus ou ont quitté le parti en juin 2024, Sarah Knafo restant sa seule représentante au Parlement européen. Reconquête ne dispose pas de groupe à l'Assemblée nationale : ses positions ne peuvent donc pas être établies à partir de votes de groupe.",
+  "lastVerified": "2026-11-03",
+  "history": {
+    "founded": "2021",
+    "origins": {
+      "text": "Reconquête est lancé par Éric Zemmour lors d'un meeting à Villepinte le 5 décembre 2021, quelques jours après l'annonce de sa candidature à l'élection présidentielle de 2022 ; il prolonge l'association « Les Amis d'Éric Zemmour » créée au printemps 2021. Éric Zemmour en est le fondateur et le président. Le parti revendique une stratégie d'« union des droites » ; en juin 2024, après l'appel de sa tête de liste aux européennes Marion Maréchal et de plusieurs élus (Guillaume Peltier, Nicolas Bay, Laurence Trochu) à soutenir l'alliance RN-Ciotti, Éric Zemmour annonce l'exclusion de Marion Maréchal et de ses proches, et ces élus quittent le parti.",
+      "sources": [
+        {
+          "title": "Wikipédia, « Reconquête (parti politique) »",
+          "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Reconquête, « Notre mouvement » (site officiel)",
+          "url": "https://www.parti-reconquete.fr/le-mouvement",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Législatives : Marion Maréchal, en désaccord avec Éric Zemmour, appelle à soutenir les candidats de l'alliance RN-Ciotti (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/legislatives-marion-marechal-en-desaccord-avec-eric-zemmour-appelle-a-soutenir-les-candidats-de-lalliance-rn-ciotti",
+          "date": "2024-06-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Wikipédia, « Guillaume Peltier »",
+          "url": "https://fr.wikipedia.org/wiki/Guillaume_Peltier",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "ideals": [
+      {
+        "text": "Le parti se définit comme un mouvement visant à « défendre l'intérêt national » et à « promouvoir la grandeur de la France », et à assurer « la défense de notre identité, de nos familles et de nos terroirs » ainsi que « la défense de notre civilisation » ; il se présente comme « le rassemblement du peuple français » autour des thèmes Identité, Familles, École, Terroirs, Sécurité, Libertés, Prospérité, Puissance et Souveraineté.",
+        "sources": [
+          {
+            "title": "Reconquête, « Notre mouvement » (site officiel)",
+            "url": "https://www.parti-reconquete.fr/le-mouvement",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Il défend la « remigration », terme assumé par Éric Zemmour dès 2022 et repris en 2026 (renvoi d'étrangers déjà présents sur le territoire, y compris en situation régulière après un an de chômage).",
+        "sources": [
+          {
+            "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+            "date": "2022-03-23",
+            "kind": "presse"
+          },
+          {
+            "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
+            "date": "2026-09-18",
+            "kind": "presse"
+          },
+          {
+            "title": "Présidentielle française : Eric Zemmour défend à Aulnay son idée de ministère de la « remigration » (L'Avenir, AFP)",
+            "url": "https://www.lavenir.net/cnt/dmf20220323_01676862/presidentielle-francaise-eric-zemmour-defend-a-aulnay-son-idee-de-ministere-de-la-remigration",
+            "date": "2022-03-23",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Wikipédia le situe à l'extrême droite (nationalisme, identitarisme, national-conservatisme, opposition à l'immigration et à l'islam) et cite le politiste Jean-Yves Camus, pour qui l'identitarisme est le marqueur essentiel du parti au sein de l'extrême droite ; la Fondation Jean-Jaurès range l'électorat d'Éric Zemmour dans le bloc d'extrême droite et lui prête un « tropisme identitaire et sécuritaire ».",
+        "sources": [
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « Radioscopie du zemmourisme » (P. Cébille, J. Fourquet, L. Jussian, F. Kraus)",
+            "url": "https://www.jean-jaures.org/publication/radioscopie-du-zemmourisme/",
+            "date": "2022-03-26",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Le politiste Gilles Ivaldi (CNRS, CEVIPOF) emploie la catégorie de « droite radicale » pour Éric Zemmour comme pour Marine Le Pen, et oppose au « social-populisme » de cette dernière le « capitalisme populaire » du programme Zemmour 2022, plus libéral en économie. Aucune prise de position officielle du parti sur sa propre qualification n'a été identifiée dans les sources consultées.",
+        "sources": [
+          {
+            "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
+            "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
+            "date": "2022-03",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « Radioscopie du zemmourisme » (P. Cébille, J. Fourquet, L. Jussian, F. Kraus)",
+            "url": "https://www.jean-jaures.org/publication/radioscopie-du-zemmourisme/",
+            "date": "2022-03-26",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2021-12-05",
+        "event": "Lancement du parti Reconquête lors du meeting de Villepinte (« serment de Villepinte »).",
+        "sources": [
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Reconquête, « Notre mouvement » (site officiel)",
+            "url": "https://www.parti-reconquete.fr/le-mouvement",
+            "date": "2026-11",
+            "kind": "programme"
+          }
+        ]
+      },
+      {
+        "date": "2022-04-10",
+        "event": "Éric Zemmour obtient 7,07 % des suffrages exprimés (2 485 226 voix) au premier tour de la présidentielle et arrive quatrième.",
+        "sources": [
+          {
+            "title": "Conseil constitutionnel, décision n° 2022-195 PDR du 13 avril 2022 (résultats du premier tour de l'élection présidentielle)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022195PDR.htm",
+            "date": "2022-04-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Présidentielle 2027 : Éric Zemmour officialise sa candidature (LCP)",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
+            "date": "2026-09-17",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2022-06-12",
+        "event": "Législatives : aucun candidat Reconquête ne se qualifie pour le second tour ; Éric Zemmour est éliminé au premier tour dans la 4e circonscription du Var.",
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « France. Élections législatives. 7-30 juin 2022 »",
+            "url": "https://www.universalis.fr/evenement/7-30-juin-2022-elections-legislatives/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Législatives : Éric Zemmour éliminé dès le 1er tour (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/legislatives-eric-zemmour-elimine-des-le-1er-tour-213118",
+            "date": "2022-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-09",
+        "event": "La liste conduite par Marion Maréchal obtient 5,47 % aux élections européennes et cinq sièges.",
+        "sources": [
+          {
+            "title": "Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
+            "date": "2024-06-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2024-06-12",
+        "event": "Après l'appel de Marion Maréchal à soutenir les candidats de l'alliance RN-Ciotti, Éric Zemmour annonce son exclusion ; quatre des cinq eurodéputés élus (Marion Maréchal, Guillaume Peltier, Nicolas Bay, Laurence Trochu) sont exclus ou quittent le parti, Sarah Knafo restant sa seule élue au Parlement européen.",
+        "sources": [
+          {
+            "title": "Législatives en France : Eric Zemmour annonce l'exclusion de Marion Maréchal de Reconquête (La Libre Belgique)",
+            "url": "https://www.lalibre.be/international/europe/2024/06/12/legislatives-en-france-eric-zemmour-annonce-lexclusion-de-marion-marechal-de-reconquete-UDBPP24CBBFPLLZALD2JPGLEOQ/",
+            "date": "2024-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Législatives : Marion Maréchal, en désaccord avec Éric Zemmour, appelle à soutenir les candidats de l'alliance RN-Ciotti (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/legislatives-marion-marechal-en-desaccord-avec-eric-zemmour-appelle-a-soutenir-les-candidats-de-lalliance-rn-ciotti",
+            "date": "2024-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Guillaume Peltier »",
+            "url": "https://fr.wikipedia.org/wiki/Guillaume_Peltier",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Exclusive: Maréchal to build own party after Reconquête implodes in French election chaos (Brussels Signal)",
+            "url": "https://brusselssignal.eu/2024/06/exclusive-marechal-to-build-own-party-after-reconquete-implodes-in-french-election-chaos",
+            "date": "2024-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "date": "2026-09-17",
+        "event": "Éric Zemmour annonce sur BFMTV qu'il sera candidat à la présidentielle de 2027 ; une déclaration formelle est annoncée pour l'automne.",
+        "sources": [
+          {
+            "title": "Présidentielle 2027 : Éric Zemmour officialise sa candidature (LCP)",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
+            "date": "2026-09-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
+            "date": "2026-09-18",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "whyCreated": {
+      "text": "Reconquête est lancé le 5 décembre 2021 lors d'un meeting à Villepinte, cinq jours après la vidéo du 30 novembre 2021 par laquelle Éric Zemmour annonce sa candidature à la présidentielle de 2022. Éditorialiste sur CNews jusqu'en septembre 2021, date à laquelle l'autorité de régulation décide de décompter son temps de parole et où il cesse ses collaborations médiatiques, il dote ainsi sa candidature d'un parti qui prolonge l'association « Les Amis d'Éric Zemmour », créée au printemps 2021 ; Sarah Knafo, sa conseillère stratégique, joue un rôle dans cette création. Le parti revendique la défense de « notre civilisation » et de « notre identité » et une stratégie d'« union des droites » visant à réunir électeurs de LR et du RN. Il ne résulte ni d'une scission ni d'une fusion de partis, mais attire en 2022 des personnalités venues de LR (Guillaume Peltier) et de l'ancien FN (Marion Maréchal).",
+      "sources": [
+        {
+          "title": "Wikipédia, « Reconquête (parti politique) »",
+          "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Présidentielle 2022 : tout savoir sur Eric Zemmour, candidat Reconquête (CNews)",
+          "url": "https://www.cnews.fr/france/2022-02-20/presidentielle-2022-tout-savoir-sur-eric-zemmour-candidat-reconquete-1182277",
+          "date": "2022-02-20",
+          "kind": "presse"
+        },
+        {
+          "title": "La biographie et le CV de Sarah Knafo (Sud Radio)",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-sarah-knafo",
+          "date": "2026-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Reconquête, « Notre mouvement » (site officiel)",
+          "url": "https://www.parti-reconquete.fr/le-mouvement",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Wikipédia, « Guillaume Peltier »",
+          "url": "https://fr.wikipedia.org/wiki/Guillaume_Peltier",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Wikipédia, « Marion Maréchal »",
+          "url": "https://fr.wikipedia.org/wiki/Marion_Mar%C3%A9chal",
+          "date": "2026-11",
+          "kind": "statistique"
+        }
+      ]
+    },
+    "figures": [
+      {
+        "name": "Éric Zemmour",
+        "role": "Fondateur et président de Reconquête (depuis 2021) ; candidat à la présidentielle de 2022 (7,07 %) et déclaré pour 2027",
+        "background": "Né en 1958 à Montreuil dans une famille juive originaire d'Algérie, diplômé de Sciences Po, il est journaliste politique au Quotidien de Paris puis au Figaro (à partir de 1996), chroniqueur de télévision (On n'est pas couché, 2006-2011) et de radio, puis éditorialiste de Face à l'info sur CNews (2019-2021) ; son essai Le Suicide français (2014) est un succès de librairie. Condamnations définitives : provocation à la haine raciale (tribunal correctionnel de Paris, février 2011, propos télévisés de 2010, sans appel) ; provocation à la haine religieuse envers les musulmans (cour d'appel, mai 2018, propos de 2016, pourvoi rejeté) ; provocation publique à la haine et injure publique en raison de l'origine ou de la religion (discours à la « convention de la droite » du 28 septembre 2019 : condamné en 2020, relaxé en appel en 2021, relaxe cassée en 2023, condamné en février 2024, pourvoi rejeté le 16 septembre 2025) ; complicité d'injure publique et de provocation à la haine (propos de septembre 2020 sur les mineurs étrangers isolés, pourvoi rejeté le 2 décembre 2025) ; il a aussi été relaxé dans d'autres procédures. Condamnation non définitive : la cour d'appel de Paris l'a condamné le 2 avril 2025 à 10 000 € d'amende pour contestation de crime contre l'humanité pour avoir soutenu en 2019 que Pétain avait « sauvé » des juifs français (thèse contestée par des historiens de la période, dont Jacques Semelin) ; il affirme n'avoir « à aucun moment » voulu défendre Pétain et a annoncé un pourvoi en cassation, sur lequel aucune décision n'a été identifiée à date.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Éric Zemmour »",
+            "url": "https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Présidentielle 2022 : tout savoir sur Eric Zemmour, candidat Reconquête (CNews)",
+            "url": "https://www.cnews.fr/france/2022-02-20/presidentielle-2022-tout-savoir-sur-eric-zemmour-candidat-reconquete-1182277",
+            "date": "2022-02-20",
+            "kind": "presse"
+          },
+          {
+            "title": "Eric Zemmour, un habitué des controverses : retour sur ces autres affaires dans lesquelles il a été jugé (DH, AFP)",
+            "url": "https://www.dhnet.be/actu/monde/eric-zemmour-un-habitue-des-controverses-retour-sur-ces-autres-affaires-dans-lesquelles-il-a-ete-juge-61941a367b50a648b2d15b6f",
+            "date": "2021-11-16",
+            "kind": "presse"
+          },
+          {
+            "title": "Éric Zemmour définitivement condamné pour provocation à la haine raciale et injures racistes pour des propos en 2019 (ICI, France Bleu)",
+            "url": "https://www.ici.fr/infos/societe/eric-zemmour-a-ete-definitivement-condamne-pour-provocation-a-la-haine-raciale-et-injures-racistes-6052200",
+            "date": "2025-09-17",
+            "kind": "presse"
+          },
+          {
+            "title": "France : la Cour de cassation confirme et rend définitive la condamnation de Zemmour pour provocation à la haine raciale (Anadolu)",
+            "url": "https://www.aa.com.tr/fr/monde/france-la-cour-de-cassation-confirme-et-rend-d%C3%A9finitive-la-condamnation-de-zemmour-pour-provocation-%C3%A0-la-haine-raciale-/3690745",
+            "date": "2025-09-17",
+            "kind": "presse"
+          },
+          {
+            "title": "La Cour de cassation confirme deux condamnations d'Éric Zemmour pour complicité d'injure publique, provocation à la haine et pour diffamation (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/en-bref/la-cour-de-cassation-confirme-deux-condamnations-deric-zemmour-pour-complicite-dinjure-publique-provocation-a-la-haine-et-pour-diffamation-13229/",
+            "date": "2025-12-02",
+            "kind": "presse"
+          },
+          {
+            "title": "« Voleurs, assassins, violeurs » : Éric Zemmour définitivement condamné pour ses propos sur CNews (Bladi)",
+            "url": "https://www.bladi.net/voleurs-assassins-violeurs-eric-zemmour-definitivement-condamne,118213.html",
+            "date": "2025-12-03",
+            "kind": "presse"
+          },
+          {
+            "title": "Pétain « sauveur » de juifs français : Zemmour condamné à 10.000 euros d'amende (La Libre Belgique, AFP)",
+            "url": "https://www.lalibre.be/international/europe/2025/04/02/petain-sauveur-de-juifs-francais-zemmour-condamne-a-10000-euros-damende-L5KWSO364JELFK3HZLYYFRLNS4/",
+            "date": "2025-04-02",
+            "kind": "presse"
+          },
+          {
+            "title": "Propos de Zemmour sur Pétain : « Si tant de juifs ont survécu à l'Occupation, ce n'est pas grâce au régime de Vichy », rappelle l'historien Jacques Semelin (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/societe/propos-de-zemmour-sur-petain-si-tant-de-juifs-ont-survecu-a-loccupation-ce-nest-pas-grace-au-regime-de-vichy-rappelle-lhistorien-jacques-semelin",
+            "date": "2023-09-08",
+            "kind": "presse"
+          },
+          {
+            "title": "Pétain « sauveur » de juifs français : Zemmour condamné à 10 000 euros d'amende (The Times of Israel, AFP)",
+            "url": "https://fr.timesofisrael.com/petain-sauveur-de-juifs-francais-zemmour-condamne-a-10-000-euros-damende/",
+            "date": "2025-04-02",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Sarah Knafo",
+        "role": "Conseillère stratégique puis directrice de campagne d'Éric Zemmour (2021-2022) ; députée européenne Reconquête depuis 2024",
+        "background": "Née en 1993, passée par Sciences Po et l'ENA (promotion 2018-2020), magistrate à la Cour des comptes à partir de 2020, elle conseille Éric Zemmour à partir de 2021. Seule élue de la liste de 2024 restée au parti après la crise de juin 2024, elle obtient 10,40 % au premier tour des municipales de 2026 à Paris ; elle se consacre aux questions économiques et fiscales et a écarté publiquement une candidature à la présidentielle de 2027.",
+        "sources": [
+          {
+            "title": "La biographie et le CV de Sarah Knafo (Sud Radio)",
+            "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-sarah-knafo",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Présidentielle : Sarah Knafo, une campagne peut en cacher une autre (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-sarah-knafo-une-campagne-peut-en-cacher-une-autre",
+            "date": "2026-09-01",
+            "kind": "presse"
+          },
+          {
+            "title": "Exclusive: Maréchal to build own party after Reconquête implodes in French election chaos (Brussels Signal)",
+            "url": "https://brusselssignal.eu/2024/06/exclusive-marechal-to-build-own-party-after-reconquete-implodes-in-french-election-chaos",
+            "date": "2024-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Marion Maréchal",
+        "role": "Vice-présidente exécutive de Reconquête (2022-2024), tête de liste aux européennes de 2024 ; exclue en juin 2024",
+        "background": "Petite-fille de Jean-Marie Le Pen et nièce de Marine Le Pen, elle est élue députée FN du Vaucluse en 2012, à 22 ans, puis se retire de la vie politique en 2017 et cofonde en 2018 l'ISSEP, un établissement privé d'enseignement supérieur. Ralliée à Éric Zemmour en 2022, elle conduit la liste Reconquête aux européennes de 2024 (5,47 %), puis appelle à soutenir les candidats de l'alliance RN-Ciotti ; Éric Zemmour annonce son exclusion le 12 juin 2024. Elle fonde en octobre 2024 le parti Identité-Libertés.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Marion Maréchal »",
+            "url": "https://fr.wikipedia.org/wiki/Marion_Mar%C3%A9chal",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Marion Maréchal, the leading candidate for Reconquête at European elections, was expelled from the party (Eunews)",
+            "url": "https://www.eunews.it/en/2024/06/13/marion-marechal-the-leading-candidate-for-reconquete-at-european-elections-was-expelled-from-the-party/",
+            "date": "2024-06-13",
+            "kind": "presse"
+          },
+          {
+            "title": "Législatives : Marion Maréchal, en désaccord avec Éric Zemmour, appelle à soutenir les candidats de l'alliance RN-Ciotti (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/legislatives-marion-marechal-en-desaccord-avec-eric-zemmour-appelle-a-soutenir-les-candidats-de-lalliance-rn-ciotti",
+            "date": "2024-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Législatives en France : Eric Zemmour annonce l'exclusion de Marion Maréchal de Reconquête (La Libre Belgique)",
+            "url": "https://www.lalibre.be/international/europe/2024/06/12/legislatives-en-france-eric-zemmour-annonce-lexclusion-de-marion-marechal-de-reconquete-UDBPP24CBBFPLLZALD2JPGLEOQ/",
+            "date": "2024-06-12",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "name": "Guillaume Peltier",
+        "role": "Porte-parole puis vice-président de Reconquête (2022-2024) ; député européen depuis 2024 ; quitte le parti en juin 2024",
+        "background": "Il adhère en 1996 au Front national de la jeunesse, suit Bruno Mégret au MNR lors de la scission de 1998, puis rejoint le Mouvement pour la France de Philippe de Villiers (secrétaire général en 2003) avant d'entrer à l'UMP en 2009, où il cofonde le courant « La Droite forte » (2012) et devient vice-président de LR. Il rallie Éric Zemmour le 9 janvier 2022, ce qui entraîne son exclusion de LR ; en juin 2024, il quitte Reconquête avec Marion Maréchal, Nicolas Bay et Laurence Trochu, après l'annonce par Éric Zemmour de l'exclusion de Marion Maréchal et de ses proches, puis rejoint Identité-Libertés.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Guillaume Peltier »",
+            "url": "https://fr.wikipedia.org/wiki/Guillaume_Peltier",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Guillaume Peltier, agitateur d'idées chez LR depuis 2009 (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/guillaume-peltier-agitateur-d-idees-chez-lr-depuis-2009-133365",
+            "date": "2018-09-22",
+            "kind": "presse"
+          },
+          {
+            "title": "Exclusive: Maréchal to build own party after Reconquête implodes in French election chaos (Brussels Signal)",
+            "url": "https://brusselssignal.eu/2024/06/exclusive-marechal-to-build-own-party-after-reconquete-implodes-in-french-election-chaos",
+            "date": "2024-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Législatives en France : Eric Zemmour annonce l'exclusion de Marion Maréchal de Reconquête (La Libre Belgique)",
+            "url": "https://www.lalibre.be/international/europe/2024/06/12/legislatives-en-france-eric-zemmour-annonce-lexclusion-de-marion-marechal-de-reconquete-UDBPP24CBBFPLLZALD2JPGLEOQ/",
+            "date": "2024-06-12",
+            "kind": "presse"
+          }
+        ]
+      }
+    ],
+    "thought": [
+      {
+        "text": "Identité et « civilisation » : le parti revendique la défense de « notre civilisation », de « notre identité », des familles et des terroirs, et la « remigration », terme assumé par Éric Zemmour en 2022 ; le politiste Jean-Yves Camus, cité par Wikipédia, voit dans l'identitarisme le marqueur essentiel du parti au sein de l'extrême droite, et la Fondation Jean-Jaurès prête à l'électorat zemmourien un « tropisme identitaire et sécuritaire ».",
+        "sources": [
+          {
+            "title": "Reconquête, « Notre mouvement » (site officiel)",
+            "url": "https://www.parti-reconquete.fr/le-mouvement",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+            "date": "2022-03-23",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « Radioscopie du zemmourisme » (P. Cébille, J. Fourquet, L. Jussian, F. Kraus)",
+            "url": "https://www.jean-jaures.org/publication/radioscopie-du-zemmourisme/",
+            "date": "2022-03-26",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "« Grand remplacement » : Éric Zemmour reprend à son compte la thèse du « grand remplacement », formulée par l'écrivain Renaud Camus au début des années 2010, selon laquelle la population française serait remplacée par une population immigrée extra-européenne, et en fait un thème central de sa campagne de 2022 ; les démographes la contestent, Hervé Le Bras (INED) la qualifiant de « simplement fausse » et la présentant comme un slogan sans fondement démographique, avec des projections plaçant les immigrés et leurs descendants entre 19 % et 32 % de la population en 2050 selon les définitions.",
+        "sources": [
+          {
+            "title": "Why the 'great replacement' theory does not make sense in France (The Connexion, entretien avec Hervé Le Bras, INED)",
+            "url": "https://www.connexionfrance.com/article/Comment/Your-views/Why-the-great-replacement-theory-does-not-make-sense-in-France",
+            "date": "2022-02-17",
+            "kind": "presse"
+          },
+          {
+            "title": "DébatDoc, « Que cache le grand remplacement ? » (LCP, avec Nicolas Lebourg et Hervé Le Bras)",
+            "url": "https://lcp.fr/programmes/debatdoc/que-cache-le-grand-remplacement-107028",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Grand Remplacement »",
+            "url": "https://fr.wikipedia.org/wiki/Grand_Remplacement",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "text": "Lectures historiques : Éric Zemmour, auteur d'essais (Le Suicide français, 2014 ; La France n'a pas dit son dernier mot, 2021), soutient notamment que le régime de Vichy aurait protégé les juifs français ; cette thèse est contestée par des historiens de la période, dont Jacques Semelin, qui rappelle que les juifs ont survécu « en dépit de Vichy » et non grâce à lui ; elle a donné lieu à une condamnation en appel en 2025, non définitive, Éric Zemmour ayant annoncé un pourvoi en cassation.",
+        "sources": [
+          {
+            "title": "Wikipédia, « Éric Zemmour »",
+            "url": "https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Propos de Zemmour sur Pétain : « Si tant de juifs ont survécu à l'Occupation, ce n'est pas grâce au régime de Vichy », rappelle l'historien Jacques Semelin (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/societe/propos-de-zemmour-sur-petain-si-tant-de-juifs-ont-survecu-a-loccupation-ce-nest-pas-grace-au-regime-de-vichy-rappelle-lhistorien-jacques-semelin",
+            "date": "2023-09-08",
+            "kind": "presse"
+          },
+          {
+            "title": "Pétain « sauveur » de juifs français : Zemmour condamné à 10.000 euros d'amende (La Libre Belgique, AFP)",
+            "url": "https://www.lalibre.be/international/europe/2025/04/02/petain-sauveur-de-juifs-francais-zemmour-condamne-a-10000-euros-damende-L5KWSO364JELFK3HZLYYFRLNS4/",
+            "date": "2025-04-02",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "text": "Droite radicale et libéralisme économique : le politiste Gilles Ivaldi (CEVIPOF) classe Éric Zemmour, comme Marine Le Pen, dans la « droite radicale », mais oppose au « social-populisme » du RN le « capitalisme populaire » du programme Reconquête de 2022, plus libéral en économie ; le parti revendique une « union des droites », stratégie qui a conduit en juin 2024 à la rupture avec Marion Maréchal et les élus favorables à l'alliance RN-Ciotti.",
+        "sources": [
+          {
+            "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
+            "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
+            "date": "2022-03",
+            "kind": "statistique"
+          },
+          {
+            "title": "Reconquête, « Notre mouvement » (site officiel)",
+            "url": "https://www.parti-reconquete.fr/le-mouvement",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Législatives : Marion Maréchal, en désaccord avec Éric Zemmour, appelle à soutenir les candidats de l'alliance RN-Ciotti (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/legislatives-marion-marechal-en-desaccord-avec-eric-zemmour-appelle-a-soutenir-les-candidats-de-lalliance-rn-ciotti",
+            "date": "2024-06-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Wikipédia, « Reconquête (parti politique) »",
+            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
+            "date": "2026-11",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ]
+  },
+  "stances": {
+    "q01-isf": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée et sourcée sur un ISF ou la « taxe Zucman » ; le programme 2022 maintenait l'IFI avec une déduction de 50 % des investissements dans les PME, et le chiffrage 2026 de Sarah Knafo ne traite pas de la fiscalité du patrimoine.",
+      "sources": []
+    },
+    "q02-depenses": {
+      "stance": 2,
+      "justification": "Le chiffrage « Budget 2027 » publié par Sarah Knafo annonce 130 à 140 Md€ d'économies annuelles selon les sources ; le programme 2022 prévoyait une « baisse de la dépense publique » (l'Institut Montaigne estimait toutefois en 2022 une hausse nette de la dépense de 36 Md€).",
+      "sources": [
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Présidentielle : Sarah Knafo, une campagne peut en cacher une autre (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-sarah-knafo-une-campagne-peut-en-cacher-une-autre",
+          "date": "2026-09-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+          "date": "2022-04",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q03-charges": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit 30 Md€ de baisse des impôts de production par an et un IS à 15 % pour les PME.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+          "date": "2022-04",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "date": "2022-03-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q04-retraite": {
+      "stance": -2,
+      "justification": "Le programme 2022 prévoyait de porter l'âge légal à 64 ans à l'horizon 2030 ; pas de position 2027 identifiée.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+          "date": "2022-04",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "date": "2022-03-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q05-smic": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée sur une hausse du SMIC ; le programme 2022 proposait une baisse de CSG sur les bas salaires.",
+      "sources": []
+    },
+    "q06-chomage": {
+      "stance": 2,
+      "justification": "Le chiffrage 2026 propose de limiter le RSA à trois ans pour les personnes aptes au travail ; le programme 2022 prévoyait des contrôles systématiques des allocataires.",
+      "sources": [
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q07-immigration": {
+      "stance": 2,
+      "justification": "Le programme 2022 supprime le regroupement familial et limite l'asile à une centaine de personnes par an ; Éric Zemmour défend la « remigration » en 2026.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
+          "date": "2026-09-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "date": "2022-03-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q08-preference": {
+      "stance": 2,
+      "justification": "Le chiffrage 2026 propose de réserver les aides non contributives aux Français ; le programme 2022 les supprimait pour les étrangers extra-européens.",
+      "sources": [
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q09-regularisation": {
+      "stance": -2,
+      "justification": "Le programme 2022 prévoit d'« interdire définitivement la régularisation » de tout étranger entré illégalement.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q10-peines-planchers": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit des peines planchers « pour tous les crimes et délits ».",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q11-police": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée et sourcée sur le récépissé ou un contrôle indépendant de la police.",
+      "sources": []
+    },
+    "q12-nucleaire": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit au moins 14 nouveaux réacteurs EPR2 d'ici 2050.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+          "date": "2022-04",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "date": "2022-03-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q13-renouvelables": {
+      "stance": -2,
+      "justification": "Le programme 2022 prévoit de mettre fin à tous les projets éoliens ; le chiffrage 2026 supprime le soutien aux renouvelables intermittentes.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "q14-normes-agricoles": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit de mettre fin à « l'excès de normes et de contraintes » pesant sur les agriculteurs.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+          "date": "2022-04",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q15-medecins": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée sur la régulation de l'installation ; le programme 2022 propose des médecins salariés par l'État et une garde obligatoire, sans contrainte d'installation.",
+      "sources": []
+    },
+    "q16-fin-de-vie": {
+      "stance": -2,
+      "justification": "Éric Zemmour s'est engagé à abroger la loi de 2026 sur l'aide à mourir (« J'abrogerai cette loi ») ; Reconquête n'a pas de groupe à l'Assemblée et n'a donc pas pris part au vote.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+          "date": "2026-07-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q17-ecole-privee": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée et sourcée sur le financement de l'enseignement privé sous contrat.",
+      "sources": []
+    },
+    "q18-ukraine": {
+      "stance": null,
+      "justification": "Pas de position récente vérifiée sur le soutien militaire à l'Ukraine ; le programme 2022 prévoyait d'« agir pour rétablir la paix » et un dialogue incluant la Russie, sans se prononcer sur les livraisons d'armes. Les votes de Sarah Knafo au Parlement européen sur l'aide à l'Ukraine n'ont pas pu être vérifiés.",
+      "sources": []
+    },
+    "q19-droit-europeen": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit la supériorité des nouvelles lois nationales sur les textes internationaux antérieurs (révision de l'article 55).",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "date": "2022-03-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q20-defense-europe": {
+      "stance": null,
+      "justification": "Pas de position explicite identifiée sur l'endettement commun de l'UE ; le chiffrage 2026 propose un retour au budget européen d'avant le Covid.",
+      "sources": []
+    },
+    "q21-libre-echange": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit le veto de la France à toute négociation de traité de libre-échange ; pas de déclaration identifiée sur la signature (janvier 2026) ou l'application provisoire de l'accord UE-Mercosur.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q22-vie-republique": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée sur une VIe République ; les réformes proposées étendent le référendum et le rôle du Parlement face au Conseil constitutionnel.",
+      "sources": []
+    },
+    "q23-referendum": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit un grand référendum sur l'immigration, la sécurité et la justice.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "date": "2022-03-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q24-proportionnelle": {
+      "stance": 1,
+      "justification": "En septembre 2024, Reconquête a fait de l'instauration de la proportionnelle un axe de sa rentrée politique, Sarah Knafo y voyant « une garantie d'avoir des élus » ; pas de proposition programmatique ni de déclaration plus récente identifiée.",
+      "sources": [
+        {
+          "title": "Après la tempête, Reconquête fait sa rentrée politique à Orange (Europe 1)",
+          "url": "https://www.europe1.fr/politique/apres-la-tempete-reconquete-fait-sa-rentree-politique-a-orange-4266102",
+          "date": "2024-09-07",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "candidacies": {
+    "presidentielle-2027": {
+      "candidateName": "Éric Zemmour",
+      "status": "annonce",
+      "statusLabel": "Candidature annoncée",
+      "candidate": "Éric Zemmour (statut : candidature annoncée le 2026-09-17 sur BFMTV ; déclaration formelle annoncée pour l'automne 2026, non identifiée à date)",
+      "programmeStatus": "Programme présidentiel 2027 non publié à date (une consultation « Le Programme pour la France » est en cours sur leprogrammepourlafrance.fr). Fiche fondée sur le programme présidentiel 2022, le chiffrage budgétaire « Budget 2027 » publié par Sarah Knafo (2026, présenté par un cadre du parti comme n'étant « pas un programme présidentiel ») et les déclarations d'Éric Zemmour en 2026. Faute de groupe parlementaire, aucune position ne repose sur des votes à l'Assemblée. Les positions de 2022 sont signalées comme telles.",
+      "themes": {
+        "economie": {
+          "summary": "Reconquête propose une forte baisse des impôts de production et de la dépense publique. Le chiffrage publié par Sarah Knafo en 2026 annonce 130 à 140 Md€ d'économies annuelles selon les sources.",
+          "measures": [
+            {
+              "text": "Baisse des impôts de production de 30 Md€ par an, en supprimant en priorité la C3S, la CVAE et la CFE (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Impôt sur les sociétés à 15 % pour les PME, artisans, commerçants et agriculteurs jusqu'à 300 000 € de bénéfices, et suppression des droits de donation et de succession sur la transmission des entreprises familiales (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Chiffrage « Budget 2027 » de Sarah Knafo (livre « Le Casse du siècle », septembre 2026) : le site budget2027.fr annonce « au moins » 140 Md€ d'économies par an, dont 40 Md€ par le non-remplacement de 800 000 départs sur le mandat. Divergence : Public Sénat rapportait 130 Md€ d'économies annuelles à la parution du livre, qu'un cadre de Reconquête présente comme n'étant « pas un programme présidentiel ».",
+              "sources": [
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                },
+                {
+                  "title": "Présidentielle : Sarah Knafo, une campagne peut en cacher une autre (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-sarah-knafo-une-campagne-peut-en-cacher-une-autre",
+                  "date": "2026-09-01",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Privatisation de l'audiovisuel public (4 Md€ selon le chiffrage 2026) et suppression de la redevance (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "travail": {
+          "summary": "Le programme 2022 portait l'âge légal à 64 ans et prévoyait des baisses de CSG et de cotisations sur les bas salaires. En 2026, le chiffrage de Sarah Knafo propose de limiter la durée du RSA.",
+          "measures": [
+            {
+              "text": "Report de l'âge légal de départ à 64 ans à l'horizon 2030, avec aménagements pour carrières longues ou pénibles (programme 2022 ; pas de position 2027 identifiée).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Baisse dégressive de la CSG pour les salaires du SMIC à 2 000 €, présentée comme l'équivalent d'un 13e mois, financée par la suppression des aides non contributives aux étrangers extra-européens (programme 2022) ; l'Institut Montaigne chiffre pour sa part une baisse de CSG sur l'ensemble des revenus d'activité (de 9,2 % à 2,5 %).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Prime « Zéro Charges » jusqu'à trois fois le salaire net mensuel et exonération totale d'impôts et de cotisations des heures supplémentaires (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Limiter le RSA à trois ans pour les personnes aptes au travail (4,8 Md€ d'économies annoncées).",
+              "sources": [
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                }
+              ]
+            }
+          ]
+        },
+        "immigration": {
+          "summary": "Reconquête propose un référendum sur l'immigration, la suppression du regroupement familial et du droit du sol, et ce qu'il appelle la « remigration ». En 2026, Éric Zemmour propose l'expulsion des étrangers après un an de chômage.",
+          "measures": [
+            {
+              "text": "Suppression du droit au regroupement familial et limitation du droit d'asile à « une centaine d'individus » par an, avec dépôt des demandes à l'étranger (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suppression des aides sociales non contributives (allocations familiales, aides au logement, RSA, minimum vieillesse) pour les étrangers extra-européens (programme 2022) ; en 2026, réserver ces aides aux Français (15 à 20 Md€ annoncés).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suppression du droit du sol et interdiction définitive de la régularisation de tout étranger entré illégalement (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Expulsion d'un étranger, même en situation régulière, après un an de chômage, dans le cadre de la « remigration » (déclaration du 17/09/2026 ; le programme 2022 prévoyait six mois).",
+              "sources": [
+                {
+                  "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
+                  "date": "2026-09-18",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Éric Zemmour officialise sa candidature (LCP)",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
+                  "date": "2026-09-17",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Remplacement de l'AME par la seule prise en charge des soins d'urgence vitale (programme 2022 ; 1,3 Md€ d'économies dans le chiffrage 2026).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "securite": {
+          "summary": "Le programme 2022 de Reconquête propose des peines planchers pour tous les crimes et délits et la fin des aménagements de peine. Il prévoit la déchéance de nationalité et l'expulsion des délinquants binationaux récidivistes.",
+          "measures": [
+            {
+              "text": "Peines planchers « pour tous les crimes et délits » et fin des aménagements de peine (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Rétablissement d'une perpétuité réelle non compressible pour les criminels les plus dangereux et les terroristes (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "10 000 places de prison supplémentaires sur le mandat (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Déchéance de nationalité puis expulsion des criminels binationaux et des délinquants récidivistes ; expulsion des étrangers fichés S (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "ecologie": {
+          "summary": "Reconquête fait du nucléaire le socle de sa politique énergétique et propose l'arrêt de tous les projets éoliens. En agriculture, il propose de limiter les normes et d'interdire les importations non conformes aux normes françaises.",
+          "measures": [
+            {
+              "text": "Construction d'au moins 14 réacteurs EPR2 d'ici 2050, prolongation du parc à 60 ans au moins et remplacement de l'ARENH par un tarif régulé de l'électricité nucléaire (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Fin de tous les projets d'éoliennes, terrestres et en mer (programme 2022) ; fin du soutien public aux renouvelables intermittentes (8 Md€) et suppression de l'Ademe dans le chiffrage 2026.",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                }
+              ]
+            },
+            {
+              "text": "Interdiction des importations de produits agricoles que les agriculteurs français n'ont pas le droit de produire et fin de « l'excès de normes » (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Développement de l'hydroélectricité et refus de l'ouverture à la concurrence des barrages (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "sante": {
+          "summary": "Le programme 2022 prévoyait des recrutements hospitaliers, la hausse des rémunérations des soignants et la suppression des ARS. En 2026, Éric Zemmour promet d'abroger la loi sur l'aide à mourir.",
+          "measures": [
+            {
+              "text": "Recrutement de 40 000 personnels hospitaliers et hausse immédiate de 12 % de la rémunération des aides-soignants et infirmiers (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Doublement des capacités de formation des médecins en 5 ans et recrutement de 1 000 médecins salariés par l'État pour les déserts médicaux ; rétablissement d'un système de garde obligatoire (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suppression des agences régionales de santé, dont les missions seraient transférées aux préfets (programme 2022 ; 1 Md€ dans le chiffrage 2026).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                }
+              ]
+            },
+            {
+              "text": "« J'abrogerai cette loi » : engagement d'Éric Zemmour d'abroger la loi de 2026 sur l'aide à mourir.",
+              "sources": [
+                {
+                  "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+                  "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+                  "date": "2026-07-17",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
+        },
+        "education": {
+          "summary": "Le programme 2022 de Reconquête met l'accent sur les savoirs fondamentaux, la fin du collège unique et la discipline. Ces mesures n'ont pas été actualisées dans un document 2027 identifié.",
+          "measures": [
+            {
+              "text": "Recentrage du primaire sur lire, écrire, compter et instauration d'un Certificat de fin d'études (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
+                  "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
+                  "date": "2022-04",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Fin du collège unique avec des classes de niveau et une filière pré-professionnelle dès la 4e (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Suspension des allocations familiales des parents d'élèves perturbateurs ou absentéistes et internats de réinsertion (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Port de la blouse obligatoire à l'école primaire et baccalauréat redevenu « national, anonyme et terminal » (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "europe": {
+          "summary": "Reconquête défend une « Europe des Nations » et la supériorité des lois nationales sur les traités. Le programme 2022 prévoyait un veto à tout traité de libre-échange et la sortie du commandement intégré de l'OTAN.",
+          "measures": [
+            {
+              "text": "Supériorité des nouvelles lois nationales sur tout texte international antérieur, par modification de l'article 55 de la Constitution (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Veto de la France à toute négociation, actuelle et future, de traité de libre-échange (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Refus de tout nouvel élargissement de l'UE et blocage de tout nouveau transfert de compétences (programme 2022) ; retour au budget européen d'avant le Covid et baisse de la contribution française (14 Md€ dans le chiffrage 2026).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+                  "url": "https://www.budget2027.fr/",
+                  "date": "2026-09",
+                  "kind": "declaration"
+                }
+              ]
+            },
+            {
+              "text": "Sortie du commandement militaire intégré de l'OTAN et action pour « rétablir la paix en Ukraine » par un dialogue incluant la Russie (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        },
+        "institutions": {
+          "summary": "Reconquête propose un recours étendu au référendum et un droit pour le Parlement de passer outre une censure du Conseil constitutionnel. Le programme 2022 prévoyait aussi une réforme de l'organisation territoriale.",
+          "measures": [
+            {
+              "text": "Grand référendum sur l'immigration, la sécurité et la justice organisé en même temps que les législatives suivant la présidentielle (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Référendum obligatoire pour toute révision de la Constitution, ratification de traité européen ou élargissement de l'UE (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+                  "date": "2022-03-23",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Permettre au Parlement réuni en Congrès d'avoir le dernier mot, à la majorité des 3/5e, en cas de censure d'une loi par le Conseil constitutionnel (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Rétablissement du conseiller territorial et de trois jours de carence pour les arrêts maladie des fonctionnaires (programme 2022).",
+              "sources": [
+                {
+                  "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+                  "date": "2022-03",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}
