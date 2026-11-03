@@ -1,0 +1,221 @@
+{
+  "question": "q15-medecins",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Le groupe Écologiste a voté à l'unanimité la régulation de l'installation des médecins (article 1er de la PPL Garot, vote n° 1214 du 2 avril 2025 : 19 pour) et le texte entier (vote n° 1607 du 7 mai 2025 : 17 pour) ; mesure prévue par le contrat du NFP.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 1,
+      "justification": "Le groupe Horizons a voté majoritairement pour l'article 1er régulant l'installation (vote n° 1214 : 8 pour, 5 contre) et pour le texte entier (vote n° 1607 : 5 pour, 1 abstention). Pas de déclaration d'Édouard Philippe en 2025-2026 ; Premier ministre, il avait écarté en 2017 une répartition contraignante au profit d'incitations.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "Édouard Philippe présente son plan contre les déserts médicaux",
+          "url": "https://www.publicsenat.fr/actualites/politique/edouard-philippe-presente-son-plan-contre-les-deserts-medicaux-78562",
+          "date": "2017-10",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 2,
+      "justification": "Le programme prévoit de réguler l'installation des médecins ; le groupe a voté à l'unanimité l'article 1er de la PPL Garot (vote n° 1214 : 40 pour) et le texte entier (vote n° 1607 : 23 pour).",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 1,
+      "justification": "Plutôt favorable, sous une forme assouplie : la PPL du sénateur LR Philippe Mouiller, adoptée par le Sénat le 13 mai 2025, subordonne l'installation en zone « sur-dense » à un engagement d'exercer en partie dans une zone moins dotée ; au Sénat, la majorité de droite a réécrit en ce sens l'article 1er de la PPL Garot le 11 juin 2026 (215 voix contre 118). À l'Assemblée, le groupe DR s'est partagé sur la version Garot (vote n° 1214 : 8 pour, 6 contre). Pas de position du candidat.",
+      "sources": [
+        {
+          "title": "Installation des médecins, déserts médicaux… Le Sénat adopte la proposition de loi pour « améliorer l'accès aux soins dans les territoires » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/sante/installation-des-medecins-deserts-medicaux-le-senat-adopte-la-proposition-de-loi-pour-ameliorer-lacces-aux-soins-dans-les-territoires",
+          "date": "2025-05-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Caducee.net, « Déserts médicaux : le Sénat adopte une régulation édulcorée de l'installation mais laisse la loi Garot en plan »",
+          "url": "https://www.caducee.net/actualite-medicale/16919/deserts-medicaux-le-senat-adopte-une-regulation-edulcoree-de-l-installation-mais-laisse-la-loi-garot-en-plan.html",
+          "date": "2026-06-13",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": -1,
+      "justification": "Le programme écarte une régulation « par la contrainte » ou « les injonctions administratives » et mise sur le doublement des étudiants en médecine ; il prévoit toutefois que les communautés médicales locales puissent « réguler l'offre ». David Lisnard s'est opposé à la régulation de l'installation face à Bernard Cazeneuve (18 février 2025).",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – Programme « Santé » (page non datée, consultée en novembre 2026)",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/sante/",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Le Quotidien du Médecin, « Contrepartie ou liberté ? Cazeneuve et Lisnard s'opposent sur la régulation de l'installation des médecins »",
+          "url": "https://rhumatologie.lequotidiendumedecin.fr/sante-societe/politique-de-sante/contrepartie-ou-liberte-cazeneuve-et-lisnard-sopposent-sur-la-regulation-linstallation-des-medecins",
+          "date": "2025-02-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 2,
+      "justification": "Le programme 2022 prévoit un conventionnement sélectif à l'installation ; le groupe GDR a voté à l'unanimité l'article 1er de la PPL Garot (vote n° 1214 : 10 pour) et le texte entier (vote n° 1607 : 7 pour).",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "La PPL est portée par le député PS Guillaume Garot, et le groupe a voté très majoritairement l'article 1er (vote n° 1214 : 50 pour, 1 contre) et le texte entier (vote n° 1607 : 26 pour, 1 contre). Raphaël Glucksmann ne s'est pas exprimé sur ce point.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins »",
+          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+          "date": "2025-05-07",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": null,
+      "justification": "Pas de position publique sur la régulation de l'installation : le programme 2022 propose de recruter 1 000 médecins salariés par l'État pour les déserts médicaux et de rétablir une garde obligatoire, sans contrainte d'installation. Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": []
+    },
+    "renaissance": {
+      "stance": -1,
+      "justification": "Le groupe EPR a voté majoritairement contre l'article 1er régulant l'installation (vote n° 1214 : 18 contre, 4 pour, 1 abstention), puis s'est partagé sur le texte entier (vote n° 1607 : 4 pour, 4 contre). Pas de déclaration de Gabriel Attal sur la régulation en 2025-2026.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Déserts médicaux : l'Assemblée nationale vote en faveur d'une régulation de l'installation des médecins »",
+          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-nationale-vote-en-faveur-d-une-regulation-de-l-installation",
+          "date": "2025-04-03",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -2,
+      "justification": "Le groupe RN a voté unanimement contre l'article 1er régulant l'installation (vote n° 1214 : 50 contre), son orateur dénonçant une « forme de coercition », puis s'est abstenu sur le texte entier (vote n° 1607 : 8 abstentions) ; le programme 2022 privilégie les incitations financières.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
+        },
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « La santé »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-la-sante.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : vote n° 1214 du 02/04/2025 sur l'amendement n° 55 de Guillaume Garot, qui réécrit l'article 1er (autorisation d'installation délivrée par l'ARS) : c'est le mécanisme décrit par l'énoncé, et la participation y est plus forte (243 votants) qu'au vote final n° 1607 (118 votants), cité en complément. Changements par rapport à la v1 : RN passe de -1 à -2 (vote unanime contre l'article 1er ; l'abstention ne porte que sur l'ensemble du texte) ; PS-PP passe de 1 à 2 (vote quasi unanime, règle appliquée comme pour les autres groupes) ; RE passe de null à -1 (78 % contre sur l'article 1er) ; HOR passe de null à 1 (majorité pour sur les deux votes). Incertains : HOR (8 contre 5, candidat hostile à la contrainte en 2017) ; LR (le dispositif Mouiller est une régulation conditionnelle, et le groupe DR s'est partagé à l'Assemblée) ; RE (groupe partagé 4-4 sur le texte final). Aucun candidat de ces partis n'a été identifié s'exprimant en 2025-2026. Texte help : « Le Sénat en a voté une version assouplie en juin 2026 » est imprécis : le 11/06/2026, le Sénat n'a adopté que l'article 1er réécrit (215 voix contre 118) et n'a pas terminé l'examen, faute de temps (Caducee.net, 13/06/2026). Correction proposée : « Le Sénat a commencé à l'examiner en juin 2026 : il a adopté un article 1er assoupli, mais n'a pas terminé l'examen. » Vérification croisée (3 novembre 2026) : dates converties, valeurs inchangées."
+}

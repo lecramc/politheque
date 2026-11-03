@@ -1,0 +1,192 @@
+{
+  "question": "q34-mineurs",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Le groupe Écologiste et Social a voté contre la proposition de loi Attal sur la justice des mineurs, qui facilitait l'éviction de l'excuse de minorité à partir de 16 ans (texte de la CMP, 13 mai 2025 : 0 pour, 36 contre).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL visant à renforcer l'autorité de la justice à l'égard des mineurs délinquants et de leurs parents (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 2,
+      "justification": "Le site de campagne d'Édouard Philippe propose la « levée de l'excuse de minorité » pour les faits de narcotrafic. Le groupe Horizons a voté la proposition de loi Attal (13 mai 2025 : 32 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Pour une France plus sûre — Avec Édouard 2027",
+          "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-sure",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": -2,
+      "justification": "Le groupe LFI a voté contre la proposition de loi Attal (13 mai 2025 : 0 pour, 67 contre) et a défendu une motion de rejet préalable (Mathilde Panot).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1623, motion de rejet préalable (Mme Panot)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1623",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "Le groupe Droite républicaine a voté la proposition de loi Attal (13 mai 2025 : 45 pour, 0 contre), adoptée définitivement au Sénat le 19 mai 2025 avec le soutien de la droite sénatoriale. Pas de déclaration de Bruno Retailleau sur l'excuse de minorité en 2026.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Justice des mineurs : le Sénat adopte définitivement le texte",
+          "url": "https://www.publicsenat.fr/emission/100-senat/justice-des-mineurs-le-senat-adopte-definitivement-le-texte-e235",
+          "date": "2025-05-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 2,
+      "justification": "Le programme propose d'« abaisser la majorité pénale à 16 ans » et d'inverser le principe de l'excuse de minorité dès 13 ans. Pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – Programme « Sécurité » (page non datée, consultée en novembre 2026)",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/securite/",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": -2,
+      "justification": "Les députés du groupe GDR, où siègent les communistes, ont voté contre la proposition de loi Attal (13 mai 2025 : 0 pour, 13 contre).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": -2,
+      "justification": "Le groupe Socialistes a voté contre la proposition de loi Attal (13 mai 2025 : 0 pour, 62 contre). Pas de déclaration de Raphaël Glucksmann sur l'excuse de minorité.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2022 d'Éric Zemmour proposait d'« abaisser l'âge de la majorité pénale de 18 à 16 ans ». Position de 2022 ; pas de déclaration plus récente. Pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, propositions d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour",
+          "date": "2022",
+          "kind": "presse"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": 2,
+      "justification": "Gabriel Attal est l'auteur de la proposition de loi de 2025 qui faisait de l'éviction de l'excuse de minorité la règle pour certains mineurs de 16 ans et plus récidivistes. Cette disposition a été censurée par le Conseil constitutionnel le 19 juin 2025. Le groupe EPR l'a votée (13 mai 2025 : 80 pour, 4 abstentions, 1 contre). Son programme 2027 reprend la comparution immédiate des mineurs.",
+      "sources": [
+        {
+          "title": "LCP – Délinquance des mineurs : que contient la proposition de loi de Gabriel Attal ?",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-que-contient-la-proposition-de-loi-de-gabriel-attal-que-le",
+          "date": "2025-05-12",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Justice des mineurs : le Conseil constitutionnel censure largement le texte Attal, notamment la dérogation de l'excuse de minorité",
+          "url": "https://www.publicsenat.fr/actualites/politique/justice-des-mineurs-le-conseil-constitutionnel-censure-largement-le-texte-attal-notamment-la-derogation-de-lexcuse-de-minorite",
+          "date": "2025-06-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 2,
+      "justification": "Le groupe RN a voté la proposition de loi Attal (13 mai 2025 : 119 pour, 0 contre). Pas de mesure sur l'excuse de minorité ou la majorité pénale dans le programme présidentiel 2022 ni dans une déclaration de Marine Le Pen en 2026.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : vote final de la proposition de loi Attal à l'Assemblée, scrutin n° 1624 du 13/05/2025 (texte de la CMP : 341 pour, 8 abstentions, 187 contre), et non du 19/05/2025, date de l'adoption définitive par le Sénat. questionnaire-v2.md indique à tort « 19 mai 2025 » pour le scrutin de l'Assemblée. Le texte permettait d'écarter plus facilement l'excuse de minorité à partir de 16 ans, sans aller jusqu'à juger ces mineurs comme des adultes. Les partis qui l'ont voté sont codés 2 selon la règle du brief (vote très majoritairement pour), mais l'énoncé va plus loin que le texte : un codage 1 serait défendable pour LR et RN tant qu'aucune déclaration 2026 explicite n'est identifiée. Texte help : il est exact (censure du 19 juin 2025, décision n° 2025-886 DC, au nom du principe fondamental reconnu par les lois de la République propre à la justice des mineurs). RN : position fondée uniquement sur le vote du groupe. Une déclaration de Jordan Bardella sur BFMTV pour supprimer l'« excuse de minorité » est signalée par la presse, mais sa date n'a pas pu être vérifiée (source inaccessible). Vérification croisée (3 novembre 2026) avec l'énoncé reformulé (« jugés plus souvent comme des adultes ») : écarter l'excuse de minorité revient à juger le mineur avec les peines d'un adulte, ce que visait la loi Attal pour les 16 ans et plus : les codages par le vote n° 1624 restent cohérents avec le nouvel énoncé ; abaisser la majorité pénale à 16 ans (NE, REC) va dans le même sens, plus loin (2). Écologistes : la citation du programme (p. 167) n'était sourcée que par MonVote2027 ; retirée faute de source de référence, le vote suffit pour -2."
+}

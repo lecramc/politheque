@@ -32,19 +32,31 @@ export default function QuizScreen() {
     },
     []
   );
+  const cancelPending = () => {
+    if (timer.current) clearTimeout(timer.current);
+    timer.current = null;
+    setPending(null);
+  };
+  // La réponse est enregistrée tout de suite ; seule l'avance est différée.
   const choose = (value: AnswerValue) => {
     if (pending) return;
+    vm.record(value);
     setPending({ value });
     direction.current = 'fromRight';
     timer.current = setTimeout(() => {
+      timer.current = null;
       setPending(null);
-      vm.choose(value);
+      vm.next();
     }, duration.choiceFeedback);
   };
   const back = () => {
-    if (pending) return;
+    cancelPending();
     direction.current = 'fromLeft';
     vm.back();
+  };
+  const showResults = () => {
+    cancelPending();
+    vm.showResults();
   };
   const selectedValue = pending ? pending.value : vm.selectedValue;
   const transition = {
@@ -54,7 +66,7 @@ export default function QuizScreen() {
   };
 
   return (
-    <Page loading={!vm.ready} focus back={{ label: 'Quitter', href: '/' }}>
+    <Page title={'Me situer'} loading={!vm.ready} focus back={{ label: 'Quitter', href: '/' }}>
       {vm.question ? (
         <View style={{ gap: effects.spacing.md }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
@@ -237,7 +249,7 @@ export default function QuizScreen() {
               )}
               {vm.answeredCount > 0 ? (
                 <Pressable
-                  onPress={vm.showResults}
+                  onPress={showResults}
                   style={{ minHeight: 44, justifyContent: 'center' }}
                 >
                   <Text style={{ color: colors.tint }}>Voir mes résultats →</Text>

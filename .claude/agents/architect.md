@@ -9,7 +9,7 @@ description: >
   "plan the feature", "how to implement".
   Do NOT invoke for implementation — architect decides, tdd implements.
 tools: Read, Glob, Grep
-model: sonnet
+model: opus
 memory: project
 ---
 

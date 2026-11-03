@@ -42,7 +42,6 @@ export function Logo() {
   return (
     <View
       style={{ flexDirection: 'row', alignItems: 'flex-end', gap: 8 }}
-      accessibilityRole="header"
       accessibilityLabel={APP_NAME}
     >
       <LogoMark />

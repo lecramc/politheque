@@ -3,8 +3,8 @@
   "name": "La France insoumise",
   "shortName": "LFI",
   "color": "#CC2443",
-  "family": "Gauche radicale (gauche populiste selon une partie des politistes)",
-  "description": "Mouvement fondé en 2016 autour de Jean-Luc Mélenchon, coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel). Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP de la 17e législature (Datan).",
+  "family": "Gauche radicale (la plupart des politistes ; « gauche populiste » pour certains ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, rattachement jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse l'étiquette « extrême gauche »)",
+  "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est annoncée pour les 6 et 7 novembre 2026. Jean-Luc Mélenchon a été condamné en 2019 à une peine d'emprisonnement avec sursis pour rébellion et provocation ; voir le détail de la candidature.",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2016 (lancée le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; association de financement créée en janvier 2017)",
@@ -50,7 +50,7 @@
         ]
       },
       {
-        "text": "Les politistes le classent généralement à la gauche radicale ; le classement à l'« extrême gauche », parfois employé dans le débat public, est contesté. Les références idéologiques le plus souvent relevées sont l'écosocialisme, l'antilibéralisme et l'altermondialisme.",
+        "text": "Les politistes le classent le plus souvent à la gauche radicale, certains parlant de « gauche populiste ». Pour les municipales de 2026, le nuancier du ministère de l'Intérieur l'a rattaché au bloc « extrême gauche » (il figurait auparavant dans le bloc « gauche ») ; le Conseil d'État a jugé ce rattachement sans erreur manifeste d'appréciation le 27 février 2026, sans qualifier politiquement le mouvement. LFI récuse cette étiquette. Les références idéologiques le plus souvent relevées sont l'écosocialisme, l'antilibéralisme et l'altermondialisme.",
         "sources": [
           {
             "title": "Wikipédia, « La France insoumise »",
@@ -63,6 +63,24 @@
             "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
             "date": "2019-03-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Conseil d'État, décision n° 512694 du 27 février 2026 (nuances politiques, élections municipales de 2026)",
+            "url": "https://conseil-etat.fr/Media/actualites/documents/2026/fevrier-2026/512694.pdf",
+            "date": "2026-02-27",
+            "kind": "statistique"
+          },
+          {
+            "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires)",
+            "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
+            "date": "2026-02",
+            "kind": "presse"
+          },
+          {
+            "title": "Municipales 2026 : la décision du ministère de l'Intérieur de classer La France insoumise à l'extrême gauche peut-elle être fondée ? (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/municipales-2026-la-decision-du-ministere-de-linterieur-de-classer-la-france-insoumise-a-lextreme-gauche-peut-elle-etre-fondee",
+            "date": "2026-02-06",
+            "kind": "presse"
           }
         ]
       },
@@ -194,7 +212,7 @@
       },
       {
         "date": "2024-06-09",
-        "event": "Européennes : la liste conduite par Manon Aubry obtient environ 9,9 % des suffrages (contre 6,3 % en 2019).",
+        "event": "Européennes : la liste conduite par Manon Aubry obtient 9,89 % des suffrages exprimés (contre 6,31 % en 2019).",
         "sources": [
           {
             "title": "Public Sénat, « Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième »",
@@ -267,8 +285,8 @@
     "figures": [
       {
         "name": "Jean-Luc Mélenchon",
-        "role": "Fondateur (2016) et candidat à la présidentielle en 2017 (19,58 %) et 2022 (21,95 %)",
-        "background": "Né à Tanger en 1951, il milite dans les années 1970 à Besançon à l'Organisation communiste internationaliste (OCI), groupe trotskiste de tendance lambertiste, puis adhère en 1977 au PS, dans son aile gauche. Sénateur de l'Essonne (1986-2010) et ministre délégué à l'Enseignement professionnel du gouvernement Jospin (2000-2002), il anime les courants de gauche du PS avant de le quitter en novembre 2008 pour fonder le Parti de gauche. Le 9 décembre 2019, le tribunal correctionnel de Bobigny le condamne à trois mois d'emprisonnement avec sursis et 8 000 € d'amende pour rébellion et provocation lors de la perquisition du siège de LFI en octobre 2018 ; il dénonce un « jugement politique » et ne fait pas appel.",
+        "role": "Fondateur (2016) et candidat à la présidentielle en 2017 (19,58 %) et 2022 (21,95 %) ; candidat déclaré pour 2027",
+        "background": "Né à Tanger en 1951, il milite dans les années 1970 à Besançon à l'Organisation communiste internationaliste (OCI), groupe trotskiste de tendance lambertiste, puis adhère en 1977 au PS, dans son aile gauche. Sénateur de l'Essonne (1986-2010) et ministre délégué à l'Enseignement professionnel du gouvernement Jospin (2000-2002), il anime les courants de gauche du PS avant de le quitter en novembre 2008 pour fonder le Parti de gauche.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Jean-Luc Mélenchon »",
@@ -494,7 +512,7 @@
   "stances": {
     "q01-isf": {
       "stance": 2,
-      "justification": "LFI propose un ISF « renforcé » et la taxe Zucman ; le groupe a voté pour l'impôt plancher de 2 % (scrutin n° 881 du 20/02/2025, 37 voix pour).",
+      "justification": "Les orientations budgétaires 2027 de LFI prévoient la taxe Zucman sur les patrimoines de plus de 100 M€ (15 Md€) en plus d'un ISF « renforcé » ; le groupe a voté pour à chaque scrutin (31 octobre 2025 : 60 pour ; 16 octobre 2026 : 16 pour).",
       "sources": [
         {
           "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -503,9 +521,15 @@
           "kind": "programme"
         },
         {
-          "title": "Scrutin n° 881 du 20/02/2025, proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
-          "url": "https://datan.fr/votes/legislature-17/vote_881",
-          "date": "2025-02-20",
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
           "kind": "vote"
         }
       ]
@@ -522,21 +546,9 @@
         }
       ]
     },
-    "q03-charges": {
-      "stance": -2,
-      "justification": "LFI propose de rétablir la CVAE pour les grandes entreprises, de réformer l'impôt sur les sociétés et d'interrompre les exonérations de cotisations au-dessus de 2 SMIC.",
-      "sources": [
-        {
-          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
-          "date": "2026-10",
-          "kind": "programme"
-        }
-      ]
-    },
     "q04-retraite": {
       "stance": 2,
-      "justification": "Abrogation de la réforme des 64 ans et objectif de retraite à 60 ans avec 40 annuités sur le mandat.",
+      "justification": "LFI propose d'abroger la réforme de 2023 et vise la retraite à 60 ans avec 40 annuités au cours du mandat, ce qui inclut le retour à 62 ans.",
       "sources": [
         {
           "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -560,7 +572,7 @@
     },
     "q05-smic": {
       "stance": 2,
-      "justification": "LFI propose de porter le SMIC à 1 700 € net.",
+      "justification": "Jean-Luc Mélenchon promet de « relever dès son élection le SMIC à 1 700 euros net par mois », soit environ +15 % (octobre 2026).",
       "sources": [
         {
           "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -578,7 +590,7 @@
     },
     "q06-chomage": {
       "stance": -2,
-      "justification": "Abrogation des réformes de l'assurance chômage et du RSA ; le groupe a voté contre la transposition de l'avenant assurance chômage (scrutin n° 7260 du 02/06/2026, 63 voix contre).",
+      "justification": "LFI propose d'abroger les réformes de l'assurance chômage (3 Md€) ; le groupe a voté contre la loi de juin 2026 réduisant l'indemnisation après rupture conventionnelle (2 juin 2026 : 63 contre) et pour la suppression de son article unique en première lecture (16 avril 2026 : 53 pour).",
       "sources": [
         {
           "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -587,15 +599,15 @@
           "kind": "programme"
         },
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
-        {
-          "title": "Scrutin n° 7260 du 02/06/2026, projet de loi transposant l'avenant n° 3 au protocole d'accord sur l'assurance chômage, vote final",
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
           "url": "https://datan.fr/votes/legislature-17/vote_7260",
           "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
           "kind": "vote"
         }
       ]
@@ -620,13 +632,19 @@
     },
     "q08-preference": {
       "stance": -2,
-      "justification": "Le programme NFP soutenu par LFI garantit l'accès aux services publics « sans condition de nationalité ».",
+      "justification": "Le programme NFP soutenu par LFI garantit l'accès aux services publics « sans condition de nationalité » ; le groupe a voté contre l'amendement RN de « préférence nationale » dans le logement social (scrutin n° 4960 du 12 janvier 2026 : 5 contre).",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
           "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
           "date": "2024-06",
           "kind": "programme"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
         }
       ]
     },
@@ -666,27 +684,9 @@
         }
       ]
     },
-    "q11-police": {
-      "stance": 2,
-      "justification": "Récépissés lors des contrôles d'identité et remplacement de l'IGPN/IGGN par un organisme indépendant rattaché à la Défenseure des droits.",
-      "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
-        {
-          "title": "Europe 1, programme du Nouveau Front populaire et forces de l'ordre (récépissés, LBD, grenades)",
-          "url": "https://www.europe1.fr/node/12705",
-          "date": "2024-06",
-          "kind": "presse"
-        }
-      ]
-    },
     "q12-nucleaire": {
       "stance": -2,
-      "justification": "« L'Avenir en commun » (2022) prévoit de sortir du nucléaire et d'abandonner les projets d'EPR ; selon MonVote2027, Jean-Luc Mélenchon a réaffirmé en mai 2026 l'objectif de sortie du nucléaire. Édition 2027 du programme non encore publiée.",
+      "justification": "« L'Avenir en commun » (2022) prévoit de sortir du nucléaire et d'abandonner les projets d'EPR ; Jean-Luc Mélenchon a réaffirmé en mai 2026 l'objectif de sortie du nucléaire. Édition 2027 du programme non encore publiée.",
       "sources": [
         {
           "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
@@ -722,7 +722,7 @@
     },
     "q14-normes-agricoles": {
       "stance": -2,
-      "justification": "Le groupe a voté contre la loi Duplomb (scrutin n° 2957 du 08/07/2025, 71 voix contre) ; le programme prévoit d'interdire glyphosate et néonicotinoïdes.",
+      "justification": "Le groupe a voté contre la loi Duplomb (scrutin n° 2957 du 8 juillet 2025, 71 voix contre) ; le programme prévoit d'interdire glyphosate et néonicotinoïdes.",
       "sources": [
         {
           "title": "Scrutin n° 2957 du 08/07/2025, loi Duplomb « lever les contraintes à l'exercice du métier d'agriculteur », vote final (texte de CMP)",
@@ -740,7 +740,7 @@
     },
     "q15-medecins": {
       "stance": 2,
-      "justification": "Le programme prévoit de réguler l'installation des médecins ; le groupe a voté pour la PPL transpartisane contre les déserts médicaux (scrutin n° 1607 du 07/05/2025, 23 voix pour).",
+      "justification": "Le programme prévoit de réguler l'installation des médecins ; le groupe a voté à l'unanimité l'article 1er de la PPL Garot (vote n° 1214 : 40 pour) et le texte entier (vote n° 1607 : 23 pour).",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
@@ -749,22 +749,22 @@
           "kind": "programme"
         },
         {
-          "title": "Scrutin n° 1607 du 07/05/2025, proposition de loi transpartisane contre les déserts médicaux (régulation de l'installation), vote final en première lecture",
-          "url": "https://datan.fr/votes/legislature-17/vote_1607",
-          "date": "2025-05-07",
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
           "kind": "vote"
         },
         {
-          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
-          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
-          "date": "2024-06-14",
-          "kind": "presse"
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "date": "2025-05-07",
+          "kind": "vote"
         }
       ]
     },
     "q16-fin-de-vie": {
       "stance": 2,
-      "justification": "Le groupe a voté majoritairement pour la loi sur l'aide à mourir en lecture définitive (scrutin n° 8280 du 15/07/2026 : 61 pour, 3 abstentions, 2 contre) ; « L'Avenir en commun » propose de constitutionnaliser le droit de mourir dans la dignité.",
+      "justification": "Le groupe a voté très majoritairement pour la loi en lecture définitive (vote n° 8280 : 61 pour, 3 abstentions, 2 contre) ; « L'Avenir en commun » propose de constitutionnaliser le droit de mourir dans la dignité.",
       "sources": [
         {
           "title": "Scrutin n° 8280 du 15/07/2026, proposition de loi relative au droit à l'aide à mourir, lecture définitive (adoptée par 291 voix contre 241)",
@@ -782,7 +782,7 @@
     },
     "q17-ecole-privee": {
       "stance": 2,
-      "justification": "Moduler les dotations des établissements, y compris privés, selon la mixité sociale et abroger la loi Carle.",
+      "justification": "Le programme soutenu par LFI prévoit de « moduler les dotations des établissements, y compris privés, selon des objectifs de mixité sociale » et d'abroger la loi Carle ; le député LFI Paul Vannier est l'auteur de la PPL n° 418 (2024) en ce sens.",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
@@ -795,114 +795,84 @@
           "url": "https://laec.fr/section/65/reconstruire-une-ecole-globale-pour-legalite-et-lemancipation",
           "date": "2021-11",
           "kind": "programme"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
         }
       ]
     },
     "q18-ukraine": {
-      "stance": null,
-      "justification": "Signaux contradictoires : le programme NFP 2024 prévoit la « livraison d'armes nécessaires », mais le groupe a voté contre l'accord de sécurité franco-ukrainien (scrutin n° 3461 du 12/03/2024) et contre la résolution appelant au renforcement du soutien (scrutin n° 988 du 12/03/2025) ; en 2026, LFI met en avant un cessez-le-feu et des négociations sans position explicite sur la poursuite des livraisons d'armes.",
+      "stance": -1,
+      "justification": "Le groupe a voté contre l'accord de sécurité (scrutin n° 3461 : 75 contre) et contre la résolution appelant au renforcement du soutien (scrutin n° 988 : 45 contre) ; ses eurodéputés se sont abstenus sur la résolution du PE du 12 mars 2025 appelant à accroître l'aide militaire. Nuance : le programme du Nouveau Front populaire de 2024, signé par LFI, prévoyait la « livraison d'armes nécessaires ».",
       "sources": [
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
-        {
-          "title": "Scrutin n° 3461 du 12/03/2024, déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
           "url": "https://datan.fr/votes/legislature-16/vote_3461",
           "date": "2024-03-12",
           "kind": "vote"
         },
         {
-          "title": "Scrutin n° 988 du 12/03/2025, proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
           "url": "https://datan.fr/votes/legislature-17/vote_988",
           "date": "2025-03-12",
           "kind": "vote"
         },
         {
-          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
-          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
-          "date": "2024-06-14",
-          "kind": "presse"
-        },
-        {
-          "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
-          "url": "https://monvote2027.fr/candidat/melenchon",
-          "date": "2026-11",
-          "kind": "presse"
-        }
-      ]
-    },
-    "q19-droit-europeen": {
-      "stance": 2,
-      "justification": "« L'Avenir en commun » prévoit de « désobéir » aux règles européennes et d'affirmer la supériorité des principes constitutionnels sur le droit européen (édition 2022).",
-      "sources": [
-        {
-          "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
-          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
-          "date": "2021-11",
-          "kind": "programme"
-        },
-        {
-          "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
-          "url": "https://monvote2027.fr/candidat/melenchon",
-          "date": "2026-11",
-          "kind": "presse"
-        }
-      ]
-    },
-    "q20-defense-europe": {
-      "stance": null,
-      "justification": "« L'Avenir en commun » (2022) prévoit de suspendre la participation de la France à « l'Europe de la défense », mais aucune position explicite sur un endettement commun de l'UE (défense ou investissements) n'a été identifiée. Position précédemment déduite (-1), ramenée à null par cohérence avec les autres fiches.",
-      "sources": [
-        {
-          "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
-          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
-          "date": "2021-11",
-          "kind": "programme"
-        }
-      ]
-    },
-    "q21-libre-echange": {
-      "stance": 2,
-      "justification": "Le programme prévoit de renoncer à l'accord UE-Mercosur ; LFI a déposé une motion de censure contre sa signature (scrutin n° 4986 du 14/01/2026, 71 voix pour).",
-      "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
-        {
-          "title": "Scrutin n° 4986 du 14/01/2026, motion de censure déposée par LFI contre la signature de l'accord UE-Mercosur",
-          "url": "https://datan.fr/votes/legislature-17/vote_4986",
-          "date": "2026-01-14",
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Continuing the unwavering EU support for Ukraine, after three years of Russia's war of aggression » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172663",
+          "date": "2025-03-12",
           "kind": "vote"
         }
       ]
     },
-    "q22-vie-republique": {
-      "stance": 2,
-      "justification": "Passage à une 6e République par une Assemblée constituante pour abolir la « monarchie présidentielle ».",
+    "q19-droit-europeen": {
+      "stance": 1,
+      "justification": "« L'Avenir en commun » prévoit de « désobéir » aux règles européennes « chaque fois que c'est nécessaire » pour appliquer le programme, c'est-à-dire une primauté du droit national ciblée et non générale ; les eurodéputés LFI ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (4 contre).",
       "sources": [
         {
-          "title": "L'Avenir en commun (édition 2022), section 1 « Réunir une Assemblée constituante pour passer à la 6e République »",
-          "url": "https://laec.fr/section/1/reunir-une-assemblee-constituante-pour-passer-a-la-6e-republique",
+          "title": "L'Avenir en commun, section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
+          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
           "date": "2021-11",
           "kind": "programme"
         },
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q20-defense-europe": {
+      "stance": -1,
+      "justification": "Les eurodéputés LFI ont voté contre la résolution du PE du 12 mars 2025 sur le livre blanc de la défense (8 contre), qui demande d'explorer des obligations européennes de défense, et se sont abstenus sur le prêt commun à l'Ukraine (11 février 2026 : 8 abstentions). « L'Avenir en commun » prévoit de suspendre la participation française à « l'Europe de la défense ».",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        },
+        {
+          "title": "L'Avenir en commun, section 70",
+          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+          "date": "2021-11",
           "kind": "programme"
         }
       ]
     },
     "q23-referendum": {
       "stance": null,
-      "justification": "Pas de position publique identifiée sur un référendum consacré à l'immigration.",
+      "justification": "Ni Jean-Luc Mélenchon ni le groupe LFI ne se sont prononcés explicitement sur un référendum consacré à l'immigration. LFI défend le référendum d'initiative citoyenne et une Assemblée constituante.",
       "sources": []
     },
     "q24-proportionnelle": {
@@ -922,6 +892,270 @@
           "kind": "presse"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": -2,
+      "justification": "LFI propose de réformer les droits de succession pour en tirer 20 Md€ dès la première année et d'instaurer un « héritage maximum » (contrat NFP 2024) ; Mathilde Panot veut « prendre tout » au-delà de 12 M€ (août 2026).",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": 2,
+      "justification": "La proposition de loi de nationalisation d'ArcelorMittal France a été déposée par le groupe LFI (Aurélie Trouvé), qui a voté pour aux deux lectures (27 novembre 2025 : 68 pour, 1 contre ; 11 juin 2026 : 45 pour).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, dossier législatif « Nationalisation d'ArcelorMittal France »",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/nationalisation_arcelormittal_2025",
+          "date": "2026-06",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q27-temps-de-travail": {
+      "stance": -2,
+      "justification": "Le programme soutenu par LFI prévoit de « rétablir la durée effective de 35 heures » et de passer aux 32 heures dans les métiers pénibles ou de nuit : LFI veut réduire la durée du travail.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q28-prix-energie": {
+      "stance": 2,
+      "justification": "Mesure portée par LFI : son amendement au budget 2027, adopté le 2 novembre 2026, ramène à 5,5 % la TVA sur l'électricité pour les puissances jusqu'à 36 kVA (8 pour dans le groupe). Le groupe avait aussi voté la TVA à 5,5 % sur l'abonnement d'électricité (20 novembre 2025 : 26 pour). Ses deux députés présents se sont abstenus sur l'amendement RN de même objet (2 novembre 2026).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° I-286 au PLF 2027 (M. Laisney et les députés LFI), adopté",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/286.pdf",
+          "date": "2026-10-07",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q29-cannabis": {
+      "stance": 2,
+      "justification": "Le programme 2022 « L'Avenir en commun » propose de « légaliser et encadrer par un monopole d'État » la production, la vente et la consommation de cannabis. Le groupe a défendu en janvier 2022 une proposition de loi en ce sens (10 voix contre l'amendement de suppression de l'article 1er), puis voté en juillet 2026 un amendement de dépénalisation de l'usage (20 pour, 0 contre). Manuel Bompard, coordinateur de LFI, a redit le 8 novembre 2024 : « je plaide pour la légalisation du cannabis ».",
+      "sources": [
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, propositions de Jean-Luc Mélenchon",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon",
+          "date": "2022",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1 – Lutte contre le trafic de drogue : Manuel Bompard plaide pour la légalisation du cannabis",
+          "url": "https://www.europe1.fr/politique/lutte-contre-le-trafic-de-drogue-manuel-bompard-plaide-pour-la-legalisation-du-cannabis-pour-y-arriver-4277678",
+          "date": "2024-11-08",
+          "kind": "declaration"
+        },
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), amendement de suppression de l'article 1er de la PPL relative à la légalisation du cannabis sous le contrôle de l'État",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8129, amendement n° 426 dépénalisant l'usage de stupéfiants",
+          "url": "https://datan.fr/votes/legislature-17/vote_8129",
+          "date": "2026-07-09",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": 1,
+      "justification": "Le groupe LFI a voté la suppression des ZFE le 28 mai 2025 (27 pour, 0 contre) puis, le 8 octobre 2026, contre l'amendement qui supprimait l'article abrogeant les ZFE (0 pour, 32 contre). Ses représentants disent toutefois vouloir « conditionner les ZFE au développement des alternatives » (Sylvain Carrière, 8 octobre 2026) et Mathilde Panot a refusé de soutenir la proposition de loi du RN.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m (LFI : 0 pour, 32 contre)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Pourquoi le RN risque d'avoir du mal à faire voter la suppression des ZFE lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/pourquoi-le-rn-risque-d-avoir-du-mal-a-faire-voter-la-suppression-des-zfe-lors-de-sa",
+          "date": "2026-09",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": 1,
+      "justification": "En mars 2025, Jean-Luc Mélenchon a jugé « misérable » le débat sur l'interdiction du voile dans le sport et estimé que la décision revient aux fédérations sportives. LFI n'a pas de sénateurs et n'a donc pas pris part au scrutin du Sénat.",
+      "sources": [
+        {
+          "title": "Hespress FR – France : le port du voile dans le sport divise la scène politique",
+          "url": "https://fr.hespress.com/416209-france-le-port-du-voile-dans-le-sport-divise-la-scene-politique.html",
+          "date": "2025-03-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1 – Voile dans le sport : Jean-Luc Mélenchon dénonce une « surenchère raciste »",
+          "url": "https://www.europe1.fr/node/668697",
+          "date": "2025-03-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": -1,
+      "justification": "Les eurodéputés LFI ont voté contre la résolution du PE sur l'Ukraine du 9 septembre 2025 (5 contre, 4 non-votants) et contre la stratégie d'élargissement du 11 mars 2026 (7 contre), puis se sont abstenus sur la résolution sur l'Ukraine du 8 juillet 2026 (9 abstentions) ; en 2022, LFI se disait « contre tout élargissement de l'Union européenne ».",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Franceinfo, « Guerre en Ukraine : \"Indépendamment du conflit, nous sommes contre tout élargissement de l'Union européenne\", déclare Adrien Quatennens »",
+          "url": "https://www.franceinfo.fr/monde/russie/vladimir-poutine/guerre-en-ukraine-independamment-du-conflit-nous-sommes-contre-tout-elargissement-de-l-union-europeenne-declare-adrien-quatennens_5004308.html",
+          "date": "2022-03",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": 1,
+      "justification": "Les députés LFI ont défendu en 2023 le maintien de l'unanimité, « un moyen de respecter la souveraineté de chaque Etat membre », tout en demandant la majorité qualifiée « sur les questions de taxation et de sanctions en matière de droit de l'Homme » (amendement n° 33, 29 novembre 2023 : 13 pour dans le groupe). Ses eurodéputés ont voté contre la révision des traités du 22 novembre 2023 et contre la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement.",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° 33 (Mme Abomangoli et les députés LFI-NUPES) à la proposition de résolution européenne sur les suites de la conférence sur l'avenir de l'Europe",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1526/AN/33.pdf",
+          "date": "2023-11-24",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 3058 du 29 novembre 2023 (16e législature) : amendement n° 33 (LFI-NUPES) « Maintenir l'unanimité au Conseil des ministres de l'UE pour respecter la souveraineté des Etats », rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3058",
+          "date": "2023-11-29",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q34-mineurs": {
+      "stance": -2,
+      "justification": "Le groupe LFI a voté contre la proposition de loi Attal (13 mai 2025 : 0 pour, 67 contre) et a défendu une motion de rejet préalable (Mathilde Panot).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1623, motion de rejet préalable (Mme Panot)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1623",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
     }
   },
   "candidacies": {
@@ -929,8 +1163,8 @@
       "candidateName": "Jean-Luc Mélenchon",
       "status": "declare",
       "statusLabel": "Candidat déclaré",
-      "candidate": "Jean-Luc Mélenchon (statut : déclaré le 2026-05-03, au journal de 20 h de TF1, après désignation le même jour par les élus du mouvement)",
-      "programmeStatus": "Une nouvelle édition de « L'Avenir en commun » (programme 2027, intitulée « Nouvelle France » selon LCP) est annoncée en librairie le 6 novembre 2026 et présentée le 7 novembre au Bourget : elle n'était pas publiée au 2026-11-03. Fiche fondée sur le document d'orientations budgétaires 2027 publié en octobre 2026, sur « L'Avenir en commun » édition 2022 (une mise à jour de janvier 2025, 831 mesures selon LCP, n'a pas été exploitée ici), sur le contrat de législature du Nouveau Front populaire (2024) et sur les votes du groupe LFI-NFP.",
+      "candidate": "Jean-Luc Mélenchon a déclaré sa candidature le 3 mai 2026 au journal de 20 h de TF1, après sa désignation le même jour par les élus du mouvement. Le 9 décembre 2019, le tribunal correctionnel de Bobigny l'avait condamné à trois mois d'emprisonnement avec sursis et 8 000 € d'amende pour rébellion et provocation lors de la perquisition du siège de LFI en octobre 2018 ; il avait dénoncé un « jugement politique » et n'avait pas fait appel.",
+      "programmeStatus": "Une nouvelle édition de « L'Avenir en commun » pour 2027 (intitulée « Nouvelle France » selon LCP) a été annoncée pour les 6 et 7 novembre 2026 ; tant qu'elle n'est pas intégrée ici, la fiche s'appuie sur les documents antérieurs : le document d'orientations budgétaires 2027 publié en octobre 2026, « L'Avenir en commun » édition 2022, le contrat de législature du Nouveau Front populaire (2024) et les votes du groupe LFI-NFP.",
       "themes": {
         "economie": {
           "summary": "LFI propose d'augmenter les recettes fiscales d'environ 106 Md€ en 2027 en ciblant les plus hauts patrimoines, les revenus du capital et les grandes entreprises, et de financer des investissements via un « pôle public bancaire ». Elle rejette la réduction des dépenses publiques comme moyen de réduire la dette.",

@@ -1,0 +1,240 @@
+{
+  "question": "q01-isf",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "La taxe Zucman figure dans le programme présidentiel 2027 (« impôt minimum de 2 % sur les patrimoines supérieurs à 100 M€ ») ; la proposition de loi adoptée en février 2025 venait du groupe écologiste, qui a voté pour à chaque scrutin (31 octobre 2025 : 33 pour ; 16 octobre 2026 : 8 pour).",
+      "sources": [
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 66",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 881 du 20 février 2025 : proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
+          "url": "https://datan.fr/votes/legislature-17/vote_881",
+          "date": "2025-02-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -2,
+      "justification": "Le groupe Horizons & Indépendants a voté contre la taxe Zucman le 31 octobre 2025 (0 pour, 1 abstention, 21 contre) et le 16 octobre 2026 (3 contre). Le candidat propose un « moratoire fiscal » excluant tout nouvel impôt, sans viser nommément la taxe Zucman.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Budget 2026 : la taxe Zucman rejetée par l'Assemblée nationale »",
+          "url": "https://lcp.fr/actualites/budget-2026-la-taxe-zucman-rejetee-par-l-assemblee-nationale-413632",
+          "date": "2025-10-31",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 2,
+      "justification": "Les orientations budgétaires 2027 de LFI prévoient la taxe Zucman sur les patrimoines de plus de 100 M€ (15 Md€) en plus d'un ISF « renforcé » ; le groupe a voté pour à chaque scrutin (31 octobre 2025 : 60 pour ; 16 octobre 2026 : 16 pour).",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -2,
+      "justification": "Le groupe Droite républicaine a voté contre la taxe Zucman le 31 octobre 2025 (0 pour, 28 contre) et le 16 octobre 2026 (5 contre).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        },
+        {
+          "title": "Europe 1, « Budget 2026 : les députés rejettent la taxe Zucman à l'Assemblée nationale »",
+          "url": "https://www.europe1.fr/politique/budget-2026-les-deputes-rejettent-la-taxe-zucman-a-lassemblee-nationale-869616",
+          "date": "2025-10-31",
+          "kind": "presse"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": -2,
+      "justification": "David Lisnard s'oppose explicitement à la taxe Zucman, qu'il qualifie de « poison collectiviste » qui « préfère punir la réussite plutôt que favoriser la prospérité » (tribune du 24 septembre 2025) ; le JDD a titré un entretien « La taxe Zucman est une illusion dangereuse ». Nouvelle Énergie n'a pas de groupe à l'Assemblée.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie, « Taxe Zucman ou les habits neufs du vieux collectivisme » (tribune de David Lisnard parue dans Valeurs actuelles)",
+          "url": "https://www.unenouvelleenergie.fr/taxe-zucman-ou-les-habits-neufs-du-vieux-collectivisme/",
+          "date": "2025-09-25",
+          "kind": "declaration"
+        },
+        {
+          "title": "Le JDD, « David Lisnard : \"La taxe Zucman est une illusion dangereuse\" »",
+          "url": "https://www.lejdd.fr/politique/david-lisnard-la-taxe-zucman-est-une-illusion-dangereuse-162101",
+          "date": "2025-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 2,
+      "justification": "Le groupe GDR, où siègent les députés communistes, a voté pour la taxe Zucman à chaque scrutin (20 février 2025 ; 31 octobre 2025 : 12 pour ; 16 octobre 2026 : 2 pour). Le programme 2022 de Fabien Roussel prévoyait en outre de tripler l'ISF ; programme 2027 non publié.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 881 du 20 février 2025 : proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
+          "url": "https://datan.fr/votes/legislature-17/vote_881",
+          "date": "2025-02-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        },
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
+          "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
+          "date": "2022-01",
+          "kind": "programme"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Raphaël Glucksmann a fait de la taxe Zucman « la base de tout accord » de non-censure en septembre 2025. L'amendement rejeté le 16 octobre 2026 a été déposé par des députés socialistes ; le groupe a voté pour (31 octobre 2025 : 61 pour, 0 contre ; 16 octobre 2026 : 8 pour).",
+      "sources": [
+        {
+          "title": "France 24 (AFP), « Taxe Zucman : \"la base de tout accord\" pour Glucksmann, \"une illusion\" pour Larcher »",
+          "url": "https://www.france24.com/fr/info-en-continu/20250911-taxe-zucman-c-est-non-pour-larcher-la-base-de-tout-accord-pour-glucksmann",
+          "date": "2025-09-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": -2,
+      "justification": "Selon Capital (29 octobre 2025), Éric Zemmour partage le rejet de la taxe Zucman exprimé par Marine Le Pen et plaide pour « baisser massivement les dépenses pour pouvoir baisser massivement les impôts » (LCI). Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": [
+        {
+          "title": "Capital (repris par Yahoo Actualités), « \"Baisser les dépenses, pour baisser les impôts\", Eric Zemmour développe ses propositions économiques »",
+          "url": "https://fr.finance.yahoo.com/actualites/baisser-d%C3%A9penses-baisser-imp%C3%B4ts-eric-190503666.html",
+          "date": "2025-10-29",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Gabriel Attal promet « aucune hausse d'impôts pendant 5 ans » ; le groupe EPR qu'il préside a voté contre la taxe Zucman le 31 octobre 2025 (0 pour, 3 abstentions, 60 contre) et le 16 octobre 2026 (12 contre).",
+      "sources": [
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -2,
+      "justification": "Marine Le Pen rejette la taxe Zucman : « Zucman non, ni hard, ni light, ni rien du tout » (X, 28 octobre 2025) ; le groupe RN a voté contre (31 octobre 2025 : 88 contre ; 16 octobre 2026 : 37 contre). Le RN propose à la place de remplacer l'IFI par un « impôt sur la fortune financière », qui n'est pas un impôt minimum sur les patrimoines de plus de 100 M€.",
+      "sources": [
+        {
+          "title": "Brut, « Budget : le Rassemblement national s'opposera à la version allégée de la taxe Zucman proposée par le Parti socialiste »",
+          "url": "https://www.brut.media/fr/articles/france/politique/budget-le-rassemblement-national-sopposera-a-la-version-allegee-de-la-taxe-zucman-proposee-par-le-parti-socialiste",
+          "date": "2025-10-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        },
+        {
+          "title": "Contre-budget 2026 du Rassemblement national",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        }
+      ]
+    }
+  },
+  "notes": "Scrutin de référence commun : n° 3300 (31/10/2025) et n° 8860 (16/10/2026, faible participation : 103 votants). RN : l'ancienne fiche codait 0 car l'énoncé v1 portait sur l'ISF ; avec l'énoncé v2 (impôt minimum > 100 M€), le refus explicite de Marine Le Pen et les votes donnent -2 ; l'« impôt sur la fortune financière » est mentionné mais ne correspond pas à la mesure. Reconquête : -2 repose sur une seule source de presse qui rapporte que Zemmour « partage » le refus de Le Pen, sans citation directe (à recouper). Nouvelle Énergie : la tribune est hébergée par le parti ; l'entretien au JDD n'a pas pu être consulté (HTTP 403), son titre est repris des résultats de recherche. Horizons et LR : fondés sur les votes de groupe uniquement. Texte help : conforme aux sources vérifiées (rejet le 16/10/2026, 35 pour, 68 contre ; amendement n° 471 visant environ 1 800 foyers). « Adoptée par l'Assemblée en février 2025 puis rejetée par le Sénat » : exact (rejet au Sénat le 12/06/2025 selon la presse, non revérifié sur senat.fr). Vérification croisée (03/11/2026) : sources ouvertes pour RN, Reconquête (article de Capital repris par Yahoo, qui rapporte l'accord de Zemmour sans citation directe sur la taxe) ; valeurs inchangées. Aucune déclaration de Bruno Retailleau ou d'Édouard Philippe nommant la taxe Zucman n'a été trouvée : LR et Horizons restent fondés sur les votes de groupe. Dates mises en toutes lettres."
+}

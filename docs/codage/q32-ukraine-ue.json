@@ -1,0 +1,251 @@
+{
+  "question": "q32-ukraine-ue",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Les eurodéputés écologistes ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 (3 pour), qui demande d'ouvrir les groupes de chapitres d'adhésion « at the fastest pace possible », et du 8 juillet 2026 (4 pour), ainsi que pour la stratégie d'élargissement du 11 mars 2026 (3 pour).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Parlement européen, communiqué : la Commission doit ouvrir les groupes de chapitres de négociation d'adhésion « at the fastest pace possible »",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20250905IPR30174",
+          "date": "2025-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 2,
+      "justification": "Les eurodéputés Horizons ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 et du 8 juillet 2026 (2 pour), qui soutiennent l'adhésion de l'Ukraine ; Édouard Philippe a évoqué le parcours d'adhésion de l'Ukraine avec Volodymyr Zelensky à Kyiv le 26 mai 2026.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Euronews, « Édouard Philippe a rencontré Volodymyr Zelensky à Kyiv »",
+          "url": "https://fr.euronews.com/2026/05/26/edouard-philippe-a-rencontre-volodymyr-zelensky-a-kyiv",
+          "date": "2026-05-26",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": -1,
+      "justification": "Les eurodéputés LFI ont voté contre la résolution du PE sur l'Ukraine du 9 septembre 2025 (5 contre, 4 non-votants) et contre la stratégie d'élargissement du 11 mars 2026 (7 contre), puis se sont abstenus sur la résolution sur l'Ukraine du 8 juillet 2026 (9 abstentions) ; en 2022, LFI se disait « contre tout élargissement de l'Union européenne ».",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Franceinfo, « Guerre en Ukraine : \"Indépendamment du conflit, nous sommes contre tout élargissement de l'Union européenne\", déclare Adrien Quatennens »",
+          "url": "https://www.franceinfo.fr/monde/russie/vladimir-poutine/guerre-en-ukraine-independamment-du-conflit-nous-sommes-contre-tout-elargissement-de-l-union-europeenne-declare-adrien-quatennens_5004308.html",
+          "date": "2022-03",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -1,
+      "justification": "François-Xavier Bellamy, tête de liste LR en 2024, a qualifié l'adhésion de l'Ukraine de « fausse promesse » et proposé un « nouveau statut intermédiaire » (mars 2024) ; les eurodéputés LR ont voté contre la stratégie d'élargissement du 11 mars 2026 (5 contre), mais se sont partagés sur les résolutions sur l'Ukraine (3 pour, 2 abstentions en 2025 comme en 2026).",
+      "sources": [
+        {
+          "title": "Public Sénat, « L'adhésion de l'Ukraine à l'Union européenne : une \"fausse promesse\" pour François-Xavier Bellamy »",
+          "url": "https://www.publicsenat.fr/actualites/politique/ladhesion-de-lukraine-a-lunion-europeenne-une-fausse-promesse-pour-francois-xavier-bellamy",
+          "date": "2024-03-06",
+          "kind": "declaration"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée de David Lisnard sur l'adhésion de l'Ukraine à l'UE ; Nouvelle Énergie n'a pas d'eurodéputé.",
+      "sources": []
+    },
+    "pcf": {
+      "stance": -1,
+      "justification": "Fabien Roussel a déclaré le 25 février 2025 : « L'intégration de l'Ukraine dans l'Union européenne pose un problème, au moins pour protéger nos agriculteurs », l'Ukraine étant selon lui « la première menace » pour l'agriculture. Le texte du 40e congrès (juillet 2026) défend une issue fondée sur « l'indépendance et la neutralité » de l'Ukraine. Le PCF n'a pas d'eurodéputé.",
+      "sources": [
+        {
+          "title": "Public Sénat, « \"Pour l'agriculture, la première menace, c'est l'Ukraine\", affirme Fabien Roussel »",
+          "url": "https://www.publicsenat.fr/actualites/economie/pour-lagriculture-la-premiere-menace-cest-lukraine-affirme-fabien-roussel",
+          "date": "2025-02-25",
+          "kind": "presse"
+        },
+        {
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 31",
+          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Les eurodéputés PS et Place publique ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 (12 pour) et du 8 juillet 2026 (13 pour), ainsi que pour la stratégie d'élargissement de 2026 ; Raphaël Glucksmann défend de longue date l'adhésion de l'Ukraine.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Parlement européen, communiqué : la Commission doit ouvrir les groupes de chapitres de négociation d'adhésion « at the fastest pace possible »",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20250905IPR30174",
+          "date": "2025-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 8 juillet 2026 sur le rapport 2025 sur l'Ukraine (« Ukraine's future lies in the EU »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1908996",
+          "date": "2026-07-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": 0,
+      "justification": "Sarah Knafo, seule eurodéputée Reconquête, s'est abstenue sur les résolutions du PE sur l'Ukraine du 9 septembre 2025 et du 8 juillet 2026. Éric Zemmour a déclaré en mars 2025 que l'Ukraine voulait entrer dans l'UE pour devenir membre de l'OTAN, « but that is impossible » (à propos de l'OTAN), sans se prononcer explicitement sur l'adhésion à l'UE.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Hungarian Conservative, « Éric Zemmour: \"Ukraine wants to join the EU in order to become a NATO member\" »",
+          "url": "https://hungarianconservative.com/?p=44068",
+          "date": "2025-03-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": 2,
+      "justification": "Les eurodéputés Renaissance ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 et du 8 juillet 2026 (5 pour chacune), ainsi que pour la stratégie d'élargissement du 11 mars 2026 (5 pour), qui soutiennent l'adhésion de l'Ukraine.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Parlement européen, communiqué : la Commission doit ouvrir les groupes de chapitres de négociation d'adhésion « at the fastest pace possible »",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20250905IPR30174",
+          "date": "2025-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -2,
+      "justification": "Les eurodéputés RN ont voté contre la résolution du PE sur l'Ukraine du 9 septembre 2025 (29 contre), contre celle du 8 juillet 2026 (23 contre) et contre la stratégie d'élargissement du 11 mars 2026 (17 contre, 12 non-votants).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 8 juillet 2026 sur le rapport 2025 sur l'Ukraine (« Ukraine's future lies in the EU »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1908996",
+          "date": "2026-07-08",
+          "kind": "vote"
+        }
+      ]
+    }
+  },
+  "notes": "Textes de référence communs : résolutions du PE sur l'Ukraine des 09/09/2025 (A10-0154/2025) et 08/07/2026 (A10-0172/2026), et sur la stratégie d'élargissement du 11/03/2026 (A10-0016/2026). Ces textes soutiennent l'adhésion mais portent aussi sur d'autres sujets (aide militaire, réformes), si bien qu'un vote contre ou une abstention n'a pas toujours pour motif l'adhésion. Incertitudes : (1) LR : B. Retailleau ne s'est pas exprimé (aucune déclaration trouvée) ; codage fondé sur Bellamy en 2024 et sur des votes partagés. (2) LFI codé -1 et non -2 : la déclaration « contre tout élargissement » date de 2022 et les eurodéputés se sont abstenus en juillet 2026. (3) Reconquête : 0 sur les deux abstentions de S. Knafo. (4) PCF : piste Europe 1 non vérifiée (403). (5) Horizons et Renaissance : codés sur les votes de leurs eurodéputés ; aucune citation directe d'É. Philippe ni de G. Attal sur l'adhésion n'a été vérifiée. Texte help, correction proposée : les négociations d'adhésion sont organisées en six « groupes de chapitres » (clusters) qui regroupent une trentaine de chapitres. Remplacer « deux des six chapitres de négociation ont été ouverts » par « deux des six groupes de chapitres de négociation ont été ouverts ». Les faits de juin et septembre 2026 n'ont pas été revérifiés ici. Vérification croisée (03/11/2026) : votes des eurodéputés français recontrôlés (HowTheyVote, par groupe). PCF : null→-1 sur la déclaration de Fabien Roussel du 25/02/2025 (Public Sénat), qui juge l'intégration de l'Ukraine problématique « au moins » pour l'agriculture, sans opposition de principe : « plutôt défavorable ». Aucune déclaration de Bruno Retailleau ni de David Lisnard sur l'adhésion trouvée."
+}

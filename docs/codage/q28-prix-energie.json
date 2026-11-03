@@ -1,0 +1,227 @@
+{
+  "question": "q28-prix-energie",
+  "positions": {
+    "rn": {
+      "stance": 2,
+      "justification": "Mesure portée par le RN : l'amendement de Jean-Philippe Tanguy et du groupe RN au budget 2027 proposait « une TVA à 5,5 % sur l'électricité » (2 novembre 2026 : 24 pour dans le groupe, rejeté à égalité de voix). Le contre-budget 2026 du RN prévoit une « baisse de la TVA sur les énergies (gaz, électricité, carburants, bois, fioul) », et le groupe avait voté la TVA à 5,5 % sur l'abonnement d'électricité (20 novembre 2025 : 89 pour).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° I-749 au PLF 2027 (M. Jean-Philippe Tanguy et les membres du groupe RN) : « une TVA à 5,5 % sur l'électricité »",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/749.pdf",
+          "date": "2026-10-08",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Rassemblement national, contre-budget 2026 (conférence de presse du 23 octobre 2025) : « Baisse de la TVA sur les énergies (gaz, électricité, carburants, bois, fioul) »",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 2,
+      "justification": "Mesure portée par LFI : son amendement au budget 2027, adopté le 2 novembre 2026, ramène à 5,5 % la TVA sur l'électricité pour les puissances jusqu'à 36 kVA (8 pour dans le groupe). Le groupe avait aussi voté la TVA à 5,5 % sur l'abonnement d'électricité (20 novembre 2025 : 26 pour). Ses deux députés présents se sont abstenus sur l'amendement RN de même objet (2 novembre 2026).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° I-286 au PLF 2027 (M. Laisney et les députés LFI), adopté",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/286.pdf",
+          "date": "2026-10-07",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 2,
+      "justification": "Le programme 2022 de Fabien Roussel prévoyait de fixer à 5,5 % la TVA sur les consommations d'énergie. Le groupe GDR a fait adopter la TVA à 5,5 % sur l'abonnement d'électricité (amendement d'Emmanuel Maurel, 20 novembre 2025) et a voté l'amendement LFI ramenant la TVA sur l'électricité à 5,5 % (2 novembre 2026 : 2 pour). Programme 2027 non publié.",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": null,
+      "justification": "Le groupe Socialistes s'est partagé : TVA à 5,5 % sur l'abonnement d'électricité en 2025 (17 pour, 14 abstentions, 1 contre), puis, le 2 novembre 2026, abstention majoritaire sur l'amendement LFI (1 pour, 2 abstentions) et vote contre l'amendement RN (2 contre). Pas de déclaration de Raphaël Glucksmann sur la TVA de l'électricité.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ecologistes": {
+      "stance": null,
+      "justification": "Les votes du groupe Écologiste et Social divergent : pour l'amendement LFI ramenant la TVA sur l'électricité à 5,5 % (2 novembre 2026 : 3 pour), contre l'amendement RN de même objet le même jour (7 contre), et partagé en 2025 sur l'abonnement d'électricité (1 pour, 6 contre, 5 abstentions). Pas de déclaration de Marine Tondelier sur la TVA de l'électricité.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Le groupe EPR a voté contre chaque baisse de TVA sur l'électricité : abonnement en 2025 (20 novembre 2025 : 47 contre), amendement LFI et amendement RN en 2026 (2 novembre 2026 : 5 et 8 contre).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -2,
+      "justification": "Le groupe Horizons a voté contre la TVA à 5,5 % sur l'abonnement d'électricité (20 novembre 2025 : 11 contre, 1 pour) et contre l'amendement LFI sur l'électricité (2 novembre 2026 : 1 contre) ; son seul député présent s'est abstenu sur l'amendement RN.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -2,
+      "justification": "Le groupe Droite républicaine a voté contre la TVA à 5,5 % sur l'abonnement d'électricité (20 novembre 2025 : 8 contre, 4 abstentions) et contre les amendements LFI et RN sur l'électricité (2 novembre 2026 : 4 et 5 contre). Pas de déclaration de Bruno Retailleau sur la TVA de l'électricité.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas de déclaration de David Lisnard sur la TVA de l'électricité ; ses propositions sur l'énergie portent sur le prix des carburants. Nouvelle Énergie n'a pas de groupe à l'Assemblée.",
+      "sources": [
+        {
+          "title": "Sud Radio, « Présidentielle 2027 : que proposent les candidats pour lutter contre la flambée des prix du carburant ? »",
+          "url": "https://www.sudradio.fr/politique/presidentielle-2027-que-proposent-les-candidats-pour-lutter-contre-la-flambee-des-prix-du-carburant",
+          "date": "2026-09-16",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": null,
+      "justification": "Pas de déclaration d'Éric Zemmour ni de Reconquête sur la TVA de l'électricité. Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": []
+    }
+  },
+  "notes": "Recodage sur l'énoncé reformulé « Il faut baisser la TVA sur les factures d'électricité » (vérification croisée du 03/11/2026). Textes de référence communs : scrutins n° 9489 (amendement RN I-749, TVA à 5,5 % sur l'électricité seule) et n° 9485 (amendement LFI I-286, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté) du 02/11/2026, et n° 4041 du 20/11/2025 (abonnement). Le scrutin n° 9488 (amendement Le Pen sur toutes les énergies, carburants compris) n'est plus retenu : il mêle électricité et carburants. Changements : RN 2 (inchangé, sources recentrées sur l'électricité) ; LFI 0→2 (amendement LFI adopté) ; PCF 0→2 (programme 2022 + amendement Maurel + vote 9485) ; Écologistes -2→null et PS-PP -1→null (votes divergents selon le texte) ; Horizons -1→-2 (vote 2025 très majoritairement contre, comme LR et EPR) ; Renaissance et LR -2 inchangés (les mentions de Gabriel Attal et Bruno Retailleau portaient sur les carburants et ont été retirées). Participation très faible le 02/11/2026 (46 et 56 votants) : le vote de 2025 (266 votants) reste le plus représentatif. Écart non résolu : Econostrum (03/11/2026) annonce une adoption à 43 voix contre 13 et lie l'amendement I-1323 (Le Fur, DR) ; Datan donne 31 pour, 12 contre, 3 abstentions pour l'I-286 et l'I-1323, déposé par des députés DR, porte en réalité sur le biométhane et a été rejeté. Des amendements DR (I-1323) et EPR (I-2476, I-3333) proposaient une TVA à 5,5 % sur des abonnements d'énergie justifiée par le biométhane : non retenus comme position de groupe. Texte help : correct sur la TVA à 20 % de l'abonnement depuis le 01/08/2025 ; il pourrait mentionner que l'Assemblée a adopté le 02/11/2026, en première lecture du budget 2027, un amendement ramenant la TVA sur l'électricité à 5,5 %, non définitif."
+}

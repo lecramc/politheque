@@ -52,6 +52,14 @@ Les tests `src/programmes/__tests__/data-integrity.test.ts` font respecter la ch
 
 ---
 
+## Agents et modèles
+
+- **Build / implémentation → Sonnet** : `tdd`, `ui-designer`, `motion-designer`, et tout agent qui écrit ou corrige du code.
+- **Réflexion → Opus** : `architect`, `reviewer`, `evaluator`, recherche, fact-checking, méthodologie, revues.
+- Lors d'une délégation ponctuelle, préciser le modèle selon cette règle.
+
+---
+
 ## Stack technique
 
 - **Framework** : Expo SDK 56, CNG — `android/` et `ios/` sont générés par `expo prebuild`, non commités

@@ -1,4 +1,5 @@
 import { Link, usePathname } from 'expo-router';
+import Head from 'expo-router/head';
 import React, { ReactNode, useEffect, useState } from 'react';
 import {
   LayoutChangeEvent,
@@ -20,6 +21,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
+import { APP_NAME } from '@/src/core/config/app';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
 import { PageSkeleton } from '@/src/programmes/components/Skeleton';
 
@@ -90,7 +92,7 @@ function BottomTabBar() {
 
   return (
     <View
-      accessibilityRole="tablist"
+      role="navigation"
       onLayout={onLayout}
       style={[
         styles.tabBar,
@@ -105,9 +107,8 @@ function BottomTabBar() {
         return (
           <Link key={item.href} href={item.href} asChild>
             <Pressable
-              accessibilityRole="tab"
-              accessibilityState={{ selected: active }}
-              aria-selected={active}
+              accessibilityRole="link"
+              aria-current={active ? 'page' : undefined}
               accessibilityLabel={item.label}
               onPress={() => {
                 slideFrom = activeIndex >= 0 ? activeIndex : null;
@@ -152,7 +153,10 @@ export function Page({
   back,
   focus = false,
   wide = false,
+  title,
 }: {
+  /** Titre de l'onglet du navigateur (référencement, partage). */
+  title?: string;
   children: ReactNode;
   loading?: boolean;
   back?: { label: string; href: string };
@@ -168,6 +172,13 @@ export function Page({
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background.secondary }}>
+      <Head>
+        <title>
+          {title
+            ? `${title} · ${APP_NAME}`
+            : `${APP_NAME} · la politique française, expliquée simplement`}
+        </title>
+      </Head>
       <View
         style={{
           backgroundColor: colors.background.primary,
@@ -211,6 +222,7 @@ export function Page({
                 return (
                   <Link key={item.href} href={item.href} asChild>
                     <Pressable
+                      aria-current={active ? 'page' : undefined}
                       style={StyleSheet.flatten([
                         styles.desktopNavItem,
                         { backgroundColor: active ? colors.tintSoft : 'transparent' },

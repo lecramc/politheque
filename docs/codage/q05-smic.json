@@ -1,0 +1,203 @@
+{
+  "question": "q05-smic",
+  "positions": {
+    "lfi": {
+      "stance": 2,
+      "justification": "Jean-Luc Mélenchon promet de « relever dès son élection le SMIC à 1 700 euros net par mois », soit environ +15 % (octobre 2026).",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Raphaël Glucksmann « promet lui aussi une revalorisation du SMIC à 1 700 euros net par mois » (octobre 2026) ; en juin 2025, il proposait 1 600 € en deux ans.",
+      "sources": [
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "franceinfo, « À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa \"vision pour la France\" »",
+          "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+          "date": "2025-06-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Marine Tondelier entend « porter le Smic à 2 000 euros brut par mois dès 2027 » (Public Sénat, 30 octobre 2026, d'après le programme présidentiel).",
+      "sources": [
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 55",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 2,
+      "justification": "Le programme 2022 de Fabien Roussel visait un SMIC à 1 500 € net et le contrat du NFP (2024), signé par le PCF, 1 600 € net ; en 2026, il réclame « une augmentation de 5 % pour l'ensemble des salaires et pensions inférieurs à 2 500 euros net par mois ». Programme 2027 non publié.",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
+          "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -1,
+      "justification": "Selon Public Sénat (30 octobre 2026), Marine Le Pen « n'a jamais été favorable à une augmentation du SMIC », en invoquant son poids pour les entreprises ; le RN propose à la place d'exonérer de cotisations patronales les hausses de salaire jusqu'à 10 %. Le groupe RN a voté contre le SMIC à 1 500 € net (20 juillet 2022 : 69 contre, 1 abstention).",
+      "sources": [
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
+          "url": "https://datan.fr/votes/legislature-16/vote_44",
+          "date": "2022-07-20",
+          "kind": "vote"
+        },
+        {
+          "title": "MoneyVox, « Législatives 2024 : qui veut augmenter le SMIC ? »",
+          "url": "https://www.moneyvox.fr/actu/98555/legislatives-2024-qui-veut-augmenter-le-smic",
+          "date": "2024-07-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": -1,
+      "justification": "Gabriel Attal ne propose pas de hausse du SMIC et mise sur « une réduction des charges sociales » (octobre 2026). Le groupe Renaissance a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (114 contre, 0 pour). Vote ancien et portant sur une hausse importante : on code « plutôt défavorable ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
+          "url": "https://datan.fr/votes/legislature-16/vote_44",
+          "date": "2022-07-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -1,
+      "justification": "Édouard Philippe ne propose pas de hausse du SMIC mais l'exonération des heures supplémentaires (« travailler plus pour gagner plus »). Le groupe Horizons a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (20 contre, 2 abstentions). Vote ancien : on code « plutôt défavorable ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
+          "url": "https://datan.fr/votes/legislature-16/vote_44",
+          "date": "2022-07-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "Pour une France plus prospère — Avec Édouard 2027",
+          "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -1,
+      "justification": "Bruno Retailleau ne propose pas de hausse du SMIC mais un seuil « zéro cotisation » au-delà de 1 623 heures annuelles. Le groupe LR a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (19 contre, 0 pour). Vote ancien : on code « plutôt défavorable ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
+          "url": "https://datan.fr/votes/legislature-16/vote_44",
+          "date": "2022-07-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": -1,
+      "justification": "En 2022, Éric Zemmour proposait de ne pas augmenter directement le SMIC mais de baisser la CSG sur les salaires du SMIC à 2 000 € (« équivalent d'un 13e mois »). Pas de position 2026 identifiée.",
+      "sources": [
+        {
+          "title": "La Finance pour tous, « De nombreux candidats en faveur d'une augmentation du Smic »",
+          "url": "https://www.lafinancepourtous.com/2022/03/21/elections-presidentielles-les-propositions-des-candidats-sur-le-montant-du-smic/",
+          "date": "2022-03-21",
+          "kind": "presse"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas de position identifiée sur un « coup de pouce » au SMIC : David Lisnard veut augmenter le salaire net par la baisse des cotisations, sans se prononcer sur la revalorisation du SMIC. Pas de groupe à l'Assemblée.",
+      "sources": []
+    }
+  },
+  "notes": "Aucun scrutin récent (17e législature) sur une hausse du SMIC n'a été trouvé sur Datan ; le texte de référence commun utilisé est le scrutin n° 44 du 20/07/2022 (SMIC à 1 500 € net), ancien et antérieur aux candidatures actuelles. RE, HOR et LR codés -1 (et non -2) car leur opposition repose sur ce vote de 2022 portant sur une hausse de grande ampleur et sur l'absence de proposition en 2026, pas sur un refus explicite d'un « coup de pouce ». RN codé -2 sur la base d'une caractérisation de Public Sénat (pas de citation directe de Marine Le Pen) et du vote de 2022 ; l'ancienne fiche codait -1. Reconquête : -1 fondé sur 2022 uniquement. Écologistes : contradiction entre sources sur le SMIC à 2 000 € brut, maintenue à 2 (Public Sénat citant le programme). PCF : pas de chiffre SMIC pour 2027, mais revendication de hausse générale des bas salaires. Texte help : la revalorisation de 2,41 % au 01/06/2026 n'a pas pu être revérifiée (page info.gouv.fr en HTTP 403). Vérification croisée (03/11/2026) : article de Public Sénat du 30/10/2026 et scrutin n° 44 (16e législature) rouverts, chiffres et citations conformes. RN : -2→-1. Aucune citation directe de Marine Le Pen ou de Jordan Bardella n'a été trouvée ; la position repose, comme pour Renaissance, Horizons et LR (-1), sur le vote de 2022 et sur l'absence de hausse proposée, complétés pour le RN par la caractérisation de Public Sénat. Même type de preuve, même valeur. Écologistes : la mention d'un agrégateur contredisant Public Sénat a été retirée de la justification ; le programme (p. 55) n'a pas pu être rouvert (protection anti-robot du site), à confirmer."
+}

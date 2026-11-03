@@ -10,7 +10,8 @@ import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { ReactNode } from 'react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
+import { Platform } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useReducedMotion } from 'react-native-reanimated';
 import { Provider } from 'react-redux';
@@ -22,6 +23,7 @@ import { ThemedDarkTheme, ThemedDefaultTheme } from '@/components/ThemedNavigati
 import { initI18n } from '@/i18n';
 import { GlobalEffects } from '@/src/core/screens/GlobalEffects';
 import { store } from '@/src/core/store';
+import { logger } from '@/src/core/utils/logger';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -79,21 +81,22 @@ export default function RootLayout() {
     Fraunces_600SemiBold,
     Fraunces_700Bold,
   });
-  const [i18nReady, setI18nReady] = useState(false);
-
   useEffect(() => {
-    initI18n().then(() => setI18nReady(true));
+    initI18n();
   }, []);
 
+  // Une police qui ne charge pas ne doit pas faire tomber le site : on garde la police système.
+  const fontsSettled = fontsLoaded || !!error;
   useEffect(() => {
-    if (error) throw error;
+    if (error) logger.warn('Polices non chargées, police système utilisée', error);
   }, [error]);
 
   useEffect(() => {
-    if (fontsLoaded && i18nReady) SplashScreen.hideAsync();
-  }, [fontsLoaded, i18nReady]);
+    if (fontsSettled) SplashScreen.hideAsync();
+  }, [fontsSettled]);
 
-  if (!fontsLoaded || !i18nReady) return null;
+  // Sur le web, le contenu s'affiche tout de suite (rendu statique) ; les polices arrivent ensuite.
+  if (!fontsSettled && Platform.OS !== 'web') return null;
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>

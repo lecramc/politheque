@@ -14,7 +14,7 @@ export default function DebatesScreen() {
   const { colors, effects, fonts } = useTheme();
 
   return (
-    <Page loading={vm.status !== 'loaded'}>
+    <Page title={'Les grands débats'} loading={vm.status !== 'loaded'}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Les grands débats</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>

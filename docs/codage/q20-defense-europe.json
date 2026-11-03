@@ -1,0 +1,215 @@
+{
+  "question": "q20-defense-europe",
+  "positions": {
+    "ecologistes": {
+      "stance": 1,
+      "justification": "Les eurodéputés écologistes ont voté pour la résolution du PE du 12 mars 2025 sur le livre blanc de la défense, qui demande d'explorer « a system of European defence bonds » (5 pour), et pour le prêt de 90 Md€ à l'Ukraine financé par un emprunt commun de l'UE (11 février 2026 : 4 pour). Pas de déclaration explicite de Marine Tondelier identifiée sur un emprunt commun pour la défense européenne.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 12 mars 2025 sur le livre blanc sur l'avenir de la défense européenne (« a system of European defence bonds to be explored »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1807135",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 1,
+      "justification": "Les deux eurodéputés Horizons ont voté pour la résolution du PE du 12 mars 2025 (qui demande d'explorer des obligations européennes de défense) et pour le prêt à l'Ukraine financé par un emprunt commun (11 février 2026). Pas de déclaration explicite d'Édouard Philippe identifiée.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 12 mars 2025 sur le livre blanc sur l'avenir de la défense européenne (« a system of European defence bonds to be explored »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1807135",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": -1,
+      "justification": "Les eurodéputés LFI ont voté contre la résolution du PE du 12 mars 2025 sur le livre blanc de la défense (8 contre), qui demande d'explorer des obligations européennes de défense, et se sont abstenus sur le prêt commun à l'Ukraine (11 février 2026 : 8 abstentions). « L'Avenir en commun » prévoit de suspendre la participation française à « l'Europe de la défense ».",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        },
+        {
+          "title": "L'Avenir en commun, section 70",
+          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+          "date": "2021-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 0,
+      "justification": "Les eurodéputés LR se sont majoritairement abstenus sur la résolution du PE du 12 mars 2025 sur le livre blanc de la défense (3 abstentions, 1 contre) et unanimement sur le prêt à l'Ukraine financé par un emprunt commun (11 février 2026 : 5 abstentions). Pas de position explicite de Bruno Retailleau identifiée.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 12 mars 2025 sur le livre blanc sur l'avenir de la défense européenne (« a system of European defence bonds to be explored »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1807135",
+          "date": "2025-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée sur un emprunt européen commun ; le candidat juge la hausse du budget de défense national « incontournable ». Nouvelle Énergie n'a ni groupe parlementaire ni eurodéputé.",
+      "sources": []
+    },
+    "pcf": {
+      "stance": null,
+      "justification": "Le texte du 40e congrès (juillet 2026) s'oppose à « la militarisation de l'UE » et aux « projets d'une armée européenne », mais ne se prononce pas explicitement sur un emprunt commun de l'UE pour la défense. Le PCF n'a pas d'eurodéputé.",
+      "sources": [
+        {
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
+          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Le programme européen PS-Place publique de 2024 proposait un fonds européen de défense de 100 Md€ que l'UE pourrait financer par « un nouvel emprunt commun sur le modèle du plan de relance européen » ; les eurodéputés PS et Place publique ont voté pour la résolution du 12 mars 2025 (13 pour) et pour le prêt commun à l'Ukraine (11 février 2026 : 10 pour).",
+      "sources": [
+        {
+          "title": "Toute l'Europe, « Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS-Place publique »",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+          "date": "2024-05",
+          "kind": "presse"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": -1,
+      "justification": "Sarah Knafo, seule eurodéputée Reconquête, a voté contre la résolution du PE du 12 mars 2025 qui demande d'explorer des obligations européennes de défense (elle n'a pas pris part au vote sur le prêt commun à l'Ukraine) ; son chiffrage budgétaire 2026 propose un retour au budget européen d'avant le Covid.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": 2,
+      "justification": "Gabriel Attal inscrit « l'émission de dette commune » parmi ses propositions européennes (Reims, 17 septembre 2026) ; Valérie Hayer, présidente du groupe Renew, juge qu'un emprunt commun pour la défense, « comme pendant le Covid », serait « la vraie bonne solution » (17 mars 2025). Les eurodéputés Renaissance et alliés ont voté pour la résolution du 12 mars 2025 et pour le prêt commun à l'Ukraine (11 février 2026).",
+      "sources": [
+        {
+          "title": "Sud Radio, « Gabriel Attal plaide pour des \"États-Unis d'Europe\", le projet d'une génération »",
+          "url": "https://www.sudradio.fr/societe/gabriel-attal-plaide-pour-des-etats-unis-deurope-le-projet-dune-generation",
+          "date": "2026-09-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Défense européenne : Valérie Hayer plaide pour un \"emprunt commun\" européen »",
+          "url": "https://www.publicsenat.fr/actualites/international/defense-europeenne-valerie-hayer-plaide-pour-un-emprunt-commun-europeen",
+          "date": "2025-03-17",
+          "kind": "declaration"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -2,
+      "justification": "Dans un amendement à l'actualisation de la loi de programmation militaire (n° 617, 29 avril 2026), les députés RN écrivent que « le Rassemblement national s'oppose fermement au mécanisme européen \"SAFE\" », qui mobilise 150 Md€ d'emprunts ; les eurodéputés RN ont voté contre la résolution du 12 mars 2025 (29 contre) et contre le prêt commun à l'Ukraine (11 février 2026 : 26 contre).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° 617 au projet de loi n° 2695 (actualisation de la programmation militaire 2024-2030), M. Jacobelli et autres (RN)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2695/AN/617.pdf",
+          "date": "2026-04-29",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
+        }
+      ]
+    }
+  },
+  "notes": "Aucun vote parlementaire ne porte directement sur SAFE : le Conseil l'a adopté seul, sur le fondement de l'article 122 TFUE. Textes de référence : (a) la résolution du PE du 12/03/2025 sur le livre blanc de la défense (P10_TA(2025)0034). Elle porte sur l'ensemble de la défense européenne et demande seulement d'« explorer » des obligations européennes de défense, si bien qu'un vote contre peut s'expliquer par d'autres raisons. (b) Le prêt de 90 Md€ à l'Ukraine du 11/02/2026, financé par un emprunt commun de l'UE (dont 60 Md€ pour la défense ukrainienne, et non européenne). Pour cette raison, les partis codés uniquement d'après ces votes reçoivent ±1 ; ±2 est réservé aux partis qui ont une déclaration ou un texte explicite (RN : amendement anti-SAFE ; PS-PP : programme 2024 ; Renaissance : déclaration de V. Hayer). Incertitudes : la date exacte de l'article Public Sénat sur V. Hayer n'a pas été vérifiée (vers mars 2025, contexte ReArm Europe) ; aucune déclaration de G. Attal, É. Philippe, M. Tondelier, B. Retailleau, J.-L. Mélenchon ou É. Zemmour sur l'emprunt commun pour la défense n'a été trouvée. Texte help : pas d'erreur relevée (SAFE adopté par le Conseil le 27/05/2025). Le prêt de 90 Md€ à l'Ukraine, financé par un emprunt commun (février 2026), pourrait être mentionné. Le montant du prêt SAFE signé par la France (environ 15 Md€, juin 2026) n'a pas été revérifié ici. Vérification croisée (03/11/2026) : article de Toute l'Europe (programme PS-PP 2024) et article de Public Sénat sur Valérie Hayer (17/03/2025) ouverts, conformes. Recherche de déclarations des candidats sur un emprunt commun pour la défense : trouvé Gabriel Attal (« l'émission de dette commune », 17/09/2026, sans mention explicite de la défense ; ajouté pour Renaissance, valeur inchangée) ; rien d'explicite pour Philippe, Retailleau, Tondelier, Mélenchon, Le Pen/Bardella, Zemmour, Lisnard, Roussel. Repérés mais non retenus : scrutin n° 6362 du 06/05/2026 (amendement RN contre l'« Europe de la défense », EDIP, ReArm Europe et SAFE, rejeté ; seuls RN et UDR pour, tous les autres groupes contre) — il confirme le RN mais un vote contre un amendement RN ne vaut pas soutien à l'emprunt commun ; résolution du PE du 16/12/2025 sur ReArm Europe (budget de l'UE, pas d'emprunt). PCF : null maintenu, le congrès s'oppose à la « militarisation de l'UE » sans viser l'emprunt commun."
+}

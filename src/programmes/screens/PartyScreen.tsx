@@ -29,7 +29,7 @@ const TABS: { id: Tab; label: string }[] = [
   { id: 'bref', label: 'En bref' },
   { id: 'histoire', label: 'Histoire' },
   { id: 'positions', label: 'Positions' },
-  { id: 'programme', label: 'Programme 2027' },
+  { id: 'programme', label: 'Pour 2027' },
 ];
 
 function Chip({ label, onPress }: { label: string; onPress: () => void }) {
@@ -70,7 +70,7 @@ export default function PartyScreen() {
 
   if (vm.status === 'loaded' && !party) {
     return (
-      <Page back={{ label: 'Partis', href: '/partis' }}>
+      <Page title={'Parti introuvable'} back={{ label: 'Partis', href: '/partis' }}>
         <Text variant="title">Parti introuvable</Text>
       </Page>
     );
@@ -82,7 +82,11 @@ export default function PartyScreen() {
   };
 
   return (
-    <Page loading={vm.status !== 'loaded'} back={{ label: 'Partis', href: '/partis' }}>
+    <Page
+      title={party?.name}
+      loading={vm.status !== 'loaded'}
+      back={{ label: 'Partis', href: '/partis' }}
+    >
       {party ? (
         <>
           <View style={{ flexDirection: 'row', gap: 14, alignItems: 'flex-start' }}>
@@ -103,7 +107,7 @@ export default function PartyScreen() {
             />
             {presidential ? (
               <Chip
-                label={`Candidat 2027 : ${presidential.candidacy.candidateName}`}
+                label={`Candidature 2027 : ${presidential.candidacy.candidateName}`}
                 onPress={() => setSheet('candidat')}
               />
             ) : null}
@@ -112,7 +116,14 @@ export default function PartyScreen() {
             </Text>
           </View>
 
-          <Tabs tabs={TABS} value={tab} onChange={changeTab} />
+          <Tabs
+            tabs={TABS.filter(
+              (t) =>
+                (t.id !== 'histoire' || !!party.history) && (t.id !== 'programme' || !!presidential)
+            )}
+            value={tab}
+            onChange={changeTab}
+          />
 
           <TabPanel id={tab}>
             {tab === 'bref' ? (
@@ -121,7 +132,7 @@ export default function PartyScreen() {
                   {[
                     ['Fondé', party.history?.founded],
                     [
-                      'Candidat 2027',
+                      'Candidature 2027',
                       presidential
                         ? `${presidential.candidacy.candidateName} · ${presidential.candidacy.statusLabel}`
                         : null,
@@ -338,7 +349,7 @@ export default function PartyScreen() {
             <Sheet
               isOpen={sheet === 'candidat'}
               onClose={() => setSheet(null)}
-              title={`Candidat 2027 : ${presidential.candidacy.candidateName}`}
+              title={`Candidature 2027 : ${presidential.candidacy.candidateName}`}
             >
               <StatusChip label={presidential.candidacy.statusLabel} />
               <Text style={{ fontSize: 16, lineHeight: 25 }}>

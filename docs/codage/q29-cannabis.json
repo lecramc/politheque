@@ -1,0 +1,185 @@
+{
+  "question": "q29-cannabis",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2027 des Écologistes (15 juillet 2026, p. 184) prévoit de « Légaliser et encadrer la production, la vente et la consommation de cannabis ».",
+      "sources": [
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 184",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Les Écologistes, « Projet 2027 » (page officielle du programme)",
+          "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027",
+          "date": "2026-07",
+          "kind": "programme"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -1,
+      "justification": "Le groupe Horizons a voté contre la dépénalisation de l'usage de stupéfiants proposée par amendement lors de l'examen de la loi « RIPOST » (9 juillet 2026 : 0 pour, 6 contre). Pas de déclaration d'Édouard Philippe sur la légalisation du cannabis récréatif.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 8129, amendement n° 426 (Mme Taurinya) dépénalisant l'usage de stupéfiants, projet de loi « réponses immédiates aux phénomènes troublant l'ordre public »",
+          "url": "https://datan.fr/votes/legislature-17/vote_8129",
+          "date": "2026-07-09",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 2,
+      "justification": "Le programme 2022 « L'Avenir en commun » propose de « légaliser et encadrer par un monopole d'État » la production, la vente et la consommation de cannabis. Le groupe a défendu en janvier 2022 une proposition de loi en ce sens (10 voix contre l'amendement de suppression de l'article 1er), puis voté en juillet 2026 un amendement de dépénalisation de l'usage (20 pour, 0 contre). Manuel Bompard, coordinateur de LFI, a redit le 8 novembre 2024 : « je plaide pour la légalisation du cannabis ».",
+      "sources": [
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, propositions de Jean-Luc Mélenchon",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon",
+          "date": "2022",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1 – Lutte contre le trafic de drogue : Manuel Bompard plaide pour la légalisation du cannabis",
+          "url": "https://www.europe1.fr/politique/lutte-contre-le-trafic-de-drogue-manuel-bompard-plaide-pour-la-legalisation-du-cannabis-pour-y-arriver-4277678",
+          "date": "2024-11-08",
+          "kind": "declaration"
+        },
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), amendement de suppression de l'article 1er de la PPL relative à la légalisation du cannabis sous le contrôle de l'État",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8129, amendement n° 426 dépénalisant l'usage de stupéfiants",
+          "url": "https://datan.fr/votes/legislature-17/vote_8129",
+          "date": "2026-07-09",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -2,
+      "justification": "Interrogé sur la légalisation du cannabis, Bruno Retailleau s'est dit « Totalement contre » (TF1, 18 février 2025), estimant que la légalisation des drogues dites douces « ne marche pas ».",
+      "sources": [
+        {
+          "title": "Europe 1 – Légalisation du cannabis : « Ça ne marche pas », estime Bruno Retailleau",
+          "url": "https://www.europe1.fr/politique/legalisation-du-cannabis-ca-ne-marche-pas-estime-bruno-retailleau-396031",
+          "date": "2025-02-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis (LR : 3 pour la suppression)",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas de position publique de David Lisnard sur la légalisation du cannabis. Le programme qualifie le narcotrafic de « menace stratégique » sans parler de la légalisation. Pas de groupe parlementaire.",
+      "sources": []
+    },
+    "pcf": {
+      "stance": null,
+      "justification": "Positions divergentes : Fabien Roussel se disait en 2022 opposé à la légalisation mais plutôt favorable à la dépénalisation, alors que les députés communistes du groupe GDR ont soutenu la proposition de loi de légalisation sous contrôle de l'État en janvier 2022 et l'amendement de dépénalisation de l'usage en juillet 2026. Pas de déclaration récente du candidat.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 1,
+      "justification": "En 2019, Raphaël Glucksmann a cosigné une tribune de plus de 70 personnalités appelant à une « légalisation encadrée » du cannabis. Le groupe socialiste a soutenu en janvier 2022 la proposition de loi de légalisation sous contrôle de l'État (5 voix contre l'amendement de suppression de l'article 1er). Pas de déclaration du candidat en 2025-2026.",
+      "sources": [
+        {
+          "title": "Public Sénat – Cannabis : 70 personnalités appellent à légaliser au nom du « pragmatisme »",
+          "url": "https://www.publicsenat.fr/actualites/politique/cannabis-70-personnalites-appellent-a-legaliser-au-nom-du-pragmatisme-142235",
+          "date": "2019-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": -2,
+      "justification": "Pendant la campagne de 2022, Éric Zemmour a déclaré : « Après mûre réflexion, je suis contre » la légalisation du cannabis. Il avait évoqué en mai 2021, avant sa candidature, une « légalisation organisée ». Position de 2022 ; Reconquête n'a pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Greenboyz – Cannabis, CBD et élection présidentielle : la position des candidats",
+          "url": "https://greenboyz.fr/cannabis-cbd-election-presidentielle-candidats-legalisation/",
+          "date": "2022-03",
+          "kind": "presse"
+        },
+        {
+          "title": "CNews – Répression, légalisation, dépénalisation… Que pensent les candidats à la présidentielle du cannabis ?",
+          "url": "https://www.cnews.fr/france/2022-02-01/repression-legalisation-depenalisation-que-pensent-les-candidats-la-presidentielle",
+          "date": "2022-02-01",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Le groupe LaREM a voté en janvier 2022 la suppression de l'article 1er de la proposition de loi légalisant le cannabis sous le contrôle de l'État (34 pour, 2 abstentions, 2 contre). Le groupe EPR a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 12 contre). En 2020, Gabriel Attal s'était dit « favorable par principe » à l'ouverture d'un débat sur la légalisation, sans prendre position.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8129, amendement n° 426 dépénalisant l'usage de stupéfiants",
+          "url": "https://datan.fr/votes/legislature-17/vote_8129",
+          "date": "2026-07-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Cannabis : Attal « favorable » à un débat autour de la légalisation",
+          "url": "https://www.publicsenat.fr/actualites/politique/cannabis-attal-favorable-a-un-debat-autour-de-la-legalisation-149169",
+          "date": "2020-01",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -2,
+      "justification": "En 2022, Marine Le Pen jugeait que la légalisation n'est « évidemment pas la solution » et qu'« il faut mener la guerre contre la drogue ». Jordan Bardella estimait en 2019 que « légaliser le cannabis c'est envoyer un signal dramatique ». Le groupe RN a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 16 contre).",
+      "sources": [
+        {
+          "title": "Greenboyz – Cannabis, CBD et élection présidentielle : la position des candidats",
+          "url": "https://greenboyz.fr/cannabis-cbd-election-presidentielle-candidats-legalisation/",
+          "date": "2022-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1 – Légaliser le cannabis, c'est envoyer un signal dramatique, estime Jordan Bardella",
+          "url": "https://www.europe1.fr/politique/legaliser-le-cannabis-cest-envoyer-un-signal-dramatique-estime-jordan-bardella-3905772",
+          "date": "2019-06-21",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 8129, amendement n° 426 dépénalisant l'usage de stupéfiants",
+          "url": "https://datan.fr/votes/legislature-17/vote_8129",
+          "date": "2026-07-09",
+          "kind": "vote"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun le plus proche de l'énoncé : la proposition de loi LFI « relative à la légalisation de la production, de la vente et de la consommation du cannabis sous le contrôle de l'État », dont l'article 1er a été supprimé le 13/01/2022 (scrutin n° 4296, XVe législature, 80 votants seulement). Les groupes de l'époque ne correspondent pas tous aux partis actuels : Horizons et le RN n'y ont pas voté. Le seul scrutin de la XVIIe législature retrouvé porte sur la dépénalisation de l'usage, pas sur la légalisation (n° 8129, 09/07/2026, 67 votants) : il ne sert qu'en appoint, notamment pour Horizons (codé -1 parce qu'il ne s'agit que d'une déduction partielle). Points incertains : (1) PS-PP : la seule prise de position de Glucksmann date de 2019, et le PS est historiquement divisé ; codé 1, à revoir à la parution du programme. (2) PCF : le candidat (contre la légalisation, pour la dépénalisation) contredit le vote GDR de 2022 ; la position du candidat est retenue. (3) Renaissance : codé sur les votes de groupe ; Attal ne s'est pas prononcé sur le fond. (4) Nouvelle Énergie : null. (5) Plusieurs positions datent de 2019-2022 (RN, Reconquête, PS, PCF). (6) Le programme des Écologistes (PDF officiel) n'a pas pu être ouvert directement (protection anti-robots) ; la page 184 est citée d'après MonVote2027 et La Campagne 2027. Texte help : il est exact sur le principe (amende forfaitaire délictuelle). Le montant de 500 € et la loi RIPOST n'ont pas pu être revérifiés dans cette session. Vérification croisée (3 novembre 2026) : PCF passe de -1 à null : la seule trace de la position de Fabien Roussel (2022) est un site spécialisé (Greenboyz) qui ne donne ni média ni date, et elle contredit les votes des députés communistes ; aucune déclaration 2025-2026 trouvée. LFI : ajout d'une déclaration de Manuel Bompard (Europe 1, 8 novembre 2024, vérifiée). Écologistes : sources agrégateurs (MonVote2027, La Campagne 2027) remplacées par la page officielle « Projet 2027 » ; le texte « Légaliser et encadrer la production, la vente et la consommation de cannabis » a été lu via la reproduction du site Votons 2027, le site du parti renvoyant une erreur 403. Sources encore faibles : RN et Reconquête s'appuient en partie sur Greenboyz (citations de Le Pen issues de France Bleu Vaucluse, 2021 ; « Après mûre réflexion, je suis contre » de Zemmour sans origine) ; CNews (1er février 2022) inaccessible (403) ; à remplacer quand les programmes 2027 paraîtront. PS-PP : la tribune cosignée par Glucksmann date de juin 2019 (Public Sénat). Texte help : la loi RIPOST est la loi n° 2026-798 du 18 août 2026 (promulgation) ; l'amende forfaitaire passe bien de 200 à 500 € ; si la date « adoptée en juillet 2026 » ne peut être confirmée, écrire « promulguée en août 2026 »."
+}

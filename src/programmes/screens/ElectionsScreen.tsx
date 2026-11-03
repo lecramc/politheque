@@ -17,7 +17,7 @@ export default function ElectionsScreen() {
   const now = new Date();
 
   return (
-    <Page loading={vm.status !== 'loaded'}>
+    <Page title={'Les élections'} loading={vm.status !== 'loaded'}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Les élections</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
@@ -52,7 +52,7 @@ export default function ElectionsScreen() {
                   value={1 - days / 365}
                   size={96}
                   strokeWidth={10}
-                  accessibilityLabel={`Dans ${days} jours`}
+                  accessibilityLabel={`${election.title} : dans ${days} jours`}
                 >
                   <Text style={{ ...fonts.displayBold, fontSize: 22, color: colors.tint }}>
                     {days} j

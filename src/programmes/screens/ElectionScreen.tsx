@@ -13,6 +13,7 @@ import { PartyRow, RowGroup } from '@/src/programmes/components/PartyRow';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
+import { stepLabel } from '@/src/programmes/models/presentation.service';
 import type { DatedStep } from '@/src/programmes/models/programme.model';
 import { electionViewModel } from '@/src/programmes/view-models/elections.view-model';
 
@@ -37,7 +38,7 @@ export default function ElectionScreen() {
 
   if (vm.status === 'loaded' && !election) {
     return (
-      <Page back={{ label: 'Élections', href: '/elections' }}>
+      <Page title={'Élection introuvable'} back={{ label: 'Élections', href: '/elections' }}>
         <Text variant="title">Élection introuvable</Text>
       </Page>
     );
@@ -48,7 +49,11 @@ export default function ElectionScreen() {
     : [];
 
   return (
-    <Page loading={vm.status !== 'loaded'} back={{ label: 'Élections', href: '/elections' }}>
+    <Page
+      title={election?.title}
+      loading={vm.status !== 'loaded'}
+      back={{ label: 'Élections', href: '/elections' }}
+    >
       {election ? (
         <>
           <Text variant="title">{election.title}</Text>
@@ -106,8 +111,13 @@ export default function ElectionScreen() {
                       {shortDate(s.date)}
                     </Text>
                     <Text style={{ fontSize: 14 }} numberOfLines={3}>
-                      {s.label.split(' (')[0]}
+                      {stepLabel(s.label).title}
                     </Text>
+                    {stepLabel(s.label).note ? (
+                      <Text style={{ fontSize: 12, color: colors.text.secondary }}>
+                        {stepLabel(s.label).note}
+                      </Text>
+                    ) : null}
                   </Pressable>
                 );
               })}

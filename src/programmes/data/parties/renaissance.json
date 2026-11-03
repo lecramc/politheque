@@ -3,8 +3,8 @@
   "name": "Renaissance",
   "shortName": "RE",
   "color": "#FFD600",
-  "family": "Centre, libéral (bloc central)",
-  "description": "Renaissance est le parti fondé en 2016 sous le nom d'En marche par Emmanuel Macron, dirigé depuis décembre 2024 par Gabriel Attal, ancien Premier ministre (2024) et président du groupe Ensemble pour la République (EPR) à l'Assemblée. Emmanuel Macron avait obtenu 27,85 % au premier tour de la présidentielle 2022 (résultats proclamés par le Conseil constitutionnel ; 27,84 % dans les résultats publiés le 11 avril par le ministère de l'Intérieur) ; aux européennes de 2024, la liste « Besoin d'Europe » conduite par Valérie Hayer (Renaissance, MoDem, Horizons, Parti radical, UDI) a obtenu 14,60 % et 13 sièges (résultats officiels publiés par le Parlement européen). Gabriel Attal a déclaré sa candidature le 22 mai 2026 à Mur-de-Barrez (Aveyron) et a proposé le 28 octobre 2026 une « grande primaire des démocrates ».",
+  "family": "Centre (presse et analystes, parfois centre droit ; bloc « centre » du nuancier du ministère de l'Intérieur ; le parti se présente comme le parti « du dépassement » du clivage gauche-droite)",
+  "description": "Renaissance est le parti fondé en 2016 sous le nom d'En marche par Emmanuel Macron ; il est dirigé depuis décembre 2024 par Gabriel Attal, ancien Premier ministre (2024) et président du groupe Ensemble pour la République (EPR) à l'Assemblée, qui compte 90 députés (novembre 2026, selon Datan). Emmanuel Macron avait obtenu 27,85 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux européennes de 2024, la liste « Besoin d'Europe » conduite par Valérie Hayer (Renaissance, MoDem, Horizons, Parti radical, UDI) a obtenu 14,60 %. Gabriel Attal a déclaré sa candidature le 22 mai 2026 et a proposé le 28 octobre 2026 une « grande primaire des démocrates ».",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2016 (fondé sous le nom En marche), devenu La République en marche (2017) puis Renaissance (2022)",
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "text": "Les analystes classent généralement le parti au centre, comme libéral et pro-européen, certains le situant au centre droit ; une analyse de Yoann Taïeb publiée par La Grande Conversation (revue de Terra Nova, 23/10/2024) décrit Emmanuel Macron comme « un politique inspiré par l'universalisme républicain français et le social-libéralisme européen ».",
+        "text": "Les analystes classent généralement le parti au centre, comme libéral et pro-européen, certains le situant au centre droit ; une analyse de Yoann Taïeb publiée par La Grande Conversation (revue de Terra Nova, 23 octobre 2024) décrit Emmanuel Macron comme « un politique inspiré par l'universalisme républicain français et le social-libéralisme européen ».",
         "sources": [
           {
             "title": "La Grande Conversation (Terra Nova) – Macronisme, centrisme et bloc central",
@@ -305,7 +305,7 @@
       {
         "name": "Emmanuel Macron",
         "role": "Fondateur d'En marche (2016), président de la République depuis 2017, président d'honneur de Renaissance",
-        "background": "Né en 1977 à Amiens, diplômé de Sciences Po et de l'ENA, il entre à l'Inspection générale des finances en 2004. Membre du Parti socialiste de 2006 à 2009 selon Universalis (Wikipédia indique que la date de fin est contestée), il participe en 2007 aux travaux de la commission Attali, puis devient en 2008 banquier d'affaires chez Rothschild & Cie. Il est ensuite secrétaire général adjoint de l'Élysée auprès de François Hollande (2012-2014), puis ministre de l'Économie, de l'Industrie et du Numérique (août 2014 - août 2016).",
+        "background": "Né en 1977 à Amiens, diplômé de Sciences Po et de l'ENA, il entre à l'Inspection générale des finances en 2004. Membre du Parti socialiste de 2006 à 2009 selon Universalis, il participe en 2007 aux travaux de la commission Attali, puis devient en 2008 banquier d'affaires chez Rothschild & Cie. Il est ensuite secrétaire général adjoint de l'Élysée auprès de François Hollande (2012-2014), puis ministre de l'Économie, de l'Industrie et du Numérique (août 2014 - août 2016).",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Macron Emmanuel (1977- ) »",
@@ -386,7 +386,7 @@
       {
         "name": "Julien Denormandie",
         "role": "Secrétaire général adjoint d'En marche (2016-2017), puis ministre (2017-2022)",
-        "background": "Ingénieur, ancien directeur adjoint du cabinet d'Emmanuel Macron au ministère de l'Économie, il rejoint le mouvement à l'été 2016, avant la démission du ministre. Les sources consultées ne lui attribuent pas d'engagement partisan antérieur.",
+        "background": "Ingénieur, ancien directeur adjoint du cabinet d'Emmanuel Macron au ministère de l'Économie, il rejoint le mouvement à l'été 2016, avant la démission du ministre.",
         "sources": [
           {
             "title": "Europe 1, « Alliés politiques, proches : qui fait partie de la galaxie Macron ? »",
@@ -429,7 +429,7 @@
       },
       {
         "name": "Gabriel Attal",
-        "role": "Premier ministre (janvier-septembre 2024), secrétaire général de Renaissance depuis décembre 2024",
+        "role": "Premier ministre (janvier-septembre 2024), secrétaire général de Renaissance depuis décembre 2024 ; candidat déclaré pour 2027",
         "background": "Il adhère au Parti socialiste en 2006 pour soutenir Ségolène Royal et travaille au cabinet de la ministre de la Santé Marisol Touraine à partir de 2012. Il quitte le PS pour En marche en 2016, est élu député des Hauts-de-Seine en 2017, puis occupe plusieurs fonctions gouvernementales (secrétaire d'État, porte-parole du gouvernement, ministre des Comptes publics puis de l'Éducation nationale) avant de devenir, à 34 ans, le plus jeune Premier ministre de la Ve République.",
         "sources": [
           {
@@ -545,7 +545,7 @@
   "stances": {
     "q01-isf": {
       "stance": -2,
-      "justification": "Promet « aucune hausse d'impôts pendant 5 ans » ; un responsable du groupe EPR qu'il préside a déclaré le 28/10/2025 : « La taxe Zucman, peu importe la version, c'est non ». Le groupe EPR a voté contre la taxe Zucman le 31/10/2025 (scrutin n° 3300 : 0 pour, 60 contre, 3 abstentions).",
+      "justification": "Gabriel Attal promet « aucune hausse d'impôts pendant 5 ans » ; le groupe EPR qu'il préside a voté contre la taxe Zucman le 31 octobre 2025 (0 pour, 3 abstentions, 60 contre) et le 16 octobre 2026 (12 contre).",
       "sources": [
         {
           "title": "Mes chantiers capitaux – Gabriel Attal Président",
@@ -554,15 +554,15 @@
           "kind": "programme"
         },
         {
-          "title": "Budget 2026 : la taxe Zucman, dans sa version initiale ou remaniée, toujours au cœur du bras de fer budgétaire",
-          "url": "https://lcp.fr/actualites/budget-2026-la-taxe-zucman-dans-sa-version-initiale-ou-remaniee-toujours-au-coeur-du",
-          "date": "2025-10-28",
-          "kind": "presse"
-        },
-        {
-          "title": "Datan, scrutin n° 3300 du 31/10/2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros »",
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
           "url": "https://datan.fr/votes/legislature-17/vote_3300",
           "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
           "kind": "vote"
         }
       ]
@@ -591,27 +591,9 @@
         }
       ]
     },
-    "q03-charges": {
-      "stance": 2,
-      "justification": "Fait du retour sur les hausses du coût du travail depuis 2024 son « premier engagement » et propose une baisse des charges compensée par une TVA sociale.",
-      "sources": [
-        {
-          "title": "Présidentielle 2027 : ce qu'il faut retenir du débat entre les candidats devant le Medef",
-          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
-          "date": "2026-08-27",
-          "kind": "presse"
-        },
-        {
-          "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
-          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
-          "date": "2026-10-30",
-          "kind": "presse"
-        }
-      ]
-    },
     "q04-retraite": {
       "stance": -1,
-      "justification": "Propose de supprimer l'âge légal au profit de la durée de cotisation avec décote et surcote, sans retour à 62 ans ; n'a pas précisé d'âge pivot.",
+      "justification": "Gabriel Attal propose de supprimer l'âge légal au profit de la durée de cotisation avec décote et surcote, sans retour à 62 ans ; il n'a pas précisé d'âge pivot.",
       "sources": [
         {
           "title": "Reculer ou avancer l'âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats",
@@ -628,25 +610,44 @@
       ]
     },
     "q05-smic": {
-      "stance": null,
-      "justification": "Pas de position identifiée sur un « coup de pouce » au SMIC ; le candidat propose d'augmenter le net par la baisse des charges et un « treizième mois » pour les classes moyennes.",
-      "sources": []
+      "stance": -1,
+      "justification": "Gabriel Attal ne propose pas de hausse du SMIC et mise sur « une réduction des charges sociales » (octobre 2026). Le groupe Renaissance a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (114 contre, 0 pour). Vote ancien et portant sur une hausse importante : on code « plutôt défavorable ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
+          "url": "https://datan.fr/votes/legislature-16/vote_44",
+          "date": "2022-07-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ]
     },
     "q06-chomage": {
       "stance": 2,
-      "justification": "Propose une réforme de l'assurance chômage générant 5 Md€ d'économies et évoque un « durcissement » des règles pour financer la baisse des charges.",
+      "justification": "Gabriel Attal propose de « réformer l'assurance chômage et réaliser cinq milliards d'économies » et envisage « le durcissement des règles de l'assurance chômage » pour financer la baisse des charges ; le groupe EPR a voté la loi de juin 2026 (87 pour, 0 contre).",
       "sources": [
         {
-          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "title": "Mes chantiers capitaux – Gabriel Attal Président (mesure 85)",
           "url": "https://attalpresident.fr/programme",
           "date": "2026-11",
           "kind": "programme"
         },
         {
-          "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
           "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
           "date": "2026-10-30",
           "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
         }
       ]
     },
@@ -663,9 +664,22 @@
       ]
     },
     "q08-preference": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur la « préférence nationale » dans les sources consultées.",
-      "sources": []
+      "stance": -2,
+      "justification": "Le groupe EPR a voté contre l'amendement RN de « préférence nationale » dans le logement social (scrutin n° 4960 du 12 janvier 2026 : 18 contre, aucun pour) ; la députée EPR Prisca Thévenot a contesté la proposition de Marine Le Pen en septembre 2026. Pas de déclaration de Gabriel Attal.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
+        }
+      ]
     },
     "q09-regularisation": {
       "stance": null,
@@ -674,7 +688,7 @@
     },
     "q10-peines-planchers": {
       "stance": 1,
-      "justification": "Pas de déclaration du candidat identifiée. Le groupe EPR a voté contre l'amendement de suppression de l'article instaurant une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (forme de peines planchers) dans la proposition de loi Horizons « Restaurer l'autorité de l'État » (vote n° 1263 du 03/04/2025 : 6 contre sur 6 députés EPR votants) ; participation faible et vote sur un amendement, d'où « plutôt favorable ».",
+      "justification": "Pas de déclaration du candidat identifiée. Le groupe EPR a voté contre l'amendement de suppression de l'article instaurant une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (forme de peines planchers) dans la proposition de loi Horizons « Restaurer l'autorité de l'État » (vote n° 1263 du 3 avril 2025 : 6 contre sur 6 députés EPR votants) ; il s'agit d'un vote sur un amendement, avec une faible participation.",
       "sources": [
         {
           "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
@@ -690,14 +704,9 @@
         }
       ]
     },
-    "q11-police": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur le contrôle indépendant de la police ou le récépissé.",
-      "sources": []
-    },
     "q12-nucleaire": {
       "stance": 2,
-      "justification": "Comme Premier ministre, a proposé en juin 2024 la mise en chantier de 14 nouveaux réacteurs ; défend en 2025 un mix nucléaire-renouvelables. Aucune déclaration de 2026 sur le nombre de réacteurs n'a été vérifiée sur une source primaire : les 96 mesures publiées sur attalpresident.fr ne mentionnent pas les réacteurs (seulement la fusion nucléaire).",
+      "justification": "Comme Premier ministre, a proposé en juin 2024 la mise en chantier de 14 nouveaux réacteurs ; défend en 2025 un mix nucléaire-renouvelables. Les 96 mesures de son programme 2027 ne mentionnent pas de nouveaux réacteurs, seulement la fusion nucléaire.",
       "sources": [
         {
           "title": "Législatives anticipées : que proposent les trois blocs sur l'écologie ?",
@@ -727,7 +736,7 @@
     },
     "q14-normes-agricoles": {
       "stance": 2,
-      "justification": "Gabriel Attal et la majorité du groupe EPR ont voté pour la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 64 pour, 14 contre, 10 abstentions).",
+      "justification": "Gabriel Attal et la majorité du groupe EPR ont voté pour la loi Duplomb (scrutin n° 2957 du 8 juillet 2025 : 64 pour, 14 contre, 10 abstentions).",
       "sources": [
         {
           "title": "Datan – Vote final, proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (vote n° 2957)",
@@ -738,26 +747,32 @@
       ]
     },
     "q15-medecins": {
-      "stance": null,
-      "justification": "Groupe divisé : lors du vote de la proposition de loi Garot (07/05/2025, vote n° 1607), les députés EPR présents se sont partagés à égalité (4 pour, 4 contre) ; pas de position du candidat identifiée.",
+      "stance": -1,
+      "justification": "Le groupe EPR a voté majoritairement contre l'article 1er régulant l'installation (vote n° 1214 : 18 contre, 4 pour, 1 abstention), puis s'est partagé sur le texte entier (vote n° 1607 : 4 pour, 4 contre). Pas de déclaration de Gabriel Attal sur la régulation en 2025-2026.",
       "sources": [
         {
-          "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins",
-          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
           "date": "2025-05-07",
           "kind": "vote"
         },
         {
-          "title": "Datan – Proposition de loi visant à lutter contre les déserts médicaux, ensemble du texte (vote n° 1607)",
-          "url": "https://datan.fr/votes/legislature-17/vote_1607",
-          "date": "2025-05-07",
-          "kind": "vote"
+          "title": "LCP, « Déserts médicaux : l'Assemblée nationale vote en faveur d'une régulation de l'installation des médecins »",
+          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-nationale-vote-en-faveur-d-une-regulation-de-l-installation",
+          "date": "2025-04-03",
+          "kind": "presse"
         }
       ]
     },
     "q16-fin-de-vie": {
       "stance": 2,
-      "justification": "Gabriel Attal a voté pour la loi en lecture définitive, comme la majorité du groupe EPR (vote n° 8280 du 15/07/2026 : 64 pour, 18 contre, 9 abstentions ; en deuxième lecture le 25/02/2026 : 64 pour, 14 contre, 9 abstentions) ; aucune intention d'abrogation identifiée.",
+      "justification": "Gabriel Attal a voté pour la loi en lecture définitive, comme la majorité du groupe EPR (vote n° 8280 : 64 pour, 9 abstentions, 18 contre) ; aucune intention d'abrogation.",
       "sources": [
         {
           "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
@@ -774,71 +789,98 @@
       ]
     },
     "q17-ecole-privee": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur le financement ou la mixité sociale de l'enseignement privé sous contrat.",
-      "sources": []
+      "stance": 0,
+      "justification": "Position intermédiaire du groupe EPR : en commission (20 novembre 2024), le député EPR Jean Laussucq a déposé un amendement de suppression de la PPL n° 418, tandis que Céline Calvez (EPR) proposait un système incitatif de « bonus » et de « malus » à enveloppe constante pour les établissements privés selon leurs efforts de mixité ; en 2024, le corapporteur Renaissance Christopher Weissberg proposait de « moduler les montants du forfait d'externat en fonction de la mixité sociale ». Aucune des 96 mesures de Gabriel Attal ne traite du sujet.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        },
+        {
+          "title": "LCP, « Financement de l'enseignement privé sous contrat : un rapport parlementaire préconise de… » (présentation du rapport Vannier-Weissberg)",
+          "url": "https://lcp.fr/actualites/financement-de-l-enseignement-prive-sous-contrat-un-rapport-parlementaire-preconise-de",
+          "date": "2024-04-02",
+          "kind": "presse"
+        }
+      ]
     },
     "q18-ukraine": {
       "stance": 2,
-      "justification": "Défend la poursuite de l'aide à l'Ukraine et critique la proposition de Marine Le Pen d'y mettre fin (octobre 2026).",
+      "justification": "Gabriel Attal défend la poursuite de l'aide à l'Ukraine et a critiqué la proposition de Marine Le Pen d'y mettre fin (octobre 2026) ; le groupe a voté pour l'accord de sécurité (n° 3461 : 169 pour) et pour la résolution n° 988 (EPR : 81 pour).",
       "sources": [
         {
-          "title": "Le RN a « toujours défendu les intérêts de la Russie » (Gabriel Attal)",
+          "title": "Franceinfo, « Le RN a \"toujours défendu les intérêts de la Russie\" (Gabriel Attal) »",
           "url": "https://www.franceinfo.fr/politique/le-rn-a-toujours-defendu-les-interets-de-la-russie-gabriel-attal_8238646.html",
           "date": "2026-10-15",
           "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
         }
       ]
     },
     "q19-droit-europeen": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur la primauté du droit français ou européen.",
-      "sources": []
-    },
-    "q20-defense-europe": {
-      "stance": null,
-      "justification": "Propose une préférence européenne et un « dôme de fer » européen, mais pas de position identifiée sur un endettement commun de l'UE.",
-      "sources": []
-    },
-    "q21-libre-echange": {
-      "stance": 2,
-      "justification": "Son programme inscrit le « refus du traité Mercosur » et des clauses miroirs dans tous les accords commerciaux.",
+      "stance": -2,
+      "justification": "Les eurodéputés Renaissance et alliés (Renew) ont voté unanimement pour la résolution du PE du 21 novembre 2023 qui rappelle que la primauté du droit de l'Union est « crucial » pour son application uniforme. Pas de déclaration de Gabriel Attal identifiée sur ce point.",
       "sources": [
         {
-          "title": "Mes chantiers capitaux – Gabriel Attal Président",
-          "url": "https://attalpresident.fr/programme",
-          "date": "2026-11",
-          "kind": "programme"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 21 novembre 2023 sur la mise en œuvre du principe de primauté du droit de l'UE",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1766854",
+          "date": "2023-11-21",
+          "kind": "vote"
         }
       ]
     },
-    "q22-vie-republique": {
-      "stance": -1,
-      "justification": "Ne propose pas de VIe République : il appelle à « une Ve République du XXIe siècle » (Arras, 21/09/2025) et à une réforme constitutionnelle « profonde » pour « mieux partager le pouvoir » (01/09/2026), présentée comme « la plus grande réforme institutionnelle depuis 1958 » (référendum annuel, moins de parlementaires). Maintien de la Ve République avec réformes, d'où « plutôt défavorable » à un changement de Constitution.",
+    "q20-defense-europe": {
+      "stance": 2,
+      "justification": "Gabriel Attal inscrit « l'émission de dette commune » parmi ses propositions européennes (Reims, 17 septembre 2026) ; Valérie Hayer, présidente du groupe Renew, juge qu'un emprunt commun pour la défense, « comme pendant le Covid », serait « la vraie bonne solution » (17 mars 2025). Les eurodéputés Renaissance et alliés ont voté pour la résolution du 12 mars 2025 et pour le prêt commun à l'Ukraine (11 février 2026).",
       "sources": [
         {
-          "title": "En meeting à Arras, Gabriel Attal appelle à une « Ve République du XXIe siècle »",
-          "url": "https://www.franceinfo.fr/politique/gabriel-attal/en-meeting-a-arras-gabriel-attal-appelle-a-une-ve-republique-du-21e-siecle_7505410.html",
-          "date": "2025-09-21",
+          "title": "Sud Radio, « Gabriel Attal plaide pour des \"États-Unis d'Europe\", le projet d'une génération »",
+          "url": "https://www.sudradio.fr/societe/gabriel-attal-plaide-pour-des-etats-unis-deurope-le-projet-dune-generation",
+          "date": "2026-09-17",
           "kind": "presse"
         },
         {
-          "title": "Présidentielle 2027 : « Il faut une réforme constitutionnelle profonde, pour mieux partager le pouvoir », défend Gabriel Attal",
-          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-il-faut-une-reforme-constitutionnelle-profonde-pour-mieux-partager-le-pouvoir-defend-gabriel-attal-au-20-heures-de-france-2_8172656.html",
-          "date": "2026-09-01",
-          "kind": "presse"
+          "title": "Public Sénat, « Défense européenne : Valérie Hayer plaide pour un \"emprunt commun\" européen »",
+          "url": "https://www.publicsenat.fr/actualites/international/defense-europeenne-valerie-hayer-plaide-pour-un-emprunt-commun-europeen",
+          "date": "2025-03-17",
+          "kind": "declaration"
         },
         {
-          "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
-          "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
-          "date": "2026-08-02",
-          "kind": "presse"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
         }
       ]
     },
     "q23-referendum": {
       "stance": null,
-      "justification": "Propose une journée référendaire annuelle sans en préciser les thèmes ; pas de position datée et vérifiée identifiée sur un référendum consacré à l'immigration.",
+      "justification": "Gabriel Attal propose une « journée référendaire par an » sans en préciser les thèmes ; son programme prévoit des quotas migratoires sans référendum. Il ne s'est pas prononcé explicitement pour ou contre un référendum sur l'immigration.",
       "sources": []
     },
     "q24-proportionnelle": {
@@ -858,6 +900,221 @@
           "kind": "presse"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": 1,
+      "justification": "Gabriel Attal veut alléger la fiscalité des donations pour « faire en sorte que l'argent puisse circuler plus rapidement » vers les jeunes (été 2026). Pas de proposition identifiée sur le barème des droits de succession eux-mêmes ; la mesure ne figure pas dans les 96 « chantiers capitaux » publiés.",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Connexion France, « Tax all inheritance in France, says union chief »",
+          "url": "https://www.connexionfrance.com/money/tax-all-inheritance-in-france-says-union-chief/813726",
+          "date": "2026-09-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": -2,
+      "justification": "Le groupe EPR a voté contre aux deux lectures (27 novembre 2025 : 19 contre ; 11 juin 2026 : 30 contre). La députée EPR Marie Lebec : « L'État n'est pas un actionnaire magique » (11 juin 2026).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q27-temps-de-travail": {
+      "stance": null,
+      "justification": "Pas de position de Gabriel Attal sur la durée légale : sa mesure « Constitution du travail » (27 août 2026) renvoie l'organisation du travail à la négociation de branche et d'entreprise, sans mentionner les 35 heures ; en novembre 2025, il demandait surtout que les agents publics soient « vraiment aux 35 heures ».",
+      "sources": []
+    },
+    "q28-prix-energie": {
+      "stance": -2,
+      "justification": "Le groupe EPR a voté contre chaque baisse de TVA sur l'électricité : abonnement en 2025 (20 novembre 2025 : 47 contre), amendement LFI et amendement RN en 2026 (2 novembre 2026 : 5 et 8 contre).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q29-cannabis": {
+      "stance": -2,
+      "justification": "Le groupe LaREM a voté en janvier 2022 la suppression de l'article 1er de la proposition de loi légalisant le cannabis sous le contrôle de l'État (34 pour, 2 abstentions, 2 contre). Le groupe EPR a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 12 contre). En 2020, Gabriel Attal s'était dit « favorable par principe » à l'ouverture d'un débat sur la légalisation, sans prendre position.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8129, amendement n° 426 dépénalisant l'usage de stupéfiants",
+          "url": "https://datan.fr/votes/legislature-17/vote_8129",
+          "date": "2026-07-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Cannabis : Attal « favorable » à un débat autour de la légalisation",
+          "url": "https://www.publicsenat.fr/actualites/politique/cannabis-attal-favorable-a-un-debat-autour-de-la-legalisation-149169",
+          "date": "2020-01",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": -2,
+      "justification": "Le groupe Ensemble pour la République a voté majoritairement contre la suppression des ZFE le 28 mai 2025 (3 pour, 16 contre) et pour la suppression de l'article abrogeant les ZFE le 8 octobre 2026 (12 pour, 1 contre). Le 14 avril 2026, il a soutenu l'amendement du gouvernement rendant les ZFE facultatives (52 pour, 2 contre). Pas de déclaration de Gabriel Attal ; son programme ne mentionne pas les ZFE.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – La suppression des ZFE confirmée lors de l'ultime vote sur la loi de « simplification » à l'Assemblée",
+          "url": "https://lcp.fr/actualites/la-suppression-des-zfe-confirmee-lors-de-l-ultime-vote-sur-la-loi-de-simplification-a-l",
+          "date": "2026-04-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": 0,
+      "justification": "Au Sénat (18 février 2025), le groupe RDPI, rattaché à Renaissance, s'est majoritairement abstenu (15 abstentions, 1 pour, 2 contre). Pas de déclaration de Gabriel Attal sur le voile dans les compétitions ; il propose d'interdire le voile dans l'espace public pour les mineures de moins de 15 ans (mai 2025).",
+      "sources": [
+        {
+          "title": "Sénat – Scrutin n° 199, proposition de loi visant à assurer le respect du principe de laïcité dans le sport",
+          "url": "https://www.senat.fr/scrutin-public/2024/scr2024-199.html",
+          "date": "2025-02-18",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Gabriel Attal propose d'interdire le voile pour les moins de 15 ans et souhaite une nouvelle loi séparatisme",
+          "url": "https://www.publicsenat.fr/actualites/politique/gabriel-attal-propose-dinterdire-le-voile-pour-les-moins-de-15-ans-et-souhaite-une-nouvelle-loi-separatisme",
+          "date": "2025-05-21",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": 2,
+      "justification": "Les eurodéputés Renaissance ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 et du 8 juillet 2026 (5 pour chacune), ainsi que pour la stratégie d'élargissement du 11 mars 2026 (5 pour), qui soutiennent l'adhésion de l'Ukraine.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Parlement européen, communiqué : la Commission doit ouvrir les groupes de chapitres de négociation d'adhésion « at the fastest pace possible »",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20250905IPR30174",
+          "date": "2025-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": -2,
+      "justification": "Les eurodéputés Renaissance et alliés ont voté pour la révision des traités du 22 novembre 2023 (Renew, unanimes), puis majoritairement pour la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (Ren : 4 pour, 2 abstentions ; MoDem : 3 pour).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q34-mineurs": {
+      "stance": 2,
+      "justification": "Gabriel Attal est l'auteur de la proposition de loi de 2025 qui faisait de l'éviction de l'excuse de minorité la règle pour certains mineurs de 16 ans et plus récidivistes. Cette disposition a été censurée par le Conseil constitutionnel le 19 juin 2025. Le groupe EPR l'a votée (13 mai 2025 : 80 pour, 4 abstentions, 1 contre). Son programme 2027 reprend la comparution immédiate des mineurs.",
+      "sources": [
+        {
+          "title": "LCP – Délinquance des mineurs : que contient la proposition de loi de Gabriel Attal ?",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-que-contient-la-proposition-de-loi-de-gabriel-attal-que-le",
+          "date": "2025-05-12",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Justice des mineurs : le Conseil constitutionnel censure largement le texte Attal, notamment la dérogation de l'excuse de minorité",
+          "url": "https://www.publicsenat.fr/actualites/politique/justice-des-mineurs-le-conseil-constitutionnel-censure-largement-le-texte-attal-notamment-la-derogation-de-lexcuse-de-minorite",
+          "date": "2025-06-19",
+          "kind": "presse"
+        }
+      ]
     }
   },
   "candidacies": {
@@ -865,8 +1122,8 @@
       "candidateName": "Gabriel Attal",
       "status": "declare",
       "statusLabel": "Candidat déclaré",
-      "candidate": "Gabriel Attal (déclaré le 2026-05-22)",
-      "programmeStatus": "Pas de programme complet chiffré à date ; le site de campagne attalpresident.fr présente 96 mesures (« chantiers capitaux »). Fiche fondée sur ces mesures, les déclarations du candidat (2025-2026) et les votes du groupe EPR, avec mention de la date quand la position est antérieure à 2026.",
+      "candidate": "Gabriel Attal a déclaré sa candidature le 22 mai 2026 à Mur-de-Barrez (Aveyron).",
+      "programmeStatus": "Pas de programme complet chiffré au 3 novembre 2026 ; le site de campagne attalpresident.fr présente 96 mesures (« chantiers capitaux »). Fiche fondée sur ces mesures, les déclarations du candidat (2025-2026) et les votes du groupe EPR, avec mention de la date quand la position est antérieure à 2026.",
       "themes": {
         "economie": {
           "summary": "Le candidat vise un déficit sous 3 % avant 2032 sans hausse d'impôts, par 150 Md€ d'économies sur cinq ans, et une baisse du coût du travail. Il propose un investissement de 200 Md€ dans l'intelligence artificielle.",
@@ -1184,7 +1441,7 @@
           ]
         },
         "sante": {
-          "summary": "Les propositions de santé publiées à date sont peu nombreuses. Le candidat a voté pour la loi sur l'aide à mourir.",
+          "summary": "Les propositions de santé publiées au 3 novembre 2026 sont peu nombreuses. Le candidat a voté pour la loi sur l'aide à mourir.",
           "measures": [
             {
               "text": "Un assistant médical fondé sur l'IA pour chaque Français.",
@@ -1209,7 +1466,7 @@
               ]
             },
             {
-              "text": "Aide à mourir : Gabriel Attal et la majorité du groupe EPR ont voté pour la loi en lecture définitive (64 pour, 18 contre, 9 abstentions, 15/07/2026).",
+              "text": "Aide à mourir : Gabriel Attal et la majorité du groupe EPR ont voté pour la loi en lecture définitive (64 pour, 18 contre, 9 abstentions, 15 juillet 2026).",
               "sources": [
                 {
                   "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",

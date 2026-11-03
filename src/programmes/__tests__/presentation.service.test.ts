@@ -2,9 +2,11 @@ import guide from '@/src/programmes/data/guide.json';
 import {
   afterFirstSentence,
   beforeParenthesis,
+  displayName,
   firstSentence,
   GUIDE_GROUPS,
   readingMinutes,
+  stepLabel,
 } from '@/src/programmes/models/presentation.service';
 
 describe('Feature: formes courtes', () => {
@@ -34,5 +36,30 @@ describe('Feature: formes courtes', () => {
   it('should place every guide section in exactly one group', () => {
     const grouped = GUIDE_GROUPS.flatMap((g) => g.sectionIds).sort();
     expect(grouped).toEqual(guide.map((s) => s.id).sort());
+  });
+});
+
+describe('Feature: nom affiché des partis', () => {
+  it('should spell out the three-letter codes', () => {
+    expect(displayName({ id: 'horizons', shortName: 'HOR' })).toBe('Horizons');
+    expect(displayName({ id: 'ps-place-publique', shortName: 'PS-PP' })).toBe(
+      'PS – Place publique'
+    );
+  });
+
+  it('should fall back to the short name', () => {
+    expect(displayName({ id: 'inconnu', shortName: 'XY' })).toBe('XY');
+  });
+});
+
+describe('Feature: libellé du calendrier', () => {
+  it('should keep the title and flag a computed date', () => {
+    expect(
+      stepLabel('Dépôt des parrainages (6e vendredi — date calculée, à confirmer par le décret)')
+    ).toEqual({ title: 'Dépôt des parrainages', note: 'Date calculée, à confirmer' });
+  });
+
+  it('should have no note otherwise', () => {
+    expect(stepLabel('Premier tour (détail)').note).toBeNull();
   });
 });

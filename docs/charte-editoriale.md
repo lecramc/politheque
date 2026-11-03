@@ -62,3 +62,67 @@ pour la présidentielle 2027, **sans désinformation et sans orienter le lecteur
   moyenne pondérée par l'importance déclarée par l'utilisateur (×1 ou ×2).
 - Axes : moyenne de `réponse × direction` sur les questions rattachées à l'axe.
 - Le résultat est affiché comme une **proximité**, jamais comme une consigne de vote.
+
+## Règles de rédaction des fiches
+
+Ces règles s'appliquent de la même façon aux dix fiches partis (`src/programmes/data/parties/*.json`).
+Elles complètent les règles ci-dessus et portent sur tous les champs texte affichés (`family`,
+`description`, `history.*`, `candidacies.*`, `stances.*.justification`).
+
+1. **Aucune note de travail visible.** Les textes affichés ne contiennent ni historique de
+   codage (« ramenée à null », « précédemment déduite »), ni renvoi aux règles internes
+   (« conformément à la règle 4 »), ni compte rendu de recherche (« accès bloqué », « à vérifier »,
+   « dans les sources consultées », « à date »). Une position non identifiée est justifiée en une
+   phrase écrite pour le lecteur, par exemple : « Pas de déclaration explicite du candidat ni de
+   vote de son groupe sur ce point. » ou « Le groupe s'est divisé : X pour, Y contre. »
+   Les doutes de vérification vont dans `docs/a-verifier.md`, pas dans les fiches.
+2. **Dates en toutes lettres** dans les textes : « 21 septembre 2026 », « 1er mai 2026 »,
+   jamais « 2026-09-21 » ni « 21/09/2026 ». Le format ISO est réservé aux champs `date`.
+3. **Étiquette politique (`family`) : un seul gabarit pour les dix partis.**
+   « Étiquette usuelle (qui l'emploie : presse de référence / politistes / nuancier du ministère
+   de l'Intérieur s'il y a lieu ; position du parti sur cette étiquette si elle est connue) ».
+   Le premier segment (avant la parenthèse) est celui qu'affiche la puce « Famille » ; il est
+   court et sans qualificatif. Le nuancier cité est celui des municipales de 2026, documenté
+   dans le guide « Comment on classe les partis » (`guide.json`), avec lequel la fiche doit
+   rester cohérente. Quand un parti conteste publiquement son étiquette, on l'écrit ; quand
+   aucune prise de position n'est connue, on l'écrit aussi, de la même façon pour tous.
+4. **Statuts de candidature** (`status`, `statusLabel`, `candidate`) :
+   - `declare` (« Candidat déclaré » / « Candidate déclarée ») : la personne a publiquement
+     annoncé qu'elle est candidate ;
+   - `annonce` (« Candidature annoncée ») : la personne a dit qu'elle serait candidate mais
+     réserve une déclaration formelle annoncée pour une date ultérieure ;
+   - `investi` (« Candidat investi » / « Candidate investie ») : désigné par un vote de son parti
+     ou par une primaire ;
+   - `designe` (« Candidat désigné » / « Candidate désignée ») : désigné par une instance du
+     parti, un vote des adhérents restant à venir (la date du vote est indiquée).
+     Les libellés sont accordés en genre. `candidate` commence par le nom du candidat et
+     rédige le statut en phrases, dates en toutes lettres, sans parenthèses imbriquées.
+     La biographie (`history.figures`) utilise le même mot que le statut.
+5. **Affaires judiciaires.**
+   - Dans `description` : au plus **une** phrase factuelle par personne concernée, et seulement
+     pour le candidat 2027 (« X fait l'objet de… » / « X a été condamné en… ; voir le détail
+     de la candidature »).
+   - Le détail complet (juridiction, dates, peines, recours, réactions) figure **une seule
+     fois**, dans `candidacies.presidentielle-2027.candidate` et/ou dans `history.timeline`,
+     sans répétition. La biographie du candidat 2027 n'y revient pas.
+   - Pour les figures historiques qui ne sont pas candidates, la biographie peut mentionner
+     une condamnation en une ou deux phrases factuelles (infraction, juridiction, date, peine,
+     caractère définitif ou non).
+   - On écrit « peine d'inéligibilité » quand il s'agit d'inéligibilité, pour qu'aucune peine ne
+     puisse être confondue avec de la prison.
+   - Pas de mention en creux (« aucune procédure n'a été identifiée ») : on ne parle que des
+     procédures qui existent.
+   - Quand des réactions sont citées (avocats, parties), on cite les deux parties ou aucune.
+6. **Descriptions de longueur comparable** (environ 400 à 700 caractères), dans cet ordre :
+   fondation, direction, poids électoral récent (dernier résultat présidentiel ou européen,
+   nombre de députés daté), une phrase sur la situation actuelle. Le reste va dans l'histoire.
+   La première phrase présente le parti (elle est affichée seule dans l'en-tête).
+7. **Contre-expertises et chiffrages critiques** (Institut Montaigne, OFCE, etc.) : appliqués à
+   tous les partis de la même façon, ou à aucun. Pour cette version : **aucun**.
+8. **Sources faibles.** Le texte affiché ne nomme ni Wikipédia ni un agrégateur (MonVote2027,
+   Parlons Politique, France-Vote…) comme autorité : les sources restent dans les pastilles.
+   Un fait qui ne repose que sur Wikipédia est retiré s'il est sensible.
+9. **Précision des chiffres.** Résultats électoraux officiels à deux décimales
+   (« 31,37 % », « 9,89 % »), suivis de « des suffrages exprimés » pour la présidentielle ;
+   pas de double chiffre « selon les sources » quand le résultat officiel est connu. Une
+   citation entre guillemets reprend le texte exact de la source, à l'identique partout.

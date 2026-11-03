@@ -3,8 +3,8 @@
   "name": "Les Républicains",
   "shortName": "LR",
   "color": "#0066CC",
-  "family": "Droite (droite libérale-conservatrice, héritière du gaullisme et de l'UMP)",
-  "description": "Parti fondé en 2015 en succession de l'UMP, présidé depuis mai 2025 par Bruno Retailleau, ancien ministre de l'Intérieur (2024-2025). Valérie Pécresse a obtenu 4,78 % au premier tour de la présidentielle 2022 ; à l'Assemblée, le groupe Droite républicaine compte environ 50 députés. Le 19 avril 2026, environ 46 000 adhérents votants ont choisi à 73,8 % la désignation directe de Bruno Retailleau plutôt qu'une primaire ouverte (14 %) ou fermée (12,2 %). Xavier Bertrand, président (LR) de la région Hauts-de-France, a confirmé le 27 août 2026 qu'il serait candidat (« Je le serai ») et a indiqué qu'il se présenterait en « candidat indépendant », LR ayant déjà désigné Bruno Retailleau ; il annonçait une déclaration formelle « à la fin de l'année », non intervenue à date.",
+  "family": "Droite (presse et ouvrages de référence : de la droite libérale au centre droit, héritière du gaullisme ; bloc « droite » du nuancier du ministère de l'Intérieur ; le parti revendique lui-même l'étiquette de « droite »)",
+  "description": "Les Républicains ont succédé à l'UMP en 2015 ; le parti est présidé depuis mai 2025 par Bruno Retailleau, ancien ministre de l'Intérieur (2024-2025). Valérie Pécresse a obtenu 4,78 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; à l'Assemblée, le groupe Droite républicaine compte 46 députés (novembre 2026, selon Datan). Le 19 avril 2026, les adhérents ont choisi à 73,8 % de désigner directement Bruno Retailleau comme candidat plutôt que d'organiser une primaire. Xavier Bertrand, président (LR) de la région Hauts-de-France, a annoncé le 27 août 2026 qu'il serait lui aussi candidat, en « candidat indépendant », avec une déclaration formelle annoncée pour « la fin de l'année ».",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2015 (succède à l'UMP, fondée en 2002)",
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "text": "Wikipédia le situe à droite et mentionne conservatisme, gaullisme, libéralisme économique et libéral-conservatisme ; le parti revendique lui-même l'étiquette de « droite ». Aucun désaccord de classement notable n'a été relevé dans les sources consultées.",
+        "text": "Les encyclopédies le situent à droite, de la droite libérale au centre droit, et le présentent comme héritier du gaullisme ; le parti revendique lui-même l'étiquette de « droite ».",
         "sources": [
           {
             "title": "Wikipédia, « Les Républicains »",
@@ -524,7 +524,7 @@
       },
       {
         "name": "Bruno Retailleau",
-        "role": "Président des Républicains depuis le 18 mai 2025 ; candidat désigné pour la présidentielle de 2027",
+        "role": "Président des Républicains depuis le 18 mai 2025 ; candidat investi pour la présidentielle de 2027",
         "background": "Il commence sa carrière aux côtés de Philippe de Villiers, adhère au Mouvement pour la France en 1994, rompt avec lui en 2010 et rejoint l'UMP en 2012. Sénateur de la Vendée, il préside le groupe UMP puis LR au Sénat de 2014 à 2024 et est ministre de l'Intérieur de septembre 2024 à octobre 2025.",
         "sources": [
           {
@@ -658,25 +658,25 @@
   "stances": {
     "q01-isf": {
       "stance": -2,
-      "justification": "Le groupe Droite républicaine a voté contre la taxe Zucman (scrutin n° 3300 du 31/10/2025 : 28 contre, 0 pour) ; Laurent Wauquiez s'est dit « contre les augmentations d'impôts qui vont tuer de l'emploi ».",
+      "justification": "Le groupe Droite républicaine a voté contre la taxe Zucman le 31 octobre 2025 (0 pour, 28 contre) et le 16 octobre 2026 (5 contre).",
       "sources": [
         {
-          "title": "Scrutin n° 3300 – amendement taxe Zucman (PLF 2026)",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
-          "date": "2025-10-31",
-          "kind": "vote"
-        },
-        {
-          "title": "Budget 2026 : les députés rejettent la taxe Zucman à l'Assemblée nationale (Europe 1)",
-          "url": "https://www.europe1.fr/politique/budget-2026-les-deputes-rejettent-la-taxe-zucman-a-lassemblee-nationale-869616",
-          "date": "2025-10-31",
-          "kind": "presse"
-        },
-        {
-          "title": "Taxe Zucman – amendement n° 2359 (PLF 2026), vote n° 3300 (Datan)",
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
           "url": "https://datan.fr/votes/legislature-17/vote_3300",
           "date": "2025-10-31",
           "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        },
+        {
+          "title": "Europe 1, « Budget 2026 : les députés rejettent la taxe Zucman à l'Assemblée nationale »",
+          "url": "https://www.europe1.fr/politique/budget-2026-les-deputes-rejettent-la-taxe-zucman-a-lassemblee-nationale-869616",
+          "date": "2025-10-31",
+          "kind": "presse"
         }
       ]
     },
@@ -710,33 +710,9 @@
         }
       ]
     },
-    "q03-charges": {
-      "stance": 2,
-      "justification": "LR propose de « réduire franchement les prélèvements obligatoires » et une baisse du coût du travail d'environ 15 Md€ pour les entreprises.",
-      "sources": [
-        {
-          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
-          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
-          "date": "2025-12",
-          "kind": "programme"
-        },
-        {
-          "title": "Nos propositions (Les Républicains)",
-          "url": "https://republicains.fr/nos-propositions/",
-          "date": "2026-02",
-          "kind": "programme"
-        },
-        {
-          "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
-          "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
-          "date": "2026-01-07",
-          "kind": "presse"
-        }
-      ]
-    },
     "q04-retraite": {
       "stance": -2,
-      "justification": "Bruno Retailleau propose un âge minimal de 63 ans et un taux plein à 65 ans ; le groupe a majoritairement voté contre la suspension de la réforme de 2023 (scrutin n° 3684 du 12/11/2025 : 25 contre, 8 pour, 9 abstentions).",
+      "justification": "Bruno Retailleau propose un âge minimal de départ à 63 ans et le taux plein à 65 ans (septembre 2026) ; le groupe DR a majoritairement voté contre la suspension de la réforme de 2023 (scrutin n° 3684 du 12 novembre 2025 : 25 contre, 8 pour, 9 abstentions).",
       "sources": [
         {
           "title": "S'il est élu, Bruno Retailleau veut instaurer un âge minimal de départ à la retraite à 63 ans (franceinfo)",
@@ -759,9 +735,21 @@
       ]
     },
     "q05-smic": {
-      "stance": null,
-      "justification": "Pas de position publique primaire identifiée sur un « coup de pouce » au SMIC ; LR privilégie la baisse des cotisations et le seuil « zéro cotisation ». Un site agrégateur (France-Vote) lui attribue une opposition à une hausse imposée du SMIC, sans source primaire datée.",
+      "stance": -1,
+      "justification": "Bruno Retailleau ne propose pas de hausse du SMIC mais un seuil « zéro cotisation » au-delà de 1 623 heures annuelles. Le groupe LR a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (19 contre, 0 pour). Vote ancien : on code « plutôt défavorable ».",
       "sources": [
+        {
+          "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
+          "url": "https://datan.fr/votes/legislature-16/vote_44",
+          "date": "2022-07-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
         {
           "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
           "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
@@ -772,7 +760,7 @@
     },
     "q06-chomage": {
       "stance": 2,
-      "justification": "LR propose de resserrer l'indemnisation chômage (ruptures conventionnelles limitées à 6 mois), de conditionner un complément du revenu minimal à 15 heures d'activité et de plafonner les aides à 70 % du SMIC ; le groupe LR avait voté la loi « pour le plein emploi » conditionnant le RSA à 15 heures d'activité (vote n° 2965 du 14/11/2023 : 36 pour).",
+      "justification": "LR propose de limiter l'indemnisation après rupture conventionnelle à six mois, de la plafonner et d'aligner l'indemnisation des frontaliers (environ 13 Md€ d'économies annoncées) ; le groupe Droite républicaine a voté la loi de juin 2026 (44 pour, 0 contre).",
       "sources": [
         {
           "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
@@ -781,16 +769,16 @@
           "kind": "programme"
         },
         {
-          "title": "« La fête est finie » : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales (Public Sénat)",
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « \"La fête est finie\" : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales »",
           "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
           "date": "2026-01-07",
           "kind": "presse"
-        },
-        {
-          "title": "Projet de loi pour le plein emploi – vote n° 2965 du 14/11/2023 (Datan)",
-          "url": "https://datan.fr/votes/legislature-16/vote_2965",
-          "date": "2023-11-14",
-          "kind": "vote"
         }
       ]
     },
@@ -813,14 +801,26 @@
       ]
     },
     "q08-preference": {
-      "stance": null,
-      "justification": "Position non tranchée au sens de l'énoncé : pas de proposition identifiée réservant les aides aux Français ; LR a proposé des conditions de résidence pour certaines prestations versées aux étrangers, mesure que Public Sénat compare à celle du RN en l'estimant à 2,1 Md€.",
+      "stance": 0,
+      "justification": "Position intermédiaire : LR ne propose pas de réserver les aides aux Français, mais son livret Famille (mai 2026) prévoit que « les ressortissants étrangers devront justifier de cinq années de résidence en France et d'exercice d'une activité professionnelle » pour bénéficier pleinement des dispositifs familiaux, en précisant : « Ce n'est pas une mesure d'exclusion ». Le seul député DR présent s'est abstenu sur l'amendement RN de « préférence nationale » (scrutin n° 4960).",
       "sources": [
+        {
+          "title": "Les Républicains, « Une politique pour toutes les familles de France » (livret Famille)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Famille_vFinale.pdf",
+          "date": "2026-05",
+          "kind": "programme"
+        },
         {
           "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
           "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
           "date": "2025-10-24",
           "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
         }
       ]
     },
@@ -857,18 +857,6 @@
           "url": "https://lcp.fr/actualites/expulsions-peines-planchers-quelle-reponse-de-la-droite-face-a-la-strategie-piegeuse-du",
           "date": "2024-10-31",
           "kind": "presse"
-        }
-      ]
-    },
-    "q11-police": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée du candidat ou du parti sur le récépissé ou un contrôle indépendant de la police ; les deux députés Droite républicaine présents ont voté contre un amendement exigeant un « élément objectif » pour les contrôles d'identité (vote n° 8174 du 10/07/2026), ce qui ne porte pas directement sur ces deux points.",
-      "sources": [
-        {
-          "title": "Amendement sur les conditions des contrôles d'identité – vote n° 8174 du 10/07/2026 (Datan)",
-          "url": "https://datan.fr/votes/legislature-17/vote_8174",
-          "date": "2026-07-10",
-          "kind": "vote"
         }
       ]
     },
@@ -916,7 +904,7 @@
     },
     "q15-medecins": {
       "stance": 1,
-      "justification": "Le Sénat a adopté le 13 mai 2025 (190 voix contre 29) la proposition de loi du sénateur LR Philippe Mouiller, qui subordonne l'installation d'un médecin en zone « sur-dense » à un engagement d'exercer une partie de son activité dans un territoire moins bien doté ; la droite sénatoriale présente ce texte comme plus souple que la PPL Garot. Pas de position identifiée du candidat lui-même.",
+      "justification": "Plutôt favorable, sous une forme assouplie : la PPL du sénateur LR Philippe Mouiller, adoptée par le Sénat le 13 mai 2025, subordonne l'installation en zone « sur-dense » à un engagement d'exercer en partie dans une zone moins dotée ; au Sénat, la majorité de droite a réécrit en ce sens l'article 1er de la PPL Garot le 11 juin 2026 (215 voix contre 118). À l'Assemblée, le groupe DR s'est partagé sur la version Garot (vote n° 1214 : 8 pour, 6 contre). Pas de position du candidat.",
       "sources": [
         {
           "title": "Installation des médecins, déserts médicaux… Le Sénat adopte la proposition de loi pour « améliorer l'accès aux soins dans les territoires » (Public Sénat)",
@@ -925,16 +913,22 @@
           "kind": "presse"
         },
         {
-          "title": "Sénat, proposition de loi n° 494 (2024-2025) visant à améliorer l'accès aux soins dans les territoires (P. Mouiller et plusieurs collègues)",
-          "url": "https://www.senat.fr/dossier-legislatif/ppl24-494.html",
-          "date": "2025-03-28",
-          "kind": "proposition-de-loi"
+          "title": "Caducee.net, « Déserts médicaux : le Sénat adopte une régulation édulcorée de l'installation mais laisse la loi Garot en plan »",
+          "url": "https://www.caducee.net/actualite-medicale/16919/deserts-medicaux-le-senat-adopte-une-regulation-edulcoree-de-l-installation-mais-laisse-la-loi-garot-en-plan.html",
+          "date": "2026-06-13",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
         }
       ]
     },
     "q16-fin-de-vie": {
       "stance": -1,
-      "justification": "Le groupe a voté majoritairement contre la loi en lecture définitive (scrutin n° 8280 : 41 contre, 5 pour) ; Bruno Retailleau ne promet pas d'abrogation directe mais envisage un référendum après « un bilan au bout d'un an ».",
+      "justification": "Le groupe DR a voté très majoritairement contre la loi (vote n° 8280 : 41 contre, 5 pour, 2 abstentions) ; Bruno Retailleau ne promet pas d'abrogation directe mais envisage un référendum après « un bilan au bout d'un an ».",
       "sources": [
         {
           "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
@@ -957,11 +951,23 @@
       ]
     },
     "q17-ecole-privee": {
-      "stance": null,
-      "justification": "Pas de position identifiée sur le financement du privé sous contrat ; le livret école prévoit seulement son évaluation publique au même titre que le public.",
+      "stance": -2,
+      "justification": "Le programme 2026 de LR ne prévoit pas de lier le financement à la mixité (seulement une évaluation publique de chaque établissement, public ou privé sous contrat). Le groupe DR a déposé un amendement de suppression de la PPL n° 418 : « Nous ne pouvons en aucune manière nous associer à une entreprise si grossièrement partisane de sape et de déstabilisation de l'école privée » (Frédérique Meunier, 20 novembre 2024) ; Annie Genevard (LR) s'était dite « très choquée » par le rapport Vannier-Weissberg (2 avril 2024).",
       "sources": [
         {
-          "title": "Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté (Les Républicains)",
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        },
+        {
+          "title": "LCP, « Financement de l'enseignement privé sous contrat : un rapport parlementaire préconise de… » (présentation du rapport Vannier-Weissberg)",
+          "url": "https://lcp.fr/actualites/financement-de-l-enseignement-prive-sous-contrat-un-rapport-parlementaire-preconise-de",
+          "date": "2024-04-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Les Républicains, « Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté »",
           "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
           "date": "2026-09",
           "kind": "programme"
@@ -970,96 +976,91 @@
     },
     "q18-ukraine": {
       "stance": 2,
-      "justification": "Le groupe LR a voté majoritairement pour l'accord de sécurité franco-ukrainien (vote n° 3461 du 12/03/2024 : 49 pour, 11 abstentions) ; position de 2024, pas de vote plus récent identifié.",
+      "justification": "Le groupe a voté majoritairement pour l'accord de sécurité (scrutin n° 3461 : 49 pour, 11 abstentions) et unanimement pour la résolution appelant au renforcement du soutien (scrutin n° 988 : 28 pour) ; les eurodéputés LR ont voté pour la résolution du PE du 12 mars 2025 (4 pour).",
       "sources": [
         {
-          "title": "Déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien – vote n° 3461 (Datan)",
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
           "url": "https://datan.fr/votes/legislature-16/vote_3461",
           "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Continuing the unwavering EU support for Ukraine, after three years of Russia's war of aggression » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172663",
+          "date": "2025-03-12",
           "kind": "vote"
         }
       ]
     },
     "q19-droit-europeen": {
-      "stance": 2,
-      "justification": "Bruno Retailleau propose un référendum pour donner la primauté au droit national sur le droit européen lorsque des intérêts fondamentaux sont en jeu.",
+      "stance": 1,
+      "justification": "Bruno Retailleau propose des référendums qui « rétabliraient la primauté de notre droit national chaque fois qu'il s'agit de protéger nos intérêts fondamentaux » (12 février 2026), soit une primauté ciblée et non générale ; les eurodéputés LR ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (6 contre, 2 abstentions).",
       "sources": [
         {
-          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+          "title": "Euronews, « Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums »",
           "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
           "date": "2026-02-12",
           "kind": "presse"
         },
         {
-          "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
-          "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
-          "date": "2026-02-16",
-          "kind": "presse"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
         }
       ]
     },
     "q20-defense-europe": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée et sourcée sur l'endettement commun de l'UE.",
-      "sources": []
-    },
-    "q21-libre-echange": {
-      "stance": 2,
-      "justification": "Le groupe a voté pour la déclaration s'opposant à l'accord UE-Mercosur (scrutin n° 456 : 46 pour) et Bruno Retailleau le qualifie de « destructeur » ; pas de position identifiée sur l'application provisoire depuis mai 2026.",
+      "stance": 0,
+      "justification": "Les eurodéputés LR se sont majoritairement abstenus sur la résolution du PE du 12 mars 2025 sur le livre blanc de la défense (3 abstentions, 1 contre) et unanimement sur le prêt à l'Ukraine financé par un emprunt commun (11 février 2026 : 5 abstentions). Pas de position explicite de Bruno Retailleau identifiée.",
       "sources": [
         {
-          "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
-          "date": "2024-11-26",
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
           "kind": "vote"
         },
         {
-          "title": "Mercosur : un accord « destructeur » et une « capitulation environnementale » dénonce Bruno Retailleau (Public Sénat)",
-          "url": "https://www.publicsenat.fr/actualites/politique/mercosur-un-accord-destructeur-et-une-capitulation-environnementale-denonce-bruno",
-          "date": "2019-07-04",
-          "kind": "presse"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
         },
         {
-          "title": "Déclaration du Gouvernement sur l'accord UE-Mercosur, vote n° 456 (Datan)",
-          "url": "https://datan.fr/votes/legislature-17/vote_456",
-          "date": "2024-11-26",
+          "title": "Observatoire législatif du PE, résumé de la résolution du 12 mars 2025 sur le livre blanc sur l'avenir de la défense européenne (« a system of European defence bonds to be explored »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1807135",
+          "date": "2025-03-12",
           "kind": "vote"
-        }
-      ]
-    },
-    "q22-vie-republique": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée et sourcée sur une VIe République ; les révisions proposées portent sur l'extension du référendum.",
-      "sources": [
-        {
-          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
-          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
-          "date": "2026-02-12",
-          "kind": "presse"
         }
       ]
     },
     "q23-referendum": {
       "stance": 2,
-      "justification": "Bruno Retailleau propose de réviser la Constitution pour permettre un référendum sur l'immigration.",
+      "justification": "Bruno Retailleau propose de réviser la Constitution pour soumettre à référendum des lois visant à « réduire drastiquement l'immigration » (annonce de candidature, 12 février 2026) ; il le défendait déjà en mai 2023 : « C'est parce que cette question est sensible qu'il faut faire un référendum ».",
       "sources": [
         {
-          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+          "title": "Euronews – Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums",
           "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
           "date": "2026-02-12",
           "kind": "presse"
         },
         {
-          "title": "Immigration : que contiennent les deux propositions de loi LR ? (Public Sénat)",
-          "url": "https://www.publicsenat.fr/actualites/politique/immigration-ce-que-contiennent-les-deux-propositions-de-loi-lr",
-          "date": "2023-06-02",
+          "title": "Public Sénat – Immigration : « C'est parce que cette question est sensible qu'il faut faire un référendum », demande Bruno Retailleau",
+          "url": "https://www.publicsenat.fr/actualites/politique/immigration-cest-parce-que-cette-question-est-sensible-quil-faut-faire-un-referendum-demande-bruno-retailleau",
+          "date": "2023-05-24",
           "kind": "presse"
         }
       ]
     },
     "q24-proportionnelle": {
       "stance": -2,
-      "justification": "Le bureau politique de LR a réaffirmé le 28/05/2025 sa « ferme opposition à l'introduction de la proportionnelle » ; Bruno Retailleau la juge « le plus sûr moyen de ne pas donner à la France une majorité » (avril 2025).",
+      "justification": "Le bureau politique de LR a réaffirmé le 28 mai 2025 sa « ferme opposition à l'introduction de la proportionnelle » ; Bruno Retailleau la juge « le plus sûr moyen de ne pas donner à la France une majorité » (avril 2025).",
       "sources": [
         {
           "title": "Hostile à la proportionnelle, Bruno Retailleau n'écarte pas une démission du gouvernement (Public Sénat)",
@@ -1074,6 +1075,216 @@
           "kind": "presse"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": 2,
+      "justification": "Bruno Retailleau : « Je ne serai pas le président qui augmentera les droits de succession mais celui qui les baissera » (propos rapportés par L'Opinion et LCP, été 2026).",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": -2,
+      "justification": "Le groupe Droite républicaine a voté contre aux deux lectures (27 novembre 2025 : 5 contre, 1 abstention ; 11 juin 2026 : 2 contre).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q27-temps-de-travail": {
+      "stance": 2,
+      "justification": "Bruno Retailleau veut « sortir des 35 heures » : LR propose d'annualiser le temps de travail et de relever le seuil de 1 607 à 1 623 heures par an, avec zéro cotisation au-delà (brochure « Le travail gagnant », décembre 2025 ; Public Sénat, 7 janvier 2026).",
+      "sources": [
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « “La fête est finie” : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales pour relancer l'emploi »",
+          "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+          "date": "2026-01-07",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q28-prix-energie": {
+      "stance": -2,
+      "justification": "Le groupe Droite républicaine a voté contre la TVA à 5,5 % sur l'abonnement d'électricité (20 novembre 2025 : 8 contre, 4 abstentions) et contre les amendements LFI et RN sur l'électricité (2 novembre 2026 : 4 et 5 contre). Pas de déclaration de Bruno Retailleau sur la TVA de l'électricité.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q29-cannabis": {
+      "stance": -2,
+      "justification": "Interrogé sur la légalisation du cannabis, Bruno Retailleau s'est dit « Totalement contre » (TF1, 18 février 2025), estimant que la légalisation des drogues dites douces « ne marche pas ».",
+      "sources": [
+        {
+          "title": "Europe 1 – Légalisation du cannabis : « Ça ne marche pas », estime Bruno Retailleau",
+          "url": "https://www.europe1.fr/politique/legalisation-du-cannabis-ca-ne-marche-pas-estime-bruno-retailleau-396031",
+          "date": "2025-02-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis (LR : 3 pour la suppression)",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": 2,
+      "justification": "Bruno Retailleau a déclaré après la censure du Conseil constitutionnel : « Si je suis élu en 2027, je les abrogerai » (X, mai 2026). Le groupe Droite républicaine a voté la suppression le 28 mai 2025 (6 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Europe 1 – Suppression des ZFE par le Conseil constitutionnel : une grande partie de la classe politique révoltée",
+          "url": "https://www.europe1.fr/politique/suppression-des-zfe-par-le-conseil-constitutionnel-une-grande-partie-de-la-classe-politique-revoltee-937349",
+          "date": "2026-05-22",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": -2,
+      "justification": "La proposition de loi d'interdiction a été déposée par le sénateur LR Michel Savin ; le groupe Les Républicains l'a votée (Sénat, 18 février 2025 : 129 pour, 0 contre). Bruno Retailleau, alors ministre de l'Intérieur, a soutenu l'interdiction en mars 2025, estimant que le voile « n'est pas qu'un bout de tissu, c'est un étendard ».",
+      "sources": [
+        {
+          "title": "Sénat – Scrutin n° 199, proposition de loi visant à assurer le respect du principe de laïcité dans le sport",
+          "url": "https://www.senat.fr/scrutin-public/2024/scr2024-199.html",
+          "date": "2025-02-18",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Laïcité : le Sénat vote l'interdiction du port de signes religieux dans les compétitions sportives et les piscines",
+          "url": "https://www.publicsenat.fr/actualites/parlementaire/laicite-le-senat-vote-linterdiction-du-port-de-signes-religieux-dans-les-competitions-sportives-et-les-piscines",
+          "date": "2025-02-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Hespress FR – France : le port du voile dans le sport divise la scène politique",
+          "url": "https://fr.hespress.com/416209-france-le-port-du-voile-dans-le-sport-divise-la-scene-politique.html",
+          "date": "2025-03-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": -1,
+      "justification": "François-Xavier Bellamy, tête de liste LR en 2024, a qualifié l'adhésion de l'Ukraine de « fausse promesse » et proposé un « nouveau statut intermédiaire » (mars 2024) ; les eurodéputés LR ont voté contre la stratégie d'élargissement du 11 mars 2026 (5 contre), mais se sont partagés sur les résolutions sur l'Ukraine (3 pour, 2 abstentions en 2025 comme en 2026).",
+      "sources": [
+        {
+          "title": "Public Sénat, « L'adhésion de l'Ukraine à l'Union européenne : une \"fausse promesse\" pour François-Xavier Bellamy »",
+          "url": "https://www.publicsenat.fr/actualites/politique/ladhesion-de-lukraine-a-lunion-europeenne-une-fausse-promesse-pour-francois-xavier-bellamy",
+          "date": "2024-03-06",
+          "kind": "declaration"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": 2,
+      "justification": "Les eurodéputés LR ont voté contre la révision des traités du 22 novembre 2023 (7 contre), contre la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (5 contre) et contre la stratégie d'élargissement du 11 mars 2026, qui demande plus de majorité qualifiée (5 contre).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q34-mineurs": {
+      "stance": 2,
+      "justification": "Le groupe Droite républicaine a voté la proposition de loi Attal (13 mai 2025 : 45 pour, 0 contre), adoptée définitivement au Sénat le 19 mai 2025 avec le soutien de la droite sénatoriale. Pas de déclaration de Bruno Retailleau sur l'excuse de minorité en 2026.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat – Justice des mineurs : le Sénat adopte définitivement le texte",
+          "url": "https://www.publicsenat.fr/emission/100-senat/justice-des-mineurs-le-senat-adopte-definitivement-le-texte-e235",
+          "date": "2025-05-19",
+          "kind": "presse"
+        }
+      ]
     }
   },
   "candidacies": {
@@ -1081,7 +1292,7 @@
       "candidateName": "Bruno Retailleau",
       "status": "investi",
       "statusLabel": "Candidat investi",
-      "candidate": "Bruno Retailleau (statut : déclaré le 2026-02-12 ; désigné candidat par les adhérents LR le 2026-04-19)",
+      "candidate": "Bruno Retailleau a déclaré sa candidature le 12 février 2026 ; les adhérents LR l'ont désigné candidat le 19 avril 2026, en choisissant à 73,8 % sa désignation directe plutôt qu'une primaire ouverte (14 %) ou fermée (12,2 %).",
       "programmeStatus": "Programme présidentiel 2027 en cours de publication par livrets thématiques (« Le travail gagnant », réindustrialisation, agriculture, famille, électricité, logement, IA, école, décembre 2025 à septembre 2026), complété par les annonces de Bruno Retailleau (référendums, retraites) et les votes du groupe Droite républicaine. Pas de document programmatique identifié sur la santé.",
       "themes": {
         "economie": {
@@ -1150,7 +1361,7 @@
               ]
             },
             {
-              "text": "Opposition à la « taxe Zucman » : le groupe Droite républicaine a voté contre (scrutin n° 3300 du 31/10/2025 : 28 contre).",
+              "text": "Opposition à la « taxe Zucman » : le groupe Droite républicaine a voté contre (scrutin n° 3300 du 31 octobre 2025 : 28 contre).",
               "sources": [
                 {
                   "title": "Scrutin n° 3300 – amendement taxe Zucman (PLF 2026)",
@@ -1329,7 +1540,7 @@
               ]
             },
             {
-              "text": "Rétablissement des courtes peines de prison, dès les premiers délits, et retour sur la loi Belloubet de 2019, que Bruno Retailleau dit avoir « toujours combattue » ; la suppression ou l'encadrement strict du juge de l'application des peines lui est également attribué par Planet.fr (non recoupé).",
+              "text": "Rétablissement des courtes peines de prison, dès les premiers délits, et retour sur la loi Belloubet de 2019, que Bruno Retailleau dit avoir « toujours combattue » .",
               "sources": [
                 {
                   "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
@@ -1406,7 +1617,7 @@
               ]
             },
             {
-              "text": "Vote du groupe Droite républicaine pour la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 47 pour, 1 abstention).",
+              "text": "Vote du groupe Droite républicaine pour la loi Duplomb (scrutin n° 2957 du 8 juillet 2025 : 47 pour, 1 abstention).",
               "sources": [
                 {
                   "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
@@ -1419,10 +1630,10 @@
           ]
         },
         "sante": {
-          "summary": "LR n'a pas publié de livret programmatique sur la santé à date. Les positions identifiées portent sur la fin de vie, à laquelle Bruno Retailleau et la majorité du groupe se sont opposés.",
+          "summary": "LR n'a pas publié de livret programmatique sur la santé au 3 novembre 2026. Les positions identifiées portent sur la fin de vie, à laquelle Bruno Retailleau et la majorité du groupe se sont opposés.",
           "measures": [
             {
-              "text": "Vote majoritaire du groupe Droite républicaine contre la loi sur l'aide à mourir en lecture définitive (scrutin n° 8280 du 15/07/2026 : 41 contre, 5 pour, 2 abstentions).",
+              "text": "Vote majoritaire du groupe Droite républicaine contre la loi sur l'aide à mourir en lecture définitive (scrutin n° 8280 du 15 juillet 2026 : 41 contre, 5 pour, 2 abstentions).",
               "sources": [
                 {
                   "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
@@ -1550,7 +1761,7 @@
               ]
             },
             {
-              "text": "Opposition à l'accord UE-Mercosur, jugé « destructeur » par Bruno Retailleau dès 2019 ; vote du groupe pour la déclaration du gouvernement s'y opposant (scrutin n° 456 du 26/11/2024 : 46 pour).",
+              "text": "Opposition à l'accord UE-Mercosur, jugé « destructeur » par Bruno Retailleau dès 2019 ; vote du groupe pour la déclaration du gouvernement s'y opposant (scrutin n° 456 du 26 novembre 2024 : 46 pour).",
               "sources": [
                 {
                   "title": "Mercosur : un accord « destructeur » et une « capitulation environnementale » dénonce Bruno Retailleau (Public Sénat)",
@@ -1573,7 +1784,7 @@
               ]
             },
             {
-              "text": "Soutien à l'Ukraine : vote majoritaire du groupe LR pour l'accord de sécurité franco-ukrainien (vote n° 3461 du 12/03/2024 : 49 pour, 11 abstentions).",
+              "text": "Soutien à l'Ukraine : vote majoritaire du groupe LR pour l'accord de sécurité franco-ukrainien (vote n° 3461 du 12 mars 2024 : 49 pour, 11 abstentions).",
               "sources": [
                 {
                   "title": "Déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien – vote n° 3461 (Datan)",
@@ -1611,7 +1822,7 @@
               ]
             },
             {
-              "text": "« Ferme opposition à l'introduction de la proportionnelle » (bureau politique du 28/05/2025) ; proposition de loi constitutionnelle d'Alexandre Portier visant à inscrire le scrutin majoritaire à deux tours dans la Constitution.",
+              "text": "« Ferme opposition à l'introduction de la proportionnelle » (bureau politique du 28 mai 2025) ; proposition de loi constitutionnelle d'Alexandre Portier visant à inscrire le scrutin majoritaire à deux tours dans la Constitution.",
               "sources": [
                 {
                   "title": "Hostile à la proportionnelle, Bruno Retailleau n'écarte pas une démission du gouvernement (Public Sénat)",

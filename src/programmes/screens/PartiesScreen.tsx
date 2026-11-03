@@ -44,7 +44,7 @@ export default function PartiesScreen() {
   );
 
   return (
-    <Page loading={vm.status !== 'loaded'}>
+    <Page title={'Les partis'} loading={vm.status !== 'loaded'}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Les partis</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
@@ -57,7 +57,7 @@ export default function PartiesScreen() {
         contentContainerStyle={{ gap: 8 }}
       >
         {chip('Tous', !onlyRunning, () => setOnlyRunning(false))}
-        {chip('Avec un candidat en 2027', onlyRunning, () => setOnlyRunning(true))}
+        {chip('Avec une candidature en 2027', onlyRunning, () => setOnlyRunning(true))}
       </ScrollView>
       <RowGroup>
         {parties.map((party, index) => {
@@ -65,12 +65,13 @@ export default function PartiesScreen() {
           const founded = party.history
             ? `Fondé en ${party.history.founded.match(/\d{4}/)?.[0] ?? ''}`
             : '';
+          const candidate = candidacy ? `Candidature : ${candidacy.candidateName}` : '';
           return (
             <PartyRow
               key={party.id}
               party={party}
               first={index === 0}
-              subtitle={[founded, candidacy?.candidateName].filter(Boolean).join(' · ')}
+              subtitle={[founded, candidate].filter(Boolean).join(' · ')}
             />
           );
         })}

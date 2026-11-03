@@ -1,6 +1,6 @@
 import { Link } from 'expo-router';
 import React, { useState } from 'react';
-import { Linking, View } from 'react-native';
+import { Linking, Platform, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 import { useTheme } from '@/components/ThemeContext';
@@ -59,7 +59,10 @@ export function SourceList({ sources }: { sources: Source[] }) {
       {sources.map((source) => (
         <Pressable
           key={source.url + source.title}
-          onPress={() => Linking.openURL(source.url)}
+          // Sur le web : vrai lien <a href> ouvert dans un nouvel onglet ; sur natif : navigateur.
+          {...(Platform.OS === 'web'
+            ? { href: source.url, hrefAttrs: { target: '_blank', rel: 'noopener noreferrer' } }
+            : { onPress: () => Linking.openURL(source.url) })}
           accessibilityRole="link"
           style={{
             paddingVertical: 10,

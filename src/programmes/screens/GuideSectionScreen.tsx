@@ -23,7 +23,7 @@ export default function GuideSectionScreen() {
 
   if (vm.status === 'loaded' && !section) {
     return (
-      <Page back={{ label: 'Comprendre', href: '/comprendre' }}>
+      <Page title={'Section introuvable'} back={{ label: 'Comprendre', href: '/comprendre' }}>
         <Text variant="title">Section introuvable</Text>
       </Page>
     );
@@ -36,7 +36,11 @@ export default function GuideSectionScreen() {
   };
 
   return (
-    <Page loading={vm.status !== 'loaded'} back={{ label: 'Comprendre', href: '/comprendre' }}>
+    <Page
+      title={section?.title}
+      loading={vm.status !== 'loaded'}
+      back={{ label: 'Comprendre', href: '/comprendre' }}
+    >
       {section ? (
         <>
           <View style={{ gap: 6 }}>

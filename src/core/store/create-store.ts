@@ -39,6 +39,7 @@ export const createStore = (config: {
 
   const logActionsMiddleware: Middleware = () => (next) => (action) => {
     actions.push(action);
+    if (actions.length > 200) actions.shift();
     return next(action);
   };
   const store = configureStore({

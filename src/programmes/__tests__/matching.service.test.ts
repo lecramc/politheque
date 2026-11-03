@@ -83,8 +83,18 @@ describe('Feature: proximité avec un parti', () => {
 
 describe('Feature: position sur les axes', () => {
   it('should apply the question direction and normalise to -1…+1', () => {
-    const questions = [question('q1', 'economique', 1), question('q2', 'economique', -1)];
-    expect(computeAxisPosition({ q1: 2, q2: -2 }, questions).economique).toBe(1);
+    const questions = [
+      question('q1', 'economique', 1),
+      question('q2', 'economique', -1),
+      question('q3', 'economique', 1),
+      question('q4', 'economique', -1),
+    ];
+    expect(computeAxisPosition({ q1: 2, q2: -2, q3: 2, q4: -2 }, questions).economique).toBe(1);
+  });
+
+  it('should not place a point on an axis with fewer than 4 known values', () => {
+    const questions = ['q1', 'q2', 'q3'].map((id) => question(id, 'europe', 1));
+    expect(computeAxisPosition({ q1: 2, q2: 2, q3: 2 }, questions).europe).toBeNull();
   });
 
   it('should return null for an axis without any answered question', () => {

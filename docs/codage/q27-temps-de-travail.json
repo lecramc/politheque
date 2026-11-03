@@ -1,0 +1,141 @@
+{
+  "question": "q27-temps-de-travail",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Les Écologistes ont signé le contrat du Nouveau Front populaire (2024), qui prévoit de rétablir la durée effective de 35 heures et de passer aux 32 heures dans les métiers pénibles ou de nuit : ils veulent réduire, et non augmenter, la durée du travail.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 1,
+      "justification": "Le programme d'Édouard Philippe propose de « permettre aux entreprises de fixer librement le temps de travail pour sortir des 35h » ; il veut que l'on travaille « plus longtemps dans la semaine », mais juge que « réintroduire les 39h n'est pas forcément une meilleure idée » (RTL, 25 juin 2025). Il privilégie la négociation d'entreprise plutôt qu'une nouvelle durée légale.",
+      "sources": [
+        {
+          "title": "Pour une France plus prospère — Avec Édouard 2027",
+          "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Orange Actu (6Médias), « S'il est élu en 2027, Édouard Philippe affirme qu'il augmentera la durée du temps de travail »",
+          "url": "https://actu.orange.fr/politique/s-il-est-elu-en-2027-edouard-philippe-affirme-qu-il-augmentera-la-duree-du-temps-de-travail-magic-CNT000002jjzor.html",
+          "date": "2025-06-25",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": -2,
+      "justification": "Le programme soutenu par LFI prévoit de « rétablir la durée effective de 35 heures » et de passer aux 32 heures dans les métiers pénibles ou de nuit : LFI veut réduire la durée du travail.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "Bruno Retailleau veut « sortir des 35 heures » : LR propose d'annualiser le temps de travail et de relever le seuil de 1 607 à 1 623 heures par an, avec zéro cotisation au-delà (brochure « Le travail gagnant », décembre 2025 ; Public Sénat, 7 janvier 2026).",
+      "sources": [
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « “La fête est finie” : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales pour relancer l'emploi »",
+          "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+          "date": "2026-01-07",
+          "kind": "presse"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 1,
+      "justification": "David Lisnard veut « libérer le temps de travail » par des accords d'entreprise (Cannes, 29 août 2026) et défend le principe « 37 heures payées 37 » , sans préciser s'il relèverait la durée légale elle-même.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – « Quel candidat à la présidentielle 2027 veut assouplir les 35 heures ? »",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-assouplir-les-35-heures/",
+          "date": "2026-10-16",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": -2,
+      "justification": "Le programme de Fabien Roussel prévoit de « réduire le temps de travail à 32 heures sans baisse de salaire » (programme 2022, pas de programme 2027 publié) ; le PCF a aussi signé le contrat du NFP (2024).",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
+          "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
+          "date": "2022-01-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": -2,
+      "justification": "Le PS et Place publique ont signé en 2024 le contrat du Nouveau Front populaire, qui prévoit de rétablir la durée effective de 35 heures et de passer aux 32 heures dans les métiers pénibles ou de nuit. Raphaël Glucksmann ne s'est pas exprimé depuis sur la durée légale.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": null,
+      "justification": "Pas de position publique d'Éric Zemmour sur la durée légale du travail : son programme présidentiel de 2022 ne mentionne pas les 35 heures (il propose de défiscaliser les heures supplémentaires), et son programme 2027 n'est pas publié.",
+      "sources": []
+    },
+    "renaissance": {
+      "stance": null,
+      "justification": "Pas de position de Gabriel Attal sur la durée légale : sa mesure « Constitution du travail » (27 août 2026) renvoie l'organisation du travail à la négociation de branche et d'entreprise, sans mentionner les 35 heures ; en novembre 2025, il demandait surtout que les agents publics soient « vraiment aux 35 heures ».",
+      "sources": []
+    },
+    "rn": {
+      "stance": null,
+      "justification": "Marine Le Pen ne s'est pas exprimée sur la durée légale depuis 2022 ; en 2017, elle s'engageait à « maintenir les 35h ». Jordan Bardella, président du parti, a dit en novembre 2024 qu'« il faut pouvoir revenir sur les 35 heures dans les entreprises » par accords de branche, sans « suppression générale ».",
+      "sources": []
+    }
+  },
+  "notes": "Distinction appliquée de la même façon à tous : 2 = relèvement explicite du seuil légal (LR : 1 623 h/an) ; 1 = sortie des 35 h par la liberté de négociation d'entreprise, sans nouvelle durée légale (HOR, NE) ; -2 = réduction vers 32 h (LFI, Écologistes, PCF). Écologistes : le programme 2027 (PDF lesecologistes.fr, protégé par une vérification anti-robot, non consulté) contiendrait « la diminution du temps de travail à trente-deux heures » selon l'agrégateur presi2027.fr ; codage fondé sur le contrat NFP seul, à recouper avec le PDF. PS-PP : codage -1 fondé sur le contrat NFP de 2024, faute de déclaration du candidat ; incertain. RE : Gérald Darmanin (non candidat) proposait en octobre 2024 de « mettre fin définitivement aux 35 heures dans le privé » (Public Sénat, 08/10/2024) ; non retenu car ce n'est pas la position du candidat. RN : Jordan Bardella (CNews, 12/11/2024 ; page CNews inaccessible, citation relevée dans le titre et sur le compte X de CNews) défend des dérogations par accords de branche, ce qui correspondrait à 1 selon la règle ci-dessus ; Marine Le Pen, candidate, n'a rien dit de récent et défendait en 2017 le maintien de la durée légale. Les deux divergent déjà sur les retraites : à coder 1 si la candidate reprend la position de Bardella. PS-PP, RE, REC : nouvelles recherches (novembre 2026) sans déclaration 2025-2026 des candidats sur la durée légale. NE : une seule source (site du parti) ; à recouper avec la presse. Texte help : ERREUR. 36,2 heures est la durée habituelle de l'ensemble des salariés, temps partiel compris, et non des salariés à temps complet (Insee, France portrait social 2024, enquête Emploi 2023, calculs Dares : « 36,2 heures pour l'ensemble des salariés en 2023 » ; 40,0 heures pour les personnes en emploi à temps complet). Correction proposée : « Les salariés travaillent en moyenne 36,2 heures par semaine, temps partiel compris (Insee-Dares, 2023). » Source : https://www.insee.fr/fr/statistiques/8242351 . Vérification croisée (3 novembre 2026) : PS-PP passe de -1 à -2 par cohérence de règle : le même contrat NFP de 2024 fonde -2 pour LFI et les Écologistes ; aucune déclaration contraire de Glucksmann trouvée. Nouvelles recherches sans résultat explicite pour Le Pen (dernière position datée : 2017, « maintenir les 35h », Institut Montaigne 15 mars 2017), Zemmour, Attal (Brut, 17 novembre 2025 : uniquement les 35 heures effectives dans la fonction publique) et Glucksmann : null maintenus. Écologistes : un site de synthèse attribue au programme 2027 les 32 heures dans les métiers pénibles ou de nuit seulement (pas de réduction générale) ; PDF officiel toujours inaccessible (403)."
+}

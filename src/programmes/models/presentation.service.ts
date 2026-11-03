@@ -40,3 +40,26 @@ export const GUIDE_GROUPS: { id: GuideGroup; title: string; sectionIds: string[]
     sectionIds: ['budget-dette', 'desinformation'],
   },
 ];
+
+const DISPLAY_NAMES: Record<string, string> = {
+  horizons: 'Horizons',
+  renaissance: 'Renaissance',
+  reconquete: 'Reconquête',
+  'nouvelle-energie': 'Nouvelle Énergie',
+  ecologistes: 'Les Écologistes',
+  lfi: 'LFI',
+  pcf: 'PCF',
+  'ps-place-publique': 'PS – Place publique',
+  lr: 'LR',
+  rn: 'RN',
+};
+
+/** Nom court lisible d'un parti (les sigles à trois lettres restent réservés aux pastilles). */
+export const displayName = (party: { id: string; shortName: string }) =>
+  DISPLAY_NAMES[party.id] ?? party.shortName;
+
+/** Libellé d'une étape du calendrier : titre sans parenthèse, et mention « date calculée » si présente. */
+export const stepLabel = (label: string): { title: string; note: string | null } => ({
+  title: beforeParenthesis(label),
+  note: /date calculée, à confirmer/i.test(label) ? 'Date calculée, à confirmer' : null,
+});

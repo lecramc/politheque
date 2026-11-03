@@ -1,0 +1,250 @@
+{
+  "question": "q33-veto-europeen",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Les eurodéputés écologistes ont voté pour la révision des traités du 22 novembre 2023, qui étend le vote à la majorité qualifiée, y compris en politique étrangère (9 pour, 1 abstention), et pour la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (3 pour).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -1,
+      "justification": "L'eurodéputé Horizons a voté pour la révision des traités du 22 novembre 2023, qui étend la majorité qualifiée ; ses deux eurodéputés se sont abstenus le 22 octobre 2025 sur la résolution sur les conséquences institutionnelles de l'élargissement. Pas de déclaration d'Édouard Philippe identifiée.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 1,
+      "justification": "Les députés LFI ont défendu en 2023 le maintien de l'unanimité, « un moyen de respecter la souveraineté de chaque Etat membre », tout en demandant la majorité qualifiée « sur les questions de taxation et de sanctions en matière de droit de l'Homme » (amendement n° 33, 29 novembre 2023 : 13 pour dans le groupe). Ses eurodéputés ont voté contre la révision des traités du 22 novembre 2023 et contre la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement.",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° 33 (Mme Abomangoli et les députés LFI-NUPES) à la proposition de résolution européenne sur les suites de la conférence sur l'avenir de l'Europe",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/1526/AN/33.pdf",
+          "date": "2023-11-24",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 3058 du 29 novembre 2023 (16e législature) : amendement n° 33 (LFI-NUPES) « Maintenir l'unanimité au Conseil des ministres de l'UE pour respecter la souveraineté des Etats », rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3058",
+          "date": "2023-11-29",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "Les eurodéputés LR ont voté contre la révision des traités du 22 novembre 2023 (7 contre), contre la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (5 contre) et contre la stratégie d'élargissement du 11 mars 2026, qui demande plus de majorité qualifiée (5 contre).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée sur l'unanimité ou la majorité qualifiée ; David Lisnard défend la seule « souveraineté nationale » mais ne s'est pas prononcé sur ce point. Nouvelle Énergie n'a pas d'eurodéputé.",
+      "sources": []
+    },
+    "pcf": {
+      "stance": null,
+      "justification": "Le texte du 40e congrès (juillet 2026) défend une « Europe de peuples et de nations libres, souverains et associés » et des « coopérations à géométrie choisie au sein desquelles les peuples décident en toute souveraineté », mais ne se prononce pas explicitement sur le droit de veto ou l'unanimité. Le PCF n'a pas d'eurodéputé ; le groupe GDR n'a pas pris part aux votes de 2023 sur l'unanimité.",
+      "sources": [
+        {
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
+          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 3058 du 29 novembre 2023 (16e législature) : amendement n° 33 (LFI-NUPES) « Maintenir l'unanimité au Conseil des ministres de l'UE pour respecter la souveraineté des Etats », rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3058",
+          "date": "2023-11-29",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": -2,
+      "justification": "Le programme européen PS-Place publique de 2024 demandait « la fin du droit de véto des Etats membres » ; ses eurodéputés ont voté pour la révision des traités du 22 novembre 2023 (5 pour), pour la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (12 pour) et pour la stratégie d'élargissement de 2026, qui demande davantage de majorité qualifiée.",
+      "sources": [
+        {
+          "title": "Toute l'Europe, « Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste Parti socialiste-Place publique »",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+          "date": "2024-05",
+          "kind": "presse"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": null,
+      "justification": "Seul indice : l'eurodéputé Reconquête de 2023 (Nicolas Bay, qui a quitté le parti depuis) a voté contre la révision des traités ; Sarah Knafo n'a pas pris part au vote du 22 octobre 2025. Pas de position explicite du parti ou d'Éric Zemmour identifiée.",
+      "sources": []
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Les eurodéputés Renaissance et alliés ont voté pour la révision des traités du 22 novembre 2023 (Renew, unanimes), puis majoritairement pour la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (Ren : 4 pour, 2 abstentions ; MoDem : 3 pour).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 2,
+      "justification": "Les députés RN ont voté pour le maintien de l'unanimité au Conseil (29 novembre 2023 : 50 pour sur l'amendement LFI, 19 pour sur leur propre amendement supprimant les clauses passerelles) ; les eurodéputés RN ont voté contre la révision des traités du 22 novembre 2023 (15 contre), contre la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (28 contre) et contre la stratégie d'élargissement de 2026.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3077 du 29 novembre 2023 (16e législature) : amendement n° 10 (Mme Robert-Dehault, RN) supprimant les clauses passerelles vers la majorité qualifiée, rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3077",
+          "date": "2023-11-29",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 3058 du 29 novembre 2023 (16e législature) : amendement n° 33 (LFI-NUPES) « Maintenir l'unanimité au Conseil des ministres de l'UE pour respecter la souveraineté des Etats », rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3058",
+          "date": "2023-11-29",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : résolution du PE du 22/11/2023 sur la révision des traités (A9-0337/2023, 291 voix contre 274), qui étend la majorité qualifiée, y compris en politique étrangère. Elle est complétée par la résolution du 22/10/2025 sur les conséquences institutionnelles de l'élargissement (A10-0177/2025, 310 voix contre 277), plus indirecte : elle note que l'unanimité « may slow down the enlargement process » et rappelle les clauses passerelles. Voter pour ces textes signifie être en désaccord avec l'affirmation. Incertitudes : (1) la révision des traités contient bien d'autres réformes ; un vote contre (LFI, LR) peut s'expliquer par d'autres motifs. Aucune déclaration explicite de Mélenchon ni de Retailleau sur le droit de veto n'a été vérifiée. Une recherche signale des amendements LFI-NUPES de la 16e législature pour maintenir l'unanimité, non vérifiés. (2) Le vote de 2023 date de la législature 2019-2024. (3) Horizons -1 : un vote pour en 2023 (1 eurodéputé), deux abstentions en 2025. (4) Reconquête : null, car le seul vote est celui d'un ancien membre. (5) PCF et Nouvelle Énergie : null. Texte help : exact (double majorité de 55 % des États et 65 % de la population ; unanimité pour la PESC, la fiscalité, l'élargissement et le cadre financier pluriannuel ; la France fait partie du « groupe des amis » de la majorité qualifiée en politique étrangère). Vérification croisée (03/11/2026) : ajout d'un texte de référence à l'Assemblée, la proposition de résolution européenne sur les suites de la conférence sur l'avenir de l'Europe (29/11/2023, 16e législature), dont les amendements LFI n° 33 (scrutin n° 3058 : RN 50 pour, LFI 13 pour ; RE, DEM, HOR, LR, LIOT contre ; SOC 1 abstention ; GDR et Écologistes non votants) et RN n° 10 (scrutin n° 3077) visaient à maintenir l'unanimité. LFI : 2→1, son propre amendement demande la majorité qualifiée pour la fiscalité et les sanctions en matière de droits humains (nuance explicite). PS-PP : -2 conforté par le programme 2024 (« la fin du droit de véto des Etats membres »). LR : 2 maintenu sur les votes de ses eurodéputés ; à noter que les rares députés LR présents en 2023 (2 et 3) ont voté contre les amendements LFI et RN de maintien de l'unanimité, et Bruno Retailleau ne s'est pas exprimé récemment. PCF : null maintenu, formulation alignée sur le texte du 40e congrès (2026). Nouvelle Énergie et Reconquête : aucune déclaration trouvée."
+}

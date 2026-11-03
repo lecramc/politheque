@@ -15,7 +15,7 @@ export default function GuideScreen() {
   const { colors, effects, fonts } = useTheme();
 
   return (
-    <Page loading={vm.status !== 'loaded'}>
+    <Page title={'Comprendre la politique'} loading={vm.status !== 'loaded'}>
       <View style={{ flexDirection: 'row', alignItems: 'flex-end', gap: effects.spacing.sm }}>
         <View style={{ flex: 1, gap: 6 }}>
           <Text variant="title">Comprendre la politique</Text>

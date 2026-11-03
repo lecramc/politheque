@@ -9,7 +9,7 @@ description: >
   Écrit uniquement dans EVALUATION.md et la mémoire des agents.
   Ne touche jamais au code de production.
 tools: Read, Write, Edit, Glob, Grep
-model: sonnet
+model: opus
 memory: project
 ---
 

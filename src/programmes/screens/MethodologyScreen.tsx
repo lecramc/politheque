@@ -40,15 +40,15 @@ const RULES: { title: string; body: string }[] = [
   },
   {
     title: 'Le calcul de proximité',
-    body: "Pour chaque question, l'écart entre votre réponse et la position du parti (de −2 à +2) donne un accord de 0 à 100 %. Exemple : vous répondez « Plutôt d'accord » (+1) et le parti est « Pour » (+2) : écart de 1, accord de 75 %. La moyenne est pondérée : une question « compte double » pèse deux fois. Les questions sans avis, ou sans position connue du parti, sont ignorées ; le nombre de questions comparées est toujours affiché.",
+    body: "Pour chaque question, l'écart entre votre réponse et la position du parti (de −2 à +2) donne un accord de 0 à 100 %. Exemple : vous répondez « Plutôt d'accord » (+1) et le parti est « Pour » (+2) : écart de 1, accord de 75 %. La moyenne est pondérée : une question « compte double » pèse deux fois. Les questions sans avis, ou sans position connue du parti, sont ignorées ; le nombre de questions comparées est toujours affiché. Un pourcentage de proximité n'est calculé qu'à partir de 5 questions comparables ; en dessous, le parti n'est pas noté. L'arc est tracé en pointillés lorsque la comparaison porte sur moins de 15 questions : le résultat est alors moins solide.",
   },
   {
     title: 'Les axes de la carte',
-    body: "Chaque affirmation peut être rattachée à un axe (économie, société, Europe) avec un sens. Votre position sur un axe est la moyenne de vos réponses sur ces affirmations. Certaines questions ne sont rattachées à aucun axe parce qu'elles ne s'y rangent pas clairement (nucléaire, libre-échange, proportionnelle).",
+    body: "Chaque affirmation peut être rattachée à un axe (économie, société, Europe) avec un sens. Votre position sur un axe est la moyenne de vos réponses sur ces affirmations. Certaines questions ne sont rattachées à aucun axe parce qu'elles ne s'y rangent pas clairement (nucléaire, libre-échange, proportionnelle). Une position de parti sur un axe n'est calculée qu'à partir de 4 positions rattachées à cet axe ; en dessous, le parti n'y figure pas.",
   },
   {
     title: 'Les étiquettes politiques',
-    body: "Les qualifications (« extrême droite », « gauche radicale »…) suivent l'usage de la presse de référence, des politistes et du nuancier du ministère de l'Intérieur. La position du parti sur sa propre étiquette est toujours indiquée, de la même façon pour tous.",
+    body: "Les qualifications (« extrême droite », « gauche radicale »…) suivent l'usage de la presse de référence, des politistes et du nuancier du ministère de l'Intérieur. La position du parti sur sa propre étiquette est indiquée lorsqu'elle est publique.",
   },
   {
     title: 'Corrections',
@@ -84,7 +84,7 @@ const EXAMPLE: Record<'croisee' | 'unique', Source[]> = {
 export default function MethodologyScreen() {
   const { colors, effects, fonts } = useTheme();
   return (
-    <Page back={{ label: 'Retour', href: '/' }}>
+    <Page title={'Méthodologie'} back={{ label: 'Retour', href: '/' }}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Méthodologie</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>

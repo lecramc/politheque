@@ -1,0 +1,186 @@
+{
+  "question": "q25-successions",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Les Écologistes proposent d'alourdir la taxation des gros héritages : contribution de 10 % au-delà de 4 M€ puis 10 % supplémentaires au-delà de 13 M€, réduction de l'exonération du pacte Dutreil de 75 % à 50 % (environ 15 Md€ par an selon eux). Marine Tondelier : « La \"grande transmission\" doit financer la \"grande transition\" ».",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique »",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 1,
+      "justification": "Édouard Philippe se dit « en désaccord frontal » avec les propositions de la gauche de taxer davantage les héritages et propose « une augmentation très sensible des plafonds » de donations pendant les trois premières années du quinquennat, pour transmettre plus tôt. La mesure porte sur les donations, pas sur le barème des droits de succession.",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Connexion France, « Tax all inheritance in France, says union chief »",
+          "url": "https://www.connexionfrance.com/money/tax-all-inheritance-in-france-says-union-chief/813726",
+          "date": "2026-09-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": -2,
+      "justification": "LFI propose de réformer les droits de succession pour en tirer 20 Md€ dès la première année et d'instaurer un « héritage maximum » (contrat NFP 2024) ; Mathilde Panot veut « prendre tout » au-delà de 12 M€ (août 2026).",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "Bruno Retailleau : « Je ne serai pas le président qui augmentera les droits de succession mais celui qui les baissera » (propos rapportés par L'Opinion et LCP, été 2026).",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 2,
+      "justification": "David Lisnard propose « la suppression des droits de succession en ligne directe » (tribune « Changer de logiciel fiscal », 16 avril 2026), une transmission d'entreprise exonérée et un taux marginal maximal de 20 % pour les autres héritages.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie, « Changer de logiciel fiscal » (David Lisnard)",
+          "url": "https://unenouvelleenergie.fr/changer-de-logiciel-fiscal/",
+          "date": "2026-04-16",
+          "kind": "declaration"
+        },
+        {
+          "title": "Planet.fr, « Héritage : Lisnard veut supprimer les droits de succession entre parents et enfants »",
+          "url": "https://www.planet.fr/heritage-lisnard-veut-supprimer-les-droits-de-succession-entre-parents-et-enfants-ce-que-ca-changerait-pour-vos-enfants.3000097.817026.html",
+          "date": "2026",
+          "kind": "presse"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 0,
+      "justification": "Position intermédiaire explicite (2022) : Fabien Roussel proposait « zéro taxation » des héritages inférieurs à 118 000 € et, à l'inverse, une taxation élevée des hauts patrimoines. Programme 2027 non publié.",
+      "sources": [
+        {
+          "title": "France 24 (AFP), « Roussel promet \"zéro taxation\" en dessous de 118.000 euros d'héritage »",
+          "url": "https://www.france24.com/fr/info-en-continu/20220117-roussel-promet-z%C3%A9ro-taxation-en-dessous-de-118-000-euros-d-h%C3%A9ritage",
+          "date": "2022-01-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Boursorama (avec LabSense), « Succession : les propositions des candidats à la présidentielle »",
+          "url": "https://www.boursorama.com/impots/succession/actualites/succession-les-propositions-des-candidats-a-la-presidentielle-e3ba343c7ca1178adf2448b03b0b2aeb",
+          "date": "2022-02-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": -2,
+      "justification": "Raphaël Glucksmann propose de « taxer les méga-héritages », soit « les 1 % les plus gros », sans toucher à « 99 % des héritages », pour environ 15 Md€ reversés aux salariés via une baisse des prélèvements sur les salaires.",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Fiscalité, école, immigration : ce que propose Raphaël Glucksmann »",
+          "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+          "date": "2026-08-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": 2,
+      "justification": "Sarah Knafo, eurodéputée et dirigeante de Reconquête : « Nous devons abolir les droits de succession » (août 2026). Le programme 2022 d'Éric Zemmour prévoyait un abattement de 200 000 € par enfant et l'exonération des transmissions d'entreprises familiales.",
+      "sources": [
+        {
+          "title": "Capital (repris par Yahoo Finance), « Sarah Knafo propose de supprimer totalement les droits de succession »",
+          "url": "https://fr.finance.yahoo.com/actualites/sarah-knafo-propose-supprimer-totalement-100123467.html",
+          "date": "2026-08-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – Éric Zemmour : « Exonérer de droits de donation et de succession les transmissions d'entreprises familiales entre générations »",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/exonerer-de-droits-de-donation-et-de-succession-les-transmissions-dentreprises-familiales-entre-generations/",
+          "date": "2022",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": 1,
+      "justification": "Gabriel Attal veut alléger la fiscalité des donations pour « faire en sorte que l'argent puisse circuler plus rapidement » vers les jeunes (été 2026). Pas de proposition identifiée sur le barème des droits de succession eux-mêmes ; la mesure ne figure pas dans les 96 « chantiers capitaux » publiés.",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Connexion France, « Tax all inheritance in France, says union chief »",
+          "url": "https://www.connexionfrance.com/money/tax-all-inheritance-in-france-says-union-chief/813726",
+          "date": "2026-09-30",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 2,
+      "justification": "Le RN propose de supprimer les droits de succession en ligne directe pour les familles modestes et moyennes : « sortiront de l'assiette de calcul, les biens immobiliers à hauteur de 300.000 euros », et abattement de 100 000 € sur les donations tous les dix ans (proposition déjà présente en 2022).",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Boursorama (avec LabSense), « Succession : les propositions des candidats à la présidentielle »",
+          "url": "https://www.boursorama.com/impots/succession/actualites/succession-les-propositions-des-candidats-a-la-presidentielle-e3ba343c7ca1178adf2448b03b0b2aeb",
+          "date": "2022-02-02",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "notes": "Pas de scrutin commun identifié pour cette question : codage fondé sur les déclarations et programmes. Renaissance et Horizons (+1) : leurs propositions portent sur les donations (transmission du vivant) et non sur les droits de succession ; on code « plutôt favorable » à une baisse de la fiscalité de la transmission, à confirmer par leurs programmes complets. Le +1 d'Horizons et de Renaissance repose sur LCP et Connexion France (sources de presse ; pas de source primaire du candidat consultée). LR : une seule source consultée (LCP citant L'Opinion). PS-PP, LFI, Écologistes codés -2 : tous proposent d'augmenter le rendement des droits de succession (15 à 20 Md€) en ciblant les gros héritages ; on pourrait discuter -1 pour PS-PP, qui précise ne pas toucher à « 99 % des héritages ». PCF : 0 sur la base de 2022 (exonération des petits héritages + hausse sur les gros) ; une proposition de loi communiste « pour un héritage juste et populaire » (abattement porté à 170 000 €) a été repérée mais non vérifiée. Reconquête : position portée par Sarah Knafo, Zemmour lui-même n'a pas publié de programme 2027. Texte help : non vérifié ligne à ligne dans cette passe ; les ordres de grandeur (abattement de 100 000 € par parent et par enfant, barème de 5 % à 45 %, abattement inchangé depuis 2012) sont conformes à la législation connue. Vérification croisée (03/11/2026) : article LCP du 27/08/2026 ouvert, citations de Retailleau, Philippe, Attal, Glucksmann, Tondelier et Panot conformes ; il cite pour le RN l'abattement de 100 000 € sur les donations tous les dix ans (le seuil de 300 000 € sur l'immobilier n'y a pas été retrouvé et repose sur la fiche du RN). Valeurs inchangées."
+}

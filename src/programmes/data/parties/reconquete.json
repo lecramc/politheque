@@ -3,8 +3,8 @@
   "name": "Reconquête",
   "shortName": "REC",
   "color": "#1F1F3D",
-  "family": "Extrême droite (qualification de la presse de référence et de nombreux politistes)",
-  "description": "Parti fondé fin 2021 par Éric Zemmour, qui le préside. Éric Zemmour a obtenu 7,07 % au premier tour de la présidentielle 2022 ; la liste Reconquête a recueilli 5,47 % aux européennes de 2024, mais quatre de ses cinq eurodéputés, dont Marion Maréchal, ont été exclus ou ont quitté le parti en juin 2024, Sarah Knafo restant sa seule représentante au Parlement européen. Reconquête ne dispose pas de groupe à l'Assemblée nationale : ses positions ne peuvent donc pas être établies à partir de votes de groupe.",
+  "family": "Extrême droite (presse de référence et nombreux politistes ; « droite radicale » pour d'autres, dont Gilles Ivaldi ; bloc « extrême droite » du nuancier du ministère de l'Intérieur ; pas de prise de position officielle du parti connue sur cette étiquette)",
+  "description": "Reconquête est le parti fondé le 5 décembre 2021 par Éric Zemmour, qui le préside. Éric Zemmour a obtenu 7,07 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; la liste conduite par Marion Maréchal a recueilli 5,47 % aux européennes de 2024, mais quatre des cinq eurodéputés élus ont été exclus ou ont quitté le parti en juin 2024, Sarah Knafo restant sa seule élue au Parlement européen. Reconquête n'a pas de groupe à l'Assemblée nationale. Éric Zemmour a été condamné définitivement à plusieurs reprises pour provocation à la haine ou injure publique, et en appel en 2025 pour contestation de crime contre l'humanité ; voir le détail de la candidature.",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2021",
@@ -79,7 +79,7 @@
         ]
       },
       {
-        "text": "Wikipédia le situe à l'extrême droite (nationalisme, identitarisme, national-conservatisme, opposition à l'immigration et à l'islam) et cite le politiste Jean-Yves Camus, pour qui l'identitarisme est le marqueur essentiel du parti au sein de l'extrême droite ; la Fondation Jean-Jaurès range l'électorat d'Éric Zemmour dans le bloc d'extrême droite et lui prête un « tropisme identitaire et sécuritaire ».",
+        "text": "La presse de référence et de nombreux politistes le situent à l'extrême droite (nationalisme, identitarisme, national-conservatisme, opposition à l'immigration et à l'islam) ; pour le politiste Jean-Yves Camus, l'identitarisme est le marqueur essentiel du parti au sein de l'extrême droite ; la Fondation Jean-Jaurès range l'électorat d'Éric Zemmour dans le bloc d'extrême droite et lui prête un « tropisme identitaire et sécuritaire ».",
         "sources": [
           {
             "title": "Wikipédia, « Reconquête (parti politique) »",
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "text": "Le politiste Gilles Ivaldi (CNRS, CEVIPOF) emploie la catégorie de « droite radicale » pour Éric Zemmour comme pour Marine Le Pen, et oppose au « social-populisme » de cette dernière le « capitalisme populaire » du programme Zemmour 2022, plus libéral en économie. Aucune prise de position officielle du parti sur sa propre qualification n'a été identifiée dans les sources consultées.",
+        "text": "Le politiste Gilles Ivaldi (CNRS, CEVIPOF) emploie la catégorie de « droite radicale » pour Éric Zemmour comme pour Marine Le Pen, et oppose au « social-populisme » de cette dernière le « capitalisme populaire » du programme Zemmour 2022, plus libéral en économie. Aucune prise de position officielle du parti sur sa propre qualification n'est connue.",
         "sources": [
           {
             "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
@@ -297,8 +297,8 @@
     "figures": [
       {
         "name": "Éric Zemmour",
-        "role": "Fondateur et président de Reconquête (depuis 2021) ; candidat à la présidentielle de 2022 (7,07 %) et déclaré pour 2027",
-        "background": "Né en 1958 à Montreuil dans une famille juive originaire d'Algérie, diplômé de Sciences Po, il est journaliste politique au Quotidien de Paris puis au Figaro (à partir de 1996), chroniqueur de télévision (On n'est pas couché, 2006-2011) et de radio, puis éditorialiste de Face à l'info sur CNews (2019-2021) ; son essai Le Suicide français (2014) est un succès de librairie. Condamnations définitives : provocation à la haine raciale (tribunal correctionnel de Paris, février 2011, propos télévisés de 2010, sans appel) ; provocation à la haine religieuse envers les musulmans (cour d'appel, mai 2018, propos de 2016, pourvoi rejeté) ; provocation publique à la haine et injure publique en raison de l'origine ou de la religion (discours à la « convention de la droite » du 28 septembre 2019 : condamné en 2020, relaxé en appel en 2021, relaxe cassée en 2023, condamné en février 2024, pourvoi rejeté le 16 septembre 2025) ; complicité d'injure publique et de provocation à la haine (propos de septembre 2020 sur les mineurs étrangers isolés, pourvoi rejeté le 2 décembre 2025) ; il a aussi été relaxé dans d'autres procédures. Condamnation non définitive : la cour d'appel de Paris l'a condamné le 2 avril 2025 à 10 000 € d'amende pour contestation de crime contre l'humanité pour avoir soutenu en 2019 que Pétain avait « sauvé » des juifs français (thèse contestée par des historiens de la période, dont Jacques Semelin) ; il affirme n'avoir « à aucun moment » voulu défendre Pétain et a annoncé un pourvoi en cassation, sur lequel aucune décision n'a été identifiée à date.",
+        "role": "Fondateur et président de Reconquête (depuis 2021) ; candidat à la présidentielle de 2022 (7,07 %) ; candidature annoncée pour 2027",
+        "background": "Né en 1958 à Montreuil dans une famille juive originaire d'Algérie, diplômé de Sciences Po, il est journaliste politique au Quotidien de Paris puis au Figaro (à partir de 1996), chroniqueur de télévision (On n'est pas couché, 2006-2011) et de radio, puis éditorialiste de Face à l'info sur CNews (2019-2021) ; son essai Le Suicide français (2014) est un succès de librairie.",
         "sources": [
           {
             "title": "Wikipédia, « Éric Zemmour »",
@@ -452,7 +452,7 @@
     ],
     "thought": [
       {
-        "text": "Identité et « civilisation » : le parti revendique la défense de « notre civilisation », de « notre identité », des familles et des terroirs, et la « remigration », terme assumé par Éric Zemmour en 2022 ; le politiste Jean-Yves Camus, cité par Wikipédia, voit dans l'identitarisme le marqueur essentiel du parti au sein de l'extrême droite, et la Fondation Jean-Jaurès prête à l'électorat zemmourien un « tropisme identitaire et sécuritaire ».",
+        "text": "Identité et « civilisation » : le parti revendique la défense de « notre civilisation », de « notre identité », des familles et des terroirs, et la « remigration », terme assumé par Éric Zemmour en 2022 ; le politiste Jean-Yves Camus voit dans l'identitarisme le marqueur essentiel du parti au sein de l'extrême droite, et la Fondation Jean-Jaurès prête à l'électorat zemmourien un « tropisme identitaire et sécuritaire ».",
         "sources": [
           {
             "title": "Reconquête, « Notre mouvement » (site officiel)",
@@ -504,7 +504,7 @@
         ]
       },
       {
-        "text": "Lectures historiques : Éric Zemmour, auteur d'essais (Le Suicide français, 2014 ; La France n'a pas dit son dernier mot, 2021), soutient notamment que le régime de Vichy aurait protégé les juifs français ; cette thèse est contestée par des historiens de la période, dont Jacques Semelin, qui rappelle que les juifs ont survécu « en dépit de Vichy » et non grâce à lui ; elle a donné lieu à une condamnation en appel en 2025, non définitive, Éric Zemmour ayant annoncé un pourvoi en cassation.",
+        "text": "Lectures historiques : Éric Zemmour, auteur d'essais (Le Suicide français, 2014 ; La France n'a pas dit son dernier mot, 2021), soutient notamment que le régime de Vichy aurait protégé les juifs français ; cette thèse est contestée par des historiens de la période, dont Jacques Semelin, qui rappelle que les juifs ont survécu « en dépit de Vichy » et non grâce à lui .",
         "sources": [
           {
             "title": "Wikipédia, « Éric Zemmour »",
@@ -559,26 +559,20 @@
   },
   "stances": {
     "q01-isf": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée et sourcée sur un ISF ou la « taxe Zucman » ; le programme 2022 maintenait l'IFI avec une déduction de 50 % des investissements dans les PME, et le chiffrage 2026 de Sarah Knafo ne traite pas de la fiscalité du patrimoine.",
+      "stance": -2,
+      "justification": "Selon Capital (29 octobre 2025), Éric Zemmour partage le rejet de la taxe Zucman exprimé par Marine Le Pen et plaide pour « baisser massivement les dépenses pour pouvoir baisser massivement les impôts » (LCI). Reconquête n'a pas de groupe à l'Assemblée.",
       "sources": [
         {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        },
-        {
-          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
-          "url": "https://www.budget2027.fr/",
-          "date": "2026-09",
-          "kind": "declaration"
+          "title": "Capital (repris par Yahoo Actualités), « \"Baisser les dépenses, pour baisser les impôts\", Eric Zemmour développe ses propositions économiques »",
+          "url": "https://fr.finance.yahoo.com/actualites/baisser-d%C3%A9penses-baisser-imp%C3%B4ts-eric-190503666.html",
+          "date": "2025-10-29",
+          "kind": "presse"
         }
       ]
     },
     "q02-depenses": {
       "stance": 2,
-      "justification": "Le chiffrage « Budget 2027 » publié par Sarah Knafo annonce 130 à 140 Md€ d'économies annuelles selon les sources ; le programme 2022 prévoyait une « baisse de la dépense publique » (l'Institut Montaigne estimait toutefois en 2022 une hausse nette de la dépense de 36 Md€).",
+      "justification": "Le chiffrage « Budget 2027 » publié par Sarah Knafo annonce de 130 à 140 Md€ d'économies annuelles ; le programme 2022 prévoyait une « baisse de la dépense publique ».",
       "sources": [
         {
           "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
@@ -606,33 +600,9 @@
         }
       ]
     },
-    "q03-charges": {
-      "stance": 2,
-      "justification": "Le programme 2022 prévoit 30 Md€ de baisse des impôts de production par an et un IS à 15 % pour les PME.",
-      "sources": [
-        {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        },
-        {
-          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme d'Éric Zemmour",
-          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/synthese/",
-          "date": "2022-04",
-          "kind": "presse"
-        },
-        {
-          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
-          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
-          "date": "2022-03-23",
-          "kind": "presse"
-        }
-      ]
-    },
     "q04-retraite": {
       "stance": -2,
-      "justification": "Le programme 2022 prévoyait de porter l'âge légal à 64 ans à l'horizon 2030 ; pas de position 2027 identifiée.",
+      "justification": "Le programme présidentiel de 2022 d'Éric Zemmour prévoyait de porter l'âge légal à 64 ans à l'horizon 2030 ; son programme 2027 n'est pas publié.",
       "sources": [
         {
           "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
@@ -655,11 +625,17 @@
       ]
     },
     "q05-smic": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée sur une hausse du SMIC ; le programme 2022 proposait une baisse de CSG sur les bas salaires.",
+      "stance": -1,
+      "justification": "En 2022, Éric Zemmour proposait de ne pas augmenter directement le SMIC mais de baisser la CSG sur les salaires du SMIC à 2 000 € (« équivalent d'un 13e mois »). Pas de position 2026 identifiée.",
       "sources": [
         {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "title": "La Finance pour tous, « De nombreux candidats en faveur d'une augmentation du Smic »",
+          "url": "https://www.lafinancepourtous.com/2022/03/21/elections-presidentielles-les-propositions-des-candidats-sur-le-montant-du-smic/",
+          "date": "2022-03-21",
+          "kind": "presse"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022)",
           "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
           "date": "2022-03",
           "kind": "programme"
@@ -667,22 +643,9 @@
       ]
     },
     "q06-chomage": {
-      "stance": 2,
-      "justification": "Le chiffrage 2026 propose de limiter le RSA à trois ans pour les personnes aptes au travail ; le programme 2022 prévoyait des contrôles systématiques des allocataires.",
-      "sources": [
-        {
-          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
-          "url": "https://www.budget2027.fr/",
-          "date": "2026-09",
-          "kind": "declaration"
-        },
-        {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        }
-      ]
+      "stance": null,
+      "justification": "Pas de position identifiée sur les règles de l'assurance chômage : les propositions de Reconquête portent sur le RSA et les prestations non contributives (limitation aux Français, RSA limité à trois ans), qui ne relèvent pas de l'assurance chômage. Pas de groupe à l'Assemblée.",
+      "sources": []
     },
     "q07-immigration": {
       "stance": 2,
@@ -710,7 +673,7 @@
     },
     "q08-preference": {
       "stance": 2,
-      "justification": "Le chiffrage 2026 propose de réserver les aides non contributives aux Français ; le programme 2022 les supprimait pour les étrangers extra-européens.",
+      "justification": "Le chiffrage budgétaire présenté par Sarah Knafo (2026) propose de réserver les aides non contributives aux Français ; le programme 2022 les supprimait pour les étrangers extra-européens.",
       "sources": [
         {
           "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
@@ -749,11 +712,6 @@
           "kind": "programme"
         }
       ]
-    },
-    "q11-police": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée et sourcée sur le récépissé ou un contrôle indépendant de la police.",
-      "sources": []
     },
     "q12-nucleaire": {
       "stance": 2,
@@ -817,19 +775,12 @@
     },
     "q15-medecins": {
       "stance": null,
-      "justification": "Pas de position publique identifiée sur la régulation de l'installation ; le programme 2022 propose des médecins salariés par l'État et une garde obligatoire, sans contrainte d'installation.",
-      "sources": [
-        {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        }
-      ]
+      "justification": "Pas de position publique sur la régulation de l'installation : le programme 2022 propose de recruter 1 000 médecins salariés par l'État pour les déserts médicaux et de rétablir une garde obligatoire, sans contrainte d'installation. Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": []
     },
     "q16-fin-de-vie": {
       "stance": -2,
-      "justification": "Éric Zemmour s'est engagé à abroger la loi de 2026 sur l'aide à mourir (« J'abrogerai cette loi ») ; Reconquête n'a pas de groupe à l'Assemblée et n'a donc pas pris part au vote.",
+      "justification": "Éric Zemmour s'est engagé à abroger la loi de 2026 (« J'abrogerai cette loi ») ; Reconquête n'a pas de groupe à l'Assemblée.",
       "sources": [
         {
           "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
@@ -841,78 +792,72 @@
     },
     "q17-ecole-privee": {
       "stance": null,
-      "justification": "Pas de position publique identifiée et sourcée sur le financement de l'enseignement privé sous contrat.",
+      "justification": "Pas de position publique : le programme présidentiel 2022 d'Éric Zemmour ne traite pas du financement de l'enseignement privé sous contrat, le programme 2027 n'est pas publié, et Reconquête n'a pas de groupe à l'Assemblée.",
       "sources": []
     },
     "q18-ukraine": {
-      "stance": null,
-      "justification": "Pas de position récente vérifiée sur le soutien militaire à l'Ukraine ; le programme 2022 prévoyait d'« agir pour rétablir la paix » et un dialogue incluant la Russie, sans se prononcer sur les livraisons d'armes. Les votes de Sarah Knafo au Parlement européen sur l'aide à l'Ukraine n'ont pas pu être vérifiés.",
+      "stance": 0,
+      "justification": "Reconquête n'avait pas de députés lors des scrutins n° 3461 et n° 988. Sa seule eurodéputée, Sarah Knafo, s'est abstenue sur la résolution du PE du 12 mars 2025 appelant les États à accroître leur aide militaire à l'Ukraine. Pas de déclaration récente d'Éric Zemmour identifiée sur les livraisons d'armes.",
       "sources": [
         {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Continuing the unwavering EU support for Ukraine, after three years of Russia's war of aggression » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172663",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 12 mars 2025 sur le soutien à l'Ukraine (appel à « substantially increase and accelerate their military support »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1807133",
+          "date": "2025-03-12",
+          "kind": "vote"
         }
       ]
     },
     "q19-droit-europeen": {
       "stance": 2,
-      "justification": "Le programme 2022 prévoit la supériorité des nouvelles lois nationales sur les textes internationaux antérieurs (révision de l'article 55).",
+      "justification": "Le programme 2022 d'Éric Zemmour prévoit de réviser l'article 55 de la Constitution pour que les lois nationales nouvelles priment sur les textes internationaux antérieurs ; l'unique eurodéputé Reconquête de l'époque (Nicolas Bay) a voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union.",
       "sources": [
         {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022)",
           "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
           "date": "2022-03",
           "kind": "programme"
         },
         {
-          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
+          "title": "Public Sénat, « Présidentielle 2022 : Éric Zemmour détaille son programme »",
           "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
           "date": "2022-03-23",
           "kind": "presse"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
         }
       ]
     },
     "q20-defense-europe": {
-      "stance": null,
-      "justification": "Pas de position explicite identifiée sur l'endettement commun de l'UE ; le chiffrage 2026 propose un retour au budget européen d'avant le Covid.",
+      "stance": -1,
+      "justification": "Sarah Knafo, seule eurodéputée Reconquête, a voté contre la résolution du PE du 12 mars 2025 qui demande d'explorer des obligations européennes de défense (elle n'a pas pris part au vote sur le prêt commun à l'Ukraine) ; son chiffrage budgétaire 2026 propose un retour au budget européen d'avant le Covid.",
       "sources": [
         {
-          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo)",
           "url": "https://www.budget2027.fr/",
           "date": "2026-09",
           "kind": "declaration"
         }
       ]
     },
-    "q21-libre-echange": {
-      "stance": 2,
-      "justification": "Le programme 2022 prévoit le veto de la France à toute négociation de traité de libre-échange ; pas de déclaration identifiée sur la signature (janvier 2026) ou l'application provisoire de l'accord UE-Mercosur.",
-      "sources": [
-        {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        }
-      ]
-    },
-    "q22-vie-republique": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée sur une VIe République ; les réformes proposées étendent le référendum et le rôle du Parlement face au Conseil constitutionnel.",
-      "sources": [
-        {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        }
-      ]
-    },
     "q23-referendum": {
       "stance": 2,
-      "justification": "Le programme 2022 prévoit un grand référendum sur l'immigration, la sécurité et la justice.",
+      "justification": "Le programme présidentiel 2022 d'Éric Zemmour prévoit un grand référendum sur l'immigration, la sécurité et la justice, et de « rendre aux souverainetés nationales la question de l'immigration par référendum ». Position de 2022.",
       "sources": [
         {
           "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
@@ -921,9 +866,9 @@
           "kind": "programme"
         },
         {
-          "title": "Présidentielle 2022 : Éric Zemmour détaille son programme et assume le terme « remigration » (Public Sénat)",
-          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
-          "date": "2022-03-23",
+          "title": "Institut Montaigne – Présidentielle 2022, propositions d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour",
+          "date": "2022",
           "kind": "presse"
         }
       ]
@@ -939,6 +884,134 @@
           "kind": "presse"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": 2,
+      "justification": "Sarah Knafo, eurodéputée et dirigeante de Reconquête : « Nous devons abolir les droits de succession » (août 2026). Le programme 2022 d'Éric Zemmour prévoyait un abattement de 200 000 € par enfant et l'exonération des transmissions d'entreprises familiales.",
+      "sources": [
+        {
+          "title": "Capital (repris par Yahoo Finance), « Sarah Knafo propose de supprimer totalement les droits de succession »",
+          "url": "https://fr.finance.yahoo.com/actualites/sarah-knafo-propose-supprimer-totalement-100123467.html",
+          "date": "2026-08-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Institut Montaigne, Présidentielle 2022 – Éric Zemmour : « Exonérer de droits de donation et de succession les transmissions d'entreprises familiales entre générations »",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/exonerer-de-droits-de-donation-et-de-succession-les-transmissions-dentreprises-familiales-entre-generations/",
+          "date": "2022",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée d'Éric Zemmour ou de Reconquête sur la nationalisation d'ArcelorMittal. Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": []
+    },
+    "q27-temps-de-travail": {
+      "stance": null,
+      "justification": "Pas de position publique d'Éric Zemmour sur la durée légale du travail : son programme présidentiel de 2022 ne mentionne pas les 35 heures (il propose de défiscaliser les heures supplémentaires), et son programme 2027 n'est pas publié.",
+      "sources": []
+    },
+    "q28-prix-energie": {
+      "stance": null,
+      "justification": "Pas de déclaration d'Éric Zemmour ni de Reconquête sur la TVA de l'électricité. Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": []
+    },
+    "q29-cannabis": {
+      "stance": -2,
+      "justification": "Pendant la campagne de 2022, Éric Zemmour a déclaré : « Après mûre réflexion, je suis contre » la légalisation du cannabis. Il avait évoqué en mai 2021, avant sa candidature, une « légalisation organisée ». Position de 2022 ; Reconquête n'a pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Greenboyz – Cannabis, CBD et élection présidentielle : la position des candidats",
+          "url": "https://greenboyz.fr/cannabis-cbd-election-presidentielle-candidats-legalisation/",
+          "date": "2022-03",
+          "kind": "presse"
+        },
+        {
+          "title": "CNews – Répression, légalisation, dépénalisation… Que pensent les candidats à la présidentielle du cannabis ?",
+          "url": "https://www.cnews.fr/france/2022-02-01/repression-legalisation-depenalisation-que-pensent-les-candidats-la-presidentielle",
+          "date": "2022-02-01",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2022 d'Éric Zemmour proposait de supprimer les ZFE-m existantes et les vignettes Crit'Air. Position de 2022 ; pas de déclaration plus récente. Pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, Éric Zemmour : mettre fin aux interdictions de circuler en ville en fonction du type de véhicule",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/mettre-fin-aux-interdictions-de-circuler-en-ville-en-fonction-du-type-de-vehicule",
+          "date": "2022",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": -2,
+      "justification": "Le programme présidentiel de 2022 d'Éric Zemmour prévoit d'« interdire le voile dans l'espace public », ce qui inclut les compétitions sportives ; le 17 septembre 2026 sur BFMTV, il a confirmé vouloir interdire le voile, et aussi la kippa, dans l'espace public. Reconquête n'a pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, Éric Zemmour : interdire le voile dans l'espace public",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/interdire-le-voile-dans-lespace-public",
+          "date": "2022",
+          "kind": "presse"
+        },
+        {
+          "title": "Entrevue – Éric Zemmour veut aussi interdire la kippa dans l'espace public en plus du voile",
+          "url": "https://entrevue.fr/presidentielle-2027/eric-zemmour-veut-aussi-interdire-la-kippa-dans-lespace-public-en-plus-du-voile/",
+          "date": "2026-09-18",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": 0,
+      "justification": "Sarah Knafo, seule eurodéputée Reconquête, s'est abstenue sur les résolutions du PE sur l'Ukraine du 9 septembre 2025 et du 8 juillet 2026. Éric Zemmour a déclaré en mars 2025 que l'Ukraine voulait entrer dans l'UE pour devenir membre de l'OTAN, « but that is impossible » (à propos de l'OTAN), sans se prononcer explicitement sur l'adhésion à l'UE.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Hungarian Conservative, « Éric Zemmour: \"Ukraine wants to join the EU in order to become a NATO member\" »",
+          "url": "https://hungarianconservative.com/?p=44068",
+          "date": "2025-03-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": null,
+      "justification": "Seul indice : l'eurodéputé Reconquête de 2023 (Nicolas Bay, qui a quitté le parti depuis) a voté contre la révision des traités ; Sarah Knafo n'a pas pris part au vote du 22 octobre 2025. Pas de position explicite du parti ou d'Éric Zemmour identifiée.",
+      "sources": []
+    },
+    "q34-mineurs": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2022 d'Éric Zemmour proposait d'« abaisser l'âge de la majorité pénale de 18 à 16 ans ». Position de 2022 ; pas de déclaration plus récente. Pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, propositions d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour",
+          "date": "2022",
+          "kind": "presse"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
     }
   },
   "candidacies": {
@@ -946,8 +1019,8 @@
       "candidateName": "Éric Zemmour",
       "status": "annonce",
       "statusLabel": "Candidature annoncée",
-      "candidate": "Éric Zemmour (statut : candidature annoncée le 2026-09-17 sur BFMTV ; déclaration formelle annoncée pour l'automne 2026, non identifiée à date)",
-      "programmeStatus": "Programme présidentiel 2027 non publié à date (une consultation « Le Programme pour la France » est en cours sur leprogrammepourlafrance.fr). Fiche fondée sur le programme présidentiel 2022, le chiffrage budgétaire « Budget 2027 » publié par Sarah Knafo (2026, présenté par un cadre du parti comme n'étant « pas un programme présidentiel ») et les déclarations d'Éric Zemmour en 2026. Faute de groupe parlementaire, aucune position ne repose sur des votes à l'Assemblée. Les positions de 2022 sont signalées comme telles.",
+      "candidate": "Éric Zemmour a annoncé le 17 septembre 2026 sur BFMTV qu'il serait candidat ; il a réservé sa déclaration formelle pour l'automne 2026, qui n'avait pas eu lieu au 3 novembre 2026. Il a été condamné définitivement pour provocation à la haine raciale (tribunal correctionnel de Paris, février 2011, propos télévisés de 2010, sans appel), pour provocation à la haine religieuse envers les musulmans (cour d'appel, mai 2018, propos de 2016, pourvoi rejeté), pour provocation publique à la haine et injure publique en raison de l'origine ou de la religion (discours du 28 septembre 2019 à la « convention de la droite » : condamné en 2020, relaxé en appel en 2021, relaxe cassée en 2023, condamné en février 2024, pourvoi rejeté le 16 septembre 2025) et pour complicité d'injure publique et de provocation à la haine (propos de septembre 2020 sur les mineurs étrangers isolés, pourvoi rejeté le 2 décembre 2025) ; il a été relaxé dans d'autres procédures. Le 2 avril 2025, la cour d'appel de Paris l'a condamné à 10 000 € d'amende pour contestation de crime contre l'humanité, pour avoir soutenu en 2019 que Pétain avait « sauvé » des juifs français ; il affirme n'avoir « à aucun moment » voulu défendre Pétain et a annoncé un pourvoi en cassation : cette condamnation n'est pas définitive.",
+      "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026 (une consultation « Le Programme pour la France » est en cours sur leprogrammepourlafrance.fr). Fiche fondée sur le programme présidentiel 2022, le chiffrage budgétaire « Budget 2027 » publié par Sarah Knafo (2026, présenté par un cadre du parti comme n'étant « pas un programme présidentiel ») et les déclarations d'Éric Zemmour en 2026. Faute de groupe parlementaire, aucune position ne repose sur des votes à l'Assemblée. Les positions de 2022 sont signalées comme telles.",
       "themes": {
         "economie": {
           "summary": "Reconquête propose une forte baisse des impôts de production et de la dépense publique. Le chiffrage publié par Sarah Knafo en 2026 annonce 130 à 140 Md€ d'économies annuelles selon les sources.",
@@ -1061,7 +1134,7 @@
               ]
             },
             {
-              "text": "Baisse dégressive de la CSG pour les salaires du SMIC à 2 000 €, présentée comme l'équivalent d'un 13e mois, financée par la suppression des aides non contributives aux étrangers extra-européens (programme 2022) ; l'Institut Montaigne chiffre pour sa part une baisse de CSG sur l'ensemble des revenus d'activité (de 9,2 % à 2,5 %).",
+              "text": "Baisse dégressive de la CSG pour les salaires du SMIC à 2 000 €, présentée comme l'équivalent d'un 13e mois, financée par la suppression des aides non contributives aux étrangers extra-européens (programme 2022).",
               "sources": [
                 {
                   "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
@@ -1186,7 +1259,7 @@
               ]
             },
             {
-              "text": "Expulsion d'un étranger, même en situation régulière, après un an de chômage, dans le cadre de la « remigration » (déclaration du 17/09/2026 ; le programme 2022 prévoyait six mois).",
+              "text": "Expulsion d'un étranger, même en situation régulière, après un an de chômage, dans le cadre de la « remigration » (déclaration du 17 septembre 2026 ; le programme 2022 prévoyait six mois).",
               "sources": [
                 {
                   "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",

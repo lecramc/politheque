@@ -8,7 +8,7 @@ description: >
   "validate", "looks good?", "prêt pour review", "check this".
   Read-only — ne modifie jamais de fichiers.
 tools: Read, Glob, Grep
-model: sonnet
+model: opus
 memory: project
 ---
 

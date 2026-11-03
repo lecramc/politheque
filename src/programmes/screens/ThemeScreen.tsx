@@ -15,7 +15,11 @@ import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
-import { firstSentence, firstSentences } from '@/src/programmes/models/presentation.service';
+import {
+  displayName,
+  firstSentence,
+  firstSentences,
+} from '@/src/programmes/models/presentation.service';
 import type { PartyThemeProgramme } from '@/src/programmes/models/programme.model';
 import { themeViewModel } from '@/src/programmes/view-models/theme.view-model';
 
@@ -58,7 +62,7 @@ export default function ThemeScreen() {
 
   if (vm.status === 'loaded' && !theme) {
     return (
-      <Page back={{ label: 'Débats', href: '/debats' }}>
+      <Page title={'Thème introuvable'} back={{ label: 'Débats', href: '/debats' }}>
         <Text variant="title">Thème introuvable</Text>
       </Page>
     );
@@ -73,7 +77,11 @@ export default function ThemeScreen() {
   const compared = vm.comparisons.filter((c) => selected.includes(c.party.id));
 
   return (
-    <Page loading={vm.status !== 'loaded'} back={{ label: 'Débats', href: '/debats' }}>
+    <Page
+      title={theme?.title}
+      loading={vm.status !== 'loaded'}
+      back={{ label: 'Débats', href: '/debats' }}
+    >
       {theme ? (
         <>
           <View style={{ gap: 8 }}>
@@ -193,7 +201,7 @@ export default function ThemeScreen() {
                           }}
                         >
                           <PartyDot color={party.color} size={14} />
-                          <Text style={active ? fonts.bold : undefined}>{party.shortName}</Text>
+                          <Text style={active ? fonts.bold : undefined}>{displayName(party)}</Text>
                         </Pressable>
                       );
                     })}
@@ -204,7 +212,7 @@ export default function ThemeScreen() {
                         <Card key={party.id} style={{ flex: 1, padding: 12 }}>
                           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
                             <PartyDot color={party.color} size={24} label={party.shortName} />
-                            <Text style={{ ...fonts.bold, flex: 1 }}>{party.shortName}</Text>
+                            <Text style={{ ...fonts.bold, flex: 1 }}>{displayName(party)}</Text>
                           </View>
                           {programme ? <ProgrammeDetail programme={programme} /> : null}
                         </Card>
@@ -232,11 +240,19 @@ export default function ThemeScreen() {
                         alignItems: 'center',
                         gap: 8,
                         paddingVertical: 4,
+                        flexWrap: 'wrap',
                       }}
                     >
                       <PartyDot color={party.color} size={24} label={party.shortName} />
-                      <Text style={{ width: 96, fontSize: 14 }}>{party.shortName}</Text>
+                      <Text style={{ width: 120, fontSize: 14 }}>{displayName(party)}</Text>
                       <StanceBadge stance={stance?.stance ?? null} />
+                      {stance?.justification ? (
+                        <Text
+                          style={{ flexBasis: '100%', fontSize: 13, color: colors.text.secondary }}
+                        >
+                          {stance.justification}
+                        </Text>
+                      ) : null}
                     </View>
                   ))}
                 </Accordion>

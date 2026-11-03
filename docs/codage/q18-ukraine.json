@@ -1,0 +1,221 @@
+{
+  "question": "q18-ukraine",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2027 prévoit un soutien militaire à l'Ukraine incluant des armes à longue portée ; le groupe a voté pour l'accord de sécurité (scrutin n° 3461 du 12 mars 2024 : 20 pour, 1 contre) et pour la résolution de soutien (scrutin n° 988 du 12 mars 2025 : 34 pour, 2 abstentions).",
+      "sources": [
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 197",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 2,
+      "justification": "Le groupe a voté pour l'accord de sécurité (scrutin n° 3461 : 30 pour) et pour la résolution appelant au renforcement du soutien (scrutin n° 988 : 33 pour) ; Édouard Philippe a qualifié de « trahison » la proposition de Marine Le Pen de couper l'aide à l'Ukraine (octobre 2026).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Euronews, « Marine Le Pen prête à débattre avec Zelensky après avoir promis de couper l'aide française »",
+          "url": "https://fr.euronews.com/2026/10/16/marine-le-pen-prete-a-debattre-avec-zelensky-apres-avoir-promis-de-couper-laide-francaise-",
+          "date": "2026-10-16",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": -1,
+      "justification": "Le groupe a voté contre l'accord de sécurité (scrutin n° 3461 : 75 contre) et contre la résolution appelant au renforcement du soutien (scrutin n° 988 : 45 contre) ; ses eurodéputés se sont abstenus sur la résolution du PE du 12 mars 2025 appelant à accroître l'aide militaire. Nuance : le programme du Nouveau Front populaire de 2024, signé par LFI, prévoyait la « livraison d'armes nécessaires ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Continuing the unwavering EU support for Ukraine, after three years of Russia's war of aggression » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172663",
+          "date": "2025-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "Le groupe a voté majoritairement pour l'accord de sécurité (scrutin n° 3461 : 49 pour, 11 abstentions) et unanimement pour la résolution appelant au renforcement du soutien (scrutin n° 988 : 28 pour) ; les eurodéputés LR ont voté pour la résolution du PE du 12 mars 2025 (4 pour).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Continuing the unwavering EU support for Ukraine, after three years of Russia's war of aggression » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172663",
+          "date": "2025-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas d'engagement explicite identifié sur la poursuite des livraisons d'armes : David Lisnard estimait en 2024 que « l'intérêt de la France c'est que la Russie ne gagne pas cette guerre » (Sud Radio). Nouvelle Énergie n'a ni groupe à l'Assemblée ni eurodéputé : aucun vote ne permet de trancher.",
+      "sources": []
+    },
+    "pcf": {
+      "stance": -1,
+      "justification": "Le groupe GDR a voté contre l'accord de sécurité (scrutin n° 3461 : 22 contre) et majoritairement contre la résolution appelant au renforcement du soutien (scrutin n° 988 : 9 contre, 3 abstentions). Nuance : Fabien Roussel se disait favorable en mars 2024 à des « armes de défense » ; le congrès de 2026 met en avant une issue diplomatique. Le PCF n'a pas d'eurodéputé.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Sud Radio, « Ukraine : \"Je ne veux pas que la France entre en guerre contre la Russie\", déclare Fabien Roussel »",
+          "url": "https://www.sudradio.fr/linvite-politique/ukraine-je-ne-veux-pas-que-la-france-entre-en-guerre-contre-la-russie-declare-fabien-roussel",
+          "date": "2024-03-07",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Raphaël Glucksmann veut renforcer l'aide à l'Ukraine en la finançant par les avoirs russes gelés (débat du 4 octobre 2026) ; le groupe socialiste a voté pour l'accord de sécurité (n° 3461 : 31 pour) et pour la résolution n° 988 (46 pour).",
+      "sources": [
+        {
+          "title": "LCP, « Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste »",
+          "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
+          "date": "2026-10-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": 0,
+      "justification": "Reconquête n'avait pas de députés lors des scrutins n° 3461 et n° 988. Sa seule eurodéputée, Sarah Knafo, s'est abstenue sur la résolution du PE du 12 mars 2025 appelant les États à accroître leur aide militaire à l'Ukraine. Pas de déclaration récente d'Éric Zemmour identifiée sur les livraisons d'armes.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Continuing the unwavering EU support for Ukraine, after three years of Russia's war of aggression » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172663",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 12 mars 2025 sur le soutien à l'Ukraine (appel à « substantially increase and accelerate their military support »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1807133",
+          "date": "2025-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": 2,
+      "justification": "Gabriel Attal défend la poursuite de l'aide à l'Ukraine et a critiqué la proposition de Marine Le Pen d'y mettre fin (octobre 2026) ; le groupe a voté pour l'accord de sécurité (n° 3461 : 169 pour) et pour la résolution n° 988 (EPR : 81 pour).",
+      "sources": [
+        {
+          "title": "Franceinfo, « Le RN a \"toujours défendu les intérêts de la Russie\" (Gabriel Attal) »",
+          "url": "https://www.franceinfo.fr/politique/le-rn-a-toujours-defendu-les-interets-de-la-russie-gabriel-attal_8238646.html",
+          "date": "2026-10-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -1,
+      "justification": "Marine Le Pen a annoncé le 14 octobre 2026 (VRT) que, si elle était élue, l'aide serait maintenue six mois, puis « nous cesserons l'aide financière à l'Ukraine car nous n'avons plus les moyens de le faire » ; elle n'a pas précisé le sort des livraisons d'armes. Le groupe s'était abstenu sur l'accord de sécurité (n° 3461 : 88 abstentions) et sur la résolution n° 988 (114 abstentions).",
+      "sources": [
+        {
+          "title": "Euronews, « Marine Le Pen prête à débattre avec Zelensky après avoir promis de couper l'aide française »",
+          "url": "https://fr.euronews.com/2026/10/16/marine-le-pen-prete-a-debattre-avec-zelensky-apres-avoir-promis-de-couper-laide-francaise-",
+          "date": "2026-10-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Paris Match Belgique (Belga), « Si elle arrive à l'Élysée, Marine Le Pen promet de couper l'aide à l'Ukraine »",
+          "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/",
+          "date": "2026-10-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : scrutin n° 3461 du 12/03/2024 (accord de sécurité franco-ukrainien, qui comprenait une aide militaire), complété par le scrutin n° 988 du 12/03/2025 et la résolution du PE du 12/03/2025. Incertitudes : (1) RN codé -1 et non 0 parce que la candidate (rang le plus élevé de la hiérarchie) annonce l'arrêt de « l'aide financière » après six mois ; les articles ne disent pas si les livraisons d'armes sont incluses (Business AM indique qu'elle n'exclut pas la formation militaire). En s'en tenant au seul vote du groupe (abstention), on coderait 0. (2) LFI et PCF codés -1 et non -2 : les deux votes du groupe sont contre (ce qui donnerait -2 par la règle), mais le programme NFP 2024 prévoyait la « livraison d'armes nécessaires » et Roussel acceptait en 2024 des « armes de défense ». Aucune déclaration 2025-2026 des candidats sur les livraisons d'armes n'a été trouvée. (3) Reconquête codé 0 sur la seule abstention de Sarah Knafo au PE ; à revoir si Zemmour s'exprime. (4) Nouvelle Énergie : null, pas de groupe ni d'eurodéputé. Texte help : pas d'erreur relevée. Vérification croisée (03/11/2026) : scrutins n° 3461 et n° 988 rouverts sur Datan et article Euronews du 16/10/2026 ouvert (citation de Marine Le Pen sur l'« aide financière » et réaction d'Édouard Philippe conformes). Valeurs inchangées. Aucune déclaration récente d'Éric Zemmour sur les livraisons d'armes trouvée."
+}

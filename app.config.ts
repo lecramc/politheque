@@ -53,7 +53,7 @@ export default ({ config }: ConfigContext): ExpoConfig & { newArchEnabled?: bool
     },
     android: {
       adaptiveIcon: {
-        foregroundImage: './assets/images/adaptive-icon.png',
+        foregroundImage: './assets/images/android-icon-foreground.png',
         backgroundColor: '#ffffff',
       },
       package: envConfig.androidPackage,

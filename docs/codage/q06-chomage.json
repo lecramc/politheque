@@ -1,0 +1,221 @@
+{
+  "question": "q06-chomage",
+  "positions": {
+    "lfi": {
+      "stance": -2,
+      "justification": "LFI propose d'abroger les réformes de l'assurance chômage (3 Md€) ; le groupe a voté contre la loi de juin 2026 réduisant l'indemnisation après rupture conventionnelle (2 juin 2026 : 63 contre) et pour la suppression de son article unique en première lecture (16 avril 2026 : 53 pour).",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Le contrat du NFP, signé par Les Écologistes, prévoit l'abrogation des réformes de l'assurance chômage ; le groupe a voté contre la loi de juin 2026 (2 juin 2026 : 14 contre) et pour la suppression de son article unique (16 avril 2026 : 18 pour).",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": -2,
+      "justification": "Le programme 2022 de Fabien Roussel prévoyait l'abrogation de la réforme de l'assurance chômage ; le groupe GDR a voté contre la loi de juin 2026 (2 juin 2026 : 17 contre, 0 pour).",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 0,
+      "justification": "Le groupe Socialistes s'est majoritairement abstenu sur la loi de juin 2026 (2 juin 2026 : 37 abstentions, 18 contre, 1 pour) et en première lecture (16 avril 2026 : 8 abstentions). Pas de position de Raphaël Glucksmann identifiée sur l'assurance chômage.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
+          "kind": "vote"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": 2,
+      "justification": "Gabriel Attal propose de « réformer l'assurance chômage et réaliser cinq milliards d'économies » et envisage « le durcissement des règles de l'assurance chômage » pour financer la baisse des charges ; le groupe EPR a voté la loi de juin 2026 (87 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président (mesure 85)",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 2,
+      "justification": "Édouard Philippe propose de « réduire à 12 mois maximum la durée d'indemnisation chômage pour les moins de 50 ans » (contre 18 mois aujourd'hui) ; le groupe Horizons a voté la loi de juin 2026 (30 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Pour une France plus prospère — Avec Édouard 2027",
+          "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Euronews, « Présidentielle 2027 : Édouard Philippe mise sur le travail et la réduction des dépenses publiques »",
+          "url": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
+          "date": "2026-10-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "LR propose de limiter l'indemnisation après rupture conventionnelle à six mois, de la plafonner et d'aligner l'indemnisation des frontaliers (environ 13 Md€ d'économies annoncées) ; le groupe Droite républicaine a voté la loi de juin 2026 (44 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « \"La fête est finie\" : Bruno Retailleau veut supprimer les 35 heures, inciter à la reprise d'activité et plafonner les aides sociales »",
+          "url": "https://www.publicsenat.fr/actualites/politique/la-fete-est-finie-bruno-retailleau-veut-supprimer-les-35-heures-inciter-a-la-reprise-dactivite-et-plafonner-les-aides-sociales-pour-relancer-lemploi",
+          "date": "2026-01-07",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 1,
+      "justification": "Le groupe RN a voté unanimement la loi de juin 2026 qui réduit la durée d'indemnisation après une rupture conventionnelle et transpose un accord des partenaires sociaux (2 juin 2026 : 115 pour), et contre la suppression de son article unique (16 avril 2026 : 10 contre). Marine Le Pen s'était en revanche opposée aux durcissements précédents : la réforme de 2019 était « encore un coup de rabot » et, en mars 2020, « il faut suspendre d'urgence la réforme d'indemnisation du chômage ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
+          "kind": "vote"
+        },
+        {
+          "title": "Public Sénat, « Assurance chômage : Le Pen dénonce un \"nouveau coup de rabot\" de la protection sociale »",
+          "url": "https://www.publicsenat.fr/actualites/politique/assurance-chomage-le-pen-denonce-un-nouveau-coup-de-rabot-de-la-protection-sociale",
+          "date": "2019-06-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Coronavirus : Marine Le Pen demande à son tour de \"mettre fin\" à la réforme de l'assurance chômage »",
+          "url": "https://www.publicsenat.fr/actualites/politique/coronavirus-marine-le-pen-demande-a-son-tour-de-mettre-fin-a-la-reforme-de-l",
+          "date": "2020-03-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 1,
+      "justification": "David Lisnard se dit favorable à la dégressivité des allocations chômage, associée à la formation (Sud Radio, 29 février 2024), et propose une allocation unique plafonnée pour qu'un salarié à temps plein gagne « au moins 500 € de plus » qu'une personne sans emploi. Pas de groupe à l'Assemblée.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – « Quel candidat veut réformer l'assurance chômage ? »",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reformer-l-assurance-chomage/",
+          "date": "2026-11",
+          "kind": "declaration"
+        },
+        {
+          "title": "Nouvelle Énergie – « Quel candidat veut regrouper les aides sociales en une allocation unique ? »",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique/",
+          "date": "2026-11",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": null,
+      "justification": "Pas de position identifiée sur les règles de l'assurance chômage : les propositions de Reconquête portent sur le RSA et les prestations non contributives (limitation aux Français, RSA limité à trois ans), qui ne relèvent pas de l'assurance chômage. Pas de groupe à l'Assemblée.",
+      "sources": []
+    }
+  },
+  "notes": "Texte de référence commun : scrutin n° 7260 du 02/06/2026 (loi transposant l'avenant n° 3 sur l'assurance chômage, qui réduit à 15 mois la durée maximale d'indemnisation après rupture conventionnelle pour les moins de 55 ans en métropole), complété par le n° 6283 (16/04/2026). Recodages par rapport aux anciennes fiches : Reconquête passe de 2 à null (l'ancien codage reposait sur le RSA, hors champ de l'énoncé v2) ; RN passe de null à 2 sur la base du vote très majoritaire du groupe (règle du brief). RN : à surveiller, le texte transposait un accord des partenaires sociaux et le RN n'a pas de proposition programmatique de durcissement ; un -1/+1 serait discutable si une déclaration contraire de Marine Le Pen ou de Jordan Bardella apparaît. Nouvelle Énergie : sources hébergées par le parti uniquement (pas de source indépendante). PS-PP : 0 par abstention majoritaire du groupe (groupe partagé : 37 abstentions, 18 contre). Texte help : vérifié pour les 15 mois (moins de 55 ans, métropole, ruptures conventionnelles conclues depuis le 01/09/2026, TPE Actu 06/08/2026) ; la loi date bien de juin 2026 (adoption définitive le 02/06/2026). Vérification croisée (03/11/2026) : scrutins n° 7260 et n° 6283 rouverts sur Datan, chiffres conformes. RN : 2→1. Le vote de 2026 (très majoritairement pour) porte sur un durcissement ciblé issu d'un accord des partenaires sociaux ; Marine Le Pen s'est explicitement opposée aux durcissements généraux de 2019 et 2020 (et, selon Europe 1, a qualifié d'« escroquerie » le projet Attal de 2024, page inaccessible). Ces déclarations sont antérieures à 2025 et ne priment donc pas sur le vote, mais elles constituent une nuance explicite : « plutôt favorable ». Aucune déclaration 2025-2026 de Marine Le Pen ou de Jordan Bardella sur les règles de l'assurance chômage n'a été trouvée."
+}

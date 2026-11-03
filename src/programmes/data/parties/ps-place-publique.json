@@ -1,10 +1,10 @@
 {
   "id": "ps-place-publique",
-  "name": "Place publique – PS (primaire de la gauche)",
+  "name": "Parti socialiste – Place publique",
   "shortName": "PS-PP",
   "color": "#E4467C",
-  "family": "Centre gauche, social-démocratie",
-  "description": "Raphaël Glucksmann, député européen et cofondateur de Place publique (2018), a remporté le 11 octobre 2026 dès le premier tour la primaire organisée par le Parti socialiste, Place publique et la Gauche républicaine et socialiste (GRS), avec 66,17 % des voix selon Public Sénat et Euronews (66,13 % dans la proclamation initiale reprise par l'AFP), devant Olivier Faure (14,46 % selon Public Sénat). Il est le premier candidat soutenu par le PS à la présidentielle à ne pas être issu de ses rangs ; le PS met à sa disposition ses moyens militants et financiers. Aux européennes de 2024, la liste PS–Place publique « Réveiller l'Europe » qu'il conduisait a obtenu 13,83 % (13 sièges, résultats officiels publiés par le Parlement européen) ; à la présidentielle 2022, la candidate PS Anne Hidalgo avait obtenu 1,75 % (Conseil constitutionnel).",
+  "family": "Gauche (social-démocratie ; presse et ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur pour le PS comme pour Place publique ; le PS se réclame du « socialisme démocratique » et ne conteste pas cette étiquette)",
+  "description": "Le Parti socialiste (fondé en 1969, dirigé par Olivier Faure) et Place publique (fondé en 2018 par Raphaël Glucksmann) ont organisé avec la Gauche républicaine et socialiste (GRS) une primaire commune pour 2027. Anne Hidalgo (PS) avait obtenu 1,75 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux européennes de 2024, la liste PS–Place publique conduite par Raphaël Glucksmann a obtenu 13,83 %. À l'Assemblée, le groupe Socialistes et apparentés compte 68 députés (novembre 2026, selon Datan). Raphaël Glucksmann, député européen, a remporté la primaire dès le premier tour le 11 octobre 2026 ; il est le premier candidat soutenu par le PS à la présidentielle à ne pas être issu de ses rangs.",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "Parti socialiste : 1969 (congrès d'Alfortville), refondé au congrès d'Épinay en 1971, héritier de la SFIO (1905) ; Place publique : 2018",
@@ -206,7 +206,7 @@
       },
       {
         "date": "2012-05-06",
-        "event": "François Hollande est élu président de la République avec 18 000 668 voix, soit 51,64 % des suffrages exprimés proclamés par le Conseil constitutionnel (51,63 % selon Larousse, écart d'arrondi) ; le PS obtient ensuite la majorité absolue à l'Assemblée.",
+        "event": "François Hollande est élu président de la République avec 18 000 668 voix, soit 51,64 % des suffrages exprimés proclamés par le Conseil constitutionnel ; le PS obtient ensuite la majorité absolue à l'Assemblée.",
         "sources": [
           {
             "title": "Conseil constitutionnel – Décision n° 2012-154 PDR du 10 mai 2012 (proclamation des résultats de l'élection présidentielle)",
@@ -530,7 +530,7 @@
       },
       {
         "name": "Olivier Faure",
-        "role": "Premier secrétaire depuis avril 2018 ; candidat à la primaire d'octobre 2026 (2e, environ 14 %)",
+        "role": "Premier secrétaire depuis avril 2018 ; candidat à la primaire d'octobre 2026 (2e, 14,46 %)",
         "background": "Adhérent du PS depuis l'âge de 16 ans, ancien responsable des jeunes rocardiens, il conseille Martine Aubry au ministère du Travail puis est directeur adjoint du cabinet de François Hollande, premier secrétaire, de 2000 à 2007. Député de Seine-et-Marne depuis 2012 et président du groupe socialiste (2016-2018), il engage le PS dans l'alliance avec LFI en 2022 puis dans le Nouveau Front populaire en 2024.",
         "sources": [
           {
@@ -561,7 +561,7 @@
       },
       {
         "name": "Raphaël Glucksmann",
-        "role": "Cofondateur de Place publique (2018), tête de liste PS-Place publique aux européennes de 2019 et 2024 ; vainqueur de la primaire d'octobre 2026",
+        "role": "Cofondateur de Place publique (2018), tête de liste PS-Place publique aux européennes de 2019 et 2024 ; vainqueur de la primaire d'octobre 2026, candidat investi pour 2027",
         "background": "Fils du philosophe André Glucksmann (ancien maoïste), diplômé de Sciences Po, documentariste et essayiste, il est de 2008 ou 2009 (selon les sources) à 2012 conseiller du président géorgien Mikheil Saakachvili, chargé notamment des réformes liées à l'intégration européenne. En 2017, il coécrit un discours de Benoît Hamon avant de fonder Place publique.",
         "sources": [
           {
@@ -712,48 +712,36 @@
   "stances": {
     "q01-isf": {
       "stance": 2,
-      "justification": "A fait de la « taxe Zucman » la « base de tout accord » en 2025 et propose en 2026 de taxer davantage les « méga-héritages ». Le groupe Socialistes a voté pour la taxe Zucman le 31/10/2025 (scrutin n° 3300 : 61 pour, 0 contre).",
+      "justification": "Raphaël Glucksmann a fait de la taxe Zucman « la base de tout accord » de non-censure en septembre 2025. L'amendement rejeté le 16 octobre 2026 a été déposé par des députés socialistes ; le groupe a voté pour (31 octobre 2025 : 61 pour, 0 contre ; 16 octobre 2026 : 8 pour).",
       "sources": [
         {
-          "title": "Taxe Zucman : « la base de tout accord » pour Glucksmann, « une illusion » pour Larcher",
+          "title": "France 24 (AFP), « Taxe Zucman : \"la base de tout accord\" pour Glucksmann, \"une illusion\" pour Larcher »",
           "url": "https://www.france24.com/fr/info-en-continu/20250911-taxe-zucman-c-est-non-pour-larcher-la-base-de-tout-accord-pour-glucksmann",
           "date": "2025-09-11",
           "kind": "presse"
         },
         {
-          "title": "Fiscalité, école, immigration : ce que propose Raphaël Glucksmann",
-          "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
-          "date": "2026-08-24",
-          "kind": "presse"
-        },
-        {
-          "title": "Datan, scrutin n° 3300 du 31/10/2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros »",
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
           "url": "https://datan.fr/votes/legislature-17/vote_3300",
           "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
           "kind": "vote"
         }
       ]
     },
     "q02-depenses": {
       "stance": null,
-      "justification": "Pas de position publique explicite du candidat identifiée sur la priorité à donner à la baisse des dépenses publiques : il propose des dépenses nouvelles financées par la fiscalité des héritages et la réorientation des aides aux entreprises, sans s'être prononcé sur l'arbitrage dépenses / dette (position précédemment déduite de ses priorités, retirée conformément à la règle 4).",
+      "justification": "Pas de déclaration explicite du candidat sur la priorité à donner à la baisse des dépenses publiques : il propose des dépenses nouvelles financées par la fiscalité des héritages et la réorientation des aides aux entreprises, sans s'être prononcé sur l'arbitrage entre baisse des dépenses et réduction de la dette.",
       "sources": []
-    },
-    "q03-charges": {
-      "stance": -1,
-      "justification": "A qualifié les aides publiques aux entreprises de « 211 milliards de cadeaux fiscaux ou d'exonération » et annoncé vouloir les réduire et les « réorienter » (franceinfo, 29/09/2026) ; pas de déclaration identifiée sur les impôts de production ou le taux de l'impôt sur les sociétés.",
-      "sources": [
-        {
-          "title": "Que proposent les candidats à la présidentielle pour réduire la dette publique ?",
-          "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html",
-          "date": "2026-09-29",
-          "kind": "presse"
-        }
-      ]
     },
     "q04-retraite": {
       "stance": 1,
-      "justification": "Veut abroger la réforme de 2023 : « On ne pourra pas faire 60 ans, ce sera 62 ans » (débat du 4 octobre 2026) ; il souhaite aussi fonder la réforme sur la pénibilité et a indiqué que certains Français devront travailler plus longtemps, d'où la nuance.",
+      "justification": "Raphaël Glucksmann veut abroger la réforme de 2023 : « On ne pourra pas faire 60 ans, ce sera 62 ans » (débat de la primaire, 4 octobre 2026) ; il veut aussi fonder la réforme sur la pénibilité et a indiqué que certains Français devront travailler plus longtemps.",
       "sources": [
         {
           "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
@@ -777,16 +765,16 @@
     },
     "q05-smic": {
       "stance": 2,
-      "justification": "Promet un SMIC à 1 700 € net par mois (octobre 2026) ; en juin 2025, il proposait déjà de le porter à 1 600 € en deux ans.",
+      "justification": "Raphaël Glucksmann « promet lui aussi une revalorisation du SMIC à 1 700 euros net par mois » (octobre 2026) ; en juin 2025, il proposait 1 600 € en deux ans.",
       "sources": [
         {
-          "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
           "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
           "date": "2026-10-30",
           "kind": "presse"
         },
         {
-          "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
+          "title": "franceinfo, « À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa \"vision pour la France\" »",
           "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
           "date": "2025-06-23",
           "kind": "presse"
@@ -794,9 +782,22 @@
       ]
     },
     "q06-chomage": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur les règles de l'assurance chômage ou du RSA.",
-      "sources": []
+      "stance": 0,
+      "justification": "Le groupe Socialistes s'est majoritairement abstenu sur la loi de juin 2026 (2 juin 2026 : 37 abstentions, 18 contre, 1 pour) et en première lecture (16 avril 2026 : 8 abstentions). Pas de position de Raphaël Glucksmann identifiée sur l'assurance chômage.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
+          "kind": "vote"
+        }
+      ]
     },
     "q07-immigration": {
       "stance": null,
@@ -811,9 +812,22 @@
       ]
     },
     "q08-preference": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur la « préférence nationale » dans les sources consultées.",
-      "sources": []
+      "stance": -2,
+      "justification": "Le groupe Socialistes a voté contre l'amendement RN de « préférence nationale » dans le logement social (scrutin n° 4960 du 12 janvier 2026 : 6 contre, aucun pour). Raphaël Glucksmann ne s'est pas exprimé sur ce point.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
+        }
+      ]
     },
     "q09-regularisation": {
       "stance": 2,
@@ -829,7 +843,7 @@
     },
     "q10-peines-planchers": {
       "stance": -1,
-      "justification": "Pas de déclaration du candidat identifiée. Le groupe Socialistes a voté pour l'amendement de suppression de l'article instaurant une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (forme de peines planchers) dans la proposition de loi « Restaurer l'autorité de l'État » (vote n° 1263 du 03/04/2025 : 5 pour sur 5 députés socialistes votants) ; participation faible et vote sur un amendement, d'où « plutôt défavorable ».",
+      "justification": "Pas de déclaration du candidat identifiée. Le groupe Socialistes a voté pour l'amendement de suppression de l'article instaurant une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (forme de peines planchers) dans la proposition de loi « Restaurer l'autorité de l'État » (vote n° 1263 du 3 avril 2025 : 5 pour sur 5 députés socialistes votants) ; il s'agit d'un vote sur un amendement, avec une faible participation.",
       "sources": [
         {
           "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
@@ -845,14 +859,9 @@
         }
       ]
     },
-    "q11-police": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur le contrôle indépendant de la police ou le récépissé.",
-      "sources": []
-    },
     "q12-nucleaire": {
       "stance": 1,
-      "justification": "Estime qu'il faut construire de nouveaux EPR, contrairement à Yannick Jadot, chargé de la planification écologique ; il reconnaît que « la question des nouveaux réacteurs nucléaires » reste « à discuter » entre eux (25/08/2026).",
+      "justification": "Estime qu'il faut construire de nouveaux EPR, contrairement à Yannick Jadot, chargé de la planification écologique ; il reconnaît que « la question des nouveaux réacteurs nucléaires » reste « à discuter » entre eux (25 août 2026).",
       "sources": [
         {
           "title": "Présidentielle 2027 : s'il gagne, Raphaël Glucksmann engagera « les 100 jours de la révolution écologique »",
@@ -888,7 +897,7 @@
     },
     "q14-normes-agricoles": {
       "stance": -2,
-      "justification": "Le groupe Socialistes a voté unanimement contre la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 0 pour, 65 contre).",
+      "justification": "Le groupe Socialistes a voté unanimement contre la loi Duplomb (scrutin n° 2957 du 8 juillet 2025 : 0 pour, 65 contre).",
       "sources": [
         {
           "title": "Datan – Vote final, proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (vote n° 2957)",
@@ -899,26 +908,32 @@
       ]
     },
     "q15-medecins": {
-      "stance": 1,
-      "justification": "Position du groupe Socialistes, pas du candidat : la proposition de loi Garot (PS) régulant l'installation des médecins a été adoptée le 07/05/2025 avec le vote favorable du groupe (vote n° 1607 : 26 pour, 1 contre). Aucune déclaration de Raphaël Glucksmann sur ce sujet n'a été identifiée.",
+      "stance": 2,
+      "justification": "La PPL est portée par le député PS Guillaume Garot, et le groupe a voté très majoritairement l'article 1er (vote n° 1214 : 50 pour, 1 contre) et le texte entier (vote n° 1607 : 26 pour, 1 contre). Raphaël Glucksmann ne s'est pas exprimé sur ce point.",
       "sources": [
         {
-          "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins",
-          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
           "date": "2025-05-07",
           "kind": "vote"
         },
         {
-          "title": "Datan – Proposition de loi visant à lutter contre les déserts médicaux, ensemble du texte (vote n° 1607)",
-          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "title": "LCP, « Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins »",
+          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
           "date": "2025-05-07",
-          "kind": "vote"
+          "kind": "presse"
         }
       ]
     },
     "q16-fin-de-vie": {
       "stance": 2,
-      "justification": "Position du groupe Socialistes, pas du candidat : le groupe a voté majoritairement pour la loi en lecture définitive (vote n° 8280 du 15/07/2026 : 57 pour, 4 contre, 6 abstentions), comme en deuxième lecture (25/02/2026 : 60 pour, 4 contre, 3 abstentions). Aucune déclaration de Raphaël Glucksmann sur le maintien de la loi n'a été identifiée.",
+      "justification": "Le groupe Socialistes a voté très majoritairement pour la loi en lecture définitive (vote n° 8280 : 57 pour, 6 abstentions, 4 contre). Raphaël Glucksmann ne s'est pas exprimé sur le maintien de la loi.",
       "sources": [
         {
           "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
@@ -936,77 +951,91 @@
     },
     "q17-ecole-privee": {
       "stance": 2,
-      "justification": "Propose d'appliquer le principe de mixité sociale à tous les établissements financés par le contribuable, « y compris donc le privé ».",
+      "justification": "Raphaël Glucksmann propose d'appliquer « le principe de mixité sociale à tous les établissements financés par le contribuable, y compris donc le privé » (24 mai 2026) ; le groupe Socialistes a soutenu la PPL n° 418 en commission (20 novembre 2024).",
       "sources": [
         {
           "title": "Glucksmann veut une convention citoyenne sur l'immigration",
           "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
           "date": "2026-05-24",
           "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
         }
       ]
     },
     "q18-ukraine": {
       "stance": 2,
-      "justification": "Veut renforcer l'aide à l'Ukraine, financée par les avoirs publics russes gelés (débat du 4 octobre 2026), mesure déjà inscrite dans le programme européen PS–Place publique de 2024.",
+      "justification": "Raphaël Glucksmann veut renforcer l'aide à l'Ukraine en la finançant par les avoirs russes gelés (débat du 4 octobre 2026) ; le groupe socialiste a voté pour l'accord de sécurité (n° 3461 : 31 pour) et pour la résolution n° 988 (46 pour).",
       "sources": [
         {
-          "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
+          "title": "LCP, « Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste »",
           "url": "https://lcp.fr/actualites/glucksmann-face-a-royal-divisions-sur-lfi-lycees-ce-qu-il-faut-retenir-du-dernier-debat",
           "date": "2026-10-05",
           "kind": "presse"
         },
         {
-          "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste Parti socialiste (PS) – Place publique (PP)",
-          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
-          "date": "2024-05",
-          "kind": "presse"
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "date": "2024-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "date": "2025-03-12",
+          "kind": "vote"
         }
       ]
     },
     "q19-droit-europeen": {
-      "stance": null,
-      "justification": "Pas de position publique du candidat identifiée sur la primauté du droit français ou européen en cas de conflit.",
-      "sources": []
+      "stance": -2,
+      "justification": "Les eurodéputés PS (3) et Place publique (2, dont Raphaël Glucksmann) ont voté pour la résolution du PE du 21 novembre 2023 réaffirmant la primauté du droit de l'Union.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 21 novembre 2023 sur la mise en œuvre du principe de primauté du droit de l'UE",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1766854",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
     },
     "q20-defense-europe": {
       "stance": 2,
-      "justification": "A proposé un fonds de défense européen de 100 Md€ que l'UE « pourrait » financer par un nouvel emprunt commun (programme des européennes 2024).",
+      "justification": "Le programme européen PS-Place publique de 2024 proposait un fonds européen de défense de 100 Md€ que l'UE pourrait financer par « un nouvel emprunt commun sur le modèle du plan de relance européen » ; les eurodéputés PS et Place publique ont voté pour la résolution du 12 mars 2025 (13 pour) et pour le prêt commun à l'Ukraine (11 février 2026 : 10 pour).",
       "sources": [
         {
-          "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
+          "title": "Toute l'Europe, « Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS-Place publique »",
           "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
           "date": "2024-05",
-          "kind": "presse"
-        }
-      ]
-    },
-    "q21-libre-echange": {
-      "stance": 1,
-      "justification": "A salué la saisine de la Cour de justice de l'UE qui suspend la ratification de l'accord UE-Mercosur (21/01/2026) ; son programme européen 2024 demandait d'exclure l'agriculture des accords de libre-échange. Pas de déclaration identifiée depuis l'application provisoire de l'accord (01/05/2026).",
-      "sources": [
-        {
-          "title": "Accord UE-Mercosur : le Parlement européen repousse la ratification du traité en saisissant la Cour de justice de l'UE",
-          "url": "https://www.touteleurope.eu/l-ue-dans-le-monde/accord-ue-mercosur-le-parlement-europeen-repousse-la-ratification-du-traite-en-saisissant-la-cour-de-justice-de-l-ue/",
-          "date": "2026-01-21",
           "kind": "presse"
         },
         {
-          "title": "Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste PS/Place publique",
-          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
-          "date": "2024-05",
-          "kind": "presse"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
         }
       ]
     },
-    "q22-vie-republique": {
-      "stance": null,
-      "justification": "Défend la proportionnelle et l'investiture du Premier ministre par l'Assemblée, mais pas de position identifiée sur un changement de Constitution (VIe République).",
-      "sources": []
-    },
     "q23-referendum": {
       "stance": null,
-      "justification": "Pas de position identifiée sur un référendum sur l'immigration ; le candidat propose à la place une convention citoyenne dont les conclusions seraient votées par le Parlement.",
+      "justification": "Pas de position explicite sur un référendum sur l'immigration. Raphaël Glucksmann propose à la place une convention citoyenne sur l'immigration, dont les propositions seraient votées par le Parlement (26 mai 2026), sans se prononcer sur le référendum.",
       "sources": []
     },
     "q24-proportionnelle": {
@@ -1020,15 +1049,249 @@
           "kind": "presse"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": -2,
+      "justification": "Raphaël Glucksmann propose de « taxer les méga-héritages », soit « les 1 % les plus gros », sans toucher à « 99 % des héritages », pour environ 15 Md€ reversés aux salariés via une baisse des prélèvements sur les salaires.",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Fiscalité, école, immigration : ce que propose Raphaël Glucksmann »",
+          "url": "https://www.publicsenat.fr/actualites/politique/fiscalite-ecole-immigration-ce-que-propose-raphael-glucksmann",
+          "date": "2026-08-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": 2,
+      "justification": "Le groupe Socialistes a voté pour la nationalisation d'ArcelorMittal France aux deux lectures (27 novembre 2025 : 28 pour, 1 abstention ; 11 juin 2026 : 25 pour). En juin 2025, avant ces votes, Raphaël Glucksmann avait jugé, selon des propos repris par François Ruffin et Clémence Guetté, que « la nationalisation n'est pas la solution » dans ce dossier précis, en privilégiant la conditionnalité des aides publiques ; il ne s'est pas exprimé depuis sur le texte voté.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "François Ruffin, « Glucksmann, Arcelor et le travail : un planneur politique » (cite un entretien au Monde)",
+          "url": "https://francoisruffin.fr/glucksmann-arcelor-et-le-travail-un-planneur-politique/",
+          "date": "2025-06-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Clémence Guetté, « Programme de Glucksmann : un autre Macron est possible »",
+          "url": "https://clemenceguette.fr/programme-de-glucksmann-un-autre-macron-est-possible/",
+          "date": "2025-06-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q27-temps-de-travail": {
+      "stance": -2,
+      "justification": "Le PS et Place publique ont signé en 2024 le contrat du Nouveau Front populaire, qui prévoit de rétablir la durée effective de 35 heures et de passer aux 32 heures dans les métiers pénibles ou de nuit. Raphaël Glucksmann ne s'est pas exprimé depuis sur la durée légale.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q28-prix-energie": {
+      "stance": null,
+      "justification": "Le groupe Socialistes s'est partagé : TVA à 5,5 % sur l'abonnement d'électricité en 2025 (17 pour, 14 abstentions, 1 contre), puis, le 2 novembre 2026, abstention majoritaire sur l'amendement LFI (1 pour, 2 abstentions) et vote contre l'amendement RN (2 contre). Pas de déclaration de Raphaël Glucksmann sur la TVA de l'électricité.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q29-cannabis": {
+      "stance": 1,
+      "justification": "En 2019, Raphaël Glucksmann a cosigné une tribune de plus de 70 personnalités appelant à une « légalisation encadrée » du cannabis. Le groupe socialiste a soutenu en janvier 2022 la proposition de loi de légalisation sous contrôle de l'État (5 voix contre l'amendement de suppression de l'article 1er). Pas de déclaration du candidat en 2025-2026.",
+      "sources": [
+        {
+          "title": "Public Sénat – Cannabis : 70 personnalités appellent à légaliser au nom du « pragmatisme »",
+          "url": "https://www.publicsenat.fr/actualites/politique/cannabis-70-personnalites-appellent-a-legaliser-au-nom-du-pragmatisme-142235",
+          "date": "2019-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": -2,
+      "justification": "Le groupe Socialistes a voté contre la suppression des ZFE le 28 mai 2025 (0 pour, 1 abstention, 17 contre) et pour la suppression de l'article abrogeant les ZFE le 8 octobre 2026 (20 pour, 0 contre) ; Gérard Leseul a qualifié l'abrogation d'« impasse ». Pas de déclaration de Raphaël Glucksmann.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": 2,
+      "justification": "Le groupe Socialiste, Écologiste et Républicain a voté contre la proposition de loi d'interdiction (Sénat, 18 février 2025 : 0 pour, 54 contre, 11 non-votants). Pas de déclaration de Raphaël Glucksmann sur le sport.",
+      "sources": [
+        {
+          "title": "Sénat – Scrutin n° 199, proposition de loi visant à assurer le respect du principe de laïcité dans le sport",
+          "url": "https://www.senat.fr/scrutin-public/2024/scr2024-199.html",
+          "date": "2025-02-18",
+          "kind": "vote"
+        },
+        {
+          "title": "Maire-info – Malgré de fortes dissensions, le Sénat adopte la proposition de loi pour la laïcité dans le sport",
+          "url": "https://maire-info.com/malgre-de-fortes-dissensions-le-senat-adopte-la-proposition-de-loi-pour-la-laicite-dans-le-sport-article2-29421",
+          "date": "2025-02-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": 2,
+      "justification": "Les eurodéputés PS et Place publique ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 (12 pour) et du 8 juillet 2026 (13 pour), ainsi que pour la stratégie d'élargissement de 2026 ; Raphaël Glucksmann défend de longue date l'adhésion de l'Ukraine.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Parlement européen, communiqué : la Commission doit ouvrir les groupes de chapitres de négociation d'adhésion « at the fastest pace possible »",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20250905IPR30174",
+          "date": "2025-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 8 juillet 2026 sur le rapport 2025 sur l'Ukraine (« Ukraine's future lies in the EU »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1908996",
+          "date": "2026-07-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": -2,
+      "justification": "Le programme européen PS-Place publique de 2024 demandait « la fin du droit de véto des Etats membres » ; ses eurodéputés ont voté pour la révision des traités du 22 novembre 2023 (5 pour), pour la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (12 pour) et pour la stratégie d'élargissement de 2026, qui demande davantage de majorité qualifiée.",
+      "sources": [
+        {
+          "title": "Toute l'Europe, « Élections européennes 2024 : le programme de Raphaël Glucksmann et de la liste Parti socialiste-Place publique »",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/elections-europeennes-2024-le-programme-de-raphael-glucksmann-et-de-la-liste-parti-socialiste-ps-place-publique-pp/",
+          "date": "2024-05",
+          "kind": "presse"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q34-mineurs": {
+      "stance": -2,
+      "justification": "Le groupe Socialistes a voté contre la proposition de loi Attal (13 mai 2025 : 0 pour, 62 contre). Pas de déclaration de Raphaël Glucksmann sur l'excuse de minorité.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
     }
   },
   "candidacies": {
     "presidentielle-2027": {
       "candidateName": "Raphaël Glucksmann",
       "status": "investi",
-      "statusLabel": "Candidat investi (primaire)",
-      "candidate": "Raphaël Glucksmann (déclaré le 2026-08-23 ; désigné le 2026-10-11 par la primaire organisée par le PS, Place publique et la GRS)",
-      "programmeStatus": "Programme présidentiel 2027 non publié à date (en cours de rédaction, une trentaine de groupes de travail selon franceinfo, 13/10/2026). Fiche fondée sur les déclarations du candidat (2025-2026), son livre « Nous avons encore envie » (mai 2026) tel que rapporté par la presse, le programme européen PS–Place publique 2024 et les votes du groupe Socialistes à l'Assemblée.",
+      "statusLabel": "Candidat investi",
+      "candidate": "Raphaël Glucksmann a déclaré sa candidature le 23 août 2026 ; il a été désigné le 11 octobre 2026 par la primaire organisée par le Parti socialiste, Place publique et la Gauche républicaine et socialiste (GRS), remportée dès le premier tour avec 66,17 % des voix selon Public Sénat, devant Olivier Faure (14,46 %). Le PS met à sa disposition ses moyens militants et financiers.",
+      "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026 (en cours de rédaction, une trentaine de groupes de travail selon franceinfo, 13 octobre 2026). Fiche fondée sur les déclarations du candidat (2025-2026), son livre « Nous avons encore envie » (mai 2026) tel que rapporté par la presse, le programme européen PS–Place publique 2024 et les votes du groupe Socialistes à l'Assemblée.",
       "themes": {
         "economie": {
           "summary": "Le candidat propose de rééquilibrer la fiscalité entre travail, capital et héritage, en taxant davantage les « méga-héritages » pour financer une hausse du salaire net. Il a défendu en 2025 la « taxe Zucman » et souhaite réorienter les aides publiques aux entreprises.",
@@ -1278,7 +1541,7 @@
               ]
             },
             {
-              "text": "Maintien du parc nucléaire et développement des renouvelables (« La France a besoin des deux ») ; favorable à de nouveaux EPR, point « qui reste à discuter » avec Yannick Jadot (25/08/2026).",
+              "text": "Maintien du parc nucléaire et développement des renouvelables (« La France a besoin des deux ») ; favorable à de nouveaux EPR, point « qui reste à discuter » avec Yannick Jadot (25 août 2026).",
               "sources": [
                 {
                   "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
@@ -1336,7 +1599,7 @@
           ]
         },
         "sante": {
-          "summary": "Aucune proposition de santé du candidat n'a été identifiée à date. Les positions ci-dessous sont celles du groupe Socialistes à l'Assemblée (votes) et du programme européen 2024, et non des déclarations du candidat.",
+          "summary": "Aucune proposition de santé du candidat n'a été identifiée au 3 novembre 2026. Les positions ci-dessous sont celles du groupe Socialistes à l'Assemblée (votes) et du programme européen 2024, et non des déclarations du candidat.",
           "measures": [
             {
               "text": "Régulation de l'installation des médecins : proposition de loi transpartisane portée par le député PS Guillaume Garot, adoptée par l'Assemblée le 7 mai 2025 (99 pour, 9 contre, 10 abstentions ; groupe Socialistes : 26 pour, 1 contre).",
@@ -1356,7 +1619,7 @@
               ]
             },
             {
-              "text": "Aide à mourir : le groupe Socialistes a voté majoritairement pour la loi en lecture définitive (57 pour, 4 contre, 6 abstentions, 15/07/2026).",
+              "text": "Aide à mourir : le groupe Socialistes a voté majoritairement pour la loi en lecture définitive (57 pour, 4 contre, 6 abstentions, 15 juillet 2026).",
               "sources": [
                 {
                   "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
@@ -1494,7 +1757,7 @@
               ]
             },
             {
-              "text": "Soutien à la saisine de la Cour de justice de l'UE sur l'accord UE-Mercosur, votée par le Parlement européen le 21/01/2026 (« la mobilisation a payé »).",
+              "text": "Soutien à la saisine de la Cour de justice de l'UE sur l'accord UE-Mercosur, votée par le Parlement européen le 21 janvier 2026 (« la mobilisation a payé »).",
               "sources": [
                 {
                   "title": "Accord UE-Mercosur : le Parlement européen repousse la ratification du traité en saisissant la Cour de justice de l'UE",

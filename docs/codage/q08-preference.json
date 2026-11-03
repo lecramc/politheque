@@ -1,0 +1,216 @@
+{
+  "question": "q08-preference",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Le programme 2027 garantit l'accès des personnes exilées aux droits fondamentaux, et le contrat NFP (2024) l'accès aux services publics sans condition de nationalité ; le groupe Écologiste a voté contre l'amendement RN ajoutant la nationalité française aux critères d'accès au logement social (scrutin n° 4960 du 12 janvier 2026 : 3 contre).",
+      "sources": [
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 178",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -2,
+      "justification": "Le groupe Horizons a voté contre l'amendement RN ajoutant la nationalité française aux critères d'accès au logement social (scrutin n° 4960 du 12 janvier 2026 : 4 contre, aucun pour). Pas de déclaration d'Édouard Philippe ; son programme propose d'aligner les aides sociales des étrangers sur la moyenne européenne, mesure distincte.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 4960 du 12/01/2026, amendement n° 4 de M. Falcon (RN) intégrant la « préférence nationale » aux critères d'accès au logement social, PPL « Améliorer l'accès au logement des travailleurs des services publics » (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": -2,
+      "justification": "Le programme NFP soutenu par LFI garantit l'accès aux services publics « sans condition de nationalité » ; le groupe a voté contre l'amendement RN de « préférence nationale » dans le logement social (scrutin n° 4960 du 12 janvier 2026 : 5 contre).",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 0,
+      "justification": "Position intermédiaire : LR ne propose pas de réserver les aides aux Français, mais son livret Famille (mai 2026) prévoit que « les ressortissants étrangers devront justifier de cinq années de résidence en France et d'exercice d'une activité professionnelle » pour bénéficier pleinement des dispositifs familiaux, en précisant : « Ce n'est pas une mesure d'exclusion ». Le seul député DR présent s'est abstenu sur l'amendement RN de « préférence nationale » (scrutin n° 4960).",
+      "sources": [
+        {
+          "title": "Les Républicains, « Une politique pour toutes les familles de France » (livret Famille)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Famille_vFinale.pdf",
+          "date": "2026-05",
+          "kind": "programme"
+        },
+        {
+          "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+          "date": "2025-10-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 0,
+      "justification": "Position intermédiaire : le programme ne réserve pas les aides aux Français, mais réserve les prestations sociales non contributives aux étrangers résidant régulièrement en France depuis au moins cinq ans.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – Programme « Immigration » (page non datée, consultée en novembre 2026)",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Europe 1, « “Aujourd'hui en France, on dépouille les actifs au profit des inactifs”, dénonce David Lisnard »",
+          "url": "https://www.europe1.fr/politique/aujourdhui-en-france-on-depouille-les-actifs-au-profit-des-inactifs-denonce-david-lisnard-938960",
+          "date": "2026-05-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": -2,
+      "justification": "Le 40e congrès (2026) défend la solidarité « quelle que soit la nationalité » ; le sénateur communiste Pierre Ouzoulias a réagi à la proposition de Marine Le Pen (13 septembre 2026) : « La préférence nationale, c'est ce que Pétain a mis en place en 1940 ».",
+      "sources": [
+        {
+          "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
+          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": -2,
+      "justification": "Le groupe Socialistes a voté contre l'amendement RN de « préférence nationale » dans le logement social (scrutin n° 4960 du 12 janvier 2026 : 6 contre, aucun pour). Raphaël Glucksmann ne s'est pas exprimé sur ce point.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": 2,
+      "justification": "Le chiffrage budgétaire présenté par Sarah Knafo (2026) propose de réserver les aides non contributives aux Français ; le programme 2022 les supprimait pour les étrangers extra-européens.",
+      "sources": [
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        },
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Le groupe EPR a voté contre l'amendement RN de « préférence nationale » dans le logement social (scrutin n° 4960 du 12 janvier 2026 : 18 contre, aucun pour) ; la députée EPR Prisca Thévenot a contesté la proposition de Marine Le Pen en septembre 2026. Pas de déclaration de Gabriel Attal.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 2,
+      "justification": "Marine Le Pen a présenté le 13 septembre 2026 la « priorité nationale » comme « un droit naturel et juste » et veut « donner la priorité d'accès au logement social aux Français » et réserver les APL aux Français ; elle a cosigné l'amendement ajoutant « la détention de la nationalité française » aux critères d'attribution des logements sociaux, voté par le groupe RN (scrutin n° 4960 : 15 pour).",
+      "sources": [
+        {
+          "title": "Sud Radio (AFP), « Le Pen veut mettre la priorité nationale au centre d'un grand chantier sur le logement »",
+          "url": "https://www.sudradio.fr/societe/le-pen-veut-mettre-la-priorite-nationale-au-centre-dun-grand-chantier-sur-le-logement",
+          "date": "2026-09-13",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Amendement n° 4 (M. Falcon et autres, dont Mme Le Pen) à la PPL n° 1449, ajoutant « la détention de la nationalité française » aux critères d'attribution des logements sociaux (art. L. 441-1 du CCH)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1449/AN/4.pdf",
+          "date": "2026-01-12",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        },
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : scrutin public n° 4960 du 12/01/2026 (amendement n° 4 Falcon), vérifié sur assemblee-nationale.fr : le dispositif ajoute « la détention de la nationalité française » aux critères de l'article L. 441-1 du CCH ; Marine Le Pen en est cosignataire. Le résumé de Datan (priorité pour les travailleurs « du bien commun ») est inexact ; on cite donc l'Assemblée. Participation faible (60 votants) : HOR (4), ECOS (3), LFI (5), SOC (6) et DR (1) n'étaient représentés que par quelques députés, mais aucun n'a voté pour ; GDR et LIOT n'ont pas pris part au vote. LR et NE codés 0 (et non -1) : ils proposent une condition de durée de résidence pour les étrangers, mesure que des associations qualifient de « préférence nationale déguisée » mais qui n'est pas une priorité fondée sur la nationalité. LR est désormais sourcé par son livret Famille (mai 2026, consulté) ; la citation de Retailleau au Figaro du 01/07/2026 n'a été trouvée que sur un site d'avocats (non retrouvée sur lefigaro.fr) et n'est plus utilisée. NE : une page ÉlyséeScope (site de synthèse non fiable, sources « à vérifier ») attribue à David Lisnard une « priorité nationale pour le logement » ; non retenu faute de source primaire. HOR, RE, PS-PP : codés sur le seul vote de groupe faute de déclaration des candidats. Texte help : correct. Vérification croisée (3 novembre 2026) : dates converties, valeurs inchangées."
+}

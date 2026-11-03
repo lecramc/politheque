@@ -1,0 +1,214 @@
+{
+  "question": "q26-nationalisations",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Le groupe Écologiste et Social a voté pour la nationalisation d'ArcelorMittal France aux deux lectures (27 novembre 2025 : 18 pour ; 11 juin 2026 : 20 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : l'Assemblée vote en faveur de la nationalisation proposée par LFI »",
+          "url": "https://lcp.fr/actualites/arcelormittal-l-assemblee-vote-en-faveur-de-la-nationalisation-proposee-par-lfi-420504",
+          "date": "2025-11-28",
+          "kind": "presse"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -2,
+      "justification": "Le groupe Horizons & Indépendants a voté contre aux deux lectures (27 novembre 2025 : 10 contre ; 11 juin 2026 : 7 contre, 2 abstentions). Le député apparenté Sylvain Berrios a reproché à LFI de vendre « un faux espoir aux salariés ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : l'Assemblée vote en faveur de la nationalisation proposée par LFI »",
+          "url": "https://lcp.fr/actualites/arcelormittal-l-assemblee-vote-en-faveur-de-la-nationalisation-proposee-par-lfi-420504",
+          "date": "2025-11-28",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 2,
+      "justification": "La proposition de loi de nationalisation d'ArcelorMittal France a été déposée par le groupe LFI (Aurélie Trouvé), qui a voté pour aux deux lectures (27 novembre 2025 : 68 pour, 1 contre ; 11 juin 2026 : 45 pour).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, dossier législatif « Nationalisation d'ArcelorMittal France »",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/nationalisation_arcelormittal_2025",
+          "date": "2026-06",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -2,
+      "justification": "Le groupe Droite républicaine a voté contre aux deux lectures (27 novembre 2025 : 5 contre, 1 abstention ; 11 juin 2026 : 2 contre).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée de David Lisnard sur la nationalisation d'ArcelorMittal ou d'entreprises stratégiques. Nouvelle Énergie n'a pas de groupe à l'Assemblée.",
+      "sources": []
+    },
+    "pcf": {
+      "stance": 2,
+      "justification": "Le groupe GDR a voté pour aux deux lectures (27 novembre 2025 : 13 pour ; 11 juin 2026 : 16 pour) et a inscrit le texte dans sa niche en deuxième lecture (rapporteur Nicolas Sansu). Le programme 2022 du PCF prévoyait aussi des nationalisations (EDF, Engie, grandes banques).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Le groupe Socialistes a voté pour la nationalisation d'ArcelorMittal France aux deux lectures (27 novembre 2025 : 28 pour, 1 abstention ; 11 juin 2026 : 25 pour). En juin 2025, avant ces votes, Raphaël Glucksmann avait jugé, selon des propos repris par François Ruffin et Clémence Guetté, que « la nationalisation n'est pas la solution » dans ce dossier précis, en privilégiant la conditionnalité des aides publiques ; il ne s'est pas exprimé depuis sur le texte voté.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "François Ruffin, « Glucksmann, Arcelor et le travail : un planneur politique » (cite un entretien au Monde)",
+          "url": "https://francoisruffin.fr/glucksmann-arcelor-et-le-travail-un-planneur-politique/",
+          "date": "2025-06-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Clémence Guetté, « Programme de Glucksmann : un autre Macron est possible »",
+          "url": "https://clemenceguette.fr/programme-de-glucksmann-un-autre-macron-est-possible/",
+          "date": "2025-06-23",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": null,
+      "justification": "Pas de position publique identifiée d'Éric Zemmour ou de Reconquête sur la nationalisation d'ArcelorMittal. Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": []
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Le groupe EPR a voté contre aux deux lectures (27 novembre 2025 : 19 contre ; 11 juin 2026 : 30 contre). La députée EPR Marie Lebec : « L'État n'est pas un actionnaire magique » (11 juin 2026).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 0,
+      "justification": "Le groupe RN s'est abstenu aux deux lectures (27 novembre 2025 : 40 abstentions ; 11 juin 2026 : 45 abstentions). Il défend plutôt une « golden share » (action préférentielle de l'État) ; Jean-Philippe Tanguy présente la nationalisation comme « un outil de dernier recours ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : proposition de loi de nationalisation d'ArcelorMittal France, scrutins n° 4438 (27/11/2025) et n° 7380 (11/06/2026). L'énoncé est général (« les entreprises stratégiques menacées de fermeture »), mais seul ArcelorMittal a fait l'objet d'un vote. PS-PP codé null : vote du groupe pour, déclaration contraire du candidat (mai 2025, antérieure au texte) rapportée par une seule source partisane ; si l'entretien au Monde est confirmé, coder 0 ou -1 en mentionnant le vote du groupe ; sinon, appliquer le vote du groupe (2). Écologistes, PCF, LR, Horizons : fondés uniquement sur les votes de groupe (faible participation pour DR). Nouvelle Énergie et Reconquête : aucune déclaration trouvée (null), la proposition de questionnaire estimait 9/10 « par déclarations » mais rien n'a été identifié. Le texte help est exact : adoption à l'Assemblée le 27/11/2025, rejet au Sénat en février 2026 (le 25 ou le 26/02/2026 selon les sources ; la mention « février 2026 » reste juste), nouvelle adoption le 11/06/2026. Vérification croisée (03/11/2026) : scrutins n° 4438 et n° 7380 rouverts sur Datan, chiffres conformes. PS-PP : null→2. L'entretien original de Raphaël Glucksmann au Monde (juin 2025) n'a pas été retrouvé ; la citation n'est connue que par deux élus LFI ou proches (Ruffin, Guetté), sources partisanes. Faute de déclaration vérifiable du candidat, le vote du groupe s'applique (même règle que pour Écologistes, PCF, LR, Horizons), et la déclaration rapportée est mentionnée dans la justification. À revoir si l'entretien au Monde est retrouvé : coder alors selon la déclaration du candidat (0 ou -1). Nouvelle Énergie et Reconquête : aucune déclaration trouvée sur ArcelorMittal ou les nationalisations."
+}

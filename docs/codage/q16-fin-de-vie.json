@@ -1,0 +1,192 @@
+{
+  "question": "q16-fin-de-vie",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Le groupe a voté très majoritairement pour la loi en lecture définitive (vote n° 8280 du 15 juillet 2026 : 33 pour, 1 abstention, 2 contre) ; le programme prévoit la légalisation de l'aide active à mourir.",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 du 15/07/2026, proposition de loi relative au droit à l'aide à mourir, lecture définitive (adoptée par 291 voix contre 241)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 130",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": 2,
+      "justification": "Édouard Philippe est favorable à la loi et « ne reviendrait pas en arrière » (Europe 1, 1er juillet 2026), alors que le groupe Horizons a voté majoritairement contre en lecture définitive (vote n° 8280 : 16 pour, 18 contre, 1 abstention).",
+      "sources": [
+        {
+          "title": "Fin de vie : une réforme appelée à s'imposer durablement malgré les oppositions politiques",
+          "url": "https://www.europe1.fr/politique/fin-de-vie-une-reforme-appelee-a-simposer-durablement-malgre-les-oppositions-politiques-963783",
+          "date": "2026-07-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
+          "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
+          "date": "2026-02-25",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 2,
+      "justification": "Le groupe a voté très majoritairement pour la loi en lecture définitive (vote n° 8280 : 61 pour, 3 abstentions, 2 contre) ; « L'Avenir en commun » propose de constitutionnaliser le droit de mourir dans la dignité.",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 du 15/07/2026, proposition de loi relative au droit à l'aide à mourir, lecture définitive (adoptée par 291 voix contre 241)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "L'Avenir en commun (édition 2022), section 56 « Une nouvelle étape des libertés et de l'émancipation individuelle »",
+          "url": "https://laec.fr/section/56/une-nouvelle-etape-des-libertes-et-de-lemancipation-individuelle",
+          "date": "2021-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -1,
+      "justification": "Le groupe DR a voté très majoritairement contre la loi (vote n° 8280 : 41 contre, 5 pour, 2 abstentions) ; Bruno Retailleau ne promet pas d'abrogation directe mais envisage un référendum après « un bilan au bout d'un an ».",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+          "date": "2026-07-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Proposition de loi créant un droit à l'aide à mourir, vote n° 8280 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": -1,
+      "justification": "En janvier 2025, avant l'adoption de la loi, David Lisnard s'opposait à une loi sur l'euthanasie, « un basculement anthropologique majeur », et défendait la loi Claeys-Leonetti. Pas de position sur l'abrogation de la loi de 2026.",
+      "sources": [
+        {
+          "title": "Aleteia, « David Lisnard se confie sans détour sur sa foi » (reprise d'un entretien au Point du 12/01/2025)",
+          "url": "https://fr.aleteia.org/2025/01/18/david-lisnard-se-confie-sans-detour-sur-sa-foi/",
+          "date": "2025-01-18",
+          "kind": "presse"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 1,
+      "justification": "Le groupe GDR a voté majoritairement pour la loi, sans unanimité (vote n° 8280 : 10 pour, 3 abstentions, 2 contre). Pas de position officielle du PCF sur son maintien.",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 du 15/07/2026, proposition de loi relative au droit à l'aide à mourir, lecture définitive (adoptée par 291 voix contre 241)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Le groupe Socialistes a voté très majoritairement pour la loi en lecture définitive (vote n° 8280 : 57 pour, 6 abstentions, 4 contre). Raphaël Glucksmann ne s'est pas exprimé sur le maintien de la loi.",
+      "sources": [
+        {
+          "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
+          "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
+          "date": "2026-02-25",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": -2,
+      "justification": "Éric Zemmour s'est engagé à abroger la loi de 2026 (« J'abrogerai cette loi ») ; Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+          "date": "2026-07-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": 2,
+      "justification": "Gabriel Attal a voté pour la loi en lecture définitive, comme la majorité du groupe EPR (vote n° 8280 : 64 pour, 9 abstentions, 18 contre) ; aucune intention d'abrogation.",
+      "sources": [
+        {
+          "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
+          "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
+          "date": "2026-02-25",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -1,
+      "justification": "Le groupe RN a voté très majoritairement contre la loi (vote n° 8280 : 106 contre, 12 pour) et Marine Le Pen a voté contre, mais elle n'a pas annoncé d'abrogation (le porte-parole Laurent Jacobelli a dit ne pas vouloir « revenir sur toutes les lois »).",
+      "sources": [
+        {
+          "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        },
+        {
+          "title": "Présidentielle 2027 : les candidats hostiles à la loi sur la fin de vie vont-ils promettre de l'abroger ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
+          "date": "2026-07-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Aide à mourir : le RN au pouvoir ne reviendrait pas sur la loi mais serait « très vigilant » (L'Info Durable, AFP)",
+          "url": "https://www.linfodurable.fr/aide-mourir-le-rn-au-pouvoir-ne-reviendrait-pas-sur-la-loi-mais-serait-tres-vigilant-58089",
+          "date": "2026-07-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Proposition de loi créant un droit à l'aide à mourir, vote n° 8280 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
+        }
+      ]
+    }
+  },
+  "notes": "Décomptes par groupe du vote n° 8280 vérifiés sur Datan le 03/11/2026 (291 pour, 241 contre, 29 abstentions). LR et RN : le vote seul donnerait -2 ; on applique la hiérarchie (déclaration du candidat > vote) car aucun des deux candidats ne promet l'abrogation. HOR : contradiction candidat / groupe, signalée ; une seule source de presse pour la position du candidat (Europe 1). PCF : 67 % pour, codé 1 (et non 2) faute de vote « très majoritaire » et de position du parti. NE : position antérieure à la loi (janvier 2025). PS-PP et RE : candidats sans déclaration sur le maintien ; codage par le vote du groupe (et le vote personnel d'Attal). Texte help : « 291 voix contre 241 » conforme à Datan ; la décision du Conseil constitutionnel du 14/08/2026 n'a pas été revérifiée dans cette passe. Vérification croisée (3 novembre 2026) : HOR passe de 1 à 2 : la position explicite du candidat (« ne reviendrait pas en arrière ») l'emporte sur le vote du groupe, règle appliquée comme pour LR et RN (franceinfo, 17 juillet 2026, vérifié : Retailleau envisage de « demander aux Français de trancher », Le Pen sans engagement d'abrogation, Zemmour « J'abrogerai cette loi »). Texte help vérifié : décision n° 2026-910 DC du 14 août 2026, conformité sous trois réserves."
+}

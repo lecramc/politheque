@@ -3,8 +3,8 @@
   "name": "Parti communiste français",
   "shortName": "PCF",
   "color": "#DD0000",
-  "family": "Gauche (communiste)",
-  "description": "Parti fondé en 1920 (congrès de Tours), dirigé depuis 2018 par Fabien Roussel ; son 40e congrès s’est tenu à Lille du 3 au 5 juillet 2026. Fabien Roussel a obtenu 2,28 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel). Membre du Nouveau Front populaire en 2024, le PCF siège à l'Assemblée au sein du groupe Gauche démocrate et républicaine (GDR, 17 membres selon Datan), qui comprend aussi des élus ultramarins non communistes.",
+  "family": "Gauche (communiste ; gauche communiste ou radicale selon les ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame du communisme)",
+  "description": "Le Parti communiste français a été fondé en 1920 au congrès de Tours ; il est dirigé depuis 2018 par Fabien Roussel et a tenu son 40e congrès à Lille du 3 au 5 juillet 2026. Fabien Roussel a obtenu 2,28 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel). Membre du Nouveau Front populaire en 2024, le PCF siège à l'Assemblée au sein du groupe Gauche démocrate et républicaine (GDR), qui compte 17 députés (novembre 2026, selon Datan), dont des élus ultramarins non communistes. Fabien Roussel a été investi candidat par un vote des adhérents en septembre 2026.",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "1920 (congrès de Tours, sous le nom de Section française de l'Internationale communiste, SFIC) ; nom de Parti communiste français en 1943",
@@ -78,7 +78,7 @@
         ]
       },
       {
-        "text": "Les ouvrages de référence le classent à la gauche radicale (communisme) ; Wikipédia mentionne aussi un souverainisme de gauche et un euroscepticisme modéré, qualificatifs que Larousse n'emploie pas : il n'existe pas de classement unique au-delà de l'étiquette communiste.",
+        "text": "Les ouvrages de référence le classent à la gauche radicale (communisme) ; il n'existe pas de classement unique au-delà de l'étiquette communiste.",
         "sources": [
           {
             "title": "Wikipédia, « Parti communiste français »",
@@ -152,7 +152,7 @@
       },
       {
         "date": "1946-11",
-        "event": "Législatives : le PCF devient le premier parti de France avec 28,3 % à 28,6 % des suffrages selon les sources (182 sièges selon Wikipédia, 169 selon Larousse).",
+        "event": "Législatives : le PCF devient le premier parti de France avec 28,3 % à 28,6 % des suffrages selon les sources (de 169 à 182 sièges selon les décomptes).",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
@@ -380,7 +380,7 @@
       {
         "name": "Georges Marchais",
         "role": "Secrétaire général (1972-1994), candidat à la présidentielle de 1981 (15,34 %)",
-        "background": "Ouvrier ajusteur dans l'aéronautique, il travaille en Allemagne pendant l'Occupation (chez Messerschmitt selon Wikipédia en anglais) ; cette période donne lieu, après son arrivée à la tête du parti, à une polémique portée devant les tribunaux sur les conditions de ce départ. Syndicaliste CGT de la métallurgie, il adhère au PCF en 1947 ; il signe le Programme commun de 1972 et soutient en 1979 l'intervention soviétique en Afghanistan.",
+        "background": "Ouvrier ajusteur dans l'aéronautique, il travaille en Allemagne pendant l'Occupation ; cette période donne lieu, après son arrivée à la tête du parti, à une polémique portée devant les tribunaux sur les conditions de ce départ. Syndicaliste CGT de la métallurgie, il adhère au PCF en 1947 ; il signe le Programme commun de 1972 et soutient en 1979 l'intervention soviétique en Afghanistan.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Marchais Georges (1920-1997) »",
@@ -404,7 +404,7 @@
       },
       {
         "name": "Fabien Roussel",
-        "role": "Secrétaire national depuis novembre 2018, candidat à la présidentielle de 2022 (2,28 %)",
+        "role": "Secrétaire national depuis novembre 2018, candidat à la présidentielle de 2022 (2,28 %) ; candidat investi pour 2027",
         "background": "Fils d'un journaliste de L'Humanité et militant des Jeunes communistes, il devient en 1997 conseiller de la secrétaire d'État communiste Michelle Demessine, puis collaborateur des députés Jean-Jacques Candelier et Alain Bocquet, auquel il succède comme député du Nord (2017-2024). Il prend la tête du parti au 38e congrès (Ivry-sur-Seine, novembre 2018) en portant le texte « Manifeste pour un PCF du XXIe siècle », favorable à des candidatures communistes autonomes, arrivé en tête du vote des adhérents (42,1 %).",
         "sources": [
           {
@@ -476,7 +476,7 @@
         ]
       },
       {
-        "text": "La Résistance occupe une place centrale dans l'identité revendiquée : le parti, qui engage la lutte armée en 1941 (Front national, créé en mai 1941, puis FTPF dirigés par Charles Tillon à partir de 1942 selon Larousse), se présente à la Libération comme le « parti des 75 000 fusillés » (Hérodote mentionne aussi la formule des « 100 000 fusillés »). Ce chiffre est jugé exagéré (Wikipédia, Hérodote) ; les estimations alternatives varient selon les critères de comptage et aucune n'est retenue ici.",
+        "text": "La Résistance occupe une place centrale dans l'identité revendiquée : le parti, qui engage la lutte armée en 1941 (Front national, créé en mai 1941, puis FTPF dirigés par Charles Tillon à partir de 1942 selon Larousse), se présente à la Libération comme le « parti des 75 000 fusillés » (Hérodote mentionne aussi la formule des « 100 000 fusillés »). Ce chiffre est jugé exagéré (Hérodote) ; les estimations alternatives varient selon les critères de comptage et aucune n'est retenue ici.",
         "sources": [
           {
             "title": "Wikipédia, « Parti communiste français »",
@@ -526,19 +526,31 @@
   "stances": {
     "q01-isf": {
       "stance": 2,
-      "justification": "Le programme 2022 prévoit de tripler l'ISF ; le groupe GDR a voté pour l'impôt plancher de 2 % (scrutin n° 881 du 20/02/2025, 5 voix pour).",
+      "justification": "Le groupe GDR, où siègent les députés communistes, a voté pour la taxe Zucman à chaque scrutin (20 février 2025 ; 31 octobre 2025 : 12 pour ; 16 octobre 2026 : 2 pour). Le programme 2022 de Fabien Roussel prévoyait en outre de tripler l'ISF ; programme 2027 non publié.",
       "sources": [
+        {
+          "title": "Datan, scrutin n° 881 du 20 février 2025 : proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
+          "url": "https://datan.fr/votes/legislature-17/vote_881",
+          "date": "2025-02-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        },
         {
           "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
           "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
           "date": "2022-01",
           "kind": "programme"
-        },
-        {
-          "title": "Scrutin n° 881 du 20/02/2025, proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
-          "url": "https://datan.fr/votes/legislature-17/vote_881",
-          "date": "2025-02-20",
-          "kind": "vote"
         }
       ]
     },
@@ -554,27 +566,9 @@
         }
       ]
     },
-    "q03-charges": {
-      "stance": -2,
-      "justification": "Le programme 2022 prévoit la suppression du CICE et des exonérations jugées sans effet et un impôt sur les sociétés modulé à la hausse ; le congrès 2026 réaffirme la suppression des exonérations des grandes entreprises.",
-      "sources": [
-        {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
-          "date": "2022-01",
-          "kind": "programme"
-        },
-        {
-          "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        }
-      ]
-    },
     "q04-retraite": {
       "stance": 2,
-      "justification": "Retraite à 60 ans à taux plein (programme 2022, réaffirmée au congrès 2026).",
+      "justification": "Le PCF défend la retraite à 60 ans à taux plein (programme 2022, réaffirmée au 40e congrès de juillet 2026), ce qui inclut le retour à 62 ans.",
       "sources": [
         {
           "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
@@ -598,7 +592,7 @@
     },
     "q05-smic": {
       "stance": 2,
-      "justification": "SMIC à 1 500 € net dans le programme 2022 ; le NFP (2024), dont le PCF est signataire, prévoyait 1 600 € net.",
+      "justification": "Le programme 2022 de Fabien Roussel visait un SMIC à 1 500 € net et le contrat du NFP (2024), signé par le PCF, 1 600 € net ; en 2026, il réclame « une augmentation de 5 % pour l'ensemble des salaires et pensions inférieurs à 2 500 euros net par mois ». Programme 2027 non publié.",
       "sources": [
         {
           "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
@@ -607,27 +601,39 @@
           "kind": "programme"
         },
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
           "date": "2024-06",
           "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
+          "kind": "presse"
         }
       ]
     },
     "q06-chomage": {
       "stance": -2,
-      "justification": "Abrogation de la réforme de l'assurance chômage et ouverture du RSA aux moins de 25 ans (programme 2022) ; le groupe GDR a voté contre la transposition de l'avenant assurance chômage (scrutin n° 7260 du 02/06/2026).",
+      "justification": "Le programme 2022 de Fabien Roussel prévoyait l'abrogation de la réforme de l'assurance chômage ; le groupe GDR a voté contre la loi de juin 2026 (2 juin 2026 : 17 contre, 0 pour).",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
           "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
           "date": "2022-01",
           "kind": "programme"
         },
         {
-          "title": "Scrutin n° 7260 du 02/06/2026, projet de loi transposant l'avenant n° 3 au protocole d'accord sur l'assurance chômage, vote final",
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
           "url": "https://datan.fr/votes/legislature-17/vote_7260",
           "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
           "kind": "vote"
         }
       ]
@@ -652,7 +658,7 @@
     },
     "q08-preference": {
       "stance": -2,
-      "justification": "Le congrès 2026 défend la solidarité « quelle que soit la nationalité » ; le NFP (2024) garantit l'accès aux services publics sans condition de nationalité.",
+      "justification": "Le 40e congrès (2026) défend la solidarité « quelle que soit la nationalité » ; le sénateur communiste Pierre Ouzoulias a réagi à la proposition de Marine Le Pen (13 septembre 2026) : « La préférence nationale, c'est ce que Pétain a mis en place en 1940 ».",
       "sources": [
         {
           "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
@@ -661,10 +667,10 @@
           "kind": "programme"
         },
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
         }
       ]
     },
@@ -707,18 +713,6 @@
           "url": "https://www.europe1.fr/politique/peines-minimales-le-gouvernement-plaide-pour-la-gauche-sy-oppose-756857",
           "date": "2025-06-04",
           "kind": "presse"
-        }
-      ]
-    },
-    "q11-police": {
-      "stance": 2,
-      "justification": "Récépissé lors des contrôles d'identité et instance indépendante de contrôle de la police (programme 2022).",
-      "sources": [
-        {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
-          "date": "2022-01",
-          "kind": "programme"
         }
       ]
     },
@@ -766,7 +760,7 @@
     },
     "q14-normes-agricoles": {
       "stance": -2,
-      "justification": "Le groupe GDR a voté contre la loi Duplomb (scrutin n° 2957 du 08/07/2025, 17 voix contre).",
+      "justification": "Le groupe GDR a voté contre la loi Duplomb (scrutin n° 2957 du 8 juillet 2025, 17 voix contre).",
       "sources": [
         {
           "title": "Scrutin n° 2957 du 08/07/2025, loi Duplomb « lever les contraintes à l'exercice du métier d'agriculteur », vote final (texte de CMP)",
@@ -778,7 +772,7 @@
     },
     "q15-medecins": {
       "stance": 2,
-      "justification": "Conventionnement sélectif à l'installation (programme 2022) ; le groupe GDR a voté pour la PPL contre les déserts médicaux (scrutin n° 1607 du 07/05/2025, 7 voix pour).",
+      "justification": "Le programme 2022 prévoit un conventionnement sélectif à l'installation ; le groupe GDR a voté à l'unanimité l'article 1er de la PPL Garot (vote n° 1214 : 10 pour) et le texte entier (vote n° 1607 : 7 pour).",
       "sources": [
         {
           "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
@@ -787,7 +781,13 @@
           "kind": "programme"
         },
         {
-          "title": "Scrutin n° 1607 du 07/05/2025, proposition de loi transpartisane contre les déserts médicaux (régulation de l'installation), vote final en première lecture",
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
           "url": "https://datan.fr/votes/legislature-17/vote_1607",
           "date": "2025-05-07",
           "kind": "vote"
@@ -796,7 +796,7 @@
     },
     "q16-fin-de-vie": {
       "stance": 1,
-      "justification": "Le groupe GDR a voté majoritairement pour la loi sur l'aide à mourir en lecture définitive, sans unanimité (scrutin n° 8280 du 15/07/2026 : 10 pour, 3 abstentions, 2 contre). Pas de position officielle du PCF identifiée sur son maintien ou son abrogation.",
+      "justification": "Le groupe GDR a voté majoritairement pour la loi, sans unanimité (vote n° 8280 : 10 pour, 3 abstentions, 2 contre). Pas de position officielle du PCF sur son maintien.",
       "sources": [
         {
           "title": "Scrutin n° 8280 du 15/07/2026, proposition de loi relative au droit à l'aide à mourir, lecture définitive (adoptée par 291 voix contre 241)",
@@ -808,7 +808,7 @@
     },
     "q17-ecole-privee": {
       "stance": 2,
-      "justification": "Le contrat du NFP (2024), signé par le PCF, prévoit de moduler les dotations des établissements privés selon la mixité sociale. Pas de mesure spécifique identifiée dans les textes propres du PCF.",
+      "justification": "Le contrat du NFP (2024), signé par le PCF, prévoit de moduler les dotations des établissements privés selon la mixité sociale ; le groupe GDR a soutenu la PPL n° 418 en commission (20 novembre 2024).",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
@@ -821,51 +821,51 @@
           "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
           "date": "2024-07-08",
           "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
         }
       ]
     },
     "q18-ukraine": {
-      "stance": null,
-      "justification": "Signaux contradictoires : Fabien Roussel se disait favorable en mars 2024 à des « armes de défense » pour l'Ukraine (et le PCF a signé le programme NFP 2024 prévoyant la « livraison d'armes nécessaires »), mais le groupe GDR a voté contre l'accord de sécurité (scrutin n° 3461 du 12/03/2024) et contre la résolution appelant au renforcement du soutien (scrutin n° 988 du 12/03/2025), et le congrès 2026 prône une issue diplomatique fondée sur la neutralité de l'Ukraine. Position précédemment codée -1 ; ramenée à null faute de position explicite sur la poursuite du soutien militaire.",
+      "stance": -1,
+      "justification": "Le groupe GDR a voté contre l'accord de sécurité (scrutin n° 3461 : 22 contre) et majoritairement contre la résolution appelant au renforcement du soutien (scrutin n° 988 : 9 contre, 3 abstentions). Nuance : Fabien Roussel se disait favorable en mars 2024 à des « armes de défense » ; le congrès de 2026 met en avant une issue diplomatique. Le PCF n'a pas d'eurodéputé.",
       "sources": [
         {
-          "title": "Sud Radio, « Ukraine : \"Je ne veux pas que la France entre en guerre contre la Russie\", déclare Fabien Roussel »",
-          "url": "https://www.sudradio.fr/linvite-politique/ukraine-je-ne-veux-pas-que-la-france-entre-en-guerre-contre-la-russie-declare-fabien-roussel",
-          "date": "2024-03-07",
-          "kind": "declaration"
-        },
-        {
-          "title": "Scrutin n° 3461 du 12/03/2024, déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
           "url": "https://datan.fr/votes/legislature-16/vote_3461",
           "date": "2024-03-12",
           "kind": "vote"
         },
         {
-          "title": "Scrutin n° 988 du 12/03/2025, proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
           "url": "https://datan.fr/votes/legislature-17/vote_988",
           "date": "2025-03-12",
           "kind": "vote"
         },
         {
-          "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
+          "title": "Sud Radio, « Ukraine : \"Je ne veux pas que la France entre en guerre contre la Russie\", déclare Fabien Roussel »",
+          "url": "https://www.sudradio.fr/linvite-politique/ukraine-je-ne-veux-pas-que-la-france-entre-en-guerre-contre-la-russie-declare-fabien-roussel",
+          "date": "2024-03-07",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "q19-droit-europeen": {
+      "stance": 1,
+      "justification": "Le texte adopté au 40e congrès du PCF (juillet 2026) affirme que « les droits souverains des peuples européens doivent s'imposer aux décisions austéritaires et bellicistes prises par les institutions européennes », dans la perspective d'une « Europe de peuples et de nations libres, souverains et associés » : une primauté revendiquée sur certaines décisions européennes, pas une primauté générale du droit national. Le programme 2022 prévoyait déjà un « processus de rupture avec les traités européens actuels ».",
+      "sources": [
+        {
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
           "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
           "date": "2026-07-15",
           "kind": "programme"
         },
         {
-          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
-          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
-          "date": "2024-06-14",
-          "kind": "presse"
-        }
-      ]
-    },
-    "q19-droit-europeen": {
-      "stance": null,
-      "justification": "Le PCF veut rompre avec les traités européens actuels pour une « Union des nations souveraines », mais aucune position explicite sur la primauté du droit français sur le droit européen n'a été identifiée.",
-      "sources": [
-        {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
           "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
           "date": "2022-01",
           "kind": "programme"
@@ -874,61 +874,31 @@
     },
     "q20-defense-europe": {
       "stance": null,
-      "justification": "Le congrès 2026 s'oppose à la « militarisation de l'UE », à une armée européenne et à la « mutualisation des moyens sous commandement de l'OTAN », mais aucune position explicite sur un endettement commun de l'UE n'a été identifiée. Position précédemment déduite (-1), ramenée à null par cohérence avec les autres fiches.",
+      "justification": "Le texte du 40e congrès (juillet 2026) s'oppose à « la militarisation de l'UE » et aux « projets d'une armée européenne », mais ne se prononce pas explicitement sur un emprunt commun de l'UE pour la défense. Le PCF n'a pas d'eurodéputé.",
       "sources": [
         {
-          "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
           "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
           "date": "2026-07-15",
           "kind": "programme"
         }
       ]
     },
-    "q21-libre-echange": {
-      "stance": 2,
-      "justification": "Le programme 2022 prévoit de dénoncer les traités de libre-échange ; le groupe GDR a voté la motion de censure contre la signature de l'accord UE-Mercosur (scrutin n° 4986 du 14/01/2026, 13 voix pour).",
-      "sources": [
-        {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
-          "date": "2022-01",
-          "kind": "programme"
-        },
-        {
-          "title": "Scrutin n° 4986 du 14/01/2026, motion de censure déposée par LFI contre la signature de l'accord UE-Mercosur",
-          "url": "https://datan.fr/votes/legislature-17/vote_4986",
-          "date": "2026-01-14",
-          "kind": "vote"
-        }
-      ]
-    },
-    "q22-vie-republique": {
-      "stance": 2,
-      "justification": "Le PCF propose une « nouvelle République » où le président n'aurait qu'un rôle de représentation et ne serait plus élu au suffrage universel (programme 2022). Le NFP (2024) prévoit une 6e République.",
-      "sources": [
-        {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
-          "date": "2022-01",
-          "kind": "programme"
-        },
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        }
-      ]
-    },
     "q23-referendum": {
       "stance": -2,
-      "justification": "Le sénateur communiste Ian Brossat s'est félicité de l'échec de la proposition de LR d'étendre le référendum à l'immigration (« C'est un fiasco et tant mieux », décembre 2023). Position de 2023.",
+      "justification": "Ian Brossat, porte-parole du PCF, s'est félicité de l'échec de la proposition de LR d'étendre le référendum à l'immigration (« C'est un fiasco et tant mieux », décembre 2023). Le même mois, Fabien Roussel avait fait état d'un « consensus » à Saint-Denis sur la difficulté d'élargir le référendum aux sujets de société (17 novembre 2023). Positions de 2023.",
       "sources": [
         {
-          "title": "Public Sénat, « Référendum sur l'immigration : \"C'est un fiasco et tant mieux\", se félicite Ian Brossat »",
+          "title": "Public Sénat – Référendum sur l'immigration : « C'est un fiasco et tant mieux », se félicite Ian Brossat",
           "url": "https://www.publicsenat.fr/actualites/projet-de-loi-immigration/referendum-sur-limmigration-cest-un-fiasco-et-tant-mieux-se-felicite-ian-brossat-apres-les-revers-des-republicains",
           "date": "2023-12-08",
           "kind": "declaration"
+        },
+        {
+          "title": "Europe 1 – Rencontres de Saint-Denis : Emmanuel Macron évoque l'élargissement du référendum, avec de nombreux absents",
+          "url": "https://www.europe1.fr/politique/rencontres-de-saint-denis-emmanuel-macron-evoque-lelargissement-du-referendum-avec-de-nombreux-absents-4215037",
+          "date": "2023-11-17",
+          "kind": "presse"
         }
       ]
     },
@@ -949,6 +919,186 @@
           "kind": "programme"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": 0,
+      "justification": "Position intermédiaire explicite (2022) : Fabien Roussel proposait « zéro taxation » des héritages inférieurs à 118 000 € et, à l'inverse, une taxation élevée des hauts patrimoines. Programme 2027 non publié.",
+      "sources": [
+        {
+          "title": "France 24 (AFP), « Roussel promet \"zéro taxation\" en dessous de 118.000 euros d'héritage »",
+          "url": "https://www.france24.com/fr/info-en-continu/20220117-roussel-promet-z%C3%A9ro-taxation-en-dessous-de-118-000-euros-d-h%C3%A9ritage",
+          "date": "2022-01-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Boursorama (avec LabSense), « Succession : les propositions des candidats à la présidentielle »",
+          "url": "https://www.boursorama.com/impots/succession/actualites/succession-les-propositions-des-candidats-a-la-presidentielle-e3ba343c7ca1178adf2448b03b0b2aeb",
+          "date": "2022-02-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": 2,
+      "justification": "Le groupe GDR a voté pour aux deux lectures (27 novembre 2025 : 13 pour ; 11 juin 2026 : 16 pour) et a inscrit le texte dans sa niche en deuxième lecture (rapporteur Nicolas Sansu). Le programme 2022 du PCF prévoyait aussi des nationalisations (EDF, Engie, grandes banques).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q27-temps-de-travail": {
+      "stance": -2,
+      "justification": "Le programme de Fabien Roussel prévoit de « réduire le temps de travail à 32 heures sans baisse de salaire » (programme 2022, pas de programme 2027 publié) ; le PCF a aussi signé le contrat du NFP (2024).",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
+          "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
+          "date": "2022-01-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q28-prix-energie": {
+      "stance": 2,
+      "justification": "Le programme 2022 de Fabien Roussel prévoyait de fixer à 5,5 % la TVA sur les consommations d'énergie. Le groupe GDR a fait adopter la TVA à 5,5 % sur l'abonnement d'électricité (amendement d'Emmanuel Maurel, 20 novembre 2025) et a voté l'amendement LFI ramenant la TVA sur l'électricité à 5,5 % (2 novembre 2026 : 2 pour). Programme 2027 non publié.",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q29-cannabis": {
+      "stance": null,
+      "justification": "Positions divergentes : Fabien Roussel se disait en 2022 opposé à la légalisation mais plutôt favorable à la dépénalisation, alors que les députés communistes du groupe GDR ont soutenu la proposition de loi de légalisation sous contrôle de l'État en janvier 2022 et l'amendement de dépénalisation de l'usage en juillet 2026. Pas de déclaration récente du candidat.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
+          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "date": "2022-01-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": 0,
+      "justification": "Fabien Roussel a demandé en février 2023 un moratoire sur les ZFE (« Il faut un moratoire, il faut déplacer ces ZFE, il faut les décaler dans le temps »). Position de 2023. Les députés GDR ont voté le 8 octobre 2026 pour supprimer l'article abrogeant les ZFE (3 pour, 0 contre), et se sont abstenus le 14 avril 2026 sur l'amendement rendant les ZFE facultatives.",
+      "sources": [
+        {
+          "title": "Linfodurable (AFP) – Roussel (PCF) veut « revenir en arrière » sur les zones à faible émission",
+          "url": "https://www.linfodurable.fr/roussel-pcf-veut-revenir-en-arriere-sur-les-zones-faible-emission-37112",
+          "date": "2023-02-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": 0,
+      "justification": "Au Sénat (18 février 2025), le groupe CRCE-K, où siègent les sénateurs communistes, s'est majoritairement abstenu (12 abstentions, 6 contre, dont Ian Brossat et Fabien Gay). Fabien Roussel ne s'est pas exprimé sur le voile dans les compétitions sportives.",
+      "sources": [
+        {
+          "title": "Sénat – Scrutin n° 199, proposition de loi visant à assurer le respect du principe de laïcité dans le sport",
+          "url": "https://www.senat.fr/scrutin-public/2024/scr2024-199.html",
+          "date": "2025-02-18",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": -1,
+      "justification": "Fabien Roussel a déclaré le 25 février 2025 : « L'intégration de l'Ukraine dans l'Union européenne pose un problème, au moins pour protéger nos agriculteurs », l'Ukraine étant selon lui « la première menace » pour l'agriculture. Le texte du 40e congrès (juillet 2026) défend une issue fondée sur « l'indépendance et la neutralité » de l'Ukraine. Le PCF n'a pas d'eurodéputé.",
+      "sources": [
+        {
+          "title": "Public Sénat, « \"Pour l'agriculture, la première menace, c'est l'Ukraine\", affirme Fabien Roussel »",
+          "url": "https://www.publicsenat.fr/actualites/economie/pour-lagriculture-la-premiere-menace-cest-lukraine-affirme-fabien-roussel",
+          "date": "2025-02-25",
+          "kind": "presse"
+        },
+        {
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 31",
+          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": null,
+      "justification": "Le texte du 40e congrès (juillet 2026) défend une « Europe de peuples et de nations libres, souverains et associés » et des « coopérations à géométrie choisie au sein desquelles les peuples décident en toute souveraineté », mais ne se prononce pas explicitement sur le droit de veto ou l'unanimité. Le PCF n'a pas d'eurodéputé ; le groupe GDR n'a pas pris part aux votes de 2023 sur l'unanimité.",
+      "sources": [
+        {
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
+          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 3058 du 29 novembre 2023 (16e législature) : amendement n° 33 (LFI-NUPES) « Maintenir l'unanimité au Conseil des ministres de l'UE pour respecter la souveraineté des Etats », rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3058",
+          "date": "2023-11-29",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q34-mineurs": {
+      "stance": -2,
+      "justification": "Les députés du groupe GDR, où siègent les communistes, ont voté contre la proposition de loi Attal (13 mai 2025 : 0 pour, 13 contre).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
     }
   },
   "candidacies": {
@@ -956,8 +1106,8 @@
       "candidateName": "Fabien Roussel",
       "status": "investi",
       "statusLabel": "Candidat investi",
-      "candidate": "Fabien Roussel (statut : investi par un vote des adhérents du 3 au 6 septembre 2026, avec environ 72 % des voix selon LCP ; candidature annoncée le 2026-09-06)",
-      "programmeStatus": "Programme présidentiel 2027 non publié à date. Fiche fondée sur le programme présidentiel 2022 « La France des Jours heureux », sur la base commune adoptée au 40e congrès (juillet 2026), sur le contrat de législature du Nouveau Front populaire (2024) et sur les votes du groupe GDR. Les positions issues du programme 2022 sont signalées comme telles.",
+      "candidate": "Fabien Roussel a été investi par un vote des adhérents du 3 au 6 septembre 2026, avec environ 72 % des voix selon LCP, et a annoncé sa candidature le 6 septembre 2026.",
+      "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le programme présidentiel 2022 « La France des Jours heureux », sur la base commune adoptée au 40e congrès (juillet 2026), sur le contrat de législature du Nouveau Front populaire (2024) et sur les votes du groupe GDR. Les positions issues du programme 2022 sont signalées comme telles.",
       "themes": {
         "economie": {
           "summary": "Le PCF propose une fiscalité plus progressive visant les grandes fortunes et les grandes entreprises, la nationalisation de grandes banques et un contrôle des aides publiques aux entreprises. Le congrès de 2026 réaffirme l'imposition des grandes fortunes et la suppression des exonérations accordées aux grandes entreprises.",
@@ -1442,7 +1592,7 @@
           ]
         },
         "europe": {
-          "summary": "Le PCF veut rompre avec les traités européens actuels pour une « Union des peuples et des nations souverains », et s'oppose à la militarisation de l'UE. Sur l'Ukraine, il appelle à une solution négociée fondée sur la neutralité du pays ; le groupe GDR a voté contre les textes de soutien de 2024 et 2025.",
+          "summary": "Le PCF veut rompre avec les traités européens actuels pour « une Europe de peuples et de nations libres, souverains et associés » (congrès de 2026), et s'oppose à la militarisation de l'UE. Sur l'Ukraine, il appelle à une solution négociée fondée sur la neutralité du pays ; le groupe GDR a voté contre les textes de soutien de 2024 et 2025.",
           "measures": [
             {
               "text": "Engager un processus de rupture avec les traités européens et mettre fin au pacte de stabilité (programme 2022).",

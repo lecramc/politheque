@@ -3,8 +3,8 @@
   "name": "Rassemblement national",
   "shortName": "RN",
   "color": "#0D378A",
-  "family": "Extrême droite (qualification de la presse de référence et de nombreux politistes ; le parti récuse ce terme et se présente comme « national » et « patriote »)",
-  "description": "Parti fondé en 1972 sous le nom de Front national, renommé Rassemblement national en 2018 ; présidé par Jordan Bardella, réélu le 24 octobre 2026 au congrès d'Orléans. Marine Le Pen a obtenu 23,15 % au premier tour de la présidentielle 2022 ; aux législatives 2024, le RN et ses alliés ont recueilli 33,15 % au premier tour, et le groupe RN compte environ 122 députés. Le 7 juillet 2026, la cour d'appel de Paris a condamné Marine Le Pen pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN à 3 ans d'emprisonnement dont 2 avec sursis (1 an ferme aménageable sous bracelet électronique), 100 000 € d'amende et 45 mois d'inéligibilité dont 30 avec sursis ; la cour ayant considéré les 15 mois fermes comme exécutés depuis le jugement de première instance du 31 mars 2025 (assorti de l'exécution provisoire), elle est présentée comme éligible. Elle a formé un pourvoi en cassation : la Cour de cassation a indiqué le 8 juillet 2026 pouvoir statuer « au plus tard début avril 2027 », calendrier « susceptible d'évoluer », et des questions prioritaires de constitutionnalité doivent être examinées le 16 décembre 2026. L'effet du pourvoi est discuté : le procureur général près la Cour de cassation, Rémy Heitz, a déclaré le 9 juillet 2026 que le pourvoi « suspend l'exécution de l'arrêt », tandis que Didier Guérin, président de chambre honoraire à la Cour de cassation, a soutenu dans Le Monde le 27 octobre 2026 qu'elle serait « actuellement inéligible » (ses avocats l'ont signalé au Conseil supérieur de la magistrature). Marine Le Pen conteste sa condamnation. Jordan Bardella a déclaré qu'il serait le candidat du parti si Marine Le Pen était « empêchée ».",
+  "family": "Extrême droite (presse de référence, encyclopédies et nombreux politistes ; « droite radicale » ou « national-populisme » pour d'autres politistes ; bloc « extrême droite » du nuancier du ministère de l'Intérieur, rattachement jugé légal par le Conseil d'État le 11 mars 2024 ; le parti récuse ce terme et se présente comme « national » et « patriote »)",
+  "description": "Le Rassemblement national a été fondé en 1972 sous le nom de Front national et renommé en 2018 ; il est présidé par Jordan Bardella, réélu le 24 octobre 2026 au congrès d'Orléans. Marine Le Pen a obtenu 23,15 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux législatives de 2024, le RN et ses alliés ont recueilli 33,15 % au premier tour, et le groupe RN compte 121 députés (novembre 2026, selon Datan). Marine Le Pen a été condamnée en appel le 7 juillet 2026 pour détournement de fonds publics, notamment à une peine d'inéligibilité, et s'est pourvue en cassation ; voir le détail de la candidature.",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "1972 (sous le nom Front national ; renommé Rassemblement national en 2018)",
@@ -84,7 +84,7 @@
         ]
       },
       {
-        "text": "Certains politistes emploient aussi la catégorie de « droite radicale » : Gilles Ivaldi (CNRS, CEVIPOF) range Marine Le Pen parmi les « candidats de droite radicale » et qualifie son programme 2022 de « social-populisme » ; Wikipédia relève le rattachement fréquent du parti au courant « national-populiste ».",
+        "text": "Certains politistes emploient aussi la catégorie de « droite radicale » : Gilles Ivaldi (CNRS, CEVIPOF) range Marine Le Pen parmi les « candidats de droite radicale » et qualifie son programme 2022 de « social-populisme » ; d'autres le rattachent au courant « national-populiste ».",
         "sources": [
           {
             "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
@@ -229,7 +229,7 @@
       },
       {
         "date": "2024-06-09",
-        "event": "La liste RN conduite par Jordan Bardella arrive en tête des élections européennes en France (31,37 % selon les résultats de la soirée électorale, 31,5 % arrondi).",
+        "event": "La liste RN conduite par Jordan Bardella arrive en tête des élections européennes en France avec 31,37 % des suffrages exprimés.",
         "sources": [
           {
             "title": "Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième (Public Sénat)",
@@ -247,7 +247,7 @@
       },
       {
         "date": "2026-07-07",
-        "event": "La cour d'appel de Paris confirme la condamnation de Marine Le Pen pour détournement de fonds publics (assistants parlementaires européens du FN) : 3 ans d'emprisonnement dont 2 avec sursis, 100 000 € d'amende et 45 mois d'inéligibilité dont 30 avec sursis, contre cinq ans d'inéligibilité avec exécution provisoire en première instance (31 mars 2025). Les 15 mois fermes étant considérés comme exécutés, elle est présentée comme éligible ; elle forme un pourvoi en cassation, sur lequel la Cour de cassation indique pouvoir statuer « au plus tard début avril 2027 » (calendrier « susceptible d'évoluer ») ; des questions prioritaires de constitutionnalité doivent y être examinées le 16 décembre 2026.",
+        "event": "La cour d'appel de Paris confirme la culpabilité de Marine Le Pen pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN, avec des peines différentes de celles de la première instance ; elle forme un pourvoi en cassation (détail dans la fiche de candidature).",
         "sources": [
           {
             "title": "Marine Le Pen condamnée dans l'affaire des assistants parlementaires, reste éligible pour 2027 (LCP)",
@@ -469,8 +469,8 @@
       },
       {
         "name": "Marine Le Pen",
-        "role": "Présidente du FN puis du RN (2011-2021) ; candidate du parti à la présidentielle de 2022",
-        "background": "Fille de Jean-Marie Le Pen, née en 1968, avocate au barreau de Paris (1992), elle adhère au FN à 18 ans, en devient la responsable juridique (1994) et est élue conseillère régionale du Nord-Pas-de-Calais en 1998. Élue présidente au congrès de Tours (janvier 2011, 67,65 % des voix), elle engage la stratégie dite de « dédiabolisation » ; son père est exclu en 2015. Elle a été condamnée en appel le 7 juillet 2026 pour détournement de fonds publics (assistants parlementaires européens du FN) et s'est pourvue en cassation ; elle conteste sa condamnation.",
+        "role": "Présidente du FN puis du RN (2011-2021) ; candidate du parti à la présidentielle de 2022 ; candidate déclarée pour 2027",
+        "background": "Fille de Jean-Marie Le Pen, née en 1968, avocate au barreau de Paris (1992), elle adhère au FN à 18 ans, en devient la responsable juridique (1994) et est élue conseillère régionale du Nord-Pas-de-Calais en 1998. Élue présidente au congrès de Tours (janvier 2011, 67,65 % des voix), elle engage la stratégie dite de « dédiabolisation » ; son père est exclu en 2015.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Marine Le Pen »",
@@ -633,26 +633,32 @@
   },
   "stances": {
     "q01-isf": {
-      "stance": 0,
-      "justification": "Le RN propose de remplacer l'IFI par un « impôt sur la fortune financière » (4 Md€), mais son groupe a voté contre la taxe Zucman (scrutin n° 3300 du 31/10/2025, 88 contre) : position intermédiaire.",
+      "stance": -2,
+      "justification": "Marine Le Pen rejette la taxe Zucman : « Zucman non, ni hard, ni light, ni rien du tout » (X, 28 octobre 2025) ; le groupe RN a voté contre (31 octobre 2025 : 88 contre ; 16 octobre 2026 : 37 contre). Le RN propose à la place de remplacer l'IFI par un « impôt sur la fortune financière », qui n'est pas un impôt minimum sur les patrimoines de plus de 100 M€.",
       "sources": [
+        {
+          "title": "Brut, « Budget : le Rassemblement national s'opposera à la version allégée de la taxe Zucman proposée par le Parti socialiste »",
+          "url": "https://www.brut.media/fr/articles/france/politique/budget-le-rassemblement-national-sopposera-a-la-version-allegee-de-la-taxe-zucman-proposee-par-le-parti-socialiste",
+          "date": "2025-10-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
+          "kind": "vote"
+        },
         {
           "title": "Contre-budget 2026 du Rassemblement national",
           "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
           "date": "2025-10-23",
           "kind": "programme"
-        },
-        {
-          "title": "Scrutin n° 3300 – amendement taxe Zucman (PLF 2026)",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
-          "date": "2025-10-31",
-          "kind": "vote"
-        },
-        {
-          "title": "Taxe Zucman – amendement n° 2359 (PLF 2026), vote n° 3300 (Datan)",
-          "url": "https://datan.fr/votes/legislature-17/vote_3300",
-          "date": "2025-10-31",
-          "kind": "vote"
         }
       ]
     },
@@ -680,27 +686,9 @@
         }
       ]
     },
-    "q03-charges": {
-      "stance": 2,
-      "justification": "Le contre-budget 2026 prévoit 16,2 Md€ de baisse des impôts de production (CFE, C3S, CVAE).",
-      "sources": [
-        {
-          "title": "Contre-budget 2026 du Rassemblement national",
-          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
-          "date": "2025-10-23",
-          "kind": "programme"
-        },
-        {
-          "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
-          "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
-          "date": "2025-10-24",
-          "kind": "presse"
-        }
-      ]
-    },
     "q04-retraite": {
       "stance": 2,
-      "justification": "Le RN propose le retour à 62 ans (60 ans pour les carrières commencées avant 20 ans), réaffirmé par Marine Le Pen le 27 août 2026, et a voté la suspension de la réforme de 2023 (scrutin n° 3684 du 12/11/2025, 112 pour).",
+      "justification": "Marine Le Pen, candidate déclarée, propose le retour à 62 ans (60 ans pour les carrières commencées avant 20 ans), réaffirmé le 27 août 2026 ; le groupe RN a voté la suspension de la réforme de 2023 (scrutin n° 3684 du 12 novembre 2025, 112 pour).",
       "sources": [
         {
           "title": "Scrutin n° 3684 – article 45 bis du PLFSS 2026 (suspension de la réforme des retraites)",
@@ -724,42 +712,54 @@
     },
     "q05-smic": {
       "stance": -1,
-      "justification": "En 2024, Jordan Bardella a critiqué la hausse du SMIC proposée par le Nouveau Front populaire en estimant que « beaucoup (de patrons) ne pourront pas supporter une hausse des charges » ; le RN propose à la place d'exonérer de cotisations patronales les hausses de salaires de 10 % jusqu'à 3 SMIC. Position de 2024, pas de déclaration plus récente identifiée.",
+      "justification": "Selon Public Sénat (30 octobre 2026), Marine Le Pen « n'a jamais été favorable à une augmentation du SMIC », en invoquant son poids pour les entreprises ; le RN propose à la place d'exonérer de cotisations patronales les hausses de salaire jusqu'à 10 %. Le groupe RN a voté contre le SMIC à 1 500 € net (20 juillet 2022 : 69 contre, 1 abstention).",
       "sources": [
         {
-          "title": "Législatives 2024 : qui veut augmenter le SMIC ? (MoneyVox)",
-          "url": "https://www.moneyvox.fr/actu/98555/legislatives-2024-qui-veut-augmenter-le-smic",
-          "date": "2024-07-02",
+          "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+          "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+          "date": "2026-10-30",
           "kind": "presse"
         },
         {
-          "title": "Législatives 2024 : le grand oral des forces en présence devant le patronat (LCP)",
-          "url": "https://lcp.fr/actualites/legislatives-2024-salaires-fiscalite-finances-publiques-le-grand-oral-des-forces-en",
-          "date": "2024-06-20",
+          "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
+          "url": "https://datan.fr/votes/legislature-16/vote_44",
+          "date": "2022-07-20",
+          "kind": "vote"
+        },
+        {
+          "title": "MoneyVox, « Législatives 2024 : qui veut augmenter le SMIC ? »",
+          "url": "https://www.moneyvox.fr/actu/98555/legislatives-2024-qui-veut-augmenter-le-smic",
+          "date": "2024-07-02",
           "kind": "presse"
         }
       ]
     },
     "q06-chomage": {
-      "stance": null,
-      "justification": "Position non tranchée : le groupe RN a voté contre la loi « pour le plein emploi » qui conditionne le RSA à 15 heures d'activité (vote n° 2965 du 14/11/2023 : 49 contre), mais contre la suppression de l'article réduisant l'indemnisation chômage après une rupture conventionnelle (vote n° 6283 du 16/04/2026 : 10 contre la suppression). Pas de proposition programmatique identifiée sur ce point.",
+      "stance": 1,
+      "justification": "Le groupe RN a voté unanimement la loi de juin 2026 qui réduit la durée d'indemnisation après une rupture conventionnelle et transpose un accord des partenaires sociaux (2 juin 2026 : 115 pour), et contre la suppression de son article unique (16 avril 2026 : 10 contre). Marine Le Pen s'était en revanche opposée aux durcissements précédents : la réforme de 2019 était « encore un coup de rabot » et, en mars 2020, « il faut suspendre d'urgence la réforme d'indemnisation du chômage ».",
       "sources": [
         {
-          "title": "Projet de loi pour le plein emploi – vote n° 2965 du 14/11/2023 (Datan)",
-          "url": "https://datan.fr/votes/legislature-16/vote_2965",
-          "date": "2023-11-14",
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "date": "2026-06-02",
           "kind": "vote"
         },
         {
-          "title": "Projet de loi ruptures conventionnelles – amendement de suppression, vote n° 6283 du 16/04/2026 (Datan)",
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
           "url": "https://datan.fr/votes/legislature-17/vote_6283",
           "date": "2026-04-16",
           "kind": "vote"
         },
         {
-          "title": "Ruptures conventionnelles : l'Assemblée rejette la réduction de la durée d'indemnisation (LCP)",
-          "url": "https://lcp.fr/actualites/ruptures-conventionnelles-l-assemblee-rejette-la-reduction-de-la-duree-d-indemnisation",
-          "date": "2026-04-16",
+          "title": "Public Sénat, « Assurance chômage : Le Pen dénonce un \"nouveau coup de rabot\" de la protection sociale »",
+          "url": "https://www.publicsenat.fr/actualites/politique/assurance-chomage-le-pen-denonce-un-nouveau-coup-de-rabot-de-la-protection-sociale",
+          "date": "2019-06-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Coronavirus : Marine Le Pen demande à son tour de \"mettre fin\" à la réforme de l'assurance chômage »",
+          "url": "https://www.publicsenat.fr/actualites/politique/coronavirus-marine-le-pen-demande-a-son-tour-de-mettre-fin-a-la-reforme-de-l",
+          "date": "2020-03-13",
           "kind": "presse"
         }
       ]
@@ -784,25 +784,37 @@
     },
     "q08-preference": {
       "stance": 2,
-      "justification": "La « priorité nationale » pour l'emploi et le logement et la réservation des prestations de solidarité figurent au programme ; le contre-budget 2026 conditionne ces prestations à 5 ans de travail pour les étrangers.",
+      "justification": "Marine Le Pen a présenté le 13 septembre 2026 la « priorité nationale » comme « un droit naturel et juste » et veut « donner la priorité d'accès au logement social aux Français » et réserver les APL aux Français ; elle a cosigné l'amendement ajoutant « la détention de la nationalité française » aux critères d'attribution des logements sociaux, voté par le groupe RN (scrutin n° 4960 : 15 pour).",
       "sources": [
+        {
+          "title": "Sud Radio (AFP), « Le Pen veut mettre la priorité nationale au centre d'un grand chantier sur le logement »",
+          "url": "https://www.sudradio.fr/societe/le-pen-veut-mettre-la-priorite-nationale-au-centre-dun-grand-chantier-sur-le-logement",
+          "date": "2026-09-13",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP, « Réserver les logements HLM aux Français : la proposition de Marine Le Pen provoque une levée de boucliers »",
+          "url": "https://lcp.fr/actualites/reserver-les-logements-hlm-aux-francais-la-proposition-de-marine-le-pen-provoque-une",
+          "date": "2026-09-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Amendement n° 4 (M. Falcon et autres, dont Mme Le Pen) à la PPL n° 1449, ajoutant « la détention de la nationalité française » aux critères d'attribution des logements sociaux (art. L. 441-1 du CCH)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1449/AN/4.pdf",
+          "date": "2026-01-12",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
+        },
         {
           "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
           "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
           "date": "2022-03",
           "kind": "programme"
-        },
-        {
-          "title": "Contre-budget 2026 du Rassemblement national",
-          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
-          "date": "2025-10-23",
-          "kind": "programme"
-        },
-        {
-          "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
-          "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
-          "date": "2025-10-24",
-          "kind": "presse"
         }
       ]
     },
@@ -833,18 +845,6 @@
           "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
           "date": "2024-06-24",
           "kind": "presse"
-        }
-      ]
-    },
-    "q11-police": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée sur le récépissé ou un organe de contrôle indépendant de la police ; le groupe a voté contre un amendement exigeant un « élément objectif » pour les contrôles d'identité (vote n° 8174 du 10/07/2026, 11 contre), ce qui ne porte pas directement sur ces deux points. Le programme 2022 propose une « présomption de légitime défense » pour les forces de l'ordre.",
-      "sources": [
-        {
-          "title": "Amendement sur les conditions des contrôles d'identité – vote n° 8174 du 10/07/2026 (Datan)",
-          "url": "https://datan.fr/votes/legislature-17/vote_8174",
-          "date": "2026-07-10",
-          "kind": "vote"
         }
       ]
     },
@@ -898,7 +898,7 @@
     },
     "q14-normes-agricoles": {
       "stance": 2,
-      "justification": "Le groupe RN a voté la loi Duplomb (scrutin n° 2957 du 08/07/2025 : 119 pour, 0 contre) ; le programme 2024 prévoit une pause réglementaire sur les surtranspositions européennes.",
+      "justification": "Le groupe RN a voté la loi Duplomb (scrutin n° 2957 du 8 juillet 2025 : 119 pour, 0 contre) ; le programme 2024 prévoit une pause réglementaire sur les surtranspositions européennes.",
       "sources": [
         {
           "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
@@ -915,14 +915,20 @@
       ]
     },
     "q15-medecins": {
-      "stance": -1,
-      "justification": "Le groupe s'est abstenu sur la PPL Garot (07/05/2025), en souhaitant la suppression de son article 1 régulant l'installation ; le programme 2022 privilégie les incitations financières.",
+      "stance": -2,
+      "justification": "Le groupe RN a voté unanimement contre l'article 1er régulant l'installation (vote n° 1214 : 50 contre), son orateur dénonçant une « forme de coercition », puis s'est abstenu sur le texte entier (vote n° 1607 : 8 abstentions) ; le programme 2022 privilégie les incitations financières.",
       "sources": [
         {
-          "title": "Déserts médicaux : l'Assemblée adopte la proposition de loi qui prévoit de réguler l'installation des médecins (LCP)",
-          "url": "https://lcp.fr/actualites/deserts-medicaux-l-assemblee-adopte-la-proposition-de-loi-qui-prevoit-de-reguler-l",
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1607",
           "date": "2025-05-07",
-          "kind": "presse"
+          "kind": "vote"
         },
         {
           "title": "Projet pour la France de Marine Le Pen – livret « La santé »",
@@ -934,7 +940,7 @@
     },
     "q16-fin-de-vie": {
       "stance": -1,
-      "justification": "Le groupe a voté majoritairement contre la loi en lecture définitive (scrutin n° 8280 du 15/07/2026 : 106 contre, 12 pour, liberté de vote) ; Marine Le Pen a voté contre mais n'a pas annoncé d'abrogation (le porte-parole Laurent Jacobelli a dit ne pas vouloir « revenir sur toutes les lois »).",
+      "justification": "Le groupe RN a voté très majoritairement contre la loi (vote n° 8280 : 106 contre, 12 pour) et Marine Le Pen a voté contre, mais elle n'a pas annoncé d'abrogation (le porte-parole Laurent Jacobelli a dit ne pas vouloir « revenir sur toutes les lois »).",
       "sources": [
         {
           "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
@@ -963,91 +969,92 @@
       ]
     },
     "q17-ecole-privee": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée et sourcée sur le financement ou les obligations de mixité de l'enseignement privé sous contrat.",
-      "sources": []
-    },
-    "q18-ukraine": {
-      "stance": 0,
-      "justification": "Le groupe s'est abstenu sur l'accord de sécurité franco-ukrainien (vote n° 3461 du 12/03/2024, 88 abstentions) ; le RN exclut l'envoi de troupes, et en septembre 2026 Louis Aliot a proposé de « couper le robinet » tandis que Jordan Bardella promettait d'« honorer » les engagements de la France.",
+      "stance": -2,
+      "justification": "Lors de l'examen de la PPL n° 418 (20 novembre 2024), le groupe RN a déposé un amendement de suppression ; Arnaud Sanvert (RN) y a vu « une attaque contre l'enseignement privé sous contrat » et Roger Chudeau (RN) « une offensive organisée, méthodique, systématique de destruction de l'enseignement catholique » ; Roger Chudeau avait qualifié le rapport Vannier-Weissberg de « rapport à charge » (2 avril 2024).",
       "sources": [
         {
-          "title": "Déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien – vote n° 3461 (Datan)",
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        },
+        {
+          "title": "LCP, « Financement de l'enseignement privé sous contrat : un rapport parlementaire préconise de… » (présentation du rapport Vannier-Weissberg)",
+          "url": "https://lcp.fr/actualites/financement-de-l-enseignement-prive-sous-contrat-un-rapport-parlementaire-preconise-de",
+          "date": "2024-04-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q18-ukraine": {
+      "stance": -1,
+      "justification": "Marine Le Pen a annoncé le 14 octobre 2026 (VRT) que, si elle était élue, l'aide serait maintenue six mois, puis « nous cesserons l'aide financière à l'Ukraine car nous n'avons plus les moyens de le faire » ; elle n'a pas précisé le sort des livraisons d'armes. Le groupe s'était abstenu sur l'accord de sécurité (n° 3461 : 88 abstentions) et sur la résolution n° 988 (114 abstentions).",
+      "sources": [
+        {
+          "title": "Euronews, « Marine Le Pen prête à débattre avec Zelensky après avoir promis de couper l'aide française »",
+          "url": "https://fr.euronews.com/2026/10/16/marine-le-pen-prete-a-debattre-avec-zelensky-apres-avoir-promis-de-couper-laide-francaise-",
+          "date": "2026-10-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Paris Match Belgique (Belga), « Si elle arrive à l'Élysée, Marine Le Pen promet de couper l'aide à l'Ukraine »",
+          "url": "https://www.parismatch.be/actualites/monde/2026/10/15/presidentielle-francaise-si-elle-arrive-a-lelysee-marine-le-pen-promet-de-couper-laide-a-lukraine-je-ne-prends-personne-en-traitre-EKOIX7JLGZBBTPVJXNLDVDTVXY/",
+          "date": "2026-10-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
           "url": "https://datan.fr/votes/legislature-16/vote_3461",
           "date": "2024-03-12",
           "kind": "vote"
-        },
-        {
-          "title": "Le RN parle de « couper le robinet » à l'Ukraine (AFP via Sud Radio)",
-          "url": "https://www.sudradio.fr/societe/le-rn-parle-de-couper-le-robinet-a-lukraine-ses-adversaires-laccusent-de-servir-la-russie",
-          "date": "2026-09-04",
-          "kind": "presse"
         }
       ]
     },
     "q19-droit-europeen": {
       "stance": 2,
-      "justification": "Le programme 2022 prévoit une révision constitutionnelle pour que la Constitution « prévale sur le droit international », dans toutes les matières.",
+      "justification": "Le projet 2022 de Marine Le Pen prévoit une révision constitutionnelle pour que la Constitution « prévale sur le droit international » ; les eurodéputés RN ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (15 contre).",
       "sources": [
         {
-          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "title": "Projet pour la France de Marine Le Pen, livret « Le contrôle de l'immigration »",
           "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
           "date": "2022-03",
           "kind": "programme"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
         }
       ]
     },
     "q20-defense-europe": {
-      "stance": null,
-      "justification": "Pas de position explicite identifiée sur un endettement commun de l'UE (type NextGenerationEU ou instrument SAFE) dans les sources consultées ; le RN propose de réduire la contribution française au budget européen.",
+      "stance": -2,
+      "justification": "Dans un amendement à l'actualisation de la loi de programmation militaire (n° 617, 29 avril 2026), les députés RN écrivent que « le Rassemblement national s'oppose fermement au mécanisme européen \"SAFE\" », qui mobilise 150 Md€ d'emprunts ; les eurodéputés RN ont voté contre la résolution du 12 mars 2025 (29 contre) et contre le prêt commun à l'Ukraine (11 février 2026 : 26 contre).",
       "sources": [
         {
-          "title": "Contre-budget 2026 du Rassemblement national",
-          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
-          "date": "2025-10-23",
-          "kind": "programme"
-        }
-      ]
-    },
-    "q21-libre-echange": {
-      "stance": 2,
-      "justification": "Le groupe a voté pour la déclaration du gouvernement opposée à l'accord UE-Mercosur (scrutin n° 456 du 26/11/2024, 122 pour) ; le programme prévoit l'interdiction des importations agricoles non conformes aux standards français.",
-      "sources": [
+          "title": "Assemblée nationale, amendement n° 617 au projet de loi n° 2695 (actualisation de la programmation militaire 2024-2030), M. Jacobelli et autres (RN)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2695/AN/617.pdf",
+          "date": "2026-04-29",
+          "kind": "proposition-de-loi"
+        },
         {
-          "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",
-          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
-          "date": "2024-11-26",
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
           "kind": "vote"
         },
         {
-          "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
-          "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
-          "date": "2024-06-24",
-          "kind": "presse"
-        },
-        {
-          "title": "Déclaration du Gouvernement sur l'accord UE-Mercosur, vote n° 456 (Datan)",
-          "url": "https://datan.fr/votes/legislature-17/vote_456",
-          "date": "2024-11-26",
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
           "kind": "vote"
-        }
-      ]
-    },
-    "q22-vie-republique": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée et sourcée sur un changement de Constitution réduisant les pouvoirs du président ; le RN propose des révisions ciblées (RIC, proportionnelle, référendum sur l'immigration).",
-      "sources": [
-        {
-          "title": "22 mesures pour 2022 – Marine Le Pen",
-          "url": "https://rassemblementnational.fr/22-mesures",
-          "date": "2022-03",
-          "kind": "programme"
         }
       ]
     },
     "q23-referendum": {
       "stance": 2,
-      "justification": "Le RN propose un référendum révisant la Constitution sur l'immigration, la nationalité et l'identité.",
+      "justification": "Le RN propose un référendum sur l'immigration (programme 2022). En août 2026, Jordan Bardella a annoncé plusieurs référendums, « le premier sur l'immigration ».",
       "sources": [
         {
           "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
@@ -1056,10 +1063,16 @@
           "kind": "programme"
         },
         {
-          "title": "22 mesures pour 2022 – Marine Le Pen",
-          "url": "https://rassemblementnational.fr/22-mesures",
-          "date": "2022-03",
-          "kind": "programme"
+          "title": "La Gazette France – Interdiction du voile et amendes : le RN pousse un marqueur du lepénisme et propose un référendum",
+          "url": "https://www.lagazettefrance.fr/article/interdiction-du-voile-et-amendes-le-rn-pousse-un-marqueur-du-lepenisme-et-propose-un-referendum",
+          "date": "2026-08-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, propositions de Marine Le Pen (« Faire un référendum sur l'immigration »)",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen",
+          "date": "2022",
+          "kind": "presse"
         }
       ]
     },
@@ -1080,6 +1093,239 @@
           "kind": "presse"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": 2,
+      "justification": "Le RN propose de supprimer les droits de succession en ligne directe pour les familles modestes et moyennes : « sortiront de l'assiette de calcul, les biens immobiliers à hauteur de 300.000 euros », et abattement de 100 000 € sur les donations tous les dix ans (proposition déjà présente en 2022).",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Boursorama (avec LabSense), « Succession : les propositions des candidats à la présidentielle »",
+          "url": "https://www.boursorama.com/impots/succession/actualites/succession-les-propositions-des-candidats-a-la-presidentielle-e3ba343c7ca1178adf2448b03b0b2aeb",
+          "date": "2022-02-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": 0,
+      "justification": "Le groupe RN s'est abstenu aux deux lectures (27 novembre 2025 : 40 abstentions ; 11 juin 2026 : 45 abstentions). Il défend plutôt une « golden share » (action préférentielle de l'État) ; Jean-Philippe Tanguy présente la nationalisation comme « un outil de dernier recours ».",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : au terme d'un bras de fer dans l'hémicycle, l'Assemblée vote à nouveau en faveur de la nationalisation »",
+          "url": "https://lcp.fr/actualites/arcelormittal-au-terme-d-un-bras-de-fer-dans-l-hemicycle-l-assemblee-vote-a-nouveau-en",
+          "date": "2026-06-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q27-temps-de-travail": {
+      "stance": null,
+      "justification": "Marine Le Pen ne s'est pas exprimée sur la durée légale depuis 2022 ; en 2017, elle s'engageait à « maintenir les 35h ». Jordan Bardella, président du parti, a dit en novembre 2024 qu'« il faut pouvoir revenir sur les 35 heures dans les entreprises » par accords de branche, sans « suppression générale ».",
+      "sources": []
+    },
+    "q28-prix-energie": {
+      "stance": 2,
+      "justification": "Mesure portée par le RN : l'amendement de Jean-Philippe Tanguy et du groupe RN au budget 2027 proposait « une TVA à 5,5 % sur l'électricité » (2 novembre 2026 : 24 pour dans le groupe, rejeté à égalité de voix). Le contre-budget 2026 du RN prévoit une « baisse de la TVA sur les énergies (gaz, électricité, carburants, bois, fioul) », et le groupe avait voté la TVA à 5,5 % sur l'abonnement d'électricité (20 novembre 2025 : 89 pour).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° I-749 au PLF 2027 (M. Jean-Philippe Tanguy et les membres du groupe RN) : « une TVA à 5,5 % sur l'électricité »",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/3210A/AN/749.pdf",
+          "date": "2026-10-08",
+          "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Rassemblement national, contre-budget 2026 (conférence de presse du 23 octobre 2025) : « Baisse de la TVA sur les énergies (gaz, électricité, carburants, bois, fioul) »",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q29-cannabis": {
+      "stance": -2,
+      "justification": "En 2022, Marine Le Pen jugeait que la légalisation n'est « évidemment pas la solution » et qu'« il faut mener la guerre contre la drogue ». Jordan Bardella estimait en 2019 que « légaliser le cannabis c'est envoyer un signal dramatique ». Le groupe RN a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 16 contre).",
+      "sources": [
+        {
+          "title": "Greenboyz – Cannabis, CBD et élection présidentielle : la position des candidats",
+          "url": "https://greenboyz.fr/cannabis-cbd-election-presidentielle-candidats-legalisation/",
+          "date": "2022-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1 – Légaliser le cannabis, c'est envoyer un signal dramatique, estime Jordan Bardella",
+          "url": "https://www.europe1.fr/politique/legaliser-le-cannabis-cest-envoyer-un-signal-dramatique-estime-jordan-bardella-3905772",
+          "date": "2019-06-21",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 8129, amendement n° 426 dépénalisant l'usage de stupéfiants",
+          "url": "https://datan.fr/votes/legislature-17/vote_8129",
+          "date": "2026-07-09",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": 2,
+      "justification": "Le groupe RN a voté la suppression des ZFE le 28 mai 2025 (56 pour, 0 contre) et a déposé une proposition de loi d'abrogation (Pierre Meurin), examinée lors de sa niche du 8 octobre 2026 sans vote final. Après la censure, Marine Le Pen a demandé que l'Assemblée revote une « proposition de loi sur les ZFE » (22 mai 2026).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Linfodurable (AFP) – ZFE : Le Pen critique le Conseil constitutionnel qui « contraint la démocratie »",
+          "url": "https://www.linfodurable.fr/zfe-le-pen-critique-le-conseil-constitutionnel-qui-contraint-la-democratie-56281",
+          "date": "2026-05-22",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": -2,
+      "justification": "Marine Le Pen a annoncé le 16 septembre 2026 qu'un premier décret viserait le voile dans « les universités, les sorties scolaires, les fédérations sportives (et) les bâtiments publics », avec pour objectif d'« interdire le voile ». Les quatre sénateurs RN, non inscrits, n'ont pas pris part au scrutin du Sénat du 18 février 2025.",
+      "sources": [
+        {
+          "title": "Franceinfo – Marine Le Pen souhaite interdire le voile islamique « de manière progressive »",
+          "url": "https://www.franceinfo.fr/politique/marine-le-pen/marine-le-pen-souhaite-interdire-le-voile-islamique-de-maniere-progressive_8196287.html",
+          "date": "2026-09-16",
+          "kind": "presse"
+        },
+        {
+          "title": "La Gazette France – Interdiction du voile et amendes : le RN pousse un marqueur du lepénisme et propose un référendum",
+          "url": "https://www.lagazettefrance.fr/article/interdiction-du-voile-et-amendes-le-rn-pousse-un-marqueur-du-lepenisme-et-propose-un-referendum",
+          "date": "2026-08-31",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": -2,
+      "justification": "Les eurodéputés RN ont voté contre la résolution du PE sur l'Ukraine du 9 septembre 2025 (29 contre), contre celle du 8 juillet 2026 (23 contre) et contre la stratégie d'élargissement du 11 mars 2026 (17 contre, 12 non-votants).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 8 juillet 2026 sur le rapport 2025 sur l'Ukraine (« Ukraine's future lies in the EU »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1908996",
+          "date": "2026-07-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": 2,
+      "justification": "Les députés RN ont voté pour le maintien de l'unanimité au Conseil (29 novembre 2023 : 50 pour sur l'amendement LFI, 19 pour sur leur propre amendement supprimant les clauses passerelles) ; les eurodéputés RN ont voté contre la révision des traités du 22 novembre 2023 (15 contre), contre la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (28 contre) et contre la stratégie d'élargissement de 2026.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 3077 du 29 novembre 2023 (16e législature) : amendement n° 10 (Mme Robert-Dehault, RN) supprimant les clauses passerelles vers la majorité qualifiée, rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3077",
+          "date": "2023-11-29",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 3058 du 29 novembre 2023 (16e législature) : amendement n° 33 (LFI-NUPES) « Maintenir l'unanimité au Conseil des ministres de l'UE pour respecter la souveraineté des Etats », rejeté",
+          "url": "https://datan.fr/votes/legislature-16/vote_3058",
+          "date": "2023-11-29",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q34-mineurs": {
+      "stance": 2,
+      "justification": "Le groupe RN a voté la proposition de loi Attal (13 mai 2025 : 119 pour, 0 contre). Pas de mesure sur l'excuse de minorité ou la majorité pénale dans le programme présidentiel 2022 ni dans une déclaration de Marine Le Pen en 2026.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
     }
   },
   "candidacies": {
@@ -1087,8 +1333,8 @@
       "candidateName": "Marine Le Pen",
       "status": "declare",
       "statusLabel": "Candidate déclarée",
-      "candidate": "Marine Le Pen (statut : candidature annoncée le 2026-07-07, jour de l'arrêt d'appel ; pourvoi en cassation pendant, décision annoncée « au plus tard début avril 2027 »)",
-      "programmeStatus": "Programme présidentiel 2027 non publié à date. Fiche fondée sur le contre-budget 2026 (octobre 2025), la trajectoire budgétaire 2027-2032 présentée le 6 octobre 2026, le programme des législatives 2024, le programme présidentiel 2022 (22 mesures et livrets thématiques) et les votes du groupe RN à l'Assemblée (XVIIe législature). Les positions de 2022 sont signalées comme telles. Les chiffres de la trajectoire 2027-2032 proviennent de comptes rendus de presse (Public Sénat, AFP) de la conférence de presse du 6 octobre 2026.",
+      "candidate": "Marine Le Pen a annoncé sa candidature le 7 juillet 2026, jour de l'arrêt de la cour d'appel de Paris. Ce jour-là, la cour l'a condamnée pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN à trois ans d'emprisonnement dont deux avec sursis (un an ferme aménageable sous bracelet électronique), 100 000 € d'amende et une peine d'inéligibilité de 45 mois dont 30 avec sursis, contre cinq ans d'inéligibilité avec exécution provisoire en première instance (31 mars 2025). La cour ayant considéré les 15 mois d'inéligibilité ferme comme déjà exécutés depuis le jugement de première instance, elle est présentée comme éligible. Elle conteste sa condamnation et a formé un pourvoi en cassation : la Cour de cassation a indiqué le 8 juillet 2026 pouvoir statuer « au plus tard début avril 2027 », calendrier « susceptible d'évoluer », et des questions prioritaires de constitutionnalité doivent être examinées le 16 décembre 2026. L'effet du pourvoi est discuté : le procureur général près la Cour de cassation, Rémy Heitz, a déclaré le 9 juillet 2026 que le pourvoi « suspend l'exécution de l'arrêt », tandis que Didier Guérin, président de chambre honoraire à la Cour de cassation, a soutenu dans Le Monde le 27 octobre 2026 qu'elle serait « actuellement inéligible » (ses avocats l'ont signalé au Conseil supérieur de la magistrature). Jordan Bardella a déclaré qu'il serait le candidat du parti si Marine Le Pen était « empêchée ».",
+      "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le contre-budget 2026 (octobre 2025), la trajectoire budgétaire 2027-2032 présentée le 6 octobre 2026, le programme des législatives 2024, le programme présidentiel 2022 (22 mesures et livrets thématiques) et les votes du groupe RN à l'Assemblée (XVIIe législature). Les positions de 2022 sont signalées comme telles. Les chiffres de la trajectoire 2027-2032 proviennent de comptes rendus de presse (Public Sénat, AFP) de la conférence de presse du 6 octobre 2026.",
       "themes": {
         "economie": {
           "summary": "Le RN propose un plan d'économies centré sur l'immigration, la contribution française à l'UE et les agences de l'État, combiné à des baisses de TVA et d'impôts de production. Il propose de remplacer l'IFI par un impôt sur la fortune financière.",
@@ -1506,7 +1752,7 @@
               ]
             },
             {
-              "text": "Vote du groupe RN pour la loi Duplomb « visant à lever les contraintes à l'exercice du métier d'agriculteur » (scrutin n° 2957 du 08/07/2025 : 119 pour, 2 abstentions).",
+              "text": "Vote du groupe RN pour la loi Duplomb « visant à lever les contraintes à l'exercice du métier d'agriculteur » (scrutin n° 2957 du 8 juillet 2025 : 119 pour, 2 abstentions).",
               "sources": [
                 {
                   "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
@@ -1556,7 +1802,7 @@
               ]
             },
             {
-              "text": "Lutte contre les déserts médicaux par des « incitations financières fortes » et le développement de la télémédecine et des maisons de santé (programme 2022) ; abstention du groupe sur la proposition de loi Garot régulant l'installation (07/05/2025).",
+              "text": "Lutte contre les déserts médicaux par des « incitations financières fortes » et le développement de la télémédecine et des maisons de santé (programme 2022) ; abstention du groupe sur la proposition de loi Garot régulant l'installation (7 mai 2025).",
               "sources": [
                 {
                   "title": "Projet pour la France de Marine Le Pen – livret « La santé »",
@@ -1573,7 +1819,7 @@
               ]
             },
             {
-              "text": "Aide à mourir : liberté de vote ; le groupe a voté majoritairement contre en lecture définitive (scrutin n° 8280 du 15/07/2026 : 106 contre, 12 pour). Marine Le Pen a voté contre « à titre personnel » mais n'a pas annoncé d'abrogation.",
+              "text": "Aide à mourir : liberté de vote ; le groupe a voté majoritairement contre en lecture définitive (scrutin n° 8280 du 15 juillet 2026 : 106 contre, 12 pour). Marine Le Pen a voté contre « à titre personnel » mais n'a pas annoncé d'abrogation.",
               "sources": [
                 {
                   "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
@@ -1678,7 +1924,7 @@
               ]
             },
             {
-              "text": "Opposition à l'accord UE-Mercosur : vote du groupe pour la déclaration du gouvernement s'y opposant (scrutin n° 456 du 26/11/2024 : 122 pour).",
+              "text": "Opposition à l'accord UE-Mercosur : vote du groupe pour la déclaration du gouvernement s'y opposant (scrutin n° 456 du 26 novembre 2024 : 122 pour).",
               "sources": [
                 {
                   "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",

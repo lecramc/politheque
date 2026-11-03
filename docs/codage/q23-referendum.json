@@ -1,0 +1,128 @@
+{
+  "question": "q23-referendum",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Après les Rencontres de Saint-Denis du 17 novembre 2023, Marine Tondelier s'est félicitée « qu'il n'y aura pas de référendum sur l'immigration ». Position de 2023 ; pas de déclaration plus récente.",
+      "sources": [
+        {
+          "title": "Europe 1 – Rencontres de Saint-Denis : Emmanuel Macron évoque l'élargissement du référendum, avec de nombreux absents",
+          "url": "https://www.europe1.fr/politique/rencontres-de-saint-denis-emmanuel-macron-evoque-lelargissement-du-referendum-avec-de-nombreux-absents-4215037",
+          "date": "2023-11-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": null,
+      "justification": "Pas de position publique sur un référendum consacré à l'immigration ; le seul référendum proposé par Édouard Philippe porte sur une règle d'or budgétaire.",
+      "sources": []
+    },
+    "lfi": {
+      "stance": null,
+      "justification": "Ni Jean-Luc Mélenchon ni le groupe LFI ne se sont prononcés explicitement sur un référendum consacré à l'immigration. LFI défend le référendum d'initiative citoyenne et une Assemblée constituante.",
+      "sources": []
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "Bruno Retailleau propose de réviser la Constitution pour soumettre à référendum des lois visant à « réduire drastiquement l'immigration » (annonce de candidature, 12 février 2026) ; il le défendait déjà en mai 2023 : « C'est parce que cette question est sensible qu'il faut faire un référendum ».",
+      "sources": [
+        {
+          "title": "Euronews – Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums",
+          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+          "date": "2026-02-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat – Immigration : « C'est parce que cette question est sensible qu'il faut faire un référendum », demande Bruno Retailleau",
+          "url": "https://www.publicsenat.fr/actualites/politique/immigration-cest-parce-que-cette-question-est-sensible-quil-faut-faire-un-referendum-demande-bruno-retailleau",
+          "date": "2023-05-24",
+          "kind": "presse"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 2,
+      "justification": "David Lisnard propose des référendums sur l'immigration (« comment on remaîtrise les flux migratoires, ça veut dire des référendums », TF1, 8 octobre 2025), après un « élargissement […] du champ de l'article onze de la Constitution » (meeting de Saint-Raphaël, 3 juillet 2026).",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – « Quel candidat propose un référendum sur l'immigration ? »",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-un-referendum-sur-l-immigration/",
+          "date": "2026-11",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": -2,
+      "justification": "Ian Brossat, porte-parole du PCF, s'est félicité de l'échec de la proposition de LR d'étendre le référendum à l'immigration (« C'est un fiasco et tant mieux », décembre 2023). Le même mois, Fabien Roussel avait fait état d'un « consensus » à Saint-Denis sur la difficulté d'élargir le référendum aux sujets de société (17 novembre 2023). Positions de 2023.",
+      "sources": [
+        {
+          "title": "Public Sénat – Référendum sur l'immigration : « C'est un fiasco et tant mieux », se félicite Ian Brossat",
+          "url": "https://www.publicsenat.fr/actualites/projet-de-loi-immigration/referendum-sur-limmigration-cest-un-fiasco-et-tant-mieux-se-felicite-ian-brossat-apres-les-revers-des-republicains",
+          "date": "2023-12-08",
+          "kind": "declaration"
+        },
+        {
+          "title": "Europe 1 – Rencontres de Saint-Denis : Emmanuel Macron évoque l'élargissement du référendum, avec de nombreux absents",
+          "url": "https://www.europe1.fr/politique/rencontres-de-saint-denis-emmanuel-macron-evoque-lelargissement-du-referendum-avec-de-nombreux-absents-4215037",
+          "date": "2023-11-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": null,
+      "justification": "Pas de position explicite sur un référendum sur l'immigration. Raphaël Glucksmann propose à la place une convention citoyenne sur l'immigration, dont les propositions seraient votées par le Parlement (26 mai 2026), sans se prononcer sur le référendum.",
+      "sources": []
+    },
+    "reconquete": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2022 d'Éric Zemmour prévoit un grand référendum sur l'immigration, la sécurité et la justice, et de « rendre aux souverainetés nationales la question de l'immigration par référendum ». Position de 2022.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, propositions d'Éric Zemmour",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour",
+          "date": "2022",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": null,
+      "justification": "Gabriel Attal propose une « journée référendaire par an » sans en préciser les thèmes ; son programme prévoit des quotas migratoires sans référendum. Il ne s'est pas prononcé explicitement pour ou contre un référendum sur l'immigration.",
+      "sources": []
+    },
+    "rn": {
+      "stance": 2,
+      "justification": "Le RN propose un référendum sur l'immigration (programme 2022). En août 2026, Jordan Bardella a annoncé plusieurs référendums, « le premier sur l'immigration ».",
+      "sources": [
+        {
+          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "La Gazette France – Interdiction du voile et amendes : le RN pousse un marqueur du lepénisme et propose un référendum",
+          "url": "https://www.lagazettefrance.fr/article/interdiction-du-voile-et-amendes-le-rn-pousse-un-marqueur-du-lepenisme-et-propose-un-referendum",
+          "date": "2026-08-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, propositions de Marine Le Pen (« Faire un référendum sur l'immigration »)",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen",
+          "date": "2022",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "notes": "Aucun scrutin ne permet de coder tous les partis avec le même texte : la proposition de loi constitutionnelle LR de 2023, qui étendait l'article 11 à l'immigration, a été rejetée en commission puis retirée avant tout vote sur cet article (Assemblée, 7/12/2023 ; Sénat, décembre 2023). Les codages reposent donc sur des déclarations. Points incertains : (1) LFI, PS, RE et HOR restent à null faute de déclaration vérifiée. Un site agrégateur (ÉlyséeScope) prête à Mélenchon et à Attal une opposition au référendum, mais sans source primaire : non retenu. (2) Écologistes et PCF reposent sur des déclarations de 2023 (Brossat est porte-parole, pas candidat). (3) La citation de Retailleau de Public Sénat est datée approximativement (2025), à vérifier. Texte help : il est exact. On peut préciser que « l'article 11 » ne vise que l'organisation des pouvoirs publics et les réformes de la politique économique, sociale ou environnementale. Vérification croisée (3 novembre 2026) : la citation de Retailleau publiée par Public Sénat date du 24 mai 2023 (et non de 2025) : justification et date de source corrigées. Nouvelles recherches sur Mélenchon, Glucksmann, Attal et Philippe : aucune déclaration explicite dans une source de référence. Un média secondaire (Viralmag, 29 août 2026) rapporte qu'Édouard Philippe « n'exclut pas » un référendum, sans citation : insuffisant pour coder. Un article de Public Sénat (16 septembre 2025) sur la pétition de Philippe de Villiers ne cite aucun responsable de LFI, du PS, des Écologistes, du PCF, de Renaissance ou d'Horizons. Écologistes et PCF restent fondés sur des déclarations de 2023 (pas de déclaration plus récente trouvée). Toujours 6 positions non nulles sur 10."
+}

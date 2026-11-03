@@ -38,6 +38,7 @@ export function AxisChart({
   const points: Point[] = [
     ...parties.map(({ party, position }) => ({
       key: party.id,
+      // Sigle court sur la carte pour limiter les chevauchements ; le nom complet est dans la description.
       label: party.shortName,
       color: party.color,
       position,
@@ -54,8 +55,28 @@ export function AxisChart({
       <PartyDot color={p.color} size={14} />
     );
 
+  // Alternative textuelle : la carte est décrite en mots pour les lecteurs d'écran.
+  const describe = (position: AxisPosition) =>
+    axes
+      .map((axis) => {
+        const v = position[axis.id];
+        if (v === null) return `${axis.label} : non calculé`;
+        const pole = v >= 0 ? axis.positivePole : axis.negativePole;
+        return `${axis.label} : ${Math.round(Math.abs(v) * 100)} % vers « ${pole} »`;
+      })
+      .join(' ; ');
+  const summary = [
+    `Votre position. ${describe(user)}.`,
+    ...parties.map(({ party, position }) => `${party.name}. ${describe(position)}.`),
+  ].join(' ');
+
   return (
-    <View style={{ gap: 16, alignItems: 'center' }}>
+    <View
+      style={{ gap: 16, alignItems: 'center' }}
+      accessible
+      accessibilityRole="image"
+      accessibilityLabel={`Carte des positions. ${summary}`}
+    >
       <Text style={[caption, { textAlign: 'center' }]}>↑ {soc?.positivePole}</Text>
       <View
         style={{

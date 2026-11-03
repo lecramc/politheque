@@ -17,6 +17,7 @@ import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { STANCE_LABEL, StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
+import { displayName } from '@/src/programmes/models/presentation.service';
 import { resultsViewModel } from '@/src/programmes/view-models/results.view-model';
 
 type Tab = 'proximite' | 'carte' | 'detail';
@@ -48,7 +49,7 @@ export default function ResultsScreen() {
 
   if (vm.ready && vm.answeredCount === 0) {
     return (
-      <Page back={{ label: 'Questionnaire', href: '/me-situer' }}>
+      <Page title={'Vos résultats'} back={{ label: 'Questionnaire', href: '/me-situer' }}>
         <View
           style={{
             alignItems: 'center',
@@ -74,7 +75,7 @@ export default function ResultsScreen() {
 
   if (vm.ready && !revealed) {
     return (
-      <Page focus back={{ label: 'Questionnaire', href: '/me-situer' }}>
+      <Page title={'Vos résultats'} focus back={{ label: 'Questionnaire', href: '/me-situer' }}>
         <View
           style={{
             alignItems: 'center',
@@ -126,7 +127,11 @@ export default function ResultsScreen() {
     : vm.details;
 
   return (
-    <Page loading={!vm.ready} back={{ label: 'Questionnaire', href: '/me-situer' }}>
+    <Page
+      title={'Vos résultats'}
+      loading={!vm.ready}
+      back={{ label: 'Questionnaire', href: '/me-situer' }}
+    >
       <View style={{ gap: 8 }}>
         <Text variant="title">Vos résultats</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 16 }}>
@@ -163,6 +168,10 @@ export default function ResultsScreen() {
       <TabPanel id={tab}>
         {tab === 'proximite' ? (
           <View style={{ gap: effects.spacing.sm }}>
+            <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+              Les pourcentages ne portent pas sur le même nombre de questions selon les partis : un
+              parti qui s'exprime peu est comparé sur moins de sujets.
+            </Text>
             <View style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
               <Text style={{ color: colors.text.secondary }}>Ordre :</Text>
               {[
@@ -221,7 +230,7 @@ export default function ResultsScreen() {
                       delay={revealDelays[party.id] ?? 0}
                       animate={!revealPlayed.current}
                       dashedRemainder={comparedCount < FEW_COMPARED}
-                      accessibilityLabel={`${score} pour cent`}
+                      accessibilityLabel={`Proximité avec ${party.name} : ${score} %, sur ${comparedCount} questions`}
                     >
                       <Text style={{ ...fonts.bold, fontSize: 14, color: colors.tint }}>
                         {score} %
@@ -313,10 +322,17 @@ export default function ResultsScreen() {
                     style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}
                   >
                     <PartyDot color={party.color} size={24} label={party.shortName} />
-                    <Text style={{ width: 90, fontSize: 14 }}>{party.shortName}</Text>
+                    <Text style={{ width: 120, fontSize: 14 }}>{displayName(party)}</Text>
                     <StanceBadge stance={stance?.stance ?? null} />
                     {stance?.sources.length ? (
                       <SourceChip sources={stance.sources} subject={stance.justification} />
+                    ) : null}
+                    {stance?.justification ? (
+                      <Text
+                        style={{ flexBasis: '100%', fontSize: 13, color: colors.text.secondary }}
+                      >
+                        {stance.justification}
+                      </Text>
                     ) : null}
                   </View>
                 ))}

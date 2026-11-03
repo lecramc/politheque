@@ -3,8 +3,8 @@
   "name": "Les Écologistes",
   "shortName": "Écologistes",
   "color": "#00C000",
-  "family": "Écologie politique, gauche (du centre gauche à la gauche radicale selon les sources)",
-  "description": "Parti issu d'Europe Écologie Les Verts (renommé Les Écologistes), dirigé par la secrétaire nationale Marine Tondelier. Son candidat Yannick Jadot a obtenu 4,63 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel). Membre du Nouveau Front populaire en 2024, le parti siège à l'Assemblée au sein du groupe Écologiste et social (38 membres selon Datan).",
+  "family": "Gauche (écologie politique ; presse et ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame de « l'écologie politique » et ne conteste pas cette étiquette)",
+  "description": "Les Écologistes sont issus des Verts, fondés en 1984, devenus Europe Écologie Les Verts (EELV) en 2010 puis Les Écologistes en 2023 ; le parti est dirigé par la secrétaire nationale Marine Tondelier. Yannick Jadot a obtenu 4,63 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Marie Toussaint 5,50 % aux européennes de 2024. Membre du Nouveau Front populaire en 2024, le parti siège à l'Assemblée au sein du groupe Écologiste et social, qui compte 38 députés (novembre 2026, selon Datan). Les adhérents votent du 10 au 13 décembre 2026 sur le maintien d'une candidature autonome.",
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "1984 (Les Verts), 2010 (Europe Écologie Les Verts, EELV) puis Les Écologistes en 2023",
@@ -67,7 +67,7 @@
         ]
       },
       {
-        "text": "Les ouvrages de référence le classent à gauche ; Wikipédia le situe selon les sources entre le centre gauche et la gauche radicale, sans classement unique, tandis que Lex le décrit comme un parti de gauche pro-européen et décentralisateur.",
+        "text": "Les ouvrages de référence le classent à gauche ; il est décrit comme un parti de gauche pro-européen et décentralisateur, sans classement unique plus précis.",
         "sources": [
           {
             "title": "Wikipédia, « Les Écologistes »",
@@ -188,7 +188,7 @@
       },
       {
         "date": "2019-05-26",
-        "event": "Européennes : la liste conduite par Yannick Jadot obtient 13,5 % des suffrages et arrive 3e.",
+        "event": "Européennes : la liste conduite par Yannick Jadot obtient 13,48 % des suffrages exprimés et arrive 3e.",
         "sources": [
           {
             "title": "Wikipédia, « Les Écologistes »",
@@ -242,7 +242,7 @@
       },
       {
         "date": "2024-06-09",
-        "event": "Européennes : la liste conduite par Marie Toussaint obtient 5,5 % des suffrages (contre 13,5 % en 2019) ; le parti rejoint ensuite le Nouveau Front populaire pour les législatives anticipées.",
+        "event": "Européennes : la liste conduite par Marie Toussaint obtient 5,50 % des suffrages exprimés (contre 13,48 % en 2019) ; le parti rejoint ensuite le Nouveau Front populaire pour les législatives anticipées.",
         "sources": [
           {
             "title": "Public Sénat, « Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième »",
@@ -329,7 +329,7 @@
       {
         "name": "Antoine Waechter",
         "role": "Cofondateur des Verts (1984), porte-parole à partir de 1986, candidat à la présidentielle de 1988 ; quitte le parti en 1994",
-        "background": "Né en 1949 à Mulhouse, docteur en biologie-écologie, il est issu du mouvement naturaliste alsacien et participe en 1973 au lancement d'Écologie et Survie, l'un des premiers mouvements écologistes politiques. Majoritaire en 1986 avec une ligne d'autonomie stricte, il fait du « ni droite ni gauche » la position officielle des Verts ; il obtient 3,78 % à la présidentielle de 1988 et conduit la liste des européennes de 1989 (10,6 % selon Larousse, 10,8 % selon Wikipédia). Minoritaire face à la ligne d'alliance à gauche, il quitte les Verts en 1994 et fonde le Mouvement écologiste indépendant (MEI).",
+        "background": "Né en 1949 à Mulhouse, docteur en biologie-écologie, il est issu du mouvement naturaliste alsacien et participe en 1973 au lancement d'Écologie et Survie, l'un des premiers mouvements écologistes politiques. Majoritaire en 1986 avec une ligne d'autonomie stricte, il fait du « ni droite ni gauche » la position officielle des Verts ; il obtient 3,78 % à la présidentielle de 1988 et conduit la liste des européennes de 1989 (10,59 % des suffrages exprimés). Minoritaire face à la ligne d'alliance à gauche, il quitte les Verts en 1994 et fonde le Mouvement écologiste indépendant (MEI).",
         "sources": [
           {
             "title": "Wikipédia, « Antoine Waechter »",
@@ -428,7 +428,7 @@
       },
       {
         "name": "Marine Tondelier",
-        "role": "Secrétaire nationale d'EELV puis des Écologistes depuis le 10 décembre 2022, réélue le 18 avril 2025 (73 % des suffrages exprimés)",
+        "role": "Secrétaire nationale d'EELV puis des Écologistes depuis le 10 décembre 2022, réélue le 18 avril 2025 (73 % des suffrages exprimés) ; candidate désignée pour 2027",
         "background": "Née en 1986 dans le Pas-de-Calais, elle adhère à EELV en 2009. Conseillère municipale d'opposition à Hénin-Beaumont, ville dirigée par le Rassemblement national depuis 2014, elle est élue à la tête du parti lors du congrès de 2022 avec l'approbation de 90,8 % des votants, succédant à Julien Bayou ; c'est sous sa direction qu'EELV prend le nom « Les Écologistes » en 2023.",
         "sources": [
           {
@@ -500,7 +500,7 @@
         ]
       },
       {
-        "text": "Évolution stratégique : en 1986, une majorité menée par Antoine Waechter impose l'autonomie électorale et le « ni droite ni gauche » ; au milieu des années 1990, sous l'impulsion de Dominique Voynet, le parti accepte les alliances avec la gauche (assemblée générale de Lille en 1994 selon Wikipédia, motion de 1995 selon Larousse), ce qui conduit à la participation au gouvernement Jospin (1997-2002) et à la scission de Waechter (MEI).",
+        "text": "Évolution stratégique : en 1986, une majorité menée par Antoine Waechter impose l'autonomie électorale et le « ni droite ni gauche » ; au milieu des années 1990, sous l'impulsion de Dominique Voynet, le parti accepte les alliances avec la gauche (entre 1994 et 1995 selon les sources), ce qui conduit à la participation au gouvernement Jospin (1997-2002) et à la scission de Waechter (MEI).",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Les Verts (France) »",
@@ -561,7 +561,7 @@
   "stances": {
     "q01-isf": {
       "stance": 2,
-      "justification": "Taxe Zucman dans le programme 2027 ; proposition de loi déposée par le groupe écologiste et votée par lui (scrutin n° 881 du 20/02/2025, 38 voix pour).",
+      "justification": "La taxe Zucman figure dans le programme présidentiel 2027 (« impôt minimum de 2 % sur les patrimoines supérieurs à 100 M€ ») ; la proposition de loi adoptée en février 2025 venait du groupe écologiste, qui a voté pour à chaque scrutin (31 octobre 2025 : 33 pour ; 16 octobre 2026 : 8 pour).",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 66",
@@ -570,9 +570,15 @@
           "kind": "programme"
         },
         {
-          "title": "Scrutin n° 881 du 20/02/2025, proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
+          "title": "Datan, scrutin n° 881 du 20 février 2025 : proposition de loi instaurant un impôt plancher de 2 % sur le patrimoine des ultra-riches (« taxe Zucman »), vote final en première lecture",
           "url": "https://datan.fr/votes/legislature-17/vote_881",
           "date": "2025-02-20",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "date": "2026-10-16",
           "kind": "vote"
         }
       ]
@@ -595,21 +601,9 @@
         }
       ]
     },
-    "q03-charges": {
-      "stance": -1,
-      "justification": "Le programme prévoit de supprimer les exonérations de cotisations sur les bas salaires, selon la presse.",
-      "sources": [
-        {
-          "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
-          "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-          "date": "2026-07-13",
-          "kind": "presse"
-        }
-      ]
-    },
     "q04-retraite": {
       "stance": 2,
-      "justification": "Retour à 62 ans, puis 60 ans pour les carrières longues et les métiers pénibles.",
+      "justification": "Le programme 2027 prévoit le retour de l'âge légal à 62 ans, puis 60 ans pour les carrières longues et les métiers pénibles.",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 116",
@@ -627,26 +621,8 @@
     },
     "q05-smic": {
       "stance": 2,
-      "justification": "Selon Public Sénat (30/10/2026) et l'extrait de la p. 55 du programme cité par MonVote2027, Marine Tondelier propose un salaire minimum de 2 000 € brut dès 2027 ; un compte rendu de Parlons Politique (13/07/2026) affirme au contraire l'absence de hausse directe du SMIC. Le contrat du NFP prévoyait 1 600 € net.",
+      "justification": "Marine Tondelier entend « porter le Smic à 2 000 euros brut par mois dès 2027 » (Public Sénat, 30 octobre 2026, d'après le programme présidentiel).",
       "sources": [
-        {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 55",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-          "url": "https://monvote2027.fr/candidat/tondelier",
-          "date": "2026-10-16",
-          "kind": "presse"
-        },
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
         {
           "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
           "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
@@ -654,34 +630,46 @@
           "kind": "presse"
         },
         {
-          "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
-          "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-          "date": "2026-07-13",
-          "kind": "presse"
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 55",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
         }
       ]
     },
     "q06-chomage": {
       "stance": -2,
-      "justification": "Le contrat du NFP prévoit l'abrogation des réformes de l'assurance chômage et du RSA ; le groupe a voté contre la transposition de l'avenant assurance chômage (scrutin n° 7260 du 02/06/2026).",
+      "justification": "Le contrat du NFP, signé par Les Écologistes, prévoit l'abrogation des réformes de l'assurance chômage ; le groupe a voté contre la loi de juin 2026 (2 juin 2026 : 14 contre) et pour la suppression de son article unique (16 avril 2026 : 18 pour).",
       "sources": [
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
           "date": "2024-06",
           "kind": "programme"
         },
         {
-          "title": "Scrutin n° 7260 du 02/06/2026, projet de loi transposant l'avenant n° 3 au protocole d'accord sur l'assurance chômage, vote final",
+          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
           "url": "https://datan.fr/votes/legislature-17/vote_7260",
           "date": "2026-06-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "date": "2026-04-16",
           "kind": "vote"
         }
       ]
     },
     "q07-immigration": {
       "stance": -2,
-      "justification": "Le programme veut refaire de la France « un pays attractif pour les migrant·es » (p. 177) et « rendre effectif le droit au regroupement familial » (p. 178), selon les extraits cités par MonVote2027.",
+      "justification": "Le programme veut refaire de la France « un pays attractif pour les migrant·es » (p. 177) et « rendre effectif le droit au regroupement familial » (p. 178).",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 177-178",
@@ -699,7 +687,7 @@
     },
     "q08-preference": {
       "stance": -2,
-      "justification": "Le programme garantit l'accès des personnes exilées aux droits fondamentaux (AME, PUMa) ; le NFP garantit l'accès aux services publics sans condition de nationalité.",
+      "justification": "Le programme 2027 garantit l'accès des personnes exilées aux droits fondamentaux, et le contrat NFP (2024) l'accès aux services publics sans condition de nationalité ; le groupe Écologiste a voté contre l'amendement RN ajoutant la nationalité française aux critères d'accès au logement social (scrutin n° 4960 du 12 janvier 2026 : 3 contre).",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 178",
@@ -712,6 +700,12 @@
           "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
           "date": "2024-06",
           "kind": "programme"
+        },
+        {
+          "title": "Assemblée nationale – Scrutin public n° 4960 du 12/01/2026 sur l'amendement n° 4 de M. Falcon après l'article 6 de la PPL visant à améliorer l'accès au logement des travailleurs des services publics (rejeté : 19 pour, 40 contre, 1 abstention)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4960",
+          "date": "2026-01-12",
+          "kind": "vote"
         }
       ]
     },
@@ -763,24 +757,6 @@
         }
       ]
     },
-    "q11-police": {
-      "stance": 2,
-      "justification": "Remplacement de l'IGPN/IGGN par un organisme indépendant ; récépissés prévus par le contrat du NFP.",
-      "sources": [
-        {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 165",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        }
-      ]
-    },
     "q12-nucleaire": {
       "stance": -2,
       "justification": "Sortie planifiée du nucléaire et arrêt des projets EPR2 et SMR.",
@@ -801,7 +777,7 @@
     },
     "q13-renouvelables": {
       "stance": 2,
-      "justification": "Le programme fonde la politique énergétique sur « un bouquet d'énergies renouvelables » (p. 15) et prévoit la sortie du nucléaire (p. 17), selon les extraits cités par MonVote2027.",
+      "justification": "Le programme fonde la politique énergétique sur « un bouquet d'énergies renouvelables » (p. 15) et prévoit la sortie du nucléaire (p. 17).",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 15",
@@ -819,7 +795,7 @@
     },
     "q14-normes-agricoles": {
       "stance": -2,
-      "justification": "Le groupe a voté contre la loi Duplomb (scrutin n° 2957 du 08/07/2025, 38 voix contre).",
+      "justification": "Le groupe a voté contre la loi Duplomb (scrutin n° 2957 du 8 juillet 2025, 38 voix contre).",
       "sources": [
         {
           "title": "Scrutin n° 2957 du 08/07/2025, loi Duplomb « lever les contraintes à l'exercice du métier d'agriculteur », vote final (texte de CMP)",
@@ -831,10 +807,16 @@
     },
     "q15-medecins": {
       "stance": 2,
-      "justification": "Le groupe a voté pour la PPL transpartisane régulant l'installation des médecins (scrutin n° 1607 du 07/05/2025, 17 voix pour), mesure prévue par le contrat du NFP.",
+      "justification": "Le groupe Écologiste a voté à l'unanimité la régulation de l'installation des médecins (article 1er de la PPL Garot, vote n° 1214 du 2 avril 2025 : 19 pour) et le texte entier (vote n° 1607 du 7 mai 2025 : 17 pour) ; mesure prévue par le contrat du NFP.",
       "sources": [
         {
-          "title": "Scrutin n° 1607 du 07/05/2025, proposition de loi transpartisane contre les déserts médicaux (régulation de l'installation), vote final en première lecture",
+          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "date": "2025-04-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
           "url": "https://datan.fr/votes/legislature-17/vote_1607",
           "date": "2025-05-07",
           "kind": "vote"
@@ -849,7 +831,7 @@
     },
     "q16-fin-de-vie": {
       "stance": 2,
-      "justification": "Le groupe a voté majoritairement pour la loi en lecture définitive (scrutin n° 8280 du 15/07/2026 : 33 pour, 1 abstention, 2 contre) ; le programme prévoit la légalisation de l'aide active à mourir.",
+      "justification": "Le groupe a voté très majoritairement pour la loi en lecture définitive (vote n° 8280 du 15 juillet 2026 : 33 pour, 1 abstention, 2 contre) ; le programme prévoit la légalisation de l'aide active à mourir.",
       "sources": [
         {
           "title": "Scrutin n° 8280 du 15/07/2026, proposition de loi relative au droit à l'aide à mourir, lecture définitive (adoptée par 291 voix contre 241)",
@@ -867,7 +849,7 @@
     },
     "q17-ecole-privee": {
       "stance": 2,
-      "justification": "Le contrat du NFP (2024), signé par Les Écologistes, prévoit de moduler les dotations des établissements privés selon la mixité sociale.",
+      "justification": "Le contrat du NFP (2024), signé par Les Écologistes, prévoit de moduler les dotations des établissements, y compris privés, selon des objectifs de mixité sociale ; le groupe Écologiste a défendu en commission la PPL n° 418 qui modulait ce financement (20 novembre 2024).",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
@@ -880,12 +862,18 @@
           "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
           "date": "2024-07-08",
           "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
         }
       ]
     },
     "q18-ukraine": {
       "stance": 2,
-      "justification": "Le programme prévoit un soutien militaire incluant des armes à longue portée ; le groupe a voté pour l'accord de sécurité (scrutin n° 3461 du 12/03/2024) et pour la résolution de soutien (scrutin n° 988 du 12/03/2025).",
+      "justification": "Le programme présidentiel 2027 prévoit un soutien militaire à l'Ukraine incluant des armes à longue portée ; le groupe a voté pour l'accord de sécurité (scrutin n° 3461 du 12 mars 2024 : 20 pour, 1 contre) et pour la résolution de soutien (scrutin n° 988 du 12 mars 2025 : 34 pour, 2 abstentions).",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 197",
@@ -894,13 +882,13 @@
           "kind": "programme"
         },
         {
-          "title": "Scrutin n° 3461 du 12/03/2024, déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
           "url": "https://datan.fr/votes/legislature-16/vote_3461",
           "date": "2024-03-12",
           "kind": "vote"
         },
         {
-          "title": "Scrutin n° 988 du 12/03/2025, proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
           "url": "https://datan.fr/votes/legislature-17/vote_988",
           "date": "2025-03-12",
           "kind": "vote"
@@ -908,68 +896,58 @@
       ]
     },
     "q19-droit-europeen": {
-      "stance": null,
-      "justification": "Le programme prône un « saut fédéral européen » et le soutien au Conseil de l'Europe, mais aucune déclaration explicite sur la primauté du droit européen ou du droit français n'a été identifiée. Position précédemment déduite (-1), ramenée à null faute de source explicite.",
+      "stance": -2,
+      "justification": "Les eurodéputés écologistes (EELV) ont voté unanimement pour la résolution du Parlement européen du 21 novembre 2023 qui réaffirme le principe de primauté du droit de l'Union (10 pour) ; le programme 2027 prône un « saut fédéral européen ».",
       "sources": [
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 190",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
         },
         {
-          "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-          "url": "https://monvote2027.fr/candidat/tondelier",
-          "date": "2026-10-16",
-          "kind": "presse"
-        }
-      ]
-    },
-    "q20-defense-europe": {
-      "stance": null,
-      "justification": "Le programme prévoit un commandement militaire européen intégré, mais aucune position explicite sur un endettement commun de l'UE n'a été identifiée.",
-      "sources": []
-    },
-    "q21-libre-echange": {
-      "stance": 2,
-      "justification": "Le contrat du NFP prévoit de renoncer à l'accord UE-Mercosur ; le groupe a voté la motion de censure contre sa signature (scrutin n° 4986 du 14/01/2026, 32 voix pour).",
-      "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
-        {
-          "title": "Scrutin n° 4986 du 14/01/2026, motion de censure déposée par LFI contre la signature de l'accord UE-Mercosur",
-          "url": "https://datan.fr/votes/legislature-17/vote_4986",
-          "date": "2026-01-14",
+          "title": "Observatoire législatif du PE, résumé de la résolution du 21 novembre 2023 sur la mise en œuvre du principe de primauté du droit de l'UE",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1766854",
+          "date": "2023-11-21",
           "kind": "vote"
         }
       ]
     },
-    "q22-vie-republique": {
-      "stance": 2,
-      "justification": "Processus constituant pour une « Première République écologique et citoyenne » mettant fin au « présidentialisme ».",
+    "q20-defense-europe": {
+      "stance": 1,
+      "justification": "Les eurodéputés écologistes ont voté pour la résolution du PE du 12 mars 2025 sur le livre blanc de la défense, qui demande d'explorer « a system of European defence bonds » (5 pour), et pour le prêt de 90 Md€ à l'Ukraine financé par un emprunt commun de l'UE (11 février 2026 : 4 pour). Pas de déclaration explicite de Marine Tondelier identifiée sur un emprunt commun pour la défense européenne.",
       "sources": [
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 159",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « White paper on the future of European defence » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/172867",
+          "date": "2025-03-12",
+          "kind": "vote"
         },
         {
-          "title": "La Gazette France (AFP), « 2027 : les Écologistes veulent instaurer la Première République écologique et citoyenne »",
-          "url": "https://www.lagazettefrance.fr/article/2027-les-ecologistes-veulent-instaurer-la-premiere-republique-ecologique-et-citoyenne",
-          "date": "2026-07-13",
-          "kind": "presse"
+          "title": "Observatoire législatif du PE, résumé de la résolution du 12 mars 2025 sur le livre blanc sur l'avenir de la défense européenne (« a system of European defence bonds to be explored »)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1807135",
+          "date": "2025-03-12",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Regulation implementing enhanced cooperation on the establishment of the Ukraine Support Loan for 2026 and 2027 » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/184699",
+          "date": "2026-02-11",
+          "kind": "vote"
         }
       ]
     },
     "q23-referendum": {
-      "stance": null,
-      "justification": "Pas de position publique identifiée sur un référendum consacré à l'immigration.",
-      "sources": []
+      "stance": -2,
+      "justification": "Après les Rencontres de Saint-Denis du 17 novembre 2023, Marine Tondelier s'est félicitée « qu'il n'y aura pas de référendum sur l'immigration ». Position de 2023 ; pas de déclaration plus récente.",
+      "sources": [
+        {
+          "title": "Europe 1 – Rencontres de Saint-Denis : Emmanuel Macron évoque l'élargissement du référendum, avec de nombreux absents",
+          "url": "https://www.europe1.fr/politique/rencontres-de-saint-denis-emmanuel-macron-evoque-lelargissement-du-referendum-avec-de-nombreux-absents-4215037",
+          "date": "2023-11-17",
+          "kind": "presse"
+        }
+      ]
     },
     "q24-proportionnelle": {
       "stance": 2,
@@ -988,15 +966,225 @@
           "kind": "presse"
         }
       ]
+    },
+    "q25-successions": {
+      "stance": -2,
+      "justification": "Les Écologistes proposent d'alourdir la taxation des gros héritages : contribution de 10 % au-delà de 4 M€ puis 10 % supplémentaires au-delà de 13 M€, réduction de l'exonération du pacte Dutreil de 75 % à 50 % (environ 15 Md€ par an selon eux). Marine Tondelier : « La \"grande transmission\" doit financer la \"grande transition\" ».",
+      "sources": [
+        {
+          "title": "LCP, « Héritages et droits de succession : que proposent les candidats à l'élection présidentielle ? »",
+          "url": "https://lcp.fr/actualites/heritages-et-droits-de-succession-que-proposent-les-candidats-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique »",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q26-nationalisations": {
+      "stance": 2,
+      "justification": "Le groupe Écologiste et Social a voté pour la nationalisation d'ArcelorMittal France aux deux lectures (27 novembre 2025 : 18 pour ; 11 juin 2026 : 20 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "date": "2025-11-27",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "date": "2026-06-11",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « ArcelorMittal : l'Assemblée vote en faveur de la nationalisation proposée par LFI »",
+          "url": "https://lcp.fr/actualites/arcelormittal-l-assemblee-vote-en-faveur-de-la-nationalisation-proposee-par-lfi-420504",
+          "date": "2025-11-28",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q27-temps-de-travail": {
+      "stance": -2,
+      "justification": "Les Écologistes ont signé le contrat du Nouveau Front populaire (2024), qui prévoit de rétablir la durée effective de 35 heures et de passer aux 32 heures dans les métiers pénibles ou de nuit : ils veulent réduire, et non augmenter, la durée du travail.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q28-prix-energie": {
+      "stance": null,
+      "justification": "Les votes du groupe Écologiste et Social divergent : pour l'amendement LFI ramenant la TVA sur l'électricité à 5,5 % (2 novembre 2026 : 3 pour), contre l'amendement RN de même objet le même jour (7 contre), et partagé en 2025 sur l'abonnement d'électricité (1 pour, 6 contre, 5 abstentions). Pas de déclaration de Marine Tondelier sur la TVA de l'électricité.",
+      "sources": [
+        {
+          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "date": "2026-11-02",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "date": "2025-11-20",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q29-cannabis": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2027 des Écologistes (15 juillet 2026, p. 184) prévoit de « Légaliser et encadrer la production, la vente et la consommation de cannabis ».",
+      "sources": [
+        {
+          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 184",
+          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Les Écologistes, « Projet 2027 » (page officielle du programme)",
+          "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027",
+          "date": "2026-07",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q30-zfe": {
+      "stance": -2,
+      "justification": "Le groupe Écologiste et Social a voté contre la suppression des ZFE (article 15 ter du projet de loi de simplification, 28 mai 2025 : 0 pour, 14 contre). Le 8 octobre 2026, la députée écologiste Lisa Belluco a défendu l'amendement de suppression de l'article unique de la proposition de loi RN abrogeant les ZFE (groupe : 10 pour, 1 contre). Pas de déclaration de Marine Tondelier.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE), projet de loi de simplification de la vie économique",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement n° 7 (Mme Belluco) de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q31-voile-sport": {
+      "stance": 2,
+      "justification": "Les 16 sénateurs du groupe Écologiste – Solidarité et Territoires ont voté contre la proposition de loi interdisant les signes religieux ostensibles dans les compétitions des fédérations sportives (Sénat, 18 février 2025).",
+      "sources": [
+        {
+          "title": "Sénat – Scrutin n° 199 sur l'ensemble de la proposition de loi visant à assurer le respect du principe de laïcité dans le sport",
+          "url": "https://www.senat.fr/scrutin-public/2024/scr2024-199.html",
+          "date": "2025-02-18",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q32-ukraine-ue": {
+      "stance": 2,
+      "justification": "Les eurodéputés écologistes ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 (3 pour), qui demande d'ouvrir les groupes de chapitres d'adhésion « at the fastest pace possible », et du 8 juillet 2026 (4 pour), ainsi que pour la stratégie d'élargissement du 11 mars 2026 (3 pour).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/178334",
+          "date": "2025-09-09",
+          "kind": "vote"
+        },
+        {
+          "title": "Parlement européen, communiqué : la Commission doit ouvrir les groupes de chapitres de négociation d'adhésion « at the fastest pace possible »",
+          "url": "https://www.europarl.europa.eu/news/en/press-room/20250905IPR30174",
+          "date": "2025-09",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2025 Commission report on Ukraine » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/195067",
+          "date": "2026-07-08",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « EU enlargement strategy » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/186518",
+          "date": "2026-03-11",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q33-veto-europeen": {
+      "stance": -2,
+      "justification": "Les eurodéputés écologistes ont voté pour la révision des traités du 22 novembre 2023, qui étend le vote à la majorité qualifiée, y compris en politique étrangère (9 pour, 1 abstention), et pour la résolution du 22 octobre 2025 sur les conséquences institutionnelles de l'élargissement (3 pour).",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Proposals of the European Parliament for the amendment of the Treaties » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160487",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 22 novembre 2023 sur la révision des traités (extension du vote à la majorité qualifiée, y compris en politique étrangère)",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1767191",
+          "date": "2023-11-22",
+          "kind": "vote"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « Institutional consequences of the EU enlargement negotiations » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/180195",
+          "date": "2025-10-22",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q34-mineurs": {
+      "stance": -2,
+      "justification": "Le groupe Écologiste et Social a voté contre la proposition de loi Attal sur la justice des mineurs, qui facilitait l'éviction de l'excuse de minorité à partir de 16 ans (texte de la CMP, 13 mai 2025 : 0 pour, 36 contre).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 1624, PPL visant à renforcer l'autorité de la justice à l'égard des mineurs délinquants et de leurs parents (texte de la CMP)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "date": "2025-05-13",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
+          "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
+          "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
     }
   },
   "candidacies": {
     "presidentielle-2027": {
       "candidateName": "Marine Tondelier",
       "status": "designe",
-      "statusLabel": "Candidate désignée par le parti",
-      "candidate": "Marine Tondelier (statut : désignée par un vote interne en décembre 2025 (86 % des voix) pour représenter Les Écologistes à la primaire de la gauche ; investiture maintenue par le conseil fédéral du 2026-09-21 jusqu'au vote des adhérents du 10 au 13 décembre 2026, qui doit trancher entre candidature autonome et ralliement à un autre candidat de gauche)",
-      "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique » présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Le document officiel (lesecologistes.fr) n'a pas pu être ouvert directement (accès bloqué par une protection anti-robots) : les mesures sont citées d'après des comptes rendus de presse et des sites citant le programme avec pagination, à vérifier sur le texte. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
+      "statusLabel": "Candidate désignée (vote des adhérents du 10 au 13 décembre 2026)",
+      "candidate": "Marine Tondelier a été désignée en décembre 2025 par un vote interne (86 % des voix) pour porter la candidature des Écologistes. Le conseil fédéral du 21 septembre 2026 a maintenu cette investiture jusqu'au vote des adhérents, du 10 au 13 décembre 2026, qui doit trancher entre une candidature autonome et le ralliement à un autre candidat de gauche.",
+      "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique » présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Le document officiel n'a pas pu être consulté en ligne : les mesures sont citées d'après des comptes rendus de presse et des sites qui reproduisent des extraits paginés du programme. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
       "themes": {
         "economie": {
           "summary": "Le programme vise une « prospérité écologique » et une « fiscalité verte et juste » : impôt plancher sur les très grandes fortunes, « ISF climatique », TVA verte et tranche supérieure d'impôt sur le revenu. Le groupe écologiste est à l'origine de la proposition de loi « taxe Zucman » adoptée à l'Assemblée en février 2025.",
@@ -1086,7 +1274,7 @@
               ]
             },
             {
-              "text": "Porter le salaire minimum à 2 000 € brut par mois dès 2027 (Public Sénat, octobre 2026 ; extrait de la p. 55 du programme cité par MonVote2027 ; La Campagne 2027). Divergence : un compte rendu de Parlons Politique (juillet 2026) indique au contraire que le programme ne promet pas de hausse directe du SMIC.",
+              "text": "Porter le salaire minimum à 2 000 € brut par mois dès 2027 (Public Sénat, octobre 2026 ; p. 55 du programme). Les comptes rendus divergent : un autre compte rendu de presse (juillet 2026) indique au contraire que le programme ne promet pas de hausse directe du SMIC.",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 55",
@@ -1576,7 +1764,7 @@
               ]
             },
             {
-              "text": "Créer un « haut conseil militaire intégré » rattaché au Conseil européen selon l'AFP (« commandement militaire intégré européen » sous la tutelle du Conseil de l'Union européenne selon l'extrait de la p. 195 cité par MonVote2027).",
+              "text": "Créer un « haut conseil militaire intégré » rattaché au Conseil européen selon l'AFP (« commandement militaire intégré européen » sous la tutelle du Conseil de l'Union européenne selon la p. 195 du programme).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 195",

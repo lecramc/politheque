@@ -60,6 +60,9 @@ export const rankParties = (answers: Answers, parties: Party[]): PartyProximity[
 
 export type AxisPosition = Record<AxisId, number | null>;
 
+/** Une position sur un axe n'est calculée qu'à partir de 4 réponses (ou positions) connues sur cet axe. */
+export const MIN_AXIS_COUNT = 4;
+
 /** Position de -1 à +1 sur chaque axe, à partir de valeurs -2…+2 par question. */
 export const computeAxisPosition = (
   values: Record<string, AnswerValue>,
@@ -79,7 +82,7 @@ export const computeAxisPosition = (
   }
 
   const average = ({ total, count }: { total: number; count: number }) =>
-    count === 0 ? null : Math.round((total / count) * 100) / 100;
+    count < MIN_AXIS_COUNT ? null : Math.round((total / count) * 100) / 100;
 
   return {
     economique: average(sums.economique),

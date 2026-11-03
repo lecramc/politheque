@@ -1,0 +1,216 @@
+{
+  "question": "q30-zfe",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Le groupe Écologiste et Social a voté contre la suppression des ZFE (article 15 ter du projet de loi de simplification, 28 mai 2025 : 0 pour, 14 contre). Le 8 octobre 2026, la députée écologiste Lisa Belluco a défendu l'amendement de suppression de l'article unique de la proposition de loi RN abrogeant les ZFE (groupe : 10 pour, 1 contre). Pas de déclaration de Marine Tondelier.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE), projet de loi de simplification de la vie économique",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement n° 7 (Mme Belluco) de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -1,
+      "justification": "Le groupe Horizons a voté le 14 avril 2026, à 16 voix contre 5 (1 abstention), l'amendement du gouvernement qui maintenait les ZFE en les rendant facultatives, rejeté par l'Assemblée. Sur la suppression elle-même, le groupe était partagé le 28 mai 2025 (1 pour, 1 abstention, 2 contre). Pas de déclaration d'Édouard Philippe.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 6183, « Maintenir l'existence des ZFE mais les rendre facultatives »",
+          "url": "https://datan.fr/votes/legislature-17/vote_6183",
+          "date": "2026-04-14",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – La suppression des ZFE confirmée lors de l'ultime vote sur la loi de « simplification » à l'Assemblée",
+          "url": "https://lcp.fr/actualites/la-suppression-des-zfe-confirmee-lors-de-l-ultime-vote-sur-la-loi-de-simplification-a-l",
+          "date": "2026-04-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 1,
+      "justification": "Le groupe LFI a voté la suppression des ZFE le 28 mai 2025 (27 pour, 0 contre) puis, le 8 octobre 2026, contre l'amendement qui supprimait l'article abrogeant les ZFE (0 pour, 32 contre). Ses représentants disent toutefois vouloir « conditionner les ZFE au développement des alternatives » (Sylvain Carrière, 8 octobre 2026) et Mathilde Panot a refusé de soutenir la proposition de loi du RN.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m (LFI : 0 pour, 32 contre)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – Pourquoi le RN risque d'avoir du mal à faire voter la suppression des ZFE lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/pourquoi-le-rn-risque-d-avoir-du-mal-a-faire-voter-la-suppression-des-zfe-lors-de-sa",
+          "date": "2026-09",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 2,
+      "justification": "Bruno Retailleau a déclaré après la censure du Conseil constitutionnel : « Si je suis élu en 2027, je les abrogerai » (X, mai 2026). Le groupe Droite républicaine a voté la suppression le 28 mai 2025 (6 pour, 0 contre).",
+      "sources": [
+        {
+          "title": "Europe 1 – Suppression des ZFE par le Conseil constitutionnel : une grande partie de la classe politique révoltée",
+          "url": "https://www.europe1.fr/politique/suppression-des-zfe-par-le-conseil-constitutionnel-une-grande-partie-de-la-classe-politique-revoltee-937349",
+          "date": "2026-05-22",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 2,
+      "justification": "David Lisnard a écrit après la censure : « une fois au pouvoir, nous les supprimerons par une loi en bonne et due forme » (21 mai 2026), et a évoqué un référendum sur le sujet au meeting de Saint-Raphaël (3 juillet 2026). Il avait d'abord proposé, dans son livre « Ainsi va la France », de les aménager plutôt que de les supprimer. Pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – « Quel candidat à la présidentielle 2027 veut supprimer les zones à faibles émissions (ZFE) ? »",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-supprimer-les-zones-a-faibles-emissions-zfe/",
+          "date": "2026-11",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 0,
+      "justification": "Fabien Roussel a demandé en février 2023 un moratoire sur les ZFE (« Il faut un moratoire, il faut déplacer ces ZFE, il faut les décaler dans le temps »). Position de 2023. Les députés GDR ont voté le 8 octobre 2026 pour supprimer l'article abrogeant les ZFE (3 pour, 0 contre), et se sont abstenus le 14 avril 2026 sur l'amendement rendant les ZFE facultatives.",
+      "sources": [
+        {
+          "title": "Linfodurable (AFP) – Roussel (PCF) veut « revenir en arrière » sur les zones à faible émission",
+          "url": "https://www.linfodurable.fr/roussel-pcf-veut-revenir-en-arriere-sur-les-zones-faible-emission-37112",
+          "date": "2023-02-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": -2,
+      "justification": "Le groupe Socialistes a voté contre la suppression des ZFE le 28 mai 2025 (0 pour, 1 abstention, 17 contre) et pour la suppression de l'article abrogeant les ZFE le 8 octobre 2026 (20 pour, 0 contre) ; Gérard Leseul a qualifié l'abrogation d'« impasse ». Pas de déclaration de Raphaël Glucksmann.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": 2,
+      "justification": "Le programme présidentiel 2022 d'Éric Zemmour proposait de supprimer les ZFE-m existantes et les vignettes Crit'Air. Position de 2022 ; pas de déclaration plus récente. Pas de groupe parlementaire.",
+      "sources": [
+        {
+          "title": "Institut Montaigne – Présidentielle 2022, Éric Zemmour : mettre fin aux interdictions de circuler en ville en fonction du type de véhicule",
+          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour/mettre-fin-aux-interdictions-de-circuler-en-ville-en-fonction-du-type-de-vehicule",
+          "date": "2022",
+          "kind": "presse"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Le groupe Ensemble pour la République a voté majoritairement contre la suppression des ZFE le 28 mai 2025 (3 pour, 16 contre) et pour la suppression de l'article abrogeant les ZFE le 8 octobre 2026 (12 pour, 1 contre). Le 14 avril 2026, il a soutenu l'amendement du gouvernement rendant les ZFE facultatives (52 pour, 2 contre). Pas de déclaration de Gabriel Attal ; son programme ne mentionne pas les ZFE.",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP – La suppression des ZFE confirmée lors de l'ultime vote sur la loi de « simplification » à l'Assemblée",
+          "url": "https://lcp.fr/actualites/la-suppression-des-zfe-confirmee-lors-de-l-ultime-vote-sur-la-loi-de-simplification-a-l",
+          "date": "2026-04-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 2,
+      "justification": "Le groupe RN a voté la suppression des ZFE le 28 mai 2025 (56 pour, 0 contre) et a déposé une proposition de loi d'abrogation (Pierre Meurin), examinée lors de sa niche du 8 octobre 2026 sans vote final. Après la censure, Marine Le Pen a demandé que l'Assemblée revote une « proposition de loi sur les ZFE » (22 mai 2026).",
+      "sources": [
+        {
+          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Linfodurable (AFP) – ZFE : Le Pen critique le Conseil constitutionnel qui « contraint la démocratie »",
+          "url": "https://www.linfodurable.fr/zfe-le-pen-critique-le-conseil-constitutionnel-qui-contraint-la-democratie-56281",
+          "date": "2026-05-22",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP – ZFE : le RN ne parvient pas à faire voter leur suppression lors de sa niche parlementaire",
+          "url": "https://lcp.fr/actualites/zfe-le-rn-ne-parvient-pas-a-faire-voter-leur-suppression-lors-de-sa-niche-parlementaire",
+          "date": "2026-10-09",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : scrutin n° 2190 du 28/05/2025 sur l'article 15 ter supprimant les ZFE (98 pour, 6 abstentions, 51 contre, 155 votants seulement). Il est complété par le scrutin n° 8613 du 08/10/2026 et par le n° 6183 du 14/04/2026. Le chiffre « EPR 30 contre, 25 pour, 19 abstentions » cité dans questionnaire-v2.md porte sur le vote d'ensemble du projet de loi de simplification (14/04/2026, 275-225), pas sur les ZFE : il ne doit pas servir de référence. Points incertains : (1) LFI : codé 1 parce que le groupe a voté la suppression, mais ses porte-parole parlent de moratoire et de ZFE conditionnées. Un codage 0 serait défendable, à revoir à la parution de « L'Avenir en commun » 2027 (7 novembre 2026). (2) PCF : la seule déclaration du candidat date de 2023 (moratoire) ; le vote GDR de 2026 ne compte que 3 votants, sur un groupe qui ne réunit pas que des communistes. (3) Horizons : il n'y a que 4 votants sur l'article de 2025, et le codage -1 repose surtout sur le vote de l'amendement « ZFE facultatives ». (4) Nouvelle Énergie et Reconquête reposent sur une seule source (site du parti ; Institut Montaigne pour un programme de 2022). Texte help : il est exact (vote d'avril 2026, censure du 21/05/2026). On pourrait ajouter : « Une proposition de loi du RN visant à les abroger a été examinée le 8 octobre 2026, sans vote final. » Vérification croisée (3 novembre 2026) : décomptes des votes n° 2190 et n° 8613 vérifiés sur Datan. LFI maintenu à 1 : votes constants pour la suppression, mais nuance explicite de ses députés (LCP, 9 octobre 2026 : « conditionner les ZFE au développement des alternatives »). PCF maintenu à 0 : le moratoire demandé par Fabien Roussel (2023) est une position intermédiaire explicite ; les 3 votants GDR de 2026 ne suffisent pas à la renverser. Dates converties."
+}

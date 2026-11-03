@@ -1,0 +1,192 @@
+{
+  "question": "q19-droit-europeen",
+  "positions": {
+    "ecologistes": {
+      "stance": -2,
+      "justification": "Les eurodéputés écologistes (EELV) ont voté unanimement pour la résolution du Parlement européen du 21 novembre 2023 qui réaffirme le principe de primauté du droit de l'Union (10 pour) ; le programme 2027 prône un « saut fédéral européen ».",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 21 novembre 2023 sur la mise en œuvre du principe de primauté du droit de l'UE",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1766854",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -2,
+      "justification": "Le seul eurodéputé Horizons de la législature 2019-2024 (Gilles Boyer) a voté pour la résolution du PE du 21 novembre 2023 réaffirmant la primauté du droit de l'Union. Pas de déclaration d'Édouard Philippe identifiée sur la primauté ; sa proposition d'un protocole additionnel à la CEDH relève du Conseil de l'Europe, pas de l'UE.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 21 novembre 2023 sur la mise en œuvre du principe de primauté du droit de l'UE",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1766854",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 1,
+      "justification": "« L'Avenir en commun » prévoit de « désobéir » aux règles européennes « chaque fois que c'est nécessaire » pour appliquer le programme, c'est-à-dire une primauté du droit national ciblée et non générale ; les eurodéputés LFI ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (4 contre).",
+      "sources": [
+        {
+          "title": "L'Avenir en commun, section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
+          "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
+          "date": "2021-11",
+          "kind": "programme"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "lr": {
+      "stance": 1,
+      "justification": "Bruno Retailleau propose des référendums qui « rétabliraient la primauté de notre droit national chaque fois qu'il s'agit de protéger nos intérêts fondamentaux » (12 février 2026), soit une primauté ciblée et non générale ; les eurodéputés LR ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (6 contre, 2 abstentions).",
+      "sources": [
+        {
+          "title": "Euronews, « Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums »",
+          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+          "date": "2026-02-12",
+          "kind": "presse"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": 1,
+      "justification": "Le programme propose d'inscrire dans la Constitution « la primauté du droit national en matière migratoire » pour rendre inapplicables les décisions de la CJUE et de la CEDH « contraires à l'intérêt national ». La primauté revendiquée est limitée au domaine migratoire. Nouvelle Énergie n'a pas d'eurodéputé.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie, programme « Immigration »",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouvelle Énergie, « Que pense David Lisnard de l'Union européenne ? »",
+          "url": "https://www.unenouvelleenergie.fr/questions/que-pense-david-lisnard-de-l-union-europeenne/",
+          "date": "2026-10-16",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 1,
+      "justification": "Le texte adopté au 40e congrès du PCF (juillet 2026) affirme que « les droits souverains des peuples européens doivent s'imposer aux décisions austéritaires et bellicistes prises par les institutions européennes », dans la perspective d'une « Europe de peuples et de nations libres, souverains et associés » : une primauté revendiquée sur certaines décisions européennes, pas une primauté générale du droit national. Le programme 2022 prévoyait déjà un « processus de rupture avec les traités européens actuels ».",
+      "sources": [
+        {
+          "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
+          "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+          "date": "2026-07-15",
+          "kind": "programme"
+        },
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "date": "2022-01",
+          "kind": "programme"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": -2,
+      "justification": "Les eurodéputés PS (3) et Place publique (2, dont Raphaël Glucksmann) ont voté pour la résolution du PE du 21 novembre 2023 réaffirmant la primauté du droit de l'Union.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 21 novembre 2023 sur la mise en œuvre du principe de primauté du droit de l'UE",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1766854",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": 2,
+      "justification": "Le programme 2022 d'Éric Zemmour prévoit de réviser l'article 55 de la Constitution pour que les lois nationales nouvelles priment sur les textes internationaux antérieurs ; l'unique eurodéputé Reconquête de l'époque (Nicolas Bay) a voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union.",
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle 2022 : Éric Zemmour détaille son programme »",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2022-eric-zemmour-detaille-son-programme-et-assume-le-terme",
+          "date": "2022-03-23",
+          "kind": "presse"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "renaissance": {
+      "stance": -2,
+      "justification": "Les eurodéputés Renaissance et alliés (Renew) ont voté unanimement pour la résolution du PE du 21 novembre 2023 qui rappelle que la primauté du droit de l'Union est « crucial » pour son application uniforme. Pas de déclaration de Gabriel Attal identifiée sur ce point.",
+      "sources": [
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Observatoire législatif du PE, résumé de la résolution du 21 novembre 2023 sur la mise en œuvre du principe de primauté du droit de l'UE",
+          "url": "https://oeil.europarl.europa.eu/oeil/en/document-summary?id=1766854",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    },
+    "rn": {
+      "stance": 2,
+      "justification": "Le projet 2022 de Marine Le Pen prévoit une révision constitutionnelle pour que la Constitution « prévale sur le droit international » ; les eurodéputés RN ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (15 contre).",
+      "sources": [
+        {
+          "title": "Projet pour la France de Marine Le Pen, livret « Le contrôle de l'immigration »",
+          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "HowTheyVote.eu, vote nominatif du Parlement européen « The implementation of the principle of primacy of EU law » (détail par délégation nationale)",
+          "url": "https://howtheyvote.eu/votes/160105",
+          "date": "2023-11-21",
+          "kind": "vote"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : résolution du Parlement européen du 21/11/2023 sur la mise en œuvre du principe de primauté du droit de l'UE (A9-0341/2023, adoptée par 430 voix contre 172). Voter pour signifie défendre la primauté du droit européen, donc être en désaccord avec l'affirmation. Incertitudes : (1) ce vote date de la législature 2019-2024 ; les délégations ont changé depuis, et aucun vote équivalent n'a été trouvé pour la législature actuelle. (2) Horizons ne repose que sur le vote d'un seul eurodéputé (G. Boyer) ; à confirmer par une déclaration de Philippe. (3) LFI codé +1 et non +2, comme le prévoit le questionnaire : la « désobéissance » est ciblée ; le vote contre la résolution irait vers +2. (4) Nouvelle Énergie +1 : primauté limitée à l'immigration. (5) PCF : null. Texte help : exact (Conseil d'État, Sarran 1998 et Arcelor 2007 ; Conseil constitutionnel, décision 2004-505 DC). Aucune correction. Vérification croisée (03/11/2026) : article Euronews du 12/02/2026 ouvert : la primauté du droit national est proposée « chaque fois qu'il s'agit de protéger nos intérêts fondamentaux ». LR : 2→1, par cohérence de traitement avec LFI (+1, désobéissance « chaque fois que c'est nécessaire ») et Nouvelle Énergie (+1, primauté limitée à l'immigration) : une primauté conditionnelle reçoit +1, une primauté générale (RN, Reconquête) +2. PCF : null→1 sur le texte du 40e congrès (2026), qui revendique la primauté des « droits souverains des peuples » sur les décisions européennes « austéritaires et bellicistes » ; le congrès a par ailleurs mandaté un débat interne sur le projet européen du PCF d'ici 2028. Programme de Nouvelle Énergie rouvert : « Inscrire la primauté du droit national en matière migratoire dans la Constitution », conforme."
+}

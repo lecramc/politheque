@@ -1,0 +1,185 @@
+{
+  "question": "q17-ecole-privee",
+  "positions": {
+    "ecologistes": {
+      "stance": 2,
+      "justification": "Le contrat du NFP (2024), signé par Les Écologistes, prévoit de moduler les dotations des établissements, y compris privés, selon des objectifs de mixité sociale ; le groupe Écologiste a défendu en commission la PPL n° 418 qui modulait ce financement (20 novembre 2024).",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
+          "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
+          "date": "2024-07-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "horizons": {
+      "stance": -1,
+      "justification": "Lors de l'examen de la PPL n° 418 en commission (20 novembre 2024), l'orateur Horizons Jérémie Patrier-Leitus a voté la suppression de l'article unique modulant le financement selon la mixité, en estimant que la mixité doit être traitée « pour les établissements publics comme privés ». Aucune position d'Édouard Philippe ; son programme n'en parle pas.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "lfi": {
+      "stance": 2,
+      "justification": "Le programme soutenu par LFI prévoit de « moduler les dotations des établissements, y compris privés, selon des objectifs de mixité sociale » et d'abroger la loi Carle ; le député LFI Paul Vannier est l'auteur de la PPL n° 418 (2024) en ce sens.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "L'Avenir en commun (édition 2022), section 65 « Reconstruire une école globale pour l'égalité et l'émancipation »",
+          "url": "https://laec.fr/section/65/reconstruire-une-ecole-globale-pour-legalite-et-lemancipation",
+          "date": "2021-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "lr": {
+      "stance": -2,
+      "justification": "Le programme 2026 de LR ne prévoit pas de lier le financement à la mixité (seulement une évaluation publique de chaque établissement, public ou privé sous contrat). Le groupe DR a déposé un amendement de suppression de la PPL n° 418 : « Nous ne pouvons en aucune manière nous associer à une entreprise si grossièrement partisane de sape et de déstabilisation de l'école privée » (Frédérique Meunier, 20 novembre 2024) ; Annie Genevard (LR) s'était dite « très choquée » par le rapport Vannier-Weissberg (2 avril 2024).",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        },
+        {
+          "title": "LCP, « Financement de l'enseignement privé sous contrat : un rapport parlementaire préconise de… » (présentation du rapport Vannier-Weissberg)",
+          "url": "https://lcp.fr/actualites/financement-de-l-enseignement-prive-sous-contrat-un-rapport-parlementaire-preconise-de",
+          "date": "2024-04-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Les Républicains, « Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté »",
+          "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+          "date": "2026-09",
+          "kind": "programme"
+        }
+      ]
+    },
+    "nouvelle-energie": {
+      "stance": -2,
+      "justification": "Le programme affirme que « l'enseignement privé n'est pas le problème », refuse d'imposer une « mixité sociale » et propose un chèque-éducation, « un financement public équivalent » pour l'école publique ou privée.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – Programme « Éducation » (page non datée, consultée en novembre 2026)",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/education/",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "pcf": {
+      "stance": 2,
+      "justification": "Le contrat du NFP (2024), signé par le PCF, prévoit de moduler les dotations des établissements privés selon la mixité sociale ; le groupe GDR a soutenu la PPL n° 418 en commission (20 novembre 2024).",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
+          "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
+          "date": "2024-07-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "ps-place-publique": {
+      "stance": 2,
+      "justification": "Raphaël Glucksmann propose d'appliquer « le principe de mixité sociale à tous les établissements financés par le contribuable, y compris donc le privé » (24 mai 2026) ; le groupe Socialistes a soutenu la PPL n° 418 en commission (20 novembre 2024).",
+      "sources": [
+        {
+          "title": "Glucksmann veut une convention citoyenne sur l'immigration",
+          "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
+          "date": "2026-05-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "reconquete": {
+      "stance": null,
+      "justification": "Pas de position publique : le programme présidentiel 2022 d'Éric Zemmour ne traite pas du financement de l'enseignement privé sous contrat, le programme 2027 n'est pas publié, et Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": []
+    },
+    "renaissance": {
+      "stance": 0,
+      "justification": "Position intermédiaire du groupe EPR : en commission (20 novembre 2024), le député EPR Jean Laussucq a déposé un amendement de suppression de la PPL n° 418, tandis que Céline Calvez (EPR) proposait un système incitatif de « bonus » et de « malus » à enveloppe constante pour les établissements privés selon leurs efforts de mixité ; en 2024, le corapporteur Renaissance Christopher Weissberg proposait de « moduler les montants du forfait d'externat en fonction de la mixité sociale ». Aucune des 96 mesures de Gabriel Attal ne traite du sujet.",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        },
+        {
+          "title": "LCP, « Financement de l'enseignement privé sous contrat : un rapport parlementaire préconise de… » (présentation du rapport Vannier-Weissberg)",
+          "url": "https://lcp.fr/actualites/financement-de-l-enseignement-prive-sous-contrat-un-rapport-parlementaire-preconise-de",
+          "date": "2024-04-02",
+          "kind": "presse"
+        }
+      ]
+    },
+    "rn": {
+      "stance": -2,
+      "justification": "Lors de l'examen de la PPL n° 418 (20 novembre 2024), le groupe RN a déposé un amendement de suppression ; Arnaud Sanvert (RN) y a vu « une attaque contre l'enseignement privé sous contrat » et Roger Chudeau (RN) « une offensive organisée, méthodique, systématique de destruction de l'enseignement catholique » ; Roger Chudeau avait qualifié le rapport Vannier-Weissberg de « rapport à charge » (2 avril 2024).",
+      "sources": [
+        {
+          "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "date": "2024-11-20",
+          "kind": "declaration"
+        },
+        {
+          "title": "LCP, « Financement de l'enseignement privé sous contrat : un rapport parlementaire préconise de… » (présentation du rapport Vannier-Weissberg)",
+          "url": "https://lcp.fr/actualites/financement-de-l-enseignement-prive-sous-contrat-un-rapport-parlementaire-preconise-de",
+          "date": "2024-04-02",
+          "kind": "presse"
+        }
+      ]
+    }
+  },
+  "notes": "Texte de référence commun : examen en commission de la PPL n° 418 (Paul Vannier, LFI) le 20/11/2024, qui modulait le financement public des établissements privés sous contrat selon un indicateur de mixité sociale. L'article unique a été rejeté ; les votes en commission ne sont pas nominatifs, donc le codage repose sur les interventions des orateurs de groupe (niveau « porte-parole » de la hiérarchie) et les amendements de suppression déposés (EPR, UDR, RN, DR). Le rapporteur a conclu que la volonté de refonder ce financement n'était « partagée que par les parlementaires issus des composantes du Nouveau Front populaire ». Positions de 2024 pour RN, LR, HOR et RE, aucun candidat de ces partis ne s'étant exprimé depuis : à revoir si les programmes 2027 traitent du sujet. RE codé 0 : groupe partagé entre suppression et modulation incitative ; HOR codé -1 et non -2 car l'orateur conteste la méthode et le périmètre (privé seul) plus que l'objectif de mixité. Pistes non abouties : amendements « IPS » au PLF 2025 (n° II-1915) et PLF 2026 (AC367, rejeté en commission) sans scrutin public trouvé. Texte help : 17,6 % confirmé (vie-publique.fr, rentrée 2022 ; repris dans les Repères et références statistiques 2025) ; le protocole du 17/05/2023 entre le ministère et le Secrétariat général de l'enseignement catholique (« plan d'action favorisant le renforcement des mixités sociale et scolaire ») est bien un engagement sans obligation juridique. Source à ajouter : https://www.vie-publique.fr/node/289657 . Vérification croisée (3 novembre 2026) : dates converties, notes de travail retirées, valeurs inchangées."
+}

@@ -11,7 +11,7 @@ export const STANCE_LABEL: Record<string, string> = {
   '0': 'Mitigé',
   '-1': 'Plutôt contre',
   '-2': 'Contre',
-  null: 'Non identifiée',
+  null: 'Pas de position claire',
 };
 
 const STANCE_SYMBOL: Record<string, string> = {

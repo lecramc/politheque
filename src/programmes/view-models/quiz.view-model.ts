@@ -49,6 +49,15 @@ export const quizViewModel = ({ dispatch, router }: { dispatch: AppDispatch; rou
       important: question ? !!quiz.important[question.id] : false,
       canGoBack: index > 0,
       choices: ANSWER_CHOICES,
+      /** Enregistre la réponse immédiatement (rien n'est perdu si l'on quitte). */
+      record: (value: AnswerValue) => {
+        if (question) dispatch(quizActions.answer({ questionId: question.id, value }));
+      },
+      /** Passe à la question suivante, ou aux résultats après la dernière. */
+      next: () => {
+        if (isLast) showResults();
+        else dispatch(quizActions.goTo(index + 1));
+      },
       choose: (value: AnswerValue) => {
         if (!question) return;
         dispatch(quizActions.answer({ questionId: question.id, value }));

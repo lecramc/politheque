@@ -9,7 +9,7 @@ description: >
   "micro-interaction", "feedback au clic", "changement de page", "loading",
   "ça rame", "rendre plus vivant".
 tools: Read, Write, Edit, Bash, Glob, Grep
-model: opus
+model: sonnet
 memory: project
 ---
 
