@@ -561,7 +561,20 @@
     "q01-isf": {
       "stance": null,
       "justification": "Pas de position publique identifiée et sourcée sur un ISF ou la « taxe Zucman » ; le programme 2022 maintenait l'IFI avec une déduction de 50 % des investissements dans les PME, et le chiffrage 2026 de Sarah Knafo ne traite pas de la fiscalité du patrimoine.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        },
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        }
+      ]
     },
     "q02-depenses": {
       "stance": 2,
@@ -644,7 +657,14 @@
     "q05-smic": {
       "stance": null,
       "justification": "Pas de position publique identifiée sur une hausse du SMIC ; le programme 2022 proposait une baisse de CSG sur les bas salaires.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
     },
     "q06-chomage": {
       "stance": 2,
@@ -798,7 +818,14 @@
     "q15-medecins": {
       "stance": null,
       "justification": "Pas de position publique identifiée sur la régulation de l'installation ; le programme 2022 propose des médecins salariés par l'État et une garde obligatoire, sans contrainte d'installation.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
     },
     "q16-fin-de-vie": {
       "stance": -2,
@@ -820,7 +847,14 @@
     "q18-ukraine": {
       "stance": null,
       "justification": "Pas de position récente vérifiée sur le soutien militaire à l'Ukraine ; le programme 2022 prévoyait d'« agir pour rétablir la paix » et un dialogue incluant la Russie, sans se prononcer sur les livraisons d'armes. Les votes de Sarah Knafo au Parlement européen sur l'aide à l'Ukraine n'ont pas pu être vérifiés.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
     },
     "q19-droit-europeen": {
       "stance": 2,
@@ -843,7 +877,14 @@
     "q20-defense-europe": {
       "stance": null,
       "justification": "Pas de position explicite identifiée sur l'endettement commun de l'UE ; le chiffrage 2026 propose un retour au budget européen d'avant le Covid.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Budget 2027 – au moins 140 Md€ d'économies (Sarah Knafo, site relayé par parti-reconquete.fr)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026-09",
+          "kind": "declaration"
+        }
+      ]
     },
     "q21-libre-echange": {
       "stance": 2,
@@ -860,7 +901,14 @@
     "q22-vie-republique": {
       "stance": null,
       "justification": "Pas de position publique identifiée sur une VIe République ; les réformes proposées étendent le référendum et le rôle du Parlement face au Conseil constitutionnel.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
+          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
     },
     "q23-referendum": {
       "stance": 2,

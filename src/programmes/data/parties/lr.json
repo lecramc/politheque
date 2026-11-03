@@ -671,6 +671,12 @@
           "url": "https://www.europe1.fr/politique/budget-2026-les-deputes-rejettent-la-taxe-zucman-a-lassemblee-nationale-869616",
           "date": "2025-10-31",
           "kind": "presse"
+        },
+        {
+          "title": "Taxe Zucman – amendement n° 2359 (PLF 2026), vote n° 3300 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
         }
       ]
     },
@@ -695,12 +701,18 @@
           "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
           "date": "2026-08-27",
           "kind": "presse"
+        },
+        {
+          "title": "S'il est élu, Bruno Retailleau veut instaurer un âge minimal de départ à la retraite à 63 ans, le taux plein à 65 (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/bruno-retailleau/s-il-est-elu-bruno-retailleau-veut-instaurer-un-age-minimal-de-depart-a-la-retraite-a-63-ans-le-taux-plein-a-65_8205254.html",
+          "date": "2026-09-22",
+          "kind": "presse"
         }
       ]
     },
     "q03-charges": {
       "stance": 2,
-      "justification": "LR propose de « réduire substantiellement les prélèvements obligatoires » et une baisse du coût du travail d'environ 15 Md€ pour les entreprises.",
+      "justification": "LR propose de « réduire franchement les prélèvements obligatoires » et une baisse du coût du travail d'environ 15 Md€ pour les entreprises.",
       "sources": [
         {
           "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
@@ -737,13 +749,26 @@
           "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3684",
           "date": "2025-11-12",
           "kind": "vote"
+        },
+        {
+          "title": "Suspension de la réforme des retraites (PLFSS 2026, art. 45 bis), vote n° 3684 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3684",
+          "date": "2025-11-12",
+          "kind": "vote"
         }
       ]
     },
     "q05-smic": {
       "stance": null,
       "justification": "Pas de position publique primaire identifiée sur un « coup de pouce » au SMIC ; LR privilégie la baisse des cotisations et le seuil « zéro cotisation ». Un site agrégateur (France-Vote) lui attribue une opposition à une hausse imposée du SMIC, sans source primaire datée.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
+          "date": "2025-12",
+          "kind": "programme"
+        }
+      ]
     },
     "q06-chomage": {
       "stance": 2,
@@ -789,8 +814,15 @@
     },
     "q08-preference": {
       "stance": null,
-      "justification": "Position non tranchée au sens de l'énoncé : Bruno Retailleau a défendu en 2023 des conditions de durée de résidence pour certaines prestations, tout en réfutant le terme de « préférence nationale » ; pas de proposition identifiée réservant les aides aux Français.",
-      "sources": []
+      "justification": "Position non tranchée au sens de l'énoncé : pas de proposition identifiée réservant les aides aux Français ; LR a proposé des conditions de résidence pour certaines prestations versées aux étrangers, mesure que Public Sénat compare à celle du RN en l'estimant à 2,1 Md€.",
+      "sources": [
+        {
+          "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
+          "date": "2025-10-24",
+          "kind": "presse"
+        }
+      ]
     },
     "q09-regularisation": {
       "stance": -2,
@@ -854,7 +886,7 @@
     },
     "q13-renouvelables": {
       "stance": -2,
-      "justification": "LR propose d'« arrêter de subventionner » les nouvelles capacités éoliennes et solaires.",
+      "justification": "LR propose « la fin des subventions aux énergies intermittentes », pour les nouvelles capacités éoliennes et solaires.",
       "sources": [
         {
           "title": "Nos propositions (Les Républicains) – livret « Faire baisser la facture d'électricité »",
@@ -866,7 +898,7 @@
     },
     "q14-normes-agricoles": {
       "stance": 2,
-      "justification": "Le groupe a voté la loi Duplomb (scrutin n° 2957 : 47 pour) et LR propose d'aligner les normes françaises sur les normes européennes, « pas plus ».",
+      "justification": "Le groupe a voté la loi Duplomb (scrutin n° 2957 : 47 pour) et LR propose d'aligner les normes françaises sur les normes européennes, « pas au-delà ».",
       "sources": [
         {
           "title": "Loi Duplomb sur l'agriculture – vote n° 2957 (Datan)",
@@ -915,13 +947,26 @@
           "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
           "date": "2026-07-17",
           "kind": "presse"
+        },
+        {
+          "title": "Proposition de loi créant un droit à l'aide à mourir, vote n° 8280 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
         }
       ]
     },
     "q17-ecole-privee": {
       "stance": null,
       "justification": "Pas de position identifiée sur le financement du privé sous contrat ; le livret école prévoit seulement son évaluation publique au même titre que le public.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté (Les Républicains)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+          "date": "2026-09",
+          "kind": "programme"
+        }
+      ]
     },
     "q18-ukraine": {
       "stance": 2,
@@ -973,13 +1018,26 @@
           "url": "https://www.publicsenat.fr/actualites/politique/mercosur-un-accord-destructeur-et-une-capitulation-environnementale-denonce-bruno",
           "date": "2019-07-04",
           "kind": "presse"
+        },
+        {
+          "title": "Déclaration du Gouvernement sur l'accord UE-Mercosur, vote n° 456 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_456",
+          "date": "2024-11-26",
+          "kind": "vote"
         }
       ]
     },
     "q22-vie-republique": {
       "stance": null,
       "justification": "Pas de position publique identifiée et sourcée sur une VIe République ; les révisions proposées portent sur l'extension du référendum.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+          "date": "2026-02-12",
+          "kind": "presse"
+        }
+      ]
     },
     "q23-referendum": {
       "stance": 2,
@@ -1105,6 +1163,12 @@
                   "url": "https://www.europe1.fr/politique/budget-2026-les-deputes-rejettent-la-taxe-zucman-a-lassemblee-nationale-869616",
                   "date": "2025-10-31",
                   "kind": "presse"
+                },
+                {
+                  "title": "Taxe Zucman – amendement n° 2359 (PLF 2026), vote n° 3300 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_3300",
+                  "date": "2025-10-31",
+                  "kind": "vote"
                 }
               ]
             }
@@ -1320,7 +1384,7 @@
               ]
             },
             {
-              "text": "Agriculture : aligner les règles françaises sur les règles européennes, « pas plus », reprendre le contrôle politique des agences de l'État et faire de l'eau une ressource agricole stratégique.",
+              "text": "Agriculture : aligner les règles françaises sur les règles européennes, « pas au-delà », reprendre le contrôle politique des agences de l'État et faire de l'eau une ressource agricole stratégique.",
               "sources": [
                 {
                   "title": "Nos propositions (Les Républicains) – livret « Réarmer l'agriculture »",
@@ -1363,6 +1427,12 @@
                 {
                   "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
                   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
+                  "date": "2026-07-15",
+                  "kind": "vote"
+                },
+                {
+                  "title": "Proposition de loi créant un droit à l'aide à mourir, vote n° 8280 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_8280",
                   "date": "2026-07-15",
                   "kind": "vote"
                 }
@@ -1493,6 +1563,12 @@
                   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
                   "date": "2024-11-26",
                   "kind": "vote"
+                },
+                {
+                  "title": "Déclaration du Gouvernement sur l'accord UE-Mercosur, vote n° 456 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_456",
+                  "date": "2024-11-26",
+                  "kind": "vote"
                 }
               ]
             },
@@ -1508,7 +1584,7 @@
               ]
             },
             {
-              "text": "« Acheter européen d'abord » dans la commande publique pour l'intelligence artificielle, et souveraineté française sur le mix énergétique au sein de l'UE (subsidiarité).",
+              "text": "« Buy European First » dans la commande publique pour l'intelligence artificielle, et souveraineté française sur le mix énergétique au sein de l'UE (subsidiarité).",
               "sources": [
                 {
                   "title": "Nos propositions (Les Républicains) – livrets « IA » et « Électricité »",

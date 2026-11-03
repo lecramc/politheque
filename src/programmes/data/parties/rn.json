@@ -647,6 +647,12 @@
           "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
           "date": "2025-10-31",
           "kind": "vote"
+        },
+        {
+          "title": "Taxe Zucman – amendement n° 2359 (PLF 2026), vote n° 3300 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "date": "2025-10-31",
+          "kind": "vote"
         }
       ]
     },
@@ -707,6 +713,12 @@
           "url": "https://www.moneyvox.fr/votre-argent/actualites/110159/presidentielle-2027-dette-retraites-ce-quil-faut-retenir-du-premier-debat-des-candidats",
           "date": "2026-08-27",
           "kind": "presse"
+        },
+        {
+          "title": "Suspension de la réforme des retraites (PLFSS 2026, art. 45 bis), vote n° 3684 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_3684",
+          "date": "2025-11-12",
+          "kind": "vote"
         }
       ]
     },
@@ -922,7 +934,7 @@
     },
     "q16-fin-de-vie": {
       "stance": -1,
-      "justification": "Le groupe a voté majoritairement contre la loi en lecture définitive (scrutin n° 8280 du 15/07/2026 : 106 contre, 12 pour, liberté de vote) ; Marine Le Pen a voté contre mais n'a pas annoncé d'abrogation (« On ne va pas revenir sur toutes les lois », selon le porte-parole Laurent Jacobelli).",
+      "justification": "Le groupe a voté majoritairement contre la loi en lecture définitive (scrutin n° 8280 du 15/07/2026 : 106 contre, 12 pour, liberté de vote) ; Marine Le Pen a voté contre mais n'a pas annoncé d'abrogation (le porte-parole Laurent Jacobelli a dit ne pas vouloir « revenir sur toutes les lois »).",
       "sources": [
         {
           "title": "Scrutin n° 8280 – proposition de loi relative au droit à l'aide à mourir (lecture définitive)",
@@ -935,6 +947,18 @@
           "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
           "date": "2026-07-17",
           "kind": "presse"
+        },
+        {
+          "title": "Aide à mourir : le RN au pouvoir ne reviendrait pas sur la loi mais serait « très vigilant » (L'Info Durable, AFP)",
+          "url": "https://www.linfodurable.fr/aide-mourir-le-rn-au-pouvoir-ne-reviendrait-pas-sur-la-loi-mais-serait-tres-vigilant-58089",
+          "date": "2026-07-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Proposition de loi créant un droit à l'aide à mourir, vote n° 8280 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "date": "2026-07-15",
+          "kind": "vote"
         }
       ]
     },
@@ -976,7 +1000,14 @@
     "q20-defense-europe": {
       "stance": null,
       "justification": "Pas de position explicite identifiée sur un endettement commun de l'UE (type NextGenerationEU ou instrument SAFE) dans les sources consultées ; le RN propose de réduire la contribution française au budget européen.",
-      "sources": []
+      "sources": [
+        {
+          "title": "Contre-budget 2026 du Rassemblement national",
+          "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
+          "date": "2025-10-23",
+          "kind": "programme"
+        }
+      ]
     },
     "q21-libre-echange": {
       "stance": 2,
@@ -993,13 +1024,26 @@
           "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
           "date": "2024-06-24",
           "kind": "presse"
+        },
+        {
+          "title": "Déclaration du Gouvernement sur l'accord UE-Mercosur, vote n° 456 (Datan)",
+          "url": "https://datan.fr/votes/legislature-17/vote_456",
+          "date": "2024-11-26",
+          "kind": "vote"
         }
       ]
     },
     "q22-vie-republique": {
       "stance": null,
       "justification": "Pas de position publique identifiée et sourcée sur un changement de Constitution réduisant les pouvoirs du président ; le RN propose des révisions ciblées (RIC, proportionnelle, référendum sur l'immigration).",
-      "sources": []
+      "sources": [
+        {
+          "title": "22 mesures pour 2022 – Marine Le Pen",
+          "url": "https://rassemblementnational.fr/22-mesures",
+          "date": "2022-03",
+          "kind": "programme"
+        }
+      ]
     },
     "q23-referendum": {
       "stance": 2,
@@ -1107,7 +1151,7 @@
               ]
             },
             {
-              "text": "Suppression de l'IFI et création d'un « impôt sur la fortune financière » (4 Md€ attendus selon le contre-budget 2026), présenté comme alternative à la « taxe Zucman ».",
+              "text": "Suppression de l'IFI et création d'un « impôt sur la fortune financière » (4 Md€ attendus selon le contre-budget 2026), en remplacement de l'IFI et de la taxe sur les holdings selon le contre-budget 2026.",
               "sources": [
                 {
                   "title": "22 mesures pour 2022 – Marine Le Pen",
@@ -1478,7 +1522,7 @@
           "summary": "Le RN propose un plan d'investissement hospitalier, la suppression des agences régionales de santé et des incitations financières contre les déserts médicaux plutôt qu'une régulation de l'installation.",
           "measures": [
             {
-              "text": "Plan d'urgence de 20 Md€ pour la santé, arrêt des fermetures d'hôpitaux et de maternités, plafonnement des postes administratifs hospitaliers à 10 % (programme 2022 ; l'Institut Montaigne résume cette dernière mesure comme une réduction de 10 % de ces postes).",
+              "text": "Plan d'urgence de 20 Md€ pour la santé, arrêt des fermetures d'hôpitaux et de maternités, réduction « à 10 % » des postes administratifs dans les hôpitaux, formulation qui ne précise pas s'il s'agit d'une part des effectifs ou d'une baisse (programme 2022).",
               "sources": [
                 {
                   "title": "22 mesures pour 2022 – Marine Le Pen",
@@ -1542,6 +1586,12 @@
                   "url": "https://www.franceinfo.fr/societe/euthanasie/presidentielle-2027-les-candidats-hostiles-a-la-loi-sur-la-fin-de-vie-vont-ils-promettre-de-l-abroger_8108582.html",
                   "date": "2026-07-17",
                   "kind": "presse"
+                },
+                {
+                  "title": "Proposition de loi créant un droit à l'aide à mourir, vote n° 8280 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_8280",
+                  "date": "2026-07-15",
+                  "kind": "vote"
                 }
               ]
             }
@@ -1633,6 +1683,12 @@
                 {
                   "title": "Scrutin n° 456 – déclaration du Gouvernement sur l'accord UE-Mercosur",
                   "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/456",
+                  "date": "2024-11-26",
+                  "kind": "vote"
+                },
+                {
+                  "title": "Déclaration du Gouvernement sur l'accord UE-Mercosur, vote n° 456 (Datan)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_456",
                   "date": "2024-11-26",
                   "kind": "vote"
                 }
