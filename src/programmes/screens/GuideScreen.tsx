@@ -38,6 +38,7 @@ export default function GuideScreen() {
       {vm.next ? (
         <Link href={{ pathname: '/comprendre/[id]', params: { id: vm.next.id } }} asChild>
           <Pressable
+            large
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -73,6 +74,7 @@ export default function GuideScreen() {
                 asChild
               >
                 <Pressable
+                  large
                   accessibilityLabel={`${section.title}, ${minutes} minutes${read ? ', lu' : ''}`}
                   style={{
                     flexDirection: 'row',

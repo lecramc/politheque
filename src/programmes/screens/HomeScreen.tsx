@@ -74,7 +74,7 @@ export default function HomeScreen() {
       ) : null}
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6, justifyContent: 'center' }}>
         {featured.candidates.map(({ party }) => (
-          <PartyDot key={party.id} color={party.color} size={22} />
+          <PartyDot key={party.id} color={party.color} size={18} />
         ))}
       </View>
       <View style={{ alignSelf: 'stretch' }}>
@@ -120,6 +120,7 @@ export default function HomeScreen() {
         <Text style={{ ...fonts.display, fontSize: 22 }}>Par où commencer ?</Text>
         <Link href="/me-situer" asChild>
           <Pressable
+            large
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -156,6 +157,7 @@ export default function HomeScreen() {
           {TILES.map((tile) => (
             <Link key={tile.href} href={tile.href} asChild>
               <Pressable
+                large
                 style={{
                   flexGrow: 1,
                   flexBasis: isDesktop ? 200 : 140,

@@ -85,6 +85,7 @@ export default function ElectionScreen() {
                 const isRound = election.rounds.includes(s);
                 return (
                   <Pressable
+                    large
                     key={s.label}
                     onPress={() => setStep(s)}
                     accessibilityRole="button"

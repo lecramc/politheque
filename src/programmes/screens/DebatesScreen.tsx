@@ -29,6 +29,7 @@ export default function DebatesScreen() {
             asChild
           >
             <Pressable
+              large
               style={{
                 flexGrow: 1,
                 flexBasis: 150,

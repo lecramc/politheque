@@ -1,20 +1,32 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import { View } from 'react-native';
+import Animated, {
+  useAnimatedProps,
+  useSharedValue,
+  withDelay,
+  withTiming,
+} from 'react-native-reanimated';
 import Svg, { Path } from 'react-native-svg';
 
+import { duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
-import { useAnimatedNumber } from '@/src/programmes/components/useAnimatedNumber';
+
+const AnimatedPath = Animated.createAnimatedComponent(Path);
 
 /**
  * L'arc : motif signature, seul instrument de mesure du site (compte à rebours, progression,
  * proximité). Toujours bleu d'action sur piste bleu poudré, jamais aux couleurs d'un parti,
  * et toujours accompagné de sa valeur en clair (children ou accessibilityLabel).
+ *
+ * Le remplissage s'anime sur le thread UI (strokeDashoffset) : aucun rendu React par image.
+ * Au montage il part de 0 ; ensuite, il glisse de l'ancienne valeur à la nouvelle.
  */
 export function Arc({
   value,
   size = 140,
   strokeWidth = 12,
   delay = 0,
+  animate = true,
   dashedRemainder = false,
   accessibilityLabel,
   children,
@@ -24,18 +36,33 @@ export function Arc({
   size?: number;
   strokeWidth?: number;
   delay?: number;
+  /** false : affiché directement à sa valeur (révélation déjà jouée). */
+  animate?: boolean;
   /** Partie non comparée en pointillés (ex. questions sans position connue). */
   dashedRemainder?: boolean;
   accessibilityLabel?: string;
   children?: ReactNode;
 }) {
   const { colors } = useTheme();
-  const animated = useAnimatedNumber(Math.max(0, Math.min(1, value)), 550, delay);
+  const { timing, reduce } = useMotion();
+  const target = Math.max(0, Math.min(1, value));
+  const progress = useSharedValue(animate && !reduce ? 0 : target);
+
+  useEffect(() => {
+    progress.value = withDelay(reduce ? 0 : delay, withTiming(target, timing(duration.reveal)));
+  }, [target, delay, reduce, progress, timing]);
+
   const r = (size - strokeWidth) / 2;
   const cy = r + strokeWidth / 2;
   const d = `M ${strokeWidth / 2} ${cy} A ${r} ${r} 0 0 1 ${size - strokeWidth / 2} ${cy}`;
   const length = Math.PI * r;
   const height = cy + strokeWidth / 2;
+
+  const fillProps = useAnimatedProps(() => ({
+    strokeDashoffset: length * (1 - progress.value),
+    // Pas de point résiduel (embout arrondi) quand l'arc est vide.
+    strokeOpacity: progress.value > 0.002 ? 1 : 0,
+  }));
 
   return (
     <View
@@ -54,16 +81,15 @@ export function Arc({
             dashedRemainder ? `${strokeWidth * 0.6} ${strokeWidth * 0.9}` : undefined
           }
         />
-        {animated > 0.001 ? (
-          <Path
-            d={d}
-            stroke={colors.tint}
-            strokeWidth={strokeWidth}
-            strokeLinecap="round"
-            fill="none"
-            strokeDasharray={`${length * animated} ${length}`}
-          />
-        ) : null}
+        <AnimatedPath
+          d={d}
+          stroke={colors.tint}
+          strokeWidth={strokeWidth}
+          strokeLinecap="round"
+          fill="none"
+          strokeDasharray={`${length} ${length}`}
+          animatedProps={fillProps}
+        />
       </Svg>
       {children ? (
         <View

@@ -1,11 +1,27 @@
 import { Link, usePathname } from 'expo-router';
-import React, { ReactNode } from 'react';
-import { ActivityIndicator, ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
+import React, { ReactNode, useEffect, useState } from 'react';
+import {
+  LayoutChangeEvent,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  useWindowDimensions,
+  View,
+} from 'react-native';
+import Animated, {
+  runOnJS,
+  useAnimatedStyle,
+  useSharedValue,
+  withTiming,
+} from 'react-native-reanimated';
 
+import { duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
+import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
+import { PageSkeleton } from '@/src/programmes/components/Skeleton';
 
 type Href = '/comprendre' | '/partis' | '/elections' | '/debats' | '/me-situer';
 
@@ -20,6 +36,7 @@ const NAV: { href: Href; label: string; icon: string }[] = [
 export const CONTENT_MAX_WIDTH = 760;
 const DESKTOP_BREAKPOINT = 768;
 const TAB_BAR_HEIGHT = 64;
+const ARC_WIDTH = 24;
 
 export const useIsDesktop = () => useWindowDimensions().width >= DESKTOP_BREAKPOINT;
 
@@ -28,7 +45,7 @@ function ActiveArc({ color }: { color: string }) {
   return (
     <View
       style={{
-        width: 24,
+        width: ARC_WIDTH,
         height: 10,
         borderTopLeftRadius: 12,
         borderTopRightRadius: 12,
@@ -40,12 +57,41 @@ function ActiveArc({ color }: { color: string }) {
   );
 }
 
+/** Onglet quitté au dernier appui : la barre de la page suivante fait glisser l'arc depuis lui. */
+let slideFrom: number | null = null;
+
 function BottomTabBar() {
   const { colors, fonts } = useTheme();
+  const { reduce, timing } = useMotion();
   const pathname = usePathname();
+  const activeIndex = NAV.findIndex((item) => pathname.startsWith(item.href));
+  // Calculé au premier rendu : l'arc fixe de l'onglet actif reste caché pendant le glissement.
+  const [sliding, setSliding] = useState(
+    () => !reduce && slideFrom !== null && activeIndex >= 0 && slideFrom !== activeIndex
+  );
+  const [from] = useState(slideFrom);
+  const x = useSharedValue(-ARC_WIDTH * 4);
+
+  useEffect(() => {
+    slideFrom = null;
+  }, []);
+
+  const onLayout = (e: LayoutChangeEvent) => {
+    if (!sliding || from === null) return;
+    const slot = e.nativeEvent.layout.width / NAV.length;
+    const at = (index: number) => slot * (index + 0.5) - ARC_WIDTH / 2;
+    x.value = at(from);
+    x.value = withTiming(at(activeIndex), timing(duration.page, 'inOut'), (done) => {
+      if (done) runOnJS(setSliding)(false);
+    });
+  };
+
+  const arcStyle = useAnimatedStyle(() => ({ transform: [{ translateX: x.value }] }));
+
   return (
     <View
       accessibilityRole="tablist"
+      onLayout={onLayout}
       style={[
         styles.tabBar,
         {
@@ -54,18 +100,23 @@ function BottomTabBar() {
         },
       ]}
     >
-      {NAV.map((item) => {
-        const active = pathname.startsWith(item.href);
+      {NAV.map((item, index) => {
+        const active = index === activeIndex;
         return (
           <Link key={item.href} href={item.href} asChild>
             <Pressable
               accessibilityRole="tab"
               accessibilityState={{ selected: active }}
+              aria-selected={active}
               accessibilityLabel={item.label}
+              onPress={() => {
+                slideFrom = activeIndex >= 0 ? activeIndex : null;
+              }}
+              hoverStyle={{ backgroundColor: colors.surface.hover }}
               style={styles.tabItem}
             >
               <View style={{ height: 10 }}>
-                {active ? <ActiveArc color={colors.tint} /> : null}
+                {active && !sliding ? <ActiveArc color={colors.tint} /> : null}
               </View>
               <Icon name={item.icon} variant={active ? 'onGlass' : 'secondary'} size="medium" />
               <Text
@@ -81,6 +132,11 @@ function BottomTabBar() {
           </Link>
         );
       })}
+      {sliding ? (
+        <Animated.View pointerEvents="none" style={[styles.slidingArc, arcStyle]}>
+          <ActiveArc color={colors.tint} />
+        </Animated.View>
+      ) : null}
     </View>
   );
 }
@@ -221,12 +277,21 @@ export function Page({
             {
               maxWidth,
               padding: effects.spacing.md,
-              gap: effects.spacing.lg,
               paddingTop: effects.spacing.lg,
             },
           ]}
         >
-          {loading ? <ActivityIndicator color={colors.tint} style={styles.loader} /> : children}
+          {loading ? (
+            <PageSkeleton />
+          ) : (
+            <Enter
+              kind={Platform.OS === 'web' ? 'rise' : 'fade'}
+              duration={duration.page}
+              style={{ gap: effects.spacing.lg }}
+            >
+              {children}
+            </Enter>
+          )}
         </View>
         <View
           style={[
@@ -269,7 +334,7 @@ const styles = StyleSheet.create({
   headerButton: { minHeight: 44, minWidth: 44, justifyContent: 'center' },
   desktopNav: { flexDirection: 'row', gap: 4, flex: 1, justifyContent: 'center' },
   desktopNavItem: { paddingHorizontal: 14, paddingVertical: 8, borderRadius: 999 },
-  loader: { marginVertical: 48 },
+  slidingArc: { position: 'absolute', top: 3, left: 0 },
   tabBar: {
     position: 'absolute',
     left: 0,

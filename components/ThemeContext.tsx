@@ -24,6 +24,7 @@ export const theme = {
       glass: 'rgba(255, 255, 255, 0.72)',
       transparent: 'transparent',
       disabled: 'rgba(21, 32, 58, 0.08)',
+      hover: 'rgba(30, 63, 143, 0.06)', // survol web des zones cliquables sans bordure
       border: {
         primary: '#E8E2D8',
         secondary: '#D9D1C4',
@@ -80,6 +81,7 @@ export const theme = {
       glass: 'rgba(22, 30, 51, 0.72)',
       transparent: 'transparent',
       disabled: 'rgba(244, 242, 237, 0.08)',
+      hover: 'rgba(157, 183, 242, 0.1)',
       border: {
         primary: '#29334D',
         secondary: '#34405E',

@@ -12,9 +12,11 @@ import { StatusBar } from 'expo-status-bar';
 import { ReactNode } from 'react';
 import { useEffect, useState } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { useReducedMotion } from 'react-native-reanimated';
 import { Provider } from 'react-redux';
 
 import { ErrorBoundary } from '@/components/ErrorBoundary';
+import { duration } from '@/components/motion';
 import { useTheme, ThemeProviderCustom } from '@/components/ThemeContext';
 import { ThemedDarkTheme, ThemedDefaultTheme } from '@/components/ThemedNavigationThemes';
 import { initI18n } from '@/i18n';
@@ -22,6 +24,41 @@ import { GlobalEffects } from '@/src/core/screens/GlobalEffects';
 import { store } from '@/src/core/store';
 
 SplashScreen.preventAutoHideAsync();
+
+/** Destinations de la barre d'onglets : on passe de l'une à l'autre en fondu, pas en poussée. */
+const SECTION_ROUTES = [
+  'index',
+  'comprendre/index',
+  'partis/index',
+  'elections/index',
+  'debats/index',
+] as const;
+
+/**
+ * Transitions natives cohérentes : fondu entre rubriques, glissement pour entrer dans
+ * un détail, montée pour le questionnaire (mode focus). Mouvement réduit : fondu partout.
+ * Sur le web, l'entrée est portée par le contenu de Page (fondu + léger glissement).
+ */
+function AppStack() {
+  const reduce = useReducedMotion();
+  return (
+    <Stack
+      screenOptions={{
+        headerShown: false,
+        animation: reduce ? 'fade' : 'default',
+        animationDuration: duration.page,
+      }}
+    >
+      {SECTION_ROUTES.map((name) => (
+        <Stack.Screen key={name} name={name} options={{ animation: 'fade' }} />
+      ))}
+      <Stack.Screen
+        name="me-situer/index"
+        options={{ animation: reduce ? 'fade' : 'fade_from_bottom' }}
+      />
+    </Stack>
+  );
+}
 
 function NavigationThemeWrapper({ children }: { children: ReactNode }) {
   const { theme } = useTheme();
@@ -65,7 +102,7 @@ export default function RootLayout() {
           <ThemeProviderCustom>
             <NavigationThemeWrapper>
               <GlobalEffects />
-              <Stack screenOptions={{ headerShown: false }}></Stack>
+              <AppStack />
             </NavigationThemeWrapper>
           </ThemeProviderCustom>
         </Provider>

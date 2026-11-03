@@ -35,6 +35,7 @@ export default function ElectionsScreen() {
             asChild
           >
             <Pressable
+              large
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
@@ -79,6 +80,7 @@ export default function ElectionsScreen() {
 
       <Link href={{ pathname: '/comprendre/[id]', params: { id: 'comment-voter' } }} asChild>
         <Pressable
+          large
           style={{
             flexDirection: 'row',
             alignItems: 'center',

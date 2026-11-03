@@ -33,6 +33,7 @@ export function PartyRow({
       asChild
     >
       <Pressable
+        large
         accessibilityRole="link"
         style={{
           flexDirection: 'row',

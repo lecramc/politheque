@@ -98,7 +98,7 @@ Avant de créer quoi que ce soit, chercher dans le projet :
 2. **Thème** → utiliser `useTheme()` depuis `components/ThemeContext.tsx` (écrans normaux) ou `useEmotionalTheme()` (moments émotionnels)
 3. **Navigation** → utiliser les routes `app/` existantes
 4. **Icônes** → `Ionicons` via le composant `Icon` de `components/ui/Icon`
-5. **Animations** → `react-native-reanimated` (déjà installé et configuré)
+5. **Animations** → durées et courbes dans `components/motion.ts` (`useMotion()`, mouvement réduit respecté), `react-native-reanimated` ; agent dédié : `.claude/agents/motion-designer.md`
 6. **Librairies** → vérifier `package.json` avant d'en ajouter une nouvelle
 
 Ne jamais installer une nouvelle librairie si une fonctionnalité équivalente existe déjà dans le projet ou dans les dépendances installées.

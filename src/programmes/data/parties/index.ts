@@ -4,6 +4,7 @@ import ecologistes from './ecologistes.json';
 import horizons from './horizons.json';
 import lfi from './lfi.json';
 import lr from './lr.json';
+import nouvelleEnergie from './nouvelle-energie.json';
 import pcf from './pcf.json';
 import psPlacePublique from './ps-place-publique.json';
 import reconquete from './reconquete.json';
@@ -16,6 +17,7 @@ export const PARTIES = [
   horizons,
   lfi,
   lr,
+  nouvelleEnergie,
   pcf,
   psPlacePublique,
   reconquete,

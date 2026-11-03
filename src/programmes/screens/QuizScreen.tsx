@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { View } from 'react-native';
-import Animated, { FadeIn, useReducedMotion } from 'react-native-reanimated';
+import Animated from 'react-native-reanimated';
 
+import { cssEasing, duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Arc } from '@/src/programmes/components/Arc';
 import { Page } from '@/src/programmes/components/Page';
+import type { AnswerValue } from '@/src/programmes/models/matching.service';
 import { quizViewModel } from '@/src/programmes/view-models/quiz.view-model';
 
 const SYMBOL: Record<string, string> = { '2': '++', '1': '+', '0': '=', '-1': '−', '-2': '−−' };
@@ -16,17 +19,44 @@ const SYMBOL: Record<string, string> = { '2': '++', '1': '+', '0': '=', '-1': '�
 export default function QuizScreen() {
   const vm = useViewModel(quizViewModel);
   const { colors, effects, fonts } = useTheme();
-  const reduceMotion = useReducedMotion();
+  const { ms } = useMotion();
   const opinions = vm.choices.filter((c) => c.value !== null);
+
+  // Retour visuel immédiat sur la réponse, puis avance automatique (~250 ms).
+  const [pending, setPending] = useState<{ value: AnswerValue } | null>(null);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const direction = useRef<'fromRight' | 'fromLeft'>('fromRight');
+  useEffect(
+    () => () => {
+      if (timer.current) clearTimeout(timer.current);
+    },
+    []
+  );
+  const choose = (value: AnswerValue) => {
+    if (pending) return;
+    setPending({ value });
+    direction.current = 'fromRight';
+    timer.current = setTimeout(() => {
+      setPending(null);
+      vm.choose(value);
+    }, duration.choiceFeedback);
+  };
+  const back = () => {
+    if (pending) return;
+    direction.current = 'fromLeft';
+    vm.back();
+  };
+  const selectedValue = pending ? pending.value : vm.selectedValue;
+  const transition = {
+    transitionProperty: ['width', 'backgroundColor'] as ('width' | 'backgroundColor')[],
+    transitionDuration: ms(duration.open),
+    transitionTimingFunction: cssEasing.inOut,
+  };
 
   return (
     <Page loading={!vm.ready} focus back={{ label: 'Quitter', href: '/' }}>
       {vm.question ? (
-        <Animated.View
-          key={vm.question.id}
-          entering={reduceMotion ? undefined : FadeIn.duration(220)}
-          style={{ gap: effects.spacing.md }}
-        >
+        <View style={{ gap: effects.spacing.md }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
             <Arc
               value={(vm.index + 1) / vm.total}
@@ -42,13 +72,14 @@ export default function QuizScreen() {
               <Text variant="caption">{vm.themeTitle}</Text>
               <View style={{ flexDirection: 'row', gap: 5 }} accessibilityElementsHidden>
                 {Array.from({ length: vm.themeCount }, (_, i) => (
-                  <View
+                  <Animated.View
                     key={i}
                     style={{
                       width: i === vm.themeIndex ? 18 : 8,
                       height: 8,
                       borderRadius: 4,
                       backgroundColor: i <= vm.themeIndex ? colors.tint : colors.tintSoft,
+                      ...transition,
                     }}
                   />
                 ))}
@@ -56,127 +87,165 @@ export default function QuizScreen() {
             </View>
           </View>
 
-          <Text variant="title" style={{ fontSize: 25, lineHeight: 32 }}>
-            {vm.question.statement}
-          </Text>
+          <Enter
+            key={vm.question.id}
+            kind={direction.current}
+            duration={duration.question}
+            reducedFade
+            style={{ gap: effects.spacing.md }}
+          >
+            <Text variant="title" style={{ fontSize: 25, lineHeight: 32 }}>
+              {vm.question.statement}
+            </Text>
 
-          <Accordion title="Besoin d'un coup de pouce ?">
-            <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.question.help}</Text>
-          </Accordion>
+            <Accordion title="Besoin d'un coup de pouce ?">
+              <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.question.help}</Text>
+            </Accordion>
 
-          <View style={{ gap: 10 }} accessibilityRole="radiogroup">
-            {opinions.map((choice) => {
-              const selected = vm.selectedValue === choice.value;
-              return (
-                <Pressable
-                  key={String(choice.value)}
-                  onPress={() => vm.choose(choice.value)}
-                  accessibilityRole="radio"
-                  accessibilityState={{ checked: selected }}
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    gap: 14,
-                    minHeight: 56,
-                    paddingHorizontal: 14,
-                    borderRadius: effects.borderRadius.small,
-                    borderWidth: 1.5,
-                    borderColor: selected ? colors.tint : colors.surface.border.tertiary,
-                    backgroundColor: selected ? colors.tintSoft : colors.surface.primary,
-                  }}
-                >
-                  <View
+            <View style={{ gap: 10 }} accessibilityRole="radiogroup">
+              {opinions.map((choice) => {
+                const selected = selectedValue === choice.value;
+                return (
+                  <Pressable
+                    key={String(choice.value)}
+                    haptic
+                    onPress={() => choose(choice.value)}
+                    accessibilityRole="radio"
+                    accessibilityState={{ checked: selected }}
+                    aria-checked={selected}
                     style={{
-                      width: 34,
-                      height: 30,
-                      borderRadius: 8,
-                      borderWidth: 1.5,
-                      borderColor: colors.tint,
+                      flexDirection: 'row',
                       alignItems: 'center',
-                      justifyContent: 'center',
-                      backgroundColor: selected ? colors.tint : 'transparent',
+                      gap: 14,
+                      minHeight: 56,
+                      paddingHorizontal: 14,
+                      borderRadius: effects.borderRadius.small,
+                      borderWidth: 1.5,
+                      borderColor: selected ? colors.tint : colors.surface.border.tertiary,
+                      backgroundColor: selected ? colors.tintSoft : colors.surface.primary,
                     }}
                   >
-                    <Text
-                      style={{ ...fonts.bold, color: selected ? colors.text.onColor : colors.tint }}
+                    <View
+                      style={{
+                        width: 34,
+                        height: 30,
+                        borderRadius: 8,
+                        borderWidth: 1.5,
+                        borderColor: colors.tint,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        backgroundColor: selected ? colors.tint : 'transparent',
+                      }}
                     >
-                      {SYMBOL[String(choice.value)]}
+                      <Text
+                        style={{
+                          ...fonts.bold,
+                          color: selected ? colors.text.onColor : colors.tint,
+                        }}
+                      >
+                        {SYMBOL[String(choice.value)]}
+                      </Text>
+                    </View>
+                    <Text style={{ fontSize: 17, ...(selected ? fonts.bold : fonts.regular) }}>
+                      {choice.label}
                     </Text>
-                  </View>
-                  <Text style={{ fontSize: 17, ...(selected ? fonts.bold : fonts.regular) }}>
-                    {choice.label}
-                  </Text>
-                </Pressable>
-              );
-            })}
-            <Pressable
-              onPress={() => vm.choose(null)}
-              accessibilityRole="radio"
-              accessibilityState={{ checked: vm.selectedValue === null }}
-              style={{ minHeight: 48, alignItems: 'center', justifyContent: 'center' }}
-            >
-              <Text style={{ color: colors.tint, textDecorationLine: 'underline', fontSize: 16 }}>
-                Je ne sais pas / pas d'avis
-              </Text>
-            </Pressable>
-          </View>
-
-          <Pressable
-            onPress={vm.toggleImportant}
-            accessibilityRole="switch"
-            accessibilityState={{ checked: vm.important }}
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              gap: 12,
-              minHeight: 56,
-              padding: 14,
-              borderRadius: effects.borderRadius.small,
-              backgroundColor: colors.surface.primary,
-              borderWidth: 1,
-              borderColor: colors.surface.border.primary,
-            }}
-          >
-            <View style={{ flex: 1 }}>
-              <Text style={{ ...fonts.bold, fontSize: 16 }}>Ce sujet compte double</Text>
-              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                Pour les sujets qui vous tiennent le plus à cœur
-              </Text>
+                  </Pressable>
+                );
+              })}
+              <Pressable
+                haptic
+                onPress={() => choose(null)}
+                accessibilityRole="radio"
+                accessibilityState={{ checked: selectedValue === null }}
+                aria-checked={selectedValue === null}
+                style={{
+                  minHeight: 48,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderRadius: effects.borderRadius.small,
+                }}
+              >
+                <Text
+                  style={{
+                    color: colors.tint,
+                    textDecorationLine: 'underline',
+                    fontSize: 16,
+                    ...(selectedValue === null ? fonts.bold : null),
+                  }}
+                >
+                  Je ne sais pas / pas d'avis
+                </Text>
+              </Pressable>
             </View>
-            <View
+
+            <Pressable
+              onPress={vm.toggleImportant}
+              accessibilityRole="switch"
+              accessibilityState={{ checked: vm.important }}
+              aria-checked={vm.important}
               style={{
-                width: 50,
-                height: 30,
-                borderRadius: 15,
-                padding: 3,
-                backgroundColor: vm.important ? colors.tint : colors.surface.border.secondary,
-                alignItems: vm.important ? 'flex-end' : 'flex-start',
+                flexDirection: 'row',
+                alignItems: 'center',
+                gap: 12,
+                minHeight: 56,
+                padding: 14,
+                borderRadius: effects.borderRadius.small,
+                backgroundColor: colors.surface.primary,
+                borderWidth: 1,
+                borderColor: colors.surface.border.primary,
               }}
             >
-              <View
-                style={{ width: 24, height: 24, borderRadius: 12, backgroundColor: '#FFFFFF' }}
-              />
-            </View>
-          </Pressable>
-
-          <View style={{ flexDirection: 'row', justifyContent: 'space-between', gap: 12 }}>
-            {vm.canGoBack ? (
-              <Pressable onPress={vm.back} style={{ minHeight: 44, justifyContent: 'center' }}>
-                <Text style={{ color: colors.tint, ...fonts.bold }}>‹ Précédente</Text>
-              </Pressable>
-            ) : (
-              <View />
-            )}
-            {vm.answeredCount > 0 ? (
-              <Pressable
-                onPress={vm.showResults}
-                style={{ minHeight: 44, justifyContent: 'center' }}
+              <View style={{ flex: 1 }}>
+                <Text style={{ ...fonts.bold, fontSize: 16 }}>Ce sujet compte double</Text>
+                <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                  Pour les sujets qui vous tiennent le plus à cœur
+                </Text>
+              </View>
+              <Animated.View
+                style={{
+                  width: 50,
+                  height: 30,
+                  borderRadius: 15,
+                  padding: 3,
+                  backgroundColor: vm.important ? colors.tint : colors.surface.border.secondary,
+                  transitionProperty: 'backgroundColor',
+                  transitionDuration: ms(duration.open),
+                }}
               >
-                <Text style={{ color: colors.tint }}>Voir mes résultats →</Text>
-              </Pressable>
-            ) : null}
-          </View>
-        </Animated.View>
+                <Animated.View
+                  style={{
+                    width: 24,
+                    height: 24,
+                    borderRadius: 12,
+                    backgroundColor: '#FFFFFF',
+                    transform: [{ translateX: vm.important ? 20 : 0 }],
+                    transitionProperty: 'transform',
+                    transitionDuration: ms(duration.open),
+                    transitionTimingFunction: cssEasing.inOut,
+                  }}
+                />
+              </Animated.View>
+            </Pressable>
+
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', gap: 12 }}>
+              {vm.canGoBack ? (
+                <Pressable onPress={back} style={{ minHeight: 44, justifyContent: 'center' }}>
+                  <Text style={{ color: colors.tint, ...fonts.bold }}>‹ Précédente</Text>
+                </Pressable>
+              ) : (
+                <View />
+              )}
+              {vm.answeredCount > 0 ? (
+                <Pressable
+                  onPress={vm.showResults}
+                  style={{ minHeight: 44, justifyContent: 'center' }}
+                >
+                  <Text style={{ color: colors.tint }}>Voir mes résultats →</Text>
+                </Pressable>
+              ) : null}
+            </View>
+          </Enter>
+        </View>
       ) : null}
     </Page>
   );

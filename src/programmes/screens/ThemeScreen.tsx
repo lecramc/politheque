@@ -14,7 +14,7 @@ import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
-import { Tabs } from '@/src/programmes/components/Tabs';
+import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
 import { firstSentence, firstSentences } from '@/src/programmes/models/presentation.service';
 import type { PartyThemeProgramme } from '@/src/programmes/models/programme.model';
 import { themeViewModel } from '@/src/programmes/view-models/theme.view-model';
@@ -150,67 +150,70 @@ export default function ThemeScreen() {
               value={mode}
               onChange={setMode}
             />
-            {mode === 'tous' ? (
-              vm.comparisons.map(({ party, candidate, programme }) =>
-                programme ? (
-                  <Accordion
-                    key={party.id}
-                    title={party.name}
-                    subtitle={firstSentence(programme.summary)}
-                    leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
-                  >
-                    <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                      {candidate.split(' (')[0]}
-                    </Text>
-                    <ProgrammeDetail programme={programme} />
-                  </Accordion>
-                ) : null
-              )
-            ) : (
-              <>
-                <Text style={{ color: colors.text.secondary }}>Choisissez deux partis :</Text>
-                <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
-                  {vm.comparisons.map(({ party }) => {
-                    const active = selected.includes(party.id);
-                    return (
-                      <Pressable
-                        key={party.id}
-                        onPress={() => toggleSelected(party.id)}
-                        accessibilityRole="checkbox"
-                        accessibilityState={{ checked: active }}
-                        style={{
-                          flexDirection: 'row',
-                          alignItems: 'center',
-                          gap: 6,
-                          minHeight: 44,
-                          paddingHorizontal: 10,
-                          borderRadius: effects.borderRadius.round,
-                          borderWidth: 1.5,
-                          borderColor: active ? colors.tint : colors.surface.border.tertiary,
-                          backgroundColor: active ? colors.tintSoft : colors.surface.primary,
-                        }}
-                      >
-                        <PartyDot color={party.color} size={14} />
-                        <Text style={active ? fonts.bold : undefined}>{party.shortName}</Text>
-                      </Pressable>
-                    );
-                  })}
-                </View>
-                {compared.length === 2 ? (
-                  <View style={{ flexDirection: 'row', gap: 10 }}>
-                    {compared.map(({ party, programme }) => (
-                      <Card key={party.id} style={{ flex: 1, padding: 12 }}>
-                        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-                          <PartyDot color={party.color} size={24} label={party.shortName} />
-                          <Text style={{ ...fonts.bold, flex: 1 }}>{party.shortName}</Text>
-                        </View>
-                        {programme ? <ProgrammeDetail programme={programme} /> : null}
-                      </Card>
-                    ))}
+            <TabPanel id={mode} style={{ gap: effects.spacing.sm }}>
+              {mode === 'tous' ? (
+                vm.comparisons.map(({ party, candidate, programme }) =>
+                  programme ? (
+                    <Accordion
+                      key={party.id}
+                      title={party.name}
+                      subtitle={firstSentence(programme.summary)}
+                      leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
+                    >
+                      <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                        {candidate.split(' (')[0]}
+                      </Text>
+                      <ProgrammeDetail programme={programme} />
+                    </Accordion>
+                  ) : null
+                )
+              ) : (
+                <>
+                  <Text style={{ color: colors.text.secondary }}>Choisissez deux partis :</Text>
+                  <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                    {vm.comparisons.map(({ party }) => {
+                      const active = selected.includes(party.id);
+                      return (
+                        <Pressable
+                          key={party.id}
+                          onPress={() => toggleSelected(party.id)}
+                          accessibilityRole="checkbox"
+                          accessibilityState={{ checked: active }}
+                          aria-checked={active}
+                          style={{
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: 6,
+                            minHeight: 44,
+                            paddingHorizontal: 10,
+                            borderRadius: effects.borderRadius.round,
+                            borderWidth: 1.5,
+                            borderColor: active ? colors.tint : colors.surface.border.tertiary,
+                            backgroundColor: active ? colors.tintSoft : colors.surface.primary,
+                          }}
+                        >
+                          <PartyDot color={party.color} size={14} />
+                          <Text style={active ? fonts.bold : undefined}>{party.shortName}</Text>
+                        </Pressable>
+                      );
+                    })}
                   </View>
-                ) : null}
-              </>
-            )}
+                  {compared.length === 2 ? (
+                    <View style={{ flexDirection: 'row', gap: 10 }}>
+                      {compared.map(({ party, programme }) => (
+                        <Card key={party.id} style={{ flex: 1, padding: 12 }}>
+                          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                            <PartyDot color={party.color} size={24} label={party.shortName} />
+                            <Text style={{ ...fonts.bold, flex: 1 }}>{party.shortName}</Text>
+                          </View>
+                          {programme ? <ProgrammeDetail programme={programme} /> : null}
+                        </Card>
+                      ))}
+                    </View>
+                  ) : null}
+                </>
+              )}
+            </TabPanel>
           </View>
 
           {vm.questions.length > 0 ? (
