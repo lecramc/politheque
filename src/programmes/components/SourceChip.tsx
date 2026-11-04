@@ -18,6 +18,7 @@ const KIND_LABEL: Record<SourceKind, string> = {
   'proposition-de-loi': 'Proposition de loi',
   presse: 'Presse',
   statistique: 'Source officielle',
+  justice: 'Décision de justice',
 };
 
 const LEVEL_TEXT = {

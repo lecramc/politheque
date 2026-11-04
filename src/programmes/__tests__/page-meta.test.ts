@@ -1,9 +1,14 @@
 import { APP_NAME } from '@/src/core/config/app';
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
+import {
+  legalDossierFactory,
+  legalEntryFactory,
+} from '@/src/programmes/models/legal/legal.factory';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import {
   brandTitle,
   clampText,
+  correctionsMeta,
   debateMeta,
   electionMeta,
   guideSectionMeta,
@@ -207,5 +212,93 @@ describe('Feature: métadonnées des pages', () => {
     expect(org).not.toHaveProperty('logo');
     const home = homeMeta(catalog).jsonLd!['@graph'];
     expect(home.find((n) => n['@type'] === 'WebSite')).toBeDefined();
+  });
+});
+
+describe('Feature: métadonnées du journal des corrections', () => {
+  it('should describe the journal as an indexable collection page with a fixed description', () => {
+    const meta = correctionsMeta();
+    expect(meta.path).toBe('/corrections');
+    expect(meta.title).toBe(brandTitle('Journal des corrections'));
+    expect(meta.robots).toBe('index, follow');
+    expect(meta.description.length).toBeGreaterThanOrEqual(50);
+    expect(meta.description.length).toBeLessThanOrEqual(160);
+    expect(meta.breadcrumb.map((c) => c.name)).toEqual(['Accueil', 'Corrections']);
+    const types = meta.jsonLd!['@graph'].map((n) => n['@type']);
+    expect(types).toContain('CollectionPage');
+    expect(types).toContain('BreadcrumbList');
+  });
+});
+
+describe('Feature: métadonnées de la section procédures', () => {
+  const published = catalogFactory({
+    parties: catalog.parties,
+    legal: catalog.parties.map((p) =>
+      legalDossierFactory({
+        partyId: p.id,
+        reviewedOn: '2026-11-03',
+        entries: [
+          legalEntryFactory({
+            person: { name: 'Jean Dupont', sortName: 'Dupont Jean', kind: 'personne-physique' },
+            lastVerified: '2026-11-04',
+          }),
+        ],
+      })
+    ),
+  });
+  const procedures = (index: number) =>
+    partySectionMeta(partyPageContext(published.parties[index], published), 'procedures');
+
+  it('should build the procedures title and description from the same template for every party', () => {
+    expect(procedures(0).title).toBe('Alpha (ABC) : procédures judiciaires · Travée');
+    expect(procedures(0).description).toBe(
+      'Procédures judiciaires concernant Alpha (ABC), ses dirigeants, candidats et élus nationaux : statut exact, décisions, sources. Arrêté au 3 novembre 2026.'
+    );
+    expect(procedures(0).path).toBe('/partis/alpha/procedures-judiciaires');
+    // Même règle de repli que les autres sections quand le nom complet est trop long.
+    expect(procedures(1).title).toBe('PS-PP : procédures judiciaires · Travée');
+    expect(procedures(1).description.length).toBeLessThanOrEqual(160);
+    expect(procedures(1).description).toContain('concernant PS-PP,');
+    for (const index of [0, 1]) {
+      expect(procedures(index).description.length).toBeLessThanOrEqual(160);
+      expect(procedures(index).description.length).toBeGreaterThanOrEqual(50);
+    }
+  });
+
+  it('should never include a person name in procedures title, description, breadcrumb or JSON-LD', () => {
+    for (const index of [0, 1]) {
+      const meta = procedures(index);
+      expect(JSON.stringify(meta)).not.toMatch(/Dupont|Jean/);
+    }
+  });
+
+  it('should describe the procedures page with PoliticalParty only and citations named by domain', () => {
+    const graph = procedures(0).jsonLd!['@graph'];
+    const article = graph.find((n) => n['@type'] === 'Article') as unknown as {
+      about: { '@type': string }[];
+      dateModified: string;
+      citation: { name: string }[];
+      mentions?: unknown;
+    };
+    expect(article.about.map((n) => n['@type'])).toEqual(['PoliticalParty']);
+    expect(article.mentions).toBeUndefined();
+    expect(article.dateModified).toBe('2026-11-04');
+    expect(article.citation.map((c) => c.name).sort()).toEqual([
+      'courdecassation.fr',
+      'lemonde.fr',
+    ]);
+    expect(JSON.stringify(graph)).not.toContain('"Person"');
+    expect(procedures(0).breadcrumb.map((c) => c.name)).toEqual([
+      'Accueil',
+      'Partis',
+      'Alpha',
+      'Procédures judiciaires',
+    ]);
+  });
+
+  it('should not index the procedures page of a party without published dossier', () => {
+    const meta = partySectionMeta(partyPageContext(alpha, catalog), 'procedures');
+    expect(meta.robots).toBe('noindex, follow');
+    expect(meta.jsonLd).toBeNull();
   });
 });

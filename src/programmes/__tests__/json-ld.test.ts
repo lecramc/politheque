@@ -31,10 +31,10 @@ describe('Feature: données structurées', () => {
     });
   });
 
-  it('should point publishingPrinciples and correctionsPolicy to /methodologie', () => {
+  it('should point publishingPrinciples to /methodologie and correctionsPolicy to /corrections', () => {
     expect(organizationNode(true)).toMatchObject({
       publishingPrinciples: `${SITE_URL}/methodologie`,
-      correctionsPolicy: `${SITE_URL}/methodologie`,
+      correctionsPolicy: `${SITE_URL}/corrections`,
     });
   });
 

@@ -1,4 +1,6 @@
 import { APP_NAME } from '@/src/core/config/app';
+import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
+import type { LegalDossier } from '@/src/programmes/models/legal/legal.model';
 import { partySectionSources } from '@/src/programmes/models/party-sources.service';
 import { beforeParenthesis, displayName } from '@/src/programmes/models/presentation.service';
 import type {
@@ -24,6 +26,7 @@ import {
   type JsonLdNode,
 } from '@/src/programmes/models/seo/json-ld';
 import {
+  hasLegalSection,
   partyHref,
   partySectionLabel,
   type PartySection,
@@ -34,6 +37,7 @@ import {
   type RouteParams,
   type RoutePattern,
 } from '@/src/programmes/models/seo/site-routes';
+import { domainOf } from '@/src/programmes/models/verification.service';
 
 export type Robots = 'index, follow' | 'noindex, follow';
 
@@ -215,23 +219,30 @@ export type PartyPageContext = {
   party: Party;
   questionCount: number;
   presidential: { election: Election; candidacy: Candidacy } | null;
+  /** Dossier de procédures, seulement quand la section existe pour tous les partis. */
+  legal: LegalDossier | null;
   sources: Record<PartySection, Source[]>;
 };
 
 export function partyPageContext(party: Party, catalog: Catalog): PartyPageContext {
   const election = catalog.elections.find((e) => e.featured) ?? null;
   const candidacy = election ? party.candidacies[election.id] : undefined;
+  const legal = hasLegalSection(catalog)
+    ? (catalog.legal.find((d) => d.partyId === party.id) ?? null)
+    : null;
   const sourcesFor = (section: PartySection) =>
-    partySectionSources(party, section, election?.id ?? null);
+    partySectionSources(party, section, election?.id ?? null, legal);
   return {
     party,
     questionCount: catalog.questions.length,
     presidential: election && candidacy ? { election, candidacy } : null,
+    legal,
     sources: {
       'en-bref': sourcesFor('en-bref'),
       histoire: sourcesFor('histoire'),
       positions: sourcesFor('positions'),
       'programme-2027': sourcesFor('programme-2027'),
+      procedures: sourcesFor('procedures'),
     },
   };
 }
@@ -241,6 +252,7 @@ const PARTY_PATTERNS: Record<PartySection, RoutePattern> = {
   histoire: '/partis/[id]/histoire',
   positions: '/partis/[id]/positions',
   'programme-2027': '/partis/[id]/programme-2027',
+  procedures: '/partis/[id]/procedures-judiciaires',
 };
 
 const PARTY_PATTERN_SECTIONS = Object.fromEntries(
@@ -248,11 +260,12 @@ const PARTY_PATTERN_SECTIONS = Object.fromEntries(
 ) as Record<string, PartySection>;
 
 export function partySectionMeta(ctx: PartyPageContext, section: PartySection): PageMeta {
-  const { party, questionCount, presidential } = ctx;
-  if (section === 'programme-2027' && !presidential) {
+  const { party, questionCount, presidential, legal } = ctx;
+  if ((section === 'programme-2027' && !presidential) || (section === 'procedures' && !legal)) {
     return nonIndexableMeta(party.name, partyHref(party.id, section));
   }
-  const date = formatLongDate(party.lastVerified);
+  // Le dossier de procédures a sa propre date de recensement, distincte de celle de la fiche.
+  const date = formatLongDate(section === 'procedures' ? legal!.reviewedOn : party.lastVerified);
   const label = partyLabel(party);
 
   const titleCore = (name: string): string => {
@@ -265,6 +278,8 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
         return `${name} : positions sur ${questionCount} questions`;
       case 'programme-2027':
         return `${name} : propositions pour la présidentielle 2027`;
+      case 'procedures':
+        return `${name} : procédures judiciaires`;
     }
   };
   // Même règle pour tous : le sigle seul quand le nom complet allonge trop le title.
@@ -283,6 +298,9 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
         return `Ce que défend ${name} sur ${questionCount} questions de société, d'après ses programmes, ses votes et ses déclarations datés. Fiche vérifiée le ${date}.`;
       case 'programme-2027':
         return `${name} : propositions pour 2027, thème par thème, avec leurs sources. ${presidential!.candidacy.candidateName} (${beforeParenthesis(presidential!.candidacy.statusLabel)}). Fiche vérifiée le ${date}.`;
+      case 'procedures':
+        // Jamais de nom de personne ici : un extrait « X mis en examen » hors contexte serait trompeur.
+        return `Procédures judiciaires concernant ${name}, ses dirigeants, candidats et élus nationaux : statut exact, décisions, sources. Arrêté au ${date}.`;
     }
   };
   const full = descriptionFor(label);
@@ -303,12 +321,16 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
     kind: 'article',
     pattern: PARTY_PATTERNS[section],
     name: section === 'en-bref' ? party.name : `${party.name} · ${partySectionLabel(section)}`,
-    dateModified: party.lastVerified,
+    dateModified: section === 'procedures' ? dossierLastmod(legal!) : party.lastVerified,
     about: [
       politicalPartyNode(party),
       ...(section === 'programme-2027' ? [personNode(presidential!.candidacy.candidateName)] : []),
     ],
-    sources: ctx.sources[section],
+    // Procédures : citations nommées par domaine, le titre d'un article étant souvent nominatif.
+    sources:
+      section === 'procedures'
+        ? ctx.sources[section].map((s) => ({ ...s, title: domainOf(s.url) }))
+        : ctx.sources[section],
   });
 }
 
@@ -403,6 +425,19 @@ export function methodologyMeta(): PageMeta {
   });
 }
 
+export function correctionsMeta(): PageMeta {
+  return make({
+    title: brandTitle('Journal des corrections'),
+    description:
+      'Toutes les modifications de fond du contenu de Travée, datées, avec les pages concernées : corrections, mises à jour, ajouts et retraits.',
+    path: '/corrections',
+    breadcrumb: [HOME, { name: 'Corrections', path: '/corrections' }],
+    kind: 'collection',
+    pattern: '/corrections',
+    name: 'Journal des corrections',
+  });
+}
+
 /** Passeport, résultats, parcours, 404, contenus introuvables : jamais indexés. */
 export function nonIndexableMeta(title: string, path: string): PageMeta {
   return {
@@ -458,10 +493,13 @@ export function allPageMetas(catalog: Catalog): PageMeta[] {
         return quizMeta(catalog.questions.length);
       case '/methodologie':
         return methodologyMeta();
+      case '/corrections':
+        return correctionsMeta();
       case '/partis/[id]':
       case '/partis/[id]/histoire':
       case '/partis/[id]/positions':
-      case '/partis/[id]/programme-2027': {
+      case '/partis/[id]/programme-2027':
+      case '/partis/[id]/procedures-judiciaires': {
         const section = PARTY_PATTERN_SECTIONS[pattern];
         return partySectionMeta(
           partyPageContext(catalog.parties.find((p) => p.id === id)!, catalog),

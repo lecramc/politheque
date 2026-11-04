@@ -1,5 +1,6 @@
 import { APP_NAME, SITE_URL } from '@/src/core/config/app';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
+import { legalDossierFactory } from '@/src/programmes/models/legal/legal.factory';
 import { buildLlmsTxt } from '@/src/programmes/models/seo/llms';
 import {
   AI_TRAINING_BOTS,
@@ -67,5 +68,29 @@ describe('Feature: llms.txt', () => {
   it('should include the attribution instructions and a link to the methodology', () => {
     expect(llms).toContain('## Citer');
     expect(llms).toContain(`${SITE_URL}/methodologie`);
+  });
+
+  it('should link the corrections journal in the charter section', () => {
+    expect(llms).toContain(`(${SITE_URL}/corrections)`);
+  });
+});
+
+describe('Feature: llms.txt et procédures judiciaires', () => {
+  it('should list procedures pages in llms.txt with the citation instruction', () => {
+    const unpublished = { ...catalog, legal: [] };
+    const none = buildLlmsTxt(unpublished, expandRoutes(unpublished));
+    expect(none).not.toContain('procedures-judiciaires');
+    expect(none).not.toContain('statut exact');
+
+    const published = {
+      ...catalog,
+      legal: catalog.parties.map((p) => legalDossierFactory({ partyId: p.id })),
+    };
+    const llms = buildLlmsTxt(published, expandRoutes(published));
+    expect(llms).toContain(`${SITE_URL}/partis/rn/procedures-judiciaires`);
+    expect(llms).toContain(': Procédures judiciaires]');
+    expect(llms).toContain(
+      "Procédures judiciaires : citer le statut exact et la date de vérification ; une procédure non définitive n'établit pas la culpabilité."
+    );
   });
 });

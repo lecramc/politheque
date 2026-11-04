@@ -49,6 +49,23 @@ pour la présidentielle 2027, **sans désinformation et sans orienter le lecteur
    correction de forme (orthographe, mise en page), et ne jamais l'inventer : sans date de
    vérification réelle, la page n'a pas de `lastmod` (c'est le cas du guide « Comprendre », des
    thèmes et de l'élection tant qu'une revue datée n'y est pas inscrite dans `lastVerified`).
+   **Toute modification de fond est inscrite au journal public des corrections (`/corrections`,
+   `src/programmes/data/corrections.json`)** par le trailer `Correction-publique:` du message de
+   commit, dont le hook `commit-msg` vérifie la présence dès qu'un fichier de `src/programmes/data/`
+   est modifié :
+   - Forme : `Correction-publique: <type> | <pages ou auto> | <résumé public>`, une ligne par
+     correction ; types : `correction` (une information publiée était inexacte), `mise-a-jour`
+     (juste, mais la réalité a changé), `ajout`, `retrait`. Pour un commit de forme (orthographe,
+     typographie, mise en page, source qui confirme un texte inchangé) : `Correction-publique: aucune`.
+   - Le journal est écrit **avant** le commit par `npm run corrections:add -- "<type> | <pages> | <résumé>"`
+     (git ne relit pas l'index après le hook `commit-msg`) ; le hook refuse le commit si l'entrée
+     annoncée dans le trailer n'y figure pas.
+   - Écriture du résumé (20 à 300 caractères) : participe passé, factuel ; dit ce qui change et, pour
+     une correction, ce qui était affiché avant ; aucun adjectif évaluatif, aucune note de travail,
+     aucun nom de contributeur ; dates en toutes lettres. Les listes de termes interdits des données
+     s'appliquent.
+   - Les entrées sont immuables : une erreur dans le journal se corrige par une nouvelle entrée.
+   - Le journal commence à la mise en ligne publique, le 3 novembre 2026.
 
 ## Échelle des positions au questionnaire
 
@@ -104,21 +121,36 @@ Elles complètent les règles ci-dessus et portent sur tous les champs texte aff
      Les libellés sont accordés en genre. `candidate` commence par le nom du candidat et
      rédige le statut en phrases, dates en toutes lettres, sans parenthèses imbriquées.
      La biographie (`history.figures`) utilise le même mot que le statut.
-5. **Affaires judiciaires.**
-   - Dans `description` : au plus **une** phrase factuelle par personne concernée, et seulement
-     pour le candidat 2027 (« X fait l'objet de… » / « X a été condamné en… ; voir le détail
-     de la candidature »).
-   - Le détail complet (juridiction, dates, peines, recours, réactions) figure **une seule
-     fois**, dans `candidacies.presidentielle-2027.candidate` et/ou dans `history.timeline`,
-     sans répétition. La biographie du candidat 2027 n'y revient pas.
-   - Pour les figures historiques qui ne sont pas candidates, la biographie peut mentionner
-     une condamnation en une ou deux phrases factuelles (infraction, juridiction, date, peine,
-     caractère définitif ou non).
-   - On écrit « peine d'inéligibilité » quand il s'agit d'inéligibilité, pour qu'aucune peine ne
-     puisse être confondue avec de la prison.
-   - Pas de mention en creux (« aucune procédure n'a été identifiée ») : on ne parle que des
-     procédures qui existent.
-   - Quand des réactions sont citées (avocats, parties), on cite les deux parties ou aucune.
+5. **Procédures judiciaires.**
+   - Le détail des procédures figure **une seule fois**, dans la section « Procédures judiciaires »
+     de chaque fiche (`src/programmes/data/affaires/<id>.json`, généré depuis `docs/affaires/` par
+     `scripts/promote-affaires.mjs`). Périmètre des personnes, statuts et garde-fous :
+     `docs/brief-affaires-judiciaires.md`. Même périmètre, même gabarit et même tri pour les dix
+     partis ; la section existe pour les dix ou pour aucun.
+   - Chaque entrée porte un **statut juridique exact** pris dans une liste fermée, la fonction au
+     moment des faits, la qualification pénale, la juridiction, les dates, la peine exacte, les
+     recours en cours, la date de sa dernière vérification et **au moins deux sources
+     indépendantes** de domaines différents (presse nationale ou décision de justice ; une source du
+     parti ne compte pas).
+   - **Présomption d'innocence** : tant qu'aucune condamnation définitive n'est prononcée, le rappel
+     est affiché à côté du statut. Il est généré par le site et n'est jamais écrit dans les données.
+   - Une issue favorable (relaxe, acquittement, non-lieu, classement) est **toujours** indiquée
+     lorsque la procédure a été rendue publique. Aucune procédure n'est laissée sans son issue connue.
+   - Une procédure dont une étape est annoncée porte cette échéance (`nextStep`). Elle est mise à jour
+     dans les dix jours suivant l'échéance ; au-delà, les tests et le build échouent.
+   - Ailleurs dans la fiche, **au plus une phrase factuelle**, sans peine détaillée, terminée par un
+     renvoi à la section, et seulement dans trois cas :
+     1. `description` : le candidat 2027, s'il fait l'objet d'une entrée ;
+     2. `candidacies.presidentielle-2027.candidate` : une procédure qui affecte la candidature
+        elle-même (éligibilité, calendrier judiciaire avant le scrutin) ;
+     3. `history.timeline` : une décision visant le parti lui-même (personne morale).
+        Les biographies (`history.figures`) ne mentionnent pas les procédures.
+   - Termes juridiques exacts : « mis en examen » (jamais « inculpé »), « déclaré coupable »,
+     « peine d'inéligibilité » (jamais « inéligibilité » seule). Aucun terme de la liste
+     `FORBIDDEN_LEGAL_TERMS` (« scandale », « sulfureux », « blanchi »…).
+   - Pas de réactions des parties dans les entrées. Pas de total ni de classement entre partis.
+   - Une condamnation amnistiée ou effacée par la réhabilitation n'est pas publiée sans avis
+     juridique écrit.
 6. **Descriptions de longueur comparable** (environ 400 à 700 caractères), dans cet ordre :
    fondation, direction, poids électoral récent (dernier résultat présidentiel ou européen,
    nombre de députés daté), une phrase sur la situation actuelle. Le reste va dans l'histoire.

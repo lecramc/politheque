@@ -1,3 +1,4 @@
+import type { LegalDossier } from '@/src/programmes/models/legal/legal.model';
 import type { Party, Source } from '@/src/programmes/models/programme.model';
 import type { PartySection } from '@/src/programmes/models/seo/party-sections';
 
@@ -5,7 +6,8 @@ import type { PartySection } from '@/src/programmes/models/seo/party-sections';
 export function partySectionSources(
   party: Party,
   section: PartySection,
-  electionId: string | null
+  electionId: string | null,
+  legal: LegalDossier | null = null
 ): Source[] {
   const history = party.history;
   switch (section) {
@@ -23,6 +25,12 @@ export function partySectionSources(
         : [];
     case 'positions':
       return Object.values(party.stances).flatMap((s) => s.sources);
+    case 'procedures':
+      return (legal?.entries ?? []).flatMap((entry) => [
+        ...entry.sources,
+        ...entry.steps.flatMap((step) => step.sources),
+        ...(entry.nextStep?.sources ?? []),
+      ]);
     case 'programme-2027': {
       const candidacy = electionId ? party.candidacies[electionId] : undefined;
       return candidacy

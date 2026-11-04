@@ -12,6 +12,7 @@ export const OG_IMAGE_URL = `${SITE_URL}/og.png`;
 export const LOGO_URL = `${SITE_URL}/logo-512.png`;
 
 const METHODOLOGY_URL = `${SITE_URL}/methodologie`;
+const CORRECTIONS_URL = `${SITE_URL}/corrections`;
 
 export function organizationNode(full: boolean): JsonLdNode {
   const base: JsonLdNode = {
@@ -25,7 +26,7 @@ export function organizationNode(full: boolean): JsonLdNode {
     ...base,
     logo: { '@type': 'ImageObject', url: LOGO_URL },
     publishingPrinciples: METHODOLOGY_URL,
-    correctionsPolicy: METHODOLOGY_URL,
+    correctionsPolicy: CORRECTIONS_URL,
   };
 }
 

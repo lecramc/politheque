@@ -2,7 +2,7 @@
   "name": "travee",
   "type": "module",
   "main": "expo-router/entry",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
@@ -16,7 +16,13 @@
     "format:check": "prettier --check \"**/*.{ts,tsx,json}\"",
     "prepare": "husky",
     "build:web": "expo export --platform web && node scripts/postexport.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "affaires:promote": "node scripts/promote-affaires.mjs",
+    "affaires:echeances": "node scripts/affaires-echeances.mjs",
+    "corrections:add": "node scripts/corrections.mjs --add",
+    "corrections:check": "node scripts/corrections.mjs --check",
+    "corrections:backfill": "node scripts/corrections.mjs --backfill --since 2026-11-03",
+    "corrections:import-retro": "node scripts/corrections.mjs --import-retro"
   },
   "dependencies": {
     "@expo-google-fonts/atkinson-hyperlegible": "^0.4.1",

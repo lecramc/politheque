@@ -13,6 +13,13 @@ const MONTHS = [
   'décembre',
 ];
 
+/** « 2016 » → « 2016 », « 2016-03 » → « mars 2016 », « 2016-03-01 » → « 1er mars 2016 ». */
+export function formatPartialDate(iso: string): string {
+  const [year, month, day] = iso.split('-').map(Number);
+  if (!month) return String(year);
+  return day ? formatLongDate(iso) : `${MONTHS[month - 1]} ${year}`;
+}
+
 /** « 2026-11-03 » → « 3 novembre 2026 » (sans fuseau : calcul sur la chaîne ISO). */
 export function formatLongDate(iso: string): string {
   const [year, month, day] = iso.split('-').map(Number);

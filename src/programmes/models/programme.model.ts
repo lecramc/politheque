@@ -1,3 +1,6 @@
+import type { CorrectionEntry } from '@/src/programmes/models/corrections/corrections.model';
+import type { LegalDossier } from '@/src/programmes/models/legal/legal.model';
+
 // Modèle de données du comparateur de programmes.
 // Règle éditoriale : aucune affirmation sans source vérifiable et datée.
 
@@ -21,7 +24,18 @@ export type SourceKind =
   | 'vote' // vote des députés du groupe à l'Assemblée (scrutin public)
   | 'proposition-de-loi' // texte déposé par le groupe
   | 'presse' // article de presse rapportant la position (à défaut de source primaire)
-  | 'statistique'; // données publiques (INSEE, Cour des comptes, etc.)
+  | 'statistique' // données publiques (INSEE, Cour des comptes, etc.)
+  | 'justice'; // décision de justice, communiqué du parquet (Légifrance, Cour de cassation…)
+
+export const SOURCE_KINDS: readonly SourceKind[] = [
+  'programme',
+  'declaration',
+  'vote',
+  'proposition-de-loi',
+  'presse',
+  'statistique',
+  'justice',
+];
 
 export interface Source {
   title: string;
@@ -227,4 +241,8 @@ export interface Catalog {
   questions: Question[];
   axes: Axis[];
   guide: GuideSection[];
+  /** Journal public des corrections, du plus récent au plus ancien. */
+  corrections: CorrectionEntry[];
+  /** Procédures judiciaires : un dossier par parti, ou aucun (tous ou aucun). */
+  legal: LegalDossier[];
 }

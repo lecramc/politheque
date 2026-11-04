@@ -12,6 +12,13 @@ case "$FIRST_LINE" in
   Merge\ *|release:\ *|fixup!\ *|squash!\ *) exit 0 ;;
 esac
 
+# Journal public des corrections : un commit qui touche aux données doit porter un trailer
+#   Correction-publique: <correction|mise-a-jour|ajout|retrait> | <pages ou auto> | <résumé>
+# (ou « Correction-publique: aucune »). Placé avant le bump : un refus n'incrémente rien.
+# Le journal est écrit AVANT le commit par `npm run corrections:add` : git ne relit pas l'index
+# après ce hook, un `git add` ici n'entrerait pas dans le commit.
+node scripts/corrections.mjs --from-message "$1" || exit 1
+
 # Detect breaking change: trailing ! before colon (first line),
 # or "BREAKING CHANGE:" footer at the start of a line (conventional commits spec)
 IS_BREAKING=0

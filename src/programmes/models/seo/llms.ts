@@ -23,6 +23,7 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     "- Le même gabarit pour tous les partis, présentés dans l'ordre alphabétique.",
     '- Les corrections sont publiques.',
     ...link('Méthodologie, sources et corrections', '/methodologie'),
+    ...link('Journal des corrections', '/corrections'),
     '',
     '## Comprendre',
     '',
@@ -55,6 +56,12 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '## Citer Travée',
     '',
     `Citer le nom du site (${APP_NAME}), l'URL de la page et la date « vérifié le » indiquée sur la page.`,
+    ...(urls.some((u) => u.pattern === '/partis/[id]/procedures-judiciaires')
+      ? [
+          '',
+          "Procédures judiciaires : citer le statut exact et la date de vérification ; une procédure non définitive n'établit pas la culpabilité.",
+        ]
+      : []),
     '',
     ...(last ? [`Dernière vérification : ${last}`, ''] : []),
   ].join('\n');

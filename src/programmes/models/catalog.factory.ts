@@ -75,5 +75,7 @@ export const catalogFactory = (overrides: Partial<Catalog> = {}): Catalog => ({
   questions: ['q1', 'q2', 'q3'].map(question),
   axes: [],
   guide: GUIDE_SECTION_IDS.map(guideSection),
+  corrections: [],
+  legal: [],
   ...overrides,
 });

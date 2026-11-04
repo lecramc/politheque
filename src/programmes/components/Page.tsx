@@ -384,7 +384,14 @@ export function Page({
               href="/methodologie"
               style={{ color: colors.tint, textDecorationLine: 'underline' }}
             >
-              Méthodologie et corrections
+              Méthodologie
+            </Link>{' '}
+            ·{' '}
+            <Link
+              href="/corrections"
+              style={{ color: colors.tint, textDecorationLine: 'underline' }}
+            >
+              Corrections
             </Link>
           </Text>
         </View>

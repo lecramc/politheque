@@ -2,6 +2,7 @@ import type { Source, SourceKind } from '@/src/programmes/models/programme.model
 
 const KIND_ORDER: SourceKind[] = [
   'statistique',
+  'justice',
   'vote',
   'proposition-de-loi',
   'programme',
@@ -11,6 +12,7 @@ const KIND_ORDER: SourceKind[] = [
 
 export const KIND_GROUP_LABEL: Record<SourceKind, string> = {
   statistique: 'Sources officielles et ouvrages de référence',
+  justice: 'Décisions de justice',
   vote: "Votes à l'Assemblée",
   'proposition-de-loi': 'Propositions de loi',
   programme: 'Programmes et textes des partis',

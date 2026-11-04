@@ -4,7 +4,7 @@ export type VerificationLevel = 'croisee' | 'source-unique' | 'non-sourcee';
 
 const PRIMARY_KINDS = new Set(['programme', 'vote', 'proposition-de-loi', 'declaration']);
 /** Sources qui ne sont pas produites par le parti lui-même (un scrutin public est un fait constaté). */
-const INDEPENDENT_KINDS = new Set(['presse', 'statistique', 'vote']);
+const INDEPENDENT_KINDS = new Set(['presse', 'statistique', 'vote', 'justice']);
 
 const SECOND_LEVEL = new Set(['gouv', 'co', 'com', 'org', 'ac', 'asso']);
 

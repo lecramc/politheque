@@ -11,10 +11,17 @@ import {
   partySectionMeta,
   TITLE_MAX,
 } from '@/src/programmes/models/seo/page-meta';
-import { PARTY_SECTIONS, type PartySection } from '@/src/programmes/models/seo/party-sections';
+import {
+  hasLegalSection,
+  PARTY_SECTIONS,
+  type PartySection,
+} from '@/src/programmes/models/seo/party-sections';
 
 const catalog = buildStaticCatalog();
-const SECTIONS = PARTY_SECTIONS.map((s) => s.id);
+// La section procédures n'existe que si les dossiers sont publiés (tous ou aucun).
+const SECTIONS = PARTY_SECTIONS.map((s) => s.id).filter(
+  (id) => id !== 'procedures' || hasLegalSection(catalog)
+);
 const EVALUATIVE = /extr[êe]me|radical|populiste|mod[ée]r[ée]|dangereux|irr[ée]aliste|ambitieux/i;
 
 const metaOf = (party: Party, section: PartySection) =>
@@ -136,5 +143,16 @@ describe('Feature: libellés de liens vers les fiches', () => {
     const party = catalog.parties[0];
     expect(partyLinkLabel(party, 'programme-2027')).toMatch(/pour 2027/);
     expect(partyLinkLabel(party, 'positions')).toBe(party.name);
+  });
+});
+
+describe('Feature: aucun nom de personne dans les métadonnées des procédures', () => {
+  it('should never include a person name of a published dossier in a procedures page meta', () => {
+    const metas = allPageMetas(catalog).filter((m) => m.path.endsWith('/procedures-judiciaires'));
+    expect(metas.length).toBe(hasLegalSection(catalog) ? catalog.parties.length : 0);
+    const names = catalog.legal.flatMap((d) => d.entries.map((e) => e.person.name));
+    for (const meta of metas) {
+      for (const name of names) expect(JSON.stringify(meta), meta.path).not.toContain(name);
+    }
   });
 });

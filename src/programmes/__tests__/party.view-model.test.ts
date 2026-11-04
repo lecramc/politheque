@@ -1,4 +1,8 @@
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
+import {
+  legalDossierFactory,
+  legalEntryFactory,
+} from '@/src/programmes/models/legal/legal.factory';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
@@ -67,5 +71,34 @@ describe('Feature: fiche parti découpée en sections', () => {
     const vm = vmOf('inconnu');
     expect(vm.party).toBeNull();
     expect(vm.notFoundMeta.robots).toBe('noindex, follow');
+  });
+});
+
+describe('Feature: section procédures de la fiche parti', () => {
+  const published = catalogFactory({
+    parties: catalog.parties,
+    legal: catalog.parties.map((p) =>
+      legalDossierFactory({
+        partyId: p.id,
+        entries: [legalEntryFactory({ status: 'mise-en-examen' })],
+      })
+    ),
+  });
+  const publishedVm = (id: string) =>
+    partyViewModel(id)({ dispatch: vi.fn() })(stateBuilder().withCatalog(published).build());
+
+  it('should expose the presented dossier and the procedures meta', () => {
+    const vm = publishedVm('alpha');
+    expect(vm.sections.at(-1)).toMatchObject({ id: 'procedures', label: 'Procédures judiciaires' });
+    expect(vm.procedures?.ongoing).toHaveLength(1);
+    expect(vm.procedures?.ongoing[0].presumptionNotice).toContain("Présomption d'innocence");
+    expect(vm.metaBySection?.procedures.path).toBe('/partis/alpha/procedures-judiciaires');
+    expect(vm.sourcesBySection.procedures.length).toBeGreaterThan(0);
+  });
+
+  it('should expose no procedures when no dossier is published', () => {
+    const vm = vmOf('alpha');
+    expect(vm.procedures).toBeNull();
+    expect(vm.sections.map((s) => s.id)).not.toContain('procedures');
   });
 });

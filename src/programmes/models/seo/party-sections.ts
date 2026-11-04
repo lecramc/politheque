@@ -1,6 +1,6 @@
-import type { Party } from '@/src/programmes/models/programme.model';
+import type { Catalog, Party } from '@/src/programmes/models/programme.model';
 
-export type PartySection = 'en-bref' | 'histoire' | 'positions' | 'programme-2027';
+export type PartySection = 'en-bref' | 'histoire' | 'positions' | 'programme-2027' | 'procedures';
 
 export const PARTY_SECTIONS: readonly {
   id: PartySection;
@@ -11,6 +11,7 @@ export const PARTY_SECTIONS: readonly {
   { id: 'histoire', label: 'Histoire', segment: 'histoire' },
   { id: 'positions', label: 'Positions', segment: 'positions' },
   { id: 'programme-2027', label: 'Pour 2027', segment: 'programme-2027' },
+  { id: 'procedures', label: 'Procédures judiciaires', segment: 'procedures-judiciaires' },
 ];
 
 export const partySectionLabel = (section: PartySection) =>
@@ -29,12 +30,32 @@ export function sectionFromPath(pathname: string): PartySection | null {
   return PARTY_SECTIONS.find((s) => s.segment === match[1])?.id ?? null;
 }
 
-/** Même règle pour tous : histoire si `history`, 2027 si candidature à l'élection mise en avant. */
-export function availableSections(party: Party, featuredElectionId: string | null): PartySection[] {
+/**
+ * La section « Procédures judiciaires » existe pour tous les partis ou pour aucun : seulement
+ * quand chaque parti du catalogue a son dossier publié.
+ */
+export function hasLegalSection(catalog: Pick<Catalog, 'parties' | 'legal'>): boolean {
+  return (
+    catalog.legal.length > 0 &&
+    catalog.parties.every((party) => catalog.legal.some((d) => d.partyId === party.id))
+  );
+}
+
+/**
+ * Même règle pour tous : histoire si `history`, 2027 si candidature à l'élection mise en avant,
+ * procédures si les dossiers sont publiés (`legalPublished`, voir `hasLegalSection`).
+ */
+export function availableSections(
+  party: Party,
+  featuredElectionId: string | null,
+  legalPublished = false
+): PartySection[] {
   return PARTY_SECTIONS.map((s) => s.id).filter(
     (id) =>
       (id !== 'histoire' || !!party.history) &&
-      (id !== 'programme-2027' || (!!featuredElectionId && !!party.candidacies[featuredElectionId]))
+      (id !== 'programme-2027' ||
+        (!!featuredElectionId && !!party.candidacies[featuredElectionId])) &&
+      (id !== 'procedures' || legalPublished)
   );
 }
 

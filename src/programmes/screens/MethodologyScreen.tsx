@@ -1,3 +1,4 @@
+import { Link } from 'expo-router';
 import React from 'react';
 import { View } from 'react-native';
 
@@ -39,7 +40,7 @@ const COMMITMENTS = [
   },
 ];
 
-const RULES: { title: string; body: string }[] = [
+const RULES: { title: string; body: string; link?: { label: string; href: string } }[] = [
   {
     title: 'Les programmes de 2027 pas encore publiés',
     body: "À la date de vérification, la plupart des candidats n'ont pas publié leur programme définitif. Chaque fiche l'indique et s'appuie sur le dernier programme officiel (législatives 2024, européennes 2024, présidentielle 2022) et sur les déclarations récentes, toujours datées.",
@@ -58,7 +59,8 @@ const RULES: { title: string; body: string }[] = [
   },
   {
     title: 'Corrections',
-    body: 'Les données sont versionnées et chaque correction est datée. Une erreur signalée avec une source est vérifiée puis corrigée.',
+    body: 'Les données sont versionnées et chaque correction est datée. Une erreur signalée avec une source est vérifiée puis corrigée. Chaque modification de fond est inscrite au journal public.',
+    link: { label: 'Voir le journal des corrections', href: '/corrections' },
   },
 ];
 
@@ -160,6 +162,14 @@ export default function MethodologyScreen() {
         {RULES.map((rule) => (
           <Accordion key={rule.title} title={rule.title}>
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{rule.body}</Text>
+            {rule.link ? (
+              <Link
+                href={rule.link.href as never}
+                style={{ color: colors.tint, textDecorationLine: 'underline', fontSize: 16 }}
+              >
+                {rule.link.label}
+              </Link>
+            ) : null}
           </Accordion>
         ))}
       </View>

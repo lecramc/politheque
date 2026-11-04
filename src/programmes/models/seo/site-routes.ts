@@ -1,9 +1,14 @@
 import { SITE_URL } from '@/src/core/config/app';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
 import { JOURNEY_STEP_IDS } from '@/src/programmes/models/journey.model';
+import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
 import type { Catalog, Party } from '@/src/programmes/models/programme.model';
 import { maxIsoDate } from '@/src/programmes/models/seo/dates';
-import { availableSections, type PartySection } from '@/src/programmes/models/seo/party-sections';
+import {
+  availableSections,
+  hasLegalSection,
+  type PartySection,
+} from '@/src/programmes/models/seo/party-sections';
 
 export type RoutePattern =
   | '/'
@@ -14,6 +19,7 @@ export type RoutePattern =
   | '/partis/[id]/histoire'
   | '/partis/[id]/positions'
   | '/partis/[id]/programme-2027'
+  | '/partis/[id]/procedures-judiciaires'
   | '/elections'
   | '/elections/[id]'
   | '/debats'
@@ -21,6 +27,7 @@ export type RoutePattern =
   | '/me-situer'
   | '/me-situer/resultats'
   | '/methodologie'
+  | '/corrections'
   | '/parcours/[etape]'
   | '/passeport';
 
@@ -67,7 +74,11 @@ const partyParams =
   (section: PartySection) =>
   (catalog: Catalog): RouteParams[] =>
     sortedParties(catalog)
-      .filter((party) => availableSections(party, featuredElectionId(catalog)).includes(section))
+      .filter((party) =>
+        availableSections(party, featuredElectionId(catalog), hasLegalSection(catalog)).includes(
+          section
+        )
+      )
       .map((party) => ({ id: party.id }));
 
 const partyLastmod = (catalog: Catalog, params: RouteParams) =>
@@ -78,6 +89,11 @@ const partyPage = (section: PartySection): RouteDefinition => ({
   indexable: true,
   lastmod: partyLastmod,
 });
+
+const legalLastmod = (catalog: Catalog, partyId: string) => {
+  const dossier = catalog.legal.find((d) => d.partyId === partyId);
+  return dossier ? dossierLastmod(dossier) : null;
+};
 
 const fixed = (
   indexable: boolean,
@@ -109,6 +125,11 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
   '/partis/[id]/histoire': partyPage('histoire'),
   '/partis/[id]/positions': partyPage('positions'),
   '/partis/[id]/programme-2027': partyPage('programme-2027'),
+  '/partis/[id]/procedures-judiciaires': {
+    params: partyParams('procedures'),
+    indexable: true,
+    lastmod: (c, p) => legalLastmod(c, p.id),
+  },
   '/elections': fixed(true, (c) =>
     maxIsoDate([...c.elections.map((e) => e.lastVerified), ...partyDates(c)])
   ),
@@ -134,6 +155,8 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
   '/me-situer': fixed(true, (c) => maxIsoDate(partyDates(c))),
   '/me-situer/resultats': fixed(false),
   '/methodologie': fixed(true),
+  // Corrections triées du plus récent au plus ancien : la première date est la dernière modification.
+  '/corrections': fixed(true, (c) => maxIsoDate(c.corrections.map((e) => e.date))),
   '/parcours/[etape]': {
     params: () => JOURNEY_STEP_IDS.filter((id) => id !== 'me-situer').map((etape) => ({ etape })),
     indexable: false,

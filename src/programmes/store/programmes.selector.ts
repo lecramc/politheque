@@ -21,6 +21,8 @@ const EMPTY_CATALOG: Catalog = {
   questions: [],
   axes: [],
   guide: [],
+  corrections: [],
+  legal: [],
 };
 
 export const selectProgressStatus = (state: AppState) => state.progress.status;

@@ -29,6 +29,12 @@ const { auditHtml } = (
     logLevel: 'error',
   })
 ).module;
+const { module: legal } = await runnerImport('/src/programmes/models/legal/legal-cli.ts', {
+  root,
+  configFile: false,
+  plugins: [tsconfigPaths()],
+  logLevel: 'error',
+});
 const files = seo.buildSeoFiles();
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), files.sitemap);
 fs.writeFileSync(path.join(dist, 'robots.txt'), files.robots);
@@ -36,6 +42,16 @@ fs.writeFileSync(path.join(dist, 'llms.txt'), files.llms);
 
 // 3. Contrôle de l'export.
 const errors = [];
+
+// Procédures judiciaires : une échéance dépassée de plus de 10 jours fait échouer le build
+// (information périmée sur une personne) ; les autres suivis sont des avertissements.
+const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Paris' }).format(new Date());
+const followUps = legal.publishedFollowUps(today);
+for (const item of followUps) {
+  const line = `procédures judiciaires, ${item.partyId} / ${item.entryId} : ${item.detail}`;
+  if (item.kind === 'depassee') errors.push(line);
+  else console.warn(`Avertissement : ${line}`);
+}
 const htmlFileFor = (urlPath) =>
   [`${urlPath}.html`, `${urlPath}/index.html`]
     .map((rel) => path.join(dist, rel))
@@ -67,6 +83,15 @@ const walk = (dir) =>
     return entry.isDirectory() ? walk(full) : [full];
   });
 const IGNORED = new Set(['404.html', '+not-found.html']);
+// Expo expanse les paramètres du layout `[id]` à toutes ses pages : sans dossier publié, la section
+// « Procédures judiciaires » est exportée pour chaque parti alors qu'elle n'existe pas (tous ou
+// aucun). Ces pages hors registre sont retirées au lieu de faire échouer le build.
+const UNPUBLISHED_SECTION = /^partis[\\/][^\\/]+[\\/]procedures-judiciaires\.html$/;
+for (const file of walk(dist).filter((f) => f.endsWith('.html'))) {
+  if (!expectedFiles.has(file) && UNPUBLISHED_SECTION.test(path.relative(dist, file))) {
+    fs.rmSync(file);
+  }
+}
 for (const file of walk(dist).filter((f) => f.endsWith('.html'))) {
   const relative = path.relative(dist, file);
   // `[id].html` : gabarit de repli d'Expo Router pour une route dynamique (jamais une URL publique).

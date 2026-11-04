@@ -9,6 +9,8 @@ export class FakeProgrammeGateway implements ProgrammeGateway {
     questions: [],
     axes: [],
     guide: [],
+    corrections: [],
+    legal: [],
   };
   error: Error | null = null;
 

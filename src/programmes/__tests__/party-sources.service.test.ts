@@ -1,4 +1,11 @@
 import { PARTIES } from '@/src/programmes/data/parties';
+import {
+  courtSource,
+  legalDossierFactory,
+  legalEntryFactory,
+  legalStepFactory,
+  pressSource,
+} from '@/src/programmes/models/legal/legal.factory';
 import { partySectionSources } from '@/src/programmes/models/party-sources.service';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import type { Source } from '@/src/programmes/models/programme.model';
@@ -82,5 +89,32 @@ describe("Feature: sources d'une section de fiche", () => {
         ).toBeGreaterThan(0);
       }
     }
+  });
+});
+
+describe('Feature: sources de la section procédures', () => {
+  it('should list the dossier sources on the procedures section only', () => {
+    const dossier = legalDossierFactory({
+      entries: [
+        legalEntryFactory({
+          sources: [pressSource('lemonde.fr')],
+          steps: [legalStepFactory({ sources: [courtSource('courdecassation.fr')] })],
+          nextStep: {
+            label: 'Décision',
+            expected: '2027-04',
+            precision: 'annoncee',
+            sources: [pressSource('liberation.fr')],
+          },
+        }),
+      ],
+    });
+    const urls = partySectionSources(party, 'procedures', 'presidentielle-2027', dossier).map(
+      (s) => new URL(s.url).hostname
+    );
+    expect(urls.sort()).toEqual(['www.courdecassation.fr', 'www.lemonde.fr', 'www.liberation.fr']);
+    expect(partySectionSources(party, 'procedures', 'presidentielle-2027', null)).toEqual([]);
+    expect(
+      partySectionSources(party, 'histoire', 'presidentielle-2027', dossier).map((s) => s.title)
+    ).not.toContain('Article de presse lemonde.fr');
   });
 });

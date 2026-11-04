@@ -1,6 +1,10 @@
+import { catalogFactory } from '@/src/programmes/models/catalog.factory';
+import { legalDossierFactory } from '@/src/programmes/models/legal/legal.factory';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import {
   availableSections,
+  hasLegalSection,
+  PARTY_SECTIONS,
   legacyTabRedirect,
   partyHref,
   sectionFromPath,
@@ -62,5 +66,33 @@ describe('Feature: sections de la fiche parti', () => {
       'en-bref',
       'positions',
     ]);
+  });
+
+  it('should add the procedures section last with segment procedures-judiciaires', () => {
+    expect(PARTY_SECTIONS.at(-1)).toEqual({
+      id: 'procedures',
+      label: 'Procédures judiciaires',
+      segment: 'procedures-judiciaires',
+    });
+    expect(partyHref('rn', 'procedures')).toBe('/partis/rn/procedures-judiciaires');
+    expect(sectionFromPath('/partis/rn/procedures-judiciaires')).toBe('procedures');
+  });
+
+  it('should offer it to every party when dossiers are published, to none otherwise', () => {
+    const parties = [partyFactory({ id: 'a' }), partyFactory({ id: 'b', history })];
+    for (const party of parties) {
+      expect(availableSections(party, null, true).at(-1)).toBe('procedures');
+      expect(availableSections(party, null, false)).not.toContain('procedures');
+      expect(availableSections(party, null)).not.toContain('procedures');
+    }
+    const dossier = legalDossierFactory;
+    const catalog = (legalIds: string[]) =>
+      catalogFactory({
+        parties,
+        legal: legalIds.map((partyId) => dossier({ partyId })),
+      });
+    expect(hasLegalSection(catalog([]))).toBe(false);
+    expect(hasLegalSection(catalog(['a']))).toBe(false);
+    expect(hasLegalSection(catalog(['a', 'b']))).toBe(true);
   });
 });

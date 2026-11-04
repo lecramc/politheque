@@ -1,11 +1,22 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+import { LEGAL_DOSSIERS } from '@/src/programmes/data/affaires';
+import corrections from '@/src/programmes/data/corrections.json';
 import { ELECTIONS } from '@/src/programmes/data/elections';
 import guide from '@/src/programmes/data/guide.json';
 import { PARTIES } from '@/src/programmes/data/parties';
 import { QUESTIONS } from '@/src/programmes/data/questions';
 import themes from '@/src/programmes/data/themes.json';
+import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
+import { validateJournal } from '@/src/programmes/models/corrections/corrections.service';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
+import { followUps } from '@/src/programmes/models/legal/legal-followup';
+import { promoteDraft } from '@/src/programmes/models/legal/legal-promotion';
+import { validateLegalDossier } from '@/src/programmes/models/legal/legal-validation';
 import type { Source } from '@/src/programmes/models/programme.model';
+import { expandRoutes } from '@/src/programmes/models/seo/site-routes';
 import { TITLE_MAX_LENGTH } from '@/src/programmes/models/sourced-item.service';
 import { verificationLevel } from '@/src/programmes/models/verification.service';
 
@@ -32,7 +43,15 @@ const STATUS_LABELS: Record<string, string[]> = {
   pressenti: ['Candidat pressenti', 'Candidate pressentie'],
 };
 
-const KINDS = ['programme', 'declaration', 'vote', 'proposition-de-loi', 'presse', 'statistique'];
+const KINDS = [
+  'programme',
+  'declaration',
+  'vote',
+  'proposition-de-loi',
+  'presse',
+  'statistique',
+  'justice',
+];
 
 const expectValidSource = (source: Source, where: string) => {
   expect(source.url, where).toMatch(/^https:\/\//);
@@ -225,5 +244,82 @@ describe('Feature: intégrité du référencement (ajout)', () => {
       expect(date, id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
       expect(date <= today, id).toBe(true);
     }
+  });
+});
+
+describe('Feature: intégrité du journal des corrections (ajout)', () => {
+  const catalog = buildStaticCatalog();
+  const today = new Date().toISOString().slice(0, 10);
+  const indexablePaths = expandRoutes(catalog)
+    .filter((u) => u.indexable)
+    .map((u) => u.path);
+
+  it('should only contain valid, unique, sorted entries on indexable pages', () => {
+    expect(validateJournal(catalog.corrections, { today, indexablePaths })).toEqual([]);
+    expect(catalog.corrections).toEqual(corrections);
+  });
+
+  it('should date every party correction no later than the party lastVerified (charte, règle 8)', () => {
+    for (const entry of catalog.corrections) {
+      for (const page of entry.pages) {
+        const id = /^\/partis\/([^/]+)/.exec(page)?.[1];
+        const party = catalog.parties.find((p) => p.id === id);
+        if (party) expect(party.lastVerified >= entry.date, `${entry.id} / ${page}`).toBe(true);
+      }
+    }
+  });
+
+  it('should date every procedures correction no later than the dossier date', () => {
+    const lastmod = new Map(expandRoutes(catalog).map((u) => [u.path, u.lastmod] as const));
+    for (const entry of catalog.corrections) {
+      for (const page of entry.pages.filter((p) => p.endsWith('/procedures-judiciaires'))) {
+        expect((lastmod.get(page) ?? '') >= entry.date, `${entry.id} / ${page}`).toBe(true);
+      }
+    }
+  });
+});
+
+describe('Feature: intégrité des procédures judiciaires (ajout)', () => {
+  const partyIds = PARTIES.map((p) => p.id);
+  const today = new Date().toISOString().slice(0, 10);
+  const DRAFTS_DIR = path.resolve(__dirname, '../../../docs/affaires');
+
+  it('should publish a dossier for every party or for none', () => {
+    expect([0, PARTIES.length]).toContain(LEGAL_DOSSIERS.length);
+    expect(new Set(LEGAL_DOSSIERS.map((d) => d.partyId)).size).toBe(LEGAL_DOSSIERS.length);
+  });
+
+  it('should attach each dossier to an existing party', () => {
+    for (const dossier of LEGAL_DOSSIERS) expect(partyIds).toContain(dossier.partyId);
+  });
+
+  it('should validate every published dossier without issue', () => {
+    for (const dossier of LEGAL_DOSSIERS) {
+      expect(validateLegalDossier(dossier, { today, partyIds }), dossier.partyId).toEqual([]);
+    }
+  });
+
+  it('should give identical content to an entry present in two dossiers', () => {
+    const byId = new Map<string, string>();
+    for (const entry of LEGAL_DOSSIERS.flatMap((d) => d.entries)) {
+      const json = JSON.stringify(entry);
+      expect(byId.get(entry.id) ?? json, entry.id).toBe(json);
+      byId.set(entry.id, json);
+    }
+  });
+
+  it('should match the promoted docs/affaires draft exactly (no hand edit in src/)', () => {
+    for (const dossier of LEGAL_DOSSIERS) {
+      const file = path.join(DRAFTS_DIR, `${dossier.partyId}.json`);
+      expect(fs.existsSync(file), `${dossier.partyId}: brouillon introuvable`).toBe(true);
+      const promoted = promoteDraft(JSON.parse(fs.readFileSync(file, 'utf8')), { today, partyIds });
+      expect(promoted.ok, dossier.partyId).toBe(true);
+      if (promoted.ok) expect(dossier).toEqual(promoted.dossier);
+    }
+  });
+
+  it('should not leave an announced next step overdue by more than 10 days', () => {
+    const overdue = followUps(LEGAL_DOSSIERS, today).filter((f) => f.kind === 'depassee');
+    expect(overdue.map((f) => `${f.partyId}/${f.entryId}`)).toEqual([]);
   });
 });

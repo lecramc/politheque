@@ -20,6 +20,36 @@ On recense les procédures visant :
   direct, signalé comme tel : FN → RN, UMP → LR, etc.) ;
 - les **ministres** issus du parti.
 
+**Règle de rattachement (décision de l'éditeur, 4 novembre 2026)** : une personne est rattachée
+au parti **dont elle fait partie aujourd'hui**, quel que soit le parti dans lequel elle était au
+moment des faits (ex. des faits commis au PS par une personne aujourd'hui à Renaissance vont dans
+le dossier Renaissance). Personne décédée ou retirée de la vie politique : dernier parti
+d'appartenance (ou son successeur direct : RPR/UMP → LR, FN → RN). Le parti au moment des faits
+reste indiqué dans l'entrée (`partiAuMomentDesFaits`), pour l'exactitude. Les procédures visant
+un parti en tant que personne morale restent attachées à ce parti (ou à son successeur).
+
+**Règles communes pour les cas limites (adoptées le 4 novembre 2026, modifiables par l'éditeur)** :
+
+1. **Mandat local** : inclus si la personne est dans le périmètre (§ 1), quel que soit le mandat
+   au moment des faits, dès lors que les faits sont liés à une activité publique ou politique.
+2. **Faits antérieurs à l'adhésion ou au mandat** : inclus si la personne est aujourd'hui dans le
+   périmètre (cohérent avec la règle du parti actuel), avec la fonction au moment des faits.
+3. **Ancienneté** : pas de date butoir, même règle pour tous les fondateurs et dirigeants ; seules
+   les condamnations amnistiées ou réhabilitées sont écartées d'office et listées pour l'éditeur.
+4. **Décisions civiles et administratives** visant le parti (personne morale) ou une personne du
+   périmètre (diffamation au civil, CNIL, CNCCFP, contrefaçon) : incluses, catégorie distincte
+   « décision civile ou administrative », jamais présentées comme pénales.
+5. **Accusations sans procédure judiciaire** (témoignages de presse sans plainte ni enquête) :
+   exclues.
+6. **Enquête sans suite publique** : incluse seulement avec la date de la dernière information
+   publique (« dernière information publique : mars 2022 ») ; jamais sans date.
+7. **Action publique éteinte** (décès, prescription) : incluse telle quelle, libellé exact, sans
+   suggérer de culpabilité ; on cite ce que la juridiction a dit, s'il y a lieu.
+8. **Condamnation ensuite jugée contraire à la CEDH** : incluse avec l'arrêt de la CEDH à côté.
+9. **Personne aujourd'hui dans un parti hors des 10 suivis** : non affichée (entrée conservée dans
+   `aTransferer`).
+10. **Une seule source** : jamais publiée ; reste « à recouper ».
+
 Hors périmètre : militants et élus locaux sans fonction nationale (sauf affaire impliquant le
 parti lui-même), vie privée sans lien avec l'activité politique (sauf condamnation pénale
 définitive pour crime ou délit grave largement couverte par la presse nationale — à signaler en
@@ -86,7 +116,7 @@ comparables. Ne jamais ajouter un fait pour « équilibrer » sans qu'il atteign
 ## 6. Livrables (par agent)
 
 - `docs/affaires/<id>.json` : tableau d'entrées (schéma § 2) avec `sources: [{title, url, date,
-kind}]` (`kind` : `presse`, `statistique` pour une décision de justice ou une source officielle).
+kind}]` (`kind` : `presse`, `justice` pour une décision de justice, `statistique` pour une autre source officielle).
 - `docs/affaires/<id>-audit.md` : manques d'exhaustivité (§ 4), cas limites (§ 3), et une phrase
   de synthèse factuelle.
 - Ne modifier **aucun** fichier de `src/`. Rien n'est publié avant vérification croisée

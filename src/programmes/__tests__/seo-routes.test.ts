@@ -3,6 +3,10 @@ import path from 'node:path';
 
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
 import { catalogFactory, electionFactory } from '@/src/programmes/models/catalog.factory';
+import {
+  legalDossierFactory,
+  legalEntryFactory,
+} from '@/src/programmes/models/legal/legal.factory';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import {
   expandRoutes,
@@ -153,5 +157,48 @@ describe('Feature: registre des routes', () => {
     const urls = expandRoutes(buildStaticCatalog());
     expect(urls.length).toBeGreaterThan(40);
     expect(new Set(urls.map((u) => u.path)).size).toBe(urls.length);
+  });
+
+  it('should list /corrections as indexable, dated with the latest correction', () => {
+    const none = find(expandRoutes(catalog), '/corrections');
+    expect(none).toMatchObject({ indexable: true, lastmod: null });
+    const dated = catalogFactory({
+      corrections: [
+        { id: 'b', date: '2026-11-09', kind: 'ajout', pages: ['/partis'], summary: '' },
+        { id: 'a', date: '2026-11-03', kind: 'ajout', pages: ['/partis'], summary: '' },
+      ],
+    });
+    expect(find(expandRoutes(dated), '/corrections')?.lastmod).toBe('2026-11-09');
+  });
+
+  it('should expand procedures pages in the registry only when dossiers are published', () => {
+    const paths = (c: typeof catalog) => expandRoutes(c).map((u) => u.path);
+    expect(paths(catalog).some((p) => p.endsWith('/procedures-judiciaires'))).toBe(false);
+    const published = {
+      ...catalog,
+      legal: catalog.parties.map((p) => legalDossierFactory({ partyId: p.id })),
+    };
+    expect(paths(published).filter((p) => p.endsWith('/procedures-judiciaires'))).toEqual([
+      '/partis/alpha/procedures-judiciaires',
+      '/partis/zeta/procedures-judiciaires',
+    ]);
+  });
+
+  it('should date a procedures page with its latest dossier date', () => {
+    const published = {
+      ...catalog,
+      legal: [
+        legalDossierFactory({
+          partyId: 'alpha',
+          reviewedOn: '2026-11-02',
+          entries: [legalEntryFactory({ lastVerified: '2026-11-04' })],
+        }),
+        legalDossierFactory({ partyId: 'zeta', reviewedOn: '2026-10-20', entries: [] }),
+      ],
+    };
+    const urls = expandRoutes(published);
+    expect(find(urls, '/partis/alpha/procedures-judiciaires')?.lastmod).toBe('2026-11-04');
+    expect(find(urls, '/partis/zeta/procedures-judiciaires')?.lastmod).toBe('2026-10-20');
+    expect(find(urls, '/partis/zeta/histoire')?.lastmod).toBe('2026-10-01');
   });
 });
