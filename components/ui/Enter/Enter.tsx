@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, useState } from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import Animated from 'react-native-reanimated';
 
@@ -7,6 +7,7 @@ import {
   duration as durations,
   enterKeyframes,
   EnterKind,
+  isStaticFirstRender,
   useMotion,
 } from '@/components/motion';
 
@@ -32,20 +33,24 @@ export function Enter({
   children: ReactNode;
 }) {
   const { reduce } = useMotion();
-  const animation = reduce
-    ? reducedFade
-      ? {
-          animationName: enterKeyframes.fade,
-          animationDuration: 120,
+  // Rendu issu du HTML statique : déjà visible, on ne le rejoue pas (pas de contenu délavé).
+  const [fromStatic] = useState(isStaticFirstRender);
+  const animation = fromStatic
+    ? null
+    : reduce
+      ? reducedFade
+        ? {
+            animationName: enterKeyframes.fade,
+            animationDuration: 120,
+            animationTimingFunction: cssEasing.out,
+          }
+        : null
+      : {
+          animationName: enterKeyframes[kind],
+          animationDuration: duration,
+          animationDelay: delay,
+          animationFillMode: 'backwards' as const,
           animationTimingFunction: cssEasing.out,
-        }
-      : null
-    : {
-        animationName: enterKeyframes[kind],
-        animationDuration: duration,
-        animationDelay: delay,
-        animationFillMode: 'backwards' as const,
-        animationTimingFunction: cssEasing.out,
-      };
+        };
   return <Animated.View style={[style, animation]}>{children}</Animated.View>;
 }

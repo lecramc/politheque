@@ -5,19 +5,18 @@ import {
 } from '@expo-google-fonts/atkinson-hyperlegible';
 import { Fraunces_600SemiBold, Fraunces_700Bold } from '@expo-google-fonts/fraunces';
 import { useFonts } from 'expo-font';
-import { ThemeProvider } from 'expo-router';
-import { Stack } from 'expo-router';
+import { ThemeProvider, Stack, usePathname } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { ReactNode } from 'react';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { Platform } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useReducedMotion } from 'react-native-reanimated';
 import { Provider } from 'react-redux';
 
 import { ErrorBoundary } from '@/components/ErrorBoundary';
-import { duration } from '@/components/motion';
+import { duration, markHydrated } from '@/components/motion';
 import { useTheme, ThemeProviderCustom } from '@/components/ThemeContext';
 import { ThemedDarkTheme, ThemedDefaultTheme } from '@/components/ThemedNavigationThemes';
 import { initI18n } from '@/i18n';
@@ -84,6 +83,13 @@ export default function RootLayout() {
   useEffect(() => {
     initI18n();
   }, []);
+
+  // Première navigation côté client : à partir de là, les entrées de page jouent.
+  const pathname = usePathname();
+  const firstPath = useRef(pathname);
+  useEffect(() => {
+    if (pathname !== firstPath.current) markHydrated();
+  }, [pathname]);
 
   // Une police qui ne charge pas ne doit pas faire tomber le site : on garde la police système.
   const fontsSettled = fontsLoaded || !!error;

@@ -181,3 +181,27 @@ export const enterKeyframes = {
 } as const;
 
 export type EnterKind = keyof typeof enterKeyframes;
+
+/* -------------------------------------------------------------------------- */
+/* Premier rendu : le HTML statique est déjà lisible, aucune entrée ne le masque. */
+
+let hydrationDone = Platform.OS !== 'web' || typeof document === 'undefined';
+
+/**
+ * Vrai pour les composants montés avant toute navigation ou interaction (web) : ils viennent du
+ * HTML statique (hydratation, écrans chargés paresseusement), déjà visible ; leur entrée ne
+ * doit pas se jouer, sinon le contenu repartirait d'une opacité réduite pendant le chargement
+ * du JavaScript. Lire une seule fois au montage (useState) : seules les entrées suivantes jouent.
+ */
+export const isStaticFirstRender = () => !hydrationDone;
+
+/** Première navigation ou première interaction : les entrées suivantes jouent normalement. */
+export function markHydrated() {
+  hydrationDone = true;
+}
+
+if (!hydrationDone) {
+  ['pointerdown', 'keydown', 'touchstart'].forEach((type) =>
+    document.addEventListener(type, markHydrated, { capture: true, once: true, passive: true })
+  );
+}
