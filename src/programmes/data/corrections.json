@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "id": "2026-11-04-carte-des-positions-recalee-les-affirmations-sur",
+    "date": "2026-11-04",
+    "kind": "correction",
+    "pages": ["/methodologie"],
+    "summary": "Carte des positions recalée : les affirmations sur les normes agricoles et sur les livraisons d'armes à l'Ukraine ne comptent plus dans le placement sur les axes, car elles ne mesurent pas ces axes."
+  },
+  {
+    "id": "2026-11-03-questionnaire-refondu-trente-affirmations-au-lie",
+    "date": "2026-11-03",
+    "kind": "mise-a-jour",
+    "pages": ["/me-situer"],
+    "summary": "Questionnaire refondu : trente affirmations au lieu de vingt-quatre, textes d'aide corrigés et positions des dix partis recodées selon une règle commune puis vérifiées par une seconde équipe."
+  },
+  {
+    "id": "2026-11-03-fiches-des-partis-relues-citation-introuvable-re",
+    "date": "2026-11-03",
+    "kind": "correction",
+    "pages": [
+      "/partis/ecologistes",
+      "/partis/horizons",
+      "/partis/lfi",
+      "/partis/lr",
+      "/partis/nouvelle-energie",
+      "/partis/pcf",
+      "/partis/ps-place-publique",
+      "/partis/reconquete",
+      "/partis/renaissance",
+      "/partis/rn"
+    ],
+    "summary": "Fiches des partis relues : citation introuvable retirée, sources faibles remplacées, date de citation corrigée, notes de travail retirées et mêmes règles de rédaction appliquées aux dix partis."
+  },
+  {
+    "id": "2026-11-03-fiche-du-parti-nouvelle-energie-ajoutee-histoire",
+    "date": "2026-11-03",
+    "kind": "ajout",
+    "pages": ["/partis/nouvelle-energie"],
+    "summary": "Fiche du parti Nouvelle Énergie ajoutée : histoire, fondateurs, idées, positions et candidature, avec leurs sources."
+  }
+]
