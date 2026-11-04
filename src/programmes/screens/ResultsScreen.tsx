@@ -17,10 +17,28 @@ import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { STANCE_LABEL, StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
+import { MIN_AXIS_COUNT } from '@/src/programmes/models/matching.service';
 import { displayName } from '@/src/programmes/models/presentation.service';
+import type { Source } from '@/src/programmes/models/programme.model';
 import { resultsViewModel } from '@/src/programmes/view-models/results.view-model';
 
 type Tab = 'proximite' | 'carte' | 'detail';
+/** Source du contrôle de cohérence : l'ordre des partis est comparé à l'enquête d'experts CHES. */
+const CHES_SOURCES: Source[] = [
+  {
+    title: 'Chapel Hill Expert Survey 2024 — données par parti',
+    url: 'https://www.chesdata.eu/ches-europe/',
+    date: '2025',
+    kind: 'statistique',
+  },
+  {
+    title: 'CHES 2024, fichier des moyennes par parti (CSV)',
+    url: 'https://github.com/chesdata/chesdata.github.io/releases/download/ches-europe/CHES_2024_final_v2.csv',
+    date: '2025',
+    kind: 'statistique',
+  },
+];
+
 /** En dessous, l'arc de proximité affiche sa part « non comparée » en pointillés. */
 const FEW_COMPARED = 15;
 
@@ -278,6 +296,71 @@ export default function ResultsScreen() {
               réalité.
             </Text>
           </Card>
+        ) : null}
+
+        {tab === 'carte' ? (
+          <Accordion
+            title="Comment les partis sont placés"
+            subtitle="Les positions et sources utilisées pour chaque point"
+          >
+            <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+              Chaque point est la moyenne des positions du parti sur les affirmations rattachées à
+              l'axe. Pour chaque affirmation, le pôle indiqué est celui vers lequel la position du
+              parti pousse l'axe.
+            </Text>
+            {vm.axisExplanations.map(({ party, axes }) => (
+              <Accordion
+                key={party.id}
+                title={displayName(party)}
+                leading={<PartyDot color={party.color} size={28} label={party.shortName} />}
+              >
+                {vm.axes.map((axis) => {
+                  const explanation = axes[axis.id];
+                  return (
+                    <View key={axis.id} style={{ gap: effects.spacing.xs }}>
+                      <Text style={{ ...fonts.bold }}>{axis.label}</Text>
+                      <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                        {explanation.position === null
+                          ? `Non placé : seulement ${explanation.count} position${explanation.count > 1 ? 's' : ''} connue${explanation.count > 1 ? 's' : ''} (${MIN_AXIS_COUNT} minimum)`
+                          : `${Math.round(Math.abs(explanation.position) * 100)} % vers « ${explanation.position < 0 ? axis.negativePole : axis.positivePole} »`}
+                      </Text>
+                      {explanation.items.map(({ question, stance, contribution }) => (
+                        <View
+                          key={question.id}
+                          style={{
+                            flexDirection: 'row',
+                            alignItems: 'center',
+                            gap: 8,
+                            flexWrap: 'wrap',
+                          }}
+                        >
+                          <Text style={{ flexBasis: '100%', fontSize: 14 }}>
+                            {question.statement}
+                          </Text>
+                          <StanceBadge stance={stance.stance} />
+                          <Text style={{ fontSize: 13, color: colors.text.secondary }}>
+                            {contribution === 0
+                              ? 'neutre'
+                              : `${contribution > 0 ? '→' : '←'} « ${contribution > 0 ? axis.positivePole : axis.negativePole} »`}
+                          </Text>
+                          {stance.sources.length ? (
+                            <SourceChip sources={stance.sources} subject={stance.justification} />
+                          ) : null}
+                        </View>
+                      ))}
+                    </View>
+                  );
+                })}
+              </Accordion>
+            ))}
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
+              <Text style={{ flexShrink: 1, fontSize: 14, color: colors.text.secondary }}>
+                Contrôle de cohérence : l'ordre des partis a été comparé à l'enquête d'experts
+                Chapel Hill Expert Survey 2024
+              </Text>
+              <SourceChip sources={CHES_SOURCES} subject="Contrôle de cohérence des positions" />
+            </View>
+          </Accordion>
         ) : null}
 
         {tab === 'detail' ? (

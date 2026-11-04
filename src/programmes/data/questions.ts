@@ -177,7 +177,7 @@ export const QUESTIONS: Question[] = [
     statement:
       'Il faut alléger les règles environnementales que doivent respecter les agriculteurs.',
     help: "La loi Duplomb (2025) voulait notamment réautoriser l'acétamipride, un pesticide interdit. Cette mesure, contestée par une pétition de plus de 2 millions de signatures, a été censurée par le Conseil constitutionnel. La loi d'urgence agricole (2026) l'a réintroduite sous forme de dérogation encadrée, ce que le Conseil constitutionnel a validé.",
-    axis: 'economique',
+    axis: null,
     direction: 1,
   },
   {
@@ -220,7 +220,7 @@ export const QUESTIONS: Question[] = [
     theme: 'europe',
     statement: "La France doit continuer à livrer des armes à l'Ukraine.",
     help: "La France livre des armes et forme des soldats ukrainiens depuis l'invasion russe de 2022. Elle participe à la « coalition des volontaires », qui prépare des garanties de sécurité en cas d'accord de paix. Les négociations de paix se poursuivent sans accord durable à ce jour.",
-    axis: 'europe',
+    axis: null,
     direction: 1,
   },
   {

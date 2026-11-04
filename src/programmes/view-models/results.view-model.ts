@@ -2,6 +2,7 @@ import { createSelector } from 'reselect';
 
 import type { Router } from '@/src/core/hooks/useViewModel';
 import type { AppDispatch } from '@/src/core/store/create-store';
+import { explainAxisPosition } from '@/src/programmes/models/axis-explanation.service';
 import {
   agreementsWith,
   answersToValues,
@@ -38,6 +39,10 @@ export const resultsViewModel = ({ dispatch, router }: { dispatch: AppDispatch; 
       partyPositions: parties.map((party) => ({
         party,
         position: computeAxisPosition(partyToValues(party), questions),
+      })),
+      axisExplanations: parties.map((party) => ({
+        party,
+        axes: explainAxisPosition(party, questions),
       })),
       details: questions
         .filter((q) => answers[q.id]?.value != null)

@@ -44,7 +44,7 @@ const RULES: { title: string; body: string }[] = [
   },
   {
     title: 'Les axes de la carte',
-    body: "Chaque affirmation peut être rattachée à un axe (économie, société, Europe) avec un sens. Votre position sur un axe est la moyenne de vos réponses sur ces affirmations. Certaines questions ne sont rattachées à aucun axe parce qu'elles ne s'y rangent pas clairement (nucléaire, libre-échange, proportionnelle). Une position de parti sur un axe n'est calculée qu'à partir de 4 positions rattachées à cet axe ; en dessous, le parti n'y figure pas.",
+    body: "Chaque affirmation peut être rattachée à un axe (économie, société, Europe) avec un sens. Votre position sur un axe est la moyenne de vos réponses sur ces affirmations. Certaines questions ne sont rattachées à aucun axe parce qu'elles ne s'y rangent pas clairement (énergie, normes agricoles, ZFE, médecins, livraisons d'armes à l'Ukraine, proportionnelle) ; elles comptent quand même dans la proximité. L'axe Europe mesure les transferts de souveraineté vers l'Union (primauté du droit européen, veto, emprunt commun, élargissement), pas l'attachement général à l'Europe. Une position de parti sur un axe n'est calculée qu'à partir de 4 positions rattachées à cet axe ; en dessous, le parti n'y figure pas. L'ordre des partis sur chaque axe a été comparé à l'enquête d'experts Chapel Hill Expert Survey 2024 : il concorde en économie et en société.",
   },
   {
     title: 'Les étiquettes politiques',
