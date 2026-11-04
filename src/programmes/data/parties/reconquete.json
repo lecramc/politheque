@@ -26,6 +26,13 @@
       "relatedQuestionIds": ["q07-immigration"]
     },
     {
+      "id": "appliquer-des-peines-planchers-a-tous-les-crimes-e",
+      "title": "Appliquer des peines planchers à tous les crimes et délits",
+      "text": "Des peines minimales « pour tous les crimes et délits » et la fin des aménagements de peine (programme 2022).",
+      "measureRefs": ["securite.0"],
+      "relatedQuestionIds": ["q10-peines-planchers"]
+    },
+    {
       "id": "tout-miser-sur-le-nucleaire-arreter-l-eolien",
       "title": "Tout miser sur le nucléaire, arrêter l'éolien",
       "text": "Construire au moins 14 réacteurs EPR2 d'ici 2050 et mettre fin à tous les projets d'éoliennes, sur terre et en mer.",
@@ -1348,6 +1355,12 @@
                   "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
                   "date": "2022-03",
                   "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2022 : quelles sont les propositions d'Éric Zemmour en matière de justice ?",
+                  "url": "https://www.lemondedudroit.fr/decryptages/79916-presidentielle-2022-quelles-sont-les-propositions-d-eric-zemmour-en-matiere-de-justice.html",
+                  "date": "2022-02-15",
+                  "kind": "presse"
                 }
               ]
             },

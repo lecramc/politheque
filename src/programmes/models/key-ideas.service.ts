@@ -1,3 +1,4 @@
+import { isAggregator } from '@/src/programmes/models/aggregators';
 import type {
   KeyIdea,
   Measure,
@@ -56,10 +57,13 @@ export const keyIdeaOrigin = (sources: Source[]): { kind: SourceKind; date: stri
 
 /**
  * Règle de la charte (règle 11) : au moins 2 sources de domaines enregistrables distincts, dont
- * une indépendante du parti — le niveau « recoupée » du service de vérification.
+ * une indépendante du parti — le niveau « recoupée » du service de vérification. Les agrégateurs
+ * restent affichés s'ils sont dans les données, mais ne comptent pas (charte, règle 7).
  */
 export const isKeyIdeaVerified = (party: Party, electionId: string, idea: KeyIdea): boolean =>
-  verificationLevel(keyIdeaSources(party, electionId, idea)) === 'croisee';
+  verificationLevel(
+    keyIdeaSources(party, electionId, idea).filter((source) => !isAggregator(source.url))
+  ) === 'croisee';
 
 export const keyIdeaTheme = (idea: KeyIdea): ThemeId =>
   idea.measureRefs[0].split('.')[0] as ThemeId;

@@ -146,6 +146,13 @@ describe('Feature: règle des sources d’une idée clé', () => {
     expect(isKeyIdeaVerified(party, ELECTION, idea())).toBe(false);
     expect(isKeyIdeaVerified(party, ELECTION, idea({ relatedQuestionIds: ['q01'] }))).toBe(true);
   });
+
+  it('should not count an aggregator as a distinct domain nor as an independent source', () => {
+    const party = partyWith({
+      measureSources: [programme, source('https://monvote2027.fr/x', 'presse')],
+    });
+    expect(isKeyIdeaVerified(party, ELECTION, idea())).toBe(false);
+  });
 });
 
 describe('Feature: thème et ordre des idées clés', () => {

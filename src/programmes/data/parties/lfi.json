@@ -26,11 +26,11 @@
       "relatedQuestionIds": ["q05-smic"]
     },
     {
-      "id": "sortir-du-nucleaire-100-renouvelable-en-2050",
-      "title": "Sortir du nucléaire, 100 % renouvelable en 2050",
-      "text": "Abandonner les projets d'EPR, planifier le démantèlement des centrales et produire toute l'énergie par des renouvelables en 2050.",
-      "measureRefs": ["ecologie.0", "ecologie.1"],
-      "relatedQuestionIds": ["q12-nucleaire", "q13-renouvelables"]
+      "id": "interdire-le-glyphosate-et-les-neonicotinoides",
+      "title": "Interdire le glyphosate et les néonicotinoïdes",
+      "text": "Interdire le glyphosate et les néonicotinoïdes, avec un accompagnement financier des agriculteurs.",
+      "measureRefs": ["ecologie.2"],
+      "relatedQuestionIds": ["q14-normes-agricoles"]
     },
     {
       "id": "passer-a-une-6e-republique",

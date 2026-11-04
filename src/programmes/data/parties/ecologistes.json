@@ -19,18 +19,18 @@
       "relatedQuestionIds": ["q01-isf"]
     },
     {
-      "id": "revenir-a-la-retraite-a-62-ans",
-      "title": "Revenir à la retraite à 62 ans",
-      "text": "Ramener l'âge légal à 62 ans, avec un objectif de 60 ans pour les carrières longues et les métiers pénibles.",
-      "measureRefs": ["travail.0"],
-      "relatedQuestionIds": ["q04-retraite"]
+      "id": "abroger-les-reformes-de-l-assurance-chomage",
+      "title": "Abroger les réformes de l'assurance chômage",
+      "text": "Engagement du contrat de législature du Nouveau Front populaire (2024), signé par Les Écologistes.",
+      "measureRefs": ["travail.3"],
+      "relatedQuestionIds": ["q06-chomage"]
     },
     {
-      "id": "sortir-du-nucleaire-de-facon-planifiee",
-      "title": "Sortir du nucléaire de façon planifiée",
-      "text": "Arrêter les projets d'EPR2 et de petits réacteurs, et fonder l'électricité sur « un bouquet d'énergies renouvelables ».",
-      "measureRefs": ["ecologie.0", "ecologie.1"],
-      "relatedQuestionIds": ["q12-nucleaire", "q13-renouvelables"]
+      "id": "renoncer-a-l-accord-ue-mercosur-et-annuler-le-ceta",
+      "title": "Renoncer à l'accord UE-Mercosur et annuler le CETA",
+      "text": "Engagement du contrat de législature du Nouveau Front populaire (2024), qui vise les accords de libre-échange de l'Union européenne avec le Mercosur et avec le Canada.",
+      "measureRefs": ["ecologie.4"],
+      "relatedQuestionIds": []
     },
     {
       "id": "faire-un-saut-federal-europeen",

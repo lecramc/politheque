@@ -31,6 +31,13 @@
       "text": "Construire au moins six EPR, développer solaire, éolien et hydraulique, et renationaliser EDF et Engie.",
       "measureRefs": ["ecologie.0", "ecologie.1"],
       "relatedQuestionIds": ["q12-nucleaire", "q13-renouvelables"]
+    },
+    {
+      "id": "creer-un-revenu-etudiant-d-au-moins-850-par-mois",
+      "title": "Créer un revenu étudiant d'au moins 850 € par mois",
+      "text": "Un revenu d'au moins 850 € par mois pour les étudiants (programme 2022).",
+      "measureRefs": ["education.2"],
+      "relatedQuestionIds": []
     }
   ],
   "lastVerified": "2026-11-03",

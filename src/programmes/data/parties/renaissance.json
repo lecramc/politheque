@@ -24,6 +24,20 @@
       "text": "Seule la durée de cotisation compterait, avec « une vraie décote si vous partez tôt, une vraie surcote si vous partez tard ».",
       "measureRefs": ["travail.0"],
       "relatedQuestionIds": ["q04-retraite"]
+    },
+    {
+      "id": "instaurer-la-comparution-immediate-pour-les-mineur",
+      "title": "Instaurer la comparution immédiate pour les mineurs",
+      "text": "Juger les mineurs en comparution immédiate, mesure déjà prévue en 2025 pour les plus de 16 ans récidivistes puis censurée par le Conseil constitutionnel.",
+      "measureRefs": ["securite.0"],
+      "relatedQuestionIds": ["q34-mineurs"]
+    },
+    {
+      "id": "augmenter-le-salaire-des-enseignants",
+      "title": "Augmenter le salaire des enseignants",
+      "text": "Revaloriser les enseignants de 200 à 500 € nets par mois en milieu de carrière, et passer sous 20 élèves par classe en primaire.",
+      "measureRefs": ["education.0", "education.1"],
+      "relatedQuestionIds": []
     }
   ],
   "lastVerified": "2026-11-03",
@@ -1524,6 +1538,12 @@
                   "title": "Présidentielle 2027 : que proposent les candidats pour l'école ?",
                   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
                   "date": "2026-08-31",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : retour du certificat d'études, revalorisation des salaires… Ce que propose Gabriel Attal pour l'école",
+                  "url": "https://lcp.fr/actualites/presidentielle-retour-du-certificat-d-etudes-revalorisation-des-salaires-ce-que-propose",
+                  "date": "2026-08-25",
                   "kind": "presse"
                 }
               ]

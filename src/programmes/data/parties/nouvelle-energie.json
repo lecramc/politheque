@@ -26,11 +26,18 @@
       "relatedQuestionIds": []
     },
     {
-      "id": "diviser-par-huit-les-titres-de-sejour",
-      "title": "« Diviser par huit » les titres de séjour",
-      "text": "Délivrer au moins huit fois moins de titres de séjour et conditionner le regroupement familial à des ressources et à des tests d'intégration.",
-      "measureRefs": ["immigration.0"],
-      "relatedQuestionIds": ["q07-immigration"]
+      "id": "reserver-les-aides-aux-etrangers-residents-depuis",
+      "title": "Réserver les aides aux étrangers résidents depuis cinq ans",
+      "text": "Réserver les prestations sociales non contributives aux étrangers résidant régulièrement en France depuis au moins cinq ans.",
+      "measureRefs": ["immigration.1"],
+      "relatedQuestionIds": ["q08-preference"]
+    },
+    {
+      "id": "mieux-rembourser-les-soins-dans-les-zones-sous-dot",
+      "title": "Mieux rembourser les soins dans les zones sous-dotées",
+      "text": "Un conventionnement différencié et des maisons de santé pluridisciplinaires « à l'échelle de chaque canton », sans contrainte à l'installation des médecins.",
+      "measureRefs": ["sante.2"],
+      "relatedQuestionIds": ["q15-medecins"]
     }
   ],
   "lastVerified": "2026-11-03",

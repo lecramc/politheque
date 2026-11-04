@@ -31,6 +31,13 @@
       "text": "Revenir à un niveau « largement inférieur à 200 000 » titres de séjour par an et suspendre le regroupement familial.",
       "measureRefs": ["immigration.0", "immigration.1"],
       "relatedQuestionIds": ["q07-immigration"]
+    },
+    {
+      "id": "instaurer-des-peines-planchers",
+      "title": "Instaurer des peines planchers",
+      "text": "Pour les infractions les plus graves, en particulier les atteintes aux personnes dépositaires de l'autorité publique et aux professeurs.",
+      "measureRefs": ["securite.0"],
+      "relatedQuestionIds": ["q10-peines-planchers"]
     }
   ],
   "lastVerified": "2026-11-03",

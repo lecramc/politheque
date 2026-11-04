@@ -1,5 +1,30 @@
 [
   {
+    "id": "2026-11-04-une-source-de-presse-ajoutee-a-une-mesure-de-rec",
+    "date": "2026-11-04",
+    "kind": "mise-a-jour",
+    "pages": ["/partis/reconquete/programme-2027", "/partis/renaissance/programme-2027"],
+    "summary": "Une source de presse ajoutée à une mesure de Reconquête (peines planchers) et à une mesure de Renaissance (salaire des enseignants)."
+  },
+  {
+    "id": "2026-11-04-rubrique-ce-qu-il-propose-ajoutee-aux-dix-fiches",
+    "date": "2026-11-04",
+    "kind": "ajout",
+    "pages": [
+      "/partis/ecologistes",
+      "/partis/horizons",
+      "/partis/lfi",
+      "/partis/lr",
+      "/partis/nouvelle-energie",
+      "/partis/pcf",
+      "/partis/ps-place-publique",
+      "/partis/reconquete",
+      "/partis/renaissance",
+      "/partis/rn"
+    ],
+    "summary": "Rubrique « Ce qu'il propose » ajoutée aux dix fiches des partis : quatre idées clés par parti, chacune recoupée par au moins deux sources de sites différents, hors agrégateurs."
+  },
+  {
     "id": "2026-11-04-fiches-des-partis-annee-de-fondation-dirigeant-e",
     "date": "2026-11-04",
     "kind": "ajout",
