@@ -7,12 +7,13 @@ import {
   readingMinutes,
 } from '@/src/programmes/models/presentation.service';
 import type { GuideSection } from '@/src/programmes/models/programme.model';
+import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import {
   selectCatalog,
   selectCatalogStatus,
   selectReadIds,
 } from '@/src/programmes/store/programmes.selector';
-import { markSectionReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
+import { markContentReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
 
 const minutesOf = (section: GuideSection) =>
   readingMinutes(section.blocks.flatMap((b) => [b.heading, ...b.paragraphs]));
@@ -67,6 +68,6 @@ export const guideSectionViewModel =
         })),
         allSources: (section?.blocks ?? []).flatMap((b) => b.sources),
         next: sections.find((s) => s.id === nextId) ?? null,
-        markRead: () => dispatch(markSectionReadUsecase(sectionId)),
+        markRead: () => dispatch(markContentReadUsecase(contentKey.guide(sectionId))),
       };
     });

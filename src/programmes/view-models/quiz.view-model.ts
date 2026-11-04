@@ -9,6 +9,7 @@ import {
   selectQuiz,
 } from '@/src/programmes/store/programmes.selector';
 import { quizActions } from '@/src/programmes/store/quiz.slice';
+import { markQuizDoneUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
 
 export const ANSWER_CHOICES: { value: AnswerValue; label: string }[] = [
   { value: 2, label: "Tout à fait d'accord" },
@@ -32,7 +33,9 @@ export const quizViewModel = ({ dispatch, router }: { dispatch: AppDispatch; rou
 
     const showResults = () => {
       dispatch(quizActions.finish());
+      const marked = dispatch(markQuizDoneUsecase());
       router.push('/me-situer/resultats');
+      return marked;
     };
 
     return {

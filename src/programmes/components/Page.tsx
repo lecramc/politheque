@@ -1,8 +1,10 @@
 import { Link, usePathname } from 'expo-router';
 import Head from 'expo-router/head';
-import React, { ReactNode, useEffect, useState } from 'react';
+import React, { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import {
   LayoutChangeEvent,
+  NativeScrollEvent,
+  NativeSyntheticEvent,
   Platform,
   ScrollView,
   StyleSheet,
@@ -24,6 +26,7 @@ import { Pressable } from '@/components/ui/Pressable';
 import { APP_NAME } from '@/src/core/config/app';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
 import { PageSkeleton } from '@/src/programmes/components/Skeleton';
+import { hasReachedEnd } from '@/src/programmes/models/reach-end.service';
 
 type Href = '/comprendre' | '/partis' | '/elections' | '/debats' | '/me-situer';
 
@@ -154,7 +157,13 @@ export function Page({
   focus = false,
   wide = false,
   title,
+  onReachEnd,
 }: {
+  /**
+   * Appelé une seule fois par montage quand l'essentiel du contenu (hors pied de page) a été
+   * vu : 85 % défilé, ou contenu entièrement visible. Ignoré pendant le chargement.
+   */
+  onReachEnd?: () => void;
   /** Titre de l'onglet du navigateur (référencement, partage). */
   title?: string;
   children: ReactNode;
@@ -169,6 +178,22 @@ export function Page({
   const pathname = usePathname();
   const maxWidth = wide && isDesktop ? 1120 : CONTENT_MAX_WIDTH;
   const showTabBar = !isDesktop && !focus;
+
+  const measures = useRef({ offsetY: 0, viewportHeight: 0, contentHeight: 0 });
+  const reached = useRef(false);
+  const check = useCallback(() => {
+    if (reached.current || loading || !onReachEnd) return;
+    if (hasReachedEnd(measures.current)) {
+      reached.current = true;
+      onReachEnd();
+    }
+  }, [loading, onReachEnd]);
+  // Le contenu change à la fin du chargement : on réévalue sans attendre un défilement.
+  useEffect(check, [check]);
+  const onScroll = (e: NativeSyntheticEvent<NativeScrollEvent>) => {
+    measures.current.offsetY = e.nativeEvent.contentOffset.y;
+    check();
+  };
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background.secondary }}>
@@ -281,9 +306,19 @@ export function Page({
 
       <ScrollView
         style={{ flex: 1 }}
+        scrollEventThrottle={200}
+        onScroll={onReachEnd ? onScroll : undefined}
+        onLayout={(e) => {
+          measures.current.viewportHeight = e.nativeEvent.layout.height;
+          check();
+        }}
         contentContainerStyle={{ paddingBottom: showTabBar ? TAB_BAR_HEIGHT + 16 : 16 }}
       >
         <View
+          onLayout={(e) => {
+            measures.current.contentHeight = e.nativeEvent.layout.height;
+            check();
+          }}
           style={[
             styles.inner,
             {

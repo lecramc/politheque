@@ -7,7 +7,9 @@ rubrique d'actualité, pas le sujet du site.
 
 | Rubrique   | Route                                | Contenu                                                                                                                                                                             |
 | ---------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Accueil    | `/`                                  | Portes d'entrée + encart d'actualité (présidentielle 2027, compte à rebours)                                                                                                        |
+| Accueil    | `/`                                  | Parcours citoyen en six étapes + bandeau d'actualité (présidentielle 2027, J-n)                                                                                                     |
+| Étape      | `/parcours/[etape]`                  | Contenus d'une étape, état de lecture, suite conseillée (jamais verrouillée)                                                                                                        |
+| Passeport  | `/passeport`                         | Tampons d'étape, détail partis et débats ; `noindex`, progression locale à l'appareil                                                                                               |
 | Comprendre | `/comprendre`, `/comprendre/[id]`    | Guide pédagogique : institutions, pouvoirs du président, élections, voter, gauche/droite, UE, budget, désinformation (à étendre : collectivités, lexique, histoire des Républiques) |
 | Partis     | `/partis`, `/partis/[id]`            | Fiches permanentes : histoire, idées, positions sur les grands débats, + candidature à l'élection en cours                                                                          |
 | Élections  | `/elections`, `/elections/[id]`      | Une page par scrutin : dates, règles, candidatures et programmes. Aujourd'hui `presidentielle-2027` ; demain législatives, municipales, européennes                                 |

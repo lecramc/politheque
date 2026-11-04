@@ -81,6 +81,7 @@ export default function ThemeScreen() {
       title={theme?.title}
       loading={vm.status !== 'loaded'}
       back={{ label: 'Débats', href: '/debats' }}
+      onReachEnd={vm.markRead}
     >
       {theme ? (
         <>

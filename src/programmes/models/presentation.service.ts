@@ -1,4 +1,5 @@
 import type { Lean } from '@/src/programmes/models/axis-explanation.service';
+import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 
 // Formes courtes calculées à partir des textes sourcés : aucune nouvelle affirmation n'est écrite.
 
@@ -23,23 +24,20 @@ export const readingMinutes = (texts: string[]) => {
   return Math.max(1, Math.round(words / WORDS_PER_MINUTE));
 };
 
-export type GuideGroup = 'bases' | 'election' | 'approfondir';
+export type GuideGroup = 'bases' | 'institutions' | 'presidentielle';
 
+/** Même taxonomie que le parcours citoyen : « Les bases » désigne les mêmes sections partout. */
 export const GUIDE_GROUPS: { id: GuideGroup; title: string; sectionIds: string[] }[] = [
+  { id: 'bases', title: 'Les bases', sectionIds: JOURNEY_GUIDE_IDS['les-bases'] },
   {
-    id: 'bases',
-    title: 'Les bases',
-    sectionIds: ['institutions', 'gauche-droite', 'classement-des-partis', 'union-europeenne'],
+    id: 'institutions',
+    title: 'Les institutions',
+    sectionIds: JOURNEY_GUIDE_IDS['les-institutions'],
   },
   {
-    id: 'election',
-    title: "L'élection",
-    sectionIds: ['election-presidentielle', 'comment-voter', 'pouvoirs-du-president'],
-  },
-  {
-    id: 'approfondir',
-    title: 'Pour aller plus loin',
-    sectionIds: ['budget-dette', 'desinformation'],
+    id: 'presidentielle',
+    title: 'La présidentielle 2027',
+    sectionIds: JOURNEY_GUIDE_IDS['presidentielle-2027'],
   },
 ];
 

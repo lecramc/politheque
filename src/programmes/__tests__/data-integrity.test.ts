@@ -3,6 +3,7 @@ import guide from '@/src/programmes/data/guide.json';
 import { PARTIES } from '@/src/programmes/data/parties';
 import { QUESTIONS } from '@/src/programmes/data/questions';
 import themes from '@/src/programmes/data/themes.json';
+import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { verificationLevel } from '@/src/programmes/models/verification.service';
 
@@ -126,5 +127,17 @@ describe('Feature: intégrité des données', () => {
     it('should state when it was last verified', () => {
       expect(party.lastVerified).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     });
+  });
+});
+
+describe('Feature: intégrité du parcours (ajout)', () => {
+  it('should assign every guide section to exactly one journey step', () => {
+    const assigned = Object.values(JOURNEY_GUIDE_IDS).flat();
+    expect([...assigned].sort()).toEqual(guide.map((s) => s.id).sort());
+  });
+
+  it('should only reference guide sections that exist', () => {
+    const ids = guide.map((s) => s.id);
+    for (const id of Object.values(JOURNEY_GUIDE_IDS).flat()) expect(ids).toContain(id);
   });
 });

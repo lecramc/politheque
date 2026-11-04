@@ -46,6 +46,7 @@ Architecture de l'information : `docs/architecture-information.md`.
 de toucher aux données. Format d'une fiche parti : `docs/brief-recherche-parti.md`.
 Les tests `src/programmes/__tests__/data-integrity.test.ts` font respecter la charte.
 
+- Parcours citoyen : l'accueil est un chemin de six étapes (`src/programmes/models/journey.*`), calculé depuis le catalogue et un registre local de contenus lus (`progress.v1`, clés `type:id` → date ISO). **Règle : mesurer la lecture, jamais les opinions** — les réponses du questionnaire ne sont jamais persistées ni utilisées pour suggérer une étape. Spec : `docs/blueprint-parcours.md`.
 - Données : `src/programmes/data/` (JSON + `questions.ts`), chargées via `StaticProgrammeGateway`.
 - Calcul : `src/programmes/models/matching.service.ts` (pur, testé).
 - Pas de backend : site statique (`npm run build:web` → `dist/`), aucune réponse n'est envoyée.

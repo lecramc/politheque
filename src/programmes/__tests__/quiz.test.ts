@@ -1,5 +1,6 @@
 import { createTestStore } from '@/src/core/store/create-test-store';
 import { FakeProgrammeGateway } from '@/src/programmes/gateways/fake-programme.gateway';
+import type { AnswerValue } from '@/src/programmes/models/matching.service';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import type { Question } from '@/src/programmes/models/programme.model';
 import { selectAnswers } from '@/src/programmes/store/programmes.selector';
@@ -85,5 +86,44 @@ describe('Feature: questionnaire', () => {
     const results = resultsViewModel({ dispatch: store.dispatch, router })(store.getState());
     expect(results.ranking.map((r) => r.partyId)).toEqual(['b', 'a']);
     expect(results.enoughAnswers).toBe(false);
+  });
+});
+
+describe('Feature: tampon « Me situer »', () => {
+  const answerAll = (store: Awaited<ReturnType<typeof setup>>['store'], value: AnswerValue) => {
+    for (const id of ['q1', 'q2', 'q3', 'q4', 'q5']) {
+      store.dispatch(quizActions.answer({ questionId: id, value }));
+    }
+  };
+
+  it('should mark quiz:done when results are shown after answering every question', async () => {
+    const { store, router } = await setup();
+    answerAll(store, 1);
+    await quizViewModel({ dispatch: store.dispatch, router })(store.getState()).showResults();
+    expect(store.getState().progress.entries['quiz:done']).toBeDefined();
+  });
+
+  it('should count "pas d\'avis" answers as given', async () => {
+    const { store, router } = await setup();
+    answerAll(store, null);
+    await quizViewModel({ dispatch: store.dispatch, router })(store.getState()).showResults();
+    expect(store.getState().progress.entries['quiz:done']).toBeDefined();
+  });
+
+  it('should not mark quiz:done when results are shown early', async () => {
+    const { store, router } = await setup();
+    store.dispatch(quizActions.answer({ questionId: 'q1', value: 1 }));
+    await quizViewModel({ dispatch: store.dispatch, router })(store.getState()).showResults();
+    expect(store.getState().progress.entries['quiz:done']).toBeUndefined();
+  });
+
+  it('should keep quiz:done after the quiz is restarted', async () => {
+    const { store, router } = await setup();
+    answerAll(store, 1);
+    const vm = quizViewModel({ dispatch: store.dispatch, router })(store.getState());
+    await vm.showResults();
+    vm.restart();
+    expect(store.getState().quiz.values).toEqual({});
+    expect(store.getState().progress.entries['quiz:done']).toBeDefined();
   });
 });

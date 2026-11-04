@@ -35,6 +35,14 @@ export const duration = {
   reveal: 550,
   /** Durée totale maximale d'une révélation en séquence (résultats). */
   sequence: 1200,
+  /** Tronçon du chemin qui se trace (parcours citoyen). */
+  trace: 300,
+  /** Tampon qui se pose. */
+  stamp: 220,
+  /** Chaque demi-disque du logo à l'arrivée (décalage de 120 ms entre eux). */
+  arrival: 160,
+  /** Fondu du tampon en mouvement réduit (joué même alors, sans échelle ni rotation). */
+  stampFade: 150,
   /** Demi-cycle de pulsation du squelette. */
   skeleton: 900,
 } as const;
@@ -74,6 +82,25 @@ export const spring = {
 
 /** Appui : léger enfoncement + opacité. */
 export const press = { scale: 0.97, scaleLarge: 0.985, opacity: 0.86 } as const;
+
+/**
+ * Séquence du parcours citoyen (retour sur l'accueil après une étape terminée) :
+ * arc 550 ms, puis tracé 300 ms ‖ tampon 220 ms, puis nœud suivant 220 ms = 1 070 ms.
+ */
+export const journeySequence = {
+  /** Début du tracé et du tampon : une fois l'arc rempli. */
+  traceAt: duration.reveal,
+  /** Début de l'éclairage du nœud suivant : fin du tracé. */
+  nextAt: duration.reveal + duration.trace,
+  /** Début de l'arrivée du logo (légèrement avant la fin du tracé : reste sous `sequence`). */
+  arrivalAt: duration.reveal + duration.trace / 2,
+  /** Décalage entre deux demi-disques du logo. */
+  arrivalStagger: 120,
+  /** Fin de la séquence complète. */
+  end: duration.reveal + duration.trace + duration.open,
+  /** Fin de l'arrivée : trois demi-disques en séquence. */
+  arrivalEnd: duration.reveal + duration.trace / 2 + 2 * 120 + duration.arrival,
+} as const;
 
 /** Décalages (px) des entrées. */
 export const offset = { page: 8, question: 24 } as const;

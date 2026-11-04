@@ -31,6 +31,11 @@ const COMMITMENTS = [
     title: 'Vos réponses restent chez vous',
     text: "Le site est statique, rien n'est envoyé",
   },
+  {
+    icon: 'phone-portrait-outline',
+    title: 'Données personnelles',
+    text: "Votre progression de lecture reste sur votre appareil, sans vos réponses au questionnaire. Vous pouvez l'effacer depuis l'accueil.",
+  },
 ];
 
 const RULES: { title: string; body: string }[] = [

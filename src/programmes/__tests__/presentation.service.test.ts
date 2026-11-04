@@ -1,4 +1,5 @@
 import guide from '@/src/programmes/data/guide.json';
+import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 import {
   afterFirstSentence,
   beforeParenthesis,
@@ -38,6 +39,14 @@ describe('Feature: formes courtes', () => {
   it('should place every guide section in exactly one group', () => {
     const grouped = GUIDE_GROUPS.flatMap((g) => g.sectionIds).sort();
     expect(grouped).toEqual(guide.map((s) => s.id).sort());
+  });
+
+  it('should group the guide like the citizen journey (one taxonomy)', () => {
+    expect(GUIDE_GROUPS.map((g) => [g.title, g.sectionIds])).toEqual([
+      ['Les bases', JOURNEY_GUIDE_IDS['les-bases']],
+      ['Les institutions', JOURNEY_GUIDE_IDS['les-institutions']],
+      ['La présidentielle 2027', JOURNEY_GUIDE_IDS['presidentielle-2027']],
+    ]);
   });
 });
 

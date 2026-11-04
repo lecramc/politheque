@@ -1,10 +1,12 @@
 import { AppState, createStore, Dependencies } from '@/src/core/store/create-store';
+import { FakeClock } from '@/src/programmes/gateways/fake-clock.gateway';
 import { FakeProgrammeGateway } from '@/src/programmes/gateways/fake-programme.gateway';
 import { FakeReadingProgressGateway } from '@/src/programmes/gateways/fake-reading-progress.gateway';
 
 const createDependencies = (dependencies?: Partial<Dependencies>): Dependencies => ({
   programmeGateway: new FakeProgrammeGateway(),
   readingProgressGateway: new FakeReadingProgressGateway(),
+  clock: new FakeClock(),
   ...dependencies,
 });
 

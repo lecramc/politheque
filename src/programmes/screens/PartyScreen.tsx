@@ -79,6 +79,8 @@ export default function PartyScreen() {
   const changeTab = (next: Tab) => {
     setTab(next);
     router.setParams({ onglet: next });
+    // Ouvrir « Positions » vaut lecture de la fiche (règle du parcours citoyen).
+    if (next === 'positions') vm.markRead();
   };
 
   return (
@@ -86,6 +88,7 @@ export default function PartyScreen() {
       title={party?.name}
       loading={vm.status !== 'loaded'}
       back={{ label: 'Partis', href: '/partis' }}
+      onReachEnd={vm.markRead}
     >
       {party ? (
         <>
@@ -266,8 +269,8 @@ export default function PartyScreen() {
             {tab === 'positions' ? (
               <View style={{ gap: effects.spacing.xs }}>
                 <Text style={{ color: colors.text.secondary }}>
-                  Ce que le parti défend sur les 24 affirmations du questionnaire, d'après ses
-                  programmes, ses votes et ses déclarations.
+                  Ce que le parti défend sur les {vm.stances.length} affirmations du questionnaire,
+                  d'après ses programmes, ses votes et ses déclarations.
                 </Text>
                 {vm.stances.map(({ question, stance }) => (
                   <Accordion

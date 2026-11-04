@@ -3,6 +3,7 @@ import {
   buildStaticCatalog,
   StaticProgrammeGateway,
 } from '@/src/programmes/gateways/static-programme.gateway';
+import { systemClock } from '@/src/programmes/gateways/system-clock.gateway';
 
 import { AppState, createStore } from './create-store';
 
@@ -15,5 +16,6 @@ export const store = createStore({
   dependencies: {
     programmeGateway: new StaticProgrammeGateway(),
     readingProgressGateway: new AsyncStorageReadingProgressGateway(),
+    clock: systemClock,
   },
 });

@@ -9,22 +9,24 @@ import {
 import { useDispatch, useSelector } from 'react-redux';
 
 import { uiSlice } from '@/src/core/store/ui.slice';
+import type { Clock } from '@/src/programmes/gateways/clock.gateway';
 import type { ProgrammeGateway } from '@/src/programmes/gateways/programme.gateway';
 import type { ReadingProgressGateway } from '@/src/programmes/gateways/reading-progress.gateway';
 import { programmesSlice } from '@/src/programmes/store/programmes.slice';
+import { progressSlice } from '@/src/programmes/store/progress.slice';
 import { quizSlice } from '@/src/programmes/store/quiz.slice';
-import { readingSlice } from '@/src/programmes/store/reading.slice';
 
 export const rootReducers = combineReducers({
   programmes: programmesSlice.reducer,
   quiz: quizSlice.reducer,
-  reading: readingSlice.reducer,
+  progress: progressSlice.reducer,
   ui: uiSlice.reducer,
 });
 
 export type Dependencies = {
   programmeGateway: ProgrammeGateway;
   readingProgressGateway: ReadingProgressGateway;
+  clock: Clock;
 };
 export type PreloadedState = Record<string, unknown>;
 export type AppState = ReturnType<typeof rootReducers>;

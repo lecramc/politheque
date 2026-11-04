@@ -53,6 +53,7 @@ export default function ElectionScreen() {
       title={election?.title}
       loading={vm.status !== 'loaded'}
       back={{ label: 'Élections', href: '/elections' }}
+      onReachEnd={vm.markRead}
     >
       {election ? (
         <>
