@@ -7,6 +7,7 @@ import { Icon, Text } from '@/components/Themed';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { PageSources } from '@/src/programmes/components/PageSources';
+import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
@@ -37,9 +38,7 @@ export default function PartyProgrammeScreen() {
             gap: effects.spacing.xs,
           }}
         >
-          <Text variant="caption" headingLevel={2}>
-            Candidature et programme 2027
-          </Text>
+          <SectionTitle>Candidature et programme 2027</SectionTitle>
           <StatusChip label={candidacy.statusLabel} />
           <Text style={{ fontSize: 15 }}>{candidacy.candidate}</Text>
           <Text style={{ fontSize: 15 }}>{firstSentence(candidacy.programmeStatus)}</Text>
@@ -75,7 +74,7 @@ export default function PartyProgrammeScreen() {
           ) : null
         )}
       </View>
-      <PageSources sources={vm.sourcesBySection['programme-2027']} />
+      <PageSources sources={vm.sourcesBySection['programme-2027']} verifiedOn={vm.verifiedOn} />
     </TabPanel>
   );
 }

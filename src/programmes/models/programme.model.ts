@@ -113,6 +113,31 @@ export interface PartyHistory {
 /** Candidature d'un parti à une élection donnée, avec le programme présenté pour ce scrutin. */
 export type CandidacyStatus = 'declare' | 'investi' | 'designe' | 'annonce' | 'pressenti';
 
+/** État du programme présidentiel : liste fermée, affichée en une ligne sous « Ce qu'il propose ». */
+export type ProgrammeState = 'publie' | 'partiel' | 'non-publie';
+
+/** `thème.index` : désigne `candidacies[élection].themes[thème].measures[index]`. */
+export type MeasureRef = `${ThemeId}.${number}`;
+
+/**
+ * Idée clé d'un parti (choix éditorial encadré, charte règle 11). Pas de champ `sources` : elles
+ * sont dérivées des mesures référencées et des positions des questions liées (jamais de source nouvelle).
+ */
+export interface KeyIdea {
+  /** Unique dans la fiche. */
+  id: string;
+  /** 60 caractères au plus, verbe à l'infinitif, termes connotés du parti entre guillemets. */
+  title: string;
+  /** Une phrase de 200 caractères au plus : ce qui change concrètement. */
+  text: string;
+  /** Au moins une ; la première donne le thème de l'idée. */
+  measureRefs: MeasureRef[];
+  /** Ids de questions pour lesquelles le parti a une position (0 à 2). */
+  relatedQuestionIds: string[];
+}
+
+export type LeaderRole = 'présidé par' | 'dirigé par' | 'coordonné par';
+
 export interface Candidacy {
   /** « Marine Le Pen » seul, pour les listes. */
   candidateName: string;
@@ -122,6 +147,10 @@ export interface Candidacy {
   /** Détail daté et sourcé du statut (dates, désignation, procédures) : affiché en feuille. */
   candidate: string;
   programmeStatus: string;
+  /** Liste fermée ; `programmeStatus` reste le détail. */
+  programmeState: ProgrammeState;
+  /** 30 caractères au plus, pour « partiel » (ex. « 96 mesures »). */
+  programmeStateDetail?: string;
   themes: Record<ThemeId, PartyThemeProgramme>;
 }
 
@@ -135,6 +164,11 @@ export interface Party {
   /** Famille politique telle que décrite par la science politique / presse de référence. */
   family: string;
   description: string;
+  /** Année de fondation ; `history.founded` reste le détail. */
+  foundedYear: number;
+  leader: { name: string; role: LeaderRole };
+  /** Exactement 4 idées, triées dans l'ordre des thèmes du site (même règle pour tous les partis). */
+  keyIdeas: KeyIdea[];
   /** Date à laquelle les données de ce parti ont été vérifiées pour la dernière fois. */
   lastVerified: string;
   /** Absent tant que la passe « histoire et recoupement » n'a pas été faite. */
@@ -202,6 +236,8 @@ export interface Question {
   id: string;
   theme: ThemeId;
   statement: string;
+  /** 80 caractères au plus, rédigé comme l'affirmation : « Pour / Contre » garde le même sens. */
+  shortLabel: string;
   /** Explication neutre pour qui ne connaît pas le sujet. */
   help: string;
   /** null : la question compte pour la proximité avec les partis, pas pour les axes. */

@@ -11,6 +11,7 @@ import { duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { useHydrated } from '@/src/core/hooks/useHydrated';
 
 /** Bloc repliable : titre + phrase-clé fermé, détail ouvert. */
 export function Accordion({
@@ -43,7 +44,10 @@ export function Accordion({
 }) {
   const { colors, effects, fonts } = useTheme();
   const { timing } = useMotion();
-  const bodyId = useId();
+  // L'identifiant généré diffère entre le HTML statique et le premier rendu client (frontière de
+  // Suspense d'Expo Router) : il n'est posé qu'après l'hydratation.
+  const generatedId = useId();
+  const bodyId = useHydrated() ? generatedId : undefined;
   const [localOpen, setLocalOpen] = useState(defaultOpen);
   const open = controlledOpen ?? localOpen;
   const toggle = () => {

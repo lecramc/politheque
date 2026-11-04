@@ -5,6 +5,34 @@
   "color": "#1D257A",
   "family": "Droite (presse de référence : droite libérale ; pas de classement académique dédié ; position du parti sur cette étiquette non connue)",
   "description": "Nouvelle Énergie est le parti fondé à Cannes par David Lisnard (association déclarée en septembre 2014) et déployé au niveau national à partir de juin 2021 ; il est présidé par David Lisnard, maire de Cannes depuis 2014 et président de l'Association des maires de France (AMF) depuis novembre 2021. Il n'a pas de groupe parlementaire : la députée Alexandra Martin, élue en 2024 sous la double étiquette Droite républicaine et Nouvelle Énergie, siège au groupe Droite républicaine, et plusieurs sénateurs s'en réclament, souvent en double appartenance. David Lisnard a quitté Les Républicains et confirmé sa candidature à la présidentielle le 31 mars 2026.",
+  "foundedYear": 2014,
+  "leader": {
+    "name": "David Lisnard",
+    "role": "présidé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "baisser-la-depense-publique-de-200-milliards",
+      "title": "Baisser la dépense publique de 200 milliards",
+      "text": "200 milliards d'euros d'économies, dont 120 pour le salaire net, 40 pour baisser les impôts de production et 40 pour les finances publiques.",
+      "measureRefs": ["economie.0"],
+      "relatedQuestionIds": ["q02-depenses"]
+    },
+    {
+      "id": "augmenter-le-salaire-net-en-baissant-les-cotisatio",
+      "title": "Augmenter le salaire net en baissant les cotisations",
+      "text": "« Cotiser moins pour gagner plus » : baisser les cotisations sociales, avec un gain annoncé d'environ 400 € nets par mois.",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": []
+    },
+    {
+      "id": "diviser-par-huit-les-titres-de-sejour",
+      "title": "« Diviser par huit » les titres de séjour",
+      "text": "Délivrer au moins huit fois moins de titres de séjour et conditionner le regroupement familial à des ressources et à des tests d'intégration.",
+      "measureRefs": ["immigration.0"],
+      "relatedQuestionIds": ["q07-immigration"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2014 (association déclarée le 2 septembre 2014 à la sous-préfecture de Grasse, publiée au Journal officiel le 20 septembre 2014 ; le parti indique 2013) ; déploiement national décidé le 9 juin 2021",
@@ -984,6 +1012,8 @@
       "statusLabel": "Candidat déclaré",
       "candidate": "David Lisnard a confirmé sa candidature le 31 mars 2026 sur France 2, après avoir annoncé le 25 mars son départ des Républicains. Il plaide pour une primaire ouverte de la droite et du centre.",
       "programmeStatus": "Pas de programme présidentiel complet et daté : le site de Nouvelle Énergie publie un programme en trois axes et des pages thématiques (éducation, sécurité, santé, agriculture, immigration) qui ne portent aucune date de publication ; d'après les archives d'Internet, les trois axes sont en ligne au moins depuis août 2025 et les pages thématiques au moins depuis octobre 2025. Les mesures qui ne reposent que sur ces pages sont signalées « page de programme non datée ». Le site publie aussi une foire aux questions (mise à jour le 16 octobre 2026) reprenant les déclarations datées du candidat (2021-2026). Le parti n'ayant pas de groupe parlementaire (une députée en double étiquette au groupe Droite républicaine), aucune position ne repose sur des votes : la fiche est fondée sur ces pages et sur les déclarations du candidat.",
+      "programmeState": "partiel",
+      "programmeStateDetail": "axes et pages thématiques",
       "themes": {
         "economie": {
           "summary": "Le candidat fait de la baisse de la dépense publique sa priorité : 200 Md€ d'économies sur le quinquennat, redistribuées principalement en hausse du salaire net et en baisse des impôts de production. Il propose une règle d'or budgétaire et la réduction du nombre d'agences de l'État.",

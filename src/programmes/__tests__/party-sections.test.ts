@@ -17,6 +17,7 @@ const candidacy = {
   statusLabel: 'Candidat déclaré',
   candidate: '',
   programmeStatus: '',
+  programmeState: 'non-publie' as const,
   themes: {} as never,
 };
 
@@ -57,7 +58,7 @@ describe('Feature: sections de la fiche parti', () => {
     const full = { history, candidacies: { 'presidentielle-2027': candidacy } };
     const a = availableSections(partyFactory({ id: 'a', ...full }), 'presidentielle-2027');
     const b = availableSections(partyFactory({ id: 'b', ...full }), 'presidentielle-2027');
-    expect(a).toEqual(['en-bref', 'histoire', 'positions', 'programme-2027']);
+    expect(a).toEqual(['en-bref', 'positions', 'programme-2027', 'histoire']);
     expect(b).toEqual(a);
   });
 
@@ -72,6 +73,7 @@ describe('Feature: sections de la fiche parti', () => {
     expect(PARTY_SECTIONS.at(-1)).toEqual({
       id: 'procedures',
       label: 'Procédures judiciaires',
+      tabLabel: 'Procédures',
       segment: 'procedures-judiciaires',
     });
     expect(partyHref('rn', 'procedures')).toBe('/partis/rn/procedures-judiciaires');
@@ -94,5 +96,19 @@ describe('Feature: sections de la fiche parti', () => {
     expect(hasLegalSection(catalog([]))).toBe(false);
     expect(hasLegalSection(catalog(['a']))).toBe(false);
     expect(hasLegalSection(catalog(['a', 'b']))).toBe(true);
+  });
+
+  it('should order the tabs En bref, Positions, Programme 2027, Histoire, Procédures', () => {
+    expect(PARTY_SECTIONS.map((s) => s.tabLabel)).toEqual([
+      'En bref',
+      'Positions',
+      'Programme 2027',
+      'Histoire',
+      'Procédures',
+    ]);
+  });
+
+  it('should keep the /programme-2027 URL under the new label', () => {
+    expect(partyHref('rn', 'programme-2027')).toBe('/partis/rn/programme-2027');
   });
 });

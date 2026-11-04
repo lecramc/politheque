@@ -40,6 +40,7 @@ const party = partyFactory({
       statusLabel: '',
       candidate: '',
       programmeStatus: '',
+      programmeState: 'non-publie' as const,
       themes: {
         economie: { summary: '', measures: [{ text: '', sources: [src('mesure')] }] },
       } as never,

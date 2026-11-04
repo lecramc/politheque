@@ -19,6 +19,7 @@ export function Tabs<T extends string>({
   onChange,
   hrefOf,
   navLabel,
+  vertical = false,
 }: {
   tabs: { id: T; label: string }[];
   value: T;
@@ -27,6 +28,8 @@ export function Tabs<T extends string>({
   hrefOf?: (id: T) => string;
   /** Nom de la navigation quand les onglets sont des liens. */
   navLabel?: string;
+  /** Desktop : liste verticale (colonne de gauche), sans soulignement animé. */
+  vertical?: boolean;
 }) {
   const { colors, fonts } = useTheme();
   const { timing } = useMotion();
@@ -66,6 +69,55 @@ export function Tabs<T extends string>({
       { scaleX: width.value / BASE },
     ],
   }));
+
+  if (vertical && hrefOf) {
+    return (
+      <View
+        role="navigation"
+        aria-label={navLabel}
+        style={{
+          borderRadius: 16,
+          borderWidth: 1,
+          borderColor: colors.surface.border.primary,
+          backgroundColor: colors.surface.primary,
+          overflow: 'hidden',
+        }}
+      >
+        {tabs.map((tab, index) => {
+          const active = tab.id === value;
+          return (
+            <Link key={tab.id} href={hrefOf(tab.id) as never} asChild>
+              <Pressable
+                accessibilityRole="link"
+                aria-current={active ? 'page' : undefined}
+                hoverStyle={{ backgroundColor: colors.surface.hover }}
+                style={{
+                  minHeight: 52,
+                  justifyContent: 'center',
+                  paddingHorizontal: 18,
+                  borderTopWidth: index === 0 ? 0 : 1,
+                  borderLeftWidth: 4,
+                  borderTopColor: colors.surface.border.primary,
+                  borderLeftColor: active ? colors.tint : 'transparent',
+                  backgroundColor: active ? colors.tintSoft : 'transparent',
+                }}
+              >
+                <Text
+                  style={{
+                    ...(active ? fonts.bold : fonts.regular),
+                    fontSize: 16,
+                    color: active ? colors.tint : colors.text.primary,
+                  }}
+                >
+                  {tab.label}
+                </Text>
+              </Pressable>
+            </Link>
+          );
+        })}
+      </View>
+    );
+  }
 
   return (
     <View style={{ borderBottomWidth: 1, borderColor: colors.surface.border.primary }}>

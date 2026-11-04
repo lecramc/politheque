@@ -35,6 +35,19 @@ export const JOURNEY_COPY = {
   startLabel: 'Commencer',
 } as const;
 
+/** Bloc parcours en bas d'une fiche parti (mêmes mots pour les dix partis). */
+export const PARTY_JOURNEY_COPY = {
+  readTitle: 'Fiche lue.',
+  unreadTitle: 'Pas encore lue.',
+  stampRule: 'Le tampon se pose quand vous arrivez ici ou ouvrez « Positions ».',
+  count: (read: number, total: number) =>
+    `${read} ${read > 1 ? 'fiches lues' : 'fiche lue'} sur ${total}`,
+  completed: (total: number, stepTitle: string) =>
+    `Les ${total} fiches sont lues : l'étape « ${stepTitle} » est terminée.`,
+  privacy: "Rien n'est envoyé : la progression reste sur cet appareil.",
+  nextParty: (name: string) => `Fiche suivante (ordre alphabétique) : ${name}`,
+} as const;
+
 export const STEP_INTROS: Record<JourneyStepId, string> = {
   'les-bases':
     'Trois lectures pour poser les repères : gauche et droite, classement des partis, repérage de la désinformation.',

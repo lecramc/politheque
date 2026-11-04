@@ -5,6 +5,41 @@
   "color": "#CC2443",
   "family": "Gauche radicale (la plupart des politistes ; « gauche populiste » pour certains ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, rattachement jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse l'étiquette « extrême gauche »)",
   "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est annoncée pour les 6 et 7 novembre 2026. Jean-Luc Mélenchon a été condamné en 2019 à une peine d'emprisonnement avec sursis pour rébellion et provocation ; voir le détail de la candidature.",
+  "foundedYear": 2016,
+  "leader": {
+    "name": "Manuel Bompard",
+    "role": "coordonné par"
+  },
+  "keyIdeas": [
+    {
+      "id": "retablir-l-impot-sur-la-fortune-et-creer-la-taxe-z",
+      "title": "Rétablir l'impôt sur la fortune et créer la taxe Zucman",
+      "text": "Un « impôt sur la fortune renforcé » et un impôt minimum sur les patrimoines de plus de 100 millions d'euros.",
+      "measureRefs": ["economie.0"],
+      "relatedQuestionIds": ["q01-isf"]
+    },
+    {
+      "id": "porter-le-smic-a-1-700-net",
+      "title": "Porter le SMIC à 1 700 € net",
+      "text": "Augmenter le salaire minimum, réunir une conférence sur les salaires et indexer les salaires sur l'inflation.",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q05-smic"]
+    },
+    {
+      "id": "sortir-du-nucleaire-100-renouvelable-en-2050",
+      "title": "Sortir du nucléaire, 100 % renouvelable en 2050",
+      "text": "Abandonner les projets d'EPR, planifier le démantèlement des centrales et produire toute l'énergie par des renouvelables en 2050.",
+      "measureRefs": ["ecologie.0", "ecologie.1"],
+      "relatedQuestionIds": ["q12-nucleaire", "q13-renouvelables"]
+    },
+    {
+      "id": "passer-a-une-6e-republique",
+      "title": "Passer à une 6e République",
+      "text": "Convoquer par référendum une Assemblée constituante, dont le projet de Constitution serait à son tour soumis à référendum.",
+      "measureRefs": ["institutions.0"],
+      "relatedQuestionIds": ["q24-proportionnelle"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2016 (lancée le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; association de financement créée en janvier 2017)",
@@ -1144,6 +1179,7 @@
       "statusLabel": "Candidat déclaré",
       "candidate": "Jean-Luc Mélenchon a déclaré sa candidature le 3 mai 2026 au journal de 20 h de TF1, après sa désignation le même jour par les élus du mouvement. Le 9 décembre 2019, le tribunal correctionnel de Bobigny l'avait condamné à trois mois d'emprisonnement avec sursis et 8 000 € d'amende pour rébellion et provocation lors de la perquisition du siège de LFI en octobre 2018 ; il avait dénoncé un « jugement politique » et n'avait pas fait appel.",
       "programmeStatus": "Une nouvelle édition de « L'Avenir en commun » pour 2027 (intitulée « Nouvelle France » selon LCP) a été annoncée pour les 6 et 7 novembre 2026 ; tant qu'elle n'est pas intégrée ici, la fiche s'appuie sur les documents antérieurs : le document d'orientations budgétaires 2027 publié en octobre 2026, « L'Avenir en commun » édition 2022, le contrat de législature du Nouveau Front populaire (2024) et les votes du groupe LFI-NFP.",
+      "programmeState": "non-publie",
       "themes": {
         "economie": {
           "summary": "LFI propose d'augmenter les recettes fiscales d'environ 106 Md€ en 2027 en ciblant les plus hauts patrimoines, les revenus du capital et les grandes entreprises, et de financer des investissements via un « pôle public bancaire ». Elle rejette la réduction des dépenses publiques comme moyen de réduire la dette.",

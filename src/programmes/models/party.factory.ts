@@ -28,6 +28,9 @@ export const partyFactory = (
     color: '#888888',
     family: 'Test',
     description: '',
+    foundedYear: 2000,
+    leader: { name: 'Prénom Nom', role: 'présidé par' },
+    keyIdeas: [],
     lastVerified: '2026-11-03',
     stances: Object.fromEntries(
       Object.entries(stanceValues).map(([id, stance]) => [

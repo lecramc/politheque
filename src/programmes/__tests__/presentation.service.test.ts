@@ -4,10 +4,12 @@ import {
   afterFirstSentence,
   beforeParenthesis,
   displayName,
+  formatLongDate,
   formatSourceDate,
   firstSentence,
   GUIDE_GROUPS,
   leanText,
+  originLabel,
   placementSummary,
   readingMinutes,
   stepLabel,
@@ -129,5 +131,27 @@ describe('Feature: date de source affichée', () => {
     expect(formatSourceDate('2026')).toBe('2026');
     expect(formatSourceDate('2026-11')).toBe('11/2026');
     expect(formatSourceDate('2026-11-03')).toBe('03/11/2026');
+  });
+});
+
+describe('Feature: date écrite en toutes lettres', () => {
+  it('should write a full ISO date in words, without a local-time Date object', () => {
+    expect(formatLongDate('2026-11-03')).toBe('3 novembre 2026');
+  });
+
+  it('should write the first of the month as « 1er »', () => {
+    expect(formatLongDate('2026-05-01')).toBe('1er mai 2026');
+  });
+
+  it('should keep the precision of the source: month or year only', () => {
+    expect(formatLongDate('2022-03')).toBe('mars 2022');
+    expect(formatLongDate('2022')).toBe('2022');
+  });
+});
+
+describe('Feature: origine d’une idée clé', () => {
+  it('should read « Nature, date en toutes lettres »', () => {
+    expect(originLabel({ kind: 'programme', date: '2022-03' })).toBe('Programme, mars 2022');
+    expect(originLabel({ kind: 'presse', date: '2026-10-06' })).toBe('Presse, 6 octobre 2026');
   });
 });

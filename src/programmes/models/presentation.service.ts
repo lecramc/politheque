@@ -1,5 +1,6 @@
 import type { Lean } from '@/src/programmes/models/axis-explanation.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
+import type { SourceKind } from '@/src/programmes/models/programme.model';
 
 // Formes courtes calculées à partir des textes sourcés : aucune nouvelle affirmation n'est écrite.
 
@@ -23,6 +24,47 @@ export const formatSourceDate = (iso: string) => {
   if (!month) return year;
   return day ? `${day}/${month}/${year}` : `${month}/${year}`;
 };
+
+const MONTHS = [
+  'janvier',
+  'février',
+  'mars',
+  'avril',
+  'mai',
+  'juin',
+  'juillet',
+  'août',
+  'septembre',
+  'octobre',
+  'novembre',
+  'décembre',
+];
+
+/**
+ * Date en toutes lettres (« 3 novembre 2026 », « mars 2022 », « 2022 ») selon la précision de l'ISO.
+ * Formatage de la chaîne, jamais d'objet `Date` : même rendu à la génération et dans le navigateur.
+ */
+export const formatLongDate = (iso: string) => {
+  const [year, month, day] = iso.split('-');
+  if (!month) return year;
+  const monthName = MONTHS[Number(month) - 1];
+  if (!day) return `${monthName} ${year}`;
+  return `${Number(day) === 1 ? '1er' : Number(day)} ${monthName} ${year}`;
+};
+
+export const SOURCE_KIND_LABEL: Record<SourceKind, string> = {
+  programme: 'Programme',
+  declaration: 'Déclaration',
+  vote: 'Vote',
+  'proposition-de-loi': 'Proposition de loi',
+  presse: 'Presse',
+  statistique: 'Source officielle',
+  justice: 'Décision de justice',
+};
+
+/** « Programme, mars 2022 » : ce que dit la source la plus forte d'une idée, avec sa date. */
+export const originLabel = ({ kind, date }: { kind: SourceKind; date: string }) =>
+  `${SOURCE_KIND_LABEL[kind]}, ${formatLongDate(date)}`;
 
 const WORDS_PER_MINUTE = 200;
 

@@ -25,6 +25,7 @@ const candidacy = {
   statusLabel: 'Candidat déclaré',
   candidate: 'X',
   programmeStatus: 'p',
+  programmeState: 'non-publie' as const,
   themes: emptyThemes(),
 };
 

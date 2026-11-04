@@ -11,6 +11,7 @@ const question = (id: string, axis: Question['axis'], direction: 1 | -1): Questi
   id,
   theme: 'economie',
   statement: `Énoncé ${id}`,
+  shortLabel: '',
   help: '',
   axis,
   direction,

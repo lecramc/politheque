@@ -5,6 +5,41 @@
   "color": "#0066CC",
   "family": "Droite (presse et ouvrages de référence : de la droite libérale au centre droit, héritière du gaullisme ; bloc « droite » du nuancier du ministère de l'Intérieur ; le parti revendique lui-même l'étiquette de « droite »)",
   "description": "Les Républicains ont succédé à l'UMP en 2015 ; le parti est présidé depuis mai 2025 par Bruno Retailleau, ancien ministre de l'Intérieur (2024-2025). Valérie Pécresse a obtenu 4,78 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; à l'Assemblée, le groupe Droite républicaine compte 46 députés (novembre 2026, selon Datan). Le 19 avril 2026, les adhérents ont choisi à 73,8 % de désigner directement Bruno Retailleau comme candidat plutôt que d'organiser une primaire. Xavier Bertrand, président (LR) de la région Hauts-de-France, a annoncé le 27 août 2026 qu'il serait lui aussi candidat, en « candidat indépendant », avec une déclaration formelle annoncée pour « la fin de l'année ».",
+  "foundedYear": 2015,
+  "leader": {
+    "name": "Bruno Retailleau",
+    "role": "présidé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "rendre-30-milliards-aux-salaries-et-aux-entreprise",
+      "title": "Rendre 30 milliards aux salariés et aux entreprises",
+      "text": "Restituer « au moins 30 milliards d'euros » : moitié en pouvoir d'achat, moitié en baisse du coût du travail.",
+      "measureRefs": ["economie.0"],
+      "relatedQuestionIds": ["q02-depenses"]
+    },
+    {
+      "id": "retraite-depart-a-63-ans-au-plus-tot-taux-plein-a",
+      "title": "Retraite : départ à 63 ans au plus tôt, taux plein à 65",
+      "text": "Un âge minimal de départ de 63 ans, sauf métiers pénibles, et le taux plein automatique à 65 ans.",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q04-retraite"]
+    },
+    {
+      "id": "reduire-l-immigration-par-referendum",
+      "title": "Réduire l'immigration par référendum",
+      "text": "Soumettre à référendum des lois visant à « réduire drastiquement l'immigration », après une révision de la Constitution.",
+      "measureRefs": ["immigration.0"],
+      "relatedQuestionIds": ["q07-immigration", "q23-referendum"]
+    },
+    {
+      "id": "reformer-la-justice-penale-par-referendum",
+      "title": "Réformer la justice pénale par référendum",
+      "text": "Soumettre une réforme de la justice pénale à référendum et rétablir les courtes peines de prison dès les premiers délits.",
+      "measureRefs": ["securite.0", "securite.1"],
+      "relatedQuestionIds": ["q10-peines-planchers"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2015 (succède à l'UMP, fondée en 2002)",
@@ -1296,6 +1331,8 @@
       "statusLabel": "Candidat investi",
       "candidate": "Bruno Retailleau a déclaré sa candidature le 12 février 2026 ; les adhérents LR l'ont désigné candidat le 19 avril 2026, en choisissant à 73,8 % sa désignation directe plutôt qu'une primaire ouverte (14 %) ou fermée (12,2 %).",
       "programmeStatus": "Programme présidentiel 2027 en cours de publication par livrets thématiques (« Le travail gagnant », réindustrialisation, agriculture, famille, électricité, logement, IA, école, décembre 2025 à septembre 2026), complété par les annonces de Bruno Retailleau (référendums, retraites) et les votes du groupe Droite républicaine. Pas de document programmatique identifié sur la santé.",
+      "programmeState": "partiel",
+      "programmeStateDetail": "livrets thématiques",
       "themes": {
         "economie": {
           "summary": "LR propose de baisser les prélèvements obligatoires et de restituer au moins 30 Md€ aux salariés et aux entreprises, financés par des économies sur les dépenses sociales. Le parti met l'accent sur la simplification normative.",

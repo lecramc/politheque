@@ -9,7 +9,7 @@ import { groupPageSources } from '@/src/programmes/models/page-sources.service';
 import type { Source } from '@/src/programmes/models/programme.model';
 
 /** Bloc « Sources de cette page » : toutes les sources citées sur la page, au même endroit. */
-export function PageSources({ sources }: { sources: Source[] }) {
+export function PageSources({ sources, verifiedOn }: { sources: Source[]; verifiedOn?: string }) {
   const { colors } = useTheme();
   const groups = groupPageSources(sources);
   const count = groups.reduce((n, g) => n + g.sources.length, 0);
@@ -18,7 +18,9 @@ export function PageSources({ sources }: { sources: Source[] }) {
     <Accordion
       headingLevel={2}
       title={`Sources de cette page (${count})`}
-      subtitle="D'où viennent les informations ci-dessus"
+      subtitle={
+        verifiedOn ? `Fiche vérifiée le ${verifiedOn}` : "D'où viennent les informations ci-dessus"
+      }
     >
       {groups.map((group) => (
         <View key={group.kind} style={{ gap: 4 }}>
@@ -28,7 +30,7 @@ export function PageSources({ sources }: { sources: Source[] }) {
           <SourceList sources={group.sources} />
         </View>
       ))}
-      <Text style={{ color: colors.text.secondary, fontSize: 13 }}>
+      <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
         Chaque information porte aussi sa propre pastille de sources, à l'endroit où elle apparaît.
       </Text>
     </Accordion>

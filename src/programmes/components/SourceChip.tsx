@@ -7,19 +7,9 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { Sheet } from '@/src/programmes/components/Sheet';
-import { formatSourceDate } from '@/src/programmes/models/presentation.service';
-import type { Source, SourceKind } from '@/src/programmes/models/programme.model';
+import { formatLongDate, SOURCE_KIND_LABEL } from '@/src/programmes/models/presentation.service';
+import type { Source } from '@/src/programmes/models/programme.model';
 import { verificationLevel } from '@/src/programmes/models/verification.service';
-
-const KIND_LABEL: Record<SourceKind, string> = {
-  programme: 'Programme',
-  declaration: 'Déclaration',
-  vote: 'Vote',
-  'proposition-de-loi': 'Proposition de loi',
-  presse: 'Presse',
-  statistique: 'Source officielle',
-  justice: 'Décision de justice',
-};
 
 const LEVEL_TEXT = {
   croisee:
@@ -73,9 +63,9 @@ export function SourceList({ sources }: { sources: Source[] }) {
               gap: 2,
             }}
           >
-            <Text style={{ fontSize: 13, color: colors.text.secondary, letterSpacing: 0.4 }}>
-              {(KIND_LABEL[source.kind] ?? source.kind).toUpperCase()} ·{' '}
-              {formatSourceDate(source.date)} · {domainOf(source.url)}
+            <Text style={{ fontSize: 14, color: colors.text.secondary }}>
+              {SOURCE_KIND_LABEL[source.kind] ?? source.kind} · {formatLongDate(source.date)} ·{' '}
+              {domainOf(source.url)}
             </Text>
             <Text style={{ ...fonts.bold, color: colors.tint, textDecorationLine: 'underline' }}>
               {source.title}
@@ -131,7 +121,7 @@ export function SourceChip({
         <Text
           style={{
             ...fonts.bold,
-            fontSize: compact ? effects.sizes.text.tiny + 1 : 13,
+            fontSize: 14,
             color: colors.tint,
           }}
         >

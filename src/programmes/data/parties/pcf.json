@@ -5,6 +5,34 @@
   "color": "#DD0000",
   "family": "Gauche (communiste ; gauche communiste ou radicale selon les ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame du communisme)",
   "description": "Le Parti communiste français a été fondé en 1920 au congrès de Tours ; il est dirigé depuis 2018 par Fabien Roussel et a tenu son 40e congrès à Lille du 3 au 5 juillet 2026. Fabien Roussel a obtenu 2,28 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel). Membre du Nouveau Front populaire en 2024, le PCF siège à l'Assemblée au sein du groupe Gauche démocrate et républicaine (GDR), qui compte 17 députés (novembre 2026, selon Datan), dont des élus ultramarins non communistes. Fabien Roussel a été investi candidat par un vote des adhérents en septembre 2026.",
+  "foundedYear": 1920,
+  "leader": {
+    "name": "Fabien Roussel",
+    "role": "dirigé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "tripler-l-impot-sur-la-fortune",
+      "title": "Tripler l'impôt sur la fortune",
+      "text": "Tripler l'impôt sur la fortune et baisser l'impôt sur le revenu des tranches les plus basses.",
+      "measureRefs": ["economie.0"],
+      "relatedQuestionIds": ["q01-isf"]
+    },
+    {
+      "id": "faire-des-salaires-la-question-centrale",
+      "title": "Faire des salaires « la question centrale »",
+      "text": "Porter le SMIC à 1 500 € net et aucune pension sous 1 200 € net (programme 2022), priorité réaffirmée au congrès de 2026.",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q05-smic"]
+    },
+    {
+      "id": "nucleaire-et-renouvelables-100-public",
+      "title": "Nucléaire et renouvelables, « 100 % public »",
+      "text": "Construire au moins six EPR, développer solaire, éolien et hydraulique, et renationaliser EDF et Engie.",
+      "measureRefs": ["ecologie.0", "ecologie.1"],
+      "relatedQuestionIds": ["q12-nucleaire", "q13-renouvelables"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "1920 (congrès de Tours, sous le nom de Section française de l'Internationale communiste, SFIC) ; nom de Parti communiste français en 1943",
@@ -1098,6 +1126,7 @@
       "statusLabel": "Candidat investi",
       "candidate": "Fabien Roussel a été investi par un vote des adhérents du 3 au 6 septembre 2026, avec environ 72 % des voix selon LCP, et a annoncé sa candidature le 6 septembre 2026.",
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le programme présidentiel 2022 « La France des Jours heureux », sur la base commune adoptée au 40e congrès (juillet 2026), sur le contrat de législature du Nouveau Front populaire (2024) et sur les votes du groupe GDR. Les positions issues du programme 2022 sont signalées comme telles.",
+      "programmeState": "non-publie",
       "themes": {
         "economie": {
           "summary": "Le PCF propose une fiscalité plus progressive visant les grandes fortunes et les grandes entreprises, la nationalisation de grandes banques et un contrôle des aides publiques aux entreprises. Le congrès de 2026 réaffirme l'imposition des grandes fortunes et la suppression des exonérations accordées aux grandes entreprises.",

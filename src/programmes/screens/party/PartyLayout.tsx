@@ -1,15 +1,19 @@
 import { Slot, useLocalSearchParams, usePathname } from 'expo-router';
 import React, { useState } from 'react';
+import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
-import { Page } from '@/src/programmes/components/Page';
+import { Page, useIsDesktop } from '@/src/programmes/components/Page';
 import { PartyHeader } from '@/src/programmes/components/PartyHeader';
 import { Sheet } from '@/src/programmes/components/Sheet';
+import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
 import { Tabs } from '@/src/programmes/components/Tabs';
+import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { partyHref, sectionFromPath } from '@/src/programmes/models/seo/party-sections';
+import { bodyText } from '@/src/programmes/models/sourced-item.service';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 /**
@@ -20,7 +24,8 @@ export default function PartyLayout() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const pathname = usePathname();
   const vm = useViewModel(partyViewModel(id));
-  const { colors } = useTheme();
+  const { colors, effects } = useTheme();
+  const isDesktop = useIsDesktop();
   const [sheet, setSheet] = useState<'famille' | 'candidat' | null>(null);
   const party = vm.party;
   const presidential = vm.presidential;
@@ -38,6 +43,7 @@ export default function PartyLayout() {
     <Page
       meta={null}
       article
+      wide
       breadcrumb={vm.metaBySection?.[section]?.breadcrumb}
       loading={vm.status !== 'loaded'}
       back={{ label: 'Partis', href: '/partis' }}
@@ -45,19 +51,42 @@ export default function PartyLayout() {
     >
       {party ? (
         <>
-          <PartyHeader
-            party={party}
-            candidacy={presidential?.candidacy ?? null}
-            onOpenFamily={() => setSheet('famille')}
-            onOpenCandidate={() => setSheet('candidat')}
-          />
-          <Tabs
-            tabs={vm.sections}
-            value={section}
-            hrefOf={(sectionId) => partyHref(party.id, sectionId)}
-            navLabel="Sections de la fiche"
-          />
-          <Slot />
+          <View
+            style={{
+              flexDirection: isDesktop ? 'row' : 'column',
+              alignItems: 'flex-start',
+              gap: effects.spacing.lg,
+            }}
+          >
+            <View
+              style={[
+                { gap: effects.spacing.md },
+                isDesktop
+                  ? ({ width: 340, position: 'sticky', top: 16 } as never)
+                  : { width: '100%' },
+              ]}
+            >
+              <PartyHeader
+                party={party}
+                candidacy={presidential?.candidacy ?? null}
+                identityLine={vm.identityLine}
+                onOpenFamily={() => setSheet('famille')}
+                onOpenCandidate={() => setSheet('candidat')}
+              />
+              <Tabs
+                tabs={vm.sections}
+                value={section}
+                hrefOf={(sectionId) => partyHref(party.id, sectionId)}
+                navLabel="Sections de la fiche"
+                vertical={isDesktop}
+              />
+            </View>
+            <View
+              style={{ flex: isDesktop ? 1 : undefined, width: isDesktop ? undefined : '100%' }}
+            >
+              <Slot />
+            </View>
+          </View>
 
           <Sheet
             isOpen={sheet === 'famille'}
@@ -65,6 +94,12 @@ export default function PartyLayout() {
             title="Famille politique"
           >
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{party.family}</Text>
+            {splitIdeals(party.history?.ideals ?? []).classification.map((item) => (
+              <View key={item.title} style={{ gap: effects.spacing.xs }}>
+                <Text style={{ fontSize: 16, lineHeight: 25 }}>{bodyText(item)}</Text>
+                <SourceChip sources={item.sources} subject={item.title} />
+              </View>
+            ))}
             <Text style={{ color: colors.text.secondary }}>
               Les étiquettes viennent de la presse de référence, des politistes et du ministère de
               l'Intérieur ; chaque parti peut les contester. Le même traitement s'applique à tous.

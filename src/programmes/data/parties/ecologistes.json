@@ -5,6 +5,41 @@
   "color": "#00C000",
   "family": "Gauche (écologie politique ; presse et ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame de « l'écologie politique » et ne conteste pas cette étiquette)",
   "description": "Les Écologistes sont issus des Verts, fondés en 1984, devenus Europe Écologie Les Verts (EELV) en 2010 puis Les Écologistes en 2023 ; le parti est dirigé par la secrétaire nationale Marine Tondelier. Yannick Jadot a obtenu 4,63 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Marie Toussaint 5,50 % aux européennes de 2024. Membre du Nouveau Front populaire en 2024, le parti siège à l'Assemblée au sein du groupe Écologiste et social, qui compte 38 députés (novembre 2026, selon Datan). Les adhérents votent du 10 au 13 décembre 2026 sur le maintien d'une candidature autonome.",
+  "foundedYear": 1984,
+  "leader": {
+    "name": "Marine Tondelier",
+    "role": "dirigé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "creer-un-impot-minimum-sur-les-tres-grandes-fortun",
+      "title": "Créer un impôt minimum sur les très grandes fortunes",
+      "text": "Instaurer la « taxe Zucman » : un impôt minimum de 2 % sur les patrimoines de plus de 100 millions d'euros.",
+      "measureRefs": ["economie.0"],
+      "relatedQuestionIds": ["q01-isf"]
+    },
+    {
+      "id": "revenir-a-la-retraite-a-62-ans",
+      "title": "Revenir à la retraite à 62 ans",
+      "text": "Ramener l'âge légal à 62 ans, avec un objectif de 60 ans pour les carrières longues et les métiers pénibles.",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q04-retraite"]
+    },
+    {
+      "id": "sortir-du-nucleaire-de-facon-planifiee",
+      "title": "Sortir du nucléaire de façon planifiée",
+      "text": "Arrêter les projets d'EPR2 et de petits réacteurs, et fonder l'électricité sur « un bouquet d'énergies renouvelables ».",
+      "measureRefs": ["ecologie.0", "ecologie.1"],
+      "relatedQuestionIds": ["q12-nucleaire", "q13-renouvelables"]
+    },
+    {
+      "id": "faire-un-saut-federal-europeen",
+      "title": "Faire un « saut fédéral européen »",
+      "text": "Remplacer le droit de veto de chaque pays par des décisions à la majorité qualifiée dans l'Union européenne.",
+      "measureRefs": ["europe.0"],
+      "relatedQuestionIds": ["q33-veto-europeen"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "1984 (Les Verts), 2010 (Europe Écologie Les Verts, EELV) puis Les Écologistes en 2023",
@@ -1182,6 +1217,7 @@
       "statusLabel": "Candidate désignée",
       "candidate": "Marine Tondelier a été désignée en décembre 2025 par un vote interne (86 % des voix) pour porter la candidature des Écologistes. Le conseil fédéral du 21 septembre 2026 a maintenu cette investiture jusqu'au vote des adhérents, du 10 au 13 décembre 2026, qui doit trancher entre une candidature autonome et le ralliement à un autre candidat de gauche.",
       "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique » présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Le document officiel n'a pas pu être consulté en ligne : les mesures sont citées d'après des comptes rendus de presse et des sites qui reproduisent des extraits paginés du programme. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
+      "programmeState": "publie",
       "themes": {
         "economie": {
           "summary": "Le programme vise une « prospérité écologique » et une « fiscalité verte et juste » : impôt plancher sur les très grandes fortunes, « ISF climatique », TVA verte et tranche supérieure d'impôt sur le revenu. Le groupe écologiste est à l'origine de la proposition de loi « taxe Zucman » adoptée à l'Assemblée en février 2025.",

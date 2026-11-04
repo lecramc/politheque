@@ -5,6 +5,7 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Card } from '@/src/programmes/components/Card';
+import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { STATUS_LABELS } from '@/src/programmes/models/legal/legal-vocabulary';
 
 /** Texte fixe : le même périmètre, les mêmes garde-fous pour les dix partis. */
@@ -20,9 +21,7 @@ export function ProceduresIntro({ reviewedOn }: { reviewedOn: string }) {
   const { colors, effects } = useTheme();
   return (
     <Card>
-      <Text variant="caption" headingLevel={2}>
-        Ce que recense cette page
-      </Text>
+      <SectionTitle>Ce que recense cette page</SectionTitle>
       <Text style={{ fontSize: 16, lineHeight: 25 }}>
         Les procédures judiciaires, de la même façon pour tous les partis, visant :
       </Text>

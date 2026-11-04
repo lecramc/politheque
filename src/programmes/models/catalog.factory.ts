@@ -40,6 +40,7 @@ const question = (id: string): Question => ({
   id,
   theme: 'economie',
   statement: id,
+  shortLabel: id,
   help: '',
   axis: 'economique',
   direction: 1,

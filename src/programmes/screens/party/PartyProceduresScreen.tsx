@@ -3,12 +3,12 @@ import React from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
-import { Text } from '@/components/Themed';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { LegalEntryCard } from '@/src/programmes/components/legal/LegalEntryCard';
 import { ProceduresEmpty } from '@/src/programmes/components/legal/ProceduresEmpty';
 import { ProceduresIntro } from '@/src/programmes/components/legal/ProceduresIntro';
 import { PageSources } from '@/src/programmes/components/PageSources';
+import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { TabPanel } from '@/src/programmes/components/Tabs';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
@@ -34,16 +34,14 @@ export default function PartyProceduresScreen() {
         {dossier.isEmpty ? <ProceduresEmpty reviewedOn={dossier.reviewedOn} /> : null}
         {groups.map((group) => (
           <View key={group.title} style={{ gap: effects.spacing.sm }}>
-            <Text variant="caption" headingLevel={2}>
-              {group.title}
-            </Text>
+            <SectionTitle>{group.title}</SectionTitle>
             {group.entries.map((entry) => (
               <LegalEntryCard key={entry.id} entry={entry} />
             ))}
           </View>
         ))}
       </View>
-      <PageSources sources={vm.sourcesBySection['procedures']} />
+      <PageSources sources={vm.sourcesBySection['procedures']} verifiedOn={vm.verifiedOn} />
     </TabPanel>
   );
 }

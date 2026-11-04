@@ -3,28 +3,26 @@ import React, { useEffect } from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
-import { Text } from '@/components/Themed';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
-import { Accordion } from '@/src/programmes/components/Accordion';
-import { Card } from '@/src/programmes/components/Card';
+import { FurtherLinks } from '@/src/programmes/components/FurtherLinks';
+import { GlanceQuestions } from '@/src/programmes/components/GlanceQuestions';
+import { KeyIdeaList } from '@/src/programmes/components/KeyIdeaList';
+import { useIsDesktop } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
+import { PartyJourneyBlock } from '@/src/programmes/components/PartyJourneyBlock';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
-import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { SourcedAccordionList } from '@/src/programmes/components/SourcedAccordionList';
 import { TabPanel } from '@/src/programmes/components/Tabs';
-import { splitIdeals } from '@/src/programmes/models/ideals.service';
-import { legacyTabRedirect } from '@/src/programmes/models/seo/party-sections';
-import { bodyText } from '@/src/programmes/models/sourced-item.service';
+import { legacyTabRedirect, partyHref } from '@/src/programmes/models/seo/party-sections';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
-/** « En bref » : /partis/[id]. */
+/** « En bref » : /partis/[id]. Ce que le parti propose, ses réponses aux 7 grandes questions, puis le parcours. */
 export default function PartyOverviewScreen() {
   const { id, onglet } = useLocalSearchParams<{ id: string; onglet?: string }>();
   const vm = useViewModel(partyViewModel(id));
-  const { colors, effects, fonts } = useTheme();
+  const { effects } = useTheme();
+  const isDesktop = useIsDesktop();
   const router = useRouter();
   const party = vm.party;
-  const presidential = vm.presidential;
 
   // Anciens liens `?onglet=` : redirection dans un effet (jamais au rendu, pour l'hydratation).
   useEffect(() => {
@@ -34,67 +32,45 @@ export default function PartyOverviewScreen() {
   }, [id, onglet, router]);
 
   if (!party) return null;
-  const { classification, others } = splitIdeals(party.history?.ideals ?? []);
   const meta = vm.metaBySection?.['en-bref'];
 
   return (
-    <TabPanel id="en-bref">
+    <TabPanel id="en-bref" style={{ gap: effects.spacing.lg }}>
       {meta ? <SeoHead meta={meta} /> : null}
-      <View style={{ gap: effects.spacing.sm }}>
-        <Text variant="caption" headingLevel={2}>
-          En bref
-        </Text>
-        <Card style={{ gap: 0, paddingVertical: 4 }}>
-          {[
-            ['Fondé', party.history?.founded],
-            [
-              'Candidature 2027',
-              presidential
-                ? `${presidential.candidacy.candidateName} · ${presidential.candidacy.statusLabel}`
-                : null,
-            ],
-          ]
-            .filter(([, value]) => value)
-            .map(([label, value], index) => (
-              <View
-                key={label}
-                style={{
-                  paddingVertical: 12,
-                  borderTopWidth: index === 0 ? 0 : 1,
-                  borderColor: colors.surface.border.primary,
-                }}
-              >
-                <Text style={{ color: colors.text.secondary, fontSize: 14 }}>{label}</Text>
-                <Text style={{ ...fonts.bold, fontSize: 16 }}>{value}</Text>
-              </View>
-            ))}
-        </Card>
-        <SourcedAccordionList items={others} />
-        <Accordion
-          title="Présentation complète"
-          subtitle="Chiffres, dirigeants, situation actuelle"
+      {vm.keyIdeas ? <KeyIdeaList keyIdeas={vm.keyIdeas} partyName={party.name} /> : null}
+      <View
+        style={{
+          flexDirection: isDesktop ? 'row' : 'column',
+          alignItems: 'flex-start',
+          gap: effects.spacing.lg,
+        }}
+      >
+        <View style={{ flex: isDesktop ? 3 : undefined, width: isDesktop ? undefined : '100%' }}>
+          <GlanceQuestions
+            items={vm.glance}
+            intro={vm.glanceIntro}
+            positionsLabel={vm.positionsLabel}
+            positionsHref={partyHref(party.id, 'positions')}
+          />
+        </View>
+        <View
+          style={{
+            flex: isDesktop ? 2 : undefined,
+            width: isDesktop ? undefined : '100%',
+            gap: effects.spacing.md,
+          }}
         >
-          <Text style={{ fontSize: 16, lineHeight: 25 }}>{party.description}</Text>
-        </Accordion>
-        <Accordion
-          title="Famille politique : comment le parti est classé"
-          subtitle="Étiquette, qui l'emploie, position du parti"
-        >
-          <Text style={{ fontSize: 16, lineHeight: 25 }}>{party.family}</Text>
-          {classification.map((item) => (
-            <View key={item.title} style={{ gap: effects.spacing.xs }}>
-              <Text style={{ ...fonts.bold, fontSize: 16 }}>{item.title}</Text>
-              <Text style={{ fontSize: 16, lineHeight: 25 }}>{bodyText(item)}</Text>
-              <SourceChip sources={item.sources} subject={item.title} />
-            </View>
-          ))}
-          <Text style={{ color: colors.text.secondary }}>
-            Les étiquettes viennent de la presse de référence, des politistes et du ministère de
-            l'Intérieur ; chaque parti peut les contester. Le même traitement s'applique à tous.
-          </Text>
-        </Accordion>
+          <FurtherLinks links={vm.further} />
+          <PageSources sources={vm.sourcesBySection['en-bref']} verifiedOn={vm.verifiedOn} />
+        </View>
       </View>
-      <PageSources sources={vm.sourcesBySection['en-bref']} />
+      {vm.nextParty ? (
+        <PartyJourneyBlock
+          partyId={party.id}
+          nextName={vm.nextParty.name}
+          nextHref={partyHref(vm.nextParty.id)}
+        />
+      ) : null}
     </TabPanel>
   );
 }

@@ -19,6 +19,7 @@ const candidacy = {
   statusLabel: 'Candidate déclarée',
   candidate: '',
   programmeStatus: '',
+  programmeState: 'non-publie' as const,
   themes: {} as never,
 };
 
@@ -41,15 +42,15 @@ describe('Feature: fiche parti découpée en sections', () => {
   it('should expose available sections in fixed order', () => {
     expect(vmOf('alpha').sections.map((s) => s.id)).toEqual([
       'en-bref',
-      'histoire',
       'positions',
       'programme-2027',
+      'histoire',
     ]);
     expect(vmOf('alpha').sections.map((s) => s.label)).toEqual([
       'En bref',
-      'Histoire',
       'Positions',
-      'Pour 2027',
+      'Programme 2027',
+      'Histoire',
     ]);
     expect(vmOf('sans-histoire').sections.map((s) => s.id)).toEqual(['en-bref', 'positions']);
   });
@@ -89,7 +90,7 @@ describe('Feature: section procédures de la fiche parti', () => {
 
   it('should expose the presented dossier and the procedures meta', () => {
     const vm = publishedVm('alpha');
-    expect(vm.sections.at(-1)).toMatchObject({ id: 'procedures', label: 'Procédures judiciaires' });
+    expect(vm.sections.at(-1)).toMatchObject({ id: 'procedures', label: 'Procédures' });
     expect(vm.procedures?.ongoing).toHaveLength(1);
     expect(vm.procedures?.ongoing[0].presumptionNotice).toContain("Présomption d'innocence");
     expect(vm.metaBySection?.procedures.path).toBe('/partis/alpha/procedures-judiciaires');

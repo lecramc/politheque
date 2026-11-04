@@ -27,6 +27,7 @@ const candidacy = {
   statusLabel: 'Candidate déclarée',
   candidate: '',
   programmeStatus: '',
+  programmeState: 'non-publie' as const,
   themes: {} as never,
 };
 const history = { founded: '', origins: { text: '', sources: [] }, ideals: [], timeline: [] };

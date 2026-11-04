@@ -23,6 +23,7 @@ import { Icon, Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
 import { APP_NAME } from '@/src/core/config/app';
+import { useHydrated } from '@/src/core/hooks/useHydrated';
 import { Breadcrumb } from '@/src/programmes/components/Breadcrumb';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
@@ -49,7 +50,15 @@ const DESKTOP_BREAKPOINT = 768;
 const TAB_BAR_HEIGHT = 64;
 const ARC_WIDTH = 24;
 
-export const useIsDesktop = () => useWindowDimensions().width >= DESKTOP_BREAKPOINT;
+/**
+ * Mise en page desktop : jamais au premier rendu. Le HTML statique est généré à largeur mobile ;
+ * le premier rendu client doit lui être identique, la bascule se fait juste après l'hydratation.
+ */
+export const useIsDesktop = () => {
+  const width = useWindowDimensions().width;
+  const hydrated = useHydrated();
+  return hydrated && width >= DESKTOP_BREAKPOINT;
+};
 
 /** Petit arc au-dessus de l'onglet actif : le motif signature sert aussi de repère. */
 function ActiveArc({ color }: { color: string }) {
@@ -316,7 +325,7 @@ export function Page({
           paddingHorizontal: effects.spacing.md,
         }}
       >
-        <Text style={{ fontSize: 13, color: colors.text.primary, textAlign: 'center' }}>
+        <Text style={{ fontSize: 14, color: colors.text.primary, textAlign: 'center' }}>
           Version bêta : contenus en cours de relecture.{' '}
           <Link
             href="/methodologie"
@@ -378,7 +387,7 @@ export function Page({
             },
           ]}
         >
-          <Text style={{ color: colors.text.secondary, fontSize: 13, textAlign: 'center' }}>
+          <Text style={{ color: colors.text.secondary, fontSize: 14, textAlign: 'center' }}>
             Site indépendant et non officiel ·{' '}
             <Link
               href="/methodologie"

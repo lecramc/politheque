@@ -5,6 +5,27 @@
   "color": "#FFD600",
   "family": "Centre (presse et analystes, parfois centre droit ; bloc « centre » du nuancier du ministère de l'Intérieur ; le parti se présente comme le parti « du dépassement » du clivage gauche-droite)",
   "description": "Renaissance est le parti fondé en 2016 sous le nom d'En marche par Emmanuel Macron ; il est dirigé depuis décembre 2024 par Gabriel Attal, ancien Premier ministre (2024) et président du groupe Ensemble pour la République (EPR) à l'Assemblée, qui compte 90 députés (novembre 2026, selon Datan). Emmanuel Macron avait obtenu 27,85 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux européennes de 2024, la liste « Besoin d'Europe » conduite par Valérie Hayer (Renaissance, MoDem, Horizons, Parti radical, UDI) a obtenu 14,60 %. Gabriel Attal a déclaré sa candidature le 22 mai 2026 et a proposé le 28 octobre 2026 une « grande primaire des démocrates ».",
+  "foundedYear": 2016,
+  "leader": {
+    "name": "Gabriel Attal",
+    "role": "dirigé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "ramener-le-deficit-sous-3-sans-hausse-d-impots",
+      "title": "Ramener le déficit sous 3 % sans hausse d'impôts",
+      "text": "Passer sous 3 % de déficit public avant 2032, sans aucune hausse d'impôts pendant cinq ans.",
+      "measureRefs": ["economie.0"],
+      "relatedQuestionIds": ["q02-depenses"]
+    },
+    {
+      "id": "supprimer-l-age-legal-de-depart-a-la-retraite",
+      "title": "Supprimer l'âge légal de départ à la retraite",
+      "text": "Seule la durée de cotisation compterait, avec « une vraie décote si vous partez tôt, une vraie surcote si vous partez tard ».",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q04-retraite"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2016 (fondé sous le nom En marche), devenu La République en marche (2017) puis Renaissance (2022)",
@@ -1131,6 +1152,8 @@
       "statusLabel": "Candidat déclaré",
       "candidate": "Gabriel Attal a déclaré sa candidature le 22 mai 2026 à Mur-de-Barrez (Aveyron).",
       "programmeStatus": "Pas de programme complet chiffré au 3 novembre 2026 ; le site de campagne attalpresident.fr présente 96 mesures (« chantiers capitaux »). Fiche fondée sur ces mesures, les déclarations du candidat (2025-2026) et les votes du groupe EPR, avec mention de la date quand la position est antérieure à 2026.",
+      "programmeState": "partiel",
+      "programmeStateDetail": "96 mesures",
       "themes": {
         "economie": {
           "summary": "Le candidat vise un déficit sous 3 % avant 2032 sans hausse d'impôts, par 150 Md€ d'économies sur cinq ans, et une baisse du coût du travail. Il propose un investissement de 200 Md€ dans l'intelligence artificielle.",

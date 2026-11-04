@@ -1,8 +1,9 @@
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
-import { TextStyle } from 'react-native';
+import { TextStyle, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
+import { useHydrated } from '@/src/core/hooks/useHydrated';
 
 interface IconProps {
   name: string;
@@ -30,6 +31,10 @@ export function Icon({
   const { colors, effects } = useTheme();
 
   const iconSize = effects.sizes.icon[size];
+  // Le glyphe dépend de la police d'icônes, chargée côté client seulement : avant l'hydratation,
+  // une boîte de la même taille (HTML statique et premier rendu client identiques, sans saut de mise en page).
+  const hydrated = useHydrated();
+  if (!hydrated) return <View aria-hidden style={{ width: iconSize, height: iconSize }} />;
 
   const getIconColor = () => {
     switch (variant) {

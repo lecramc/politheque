@@ -2,16 +2,28 @@ import type { Catalog, Party } from '@/src/programmes/models/programme.model';
 
 export type PartySection = 'en-bref' | 'histoire' | 'positions' | 'programme-2027' | 'procedures';
 
+/** `label` : titre complet (fil d'Ariane, métadonnées) ; `tabLabel` : libellé court de l'onglet. */
 export const PARTY_SECTIONS: readonly {
   id: PartySection;
   label: string;
+  tabLabel: string;
   segment: string | null;
 }[] = [
-  { id: 'en-bref', label: 'En bref', segment: null },
-  { id: 'histoire', label: 'Histoire', segment: 'histoire' },
-  { id: 'positions', label: 'Positions', segment: 'positions' },
-  { id: 'programme-2027', label: 'Pour 2027', segment: 'programme-2027' },
-  { id: 'procedures', label: 'Procédures judiciaires', segment: 'procedures-judiciaires' },
+  { id: 'en-bref', label: 'En bref', tabLabel: 'En bref', segment: null },
+  { id: 'positions', label: 'Positions', tabLabel: 'Positions', segment: 'positions' },
+  {
+    id: 'programme-2027',
+    label: 'Programme 2027',
+    tabLabel: 'Programme 2027',
+    segment: 'programme-2027',
+  },
+  { id: 'histoire', label: 'Histoire', tabLabel: 'Histoire', segment: 'histoire' },
+  {
+    id: 'procedures',
+    label: 'Procédures judiciaires',
+    tabLabel: 'Procédures',
+    segment: 'procedures-judiciaires',
+  },
 ];
 
 export const partySectionLabel = (section: PartySection) =>

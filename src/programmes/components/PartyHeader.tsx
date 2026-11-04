@@ -5,71 +5,92 @@ import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
-import {
-  beforeParenthesis,
-  firstSentence,
-  formatSourceDate,
-} from '@/src/programmes/models/presentation.service';
+import { beforeParenthesis } from '@/src/programmes/models/presentation.service';
 import type { Candidacy, Party } from '@/src/programmes/models/programme.model';
 
-function Chip({ label, onPress }: { label: string; onPress: () => void }) {
-  const { colors, effects } = useTheme();
-  return (
-    <Pressable
-      onPress={onPress}
-      accessibilityRole="button"
-      style={{
-        flexDirection: 'row',
-        alignItems: 'center',
-        gap: 6,
-        alignSelf: 'flex-start',
-        minHeight: 44,
-        paddingHorizontal: 14,
-        borderRadius: effects.borderRadius.round,
-        borderWidth: 1.5,
-        borderColor: colors.surface.border.tertiary,
-        backgroundColor: colors.surface.primary,
-      }}
-    >
-      <Text>{label}</Text>
-      <Icon name="information-circle-outline" variant="onGlass" size="small" />
-    </Pressable>
-  );
-}
+const lowerFirst = (text: string) => text.charAt(0).toLowerCase() + text.slice(1);
 
-/** En-tête commun aux quatre pages d'une fiche : le h1 est le nom du parti (l'entité). */
+/**
+ * En-tête commun aux pages d'une fiche : le h1 est le nom du parti (l'entité), puis une ligne
+ * famille (ligne seule), puis « Fondé en… · dirigeant » en dessous, et la candidature. La date de vérification est dans
+ * « Sources de cette page », en bas.
+ */
 export function PartyHeader({
   party,
   candidacy,
+  identityLine,
   onOpenFamily,
   onOpenCandidate,
 }: {
   party: Party;
   candidacy: Candidacy | null;
+  identityLine: string;
   onOpenFamily: () => void;
   onOpenCandidate: () => void;
 }) {
-  const { colors } = useTheme();
+  const { colors, effects, fonts } = useTheme();
+  const family = beforeParenthesis(party.family);
   return (
-    <>
-      <View style={{ flexDirection: 'row', gap: 14, alignItems: 'flex-start' }}>
-        <PartyDot color={party.color} size={64} label={party.shortName} />
-        <View style={{ flex: 1, gap: 6 }}>
-          <Text variant="title" style={{ fontSize: 28, lineHeight: 33 }}>
-            {party.name}
-          </Text>
-          <Text style={{ color: colors.text.secondary }}>{firstSentence(party.description)}</Text>
-        </View>
-      </View>
-      <View style={{ gap: 8 }}>
-        <Chip label={`Famille : ${beforeParenthesis(party.family)}`} onPress={onOpenFamily} />
-        {candidacy ? (
-          <Chip label={`Candidature 2027 : ${candidacy.candidateName}`} onPress={onOpenCandidate} />
-        ) : null}
-        <Text style={{ color: colors.text.secondary, fontSize: 13 }}>
-          Fiche vérifiée le {formatSourceDate(party.lastVerified)}
+    <View style={{ gap: effects.spacing.sm }}>
+      <View style={{ flexDirection: 'row', gap: 14, alignItems: 'center' }}>
+        <PartyDot color={party.color} size={56} label={party.shortName} />
+        <Text variant="title" style={{ flex: 1, fontSize: 30, lineHeight: 35 }}>
+          {party.name}
         </Text>
       </View>
-    </>
+      <View>
+        <Pressable
+          onPress={onOpenFamily}
+          accessibilityRole="button"
+          accessibilityLabel={`Famille politique : ${family}. Voir qui emploie cette étiquette.`}
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            alignSelf: 'flex-start',
+            gap: 4,
+            minHeight: 44,
+          }}
+        >
+          <Text
+            style={{
+              ...fonts.bold,
+              fontSize: 16,
+              color: colors.text.primary,
+              textDecorationLine: 'underline',
+              textDecorationStyle: 'dotted',
+            }}
+          >
+            {family}
+          </Text>
+          <Icon name="information-circle-outline" variant="onGlass" size="small" />
+        </Pressable>
+        <Text style={{ fontSize: 16, color: colors.text.secondary }}>{identityLine}</Text>
+      </View>
+      {candidacy ? (
+        <Pressable
+          onPress={onOpenCandidate}
+          accessibilityRole="button"
+          accessibilityLabel={`Candidature 2027 : ${candidacy.candidateName}, ${lowerFirst(candidacy.statusLabel)}. Voir le détail.`}
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 12,
+            minHeight: 56,
+            paddingHorizontal: effects.spacing.md,
+            paddingVertical: 12,
+            borderRadius: effects.borderRadius.small,
+            borderWidth: 1,
+            borderColor: colors.surface.border.primary,
+            backgroundColor: colors.surface.primary,
+          }}
+        >
+          <Text style={{ flex: 1, fontSize: 16, lineHeight: 22 }}>
+            <Text style={{ ...fonts.bold, fontSize: 16 }}>{candidacy.candidateName}</Text>,{' '}
+            {lowerFirst(candidacy.statusLabel)} à la présidentielle 2027
+          </Text>
+          <Icon name="chevron-forward" variant="secondary" size="small" />
+        </Pressable>
+      ) : null}
+    </View>
   );
 }

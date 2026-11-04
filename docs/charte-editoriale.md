@@ -172,3 +172,35 @@ Elles complètent les règles ci-dessus et portent sur tous les champs texte aff
     chaque fiche commence par ce que le parti dit de lui-même (« Ce que dit… ») et contient
     **une seule** entrée « Classement par … » ; le nuancier du ministère de l'Intérieur, quand une
     décision de justice le concerne, a sa propre entrée « Nuancier du ministère de l'Intérieur ».
+11. **Idées clés** (`keyIdeas`, bloc « Ce qu'il propose » de l'onglet « En bref »). C'est le seul endroit
+    d'une fiche où l'on choisit ; le choix est encadré par les règles suivantes, appliquées de la même
+    façon aux dix partis.
+    - **Même gabarit, même nombre, même règle** : exactement 4 idées par parti, dans 4 thèmes
+      différents. Si une fiche n'a pas 4 idées valides, le bloc n'est affiché pour aucun parti (il
+      existe pour les dix ou pour aucun).
+    - **Matière** : uniquement des mesures déjà présentes dans `candidacies.presidentielle-2027.themes`
+      (`measureRefs`). Aucune reformulation n'ajoute un chiffre, une date ou une mesure.
+    - **Formulation dans les termes du parti** : titre de 60 caractères au plus, au verbe à
+      l'infinitif ; texte d'une phrase de 200 caractères au plus, qui dit ce qui change concrètement ;
+      les termes connotés du parti restent entre guillemets (« priorité nationale », « remigration »,
+      « saut fédéral européen ») ; aucun adjectif évaluatif.
+    - **Priorité**, dans l'ordre : ce que le parti ou le candidat présente lui-même comme prioritaire
+      d'après la fiche (« premier acte », « question centrale », thèmes « mis en avant », titre du
+      programme) ; sinon une mesure liée à une question où sa position est explicite (`±2`) ; à
+      égalité, la source la plus forte (règle 2), puis la plus récente.
+    - **Ordre** : les 4 idées sont toujours triées dans l'ordre fixe des thèmes du site
+      (`themes.json`), identique pour tous les partis. Pas de numéro, pas de classement : l'ordre ne dit
+      rien du parti.
+    - **Sources** : au moins 2 sources de domaines enregistrables distincts, dont au moins une
+      indépendante du parti (presse, statistique, vote, justice) : le niveau « Recoupée » de
+      `verification.service.ts`. Les sources d'une idée sont celles de ses mesures et celles des
+      positions de ses questions liées (`relatedQuestionIds`) pour ce parti, déjà vérifiées dans la
+      fiche ; aucune source n'est ajoutée pour l'occasion. Une idée qui n'atteint pas ce seuil n'est
+      pas publiée, et n'est pas remplacée sans décision de l'éditeur. Le test d'intégrité est bloquant.
+    - **Datation visible** : l'origine affichée (« Programme, mars 2022 ») est générée à partir des
+      sources des mesures (la plus forte, puis la plus récente). L'âge d'une source n'est jamais réécrit.
+    - **Contrôle croisé** : les 40 idées sont relues côte à côte, à l'aveugle (sans le nom du parti).
+      Si un relecteur devine le parti à partir du ton plutôt que du contenu, la formulation est revue.
+    - **Grandes questions** (bloc « Pour ou contre ? ») : pas de choix éditorial. Pour chaque thème,
+      dans l'ordre du questionnaire, la première question à laquelle les dix partis ont une position
+      non nulle ; la même liste pour tous.

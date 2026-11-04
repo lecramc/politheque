@@ -5,6 +5,41 @@
   "color": "#E4467C",
   "family": "Gauche (social-démocratie ; presse et ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur pour le PS comme pour Place publique ; le PS se réclame du « socialisme démocratique » et ne conteste pas cette étiquette)",
   "description": "Le Parti socialiste (fondé en 1969, dirigé par Olivier Faure) et Place publique (fondé en 2018 par Raphaël Glucksmann) ont organisé avec la Gauche républicaine et socialiste (GRS) une primaire commune pour 2027. Anne Hidalgo (PS) avait obtenu 1,75 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux européennes de 2024, la liste PS–Place publique conduite par Raphaël Glucksmann a obtenu 13,83 %. À l'Assemblée, le groupe Socialistes et apparentés compte 68 députés (novembre 2026, selon Datan). Raphaël Glucksmann, député européen, a remporté la primaire dès le premier tour le 11 octobre 2026 ; il est le premier candidat soutenu par le PS à la présidentielle à ne pas être issu de ses rangs.",
+  "foundedYear": 1969,
+  "leader": {
+    "name": "Olivier Faure",
+    "role": "dirigé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "taxer-les-plus-gros-heritages-pour-augmenter-les-s",
+      "title": "Taxer les plus gros héritages pour augmenter les salaires",
+      "text": "Imposer davantage le 1 % des héritages les plus élevés et reverser 15 milliards aux salariés par une baisse des prélèvements.",
+      "measureRefs": ["economie.0", "travail.1"],
+      "relatedQuestionIds": ["q25-successions"]
+    },
+    {
+      "id": "porter-le-smic-a-1-700-net",
+      "title": "Porter le SMIC à 1 700 € net",
+      "text": "Augmenter le salaire minimum à 1 700 € nets par mois.",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q05-smic"]
+    },
+    {
+      "id": "lancer-les-100-jours-de-la-revolution-ecologique",
+      "title": "Lancer « les 100 jours de la révolution écologique »",
+      "text": "Dès l'élection, un plan pour sortir de la dépendance au gaz et au pétrole, en gardant le nucléaire et en développant les renouvelables.",
+      "measureRefs": ["ecologie.0", "ecologie.1"],
+      "relatedQuestionIds": ["q13-renouvelables", "q12-nucleaire"]
+    },
+    {
+      "id": "renforcer-l-aide-a-l-ukraine-et-la-defense-europee",
+      "title": "Renforcer l'aide à l'Ukraine et la défense européenne",
+      "text": "Financer l'aide à l'Ukraine par les avoirs russes gelés et créer un fonds européen de défense de 100 milliards d'euros.",
+      "measureRefs": ["europe.0", "europe.1"],
+      "relatedQuestionIds": ["q18-ukraine", "q20-defense-europe"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "Parti socialiste : 1969 (congrès d'Alfortville), refondé au congrès d'Épinay en 1971, héritier de la SFIO (1905) ; Place publique : 2018",
@@ -1295,6 +1330,7 @@
       "statusLabel": "Candidat investi",
       "candidate": "Raphaël Glucksmann a déclaré sa candidature le 23 août 2026 ; il a été désigné le 11 octobre 2026 par la primaire organisée par le Parti socialiste, Place publique et la Gauche républicaine et socialiste (GRS), remportée dès le premier tour avec 66,17 % des voix selon Public Sénat, devant Olivier Faure (14,46 %). Le PS met à sa disposition ses moyens militants et financiers.",
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026 (en cours de rédaction, une trentaine de groupes de travail selon franceinfo, 13 octobre 2026). Fiche fondée sur les déclarations du candidat (2025-2026), son livre « Nous avons encore envie » (mai 2026) tel que rapporté par la presse, le programme européen PS–Place publique 2024 et les votes du groupe Socialistes à l'Assemblée.",
+      "programmeState": "non-publie",
       "themes": {
         "economie": {
           "summary": "Le candidat propose de rééquilibrer la fiscalité entre travail, capital et héritage, en taxant davantage les « méga-héritages » pour financer une hausse du salaire net. Il a défendu en 2025 la « taxe Zucman » et souhaite réorienter les aides publiques aux entreprises.",

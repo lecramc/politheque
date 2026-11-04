@@ -10,8 +10,17 @@ import { QUESTIONS } from '@/src/programmes/data/questions';
 import themes from '@/src/programmes/data/themes.json';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
 import { validateJournal } from '@/src/programmes/models/corrections/corrections.service';
+import { editorialIssues } from '@/src/programmes/models/editorial-vocabulary';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
+import {
+  glanceQuestionIds,
+  hasKeyIdeasSection,
+  isKeyIdeaVerified,
+  KEY_IDEAS_COUNT,
+  keyIdeaSources,
+  keyIdeaTheme,
+} from '@/src/programmes/models/key-ideas.service';
 import { followUps } from '@/src/programmes/models/legal/legal-followup';
 import { promoteDraft } from '@/src/programmes/models/legal/legal-promotion';
 import { validateLegalDossier } from '@/src/programmes/models/legal/legal-validation';
@@ -321,5 +330,121 @@ describe('Feature: intégrité des procédures judiciaires (ajout)', () => {
   it('should not leave an announced next step overdue by more than 10 days', () => {
     const overdue = followUps(LEGAL_DOSSIERS, today).filter((f) => f.kind === 'depassee');
     expect(overdue.map((f) => `${f.partyId}/${f.entryId}`)).toEqual([]);
+  });
+});
+
+describe('Feature: intégrité des idées clés, des libellés courts et de l’identité (ajout)', () => {
+  const ELECTION = 'presidentielle-2027';
+  const THEME_ORDER = themes.map((t) => t.id);
+
+  it('should give every question a short label of 80 characters at most', () => {
+    for (const question of QUESTIONS) {
+      expect(question.shortLabel?.trim().length, question.id).toBeGreaterThan(3);
+      expect(question.shortLabel.length, question.id).toBeLessThanOrEqual(80);
+      expect(editorialIssues(question.shortLabel), question.id).toEqual([]);
+    }
+  });
+
+  it('should expose the same 7 great questions for the ten parties', () => {
+    expect(glanceQuestionIds(QUESTIONS, PARTIES)).toEqual([
+      'q01-isf',
+      'q04-retraite',
+      'q08-preference',
+      'q10-peines-planchers',
+      'q12-nucleaire',
+      'q16-fin-de-vie',
+      'q19-droit-europeen',
+    ]);
+  });
+
+  describe('Feature: key ideas section (charter, rule 11)', () => {
+    const incompleteParties = PARTIES.filter(
+      (party) =>
+        party.keyIdeas.length !== KEY_IDEAS_COUNT ||
+        !party.keyIdeas.every((idea) => isKeyIdeaVerified(party, ELECTION, idea))
+    );
+
+    it('should show the key ideas section only if all parties have exactly 4 verified ideas', () => {
+      expect(hasKeyIdeasSection(PARTIES, ELECTION)).toBe(incompleteParties.length === 0);
+    });
+
+    it('should hide the key ideas section while some parties are incomplete', () => {
+      const names = incompleteParties.map(
+        (p) => `${p.id} (${p.keyIdeas.length}/${KEY_IDEAS_COUNT})`
+      );
+      expect(
+        hasKeyIdeasSection(PARTIES, ELECTION),
+        `Section masquée, partis incomplets : ${names.join(', ')}`
+      ).toBe(incompleteParties.length === 0);
+    });
+  });
+
+  describe.each(PARTIES.map((p) => [p.id, p] as const))('parti %s', (_, party) => {
+    const candidacy = party.candidacies[ELECTION];
+
+    it('should state its founding year, its leader and the state of its programme', () => {
+      expect(Number.isInteger(party.foundedYear), party.id).toBe(true);
+      expect(party.history!.founded, party.id).toContain(String(party.foundedYear));
+      expect(party.leader.name.trim().length, party.id).toBeGreaterThan(3);
+      expect(['présidé par', 'dirigé par', 'coordonné par']).toContain(party.leader.role);
+      expect(['publie', 'partiel', 'non-publie']).toContain(candidacy.programmeState);
+      if (candidacy.programmeState === 'partiel') {
+        expect(candidacy.programmeStateDetail!.length, party.id).toBeLessThanOrEqual(30);
+      } else {
+        expect(candidacy.programmeStateDetail, party.id).toBeUndefined();
+      }
+    });
+
+    it('should have at most 4 key ideas (charter, rule 11)', () => {
+      expect(party.keyIdeas.length, party.id).toBeLessThanOrEqual(KEY_IDEAS_COUNT);
+    });
+
+    it('should write each key idea within the limits, without evaluative terms or work notes', () => {
+      const ids = party.keyIdeas.map((idea) => idea.id);
+      expect(new Set(ids).size, `${party.id}: ids en double`).toBe(ids.length);
+      for (const idea of party.keyIdeas) {
+        const where = `${party.id}/${idea.id}`;
+        expect(idea.title.length, where).toBeLessThanOrEqual(60);
+        expect(idea.text.length, where).toBeLessThanOrEqual(200);
+        expect(idea.title, where).not.toMatch(WEAK_SOURCE_NAMES);
+        expect(idea.text, where).not.toMatch(WEAK_SOURCE_NAMES);
+        expect(editorialIssues(idea.title), where).toEqual([]);
+        expect(editorialIssues(idea.text), where).toEqual([]);
+        expect(idea.relatedQuestionIds.length, where).toBeLessThanOrEqual(2);
+      }
+    });
+
+    it('should reference existing measures and questions where the party has a position', () => {
+      for (const idea of party.keyIdeas) {
+        const where = `${party.id}/${idea.id}`;
+        expect(idea.measureRefs.length, where).toBeGreaterThan(0);
+        for (const ref of idea.measureRefs) {
+          const [themeId, index] = ref.split('.');
+          const measure =
+            candidacy.themes[themeId as keyof typeof candidacy.themes]?.measures[Number(index)];
+          expect(measure, `${where}: ${ref}`).toBeDefined();
+        }
+        for (const questionId of idea.relatedQuestionIds) {
+          expect(party.stances[questionId]?.stance, `${where}: ${questionId}`).not.toBeNull();
+          expect(party.stances[questionId], `${where}: ${questionId}`).toBeDefined();
+        }
+      }
+    });
+
+    it('should cover 4 different themes, in the fixed order of the site themes', () => {
+      const keyThemes = party.keyIdeas.map(keyIdeaTheme);
+      expect(new Set(keyThemes).size, party.id).toBe(keyThemes.length);
+      const positions = keyThemes.map((theme) => THEME_ORDER.indexOf(theme));
+      expect(positions, party.id).toEqual([...positions].sort((a, b) => a - b));
+    });
+
+    it('should back every key idea with 2+ sources on distinct domains, one independent of the party', () => {
+      for (const idea of party.keyIdeas) {
+        const where = `${party.id}/${idea.id}`;
+        const sources = keyIdeaSources(party, ELECTION, idea);
+        for (const source of sources) expectValidSource(source, where);
+        expect(isKeyIdeaVerified(party, ELECTION, idea), where).toBe(true);
+      }
+    });
   });
 });

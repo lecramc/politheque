@@ -5,6 +5,34 @@
   "color": "#1B3D8F",
   "family": "Centre droit (presse de référence et analystes ; bloc « centre » du nuancier du ministère de l'Intérieur ; position du parti sur cette étiquette non connue)",
   "description": "Horizons est le parti fondé le 9 octobre 2021 au Havre par Édouard Philippe, Premier ministre de 2017 à 2020 et maire du Havre, qui le préside. À l'Assemblée, il dispose du groupe Horizons & Indépendants, qui compte 35 députés (novembre 2026, selon Datan). Aux européennes de 2024, Horizons figurait sur la liste « Besoin d'Europe » conduite par Valérie Hayer (14,60 %). Édouard Philippe a annoncé sa candidature à la présidentielle dès septembre 2024. Depuis le 29 octobre 2026, il est témoin assisté (et non mis en examen) dans une information judiciaire sur la gestion de la Cité numérique du Havre ; voir le détail de la candidature.",
+  "foundedYear": 2021,
+  "leader": {
+    "name": "Édouard Philippe",
+    "role": "présidé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "ramener-le-deficit-public-a-2-du-pib",
+      "title": "Ramener le déficit public à 2 % du PIB",
+      "text": "Passer de plus de 5 % à 2 % du PIB en fin de quinquennat, avec une « règle d'or » inscrite dans la Constitution par référendum.",
+      "measureRefs": ["economie.1"],
+      "relatedQuestionIds": ["q02-depenses"]
+    },
+    {
+      "id": "porter-l-age-de-depart-a-la-retraite-a-65-ans",
+      "title": "Porter l'âge de départ à la retraite à 65 ans",
+      "text": "Relever progressivement l'âge à 65 ans et la durée de cotisation à 45 ans, « pour ceux qui le peuvent ».",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q04-retraite"]
+    },
+    {
+      "id": "diviser-par-deux-l-immigration-legale",
+      "title": "Diviser par deux l'immigration légale",
+      "text": "Revenir à un niveau « largement inférieur à 200 000 » titres de séjour par an et suspendre le regroupement familial.",
+      "measureRefs": ["immigration.0", "immigration.1"],
+      "relatedQuestionIds": ["q07-immigration"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "2021 (fondé le 9 octobre 2021 au Havre)",
@@ -1004,6 +1032,8 @@
       "statusLabel": "Candidat déclaré",
       "candidate": "Édouard Philippe a annoncé sa candidature le 3 septembre 2024 dans un entretien au Point. Le 29 octobre 2026, il a été entendu par deux juges d'instruction financiers de Paris et placé sous le statut de témoin assisté (et non mis en examen) dans une information judiciaire portant notamment sur des soupçons de détournement de fonds publics, de favoritisme et de harcèlement moral liés à la gestion de la Cité numérique du Havre. L'enquête, d'abord préliminaire (Parquet national financier, plainte de 2023), a été confiée en mai 2026 à des juges d'instruction après une plainte avec constitution de partie civile déposée en juin 2025. Le statut de témoin assisté peut évoluer au cours de l'instruction. Son avocat, Emmanuel Marsigny, a déclaré que ce statut confirmait qu'il n'y avait « rien à lui reprocher » ; l'avocat de la plaignante, Jérôme Karsenti, a déclaré : « Nous nous réjouissons que l'instruction suive son cours ».",
       "programmeStatus": "Le site de campagne edouardphilippe.fr publie de « premières orientations » détaillées en quatre priorités (France « plus prospère », « plus sûre », « plus attentive à ses enfants », « plus conquérante ») ; pas de document programmatique complet daté. Fiche fondée sur ces pages, les déclarations du candidat (2025-2026) et les votes du groupe Horizons.",
+      "programmeState": "partiel",
+      "programmeStateDetail": "quatre priorités",
       "themes": {
         "economie": {
           "summary": "Le candidat place le redressement des comptes publics en priorité : déficit ramené à 2 % du PIB en fin de quinquennat, sans hausse d'impôts, avec un effort concentré pour moitié sur les dépenses sociales. Il propose un « pacte fiscal » de 50 Md€ avec les entreprises.",

@@ -5,6 +5,41 @@
   "color": "#0D378A",
   "family": "Extrême droite (presse de référence, encyclopédies et nombreux politistes ; « droite radicale » ou « national-populisme » pour d'autres politistes ; bloc « extrême droite » du nuancier du ministère de l'Intérieur, rattachement jugé légal par le Conseil d'État le 11 mars 2024 ; le parti récuse ce terme et se présente comme « national » et « patriote »)",
   "description": "Le Rassemblement national a été fondé en 1972 sous le nom de Front national et renommé en 2018 ; il est présidé par Jordan Bardella, réélu le 24 octobre 2026 au congrès d'Orléans. Marine Le Pen a obtenu 23,15 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux législatives de 2024, le RN et ses alliés ont recueilli 33,15 % au premier tour, et le groupe RN compte 121 députés (novembre 2026, selon Datan). Marine Le Pen a été condamnée en appel le 7 juillet 2026 pour détournement de fonds publics, notamment à une peine d'inéligibilité, et s'est pourvue en cassation ; voir le détail de la candidature.",
+  "foundedYear": 1972,
+  "leader": {
+    "name": "Jordan Bardella",
+    "role": "présidé par"
+  },
+  "keyIdeas": [
+    {
+      "id": "baisser-la-tva-sur-l-energie",
+      "title": "Baisser la TVA sur l'énergie",
+      "text": "Baisser la TVA sur le gaz, l'électricité et les carburants, et la supprimer sur « 100 produits de première nécessité ».",
+      "measureRefs": ["economie.1"],
+      "relatedQuestionIds": ["q28-prix-energie"]
+    },
+    {
+      "id": "revenir-a-la-retraite-a-62-ans",
+      "title": "Revenir à la retraite à 62 ans",
+      "text": "Ramener l'âge légal à 62 ans, et à 60 ans pour ceux qui ont commencé à travailler avant 20 ans.",
+      "measureRefs": ["travail.0"],
+      "relatedQuestionIds": ["q04-retraite"]
+    },
+    {
+      "id": "instaurer-la-priorite-nationale",
+      "title": "Instaurer la « priorité nationale »",
+      "text": "Par un référendum qui modifierait la Constitution : priorité aux Français pour l'emploi et le logement, aides de solidarité réservées aux Français, regroupement familial encadré ou interdit.",
+      "measureRefs": ["immigration.0"],
+      "relatedQuestionIds": ["q08-preference", "q23-referendum"]
+    },
+    {
+      "id": "retablir-les-peines-planchers",
+      "title": "Rétablir les peines planchers",
+      "text": "Rétablir des peines minimales obligatoires pour certains délits.",
+      "measureRefs": ["securite.0"],
+      "relatedQuestionIds": ["q10-peines-planchers"]
+    }
+  ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "1972 (sous le nom Front national ; renommé Rassemblement national en 2018)",
@@ -1338,6 +1373,7 @@
       "statusLabel": "Candidate déclarée",
       "candidate": "Marine Le Pen a annoncé sa candidature le 7 juillet 2026, jour de l'arrêt de la cour d'appel de Paris. Ce jour-là, la cour l'a condamnée pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN à trois ans d'emprisonnement dont deux avec sursis (un an ferme aménageable sous bracelet électronique), 100 000 € d'amende et une peine d'inéligibilité de 45 mois dont 30 avec sursis, contre cinq ans d'inéligibilité avec exécution provisoire en première instance (31 mars 2025). La cour ayant considéré les 15 mois d'inéligibilité ferme comme déjà exécutés depuis le jugement de première instance, elle est présentée comme éligible. Elle conteste sa condamnation et a formé un pourvoi en cassation : la Cour de cassation a indiqué le 8 juillet 2026 pouvoir statuer « au plus tard début avril 2027 », calendrier « susceptible d'évoluer », et des questions prioritaires de constitutionnalité doivent être examinées le 16 décembre 2026. L'effet du pourvoi est discuté : le procureur général près la Cour de cassation, Rémy Heitz, a déclaré le 9 juillet 2026 que le pourvoi « suspend l'exécution de l'arrêt », tandis que Didier Guérin, président de chambre honoraire à la Cour de cassation, a soutenu dans Le Monde le 27 octobre 2026 qu'elle serait « actuellement inéligible » (ses avocats l'ont signalé au Conseil supérieur de la magistrature). Jordan Bardella a déclaré qu'il serait le candidat du parti si Marine Le Pen était « empêchée ».",
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le contre-budget 2026 (octobre 2025), la trajectoire budgétaire 2027-2032 présentée le 6 octobre 2026, le programme des législatives 2024, le programme présidentiel 2022 (22 mesures et livrets thématiques) et les votes du groupe RN à l'Assemblée (XVIIe législature). Les positions de 2022 sont signalées comme telles. Les chiffres de la trajectoire 2027-2032 proviennent de comptes rendus de presse (Public Sénat, AFP) de la conférence de presse du 6 octobre 2026.",
+      "programmeState": "non-publie",
       "themes": {
         "economie": {
           "summary": "Le RN propose un plan d'économies centré sur l'immigration, la contribution française à l'UE et les agences de l'État, combiné à des baisses de TVA et d'impôts de production. Il propose de remplacer l'IFI par un impôt sur la fortune financière.",
