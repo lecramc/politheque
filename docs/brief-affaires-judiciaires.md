@@ -147,3 +147,21 @@ sources indépendantes (décision de justice, communiqué du parquet, presse nat
 Pour la symétrie, un agrégateur est exploité **pour les 10 partis de la même façon** ; si sa couverture
 est inégale selon les partis, le signaler dans `SYNTHESE.md` et compenser par une recherche directe pour
 les partis moins couverts.
+
+## 9. Arbitrages de l'éditeur (4 novembre 2026, après la passe 3)
+
+Affaires judiciaires :
+
+1. Condamnation sans trace de recours → publiable avec le libellé factuel « condamné·e par [juridiction] le [date] ; nous n'avons pas trouvé trace d'un recours » (statut `condamnation-recours-non-documente`), jamais « définitive » sans preuve. Une exécution documentée de la peine vaut caractère définitif.
+2. Réhabilitation de plein droit (art. 133-13 C. pén.) → toutes les condamnations concernées restent dans les dossiers, signalées pour l'avis juridique ; même traitement pour les 10 partis.
+3. Amnistie de 1990 (Urba, Nucci, Gifco) → avis juridique.
+4. Issue introuvable → dernier statut documenté, avec « dernière information publique : [mois année] ».
+5. Rattachement : adhésion établie par une source ; à défaut, groupe parlementaire actuel ; personne retirée de toute activité partisane → dernier parti.
+6. Ravier → hors périmètre.
+7. Entrée « parti » pour un financement occulte seulement si une décision de justice établit que le parti en a bénéficié (même règle Urba / Gifco).
+8. Sources : un communiqué de partie civile n'est pas une source indépendante ; deux titres d'un même groupe de presse = une seule source ; un site de presse spécialisé sérieux compte comme presse ; en cas de dates divergentes, la date de la décision fait foi.
+9. Périmètre : activité professionnelle privée (ex. pharmacienne) → exclue ; actions militantes d'élus (fauchages OGM) → incluses ; faits commis comme maire → inclus ; candidats jamais élus sans fonction nationale → exclus ; décision visant un parti européen → exclue.
+10. Une seule entrée par affaire (Baupin 2019 mentionné dans l'entrée de l'enquête).
+11. Mamère : condamnation + arrêt CEDH côte à côte ; faits d'assistant avant le mandat et faits antérieurs à la fondation du parti → inclus.
+
+Propositions jugées contraires au droit : 12. Le Comité européen des droits sociaux est une autorité ; recherche symétrique pour le PS 2012-2017. 13. Décret annulé par le Conseil d'État → inclus, rattaché au parti du gouvernement. 14. Gouvernements sans majorité depuis 2024 → rattachés au parti du Premier ministre (Barnier → LR, Lecornu → Renaissance ; Bayrou → MoDem, hors des 10). 15. The Connexion ne compte pas comme source nationale. 16. Cosigner une PPL dont le premier signataire est d'un autre parti ne fait pas du parti un auteur. 17. PS, entrée sur les copies de données (état d'urgence) : conservée (décision de censure). 18. Accord LFI-EELV de 2022 : texte cosigné → EELV co-auteur.
