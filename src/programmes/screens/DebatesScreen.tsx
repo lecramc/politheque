@@ -7,14 +7,19 @@ import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Page } from '@/src/programmes/components/Page';
+import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
+import { pageMetaViewModel } from '@/src/programmes/view-models/page-meta.view-model';
 import { themesViewModel } from '@/src/programmes/view-models/theme.view-model';
+
+const metaViewModel = pageMetaViewModel((catalog) => rubricMeta('debats', catalog));
 
 export default function DebatesScreen() {
   const vm = useViewModel(themesViewModel);
+  const meta = useViewModel(metaViewModel);
   const { colors, effects, fonts } = useTheme();
 
   return (
-    <Page title={'Les grands débats'} loading={vm.status !== 'loaded'}>
+    <Page meta={meta} loading={vm.status !== 'loaded'}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Les grands débats</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>

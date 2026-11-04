@@ -8,14 +8,19 @@ import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Arc } from '@/src/programmes/components/Arc';
 import { Page } from '@/src/programmes/components/Page';
+import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
 import { guideViewModel } from '@/src/programmes/view-models/guide.view-model';
+import { pageMetaViewModel } from '@/src/programmes/view-models/page-meta.view-model';
+
+const metaViewModel = pageMetaViewModel((catalog) => rubricMeta('comprendre', catalog));
 
 export default function GuideScreen() {
   const vm = useViewModel(guideViewModel);
+  const meta = useViewModel(metaViewModel);
   const { colors, effects, fonts } = useTheme();
 
   return (
-    <Page title={'Comprendre la politique'} loading={vm.status !== 'loaded'}>
+    <Page meta={meta} loading={vm.status !== 'loaded'}>
       <View style={{ flexDirection: 'row', alignItems: 'flex-end', gap: effects.spacing.sm }}>
         <View style={{ flex: 1, gap: 6 }}>
           <Text variant="title">Comprendre la politique</Text>

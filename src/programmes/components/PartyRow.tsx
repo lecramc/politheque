@@ -7,31 +7,26 @@ import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import type { Party } from '@/src/programmes/models/programme.model';
+import { partyHref, type PartySection } from '@/src/programmes/models/seo/party-sections';
 
 /** Ligne dense d'une liste de partis : anneau, nom, une ligne de contexte, chevron. */
 export function PartyRow({
   party,
   subtitle,
   trailing,
-  tab,
+  section,
   first = false,
 }: {
   party: Party;
   subtitle?: string;
   trailing?: ReactNode;
-  /** Onglet de la fiche à ouvrir. */
-  tab?: string;
+  /** Section de la fiche à ouvrir (vraie route, indexable). */
+  section?: PartySection;
   first?: boolean;
 }) {
   const { colors, effects, fonts } = useTheme();
   return (
-    <Link
-      href={{
-        pathname: '/partis/[id]',
-        params: tab ? { id: party.id, onglet: tab } : { id: party.id },
-      }}
-      asChild
-    >
+    <Link href={partyHref(party.id, section) as never} asChild>
       <Pressable
         large
         accessibilityRole="link"
@@ -67,6 +62,7 @@ export function RowGroup({ children }: { children: ReactNode }) {
   const { colors, effects } = useTheme();
   return (
     <View
+      role="list"
       style={{
         backgroundColor: colors.surface.primary,
         borderWidth: 1,
@@ -75,7 +71,9 @@ export function RowGroup({ children }: { children: ReactNode }) {
         overflow: 'hidden',
       }}
     >
-      {children}
+      {React.Children.map(children, (child) =>
+        child ? <View role="listitem">{child}</View> : null
+      )}
     </View>
   );
 }

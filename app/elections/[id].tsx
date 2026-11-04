@@ -1,7 +1,5 @@
-import { ELECTIONS } from '@/src/programmes/data/elections';
+import { staticParamsFor } from '@/src/programmes/models/seo/site-routes';
 
 export { default } from '@/src/programmes/screens/ElectionScreen';
 
-export function generateStaticParams() {
-  return ELECTIONS.map((election) => ({ id: election.id }));
-}
+export const generateStaticParams = staticParamsFor('/elections/[id]');

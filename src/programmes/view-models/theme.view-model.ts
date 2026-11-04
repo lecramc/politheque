@@ -3,6 +3,7 @@ import { createSelector } from 'reselect';
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { candidatesOf } from '@/src/programmes/models/election.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
+import { debateMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import {
   selectCatalog,
   selectCatalogStatus,
@@ -31,6 +32,8 @@ export const themeViewModel =
         return {
           status,
           theme,
+          meta: theme && catalog ? debateMeta(theme, catalog) : null,
+          notFoundMeta: nonIndexableMeta('Thème introuvable', `/debats/${themeId}`),
           markRead: () => dispatch(markContentReadUsecase(contentKey.debate(themeId))),
           election,
           position: { index: index + 1, total: themes.length },

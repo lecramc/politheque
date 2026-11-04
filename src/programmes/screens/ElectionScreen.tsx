@@ -38,7 +38,7 @@ export default function ElectionScreen() {
 
   if (vm.status === 'loaded' && !election) {
     return (
-      <Page title={'Élection introuvable'} back={{ label: 'Élections', href: '/elections' }}>
+      <Page meta={vm.notFoundMeta} back={{ label: 'Élections', href: '/elections' }}>
         <Text variant="title">Élection introuvable</Text>
       </Page>
     );
@@ -50,7 +50,8 @@ export default function ElectionScreen() {
 
   return (
     <Page
-      title={election?.title}
+      meta={vm.meta}
+      article
       loading={vm.status !== 'loaded'}
       back={{ label: 'Élections', href: '/elections' }}
       onReachEnd={vm.markRead}
@@ -81,7 +82,9 @@ export default function ElectionScreen() {
           </View>
 
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption">Le calendrier</Text>
+            <Text variant="caption" headingLevel={2}>
+              Le calendrier
+            </Text>
             <ScrollView
               horizontal
               showsHorizontalScrollIndicator={false}
@@ -136,14 +139,16 @@ export default function ElectionScreen() {
           </View>
 
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption">Candidatures · ordre alphabétique</Text>
+            <Text variant="caption" headingLevel={2}>
+              Candidatures · ordre alphabétique
+            </Text>
             <RowGroup>
               {vm.candidates.map(({ party, candidacy }, index) => (
                 <PartyRow
                   key={party.id}
                   party={party}
                   first={index === 0}
-                  tab="programme"
+                  section="programme-2027"
                   subtitle={candidacy.candidateName}
                   trailing={<StatusChip label={candidacy.statusLabel} />}
                 />
@@ -152,7 +157,9 @@ export default function ElectionScreen() {
           </View>
 
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption">Comparer les programmes par thème</Text>
+            <Text variant="caption" headingLevel={2}>
+              Comparer les programmes par thème
+            </Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
               {vm.themes.map((theme) => (
                 <Link
@@ -182,7 +189,9 @@ export default function ElectionScreen() {
           </View>
 
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption">Pour bien comprendre</Text>
+            <Text variant="caption" headingLevel={2}>
+              Pour bien comprendre
+            </Text>
             {vm.guideSections.map((section) => (
               <Link
                 key={section.id}

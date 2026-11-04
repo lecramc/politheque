@@ -1,7 +1,11 @@
 import { ScrollViewStyleReset } from 'expo-router/html';
 import type { PropsWithChildren } from 'react';
 
-// Document HTML racine de l'export web statique (langue, titre, description).
+import { APP_NAME, SITE_LOCALE } from '@/src/core/config/app';
+
+// Document HTML racine de l'export web statique : uniquement les invariants du site.
+// Tout ce qui dépend de la page (title, description, canonical, Open Graph, JSON-LD)
+// vient de SeoHead : rien ne doit être émis aux deux endroits (pas de déduplication ici).
 export default function Root({ children }: PropsWithChildren) {
   return (
     <html lang="fr">
@@ -9,11 +13,10 @@ export default function Root({ children }: PropsWithChildren) {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Travée — la politique française, expliquée simplement</title>
-        <meta
-          name="description"
-          content="Institutions, partis, élections et grands débats : comprendre la politique française et la présidentielle 2027, avec la source de chaque information."
-        />
+        <meta name="theme-color" content="#FBF8F3" />
+        <meta property="og:site_name" content={APP_NAME} />
+        <meta property="og:locale" content={SITE_LOCALE} />
+        <meta name="twitter:card" content="summary_large_image" />
         <ScrollViewStyleReset />
       </head>
       <body>{children}</body>

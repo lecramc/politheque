@@ -12,12 +12,17 @@ import { Accordion } from '@/src/programmes/components/Accordion';
 import { Arc } from '@/src/programmes/components/Arc';
 import { Page } from '@/src/programmes/components/Page';
 import type { AnswerValue } from '@/src/programmes/models/matching.service';
+import { quizMeta } from '@/src/programmes/models/seo/page-meta';
+import { pageMetaViewModel } from '@/src/programmes/view-models/page-meta.view-model';
 import { quizViewModel } from '@/src/programmes/view-models/quiz.view-model';
 
 const SYMBOL: Record<string, string> = { '2': '++', '1': '+', '0': '=', '-1': '−', '-2': '−−' };
 
+const metaViewModel = pageMetaViewModel((catalog) => quizMeta(catalog.questions.length));
+
 export default function QuizScreen() {
   const vm = useViewModel(quizViewModel);
+  const meta = useViewModel(metaViewModel);
   const { colors, effects, fonts } = useTheme();
   const { ms } = useMotion();
   const opinions = vm.choices.filter((c) => c.value !== null);
@@ -66,7 +71,7 @@ export default function QuizScreen() {
   };
 
   return (
-    <Page title={'Me situer'} loading={!vm.ready} focus back={{ label: 'Quitter', href: '/' }}>
+    <Page meta={meta} loading={!vm.ready} focus back={{ label: 'Quitter', href: '/' }}>
       {vm.question ? (
         <View style={{ gap: effects.spacing.md }}>
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>

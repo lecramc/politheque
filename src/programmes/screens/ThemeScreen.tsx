@@ -1,4 +1,4 @@
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { Link, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
 import { ScrollView, View } from 'react-native';
 
@@ -20,12 +20,14 @@ import {
   firstSentence,
   firstSentences,
 } from '@/src/programmes/models/presentation.service';
-import type { PartyThemeProgramme } from '@/src/programmes/models/programme.model';
+import type { Party, PartyThemeProgramme } from '@/src/programmes/models/programme.model';
+import { partyLinkLabel } from '@/src/programmes/models/seo/page-meta';
+import { partyHref } from '@/src/programmes/models/seo/party-sections';
 import { themeViewModel } from '@/src/programmes/view-models/theme.view-model';
 
 type Mode = 'tous' | 'comparer';
 
-function ProgrammeDetail({ programme }: { programme: PartyThemeProgramme }) {
+function ProgrammeDetail({ programme, party }: { programme: PartyThemeProgramme; party: Party }) {
   const { colors } = useTheme();
   return (
     <>
@@ -46,6 +48,11 @@ function ProgrammeDetail({ programme }: { programme: PartyThemeProgramme }) {
           <SourceChip sources={measure.sources} subject={measure.text} />
         </View>
       ))}
+      <Link href={partyHref(party.id, 'programme-2027') as never}>
+        <Text style={{ color: colors.tint, fontSize: 15 }}>
+          {partyLinkLabel(party, 'programme-2027')}
+        </Text>
+      </Link>
     </>
   );
 }
@@ -54,7 +61,6 @@ export default function ThemeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const vm = useViewModel(themeViewModel(id));
   const { colors, effects, fonts } = useTheme();
-  const router = useRouter();
   const isDesktop = useIsDesktop();
   const [mode, setMode] = useState<Mode>('tous');
   const [selected, setSelected] = useState<string[]>([]);
@@ -62,7 +68,7 @@ export default function ThemeScreen() {
 
   if (vm.status === 'loaded' && !theme) {
     return (
-      <Page title={'Thème introuvable'} back={{ label: 'Débats', href: '/debats' }}>
+      <Page meta={vm.notFoundMeta} back={{ label: 'Débats', href: '/debats' }}>
         <Text variant="title">Thème introuvable</Text>
       </Page>
     );
@@ -78,7 +84,8 @@ export default function ThemeScreen() {
 
   return (
     <Page
-      title={theme?.title}
+      meta={vm.meta}
+      article
       loading={vm.status !== 'loaded'}
       back={{ label: 'Débats', href: '/debats' }}
       onReachEnd={vm.markRead}
@@ -92,12 +99,18 @@ export default function ThemeScreen() {
             <Text variant="title">{theme.debates[0]?.question ?? theme.title}</Text>
           </View>
 
-          <Accordion title="Les enjeux en bref" subtitle={firstSentences(theme.context, 2)}>
+          <Accordion
+            headingLevel={2}
+            title="Les enjeux en bref"
+            subtitle={firstSentences(theme.context, 2)}
+          >
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{theme.context}</Text>
           </Accordion>
 
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption">Chiffres clés</Text>
+            <Text variant="caption" headingLevel={2}>
+              Chiffres clés
+            </Text>
             <ScrollView
               horizontal
               showsHorizontalScrollIndicator={false}
@@ -123,7 +136,9 @@ export default function ThemeScreen() {
           </View>
 
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption">Les options en débat</Text>
+            <Text variant="caption" headingLevel={2}>
+              Les options en débat
+            </Text>
             {theme.debates.map((debate, index) => (
               <Accordion key={debate.question} title={debate.question} defaultOpen={index === 0}>
                 {debate.options.map((option) => (
@@ -148,7 +163,7 @@ export default function ThemeScreen() {
           </View>
 
           <View style={{ gap: effects.spacing.sm }}>
-            <Text variant="caption">
+            <Text variant="caption" headingLevel={2}>
               Ce que proposent les partis{vm.election ? ` · ${vm.election.title}` : ''}
             </Text>
             <Tabs
@@ -172,7 +187,7 @@ export default function ThemeScreen() {
                       <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
                         {candidate.split(' (')[0]}
                       </Text>
-                      <ProgrammeDetail programme={programme} />
+                      <ProgrammeDetail programme={programme} party={party} />
                     </Accordion>
                   ) : null
                 )
@@ -215,7 +230,9 @@ export default function ThemeScreen() {
                             <PartyDot color={party.color} size={24} label={party.shortName} />
                             <Text style={{ ...fonts.bold, flex: 1 }}>{displayName(party)}</Text>
                           </View>
-                          {programme ? <ProgrammeDetail programme={programme} /> : null}
+                          {programme ? (
+                            <ProgrammeDetail programme={programme} party={party} />
+                          ) : null}
                         </Card>
                       ))}
                     </View>
@@ -227,7 +244,9 @@ export default function ThemeScreen() {
 
           {vm.questions.length > 0 ? (
             <View style={{ gap: effects.spacing.xs }}>
-              <Text variant="caption">Qui est pour, qui est contre ?</Text>
+              <Text variant="caption" headingLevel={2}>
+                Qui est pour, qui est contre ?
+              </Text>
               {vm.questions.map(({ question, positions }) => (
                 <Accordion key={question.id} title={question.statement} subtitle={undefined}>
                   <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
@@ -245,7 +264,12 @@ export default function ThemeScreen() {
                       }}
                     >
                       <PartyDot color={party.color} size={24} label={party.shortName} />
-                      <Text style={{ width: 120, fontSize: 14 }}>{displayName(party)}</Text>
+                      <Link
+                        href={partyHref(party.id, 'positions') as never}
+                        style={{ width: 120, fontSize: 14, color: colors.tint }}
+                      >
+                        {displayName(party)}
+                      </Link>
                       <StanceBadge stance={stance?.stance ?? null} />
                       {stance?.justification ? (
                         <Text
@@ -272,12 +296,7 @@ export default function ThemeScreen() {
           />
 
           {vm.nextTheme ? (
-            <Button
-              variant="secondary"
-              onPress={() =>
-                router.replace({ pathname: '/debats/[id]', params: { id: vm.nextTheme!.id } })
-              }
-            >
+            <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
               {`Thème suivant : ${vm.nextTheme.title}`}
             </Button>
           ) : null}

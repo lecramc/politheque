@@ -7,12 +7,16 @@ import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyRow, RowGroup } from '@/src/programmes/components/PartyRow';
+import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
+import { pageMetaViewModel } from '@/src/programmes/view-models/page-meta.view-model';
 import { partiesViewModel } from '@/src/programmes/view-models/parties.view-model';
 
 const ELECTION_ID = 'presidentielle-2027';
+const metaViewModel = pageMetaViewModel((catalog) => rubricMeta('partis', catalog));
 
 export default function PartiesScreen() {
   const vm = useViewModel(partiesViewModel);
+  const meta = useViewModel(metaViewModel);
   const { colors, effects, fonts } = useTheme();
   const [onlyRunning, setOnlyRunning] = useState(false);
   const parties = onlyRunning ? vm.parties.filter((p) => p.candidacies[ELECTION_ID]) : vm.parties;
@@ -44,7 +48,7 @@ export default function PartiesScreen() {
   );
 
   return (
-    <Page title={'Les partis'} loading={vm.status !== 'loaded'}>
+    <Page meta={meta} loading={vm.status !== 'loaded'}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Les partis</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>

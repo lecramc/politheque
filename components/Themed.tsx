@@ -6,11 +6,13 @@ import { useTheme } from './ThemeContext';
 
 export type TextProps = DefaultText['props'] & {
   variant?: 'body' | 'title' | 'subtitle' | 'caption' | 'quote';
+  /** Niveau de titre (structure), indépendant de la variante (visuel). `title` vaut 1 par défaut. */
+  headingLevel?: 1 | 2 | 3 | 4;
 };
 export type ViewProps = DefaultView['props'];
 
 export function Text(props: TextProps) {
-  const { style, variant = 'body', children, ...otherProps } = props;
+  const { style, variant = 'body', headingLevel, children, ...otherProps } = props;
   const { colors, effects, fonts } = useTheme();
 
   const getTextStyle = () => {
@@ -54,8 +56,8 @@ export function Text(props: TextProps) {
   };
 
   // Les titres de page sont de vrais titres pour les lecteurs d'écran et le référencement.
-  const headingProps =
-    variant === 'title' ? { accessibilityRole: 'header' as const, 'aria-level': 1 } : {};
+  const level = headingLevel ?? (variant === 'title' ? 1 : undefined);
+  const headingProps = level ? { accessibilityRole: 'header' as const, 'aria-level': level } : {};
   const content = typeof children === 'string' ? frenchTypography(children) : children;
   return (
     <DefaultText style={[getTextStyle(), style]} {...headingProps} {...otherProps}>

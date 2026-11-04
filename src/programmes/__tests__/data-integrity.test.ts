@@ -141,3 +141,29 @@ describe('Feature: intégrité du parcours (ajout)', () => {
     for (const id of Object.values(JOURNEY_GUIDE_IDS).flat()) expect(ids).toContain(id);
   });
 });
+
+describe('Feature: intégrité du référencement (ajout)', () => {
+  const featured = ELECTIONS.find((e) => e.featured)!;
+
+  it('should give every party a history and a candidacy for the featured election (four pages each)', () => {
+    for (const party of PARTIES) {
+      expect(party.history, `${party.id} history`).toBeDefined();
+      expect(party.candidacies[featured.id], `${party.id} candidacy`).toBeDefined();
+    }
+  });
+
+  it('should only use real ISO verification dates, never in the future, when a date is provided', () => {
+    const today = new Date().toISOString().slice(0, 10);
+    const dated = [
+      ...PARTIES.map((p) => ({ id: p.id, date: p.lastVerified as string | undefined })),
+      ...ELECTIONS.map((e) => ({ id: e.id, date: e.lastVerified })),
+      ...guide.map((s) => ({ id: s.id, date: (s as { lastVerified?: string }).lastVerified })),
+      ...themes.map((t) => ({ id: t.id, date: (t as { lastVerified?: string }).lastVerified })),
+    ];
+    for (const { id, date } of dated) {
+      if (date === undefined) continue;
+      expect(date, id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(date <= today, id).toBe(true);
+    }
+  });
+});

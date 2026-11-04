@@ -1,7 +1,5 @@
-import guide from '@/src/programmes/data/guide.json';
+import { staticParamsFor } from '@/src/programmes/models/seo/site-routes';
 
 export { default } from '@/src/programmes/screens/GuideSectionScreen';
 
-export function generateStaticParams() {
-  return guide.map((section) => ({ id: section.id }));
-}
+export const generateStaticParams = staticParamsFor('/comprendre/[id]');

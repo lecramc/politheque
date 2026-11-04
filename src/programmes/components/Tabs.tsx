@@ -1,3 +1,4 @@
+import { Link } from 'expo-router';
 import React, { ReactNode, useEffect, useRef, useState } from 'react';
 import { LayoutChangeEvent, ScrollView, StyleProp, View, ViewStyle } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
@@ -16,10 +17,16 @@ export function Tabs<T extends string>({
   tabs,
   value,
   onChange,
+  hrefOf,
+  navLabel,
 }: {
   tabs: { id: T; label: string }[];
   value: T;
-  onChange: (id: T) => void;
+  onChange?: (id: T) => void;
+  /** Onglets-liens (vraies pages, indexables) : chaque onglet est un <a href>. */
+  hrefOf?: (id: T) => string;
+  /** Nom de la navigation quand les onglets sont des liens. */
+  navLabel?: string;
 }) {
   const { colors, fonts } = useTheme();
   const { timing } = useMotion();
@@ -62,17 +69,31 @@ export function Tabs<T extends string>({
 
   return (
     <View style={{ borderBottomWidth: 1, borderColor: colors.surface.border.primary }}>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} accessibilityRole="tablist">
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator={false}
+        // Un ensemble de liens n'est pas un tablist : c'est une navigation.
+        {...(hrefOf
+          ? { role: 'navigation' as const, 'aria-label': navLabel }
+          : { accessibilityRole: 'tablist' as const })}
+      >
         {tabs.map((tab) => {
           const active = tab.id === value;
-          return (
+          const item = (
             <Pressable
               key={tab.id}
-              onPress={() => onChange(tab.id)}
               onLayout={onTabLayout(tab.id)}
-              accessibilityRole="tab"
-              accessibilityState={{ selected: active }}
-              aria-selected={active}
+              {...(hrefOf
+                ? {
+                    accessibilityRole: 'link' as const,
+                    'aria-current': active ? ('page' as const) : undefined,
+                  }
+                : {
+                    onPress: () => onChange?.(tab.id),
+                    accessibilityRole: 'tab' as const,
+                    accessibilityState: { selected: active },
+                    'aria-selected': active,
+                  })}
               hoverStyle={{ backgroundColor: colors.surface.hover }}
               style={{
                 minHeight: 48,
@@ -92,6 +113,13 @@ export function Tabs<T extends string>({
                 {tab.label}
               </Text>
             </Pressable>
+          );
+          return hrefOf ? (
+            <Link key={tab.id} href={hrefOf(tab.id) as never} asChild>
+              {item}
+            </Link>
+          ) : (
+            item
           );
         })}
         {measured ? (

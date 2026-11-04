@@ -1,0 +1,54 @@
+<!doctype html>
+<!--
+  Source de l'image de partage public/og.png (1200 x 630). Visuel neutre : aucun visage, aucun nom
+  de parti ou de candidat, aucune couleur de parti, aucun sondage.
+  Regénérer (par exemple quand le nom définitif sera arrêté) :
+  "$HOME/Library/Caches/ms-playwright/chromium_headless_shell-1148/chrome-mac/headless_shell" \
+    --no-sandbox --hide-scrollbars --force-device-scale-factor=1 --window-size=1200,630 \
+    --allow-file-access-from-files --screenshot=public/og.png assets/og/og.html
+  (ou Chrome : --headless --screenshot=public/og.png --window-size=1200,630 assets/og/og.html)
+-->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: 'Fraunces';
+        src: url('../../node_modules/@expo-google-fonts/fraunces/700Bold/Fraunces_700Bold.ttf');
+        font-weight: 700;
+      }
+      @font-face {
+        font-family: 'Atkinson';
+        src: url('../../node_modules/@expo-google-fonts/atkinson-hyperlegible/400Regular/AtkinsonHyperlegible_400Regular.ttf');
+        font-weight: 400;
+      }
+      * { box-sizing: border-box; margin: 0; }
+      body { width: 1200px; height: 630px; background: #fbf8f3; color: #15203a; font-family: 'Atkinson', sans-serif; position: relative; overflow: hidden; }
+      .stripe { position: absolute; left: 0; right: 0; top: 0; height: 14px; display: flex; }
+      .stripe div { flex: 1; }
+      .stripe .b { background: #1e3f8f; }
+      .stripe .w { background: #ffffff; border-bottom: 1px solid #d9d1c4; }
+      .stripe .r { background: #d2394a; }
+      .brand { position: absolute; left: 90px; top: 90px; display: flex; align-items: flex-end; gap: 24px; }
+      .mark { position: relative; width: 120px; height: 60px; }
+      .mark i { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); border-radius: 999px 999px 0 0; }
+      .mark .o { width: 120px; height: 60px; background: #d2394a; }
+      .mark .m { width: 88px; height: 44px; background: #ffffff; }
+      .mark .n { width: 56px; height: 28px; background: #1e3f8f; }
+      .name { font-family: 'Fraunces', serif; font-weight: 700; font-size: 72px; line-height: 64px; }
+      h1 { position: absolute; left: 90px; top: 250px; width: 1000px; font-family: 'Fraunces', serif; font-weight: 700; font-size: 84px; line-height: 92px; }
+      .sub { position: absolute; left: 90px; top: 480px; font-size: 34px; color: #4b5468; }
+      .src { position: absolute; left: 90px; top: 540px; font-size: 28px; color: #1e3f8f; }
+    </style>
+  </head>
+  <body>
+    <div class="stripe"><div class="b"></div><div class="w"></div><div class="r"></div></div>
+    <div class="brand">
+      <div class="mark"><i class="o"></i><i class="m"></i><i class="n"></i></div>
+      <div class="name">Travée</div>
+    </div>
+    <h1>Comprendre la politique française</h1>
+    <div class="sub">Institutions · Partis · Grands débats · Présidentielle 2027</div>
+    <div class="src">Chaque information sourcée et datée</div>
+  </body>
+</html>

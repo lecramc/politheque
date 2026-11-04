@@ -156,6 +156,8 @@ export interface Election {
   /** Sections du guide « Comprendre » utiles pour ce scrutin. */
   guideSectionIds: string[];
   candidaciesNote: string;
+  /** Date réelle de dernière vérification (ISO AAAA-MM-JJ) ; absente tant qu'aucune revue n'est datée. */
+  lastVerified?: string;
 }
 
 export interface KeyFigure {
@@ -173,6 +175,8 @@ export interface Theme {
   keyFigures: KeyFigure[];
   /** Grandes options en débat, présentées sans hiérarchie. */
   debates: { question: string; options: string[] }[];
+  /** Date réelle de dernière vérification (ISO) ; absente tant qu'aucune revue n'est datée. */
+  lastVerified?: string;
 }
 
 export interface Question {
@@ -207,6 +211,8 @@ export interface GuideSection {
   icon: string;
   summary: string;
   blocks: GuideBlock[];
+  /** Date réelle de dernière vérification (ISO) ; absente tant qu'aucune revue n'est datée. */
+  lastVerified?: string;
 }
 
 export interface Catalog {

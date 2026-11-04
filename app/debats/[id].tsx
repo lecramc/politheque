@@ -1,7 +1,5 @@
-import themes from '@/src/programmes/data/themes.json';
+import { staticParamsFor } from '@/src/programmes/models/seo/site-routes';
 
 export { default } from '@/src/programmes/screens/ThemeScreen';
 
-export function generateStaticParams() {
-  return themes.map((theme) => ({ id: theme.id }));
-}
+export const generateStaticParams = staticParamsFor('/debats/[id]');

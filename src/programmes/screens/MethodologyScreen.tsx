@@ -8,6 +8,7 @@ import { Page } from '@/src/programmes/components/Page';
 import { RowGroup } from '@/src/programmes/components/PartyRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import type { Source } from '@/src/programmes/models/programme.model';
+import { methodologyMeta } from '@/src/programmes/models/seo/page-meta';
 
 const COMMITMENTS = [
   { icon: 'checkmark', title: 'Chaque information a sa source', text: 'Avec sa date et sa nature' },
@@ -86,10 +87,12 @@ const EXAMPLE: Record<'croisee' | 'unique', Source[]> = {
   ],
 };
 
+const META = methodologyMeta();
+
 export default function MethodologyScreen() {
   const { colors, effects, fonts } = useTheme();
   return (
-    <Page title={'Méthodologie'} back={{ label: 'Retour', href: '/' }}>
+    <Page meta={META} back={{ label: 'Retour', href: '/' }}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Méthodologie</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>

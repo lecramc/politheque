@@ -43,6 +43,12 @@ pour la présidentielle 2027, **sans désinformation et sans orienter le lecteur
      versions et on l'indique.
 8. **Traçabilité.** Chaque fiche parti porte `lastVerified`. Toute correction est
    versionnée dans git.
+   **Toute modification de fond d'une fiche parti met à jour son `lastVerified`** : cette date
+   alimente le `<lastmod>` du plan du site, le `dateModified` des données structurées et la
+   mention « Fiche vérifiée le… » affichée sur la page. Ne jamais la modifier pour une simple
+   correction de forme (orthographe, mise en page), et ne jamais l'inventer : sans date de
+   vérification réelle, la page n'a pas de `lastmod` (c'est le cas du guide « Comprendre », des
+   thèmes et de l'élection tant qu'une revue datée n'y est pas inscrite dans `lastVerified`).
 
 ## Échelle des positions au questionnaire
 

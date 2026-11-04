@@ -17,6 +17,13 @@ export const firstSentences = (text: string, count: number) =>
 /** Retire la précision entre parenthèses : « Extrême droite (qualification…) » → « Extrême droite ». */
 export const beforeParenthesis = (text: string) => text.split(' (')[0].trim();
 
+/** Date de source affichée : AAAA, MM/AAAA ou JJ/MM/AAAA selon la précision de l'ISO. */
+export const formatSourceDate = (iso: string) => {
+  const [year, month, day] = iso.split('-');
+  if (!month) return year;
+  return day ? `${day}/${month}/${year}` : `${month}/${year}`;
+};
+
 const WORDS_PER_MINUTE = 200;
 
 export const readingMinutes = (texts: string[]) => {

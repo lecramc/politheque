@@ -16,6 +16,7 @@ export function PageSources({ sources }: { sources: Source[] }) {
   if (count === 0) return null;
   return (
     <Accordion
+      headingLevel={2}
       title={`Sources de cette page (${count})`}
       subtitle="D'où viennent les informations ci-dessus"
     >

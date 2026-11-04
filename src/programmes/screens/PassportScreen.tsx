@@ -1,5 +1,4 @@
 import { Link } from 'expo-router';
-import Head from 'expo-router/head';
 import React, { useState } from 'react';
 import { View } from 'react-native';
 
@@ -32,9 +31,6 @@ export default function PassportScreen() {
       loading={vm.status !== 'loaded'}
       back={{ label: JOURNEY_COPY.back, href: '/' }}
     >
-      <Head>
-        <meta name="robots" content="noindex" />
-      </Head>
       <PassportCover
         heading={vm.heading}
         subtitle={vm.subtitle}

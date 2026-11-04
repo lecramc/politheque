@@ -8,6 +8,7 @@ import {
   labelStyle,
   tint,
 } from '@expo/ui/swift-ui/modifiers';
+import { useRouter } from 'expo-router';
 import React from 'react';
 import { View } from 'react-native';
 
@@ -34,7 +35,9 @@ const mapSizeToControlSize = (
 };
 
 type IOSProps = {
-  onPress: () => void;
+  onPress?: () => void;
+  /** Destination interne : `router.push` après `onPress`. */
+  href?: string;
   children: React.ReactNode;
   disabled?: boolean;
   loading?: boolean;
@@ -49,7 +52,8 @@ type IOSProps = {
 };
 
 export default function ButtonIOS({
-  onPress,
+  onPress: onPressProp,
+  href,
   children,
   disabled: isDisabled,
   loading = false,
@@ -61,6 +65,11 @@ export default function ButtonIOS({
   onGlass = false,
 }: IOSProps) {
   const { theme, systemTheme, colors } = useTheme();
+  const router = useRouter();
+  const onPress = () => {
+    onPressProp?.();
+    if (href) router.push(href as never);
+  };
   // Sur une sheet native (qui suit l'OS), le Host doit suivre le thème système
   // et non le toggle app, sinon le bouton se désaligne quand app ≠ système.
   const hostColorScheme = onGlass ? systemTheme : theme;

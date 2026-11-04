@@ -1,5 +1,5 @@
-import React, { ReactNode, useEffect, useRef, useState } from 'react';
-import { LayoutChangeEvent, View } from 'react-native';
+import React, { ReactNode, useEffect, useId, useRef, useState } from 'react';
+import { LayoutChangeEvent, Platform, View } from 'react-native';
 import Animated, {
   runOnJS,
   useAnimatedStyle,
@@ -24,6 +24,7 @@ export function Accordion({
   children,
   flat = false,
   last = false,
+  headingLevel = 3,
 }: {
   title: string;
   subtitle?: string;
@@ -37,9 +38,12 @@ export function Accordion({
   flat?: boolean;
   /** Variante plate : dernière ligne du conteneur, sans bordure basse. */
   last?: boolean;
+  /** Niveau de titre de l'en-tête dans la structure de la page (h2 à h4). */
+  headingLevel?: 2 | 3 | 4;
 }) {
   const { colors, effects, fonts } = useTheme();
   const { timing } = useMotion();
+  const bodyId = useId();
   const [localOpen, setLocalOpen] = useState(defaultOpen);
   const open = controlledOpen ?? localOpen;
   const toggle = () => {
@@ -47,8 +51,9 @@ export function Accordion({
     onToggle?.(!open);
   };
 
-  // Le contenu reste monté pendant la fermeture, puis est retiré (DOM léger, lecteurs d'écran).
-  // Hors animation, le contenu est dans le flux (hauteur naturelle, rendu statique complet).
+  // Hors animation, le contenu ouvert est dans le flux (hauteur naturelle). Fermé, il reste
+  // monté sur le web, masqué par display:none : présent dans le HTML (indexable), mais ni
+  // visible, ni focalisable, ni lu par un lecteur d'écran.
   const [phase, setPhase] = useState<'open' | 'closed' | 'moving'>(open ? 'open' : 'closed');
   const progress = useSharedValue(open ? 1 : 0);
   const contentHeight = useSharedValue(0);
@@ -97,37 +102,45 @@ export function Accordion({
             }
       }
     >
-      <Pressable
-        large
-        onPress={toggle}
-        accessibilityRole="button"
-        accessibilityState={{ expanded: open }}
-        aria-expanded={open}
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          gap: 12,
-          minHeight: 56,
-          paddingHorizontal: flat ? 0 : effects.spacing.md,
-          paddingVertical: 12,
-        }}
-      >
-        {leading}
-        <View style={{ flex: 1, gap: 2 }}>
-          <Text style={{ ...fonts.bold, fontSize: 16, color: colors.text.primary }}>{title}</Text>
-          {subtitle && !open ? (
-            <Text style={{ fontSize: 14, color: colors.text.secondary }} numberOfLines={2}>
-              {subtitle}
-            </Text>
-          ) : null}
-        </View>
-        {trailing}
-        <Animated.View style={chevronStyle}>
-          <Icon name="chevron-down" variant="onGlass" size="small" />
-        </Animated.View>
-      </Pressable>
+      <View role="heading" aria-level={headingLevel}>
+        <Pressable
+          large
+          onPress={toggle}
+          accessibilityRole="button"
+          accessibilityState={{ expanded: open }}
+          aria-expanded={open}
+          aria-controls={bodyId}
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 12,
+            minHeight: 56,
+            paddingHorizontal: flat ? 0 : effects.spacing.md,
+            paddingVertical: 12,
+          }}
+        >
+          {leading}
+          <View style={{ flex: 1, gap: 2 }}>
+            <Text style={{ ...fonts.bold, fontSize: 16, color: colors.text.primary }}>{title}</Text>
+            {subtitle && !open ? (
+              <Text style={{ fontSize: 14, color: colors.text.secondary }} numberOfLines={2}>
+                {subtitle}
+              </Text>
+            ) : null}
+          </View>
+          {trailing}
+          <Animated.View style={chevronStyle}>
+            <Icon name="chevron-down" variant="onGlass" size="small" />
+          </Animated.View>
+        </Pressable>
+      </View>
       {phase === 'open' ? (
-        <View onLayout={onContentLayout} style={bodyPadding}>
+        <View id={bodyId} onLayout={onContentLayout} style={bodyPadding}>
+          {children}
+        </View>
+      ) : null}
+      {phase === 'closed' && Platform.OS === 'web' ? (
+        <View id={bodyId} aria-hidden style={[bodyPadding, { display: 'none' }]}>
           {children}
         </View>
       ) : null}

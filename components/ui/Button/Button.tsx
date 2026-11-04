@@ -1,6 +1,7 @@
 import { LinearGradient } from 'expo-linear-gradient';
+import { Link, useRouter } from 'expo-router';
 import React from 'react';
-import { ActivityIndicator, StyleSheet } from 'react-native';
+import { ActivityIndicator, Platform, StyleSheet } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
@@ -13,7 +14,10 @@ export type ButtonVariant = 'primary' | 'secondary' | 'tertiary' | 'danger' | 'b
 export type ButtonSize = 'small' | 'medium' | 'large';
 
 export type ButtonProps = {
-  onPress: () => void;
+  onPress?: () => void;
+  // Destination interne : vrai lien <a href> sur le web (référencement, clic droit), navigation
+  // `router.push` sur natif. `onPress` est alors appelé avant la navigation.
+  href?: string;
   children: React.ReactNode;
   disabled?: boolean;
   loading?: boolean;
@@ -49,7 +53,28 @@ const heightBySize: Record<ButtonSize, 'small' | 'medium' | 'large'> = {
  *
  * Rule of thumb: if you would write <button type="submit"> on the web → Button.
  */
-export default function Button({
+export default function Button({ href, onPress, ...props }: ButtonProps) {
+  const router = useRouter();
+  if (href && Platform.OS === 'web') {
+    return (
+      <Link href={href as never} asChild onPress={onPress}>
+        <ButtonView {...props} />
+      </Link>
+    );
+  }
+  return (
+    <ButtonView
+      {...props}
+      onPress={() => {
+        onPress?.();
+        if (href) router.push(href as never);
+      }}
+    />
+  );
+}
+
+// `linkProps` : props injectées par <Link asChild> (href, role, onPress), transmises au bouton.
+function ButtonView({
   onPress,
   children,
   disabled = false,
@@ -60,7 +85,8 @@ export default function Button({
   color,
   icon,
   onGlass = false,
-}: ButtonProps) {
+  ...linkProps
+}: Omit<ButtonProps, 'href'>) {
   const { colors, effects, fonts, systemColors } = useTheme();
   // Sur une surface native (sheet) → palette système ; sinon toggle app.
   const palette = onGlass ? systemColors : colors;
@@ -116,6 +142,7 @@ export default function Button({
         size={sizeProps}
         padding="none"
         disabled={isDisabled}
+        {...linkProps}
         accessibilityRole="button"
         accessibilityState={{ disabled: isDisabled, busy: loading }}
         style={{
@@ -167,6 +194,7 @@ export default function Button({
       size={sizeProps}
       padding="none"
       disabled={isDisabled}
+      {...linkProps}
       accessibilityRole="button"
       accessibilityState={{ disabled: isDisabled, busy: loading }}
       style={{

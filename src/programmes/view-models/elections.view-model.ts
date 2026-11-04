@@ -3,6 +3,7 @@ import { createSelector } from 'reselect';
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { candidatesOf, daysUntil, nextRound } from '@/src/programmes/models/election.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
+import { electionMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { selectCatalog, selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
 import { markContentReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
 
@@ -21,6 +22,8 @@ export const electionViewModel =
       return {
         status,
         election,
+        meta: election && catalog ? electionMeta(election, catalog) : null,
+        notFoundMeta: nonIndexableMeta('Élection introuvable', `/elections/${electionId}`),
         markRead: () => dispatch(markContentReadUsecase(contentKey.election(electionId))),
         daysLeft: round ? daysUntil(round.date, now) : null,
         round,

@@ -9,15 +9,20 @@ import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Arc } from '@/src/programmes/components/Arc';
 import { Page } from '@/src/programmes/components/Page';
 import { daysUntil, formatLongDate, nextRound } from '@/src/programmes/models/election.service';
+import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
 import { electionsViewModel } from '@/src/programmes/view-models/elections.view-model';
+import { pageMetaViewModel } from '@/src/programmes/view-models/page-meta.view-model';
+
+const metaViewModel = pageMetaViewModel((catalog) => rubricMeta('elections', catalog));
 
 export default function ElectionsScreen() {
   const vm = useViewModel(electionsViewModel);
+  const meta = useViewModel(metaViewModel);
   const { colors, effects, fonts } = useTheme();
   const now = new Date();
 
   return (
-    <Page title={'Les élections'} loading={vm.status !== 'loaded'}>
+    <Page meta={meta} loading={vm.status !== 'loaded'}>
       <View style={{ gap: 6 }}>
         <Text variant="title">Les élections</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>

@@ -2,10 +2,48 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
   "installCommand": "npm ci",
-  "buildCommand": "npx expo export --platform web && cp 'dist/+not-found.html' dist/404.html && rm -f dist/_sitemap.html",
+  "buildCommand": "npm run build:web",
   "outputDirectory": "dist",
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/partis/:id",
+      "has": [
+        {
+          "type": "query",
+          "key": "onglet",
+          "value": "histoire"
+        }
+      ],
+      "destination": "/partis/:id/histoire",
+      "permanent": true
+    },
+    {
+      "source": "/partis/:id",
+      "has": [
+        {
+          "type": "query",
+          "key": "onglet",
+          "value": "positions"
+        }
+      ],
+      "destination": "/partis/:id/positions",
+      "permanent": true
+    },
+    {
+      "source": "/partis/:id",
+      "has": [
+        {
+          "type": "query",
+          "key": "onglet",
+          "value": "programme"
+        }
+      ],
+      "destination": "/partis/:id/programme-2027",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",

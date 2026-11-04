@@ -4,6 +4,7 @@ import {
   afterFirstSentence,
   beforeParenthesis,
   displayName,
+  formatSourceDate,
   firstSentence,
   GUIDE_GROUPS,
   leanText,
@@ -120,5 +121,13 @@ describe('Feature: sous-titre de la carte de placement d’un parti', () => {
     expect(placementSummary({ placedCount: 0, axisCount: 3, positionsCount: 2 })).toBe(
       'Non placé : trop peu de positions connues'
     );
+  });
+});
+
+describe('Feature: date de source affichée', () => {
+  it('should format an ISO date according to its precision', () => {
+    expect(formatSourceDate('2026')).toBe('2026');
+    expect(formatSourceDate('2026-11')).toBe('11/2026');
+    expect(formatSourceDate('2026-11-03')).toBe('03/11/2026');
   });
 });

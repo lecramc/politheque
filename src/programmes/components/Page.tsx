@@ -1,5 +1,4 @@
 import { Link, usePathname } from 'expo-router';
-import Head from 'expo-router/head';
 import React, { ReactNode, useCallback, useEffect, useRef, useState } from 'react';
 import {
   LayoutChangeEvent,
@@ -24,9 +23,16 @@ import { Icon, Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
 import { APP_NAME } from '@/src/core/config/app';
+import { Breadcrumb } from '@/src/programmes/components/Breadcrumb';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
+import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { PageSkeleton } from '@/src/programmes/components/Skeleton';
 import { hasReachedEnd } from '@/src/programmes/models/reach-end.service';
+import {
+  nonIndexableMeta,
+  type Breadcrumb as BreadcrumbTrail,
+  type PageMeta,
+} from '@/src/programmes/models/seo/page-meta';
 
 type Href = '/comprendre' | '/partis' | '/elections' | '/debats' | '/me-situer';
 
@@ -62,6 +68,10 @@ function ActiveArc({ color }: { color: string }) {
   );
 }
 
+/** Chemin canonique du repli : sans requête ni barre finale. */
+const canonicalPath = (pathname: string) =>
+  pathname.length > 1 ? pathname.replace(/\/+$/, '').replace(/[?#].*$/, '') : '/';
+
 /** Onglet quitté au dernier appui : la barre de la page suivante fait glisser l'arc depuis lui. */
 let slideFrom: number | null = null;
 
@@ -96,6 +106,7 @@ function BottomTabBar() {
   return (
     <View
       role="navigation"
+      aria-label="Rubriques"
       onLayout={onLayout}
       style={[
         styles.tabBar,
@@ -157,6 +168,9 @@ export function Page({
   focus = false,
   wide = false,
   title,
+  meta,
+  breadcrumb,
+  article = false,
   onReachEnd,
 }: {
   /**
@@ -164,8 +178,17 @@ export function Page({
    * vu : 85 % défilé, ou contenu entièrement visible. Ignoré pendant le chargement.
    */
   onReachEnd?: () => void;
-  /** Titre de l'onglet du navigateur (référencement, partage). */
+  /**
+   * Métadonnées de la page (title, description, canonical, JSON-LD). `null` : aucune balise
+   * (le layout d'une fiche laisse l'écran enfant les rendre).
+   */
+  meta?: PageMeta | null;
+  /** Repli sans `meta` : title de la page, qui devient alors non indexée (jamais dupliquée). */
   title?: string;
+  /** Fil d'Ariane visible sur desktop ; par défaut celui de `meta`. */
+  breadcrumb?: BreadcrumbTrail;
+  /** Contenu éditorial autonome (guide, fiche, débat, élection) : balise <article>. */
+  article?: boolean;
   children: ReactNode;
   loading?: boolean;
   back?: { label: string; href: string };
@@ -177,6 +200,11 @@ export function Page({
   const isDesktop = useIsDesktop();
   const pathname = usePathname();
   const maxWidth = wide && isDesktop ? 1120 : CONTENT_MAX_WIDTH;
+  const headMeta =
+    meta === undefined && !loading
+      ? nonIndexableMeta(title ?? APP_NAME, canonicalPath(pathname))
+      : meta;
+  const trail = breadcrumb ?? headMeta?.breadcrumb ?? [];
   const showTabBar = !isDesktop && !focus;
 
   const measures = useRef({ offsetY: 0, viewportHeight: 0, contentHeight: 0 });
@@ -197,14 +225,9 @@ export function Page({
 
   return (
     <View style={{ flex: 1, backgroundColor: colors.background.secondary }}>
-      <Head>
-        <title>
-          {title
-            ? `${title} · ${APP_NAME}`
-            : `${APP_NAME} · la politique française, expliquée simplement`}
-        </title>
-      </Head>
+      {headMeta ? <SeoHead meta={headMeta} /> : null}
       <View
+        role="banner"
         style={{
           backgroundColor: colors.background.primary,
           borderBottomColor: colors.surface.border.primary,
@@ -241,7 +264,7 @@ export function Page({
           )}
 
           {isDesktop ? (
-            <View style={styles.desktopNav}>
+            <View role="navigation" aria-label="Rubriques" style={styles.desktopNav}>
               {NAV.map((item) => {
                 const active = pathname.startsWith(item.href);
                 return (
@@ -315,6 +338,7 @@ export function Page({
         contentContainerStyle={{ paddingBottom: showTabBar ? TAB_BAR_HEIGHT + 16 : 16 }}
       >
         <View
+          role="main"
           onLayout={(e) => {
             measures.current.contentHeight = e.nativeEvent.layout.height;
             check();
@@ -336,11 +360,15 @@ export function Page({
               duration={duration.page}
               style={{ gap: effects.spacing.lg }}
             >
-              {children}
+              {isDesktop && trail.length > 1 ? <Breadcrumb trail={trail} /> : null}
+              <View role={article ? 'article' : undefined} style={{ gap: effects.spacing.lg }}>
+                {children}
+              </View>
             </Enter>
           )}
         </View>
         <View
+          role="contentinfo"
           style={[
             styles.inner,
             {

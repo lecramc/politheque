@@ -8,6 +8,7 @@ import {
 } from '@/src/programmes/models/presentation.service';
 import type { GuideSection } from '@/src/programmes/models/programme.model';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
+import { guideSectionMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import {
   selectCatalog,
   selectCatalogStatus,
@@ -61,6 +62,8 @@ export const guideSectionViewModel =
       return {
         status,
         section,
+        meta: section ? guideSectionMeta(section) : null,
+        notFoundMeta: nonIndexableMeta('Section introuvable', `/comprendre/${sectionId}`),
         minutes: section ? minutesOf(section) : 0,
         blocks: (section?.blocks ?? []).map((block) => ({
           block,

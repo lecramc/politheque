@@ -15,13 +15,17 @@ import { Page, useIsDesktop } from '@/src/programmes/components/Page';
 import { PassportLink } from '@/src/programmes/components/PassportLink';
 import { PrivacyNote } from '@/src/programmes/components/PrivacyNote';
 import type { JourneyStepId } from '@/src/programmes/models/journey.model';
+import { homeMeta } from '@/src/programmes/models/seo/page-meta';
 import { journeyViewModel } from '@/src/programmes/view-models/journey.view-model';
+import { pageMetaViewModel } from '@/src/programmes/view-models/page-meta.view-model';
 
 const NO_CELEBRATION: JourneyStepId[] = [];
+const metaViewModel = pageMetaViewModel(homeMeta);
 
 /** Accueil : le parcours citoyen en six étapes (mobile : chemin ; desktop : cartes). */
 export default function HomeScreen() {
   const vm = useViewModel(journeyViewModel());
+  const meta = useViewModel(metaViewModel);
   const { effects } = useTheme();
   const isDesktop = useIsDesktop();
   const [clearOpen, setClearOpen] = useState(false);
@@ -48,7 +52,7 @@ export default function HomeScreen() {
   const privacy = <PrivacyNote onClear={() => setClearOpen(true)} />;
 
   return (
-    <Page loading={!vm.loaded} wide>
+    <Page meta={meta} loading={!vm.loaded} wide>
       {isDesktop ? (
         <View style={{ flexDirection: 'row', gap: effects.spacing.xl, alignItems: 'flex-start' }}>
           <View style={{ flex: 1, gap: effects.spacing.md }}>

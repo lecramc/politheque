@@ -1,5 +1,4 @@
 import { Link, useLocalSearchParams } from 'expo-router';
-import { useRouter } from 'expo-router';
 import React, { useState } from 'react';
 import { View } from 'react-native';
 
@@ -17,13 +16,12 @@ export default function GuideSectionScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const vm = useViewModel(guideSectionViewModel(id));
   const { colors, effects, fonts } = useTheme();
-  const router = useRouter();
   const [openIndex, setOpenIndex] = useState(0);
   const section = vm.section;
 
   if (vm.status === 'loaded' && !section) {
     return (
-      <Page title={'Section introuvable'} back={{ label: 'Comprendre', href: '/comprendre' }}>
+      <Page meta={vm.notFoundMeta} back={{ label: 'Comprendre', href: '/comprendre' }}>
         <Text variant="title">Section introuvable</Text>
       </Page>
     );
@@ -37,7 +35,8 @@ export default function GuideSectionScreen() {
 
   return (
     <Page
-      title={section?.title}
+      meta={vm.meta}
+      article
       loading={vm.status !== 'loaded'}
       back={{ label: 'Comprendre', href: '/comprendre' }}
     >
@@ -67,6 +66,7 @@ export default function GuideSectionScreen() {
             {vm.blocks.map(({ block, keyPoint }, index) => (
               <Accordion
                 key={block.heading}
+                headingLevel={2}
                 title={block.heading}
                 subtitle={keyPoint}
                 open={openIndex === index}
@@ -83,13 +83,7 @@ export default function GuideSectionScreen() {
           </View>
 
           {vm.next ? (
-            <Button
-              variant="brand"
-              onPress={() => {
-                vm.markRead();
-                router.push({ pathname: '/comprendre/[id]', params: { id: vm.next!.id } });
-              }}
-            >
+            <Button variant="brand" href={`/comprendre/${vm.next.id}`} onPress={vm.markRead}>
               {`Suite : ${vm.next.title}`}
             </Button>
           ) : (

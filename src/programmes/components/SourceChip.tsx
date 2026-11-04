@@ -7,7 +7,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { Sheet } from '@/src/programmes/components/Sheet';
-import { formatSourceDate } from '@/src/programmes/components/SourceLinks';
+import { formatSourceDate } from '@/src/programmes/models/presentation.service';
 import type { Source, SourceKind } from '@/src/programmes/models/programme.model';
 import { verificationLevel } from '@/src/programmes/models/verification.service';
 
@@ -55,30 +55,32 @@ function MicroArc({ full }: { full: boolean }) {
 export function SourceList({ sources }: { sources: Source[] }) {
   const { colors, effects, fonts } = useTheme();
   return (
-    <View style={{ gap: effects.spacing.xs }}>
+    <View role="list" style={{ gap: effects.spacing.xs }}>
       {sources.map((source) => (
-        <Pressable
-          key={source.url + source.title}
-          // Sur le web : vrai lien <a href> ouvert dans un nouvel onglet ; sur natif : navigateur.
-          {...(Platform.OS === 'web'
-            ? { href: source.url, hrefAttrs: { target: '_blank', rel: 'noopener noreferrer' } }
-            : { onPress: () => Linking.openURL(source.url) })}
-          accessibilityRole="link"
-          style={{
-            paddingVertical: 10,
-            borderBottomWidth: 1,
-            borderColor: colors.surface.border.primary,
-            gap: 2,
-          }}
-        >
-          <Text style={{ fontSize: 13, color: colors.text.secondary, letterSpacing: 0.4 }}>
-            {(KIND_LABEL[source.kind] ?? source.kind).toUpperCase()} ·{' '}
-            {formatSourceDate(source.date)} · {domainOf(source.url)}
-          </Text>
-          <Text style={{ ...fonts.bold, color: colors.tint, textDecorationLine: 'underline' }}>
-            {source.title}
-          </Text>
-        </Pressable>
+        <View key={source.url + source.title} role="listitem">
+          <Pressable
+            // Sur le web : vrai lien <a href> ouvert dans un nouvel onglet ; sur natif : navigateur.
+            {...(Platform.OS === 'web'
+              ? { href: source.url, hrefAttrs: { target: '_blank', rel: 'noopener' } }
+              : { onPress: () => Linking.openURL(source.url) })}
+            accessibilityRole="link"
+            accessibilityLabel={`${source.title}, ${domainOf(source.url)} (nouvel onglet)`}
+            style={{
+              paddingVertical: 10,
+              borderBottomWidth: 1,
+              borderColor: colors.surface.border.primary,
+              gap: 2,
+            }}
+          >
+            <Text style={{ fontSize: 13, color: colors.text.secondary, letterSpacing: 0.4 }}>
+              {(KIND_LABEL[source.kind] ?? source.kind).toUpperCase()} ·{' '}
+              {formatSourceDate(source.date)} · {domainOf(source.url)}
+            </Text>
+            <Text style={{ ...fonts.bold, color: colors.tint, textDecorationLine: 'underline' }}>
+              {source.title}
+            </Text>
+          </Pressable>
+        </View>
       ))}
     </View>
   );
