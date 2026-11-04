@@ -154,7 +154,7 @@
     ],
     "timeline": [
       {
-        "date": "2014-04-05",
+        "date": "2014",
         "event": "David Lisnard devient maire de Cannes ; il est réélu en 2020 et en 2026.",
         "sources": [
           {
@@ -168,24 +168,18 @@
             "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-david-lisnard",
             "date": "2026-11",
             "kind": "presse"
-          }
-        ]
-      },
-      {
-        "date": "2014-09-02",
-        "event": "Déclaration à la sous-préfecture de Grasse de l'association « Nouvelle Energie », groupement politique au sens du code électoral, et de son association de financement (publication au Journal officiel le 20 septembre 2014).",
-        "sources": [
-          {
-            "title": "Journal officiel (JOAFE), annonce n° 53 du 20/09/2014 – création de l'association « Nouvelle Energie » (déclarée le 02/09/2014 à la sous-préfecture de Grasse)",
-            "url": "https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:201400380053",
-            "date": "2014-09-20",
-            "kind": "statistique"
           },
           {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
+            "title": "Banque des Territoires / Localtis (T. Beurey, C. Mallet), « David Lisnard élu à la tête de l'Association des maires de France »",
+            "url": "https://www.banquedesterritoires.fr/david-lisnard-elu-la-tete-de-lassociation-des-maires-de-france",
+            "date": "2021-11-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Acteurs publics, « 33 326 communes connaissent le nom de leur futur maire à l'issue du premier tour des élections municipales »",
+            "url": "https://acteurspublics.fr/articles/33-326-communes-connaissent-le-nom-de-leur-futur-maire-a-lissue-du-premier-tour-des-elections-municipales/",
+            "date": "2026-03-17",
+            "kind": "presse"
           }
         ]
       },
@@ -1254,23 +1248,6 @@
                   "url": "https://www.europe1.fr/politique/aujourdhui-en-france-on-depouille-les-actifs-au-profit-des-inactifs-denonce-david-lisnard-938960",
                   "date": "2026-05-27",
                   "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Rétablir le délit de séjour irrégulier et allonger la rétention administrative à 24 mois.",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – Programme « Immigration » (page non datée, consultée en novembre 2026)",
-                  "url": "https://www.unenouvelleenergie.fr/notre-programme/immigration/",
-                  "date": "2026-11",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Wikipédia (en) – David Lisnard",
-                  "url": "https://en.wikipedia.org/wiki/David_Lisnard",
-                  "date": "2026-11",
-                  "kind": "statistique"
                 }
               ]
             },

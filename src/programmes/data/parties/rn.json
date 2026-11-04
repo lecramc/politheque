@@ -68,25 +68,7 @@
     },
     "ideals": [
       {
-        "title": "Ce que disent ses statuts",
-        "text": "Le parti se définit, à l'article 1er de ses statuts (congrès d'Orléans, octobre 2026), comme une formation « attaché[e] à l'égalité devant la loi de tous les citoyens français sans distinction d'origine, de race ou de religion », qui « défend la souveraineté, l'indépendance et l'identité de la nation », protège « le caractère indivisible, laïc, démocratique et social de la République » et se dit « favorable au gouvernement du peuple, par le peuple et pour le peuple ».",
-        "sources": [
-          {
-            "title": "Statuts du Rassemblement national (XIXe congrès, Orléans, 24-25 octobre 2026), article 1er",
-            "url": "https://rassemblementnational.fr/documents/261026_STATUTS_RN.pdf",
-            "date": "2026-10-25",
-            "kind": "programme"
-          },
-          {
-            "title": "Wikipédia, « Rassemblement national »",
-            "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
-            "date": "2026-11",
-            "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "title": "Thèmes mis en avant par le parti",
+        "title": "Ce que dit le parti",
         "text": "Dans sa communication, il met en avant la « priorité nationale », la maîtrise de l'immigration, la sécurité et la laïcité, et se présente comme « patriote » ; ses représentants récusent généralement l'appellation d'« extrême droite ».",
         "sources": [
           {
@@ -100,6 +82,12 @@
             "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Le Club des juristes, « Le Rassemblement national est rattaché à l'extrême droite selon le Conseil d'État »",
+            "url": "https://www.leclubdesjuristes.com/en-bref/le-rassemblement-national-est-rattache-a-lextreme-droite-selon-le-conseil-detat-5300/",
+            "date": "2024-03-12",
+            "kind": "presse"
           }
         ]
       },
@@ -168,6 +156,12 @@
             "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Pascal Delwit (Université libre de Bruxelles), « Les étapes du Front national (1972-2011) », in P. Delwit (dir.), Le Front national. Mutations de l'extrême droite française, Éditions de l'Université de Bruxelles",
+            "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/107439/3/LesetapesduFrontnational.pdf",
+            "date": "2012",
+            "kind": "statistique"
           }
         ]
       },
@@ -185,6 +179,12 @@
             "title": "Wikipédia, « Rassemblement national »",
             "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Pascal Delwit (Université libre de Bruxelles), « Les étapes du Front national (1972-2011) », in P. Delwit (dir.), Le Front national. Mutations de l'extrême droite française, Éditions de l'Université de Bruxelles",
+            "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/107439/3/LesetapesduFrontnational.pdf",
+            "date": "2012",
             "kind": "statistique"
           }
         ]
@@ -204,6 +204,24 @@
             "url": "https://fr.wikipedia.org/wiki/Rassemblement_national",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Pascal Delwit (Université libre de Bruxelles), « Les étapes du Front national (1972-2011) », in P. Delwit (dir.), Le Front national. Mutations de l'extrême droite française, Éditions de l'Université de Bruxelles",
+            "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/107439/3/LesetapesduFrontnational.pdf",
+            "date": "2012",
+            "kind": "statistique"
+          },
+          {
+            "title": "Politis, Lucas Sarafian, « 21 avril 2002, la gauche traumatisée par le séisme Le Pen »",
+            "url": "https://www.politis.fr/articles/2025/01/politique-histoire-21-avril-2002-la-gauche-en-plein-doute-face-au-seisme-le-pen",
+            "date": "2025-01-08",
+            "kind": "presse"
+          },
+          {
+            "title": "Conseil constitutionnel, proclamation des résultats de l'élection du président de la République (8 mai 2002), reproduite sur elysee.fr",
+            "url": "https://www.elysee.fr/la-presidence/proclamation-des-resultats-du-scrutin-du-8-mai-200",
+            "date": "2002-05-08",
+            "kind": "vote"
           }
         ]
       },
@@ -240,6 +258,12 @@
             "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/3-du-front-national-au-rassemblement-national/",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, « Le Front national devient Rassemblement national, après un vote des militants »",
+            "url": "https://www.publicsenat.fr/actualites/politique/le-front-national-devient-rassemblement-national-apres-un-vote-des-militants-86550",
+            "date": "2018-06-01",
+            "kind": "presse"
           }
         ]
       },
@@ -498,6 +522,12 @@
             "url": "https://www.politis.fr/articles/2010/04/lassassinat-de-francois-duprat-et-la-liberte-de-lhistoire-10080/",
             "date": "2010-04",
             "kind": "presse"
+          },
+          {
+            "title": "Pascal Delwit (Université libre de Bruxelles), « Les étapes du Front national (1972-2011) », in P. Delwit (dir.), Le Front national. Mutations de l'extrême droite française, Éditions de l'Université de Bruxelles",
+            "url": "https://dipot.ulb.ac.be/dspace/bitstream/2013/107439/3/LesetapesduFrontnational.pdf",
+            "date": "2012",
+            "kind": "statistique"
           }
         ]
       },
@@ -1935,7 +1965,7 @@
           "summary": "Le RN propose de réduire la contribution française au budget de l'UE et d'affirmer la primauté de la Constitution sur le droit international. Il s'oppose à l'accord UE-Mercosur et fixe des limites au soutien militaire à l'Ukraine.",
           "measures": [
             {
-              "text": "Baisse de la contribution française au budget de l'UE : 8,7 Md€ dans le contre-budget 2026, 11,1 Md€ annoncés pour 2027 puis jusqu'à 20 Md€.",
+              "text": "Baisse de la contribution française au budget de l'UE : 8,7 Md€ dans le contre-budget 2026 ; pour 2027, un amendement du député RN Jean-Philippe Tanguy visait à « retrancher 11,1 milliards d'euros » de cette contribution (octobre 2026).",
               "sources": [
                 {
                   "title": "Contre-budget 2026 du Rassemblement national",
@@ -1947,6 +1977,18 @@
                   "title": "Le budget RN promet 140 milliards d'économies (Parlons Politique)",
                   "url": "https://www.parlons-politique.fr/economie-societe/le-budget-rn-promet-140-milliards-deconomies-les-baisses-dimpots-tiendront-elles-face-aux-coupes-annoncees_28920/",
                   "date": "2026-10-08",
+                  "kind": "presse"
+                },
+                {
+                  "title": "24matins, Morgan Fromentin, « Comment le RN entend réaliser 36 milliards d'euros d'économies dans son programme »",
+                  "url": "https://www.24matins.fr/comment-le-rn-entend-realiser-36-milliards-deuros-deconomies-dans-son-programme-1397418",
+                  "date": "2025-10-25",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Toute l'Europe, « Budget européen : l'Assemblée nationale approuve une contribution française de 30,9 milliards d'euros pour 2027 »",
+                  "url": "https://www.touteleurope.eu/?p=324611",
+                  "date": "2026-10-15",
                   "kind": "presse"
                 }
               ]

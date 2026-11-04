@@ -1,5 +1,51 @@
 [
   {
+    "id": "2026-11-04-la-sortie-de-lr-du-gouvernement-en-octobre-2025",
+    "date": "2026-11-04",
+    "kind": "correction",
+    "pages": ["/partis/lr/histoire"],
+    "summary": "La sortie de LR du gouvernement en octobre 2025 a été reformulée : LR a refusé le 11 octobre 2025 d'entrer au gouvernement Lecornu ; la mention d'un retrait du « socle commun » a été supprimée."
+  },
+  {
+    "id": "2026-11-04-des-mesures-et-des-elements-d-histoire-que-deux",
+    "date": "2026-11-04",
+    "kind": "retrait",
+    "pages": [
+      "/partis/ecologistes",
+      "/partis/horizons",
+      "/partis/lfi",
+      "/partis/lr",
+      "/partis/nouvelle-energie",
+      "/partis/pcf",
+      "/partis/ps-place-publique",
+      "/partis/reconquete",
+      "/partis/renaissance",
+      "/partis/rn"
+    ],
+    "summary": "Des mesures et des éléments d'histoire que deux sources indépendantes ne confirment pas ont été retirés des fiches des Écologistes, de Nouvelle Énergie, du PCF et du RN, ainsi que des détails non recoupés dans sept autres fiches."
+  },
+  {
+    "id": "2026-11-04-la-baisse-de-la-contribution-francaise-au-budget",
+    "date": "2026-11-04",
+    "kind": "correction",
+    "pages": ["/partis/rn/programme-2027"],
+    "summary": "La baisse de la contribution française au budget de l'UE a été corrigée : la mention « jusqu'à 20 Md€ » a été retirée, 20 milliards étant le montant restant de la contribution et non l'ampleur de la baisse."
+  },
+  {
+    "id": "2026-11-04-les-chiffres-du-congres-de-tours-ont-ete-corrige",
+    "date": "2026-11-04",
+    "kind": "correction",
+    "pages": ["/partis/pcf/histoire"],
+    "summary": "Les chiffres du congrès de Tours ont été corrigés (3 208 voix contre 1 022, au lieu de 3 252 mandats sur 4 763). Georges Marchais : 15,35 % en 1981 au lieu de 15,34 %, et justification de l'intervention en Afghanistan datée du 11 janvier 1980 au lieu de 1979."
+  },
+  {
+    "id": "2026-11-04-le-score-de-la-liste-ecologiste-aux-europeennes",
+    "date": "2026-11-04",
+    "kind": "correction",
+    "pages": ["/partis/ecologistes/histoire"],
+    "summary": "Le score de la liste écologiste aux européennes du 26 mai 2019 a été corrigé : 13,47 % des suffrages exprimés selon le Parlement européen, au lieu de 13,48 % affiché auparavant."
+  },
+  {
     "id": "2026-11-04-une-source-de-presse-ajoutee-a-une-mesure-de-rec",
     "date": "2026-11-04",
     "kind": "mise-a-jour",

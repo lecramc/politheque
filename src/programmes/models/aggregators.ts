@@ -1,4 +1,4 @@
-import { domainOf } from '@/src/programmes/models/verification.service';
+import { domainOf } from '@/src/programmes/models/domain';
 
 /**
  * Liste fermée des agrégateurs et encyclopédies collaboratives : des pistes pour trouver une

@@ -94,6 +94,18 @@
             "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, « Congrès LR : le parti adopte ses nouveaux statuts sur fond de division »",
+            "url": "https://www.publicsenat.fr/actualites/politique/congres-lr-le-parti-adopte-ses-nouveaux-statuts-sur-fond-de-division",
+            "date": "2025-09-07",
+            "kind": "presse"
+          },
+          {
+            "title": "franceinfo, « Bruno Retailleau durcit son discours, avec en parallèle une campagne d'adhésion à son parti en s'adressant aux « honnêtes gens » »",
+            "url": "https://www.franceinfo.fr/politique/bruno-retailleau/bruno-retailleau-durcit-son-discours-avec-en-parallele-une-campagne-d-adhesion-a-son-parti-en-s-adressant-aux-honnetes-gens_7323597.html",
+            "date": "2025-06",
+            "kind": "presse"
           }
         ]
       },
@@ -246,6 +258,12 @@
             "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur (data.gouv.fr), « Élection présidentielle des 10 et 24 avril 2022 — Résultats définitifs du 1er tour » (fichier France entière)",
+            "url": "https://www.data.gouv.fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour",
+            "date": "2022-04-14",
+            "kind": "statistique"
           }
         ]
       },
@@ -287,7 +305,7 @@
       },
       {
         "date": "2024-09",
-        "event": "LR entre au gouvernement de Michel Barnier, Bruno Retailleau devenant ministre de l'Intérieur ; il quitte ses fonctions le 12 octobre 2025, LR se retirant du « socle commun » à l'annonce du gouvernement Lecornu.",
+        "event": "LR entre au gouvernement de Michel Barnier, Bruno Retailleau devenant ministre de l'Intérieur ; le 11 octobre 2025, LR refuse d'entrer au nouveau gouvernement de Sébastien Lecornu, auquel il n'apporte qu'un « soutien texte par texte », et Laurent Nuñez succède à Bruno Retailleau à l'Intérieur le 12 octobre 2025.",
         "sources": [
           {
             "title": "Wikipédia, « Les Républicains »",
@@ -299,6 +317,18 @@
             "title": "Bruno Retailleau favorable aux courtes peines de prison : « Ce n'est pas une solution magique » (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/bruno-retailleau-favorable-aux-courtes-peines-de-prison-ce-nest-pas-une-solution-magique",
             "date": "2024-10-10",
+            "kind": "presse"
+          },
+          {
+            "title": "franceinfo, « Les Républicains refusent d'entrer au nouveau gouvernement de Sébastien Lecornu, ne lui apportant qu'un « soutien texte par texte » »",
+            "url": "https://www.franceinfo.fr/politique/gouvernement-de-sebastien-lecornu/les-republicains-refuse-d-entrer-au-nouveau-gouvernement-de-sebastien-lecornu-ne-lui-apportant-qu-un-soutien-texte-par-texte_7546486.html",
+            "date": "2025-10-11",
+            "kind": "presse"
+          },
+          {
+            "title": "France 3 Paris Île-de-France, « Gouvernement Lecornu 2 : qui sont Laurent Nuñez et Vincent Jeanbrun, les nouveaux ministres franciliens ? »",
+            "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/gouvernement-lecornu-2-qui-sont-laurent-nunez-et-vincent-jeanbrun-les-nouveaux-ministres-franciliens-3232127.html",
+            "date": "2025-10",
             "kind": "presse"
           }
         ]

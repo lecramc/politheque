@@ -74,7 +74,11 @@ export default function PartyProgrammeScreen() {
           ) : null
         )}
       </View>
-      <PageSources sources={vm.sourcesBySection['programme-2027']} verifiedOn={vm.verifiedOn} />
+      <PageSources
+        sources={vm.sourcesBySection['programme-2027']}
+        verifiedOn={vm.verifiedOn}
+        updatedOn={vm.updatedOn}
+      />
     </TabPanel>
   );
 }

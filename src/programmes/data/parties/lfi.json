@@ -82,12 +82,24 @@
             "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Europe 1, « Mélenchon annonce sa candidature à l'élection présidentielle de 2017 »",
+            "url": "https://www.europe1.fr/politique/melenchon-annonce-sa-candidature-a-lelection-presidentielle-de-2017-2666531",
+            "date": "2016-02-10",
+            "kind": "presse"
+          },
+          {
+            "title": "Reporterre, « Mélenchon et La France insoumise proclament l'union populaire et écologique »",
+            "url": "https://reporterre.net/Melenchon-et-La-France-insoumise-proclament-l-union-populaire-et-ecologique",
+            "date": "2021-08-30",
+            "kind": "presse"
           }
         ]
       },
       {
         "title": "Classement par les politistes",
-        "text": "Les politistes le classent le plus souvent à la gauche radicale, certains parlant de « gauche populiste ». Les références idéologiques le plus souvent relevées sont l'écosocialisme, l'antilibéralisme et l'altermondialisme.",
+        "text": "Les politistes le classent à la gauche radicale, certains l'associant au « populisme de gauche ».",
         "sources": [
           {
             "title": "Wikipédia, « La France insoumise »",
@@ -100,6 +112,18 @@
             "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
             "date": "2019-03-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Chloé Alexandre, Antoine Bristielle, Laura Chazel, « From The Front de gauche to La France insoumise: Causes and Consequences of the Conversion of the French Radical Left to Populism », Partecipazione e Conflitto",
+            "url": "https://doaj.org/article/2b3c85e549e3452dad9b11fe44335225",
+            "date": "2021",
+            "kind": "statistique"
+          },
+          {
+            "title": "Politis (Roni Gocer), entretien avec le politiste Manuel Cervera-Marzal, « Mélenchon est la dernière chance du populisme de gauche »",
+            "url": "https://www.politis.fr/articles/2021/10/melenchon-est-la-derniere-chance-du-populisme-de-gauche-43669/",
+            "date": "2021-10-13",
+            "kind": "presse"
           }
         ]
       },
@@ -144,6 +168,12 @@
             "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
             "date": "2019-08",
             "kind": "programme"
+          },
+          {
+            "title": "Europe 1, « Mélenchon annonce sa candidature à l'élection présidentielle de 2017 »",
+            "url": "https://www.europe1.fr/politique/melenchon-annonce-sa-candidature-a-lelection-presidentielle-de-2017-2666531",
+            "date": "2016-02-10",
+            "kind": "presse"
           }
         ]
       },
@@ -180,6 +210,18 @@
             "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
             "date": "2019-08",
             "kind": "programme"
+          },
+          {
+            "title": "Public Sénat, « Mélenchon et les élus Insoumis arrivent à l'Assemblée en « porte-voix du pays » »",
+            "url": "https://www.publicsenat.fr/actualites/politique/melenchon-et-les-elus-insoumis-arrivent-a-l-assemblee-en-porte-voix-du-pays-75038",
+            "date": "2017-06-20",
+            "kind": "presse"
+          },
+          {
+            "title": "Datan, « La France insoumise » (groupe, 15e législature)",
+            "url": "https://datan.fr/groupes/legislature-15/fi",
+            "date": "2026-11",
+            "kind": "vote"
           }
         ]
       },
@@ -216,6 +258,12 @@
             "url": "https://lcp.fr/actualites/la-nupes-presente-son-programme-pour-les-legislatives-114431",
             "date": "2022-06",
             "kind": "presse"
+          },
+          {
+            "title": "Encyclopædia Universalis, « 7-30 juin 2022 : élections législatives »",
+            "url": "https://www.universalis.fr/evenement/7-30-juin-2022-elections-legislatives/",
+            "date": "2026-11",
+            "kind": "statistique"
           }
         ]
       },
@@ -239,7 +287,7 @@
       },
       {
         "date": "2024-07-07",
-        "event": "Législatives anticipées : LFI concourt au sein du Nouveau Front populaire, arrivé en tête en nombre de sièges ; le groupe LFI compte 72 députés à l'ouverture de la législature (71 en octobre 2024), et des députés en rupture fondent L'Après.",
+        "event": "Législatives anticipées : LFI concourt au sein du Nouveau Front populaire, arrivé en tête en nombre de sièges ; le groupe LFI compte 72 députés à l'ouverture de la législature, et des députés en rupture fondent L'Après.",
         "sources": [
           {
             "title": "Public Sénat, « Les résultats du second tour des élections législatives 2024 : le Nouveau Front populaire en tête »",
@@ -252,6 +300,12 @@
             "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "LCP, « Assemblée nationale : récit d'une semaine de grandes manœuvres pour la constitution des groupes politiques »",
+            "url": "https://lcp.fr/actualites/assemblee-nationale-recit-d-une-semaine-de-grandes-manoeuvres-pour-la-constitution-des",
+            "date": "2024-07-12",
+            "kind": "presse"
           }
         ]
       }
@@ -345,13 +399,19 @@
             "url": "https://www.universalis.fr/chronologie/france/2022/2/",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Sud Radio, « La biographie et le CV de Manuel Bompard »",
+            "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-manuel-bompard",
+            "date": "2026-11",
+            "kind": "presse"
           }
         ]
       },
       {
         "name": "Éric Coquerel",
         "role": "Député de Seine-Saint-Denis depuis 2017, président de la commission des finances de l'Assemblée depuis 2022",
-        "background": "Militant de la Ligue communiste révolutionnaire (trotskiste) jusqu'en 1998, il passe brièvement par le Mouvement républicain et citoyen de Jean-Pierre Chevènement puis fonde en 2003 le Mouvement pour une alternative républicaine et sociale (MARS). Cofondateur du Parti de gauche avec Jean-Luc Mélenchon en 2008, il en est le coordinateur de 2014 à 2021.",
+        "background": "Militant de la Ligue communiste révolutionnaire (trotskiste) jusqu'en 1998, il passe brièvement par le Mouvement républicain et citoyen de Jean-Pierre Chevènement puis fonde en 2003 le Mouvement pour une alternative républicaine et sociale (MARS). Cofondateur du Parti de gauche avec Jean-Luc Mélenchon en 2008, il en devient coordinateur et secrétaire national.",
         "sources": [
           {
             "title": "Wikipédia, « Éric Coquerel »",
@@ -363,6 +423,12 @@
             "title": "VL Média, « Qui est Éric Coquerel, le nouveau président de la commission des finances ? »",
             "url": "https://vl-media.fr/qui-est-eric-coquerel-le-nouveau-president-de-la-commission-des-finances/",
             "date": "2022-06",
+            "kind": "presse"
+          },
+          {
+            "title": "75 Secondes (Quentin Lalong), « Eric Coquerel » (parcours)",
+            "url": "https://www.75secondes.fr/etudes/parcours/eric-coquerel",
+            "date": "2024-12-04",
             "kind": "presse"
           }
         ]
@@ -383,6 +449,18 @@
             "url": "https://www.publicsenat.fr/actualites/politique/la-loi-n-oblige-pas-adrien-quatennens-a-demissionner-la-morale-devrait-l",
             "date": "2022-12",
             "kind": "presse"
+          },
+          {
+            "title": "LCP, « Adrien Quatennens, condamné pour violences conjugales, de retour à l'Assemblée »",
+            "url": "https://lcp.fr/actualites/adrien-quatennens-condamne-pour-violences-conjugales-de-retour-a-l-assemblee-160335",
+            "date": "2023-01-11",
+            "kind": "presse"
+          },
+          {
+            "title": "24matins (Lionel Durel), « Adrien Quatennens (LFI) retire sa candidature pour les législatives »",
+            "url": "https://www.24matins.fr/adrien-quatennens-lfi-retire-sa-candidature-pour-les-legislatives-1376284",
+            "date": "2024-06-16",
+            "kind": "presse"
           }
         ]
       },
@@ -401,6 +479,24 @@
             "title": "Reporterre, « François Ruffin rêve de bâtir une “maison commune” à la gauche »",
             "url": "https://reporterre.net/Francois-Ruffin-reve-de-batir-une-maison-commune-a-la-gauche",
             "date": "2024-09-02",
+            "kind": "presse"
+          },
+          {
+            "title": "LCP, « Assemblée nationale : Autain, Corbière, Ruffin... les ex-LFI en rupture de ban rejoignent le groupe Écologiste »",
+            "url": "https://lcp.fr/actualites/assemblee-nationale-autain-corbiere-ruffin-les-ex-lfi-en-rupture-de-ban-rejoignent-le",
+            "date": "2024-07-15",
+            "kind": "presse"
+          },
+          {
+            "title": "ID, l'Info durable (dépêche AFP), « Ruffin appelle à une \"censure populaire\" du gouvernement à la rentrée »",
+            "url": "https://www.linfodurable.fr/ruffin-appelle-une-censure-populaire-du-gouvernement-la-rentree-52254",
+            "date": "2025-07-23",
+            "kind": "presse"
+          },
+          {
+            "title": "Sud Radio, « La biographie et le CV de François Ruffin »",
+            "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-francois-ruffin",
+            "date": "2026-11",
             "kind": "presse"
           }
         ]
@@ -700,7 +796,7 @@
     },
     "q12-nucleaire": {
       "stance": -2,
-      "justification": "« L'Avenir en commun » (2022) prévoit de sortir du nucléaire et d'abandonner les projets d'EPR ; Jean-Luc Mélenchon a réaffirmé en mai 2026 l'objectif de sortie du nucléaire. Édition 2027 du programme non encore publiée.",
+      "justification": "« L'Avenir en commun » (2022) prévoit de sortir du nucléaire et d'abandonner les projets d'EPR. Édition 2027 du programme non encore publiée.",
       "sources": [
         {
           "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
@@ -712,6 +808,12 @@
           "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
           "url": "https://monvote2027.fr/candidat/melenchon",
           "date": "2026-11",
+          "kind": "presse"
+        },
+        {
+          "title": "ID, l'Info durable, « Le programme écolo de Jean-Luc Mélenchon »",
+          "url": "https://www.linfodurable.fr/politique/le-programme-ecolo-de-jean-luc-melenchon-31349",
+          "date": "2022-03-29",
           "kind": "presse"
         }
       ]
@@ -1552,6 +1654,12 @@
                   "url": "https://monvote2027.fr/candidat/melenchon",
                   "date": "2026-11",
                   "kind": "presse"
+                },
+                {
+                  "title": "ID, l'Info durable, « Le programme écolo de Jean-Luc Mélenchon »",
+                  "url": "https://www.linfodurable.fr/politique/le-programme-ecolo-de-jean-luc-melenchon-31349",
+                  "date": "2022-03-29",
+                  "kind": "presse"
                 }
               ]
             },
@@ -1848,6 +1956,12 @@
                   "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
                   "url": "https://monvote2027.fr/candidat/melenchon",
                   "date": "2026-11",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Public Sénat, « Otan : les propositions des candidats à la présidentielle »",
+                  "url": "https://www.publicsenat.fr/article/politique/otan-les-propositions-des-candidats-a-la-presidentielle-200136",
+                  "date": "2022-03-25",
                   "kind": "presse"
                 }
               ]

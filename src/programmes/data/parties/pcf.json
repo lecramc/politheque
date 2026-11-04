@@ -44,7 +44,7 @@
   "history": {
     "founded": "1920 (congrès de Tours, sous le nom de Section française de l'Internationale communiste, SFIC) ; nom de Parti communiste français en 1943",
     "origins": {
-      "text": "Le parti naît en décembre 1920 au congrès de Tours, lorsque la majorité des délégués de la SFIO (3 252 mandats sur 4 763) vote l'adhésion à l'Internationale communiste fondée à Moscou en 1919. D'abord section française de l'Internationale communiste (SFIC), il prend le nom de Parti communiste français en 1943, après la dissolution de l'Internationale. La minorité restée fidèle à la SFIO est à l'origine de la filiation socialiste (aujourd'hui le Parti socialiste). Le PCF s'est ensuite progressivement éloigné du modèle soviétique, notamment à partir des années 1960-1970 (rejet du parti unique en 1963, abandon de la dictature du prolétariat en 1976).",
+      "text": "Le parti naît en décembre 1920 au congrès de Tours, lorsque la majorité des délégués de la SFIO vote, par 3 208 voix contre 1 022, l'adhésion à l'Internationale communiste (IIIe Internationale) fondée à Moscou en 1919. D'abord section française de l'Internationale communiste (SFIC), il prend le nom de Parti communiste français en 1943, après la dissolution de l'Internationale. La minorité restée fidèle à la SFIO est à l'origine de la filiation socialiste (aujourd'hui le Parti socialiste). Le PCF s'est ensuite progressivement éloigné du modèle soviétique, notamment à partir des années 1960-1970 (rejet du parti unique en 1963, abandon de la dictature du prolétariat en 1976).",
       "sources": [
         {
           "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
@@ -57,49 +57,25 @@
           "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
           "date": "2026-11",
           "kind": "statistique"
+        },
+        {
+          "title": "Encyclopædia Universalis, Bernard Pudal, « PCF (Parti communiste français), parti politique »",
+          "url": "https://www.universalis.fr/encyclopedie/pcf-parti-communiste-francais-parti-politique/",
+          "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Fondation Jean-Jaurès, « Décembre 1920 : la scission du congrès de Tours »",
+          "url": "https://www.jean-jaures.org/publication/decembre-1920-la-scission-du-congres-de-tours/",
+          "date": "2010-12-09",
+          "kind": "statistique"
         }
       ]
     },
     "ideals": [
       {
-        "title": "Ce que disent ses statuts",
-        "text": "Le parti se définit, dans le préambule de ses statuts, comme un « collectif d'adhérent·es librement associé·es » porteur d'un « projet révolutionnaire d'émancipation individuelle et collective » visant à faire reculer « jusqu'à leur dépassement le capitalisme » et toutes les formes d'exploitation, de domination et d'aliénation.",
-        "sources": [
-          {
-            "title": "PCF, Statuts adoptés au 39e congrès (préambule)",
-            "url": "https://assets.nationbuilder.com/pcf/pages/15897/attachments/original/1684999315/document_-_Statuts_39e_Congr%C3%A8s.pdf?1684999315",
-            "date": "2023-04",
-            "kind": "programme"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "title": "Internationalisme et institutions",
-        "text": "Il revendique l'internationalisme et l'anti-impérialisme, ainsi qu'une « nouvelle République » donnant davantage de pouvoir d'intervention aux citoyens et aux salariés ; il est membre du Parti de la gauche européenne.",
-        "sources": [
-          {
-            "title": "PCF, Statuts adoptés au 39e congrès (préambule)",
-            "url": "https://assets.nationbuilder.com/pcf/pages/15897/attachments/original/1684999315/document_-_Statuts_39e_Congr%C3%A8s.pdf?1684999315",
-            "date": "2023-04",
-            "kind": "programme"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
-          }
-        ]
-      },
-      {
         "title": "Classement par les ouvrages de référence",
-        "text": "Les ouvrages de référence le classent à la gauche radicale (communisme) ; il n'existe pas de classement unique au-delà de l'étiquette communiste. Les encyclopédies retracent une évolution doctrinale : adoption du marxisme-léninisme et du centralisme démocratique lors de la « bolchevisation » de 1925, abandon de la dictature du prolétariat (1976), rapprochement avec l'eurocommunisme, puis abandon du centralisme démocratique sous la direction de Robert Hue (à partir de 1994).",
+        "text": "Les encyclopédies de référence le présentent comme un parti communiste, né en décembre 1920 de l'adhésion de la majorité de la SFIO à l'Internationale communiste.",
         "sources": [
           {
             "title": "Wikipédia, « Parti communiste français »",
@@ -110,6 +86,12 @@
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, Bernard Pudal, « PCF (Parti communiste français), parti politique »",
+            "url": "https://www.universalis.fr/encyclopedie/pcf-parti-communiste-francais-parti-politique/",
             "date": "2026-11",
             "kind": "statistique"
           }
@@ -132,12 +114,18 @@
             "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, Bernard Pudal, « PCF (Parti communiste français), parti politique »",
+            "url": "https://www.universalis.fr/encyclopedie/pcf-parti-communiste-francais-parti-politique/",
+            "date": "2026-11",
+            "kind": "statistique"
           }
         ]
       },
       {
         "date": "1936-05",
-        "event": "Législatives du Front populaire : le parti passe à 72 députés avec environ 15 % des voix ; il soutient le gouvernement Blum sans y participer.",
+        "event": "Législatives du Front populaire : le parti passe à 72 députés ; il soutient le gouvernement Blum sans y participer.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
@@ -150,22 +138,10 @@
             "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
             "date": "2026-11",
             "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "date": "1944-09",
-        "event": "Participation aux gouvernements de la Libération puis du tripartisme, jusqu'à la révocation des ministres communistes le 4 mai 1947.",
-        "sources": [
-          {
-            "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
-            "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
-            "date": "2026-11",
-            "kind": "statistique"
           },
           {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
+            "title": "Encyclopædia Universalis, « Gauche en France dans l'entre-deux-guerres (repères chronologiques) »",
+            "url": "https://www.universalis.fr/encyclopedie/gauche-en-france-dans-l-entre-deux-guerres-reperes-chronologiques/",
             "date": "2026-11",
             "kind": "statistique"
           }
@@ -186,6 +162,36 @@
             "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Archives départementales de la Somme, dossier « 0969W » (élections législatives)",
+            "url": "https://archives.somme.fr/document/0969w",
+            "date": "2014-10",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "1947-05-04",
+        "event": "Le président du Conseil Paul Ramadier renvoie les cinq ministres communistes, ce qui met fin à la participation du parti aux gouvernements de la Libération puis du tripartisme.",
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Wikipédia, « Parti communiste français »",
+            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Force ouvrière (Christophe Chiclet, L'inFO militante), « Les grèves de 1947 »",
+            "url": "https://www.force-ouvriere.fr/les-greves-de-1947",
+            "date": "2021-08-29",
+            "kind": "presse"
           }
         ]
       },
@@ -203,6 +209,12 @@
             "title": "Wikipédia, « Parti communiste français »",
             "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « 27 juin 1972 : la signature du Programme commun de gouvernement »",
+            "url": "https://www.jean-jaures.org/publication/27-juin-1972-la-signature-du-programme-commun-de-gouvernement/",
+            "date": "2010-05-20",
             "kind": "statistique"
           }
         ]
@@ -222,6 +234,18 @@
             "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « 22-24 juin 1981 : entrée de ministres communistes dans le second cabinet Mauroy »",
+            "url": "https://www.universalis.fr/evenement/22-24-juin-1981-entree-de-ministres-communistes-dans-le-second-cabinet-mauroy/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « 2-31 juillet 1984 : remplacement du Premier ministre Pierre Mauroy par Laurent Fabius »",
+            "url": "https://www.universalis.fr/evenement/2-31-juillet-1984-remplacement-du-premier-ministre-pierre-mauroy-par-laurent-fabius/",
+            "date": "2026-11",
+            "kind": "statistique"
           }
         ]
       },
@@ -239,6 +263,18 @@
             "title": "Wikipédia, « Parti communiste français »",
             "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « 1er-19 juin 1997 : victoire de l'opposition de gauche aux élections législatives et nomination de Lionel Jospin comme Premier ministre »",
+            "url": "https://www.universalis.fr/evenement/1er-19-juin-1997-victoire-de-l-opposition-de-gauche-aux-elections-legislatives-et-nomination-de-lionel-jospin-comme-premier-ministre/",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, P.-E. Guigo et T. Tellier (dir.), « La gauche plurielle (1997-2002). Quelle place dans l'histoire de la Ve République ? »",
+            "url": "https://www.jean-jaures.org/publication/la-gauche-plurielle-1997-2002-quelle-place-dans-lhistoire-de-la-ve-republique/",
+            "date": "2024-11-18",
             "kind": "statistique"
           }
         ]
@@ -400,8 +436,8 @@
       },
       {
         "name": "Georges Marchais",
-        "role": "Secrétaire général (1972-1994), candidat à la présidentielle de 1981 (15,34 %)",
-        "background": "Ouvrier ajusteur dans l'aéronautique, il travaille en Allemagne pendant l'Occupation ; cette période donne lieu, après son arrivée à la tête du parti, à une polémique portée devant les tribunaux sur les conditions de ce départ. Syndicaliste CGT de la métallurgie, il adhère au PCF en 1947 ; il signe le Programme commun de 1972 et soutient en 1979 l'intervention soviétique en Afghanistan.",
+        "role": "Secrétaire général (1972-1994), candidat à la présidentielle de 1981 (15,35 %)",
+        "background": "Ouvrier ajusteur dans l'aéronautique, il travaille en Allemagne pendant l'Occupation ; cette période donne lieu, après son arrivée à la tête du parti, à une polémique portée devant les tribunaux sur les conditions de ce départ. Syndicaliste CGT de la métallurgie, il adhère au PCF en 1947 ; il signe le Programme commun de 1972 et justifie le 11 janvier 1980, depuis Moscou, l'intervention soviétique en Afghanistan.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Marchais Georges (1920-1997) »",
@@ -419,6 +455,18 @@
             "title": "Wikipédia, « Parti communiste français »",
             "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Conseil constitutionnel, décision n° 81-45 PDR du 29 avril 1981 (résultats du premier tour)",
+            "url": "https://www.conseil-constitutionnel.fr/decision/1981/8145PDR.htm",
+            "date": "1981-04-29",
+            "kind": "vote"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, Ismail Ferhat, « Afghanistan, 1979 : les gauches françaises face à l'islam »",
+            "url": "https://www.jean-jaures.org/publication/afghanistan-1979-les-gauches-francaises-face-a-lislam/",
+            "date": "2020-01-09",
             "kind": "statistique"
           }
         ]
@@ -476,7 +524,7 @@
       },
       {
         "title": "Rapport à l'URSS",
-        "text": "Rapport à l'URSS : le parti approuve le pacte germano-soviétique d'août 1939, ce qui conduit à sa dissolution le 26 septembre 1939 ; il s'aligne après 1947 sur le « camp » soviétique. Les encyclopédies retracent une prise de distance à partir des années 1960 (rejet du parti unique, « socialisme aux couleurs de la France »), l'abandon de la dictature du prolétariat en 1976 dans une ligne proche de l'eurocommunisme, puis, sous Robert Hue (1994), une « mutation » et un jugement du bilan soviétique comme « négatif, monstrueux même, à bien des égards » ; en 1979, Georges Marchais avait soutenu l'intervention soviétique en Afghanistan.",
+        "text": "Rapport à l'URSS : le parti approuve le pacte germano-soviétique d'août 1939, ce qui conduit à sa dissolution en 1939 ; il s'aligne après 1947 sur le « camp » soviétique. Les encyclopédies retracent une prise de distance à partir des années 1960 (rejet du parti unique, « socialisme aux couleurs de la France »), l'abandon de la dictature du prolétariat en 1976 dans une ligne proche de l'eurocommunisme, puis, sous Robert Hue (1994), une « mutation ». Le 11 janvier 1980, depuis Moscou, Georges Marchais avait justifié l'intervention soviétique en Afghanistan, commencée fin décembre 1979.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
@@ -494,6 +542,12 @@
             "title": "Wikipedia (en), « Georges Marchais »",
             "url": "https://en.wikipedia.org/wiki/Georges_Marchais",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, Ismail Ferhat, « Afghanistan, 1979 : les gauches françaises face à l'islam »",
+            "url": "https://www.jean-jaures.org/publication/afghanistan-1979-les-gauches-francaises-face-a-lislam/",
+            "date": "2020-01-09",
             "kind": "statistique"
           }
         ]

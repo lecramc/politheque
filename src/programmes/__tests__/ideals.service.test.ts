@@ -21,6 +21,14 @@ describe('Feature: séparation des idéaux et des classements', () => {
     ]);
   });
 
+  it('should accept a party with no self-definition ideal', () => {
+    const { classification, others } = splitIdeals([
+      ideal('Classement par les ouvrages de référence'),
+    ]);
+    expect(classification).toHaveLength(1);
+    expect(others).toEqual([]);
+  });
+
   it('should return empty lists when there are no ideals', () => {
     expect(splitIdeals([])).toEqual({ classification: [], others: [] });
   });

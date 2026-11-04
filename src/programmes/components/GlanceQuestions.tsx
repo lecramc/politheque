@@ -13,7 +13,7 @@ import type { PartyViewModel } from '@/src/programmes/view-models/party.view-mod
 
 type GlanceItem = PartyViewModel['glance'][number];
 
-/** « Pour ou contre ? » : les mêmes 7 questions pour les dix partis ; une ligne ouvre la justification. */
+/** « Pour ou contre ? » : les mêmes questions pour les dix partis ; une ligne ouvre la justification. */
 export function GlanceQuestions({
   items,
   intro,

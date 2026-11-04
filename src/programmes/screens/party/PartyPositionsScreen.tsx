@@ -52,7 +52,11 @@ export default function PartyPositionsScreen() {
           </Accordion>
         ))}
       </View>
-      <PageSources sources={vm.sourcesBySection['positions']} verifiedOn={vm.verifiedOn} />
+      <PageSources
+        sources={vm.sourcesBySection['positions']}
+        verifiedOn={vm.verifiedOn}
+        updatedOn={vm.updatedOn}
+      />
     </TabPanel>
   );
 }

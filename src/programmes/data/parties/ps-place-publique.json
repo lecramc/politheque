@@ -142,6 +142,12 @@
             "url": "https://en.wikipedia.org/wiki/Place_Publique",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, François Vignal, « Européennes 2024 : Raphaël Glucksmann prône dans son programme une « révolution écologique » »",
+            "url": "https://www.publicsenat.fr/actualites/politique/europeennes-2024-raphael-glucksmann-prone-dans-son-programme-une-revolution-ecologique",
+            "date": "2024-05-15",
+            "kind": "presse"
           }
         ]
       },
@@ -595,7 +601,7 @@
       {
         "name": "Raphaël Glucksmann",
         "role": "Cofondateur de Place publique (2018), tête de liste PS-Place publique aux européennes de 2019 et 2024 ; vainqueur de la primaire d'octobre 2026, candidat investi pour 2027",
-        "background": "Fils du philosophe André Glucksmann (ancien maoïste), diplômé de Sciences Po, documentariste et essayiste, il est de 2008 ou 2009 (selon les sources) à 2012 conseiller du président géorgien Mikheil Saakachvili, chargé notamment des réformes liées à l'intégration européenne. En 2017, il coécrit un discours de Benoît Hamon avant de fonder Place publique.",
+        "background": "Fils du philosophe André Glucksmann (ancien maoïste), diplômé de Sciences Po, documentariste et essayiste, il est de 2008 ou 2009 (selon les sources) à 2012 conseiller du président géorgien Mikheil Saakachvili, chargé notamment des réformes liées à l'intégration européenne.",
         "sources": [
           {
             "title": "Public Sénat (AFP), « Raphaël Glucksmann, un intellectuel jeté dans le grand bain de la politique »",
@@ -613,6 +619,12 @@
             "title": "Public Sénat, « Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % »",
             "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
             "date": "2026-10-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Sud Radio, « La biographie et le CV de Raphaël Glucksmann »",
+            "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-raphael-glucksmann",
+            "date": "2026",
             "kind": "presse"
           }
         ]

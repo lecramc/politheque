@@ -1,6 +1,8 @@
 import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
+import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
+import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import {
   glanceQuestionIds,
   hasKeyIdeasSection,
@@ -71,6 +73,11 @@ export const partyViewModel =
             ) as Record<PartySection, PageMeta>)
           : null;
         const verifiedOn = party ? formatLongDate(party.lastVerified) : '';
+        const lastUpdate = party && catalog ? partyLastUpdate(party.id, catalog.corrections) : null;
+        const updatedOn =
+          party && lastUpdate && lastUpdate > party.lastVerified
+            ? formatLongDate(lastUpdate)
+            : null;
         const themeTitle = (id: ThemeId) => catalog?.themes.find((t) => t.id === id)?.title ?? id;
         const questionById = (id: string) => catalog?.questions.find((q) => q.id === id);
         const keyIdeas =
@@ -124,6 +131,7 @@ export const partyViewModel =
             ? `Fondé en ${party.foundedYear} · ${party.leader.role} ${party.leader.name}`
             : '',
           verifiedOn,
+          updatedOn,
           keyIdeas,
           glance,
           glanceIntro: catalog
@@ -143,7 +151,9 @@ export const partyViewModel =
                         },
                         {
                           key: 'definition',
-                          title: 'Comment il se définit, comment on le classe',
+                          title: splitIdeals(party.history.ideals).others.length
+                            ? 'Comment il se définit, comment on le classe'
+                            : 'Comment on le classe',
                           subtitle: null,
                           href: partyHref(party.id, 'histoire'),
                         },

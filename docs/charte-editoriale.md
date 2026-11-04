@@ -32,27 +32,37 @@ pour la présidentielle 2027, **sans désinformation et sans orienter le lecteur
      ouvrages de politistes) et le texte du parti lui-même (statuts, charte, site officiel) pour
      ce qu'il revendique. Distinguer « le parti se définit comme… » et « les politistes le
      classent comme… ».
-   - **Mesures et positions** : au moins 1 source primaire (programme, vote, déclaration), et
-     autant que possible une 2e source indépendante qui la confirme (presse de référence,
-     fact-checking, institut de chiffrage).
+   - **Mesures et positions** : de préférence au moins 1 source primaire (programme, déclaration,
+     vote ou proposition de loi du parti). À défaut, un article de presse qui rapporte la position
+     est admis (`kind: 'presse'`). Un agrégateur ne compte jamais : une position dont toutes les
+     sources sont des agrégateurs, ou qui n'en a aucune, est `stance: null` (justification :
+     « Position non établie. »). Autant que possible, une 2e source indépendante qui la confirme
+     (presse de référence, fact-checking, institut de chiffrage).
    - Le site affiche pour chaque information un niveau : **Recoupée** (≥ 2 domaines différents, dont au moins une source indépendante du parti :
      presse, source officielle ou scrutin public — deux sites du même camp ne suffisent pas),
      **Source unique** ou **Non sourcée** (interdit en production). Calcul :
-     `src/programmes/models/verification.service.ts`.
+     `src/programmes/models/verification.service.ts`. Les agrégateurs (`AGGREGATOR_DOMAINS`) ne comptent
+     ni comme domaine distinct ni comme source indépendante ; ils restent affichés.
    - En cas de **contradiction entre sources**, on ne tranche pas en silence : on cite les deux
      versions et on l'indique.
 8. **Traçabilité.** Chaque fiche parti porte `lastVerified`. Toute correction est
    versionnée dans git.
-   **Toute modification de fond d'une fiche parti met à jour son `lastVerified`** : cette date
+   **`lastVerified` n'avance que sur une revérification complète de la fiche** : cette date
    alimente le `<lastmod>` du plan du site, le `dateModified` des données structurées et la
    mention « Fiche vérifiée le… » affichée sur la page. Ne jamais la modifier pour une simple
    correction de forme (orthographe, mise en page), et ne jamais l'inventer : sans date de
    vérification réelle, la page n'a pas de `lastmod` (c'est le cas du guide « Comprendre », des
    thèmes et de l'élection tant qu'une revue datée n'y est pas inscrite dans `lastVerified`).
-   Seules les entrées de journal de type `correction` et `mise-a-jour`, qui changent un fait, imposent
-   cette re-vérification : leur date ne peut pas dépasser le `lastVerified` de la fiche. Une entrée
-   `ajout` ou `retrait` (nouveau champ d'affichage repris de textes déjà sourcés, retrait d'un
-   élément) n'avance pas `lastVerified`, puisqu'aucun fait n'a été re-vérifié.
+   **`lastVerified` = dernière revérification complète de la fiche.** On ne l'avance que si la fiche
+   entière a été relue contre ses sources ; corriger un élément ne revérifie pas les autres.
+   **« Mise à jour » = dernière correction journalisée.** La fiche affiche aussi « mise à jour le… »
+   (avec un lien vers `/corrections`) quand la date de la dernière entrée du journal qui touche l'une de
+   ses pages (tous types : `correction`, `mise-a-jour`, `ajout`, `retrait`) est postérieure à
+   `lastVerified`. Cette date est dérivée de `corrections.json` (`partyLastUpdate`,
+   `src/programmes/models/corrections/party-last-update.ts`), jamais saisie à la main. Une entrée
+   `correction` ou `mise-a-jour` postérieure à `lastVerified` ne bloque donc plus : elle doit
+   apparaître dans ce « mise à jour le » (test d'intégrité). `lastmod` et `dateModified` restent
+   alimentés par `lastVerified`.
    **Toute modification de fond est inscrite au journal public des corrections (`/corrections`,
    `src/programmes/data/corrections.json`)** par le trailer `Correction-publique:` du message de
    commit, dont le hook `commit-msg` vérifie la présence dès qu'un fichier de `src/programmes/data/`
@@ -173,7 +183,8 @@ Elles complètent les règles ci-dessus et portent sur tous les champs texte aff
     nomme le sujet sans rien affirmer (« Ce que disent ses statuts », « Classement par les
     encyclopédies », « Gaullisme », « Rapport au RN »), sans adjectif évaluatif, dans le même
     registre pour les dix partis. Le texte (`text`) reste intégral et sourcé. Dans les idées,
-    chaque fiche commence par ce que le parti dit de lui-même (« Ce que dit… ») et contient
+    chaque fiche commence par ce que le parti dit de lui-même (« Ce que dit… ») quand cette entrée atteint le
+    seuil de la règle 7 sans agrégateur (sinon elle est retirée, sans exception), et contient
     **une seule** entrée « Classement par … » ; le nuancier du ministère de l'Intérieur, quand une
     décision de justice le concerne, a sa propre entrée « Nuancier du ministère de l'Intérieur ».
 11. **Idées clés** (`keyIdeas`, bloc « Ce qu'il propose » de l'onglet « En bref »). C'est le seul endroit

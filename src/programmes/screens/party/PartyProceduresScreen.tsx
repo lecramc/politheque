@@ -41,7 +41,11 @@ export default function PartyProceduresScreen() {
           </View>
         ))}
       </View>
-      <PageSources sources={vm.sourcesBySection['procedures']} verifiedOn={vm.verifiedOn} />
+      <PageSources
+        sources={vm.sourcesBySection['procedures']}
+        verifiedOn={vm.verifiedOn}
+        updatedOn={vm.updatedOn}
+      />
     </TabPanel>
   );
 }

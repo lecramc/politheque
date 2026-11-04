@@ -22,7 +22,7 @@
       "id": "abroger-les-reformes-de-l-assurance-chomage",
       "title": "Abroger les réformes de l'assurance chômage",
       "text": "Engagement du contrat de législature du Nouveau Front populaire (2024), signé par Les Écologistes.",
-      "measureRefs": ["travail.3"],
+      "measureRefs": ["travail.2"],
       "relatedQuestionIds": ["q06-chomage"]
     },
     {
@@ -81,6 +81,12 @@
             "title": "Wikipédia, « Les Écologistes »",
             "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Lex (Den Store Danske), Jørn Boisen (Univ. de Copenhague), « Les Écologistes »",
+            "url": "https://lex.dk/Les_%C3%89cologistes",
+            "date": "2026-03-26",
             "kind": "statistique"
           }
         ]
@@ -150,6 +156,18 @@
             "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Alexis Vrignon, La naissance de l'écologie politique en France, Presses universitaires de Rennes, chap. VII « Vers l'unification des écologistes » (OpenEdition Books)",
+            "url": "https://books.openedition.org/pur/154797",
+            "date": "2017",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Verts (Les), France »",
+            "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
+            "date": "2026-11",
+            "kind": "statistique"
           }
         ]
       },
@@ -167,6 +185,18 @@
             "title": "Wikipédia, « Les Écologistes »",
             "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Parlement européen, « Résultats nationaux France 2009-2014 — Résultats par parti national (résultats définitifs) »",
+            "url": "https://results.elections.europa.eu/en/national-results/france/2009-2014/constitutive-session/",
+            "date": "2009-07",
+            "kind": "statistique"
+          },
+          {
+            "title": "Sally Marthaler (Sussex European Institute), EPERN European Parliament Election Briefing No 31, « The European Parliament election in France, June 7 2009 »",
+            "url": "https://www.sussex.ac.uk/sei/documents/epern-no-31-france-2009.pdf",
+            "date": "2009-07-01",
             "kind": "statistique"
           }
         ]
@@ -186,6 +216,12 @@
             "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Lyon Mag, « Un nouveau parti écologiste est né à Lyon »",
+            "url": "https://www.lyonmag.com/article/19888/un-nouveau-parti-ecologiste-est-ne-a-lyon",
+            "date": "2010-11-14",
+            "kind": "presse"
           }
         ]
       },
@@ -215,7 +251,7 @@
       },
       {
         "date": "2019-05-26",
-        "event": "Européennes : la liste conduite par Yannick Jadot obtient 13,48 % des suffrages exprimés et arrive 3e.",
+        "event": "Européennes : la liste conduite par Yannick Jadot obtient 13,47 % des suffrages exprimés et arrive 3e.",
         "sources": [
           {
             "title": "Wikipédia, « Les Écologistes »",
@@ -224,9 +260,15 @@
             "kind": "statistique"
           },
           {
-            "title": "Public Sénat, « Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième »",
-            "url": "https://www.publicsenat.fr/actualites/politique/resultats-europeennes-2024-jordan-bardella-en-tete-valerie-hayer-en-deuxieme-position-glucksmann-troisieme",
-            "date": "2024-06-10",
+            "title": "Parlement européen, « Résultats nationaux France 2019-2024 — Résultats officiels par parti national »",
+            "url": "https://results.elections.europa.eu/en/national-results/france/2019-2024/constitutive-session/",
+            "date": "2019-07",
+            "kind": "statistique"
+          },
+          {
+            "title": "Maire-info, « Élections européennes : RN et LaREM largement en tête, les partis traditionnels en recul »",
+            "url": "https://maire-info.com/elections-europeennes-rn-et-larem-largement-en-tete-les-partis-traditionnels-en-recul-article2-23088",
+            "date": "2019-05-27",
             "kind": "presse"
           }
         ]
@@ -246,6 +288,12 @@
             "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur (data.gouv.fr), « Élection présidentielle des 10 et 24 avril 2022 — Résultats définitifs du 1er tour » (fichier France entière)",
+            "url": "https://www.data.gouv.fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour",
+            "date": "2022-04-14",
+            "kind": "statistique"
           }
         ]
       },
@@ -264,12 +312,18 @@
             "url": "https://lex.dk/Les_%C3%89cologistes",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Reporterre, « Tout va changer : pourquoi EELV devient Les Écologistes »",
+            "url": "https://reporterre.net/Tout-va-changer-pourquoi-EELV-devient-Les-Ecologistes",
+            "date": "2023-10-14",
+            "kind": "presse"
           }
         ]
       },
       {
         "date": "2024-06-09",
-        "event": "Européennes : la liste conduite par Marie Toussaint obtient 5,50 % des suffrages exprimés (contre 13,48 % en 2019) ; le parti rejoint ensuite le Nouveau Front populaire pour les législatives anticipées.",
+        "event": "Européennes : la liste conduite par Marie Toussaint obtient 5,50 % des suffrages exprimés (contre 13,47 % en 2019) ; le parti rejoint ensuite le Nouveau Front populaire pour les législatives anticipées.",
         "sources": [
           {
             "title": "Public Sénat, « Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième »",
@@ -380,8 +434,8 @@
       },
       {
         "name": "Yves Cochet",
-        "role": "Cofondateur des Verts (1984), porte-parole (1984-1986, 1992-1997), ministre de l'Aménagement du territoire et de l'Environnement (2001-2002)",
-        "background": "Né en 1946 à Rennes, mathématicien et enseignant-chercheur, ancien président de l'UNEF-Sciences à Rennes, il milite dans les années 1970 dans les luttes antinucléaires et adhère aux Amis de la Terre en 1973. Partisan d'un rapprochement contractuel avec le PS dès 1987 (motion « Entrons en politique », minoritaire), il est député à partir de 1997 et remplace Dominique Voynet au gouvernement Jospin en juillet 2001. Il est ensuite connu pour ses positions en faveur de la décroissance et ses travaux sur l'« effondrement ».",
+        "role": "Cofondateur des Verts (1984), ministre de l'Aménagement du territoire et de l'Environnement (2001-2002)",
+        "background": "Né en 1946 à Rennes, mathématicien et enseignant-chercheur, il milite dans les années 1970 dans les luttes antinucléaires. Il est député à partir de 1997 et remplace Dominique Voynet au gouvernement Jospin en juillet 2001. Il est ensuite connu pour ses positions en faveur de la décroissance et ses travaux sur l'« effondrement ».",
         "sources": [
           {
             "title": "Wikipédia, « Yves Cochet »",
@@ -398,6 +452,12 @@
           {
             "title": "Wikipédia, « Les Verts (France) »",
             "url": "https://fr.wikipedia.org/wiki/Les_Verts_(France)",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Assemblée nationale, base Sycomore, « Yves Cochet »",
+            "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1872",
             "date": "2026-11",
             "kind": "statistique"
           }
@@ -425,6 +485,18 @@
             "url": "https://fr.wikipedia.org/wiki/Les_Verts_(France)",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Sénat, « VOYNET Dominique — ancienne sénatrice de la Seine-Saint-Denis »",
+            "url": "https://www.senat.fr/senateur/voynet_dominique04082l.html",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Le Quotidien du Médecin, Loan Tranthimy, « Dr Dominique Voynet (NFP, Doubs) : retour d'une écolo historique »",
+            "url": "https://medecine-generale.lequotidiendumedecin.fr/sante-societe/politique-de-sante/dr-dominique-voynet-nfp-doubs-retour-dune-ecolo-historique",
+            "date": "2024-07-12",
+            "kind": "presse"
           }
         ]
       },
@@ -567,12 +639,18 @@
             "url": "https://en.wikipedia.org/wiki/Europe_Ecology",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Sally Marthaler (Sussex European Institute), EPERN European Parliament Election Briefing No 31, « The European Parliament election in France, June 7 2009 »",
+            "url": "https://www.sussex.ac.uk/sei/documents/epern-no-31-france-2009.pdf",
+            "date": "2009-07-01",
+            "kind": "statistique"
           }
         ]
       },
       {
         "title": "Courants internes et primaire de 2021",
-        "text": "Les observateurs décrivent des courants internes : lors de la primaire de 2021, Yannick Jadot défend une « écologie ouverte et majoritaire », Sandrine Rousseau une « radicalité environnementale » et l'écoféminisme, Delphine Batho (Génération écologie, alors associée à la primaire) la décroissance ; Jadot l'emporte de justesse au second tour (51,03 %).",
+        "text": "Les observateurs décrivent des courants internes : lors de la primaire de 2021, Sandrine Rousseau défend une « radicalité environnementale » et l'écoféminisme, Delphine Batho (Génération écologie, alors associée à la primaire) la décroissance ; Yannick Jadot l'emporte de justesse au second tour (51,03 %).",
         "sources": [
           {
             "title": "Reporterre, « Ce qu'il faut savoir sur la primaire écologiste »",
@@ -585,6 +663,18 @@
             "url": "https://en.wikipedia.org/wiki/2021_French_Green_Party_presidential_primary",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "France 24 (AFP), « Présidentielle 2022 : Yannick Jadot remporte de justesse la primaire écologiste »",
+            "url": "https://www.france24.com/fr/info-en-continu/20210928-pr%C3%A9sidentielle-2022-yannick-jadot-remporte-la-primaire-%C3%A9cologiste",
+            "date": "2021-09-28",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Primaire écologiste : entre Jadot et Rousseau, deux visions de la « radicalité » »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/primaire-ecologiste-entre-jadot-et-rousseau-deux-visions-de-la-radicalite-190481",
+            "date": "2021-09-20",
+            "kind": "presse"
           }
         ]
       }
@@ -635,7 +725,7 @@
     },
     "q04-retraite": {
       "stance": 2,
-      "justification": "Le programme 2027 prévoit le retour de l'âge légal à 62 ans, puis 60 ans pour les carrières longues et les métiers pénibles.",
+      "justification": "Le programme 2027 prévoit le retour de l'âge légal à 62 ans, puis 60 ans pour les carrières longues et les métiers pénibles. Le 5 juin 2025, le groupe Écologiste et social a voté pour une résolution demandant l'abrogation de la réforme des retraites de 2023.",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 116",
@@ -648,6 +738,12 @@
           "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
           "date": "2026-07-13",
           "kind": "presse"
+        },
+        {
+          "title": "Datan, « Vote n° 2257 — proposition de résolution visant à abroger la réforme des retraites de 2023 » (Assemblée nationale, 17e législature)",
+          "url": "https://datan.fr/votes/legislature-17/vote_2257",
+          "date": "2025-06-05",
+          "kind": "vote"
         }
       ]
     },
@@ -701,7 +797,7 @@
     },
     "q07-immigration": {
       "stance": -2,
-      "justification": "Le programme veut refaire de la France « un pays attractif pour les migrant·es » (p. 177) et « rendre effectif le droit au regroupement familial » (p. 178).",
+      "justification": "Le programme veut refaire de la France « un pays attractif pour les migrant·es » (p. 177) et « rendre effectif le droit au regroupement familial » (p. 178). Le groupe écologiste a voté contre la loi immigration le 19 décembre 2023.",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 177-178",
@@ -714,6 +810,12 @@
           "url": "https://monvote2027.fr/candidat/tondelier",
           "date": "2026-10-16",
           "kind": "presse"
+        },
+        {
+          "title": "Datan, « Vote n° 3213 — vote final, projet de loi pour contrôler l'immigration, améliorer l'intégration » (16e législature)",
+          "url": "https://datan.fr/votes/legislature-16/vote_3213",
+          "date": "2023-12-19",
+          "kind": "vote"
         }
       ]
     },
@@ -804,12 +906,18 @@
           "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
           "date": "2026-07-13",
           "kind": "presse"
+        },
+        {
+          "title": "Politis (Lucas Sarafian), « Chez les Écologistes, pas de frictions sur la fission »",
+          "url": "https://www.politis.fr/articles/2026/09/chez-les-ecologistes-pas-de-frictions-sur-la-fission/",
+          "date": "2026-09-16",
+          "kind": "presse"
         }
       ]
     },
     "q13-renouvelables": {
       "stance": 2,
-      "justification": "Le programme fonde la politique énergétique sur « un bouquet d'énergies renouvelables » (p. 15) et prévoit la sortie du nucléaire (p. 17).",
+      "justification": "Le programme fonde la politique énergétique sur « un bouquet d'énergies renouvelables » (p. 15) et prévoit la sortie du nucléaire (p. 17). Le 19 juin 2025, le groupe a voté contre un moratoire sur les nouvelles installations éoliennes et photovoltaïques.",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 15",
@@ -822,6 +930,12 @@
           "url": "https://monvote2027.fr/candidat/tondelier",
           "date": "2026-10-16",
           "kind": "presse"
+        },
+        {
+          "title": "Datan, « Vote n° 2580 — amendement n° 486 (moratoire sur l'éolien et le photovoltaïque), PPL programmation énergie »",
+          "url": "https://datan.fr/votes/legislature-17/vote_2580",
+          "date": "2025-06-19",
+          "kind": "vote"
         }
       ]
     },
@@ -983,7 +1097,7 @@
     },
     "q24-proportionnelle": {
       "stance": 2,
-      "justification": "Proportionnelle intégrale sans prime majoritaire aux législatives.",
+      "justification": "Proportionnelle intégrale sans prime majoritaire aux législatives. En juillet 2024, la sénatrice écologiste Mélanie Vogel a déposé une proposition de loi instaurant la proportionnelle intégrale.",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 162",
@@ -995,6 +1109,12 @@
           "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
           "url": "https://monvote2027.fr/candidat/tondelier",
           "date": "2026-10-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Législatives : une proposition de loi visant à instaurer la proportionnelle intégrale déposée au Sénat »",
+          "url": "https://www.publicsenat.fr/actualites/parlementaire/legislatives-une-proposition-de-loi-visant-a-instaurer-la-proportionnelle-integrale-deposee-au-senat",
+          "date": "2024-07-10",
           "kind": "presse"
         }
       ]
@@ -1223,7 +1343,7 @@
           "summary": "Le programme vise une « prospérité écologique » et une « fiscalité verte et juste » : impôt plancher sur les très grandes fortunes, « ISF climatique », TVA verte et tranche supérieure d'impôt sur le revenu. Le groupe écologiste est à l'origine de la proposition de loi « taxe Zucman » adoptée à l'Assemblée en février 2025.",
           "measures": [
             {
-              "text": "Instaurer la taxe Zucman : impôt minimum de 2 % sur les patrimoines supérieurs à 100 M€.",
+              "text": "Instaurer la taxe Zucman : impôt minimum de 2 % sur les patrimoines supérieurs à 100 M€ (proposition de loi du groupe écologiste adoptée en première lecture par l'Assemblée le 20 février 2025).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 66",
@@ -1241,6 +1361,12 @@
                   "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
                   "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
                   "date": "2026-07-13",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Fiscalité : en première lecture, l'Assemblée adopte un \"impôt plancher de 2% sur le patrimoine des ultra riches\" »",
+                  "url": "https://lcp.fr/actualites/fiscalite-en-premiere-lecture-l-assemblee-adopte-un-impot-plancher-de-2-sur-le",
+                  "date": "2025-02-21",
                   "kind": "presse"
                 }
               ]
@@ -1281,10 +1407,10 @@
           ]
         },
         "travail": {
-          "summary": "Le programme prévoit l'abrogation du report de l'âge légal à 64 ans, un relèvement du salaire minimum et la remise en cause des exonérations de cotisations sur les bas salaires.",
+          "summary": "Le programme prévoit l'abrogation du report de l'âge légal à 64 ans et un relèvement du salaire minimum.",
           "measures": [
             {
-              "text": "Revenir à un âge légal de 62 ans, avec un objectif de 60 ans pour les carrières longues et les métiers pénibles.",
+              "text": "Revenir à un âge légal de 62 ans, avec un objectif de 60 ans pour les carrières longues et les métiers pénibles (le groupe a voté le 5 juin 2025 pour une résolution demandant l'abrogation de la réforme des retraites de 2023).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 116",
@@ -1303,6 +1429,12 @@
                   "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
                   "date": "2026-07-13",
                   "kind": "presse"
+                },
+                {
+                  "title": "Datan, « Vote n° 2257 — proposition de résolution visant à abroger la réforme des retraites de 2023 » (Assemblée nationale, 17e législature)",
+                  "url": "https://datan.fr/votes/legislature-17/vote_2257",
+                  "date": "2025-06-05",
+                  "kind": "vote"
                 }
               ]
             },
@@ -1342,17 +1474,6 @@
               ]
             },
             {
-              "text": "Supprimer les exonérations de cotisations sur les bas salaires.",
-              "sources": [
-                {
-                  "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
-                  "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-                  "date": "2026-07-13",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
               "text": "Abroger les réformes de l'assurance chômage (contrat NFP 2024, signé par Les Écologistes).",
               "sources": [
                 {
@@ -1372,7 +1493,7 @@
           ]
         },
         "immigration": {
-          "summary": "Le programme défend les droits des personnes exilées : maintien du droit du sol, accès à l'AME, régularisation sur critères objectifs et démantèlement de Frontex.",
+          "summary": "Le programme défend les droits des personnes exilées : maintien du droit du sol, accès à l'AME et régularisation sur critères objectifs.",
           "measures": [
             {
               "text": "Régulariser selon des critères objectifs et supprimer les OQTF « automatiques ou inapplicables ».",
@@ -1398,7 +1519,7 @@
               ]
             },
             {
-              "text": "Garantir le droit du sol pour les enfants nés en France, quelle que soit la situation des parents.",
+              "text": "Garantir le droit du sol pour les enfants nés en France, quelle que soit la situation des parents (le groupe a voté le 6 février 2025 contre la restriction du droit du sol à Mayotte).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 178",
@@ -1411,11 +1532,17 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
+                },
+                {
+                  "title": "Datan, « Vote n° 738 — proposition de loi renforçant les conditions d'accès à la nationalité française à Mayotte »",
+                  "url": "https://datan.fr/votes/legislature-17/vote_738",
+                  "date": "2025-02-06",
+                  "kind": "vote"
                 }
               ]
             },
             {
-              "text": "Garantir l'accès à l'AME et à la PUMa pour les personnes exilées.",
+              "text": "Garantir l'accès à l'AME et à la PUMa pour les personnes exilées (les sénateurs écologistes se sont opposés au durcissement de l'AME en décembre 2025).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 178",
@@ -1428,28 +1555,17 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Démanteler Frontex.",
-              "sources": [
-                {
-                  "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 179",
-                  "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
                 },
                 {
-                  "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-                  "url": "https://monvote2027.fr/candidat/tondelier",
-                  "date": "2026-10-16",
+                  "title": "Public Sénat, « Budget 2026 : le Sénat durcit les conditions de l'Aide médicale d'Etat et vote une baisse de ses crédits de 200 millions »",
+                  "url": "https://www.publicsenat.fr/actualites/sante/budget-2026-le-senat-durcit-les-conditions-de-laide-medicale-detat-et-vote-une-baisse-de-ses-credits-de-200-millions",
+                  "date": "2025-12-11",
                   "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Étendre le droit de vote aux élections locales aux étrangers extra-communautaires après cinq ans de résidence.",
+              "text": "Étendre le droit de vote aux élections locales aux étrangers extra-communautaires après cinq ans de résidence (proposition de loi constitutionnelle du groupe écologiste adoptée en commission en février 2026).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 163",
@@ -1462,16 +1578,22 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Droit de vote des étrangers aux municipales : la proposition de loi écologiste adoptée en commission »",
+                  "url": "https://lcp.fr/actualites/droit-de-vote-des-etrangers-aux-municipales-la-proposition-de-loi-ecologiste-adoptee-en",
+                  "date": "2026-02-04",
+                  "kind": "presse"
                 }
               ]
             }
           ]
         },
         "securite": {
-          "summary": "Le programme estime que la prison doit rester l'exception et propose un contrôle indépendant de la police ainsi que l'interdiction de certaines armes et techniques de maintien de l'ordre.",
+          "summary": "Le programme propose un contrôle indépendant de la police ainsi que l'interdiction de certaines armes et techniques de maintien de l'ordre.",
           "measures": [
             {
-              "text": "Remplacer l'IGPN et l'IGGN par un organisme indépendant rattaché à la Défenseure des droits.",
+              "text": "Remplacer l'IGPN et l'IGGN par un organisme indépendant rattaché à la Défenseure des droits (contrat de législature du Nouveau Front populaire, juin 2024).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 165",
@@ -1483,6 +1605,12 @@
                   "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Acteurs publics, « Législatives : la suppression des 2 inspections générales des forces de l'ordre revient dans les débats »",
+                  "url": "https://acteurspublics.fr/articles/legislatives-la-suppression-des-2-inspections-generales-des-forces-de-lordre-revient-dans-les-debats/",
+                  "date": "2024-06-20",
                   "kind": "presse"
                 }
               ]
@@ -1495,11 +1623,17 @@
                   "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
                   "date": "2026-07-13",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Violences du 17 octobre : qui propose quoi sur le maintien de l'ordre ? »",
+                  "url": "https://lcp.fr/actualites/violences-du-17-octobre-qui-propose-quoi-sur-le-maintien-de-l-ordre-444073",
+                  "date": "2026-10-19",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Interdire la reconnaissance faciale.",
+              "text": "Interdire la reconnaissance faciale (amendement des sénateurs écologistes en mars 2021).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 165",
@@ -1512,23 +1646,12 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Moratoire sur la construction de nouvelles places de prison, hors remplacement d'établissements insalubres.",
-              "sources": [
-                {
-                  "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 170",
-                  "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
                 },
                 {
-                  "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-                  "url": "https://monvote2027.fr/candidat/tondelier",
-                  "date": "2026-10-16",
-                  "kind": "presse"
+                  "title": "Sénat, amendement n° 114 (groupe Écologiste, solidarité et territoires) au projet de loi Sécurité globale — rejeté",
+                  "url": "https://www.senat.fr/enseance/2020-2021/410/Amdt_114.html",
+                  "date": "2021-03-10",
+                  "kind": "vote"
                 }
               ]
             }
@@ -1538,7 +1661,7 @@
           "summary": "Le parti défend une sortie planifiée du nucléaire et un système électrique fondé sur les renouvelables, une agriculture plus biologique et la rénovation thermique des logements. Son groupe a voté contre la loi Duplomb.",
           "measures": [
             {
-              "text": "Planifier la sortie du nucléaire (sur une vingtaine d'années selon la presse) et arrêter les projets d'EPR2 et de SMR.",
+              "text": "Planifier la sortie du nucléaire et arrêter les projets d'EPR2 et de SMR.",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 17",
@@ -1557,11 +1680,17 @@
                   "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
                   "date": "2026-07-13",
                   "kind": "presse"
+                },
+                {
+                  "title": "Politis (Lucas Sarafian), « Chez les Écologistes, pas de frictions sur la fission »",
+                  "url": "https://www.politis.fr/articles/2026/09/chez-les-ecologistes-pas-de-frictions-sur-la-fission/",
+                  "date": "2026-09-16",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Fonder la politique énergétique sur « un bouquet d'énergies renouvelables », en remplacement du nucléaire.",
+              "text": "Fonder la politique énergétique sur « un bouquet d'énergies renouvelables », en remplacement du nucléaire (le groupe écologiste a voté le 19 juin 2025 contre un moratoire sur l'éolien et le photovoltaïque).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 15",
@@ -1574,6 +1703,12 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
+                },
+                {
+                  "title": "Datan, « Vote n° 2580 — amendement n° 486 (moratoire sur l'éolien et le photovoltaïque), PPL programmation énergie »",
+                  "url": "https://datan.fr/votes/legislature-17/vote_2580",
+                  "date": "2025-06-19",
+                  "kind": "vote"
                 }
               ]
             },
@@ -1619,7 +1754,7 @@
           ]
         },
         "sante": {
-          "summary": "Le programme prévoit une prise en charge à 100 % des soins essentiels, des centres de santé publics contre les déserts médicaux et la légalisation de l'aide active à mourir, votée par le groupe en 2026.",
+          "summary": "Le programme prévoit une prise en charge à 100 % des soins essentiels et la légalisation de l'aide active à mourir, votée par le groupe en 2026.",
           "measures": [
             {
               "text": "Prendre en charge à 100 % les soins essentiels et supprimer les franchises médicales.",
@@ -1640,23 +1775,6 @@
                   "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
                   "url": "https://lacampagne2027.com/candidats/marine-tondelier",
                   "date": "2026-11",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Ouvrir 2 000 centres de santé publics d'ici 2030.",
-              "sources": [
-                {
-                  "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 114",
-                  "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                },
-                {
-                  "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-                  "url": "https://monvote2027.fr/candidat/tondelier",
-                  "date": "2026-10-16",
                   "kind": "presse"
                 }
               ]
@@ -1754,6 +1872,18 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
+                },
+                {
+                  "title": "AEF info, « Remplacer Parcoursup, démocratiser l'enseignement supérieur, \"verdir\" le CIR : les propositions des Écologistes pour 2027 »",
+                  "url": "https://www.aefinfo.fr/depeche/754581-remplacer-parcoursup-democratiser-lenseignement-superieur-verdir-le-cir-les-propositions-des-ecologistes-pour-2027",
+                  "date": "2026-07-22",
+                  "kind": "presse"
+                },
+                {
+                  "title": "franceinfo, « \"Il y a une certaine impunité envers les mouvements d'extrême droite qui ne peut plus durer\", déclare Marine Tondelier »",
+                  "url": "https://www.franceinfo.fr/politique/je-pense-qu-il-y-a-quand-meme-une-certaine-impunite-envers-les-mouvements-d-extreme-droite-qui-ne-peut-plus-durer-declare-marine-tondelier-secretaire-nationale-des-ecologistes-et-candidate-a-l-election-presidentielle_8253919.html",
+                  "date": "2026-10-26",
+                  "kind": "presse"
                 }
               ]
             },
@@ -1780,7 +1910,7 @@
           "summary": "Le parti se situe dans une tradition fédéraliste et propose un « saut fédéral européen », un commandement militaire européen intégré et le soutien militaire à l'Ukraine, y compris par des capacités de frappe à longue portée.",
           "measures": [
             {
-              "text": "Opérer un « saut fédéral européen » et remplacer les vetos nationaux par la majorité qualifiée.",
+              "text": "Opérer un « saut fédéral européen » et remplacer les vetos nationaux par la majorité qualifiée (le programme des européennes d'avril 2024 proposait déjà « un saut fédéral pour un sursaut européen »).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 190",
@@ -1792,6 +1922,12 @@
                   "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
+                  "kind": "presse"
+                },
+                {
+                  "title": "L'info durable (AFP), « Européennes : l'écologiste Marie Toussaint présente son programme pour \"sauver le climat\" et \"changer de modèle\" »",
+                  "url": "https://www.linfodurable.fr/europeennes-lecologiste-marie-toussaint-presente-son-programme-pour-sauver-le-climat-et-changer-de",
+                  "date": "2024-04-30",
                   "kind": "presse"
                 }
               ]
@@ -1820,7 +1956,7 @@
               ]
             },
             {
-              "text": "Soutenir militairement l'Ukraine, y compris par la fourniture de « capacités de frappe à longue portée ».",
+              "text": "Soutenir militairement l'Ukraine, y compris par la fourniture de « capacités de frappe à longue portée » (le groupe écologiste a voté l'accord de sécurité entre la France et l'Ukraine le 12 mars 2024).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 197",
@@ -1839,16 +1975,11 @@
                   "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
                   "date": "2026-07-13",
                   "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Partager avec l'UE davantage de compétences : politique étrangère, sécurité commune, fiscalité, protection sociale.",
-              "sources": [
+                },
                 {
-                  "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
-                  "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-                  "date": "2026-07-13",
+                  "title": "LCP, « L'Assemblée nationale soutient largement l'accord avec l'Ukraine, sans le RN qui s'abstient et LFI qui vote contre »",
+                  "url": "https://lcp.fr/actualites/l-assemblee-nationale-soutient-largement-l-accord-avec-l-ukraine-sans-le-rn-qui-s",
+                  "date": "2024-03-12",
                   "kind": "presse"
                 }
               ]
@@ -1882,7 +2013,7 @@
               ]
             },
             {
-              "text": "Instaurer la proportionnelle intégrale sans prime majoritaire aux législatives.",
+              "text": "Instaurer la proportionnelle intégrale sans prime majoritaire aux législatives (proposition de loi déposée au Sénat par l'écologiste Mélanie Vogel en juillet 2024).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 162",
@@ -1895,11 +2026,17 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
+                },
+                {
+                  "title": "Public Sénat, « Législatives : une proposition de loi visant à instaurer la proportionnelle intégrale déposée au Sénat »",
+                  "url": "https://www.publicsenat.fr/actualites/parlementaire/legislatives-une-proposition-de-loi-visant-a-instaurer-la-proportionnelle-integrale-deposee-au-senat",
+                  "date": "2024-07-10",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Créer un RIC propositionnel ou abrogatif, sous contrôle de constitutionnalité préalable.",
+              "text": "Créer un RIC propositionnel ou abrogatif, sous contrôle de constitutionnalité préalable (proposition de loi constitutionnelle inscrite à la niche parlementaire du groupe en janvier 2026).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 161",
@@ -1912,11 +2049,17 @@
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
                   "kind": "presse"
+                },
+                {
+                  "title": "L'info durable (AFP), « Eau et référendum d'initiative citoyenne au menu de la \"niche parlementaire\" des Écologistes »",
+                  "url": "https://www.linfodurable.fr/eau-et-referendum-dinitiative-citoyenne-au-menu-de-la-niche-parlementaire-des-ecologistes-54143",
+                  "date": "2026-01-14",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Ne plus limiter le Parlement par les actuels articles 34 et 49.3 de la Constitution.",
+              "text": "Ne plus limiter le Parlement par les actuels articles 34 et 49.3 de la Constitution (proposition de loi constitutionnelle du groupe pour supprimer le 49.3, mars 2024).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 160",
@@ -1928,6 +2071,12 @@
                   "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
                   "url": "https://monvote2027.fr/candidat/tondelier",
                   "date": "2026-10-16",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Polluants éternels, agriculture, 49.3, médias, énergie et climat : les priorités du groupe écologiste »",
+                  "url": "https://lcp.fr/actualites/polluants-eternels-agriculture-493-medias-energie-et-climat-les-priorites-du-groupe",
+                  "date": "2024-03-25",
                   "kind": "presse"
                 }
               ]

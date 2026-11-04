@@ -52,6 +52,39 @@ describe('Feature: niveau de vérification', () => {
     ).toBe('source-unique');
   });
 
+  it('should ignore aggregators as distinct domains', () => {
+    expect(
+      verificationLevel([
+        source('https://parti.fr/programme', 'programme'),
+        source('https://fr.wikipedia.org/wiki/Parti'),
+      ])
+    ).toBe('source-unique');
+  });
+
+  it('should ignore aggregators as independent sources', () => {
+    expect(
+      verificationLevel([
+        source('https://www.lemonde.fr/a', 'programme'),
+        source('https://www.poligraph.fr/b', 'presse'),
+        source('https://monvote2027.fr/c', 'presse'),
+      ])
+    ).toBe('source-unique');
+  });
+
+  it('should still count reference sources next to aggregators', () => {
+    expect(
+      verificationLevel([
+        source('https://fr.wikipedia.org/wiki/Parti'),
+        source('https://parti.fr/programme', 'programme'),
+        source('https://www.lemonde.fr/a'),
+      ])
+    ).toBe('croisee');
+  });
+
+  it('should flag an item sourced only by aggregators as unsourced', () => {
+    expect(verificationLevel([source('https://fr.wikipedia.org/wiki/Parti')])).toBe('non-sourcee');
+  });
+
   it('should detect a primary source', () => {
     expect(hasPrimarySource([source('https://parti.fr', 'programme')])).toBe(true);
     expect(hasPrimarySource([source('https://lemonde.fr')])).toBe(false);

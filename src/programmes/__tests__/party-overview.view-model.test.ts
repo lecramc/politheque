@@ -1,4 +1,5 @@
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
+import type { CorrectionEntry } from '@/src/programmes/models/corrections/corrections.model';
 import { emptyThemes, partyFactory } from '@/src/programmes/models/party.factory';
 import type {
   Candidacy,
@@ -87,7 +88,10 @@ const partyOf = (id: string, name: string, state: ProgrammeState = 'non-publie')
     history: {
       founded: '1972',
       origins: { text: '', sources: [] },
-      ideals: [],
+      ideals: [
+        { title: 'Ce que dit le parti', text: '', sources: [] },
+        { title: 'Classement par la presse', text: '', sources: [] },
+      ],
       timeline: [
         { date: '1972', event: 'Fondation', sources: [] },
         { date: '2018', event: 'Changement de nom', sources: [] },
@@ -123,6 +127,14 @@ const catalogOf = (parties: Party[]): Catalog =>
 const vmOf = (catalog: Catalog, id: string) =>
   partyViewModel(id)({ dispatch: vi.fn() })(stateBuilder().withCatalog(catalog).build());
 
+const journalEntry = (date: string, page: string): CorrectionEntry => ({
+  id: `${date}-${page}`,
+  date,
+  kind: 'correction',
+  pages: [page],
+  summary: 'Résumé de la correction publiée au journal.',
+});
+
 const complete = catalogOf([partyOf('alpha', 'Alpha'), withStanceSources(partyOf('beta', 'Beta'))]);
 
 describe('Feature: identité en tête de fiche', () => {
@@ -134,6 +146,24 @@ describe('Feature: identité en tête de fiche', () => {
 
   it('should write the verification date in words', () => {
     expect(vmOf(complete, 'alpha').verifiedOn).toBe('3 novembre 2026');
+  });
+
+  it('should not show an update date when the journal has nothing newer than the verification', () => {
+    expect(vmOf(complete, 'alpha').updatedOn).toBeNull();
+    const sameDay = { ...complete, corrections: [journalEntry('2026-11-03', '/partis/alpha')] };
+    expect(vmOf(sameDay, 'alpha').updatedOn).toBeNull();
+  });
+
+  it('should show the date of the latest journal entry touching the party when it is newer', () => {
+    const catalog = {
+      ...complete,
+      corrections: [
+        journalEntry('2026-11-05', '/partis/beta'),
+        journalEntry('2026-11-04', '/partis/alpha/histoire'),
+      ],
+    };
+    expect(vmOf(catalog, 'alpha').updatedOn).toBe('4 novembre 2026');
+    expect(vmOf(catalog, 'alpha').verifiedOn).toBe('3 novembre 2026');
   });
 });
 
@@ -232,6 +262,23 @@ describe('Feature: pour aller plus loin', () => {
         href: '/partis/alpha/programme-2027',
       },
     ]);
+  });
+
+  it('should not promise a self-definition when the party has no such ideal', () => {
+    const noSelfDefinition = catalogOf([
+      {
+        ...partyOf('alpha', 'Alpha'),
+        history: {
+          ...partyOf('alpha', 'Alpha').history!,
+          ideals: [{ title: 'Classement par la presse', text: '', sources: [] }],
+        },
+      },
+      withStanceSources(partyOf('beta', 'Beta')),
+    ]);
+    expect(vmOf(noSelfDefinition, 'alpha').further[1]).toMatchObject({
+      key: 'definition',
+      title: 'Comment on le classe',
+    });
   });
 
   it('should word the great questions block from the real counts', () => {

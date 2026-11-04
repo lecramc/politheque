@@ -9,7 +9,9 @@ import { PARTIES } from '@/src/programmes/data/parties';
 import { QUESTIONS } from '@/src/programmes/data/questions';
 import themes from '@/src/programmes/data/themes.json';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
+import { isAggregator } from '@/src/programmes/models/aggregators';
 import { validateJournal } from '@/src/programmes/models/corrections/corrections.service';
+import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
 import { editorialIssues } from '@/src/programmes/models/editorial-vocabulary';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
@@ -24,10 +26,21 @@ import {
 import { followUps } from '@/src/programmes/models/legal/legal-followup';
 import { promoteDraft } from '@/src/programmes/models/legal/legal-promotion';
 import { validateLegalDossier } from '@/src/programmes/models/legal/legal-validation';
+import { formatLongDate } from '@/src/programmes/models/presentation.service';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { expandRoutes } from '@/src/programmes/models/seo/site-routes';
 import { TITLE_MAX_LENGTH } from '@/src/programmes/models/sourced-item.service';
 import { verificationLevel } from '@/src/programmes/models/verification.service';
+import { stateBuilder } from '@/src/programmes/store/state-builder';
+import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
+
+const PRIMARY_OR_PRESS = new Set([
+  'programme',
+  'declaration',
+  'vote',
+  'proposition-de-loi',
+  'presse',
+]);
 
 // Garde-fou éditorial : la charte (docs/charte-editoriale.md) est vérifiée à chaque test.
 const THEME_IDS = [
@@ -144,6 +157,18 @@ describe('Feature: intégrité des données', () => {
       }
     );
 
+    it('should ground every non-null stance in a non-aggregator primary or press source (charte, règle 7)', () => {
+      for (const question of QUESTIONS) {
+        const stance = party.stances[question.id];
+        if (stance.stance !== null) {
+          const grounded = stance.sources.some(
+            (s) => !isAggregator(s.url) && PRIMARY_OR_PRESS.has(s.kind)
+          );
+          expect(grounded, `${party.id}/${question.id}`).toBe(true);
+        }
+      }
+    });
+
     it('should give a stance (or explicit null) for every question', () => {
       for (const question of QUESTIONS) {
         const stance = party.stances[question.id];
@@ -202,9 +227,12 @@ describe('Feature: intégrité des données', () => {
 
     it('should present ideas with the same structure for every party', () => {
       const titles = party.history!.ideals.map((item) => item.title);
-      expect(titles.length, party.id).toBeGreaterThanOrEqual(2);
+      expect(titles.length, party.id).toBeGreaterThanOrEqual(1);
       expect(titles.length, party.id).toBeLessThanOrEqual(4);
-      expect(titles[0], party.id).toMatch(/^Ce que di/);
+      // L'entrée « Ce que dit… » n'existe que si elle atteint le seuil de la règle 7 (sans agrégateur) ;
+      // quand elle existe, elle est la première.
+      const selfDefinition = titles.filter((t) => /^Ce que di/.test(t));
+      if (selfDefinition.length > 0) expect(titles[0], party.id).toMatch(/^Ce que di/);
       expect(titles.filter((t) => t.startsWith('Classement par ')).length, party.id).toBe(1);
     });
 
@@ -268,14 +296,28 @@ describe('Feature: intégrité du journal des corrections (ajout)', () => {
     expect(catalog.corrections).toEqual(corrections);
   });
 
-  it('should date every party correction or update no later than the party lastVerified, but not additions or removals (charte, règle 8)', () => {
+  it('should show every party correction or update newer than lastVerified as « mise à jour le » (charte, règle 8)', () => {
+    const state = stateBuilder().withCatalog(catalog).build();
     const changesAFact = (kind: string) => kind === 'correction' || kind === 'mise-a-jour';
     for (const entry of catalog.corrections.filter((e) => changesAFact(e.kind))) {
       for (const page of entry.pages) {
         const id = /^\/partis\/([^/]+)/.exec(page)?.[1];
         const party = catalog.parties.find((p) => p.id === id);
-        if (party) expect(party.lastVerified >= entry.date, `${entry.id} / ${page}`).toBe(true);
+        if (!party || entry.date <= party.lastVerified) continue;
+        const { updatedOn } = partyViewModel(party.id)({ dispatch: vi.fn() })(state);
+        const last = partyLastUpdate(party.id, catalog.corrections)!;
+        expect(last >= entry.date, `${entry.id} / ${page}`).toBe(true);
+        expect(updatedOn, `${entry.id} / ${page}`).toBe(formatLongDate(last));
       }
+    }
+  });
+
+  it('should hide « mise à jour le » when the journal has nothing newer than lastVerified', () => {
+    const state = stateBuilder().withCatalog(catalog).build();
+    for (const party of catalog.parties) {
+      const last = partyLastUpdate(party.id, catalog.corrections);
+      const { updatedOn } = partyViewModel(party.id)({ dispatch: vi.fn() })(state);
+      expect(updatedOn !== null, party.id).toBe(last !== null && last > party.lastVerified);
     }
   });
 

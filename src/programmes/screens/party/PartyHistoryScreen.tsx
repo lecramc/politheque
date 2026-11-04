@@ -123,7 +123,11 @@ export default function PartyHistoryScreen() {
           </View>
         ) : null}
       </View>
-      <PageSources sources={vm.sourcesBySection['histoire']} verifiedOn={vm.verifiedOn} />
+      <PageSources
+        sources={vm.sourcesBySection['histoire']}
+        verifiedOn={vm.verifiedOn}
+        updatedOn={vm.updatedOn}
+      />
     </TabPanel>
   );
 }

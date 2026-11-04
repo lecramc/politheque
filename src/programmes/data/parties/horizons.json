@@ -321,7 +321,7 @@
       {
         "name": "Gilles Boyer",
         "role": "Député européen (depuis 2019), proche d'Édouard Philippe, codirecteur de la campagne présidentielle de 2027",
-        "background": "Collaborateur d'Alain Juppé pendant une quinzaine d'années, il est directeur de campagne de Juppé lors de la primaire de la droite et du centre de 2016, puis trésorier de la campagne de François Fillon en 2017. Conseiller d'Édouard Philippe à Matignon à partir de 2017, il est élu au Parlement européen en 2019 et réélu en 2024.",
+        "background": "Collaborateur d'Alain Juppé pendant une quinzaine d'années, il est directeur de campagne de Juppé lors de la primaire de la droite et du centre de 2016. Conseiller d'Édouard Philippe à Matignon à partir de 2017, il est élu au Parlement européen en 2019 et réélu en 2024.",
         "sources": [
           {
             "title": "Public Sénat, « L'ex-directeur de campagne de Juppé raconte sa primaire »",
@@ -339,6 +339,12 @@
             "title": "Public Sénat, « Présidentielle : Édouard Philippe met en place son organigramme pour élargir au maximum le socle et dépasser Horizons »",
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-edouard-philippe-met-en-place-son-organigramme-pour-elargir-au-maximum-le-socle-et-depasser-horizons",
             "date": "2026-05-07",
+            "kind": "presse"
+          },
+          {
+            "title": "Rue89 Bordeaux, « L'Europe, vous et moi (5) : Gilles Boyer, juppéiste aux portes du parlement »",
+            "url": "https://rue89bordeaux.com/2019/05/europe-vous-et-moi-gilles-boyer-juppeiste-aux-portes-parlement-europeen/",
+            "date": "2019-05",
             "kind": "presse"
           }
         ]

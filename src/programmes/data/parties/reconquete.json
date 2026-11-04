@@ -88,6 +88,12 @@
             "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Journal officiel, Associations (JOAFE n° 18 du 4 mai 2021), annonce n° 1688 « Les Amis d'Éric Zemmour » (devenu Reconquête!, RNA W801008957)",
+            "url": "https://fr.ftp.opendatasoft.com/datadila/JO/ASSOCIATIONS/JOAFE/PDF/2021/20210018/JOAFE_PDF_Unitaire_20210018_01688.pdf",
+            "date": "2021-05-04",
+            "kind": "statistique"
           }
         ]
       },
@@ -143,7 +149,7 @@
     "timeline": [
       {
         "date": "2021-12-05",
-        "event": "Lancement du parti Reconquête lors du meeting de Villepinte (« serment de Villepinte »).",
+        "event": "Lancement du parti Reconquête lors du meeting de Villepinte, que le parti présente comme le « Serment de Villepinte ».",
         "sources": [
           {
             "title": "Wikipédia, « Reconquête (parti politique) »",
@@ -156,6 +162,18 @@
             "url": "https://www.parti-reconquete.fr/le-mouvement",
             "date": "2026-11",
             "kind": "programme"
+          },
+          {
+            "title": "The Times of Israel (AFP), « À Villepinte, violences et tensions au premier meeting d'Éric Zemmour »",
+            "url": "https://fr.timesofisrael.com/a-villepinte-violences-et-tensions-au-premier-meeting-deric-zemmour/",
+            "date": "2021-12-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Journal officiel, Associations (JOAFE n° 50 du 14 décembre 2021), annonce n° 1596 : « Les Amis d'Éric Zemmour » devient « Reconquête! »",
+            "url": "https://fr.ftp.opendatasoft.com/datadila/JO/ASSOCIATIONS/JOAFE/PDF/2021/20210050/JOAFE_PDF_Unitaire_20210050_01596.pdf",
+            "date": "2021-12-14",
+            "kind": "statistique"
           }
         ]
       },
@@ -221,6 +239,12 @@
             "title": "Wikipédia, « Reconquête (parti politique) »",
             "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Parlement européen (Verian), « Résultats nationaux France 2024-2029 — Résultats par parti national »",
+            "url": "https://results.elections.europa.eu/fr/resultats-nationaux/france/2024-2029/",
+            "date": "2024-07-16",
             "kind": "statistique"
           }
         ]

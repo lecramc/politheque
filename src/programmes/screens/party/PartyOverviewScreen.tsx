@@ -15,7 +15,7 @@ import { TabPanel } from '@/src/programmes/components/Tabs';
 import { legacyTabRedirect, partyHref } from '@/src/programmes/models/seo/party-sections';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
-/** « En bref » : /partis/[id]. Ce que le parti propose, ses réponses aux 7 grandes questions, puis le parcours. */
+/** « En bref » : /partis/[id]. Ce que le parti propose, ses réponses aux grandes questions, puis le parcours. */
 export default function PartyOverviewScreen() {
   const { id, onglet } = useLocalSearchParams<{ id: string; onglet?: string }>();
   const vm = useViewModel(partyViewModel(id));
@@ -61,7 +61,11 @@ export default function PartyOverviewScreen() {
           }}
         >
           <FurtherLinks links={vm.further} />
-          <PageSources sources={vm.sourcesBySection['en-bref']} verifiedOn={vm.verifiedOn} />
+          <PageSources
+            sources={vm.sourcesBySection['en-bref']}
+            verifiedOn={vm.verifiedOn}
+            updatedOn={vm.updatedOn}
+          />
         </View>
       </View>
       {vm.nextParty ? (

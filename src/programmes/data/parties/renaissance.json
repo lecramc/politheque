@@ -116,8 +116,8 @@
         ]
       },
       {
-        "title": "Classement par les analystes",
-        "text": "Les analystes classent généralement le parti au centre, comme libéral et pro-européen, certains le situant au centre droit ; une analyse de Yoann Taïeb publiée par La Grande Conversation (revue de Terra Nova, 23 octobre 2024) décrit Emmanuel Macron comme « un politique inspiré par l'universalisme républicain français et le social-libéralisme européen ».",
+        "title": "Classement par les encyclopédies et les analystes",
+        "text": "L'encyclopédie norvégienne Store norske leksikon le décrit comme un parti orienté vers le centre, dont la politique économique penche à droite ; une analyse de Yoann Taïeb publiée par La Grande Conversation (revue de Terra Nova, 23 octobre 2024) décrit Emmanuel Macron comme « un politique inspiré par l'universalisme républicain français et le social-libéralisme européen ».",
         "sources": [
           {
             "title": "La Grande Conversation (Terra Nova) – Macronisme, centrisme et bloc central",
@@ -129,6 +129,12 @@
             "title": "Wikipédia (en) – Renaissance (French political party)",
             "url": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
             "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Store norske leksikon, Kjetil Aukrust, « Renaissance »",
+            "url": "https://snl.no/Renaissance",
+            "date": "2024-12-20",
             "kind": "statistique"
           }
         ]
@@ -1647,7 +1653,7 @@
           "summary": "Le candidat appelle à une « Ve République du XXIe siècle » et à une « réforme constitutionnelle profonde, pour mieux partager le pouvoir », avec des référendums réguliers et moins de parlementaires.",
           "measures": [
             {
-              "text": "Réforme constitutionnelle « pour mieux partager le pouvoir », notamment avec les collectivités territoriales.",
+              "text": "Réforme constitutionnelle « pour mieux partager le pouvoir », notamment avec les collectivités territoriales (à Arras, en septembre 2025, le candidat appelait déjà à « accepter de partager le pouvoir »).",
               "sources": [
                 {
                   "title": "Présidentielle 2027 : « Il faut une réforme constitutionnelle profonde, pour mieux partager le pouvoir », défend Gabriel Attal",
@@ -1659,6 +1665,12 @@
                   "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
                   "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
                   "date": "2026-08-02",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « À Arras, Gabriel Attal prône \"une nouvelle République\" en vue de l'élection présidentielle de 2027 »",
+                  "url": "https://lcp.fr/actualites/a-arras-gabriel-attal-prone-une-nouvelle-republique-en-vue-de-l-election-presidentielle",
+                  "date": "2025-09-21",
                   "kind": "presse"
                 }
               ]
@@ -1677,11 +1689,17 @@
                   "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
                   "date": "2026-08-02",
                   "kind": "presse"
+                },
+                {
+                  "title": "La Gazette France (dépêche AFP), « Réseaux sociaux : Attal alimente le débat sur le référendum »",
+                  "url": "https://www.lagazettefrance.fr/article/reseaux-sociaux-attal-alimente-le-debat-sur-le-referendum",
+                  "date": "2026-08-16",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Réduire le nombre de parlementaires (577 à 350 députés et 348 à 200 sénateurs selon la proposition détaillée en 2026) et inscrire dans la Constitution un principe de « non-régression sociétale » (2025).",
+              "text": "Réduire le nombre de parlementaires et inscrire dans la Constitution un principe de « non-régression sociétale » (2025).",
               "sources": [
                 {
                   "title": "En meeting à Arras, Gabriel Attal appelle à une « Ve République du XXIe siècle »",
@@ -1693,6 +1711,12 @@
                   "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
                   "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
                   "date": "2026-08-02",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « À Arras, Gabriel Attal prône \"une nouvelle République\" en vue de l'élection présidentielle de 2027 »",
+                  "url": "https://lcp.fr/actualites/a-arras-gabriel-attal-prone-une-nouvelle-republique-en-vue-de-l-election-presidentielle",
+                  "date": "2025-09-21",
                   "kind": "presse"
                 }
               ]
