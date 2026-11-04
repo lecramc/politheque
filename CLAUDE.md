@@ -17,9 +17,9 @@
 - `build` et `refactor` → ignorés dans le CHANGELOG
 - Si un fix touche aussi des tests, c'est quand même un `fix`
 
-### Versioning automatique (hook `commit-msg`)
+### Versioning automatique (hook `post-commit`)
 
-Le hook `.husky/commit-msg` bumpe `package.json` automatiquement à chaque commit :
+Le hook `.husky/post-commit` bumpe `package.json` automatiquement après chaque commit :
 
 | Type de commit                           | Bump                      |
 | ---------------------------------------- | ------------------------- |
@@ -29,7 +29,10 @@ Le hook `.husky/commit-msg` bumpe `package.json` automatiquement à chaque commi
 | `build:` / `refactor:` / autres          | aucun                     |
 
 - `app.config.ts` lit la version depuis `package.json` — un seul endroit à modifier.
-- Le bump est inclus dans le commit, pas besoin de le faire manuellement.
+- Le bump est inclus dans le commit, pas besoin de le faire manuellement. Git ne relit pas l'index après `commit-msg` : le bump est donc appliqué par `post-commit`, qui réécrit le commit (même parent, message et auteur ; l'index et l'arbre de travail ne sont pas touchés, aucun hook relancé). `commit-msg` ne fait plus que valider le message (trailer `Correction-publique:`).
+- La base est toujours la version de `HEAD~`, jamais celle de l'index : pas de double bump, un bump résiduel stagé est écrasé, `git commit --amend` est idempotent. Un `--amend` qui change feat/fix en build/refactor ne retire pas l'ancien bump.
+- Aucun bump pour `build:`/`refactor:`/autres, ni pendant rebase / merge / cherry-pick / revert, ni pour un merge (`Merge …`), un commit racine ou `release:`.
+- Deux branches qui bumpent chacune conflictent sur la ligne `version` au merge/rebase : garder la plus haute.
 
 > **Règle branche feature** : sur une branche de feature, utiliser `build:` pour les corrections intermédiaires (typos, types, layout) — pas `fix:`. Réserver `fix:` aux vrais bugs qui méritent d'apparaître dans le CHANGELOG.
 

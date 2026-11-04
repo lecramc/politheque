@@ -1,0 +1,88 @@
+#!/bin/sh
+# Auto-bump de la version de package.json, appliqué APRÈS le commit (git ne relit pas l'index
+# après commit-msg). Le commit qui déclenche le bump est réécrit pour contenir la nouvelle version.
+#   fix:                         → patch
+#   feat:                        → minor
+#   feat!: / BREAKING CHANGE:    → major
+#   build: / refactor: / autres  → aucun
+#
+# La base est TOUJOURS la version de HEAD~ (jamais celle de l'index) : pas de double bump, et un
+# bump résiduel stagé est écrasé. `git commit --amend` est donc idempotent.
+# Réécriture par plomberie (commit-tree + index temporaire) : l'index et l'arbre de travail de
+# l'utilisateur (autres fichiers stagés, modifs partielles) ne sont pas touchés, aucun hook relancé.
+
+GIT_DIR=$(git rev-parse --git-dir)
+
+# Pas de bump pendant rebase / merge / cherry-pick / revert / am
+for f in rebase-merge rebase-apply MERGE_HEAD CHERRY_PICK_HEAD REVERT_HEAD sequencer; do
+  [ -e "$GIT_DIR/$f" ] && exit 0
+done
+
+# Uniquement un commit ordinaire (un seul parent) : ni racine, ni merge
+[ "$(git rev-list --parents -n1 HEAD | wc -w | tr -d ' ')" -eq 2 ] || exit 0
+
+MSG=$(git log -1 --format=%B HEAD)
+FIRST_LINE=$(printf '%s\n' "$MSG" | head -1)
+
+case "$FIRST_LINE" in
+  Merge\ *|release:\ *|fixup!\ *|squash!\ *) exit 0 ;;
+esac
+
+IS_BREAKING=0
+printf '%s\n' "$FIRST_LINE" | grep -qE '^[a-z]+(\([^)]+\))?!:' && IS_BREAKING=1
+printf '%s\n' "$MSG" | grep -qE '^BREAKING CHANGE:' && IS_BREAKING=1
+
+TYPE=$(printf '%s\n' "$FIRST_LINE" | sed 's/^\([a-z]*\).*/\1/')
+
+if [ "$IS_BREAKING" -eq 1 ]; then BUMP="major"
+elif [ "$TYPE" = "feat" ]; then BUMP="minor"
+elif [ "$TYPE" = "fix" ]; then BUMP="patch"
+else exit 0
+fi
+
+VERSION_RE='"version": "\([0-9][0-9]*\)\.\([0-9][0-9]*\)\.\([0-9][0-9]*\)"'
+BASE=$(git show HEAD~:package.json 2>/dev/null | sed -n "s/.*$VERSION_RE.*/\1.\2.\3/p" | head -1)
+[ -n "$BASE" ] || exit 0
+MAJOR=${BASE%%.*}; REST=${BASE#*.}; MINOR=${REST%%.*}; PATCH=${REST#*.}
+
+case "$BUMP" in
+  major) NEW="$((MAJOR + 1)).0.0" ;;
+  minor) NEW="${MAJOR}.$((MINOR + 1)).0" ;;
+  patch) NEW="${MAJOR}.${MINOR}.$((PATCH + 1))" ;;
+esac
+
+# Remplace la première ligne "version" (1re occurrence uniquement), sans sed -i (BSD/GNU)
+set_version() { # $1 = nouvelle version ; stdin → stdout
+  awk -v v="$1" '!d && /"version": "[0-9]+\.[0-9]+\.[0-9]+"/ { sub(/"version": "[0-9]+\.[0-9]+\.[0-9]+"/, "\"version\": \"" v "\""); d=1 } { print }'
+}
+
+COMMITTED=$(git show HEAD:package.json | sed -n "s/.*$VERSION_RE.*/\1.\2.\3/p" | head -1)
+[ "$COMMITTED" = "$NEW" ] && exit 0 # déjà à la bonne version
+
+OLD_BLOB=$(git rev-parse HEAD:package.json)
+NEW_BLOB=$(git show HEAD:package.json | set_version "$NEW" | git hash-object -w --stdin)
+
+# Nouveau commit = même arbre, sauf package.json ; mêmes parent, message et auteur
+TMP_INDEX=$(mktemp "${TMPDIR:-/tmp}/bump-index.XXXXXX")
+trap 'rm -f "$TMP_INDEX"' EXIT
+GIT_INDEX_FILE="$TMP_INDEX" git read-tree HEAD || exit 0
+GIT_INDEX_FILE="$TMP_INDEX" git update-index --cacheinfo "100644,$NEW_BLOB,package.json" || exit 0
+TREE=$(GIT_INDEX_FILE="$TMP_INDEX" git write-tree) || exit 0
+
+export GIT_AUTHOR_NAME=$(git log -1 --format=%an HEAD)
+export GIT_AUTHOR_EMAIL=$(git log -1 --format=%ae HEAD)
+export GIT_AUTHOR_DATE=$(git log -1 --format=%aI HEAD)
+NEW_COMMIT=$(git log -1 --format=%B HEAD | git commit-tree "$TREE" -p HEAD~) || exit 0
+git update-ref -m "commit (bump): $FIRST_LINE" HEAD "$NEW_COMMIT" || exit 0
+
+# Index : aligner package.json uniquement s'il était identique au commit initial (rien d'autre stagé dessus)
+INDEX_BLOB=$(git ls-files -s package.json | awk '{print $2}')
+[ "$INDEX_BLOB" = "$OLD_BLOB" ] && git update-index --cacheinfo "100644,$NEW_BLOB,package.json"
+
+# Arbre de travail : même chose, seulement si la ligne version est celle qui vient d'être commitée
+if [ "$(sed -n "s/.*$VERSION_RE.*/\1.\2.\3/p" package.json | head -1)" = "$COMMITTED" ]; then
+  set_version "$NEW" < package.json > package.json.bump.tmp && cat package.json.bump.tmp > package.json
+  rm -f package.json.bump.tmp
+fi
+
+echo "  bump $BASE → $NEW ($BUMP)"
