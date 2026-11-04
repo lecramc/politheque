@@ -49,6 +49,10 @@ pour la présidentielle 2027, **sans désinformation et sans orienter le lecteur
    correction de forme (orthographe, mise en page), et ne jamais l'inventer : sans date de
    vérification réelle, la page n'a pas de `lastmod` (c'est le cas du guide « Comprendre », des
    thèmes et de l'élection tant qu'une revue datée n'y est pas inscrite dans `lastVerified`).
+   Seules les entrées de journal de type `correction` et `mise-a-jour`, qui changent un fait, imposent
+   cette re-vérification : leur date ne peut pas dépasser le `lastVerified` de la fiche. Une entrée
+   `ajout` ou `retrait` (nouveau champ d'affichage repris de textes déjà sourcés, retrait d'un
+   élément) n'avance pas `lastVerified`, puisqu'aucun fait n'a été re-vérifié.
    **Toute modification de fond est inscrite au journal public des corrections (`/corrections`,
    `src/programmes/data/corrections.json`)** par le trailer `Correction-publique:` du message de
    commit, dont le hook `commit-msg` vérifie la présence dès qu'un fichier de `src/programmes/data/`

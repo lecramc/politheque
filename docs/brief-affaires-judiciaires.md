@@ -123,3 +123,27 @@ kind}]` (`kind` : `presse`, `justice` pour une décision de justice, `statistiqu
   indépendante puis validation humaine.
 - Si une information n'est pas vérifiable avec deux sources solides : la mettre dans
   « non retenu », avec la raison. Ne jamais inventer une date, une peine ou une juridiction.
+
+## 7. Arbitrages de l'éditeur (4 novembre 2026, après la passe 2)
+
+Affaires judiciaires :
+
+1. Appel annoncé publiquement (par la personne ou son avocat) et rapporté par deux sources → `condamnation-non-definitive`.
+2. Pourvoi signalé par le parquet général (communiqué officiel, même repris par une seule publication) → source officielle suffisante.
+3. Mise en examen annulée sans non-lieu → statut `mise-en-examen-annulee`, libellé exact de la décision.
+4. Ordonnance pénale requise, issue inconnue → non publiée tant que l'issue n'est pas connue (reste en `aRecouper`).
+5. Extinction par décès sans décision qui la constate → « action publique éteinte par le décès » (art. 6 du code de procédure pénale), rien de plus.
+6. Condamnations amnistiées (loi du 15 janvier 1990, faits de Jean-Marie Le Pen antérieurs à 1972) et réhabilitations → écartées, listées pour l'avis juridique.
+7. Appartenance actuelle : une source de 2026 est requise ; à défaut, dernier parti établi par une source, et `casLimite: true`.
+8. Faits sans lien avec l'activité publique ou politique (conduite en état d'ivresse, affaire Epstein pour Jack Lang…) → exclus. Ministres non adhérents au parti → exclus. Enquête contre X visant les comptes de campagne d'un parti → incluse, formulée « enquête contre X portant sur… ».
+
+Propositions jugées contraires au droit supérieur (`<id>-propositions.md`) : 9. Un appel ou une déclaration du **bureau** d'une autorité (ex. CNCDH, 12 juin 2024) n'est pas un avis d'autorité ; l'entrée ne reste que si elle atteint le seuil « contesté par des juristes » (deux juristes nommés, deux sources nationales indépendantes). 10. La Commission européenne compte comme autorité, à condition de chercher ses observations avec la même profondeur pour tous les partis. 11. Voter une mesure ne suffit pas : seules comptent les mesures dont le parti est l'auteur ou le porteur déclaré. 12. Période commune : depuis le 1er janvier 2012 ; projets de loi rattachés au parti du président et de la majorité.
+
+## 8. Agrégateurs (décision de l'éditeur, 4 novembre 2026)
+
+Les sites qui recensent des affaires (casier-politique.fr, Wikipédia, poligraph.fr…) servent de **pistes**
+pour repérer des procédures, jamais de source : chaque fait repéré doit être confirmé par au moins deux
+sources indépendantes (décision de justice, communiqué du parquet, presse nationale), conformément au § 3.
+Pour la symétrie, un agrégateur est exploité **pour les 10 partis de la même façon** ; si sa couverture
+est inégale selon les partis, le signaler dans `SYNTHESE.md` et compenser par une recherche directe pour
+les partis moins couverts.

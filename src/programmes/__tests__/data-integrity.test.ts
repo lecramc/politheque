@@ -268,8 +268,9 @@ describe('Feature: intégrité du journal des corrections (ajout)', () => {
     expect(catalog.corrections).toEqual(corrections);
   });
 
-  it('should date every party correction no later than the party lastVerified (charte, règle 8)', () => {
-    for (const entry of catalog.corrections) {
+  it('should date every party correction or update no later than the party lastVerified, but not additions or removals (charte, règle 8)', () => {
+    const changesAFact = (kind: string) => kind === 'correction' || kind === 'mise-a-jour';
+    for (const entry of catalog.corrections.filter((e) => changesAFact(e.kind))) {
       for (const page of entry.pages) {
         const id = /^\/partis\/([^/]+)/.exec(page)?.[1];
         const party = catalog.parties.find((p) => p.id === id);
