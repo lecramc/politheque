@@ -39,6 +39,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que dit le parti",
         "text": "Le parti se définit comme un mouvement visant à « défendre l'intérêt national » et à « promouvoir la grandeur de la France », et à assurer « la défense de notre identité, de nos familles et de nos terroirs » ainsi que « la défense de notre civilisation » ; il se présente comme « le rassemblement du peuple français » autour des thèmes Identité, Familles, École, Terroirs, Sécurité, Libertés, Prospérité, Puissance et Souveraineté.",
         "sources": [
           {
@@ -56,6 +57,7 @@
         ]
       },
       {
+        "title": "La « remigration »",
         "text": "Il défend la « remigration », terme assumé par Éric Zemmour dès 2022 et repris en 2026 (renvoi d'étrangers déjà présents sur le territoire, y compris en situation régulière après un an de chômage).",
         "sources": [
           {
@@ -79,7 +81,8 @@
         ]
       },
       {
-        "text": "La presse de référence et de nombreux politistes le situent à l'extrême droite (nationalisme, identitarisme, national-conservatisme, opposition à l'immigration et à l'islam) ; pour le politiste Jean-Yves Camus, l'identitarisme est le marqueur essentiel du parti au sein de l'extrême droite ; la Fondation Jean-Jaurès range l'électorat d'Éric Zemmour dans le bloc d'extrême droite et lui prête un « tropisme identitaire et sécuritaire ».",
+        "title": "Classement par la presse et les politistes",
+        "text": "La presse de référence et de nombreux politistes le situent à l'extrême droite (nationalisme, identitarisme, national-conservatisme, opposition à l'immigration et à l'islam)  ; la Fondation Jean-Jaurès range l'électorat d'Éric Zemmour dans le bloc d'extrême droite et lui prête un « tropisme identitaire et sécuritaire ». Le politiste Gilles Ivaldi (CNRS, CEVIPOF) emploie la catégorie de « droite radicale » pour Éric Zemmour comme pour Marine Le Pen, et oppose au « social-populisme » de cette dernière le « capitalisme populaire » du programme Zemmour 2022, plus libéral en économie. Aucune prise de position officielle du parti sur sa propre qualification n'est connue.",
         "sources": [
           {
             "title": "Wikipédia, « Reconquête (parti politique) »",
@@ -92,22 +95,11 @@
             "url": "https://www.jean-jaures.org/publication/radioscopie-du-zemmourisme/",
             "date": "2022-03-26",
             "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "text": "Le politiste Gilles Ivaldi (CNRS, CEVIPOF) emploie la catégorie de « droite radicale » pour Éric Zemmour comme pour Marine Le Pen, et oppose au « social-populisme » de cette dernière le « capitalisme populaire » du programme Zemmour 2022, plus libéral en économie. Aucune prise de position officielle du parti sur sa propre qualification n'est connue.",
-        "sources": [
+          },
           {
             "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
             "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
             "date": "2022-03",
-            "kind": "statistique"
-          },
-          {
-            "title": "Fondation Jean-Jaurès, « Radioscopie du zemmourisme » (P. Cébille, J. Fourquet, L. Jussian, F. Kraus)",
-            "url": "https://www.jean-jaures.org/publication/radioscopie-du-zemmourisme/",
-            "date": "2022-03-26",
             "kind": "statistique"
           }
         ]
@@ -452,7 +444,8 @@
     ],
     "thought": [
       {
-        "text": "Identité et « civilisation » : le parti revendique la défense de « notre civilisation », de « notre identité », des familles et des terroirs, et la « remigration », terme assumé par Éric Zemmour en 2022 ; le politiste Jean-Yves Camus voit dans l'identitarisme le marqueur essentiel du parti au sein de l'extrême droite, et la Fondation Jean-Jaurès prête à l'électorat zemmourien un « tropisme identitaire et sécuritaire ».",
+        "title": "Identité et « civilisation »",
+        "text": "Identité et « civilisation » : le parti revendique la défense de « notre civilisation », de « notre identité », des familles et des terroirs, et la « remigration », terme assumé par Éric Zemmour en 2022 ; la Fondation Jean-Jaurès prête à l'électorat zemmourien un « tropisme identitaire et sécuritaire ».",
         "sources": [
           {
             "title": "Reconquête, « Notre mouvement » (site officiel)",
@@ -481,6 +474,7 @@
         ]
       },
       {
+        "title": "« Grand remplacement »",
         "text": "« Grand remplacement » : Éric Zemmour reprend à son compte la thèse du « grand remplacement », formulée par l'écrivain Renaud Camus au début des années 2010, selon laquelle la population française serait remplacée par une population immigrée extra-européenne, et en fait un thème central de sa campagne de 2022 ; les démographes la contestent, Hervé Le Bras (INED) la qualifiant de « simplement fausse » et la présentant comme un slogan sans fondement démographique, avec des projections plaçant les immigrés et leurs descendants entre 19 % et 32 % de la population en 2050 selon les définitions.",
         "sources": [
           {
@@ -504,6 +498,7 @@
         ]
       },
       {
+        "title": "Lectures historiques",
         "text": "Lectures historiques : Éric Zemmour, auteur d'essais (Le Suicide français, 2014 ; La France n'a pas dit son dernier mot, 2021), soutient notamment que le régime de Vichy aurait protégé les juifs français ; cette thèse est contestée par des historiens de la période, dont Jacques Semelin, qui rappelle que les juifs ont survécu « en dépit de Vichy » et non grâce à lui .",
         "sources": [
           {
@@ -527,6 +522,7 @@
         ]
       },
       {
+        "title": "Droite radicale et libéralisme économique",
         "text": "Droite radicale et libéralisme économique : le politiste Gilles Ivaldi (CEVIPOF) classe Éric Zemmour, comme Marine Le Pen, dans la « droite radicale », mais oppose au « social-populisme » du RN le « capitalisme populaire » du programme Reconquête de 2022, plus libéral en économie ; le parti revendique une « union des droites », stratégie qui a conduit en juin 2024 à la rupture avec Marion Maréchal et les élus favorables à l'alliance RN-Ciotti.",
         "sources": [
           {

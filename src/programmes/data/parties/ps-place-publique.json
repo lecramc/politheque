@@ -57,6 +57,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que dit le PS",
         "text": "Le PS se définit sur son site comme porteur d'un « avenir social, écologique & démocratique » et se réclame du « combat historique pour la justice sociale et le progrès humain » depuis 1905 ; sa déclaration de principes de 2008, la cinquième de son histoire, se réfère au socialisme démocratique.",
         "sources": [
           {
@@ -86,6 +87,7 @@
         ]
       },
       {
+        "title": "Ce que dit Place publique",
         "text": "Place publique se définit comme « un parti né des causes et de l'énergie citoyenne », « devenu un parti politique ancré dans les territoires », qui se réclame de « la vieille flamme humaniste française », de la « révolution écologique » et d'une « Europe souveraine ».",
         "sources": [
           {
@@ -109,7 +111,8 @@
         ]
       },
       {
-        "text": "Les ouvrages de référence situent le PS à gauche et décrivent son évolution vers la social-démocratie : Larousse s'interroge sur une évolution vers « la social-démocratie version Hollande » et une ligne économique « sociale-libérale » sous Manuel Valls ; le politiste Étienne Schweisguth (CEVIPOF) jugeait en 2007 que le PS « n'a toujours pas choisi de ligne claire ».",
+        "title": "Classement par les encyclopédies et la presse",
+        "text": "Les ouvrages de référence situent le PS à gauche et décrivent son évolution vers la social-démocratie : Larousse s'interroge sur une évolution vers « la social-démocratie version Hollande » et une ligne économique « sociale-libérale » sous Manuel Valls ; le politiste Étienne Schweisguth (CEVIPOF) jugeait en 2007 que le PS « n'a toujours pas choisi de ligne claire ». Raphaël Glucksmann et Place publique sont généralement présentés par la presse et les encyclopédies comme sociaux-démocrates, au centre gauche.",
         "sources": [
           {
             "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
@@ -122,12 +125,7 @@
             "url": "https://acteurspublics.fr/articles/le-parti-socialiste-a-lheure-du-recentrage/",
             "date": "2026-11",
             "kind": "presse"
-          }
-        ]
-      },
-      {
-        "text": "Raphaël Glucksmann et Place publique sont généralement présentés par la presse et les encyclopédies comme sociaux-démocrates, au centre gauche.",
-        "sources": [
+          },
           {
             "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France »",
             "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
@@ -587,6 +585,7 @@
     ],
     "thought": [
       {
+        "title": "Aux origines : la SFIO",
         "text": "Aux origines, la SFIO associe deux traditions : le marxisme révolutionnaire et collectiviste de Jules Guesde, dont la doctrine domine le texte d'unification de 1905, et le socialisme républicain et réformiste de Jean Jaurès, qui l'emporte le plus souvent dans la pratique ; Léon Blum ajoute ensuite la distinction entre « exercice » et « conquête » du pouvoir.",
         "sources": [
           {
@@ -610,6 +609,7 @@
         ]
       },
       {
+        "title": "Épinay (1971) et union de la gauche",
         "text": "À Épinay (1971), le PS refondé revendique la « rupture avec la société capitaliste » — François Mitterrand déclare que celui qui ne l'accepte pas ne peut être adhérent du parti — et la stratégie d'union de la gauche, matérialisée par le Programme commun avec le PCF (1972).",
         "sources": [
           {
@@ -633,6 +633,7 @@
         ]
       },
       {
+        "title": "Le « tournant de la rigueur »",
         "text": "Le « tournant de la rigueur » : après la relance de 1981, le gouvernement opère un premier virage en juin 1982 (blocage des prix et des salaires), puis, en mars 1983, maintient le franc dans le Système monétaire européen avec un plan d'austérité et une politique de « désinflation compétitive ». Lu à l'époque comme un reniement de la doctrine socialiste, il est décrit par certains historiens comme une réorientation plus progressive, amorcée dès 1982.",
         "sources": [
           {
@@ -650,6 +651,7 @@
         ]
       },
       {
+        "title": "Évolution vers la social-démocratie",
         "text": "Le PS se réfère au « socialisme démocratique » dans sa déclaration de principes de 2008 ; les encyclopédies et politistes décrivent son évolution vers la social-démocratie (« social-démocratie version Hollande », ligne « sociale-libérale » sous Manuel Valls) puis, après l'effondrement de 2017 (6,36 % pour Benoît Hamon), une hésitation persistante entre alliance avec la gauche radicale (NUPES 2022, NFP 2024) et recentrage.",
         "sources": [
           {
@@ -685,6 +687,7 @@
         ]
       },
       {
+        "title": "Place publique",
         "text": "Place publique se définit comme « un parti né des causes et de l'énergie citoyenne », humaniste, écologiste et européen ; la presse et les encyclopédies le classent au centre gauche, dans la famille sociale-démocrate.",
         "sources": [
           {

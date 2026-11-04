@@ -58,6 +58,11 @@ export interface SourcedText {
   sources: Source[];
 }
 
+/** Élément d'une liste repliable : titre court rédigé (≤ 60 caractères, sans affirmation), texte intégral sourcé. */
+export interface TitledSourcedText extends SourcedText {
+  title: string;
+}
+
 export interface HistoryEvent {
   /** ISO 8601 (AAAA, AAAA-MM ou AAAA-MM-JJ). */
   date: string;
@@ -81,14 +86,14 @@ export interface PartyHistory {
   /** Origines et filiation, 3-4 phrases neutres. */
   origins: SourcedText;
   /** Valeurs et références revendiquées par le parti lui-même, puis telles que décrites par des chercheurs. */
-  ideals: SourcedText[];
+  ideals: TitledSourcedText[];
   timeline: HistoryEvent[];
   /** Pourquoi le parti a été créé : contexte et objectifs déclarés. */
   whyCreated?: SourcedText;
   /** Fondateurs et figures marquantes. */
   figures?: PartyFigure[];
   /** Courants de pensée, références intellectuelles et doctrinales. */
-  thought?: SourcedText[];
+  thought?: TitledSourcedText[];
 }
 
 /** Candidature d'un parti à une élection donnée, avec le programme présenté pour ce scrutin. */

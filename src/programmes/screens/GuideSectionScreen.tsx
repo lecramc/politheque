@@ -83,15 +83,21 @@ export default function GuideSectionScreen() {
           </View>
 
           {vm.next ? (
-            <Button
-              variant="brand"
-              onPress={() => {
-                vm.markRead();
-                router.push({ pathname: '/comprendre/[id]', params: { id: vm.next!.id } });
-              }}
-            >
-              {`Suite : ${vm.next.title}`}
-            </Button>
+            <View style={{ gap: effects.spacing.xs }}>
+              <Text variant="caption">À suivre</Text>
+              <Text style={{ fontSize: effects.sizes.text.body, lineHeight: 24 }}>
+                {vm.next.title}
+              </Text>
+              <Button
+                variant="brand"
+                onPress={() => {
+                  vm.markRead();
+                  router.push({ pathname: '/comprendre/[id]', params: { id: vm.next!.id } });
+                }}
+              >
+                Section suivante
+              </Button>
+            </View>
           ) : (
             <Link href="/comprendre">
               <Text style={{ color: colors.tint, ...fonts.bold }}>Retour au sommaire →</Text>

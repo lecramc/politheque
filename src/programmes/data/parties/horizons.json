@@ -45,6 +45,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que dit son manifeste",
         "text": "Le parti se définit dans son manifeste par « la liberté comme valeur cardinale de la République », « l'ordre comme la meilleure garantie de la liberté et de la prospérité », « un humanisme républicain » faisant de l'éducation la priorité, la démocratie représentative « dans le cadre des institutions de la Vème République » et « le projet européen » ; il dit vouloir dépasser les « clivages artificiels ».",
         "sources": [
           {
@@ -62,7 +63,8 @@
         ]
       },
       {
-        "text": "La presse de référence et les encyclopédies classent généralement Horizons au centre droit, au sein du « bloc central » mais autonome vis-à-vis de Renaissance, avec une orientation libérale en économie ; aucune classification académique dédiée (CEVIPOF, Fondapol, Fondation Jean-Jaurès) n'a été identifiée.",
+        "title": "Classement par la presse et les encyclopédies",
+        "text": "La presse de référence et les encyclopédies classent généralement Horizons au centre droit, au sein du « bloc central » mais autonome vis-à-vis de Renaissance, avec une orientation libérale en économie.",
         "sources": [
           {
             "title": "Horizons rêve à court terme",
@@ -340,6 +342,7 @@
     ],
     "thought": [
       {
+        "title": "Filiation",
         "text": "Filiation : la presse et les encyclopédies rattachent Horizons à la droite modérée issue de l'UMP, en particulier à l'entourage d'Alain Juppé (Philippe, Boyer, Marcangeli), décrite en 2017 comme une « droite Macron-compatible » ; Édouard Philippe, ancien membre de LR, participe à la majorité présidentielle sans adhérer à LREM.",
         "sources": [
           {
@@ -363,6 +366,7 @@
         ]
       },
       {
+        "title": "Valeurs revendiquées",
         "text": "Le parti revendique dans son manifeste la liberté comme « valeur cardinale », l'ordre comme garantie de la liberté et de la prospérité, un « humanisme républicain », les institutions de la Ve République et le projet européen, ainsi que le dépassement des « clivages artificiels » ; il met en avant l'ancrage dans les élus locaux.",
         "sources": [
           {
@@ -380,6 +384,7 @@
         ]
       },
       {
+        "title": "Ligne économique",
         "text": "Sur le plan économique, le parti défend une ligne de réforme de l'État social et de réduction de la dépense publique : en septembre 2022, Édouard Philippe affirme qu'il faut « réformer les retraites et faire en sorte que nous travaillions plus longtemps » et assure Élisabeth Borne du soutien de son groupe ; son programme présenté à l'automne 2026 prévoit de porter progressivement l'âge de départ à 65 ans « pour les Français qui le peuvent » et de ne pas remplacer un fonctionnaire sur trois partant à la retraite.",
         "sources": [
           {

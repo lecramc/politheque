@@ -13,15 +13,12 @@ import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
+import { SourcedAccordionList } from '@/src/programmes/components/SourcedAccordionList';
 import { formatSourceDate } from '@/src/programmes/components/SourceLinks';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
-import {
-  afterFirstSentence,
-  beforeParenthesis,
-  firstSentence,
-} from '@/src/programmes/models/presentation.service';
+import { beforeParenthesis, firstSentence } from '@/src/programmes/models/presentation.service';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 type Tab = 'bref' | 'histoire' | 'positions' | 'programme';
@@ -156,16 +153,7 @@ export default function PartyScreen() {
                       </View>
                     ))}
                 </Card>
-                {(party.history?.ideals ?? []).slice(0, 3).map((ideal) => (
-                  <Accordion key={ideal.text} title={firstSentence(ideal.text)}>
-                    {afterFirstSentence(ideal.text) ? (
-                      <Text style={{ fontSize: 16, lineHeight: 25 }}>
-                        {afterFirstSentence(ideal.text)}
-                      </Text>
-                    ) : null}
-                    <SourceChip sources={ideal.sources} />
-                  </Accordion>
-                ))}
+                <SourcedAccordionList items={party.history?.ideals ?? []} />
                 <Accordion
                   title="Présentation complète"
                   subtitle="Chiffres, dirigeants, situation actuelle"
@@ -251,16 +239,7 @@ export default function PartyScreen() {
                     <Text variant="caption">
                       {party.history.thought ? 'Courants de pensée' : 'Idées et classement'}
                     </Text>
-                    {(party.history.thought ?? party.history.ideals).map((item) => (
-                      <Accordion key={item.text} title={firstSentence(item.text)}>
-                        {afterFirstSentence(item.text) ? (
-                          <Text style={{ fontSize: 16, lineHeight: 25 }}>
-                            {afterFirstSentence(item.text)}
-                          </Text>
-                        ) : null}
-                        <SourceChip sources={item.sources} />
-                      </Accordion>
-                    ))}
+                    <SourcedAccordionList items={party.history.thought ?? party.history.ideals} />
                   </View>
                 ) : null}
               </View>

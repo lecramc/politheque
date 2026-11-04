@@ -126,3 +126,11 @@ Elles complètent les règles ci-dessus et portent sur tous les champs texte aff
    (« 31,37 % », « 9,89 % »), suivis de « des suffrages exprimés » pour la présidentielle ;
    pas de double chiffre « selon les sources » quand le résultat officiel est connu. Une
    citation entre guillemets reprend le texte exact de la source, à l'identique partout.
+10. **Titres courts.** Chaque idée (`history.ideals[]`) et chaque courant de pensée
+    (`history.thought[]`) porte un `title` rédigé de 60 caractères au plus : un groupe nominal qui
+    nomme le sujet sans rien affirmer (« Ce que disent ses statuts », « Classement par les
+    encyclopédies », « Gaullisme », « Rapport au RN »), sans adjectif évaluatif, dans le même
+    registre pour les dix partis. Le texte (`text`) reste intégral et sourcé. Dans les idées,
+    chaque fiche commence par ce que le parti dit de lui-même (« Ce que dit… ») et contient
+    **une seule** entrée « Classement par … » ; le nuancier du ministère de l'Intérieur, quand une
+    décision de justice le concerne, a sa propre entrée « Nuancier du ministère de l'Intérieur ».
