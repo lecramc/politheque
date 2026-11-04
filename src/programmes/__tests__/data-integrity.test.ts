@@ -3,6 +3,7 @@ import guide from '@/src/programmes/data/guide.json';
 import { PARTIES } from '@/src/programmes/data/parties';
 import { QUESTIONS } from '@/src/programmes/data/questions';
 import themes from '@/src/programmes/data/themes.json';
+import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { TITLE_MAX_LENGTH } from '@/src/programmes/models/sourced-item.service';
@@ -177,6 +178,10 @@ describe('Feature: intégrité des données', () => {
       expect(titles.length, party.id).toBeLessThanOrEqual(4);
       expect(titles[0], party.id).toMatch(/^Ce que di/);
       expect(titles.filter((t) => t.startsWith('Classement par ')).length, party.id).toBe(1);
+    });
+
+    it('should give every party at least one classification ideal', () => {
+      expect(splitIdeals(party.history!.ideals).classification.length, party.id).toBeGreaterThan(0);
     });
 
     it('should state when it was last verified', () => {

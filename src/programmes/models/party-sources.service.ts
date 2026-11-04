@@ -1,9 +1,6 @@
 import type { Party, Source } from '@/src/programmes/models/programme.model';
 import type { PartySection } from '@/src/programmes/models/seo/party-sections';
 
-/** Nombre d'idéaux présentés sur « En bref » (les autres sont dans l'histoire). */
-export const OVERVIEW_IDEALS = 3;
-
 /** Sources affichées sur une section de la fiche (et citées dans son JSON-LD). */
 export function partySectionSources(
   party: Party,
@@ -13,7 +10,7 @@ export function partySectionSources(
   const history = party.history;
   switch (section) {
     case 'en-bref':
-      return (history?.ideals ?? []).slice(0, OVERVIEW_IDEALS).flatMap((i) => i.sources);
+      return (history?.ideals ?? []).flatMap((i) => i.sources);
     case 'histoire':
       return history
         ? [

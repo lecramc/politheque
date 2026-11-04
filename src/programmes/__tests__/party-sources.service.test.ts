@@ -51,11 +51,12 @@ describe("Feature: sources d'une section de fiche", () => {
     );
   });
 
-  it('should list the first three ideals on the overview', () => {
+  it('should list every ideal on the overview, as displayed', () => {
     expect(titles(partySectionSources(party, 'en-bref', 'presidentielle-2027'))).toEqual([
       'ideal1',
       'ideal2',
       'ideal3',
+      'ideal4',
     ]);
   });
 
