@@ -142,6 +142,33 @@ describe('Feature: validation d’un dossier de procédures', () => {
     expect(rules(issues)).toContain('coherence');
   });
 
+  it('should accept an entry whose date of facts is unknown (null), never a made-up one', () => {
+    expect(checkEntry({ facts: null })).toEqual([]);
+  });
+
+  it('should accept a conviction without trace of appeal only if no remedy is known', () => {
+    const status = 'condamnation-recours-non-documente' as const;
+    expect(checkEntry({ status, steps: [conviction()], pendingRemedy: null })).toEqual([]);
+    const withRemedy = checkEntry({
+      status,
+      steps: [conviction()],
+      pendingRemedy: { kind: 'appel', filedBy: 'personne' },
+    });
+    expect(rules(withRemedy)).toContain('coherence');
+    expect(rules(checkEntry({ status, steps: [legalStepFactory()] }))).toContain('coherence');
+  });
+
+  it('should accept an annulled mise en examen only if the last step annuls it', () => {
+    const status = 'mise-en-examen-annulee' as const;
+    const annulled = legalStepFactory({
+      kind: 'mise-en-examen',
+      decision: 'La mise en examen est annulée par la chambre de l’instruction.',
+      outcome: 'annulation',
+    });
+    expect(checkEntry({ status, steps: [annulled] })).toEqual([]);
+    expect(rules(checkEntry({ status, steps: [legalStepFactory()] }))).toContain('coherence');
+  });
+
   it('should reject penalties on a step that is not a conviction', () => {
     const issues = checkEntry({
       steps: [legalStepFactory({ penalties: [{ kind: 'amende', euros: 1000 }] })],
@@ -219,6 +246,15 @@ describe('Feature: validation d’un dossier de procédures', () => {
         steps: [conviction({ decision: 'Elle est déclarée coupable de détournement de fonds.' })],
       })
     ).toEqual([]);
+  });
+
+  it('should accept « faits présumés » (a qualification), not a presumption notice', () => {
+    const steps = [
+      legalStepFactory({
+        decision: 'Information judiciaire sur des faits présumés de corruption.',
+      }),
+    ];
+    expect(checkEntry({ steps })).toEqual([]);
   });
 
   it('should reject a hand-written presumption of innocence notice and working notes', () => {

@@ -33,7 +33,7 @@ export const FORBIDDEN_LEGAL_TERMS: readonly string[] = [
 ];
 
 /** Rappel de présomption écrit à la main : il est généré par le site, jamais stocké. */
-export const HAND_WRITTEN_PRESUMPTION = /pr[ée]sum[ée]|pr[ée]somption/i;
+export const HAND_WRITTEN_PRESUMPTION = /pr[ée]sum[ée]e?s?\s+innocente?s?|pr[ée]somption/i;
 
 /** « coupable » qui n'est pas précédé de « déclaré(e)(s) ». */
 export function hasBareGuilty(text: string): boolean {
@@ -51,12 +51,15 @@ export const STATUS_LABELS: Record<LegalStatus, string> = {
   'renvoi-devant-tribunal': 'Renvoi devant le tribunal',
   'proces-en-cours': 'Procès en cours',
   'condamnation-non-definitive': 'Condamnation non définitive (recours en cours)',
+  // Libellé de repli : la présentation génère « Condamné·e par [juridiction] le [date] ; … ».
+  'condamnation-recours-non-documente': "Condamnation ; nous n'avons pas trouvé trace d'un recours",
   'condamnation-definitive': 'Condamnation définitive',
   relaxe: 'Relaxe',
   acquittement: 'Acquittement',
   'non-lieu': 'Non-lieu',
   classement: 'Classement sans suite',
   'extinction-action-publique': 'Action publique éteinte',
+  'mise-en-examen-annulee': 'Mise en examen annulée',
 };
 
 /** Statuts pour lesquels le rappel de la présomption d'innocence est affiché. */
@@ -67,6 +70,7 @@ export const NON_FINAL_STATUSES: ReadonlySet<LegalStatus> = new Set<LegalStatus>
   'renvoi-devant-tribunal',
   'proces-en-cours',
   'condamnation-non-definitive',
+  'condamnation-recours-non-documente',
 ]);
 
 export const PRESUMPTION_NOTICE =

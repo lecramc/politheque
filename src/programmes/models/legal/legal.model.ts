@@ -12,12 +12,14 @@ export const LEGAL_STATUSES = [
   'renvoi-devant-tribunal',
   'proces-en-cours',
   'condamnation-non-definitive', // appel ou pourvoi en cours
+  'condamnation-recours-non-documente', // condamnation connue, aucune trace d'un recours (brief § 9.1)
   'condamnation-definitive',
   'relaxe',
   'acquittement',
   'non-lieu',
   'classement',
   'extinction-action-publique', // décès, prescription
+  'mise-en-examen-annulee', // annulée par une juridiction, sans non-lieu (brief § 7.3)
 ] as const;
 /** Statut juridique exact, liste fermée (brief § 2, D-A4). */
 export type LegalStatus = (typeof LEGAL_STATUSES)[number];
@@ -46,6 +48,8 @@ export interface LegalPerson {
   /** Clé de tri : nom de famille puis prénom (« Le Pen Marine ») ; nom de l'entité pour une personne morale. */
   sortName: string;
   kind: 'personne-physique' | 'personne-morale';
+  /** Seulement si la donnée est établie ; sinon formulations épicènes. */
+  gender?: 'f' | 'm';
 }
 
 export type Penalty =
@@ -119,7 +123,8 @@ export interface LegalEntry {
   category: LegalCategory;
   /** Qualifications pénales, termes du code pénal : « détournement de fonds publics ». */
   offences: string[];
-  facts: { start: IsoPartialDate; end?: IsoPartialDate };
+  /** null : la source ne donne aucune année (jamais une date inventée). */
+  facts: { start: IsoPartialDate; end?: IsoPartialDate } | null;
   status: LegalStatus;
   /** Chronologiques, la dernière étape porte l'issue courante. */
   steps: LegalStep[];
@@ -128,6 +133,10 @@ export interface LegalEntry {
   /** Sources générales de l'entrée (en plus de celles des étapes). */
   sources: Source[];
   lastVerified: IsoDay;
+  /** Décision civile ou administrative : jamais présentée comme une condamnation pénale. */
+  nature?: 'civile-administrative';
+  /** Libellé d'état validé par l'éditeur (ex. « dernière information publique : … »). */
+  publicLabel?: string;
 }
 
 export interface LegalDossier {

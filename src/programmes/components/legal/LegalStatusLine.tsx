@@ -11,15 +11,22 @@ import { StatusChip } from '@/src/programmes/components/StatusChip';
  */
 export function LegalStatusLine({
   statusLabel,
+  statusDetail = null,
   presumptionNotice,
 }: {
   statusLabel: string;
+  statusDetail?: string | null;
   presumptionNotice: string | null;
 }) {
   const { colors, effects } = useTheme();
   return (
     <View style={{ gap: effects.spacing.xs }}>
       <StatusChip label={statusLabel} />
+      {statusDetail ? (
+        <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+          {statusDetail}
+        </Text>
+      ) : null}
       {presumptionNotice ? (
         <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
           {presumptionNotice}

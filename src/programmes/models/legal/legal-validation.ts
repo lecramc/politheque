@@ -110,11 +110,12 @@ function checkEntryShape(c: Collector, e: Rec): boolean {
   if (!Array.isArray(e.offences) || !e.offences.length || !e.offences.every(isText))
     c.add('forme', 'offences', 'au moins une qualification pénale (texte) attendue');
   if (
-    !isRecord(e.facts) ||
-    !isText(e.facts.start) ||
-    (e.facts.end !== undefined && !isText(e.facts.end))
+    e.facts !== null &&
+    (!isRecord(e.facts) ||
+      !isText(e.facts.start) ||
+      (e.facts.end !== undefined && !isText(e.facts.end)))
   )
-    c.add('forme', 'facts', '{ start, end? } attendu');
+    c.add('forme', 'facts', 'null ou { start, end? } attendu');
   if (e.status === undefined || !isOneOf(LEGAL_STATUSES, e.status))
     c.add('statut', 'status', `statut absent ou hors de la liste fermée : ${String(e.status)}`);
   if (!isText(e.lastVerified)) c.add('forme', 'lastVerified', 'date de vérification attendue');
@@ -253,8 +254,8 @@ function checkSources(c: Collector, e: LegalEntry) {
 
 function checkDates(c: Collector, e: LegalEntry, today: IsoDay) {
   const dated: [string, string][] = [
-    ['facts.start', e.facts.start],
-    ...(e.facts.end ? [['facts.end', e.facts.end] as [string, string]] : []),
+    ...(e.facts ? [['facts.start', e.facts.start] as [string, string]] : []),
+    ...(e.facts?.end ? [['facts.end', e.facts.end] as [string, string]] : []),
     ...e.steps.map((s, i): [string, string] => [`steps[${i}].date`, s.date]),
     ...(e.pendingRemedy?.filedOn
       ? [['pendingRemedy.filedOn', e.pendingRemedy.filedOn] as [string, string]]
@@ -281,11 +282,13 @@ function checkDates(c: Collector, e: LegalEntry, today: IsoDay) {
   }
   if (e.lastVerified > today) c.add('dates', 'lastVerified', 'vérification datée du futur');
 
-  const factsEnd = e.facts.end ?? e.facts.start;
-  if (start(e.facts.start) > start(factsEnd))
-    c.add('dates', 'facts', 'début des faits après leur fin');
-  if (start(factsEnd) > start(e.steps[0].date))
-    c.add('dates', 'facts', 'faits postérieurs à la première étape');
+  if (e.facts) {
+    const factsEnd = e.facts.end ?? e.facts.start;
+    if (start(e.facts.start) > start(factsEnd))
+      c.add('dates', 'facts', 'début des faits après leur fin');
+    if (start(factsEnd) > start(e.steps[0].date))
+      c.add('dates', 'facts', 'faits postérieurs à la première étape');
+  }
   e.steps.slice(1).forEach((s, i) => {
     if (start(s.date) < start(e.steps[i].date))
       c.add('dates', `steps[${i + 1}].date`, 'étapes hors ordre chronologique');
@@ -318,6 +321,20 @@ function checkCoherence(c: Collector, e: LegalEntry) {
         c.add('coherence', 'pendingRemedy', 'condamnation définitive avec un recours en cours');
       if (!decisions.some((s) => s.outcome === 'condamnation'))
         c.add('coherence', 'steps', 'condamnation définitive sans étape de condamnation');
+      break;
+    case 'condamnation-recours-non-documente':
+      if (lastDecision?.outcome !== 'condamnation')
+        c.add('coherence', 'steps', 'la dernière décision n’est pas une condamnation');
+      if (e.pendingRemedy !== null)
+        c.add(
+          'coherence',
+          'pendingRemedy',
+          'recours connu : le statut « sans trace de recours » ne convient pas'
+        );
+      break;
+    case 'mise-en-examen-annulee':
+      if (lastStep.outcome !== 'annulation')
+        c.add('coherence', 'steps', 'la dernière étape n’annule pas la mise en examen');
       break;
     case 'condamnation-non-definitive':
       if (lastDecision?.outcome !== 'condamnation')

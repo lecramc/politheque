@@ -3,6 +3,10 @@
 //
 //   node scripts/promote-affaires.mjs <partyId|--all> [--dry-run] [--from <dossier>]
 //
+// Accepte le schéma « brouillon-2 » de docs/affaires/SCHEMA.md (et l'ancien format revue/review).
+// Refus tant que manquent : crossCheck, humanValidation, validationHumaine (cas limite),
+// avisJuridiqueRendu (avis juridique) ; jamais de validation présumée.
+//
 // `--all` : tous ou aucun. Les dix brouillons doivent être promouvables, sinon rien n'est écrit.
 // Code de sortie non nul au moindre refus, avec la liste complète des erreurs.
 import fs from 'node:fs';

@@ -22,6 +22,8 @@ export const CATEGORY_LABELS: Record<LegalCategory, string> = {
   autres: 'Autres',
 };
 
+export const CIVIL_LABEL = 'Décision civile ou administrative';
+
 export type PresentedEntry = {
   id: string;
   anchor: string;
@@ -31,6 +33,8 @@ export type PresentedEntry = {
   categoryLabel: string;
   offences: string;
   statusLabel: string;
+  /** Libellé d'état validé par l'éditeur, si utile en plus du statut. */
+  statusDetail: string | null;
   presumptionNotice: string | null;
   facts: string;
   steps: {
@@ -71,7 +75,51 @@ const FILER_LABEL: Record<PendingRemedy['filedBy'], string> = {
   plusieurs: '',
 };
 
+const lowerFirst = (text: string) => text.charAt(0).toLowerCase() + text.slice(1);
+
+/** « le tribunal correctionnel de Paris », « la cour d'appel de Paris », « la Cour de cassation ». */
+function courtWithArticle(court: string): string {
+  if (/^tribunal /i.test(court)) return `le ${lowerFirst(court)}`;
+  if (/^cour d['’]/i.test(court)) return `la ${lowerFirst(court)}`;
+  if (/^cour /i.test(court)) return `la ${court}`;
+  if (/^conseil /i.test(court)) return `le ${court}`;
+  return court;
+}
+
+/**
+ * Brief § 9.1 : « Condamné·e par [juridiction] le [date] ; nous n'avons pas trouvé trace d'un
+ * recours ». Accord selon `person.gender` ; sans donnée, forme épicène. Jamais « définitive ».
+ */
+function unappealedConvictionLabel(e: LegalEntry): string {
+  const step =
+    [...e.steps].reverse().find((s) => s.outcome === 'condamnation') ?? e.steps[e.steps.length - 1];
+  const { kind, gender } = e.person;
+  const lead =
+    kind === 'personne-morale'
+      ? 'Condamnation'
+      : gender === 'f'
+        ? 'Condamnée'
+        : gender === 'm'
+          ? 'Condamné'
+          : 'Condamné·e';
+  const who = step.court
+    ? ` par ${courtWithArticle(step.court)} ${when(step.date)}`
+    : ` ${when(step.date)}`;
+  return `${lead}${who} ; nous n'avons pas trouvé trace d'un recours`;
+}
+
+/** Règle commune 4 : une décision civile ou administrative n'est jamais une « condamnation ». */
+const CIVIL_STATUS_LABELS: Partial<Record<LegalEntry['status'], string>> = {
+  'condamnation-definitive': 'Décision définitive défavorable',
+  'condamnation-non-definitive': 'Décision défavorable non définitive (recours en cours)',
+  'condamnation-recours-non-documente':
+    "Décision défavorable ; nous n'avons pas trouvé trace d'un recours",
+};
+
 function statusLabel(e: LegalEntry): string {
+  if (e.nature === 'civile-administrative' && CIVIL_STATUS_LABELS[e.status])
+    return CIVIL_STATUS_LABELS[e.status] as string;
+  if (e.status === 'condamnation-recours-non-documente') return unappealedConvictionLabel(e);
   const base = STATUS_LABELS[e.status];
   if (!APPEALABLE_CLOSED.has(e.status) || !e.pendingRemedy) return base;
   const { kind, filedBy } = e.pendingRemedy;
@@ -96,6 +144,7 @@ function nextStepText(next: NonNullable<LegalEntry['nextStep']>): string {
 }
 
 function factsText(e: LegalEntry): string {
+  if (!e.facts) return 'Date des faits non précisée dans les sources';
   const { start, end } = e.facts;
   return end && end !== start
     ? `Faits de ${formatPartialDate(start)} à ${formatPartialDate(end)}`
@@ -108,9 +157,11 @@ function presentEntry(e: LegalEntry): PresentedEntry {
     anchor: e.id,
     heading: `${e.person.name} · ${e.caseName}`,
     roleAtTheTime: e.roleAtTheTime,
-    categoryLabel: CATEGORY_LABELS[e.category],
+    categoryLabel: e.nature === 'civile-administrative' ? CIVIL_LABEL : CATEGORY_LABELS[e.category],
     offences: e.offences.join(', '),
     statusLabel: statusLabel(e),
+    statusDetail:
+      e.publicLabel && e.status !== 'condamnation-recours-non-documente' ? e.publicLabel : null,
     presumptionNotice: isOngoing(e) ? PRESUMPTION_NOTICE : null,
     facts: factsText(e),
     steps: e.steps.map((s) => ({
@@ -126,13 +177,15 @@ function presentEntry(e: LegalEntry): PresentedEntry {
   };
 }
 
+const factsStart = (e: LegalEntry) => (e.facts ? startOfPeriod(e.facts.start) : '9999-12-31');
+
 /** Le parti (personne morale) d'abord, puis les personnes par nom, puis par date des faits. */
 function compareEntries(a: LegalEntry, b: LegalEntry): number {
   const rank = (e: LegalEntry) => (e.scope === 'parti' ? 0 : 1);
   return (
     rank(a) - rank(b) ||
     a.person.sortName.localeCompare(b.person.sortName, 'fr') ||
-    startOfPeriod(a.facts.start).localeCompare(startOfPeriod(b.facts.start)) ||
+    factsStart(a).localeCompare(factsStart(b)) ||
     a.id.localeCompare(b.id)
   );
 }

@@ -30,6 +30,7 @@ export function LegalEntryCard({ entry }: { entry: PresentedEntry }) {
           </Text>
           <LegalStatusLine
             statusLabel={entry.statusLabel}
+            statusDetail={entry.statusDetail}
             presumptionNotice={entry.presumptionNotice}
           />
         </View>
