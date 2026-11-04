@@ -33,6 +33,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que disent ses statuts",
         "text": "Le parti se définit, à l'article 1er de ses statuts (congrès d'Orléans, octobre 2026), comme une formation « attaché[e] à l'égalité devant la loi de tous les citoyens français sans distinction d'origine, de race ou de religion », qui « défend la souveraineté, l'indépendance et l'identité de la nation », protège « le caractère indivisible, laïc, démocratique et social de la République » et se dit « favorable au gouvernement du peuple, par le peuple et pour le peuple ».",
         "sources": [
           {
@@ -50,6 +51,7 @@
         ]
       },
       {
+        "title": "Thèmes mis en avant par le parti",
         "text": "Dans sa communication, il met en avant la « priorité nationale », la maîtrise de l'immigration, la sécurité et la laïcité, et se présente comme « patriote » ; ses représentants récusent généralement l'appellation d'« extrême droite ».",
         "sources": [
           {
@@ -67,7 +69,8 @@
         ]
       },
       {
-        "text": "Les encyclopédies et la presse de référence le classent à l'extrême droite : Larousse décrit le FN comme un « mouvement d'extrême droite » qui défend l'identité française, s'oppose à l'immigration et promeut la « préférence nationale » ; Universalis le présente comme un parti d'extrême droite dont le programme reste centré sur la critique de l'immigration et de l'islam, tout en relevant l'abandon de certaines positions traditionalistes et un discours économique plus étatiste depuis 2011.",
+        "title": "Classement par les encyclopédies et les politistes",
+        "text": "Les encyclopédies et la presse de référence le classent à l'extrême droite : Larousse décrit le FN comme un « mouvement d'extrême droite » qui défend l'identité française, s'oppose à l'immigration et promeut la « préférence nationale » ; Universalis le présente comme un parti d'extrême droite dont le programme reste centré sur la critique de l'immigration et de l'islam, tout en relevant l'abandon de certaines positions traditionalistes et un discours économique plus étatiste depuis 2011. Certains politistes emploient aussi la catégorie de « droite radicale » : Gilles Ivaldi (CNRS, CEVIPOF) range Marine Le Pen parmi les « candidats de droite radicale » et qualifie son programme 2022 de « social-populisme » ; d'autres le rattachent au courant « national-populiste ».",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Front national (FN) »",
@@ -80,12 +83,7 @@
             "url": "https://www.universalis.fr/encyclopedie/marine-le-pen/3-du-front-national-au-rassemblement-national/",
             "date": "2026-11",
             "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "text": "Certains politistes emploient aussi la catégorie de « droite radicale » : Gilles Ivaldi (CNRS, CEVIPOF) range Marine Le Pen parmi les « candidats de droite radicale » et qualifie son programme 2022 de « social-populisme » ; d'autres le rattachent au courant « national-populiste ».",
-        "sources": [
+          },
           {
             "title": "Gilles Ivaldi, « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique (CEVIPOF, Sciences Po)",
             "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
@@ -101,6 +99,7 @@
         ]
       },
       {
+        "title": "Nuancier du ministère de l'Intérieur",
         "text": "Sur le plan administratif, la grille de nuances du ministère de l'Intérieur rattache la nuance « RN » au bloc « extrême droite » ; le RN a contesté ce rattachement et le Conseil d'État a rejeté son recours le 11 mars 2024 (décision n° 488378), en jugeant la circulaire légale sans procéder à une qualification politique générale du parti.",
         "sources": [
           {
@@ -520,6 +519,7 @@
     ],
     "thought": [
       {
+        "title": "Origines nationalistes",
         "text": "Origines nationalistes : les historiens décrivent la fondation du FN comme une initiative d'Ordre nouveau, mouvement que Serge Berstein et Pierre Milza, cités par Jean-Yves Camus, qualifient de « fer de lance du néofascisme français » des années 1970 ; le FN agrège à ses débuts plusieurs familles de l'extrême droite (nationalistes, nostalgiques de Vichy, anciens de l'Algérie française, catholiques traditionalistes) et abrite jusqu'en 1978 une tendance « nationaliste-révolutionnaire » animée par François Duprat.",
         "sources": [
           {
@@ -543,6 +543,7 @@
         ]
       },
       {
+        "title": "National-populisme",
         "text": "National-populisme : le politiste Pierre-André Taguieff a popularisé dans les années 1980 la notion de « national-populisme » pour décrire le FN de Jean-Marie Le Pen, qu'il présente comme un « national-populisme autoritaire » mêlant bonapartisme et populisme réactionnaire à forte composante nationaliste et xénophobe ; Larousse décrit le programme de cette période comme ultralibéral en économie (admiration pour Ronald Reagan), ultraconservateur sur les mœurs, anticommuniste puis antiaméricain après 1990.",
         "sources": [
           {
@@ -566,6 +567,7 @@
         ]
       },
       {
+        "title": "« Dédiabolisation » et tournant social",
         "text": "« Dédiabolisation » et tournant social : à partir de 2011, Marine Le Pen engage une stratégie dite de « dédiabolisation » visant à rendre le parti apte à gouverner (Larousse), en tentant de « gommer les aspects les plus polémiques » du programme (Universalis) ; cette période voit l'exclusion de Jean-Marie Le Pen (2015) et le changement de nom (2018). Le politiste Gilles Ivaldi (CEVIPOF) qualifie le programme de 2022 de « social-populisme », plus protecteur en économie que celui des années 1980.",
         "sources": [
           {
@@ -601,6 +603,7 @@
         ]
       },
       {
+        "title": "Souverainisme et « priorité nationale »",
         "text": "Souverainisme et « priorité nationale » : le parti revendique dans ses statuts la défense de « la souveraineté, l'indépendance et l'identité de la nation » et récuse le qualificatif d'« extrême droite » ; les politistes le rangent selon les cas à l'extrême droite, dans la « droite radicale » (Gilles Ivaldi) ou dans le courant « national-populiste », sans consensus sur une étiquette unique.",
         "sources": [
           {

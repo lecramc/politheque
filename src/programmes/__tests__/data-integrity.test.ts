@@ -5,6 +5,7 @@ import { QUESTIONS } from '@/src/programmes/data/questions';
 import themes from '@/src/programmes/data/themes.json';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 import type { Source } from '@/src/programmes/models/programme.model';
+import { TITLE_MAX_LENGTH } from '@/src/programmes/models/sourced-item.service';
 import { verificationLevel } from '@/src/programmes/models/verification.service';
 
 // Garde-fou éditorial : la charte (docs/charte-editoriale.md) est vérifiée à chaque test.
@@ -19,6 +20,17 @@ const THEME_IDS = [
   'europe',
   'institutions',
 ];
+const WEAK_SOURCE_NAMES = /wikip[ée]dia|monvote|parlons politique|france-vote/i;
+const WORK_NOTES = /n'a été identifié|à vérifier|sources consultées|accès bloqué/i;
+
+const STATUS_LABELS: Record<string, string[]> = {
+  declare: ['Candidat déclaré', 'Candidate déclarée'],
+  annonce: ['Candidature annoncée'],
+  investi: ['Candidat investi', 'Candidate investie'],
+  designe: ['Candidat désigné', 'Candidate désignée'],
+  pressenti: ['Candidat pressenti', 'Candidate pressentie'],
+};
+
 const KINDS = ['programme', 'declaration', 'vote', 'proposition-de-loi', 'presse', 'statistique'];
 
 const expectValidSource = (source: Source, where: string) => {
@@ -65,6 +77,16 @@ describe('Feature: intégrité des données', () => {
     }
   });
 
+  it('should keep guide block headings short', () => {
+    for (const section of guide) {
+      for (const block of section.blocks) {
+        expect(block.heading.length, `${section.id} / ${block.heading}`).toBeLessThanOrEqual(
+          TITLE_MAX_LENGTH
+        );
+      }
+    }
+  });
+
   it('should have unique question ids', () => {
     expect(new Set(QUESTIONS.map((q) => q.id)).size).toBe(QUESTIONS.length);
   });
@@ -77,6 +99,9 @@ describe('Feature: intégrité des données', () => {
         expect(candidacy.candidate.startsWith(candidacy.candidateName)).toBe(true);
         expect(['declare', 'investi', 'designe', 'annonce', 'pressenti']).toContain(
           candidacy.status
+        );
+        expect(STATUS_LABELS[candidacy.status], `${party.id}: ${candidacy.statusLabel}`).toContain(
+          candidacy.statusLabel
         );
         for (const id of THEME_IDS) {
           const programme = candidacy.themes[id as keyof typeof candidacy.themes];
@@ -122,6 +147,36 @@ describe('Feature: intégrité des données', () => {
         expect(verificationLevel(item.sources), `${party.id}: ${label}`).toBe('croisee');
         for (const source of item.sources) expectValidSource(source, party.id);
       }
+    });
+
+    it('should give every idea and current of thought a short title', () => {
+      const history = party.history!;
+      const lists = [
+        ['ideals', history.ideals],
+        ['thought', history.thought ?? []],
+      ] as const;
+      for (const [list, items] of lists) {
+        const titles = items.map((item) => item.title);
+        expect(new Set(titles).size, `${party.id}/${list}: titres en double`).toBe(titles.length);
+        for (const item of items) {
+          const where = `${party.id}/${list}: ${item.text.slice(0, 50)}`;
+          expect(typeof item.title, where).toBe('string');
+          expect(item.title.trim().length, where).toBeGreaterThanOrEqual(3);
+          expect(item.title.length, where).toBeLessThanOrEqual(TITLE_MAX_LENGTH);
+          expect(item.title, where).not.toMatch(/[.;]\s*$|;/);
+          expect(item.title, where).not.toMatch(WEAK_SOURCE_NAMES);
+          expect(item.text, where).not.toMatch(WEAK_SOURCE_NAMES);
+          expect(item.text, where).not.toMatch(WORK_NOTES);
+        }
+      }
+    });
+
+    it('should present ideas with the same structure for every party', () => {
+      const titles = party.history!.ideals.map((item) => item.title);
+      expect(titles.length, party.id).toBeGreaterThanOrEqual(2);
+      expect(titles.length, party.id).toBeLessThanOrEqual(4);
+      expect(titles[0], party.id).toMatch(/^Ce que di/);
+      expect(titles.filter((t) => t.startsWith('Classement par ')).length, party.id).toBe(1);
     });
 
     it('should state when it was last verified', () => {

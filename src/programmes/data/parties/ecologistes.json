@@ -33,6 +33,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que disent ses statuts",
         "text": "Le parti se définit dans ses statuts comme reposant sur « les principes et valeurs de l'écologie politique » ; il revendique également le fédéralisme européen, la démocratie participative et le progressisme social.",
         "sources": [
           {
@@ -50,24 +51,8 @@
         ]
       },
       {
-        "text": "Les encyclopédies relèvent une évolution : longtemps partagés sur la ligne « ni droite ni gauche » (associée à Antoine Waechter), les Verts optent au milieu des années 1990 pour des alliances avec la gauche, sous l'impulsion de Dominique Voynet.",
-        "sources": [
-          {
-            "title": "Encyclopédie Larousse, « les Verts »",
-            "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "text": "Les ouvrages de référence le classent à gauche ; il est décrit comme un parti de gauche pro-européen et décentralisateur, sans classement unique plus précis.",
+        "title": "Classement par les ouvrages de référence",
+        "text": "Les ouvrages de référence le classent à gauche ; il est décrit comme un parti de gauche pro-européen et décentralisateur, sans classement unique plus précis. Les encyclopédies relèvent une évolution : longtemps partagés sur la ligne « ni droite ni gauche » (associée à Antoine Waechter), les Verts optent au milieu des années 1990 pour des alliances avec la gauche, sous l'impulsion de Dominique Voynet.",
         "sources": [
           {
             "title": "Wikipédia, « Les Écologistes »",
@@ -80,10 +65,17 @@
             "url": "https://lex.dk/Les_%C3%89cologistes",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « les Verts »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
+            "date": "2026-11",
+            "kind": "statistique"
           }
         ]
       },
       {
+        "title": "Courants internes",
         "text": "Les observateurs signalent des courants internes (altermondialisme, écoféminisme, décroissance) ; l'opposition historique au nucléaire reste un marqueur, discuté en interne selon Lex.",
         "sources": [
           {
@@ -460,6 +452,7 @@
     ],
     "thought": [
       {
+        "title": "Naissance de l'écologie politique",
         "text": "Les historiens situent la naissance de l'écologie politique française dans les « années 68 » : la candidature de René Dumont en 1974 en est le repère traditionnel, et la contestation antinucléaire des années 1974-1978, soutenue par des mouvements d'extrême gauche et de la gauche autogestionnaire, sert de catalyseur ; une partie des militants n'accepte qu'à la fin des années 1970 l'idée d'une structure partisane.",
         "sources": [
           {
@@ -483,6 +476,7 @@
         ]
       },
       {
+        "title": "Références intellectuelles",
         "text": "Les historiens des idées rattachent l'écologie politique à des auteurs critiques de la société industrielle, de la croissance et de la technique, comme André Gorz, Ivan Illich, Jacques Ellul ou Bernard Charbonneau ; Gorz a notamment contribué à faire connaître Illich en France. Ces filiations sont discutées : la recension de La Vie des idées distingue des « technocritiques » (Ellul, Charbonneau, Illich) et des traditions socialistes libertaires (Reclus, Bookchin).",
         "sources": [
           {
@@ -500,6 +494,7 @@
         ]
       },
       {
+        "title": "Évolution stratégique",
         "text": "Évolution stratégique : en 1986, une majorité menée par Antoine Waechter impose l'autonomie électorale et le « ni droite ni gauche » ; au milieu des années 1990, sous l'impulsion de Dominique Voynet, le parti accepte les alliances avec la gauche (entre 1994 et 1995 selon les sources), ce qui conduit à la participation au gouvernement Jospin (1997-2002) et à la scission de Waechter (MEI).",
         "sources": [
           {
@@ -523,6 +518,7 @@
         ]
       },
       {
+        "title": "Europe Écologie (2009)",
         "text": "Europe Écologie (2009) élargit la base du parti au-delà des Verts, à des militants altermondialistes comme José Bové et à des personnalités de la société civile comme l'ancienne juge Eva Joly, dans une campagne dominée médiatiquement par Daniel Cohn-Bendit.",
         "sources": [
           {
@@ -540,6 +536,7 @@
         ]
       },
       {
+        "title": "Courants internes et primaire de 2021",
         "text": "Les observateurs décrivent des courants internes : lors de la primaire de 2021, Yannick Jadot défend une « écologie ouverte et majoritaire », Sandrine Rousseau une « radicalité environnementale » et l'écoféminisme, Delphine Batho (Génération écologie, alors associée à la primaire) la décroissance ; Jadot l'emporte de justesse au second tour (51,03 %).",
         "sources": [
           {
@@ -1182,7 +1179,7 @@
     "presidentielle-2027": {
       "candidateName": "Marine Tondelier",
       "status": "designe",
-      "statusLabel": "Candidate désignée (vote des adhérents du 10 au 13 décembre 2026)",
+      "statusLabel": "Candidate désignée",
       "candidate": "Marine Tondelier a été désignée en décembre 2025 par un vote interne (86 % des voix) pour porter la candidature des Écologistes. Le conseil fédéral du 21 septembre 2026 a maintenu cette investiture jusqu'au vote des adhérents, du 10 au 13 décembre 2026, qui doit trancher entre une candidature autonome et le ralliement à un autre candidat de gauche.",
       "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique » présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Le document officiel n'a pas pu être consulté en ligne : les mesures sont citées d'après des comptes rendus de presse et des sites qui reproduisent des extraits paginés du programme. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
       "themes": {

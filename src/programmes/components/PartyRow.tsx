@@ -15,6 +15,7 @@ export function PartyRow({
   subtitle,
   trailing,
   section,
+  badge,
   first = false,
 }: {
   party: Party;
@@ -22,6 +23,8 @@ export function PartyRow({
   trailing?: ReactNode;
   /** Section de la fiche à ouvrir (vraie route, indexable). */
   section?: PartySection;
+  /** Pastille affichée sous le nom et le sous-titre (statut de candidature…). Ne prend jamais de largeur au nom. */
+  badge?: ReactNode;
   first?: boolean;
 }) {
   const { colors, effects, fonts } = useTheme();
@@ -42,15 +45,16 @@ export function PartyRow({
         }}
       >
         <PartyDot color={party.color} size={36} label={party.shortName} />
-        <View style={{ flex: 1, gap: 2 }}>
+        <View style={{ flex: 1, minWidth: 0, gap: 2 }}>
           <Text style={{ ...fonts.bold, fontSize: 16 }}>{party.name}</Text>
           {subtitle ? (
             <Text style={{ color: colors.text.secondary, fontSize: 14 }} numberOfLines={2}>
               {subtitle}
             </Text>
           ) : null}
+          {badge ? <View style={{ marginTop: effects.spacing.xxs }}>{badge}</View> : null}
         </View>
-        {trailing}
+        {trailing ? <View style={{ flexShrink: 1, maxWidth: '40%' }}>{trailing}</View> : null}
         <Icon name="chevron-forward" variant="secondary" size="small" />
       </Pressable>
     </Link>

@@ -10,12 +10,9 @@ import { Card } from '@/src/programmes/components/Card';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
+import { SourcedAccordionList } from '@/src/programmes/components/SourcedAccordionList';
 import { TabPanel } from '@/src/programmes/components/Tabs';
-import {
-  afterFirstSentence,
-  firstSentence,
-  formatSourceDate,
-} from '@/src/programmes/models/presentation.service';
+import { formatSourceDate } from '@/src/programmes/models/presentation.service';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 /** « Histoire » : /partis/[id]/histoire. */
@@ -107,16 +104,7 @@ export default function PartyHistoryScreen() {
             <Text variant="caption" headingLevel={2}>
               {history.thought ? 'Courants de pensée' : 'Idées et classement'}
             </Text>
-            {(history.thought ?? history.ideals).map((item) => (
-              <Accordion key={item.text} title={firstSentence(item.text)}>
-                {afterFirstSentence(item.text) ? (
-                  <Text style={{ fontSize: 16, lineHeight: 25 }}>
-                    {afterFirstSentence(item.text)}
-                  </Text>
-                ) : null}
-                <SourceChip sources={item.sources} />
-              </Accordion>
-            ))}
+            <SourcedAccordionList items={history.thought ?? history.ideals} />
           </View>
         ) : null}
       </View>

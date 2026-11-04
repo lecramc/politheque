@@ -11,13 +11,16 @@ export function StatusChip({ label }: { label: string }) {
     <View
       style={{
         alignSelf: 'flex-start',
+        maxWidth: '100%',
         paddingHorizontal: 8,
         paddingVertical: 2,
         borderRadius: effects.borderRadius.round,
         backgroundColor: colors.tintSoft,
       }}
     >
-      <Text style={{ fontSize: 13, color: colors.tint }}>{label}</Text>
+      <Text numberOfLines={1} style={{ fontSize: 13, color: colors.tint }}>
+        {label}
+      </Text>
     </View>
   );
 }

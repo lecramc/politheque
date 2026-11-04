@@ -27,6 +27,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que disent ses statuts",
         "text": "Le parti se définit, dans le préambule de ses statuts, comme un « collectif d'adhérent·es librement associé·es » porteur d'un « projet révolutionnaire d'émancipation individuelle et collective » visant à faire reculer « jusqu'à leur dépassement le capitalisme » et toutes les formes d'exploitation, de domination et d'aliénation.",
         "sources": [
           {
@@ -44,6 +45,7 @@
         ]
       },
       {
+        "title": "Internationalisme et institutions",
         "text": "Il revendique l'internationalisme et l'anti-impérialisme, ainsi qu'une « nouvelle République » donnant davantage de pouvoir d'intervention aux citoyens et aux salariés ; il est membre du Parti de la gauche européenne.",
         "sources": [
           {
@@ -61,24 +63,8 @@
         ]
       },
       {
-        "text": "Les encyclopédies retracent une évolution doctrinale : adoption du marxisme-léninisme et du centralisme démocratique lors de la « bolchevisation » de 1925, abandon de la dictature du prolétariat (1976), rapprochement avec l'eurocommunisme, puis abandon du centralisme démocratique sous la direction de Robert Hue (à partir de 1994).",
-        "sources": [
-          {
-            "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
-            "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "text": "Les ouvrages de référence le classent à la gauche radicale (communisme) ; il n'existe pas de classement unique au-delà de l'étiquette communiste.",
+        "title": "Classement par les ouvrages de référence",
+        "text": "Les ouvrages de référence le classent à la gauche radicale (communisme) ; il n'existe pas de classement unique au-delà de l'étiquette communiste. Les encyclopédies retracent une évolution doctrinale : adoption du marxisme-léninisme et du centralisme démocratique lors de la « bolchevisation » de 1925, abandon de la dictature du prolétariat (1976), rapprochement avec l'eurocommunisme, puis abandon du centralisme démocratique sous la direction de Robert Hue (à partir de 1994).",
         "sources": [
           {
             "title": "Wikipédia, « Parti communiste français »",
@@ -430,6 +416,7 @@
     ],
     "thought": [
       {
+        "title": "Marxisme et « bolchevisation »",
         "text": "Le parti se réclame à l'origine du marxisme et du bolchevisme : la « bolchevisation » de 1925 introduit le marxisme-léninisme, le centralisme démocratique et les cellules d'entreprise. Les historiens et encyclopédies décrivent ensuite une « stalinisation » : installation d'une direction fidèle à Moscou autour de Maurice Thorez en 1930 et exclusion des opposants, comme Boris Souvarine.",
         "sources": [
           {
@@ -453,6 +440,7 @@
         ]
       },
       {
+        "title": "Rapport à l'URSS",
         "text": "Rapport à l'URSS : le parti approuve le pacte germano-soviétique d'août 1939, ce qui conduit à sa dissolution le 26 septembre 1939 ; il s'aligne après 1947 sur le « camp » soviétique. Les encyclopédies retracent une prise de distance à partir des années 1960 (rejet du parti unique, « socialisme aux couleurs de la France »), l'abandon de la dictature du prolétariat en 1976 dans une ligne proche de l'eurocommunisme, puis, sous Robert Hue (1994), une « mutation » et un jugement du bilan soviétique comme « négatif, monstrueux même, à bien des égards » ; en 1979, Georges Marchais avait soutenu l'intervention soviétique en Afghanistan.",
         "sources": [
           {
@@ -476,6 +464,7 @@
         ]
       },
       {
+        "title": "Place de la Résistance",
         "text": "La Résistance occupe une place centrale dans l'identité revendiquée : le parti, qui engage la lutte armée en 1941 (Front national, créé en mai 1941, puis FTPF dirigés par Charles Tillon à partir de 1942 selon Larousse), se présente à la Libération comme le « parti des 75 000 fusillés » (Hérodote mentionne aussi la formule des « 100 000 fusillés »). Ce chiffre est jugé exagéré (Hérodote) ; les estimations alternatives varient selon les critères de comptage et aucune n'est retenue ici.",
         "sources": [
           {
@@ -499,6 +488,7 @@
         ]
       },
       {
+        "title": "Statuts actuels et ligne depuis 2018",
         "text": "Aujourd'hui, le parti revendique dans ses statuts un « projet révolutionnaire » visant le « dépassement » du capitalisme. Depuis 2018, la direction de Fabien Roussel défend une « affirmation » communiste par des candidatures autonomes, y compris à la présidentielle, après les campagnes communes du Front de gauche et le soutien à Jean-Luc Mélenchon en 2012 et 2017.",
         "sources": [
           {

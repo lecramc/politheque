@@ -150,7 +150,7 @@ export default function ElectionScreen() {
                   first={index === 0}
                   section="programme-2027"
                   subtitle={candidacy.candidateName}
-                  trailing={<StatusChip label={candidacy.statusLabel} />}
+                  badge={<StatusChip label={candidacy.statusLabel} />}
                 />
               ))}
             </RowGroup>

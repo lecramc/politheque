@@ -39,6 +39,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que disent ses statuts",
         "text": "Le parti se définit, dans ses statuts, comme rassemblant, « dans la fidélité au gaullisme, et au service de l'épanouissement des personnes », les Français qui s'engagent à « continuer l'histoire de France en défendant l'intérêt national au sein de l'Union européenne comme sur la scène internationale », et se réfère à une Charte adoptée en octobre 2019 ; sur son site, il se présente comme « la droite qui défend la France des honnêtes gens ».",
         "sources": [
           {
@@ -62,7 +63,8 @@
         ]
       },
       {
-        "text": "Les encyclopédies le classent à droite : Universalis le décrit comme réunissant des sensibilités allant « de la droite libérale au centre droit » ainsi que les héritiers du gaullisme ; Larousse présentait l'UMP comme « un grand parti politique de la droite et du centre ».",
+        "title": "Classement par les encyclopédies",
+        "text": "Les encyclopédies le classent à droite : Universalis le décrit comme réunissant des sensibilités allant « de la droite libérale au centre droit » ainsi que les héritiers du gaullisme ; Larousse présentait l'UMP comme « un grand parti politique de la droite et du centre ». Le parti revendique lui-même l'étiquette de « droite ».",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Les Républicains, parti politique »",
@@ -75,27 +77,23 @@
             "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
             "date": "2026-11",
             "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "text": "Les encyclopédies le situent à droite, de la droite libérale au centre droit, et le présentent comme héritier du gaullisme ; le parti revendique lui-même l'étiquette de « droite ».",
-        "sources": [
-          {
-            "title": "Wikipédia, « Les Républicains »",
-            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
-            "date": "2026-11",
-            "kind": "statistique"
           },
           {
             "title": "Les Républicains, « Qui sommes-nous ? »",
             "url": "https://republicains.fr/qui-sommes-nous/",
             "date": "2026-11",
             "kind": "programme"
+          },
+          {
+            "title": "Wikipédia, « Les Républicains »",
+            "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
+            "date": "2026-11",
+            "kind": "statistique"
           }
         ]
       },
       {
+        "title": "Refus de l'alliance avec le RN (2024)",
         "text": "En juin 2024, le parti a refusé l'alliance électorale avec le RN annoncée par son président Éric Ciotti : le bureau politique a voté son exclusion, dont le tribunal judiciaire de Paris a suspendu les effets en référé le 14 juin 2024 ; Éric Ciotti a ensuite fondé l'Union des droites pour la République (UDR), alliée au RN, et annoncé son départ de LR le 22 septembre 2024.",
         "sources": [
           {
@@ -550,6 +548,7 @@
     ],
     "thought": [
       {
+        "title": "Gaullisme",
         "text": "Gaullisme : le parti se réclame dans ses statuts de « la fidélité au gaullisme » ; Larousse définit le gaullisme comme un courant se réclamant de l'action et de la pensée du général de Gaulle (indépendance nationale, exécutif fort et recours au référendum, participation et rôle de l'État dans l'économie), en notant qu'il est « moins une doctrine politique originale » que l'héritage d'un homme.",
         "sources": [
           {
@@ -573,6 +572,7 @@
         ]
       },
       {
+        "title": "Libéralisme et démocratie chrétienne",
         "text": "Libéralisme et démocratie chrétienne : par l'UDF (Parti républicain puis Démocratie libérale, de tradition libérale ; Centre des démocrates sociaux, de tradition démocrate-chrétienne) et par la fusion de 2002, le parti réunit les gaullistes du RPR, des libéraux et des centristes ; la Centrale fédérale allemande pour l'éducation civique (bpb) le décrit comme un parti de droite rassemblant anciens gaullistes, membres de l'UDF et libéraux.",
         "sources": [
           {
@@ -602,6 +602,7 @@
         ]
       },
       {
+        "title": "Droite conservatrice et « droitisation »",
         "text": "Droite conservatrice et « droitisation » : la politiste Florence Haegel (Sciences Po) décrit, à partir de la présidence de Nicolas Sarkozy à l'UMP (2004), une « droitisation » sur les thèmes identitaires, dite « ligne Buisson », puis la motion de Laurent Wauquiez ; au congrès de 2012, les motions les plus à droite recueillent environ 60 % des voix des adhérents, contre 12,3 % pour la motion gaulliste. Édouard Philippe a critiqué en 2017 cette « droitisation » comme contraire au pacte fondateur réunissant droite et centre.",
         "sources": [
           {
@@ -625,6 +626,7 @@
         ]
       },
       {
+        "title": "Rapport au RN",
         "text": "Rapport au RN : le parti revendique l'identité de « la droite » et a refusé en juin 2024 l'alliance avec le RN annoncée par son président Éric Ciotti ; celui-ci a quitté le parti en septembre 2024 et fondé l'Union des droites pour la République (UDR), alliée au RN, la question d'une « union des droites » demeurant un point de clivage.",
         "sources": [
           {

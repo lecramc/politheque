@@ -33,6 +33,7 @@
     },
     "ideals": [
       {
+        "title": "Ce que dit le mouvement",
         "text": "Le mouvement se présente comme lancé « hors cadre de parti » et appelle de ses vœux une « Révolution citoyenne », qui suppose une « réappropriation massive de la chose politique par le peuple » ; son programme « L'Avenir en commun » porte notamment une 6e République et la planification écologique.",
         "sources": [
           {
@@ -50,7 +51,8 @@
         ]
       },
       {
-        "text": "Les politistes le classent le plus souvent à la gauche radicale, certains parlant de « gauche populiste ». Pour les municipales de 2026, le nuancier du ministère de l'Intérieur l'a rattaché au bloc « extrême gauche » (il figurait auparavant dans le bloc « gauche ») ; le Conseil d'État a jugé ce rattachement sans erreur manifeste d'appréciation le 27 février 2026, sans qualifier politiquement le mouvement. LFI récuse cette étiquette. Les références idéologiques le plus souvent relevées sont l'écosocialisme, l'antilibéralisme et l'altermondialisme.",
+        "title": "Classement par les politistes",
+        "text": "Les politistes le classent le plus souvent à la gauche radicale, certains parlant de « gauche populiste ». Les références idéologiques le plus souvent relevées sont l'écosocialisme, l'antilibéralisme et l'altermondialisme.",
         "sources": [
           {
             "title": "Wikipédia, « La France insoumise »",
@@ -63,7 +65,13 @@
             "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
             "date": "2019-03-11",
             "kind": "statistique"
-          },
+          }
+        ]
+      },
+      {
+        "title": "Nuancier du ministère de l'Intérieur",
+        "text": "Pour les municipales de 2026, le nuancier du ministère de l'Intérieur l'a rattaché au bloc « extrême gauche » (il figurait auparavant dans le bloc « gauche ») ; le Conseil d'État a jugé ce rattachement sans erreur manifeste d'appréciation le 27 février 2026, sans qualifier politiquement le mouvement. LFI récuse cette étiquette.",
+        "sources": [
           {
             "title": "Conseil d'État, décision n° 512694 du 27 février 2026 (nuances politiques, élections municipales de 2026)",
             "url": "https://conseil-etat.fr/Media/actualites/documents/2026/fevrier-2026/512694.pdf",
@@ -80,40 +88,6 @@
             "title": "Municipales 2026 : la décision du ministère de l'Intérieur de classer La France insoumise à l'extrême gauche peut-elle être fondée ? (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/municipales-2026-la-decision-du-ministere-de-linterieur-de-classer-la-france-insoumise-a-lextreme-gauche-peut-elle-etre-fondee",
             "date": "2026-02-06",
-            "kind": "presse"
-          }
-        ]
-      },
-      {
-        "text": "Une partie des chercheurs le décrit comme un « populisme de gauche », Jean-Luc Mélenchon s'inspirant explicitement de la théoricienne Chantal Mouffe ; d'autres auteurs (Annie Collovald, Catherine Colliot-Thélène) jugent la notion de populisme trop élastique ou peu éclairante.",
-        "sources": [
-          {
-            "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
-            "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
-            "date": "2019-03-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "text": "Sur l'international, le mouvement revendique le non-alignement et la sortie de l'OTAN ; sur l'Europe, une stratégie de « désobéissance » aux traités, ce qui conduit certains observateurs à le classer parmi les forces eurosceptiques ou souverainistes de gauche.",
-        "sources": [
-          {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
-            "url": "https://monvote2027.fr/candidat/melenchon",
-            "date": "2026-11",
             "kind": "presse"
           }
         ]
@@ -399,6 +373,7 @@
     ],
     "thought": [
       {
+        "title": "Le « populisme de gauche »",
         "text": "Une partie des chercheurs et de la presse décrit LFI comme un « populisme de gauche » : Jean-Luc Mélenchon s'inspire explicitement de la théorie d'Ernesto Laclau et Chantal Mouffe et de l'exemple de Podemos, et retourne la connotation négative du mot « populisme ». D'autres chercheurs jugent cette notion peu éclairante.",
         "sources": [
           {
@@ -422,6 +397,7 @@
         ]
       },
       {
+        "title": "« Révolution citoyenne » et 6e République",
         "text": "Le mouvement revendique une « révolution citoyenne » et une Assemblée constituante pour une 6e République ; dans L'Ère du peuple (Fayard, 2014), Mélenchon définit le « peuple » comme la « multitude urbaine » prenant conscience d'elle-même, plutôt que la seule classe ouvrière, un choix que des commentateurs jugent peu défini.",
         "sources": [
           {
@@ -445,6 +421,7 @@
         ]
       },
       {
+        "title": "Écosocialisme et « planification écologique »",
         "text": "L'écosocialisme et la « planification écologique » sont revendiqués depuis le Parti de gauche : dès 2008, Mélenchon fait de la planification un marqueur, présenté comme une synthèse de Jaurès et de l'écologie politique ; le PG adopte en décembre 2012 un « Manifeste pour l'écosocialisme », réédité depuis.",
         "sources": [
           {
@@ -468,6 +445,7 @@
         ]
       },
       {
+        "title": "La « créolisation »",
         "text": "Depuis la campagne de 2022, Mélenchon reprend la notion de « créolisation » du poète martiniquais Édouard Glissant, qu'il présente comme un « fait » et non un programme (« Nous sommes tous créoles ») et oppose aux thèses de l'assimilation.",
         "sources": [
           {
@@ -485,6 +463,7 @@
         ]
       },
       {
+        "title": "Évolution stratégique",
         "text": "Évolution stratégique : après le cartel de partis du Front de gauche (2009-2016), le mouvement se construit en 2016 « hors cadre de partis » et sans primaire, avant de revenir à des alliances électorales avec le PS, les écologistes et le PCF au sein de la NUPES (2022) puis du Nouveau Front populaire (2024).",
         "sources": [
           {

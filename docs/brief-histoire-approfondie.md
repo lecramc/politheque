@@ -16,7 +16,10 @@ l'existant, en corrigeant l'existant s'il est inexact) :
   période), `background` : parcours et **bord politique d'origine** (de quel parti / mouvement
   il venait, engagements antérieurs, y compris les plus controversés s'ils sont établis par des
   historiens), en 2-3 phrases factuelles, sans qualificatif moral.
-- `thought` (SourcedText[]) : 3 à 5 items. Les courants de pensée et références doctrinales
+- `ideals` et `thought` (TitledSourcedText[]) : chaque item porte un `"title"` (première clé, 60 caractères
+  au plus, groupe nominal qui nomme le sujet sans rien affirmer, voir charte, règle de rédaction 10),
+  puis `text` (intégral) et `sources`.
+- `thought` (TitledSourcedText[]) : 3 à 5 items. Les courants de pensée et références doctrinales
   (ex. socialisme démocratique, marxisme, gaullisme, libéralisme, démocratie chrétienne,
   écologie politique, souverainisme, nationalisme, populisme…), les auteurs ou textes de
   référence revendiqués, et les évolutions doctrinales dans le temps (ex. « dédiabolisation »,

@@ -9,9 +9,8 @@ import { Accordion } from '@/src/programmes/components/Accordion';
 import { Card } from '@/src/programmes/components/Card';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
-import { SourceChip } from '@/src/programmes/components/SourceChip';
+import { SourcedAccordionList } from '@/src/programmes/components/SourcedAccordionList';
 import { TabPanel } from '@/src/programmes/components/Tabs';
-import { afterFirstSentence, firstSentence } from '@/src/programmes/models/presentation.service';
 import { legacyTabRedirect } from '@/src/programmes/models/seo/party-sections';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
@@ -66,14 +65,7 @@ export default function PartyOverviewScreen() {
               </View>
             ))}
         </Card>
-        {(party.history?.ideals ?? []).slice(0, 3).map((ideal) => (
-          <Accordion key={ideal.text} title={firstSentence(ideal.text)}>
-            {afterFirstSentence(ideal.text) ? (
-              <Text style={{ fontSize: 16, lineHeight: 25 }}>{afterFirstSentence(ideal.text)}</Text>
-            ) : null}
-            <SourceChip sources={ideal.sources} />
-          </Accordion>
-        ))}
+        <SourcedAccordionList items={(party.history?.ideals ?? []).slice(0, 3)} />
         <Accordion
           title="Présentation complète"
           subtitle="Chiffres, dirigeants, situation actuelle"
