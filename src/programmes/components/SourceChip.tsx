@@ -85,7 +85,15 @@ export function SourceList({ sources }: { sources: Source[] }) {
 }
 
 /** Pastille compacte « ✓ 2 sources » / « 1 source » qui ouvre la liste en feuille. */
-export function SourceChip({ sources, subject }: { sources: Source[]; subject?: string }) {
+export function SourceChip({
+  sources,
+  subject,
+  compact = false,
+}: {
+  sources: Source[];
+  subject?: string;
+  compact?: boolean;
+}) {
   const { colors, effects, fonts } = useTheme();
   const [open, setOpen] = useState(false);
   if (sources.length === 0) return null;
@@ -100,15 +108,15 @@ export function SourceChip({ sources, subject }: { sources: Source[]; subject?: 
       <Pressable
         onPress={() => setOpen(true)}
         accessibilityRole="button"
-        hitSlop={6}
+        hitSlop={compact ? 8 : 6}
         accessibilityLabel={`${label}, ${crossChecked ? 'information recoupée' : 'source unique'}. Ouvrir la liste`}
         style={{
           alignSelf: 'flex-start',
-          minHeight: 36,
+          minHeight: compact ? 28 : 36,
           flexDirection: 'row',
           alignItems: 'center',
-          gap: 6,
-          paddingHorizontal: 10,
+          gap: compact ? 4 : 6,
+          paddingHorizontal: compact ? 8 : 10,
           borderRadius: effects.borderRadius.round,
           borderWidth: 1,
           borderStyle: crossChecked ? 'solid' : 'dashed',
@@ -117,7 +125,15 @@ export function SourceChip({ sources, subject }: { sources: Source[]; subject?: 
         }}
       >
         <MicroArc full={crossChecked} />
-        <Text style={{ ...fonts.bold, fontSize: 13, color: colors.tint }}>{label}</Text>
+        <Text
+          style={{
+            ...fonts.bold,
+            fontSize: compact ? effects.sizes.text.tiny + 1 : 13,
+            color: colors.tint,
+          }}
+        >
+          {label}
+        </Text>
       </Pressable>
       <Sheet isOpen={open} onClose={() => setOpen(false)} title="D'où vient cette info ?">
         {subject ? (

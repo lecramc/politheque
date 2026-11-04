@@ -1,3 +1,5 @@
+import type { Lean } from '@/src/programmes/models/axis-explanation.service';
+
 // Formes courtes calculées à partir des textes sourcés : aucune nouvelle affirmation n'est écrite.
 
 const SENTENCE_END = /(?<=[.!?…])\s+(?=[A-ZÀ-ÖØ-Þ«])/;
@@ -63,3 +65,34 @@ export const stepLabel = (label: string): { title: string; note: string | null }
   title: beforeParenthesis(label),
   note: /date calculée, à confirmer/i.test(label) ? 'Date calculée, à confirmer' : null,
 });
+
+/** Phrase décrivant où un parti se place sur un axe (on nomme toujours le pôle, jamais gauche/droite). */
+export const leanText = (
+  lean: Lean,
+  axis: { negativePole: string; positivePole: string }
+): string => {
+  if (lean.kind === 'unplaced') {
+    if (lean.count === 0) return 'Non placé : aucune position connue';
+    const plural = lean.count > 1 ? 's' : '';
+    return `Non placé : ${lean.count} position${plural} connue${plural}, il en faut ${lean.minimum}`;
+  }
+  if (lean.strength === 'centre') return "Au centre de l'axe";
+  const pole = lean.side === 'negative' ? axis.negativePole : axis.positivePole;
+  return `${lean.strength === 'plutot' ? 'Plutôt' : 'Nettement'} vers « ${pole} »`;
+};
+
+/** Sous-titre d'une carte de parti : sur combien d'axes il est placé, d'après combien de positions. */
+export const placementSummary = ({
+  placedCount,
+  axisCount,
+  positionsCount,
+}: {
+  placedCount: number;
+  axisCount: number;
+  positionsCount: number;
+}): string => {
+  if (placedCount === 0) return 'Non placé : trop peu de positions connues';
+  const axes = placedCount > 1 ? 'axes' : 'axe';
+  const positions = positionsCount > 1 ? 'positions' : 'position';
+  return `Placé sur ${placedCount} ${axes} sur ${axisCount} · ${positionsCount} ${positions}`;
+};

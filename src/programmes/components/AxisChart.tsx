@@ -4,7 +4,9 @@ import { useWindowDimensions, View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
+import { describeLean } from '@/src/programmes/models/axis-explanation.service';
 import type { AxisPosition } from '@/src/programmes/models/matching.service';
+import { leanText } from '@/src/programmes/models/presentation.service';
 import type { Axis, Party } from '@/src/programmes/models/programme.model';
 
 type Point = {
@@ -61,8 +63,7 @@ export function AxisChart({
       .map((axis) => {
         const v = position[axis.id];
         if (v === null) return `${axis.label} : non calculé`;
-        const pole = v >= 0 ? axis.positivePole : axis.negativePole;
-        return `${axis.label} : ${Math.round(Math.abs(v) * 100)} % vers « ${pole} »`;
+        return `${axis.label} : ${leanText(describeLean({ position: v, count: 0 }), axis)}`;
       })
       .join(' ; ');
   const summary = [

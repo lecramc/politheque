@@ -23,6 +23,7 @@ export function Accordion({
   onToggle,
   children,
   flat = false,
+  last = false,
 }: {
   title: string;
   subtitle?: string;
@@ -34,6 +35,8 @@ export function Accordion({
   children: ReactNode;
   /** Sans carte, pour une liste dans un conteneur existant. */
   flat?: boolean;
+  /** Variante plate : dernière ligne du conteneur, sans bordure basse. */
+  last?: boolean;
 }) {
   const { colors, effects, fonts } = useTheme();
   const { timing } = useMotion();
@@ -84,7 +87,7 @@ export function Accordion({
     <View
       style={
         flat
-          ? { borderBottomWidth: 1, borderColor: colors.surface.border.primary }
+          ? { borderBottomWidth: last ? 0 : 1, borderColor: colors.surface.border.primary }
           : {
               backgroundColor: colors.surface.primary,
               borderWidth: 1,

@@ -14,6 +14,7 @@ import { AxisChart } from '@/src/programmes/components/AxisChart';
 import { Card } from '@/src/programmes/components/Card';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
+import { PartyPlacement } from '@/src/programmes/components/PartyPlacement';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { STANCE_LABEL, StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
@@ -299,68 +300,46 @@ export default function ResultsScreen() {
         ) : null}
 
         {tab === 'carte' ? (
-          <Accordion
-            title="Comment les partis sont placés"
-            subtitle="Les positions et sources utilisées pour chaque point"
-          >
-            <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-              Chaque point est la moyenne des positions du parti sur les affirmations rattachées à
-              l'axe. Pour chaque affirmation, le pôle indiqué est celui vers lequel la position du
-              parti pousse l'axe.
+          <View style={{ gap: effects.spacing.sm }}>
+            <Text
+              accessibilityRole="header"
+              aria-level={2}
+              style={{
+                ...fonts.display,
+                fontSize: effects.sizes.text.display,
+                color: colors.text.strong,
+              }}
+            >
+              Comment les partis sont placés
             </Text>
-            {vm.axisExplanations.map(({ party, axes }) => (
-              <Accordion
-                key={party.id}
-                title={displayName(party)}
-                leading={<PartyDot color={party.color} size={28} label={party.shortName} />}
-              >
-                {vm.axes.map((axis) => {
-                  const explanation = axes[axis.id];
-                  return (
-                    <View key={axis.id} style={{ gap: effects.spacing.xs }}>
-                      <Text style={{ ...fonts.bold }}>{axis.label}</Text>
-                      <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                        {explanation.position === null
-                          ? `Non placé : seulement ${explanation.count} position${explanation.count > 1 ? 's' : ''} connue${explanation.count > 1 ? 's' : ''} (${MIN_AXIS_COUNT} minimum)`
-                          : `${Math.round(Math.abs(explanation.position) * 100)} % vers « ${explanation.position < 0 ? axis.negativePole : axis.positivePole} »`}
-                      </Text>
-                      {explanation.items.map(({ question, stance, contribution }) => (
-                        <View
-                          key={question.id}
-                          style={{
-                            flexDirection: 'row',
-                            alignItems: 'center',
-                            gap: 8,
-                            flexWrap: 'wrap',
-                          }}
-                        >
-                          <Text style={{ flexBasis: '100%', fontSize: 14 }}>
-                            {question.statement}
-                          </Text>
-                          <StanceBadge stance={stance.stance} />
-                          <Text style={{ fontSize: 13, color: colors.text.secondary }}>
-                            {contribution === 0
-                              ? 'neutre'
-                              : `${contribution > 0 ? '→' : '←'} « ${contribution > 0 ? axis.positivePole : axis.negativePole} »`}
-                          </Text>
-                          {stance.sources.length ? (
-                            <SourceChip sources={stance.sources} subject={stance.justification} />
-                          ) : null}
-                        </View>
-                      ))}
-                    </View>
-                  );
-                })}
-              </Accordion>
+            <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+              Chaque point de la carte est la moyenne des positions publiques du parti sur les
+              affirmations du questionnaire liées à cet axe. Ouvrez un parti pour voir ces positions
+              et leurs sources.
+            </Text>
+            <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+              Un parti n'est placé sur un axe qu'à partir de {MIN_AXIS_COUNT} positions connues.
+            </Text>
+            {vm.axisExplanations.map((placement) => (
+              <PartyPlacement
+                key={placement.party.id}
+                party={placement.party}
+                axes={vm.axes}
+                placement={placement}
+              />
             ))}
             <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}>
               <Text style={{ flexShrink: 1, fontSize: 14, color: colors.text.secondary }}>
-                Contrôle de cohérence : l'ordre des partis a été comparé à l'enquête d'experts
-                Chapel Hill Expert Survey 2024
+                Contrôle de cohérence : l'ordre des partis a été comparé à celui d'une enquête
+                d'experts indépendante, la Chapel Hill Expert Survey 2024.
               </Text>
-              <SourceChip sources={CHES_SOURCES} subject="Contrôle de cohérence des positions" />
+              <SourceChip
+                compact
+                sources={CHES_SOURCES}
+                subject="Contrôle de cohérence des positions"
+              />
             </View>
-          </Accordion>
+          </View>
         ) : null}
 
         {tab === 'detail' ? (
