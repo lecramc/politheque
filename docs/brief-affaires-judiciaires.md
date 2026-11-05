@@ -165,3 +165,14 @@ Affaires judiciaires :
 11. Mamère : condamnation + arrêt CEDH côte à côte ; faits d'assistant avant le mandat et faits antérieurs à la fondation du parti → inclus.
 
 Propositions jugées contraires au droit : 12. Le Comité européen des droits sociaux est une autorité ; recherche symétrique pour le PS 2012-2017. 13. Décret annulé par le Conseil d'État → inclus, rattaché au parti du gouvernement. 14. Gouvernements sans majorité depuis 2024 → rattachés au parti du Premier ministre (Barnier → LR, Lecornu → Renaissance ; Bayrou → MoDem, hors des 10). 15. The Connexion ne compte pas comme source nationale. 16. Cosigner une PPL dont le premier signataire est d'un autre parti ne fait pas du parti un auteur. 17. PS, entrée sur les copies de données (état d'urgence) : conservée (décision de censure). 18. Accord LFI-EELV de 2022 : texte cosigné → EELV co-auteur.
+
+## 10. Arbitrages de l'éditeur (5 novembre 2026, après la passe 4)
+
+1. Sources : Jus Politicum (revue universitaire) = site spécialisé ; Le Courrier de l'Atlas = presse nationale ; deux médias qui reprennent la même dépêche AFP = une seule source ; Universalis et Larousse acceptés pour l'histoire, jamais pour une affaire judiciaire.
+2. Entrée sans juridiction ni date exacte → non publiable (reste « à recouper »).
+3. Décision civile favorable (déboutement) → nouveau statut `demande-rejetee` (« Demande rejetée »).
+4. Rattachements (règle du § 9.5) : Navarro → Renaissance (groupe) ; Iacovelli → hors périmètre s'il préside un autre parti ; Guéant et Papon → exclus (adhésion non établie) ; Rivière → Reconquête ; Guerriau → Horizons s'il est seulement suspendu selon la dernière source, hors périmètre s'il est exclu.
+5. Périmètre : Mandon et Darcos (fonctions administratives après la vie politique) → exclus ; Rivière (fraude dans des sociétés privées) → exclu ; Duclos et Thorez → inclus (pas de date butoir), avec des sources d'historien, jamais Wikipédia.
+6. RIP collectifs : attribués au parti du premier signataire et à chaque groupe cosignataire quand le texte est collectif, même formulation pour tous ; pour un objet jugé hors du champ de l'article 11, écrire exactement ce que le Conseil a jugé.
+7. Une enquête qui ne vise personne nommément (Hidalgo) → sort du dossier.
+8. Une peine exécutée ne prouve le caractère définitif que si la décision de recours est connue (une incarcération peut résulter d'un mandat de dépôt).
