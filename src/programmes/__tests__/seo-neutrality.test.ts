@@ -150,9 +150,24 @@ describe('Feature: aucun nom de personne dans les métadonnées des procédures'
   it('should never include a person name of a published dossier in a procedures page meta', () => {
     const metas = allPageMetas(catalog).filter((m) => m.path.endsWith('/procedures-judiciaires'));
     expect(metas.length).toBe(hasLegalSection(catalog) ? catalog.parties.length : 0);
-    const names = catalog.legal.flatMap((d) => d.entries.map((e) => e.person.name));
+    // Les personnes morales (le parti lui-même) ne sont pas des noms de personnes.
+    const partyNames = new Set(catalog.parties.flatMap((p) => [p.name, p.shortName]));
+    const names = catalog.legal
+      .flatMap((d) => d.entries.map((e) => e.person.name))
+      .filter((name) => !partyNames.has(name));
+    const slug = (name: string) =>
+      name
+        .normalize('NFD')
+        .replace(/\p{M}/gu, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-|-$/g, '');
     for (const meta of metas) {
-      for (const name of names) expect(JSON.stringify(meta), meta.path).not.toContain(name);
+      const json = JSON.stringify(meta);
+      for (const name of names) {
+        expect(json, meta.path).not.toContain(name);
+        expect(json.toLowerCase(), meta.path).not.toContain(slug(name));
+      }
     }
   });
 });

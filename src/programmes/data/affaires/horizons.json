@@ -1,0 +1,233 @@
+{
+  "partyId": "horizons",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "horizons-estrosi-evenements-nice",
+      "caseName": "Organisation d'événements par la ville de Nice (Eurovision junior 2023, Nice Climate Summit, Fête de la musique)",
+      "person": {
+        "name": "Christian Estrosi",
+        "sortName": "Estrosi Christian",
+        "kind": "personne-physique"
+      },
+      "scope": "ministre",
+      "roleAtTheTime": "Maire de Nice (2008-2026) et président de la métropole Nice Côte d'Azur ; ancien ministre (UMP) et ancien député",
+      "category": "probite",
+      "offences": [
+        "Enquête visant notamment le détournement de fonds publics, la prise illégale d'intérêts et le faux en écriture publique (selon Le Monde et Mediapart, repris par l'AFP)"
+      ],
+      "facts": {
+        "start": "2023"
+      },
+      "status": "enquete",
+      "steps": [
+        {
+          "date": "2025-07",
+          "kind": "ouverture-enquete",
+          "court": "Parquet de Marseille, juridiction interrégionale spécialisée",
+          "decision": "Christian Estrosi et son épouse ont été placés en garde à vue le 30 juin 2025 dans une enquête de la JIRS de Marseille sur l'organisation d'événements par la ville de Nice, visant notamment des soupçons de détournement de fonds publics, de prise illégale d'intérêts et de faux en écriture publique ; ils ont été libérés sans poursuites à ce stade. Dernière information publique : septembre 2026, Christian Estrosi n'est pas mis en examen (AFP).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "La Libre Belgique (Laure de Charette, correspondante en France, avec l'AFP), « Affaire à Nice : Christian Estrosi et sa femme placés en garde à vue dans l'enquête sur l'organisation d'événements »",
+              "url": "https://www.lalibre.be/international/2025/07/01/affaire-a-nice-christian-estrosi-et-sa-femme-places-en-garde-a-vue-dans-lenquete-sur-lorganisation-devenements-7DA56LSN2VA4RNLCVBMT66JEUA/",
+              "date": "2025-07-01",
+              "kind": "presse"
+            },
+            {
+              "title": "La Gazette France (AFP), « Nice : Estrosi visé par une enquête pour détournement de fonds »",
+              "url": "https://www.lagazettefrance.fr/article/nice-estrosi-vise-par-une-enquete-pour-detournement-de-fonds",
+              "date": "2026-09-17",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "La Libre Belgique (Laure de Charette, correspondante en France, avec l'AFP), « Affaire à Nice : Christian Estrosi et sa femme placés en garde à vue dans l'enquête sur l'organisation d'événements »",
+          "url": "https://www.lalibre.be/international/2025/07/01/affaire-a-nice-christian-estrosi-et-sa-femme-places-en-garde-a-vue-dans-lenquete-sur-lorganisation-devenements-7DA56LSN2VA4RNLCVBMT66JEUA/",
+          "date": "2025-07-01",
+          "kind": "presse"
+        },
+        {
+          "title": "La Gazette France (AFP), « Nice : Estrosi visé par une enquête pour détournement de fonds »",
+          "url": "https://www.lagazettefrance.fr/article/nice-estrosi-vise-par-une-enquete-pour-detournement-de-fonds",
+          "date": "2026-09-17",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "horizons-philippe-cite-numerique",
+      "caseName": "Gestion de la Cité numérique du Havre",
+      "person": {
+        "name": "Édouard Philippe",
+        "sortName": "Philippe Édouard",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Maire du Havre et président de la communauté urbaine Le Havre Seine Métropole (à partir de 2020) ; fondateur et président d'Horizons ; candidat déclaré à la présidentielle de 2027",
+      "category": "probite",
+      "offences": [
+        "Information judiciaire portant notamment sur des soupçons de détournement de fonds publics, de favoritisme et de harcèlement moral (certaines sources mentionnent aussi la prise illégale d'intérêts)",
+        "son adjointe Stéphanie de Bazelaire est également visée"
+      ],
+      "facts": {
+        "start": "2020"
+      },
+      "status": "temoin-assiste",
+      "steps": [
+        {
+          "date": "2026-10-29",
+          "kind": "temoin-assiste",
+          "court": "Parquet national financier, puis juges d'instruction financiers de Paris",
+          "decision": "Le 29 octobre 2026, Édouard Philippe a été entendu par deux juges d'instruction financiers de Paris et placé sous le statut de témoin assisté, et non mis en examen, dans une information judiciaire portant notamment sur des soupçons de détournement de fonds publics, de favoritisme et de harcèlement moral liés à la gestion de la Cité numérique du Havre. Ce statut peut évoluer au cours de l'instruction.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "LCP (AFP), « Soupçons de détournement de fonds publics : Édouard Philippe placé sous le statut de témoin assisté »",
+              "url": "https://lcp.fr/actualites/soupcons-de-detournement-de-fonds-publics-edouard-philippe-place-sous-le-statut-de",
+              "date": "2026-10-29",
+              "kind": "presse"
+            },
+            {
+              "title": "Euronews, « Le candidat à la présidentielle Édouard Philippe placé sous le statut de témoin assisté »",
+              "url": "https://fr.euronews.com/2026/10/30/le-candidat-a-la-presidentielle-edouard-philippe-place-sous-le-statut-de-temoin-assiste",
+              "date": "2026-10-30",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24, « Soupçons de détournement de fonds publics : Édouard Philippe placé sous le statut de témoin assisté »",
+              "url": "https://france24.com/fr/france/20261029-soup%C3%A7ons-de-d%C3%A9tournement-de-fonds-publics-%C3%A9douard-philippe-plac%C3%A9-sous-le-statut-de-t%C3%A9moin-assist%C3%A9",
+              "date": "2026-10-29",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Club des juristes, « Placement d'Édouard Philippe sous le statut de témoin assisté dans une enquête pour détournement de fonds publics »",
+              "url": "https://www.leclubdesjuristes.com/en-bref/placement-dedouard-philippe-sous-le-statut-de-temoin-assiste-dans-une-enquete-pour-detournement-de-fonds-publics-18148/",
+              "date": "2026-10-30",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "LCP (AFP), « Soupçons de détournement de fonds publics : Édouard Philippe placé sous le statut de témoin assisté »",
+          "url": "https://lcp.fr/actualites/soupcons-de-detournement-de-fonds-publics-edouard-philippe-place-sous-le-statut-de",
+          "date": "2026-10-29",
+          "kind": "presse"
+        },
+        {
+          "title": "Euronews, « Le candidat à la présidentielle Édouard Philippe placé sous le statut de témoin assisté »",
+          "url": "https://fr.euronews.com/2026/10/30/le-candidat-a-la-presidentielle-edouard-philippe-place-sous-le-statut-de-temoin-assiste",
+          "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24, « Soupçons de détournement de fonds publics : Édouard Philippe placé sous le statut de témoin assisté »",
+          "url": "https://france24.com/fr/france/20261029-soup%C3%A7ons-de-d%C3%A9tournement-de-fonds-publics-%C3%A9douard-philippe-plac%C3%A9-sous-le-statut-de-t%C3%A9moin-assist%C3%A9",
+          "date": "2026-10-29",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Club des juristes, « Placement d'Édouard Philippe sous le statut de témoin assisté dans une enquête pour détournement de fonds publics »",
+          "url": "https://www.leclubdesjuristes.com/en-bref/placement-dedouard-philippe-sous-le-statut-de-temoin-assiste-dans-une-enquete-pour-detournement-de-fonds-publics-18148/",
+          "date": "2026-10-30",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "horizons-philippe-covid-cjr",
+      "caseName": "Gestion de l'épidémie de Covid-19 (Cour de justice de la République)",
+      "person": {
+        "name": "Édouard Philippe",
+        "sortName": "Philippe Édouard",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Premier ministre (2017-2020), non membre de LREM ; il fonde Horizons en 2021",
+      "category": "autres",
+      "offences": [
+        "Mise en danger de la vie d'autrui et abstention volontaire de combattre un sinistre (art. 223-7 du code pénal), gestion de l'épidémie de Covid-19",
+        "placé sous le statut de témoin assisté"
+      ],
+      "facts": {
+        "start": "2020"
+      },
+      "status": "non-lieu",
+      "steps": [
+        {
+          "date": "2025-07-07",
+          "kind": "non-lieu",
+          "court": "Commission d'instruction de la Cour de justice de la République",
+          "decision": "Placé sous le statut de témoin assisté dans l'information judiciaire de la Cour de justice de la République sur la gestion de l'épidémie de Covid-19, Édouard Philippe a bénéficié d'un non-lieu le 7 juillet 2025, comme Agnès Buzyn et Olivier Véran, conformément aux réquisitions du procureur général près la Cour de cassation (prises le 20 mai 2025, annoncées le 21 mai).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Le Club des juristes, « Gestion du Covid-19 : la CJR prononce un non-lieu à l'encontre de Édouard Philippe, Agnès Buzyn et Olivier Véran »",
+              "url": "https://www.leclubdesjuristes.com/en-bref/gestion-du-covid-19-la-cjr-prononce-un-non-lieu-a-lencontre-de-edouard-philippe-agnes-buzyn-et-olivier-veran-11443/",
+              "date": "2025-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "H24Info (AFP), « France : Édouard Philippe obtient un non-lieu dans l'affaire du Covid-19 »",
+              "url": "https://h24info.ma/monde/france-edouard-philippe-covid-19/",
+              "date": "2025-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Europe 1, « Covid-19 : la Cour de justice de la République requiert un non-lieu pour Édouard Philippe, Agnès Buzyn et Olivier Véran »",
+              "url": "https://www.europe1.fr/Police-Justice/covid-19-la-cour-de-justice-de-la-republique-requiert-un-non-lieu-pour-edouard-philippe-agnes-buzyn-et-olivier-veran-753258",
+              "date": "2025-05-21",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24, « Covid-19 en France : l'enquête sur la gestion de la pandémie clôturée, sans mise en examen »",
+              "url": "https://www.france24.com/fr/france/20241230-covid-19-en-france-l-enqu%C3%AAte-sur-la-gestion-de-la-pand%C3%A9mie-cl%C3%B4tur%C3%A9e-sans-mise-en-examen",
+              "date": "2024-12-30",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Le Club des juristes, « Gestion du Covid-19 : la CJR prononce un non-lieu à l'encontre de Édouard Philippe, Agnès Buzyn et Olivier Véran »",
+          "url": "https://www.leclubdesjuristes.com/en-bref/gestion-du-covid-19-la-cjr-prononce-un-non-lieu-a-lencontre-de-edouard-philippe-agnes-buzyn-et-olivier-veran-11443/",
+          "date": "2025-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "H24Info (AFP), « France : Édouard Philippe obtient un non-lieu dans l'affaire du Covid-19 »",
+          "url": "https://h24info.ma/monde/france-edouard-philippe-covid-19/",
+          "date": "2025-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1, « Covid-19 : la Cour de justice de la République requiert un non-lieu pour Édouard Philippe, Agnès Buzyn et Olivier Véran »",
+          "url": "https://www.europe1.fr/Police-Justice/covid-19-la-cour-de-justice-de-la-republique-requiert-un-non-lieu-pour-edouard-philippe-agnes-buzyn-et-olivier-veran-753258",
+          "date": "2025-05-21",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24, « Covid-19 en France : l'enquête sur la gestion de la pandémie clôturée, sans mise en examen »",
+          "url": "https://www.france24.com/fr/france/20241230-covid-19-en-france-l-enqu%C3%AAte-sur-la-gestion-de-la-pand%C3%A9mie-cl%C3%B4tur%C3%A9e-sans-mise-en-examen",
+          "date": "2024-12-30",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    }
+  ]
+}

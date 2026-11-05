@@ -1,0 +1,331 @@
+{
+  "partyId": "renaissance",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "renaissance-berge-faux-temoignage-creches",
+      "caseName": "Déclarations sous serment devant la commission d'enquête sur les crèches (2024)",
+      "person": {
+        "name": "Aurore Bergé",
+        "sortName": "Bergé Aurore",
+        "kind": "personne-physique"
+      },
+      "scope": "ministre",
+      "roleAtTheTime": "Ministre des Solidarités et des Familles (déclarations sous serment du 30 avril 2024 devant une commission d'enquête de l'Assemblée)",
+      "category": "autres",
+      "offences": [
+        "Faux témoignage devant une commission d'enquête parlementaire (sur l'existence d'un lien personnel avec une dirigeante de la fédération des crèches privées)"
+      ],
+      "facts": {
+        "start": "2024-04-30"
+      },
+      "status": "non-lieu",
+      "steps": [
+        {
+          "date": "2026-07-02",
+          "kind": "non-lieu",
+          "court": "non-lieu le 2 juillet 2026)",
+          "decision": "Visée par une information judiciaire de la Cour de justice de la République pour faux témoignage devant une commission d'enquête parlementaire, Aurore Bergé, placée sous le statut de témoin assisté et jamais mise en examen, a bénéficié d'un non-lieu le 2 juillet 2026, conforme aux réquisitions du parquet général : l'enquête n'a pas établi qu'elle avait menti sous serment sur ses liens avec une dirigeante de la fédération des crèches privées.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "LCP – Crèches : une information judiciaire ouverte contre Aurore Bergé pour faux témoignage",
+              "url": "https://lcp.fr/actualites/creches-une-information-judiciaire-ouverte-contre-aurore-berge-pour-faux-temoignage",
+              "date": "2025-01",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24 (AFP) – Soupçons de faux témoignage sur les crèches : l'enquête visant Aurore Bergé terminée, sans mise en examen",
+              "url": "https://www.france24.com/fr/info-en-continu/20260504-soup%C3%A7ons-de-faux-t%C3%A9moignage-sur-les-cr%C3%A8ches-l-enqu%C3%AAte-visant-aurore-berg%C3%A9-termin%C3%A9e-sans-mise-en-examen",
+              "date": "2026-05-04",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24 (AFP) – Soupçon de faux témoignage sur les crèches : le parquet général requiert un non-lieu en faveur d'Aurore Bergé",
+              "url": "https://www.france24.com/fr/info-en-continu/20260520-soup%C3%A7on-de-faux-t%C3%A9moignage-sur-les-cr%C3%A8ches-le-parquet-g%C3%A9n%C3%A9ral-requiert-un-non-lieu-en-faveur-d-aurore-berg%C3%A9",
+              "date": "2026-05-20",
+              "kind": "presse"
+            },
+            {
+              "title": "Europe 1 – Crèches : la ministre Aurore Bergé visée par une enquête pour faux témoignage",
+              "url": "https://www.europe1.fr/Police-Justice/creches-la-ministre-aurore-berge-visee-par-une-enquete-pour-faux-temoignage-277838",
+              "date": "2025",
+              "kind": "presse"
+            },
+            {
+              "title": "Soupçons de faux témoignage sur les crèches : non-lieu en faveur d'Aurore Bergé (France 24, AFP)",
+              "url": "https://www.france24.com/fr/info-en-continu/20260702-soup%C3%A7ons-de-faux-t%C3%A9moignage-sur-les-cr%C3%A8ches-non-lieu-en-faveur-d-aurore-berg%C3%A9",
+              "date": "2026-07-02",
+              "kind": "presse"
+            },
+            {
+              "title": "Soupçons de faux témoignage sur les crèches : non-lieu en faveur d'Aurore Bergé (La Gazette France)",
+              "url": "https://www.lagazettefrance.fr/article/soupcons-de-faux-temoignage-sur-les-creches-non-lieu-en-faveur-d-aurore-berge",
+              "date": "2026-07-02",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "LCP – Crèches : une information judiciaire ouverte contre Aurore Bergé pour faux témoignage",
+          "url": "https://lcp.fr/actualites/creches-une-information-judiciaire-ouverte-contre-aurore-berge-pour-faux-temoignage",
+          "date": "2025-01",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 (AFP) – Soupçons de faux témoignage sur les crèches : l'enquête visant Aurore Bergé terminée, sans mise en examen",
+          "url": "https://www.france24.com/fr/info-en-continu/20260504-soup%C3%A7ons-de-faux-t%C3%A9moignage-sur-les-cr%C3%A8ches-l-enqu%C3%AAte-visant-aurore-berg%C3%A9-termin%C3%A9e-sans-mise-en-examen",
+          "date": "2026-05-04",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 (AFP) – Soupçon de faux témoignage sur les crèches : le parquet général requiert un non-lieu en faveur d'Aurore Bergé",
+          "url": "https://www.france24.com/fr/info-en-continu/20260520-soup%C3%A7on-de-faux-t%C3%A9moignage-sur-les-cr%C3%A8ches-le-parquet-g%C3%A9n%C3%A9ral-requiert-un-non-lieu-en-faveur-d-aurore-berg%C3%A9",
+          "date": "2026-05-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1 – Crèches : la ministre Aurore Bergé visée par une enquête pour faux témoignage",
+          "url": "https://www.europe1.fr/Police-Justice/creches-la-ministre-aurore-berge-visee-par-une-enquete-pour-faux-temoignage-277838",
+          "date": "2025",
+          "kind": "presse"
+        },
+        {
+          "title": "Soupçons de faux témoignage sur les crèches : non-lieu en faveur d'Aurore Bergé (France 24, AFP)",
+          "url": "https://www.france24.com/fr/info-en-continu/20260702-soup%C3%A7ons-de-faux-t%C3%A9moignage-sur-les-cr%C3%A8ches-non-lieu-en-faveur-d-aurore-berg%C3%A9",
+          "date": "2026-07-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Soupçons de faux témoignage sur les crèches : non-lieu en faveur d'Aurore Bergé (La Gazette France)",
+          "url": "https://www.lagazettefrance.fr/article/soupcons-de-faux-temoignage-sur-les-creches-non-lieu-en-faveur-d-aurore-berge",
+          "date": "2026-07-02",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "renaissance-buzyn-veran-gestion-covid",
+      "caseName": "Gestion de l'épidémie de Covid-19 (Cour de justice de la République)",
+      "person": {
+        "name": "Agnès Buzyn, Olivier Véran",
+        "sortName": "Véran Agnès Buzyn, Olivier",
+        "kind": "personne-physique"
+      },
+      "scope": "ministre",
+      "roleAtTheTime": "Ministres des Solidarités et de la Santé (Agnès Buzyn jusqu'en février 2020, Olivier Véran ensuite)",
+      "category": "autres",
+      "offences": [
+        "Mise en danger de la vie d'autrui et abstention volontaire de combattre un sinistre (art. 223-7 du code pénal), gestion de l'épidémie de Covid-19 — Agnès Buzyn mise en examen en septembre 2021 pour mise en danger de la vie d'autrui, mise en examen annulée par la Cour de cassation le 20 janvier 2023 (témoin assisté)",
+        "Olivier Véran témoin assisté"
+      ],
+      "facts": {
+        "start": "2020"
+      },
+      "status": "non-lieu",
+      "steps": [
+        {
+          "date": "2025-07-07",
+          "kind": "non-lieu",
+          "court": "Commission d'instruction de la Cour de justice de la République",
+          "decision": "Dans l'enquête de la Cour de justice de la République sur la gestion de l'épidémie de Covid-19 (mise en danger de la vie d'autrui et abstention volontaire de combattre un sinistre), la mise en examen d'Agnès Buzyn a été annulée par la Cour de cassation le 20 janvier 2023 ; un avis de fin d'information a été délivré le 28 novembre 2024 (clôture annoncée le 30 décembre 2024) sans mise en examen, et la CJR a prononcé un non-lieu le 7 juillet 2025 en faveur d'Agnès Buzyn, d'Olivier Véran et d'Édouard Philippe, conformément aux réquisitions du procureur général (mai 2025).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Le Club des juristes – Gestion du Covid-19 : la CJR prononce un non-lieu à l'encontre de Édouard Philippe, Agnès Buzyn et Olivier Véran",
+              "url": "https://www.leclubdesjuristes.com/en-bref/gestion-du-covid-19-la-cjr-prononce-un-non-lieu-a-lencontre-de-edouard-philippe-agnes-buzyn-et-olivier-veran-11443/",
+              "date": "2025-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24 – Covid-19 : la Cour de cassation annule la mise en examen d'Agnès Buzyn",
+              "url": "https://www.france24.com/fr/france/20230120-covid-19-la-cour-de-cassation-annule-la-mise-en-examen-d-agn%C3%A8s-buzyn",
+              "date": "2023-01-20",
+              "kind": "presse"
+            },
+            {
+              "title": "La Libre Belgique (AFP) – Gestion du Covid-19 : non-lieu requis pour trois ex-membres du gouvernement, dont Édouard Philippe",
+              "url": "https://www.lalibre.be/dernieres-depeches/2025/05/21/gestion-du-covid-19-non-lieu-requis-pour-trois-ex-membres-du-gouvernement-dont-edouard-philippe-7CUDL5RWG5AV3BPJQPAKTOWQAM/",
+              "date": "2025-05-21",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24 – Covid-19 en France : l'enquête sur la gestion de la pandémie clôturée, sans mise en examen",
+              "url": "https://www.france24.com/fr/france/20241230-covid-19-en-france-l-enqu%C3%AAte-sur-la-gestion-de-la-pand%C3%A9mie-cl%C3%B4tur%C3%A9e-sans-mise-en-examen",
+              "date": "2024-12-30",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Le Club des juristes – Gestion du Covid-19 : la CJR prononce un non-lieu à l'encontre de Édouard Philippe, Agnès Buzyn et Olivier Véran",
+          "url": "https://www.leclubdesjuristes.com/en-bref/gestion-du-covid-19-la-cjr-prononce-un-non-lieu-a-lencontre-de-edouard-philippe-agnes-buzyn-et-olivier-veran-11443/",
+          "date": "2025-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 – Covid-19 : la Cour de cassation annule la mise en examen d'Agnès Buzyn",
+          "url": "https://www.france24.com/fr/france/20230120-covid-19-la-cour-de-cassation-annule-la-mise-en-examen-d-agn%C3%A8s-buzyn",
+          "date": "2023-01-20",
+          "kind": "presse"
+        },
+        {
+          "title": "La Libre Belgique (AFP) – Gestion du Covid-19 : non-lieu requis pour trois ex-membres du gouvernement, dont Édouard Philippe",
+          "url": "https://www.lalibre.be/dernieres-depeches/2025/05/21/gestion-du-covid-19-non-lieu-requis-pour-trois-ex-membres-du-gouvernement-dont-edouard-philippe-7CUDL5RWG5AV3BPJQPAKTOWQAM/",
+          "date": "2025-05-21",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 – Covid-19 en France : l'enquête sur la gestion de la pandémie clôturée, sans mise en examen",
+          "url": "https://www.france24.com/fr/france/20241230-covid-19-en-france-l-enqu%C3%AAte-sur-la-gestion-de-la-pand%C3%A9mie-cl%C3%B4tur%C3%A9e-sans-mise-en-examen",
+          "date": "2024-12-30",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "renaissance-parti-comptes-campagne-cabinets-conseil",
+      "caseName": "Enquête contre X portant sur les comptes des campagnes présidentielles de 2017 et 2022 et l'intervention de cabinets de conseil (dont McKinsey)",
+      "person": {
+        "name": "Renaissance et son association de financement ; comptes de campagne d'Emmanuel Macron",
+        "sortName": "Renaissance et son association de financement ; comptes de campagne d'Emmanuel Macron",
+        "kind": "personne-morale"
+      },
+      "scope": "parti",
+      "roleAtTheTime": "Candidat d'En marche (2017) puis président-candidat (2022)",
+      "category": "probite",
+      "offences": [
+        "Informations judiciaires (ouvertes les 20 et 21 octobre 2022) pour tenue non conforme de comptes de campagne et minoration d'éléments comptables, et pour favoritisme et recel de favoritisme, sur l'intervention de cabinets de conseil (dont McKinsey) dans les campagnes de 2017 et 2022",
+        "étendues aux années 2015 et 2016"
+      ],
+      "facts": {
+        "start": "2015",
+        "end": "2022"
+      },
+      "status": "enquete",
+      "steps": [
+        {
+          "date": "2022-11",
+          "kind": "ouverture-enquete",
+          "court": "Juges d'instruction du pôle financier de Paris",
+          "decision": "Enquête contre X portant sur les comptes des campagnes présidentielles d'Emmanuel Macron : deux informations judiciaires ouvertes en octobre 2022 portent sur le rôle de cabinets de conseil, dont McKinsey, dans les campagnes de 2017 et 2022 (tenue des comptes de campagne, favoritisme) ; étendues à 2015-2016, elles ont donné lieu à des perquisitions au siège de Renaissance et de son association de financement. Aucune personne n'est mise en examen selon les sources. Dernière information publique : septembre 2026 (France 24/AFP, 4 septembre 2026, rappelle ces informations judiciaires et les perquisitions sans faire état d'une issue).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "France 24 – Affaire McKinsey : le PNF enquête sur le rôle des cabinets de conseil dans les campagnes de Macron",
+              "url": "https://www.france24.com/fr/france/20221125-%C3%A9lections-pr%C3%A9sidentielles-des-juges-d-instruction-enqu%C3%AAtent-sur-le-r%C3%B4le-des-cabinets-de-conseil",
+              "date": "2022-11-25",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Temps – Des enquêtes ouvertes sur les campagnes d'Emmanuel Macron dans le cadre de l'affaire McKinsey",
+              "url": "https://www.letemps.ch/monde/europe/enquetes-ouvertes-campagnes-demmanuel-macron-cadre-laffaire-mckinsey",
+              "date": "2022-11-25",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24 (AFP) – Le PNF fait saisir 65 M EUR dans l'enquête pour fraude fiscale contre McKinsey",
+              "url": "https://www.france24.com/fr/info-en-continu/20260904-le-pnf-fait-saisir-65-m-eur-dans-l-enqu%C3%AAte-pour-fraude-fiscale-contre-mckinsey",
+              "date": "2026-09-04",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "France 24 – Affaire McKinsey : le PNF enquête sur le rôle des cabinets de conseil dans les campagnes de Macron",
+          "url": "https://www.france24.com/fr/france/20221125-%C3%A9lections-pr%C3%A9sidentielles-des-juges-d-instruction-enqu%C3%AAtent-sur-le-r%C3%B4le-des-cabinets-de-conseil",
+          "date": "2022-11-25",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Temps – Des enquêtes ouvertes sur les campagnes d'Emmanuel Macron dans le cadre de l'affaire McKinsey",
+          "url": "https://www.letemps.ch/monde/europe/enquetes-ouvertes-campagnes-demmanuel-macron-cadre-laffaire-mckinsey",
+          "date": "2022-11-25",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 (AFP) – Le PNF fait saisir 65 M EUR dans l'enquête pour fraude fiscale contre McKinsey",
+          "url": "https://www.france24.com/fr/info-en-continu/20260904-le-pnf-fait-saisir-65-m-eur-dans-l-enqu%C3%AAte-pour-fraude-fiscale-contre-mckinsey",
+          "date": "2026-09-04",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "renaissance-parti-dons-2017-origine-non-identifiee",
+      "caseName": "Enquête préliminaire sur l'origine de 144 000 € de dons reçus en 2017 par La République en marche",
+      "person": {
+        "name": "La République en marche et son association de financement",
+        "sortName": "La République en marche et son association de financement",
+        "kind": "personne-morale"
+      },
+      "scope": "parti",
+      "roleAtTheTime": "Parti (dons reçus en 2017, justificatifs transmis par l'association de financement)",
+      "category": "probite",
+      "offences": [
+        "Enquête préliminaire ouverte sur signalement de la CNCCFP pour des faits « susceptibles de constituer une infraction à la législation sur la transparence de la vie publique » (identification des donateurs, plafond de 7 500 € par personne et par an)",
+        "qualification pénale précise non publiée"
+      ],
+      "facts": {
+        "start": "2017"
+      },
+      "status": "enquete",
+      "steps": [
+        {
+          "date": "2018-11",
+          "kind": "ouverture-enquete",
+          "court": "Parquet de Paris, sur signalement de la CNCCFP du 12 novembre 2018",
+          "decision": "Le 20 novembre 2018, le parquet de Paris a ouvert une enquête préliminaire après un signalement de la CNCCFP : lors du contrôle des justificatifs transmis par l'association de financement de La République en marche, la commission n'avait pu identifier l'origine de 144 000 € de dons reçus en 2017 (chèques, virements, paiements électroniques), ce qui empêchait de vérifier le respect du plafond de 7 500 € par donateur. Aucune suite publique trouvée. Dernière information publique : novembre 2018.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "LREM visé par une enquête du parquet de Paris sur l'origine de 144.000 euros de dons (Public Sénat)",
+              "url": "https://www.publicsenat.fr/actualites/politique/lrem-vise-par-une-enquete-du-parquet-de-paris-sur-l-origine-de-144000-euros-de",
+              "date": "2018-11-20",
+              "kind": "presse"
+            },
+            {
+              "title": "French prosecutor investigates some of Macron's campaign finances (Euronews, dépêche Reuters)",
+              "url": "https://www.euronews.com/2018/11/20/french-prosecutor-investigates-some-of-macrons-campaign-finances",
+              "date": "2018-11-20",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "LREM visé par une enquête du parquet de Paris sur l'origine de 144.000 euros de dons (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/lrem-vise-par-une-enquete-du-parquet-de-paris-sur-l-origine-de-144000-euros-de",
+          "date": "2018-11-20",
+          "kind": "presse"
+        },
+        {
+          "title": "French prosecutor investigates some of Macron's campaign finances (Euronews, dépêche Reuters)",
+          "url": "https://www.euronews.com/2018/11/20/french-prosecutor-investigates-some-of-macrons-campaign-finances",
+          "date": "2018-11-20",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04",
+      "publicLabel": "Enquête préliminaire ouverte en novembre 2018 ; dernière information publique : novembre 2018."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "partyId": "pcf",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "pcf-roussel-emploi-fictif-pnf",
+      "caseName": "Soupçons d'emploi fictif d'assistant parlementaire (enquête du Parquet national financier)",
+      "person": {
+        "name": "Fabien Roussel",
+        "sortName": "Roussel Fabien",
+        "kind": "personne-physique"
+      },
+      "scope": "dirigeant",
+      "roleAtTheTime": "Assistant parlementaire du député communiste Jean-Jacques Candelier (2009-2014 selon Mediapart) ; secrétaire national du PCF depuis 2018, candidat à la présidentielle 2022 et candidat du PCF pour 2027",
+      "category": "probite",
+      "offences": ["Détournement de fonds publics et recel de ce délit (soupçons)"],
+      "facts": {
+        "start": "2009",
+        "end": "2014"
+      },
+      "status": "enquete",
+      "steps": [
+        {
+          "date": "2022-03",
+          "kind": "ouverture-enquete",
+          "court": "Parquet national financier",
+          "decision": "Le Parquet national financier a confirmé le 11 mars 2022, sans en donner la date d'ouverture, l'existence d'une enquête préliminaire pour détournement de fonds publics et recel, après la publication par Mediapart d'accusations selon lesquelles Fabien Roussel aurait été rémunéré comme assistant parlementaire du député Jean-Jacques Candelier entre 2009 et 2014 sans travail effectif. Il a été entendu en audition libre fin août 2022 et conteste les faits. Dernière information publique : septembre 2022 (aucune suite publique retrouvée depuis).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "franceinfo, « Fabien Roussel soupçonné d'emploi fictif : le candidat communiste visé par une enquête »",
+              "url": "https://www.franceinfo.fr/politique/parti-communiste-francais/fabien-roussel-soupconne-d-emploi-fictif-le-candidat-communiste-vise-par-une-enquete_5004872.html",
+              "date": "2022-03-11",
+              "kind": "presse"
+            },
+            {
+              "title": "Europe 1 (avec AFP), « Fabien Roussel visé par une enquête sur des soupçons d'emploi fictif »",
+              "url": "https://www.europe1.fr/politique/fabien-roussel-vise-par-une-enquete-sur-des-soupcons-demploi-fictif-4098873",
+              "date": "2022-03-11",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24 (AFP), « Fabien Roussel visé par une enquête du PNF sur des soupçons d'emploi fictif »",
+              "url": "https://www.france24.com/fr/info-en-continu/20220311-fabien-roussel-vis%C3%A9-par-une-enqu%C3%AAte-du-pnf-sur-des-soup%C3%A7ons-d-emploi-fictif",
+              "date": "2022-03-11",
+              "kind": "presse"
+            },
+            {
+              "title": "franceinfo, « Soupçons d'emploi fictif : Fabien Roussel entendu fin août par la justice en audition libre »",
+              "url": "https://www.franceinfo.fr/politique/fabien-roussel/soupcons-d-emploi-fictif-fabien-roussel-entendu-fin-aout-par-la-justice-en-audition-libre_5357146.html",
+              "date": "2022-09-12",
+              "kind": "presse"
+            },
+            {
+              "title": "Le JDD, « Emploi fictif à l'Assemblée : le chef du parti communiste Fabien Roussel a été auditionné fin août »",
+              "url": "https://www.lejdd.fr/Politique/emploi-fictif-a-lassemblee-le-chef-du-parti-communiste-fabien-roussel-a-ete-auditionne-fin-aout-4133792",
+              "date": "2022-09",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "franceinfo, « Fabien Roussel soupçonné d'emploi fictif : le candidat communiste visé par une enquête »",
+          "url": "https://www.franceinfo.fr/politique/parti-communiste-francais/fabien-roussel-soupconne-d-emploi-fictif-le-candidat-communiste-vise-par-une-enquete_5004872.html",
+          "date": "2022-03-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1 (avec AFP), « Fabien Roussel visé par une enquête sur des soupçons d'emploi fictif »",
+          "url": "https://www.europe1.fr/politique/fabien-roussel-vise-par-une-enquete-sur-des-soupcons-demploi-fictif-4098873",
+          "date": "2022-03-11",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 (AFP), « Fabien Roussel visé par une enquête du PNF sur des soupçons d'emploi fictif »",
+          "url": "https://www.france24.com/fr/info-en-continu/20220311-fabien-roussel-vis%C3%A9-par-une-enqu%C3%AAte-du-pnf-sur-des-soup%C3%A7ons-d-emploi-fictif",
+          "date": "2022-03-11",
+          "kind": "presse"
+        },
+        {
+          "title": "franceinfo, « Soupçons d'emploi fictif : Fabien Roussel entendu fin août par la justice en audition libre »",
+          "url": "https://www.franceinfo.fr/politique/fabien-roussel/soupcons-d-emploi-fictif-fabien-roussel-entendu-fin-aout-par-la-justice-en-audition-libre_5357146.html",
+          "date": "2022-09-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Le JDD, « Emploi fictif à l'Assemblée : le chef du parti communiste Fabien Roussel a été auditionné fin août »",
+          "url": "https://www.lejdd.fr/Politique/emploi-fictif-a-lassemblee-le-chef-du-parti-communiste-fabien-roussel-a-ete-auditionne-fin-aout-4133792",
+          "date": "2022-09",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04",
+      "publicLabel": "Enquête préliminaire du Parquet national financier, dont l'existence a été confirmée le 11 mars 2022 (date d'ouverture non communiquée) ; dernière information publique : septembre 2022."
+    }
+  ]
+}

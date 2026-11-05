@@ -1,0 +1,612 @@
+{
+  "partyId": "lr",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "lr-dati-renault",
+      "caseName": "Honoraires versés par une filiale de l'alliance Renault-Nissan (environ 900 000 €)",
+      "person": {
+        "name": "Rachida Dati",
+        "sortName": "Dati Rachida",
+        "kind": "personne-physique"
+      },
+      "scope": "ministre",
+      "roleAtTheTime": "Députée européenne UMP (2009-2019), avocate",
+      "category": "probite",
+      "offences": [
+        "Recel d'abus de pouvoir et d'abus de confiance, corruption passive et trafic d'influence passif par une personne investie d'un mandat électif public au sein d'une organisation internationale (Parlement européen)"
+      ],
+      "facts": {
+        "start": "2010",
+        "end": "2012"
+      },
+      "status": "proces-en-cours",
+      "steps": [
+        {
+          "date": "2025-11",
+          "kind": "renvoi",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Rachida Dati, renvoyée en juillet 2025, a été jugée du 16 au 29 septembre 2026 par le tribunal correctionnel de Paris pour recel d'abus de pouvoir et d'abus de confiance, corruption passive et trafic d'influence passif, au sujet d'environ 900 000 € d'honoraires versés par une filiale de l'alliance Renault-Nissan (2010-2012). Le parquet national financier a requis quatre ans d'emprisonnement dont deux ferme sous bracelet électronique, 450 000 € d'amende et cinq ans d'inéligibilité ; jugement le 21 janvier 2027. Elle conteste les faits, affirme avoir travaillé comme avocate.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Affaire Renault-Nissan : Rachida Dati sera jugée pour corruption et trafic d'influence en septembre 2026 (Public Sénat)",
+              "url": "https://www.publicsenat.fr/actualites/politique/affaire-renault-nissan-rachida-dati-sera-jugee-pour-corruption-et-trafic-dinfluence-en-septembre-2026",
+              "date": "2025",
+              "kind": "presse"
+            },
+            {
+              "title": "Procès Renault-Nissan : quatre ans de prison requis contre Rachida Dati pour corruption (Presse-citron)",
+              "url": "https://www.presse-citron.net/proces-renault-nissan-quatre-ans-de-prison-requis-contre-rachida-dati-pour-corruption/",
+              "date": "2026-09-29",
+              "kind": "presse"
+            },
+            {
+              "title": "« Quelle condescendance, quel dénigrement » : Rachida Dati s'en prend au PNF après les réquisitions (Orange, AFP)",
+              "url": "https://actu.orange.fr/france/quelle-condescendance-quel-denigrement-rachida-dati-s-en-prend-au-pnf-apres-les-requisitions-dans-l-affaire-renault-nissan-magic-CNT000002sbh13.html",
+              "date": "2026-09-28",
+              "kind": "presse"
+            },
+            {
+              "title": "Municipales à Paris : LR investit Rachida Dati, qui se retire de la législative partielle au profit de Michel Barnier (Brut)",
+              "url": "https://www.brut.media/fr/articles/municipales-a-paris-lr-investit-rachida-dati-qui-se-retire-de-la-legislative-partielle-au-profit-de-michel-barnier",
+              "date": "2025-11-17",
+              "kind": "presse"
+            },
+            {
+              "title": "« On a fait tout ce qu'il fallait faire pour perdre » : Rachida Dati, anatomie d'une cuisante défaite à Paris (Public Sénat)",
+              "url": "https://www.publicsenat.fr/actualites/politique/on-a-fait-tout-ce-quil-fallait-faire-pour-perdre-rachida-dati-anatomie-dune-cuisante-defaite-a-paris",
+              "date": "2026-03-23",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": {
+        "label": "Jugement du tribunal correctionnel de Paris",
+        "expected": "2027-01-21",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Affaire Renault-Nissan : Rachida Dati sera jugée pour corruption et trafic d'influence en septembre 2026 (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/affaire-renault-nissan-rachida-dati-sera-jugee-pour-corruption-et-trafic-dinfluence-en-septembre-2026",
+          "date": "2025",
+          "kind": "presse"
+        },
+        {
+          "title": "Procès Renault-Nissan : quatre ans de prison requis contre Rachida Dati pour corruption (Presse-citron)",
+          "url": "https://www.presse-citron.net/proces-renault-nissan-quatre-ans-de-prison-requis-contre-rachida-dati-pour-corruption/",
+          "date": "2026-09-29",
+          "kind": "presse"
+        },
+        {
+          "title": "« Quelle condescendance, quel dénigrement » : Rachida Dati s'en prend au PNF après les réquisitions (Orange, AFP)",
+          "url": "https://actu.orange.fr/france/quelle-condescendance-quel-denigrement-rachida-dati-s-en-prend-au-pnf-apres-les-requisitions-dans-l-affaire-renault-nissan-magic-CNT000002sbh13.html",
+          "date": "2026-09-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Municipales à Paris : LR investit Rachida Dati, qui se retire de la législative partielle au profit de Michel Barnier (Brut)",
+          "url": "https://www.brut.media/fr/articles/municipales-a-paris-lr-investit-rachida-dati-qui-se-retire-de-la-legislative-partielle-au-profit-de-michel-barnier",
+          "date": "2025-11-17",
+          "kind": "presse"
+        },
+        {
+          "title": "« On a fait tout ce qu'il fallait faire pour perdre » : Rachida Dati, anatomie d'une cuisante défaite à Paris (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/on-a-fait-tout-ce-quil-fallait-faire-pour-perdre-rachida-dati-anatomie-dune-cuisante-defaite-a-paris",
+          "date": "2026-03-23",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lr-sarkozy-bettencourt",
+      "caseName": "Affaire Bettencourt (volet abus de faiblesse et financement de la campagne de 2007)",
+      "person": {
+        "name": "Nicolas Sarkozy",
+        "sortName": "Sarkozy Nicolas",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Candidat de l'UMP à la présidentielle de 2007",
+      "category": "probite",
+      "offences": ["Abus de faiblesse (mise en examen en mars 2013)"],
+      "facts": {
+        "start": "2007"
+      },
+      "status": "non-lieu",
+      "steps": [
+        {
+          "date": "2013-10-07",
+          "kind": "non-lieu",
+          "court": "Juges d'instruction du tribunal de grande instance de Bordeaux",
+          "decision": "Mis en examen pour abus de faiblesse au détriment de Liliane Bettencourt en mars 2013, Nicolas Sarkozy a bénéficié d'un non-lieu prononcé par les juges d'instruction de Bordeaux, faute de charges suffisantes (ordonnance du 7 octobre 2013 selon la presse). Le volet visant Éric Woerth est transféré au dossier Renaissance.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Abus de faiblesse sur Liliane Bettencourt : les prévenus fixés sur leur sort (Tendance Ouest, AFP)",
+              "url": "https://www.tendanceouest.com/actualite-105673-bordeaux-afp-abus-de-faiblesse-sur-liliane-bettencourt-les-prevenus-fixes-sur-leur-sort",
+              "date": "2015-05-28",
+              "kind": "presse"
+            },
+            {
+              "title": "Nicolas Sarkozy et l'affaire Bettencourt : un non-lieu accueilli avec joie (Purepeople)",
+              "url": "https://www.purepeople.com/article/nicolas-sarkozy-et-l-affaire-bettencourt-un-non-lieu-accueilli-avec-joie_a129471/1",
+              "date": "2013-10-08",
+              "kind": "presse"
+            },
+            {
+              "title": "Nicolas Sarkozy échappe à l'inculpation dans l'affaire Bettencourt (RTBF)",
+              "url": "https://www.rtbf.be/article/nicolas-sarkozy-echappe-a-l-inculpation-dans-l-affaire-bettencourt-7879188",
+              "date": "2012-11-22",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Abus de faiblesse sur Liliane Bettencourt : les prévenus fixés sur leur sort (Tendance Ouest, AFP)",
+          "url": "https://www.tendanceouest.com/actualite-105673-bordeaux-afp-abus-de-faiblesse-sur-liliane-bettencourt-les-prevenus-fixes-sur-leur-sort",
+          "date": "2015-05-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Nicolas Sarkozy et l'affaire Bettencourt : un non-lieu accueilli avec joie (Purepeople)",
+          "url": "https://www.purepeople.com/article/nicolas-sarkozy-et-l-affaire-bettencourt-un-non-lieu-accueilli-avec-joie_a129471/1",
+          "date": "2013-10-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Nicolas Sarkozy échappe à l'inculpation dans l'affaire Bettencourt (RTBF)",
+          "url": "https://www.rtbf.be/article/nicolas-sarkozy-echappe-a-l-inculpation-dans-l-affaire-bettencourt-7879188",
+          "date": "2012-11-22",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lr-sarkozy-bismuth",
+      "caseName": "Affaire des écoutes, dite « Bismuth »",
+      "person": {
+        "name": "Nicolas Sarkozy",
+        "sortName": "Sarkozy Nicolas",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Ancien président de la République (faits de 2014)",
+      "category": "probite",
+      "offences": ["Corruption active et trafic d'influence"],
+      "facts": {
+        "start": "2014"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2024-12-18",
+          "kind": "arret-cassation",
+          "court": "pourvoi rejeté par la Cour de cassation",
+          "decision": "Le 18 décembre 2024, la Cour de cassation a rejeté le pourvoi de Nicolas Sarkozy contre l'arrêt de la cour d'appel de Paris le condamnant pour corruption active et trafic d'influence à trois ans d'emprisonnement dont un an ferme. Il a exécuté la partie ferme sous bracelet électronique.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Trois ans d'emprisonnement dont un an ferme, exécuté sous bracelet électronique (pose le 7 février 2025, libération conditionnelle le 14 mai 2025), et trois ans d'inéligibilité"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Affaire des écoutes : Nicolas Sarkozy condamné définitivement à un an sous bracelet électronique (Public Sénat)",
+              "url": "https://www.publicsenat.fr/actualites/societe/affaire-des-ecoutes-nicolas-sarkozy-condamne-definitivement-a-un-an-sous-bracelet-electronique-une-premiere-pour-un-ex-president",
+              "date": "2024-12-18",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des écoutes : Nicolas Sarkozy définitivement condamné (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/affaire-des-ecoutes-nicolas-sarkozy-definitivement-condamne-a-trois-ans-de-prison-dont-un-ferme-sous-bracelet-electronique-8502/",
+              "date": "2024-12-18",
+              "kind": "presse"
+            },
+            {
+              "title": "Pourquoi le bracelet électronique de Nicolas Sarkozy lui a-t-il été retiré ? (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/pourquoi-le-bracelet-electronique-de-nicolas-sarkozy-lui-a-t-il-ete-retire-10660/",
+              "date": "2025-05",
+              "kind": "presse"
+            },
+            {
+              "title": "Nicolas Sarkozy voit son bracelet électronique lui être retiré (Paris Match Belgique)",
+              "url": "https://www.parismatch.be/actualites/monde/2025/05/15/nicolas-sarkozy-voit-son-bracelet-electronique-lui-etre-retire-WUUAUSM74ZGNLOBZAQPLD35U7Y/",
+              "date": "2025-05-15",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Affaire des écoutes : Nicolas Sarkozy condamné définitivement à un an sous bracelet électronique (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/societe/affaire-des-ecoutes-nicolas-sarkozy-condamne-definitivement-a-un-an-sous-bracelet-electronique-une-premiere-pour-un-ex-president",
+          "date": "2024-12-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des écoutes : Nicolas Sarkozy définitivement condamné (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/affaire-des-ecoutes-nicolas-sarkozy-definitivement-condamne-a-trois-ans-de-prison-dont-un-ferme-sous-bracelet-electronique-8502/",
+          "date": "2024-12-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Pourquoi le bracelet électronique de Nicolas Sarkozy lui a-t-il été retiré ? (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/pourquoi-le-bracelet-electronique-de-nicolas-sarkozy-lui-a-t-il-ete-retire-10660/",
+          "date": "2025-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Nicolas Sarkozy voit son bracelet électronique lui être retiré (Paris Match Belgique)",
+          "url": "https://www.parismatch.be/actualites/monde/2025/05/15/nicolas-sarkozy-voit-son-bracelet-electronique-lui-etre-retire-WUUAUSM74ZGNLOBZAQPLD35U7Y/",
+          "date": "2025-05-15",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lr-sarkozy-bygmalion",
+      "caseName": "Affaire Bygmalion (dépassement du plafond des dépenses de la campagne présidentielle de 2012)",
+      "person": {
+        "name": "Nicolas Sarkozy",
+        "sortName": "Sarkozy Nicolas",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Candidat de l'UMP à l'élection présidentielle de 2012",
+      "category": "probite",
+      "offences": ["Financement illégal de campagne électorale"],
+      "facts": {
+        "start": "2012"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2025-11-26",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Le 26 novembre 2025, la Cour de cassation a rejeté le pourvoi de Nicolas Sarkozy contre l'arrêt de la cour d'appel de Paris du 14 février 2024 qui l'avait condamné pour financement illégal de sa campagne de 2012 à un an d'emprisonnement dont six mois ferme. Le système de fausses factures était adressé à l'UMP ; les cadres du parti condamnés font l'objet d'une entrée distincte (à recouper).",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Un an d'emprisonnement dont six mois ferme, partie ferme aménagée (bracelet électronique ou semi-liberté)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Affaire Bygmalion : la Cour de cassation rejette le pourvoi de Nicolas Sarkozy (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/affaire-bygmalion-la-cour-de-cassation-rejette-le-pourvoi-de-nicolas-sarkozy-13123/",
+              "date": "2025-11-26",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire Bygmalion : vers une nouvelle condamnation définitive pour Nicolas Sarkozy (Public Sénat)",
+              "url": "https://www.publicsenat.fr/actualites/politique/affaire-bygmalion-vers-une-nouvelle-condamnation-definitive-pour-nicolas-sarkozy",
+              "date": "2025-11-26",
+              "kind": "presse"
+            },
+            {
+              "title": "Nicolas Sarkozy est définitivement condamné dans l'affaire Bygmalion (Le Temps)",
+              "url": "https://www.letemps.ch/monde/nicolas-sarkozy-est-definitivement-condamne-dans-l-affaire-bygmalion-par-la-cour-de-cassation",
+              "date": "2025-11-26",
+              "kind": "presse"
+            },
+            {
+              "title": "Bygmalion : la condamnation de Sarkozy confirmée, sa 2e définitive (La Télé, ATS)",
+              "url": "https://latele.ch/articles/bygmalion-la-condamnation-de-sarkozy-confirmee-sa-2e-definitive",
+              "date": "2025-11-26",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Affaire Bygmalion : la Cour de cassation rejette le pourvoi de Nicolas Sarkozy (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/affaire-bygmalion-la-cour-de-cassation-rejette-le-pourvoi-de-nicolas-sarkozy-13123/",
+          "date": "2025-11-26",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire Bygmalion : vers une nouvelle condamnation définitive pour Nicolas Sarkozy (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/affaire-bygmalion-vers-une-nouvelle-condamnation-definitive-pour-nicolas-sarkozy",
+          "date": "2025-11-26",
+          "kind": "presse"
+        },
+        {
+          "title": "Nicolas Sarkozy est définitivement condamné dans l'affaire Bygmalion (Le Temps)",
+          "url": "https://www.letemps.ch/monde/nicolas-sarkozy-est-definitivement-condamne-dans-l-affaire-bygmalion-par-la-cour-de-cassation",
+          "date": "2025-11-26",
+          "kind": "presse"
+        },
+        {
+          "title": "Bygmalion : la condamnation de Sarkozy confirmée, sa 2e définitive (La Télé, ATS)",
+          "url": "https://latele.ch/articles/bygmalion-la-condamnation-de-sarkozy-confirmee-sa-2e-definitive",
+          "date": "2025-11-26",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lr-sarkozy-libye",
+      "caseName": "Soupçons de financement libyen de la campagne de 2007",
+      "person": {
+        "name": "Nicolas Sarkozy",
+        "sortName": "Sarkozy Nicolas",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Ministre de l'Intérieur, président de l'UMP puis candidat à la présidentielle de 2007",
+      "category": "probite",
+      "offences": [
+        "Association de malfaiteurs (relaxé de corruption passive, recel de détournement de fonds publics libyens et financement illégal de campagne)"
+      ],
+      "facts": {
+        "start": "2005",
+        "end": "2007"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2025-09-25",
+          "kind": "arret-appel",
+          "court": "appel devant la cour d'appel de Paris",
+          "decision": "Le 25 septembre 2025, le tribunal correctionnel de Paris a déclaré coupable Nicolas Sarkozy d'association de malfaiteurs et l'a relaxé des chefs de corruption passive, recel de détournement de fonds publics libyens et financement illégal de campagne. Il a fait appel ; la cour d'appel de Paris rendra son arrêt le 30 novembre 2026. Il conteste les faits.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Cinq ans d'emprisonnement avec mandat de dépôt à effet différé et exécution provisoire, 100 000 € d'amende, cinq ans d'inéligibilité (première instance)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "« Affaire libyenne » : tout comprendre des condamnations (Politis)",
+              "url": "https://www.politis.fr/articles/2025/09/decryptage-affaire-libyenne-tout-comprendre-des-condamnations",
+              "date": "2025-09-25",
+              "kind": "presse"
+            },
+            {
+              "title": "Nicolas Sarkozy reconnu coupable d'association de malfaiteurs (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/nicolas-sarkozy-reconnu-coupable-dassociation-de-malfaiteurs-dans-laffaire-des-soupcons-de-financement-libyen-12133/",
+              "date": "2025-09-25",
+              "kind": "presse"
+            },
+            {
+              "title": "Financement libyen : sept ans de prison requis en appel contre Nicolas Sarkozy (Euronews)",
+              "url": "https://fr.euronews.com/2026/05/13/financement-libyen-7-ans-de-prison-requis-en-appel-contre-nicolas-sarkozy",
+              "date": "2026-05-13",
+              "kind": "presse"
+            },
+            {
+              "title": "Fin du procès en appel de Nicolas Sarkozy dans l'affaire libyenne, verdict attendu le 30 novembre (Euronews)",
+              "url": "https://fr.euronews.com/my-europe/2026/05/27/fin-du-proces-en-appel-de-nicolas-sarkozy-dans-laffaire-libyenne-verdict-attendu-le-30-nov",
+              "date": "2026-05-27",
+              "kind": "presse"
+            },
+            {
+              "title": "Nicolas Sarkozy désormais fixé sur la date du verdict dans l'affaire du financement libyen (24matins)",
+              "url": "https://www.24matins.fr/nicolas-sarkozy-desormais-fixe-sur-la-date-du-verdict-dans-laffaire-du-financement-libyen-1408187",
+              "date": "2026-05-28",
+              "kind": "presse"
+            },
+            {
+              "title": "Sept ans de prison requis contre Sarkozy au procès libyen en appel (La Télé, ATS)",
+              "url": "https://latele.ch/articles/sept-ans-de-prison-requis-contre-sarkozy-au-proces-libyen-en-appel",
+              "date": "2026-05-13",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "appel",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Arrêt de la cour d'appel de Paris (procès en appel du financement libyen)",
+        "expected": "2026-11-30",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "« Affaire libyenne » : tout comprendre des condamnations (Politis)",
+          "url": "https://www.politis.fr/articles/2025/09/decryptage-affaire-libyenne-tout-comprendre-des-condamnations",
+          "date": "2025-09-25",
+          "kind": "presse"
+        },
+        {
+          "title": "Nicolas Sarkozy reconnu coupable d'association de malfaiteurs (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/nicolas-sarkozy-reconnu-coupable-dassociation-de-malfaiteurs-dans-laffaire-des-soupcons-de-financement-libyen-12133/",
+          "date": "2025-09-25",
+          "kind": "presse"
+        },
+        {
+          "title": "Financement libyen : sept ans de prison requis en appel contre Nicolas Sarkozy (Euronews)",
+          "url": "https://fr.euronews.com/2026/05/13/financement-libyen-7-ans-de-prison-requis-en-appel-contre-nicolas-sarkozy",
+          "date": "2026-05-13",
+          "kind": "presse"
+        },
+        {
+          "title": "Fin du procès en appel de Nicolas Sarkozy dans l'affaire libyenne, verdict attendu le 30 novembre (Euronews)",
+          "url": "https://fr.euronews.com/my-europe/2026/05/27/fin-du-proces-en-appel-de-nicolas-sarkozy-dans-laffaire-libyenne-verdict-attendu-le-30-nov",
+          "date": "2026-05-27",
+          "kind": "presse"
+        },
+        {
+          "title": "Nicolas Sarkozy désormais fixé sur la date du verdict dans l'affaire du financement libyen (24matins)",
+          "url": "https://www.24matins.fr/nicolas-sarkozy-desormais-fixe-sur-la-date-du-verdict-dans-laffaire-du-financement-libyen-1408187",
+          "date": "2026-05-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Sept ans de prison requis contre Sarkozy au procès libyen en appel (La Télé, ATS)",
+          "url": "https://latele.ch/articles/sept-ans-de-prison-requis-contre-sarkozy-au-proces-libyen-en-appel",
+          "date": "2026-05-13",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lr-sarkozy-retractation-takieddine",
+      "caseName": "Rétractation de Ziad Takieddine",
+      "person": {
+        "name": "Nicolas Sarkozy",
+        "sortName": "Sarkozy Nicolas",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Ancien président de la République (faits de 2020)",
+      "category": "probite",
+      "offences": [
+        "Recel de subornation de témoin et association de malfaiteurs en vue de commettre une escroquerie au jugement en bande organisée"
+      ],
+      "facts": {
+        "start": "2020"
+      },
+      "status": "mise-en-examen",
+      "steps": [
+        {
+          "date": "2023-10-06",
+          "kind": "mise-en-examen",
+          "court": "Juges d'instruction du tribunal judiciaire de Paris",
+          "decision": "Nicolas Sarkozy a été mis en examen le 6 octobre 2023 pour recel de subornation de témoin et association de malfaiteurs en vue d'une escroquerie au jugement, dans l'enquête sur la rétractation de Ziad Takieddine. Le 16 décembre 2025, le parquet national financier a requis son renvoi devant le tribunal correctionnel ; aucune ordonnance de renvoi n'était connue au 4 novembre 2026. Il conteste les faits.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Rétractation de Takieddine : procès requis contre N. Sarkozy, C. Bruni-Sarkozy et « Mimi » Marchand (Euronews)",
+              "url": "https://fr.euronews.com/2025/12/16/retractation-de-z-takieddine-proces-requis-contre-n-sarkozy-c-bruni-sarkozy-et-mimi-marcha",
+              "date": "2025-12-16",
+              "kind": "presse"
+            },
+            {
+              "title": "Communiqué du tribunal judiciaire de Paris / PNF, réquisitoire définitif (16 décembre 2025)",
+              "url": "https://www.tribunal-de-paris.justice.fr/sites/default/files/2025-12/251216_CP%20RD%20MIMI%20-%20VD.pdf",
+              "date": "2025-12-16",
+              "kind": "justice"
+            },
+            {
+              "title": "L'ex-président Nicolas Sarkozy doublement mis en examen dans l'enquête sur la rétractation de Takieddine (Paris Match Belgique)",
+              "url": "https://www.parismatch.be/actualites/politique/2023/10/06/lex-president-francais-nicolas-sarkozy-doublement-mis-en-examen-dans-lenquete-sur-la-retractation-de-takieddine-KA2A6KNDEZBJXE3B65UXCO7M5U/",
+              "date": "2023-10-06",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Rétractation de Takieddine : procès requis contre N. Sarkozy, C. Bruni-Sarkozy et « Mimi » Marchand (Euronews)",
+          "url": "https://fr.euronews.com/2025/12/16/retractation-de-z-takieddine-proces-requis-contre-n-sarkozy-c-bruni-sarkozy-et-mimi-marcha",
+          "date": "2025-12-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Communiqué du tribunal judiciaire de Paris / PNF, réquisitoire définitif (16 décembre 2025)",
+          "url": "https://www.tribunal-de-paris.justice.fr/sites/default/files/2025-12/251216_CP%20RD%20MIMI%20-%20VD.pdf",
+          "date": "2025-12-16",
+          "kind": "justice"
+        },
+        {
+          "title": "L'ex-président Nicolas Sarkozy doublement mis en examen dans l'enquête sur la rétractation de Takieddine (Paris Match Belgique)",
+          "url": "https://www.parismatch.be/actualites/politique/2023/10/06/lex-president-francais-nicolas-sarkozy-doublement-mis-en-examen-dans-lenquete-sur-la-retractation-de-takieddine-KA2A6KNDEZBJXE3B65UXCO7M5U/",
+          "date": "2023-10-06",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lr-szpiner",
+      "caseName": "Attribution d'un logement social",
+      "person": {
+        "name": "Francis Szpiner",
+        "sortName": "Szpiner Francis",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Maire LR du 16e arrondissement de Paris (sénateur depuis septembre 2023)",
+      "category": "probite",
+      "offences": ["Corruption passive"],
+      "facts": {
+        "start": "2023"
+      },
+      "status": "mise-en-examen",
+      "steps": [
+        {
+          "date": "2026-07-09",
+          "kind": "mise-en-examen",
+          "court": "juge d'instruction",
+          "decision": "Le 9 juillet 2026, Francis Szpiner, sénateur LR de Paris, a été mis en examen pour corruption passive, soupçonné d'avoir attribué un logement social en contrepartie de relations sexuelles lorsqu'il était maire du 16e arrondissement (faits du 4 février au 30 mai 2023) ; le bureau du Sénat avait levé son immunité le 28 mai 2026. Son avocate indique qu'il conteste les faits.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Corruption : le sénateur Francis Szpiner mis en examen (ICI / France Bleu)",
+              "url": "https://www.ici.fr/infos/faits-divers-justice/corruption-le-senateur-francis-szpiner-mis-en-examen-suspecte-d-avoir-fourni-un-logement-contre-des-faveurs-sexuelles-3631797",
+              "date": "2026-07-09",
+              "kind": "presse"
+            },
+            {
+              "title": "Le sénateur LR Francis Szpiner mis en examen pour corruption passive (La Gazette France, AFP)",
+              "url": "https://www.lagazettefrance.fr/article/le-senateur-lr-francis-szpiner-mis-en-examen-pour-corruption-passive",
+              "date": "2026-07-09",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Bureau du Sénat lève l'immunité parlementaire de Francis Szpiner, visé par une enquête pour corruption (Public Sénat)",
+              "url": "https://www.publicsenat.fr/actualites/politique/le-bureau-du-senat-leve-limmunite-parlementaire-de-francis-szpiner-vise-par-une-enquete-pour-corruption",
+              "date": "2026-05-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Corruption : le sénateur Francis Szpiner mis en examen (ICI / France Bleu)",
+          "url": "https://www.ici.fr/infos/faits-divers-justice/corruption-le-senateur-francis-szpiner-mis-en-examen-suspecte-d-avoir-fourni-un-logement-contre-des-faveurs-sexuelles-3631797",
+          "date": "2026-07-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Le sénateur LR Francis Szpiner mis en examen pour corruption passive (La Gazette France, AFP)",
+          "url": "https://www.lagazettefrance.fr/article/le-senateur-lr-francis-szpiner-mis-en-examen-pour-corruption-passive",
+          "date": "2026-07-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Bureau du Sénat lève l'immunité parlementaire de Francis Szpiner, visé par une enquête pour corruption (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/le-bureau-du-senat-leve-limmunite-parlementaire-de-francis-szpiner-vise-par-une-enquete-pour-corruption",
+          "date": "2026-05-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    }
+  ]
+}

@@ -1,0 +1,707 @@
+{
+  "partyId": "reconquete",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "reconquete-knafo-plainte-etat-algerien",
+      "caseName": "Plainte de l'État algérien pour diffusion de fausses informations (2024)",
+      "person": {
+        "name": "Sarah Knafo",
+        "sortName": "Knafo Sarah",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Députée européenne Reconquête (depuis juillet 2024)",
+      "category": "autres",
+      "offences": [
+        "Diffusion de fausses nouvelles (art. 27 de la loi du 29 juillet 1881), plainte de l'État algérien du 25 septembre 2024"
+      ],
+      "facts": {
+        "start": "2024-09"
+      },
+      "status": "classement",
+      "steps": [
+        {
+          "date": "2024-09-27",
+          "kind": "classement",
+          "court": "Parquet de Paris",
+          "decision": "La plainte déposée le 25 septembre 2024 par l'État algérien contre Sarah Knafo, qui avait affirmé sur RMC que la France versait 800 millions d'euros d'aide annuelle à l'Algérie, a été classée sans suite par le parquet de Paris le 27 septembre 2024, au motif que l'infraction n'était pas caractérisée (propos jugés imprécis et insuffisamment vérifiés plutôt que délibérément mensongers, sans trouble à l'ordre public établi).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "H24Info (avec AFP), « « 800 millions d'euros d'aide » à l'Algérie : la plainte d'Alger contre Sarah Knafo classée »",
+              "url": "https://h24info.ma/monde/800-millions-deuros-daide-a-lalgerie-la-plainte-dalger-contre-sarah-knafo-classee/",
+              "date": "2024-10-03",
+              "kind": "presse"
+            },
+            {
+              "title": "TSA (Aicha Merabet), « Plainte de l'Algérie contre Sarah Knafo : la justice française a tranché » (d'après Le Figaro)",
+              "url": "https://www.tsa-algerie.com/plainte-de-lalgerie-contre-sarah-knafo-la-justice-francaise-a-tranche",
+              "date": "2024-10-03",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire Sarah Knafo : la justice française classe sans suite la plainte de l'État algérien (algerie360)",
+              "url": "https://www.algerie360.com/affaire-sarah-knafo-la-justice-francaise-classe-sans-suite-la-plainte-de-letat-algerien/",
+              "date": "2024-10",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "H24Info (avec AFP), « « 800 millions d'euros d'aide » à l'Algérie : la plainte d'Alger contre Sarah Knafo classée »",
+          "url": "https://h24info.ma/monde/800-millions-deuros-daide-a-lalgerie-la-plainte-dalger-contre-sarah-knafo-classee/",
+          "date": "2024-10-03",
+          "kind": "presse"
+        },
+        {
+          "title": "TSA (Aicha Merabet), « Plainte de l'Algérie contre Sarah Knafo : la justice française a tranché » (d'après Le Figaro)",
+          "url": "https://www.tsa-algerie.com/plainte-de-lalgerie-contre-sarah-knafo-la-justice-francaise-a-tranche",
+          "date": "2024-10-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire Sarah Knafo : la justice française classe sans suite la plainte de l'État algérien (algerie360)",
+          "url": "https://www.algerie360.com/affaire-sarah-knafo-la-justice-francaise-classe-sans-suite-la-plainte-de-letat-algerien/",
+          "date": "2024-10",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "reconquete-parti-cnil-2024",
+      "caseName": "Sanction de la CNIL pour la collecte de données pendant la campagne présidentielle de 2022",
+      "person": {
+        "name": "Reconquête",
+        "sortName": "Reconquête",
+        "kind": "personne-morale"
+      },
+      "scope": "parti",
+      "roleAtTheTime": "Parti politique (personne morale)",
+      "category": "autres",
+      "offences": [
+        "Manquements au RGPD (articles 12, 13, 14 et 17 : information des personnes et effacement des données) pour des données collectées à des fins de prospection électorale"
+      ],
+      "facts": {
+        "start": "2021",
+        "end": "2022"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2025-04-15",
+          "kind": "jugement",
+          "court": "Conseil d'État",
+          "decision": "La CNIL a infligé le 25 janvier 2024 une amende de 20 000 € à l'association Reconquête pour des manquements au RGPD (information des personnes, effacement des données) dans la collecte de données via un réseau de sites lors de la campagne de 2022 ; le Conseil d'État a rejeté le recours du parti le 15 avril 2025.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Amende administrative de 20 000 €"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Conseil d'État, 15 avril 2025, Association Reconquête, n° 492943",
+              "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-04-15/492943",
+              "date": "2025-04-15",
+              "kind": "justice"
+            },
+            {
+              "title": "Reconquête, le parti d'Éric Zemmour, condamné par la CNIL à une amende de 20 000 euros (Next)",
+              "url": "https://next.ink/brief-article/reconquete-le-parti-deric-zemmour-condamne-par-la-cnil-a-une-amende-de-20-000-euros/",
+              "date": "2024-02-15",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Conseil d'État, 15 avril 2025, Association Reconquête, n° 492943",
+          "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-04-15/492943",
+          "date": "2025-04-15",
+          "kind": "justice"
+        },
+        {
+          "title": "Reconquête, le parti d'Éric Zemmour, condamné par la CNIL à une amende de 20 000 euros (Next)",
+          "url": "https://next.ink/brief-article/reconquete-le-parti-deric-zemmour-condamne-par-la-cnil-a-une-amende-de-20-000-euros/",
+          "date": "2024-02-15",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04",
+      "nature": "civile-administrative"
+    },
+    {
+      "id": "reconquete-zemmour-convention-de-la-droite-2019",
+      "caseName": "Discours à la « Convention de la droite » (2019)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Journaliste et chroniqueur, avant la fondation de Reconquête (décembre 2021) ; fondateur et président du parti depuis",
+      "category": "propos-discrimination",
+      "offences": [
+        "Provocation publique à la haine ou à la violence et injure publique en raison de l'origine ou de la religion"
+      ],
+      "facts": {
+        "start": "2019-09-28"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2025-09-16",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Éric Zemmour a été définitivement condamné le 16 septembre 2025, après rejet de son pourvoi, pour provocation à la haine et injure publique en raison de l'origine ou de la religion, à la suite de son discours du 28 septembre 2019 à la « Convention de la droite » ; relaxé en appel en 2021, il avait été condamné à 15 000 € d'amende par la cour d'appel de renvoi le 22 février 2024.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "15 000 € d'amende (arrêt du 22 février 2024) ; 10 000 € en première instance"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Éric Zemmour définitivement condamné pour provocation à la haine raciale et injures racistes pour des propos en 2019 (ICI, ex-France Bleu)",
+              "url": "https://www.ici.fr/infos/societe/eric-zemmour-a-ete-definitivement-condamne-pour-provocation-a-la-haine-raciale-et-injures-racistes-6052200",
+              "date": "2025-09-17",
+              "kind": "presse"
+            },
+            {
+              "title": "Zemmour définitivement condamné pour racisme (La Libre Belgique)",
+              "url": "https://www.lalibre.be/international/europe/2025/09/17/zemmour-definitivement-condamne-pour-racisme-les-lois-nadmettent-pas-que-la-haine-puisse-servir-de-fondement-a-notre-societe-2UQ2WKE7W5HYXJ3SKA2BHBG4YQ/",
+              "date": "2025-09-17",
+              "kind": "presse"
+            },
+            {
+              "title": "France : la Cour de cassation confirme et rend définitive la condamnation de Zemmour pour provocation à la haine raciale (Anadolu)",
+              "url": "https://www.aa.com.tr/fr/monde/france-la-cour-de-cassation-confirme-et-rend-d%C3%A9finitive-la-condamnation-de-zemmour-pour-provocation-%C3%A0-la-haine-raciale-/3690745",
+              "date": "2025-09-17",
+              "kind": "presse"
+            },
+            {
+              "title": "Eric Zemmour, un habitué des controverses : retour sur ces autres affaires dans lesquelles il a été jugé (DH, AFP)",
+              "url": "https://www.dhnet.be/actu/monde/eric-zemmour-un-habitue-des-controverses-retour-sur-ces-autres-affaires-dans-lesquelles-il-a-ete-juge-61941a367b50a648b2d15b6f",
+              "date": "2021-11-16",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Éric Zemmour définitivement condamné pour provocation à la haine raciale et injures racistes pour des propos en 2019 (ICI, ex-France Bleu)",
+          "url": "https://www.ici.fr/infos/societe/eric-zemmour-a-ete-definitivement-condamne-pour-provocation-a-la-haine-raciale-et-injures-racistes-6052200",
+          "date": "2025-09-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Zemmour définitivement condamné pour racisme (La Libre Belgique)",
+          "url": "https://www.lalibre.be/international/europe/2025/09/17/zemmour-definitivement-condamne-pour-racisme-les-lois-nadmettent-pas-que-la-haine-puisse-servir-de-fondement-a-notre-societe-2UQ2WKE7W5HYXJ3SKA2BHBG4YQ/",
+          "date": "2025-09-17",
+          "kind": "presse"
+        },
+        {
+          "title": "France : la Cour de cassation confirme et rend définitive la condamnation de Zemmour pour provocation à la haine raciale (Anadolu)",
+          "url": "https://www.aa.com.tr/fr/monde/france-la-cour-de-cassation-confirme-et-rend-d%C3%A9finitive-la-condamnation-de-zemmour-pour-provocation-%C3%A0-la-haine-raciale-/3690745",
+          "date": "2025-09-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Eric Zemmour, un habitué des controverses : retour sur ces autres affaires dans lesquelles il a été jugé (DH, AFP)",
+          "url": "https://www.dhnet.be/actu/monde/eric-zemmour-un-habitue-des-controverses-retour-sur-ces-autres-affaires-dans-lesquelles-il-a-ete-juge-61941a367b50a648b2d15b6f",
+          "date": "2021-11-16",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "reconquete-zemmour-corriere-della-sera-2014",
+      "caseName": "Entretien au Corriere della Sera sur les musulmans (2014)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Journaliste et chroniqueur, avant la fondation de Reconquête (décembre 2021) ; fondateur et président du parti depuis",
+      "category": "propos-discrimination",
+      "offences": ["Provocation à la haine envers les musulmans"],
+      "facts": {
+        "start": "2014-10"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2018-11-29",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris autrement composée",
+          "decision": "Condamné en décembre 2015 à 3 000 € d'amende pour provocation à la haine envers les musulmans en raison d'un entretien au Corriere della Sera d'octobre 2014, condamnation confirmée en appel en novembre 2016 puis annulée par la Cour de cassation, Éric Zemmour a été relaxé le 29 novembre 2018 par la cour d'appel de renvoi, qui a jugé non prouvé qu'il savait que le journal était diffusé en France.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Propos sur les musulmans dans le Corriere della Sera : Eric Zemmour relaxé en appel (Ozap, AFP)",
+              "url": "https://www.ozap.com/actu/propos-sur-les-musulmans-dans-le-corriere-della-sera-eric-zemmour-relaxe-en-appel/571411",
+              "date": "2018-11-29",
+              "kind": "presse"
+            },
+            {
+              "title": "France : Eric Zemmour relaxé pour « provocation à la haine envers les musulmans » (Bladi)",
+              "url": "https://www.bladi.net/eric-zemmour-haine-musulmans,53680.html",
+              "date": "2018-11-30",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Propos sur les musulmans dans le Corriere della Sera : Eric Zemmour relaxé en appel (Ozap, AFP)",
+          "url": "https://www.ozap.com/actu/propos-sur-les-musulmans-dans-le-corriere-della-sera-eric-zemmour-relaxe-en-appel/571411",
+          "date": "2018-11-29",
+          "kind": "presse"
+        },
+        {
+          "title": "France : Eric Zemmour relaxé pour « provocation à la haine envers les musulmans » (Bladi)",
+          "url": "https://www.bladi.net/eric-zemmour-haine-musulmans,53680.html",
+          "date": "2018-11-30",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "reconquete-zemmour-crepol-injure",
+      "caseName": "Propos sur « deux peuples » après la mort d'un lycéen à Crépol (RMC/BFMTV, 2023)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Fondateur et président de Reconquête",
+      "category": "propos-discrimination",
+      "offences": ["Injure publique à caractère racial (relaxe pour un autre passage)"],
+      "facts": {
+        "start": "2023-11-30"
+      },
+      "status": "condamnation-recours-non-documente",
+      "steps": [
+        {
+          "date": "2025-03-26",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Éric Zemmour a été condamné le 26 mars 2025 par le tribunal correctionnel de Paris à 60 jours-amende de 150 € pour injure à caractère racial, en raison de propos tenus le 30 novembre 2023 sur RMC et BFMTV après la mort d'un lycéen à Crépol ; il a été relaxé pour un autre passage. Un appel annoncé n'est rapporté que par une source.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "60 jours-amende de 150 € (9 000 €)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Crépol : Eric Zemmour condamné pour injure raciale (The Times of Israel, AFP)",
+              "url": "https://fr.timesofisrael.com/crepol-eric-zemmour-condamne-pour-injure-raciale/",
+              "date": "2025-03-26",
+              "kind": "presse"
+            },
+            {
+              "title": "Drame de Crépol : Eric Zemmour condamné pour injure raciale (Le Courrier de l'Atlas)",
+              "url": "https://www.lecourrierdelatlas.com/?p=203016",
+              "date": "2025-03-27",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Crépol : Eric Zemmour condamné pour injure raciale (The Times of Israel, AFP)",
+          "url": "https://fr.timesofisrael.com/crepol-eric-zemmour-condamne-pour-injure-raciale/",
+          "date": "2025-03-26",
+          "kind": "presse"
+        },
+        {
+          "title": "Drame de Crépol : Eric Zemmour condamné pour injure raciale (Le Courrier de l'Atlas)",
+          "url": "https://www.lecourrierdelatlas.com/?p=203016",
+          "date": "2025-03-27",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04",
+      "publicLabel": "Condamné par le tribunal correctionnel de Paris le 26 mars 2025 ; nous n'avons pas trouvé trace d'un recours."
+    },
+    {
+      "id": "reconquete-zemmour-ined-diffamation",
+      "caseName": "Propos visant l'Institut national d'études démographiques (CNews, 2021)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Journaliste et chroniqueur, avant la fondation de Reconquête (décembre 2021) ; fondateur et président du parti depuis",
+      "category": "propos-discrimination",
+      "offences": ["Complicité de diffamation publique envers une administration publique"],
+      "facts": {
+        "start": "2021-04-02"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2026-01-27",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Éric Zemmour a été définitivement condamné le 27 janvier 2026, après rejet de son pourvoi, à 1 500 € d'amende avec sursis pour complicité de diffamation publique envers l'INED, qu'il avait accusé le 2 avril 2021 sur CNews de « trafiquer » les chiffres de l'immigration.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "1 500 € d'amende avec sursis ; 1 € de dommages et intérêts et frais de procédure (2 000 € en appel, 2 500 € en cassation, solidairement avec le directeur de la publication)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Diffamation envers l'INED : Eric Zemmour et CNews définitivement condamnés (Médiaterranée)",
+              "url": "https://mediaterranee.com/0322026-diffamation-envers-lined-eric-zemmour-et-cnews-definitivement-condamnes.html",
+              "date": "2026-02-03",
+              "kind": "presse"
+            },
+            {
+              "title": "ActuaLitté (Clément Solym), « Cour de cassation : Zemmour et CNews définitivement condamnés dans l'affaire Ined »",
+              "url": "https://actualitte.com/article/129048/droit-justice/cour-de-cassation-zemmour-et-cnews-definitivement-condamnes-dans-l-affaire-ined",
+              "date": "2026-02-01",
+              "kind": "presse"
+            },
+            {
+              "title": "INED – Condamnation définitive de Monsieur Éric Zemmour et Monsieur Jean-Christophe Thiery Bercegol du Moulin (communiqué)",
+              "url": "https://www.ined.fr/fr/presse/condamnation-definitive-monsieur-eric-zemmour-et-monsieur-jean-christophe-thiery-bercegol-du",
+              "date": "2026-01-30",
+              "kind": "justice"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Diffamation envers l'INED : Eric Zemmour et CNews définitivement condamnés (Médiaterranée)",
+          "url": "https://mediaterranee.com/0322026-diffamation-envers-lined-eric-zemmour-et-cnews-definitivement-condamnes.html",
+          "date": "2026-02-03",
+          "kind": "presse"
+        },
+        {
+          "title": "ActuaLitté (Clément Solym), « Cour de cassation : Zemmour et CNews définitivement condamnés dans l'affaire Ined »",
+          "url": "https://actualitte.com/article/129048/droit-justice/cour-de-cassation-zemmour-et-cnews-definitivement-condamnes-dans-l-affaire-ined",
+          "date": "2026-02-01",
+          "kind": "presse"
+        },
+        {
+          "title": "INED – Condamnation définitive de Monsieur Éric Zemmour et Monsieur Jean-Christophe Thiery Bercegol du Moulin (communiqué)",
+          "url": "https://www.ined.fr/fr/presse/condamnation-definitive-monsieur-eric-zemmour-et-monsieur-jean-christophe-thiery-bercegol-du",
+          "date": "2026-01-30",
+          "kind": "justice"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "reconquete-zemmour-klugman-diffamation",
+      "caseName": "Propos visant l'avocat Patrick Klugman (France 2, 2022)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Fondateur et président de Reconquête ; candidat à l'élection présidentielle",
+      "category": "propos-discrimination",
+      "offences": ["Diffamation publique envers un particulier"],
+      "facts": {
+        "start": "2022-04-05"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2025-12-02",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Éric Zemmour, alors candidat de Reconquête, a été définitivement condamné le 2 décembre 2025 à 1 000 € d'amende pour diffamation envers l'avocat Patrick Klugman, qu'il avait accusé le 5 avril 2022 sur France 2 d'avoir voulu « étouffer l'affaire » de la mort de Jérémie Cohen.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "1 000 € d'amende"
+            }
+          ],
+          "sources": [
+            {
+              "title": "La Cour de cassation confirme deux condamnations d'Éric Zemmour pour complicité d'injure publique, provocation à la haine et pour diffamation (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/la-cour-de-cassation-confirme-deux-condamnations-deric-zemmour-pour-complicite-dinjure-publique-provocation-a-la-haine-et-pour-diffamation-13229/",
+              "date": "2025-12-02",
+              "kind": "presse"
+            },
+            {
+              "title": "Diffamation envers un avocat : confirmation de la condamnation d'Eric Zemmour (Le Monde du Droit)",
+              "url": "https://www.lemondedudroit.fr/judiciaire/326-droit-penal/102159-diffamation-envers-un-avocat-confirmation-de-la-condamnation-d-eric-zemmour.html",
+              "date": "2025-12-16",
+              "kind": "presse"
+            },
+            {
+              "title": "Condamnation de Zemmour : l'humour noir de Reconquête rattrapé par la loi (Afrik.com)",
+              "url": "https://www.afrik.com/condamnation-de-zemmour-l-humour-noir-de-reconquete-rattrape-par-la-loi",
+              "date": "2025-12-03",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "La Cour de cassation confirme deux condamnations d'Éric Zemmour pour complicité d'injure publique, provocation à la haine et pour diffamation (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/la-cour-de-cassation-confirme-deux-condamnations-deric-zemmour-pour-complicite-dinjure-publique-provocation-a-la-haine-et-pour-diffamation-13229/",
+          "date": "2025-12-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Diffamation envers un avocat : confirmation de la condamnation d'Eric Zemmour (Le Monde du Droit)",
+          "url": "https://www.lemondedudroit.fr/judiciaire/326-droit-penal/102159-diffamation-envers-un-avocat-confirmation-de-la-condamnation-d-eric-zemmour.html",
+          "date": "2025-12-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Condamnation de Zemmour : l'humour noir de Reconquête rattrapé par la loi (Afrik.com)",
+          "url": "https://www.afrik.com/condamnation-de-zemmour-l-humour-noir-de-reconquete-rattrape-par-la-loi",
+          "date": "2025-12-03",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "reconquete-zemmour-mineurs-isoles-2020",
+      "caseName": "Propos sur les mineurs étrangers isolés (CNews, 2020)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Journaliste et chroniqueur, avant la fondation de Reconquête (décembre 2021) ; fondateur et président du parti depuis",
+      "category": "propos-discrimination",
+      "offences": [
+        "Complicité d'injure publique et de provocation publique à la haine ou à la violence en raison de l'origine"
+      ],
+      "facts": {
+        "start": "2020-09-29"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2025-12-02",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Éric Zemmour a été définitivement condamné le 2 décembre 2025, après rejet de son pourvoi, à cent jours-amende de 100 € pour complicité d'injure publique et de provocation à la haine en raison de propos tenus le 29 septembre 2020 sur CNews sur les mineurs étrangers isolés ; la cour d'appel de Paris avait confirmé le jugement le 12 septembre 2024.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "100 jours-amende de 100 € (10 000 €)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "La Cour de cassation confirme deux condamnations d'Éric Zemmour pour complicité d'injure publique, provocation à la haine et pour diffamation (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/la-cour-de-cassation-confirme-deux-condamnations-deric-zemmour-pour-complicite-dinjure-publique-provocation-a-la-haine-et-pour-diffamation-13229/",
+              "date": "2025-12-02",
+              "kind": "presse"
+            },
+            {
+              "title": "« Voleurs, assassins, violeurs » : Éric Zemmour définitivement condamné pour ses propos sur CNews (Bladi)",
+              "url": "https://www.bladi.net/voleurs-assassins-violeurs-eric-zemmour-definitivement-condamne,118213.html",
+              "date": "2025-12-03",
+              "kind": "presse"
+            },
+            {
+              "title": "Condamnation de Zemmour : l'humour noir de Reconquête rattrapé par la loi (Afrik.com)",
+              "url": "https://www.afrik.com/condamnation-de-zemmour-l-humour-noir-de-reconquete-rattrape-par-la-loi",
+              "date": "2025-12-03",
+              "kind": "presse"
+            },
+            {
+              "title": "Eric Zemmour condamné et relaxé en appel dans deux affaires distinctes (La Libre Belgique, AFP)",
+              "url": "https://www.lalibre.be/international/europe/2024/09/12/eric-zemmour-condamne-et-relaxe-en-appel-dans-deux-affaires-distinctes-5Q6K776HTBCJTKNFDMZNLIJN2Y/",
+              "date": "2024-09-12",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "La Cour de cassation confirme deux condamnations d'Éric Zemmour pour complicité d'injure publique, provocation à la haine et pour diffamation (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/la-cour-de-cassation-confirme-deux-condamnations-deric-zemmour-pour-complicite-dinjure-publique-provocation-a-la-haine-et-pour-diffamation-13229/",
+          "date": "2025-12-02",
+          "kind": "presse"
+        },
+        {
+          "title": "« Voleurs, assassins, violeurs » : Éric Zemmour définitivement condamné pour ses propos sur CNews (Bladi)",
+          "url": "https://www.bladi.net/voleurs-assassins-violeurs-eric-zemmour-definitivement-condamne,118213.html",
+          "date": "2025-12-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Condamnation de Zemmour : l'humour noir de Reconquête rattrapé par la loi (Afrik.com)",
+          "url": "https://www.afrik.com/condamnation-de-zemmour-l-humour-noir-de-reconquete-rattrape-par-la-loi",
+          "date": "2025-12-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Eric Zemmour condamné et relaxé en appel dans deux affaires distinctes (La Libre Belgique, AFP)",
+          "url": "https://www.lalibre.be/international/europe/2024/09/12/eric-zemmour-condamne-et-relaxe-en-appel-dans-deux-affaires-distinctes-5Q6K776HTBCJTKNFDMZNLIJN2Y/",
+          "date": "2024-09-12",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "reconquete-zemmour-relaxe-delinquance-2022",
+      "caseName": "Propos sur l'immigration et la délinquance (Public Sénat, 2022)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Fondateur et président de Reconquête ; candidat à l'élection présidentielle",
+      "category": "propos-discrimination",
+      "offences": ["Provocation à la haine en raison de l'origine"],
+      "facts": {
+        "start": "2022-01-26"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2025-07-02",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Éric Zemmour a été relaxé le 2 juillet 2025 par le tribunal correctionnel de Paris des poursuites pour provocation à la haine visant ses propos du 26 janvier 2022 sur Public Sénat liant délinquance et immigration, le tribunal estimant qu'ils visaient les seuls immigrés auteurs d'infractions et non l'ensemble des immigrés.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Relaxé, Éric Zemmour échappe à une nouvelle condamnation (Le Courrier de l'Atlas)",
+              "url": "https://www.lecourrierdelatlas.com/relaxe-eric-zemmour-echappe-a-une-nouvelle-condamnation/",
+              "date": "2025-07-03",
+              "kind": "presse"
+            },
+            {
+              "title": "« Délinquance » et « immigration » : la justice relaxe Éric Zemmour (Bladi)",
+              "url": "https://www.bladi.net/delinquance-immigration-justice-relaxe-eric-zemmour,115577.html",
+              "date": "2025-07-03",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Relaxé, Éric Zemmour échappe à une nouvelle condamnation (Le Courrier de l'Atlas)",
+          "url": "https://www.lecourrierdelatlas.com/relaxe-eric-zemmour-echappe-a-une-nouvelle-condamnation/",
+          "date": "2025-07-03",
+          "kind": "presse"
+        },
+        {
+          "title": "« Délinquance » et « immigration » : la justice relaxe Éric Zemmour (Bladi)",
+          "url": "https://www.bladi.net/delinquance-immigration-justice-relaxe-eric-zemmour,115577.html",
+          "date": "2025-07-03",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "reconquete-zemmour-rtl-bandes-2014",
+      "caseName": "Chronique sur RTL évoquant des « bandes » d'étrangers (2014)",
+      "person": {
+        "name": "Éric Zemmour",
+        "sortName": "Zemmour Éric",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Journaliste et chroniqueur, avant la fondation de Reconquête (décembre 2021) ; fondateur et président du parti depuis",
+      "category": "propos-discrimination",
+      "offences": ["Provocation à la haine raciale et diffamation raciale"],
+      "facts": {
+        "start": "2014-05-06"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2016-06-22",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Éric Zemmour a été relaxé en septembre 2015 puis, le 22 juin 2016, par la cour d'appel de Paris, des poursuites pour provocation à la haine et diffamation raciales visant une chronique sur RTL du 6 mai 2014 ; les juges ont estimé que les communautés citées n'étaient pas visées dans leur ensemble.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Eric Zemmour relaxé en appel pour ses « bandes » d'étrangers (Ozap)",
+              "url": "https://www.ozap.com/actu/eric-zemmour-relaxe-en-appel-pour-ses-bandes-d-etrangers/501233",
+              "date": "2016-06-22",
+              "kind": "presse"
+            },
+            {
+              "title": "Eric Zemmour, un habitué des controverses : retour sur ces autres affaires dans lesquelles il a été jugé (DH, AFP)",
+              "url": "https://www.dhnet.be/actu/monde/eric-zemmour-un-habitue-des-controverses-retour-sur-ces-autres-affaires-dans-lesquelles-il-a-ete-juge-61941a367b50a648b2d15b6f",
+              "date": "2021-11-16",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Eric Zemmour relaxé en appel pour ses « bandes » d'étrangers (Ozap)",
+          "url": "https://www.ozap.com/actu/eric-zemmour-relaxe-en-appel-pour-ses-bandes-d-etrangers/501233",
+          "date": "2016-06-22",
+          "kind": "presse"
+        },
+        {
+          "title": "Eric Zemmour, un habitué des controverses : retour sur ces autres affaires dans lesquelles il a été jugé (DH, AFP)",
+          "url": "https://www.dhnet.be/actu/monde/eric-zemmour-un-habitue-des-controverses-retour-sur-ces-autres-affaires-dans-lesquelles-il-a-ete-juge-61941a367b50a648b2d15b6f",
+          "date": "2021-11-16",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    }
+  ]
+}

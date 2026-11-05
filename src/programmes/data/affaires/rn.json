@@ -1,0 +1,1715 @@
+{
+  "partyId": "rn",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "rn-bruno-gollnisch-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Bruno Gollnisch",
+        "sortName": "Gollnisch Bruno",
+        "kind": "personne-physique"
+      },
+      "scope": "dirigeant",
+      "roleAtTheTime": "Député européen ; vice-président / délégué général du FN",
+      "category": "probite",
+      "offences": ["Détournement de fonds publics"],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Bruno Gollnisch, député européen et vice-président du FN à l'époque des faits, a été condamné en appel le 7 juillet 2026 pour détournement de fonds publics à trois ans d'emprisonnement avec sursis, 25 000 € d'amende et une peine d'inéligibilité d'un an ; pourvoi en cassation en cours.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 3 ans d'emprisonnement avec sursis, 25 000 € d'amende, peine d'inéligibilité d'un an (sursis non précisé par franceinfo). Première instance : 3 ans d'emprisonnement dont 1 an ferme aménagé sous bracelet, 50 000 € d'amende, peine d'inéligibilité de 5 ans avec exécution provisoire."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+              "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+              "date": "2025-03-31",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+          "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+          "date": "2025-03-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-campagne-presidentielle-2022-financement",
+      "caseName": "Information judiciaire contre X portant sur le financement de la campagne présidentielle 2022 de Marine Le Pen",
+      "person": {
+        "name": "Compte de campagne de Marine Le Pen — information judiciaire ne nommant aucun mis en examen à ce jour",
+        "sortName": "Compte de campagne de Marine Le Pen — information judiciaire ne nommant aucun mis en examen à ce jour",
+        "kind": "personne-morale"
+      },
+      "scope": "parti",
+      "roleAtTheTime": "Candidate à l'élection présidentielle de 2022",
+      "category": "probite",
+      "offences": [
+        "Qualifications visées par le parquet : prêt d'une personne morale à un candidat et acceptation de ce prêt, détournement de biens par une personne exerçant une fonction publique, escroquerie au préjudice d'une personne publique, faux et usage de faux"
+      ],
+      "facts": {
+        "start": "2021",
+        "end": "2022"
+      },
+      "status": "enquete",
+      "steps": [
+        {
+          "date": "2024-07-02",
+          "kind": "ouverture-enquete",
+          "court": "juge d'instruction",
+          "decision": "Information judiciaire portant sur le financement de la campagne présidentielle de Marine Le Pen en 2022, ouverte le 2 juillet 2024 par le parquet de Paris, après un signalement de la CNCCFP ; aucune mise en examen n'est connue et son avocat indique qu'elle n'a jamais été entendue. Dernière information publique : juillet 2024.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Ouverture d'une information judiciaire sur le financement de la campagne de Marine Le Pen en 2022 (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/ouverture-dune-information-judiciaire-sur-le-financement-de-la-campagne-de-marine-le-pen-en-2022-6528/",
+              "date": "2024-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Soupçons de financement illégal : la campagne présidentielle de Marine Le Pen en 2022 visée par une enquête sur ses comptes (Public Sénat)",
+              "url": "https://www.publicsenat.fr/actualites/politique/soupcons-de-financement-illegal-la-campagne-presidentielle-de-marine-le-pen-en-2022-visee-par-une-enquete-sur-ses-comptes",
+              "date": "2024-07",
+              "kind": "presse"
+            },
+            {
+              "title": "French prosecutors launch investigation into Le Pen's campaign finances (Al Jazeera)",
+              "url": "https://www.aljazeera.com/news/2024/7/9/french-prosecutors-launch-investigation-into-le-pens-campaign-finances",
+              "date": "2024-07-09",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Ouverture d'une information judiciaire sur le financement de la campagne de Marine Le Pen en 2022 (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/ouverture-dune-information-judiciaire-sur-le-financement-de-la-campagne-de-marine-le-pen-en-2022-6528/",
+          "date": "2024-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Soupçons de financement illégal : la campagne présidentielle de Marine Le Pen en 2022 visée par une enquête sur ses comptes (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/soupcons-de-financement-illegal-la-campagne-presidentielle-de-marine-le-pen-en-2022-visee-par-une-enquete-sur-ses-comptes",
+          "date": "2024-07",
+          "kind": "presse"
+        },
+        {
+          "title": "French prosecutors launch investigation into Le Pen's campaign finances (Al Jazeera)",
+          "url": "https://www.aljazeera.com/news/2024/7/9/french-prosecutors-launch-investigation-into-le-pens-campaign-finances",
+          "date": "2024-07-09",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-catherine-griset-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Catherine Griset",
+        "sortName": "Griset Catherine",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Assistante parlementaire de Marine Le Pen (cheffe de cabinet) à l'époque des faits ; députée européenne RN (2019-2024)",
+      "category": "probite",
+      "offences": ["Recel de détournement de fonds publics"],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Catherine Griset, assistante parlementaire à l'époque des faits puis députée européenne RN, a été condamnée en appel le 7 juillet 2026 pour recel de détournement de fonds publics à douze mois d'emprisonnement avec sursis et une peine d'inéligibilité de deux ans avec sursis ; pourvoi en cassation en cours.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 12 mois d'emprisonnement avec sursis, peine d'inéligibilité de 2 ans avec sursis. Première instance : 12 mois d'emprisonnement avec sursis, peine d'inéligibilité de 2 ans avec exécution provisoire."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-fernand-le-rachinel-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Fernand Le Rachinel",
+        "sortName": "Le Rachinel Fernand",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Député européen FN",
+      "category": "probite",
+      "offences": ["Détournement de fonds publics"],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Fernand Le Rachinel, ancien député européen FN, a été condamné en appel le 7 juillet 2026 pour détournement de fonds publics à deux ans d'emprisonnement avec sursis, 15 000 € d'amende et une peine d'inéligibilité d'un an ; pourvoi en cassation en cours.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 2 ans d'emprisonnement avec sursis, 15 000 € d'amende, peine d'inéligibilité d'un an sans exécution provisoire. Première instance : mêmes emprisonnement et amende, peine d'inéligibilité de 3 ans."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-jmlp-bruel",
+      "caseName": "Propos sur une « fournée » (2014)",
+      "person": {
+        "name": "Jean-Marie Le Pen",
+        "sortName": "Le Pen Jean-Marie",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Président du FN (1972-2011) ; député européen",
+      "category": "propos-discrimination",
+      "offences": ["Provocation à la haine raciale (poursuivie)", "relaxe"],
+      "facts": {
+        "start": "2014-06"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2021-10-29",
+          "kind": "arret-appel",
+          "court": "cour d'appel",
+          "decision": "Jean-Marie Le Pen a été relaxé le 29 octobre 2021 par le tribunal correctionnel de Paris des poursuites pour provocation à la haine raciale engagées pour sa phrase de 2014 (« on fera une fournée la prochaine fois ») visant notamment Patrick Bruel ; le tribunal a estimé que les propos visaient la communauté juive sans constituer un appel à la discrimination ou à la violence.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "France : les principales condamnations et provocations de Jean-Marie Le Pen (Justice Info, dépêche AFP)",
+              "url": "https://www.justiceinfo.net/fr?p=139986",
+              "date": "2025-01-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Jugé pour provocation à la haine raciale, Jean-Marie Le Pen relaxé (Bladi.net)",
+              "url": "https://www.bladi.net/juge-provocation-a-haine-raciale-jean-marie-pen-relaxe,87712.html",
+              "date": "2021-10-30",
+              "kind": "presse"
+            },
+            {
+              "title": "French court clears Jean-Marie Le Pen over 'oven batch' remark about Jewish singer (Campaign Against Antisemitism)",
+              "url": "https://antisemitism.org/french-court-clears-jean-marie-le-pen-over-oven-batch-remark-about-jewish-singer",
+              "date": "2021-11-03",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "France : les principales condamnations et provocations de Jean-Marie Le Pen (Justice Info, dépêche AFP)",
+          "url": "https://www.justiceinfo.net/fr?p=139986",
+          "date": "2025-01-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Jugé pour provocation à la haine raciale, Jean-Marie Le Pen relaxé (Bladi.net)",
+          "url": "https://www.bladi.net/juge-provocation-a-haine-raciale-jean-marie-pen-relaxe,87712.html",
+          "date": "2021-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "French court clears Jean-Marie Le Pen over 'oven batch' remark about Jewish singer (Campaign Against Antisemitism)",
+          "url": "https://antisemitism.org/french-court-clears-jean-marie-le-pen-over-oven-batch-remark-about-jewish-singer",
+          "date": "2021-11-03",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-jmlp-detail-1987",
+      "caseName": "Propos sur les chambres à gaz, « point de détail » (1987)",
+      "person": {
+        "name": "Jean-Marie Le Pen",
+        "sortName": "Le Pen Jean-Marie",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Président du FN (1972-2011)",
+      "category": "propos-discrimination",
+      "offences": [
+        "Action civile : « banalisation de crimes contre l'humanité » selon La Règle du jeu (responsabilité civile",
+        "aucune qualification pénale)"
+      ],
+      "facts": {
+        "start": "1987-09-13"
+      },
+      "status": "condamnation-recours-non-documente",
+      "steps": [
+        {
+          "date": "1991-03-18",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Versailles",
+          "decision": "Jean-Marie Le Pen a été condamné au civil, en 1990 puis en appel en 1991, à indemniser des associations pour avoir qualifié en 1987 les chambres à gaz de « point de détail » de l'histoire de la Seconde Guerre mondiale.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Mai 1990 : un franc symbolique de dommages et intérêts à chacune de dix associations (franceinfo). Appel (18 mars 1991) : 100 000 francs à chacune de neuf associations et 10 francs au MRAP, plus frais de publication (La Règle du jeu), soit près de 1,2 million de francs (182 000 €) au total selon franceinfo ; la JTA (1991) parle de 100 000 francs."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Mort de Jean-Marie Le Pen : on a listé ses nombreuses condamnations par la justice (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/jean-marie-le-pen/mort-de-jean-marie-le-pen-on-a-liste-ses-nombreuses-condamnations-par-la-justice_2811103.html",
+              "date": "2025-01-08",
+              "kind": "presse"
+            },
+            {
+              "title": "France : les principales condamnations et provocations de Jean-Marie Le Pen (Justice Info, dépêche AFP)",
+              "url": "https://www.justiceinfo.net/fr?p=139986",
+              "date": "2025-01-07",
+              "kind": "presse"
+            },
+            {
+              "title": "French politician sentenced again for Nazi gas chamber comments (Fox News, AP)",
+              "url": "https://www.foxnews.com/world/french-politician-sentenced-again-for-nazi-gas-chamber-comments",
+              "date": "2016-04",
+              "kind": "presse"
+            },
+            {
+              "title": "French appeals court reverses ruling against Le Pen for slur (Jewish Telegraphic Agency ; mentionne l'arrêt de Versailles sur le « détail »)",
+              "url": "https://jta.org/archive/french-appeals-court-reverses-ruling-against-le-pen-for-slur",
+              "date": "1991-07-03",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Mort de Jean-Marie Le Pen : on a listé ses nombreuses condamnations par la justice (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/jean-marie-le-pen/mort-de-jean-marie-le-pen-on-a-liste-ses-nombreuses-condamnations-par-la-justice_2811103.html",
+          "date": "2025-01-08",
+          "kind": "presse"
+        },
+        {
+          "title": "France : les principales condamnations et provocations de Jean-Marie Le Pen (Justice Info, dépêche AFP)",
+          "url": "https://www.justiceinfo.net/fr?p=139986",
+          "date": "2025-01-07",
+          "kind": "presse"
+        },
+        {
+          "title": "French politician sentenced again for Nazi gas chamber comments (Fox News, AP)",
+          "url": "https://www.foxnews.com/world/french-politician-sentenced-again-for-nazi-gas-chamber-comments",
+          "date": "2016-04",
+          "kind": "presse"
+        },
+        {
+          "title": "French appeals court reverses ruling against Le Pen for slur (Jewish Telegraphic Agency ; mentionne l'arrêt de Versailles sur le « détail »)",
+          "url": "https://jta.org/archive/french-appeals-court-reverses-ruling-against-le-pen-for-slur",
+          "date": "1991-07-03",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04",
+      "nature": "civile-administrative",
+      "publicLabel": "Condamné au civil par la cour d'appel de Versailles le 18 mars 1991 ; nous n'avons pas trouvé trace d'un recours."
+    },
+    {
+      "id": "rn-julien-odoul-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Julien Odoul",
+        "sortName": "Odoul Julien",
+        "kind": "personne-physique"
+      },
+      "scope": "dirigeant",
+      "roleAtTheTime": "Assistant parlementaire de la députée européenne Mylène Troszczynski à l'époque des faits ; député RN de l'Yonne et porte-parole du RN",
+      "category": "probite",
+      "offences": ["Recel de détournement de fonds publics"],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Julien Odoul, assistant parlementaire à l'époque des faits et aujourd'hui député et porte-parole du RN, a été condamné en appel le 7 juillet 2026 pour recel de détournement de fonds publics à huit mois d'emprisonnement avec sursis et une peine d'inéligibilité d'un an avec sursis ; il s'est pourvu en cassation.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 8 mois d'emprisonnement avec sursis, peine d'inéligibilité d'un an avec sursis. Première instance : 8 mois d'emprisonnement avec sursis, peine d'inéligibilité d'un an sans exécution provisoire."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+              "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+              "date": "2025-03-31",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : Julien Odoul se pourvoit en cassation (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/affaire-des-assistants-parlementaires-du-fn-julien-odoul-se-pourvoit-en-cassation_8098478.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : Julien Odoul se pourvoit en cassation (macommune.info, Yonne)",
+              "url": "https://www.macommune.info/affaire-des-assistants-parlementaires-du-fn-julien-odoul-se-pourvoit-en-cassation/",
+              "date": "2026-07-08",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+          "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+          "date": "2025-03-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : Julien Odoul se pourvoit en cassation (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/affaire-des-assistants-parlementaires-du-fn-julien-odoul-se-pourvoit-en-cassation_8098478.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : Julien Odoul se pourvoit en cassation (macommune.info, Yonne)",
+          "url": "https://www.macommune.info/affaire-des-assistants-parlementaires-du-fn-julien-odoul-se-pourvoit-en-cassation/",
+          "date": "2026-07-08",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-louis-aliot-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Louis Aliot",
+        "sortName": "Aliot Louis",
+        "kind": "personne-physique"
+      },
+      "scope": "dirigeant",
+      "roleAtTheTime": "Député européen (2014-2017) ; vice-président du FN puis du RN ; actuellement premier vice-président du RN et maire de Perpignan",
+      "category": "probite",
+      "offences": ["Détournement de fonds publics"],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Louis Aliot, député européen à l'époque des faits, a été condamné en appel le 7 juillet 2026 pour détournement de fonds publics à un an d'emprisonnement avec sursis, 5 000 € d'amende et une peine d'inéligibilité de deux ans avec sursis ; pourvoi en cassation en cours.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 1 an d'emprisonnement avec sursis, 5 000 € d'amende, peine d'inéligibilité de 2 ans avec sursis. Première instance : 18 mois d'emprisonnement dont 12 avec sursis (6 mois ferme aménageables sous bracelet), 8 000 € d'amende, peine d'inéligibilité de 3 ans sans exécution provisoire."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+              "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+              "date": "2025-03-31",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+          "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+          "date": "2025-03-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-marie-france-lorho-emploi-fictif",
+      "caseName": "Emploi d'un collaborateur parlementaire (Yann Bompard)",
+      "person": {
+        "name": "Marie-France Lorho",
+        "sortName": "Lorho Marie-France",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Députée de Vaucluse (élue en 2017 sous l'étiquette Ligue du Sud ; siège avec le groupe RN, rattachement au RN à la date des faits à confirmer)",
+      "category": "probite",
+      "offences": [
+        "Qualification retenue contre Mme Lorho non indiquée par les sources ouvertes (faits : maintien et rémunération de Yann Bompard comme collaborateur parlementaire pendant plus d'un an après son élection à la mairie d'Orange fin 2021)",
+        "« détournement de fonds publics » est la qualification visant Yann Bompard selon L'Écho du mardi"
+      ],
+      "facts": {
+        "start": "2017",
+        "end": "2022"
+      },
+      "status": "condamnation-recours-non-documente",
+      "steps": [
+        {
+          "date": "2026-01-26",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Marseille",
+          "decision": "Marie-France Lorho, députée de Vaucluse siégeant avec le groupe RN, a été condamnée le 26 janvier 2026 par le tribunal correctionnel de Marseille pour l'emploi de Yann Bompard comme collaborateur parlementaire à 18 mois d'emprisonnement avec sursis, 10 000 € d'amende et une peine d'inéligibilité de cinq ans avec exécution provisoire.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "18 mois d'emprisonnement avec sursis, 10 000 € d'amende, peine d'inéligibilité de 5 ans avec exécution provisoire ; remboursement solidaire, avec Jacques Bompard, d'environ 75 000 € à l'Assemblée nationale, partie civile (AFP)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Dans le Vaucluse, une députée RN et le maire d'Orange condamnés à cinq ans d'inéligibilité (Brut)",
+              "url": "https://www.brut.media/fr/articles/dans-le-vaucluse-une-deputee-rn-et-le-maire-dorange-condamnes-a-cinq-ans-dineligibilite",
+              "date": "2026-01-26",
+              "kind": "presse"
+            },
+            {
+              "title": "Extrême droite : la justice sonne la fin de la dynastie Bompard à Orange (La Gazette France)",
+              "url": "https://www.lagazettefrance.fr/article/extreme-droite-la-justice-sonne-la-fin-de-la-dynastie-bompard-a-orange",
+              "date": "2026-01",
+              "kind": "presse"
+            },
+            {
+              "title": "Fin de la « dynastie » Bompard à la mairie d'Orange ? (L'Écho du mardi)",
+              "url": "https://www.echodumardi.com/politiqueetterritoire/fin-de-la-dynastie-bompard-a-la-mairie-dorange/",
+              "date": "2026-01-26",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Dans le Vaucluse, une députée RN et le maire d'Orange condamnés à cinq ans d'inéligibilité (Brut)",
+          "url": "https://www.brut.media/fr/articles/dans-le-vaucluse-une-deputee-rn-et-le-maire-dorange-condamnes-a-cinq-ans-dineligibilite",
+          "date": "2026-01-26",
+          "kind": "presse"
+        },
+        {
+          "title": "Extrême droite : la justice sonne la fin de la dynastie Bompard à Orange (La Gazette France)",
+          "url": "https://www.lagazettefrance.fr/article/extreme-droite-la-justice-sonne-la-fin-de-la-dynastie-bompard-a-orange",
+          "date": "2026-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Fin de la « dynastie » Bompard à la mairie d'Orange ? (L'Écho du mardi)",
+          "url": "https://www.echodumardi.com/politiqueetterritoire/fin-de-la-dynastie-bompard-a-la-mairie-dorange/",
+          "date": "2026-01-26",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04",
+      "publicLabel": "Condamnée par le tribunal correctionnel de Marseille le 26 janvier 2026 ; nous n'avons pas trouvé trace d'un recours."
+    },
+    {
+      "id": "rn-marine-le-pen-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Marine Le Pen",
+        "sortName": "Le Pen Marine",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Députée européenne (2004-2017) puis présidente du FN (à partir de 2011)",
+      "category": "probite",
+      "offences": [
+        "Détournement de fonds publics (en tant que députée européenne)",
+        "complicité de détournement de fonds publics (en tant que présidente du parti)"
+      ],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Marine Le Pen a été condamnée le 7 juillet 2026 par la cour d'appel de Paris pour détournement de fonds publics et complicité de ce délit à trois ans d'emprisonnement dont deux avec sursis, 100 000 € d'amende et une peine d'inéligibilité de 45 mois dont 30 avec sursis ; elle conteste sa condamnation et s'est pourvue en cassation.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 3 ans d'emprisonnement dont 2 avec sursis, partie ferme aménagée en détention à domicile sous surveillance électronique ; 100 000 € d'amende ; peine d'inéligibilité de 45 mois dont 30 avec sursis (la cour considère la partie ferme comme exécutée depuis le 31 mars 2025). Première instance : 4 ans d'emprisonnement dont 2 avec sursis (2 ans ferme aménagés sous bracelet), 100 000 € d'amende, peine d'inéligibilité de 5 ans avec exécution provisoire."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Marine Le Pen condamnée dans l'affaire des assistants parlementaires, reste éligible pour 2027 (LCP)",
+              "url": "https://lcp.fr/actualites/marine-le-pen-condamnee-dans-l-affaire-des-assistants-parlementaires-reste-eligible-pour",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+              "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+              "date": "2025-03-31",
+              "kind": "presse"
+            },
+            {
+              "title": "Après le pourvoi en cassation de Marine Le Pen, on vous explique comment va se dérouler l'examen de ce recours (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/apres-le-pourvoi-en-cassation-de-marine-le-pen-on-vous-explique-comment-va-se-derouler-l-examen-de-ce-recours-scrute-en-haut-lieu_8099348.html",
+              "date": "2026-07-08",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Marine Le Pen condamnée dans l'affaire des assistants parlementaires, reste éligible pour 2027 (LCP)",
+          "url": "https://lcp.fr/actualites/marine-le-pen-condamnee-dans-l-affaire-des-assistants-parlementaires-reste-eligible-pour",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+          "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+          "date": "2025-03-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Après le pourvoi en cassation de Marine Le Pen, on vous explique comment va se dérouler l'examen de ce recours (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/apres-le-pourvoi-en-cassation-de-marine-le-pen-on-vous-explique-comment-va-se-derouler-l-examen-de-ce-recours-scrute-en-haut-lieu_8099348.html",
+          "date": "2026-07-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-marine-le-pen-cimade",
+      "caseName": "Diffamation envers La Cimade",
+      "person": {
+        "name": "Marine Le Pen",
+        "sortName": "Le Pen Marine",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Candidate à l'élection présidentielle de 2022 ; députée du Pas-de-Calais",
+      "category": "propos-discrimination",
+      "offences": ["Diffamation publique envers un particulier (association)"],
+      "facts": {
+        "start": "2022-01"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2025-12-16",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Marine Le Pen a été définitivement condamnée le 16 décembre 2025 pour diffamation publique envers l'association La Cimade, qu'elle avait accusée en janvier 2022 d'organiser une filière d'immigration clandestine vers Mayotte, à 500 € d'amende avec sursis.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "500 € d'amende avec sursis ; en première instance, 1 € de dommages et intérêts et 2 000 € au titre des frais de justice (Euronews, 13 octobre 2023)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Marine Le Pen définitivement condamnée pour diffamation envers la Cimade (Le Club des juristes)",
+              "url": "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-definitivement-condamnee-pour-diffamation-envers-la-cimade-13397/",
+              "date": "2025-12-16",
+              "kind": "presse"
+            },
+            {
+              "title": "Marine Le Pen de nouveau condamnée en appel pour diffamation envers la Cimade (Europe 1)",
+              "url": "https://www.europe1.fr/politique/marine-le-pen-de-nouveau-condamnee-en-appel-pour-diffamation-envers-la-cimade-4266896",
+              "date": "2024-09-11",
+              "kind": "presse"
+            },
+            {
+              "title": "Marine Le Pen found guilty of defamation after accusing French NGO of smuggling migrants in Mayotte (Euronews)",
+              "url": "https://www.euronews.com/2023/10/13/marine-le-pen-found-guilty-of-defamation-after-accusing-french-ngo-of-smuggling-migrants-i",
+              "date": "2023-10-13",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Marine Le Pen définitivement condamnée pour diffamation envers la Cimade (Le Club des juristes)",
+          "url": "https://www.leclubdesjuristes.com/en-bref/marine-le-pen-definitivement-condamnee-pour-diffamation-envers-la-cimade-13397/",
+          "date": "2025-12-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Marine Le Pen de nouveau condamnée en appel pour diffamation envers la Cimade (Europe 1)",
+          "url": "https://www.europe1.fr/politique/marine-le-pen-de-nouveau-condamnee-en-appel-pour-diffamation-envers-la-cimade-4266896",
+          "date": "2024-09-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Marine Le Pen found guilty of defamation after accusing French NGO of smuggling migrants in Mayotte (Euronews)",
+          "url": "https://www.euronews.com/2023/10/13/marine-le-pen-found-guilty-of-defamation-after-accusing-french-ngo-of-smuggling-migrants-i",
+          "date": "2023-10-13",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-marine-le-pen-femme-voilee",
+      "caseName": "Message visant une étudiante voilée",
+      "person": {
+        "name": "Marine Le Pen",
+        "sortName": "Le Pen Marine",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Présidente du RN (message publié sur X en mars 2019)",
+      "category": "propos-discrimination",
+      "offences": ["Injure publique en raison de l'origine ou de la religion"],
+      "facts": {
+        "start": "2019-03"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2026-01-20",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Marine Le Pen a été relaxée en janvier 2026 par le tribunal correctionnel de Paris des poursuites pour injure publique en raison de l'origine ou de la religion visant un message de 2019 sur une étudiante voilée ; le tribunal a jugé que l'expression « islam radical » ne renvoyait pas objectivement au jihadisme ou au terrorisme.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Marine Le Pen relaxée dans une affaire d'injure publique envers une femme voilée associée à l'« islam radical » (Brut)",
+              "url": "https://www.brut.media/fr/articles/marine-le-pen-relaxee-dans-une-affaire-dinjure-publique-envers-une-femme-voilee-associee-a-l-islam-radical",
+              "date": "2026-01",
+              "kind": "presse"
+            },
+            {
+              "title": "« Islam radical » : Marine Le Pen relaxée (Blick)",
+              "url": "https://www.blick.ch/fr/monde/france/marine-le-pen-relaxee-pour-diffamation-contre-une-musulmane-id21615457.html",
+              "date": "2026-01",
+              "kind": "presse"
+            },
+            {
+              "title": "Tribunal francês absolve Le Pen da acusação de racismo apresentada por jovem islâmica (ECO, Lusa)",
+              "url": "https://eco.sapo.pt/2026/01/20/tribunal-frances-absolve-le-pen-da-acusacao-de-racismo-apresentada-por-jovem-islamica/",
+              "date": "2026-01-20",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Marine Le Pen relaxée dans une affaire d'injure publique envers une femme voilée associée à l'« islam radical » (Brut)",
+          "url": "https://www.brut.media/fr/articles/marine-le-pen-relaxee-dans-une-affaire-dinjure-publique-envers-une-femme-voilee-associee-a-l-islam-radical",
+          "date": "2026-01",
+          "kind": "presse"
+        },
+        {
+          "title": "« Islam radical » : Marine Le Pen relaxée (Blick)",
+          "url": "https://www.blick.ch/fr/monde/france/marine-le-pen-relaxee-pour-diffamation-contre-une-musulmane-id21615457.html",
+          "date": "2026-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Tribunal francês absolve Le Pen da acusação de racismo apresentada por jovem islâmica (ECO, Lusa)",
+          "url": "https://eco.sapo.pt/2026/01/20/tribunal-frances-absolve-le-pen-da-acusacao-de-racismo-apresentada-por-jovem-islamica/",
+          "date": "2026-01-20",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-marine-le-pen-prieres-de-rue",
+      "caseName": "Propos sur les « prières de rue » (Lyon, 2010)",
+      "person": {
+        "name": "Marine Le Pen",
+        "sortName": "Le Pen Marine",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Vice-présidente du FN, candidate à la présidence du parti (réunion publique à Lyon, décembre 2010)",
+      "category": "propos-discrimination",
+      "offences": [
+        "Provocation à la discrimination, à la haine ou à la violence envers un groupe de personnes en raison de leur appartenance religieuse"
+      ],
+      "facts": {
+        "start": "2010-12"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2015-12-15",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Lyon",
+          "decision": "Marine Le Pen a été relaxée le 15 décembre 2015 par le tribunal correctionnel de Lyon, qui la jugeait pour provocation à la haine en raison de la religion pour avoir comparé en 2010 les prières de rue à l'Occupation ; le parquet avait requis la relaxe.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Prières de rue comparées à l'Occupation : Marine Le Pen est relaxée par la justice française (La Libre Belgique, AFP)",
+              "url": "https://www.lalibre.be/international/2015/12/15/prieres-de-rue-comparees-a-loccupation-marine-le-pen-est-relaxee-par-la-justice-francaise-VIFYASRH7JBONN2NRHIZFP5LWE/",
+              "date": "2015-12-15",
+              "kind": "presse"
+            },
+            {
+              "title": "Prières de rue et Occupation : Marine Le Pen relaxée à Lyon (LyonMag)",
+              "url": "https://www.lyonmag.com/article/77335/prieres-de-rue-et-occupation-marine-le-pen-relaxee-a-lyon",
+              "date": "2015-12-15",
+              "kind": "presse"
+            },
+            {
+              "title": "Prières de rue comparées à l'Occupation : Marine Le Pen relaxée par la justice française (DH, AFP)",
+              "url": "https://www.dhnet.be/actu/monde/2015/12/15/prieres-de-rue-comparees-a-loccupation-marine-le-pen-relaxee-par-la-justice-francaise-5BCHYEC2VJGDTFRXPFWETH74FU/",
+              "date": "2015-12-15",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Prières de rue comparées à l'Occupation : Marine Le Pen est relaxée par la justice française (La Libre Belgique, AFP)",
+          "url": "https://www.lalibre.be/international/2015/12/15/prieres-de-rue-comparees-a-loccupation-marine-le-pen-est-relaxee-par-la-justice-francaise-VIFYASRH7JBONN2NRHIZFP5LWE/",
+          "date": "2015-12-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Prières de rue et Occupation : Marine Le Pen relaxée à Lyon (LyonMag)",
+          "url": "https://www.lyonmag.com/article/77335/prieres-de-rue-et-occupation-marine-le-pen-relaxee-a-lyon",
+          "date": "2015-12-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Prières de rue comparées à l'Occupation : Marine Le Pen relaxée par la justice française (DH, AFP)",
+          "url": "https://www.dhnet.be/actu/monde/2015/12/15/prieres-de-rue-comparees-a-loccupation-marine-le-pen-relaxee-par-la-justice-francaise-5BCHYEC2VJGDTFRXPFWETH74FU/",
+          "date": "2015-12-15",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-parti-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Rassemblement national",
+        "sortName": "Rassemblement national",
+        "kind": "personne-morale"
+      },
+      "scope": "parti",
+      "roleAtTheTime": "Parti politique (bénéficiaire des fonds selon la cour : « Seul le parti politique national a bénéficié des détournements »)",
+      "category": "probite",
+      "offences": [
+        "Complicité de détournement de fonds publics",
+        "recel de détournement de fonds publics commis de manière habituelle par personne morale (art. 432-15, 121-7, 321-1 et 321-2 du code pénal)"
+      ],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris, chambre des appels correctionnels spécialisée en matière économique et financière",
+          "decision": "Le Rassemblement national, en tant que personne morale, a été déclaré coupable par la cour d'appel de Paris le 7 juillet 2026 de complicité de détournement de fonds publics et de recel habituel de détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN, et condamné à 2 millions d'euros d'amende dont 1 million avec sursis ; pourvoi en cassation en cours.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "2 000 000 € d'amende dont 1 000 000 € avec sursis, en première instance comme en appel (franceinfo) ; en première instance, confiscation d'un million d'euros saisi pendant l'instruction (DH, 31 mars 2025 : une seule source) ; condamnation solidaire à indemniser le Parlement européen"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+              "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+              "date": "2025-03-31",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            },
+            {
+              "title": "DH (dhnet.be), « Le verdict est tombé : Marine Le Pen et 8 eurodéputés déclarés coupables de détournement de fonds publics »",
+              "url": "https://www.dhnet.be/actu/monde/2025/03/31/le-verdict-est-tombe-marine-le-pen-et-8-eurodeputes-declares-coupables-de-detournement-de-fonds-publics-WDAHRONBRJA27DWEJ3CPHQG6KM/",
+              "date": "2025-03-31",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Justice : Marine Le Pen condamnée à cinq ans d'inéligibilité avec exécution immédiate (LCP)",
+          "url": "https://lcp.fr/actualites/justice-marine-le-pen-condamnee-a-cinq-ans-d-ineligibilite-avec-execution-immediate-pour",
+          "date": "2025-03-31",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        },
+        {
+          "title": "DH (dhnet.be), « Le verdict est tombé : Marine Le Pen et 8 eurodéputés déclarés coupables de détournement de fonds publics »",
+          "url": "https://www.dhnet.be/actu/monde/2025/03/31/le-verdict-est-tombe-marine-le-pen-et-8-eurodeputes-declares-coupables-de-detournement-de-fonds-publics-WDAHRONBRJA27DWEJ3CPHQG6KM/",
+          "date": "2025-03-31",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-parti-kits-de-campagne",
+      "caseName": "Kits de campagne du FN (affaire Jeanne)",
+      "person": {
+        "name": "Rassemblement national",
+        "sortName": "Rassemblement national",
+        "kind": "personne-morale"
+      },
+      "scope": "parti",
+      "roleAtTheTime": "Parti politique",
+      "category": "probite",
+      "offences": [
+        "Recel d'abus de biens sociaux (la Cour de cassation précise que cette qualification peut être retenue concurremment avec celle d'acceptation par un parti d'un financement provenant d'une personne morale)"
+      ],
+      "facts": {
+        "start": "2012"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2024-06-19",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation, chambre criminelle",
+          "decision": "Le Rassemblement national a été définitivement condamné le 19 juin 2024, après rejet de son pourvoi par la Cour de cassation, à 250 000 € d'amende pour recel d'abus de biens sociaux dans l'affaire des kits de campagne des législatives de 2012.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "250 000 € d'amende (appel, 15 mars 2023) ; 18 750 € d'amende en première instance"
+            }
+          ],
+          "sources": [
+            {
+              "title": "Affaire des kits de campagne : le RN condamné en appel à une amende de 250 000 euros (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-kits-de-campagne-le-rassemblement-national-condamne-en-appel-a-une-amende-de-250-000-euros_5712755.html",
+              "date": "2023-03-15",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des « kits de campagne » : le RN condamné en appel à une amende de 250 000 euros (Europe 1)",
+              "url": "https://www.europe1.fr/politique/affaire-des-kits-de-campagne-le-rn-condamne-en-appel-a-une-amende-de-250000-euros-4172316",
+              "date": "2023-03-15",
+              "kind": "presse"
+            },
+            {
+              "title": "La Cour de cassation valide la condamnation du RN dans l'affaire des kits de campagne (franceinfo)",
+              "url": "https://www.franceinfo.fr/faits-divers/justice-proces/la-cour-de-cassation-valide-la-condamnation-du-rn-dans-l-affaire-des-kits-de-campagne_6613695.html",
+              "date": "2024-06-19",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des kits de campagne : condamnation définitive du RN (Le Monde du droit, Cass. crim., 19 juin 2024, n° 23-82.194)",
+              "url": "https://www.lemondedudroit.fr/public/282-droit-public-general/93446-affaire-des-kits-de-campagne-condamnation-definitive-du-rn.html",
+              "date": "2024-06",
+              "kind": "presse"
+            },
+            {
+              "title": "Procès du FN en France : 18.750 euros d'amende pour « recel d'abus de biens sociaux » (La Libre Belgique, AFP)",
+              "url": "https://www.lalibre.be/international/europe/2020/06/16/proces-du-fn-en-france-18750-euros-damende-pour-recel-dabus-de-biens-sociaux-DZ2PKM6HLBBLXBGMF4LEQE5TTI/",
+              "date": "2020-06-16",
+              "kind": "presse"
+            },
+            {
+              "title": "Cour de cassation, chambre criminelle, 19 juin 2024, n° 23-82.194 (Légifrance, JURITEXT000049774995, publié au bulletin)",
+              "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049774995",
+              "date": "2024-06-19",
+              "kind": "justice"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Affaire des kits de campagne : le RN condamné en appel à une amende de 250 000 euros (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-kits-de-campagne-le-rassemblement-national-condamne-en-appel-a-une-amende-de-250-000-euros_5712755.html",
+          "date": "2023-03-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des « kits de campagne » : le RN condamné en appel à une amende de 250 000 euros (Europe 1)",
+          "url": "https://www.europe1.fr/politique/affaire-des-kits-de-campagne-le-rn-condamne-en-appel-a-une-amende-de-250000-euros-4172316",
+          "date": "2023-03-15",
+          "kind": "presse"
+        },
+        {
+          "title": "La Cour de cassation valide la condamnation du RN dans l'affaire des kits de campagne (franceinfo)",
+          "url": "https://www.franceinfo.fr/faits-divers/justice-proces/la-cour-de-cassation-valide-la-condamnation-du-rn-dans-l-affaire-des-kits-de-campagne_6613695.html",
+          "date": "2024-06-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des kits de campagne : condamnation définitive du RN (Le Monde du droit, Cass. crim., 19 juin 2024, n° 23-82.194)",
+          "url": "https://www.lemondedudroit.fr/public/282-droit-public-general/93446-affaire-des-kits-de-campagne-condamnation-definitive-du-rn.html",
+          "date": "2024-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Procès du FN en France : 18.750 euros d'amende pour « recel d'abus de biens sociaux » (La Libre Belgique, AFP)",
+          "url": "https://www.lalibre.be/international/europe/2020/06/16/proces-du-fn-en-france-18750-euros-damende-pour-recel-dabus-de-biens-sociaux-DZ2PKM6HLBBLXBGMF4LEQE5TTI/",
+          "date": "2020-06-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Cour de cassation, chambre criminelle, 19 juin 2024, n° 23-82.194 (Légifrance, JURITEXT000049774995, publié au bulletin)",
+          "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049774995",
+          "date": "2024-06-19",
+          "kind": "justice"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-timothee-houssin-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Timothée Houssin",
+        "sortName": "Houssin Timothée",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Assistant parlementaire de Nicolas Bay à l'époque des faits ; député RN de l'Eure (depuis 2022)",
+      "category": "probite",
+      "offences": ["Recel de détournement de fonds publics"],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Timothée Houssin, assistant parlementaire à l'époque des faits et aujourd'hui député RN, a été condamné en appel le 7 juillet 2026 pour recel de détournement de fonds publics à six mois d'emprisonnement avec sursis et une peine d'inéligibilité d'un an avec sursis ; pourvoi en cassation en cours.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 6 mois d'emprisonnement avec sursis, peine d'inéligibilité d'un an avec sursis (identique à la première instance)."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-wallerand-de-saint-just-assistants-pe",
+      "caseName": "Assistants parlementaires du FN au Parlement européen",
+      "person": {
+        "name": "Wallerand de Saint-Just",
+        "sortName": "de Saint-Just Wallerand",
+        "kind": "personne-physique"
+      },
+      "scope": "dirigeant",
+      "roleAtTheTime": "Trésorier du FN",
+      "category": "probite",
+      "offences": ["Complicité de détournement de fonds publics"],
+      "facts": {
+        "start": "2004",
+        "end": "2016"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2026-07-07",
+          "kind": "arret-appel",
+          "court": "cour d'appel de Paris",
+          "decision": "Wallerand de Saint-Just, trésorier du FN à l'époque des faits, a été condamné en appel le 7 juillet 2026 pour complicité de détournement de fonds publics à trois ans d'emprisonnement avec sursis, 50 000 € d'amende et une peine d'inéligibilité d'un an ; pourvoi en cassation en cours.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel : 3 ans d'emprisonnement avec sursis, 50 000 € d'amende, peine d'inéligibilité d'un an (sursis non précisé). Première instance : 3 ans d'emprisonnement dont 1 an ferme aménagé sous bracelet, 50 000 € d'amende, peine d'inéligibilité de 3 ans avec exécution provisoire (5 ans selon une source secondaire)."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+              "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+              "date": "2026-07-07",
+              "kind": "justice"
+            },
+            {
+              "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+              "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+              "date": "2026-07-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Conseil d'État, « The Conseil d'État confirms the automatic resignation of Mr Nicolas Bay and Mr Wallerand de Saint-Just from their offices as regional councillors »",
+              "url": "https://www.conseil-etat.fr/site/Pages-internationales/english/news/the-conseil-d-etat-confirms-the-automatic-resignation-of-mr-nicolas-bay-and-mr-wallerand-de-saint-just-from-their-offices-as-regional-councillors",
+              "date": "2025-06-25",
+              "kind": "justice"
+            },
+            {
+              "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+              "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+              "date": "2026-07-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+              "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+              "date": "2026-10-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "pourvoi-en-cassation",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": {
+        "label": "Audience de la chambre criminelle de la Cour de cassation sur les questions prioritaires de constitutionnalité (décision en principe le jour même) ; arrêt sur les pourvois annoncé « au plus tard début avril 2027 »",
+        "expected": "2026-12-16",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Cour d'appel de Paris, communiqué de presse « Décision de la cour d'appel de Paris du 7 juillet 2026 – Affaire dite des assistants parlementaires du Front National » (copie PDF hébergée par Regards protestants)",
+          "url": "https://regardsprotestants.com/wp-content/uploads/2026/07/Decision-Cour-Appel-Paris.pdf",
+          "date": "2026-07-07",
+          "kind": "justice"
+        },
+        {
+          "title": "Marine Le Pen, Bruno Gollnisch, Louis Aliot… Voici les 11 condamnations à l'issue du procès en appel des assistants parlementaires du FN (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/front-national/affaire-des-assistants-fn-au-parlement-europeen/marine-le-pen-bruno-gollnisch-louis-aliot-voici-les-11-condamnations-a-l-issue-du-proces-en-appel-des-assistants-parlementaires-du-fn_8089790.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Conseil d'État, « The Conseil d'État confirms the automatic resignation of Mr Nicolas Bay and Mr Wallerand de Saint-Just from their offices as regional councillors »",
+          "url": "https://www.conseil-etat.fr/site/Pages-internationales/english/news/the-conseil-d-etat-confirms-the-automatic-resignation-of-mr-nicolas-bay-and-mr-wallerand-de-saint-just-from-their-offices-as-regional-councillors",
+          "date": "2025-06-25",
+          "kind": "justice"
+        },
+        {
+          "title": "Affaire des assistants du FN : les multiples pourvois vont-ils ralentir la procédure ? (Le Club des juristes ; information du parquet général de la cour d'appel de Paris du 20 juillet 2026)",
+          "url": "https://www.leclubdesjuristes.com/justice/affaire-des-assistants-du-fn-les-multiples-pourvois-vont-ils-ralentir-la-procedure-17134/",
+          "date": "2026-07-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Affaire des assistants parlementaires du FN : la défense de Marine Le Pen dévoile ses arguments à la Cour de cassation (Le Club des juristes ; 13 pourvois, audience QPC du 16 décembre 2026)",
+          "url": "https://www.leclubdesjuristes.com/droit/affaire-des-assistants-parlementaires-du-fn-la-defense-de-marine-le-pen-devoile-ses-arguments-a-la-cour-de-cassation-18085/",
+          "date": "2026-10-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "rn-wallerand-de-saint-just-kits-de-campagne",
+      "caseName": "Kits de campagne du FN (affaire Jeanne)",
+      "person": {
+        "name": "Wallerand de Saint-Just",
+        "sortName": "de Saint-Just Wallerand",
+        "kind": "personne-physique"
+      },
+      "scope": "dirigeant",
+      "roleAtTheTime": "Trésorier du FN",
+      "category": "probite",
+      "offences": [
+        "Recel d'abus de biens sociaux (arrêt de la Cour de cassation du 19 juin 2024, n° 23-82.194, résumant l'arrêt d'appel : le trésorier « déclaré coupable de recel d'abus de biens sociaux »",
+        "parties anonymisées, identification par la fonction de trésorier et la peine d'inéligibilité de 2 ans citée par le Conseil d'État)"
+      ],
+      "facts": {
+        "start": "2012"
+      },
+      "status": "condamnation-definitive",
+      "steps": [
+        {
+          "date": "2024-06-19",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Wallerand de Saint-Just, trésorier du FN à l'époque des faits, a été condamné dans l'affaire des kits de campagne par la cour d'appel de Paris le 15 mars 2023 notamment à une peine d'inéligibilité de deux ans ; cette condamnation est devenue définitive avec l'arrêt de la Cour de cassation du 19 juin 2024.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "Appel (15 mars 2023) : 6 mois d'emprisonnement avec sursis et 2 ans d'inéligibilité (Cour de cassation, n° 23-82.194 ; inéligibilité de 2 ans confirmée par le Conseil d'État). Première instance (16 juin 2020) : 6 mois d'emprisonnement avec sursis (La Libre)."
+            }
+          ],
+          "sources": [
+            {
+              "title": "Conseil d'État, « The Conseil d'État confirms the automatic resignation of Mr Nicolas Bay and Mr Wallerand de Saint-Just from their offices as regional councillors »",
+              "url": "https://www.conseil-etat.fr/site/Pages-internationales/english/news/the-conseil-d-etat-confirms-the-automatic-resignation-of-mr-nicolas-bay-and-mr-wallerand-de-saint-just-from-their-offices-as-regional-councillors",
+              "date": "2025-06-25",
+              "kind": "justice"
+            },
+            {
+              "title": "Procès du FN en France : 18.750 euros d'amende pour « recel d'abus de biens sociaux » (La Libre Belgique, AFP)",
+              "url": "https://www.lalibre.be/international/europe/2020/06/16/proces-du-fn-en-france-18750-euros-damende-pour-recel-dabus-de-biens-sociaux-DZ2PKM6HLBBLXBGMF4LEQE5TTI/",
+              "date": "2020-06-16",
+              "kind": "presse"
+            },
+            {
+              "title": "Cour de cassation, chambre criminelle, 19 juin 2024, n° 23-82.194 (Légifrance, JURITEXT000049774995)",
+              "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049774995",
+              "date": "2024-06-19",
+              "kind": "justice"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Conseil d'État, « The Conseil d'État confirms the automatic resignation of Mr Nicolas Bay and Mr Wallerand de Saint-Just from their offices as regional councillors »",
+          "url": "https://www.conseil-etat.fr/site/Pages-internationales/english/news/the-conseil-d-etat-confirms-the-automatic-resignation-of-mr-nicolas-bay-and-mr-wallerand-de-saint-just-from-their-offices-as-regional-councillors",
+          "date": "2025-06-25",
+          "kind": "justice"
+        },
+        {
+          "title": "Procès du FN en France : 18.750 euros d'amende pour « recel d'abus de biens sociaux » (La Libre Belgique, AFP)",
+          "url": "https://www.lalibre.be/international/europe/2020/06/16/proces-du-fn-en-france-18750-euros-damende-pour-recel-dabus-de-biens-sociaux-DZ2PKM6HLBBLXBGMF4LEQE5TTI/",
+          "date": "2020-06-16",
+          "kind": "presse"
+        },
+        {
+          "title": "Cour de cassation, chambre criminelle, 19 juin 2024, n° 23-82.194 (Légifrance, JURITEXT000049774995)",
+          "url": "https://www.legifrance.gouv.fr/juri/id/JURITEXT000049774995",
+          "date": "2024-06-19",
+          "kind": "justice"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    }
+  ]
+}

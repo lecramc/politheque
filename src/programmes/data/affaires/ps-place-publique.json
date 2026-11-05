@@ -1,0 +1,136 @@
+{
+  "partyId": "ps-place-publique",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "ps-dumas-elf",
+      "caseName": "Affaire Elf (Roland Dumas)",
+      "person": {
+        "name": "Roland Dumas",
+        "sortName": "Dumas Roland",
+        "kind": "personne-physique"
+      },
+      "scope": "ministre",
+      "roleAtTheTime": "Ministre des Affaires étrangères (1988-1993)",
+      "category": "probite",
+      "offences": [
+        "Recel d'abus de biens sociaux (avantages financés par Elf via Christine Deviers-Joncour)"
+      ],
+      "facts": {
+        "start": "1989",
+        "end": "1993"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2003-01-29",
+          "kind": "arret-appel",
+          "court": "Tribunal correctionnel de Paris, cour d'appel de Paris",
+          "decision": "Roland Dumas, ministre des Affaires étrangères à l'époque des faits, condamné en première instance en mai 2001 dans l'affaire Elf pour recel d'abus de biens sociaux, a été relaxé par la cour d'appel de Paris le 29 janvier 2003.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Arab News (Reuters) – Dumas conviction overturned",
+              "url": "https://www.arabnews.com/node/227942",
+              "date": "2003-01-30",
+              "kind": "presse"
+            },
+            {
+              "title": "The New York Times (John Tagliabue), repris par Global Policy Forum – French ex-minister Dumas acquitted",
+              "url": "https://archive.globalpolicy.org/nations/launder/regions/2003/0129french.htm",
+              "date": "2003-01-29",
+              "kind": "presse"
+            },
+            {
+              "title": "Public Sénat – Roland Dumas, ancien ministre de François Mitterrand, est mort à 101 ans",
+              "url": "https://www.publicsenat.fr/actualites/politique/roland-dumas-ancien-ministre-de-francois-mitterrand-est-mort-a-101-ans",
+              "date": "2024-07",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Arab News (Reuters) – Dumas conviction overturned",
+          "url": "https://www.arabnews.com/node/227942",
+          "date": "2003-01-30",
+          "kind": "presse"
+        },
+        {
+          "title": "The New York Times (John Tagliabue), repris par Global Policy Forum – French ex-minister Dumas acquitted",
+          "url": "https://archive.globalpolicy.org/nations/launder/regions/2003/0129french.htm",
+          "date": "2003-01-29",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat – Roland Dumas, ancien ministre de François Mitterrand, est mort à 101 ans",
+          "url": "https://www.publicsenat.fr/actualites/politique/roland-dumas-ancien-ministre-de-francois-mitterrand-est-mort-a-101-ans",
+          "date": "2024-07",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "ps-germain-mariages-chinois",
+      "caseName": "Mariages dits « chinois » de Tours (2007-2011)",
+      "person": {
+        "name": "Jean Germain",
+        "sortName": "Germain Jean",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Maire de Tours (1995-2014) ; sénateur d'Indre-et-Loire depuis 2011",
+      "category": "probite",
+      "offences": ["Complicité de prise illégale d'intérêts et détournement de fonds publics"],
+      "facts": {
+        "start": "2007",
+        "end": "2011"
+      },
+      "status": "extinction-action-publique",
+      "steps": [
+        {
+          "date": "2015-04",
+          "kind": "extinction",
+          "court": "Tribunal correctionnel de Tours",
+          "decision": "Jean Germain, sénateur PS et ancien maire de Tours, devait être jugé le 7 avril 2015 pour complicité de prise illégale d'intérêts et détournement de fonds publics dans l'affaire des mariages dits « chinois » organisés à Tours entre 2007 et 2011. Il est décédé le jour de l'ouverture du procès : action publique éteinte par le décès (art. 6 du code de procédure pénale).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Tendance Ouest (AFP) – L'ancien maire de Tours Jean Germain retrouvé mort le jour de son procès",
+              "url": "https://www.tendanceouest.com/actualite-100487-tours-afp-l-ancien-maire-de-tours-jean-germain-retrouve-mort-le-jour-de-son-proces",
+              "date": "2015-04-07",
+              "kind": "presse"
+            },
+            {
+              "title": "Acteurs publics – Le sénateur Jean Germain retrouvé mort le jour de son procès",
+              "url": "https://acteurspublics.fr/articles/le-senateur-jean-germain-retrouve-mort-le-jour-de-son-proces/",
+              "date": "2015-04-07",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Tendance Ouest (AFP) – L'ancien maire de Tours Jean Germain retrouvé mort le jour de son procès",
+          "url": "https://www.tendanceouest.com/actualite-100487-tours-afp-l-ancien-maire-de-tours-jean-germain-retrouve-mort-le-jour-de-son-proces",
+          "date": "2015-04-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Acteurs publics – Le sénateur Jean Germain retrouvé mort le jour de son procès",
+          "url": "https://acteurspublics.fr/articles/le-senateur-jean-germain-retrouve-mort-le-jour-de-son-proces/",
+          "date": "2015-04-07",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    }
+  ]
+}

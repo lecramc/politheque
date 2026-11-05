@@ -1,0 +1,134 @@
+{
+  "partyId": "ecologistes",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "ecologistes-jadot-diffamation-totalenergies",
+      "caseName": "Poursuites en diffamation de TotalEnergies pour des propos sur ses activités en Russie",
+      "person": {
+        "name": "Yannick Jadot",
+        "sortName": "Jadot Yannick",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Candidat EELV à l'élection présidentielle de 2022 (propos de mars 2022) ; sénateur de Paris depuis 2023",
+      "category": "propos-discrimination",
+      "offences": ["Diffamation envers TotalEnergies (plainte du groupe déposée en avril 2022)"],
+      "facts": {
+        "start": "2022-03"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2025-06-06",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Poursuivi en diffamation par TotalEnergies pour avoir accusé le groupe, pendant la campagne présidentielle de 2022, de complicité de crimes de guerre en raison de ses activités en Russie, Yannick Jadot a été relaxé par le tribunal correctionnel de Paris le 6 juin 2025, le tribunal estimant que ses propos relevaient du débat d'intérêt général.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Public Sénat, « Accusé d'avoir diffamé TotalEnergies, Yannick Jadot relaxé par le tribunal »",
+              "url": "https://www.publicsenat.fr/actualites/politique/accuse-davoir-diffame-totalenergies-yannick-jadot-relaxe-par-le-tribunal",
+              "date": "2025-06-06",
+              "kind": "presse"
+            },
+            {
+              "title": "Reporterre, « Yannick Jadot gagne son procès contre TotalEnergies »",
+              "url": "https://reporterre.net/Yannick-Jadot-gagne-son-proces-contre-TotalEnergies",
+              "date": "2025-06-06",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Public Sénat, « Accusé d'avoir diffamé TotalEnergies, Yannick Jadot relaxé par le tribunal »",
+          "url": "https://www.publicsenat.fr/actualites/politique/accuse-davoir-diffame-totalenergies-yannick-jadot-relaxe-par-le-tribunal",
+          "date": "2025-06-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Reporterre, « Yannick Jadot gagne son procès contre TotalEnergies »",
+          "url": "https://reporterre.net/Yannick-Jadot-gagne-son-proces-contre-TotalEnergies",
+          "date": "2025-06-06",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "ecologistes-tondelier-diffamation-briois",
+      "caseName": "Poursuites en diffamation pour le livre « Nouvelles du Front »",
+      "person": {
+        "name": "Marine Tondelier",
+        "sortName": "Tondelier Marine",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Conseillère municipale d'opposition d'Hénin-Beaumont, autrice du livre Nouvelles du Front (2017) ; aujourd'hui secrétaire nationale des Écologistes (depuis décembre 2022) et candidate désignée pour 2027",
+      "category": "propos-discrimination",
+      "offences": [
+        "Diffamation publique (poursuites engagées par Steeve Briois, maire RN d'Hénin-Beaumont, Bruno Bilde et Laurent Morel, ancien directeur général des services)"
+      ],
+      "facts": {
+        "start": "2017"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2020-11-06",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Poursuivie en diffamation par le maire RN d'Hénin-Beaumont Steeve Briois, Bruno Bilde et Laurent Morel pour son livre Nouvelles du Front, Marine Tondelier a été relaxée avec son éditeur par le tribunal correctionnel de Paris le 6 novembre 2020 : le tribunal a jugé les propos diffamatoires mais a retenu la bonne foi, le livre traitant d'un sujet d'intérêt général.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "France Bleu (ici), « Hénin-Beaumont : relaxe pour Marine Tondelier poursuivie en diffamation par Steeve Briois »",
+              "url": "https://www.ici.fr/infos/faits-divers-justice/henin-beaumont-relaxe-pour-marine-tondelier-poursuivie-en-diffamation-par-steeve-briois-1604687864",
+              "date": "2020-11-06",
+              "kind": "presse"
+            },
+            {
+              "title": "Sud Radio, « La biographie et le CV de Marine Tondelier » (mentionne la relaxe « au bénéfice de la bonne foi »)",
+              "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-marine-tondelier",
+              "date": "2026",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Figaro (AFP), « Attaquée en diffamation par le maire RN d'Hénin-Beaumont, une élue EELV défend son livre » (audience ; non ouvert)",
+              "url": "https://www.lefigaro.fr/flash-actu/attaquee-en-diffamation-par-le-maire-rn-d-henin-beaumont-une-elue-eelv-defend-son-livre-20200917",
+              "date": "2020-09-17",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "France Bleu (ici), « Hénin-Beaumont : relaxe pour Marine Tondelier poursuivie en diffamation par Steeve Briois »",
+          "url": "https://www.ici.fr/infos/faits-divers-justice/henin-beaumont-relaxe-pour-marine-tondelier-poursuivie-en-diffamation-par-steeve-briois-1604687864",
+          "date": "2020-11-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Sud Radio, « La biographie et le CV de Marine Tondelier » (mentionne la relaxe « au bénéfice de la bonne foi »)",
+          "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-marine-tondelier",
+          "date": "2026",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Figaro (AFP), « Attaquée en diffamation par le maire RN d'Hénin-Beaumont, une élue EELV défend son livre » (audience ; non ouvert)",
+          "url": "https://www.lefigaro.fr/flash-actu/attaquee-en-diffamation-par-le-maire-rn-d-henin-beaumont-une-elue-eelv-defend-son-livre-20200917",
+          "date": "2020-09-17",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    }
+  ]
+}

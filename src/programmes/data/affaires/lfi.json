@@ -1,0 +1,922 @@
+{
+  "partyId": "lfi",
+  "reviewedOn": "2026-11-04",
+  "entries": [
+    {
+      "id": "lfi-comptes-2017-chikirou",
+      "caseName": "Comptes de la campagne présidentielle 2017 de Jean-Luc Mélenchon",
+      "person": {
+        "name": "Sophia Chikirou",
+        "sortName": "Chikirou Sophia",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Directrice de la communication de la campagne présidentielle 2017 et dirigeante de la société Mediascop ; députée LFI de Paris depuis 2022",
+      "category": "probite",
+      "offences": [
+        "Escroquerie aggravée, abus de biens sociaux et recel d'abus de confiance (chefs de mise en examen)"
+      ],
+      "facts": {
+        "start": "2017"
+      },
+      "status": "mise-en-examen",
+      "steps": [
+        {
+          "date": "2024-09-24",
+          "kind": "mise-en-examen",
+          "court": "Juges d'instruction du tribunal judiciaire de Paris",
+          "decision": "Sophia Chikirou, directrice de la communication de la campagne de 2017 et dirigeante de Mediascop, a été mise en examen le 24 septembre 2024 pour escroquerie aggravée, abus de biens sociaux et recel d'abus de confiance dans l'information judiciaire sur les comptes de campagne 2017. L'instruction a été close début mai 2026. Mediascop a fait valoir une contre-expertise concluant à l'absence de surfacturation.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Le Club des juristes, « Sophia Chikirou mise en examen dans l'affaire des comptes de campagne LFI de 2017 »",
+              "url": "https://www.leclubdesjuristes.com/en-bref/sophia-chikirou-devant-un-juge-dinstruction-dans-laffaire-des-comptes-de-campagne-lfi-de-2017-7014/",
+              "date": "2024-09",
+              "kind": "presse"
+            },
+            {
+              "title": "Brut, « La députée LFI Sophia Chikirou mise en examen pour escroquerie aggravée lors de la campagne de 2017 »",
+              "url": "https://www.brut.media/fr/articles/la-deputee-lfi-sophia-chikirou-mise-en-examen-pour-escroquerie-aggravee-lors-de-la-campagne-de-2017",
+              "date": "2024-09",
+              "kind": "presse"
+            },
+            {
+              "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+              "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+              "date": "2026-05",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+              "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+              "date": "2026-06-02",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Le Club des juristes, « Sophia Chikirou mise en examen dans l'affaire des comptes de campagne LFI de 2017 »",
+          "url": "https://www.leclubdesjuristes.com/en-bref/sophia-chikirou-devant-un-juge-dinstruction-dans-laffaire-des-comptes-de-campagne-lfi-de-2017-7014/",
+          "date": "2024-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Brut, « La députée LFI Sophia Chikirou mise en examen pour escroquerie aggravée lors de la campagne de 2017 »",
+          "url": "https://www.brut.media/fr/articles/la-deputee-lfi-sophia-chikirou-mise-en-examen-pour-escroquerie-aggravee-lors-de-la-campagne-de-2017",
+          "date": "2024-09",
+          "kind": "presse"
+        },
+        {
+          "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+          "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+          "date": "2026-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+          "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+          "date": "2026-06-02",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-comptes-2017-ere-du-peuple",
+      "caseName": "Comptes de la campagne présidentielle 2017 de Jean-Luc Mélenchon",
+      "person": {
+        "name": "Association L'Ère du peuple",
+        "sortName": "Association L'Ère du peuple",
+        "kind": "personne-morale"
+      },
+      "scope": "parti",
+      "roleAtTheTime": "Association prestataire de la campagne présidentielle 2017 de Jean-Luc Mélenchon",
+      "category": "probite",
+      "offences": [
+        "Prêt illicite de main-d'œuvre (printemps 2021), étendu en février 2022 à escroquerie aggravée, tentative d'escroquerie aggravée, faux et usage de faux"
+      ],
+      "facts": {
+        "start": "2017"
+      },
+      "status": "mise-en-examen",
+      "steps": [
+        {
+          "date": "2021",
+          "kind": "mise-en-examen",
+          "court": "Juges d'instruction du tribunal judiciaire de Paris",
+          "decision": "L'association L'Ère du peuple, prestataire de la campagne présidentielle de 2017, est mise en examen depuis le printemps 2021 pour prêt illicite de main-d'œuvre, chefs étendus en février 2022 à l'escroquerie aggravée, au faux et à l'usage de faux. Au total, quatre personnes physiques ou morales sont mises en examen dans ce dossier, clos début mai 2026. Selon LFI, Jean-Luc Mélenchon et son directeur de campagne Manuel Bompard n'ont été ni entendus par les juges ni mis en examen.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+              "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+              "date": "2026-05",
+              "kind": "presse"
+            },
+            {
+              "title": "Yahoo Actualités (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+              "url": "https://fr.news.yahoo.com/comptes-campagne-2017-lfi-fin-210247588.html",
+              "date": "2026-05",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+              "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+              "date": "2026-06-02",
+              "kind": "presse"
+            },
+            {
+              "title": "Business AM, « Enquête sur la campagne du candidat à la présidence française Jean-Luc Mélenchon »",
+              "url": "https://fr.businessam.be/enquete-sur-la-campagne-du-candidat-a-la-presidence-francaise-jean-luc-melenchon/",
+              "date": "2026-06-02",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+          "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+          "date": "2026-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Yahoo Actualités (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+          "url": "https://fr.news.yahoo.com/comptes-campagne-2017-lfi-fin-210247588.html",
+          "date": "2026-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+          "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+          "date": "2026-06-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Business AM, « Enquête sur la campagne du candidat à la présidence française Jean-Luc Mélenchon »",
+          "url": "https://fr.businessam.be/enquete-sur-la-campagne-du-candidat-a-la-presidence-francaise-jean-luc-melenchon/",
+          "date": "2026-06-02",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-comptes-2017-lachaud",
+      "caseName": "Comptes de la campagne présidentielle 2017 de Jean-Luc Mélenchon",
+      "person": {
+        "name": "Bastien Lachaud",
+        "sortName": "Lachaud Bastien",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Trésorier de l'association L'Ère du peuple (prestataire de la campagne présidentielle 2017) ; député LFI de Seine-Saint-Denis",
+      "category": "probite",
+      "offences": [
+        "Prêt illicite de main-d'œuvre, faux, escroquerie et tentative d'escroquerie (chefs de mise en examen)"
+      ],
+      "facts": {
+        "start": "2017"
+      },
+      "status": "mise-en-examen",
+      "steps": [
+        {
+          "date": "2021-09",
+          "kind": "mise-en-examen",
+          "court": "Juges d'instruction du tribunal judiciaire de Paris",
+          "decision": "Bastien Lachaud, trésorier en 2017 de l'association L'Ère du peuple, est mis en examen depuis septembre 2021 pour prêt illicite de main-d'œuvre, faux, escroquerie et tentative d'escroquerie dans l'information judiciaire sur les comptes de la campagne présidentielle 2017 de Jean-Luc Mélenchon. L'instruction a été close début mai 2026 ; aucune décision de renvoi ou de non-lieu n'était connue au 4 novembre 2026.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+              "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+              "date": "2026-05",
+              "kind": "presse"
+            },
+            {
+              "title": "Yahoo Actualités (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+              "url": "https://fr.news.yahoo.com/comptes-campagne-2017-lfi-fin-210247588.html",
+              "date": "2026-05",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+              "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+              "date": "2026-06-02",
+              "kind": "presse"
+            },
+            {
+              "title": "Public Sénat (AFP), « Les enquêtes visant Mélenchon et la France insoumise confiées à des juges d'instruction »",
+              "url": "https://www.publicsenat.fr/actualites/non-classe/les-enquetes-visant-melenchon-et-la-france-insoumise-confiees-a-des-juges-d",
+              "date": "2018-11",
+              "kind": "presse"
+            },
+            {
+              "title": "Business AM, « Enquête sur la campagne du candidat à la présidence française Jean-Luc Mélenchon »",
+              "url": "https://fr.businessam.be/enquete-sur-la-campagne-du-candidat-a-la-presidence-francaise-jean-luc-melenchon/",
+              "date": "2026-06-02",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+          "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+          "date": "2026-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Yahoo Actualités (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+          "url": "https://fr.news.yahoo.com/comptes-campagne-2017-lfi-fin-210247588.html",
+          "date": "2026-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+          "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+          "date": "2026-06-02",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat (AFP), « Les enquêtes visant Mélenchon et la France insoumise confiées à des juges d'instruction »",
+          "url": "https://www.publicsenat.fr/actualites/non-classe/les-enquetes-visant-melenchon-et-la-france-insoumise-confiees-a-des-juges-d",
+          "date": "2018-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Business AM, « Enquête sur la campagne du candidat à la présidence française Jean-Luc Mélenchon »",
+          "url": "https://fr.businessam.be/enquete-sur-la-campagne-du-candidat-a-la-presidence-francaise-jean-luc-melenchon/",
+          "date": "2026-06-02",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-delogu-documents-laser-proprete",
+      "caseName": "Divulgation de documents (société Laser Propreté)",
+      "person": {
+        "name": "Sébastien Delogu",
+        "sortName": "Delogu Sébastien",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Député LFI des Bouches-du-Rhône",
+      "category": "autres",
+      "offences": [
+        "Recel de vol et mise en danger d'autrui par diffusion d'informations personnelles (titre d'Europe 1, illisible en phase 3)",
+        "atteinte au secret des correspondances : non confirmée par les sources rouvertes",
+        "l'AFP parle de « diffusion de documents privés volés »"
+      ],
+      "facts": {
+        "start": "2024-09"
+      },
+      "status": "proces-en-cours",
+      "steps": [
+        {
+          "date": "2026-10",
+          "kind": "renvoi",
+          "court": "Tribunal correctionnel de Marseille",
+          "decision": "Sébastien Delogu a été jugé le 21 octobre 2026 par le tribunal correctionnel de Marseille pour recel de vol, divulgation d'informations personnelles et atteinte au secret des correspondances, après la diffusion de documents dérobés au directeur d'une entreprise de nettoyage en 2024. Le parquet a requis deux ans d'emprisonnement avec sursis, 10 000 € d'amende et cinq ans d'inéligibilité avec exécution provisoire ; décision le 11 décembre 2026.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "The Times of Israel en français (AFP), « Inéligibilité requise contre le député LFI Sébastien Delogu »",
+              "url": "https://fr.timesofisrael.com/ineligibilite-requise-contre-le-depute-lfi-sebastien-delogu/",
+              "date": "2026-10-22",
+              "kind": "presse"
+            },
+            {
+              "title": "i24news, « Sébastien Delogu : cinq ans d'inéligibilité avec exécution immédiate requis contre le député LFI »",
+              "url": "https://www.i24news.tv/fr/actu/france/artc-sebastien-delogu-cinq-ans-d-ineligibilite-avec-execution-immediate-requis-contre-le-depute-lfi",
+              "date": "2026-10",
+              "kind": "presse"
+            },
+            {
+              "title": "Europe 1, « Le député LFI Sébastien Delogu, candidat à la mairie de Marseille, jugé en juin pour recel de vol et mise en danger d'autrui »",
+              "url": "https://www.europe1.fr/Police-Justice/le-depute-lfi-sebastien-delogu-candidat-a-la-mairie-de-marseille-juge-en-juin-pour-recel-de-vol-et-mise-en-danger-dautrui-878095",
+              "date": "2026",
+              "kind": "presse"
+            },
+            {
+              "title": "Sud Radio, « Procès à Marseille du député insoumis Sébastien Delogu, jugé pour divulgation d'informations personnelles »",
+              "url": "https://www.sudradio.fr/societe/proces-a-marseille-du-depute-insoumis-sebastien-delogu-juge-pour-divulgation-dinformations-personnelles",
+              "date": "2026",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": {
+        "label": "Délibéré du tribunal correctionnel",
+        "expected": "2026-12-11",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "The Times of Israel en français (AFP), « Inéligibilité requise contre le député LFI Sébastien Delogu »",
+          "url": "https://fr.timesofisrael.com/ineligibilite-requise-contre-le-depute-lfi-sebastien-delogu/",
+          "date": "2026-10-22",
+          "kind": "presse"
+        },
+        {
+          "title": "i24news, « Sébastien Delogu : cinq ans d'inéligibilité avec exécution immédiate requis contre le député LFI »",
+          "url": "https://www.i24news.tv/fr/actu/france/artc-sebastien-delogu-cinq-ans-d-ineligibilite-avec-execution-immediate-requis-contre-le-depute-lfi",
+          "date": "2026-10",
+          "kind": "presse"
+        },
+        {
+          "title": "Europe 1, « Le député LFI Sébastien Delogu, candidat à la mairie de Marseille, jugé en juin pour recel de vol et mise en danger d'autrui »",
+          "url": "https://www.europe1.fr/Police-Justice/le-depute-lfi-sebastien-delogu-candidat-a-la-mairie-de-marseille-juge-en-juin-pour-recel-de-vol-et-mise-en-danger-dautrui-878095",
+          "date": "2026",
+          "kind": "presse"
+        },
+        {
+          "title": "Sud Radio, « Procès à Marseille du député insoumis Sébastien Delogu, jugé pour divulgation d'informations personnelles »",
+          "url": "https://www.sudradio.fr/societe/proces-a-marseille-du-depute-insoumis-sebastien-delogu-juge-pour-divulgation-dinformations-personnelles",
+          "date": "2026",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-delogu-outrage-2026",
+      "caseName": "Outrage à des policiers (Marseille, 24 août 2026)",
+      "person": {
+        "name": "Sébastien Delogu",
+        "sortName": "Delogu Sébastien",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Député LFI des Bouches-du-Rhône",
+      "category": "autres",
+      "offences": ["Outrage à personne dépositaire de l'autorité publique"],
+      "facts": {
+        "start": "2026-08-24"
+      },
+      "status": "renvoi-devant-tribunal",
+      "steps": [
+        {
+          "date": "2026-08-24",
+          "kind": "renvoi",
+          "court": "Tribunal correctionnel de Marseille",
+          "decision": "Après une altercation avec des policiers en civil le 24 août 2026 à Marseille, Sébastien Delogu, placé en garde à vue le 27 août, est convoqué le 13 novembre 2026 devant le tribunal correctionnel pour outrage à personne dépositaire de l'autorité publique. Il conteste avoir su qu'il s'agissait de policiers et a lui-même déposé plainte contre X pour injures et violences.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "LCP, « Altercation avec des policiers : le député insoumis Sébastien Delogu est sorti de garde à vue »",
+              "url": "https://lcp.fr/actualites/altercation-avec-des-policiers-le-depute-insoumis-sebastien-delogu-est-sorti-de-garde-a",
+              "date": "2026-08-28",
+              "kind": "presse"
+            },
+            {
+              "title": "Euronews, « Altercation avec des policiers : Sébastien Delogu sorti de garde à vue, une enquête ouverte »",
+              "url": "https://fr.euronews.com/my-europe/2026/08/28/altercation-avec-des-policiers-sebastien-delogu-sorti-de-garde-a-vue-une-enquete-ouverte",
+              "date": "2026-08-28",
+              "kind": "presse"
+            },
+            {
+              "title": "The Times of Israel en français (AFP), « Inéligibilité requise contre le député LFI Sébastien Delogu » (mention de l'audience du 13 novembre)",
+              "url": "https://fr.timesofisrael.com/ineligibilite-requise-contre-le-depute-lfi-sebastien-delogu/",
+              "date": "2026-10-22",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": {
+        "label": "Audience devant le tribunal correctionnel",
+        "expected": "2026-11-13",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "LCP, « Altercation avec des policiers : le député insoumis Sébastien Delogu est sorti de garde à vue »",
+          "url": "https://lcp.fr/actualites/altercation-avec-des-policiers-le-depute-insoumis-sebastien-delogu-est-sorti-de-garde-a",
+          "date": "2026-08-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Euronews, « Altercation avec des policiers : Sébastien Delogu sorti de garde à vue, une enquête ouverte »",
+          "url": "https://fr.euronews.com/my-europe/2026/08/28/altercation-avec-des-policiers-sebastien-delogu-sorti-de-garde-a-vue-une-enquete-ouverte",
+          "date": "2026-08-28",
+          "kind": "presse"
+        },
+        {
+          "title": "The Times of Israel en français (AFP), « Inéligibilité requise contre le député LFI Sébastien Delogu » (mention de l'audience du 13 novembre)",
+          "url": "https://fr.timesofisrael.com/ineligibilite-requise-contre-le-depute-lfi-sebastien-delogu/",
+          "date": "2026-10-22",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-delogu-violences-lycee",
+      "caseName": "Violences lors du blocus du lycée Saint-Exupéry (Marseille, mars 2023)",
+      "person": {
+        "name": "Sébastien Delogu",
+        "sortName": "Delogu Sébastien",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Député LFI des Bouches-du-Rhône (depuis 2022)",
+      "category": "violences",
+      "offences": [
+        "Violences aggravées (sur personnes chargées d'une mission de service public) sur le proviseur adjoint et une conseillère principale d'éducation",
+        "refus de se soumettre à un relevé signalétique (empreintes digitales selon franceinfo, prélèvement génétique selon ici)"
+      ],
+      "facts": {
+        "start": "2023-03"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2025-02-14",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Marseille",
+          "decision": "Le 14 février 2025, le tribunal correctionnel de Marseille a condamné Sébastien Delogu à 5 000 € d'amende pour violences aggravées sur un proviseur adjoint et une CPE lors du blocus d'un lycée en mars 2023, et pour refus de relevé d'empreintes. Son avocat a annoncé un appel.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "5 000 € d'amende ; 600 € de dommages et intérêts et 1 000 € de frais de procédure à chacune des deux parties civiles (ici). Le parquet avait requis six mois d'emprisonnement avec sursis (et 1 000 € d'amende selon ici)"
+            }
+          ],
+          "sources": [
+            {
+              "title": "franceinfo, « Le député Sébastien Delogu condamné à 5 000 euros d'amende pour des violences lors du blocus d'un lycée à Marseille »",
+              "url": "https://www.franceinfo.fr/faits-divers/justice-proces/le-depute-sebastien-delogu-condamne-a-5-000-euros-d-amende-pour-des-violences-lors-d-un-blocus-d-un-lycee-a-marseille_7074330.html",
+              "date": "2025-02-14",
+              "kind": "presse"
+            },
+            {
+              "title": "ICI (France Bleu), « Le député LFI de Marseille Sébastien Delogu condamné à 5 000 euros d'amende pour violences aggravées »",
+              "url": "https://www.ici.fr/infos/faits-divers-justice/le-depute-lfi-de-marseille-sebastien-delogu-a-5-000-euros-d-amende-pour-violences-aggravees-9353642",
+              "date": "2025-02-14",
+              "kind": "presse"
+            },
+            {
+              "title": "Le JDD, « Marseille : le député LFI Sébastien Delogu condamné pour violences aggravées sur un proviseur adjoint et une CPE »",
+              "url": "https://www.lejdd.fr/politique/marseille-le-depute-lfi-sebastien-delogu-condamne-pour-violences-aggravees-sur-un-proviseur-adjoint-et-une-cpe-154967",
+              "date": "2025-02",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "appel",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "franceinfo, « Le député Sébastien Delogu condamné à 5 000 euros d'amende pour des violences lors du blocus d'un lycée à Marseille »",
+          "url": "https://www.franceinfo.fr/faits-divers/justice-proces/le-depute-sebastien-delogu-condamne-a-5-000-euros-d-amende-pour-des-violences-lors-d-un-blocus-d-un-lycee-a-marseille_7074330.html",
+          "date": "2025-02-14",
+          "kind": "presse"
+        },
+        {
+          "title": "ICI (France Bleu), « Le député LFI de Marseille Sébastien Delogu condamné à 5 000 euros d'amende pour violences aggravées »",
+          "url": "https://www.ici.fr/infos/faits-divers-justice/le-depute-lfi-de-marseille-sebastien-delogu-a-5-000-euros-d-amende-pour-violences-aggravees-9353642",
+          "date": "2025-02-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Le JDD, « Marseille : le député LFI Sébastien Delogu condamné pour violences aggravées sur un proviseur adjoint et une CPE »",
+          "url": "https://www.lejdd.fr/politique/marseille-le-depute-lfi-sebastien-delogu-condamne-pour-violences-aggravees-sur-un-proviseur-adjoint-et-une-cpe-154967",
+          "date": "2025-02",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-hassan-apologie-terrorisme-2026",
+      "caseName": "Apologie du terrorisme (propos postérieurs au 7 octobre 2023)",
+      "person": {
+        "name": "Rima Hassan",
+        "sortName": "Hassan Rima",
+        "kind": "personne-physique"
+      },
+      "scope": "parlementaire",
+      "roleAtTheTime": "Députée européenne LFI (depuis 2024)",
+      "category": "propos-discrimination",
+      "offences": [
+        "Apologie publique d'un acte de terrorisme en ligne (art. 421-2-5 du code pénal)"
+      ],
+      "facts": {
+        "start": "2026-03-26"
+      },
+      "status": "proces-en-cours",
+      "steps": [
+        {
+          "date": "2026-07",
+          "kind": "renvoi",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Rima Hassan, députée européenne LFI, a été jugée les 19 et 20 octobre 2026 par le tribunal correctionnel de Paris pour apologie du terrorisme en ligne, pour un message du 26 mars 2026 reprenant une phrase attribuée à l'un des auteurs de l'attentat de l'aéroport de Lod en 1972. Le parquet a requis dix mois d'emprisonnement avec sursis et deux ans d'inéligibilité ; décision le 30 novembre 2026. Une procédure distincte pour stupéfiants, ouverte lors de sa garde à vue, a été classée après analyse (CBD).",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Paris Match Belgique (AFP), « Ouverture à Paris du procès de l'Insoumise Rima Hassan pour apologie du terrorisme »",
+              "url": "https://www.parismatch.be/actualites/monde/2026/10/19/ouverture-a-paris-du-proces-de-linsoumise-rima-hassan-pour-apologie-du-terrorisme-TB47WPJ5IVHXJKI2YQA73QA7GA/",
+              "date": "2026-10-19",
+              "kind": "presse"
+            },
+            {
+              "title": "La Gazette France (AFP), « Procès pour apologie du terrorisme : prison avec sursis et inéligibilité requises contre Rima Hassan »",
+              "url": "https://www.lagazettefrance.fr/article/proces-pour-apologie-du-terrorisme-prison-avec-sursis-et-ineligibilite-requises-contre-rima-hassan",
+              "date": "2026-10",
+              "kind": "presse"
+            },
+            {
+              "title": "Politis, « “Pour garantir la sérénité des débats”, le procès de Rima Hassan pour apologie du terrorisme renvoyé »",
+              "url": "https://www.politis.fr/articles/2026/07/justice-pour-garantir-la-serenite-des-debats-le-proces-de-rima-hassan-pour-apologie-du-terrorisme-renvoye/",
+              "date": "2026-07",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": {
+        "label": "Délibéré du tribunal correctionnel",
+        "expected": "2026-11-30",
+        "precision": "annoncee",
+        "sources": []
+      },
+      "sources": [
+        {
+          "title": "Paris Match Belgique (AFP), « Ouverture à Paris du procès de l'Insoumise Rima Hassan pour apologie du terrorisme »",
+          "url": "https://www.parismatch.be/actualites/monde/2026/10/19/ouverture-a-paris-du-proces-de-linsoumise-rima-hassan-pour-apologie-du-terrorisme-TB47WPJ5IVHXJKI2YQA73QA7GA/",
+          "date": "2026-10-19",
+          "kind": "presse"
+        },
+        {
+          "title": "La Gazette France (AFP), « Procès pour apologie du terrorisme : prison avec sursis et inéligibilité requises contre Rima Hassan »",
+          "url": "https://www.lagazettefrance.fr/article/proces-pour-apologie-du-terrorisme-prison-avec-sursis-et-ineligibilite-requises-contre-rima-hassan",
+          "date": "2026-10",
+          "kind": "presse"
+        },
+        {
+          "title": "Politis, « “Pour garantir la sérénité des débats”, le procès de Rima Hassan pour apologie du terrorisme renvoyé »",
+          "url": "https://www.politis.fr/articles/2026/07/justice-pour-garantir-la-serenite-des-debats-le-proces-de-rima-hassan-pour-apologie-du-terrorisme-renvoye/",
+          "date": "2026-07",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-melenchon-assistants-parlement-europeen",
+      "caseName": "Assistants parlementaires de Jean-Luc Mélenchon au Parlement européen",
+      "person": {
+        "name": "Jean-Luc Mélenchon",
+        "sortName": "Mélenchon Jean-Luc",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Député européen (Parti de gauche puis LFI), 2009-2017",
+      "category": "probite",
+      "offences": [
+        "Détournement de fonds publics (chef de l'information judiciaire)",
+        "aucune mise en examen"
+      ],
+      "facts": {
+        "start": "2009",
+        "end": "2017"
+      },
+      "status": "enquete",
+      "steps": [
+        {
+          "date": "2017-07",
+          "kind": "ouverture-enquete",
+          "court": "Juges d'instruction du tribunal judiciaire de Paris",
+          "decision": "Jean-Luc Mélenchon a été visé, à partir de juillet 2017, par une enquête sur l'emploi de ses assistants au Parlement européen (2009-2017), confiée en novembre 2018 à des juges d'instruction pour détournement de fonds publics et blanchiment. L'information judiciaire a été close au printemps 2026 sans aucune mise en examen. Dernière information publique : début juin 2026 ; aucune ordonnance de non-lieu n'était annoncée au 4 novembre 2026.",
+          "outcome": null,
+          "sources": [
+            {
+              "title": "Public Sénat, « Assistants d'eurodéputés : l'enquête élargie à Jean-Luc Mélenchon »",
+              "url": "https://www.publicsenat.fr/actualites/politique/assistants-d-eurodeputes-l-enquete-elargie-a-jean-luc-melenchon-76177",
+              "date": "2017-07-18",
+              "kind": "presse"
+            },
+            {
+              "title": "Public Sénat (AFP), « Les enquêtes visant Mélenchon et la France insoumise confiées à des juges d'instruction »",
+              "url": "https://www.publicsenat.fr/actualites/non-classe/les-enquetes-visant-melenchon-et-la-france-insoumise-confiees-a-des-juges-d",
+              "date": "2018-11",
+              "kind": "presse"
+            },
+            {
+              "title": "Le JDD, « Enquête sur les assistants parlementaires de LFI : l'instruction terminée sans mise en examen »",
+              "url": "https://www.lejdd.fr/politique/enquete-sur-les-assistants-parlementaires-de-lfi-linstruction-terminee-sans-mise-en-examen-174903",
+              "date": "2026-05",
+              "kind": "presse"
+            },
+            {
+              "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+              "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+              "date": "2026-06-02",
+              "kind": "presse"
+            },
+            {
+              "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+              "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+              "date": "2026-05",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Public Sénat, « Assistants d'eurodéputés : l'enquête élargie à Jean-Luc Mélenchon »",
+          "url": "https://www.publicsenat.fr/actualites/politique/assistants-d-eurodeputes-l-enquete-elargie-a-jean-luc-melenchon-76177",
+          "date": "2017-07-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat (AFP), « Les enquêtes visant Mélenchon et la France insoumise confiées à des juges d'instruction »",
+          "url": "https://www.publicsenat.fr/actualites/non-classe/les-enquetes-visant-melenchon-et-la-france-insoumise-confiees-a-des-juges-d",
+          "date": "2018-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Le JDD, « Enquête sur les assistants parlementaires de LFI : l'instruction terminée sans mise en examen »",
+          "url": "https://www.lejdd.fr/politique/enquete-sur-les-assistants-parlementaires-de-lfi-linstruction-terminee-sans-mise-en-examen-174903",
+          "date": "2026-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Le Club des juristes, « Quatre mises en examen dans l'affaire des comptes de campagnes de LFI de 2017 »",
+          "url": "https://www.leclubdesjuristes.com/en-bref/quatre-mises-en-examen-dans-laffaire-des-comptes-de-campagnes-de-lfi-de-2017-16141/",
+          "date": "2026-06-02",
+          "kind": "presse"
+        },
+        {
+          "title": "La Gazette France (AFP), « Comptes de campagne 2017 de LFI : fin des investigations à Paris »",
+          "url": "https://www.lagazettefrance.fr/article/comptes-de-campagne-2017-de-lfi-fin-des-investigations-a-paris",
+          "date": "2026-05",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-05"
+    },
+    {
+      "id": "lfi-melenchon-diffamation-paranagua-2016",
+      "caseName": "Diffamation envers Paulo Paranagua (billet de blog de 2016)",
+      "person": {
+        "name": "Jean-Luc Mélenchon",
+        "sortName": "Mélenchon Jean-Luc",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Candidat à la présidentielle de 2017 (billet de blog de novembre 2016)",
+      "category": "propos-discrimination",
+      "offences": ["Diffamation publique envers un particulier"],
+      "facts": {
+        "start": "2016-11"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2021-09-24",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Le 24 septembre 2021, le tribunal correctionnel de Paris a condamné Jean-Luc Mélenchon pour diffamation envers l'ancien journaliste du Monde Paulo Paranagua, qu'il avait qualifié d'« assassin repenti » en 2016, à 500 € d'amende avec sursis. Ses avocats ont fait appel ; l'issue de l'appel n'a pas été retrouvée.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "500 € d'amende avec sursis ; 1 000 € de dommages et intérêts et 3 500 € au titre des frais de procédure"
+            }
+          ],
+          "sources": [
+            {
+              "title": "La DH (AFP), « Jean-Luc Mélenchon condamné pour diffamation envers un ancien journaliste du Monde »",
+              "url": "https://www.dhnet.be/actu/monde/2021/09/24/jean-luc-melenchon-condamne-pour-diffamation-envers-un-ancien-journaliste-du-monde-BNX3AE4EABH2XOHW3SWAUN5EM4/",
+              "date": "2021-09-24",
+              "kind": "presse"
+            },
+            {
+              "title": "CNews, « “Assassin repenti” : Jean-Luc Mélenchon condamné pour diffamation envers un journaliste »",
+              "url": "https://www.cnews.fr/france/2021-09-24/assassin-repenti-jean-luc-melenchon-condamne-pour-diffamation-envers-un",
+              "date": "2021-09-24",
+              "kind": "presse"
+            },
+            {
+              "title": "Arab News en français (AFP), « Jean-Luc Mélenchon condamné pour diffamation envers un ancien journaliste du Monde »",
+              "url": "https://www.arabnews.fr/node/146266/france",
+              "date": "2021-09-24",
+              "kind": "presse"
+            },
+            {
+              "title": "franceinfo, « Jean-Luc Mélenchon condamné en appel pour diffamation envers un ex-journaliste du \"Monde\" » (mentionne l'appel formé dans l'affaire « assassin repenti »)",
+              "url": "https://www.franceinfo.fr/politique/melenchon/jean-luc-melenchon-condamne-en-appel-pour-diffamation-envers-un-ex-journaliste-du-monde_5227360.html",
+              "date": "2022-06-29",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "appel",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "La DH (AFP), « Jean-Luc Mélenchon condamné pour diffamation envers un ancien journaliste du Monde »",
+          "url": "https://www.dhnet.be/actu/monde/2021/09/24/jean-luc-melenchon-condamne-pour-diffamation-envers-un-ancien-journaliste-du-monde-BNX3AE4EABH2XOHW3SWAUN5EM4/",
+          "date": "2021-09-24",
+          "kind": "presse"
+        },
+        {
+          "title": "CNews, « “Assassin repenti” : Jean-Luc Mélenchon condamné pour diffamation envers un journaliste »",
+          "url": "https://www.cnews.fr/france/2021-09-24/assassin-repenti-jean-luc-melenchon-condamne-pour-diffamation-envers-un",
+          "date": "2021-09-24",
+          "kind": "presse"
+        },
+        {
+          "title": "Arab News en français (AFP), « Jean-Luc Mélenchon condamné pour diffamation envers un ancien journaliste du Monde »",
+          "url": "https://www.arabnews.fr/node/146266/france",
+          "date": "2021-09-24",
+          "kind": "presse"
+        },
+        {
+          "title": "franceinfo, « Jean-Luc Mélenchon condamné en appel pour diffamation envers un ex-journaliste du \"Monde\" » (mentionne l'appel formé dans l'affaire « assassin repenti »)",
+          "url": "https://www.franceinfo.fr/politique/melenchon/jean-luc-melenchon-condamne-en-appel-pour-diffamation-envers-un-ex-journaliste-du-monde_5227360.html",
+          "date": "2022-06-29",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    },
+    {
+      "id": "lfi-melenchon-injure-le-pen-fasciste",
+      "caseName": "Injure publique envers Marine Le Pen (« fasciste »)",
+      "person": {
+        "name": "Jean-Luc Mélenchon",
+        "sortName": "Mélenchon Jean-Luc",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Coprésident du Parti de gauche, député européen (propos du 5 mars 2011)",
+      "category": "propos-discrimination",
+      "offences": ["Injure publique (plainte)"],
+      "facts": {
+        "start": "2011-03-05"
+      },
+      "status": "relaxe",
+      "steps": [
+        {
+          "date": "2017-02-28",
+          "kind": "arret-cassation",
+          "court": "Cour de cassation",
+          "decision": "Poursuivi par Marine Le Pen pour injure publique pour l'avoir qualifiée de « fasciste » le 5 mars 2011 sur iTélé, Jean-Luc Mélenchon, alors coprésident du Parti de gauche, a été relaxé par la 17e chambre du tribunal correctionnel de Paris en avril 2014. L'appel puis le pourvoi de Marine Le Pen ont été rejetés, la Cour de cassation jugeant le 28 février 2017 que les propos relevaient de la libre expression d'une opinion.",
+          "outcome": "relaxe",
+          "sources": [
+            {
+              "title": "Politis, « “Fasciste”. Marine Le Pen déboutée de sa plainte contre Mélenchon »",
+              "url": "https://www.politis.fr/articles/2014/04/fasciste-marine-le-pen-deboutee-de-sa-plainte-contre-melenchon-26558",
+              "date": "2014-04",
+              "kind": "presse"
+            },
+            {
+              "title": "Public Sénat (d'après l'AFP), « “Fasciste” : Marine Le Pen définitivement déboutée contre Jean-Luc Mélenchon »",
+              "url": "https://www.publicsenat.fr/actualites/non-classe/fasciste-marine-le-pen-definitivement-deboutee-contre-jean-luc-melenchon-56342",
+              "date": "2017-02-28",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": null,
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "Politis, « “Fasciste”. Marine Le Pen déboutée de sa plainte contre Mélenchon »",
+          "url": "https://www.politis.fr/articles/2014/04/fasciste-marine-le-pen-deboutee-de-sa-plainte-contre-melenchon-26558",
+          "date": "2014-04",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat (d'après l'AFP), « “Fasciste” : Marine Le Pen définitivement déboutée contre Jean-Luc Mélenchon »",
+          "url": "https://www.publicsenat.fr/actualites/non-classe/fasciste-marine-le-pen-definitivement-deboutee-contre-jean-luc-melenchon-56342",
+          "date": "2017-02-28",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-05"
+    },
+    {
+      "id": "lfi-melenchon-injure-radio-france",
+      "caseName": "Injure et diffamation envers Radio France (vidéo d'octobre 2018)",
+      "person": {
+        "name": "Jean-Luc Mélenchon",
+        "sortName": "Mélenchon Jean-Luc",
+        "kind": "personne-physique"
+      },
+      "scope": "candidat-presidentielle",
+      "roleAtTheTime": "Président du groupe LFI à l'Assemblée nationale (vidéo Facebook du 19 octobre 2018)",
+      "category": "propos-discrimination",
+      "offences": ["Injure publique et diffamation publique"],
+      "facts": {
+        "start": "2018-10-19"
+      },
+      "status": "condamnation-non-definitive",
+      "steps": [
+        {
+          "date": "2022-01-11",
+          "kind": "jugement",
+          "court": "Tribunal correctionnel de Paris",
+          "decision": "Le 11 janvier 2022, le tribunal correctionnel de Paris a condamné Jean-Luc Mélenchon pour injure publique et diffamation envers Radio France, après une vidéo d'octobre 2018 visant des journalistes de franceinfo, à 500 € d'amende avec sursis et 3 000 € de dommages et intérêts. Son avocat a annoncé un appel, dont l'issue n'a pas été retrouvée.",
+          "outcome": "condamnation",
+          "penalties": [
+            {
+              "kind": "autre",
+              "label": "500 € d'amende avec sursis et 3 000 € de dommages et intérêts à Radio France"
+            }
+          ],
+          "sources": [
+            {
+              "title": "franceinfo, « Jean-Luc Mélenchon condamné pour injure publique et diffamation envers Radio France »",
+              "url": "https://www.franceinfo.fr/politique/la-france-insoumise/jean-luc-melenchon-condamne-pour-injure-publique-et-diffamation-envers-radio-france_4912699.html",
+              "date": "2022-01-11",
+              "kind": "presse"
+            },
+            {
+              "title": "Ozap, « Journalistes traités d'“abrutis” et de “menteurs” : Jean-Luc Mélenchon condamné pour injure publique et diffamation »",
+              "url": "https://www.ozap.com/actu/journalistes-traites-d-abrutis-et-de-menteurs-jean-luc-melenchon-condamne-pour-injure-publique-et-diffamation/612438",
+              "date": "2022-01",
+              "kind": "presse"
+            },
+            {
+              "title": "Public Sénat (AFP), « Propos de Mélenchon contre les journalistes : Radio France “porte plainte” »",
+              "url": "https://www.publicsenat.fr/actualites/politique/propos-de-melenchon-contre-les-journalistes-radio-france-porte-plainte-134606",
+              "date": "2018-10",
+              "kind": "presse"
+            },
+            {
+              "title": "France 24 (AFP), « Jean-Luc Mélenchon condamné pour injure publique et diffamation envers Radio France »",
+              "url": "https://www.france24.com/fr/info-en-continu/20220111-jean-luc-m%C3%A9lenchon-condamn%C3%A9-pour-injure-publique-et-diffamation-envers-radio-france",
+              "date": "2022-01-11",
+              "kind": "presse"
+            }
+          ]
+        }
+      ],
+      "pendingRemedy": {
+        "kind": "appel",
+        "filedBy": "plusieurs"
+      },
+      "nextStep": null,
+      "sources": [
+        {
+          "title": "franceinfo, « Jean-Luc Mélenchon condamné pour injure publique et diffamation envers Radio France »",
+          "url": "https://www.franceinfo.fr/politique/la-france-insoumise/jean-luc-melenchon-condamne-pour-injure-publique-et-diffamation-envers-radio-france_4912699.html",
+          "date": "2022-01-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Ozap, « Journalistes traités d'“abrutis” et de “menteurs” : Jean-Luc Mélenchon condamné pour injure publique et diffamation »",
+          "url": "https://www.ozap.com/actu/journalistes-traites-d-abrutis-et-de-menteurs-jean-luc-melenchon-condamne-pour-injure-publique-et-diffamation/612438",
+          "date": "2022-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat (AFP), « Propos de Mélenchon contre les journalistes : Radio France “porte plainte” »",
+          "url": "https://www.publicsenat.fr/actualites/politique/propos-de-melenchon-contre-les-journalistes-radio-france-porte-plainte-134606",
+          "date": "2018-10",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 (AFP), « Jean-Luc Mélenchon condamné pour injure publique et diffamation envers Radio France »",
+          "url": "https://www.france24.com/fr/info-en-continu/20220111-jean-luc-m%C3%A9lenchon-condamn%C3%A9-pour-injure-publique-et-diffamation-envers-radio-france",
+          "date": "2022-01-11",
+          "kind": "presse"
+        }
+      ],
+      "lastVerified": "2026-11-04"
+    }
+  ]
+}

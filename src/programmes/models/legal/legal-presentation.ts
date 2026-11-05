@@ -1,5 +1,6 @@
 import { startOfPeriod } from '@/src/programmes/models/legal/legal-dates';
 import { formatPenalty } from '@/src/programmes/models/legal/legal-penalties';
+import { legalSectionNotice } from '@/src/programmes/models/legal/legal-section-notice';
 import {
   NON_FINAL_STATUSES,
   PRESUMPTION_NOTICE,
@@ -54,6 +55,8 @@ export type PresentedDossier = {
   ongoing: PresentedEntry[];
   closed: PresentedEntry[];
   isEmpty: boolean;
+  /** Avertissement « section incomplète », identique pour tous les partis ; null une fois retiré. */
+  notice: string | null;
 };
 
 /** Issues susceptibles d'être frappées d'un recours : l'entrée reste « en cours ». */
@@ -198,5 +201,6 @@ export function presentDossier(dossier: LegalDossier): PresentedDossier {
     ongoing: sorted.filter(isOngoing).map(presentEntry),
     closed: sorted.filter((e) => !isOngoing(e)).map(presentEntry),
     isEmpty: dossier.entries.length === 0,
+    notice: legalSectionNotice(),
   };
 }

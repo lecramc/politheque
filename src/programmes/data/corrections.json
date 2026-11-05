@@ -1,5 +1,23 @@
 [
   {
+    "id": "2026-11-05-section-procedures-judiciaires-ajoutee-aux-dix-f",
+    "date": "2026-11-05",
+    "kind": "ajout",
+    "pages": [
+      "/partis/ecologistes/procedures-judiciaires",
+      "/partis/horizons/procedures-judiciaires",
+      "/partis/lfi/procedures-judiciaires",
+      "/partis/lr/procedures-judiciaires",
+      "/partis/nouvelle-energie/procedures-judiciaires",
+      "/partis/pcf/procedures-judiciaires",
+      "/partis/ps-place-publique/procedures-judiciaires",
+      "/partis/reconquete/procedures-judiciaires",
+      "/partis/renaissance/procedures-judiciaires",
+      "/partis/rn/procedures-judiciaires"
+    ],
+    "summary": "Section « Procédures judiciaires » ajoutée aux dix fiches le 5 novembre 2026. Elle est incomplète : les procédures en cours de vérification juridique n'y figurent pas encore et les partis ne peuvent pas être comparés d'après cette liste."
+  },
+  {
     "id": "2026-11-04-la-condamnation-d-eric-zemmour-de-fevrier-2011-a",
     "date": "2026-11-04",
     "kind": "correction",

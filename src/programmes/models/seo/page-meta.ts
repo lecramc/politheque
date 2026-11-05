@@ -326,10 +326,15 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
       politicalPartyNode(party),
       ...(section === 'programme-2027' ? [personNode(presidential!.candidacy.candidateName)] : []),
     ],
-    // Procédures : citations nommées par domaine, le titre d'un article étant souvent nominatif.
+    // Procédures : citations réduites au domaine (nom et URL), les titres comme les URL d'articles
+    // étant nominatifs. Les sources complètes restent affichées sur la page, par entrée.
     sources:
       section === 'procedures'
-        ? ctx.sources[section].map((s) => ({ ...s, title: domainOf(s.url) }))
+        ? ctx.sources[section].map((s) => ({
+            ...s,
+            title: domainOf(s.url),
+            url: `${new URL(s.url).origin}/`,
+          }))
         : ctx.sources[section],
   });
 }
