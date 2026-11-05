@@ -1,26 +1,34 @@
 import { Link, useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
-import { ScrollView, View } from 'react-native';
+import { Platform, ScrollView, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
+import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { tv } from '@/src/core/web/tv';
 import { Accordion } from '@/src/programmes/components/Accordion';
+import { AnchorList } from '@/src/programmes/components/AnchorList';
 import { Card } from '@/src/programmes/components/Card';
-import { Page, useIsDesktop } from '@/src/programmes/components/Page';
+import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
+import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
+import { splitFigure } from '@/src/programmes/models/key-figure.service';
 import {
   displayName,
   firstSentence,
   firstSentences,
 } from '@/src/programmes/models/presentation.service';
-import type { Party, PartyThemeProgramme } from '@/src/programmes/models/programme.model';
+import type {
+  KeyFigure,
+  Party,
+  PartyThemeProgramme,
+} from '@/src/programmes/models/programme.model';
 import { partyLinkLabel } from '@/src/programmes/models/seo/page-meta';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
 import { themeViewModel } from '@/src/programmes/view-models/theme.view-model';
@@ -57,11 +65,28 @@ function ProgrammeDetail({ programme, party }: { programme: PartyThemeProgramme;
   );
 }
 
+/** Chiffre clé : la valeur en gros, sa précision en dessous (présentation, le texte ne change pas). */
+function KeyFigureCard({ figure }: { figure: KeyFigure }) {
+  const { colors, fonts } = useTheme();
+  const { headline, detail } = splitFigure(figure.value);
+  return (
+    <Card style={{ minWidth: 0 }}>
+      <Text style={{ ...fonts.displayBold, fontSize: 28, lineHeight: 34, color: colors.tint }}>
+        {headline}
+      </Text>
+      {detail ? (
+        <Text style={{ fontSize: 14, lineHeight: 20, color: colors.text.secondary }}>{detail}</Text>
+      ) : null}
+      <Text style={{ fontSize: 14 }}>{figure.label}</Text>
+      <SourceChip sources={[figure.source]} subject={figure.label} />
+    </Card>
+  );
+}
+
 export default function ThemeScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const vm = useViewModel(themeViewModel(id));
   const { colors, effects, fonts } = useTheme();
-  const isDesktop = useIsDesktop();
   const [mode, setMode] = useState<Mode>('tous');
   const [selected, setSelected] = useState<string[]>([]);
   const theme = vm.theme;
@@ -81,6 +106,15 @@ export default function ThemeScreen() {
         : [...current, partyId].slice(-2)
     );
   const compared = vm.comparisons.filter((c) => selected.includes(c.party.id));
+  const anchors = [
+    { id: 'enjeux', label: 'Les enjeux en bref' },
+    { id: 'chiffres-cles', label: 'Chiffres clés' },
+    { id: 'options', label: 'Les options en débat' },
+    { id: 'partis', label: 'Ce que proposent les partis' },
+    ...(vm.questions.length > 0
+      ? [{ id: 'qui-est-pour', label: 'Qui est pour, qui est contre ?' }]
+      : []),
+  ];
 
   return (
     <Page
@@ -89,53 +123,73 @@ export default function ThemeScreen() {
       loading={vm.status !== 'loaded'}
       back={{ label: 'Débats', href: '/debats' }}
       onReachEnd={vm.markRead}
+      railOnMobile="hidden"
+      rail={
+        theme ? (
+          <>
+            <Text variant="caption">
+              {theme.title} · thème {vm.position.index} / {vm.position.total}
+            </Text>
+            <AnchorList items={anchors} />
+            {vm.nextTheme ? (
+              <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
+                {`Thème suivant : ${vm.nextTheme.title}`}
+              </Button>
+            ) : null}
+          </>
+        ) : undefined
+      }
     >
       {theme ? (
         <>
           <View style={{ gap: 8 }}>
-            <Text variant="caption">
-              {theme.title} · thème {vm.position.index} / {vm.position.total}
-            </Text>
+            {/* Sous 1024 px, le repère « thème n / N » reste au-dessus du titre ; au-delà il est dans le rail. */}
+            <Only below="lg">
+              <Text variant="caption">
+                {theme.title} · thème {vm.position.index} / {vm.position.total}
+              </Text>
+            </Only>
             <Text variant="title">{theme.debates[0]?.question ?? theme.title}</Text>
           </View>
 
-          <Accordion
-            headingLevel={2}
-            title="Les enjeux en bref"
-            subtitle={firstSentences(theme.context, 2)}
-          >
-            <Text style={{ fontSize: 16, lineHeight: 25 }}>{theme.context}</Text>
-          </Accordion>
+          <View nativeID="enjeux">
+            <Accordion
+              headingLevel={2}
+              title="Les enjeux en bref"
+              subtitle={firstSentences(theme.context, 2)}
+            >
+              <Text style={{ fontSize: 16, lineHeight: 25 }}>{theme.context}</Text>
+            </Accordion>
+          </View>
 
-          <View style={{ gap: effects.spacing.xs }}>
+          <View nativeID="chiffres-cles" style={{ gap: effects.spacing.xs }}>
             <Text variant="caption" headingLevel={2}>
               Chiffres clés
             </Text>
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ gap: 10, paddingRight: 16 }}
-            >
-              {theme.keyFigures.map((figure) => (
-                <Card key={figure.label} style={{ width: isDesktop ? 240 : 230 }}>
-                  <Text
-                    style={{
-                      ...fonts.displayBold,
-                      fontSize: 24,
-                      lineHeight: 30,
-                      color: colors.tint,
-                    }}
-                  >
-                    {figure.value}
-                  </Text>
-                  <Text style={{ fontSize: 14 }}>{figure.label}</Text>
-                  <SourceChip sources={[figure.source]} subject={figure.label} />
-                </Card>
-              ))}
-            </ScrollView>
+            {/* Sous 1024 px : défilement horizontal. Dès 1024 px : grille de 3 colonnes (CSS). */}
+            <Only below="lg">
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={{ gap: 10, paddingRight: 16 }}
+              >
+                {theme.keyFigures.map((figure) => (
+                  <View key={figure.label} style={{ width: 230 }}>
+                    <KeyFigureCard figure={figure} />
+                  </View>
+                ))}
+              </ScrollView>
+            </Only>
+            {Platform.OS === 'web' ? (
+              <View {...tv('only-from-lg', 'grid-3-lg')}>
+                {theme.keyFigures.map((figure) => (
+                  <KeyFigureCard key={figure.label} figure={figure} />
+                ))}
+              </View>
+            ) : null}
           </View>
 
-          <View style={{ gap: effects.spacing.xs }}>
+          <View nativeID="options" style={{ gap: effects.spacing.xs }}>
             <Text variant="caption" headingLevel={2}>
               Les options en débat
             </Text>
@@ -162,7 +216,7 @@ export default function ThemeScreen() {
             ))}
           </View>
 
-          <View style={{ gap: effects.spacing.sm }}>
+          <View nativeID="partis" style={{ gap: effects.spacing.sm }}>
             <Text variant="caption" headingLevel={2}>
               Ce que proposent les partis{vm.election ? ` · ${vm.election.title}` : ''}
             </Text>
@@ -243,7 +297,7 @@ export default function ThemeScreen() {
           </View>
 
           {vm.questions.length > 0 ? (
-            <View style={{ gap: effects.spacing.xs }}>
+            <View nativeID="qui-est-pour" style={{ gap: effects.spacing.xs }}>
               <Text variant="caption" headingLevel={2}>
                 Qui est pour, qui est contre ?
               </Text>
@@ -253,32 +307,12 @@ export default function ThemeScreen() {
                     {question.help}
                   </Text>
                   {positions.map(({ party, stance }) => (
-                    <View
+                    <PartyStanceRow
                       key={party.id}
-                      style={{
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        gap: 8,
-                        paddingVertical: 4,
-                        flexWrap: 'wrap',
-                      }}
-                    >
-                      <PartyDot color={party.color} size={24} label={party.shortName} />
-                      <Link
-                        href={partyHref(party.id, 'positions') as never}
-                        style={{ width: 120, fontSize: 14, color: colors.tint }}
-                      >
-                        {displayName(party)}
-                      </Link>
-                      <StanceBadge stance={stance?.stance ?? null} />
-                      {stance?.justification ? (
-                        <Text
-                          style={{ flexBasis: '100%', fontSize: 13, color: colors.text.secondary }}
-                        >
-                          {stance.justification}
-                        </Text>
-                      ) : null}
-                    </View>
+                      party={party}
+                      stance={stance}
+                      href={partyHref(party.id, 'positions')}
+                    />
                   ))}
                 </Accordion>
               ))}
@@ -296,9 +330,11 @@ export default function ThemeScreen() {
           />
 
           {vm.nextTheme ? (
-            <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
-              {`Thème suivant : ${vm.nextTheme.title}`}
-            </Button>
+            <Only below="lg">
+              <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
+                {`Thème suivant : ${vm.nextTheme.title}`}
+              </Button>
+            </Only>
           ) : null}
         </>
       ) : null}

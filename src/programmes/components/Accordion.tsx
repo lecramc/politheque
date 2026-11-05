@@ -1,5 +1,5 @@
 import React, { ReactNode, useEffect, useId, useRef, useState } from 'react';
-import { LayoutChangeEvent, Platform, View } from 'react-native';
+import { LayoutChangeEvent, Platform, StyleSheet, View } from 'react-native';
 import Animated, {
   runOnJS,
   useAnimatedStyle,
@@ -11,7 +11,13 @@ import { duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { Only } from '@/src/core/components/Only';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
+import { tv } from '@/src/core/web/tv';
+
+const styles = StyleSheet.create({
+  stanceCell: { alignItems: 'flex-start', flexShrink: 0 },
+});
 
 /** Bloc repliable : titre + phrase-clé fermé, détail ouvert. */
 export function Accordion({
@@ -26,11 +32,20 @@ export function Accordion({
   flat = false,
   last = false,
   headingLevel = 3,
+  stance,
+  titleWeight = 'bold',
 }: {
   title: string;
   subtitle?: string;
   leading?: ReactNode;
   trailing?: ReactNode;
+  /**
+   * Position du parti (badge `inline`) : sous le titre sous 768 px, cellule fixe de 152 px à droite
+   * ensuite. Rendue ouverte comme fermée. Les autres usages gardent `trailing`.
+   */
+  stance?: ReactNode;
+  /** `regular` pour les longues listes d'affirmations (30 titres en gras font une page lourde). */
+  titleWeight?: 'regular' | 'bold';
   defaultOpen?: boolean;
   open?: boolean;
   onToggle?: (open: boolean) => void;
@@ -125,13 +140,34 @@ export function Accordion({
         >
           {leading}
           <View style={{ flex: 1, gap: 2 }}>
-            <Text style={{ ...fonts.bold, fontSize: 16, color: colors.text.primary }}>{title}</Text>
+            <Text
+              style={{
+                ...(titleWeight === 'bold' ? fonts.bold : fonts.regular),
+                fontSize: 16,
+                lineHeight: titleWeight === 'bold' ? undefined : 23,
+                color: colors.text.primary,
+              }}
+            >
+              {title}
+            </Text>
             {subtitle && !open ? (
               <Text style={{ fontSize: 14, color: colors.text.secondary }} numberOfLines={2}>
                 {subtitle}
               </Text>
             ) : null}
+            {/* Sous 768 px : la position sous l'affirmation, alignée sur son début. */}
+            {stance ? (
+              <Only below="md" style={{ alignSelf: 'flex-start', marginTop: 6 }}>
+                {stance}
+              </Only>
+            ) : null}
           </View>
+          {/* À partir de 768 px : cellule fixe à droite, ouverte comme fermée. */}
+          {stance && Platform.OS === 'web' ? (
+            <View {...tv('only-from-md', 'stance-cell')} style={styles.stanceCell}>
+              {stance}
+            </View>
+          ) : null}
           {trailing}
           <Animated.View style={chevronStyle}>
             <Icon name="chevron-down" variant="onGlass" size="small" />

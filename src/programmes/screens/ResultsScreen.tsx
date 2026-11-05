@@ -7,7 +7,9 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
+import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { tv } from '@/src/core/web/tv';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Arc } from '@/src/programmes/components/Arc';
 import { AxisChart } from '@/src/programmes/components/AxisChart';
@@ -15,11 +17,13 @@ import { Card } from '@/src/programmes/components/Card';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { PartyPlacement } from '@/src/programmes/components/PartyPlacement';
+import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { STANCE_LABEL, StanceBadge } from '@/src/programmes/components/StanceBadge';
+import { STANCE_LABEL } from '@/src/programmes/components/StanceBadge';
+import { StanceLegend } from '@/src/programmes/components/StanceLegend';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
+import { chartLegend } from '@/src/programmes/models/chart-legend.service';
 import { MIN_AXIS_COUNT } from '@/src/programmes/models/matching.service';
-import { displayName } from '@/src/programmes/models/presentation.service';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { resultsViewModel } from '@/src/programmes/view-models/results.view-model';
 
@@ -145,11 +149,55 @@ export default function ResultsScreen() {
     ? vm.details.filter((d) => d.question.theme === themeFilter)
     : vm.details;
 
+  const tabList: { id: Tab; label: string }[] = [
+    { id: 'proximite', label: 'Proximité' },
+    { id: 'carte', label: 'Ma carte' },
+    { id: 'detail', label: 'Détail' },
+  ];
+  const themeChip = (theme: { id: string | null; title: string }) => {
+    const active = themeFilter === theme.id;
+    return (
+      <Pressable
+        key={theme.id ?? 'tous'}
+        onPress={() => setThemeFilter(theme.id)}
+        accessibilityRole="button"
+        accessibilityState={{ selected: active }}
+        style={{
+          minHeight: 44,
+          justifyContent: 'center',
+          paddingHorizontal: 12,
+          borderRadius: effects.borderRadius.round,
+          borderWidth: 1.5,
+          borderColor: active ? colors.tint : colors.surface.border.tertiary,
+          backgroundColor: active ? colors.tintSoft : 'transparent',
+        }}
+      >
+        <Text style={active ? { ...fonts.bold, color: colors.tint } : undefined}>
+          {theme.title}
+        </Text>
+      </Pressable>
+    );
+  };
+  const themeChips = [{ id: null, title: 'Tous' }, ...vm.themes];
+  const legend = chartLegend(vm.partyPositions.map(({ party }) => party));
+
   return (
     <Page
       title={'Vos résultats'}
       loading={!vm.ready}
       back={{ label: 'Questionnaire', href: '/me-situer' }}
+      railOnMobile="hidden"
+      rail={
+        <>
+          <Tabs tabs={tabList} value={tab} onChange={setTab} vertical />
+          <Button variant="secondary" onPress={vm.restart}>
+            Recommencer le questionnaire
+          </Button>
+          <Text style={{ fontSize: 14, color: colors.text.secondary }}>
+            Vos réponses ne quittent pas votre navigateur : rien n'est envoyé.
+          </Text>
+        </>
+      }
     >
       <View style={{ gap: 8 }}>
         <Text variant="title">Vos résultats</Text>
@@ -174,15 +222,10 @@ export default function ResultsScreen() {
         </Card>
       ) : null}
 
-      <Tabs
-        tabs={[
-          { id: 'proximite', label: 'Proximité' },
-          { id: 'carte', label: 'Ma carte' },
-          { id: 'detail', label: 'Détail' },
-        ]}
-        value={tab}
-        onChange={setTab}
-      />
+      {/* Sous 1024 px : onglets soulignés ici ; dès 1024 px : liste verticale dans le rail. */}
+      <Only below="lg">
+        <Tabs tabs={tabList} value={tab} onChange={setTab} />
+      </Only>
 
       <TabPanel id={tab}>
         {tab === 'proximite' ? (
@@ -290,7 +333,30 @@ export default function ResultsScreen() {
 
         {tab === 'carte' ? (
           <Card>
-            <AxisChart axes={vm.axes} user={vm.userPosition} parties={vm.partyPositions} />
+            {/* Tracé + légende alphabétique (aucun second classement) : côte à côte dès 1200 px. */}
+            <View {...tv('map-layout')} style={{ gap: effects.spacing.md }}>
+              <AxisChart axes={vm.axes} user={vm.userPosition} parties={vm.partyPositions} />
+              <View
+                role="list"
+                aria-label="Légende : partis par ordre alphabétique"
+                style={{ gap: effects.spacing.xs, flexShrink: 1 }}
+              >
+                <Text variant="caption">Légende · A-Z</Text>
+                {legend.map((party) => (
+                  <View
+                    key={party.id}
+                    role="listitem"
+                    style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}
+                  >
+                    <PartyDot color={party.color} size={14} />
+                    <Text style={{ fontSize: 14, flexShrink: 1 }}>
+                      <Text style={{ ...fonts.bold, fontSize: 14 }}>{party.shortName}</Text>
+                      {` · ${party.name}`}
+                    </Text>
+                  </View>
+                ))}
+              </View>
+            </View>
             <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
               Plus deux points sont proches, plus les réponses se ressemblent. Positions calculées
               uniquement à partir des affirmations du questionnaire : les axes simplifient la
@@ -344,34 +410,22 @@ export default function ResultsScreen() {
 
         {tab === 'detail' ? (
           <View style={{ gap: effects.spacing.sm }}>
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              contentContainerStyle={{ gap: 8 }}
-            >
-              {[{ id: null, title: 'Tous' }, ...vm.themes].map((theme) => {
-                const active = themeFilter === theme.id;
-                return (
-                  <Pressable
-                    key={theme.id ?? 'tous'}
-                    onPress={() => setThemeFilter(theme.id)}
-                    style={{
-                      minHeight: 44,
-                      justifyContent: 'center',
-                      paddingHorizontal: 12,
-                      borderRadius: effects.borderRadius.round,
-                      borderWidth: 1.5,
-                      borderColor: active ? colors.tint : colors.surface.border.tertiary,
-                      backgroundColor: active ? colors.tintSoft : 'transparent',
-                    }}
-                  >
-                    <Text style={active ? { ...fonts.bold, color: colors.tint } : undefined}>
-                      {theme.title}
-                    </Text>
-                  </Pressable>
-                );
-              })}
-            </ScrollView>
+            <Only from="md">
+              <StanceLegend />
+            </Only>
+            {/* Mobile : puces en défilement horizontal. Dès 768 px : elles passent à la ligne. */}
+            <Only below="md">
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                contentContainerStyle={{ gap: 8 }}
+              >
+                {themeChips.map(themeChip)}
+              </ScrollView>
+            </Only>
+            <Only from="md" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+              {themeChips.map(themeChip)}
+            </Only>
             {details.map(({ question, userValue, important, positions }) => (
               <Accordion
                 key={question.id}
@@ -379,24 +433,7 @@ export default function ResultsScreen() {
                 subtitle={`Vous : ${STANCE_LABEL[String(userValue)]}${important ? ' (compte double)' : ''}`}
               >
                 {positions.map(({ party, stance }) => (
-                  <View
-                    key={party.id}
-                    style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}
-                  >
-                    <PartyDot color={party.color} size={24} label={party.shortName} />
-                    <Text style={{ width: 120, fontSize: 14 }}>{displayName(party)}</Text>
-                    <StanceBadge stance={stance?.stance ?? null} />
-                    {stance?.sources.length ? (
-                      <SourceChip sources={stance.sources} subject={stance.justification} />
-                    ) : null}
-                    {stance?.justification ? (
-                      <Text
-                        style={{ flexBasis: '100%', fontSize: 13, color: colors.text.secondary }}
-                      >
-                        {stance.justification}
-                      </Text>
-                    ) : null}
-                  </View>
+                  <PartyStanceRow key={party.id} party={party} stance={stance} />
                 ))}
               </Accordion>
             ))}
@@ -404,9 +441,11 @@ export default function ResultsScreen() {
         ) : null}
       </TabPanel>
 
-      <Button variant="secondary" onPress={vm.restart}>
-        Recommencer le questionnaire
-      </Button>
+      <Only below="lg">
+        <Button variant="secondary" onPress={vm.restart}>
+          Recommencer le questionnaire
+        </Button>
+      </Only>
     </Page>
   );
 }

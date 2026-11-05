@@ -9,6 +9,7 @@ import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceList } from '@/src/programmes/components/SourceChip';
 import { STANCE_LABEL, StanceBadge } from '@/src/programmes/components/StanceBadge';
+import { StanceColumnHead, StanceRow } from '@/src/programmes/components/StanceRow';
 import type { PartyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 type GlanceItem = PartyViewModel['glance'][number];
@@ -45,6 +46,12 @@ export function GlanceQuestions({
           overflow: 'hidden',
         }}
       >
+        <StanceColumnHead
+          left="Question"
+          right="Position"
+          paddingHorizontal={effects.spacing.md}
+          ruled
+        />
         {items.map((item, index) => (
           <View key={item.questionId} role="listitem">
             <Pressable
@@ -52,19 +59,15 @@ export function GlanceQuestions({
               accessibilityRole="button"
               accessibilityLabel={`${item.label} : ${STANCE_LABEL[String(item.stance)]}. Ouvrir la justification et les sources.`}
               style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                gap: 12,
                 minHeight: 56,
+                justifyContent: 'center',
                 paddingHorizontal: effects.spacing.md,
                 paddingVertical: 12,
                 borderTopWidth: index === 0 ? 0 : 1,
                 borderColor: colors.surface.border.primary,
               }}
             >
-              <Text style={{ flex: 1, fontSize: 16, lineHeight: 22 }}>{item.label}</Text>
-              <StanceBadge stance={item.stance} />
+              <StanceRow label={item.label} stance={item.stance} />
             </Pressable>
           </View>
         ))}
@@ -92,7 +95,7 @@ export function GlanceQuestions({
             <Text style={{ fontSize: 16, lineHeight: 24, color: colors.text.secondary }}>
               {open.statement}
             </Text>
-            <StanceBadge stance={open.stance} />
+            <StanceBadge stance={open.stance} label="full" />
             <Text style={{ fontSize: 16, lineHeight: 24 }}>{open.justification}</Text>
             {open.sources.length ? <SourceList sources={open.sources} /> : null}
           </>

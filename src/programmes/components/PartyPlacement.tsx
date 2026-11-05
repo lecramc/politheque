@@ -3,9 +3,9 @@ import { useWindowDimensions, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { Only } from '@/src/core/components/Only';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { AxisGauge } from '@/src/programmes/components/AxisGauge';
-import { useIsDesktop } from '@/src/programmes/components/Page';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { STANCE_LABEL } from '@/src/programmes/components/StanceBadge';
@@ -34,72 +34,80 @@ const MAX_FONT_SCALE_FOR_OVERLAY = 1.3;
 const CHIP_RESERVE = 120;
 const STANCE_COLUMN = 112;
 
+/**
+ * Une affirmation qui place le parti sur l'axe. Deux dispositions, toutes deux rendues, la CSS en
+ * masque une : sous 768 px, position puis affirmation (pastille de sources en surimpression) ;
+ * dès 768 px, colonne de position fixe, affirmation, pastille. Seule la graisse de police du
+ * système (`fontScale`) reste lue en JavaScript : c'est un réglage de l'appareil, pas la largeur.
+ */
 function PlacementRow({ item }: { item: AxisContribution }) {
   const { colors, effects, fonts } = useTheme();
-  const isDesktop = useIsDesktop();
   const { fontScale } = useWindowDimensions();
   const { question, stance } = item;
-  const overlay = !isDesktop && fontScale <= MAX_FONT_SCALE_FOR_OVERLAY;
-
-  const stanceText = (
-    <Text
-      style={{
-        ...fonts.bold,
-        fontSize: effects.sizes.text.label,
-        color: colors.tint,
-        minHeight: 28,
-        textAlignVertical: 'center',
-        ...(isDesktop
-          ? { width: STANCE_COLUMN, paddingTop: 2, minHeight: undefined }
-          : { paddingRight: overlay ? CHIP_RESERVE : 0 }),
-      }}
-    >
-      {STANCE_LABEL[String(stance.stance)]}
-    </Text>
-  );
-  const statement = (
-    <Text
-      style={{
-        fontSize: effects.sizes.text.secondary,
-        lineHeight: 21,
-        color: colors.text.primary,
-        ...(isDesktop ? { flex: 1 } : null),
-      }}
-    >
-      {question.statement}
-    </Text>
-  );
+  const overlay = fontScale <= MAX_FONT_SCALE_FOR_OVERLAY;
+  const label = STANCE_LABEL[String(stance.stance)];
   const chip = stance.sources.length ? (
     <SourceChip compact sources={stance.sources} subject={stance.justification} />
   ) : null;
+  const rowStyle = {
+    paddingVertical: effects.spacing.sm,
+    borderTopWidth: 1,
+    borderColor: colors.surface.border.primary,
+  };
+  const stanceStyle = {
+    ...fonts.bold,
+    fontSize: effects.sizes.text.label,
+    color: colors.tint,
+  };
+  const statementStyle = {
+    fontSize: effects.sizes.text.secondary,
+    lineHeight: 21,
+    color: colors.text.primary,
+  };
 
   return (
-    <View
-      style={{
-        paddingVertical: effects.spacing.sm,
-        gap: isDesktop ? effects.spacing.sm : effects.spacing.xxs,
-        borderTopWidth: 1,
-        borderColor: colors.surface.border.primary,
-        position: 'relative',
-        ...(isDesktop ? { flexDirection: 'row', alignItems: 'flex-start' } : null),
-      }}
-    >
-      {stanceText}
-      {statement}
-      {chip ? (
-        <View
-          style={
-            isDesktop
-              ? { alignSelf: 'flex-start' }
-              : overlay
-                ? { position: 'absolute', top: effects.spacing.sm, right: 0 }
-                : { alignSelf: 'flex-start' }
-          }
-        >
-          {chip}
+    <>
+      <Only below="md">
+        <View style={{ ...rowStyle, gap: effects.spacing.xxs, position: 'relative' }}>
+          <Text
+            style={{
+              ...stanceStyle,
+              minHeight: 28,
+              textAlignVertical: 'center',
+              paddingRight: overlay ? CHIP_RESERVE : 0,
+            }}
+          >
+            {label}
+          </Text>
+          <Text style={statementStyle}>{question.statement}</Text>
+          {chip ? (
+            <View
+              style={
+                overlay
+                  ? { position: 'absolute', top: effects.spacing.sm, right: 0 }
+                  : { alignSelf: 'flex-start' }
+              }
+            >
+              {chip}
+            </View>
+          ) : null}
         </View>
-      ) : null}
-    </View>
+      </Only>
+      <Only from="md">
+        <View
+          style={{
+            ...rowStyle,
+            flexDirection: 'row',
+            alignItems: 'flex-start',
+            gap: effects.spacing.sm,
+          }}
+        >
+          <Text style={{ ...stanceStyle, width: STANCE_COLUMN, paddingTop: 2 }}>{label}</Text>
+          <Text style={{ ...statementStyle, flex: 1 }}>{question.statement}</Text>
+          {chip ? <View style={{ alignSelf: 'flex-start' }}>{chip}</View> : null}
+        </View>
+      </Only>
+    </>
   );
 }
 

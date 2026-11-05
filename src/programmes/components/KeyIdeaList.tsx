@@ -5,12 +5,12 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { tv } from '@/src/core/web/tv';
 import { Card } from '@/src/programmes/components/Card';
-import { useIsDesktop } from '@/src/programmes/components/Page';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceList } from '@/src/programmes/components/SourceChip';
-import { StanceBadge } from '@/src/programmes/components/StanceBadge';
+import { StanceRow } from '@/src/programmes/components/StanceRow';
 import type { PartyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 type KeyIdeas = NonNullable<PartyViewModel['keyIdeas']>;
@@ -19,7 +19,6 @@ type KeyIdeaItem = KeyIdeas['items'][number];
 /** « Ce qu'il propose » : 4 idées dans l'ordre des thèmes du site, sans numéro ni classement. */
 export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; partyName: string }) {
   const { colors, effects, fonts } = useTheme();
-  const isDesktop = useIsDesktop();
   const [openId, setOpenId] = useState<string | null>(null);
   const open = keyIdeas.items.find((item) => item.id === openId) ?? null;
 
@@ -33,20 +32,9 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
           </Text>
         ) : null}
       </View>
-      <View
-        role="list"
-        style={{
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          gap: effects.spacing.sm,
-        }}
-      >
+      <View {...tv('grid-2')} role="list" style={{ gap: effects.spacing.sm }}>
         {keyIdeas.items.map((item) => (
-          <View
-            key={item.id}
-            role="listitem"
-            style={{ width: isDesktop ? '48.8%' : '100%', flexGrow: 1 }}
-          >
+          <View key={item.id} role="listitem" style={{ minWidth: 0 }}>
             <Card style={{ gap: 8, flex: 1 }}>
               <Text style={{ ...fonts.bold, fontSize: 15, color: colors.tint }}>
                 {item.themeTitle}
@@ -130,17 +118,12 @@ function IdeaSheetBody({ item, partyName }: { item: KeyIdeaItem; partyName: stri
               <View
                 key={related.questionId}
                 style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  gap: 12,
                   padding: effects.spacing.sm,
                   borderTopWidth: index === 0 ? 0 : 1,
                   borderColor: colors.surface.border.primary,
                 }}
               >
-                <Text style={{ flex: 1, fontSize: 16 }}>{related.label}</Text>
-                <StanceBadge stance={related.stance} />
+                <StanceRow label={related.label} stance={related.stance} />
               </View>
             ))}
           </View>

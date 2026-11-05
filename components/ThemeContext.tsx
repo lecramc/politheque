@@ -2,6 +2,8 @@ import * as SystemUI from 'expo-system-ui';
 import React, { createContext, ReactNode, useContext, useEffect, useMemo } from 'react';
 import { useColorScheme } from 'react-native';
 
+import { layout } from '@/components/layout';
+
 export type ThemeType = 'light' | 'dark';
 
 export const theme = {
@@ -124,6 +126,7 @@ export const theme = {
   },
 
   effects: {
+    layout,
     blur: 25,
     // Standard states (tactile feedback / disabled) — use everywhere instead
     // of diverging hardcoded values (0.45/0.5/0.6).

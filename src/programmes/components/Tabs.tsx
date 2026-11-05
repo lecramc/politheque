@@ -21,7 +21,8 @@ export function Tabs<T extends string>({
   navLabel,
   vertical = false,
 }: {
-  tabs: { id: T; label: string }[];
+  /** `count` : compteur facultatif à droite en liste verticale (« 30 », « 9 thèmes »). */
+  tabs: { id: T; label: string; count?: string }[];
   value: T;
   onChange?: (id: T) => void;
   /** Onglets-liens (vraies pages, indexables) : chaque onglet est un <a href>. */
@@ -70,11 +71,12 @@ export function Tabs<T extends string>({
     ],
   }));
 
-  if (vertical && hrefOf) {
+  if (vertical) {
     return (
       <View
-        role="navigation"
-        aria-label={navLabel}
+        {...(hrefOf
+          ? { role: 'navigation' as const, 'aria-label': navLabel }
+          : { accessibilityRole: 'tablist' as const })}
         style={{
           borderRadius: 16,
           borderWidth: 1,
@@ -85,34 +87,55 @@ export function Tabs<T extends string>({
       >
         {tabs.map((tab, index) => {
           const active = tab.id === value;
-          return (
-            <Link key={tab.id} href={hrefOf(tab.id) as never} asChild>
-              <Pressable
-                accessibilityRole="link"
-                aria-current={active ? 'page' : undefined}
-                hoverStyle={{ backgroundColor: colors.surface.hover }}
+          const item = (
+            <Pressable
+              key={tab.id}
+              {...(hrefOf
+                ? {
+                    accessibilityRole: 'link' as const,
+                    'aria-current': active ? ('page' as const) : undefined,
+                  }
+                : {
+                    onPress: () => onChange?.(tab.id),
+                    accessibilityRole: 'tab' as const,
+                    accessibilityState: { selected: active },
+                    'aria-selected': active,
+                  })}
+              hoverStyle={{ backgroundColor: colors.surface.hover }}
+              style={{
+                minHeight: 48,
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                gap: 8,
+                paddingHorizontal: 18,
+                borderTopWidth: index === 0 ? 0 : 1,
+                borderLeftWidth: 4,
+                borderTopColor: colors.surface.border.primary,
+                borderLeftColor: active ? colors.tint : 'transparent',
+                backgroundColor: active ? colors.tintSoft : 'transparent',
+              }}
+            >
+              <Text
                 style={{
-                  minHeight: 52,
-                  justifyContent: 'center',
-                  paddingHorizontal: 18,
-                  borderTopWidth: index === 0 ? 0 : 1,
-                  borderLeftWidth: 4,
-                  borderTopColor: colors.surface.border.primary,
-                  borderLeftColor: active ? colors.tint : 'transparent',
-                  backgroundColor: active ? colors.tintSoft : 'transparent',
+                  ...(active ? fonts.bold : fonts.regular),
+                  fontSize: 16,
+                  color: active ? colors.tint : colors.text.primary,
                 }}
               >
-                <Text
-                  style={{
-                    ...(active ? fonts.bold : fonts.regular),
-                    fontSize: 16,
-                    color: active ? colors.tint : colors.text.primary,
-                  }}
-                >
-                  {tab.label}
-                </Text>
-              </Pressable>
+                {tab.label}
+              </Text>
+              {tab.count ? (
+                <Text style={{ fontSize: 14, color: colors.text.secondary }}>{tab.count}</Text>
+              ) : null}
+            </Pressable>
+          );
+          return hrefOf ? (
+            <Link key={tab.id} href={hrefOf(tab.id) as never} asChild>
+              {item}
             </Link>
+          ) : (
+            item
           );
         })}
       </View>

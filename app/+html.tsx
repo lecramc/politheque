@@ -2,6 +2,7 @@ import { ScrollViewStyleReset } from 'expo-router/html';
 import type { PropsWithChildren } from 'react';
 
 import { APP_NAME, SITE_LOCALE } from '@/src/core/config/app';
+import { layoutCss } from '@/src/core/web/layout-css';
 
 // Document HTML racine de l'export web statique : uniquement les invariants du site.
 // Tout ce qui dépend de la page (title, description, canonical, Open Graph, JSON-LD)
@@ -18,6 +19,8 @@ export default function Root({ children }: PropsWithChildren) {
         <meta property="og:locale" content={SITE_LOCALE} />
         <meta name="twitter:card" content="summary_large_image" />
         <ScrollViewStyleReset />
+        {/* Mise en page desktop : media queries sur data-tv, identique au premier rendu client. */}
+        <style id="travee-layout" dangerouslySetInnerHTML={{ __html: layoutCss }} />
       </head>
       <body>{children}</body>
     </html>

@@ -31,8 +31,10 @@ export function AxisChart({
   parties: { party: Party; position: AxisPosition }[];
 }) {
   const { colors, fonts } = useTheme();
+  // Mesure du tracé, pas mise en page : la carte n'existe qu'après le questionnaire (rendu client
+  // uniquement, jamais dans le HTML statique). 460 px dès 1024 px, 420 px au plus sinon.
   const { width } = useWindowDimensions();
-  const size = Math.min(420, width - 80);
+  const size = Math.min(width >= 1024 ? 460 : 420, width - 80);
   const eco = axes.find((a) => a.id === 'economique');
   const soc = axes.find((a) => a.id === 'societal');
   const eu = axes.find((a) => a.id === 'europe');

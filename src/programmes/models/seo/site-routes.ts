@@ -90,9 +90,13 @@ const partyPage = (section: PartySection): RouteDefinition => ({
   lastmod: partyLastmod,
 });
 
+/** Dossier revu + dernière entrée du journal publiée sur cette page (ajout, correction…). */
 const legalLastmod = (catalog: Catalog, partyId: string) => {
   const dossier = catalog.legal.find((d) => d.partyId === partyId);
-  return dossier ? dossierLastmod(dossier) : null;
+  if (!dossier) return null;
+  const page = `/partis/${partyId}/procedures-judiciaires`;
+  const journal = catalog.corrections.filter((e) => e.pages.includes(page)).map((e) => e.date);
+  return maxIsoDate([dossierLastmod(dossier), ...journal]);
 };
 
 const fixed = (

@@ -1,9 +1,10 @@
 import React from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { tv } from '@/src/core/web/tv';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { beforeParenthesis } from '@/src/programmes/models/presentation.service';
 import type { Candidacy, Party } from '@/src/programmes/models/programme.model';
@@ -34,7 +35,7 @@ export function PartyHeader({
     <View style={{ gap: effects.spacing.sm }}>
       <View style={{ flexDirection: 'row', gap: 14, alignItems: 'center' }}>
         <PartyDot color={party.color} size={56} label={party.shortName} />
-        <Text variant="title" style={{ flex: 1, fontSize: 30, lineHeight: 35 }}>
+        <Text {...tv('party-name')} variant="title" style={styles.name}>
           {party.name}
         </Text>
       </View>
@@ -94,3 +95,6 @@ export function PartyHeader({
     </View>
   );
 }
+
+// Dans un StyleSheet : la CSS desktop (`party-name`) ne peut surcharger que des classes.
+const styles = StyleSheet.create({ name: { flex: 1, fontSize: 30, lineHeight: 35 } });

@@ -6,6 +6,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { tv } from '@/src/core/web/tv';
 import { Arc } from '@/src/programmes/components/Arc';
 import { Page } from '@/src/programmes/components/Page';
 import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
@@ -20,8 +21,11 @@ export default function GuideScreen() {
   const { colors, effects, fonts } = useTheme();
 
   return (
-    <Page meta={meta} loading={vm.status !== 'loaded'}>
-      <View style={{ flexDirection: 'row', alignItems: 'flex-end', gap: effects.spacing.sm }}>
+    <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
+      <View
+        {...tv('list-col')}
+        style={{ flexDirection: 'row', alignItems: 'flex-end', gap: effects.spacing.sm }}
+      >
         <View style={{ flex: 1, gap: 6 }}>
           <Text variant="title">Comprendre la politique</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
@@ -44,6 +48,7 @@ export default function GuideScreen() {
         <Link href={{ pathname: '/comprendre/[id]', params: { id: vm.next.id } }} asChild>
           <Pressable
             large
+            {...tv('list-col')}
             style={{
               flexDirection: 'row',
               alignItems: 'center',
@@ -61,66 +66,69 @@ export default function GuideScreen() {
         </Link>
       ) : null}
 
-      {vm.groups.map((group) => (
-        <View key={group.id} style={{ gap: effects.spacing.xs }}>
-          <Text variant="caption">{group.title}</Text>
-          <View
-            style={{
-              backgroundColor: colors.surface.primary,
-              borderWidth: 1,
-              borderColor: colors.surface.border.primary,
-              borderRadius: effects.borderRadius.small,
-            }}
-          >
-            {group.rows.map(({ section, minutes, read }, index) => (
-              <Link
-                key={section.id}
-                href={{ pathname: '/comprendre/[id]', params: { id: section.id } }}
-                asChild
-              >
-                <Pressable
-                  large
-                  accessibilityLabel={`${section.title}, ${minutes} minutes${read ? ', lu' : ''}`}
-                  style={{
-                    flexDirection: 'row',
-                    alignItems: 'center',
-                    gap: 14,
-                    minHeight: 64,
-                    paddingHorizontal: effects.spacing.md,
-                    paddingVertical: 12,
-                    borderTopWidth: index === 0 ? 0 : 1,
-                    borderColor: colors.surface.border.primary,
-                  }}
+      {/* Groupes de leçons : une colonne sous 768 px, 2 puis 3 colonnes ensuite (CSS). */}
+      <View {...tv('grid-3')} style={{ gap: effects.spacing.lg }}>
+        {vm.groups.map((group) => (
+          <View key={group.id} style={{ gap: effects.spacing.xs, minWidth: 0 }}>
+            <Text variant="caption">{group.title}</Text>
+            <View
+              style={{
+                backgroundColor: colors.surface.primary,
+                borderWidth: 1,
+                borderColor: colors.surface.border.primary,
+                borderRadius: effects.borderRadius.small,
+              }}
+            >
+              {group.rows.map(({ section, minutes, read }, index) => (
+                <Link
+                  key={section.id}
+                  href={{ pathname: '/comprendre/[id]', params: { id: section.id } }}
+                  asChild
                 >
-                  <View
+                  <Pressable
+                    large
+                    accessibilityLabel={`${section.title}, ${minutes} minutes${read ? ', lu' : ''}`}
                     style={{
-                      width: 40,
-                      height: 40,
-                      borderRadius: 20,
+                      flexDirection: 'row',
                       alignItems: 'center',
-                      justifyContent: 'center',
-                      backgroundColor: read ? colors.tint : colors.tintSoft,
+                      gap: 14,
+                      minHeight: 64,
+                      paddingHorizontal: effects.spacing.md,
+                      paddingVertical: 12,
+                      borderTopWidth: index === 0 ? 0 : 1,
+                      borderColor: colors.surface.border.primary,
                     }}
                   >
-                    {read ? (
-                      <Icon name="checkmark" variant="onColor" size="medium" />
-                    ) : (
-                      <Icon name={section.icon} variant="onGlass" size="small" />
-                    )}
-                  </View>
-                  <View style={{ flex: 1, gap: 2 }}>
-                    <Text style={{ ...fonts.bold, fontSize: 16 }}>{section.title}</Text>
-                    <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                      {minutes} min{read ? ' · lu' : ''}
-                    </Text>
-                  </View>
-                  <Icon name="chevron-forward" variant="secondary" size="small" />
-                </Pressable>
-              </Link>
-            ))}
+                    <View
+                      style={{
+                        width: 40,
+                        height: 40,
+                        borderRadius: 20,
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        backgroundColor: read ? colors.tint : colors.tintSoft,
+                      }}
+                    >
+                      {read ? (
+                        <Icon name="checkmark" variant="onColor" size="medium" />
+                      ) : (
+                        <Icon name={section.icon} variant="onGlass" size="small" />
+                      )}
+                    </View>
+                    <View style={{ flex: 1, gap: 2 }}>
+                      <Text style={{ ...fonts.bold, fontSize: 16 }}>{section.title}</Text>
+                      <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                        {minutes} min{read ? ' · lu' : ''}
+                      </Text>
+                    </View>
+                    <Icon name="chevron-forward" variant="secondary" size="small" />
+                  </Pressable>
+                </Link>
+              ))}
+            </View>
           </View>
-        </View>
-      ))}
+        ))}
+      </View>
     </Page>
   );
 }

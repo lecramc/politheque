@@ -6,6 +6,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { tv } from '@/src/core/web/tv';
 import { Page } from '@/src/programmes/components/Page';
 import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
 import { pageMetaViewModel } from '@/src/programmes/view-models/page-meta.view-model';
@@ -19,14 +20,19 @@ export default function DebatesScreen() {
   const { colors, effects, fonts } = useTheme();
 
   return (
-    <Page meta={meta} loading={vm.status !== 'loaded'}>
-      <View style={{ gap: 6 }}>
+    <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
+      <View {...tv('list-col')} style={{ gap: 6 }}>
         <Text variant="title">Les grands débats</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
           Pour chaque sujet : les enjeux, les chiffres, ce que proposent les partis.
         </Text>
       </View>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.sm }}>
+      {/* Mobile : 2 colonnes qui passent à la ligne. Dès 768 px : grille de 2 puis 3 colonnes (CSS),
+          jamais de carte orpheline étirée. */}
+      <View
+        {...tv('grid-3')}
+        style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.sm }}
+      >
         {vm.themes.map((theme) => (
           <Link
             key={theme.id}

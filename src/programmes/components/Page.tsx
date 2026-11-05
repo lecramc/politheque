@@ -7,7 +7,6 @@ import {
   Platform,
   ScrollView,
   StyleSheet,
-  useWindowDimensions,
   View,
 } from 'react-native';
 import Animated, {
@@ -17,15 +16,18 @@ import Animated, {
   withTiming,
 } from 'react-native-reanimated';
 
+import { layout } from '@/components/layout';
 import { duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
+import { Only } from '@/src/core/components/Only';
 import { APP_NAME } from '@/src/core/config/app';
-import { useHydrated } from '@/src/core/hooks/useHydrated';
+import { tv } from '@/src/core/web/tv';
 import { Breadcrumb } from '@/src/programmes/components/Breadcrumb';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
+import { RailLayout } from '@/src/programmes/components/RailLayout';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { PageSkeleton } from '@/src/programmes/components/Skeleton';
 import { hasReachedEnd } from '@/src/programmes/models/reach-end.service';
@@ -45,20 +47,10 @@ const NAV: { href: Href; label: string; icon: string }[] = [
   { href: '/me-situer', label: 'Me situer', icon: 'compass-outline' },
 ];
 
-export const CONTENT_MAX_WIDTH = 760;
-const DESKTOP_BREAKPOINT = 768;
+/** Largeur max du contenu en natif et sous 768 px (au-delà, la CSS `container` prend le relais). */
+const BASE_MAX_WIDTH = 760;
 const TAB_BAR_HEIGHT = 64;
 const ARC_WIDTH = 24;
-
-/**
- * Mise en page desktop : jamais au premier rendu. Le HTML statique est généré à largeur mobile ;
- * le premier rendu client doit lui être identique, la bascule se fait juste après l'hydratation.
- */
-export const useIsDesktop = () => {
-  const width = useWindowDimensions().width;
-  const hydrated = useHydrated();
-  return hydrated && width >= DESKTOP_BREAKPOINT;
-};
 
 /** Petit arc au-dessus de l'onglet actif : le motif signature sert aussi de repère. */
 function ActiveArc({ color }: { color: string }) {
@@ -114,6 +106,7 @@ function BottomTabBar() {
 
   return (
     <View
+      {...tv('bottom-bar')}
       role="navigation"
       aria-label="Rubriques"
       onLayout={onLayout}
@@ -166,16 +159,21 @@ function BottomTabBar() {
 }
 
 /**
- * Gabarit commun.
- * Mobile : en-tête mince (logo ou « Retour »), barre d'onglets en bas.
- * Desktop : navigation dans l'en-tête, colonne de lecture centrée.
+ * Gabarit commun. La mise en page ne dépend jamais de la largeur de la fenêtre côté JavaScript :
+ * mobile dans les styles React Native, desktop dans la feuille `layout-css` (data-tv). Le HTML
+ * statique et le premier rendu client sont ainsi identiques.
+ *
+ * - Mobile : en-tête mince (logo ou « Retour »), barre d'onglets en bas.
+ * - `hub` : accueil, listes, cartes. `object` : fiche, débat, résultats (rail + colonne).
  */
 export function Page({
   children,
   loading,
   back,
   focus = false,
-  wide = false,
+  template = 'object',
+  rail,
+  railOnMobile = 'stack',
   title,
   meta,
   breadcrumb,
@@ -201,20 +199,47 @@ export function Page({
   children: ReactNode;
   loading?: boolean;
   back?: { label: string; href: string };
-  /** Mode focus (questionnaire) : pas de barre d'onglets. */
+  /** Mode focus (questionnaire) : ni barre d'onglets, ni navigation des rubriques. */
   focus?: boolean;
-  wide?: boolean;
+  /** `hub` : le contenu occupe tout le conteneur ; `object` : colonne de lecture (avec rail). */
+  template?: 'hub' | 'object';
+  /** Gabarit `object` : contenu de la colonne de gauche (collante à partir de 1024 px). */
+  rail?: ReactNode;
+  /** Sous 1024 px, le rail est empilé au-dessus du contenu ou masqué. */
+  railOnMobile?: 'stack' | 'hidden';
 }) {
   const { colors, effects, fonts } = useTheme();
-  const isDesktop = useIsDesktop();
   const pathname = usePathname();
-  const maxWidth = wide && isDesktop ? 1120 : CONTENT_MAX_WIDTH;
   const headMeta =
     meta === undefined && !loading
       ? nonIndexableMeta(title ?? APP_NAME, canonicalPath(pathname))
       : meta;
   const trail = breadcrumb ?? headMeta?.breadcrumb ?? [];
-  const showTabBar = !isDesktop && !focus;
+  const showTabBar = !focus;
+  const logo = (
+    <Link href="/" asChild>
+      <Pressable accessibilityRole="link" accessibilityLabel="Accueil" style={styles.headerButton}>
+        <Logo />
+      </Pressable>
+    </Link>
+  );
+
+  const methodologyLink = (
+    <Link href="/methodologie" asChild>
+      <Pressable
+        accessibilityRole="link"
+        accessibilityLabel="Méthodologie"
+        style={StyleSheet.flatten([styles.headerButton, { alignItems: 'flex-end' }])}
+      >
+        <Only from="md">
+          <Text style={{ color: colors.tint, textDecorationLine: 'underline' }}>Méthodologie</Text>
+        </Only>
+        <Only below="md">
+          <Icon name="information-circle-outline" variant="onGlass" size="medium" />
+        </Only>
+      </Pressable>
+    </Link>
+  );
 
   const measures = useRef({ offsetY: 0, viewportHeight: 0, contentHeight: 0 });
   const reached = useRef(false);
@@ -243,37 +268,32 @@ export function Page({
           borderBottomWidth: StyleSheet.hairlineWidth,
         }}
       >
-        <View
-          style={[
-            styles.headerInner,
-            {
-              maxWidth: isDesktop ? 1120 : CONTENT_MAX_WIDTH,
-              paddingHorizontal: effects.spacing.md,
-            },
-          ]}
-        >
-          {back && !isDesktop ? (
-            <Link href={back.href as never} asChild>
-              <Pressable accessibilityRole="link" style={styles.headerButton}>
-                <Text style={{ ...fonts.bold, color: colors.tint, fontSize: 16 }}>
-                  ‹ {back.label}
-                </Text>
-              </Pressable>
-            </Link>
+        <View {...tv('container')} style={styles.headerInner}>
+          {/* Une seule arborescence : la CSS choisit la variante (mobile < 768 px, desktop). */}
+          {back ? (
+            <>
+              <Only below="md">
+                <Link href={back.href as never} asChild>
+                  <Pressable accessibilityRole="link" style={styles.headerButton}>
+                    <Text style={{ ...fonts.bold, color: colors.tint, fontSize: 16 }}>
+                      ‹ {back.label}
+                    </Text>
+                  </Pressable>
+                </Link>
+              </Only>
+              <Only from="md">{logo}</Only>
+            </>
           ) : (
-            <Link href="/" asChild>
-              <Pressable
-                accessibilityRole="link"
-                accessibilityLabel="Accueil"
-                style={styles.headerButton}
-              >
-                <Logo />
-              </Pressable>
-            </Link>
+            logo
           )}
 
-          {isDesktop ? (
-            <View role="navigation" aria-label="Rubriques" style={styles.desktopNav}>
+          {focus ? null : (
+            <View
+              {...tv('only-from-md')}
+              role="navigation"
+              aria-label="Rubriques"
+              style={styles.desktopNav}
+            >
               {NAV.map((item) => {
                 const active = pathname.startsWith(item.href);
                 return (
@@ -298,23 +318,20 @@ export function Page({
                 );
               })}
             </View>
-          ) : null}
+          )}
 
-          <Link href="/methodologie" asChild>
-            <Pressable
-              accessibilityRole="link"
-              accessibilityLabel="Méthodologie"
-              style={StyleSheet.flatten([styles.headerButton, { alignItems: 'flex-end' }])}
-            >
-              {isDesktop ? (
-                <Text style={{ color: colors.tint, textDecorationLine: 'underline' }}>
-                  Méthodologie
-                </Text>
-              ) : (
-                <Icon name="information-circle-outline" variant="onGlass" size="medium" />
-              )}
-            </Pressable>
-          </Link>
+          {focus && back ? (
+            <Only from="md">
+              <Link href={back.href as never} asChild>
+                <Pressable accessibilityRole="link" style={styles.headerButton}>
+                  <Text style={{ color: colors.tint, textDecorationLine: 'underline' }}>
+                    {back.label}
+                  </Text>
+                </Pressable>
+              </Link>
+            </Only>
+          ) : null}
+          {focus && back ? <Only below="md">{methodologyLink}</Only> : methodologyLink}
         </View>
       </View>
       <Tricolore />
@@ -344,22 +361,15 @@ export function Page({
           measures.current.viewportHeight = e.nativeEvent.layout.height;
           check();
         }}
-        contentContainerStyle={{ paddingBottom: showTabBar ? TAB_BAR_HEIGHT + 16 : 16 }}
       >
         <View
+          {...tv('container')}
           role="main"
           onLayout={(e) => {
             measures.current.contentHeight = e.nativeEvent.layout.height;
             check();
           }}
-          style={[
-            styles.inner,
-            {
-              maxWidth,
-              padding: effects.spacing.md,
-              paddingTop: effects.spacing.lg,
-            },
-          ]}
+          style={[styles.container, styles.mainPadding]}
         >
           {loading ? (
             <PageSkeleton />
@@ -369,41 +379,56 @@ export function Page({
               duration={duration.page}
               style={{ gap: effects.spacing.lg }}
             >
-              {isDesktop && trail.length > 1 ? <Breadcrumb trail={trail} /> : null}
+              {trail.length > 1 ? (
+                <Only from="md">
+                  <Breadcrumb trail={trail} />
+                </Only>
+              ) : null}
               <View role={article ? 'article' : undefined} style={{ gap: effects.spacing.lg }}>
-                {children}
+                {template === 'hub' ? (
+                  children
+                ) : (
+                  <RailLayout rail={rail} railOnMobile={railOnMobile}>
+                    <View style={{ gap: effects.spacing.lg }}>{children}</View>
+                  </RailLayout>
+                )}
               </View>
             </Enter>
           )}
         </View>
         <View
+          {...tv('container')}
           role="contentinfo"
-          style={[
-            styles.inner,
-            {
-              maxWidth,
-              paddingHorizontal: effects.spacing.md,
-              paddingVertical: effects.spacing.md,
-            },
-          ]}
+          style={[styles.container, styles.footerPadding]}
         >
-          <Text style={{ color: colors.text.secondary, fontSize: 14, textAlign: 'center' }}>
-            Site indépendant et non officiel ·{' '}
-            <Link
-              href="/methodologie"
-              style={{ color: colors.tint, textDecorationLine: 'underline' }}
+          {/* Mobile : centré, sans filet. À partir de 768 px : à gauche, filet (CSS). */}
+          <View
+            {...tv('footer-rule')}
+            style={[styles.footerRule, { borderTopColor: colors.surface.border.primary }]}
+          >
+            <Text
+              {...tv('footer-text')}
+              style={[styles.footerText, { color: colors.text.secondary, fontSize: 14 }]}
             >
-              Méthodologie
-            </Link>{' '}
-            ·{' '}
-            <Link
-              href="/corrections"
-              style={{ color: colors.tint, textDecorationLine: 'underline' }}
-            >
-              Corrections
-            </Link>
-          </Text>
+              Site indépendant et non officiel ·{' '}
+              <Link
+                href="/methodologie"
+                style={{ color: colors.tint, textDecorationLine: 'underline' }}
+              >
+                Méthodologie
+              </Link>{' '}
+              ·{' '}
+              <Link
+                href="/corrections"
+                style={{ color: colors.tint, textDecorationLine: 'underline' }}
+              >
+                Corrections
+              </Link>
+            </Text>
+          </View>
         </View>
+        {/* Réserve de la barre du bas : retirée par la CSS à partir de 768 px. */}
+        <View {...tv('scroll-pad')} style={showTabBar ? styles.padWithTabBar : styles.pad} />
       </ScrollView>
 
       {showTabBar ? <BottomTabBar /> : null}
@@ -411,11 +436,28 @@ export function Page({
   );
 }
 
+// Les propriétés que la feuille CSS surcharge (largeur max, marges latérales, hauteur de la
+// réserve) viennent d'ici et pas d'un style en ligne : un style en ligne l'emporterait.
 const styles = StyleSheet.create({
-  inner: { width: '100%', alignSelf: 'center' },
+  container: {
+    width: '100%',
+    alignSelf: 'center',
+    maxWidth: BASE_MAX_WIDTH,
+    paddingLeft: layout.gutter.base,
+    paddingRight: layout.gutter.base,
+  },
+  mainPadding: { paddingTop: 28, paddingBottom: 20 },
+  footerPadding: { paddingTop: 0, paddingBottom: 20 },
+  footerRule: { paddingTop: 20 },
+  footerText: { textAlign: 'center' },
+  pad: { height: 16 },
+  padWithTabBar: { height: TAB_BAR_HEIGHT + 16 },
   headerInner: {
     width: '100%',
     alignSelf: 'center',
+    maxWidth: BASE_MAX_WIDTH,
+    paddingLeft: layout.gutter.base,
+    paddingRight: layout.gutter.base,
     minHeight: 56,
     flexDirection: 'row',
     alignItems: 'center',
@@ -424,7 +466,7 @@ const styles = StyleSheet.create({
   },
   headerButton: { minHeight: 44, minWidth: 44, justifyContent: 'center' },
   desktopNav: { flexDirection: 'row', gap: 4, flex: 1, justifyContent: 'center' },
-  desktopNavItem: { paddingHorizontal: 14, paddingVertical: 8, borderRadius: 999 },
+  desktopNavItem: { paddingHorizontal: 10, paddingVertical: 8, borderRadius: 999 },
   slidingArc: { position: 'absolute', top: 3, left: 0 },
   tabBar: {
     position: 'absolute',

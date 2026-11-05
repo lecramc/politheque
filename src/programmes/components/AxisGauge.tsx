@@ -4,7 +4,7 @@ import Svg, { Circle, Line } from 'react-native-svg';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
-import { useIsDesktop } from '@/src/programmes/components/Page';
+import { Only } from '@/src/core/components/Only';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 
 const GEOMETRY = {
@@ -22,15 +22,7 @@ const DEFAULT_FULL_WIDTH = 280;
  * Réglette bipolaire : -1 (pôle négatif, à gauche) → +1 (pôle positif, à droite).
  * Remplissage toujours en `tint` des deux côtés ; la couleur du parti n'apparaît qu'en anneau.
  */
-export function AxisGauge({
-  position,
-  color,
-  variant,
-  negativePole,
-  positivePole,
-  side = null,
-  accessibilityLabel,
-}: {
+type GaugeProps = {
   /** -1 à +1, null = non placé. */
   position: number | null;
   color: string;
@@ -39,13 +31,43 @@ export function AxisGauge({
   positivePole?: string;
   side?: 'negative' | 'positive' | null;
   accessibilityLabel?: string;
-}) {
+};
+
+/**
+ * La version `mini` existe en deux largeurs (56 px sous 768 px, 72 px ensuite), toutes deux
+ * rendues ; la CSS en masque une, sans lire la largeur de la fenêtre en JavaScript.
+ */
+export function AxisGauge(props: GaugeProps) {
+  if (props.variant === 'mini') {
+    return (
+      <>
+        <Only below="md">
+          <Gauge {...props} miniWidth={MINI_WIDTH} />
+        </Only>
+        <Only from="md">
+          <Gauge {...props} miniWidth={MINI_WIDTH_DESKTOP} />
+        </Only>
+      </>
+    );
+  }
+  return <Gauge {...props} miniWidth={MINI_WIDTH} />;
+}
+
+function Gauge({
+  position,
+  color,
+  variant,
+  negativePole,
+  positivePole,
+  side = null,
+  accessibilityLabel,
+  miniWidth,
+}: GaugeProps & { miniWidth: number }) {
   const { colors, effects, fonts } = useTheme();
-  const isDesktop = useIsDesktop();
   const [measured, setMeasured] = useState(DEFAULT_FULL_WIDTH);
   const g = GEOMETRY[variant];
   const full = variant === 'full';
-  const width = full ? measured : isDesktop ? MINI_WIDTH_DESKTOP : MINI_WIDTH;
+  const width = full ? measured : miniWidth;
   const x = (p: number) => g.pad + ((p + 1) / 2) * (width - 2 * g.pad);
   const mid = x(0);
   const y = g.height / 2;

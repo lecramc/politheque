@@ -5,6 +5,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { tv } from '@/src/core/web/tv';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyRow, RowGroup } from '@/src/programmes/components/PartyRow';
 import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
@@ -48,38 +49,40 @@ export default function PartiesScreen() {
   );
 
   return (
-    <Page meta={meta} loading={vm.status !== 'loaded'}>
-      <View style={{ gap: 6 }}>
-        <Text variant="title">Les partis</Text>
-        <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
-          {vm.parties.length} partis, par ordre alphabétique.
-        </Text>
+    <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
+      <View {...tv('list-col')} style={{ gap: effects.spacing.lg }}>
+        <View style={{ gap: 6 }}>
+          <Text variant="title">Les partis</Text>
+          <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
+            {vm.parties.length} partis, par ordre alphabétique.
+          </Text>
+        </View>
+        <ScrollView
+          horizontal
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={{ gap: 8 }}
+        >
+          {chip('Tous', !onlyRunning, () => setOnlyRunning(false))}
+          {chip('Avec une candidature en 2027', onlyRunning, () => setOnlyRunning(true))}
+        </ScrollView>
+        <RowGroup>
+          {parties.map((party, index) => {
+            const candidacy = party.candidacies[ELECTION_ID];
+            const founded = party.history
+              ? `Fondé en ${party.history.founded.match(/\d{4}/)?.[0] ?? ''}`
+              : '';
+            const candidate = candidacy ? `Candidature : ${candidacy.candidateName}` : '';
+            return (
+              <PartyRow
+                key={party.id}
+                party={party}
+                first={index === 0}
+                subtitle={[founded, candidate].filter(Boolean).join(' · ')}
+              />
+            );
+          })}
+        </RowGroup>
       </View>
-      <ScrollView
-        horizontal
-        showsHorizontalScrollIndicator={false}
-        contentContainerStyle={{ gap: 8 }}
-      >
-        {chip('Tous', !onlyRunning, () => setOnlyRunning(false))}
-        {chip('Avec une candidature en 2027', onlyRunning, () => setOnlyRunning(true))}
-      </ScrollView>
-      <RowGroup>
-        {parties.map((party, index) => {
-          const candidacy = party.candidacies[ELECTION_ID];
-          const founded = party.history
-            ? `Fondé en ${party.history.founded.match(/\d{4}/)?.[0] ?? ''}`
-            : '';
-          const candidate = candidacy ? `Candidature : ${candidacy.candidateName}` : '';
-          return (
-            <PartyRow
-              key={party.id}
-              party={party}
-              first={index === 0}
-              subtitle={[founded, candidate].filter(Boolean).join(' · ')}
-            />
-          );
-        })}
-      </RowGroup>
     </Page>
   );
 }

@@ -1,13 +1,11 @@
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import React, { useEffect } from 'react';
-import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { FurtherLinks } from '@/src/programmes/components/FurtherLinks';
 import { GlanceQuestions } from '@/src/programmes/components/GlanceQuestions';
 import { KeyIdeaList } from '@/src/programmes/components/KeyIdeaList';
-import { useIsDesktop } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyJourneyBlock } from '@/src/programmes/components/PartyJourneyBlock';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
@@ -20,7 +18,6 @@ export default function PartyOverviewScreen() {
   const { id, onglet } = useLocalSearchParams<{ id: string; onglet?: string }>();
   const vm = useViewModel(partyViewModel(id));
   const { effects } = useTheme();
-  const isDesktop = useIsDesktop();
   const router = useRouter();
   const party = vm.party;
 
@@ -38,36 +35,18 @@ export default function PartyOverviewScreen() {
     <TabPanel id="en-bref" style={{ gap: effects.spacing.lg }}>
       {meta ? <SeoHead meta={meta} /> : null}
       {vm.keyIdeas ? <KeyIdeaList keyIdeas={vm.keyIdeas} partyName={party.name} /> : null}
-      <View
-        style={{
-          flexDirection: isDesktop ? 'row' : 'column',
-          alignItems: 'flex-start',
-          gap: effects.spacing.lg,
-        }}
-      >
-        <View style={{ flex: isDesktop ? 3 : undefined, width: isDesktop ? undefined : '100%' }}>
-          <GlanceQuestions
-            items={vm.glance}
-            intro={vm.glanceIntro}
-            positionsLabel={vm.positionsLabel}
-            positionsHref={partyHref(party.id, 'positions')}
-          />
-        </View>
-        <View
-          style={{
-            flex: isDesktop ? 2 : undefined,
-            width: isDesktop ? undefined : '100%',
-            gap: effects.spacing.md,
-          }}
-        >
-          <FurtherLinks links={vm.further} />
-          <PageSources
-            sources={vm.sourcesBySection['en-bref']}
-            verifiedOn={vm.verifiedOn}
-            updatedOn={vm.updatedOn}
-          />
-        </View>
-      </View>
+      <GlanceQuestions
+        items={vm.glance}
+        intro={vm.glanceIntro}
+        positionsLabel={vm.positionsLabel}
+        positionsHref={partyHref(party.id, 'positions')}
+      />
+      <FurtherLinks links={vm.further} />
+      <PageSources
+        sources={vm.sourcesBySection['en-bref']}
+        verifiedOn={vm.verifiedOn}
+        updatedOn={vm.updatedOn}
+      />
       {vm.nextParty ? (
         <PartyJourneyBlock
           partyId={party.id}

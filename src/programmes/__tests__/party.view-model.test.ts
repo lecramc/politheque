@@ -103,3 +103,16 @@ describe('Feature: section procédures de la fiche parti', () => {
     expect(vm.sections.map((s) => s.id)).not.toContain('procedures');
   });
 });
+
+describe('Feature: positions regroupées par thème', () => {
+  it('should group the stances in the same theme order for every party', () => {
+    const order = (id: string) => vmOf(id).stancesByTheme.map((group) => group.theme.id);
+    expect(order('alpha')).toEqual(order('sans-histoire'));
+  });
+
+  it('should keep every question in exactly one group', () => {
+    const vm = vmOf('alpha');
+    const grouped = vm.stancesByTheme.flatMap((group) => group.items.map((i) => i.question.id));
+    expect(grouped.sort()).toEqual(vm.stances.map((s) => s.question.id).sort());
+  });
+});

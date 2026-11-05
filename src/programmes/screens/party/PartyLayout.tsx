@@ -4,8 +4,9 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
-import { Page, useIsDesktop } from '@/src/programmes/components/Page';
+import { Page } from '@/src/programmes/components/Page';
 import { PartyHeader } from '@/src/programmes/components/PartyHeader';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
@@ -25,9 +26,12 @@ export default function PartyLayout() {
   const pathname = usePathname();
   const vm = useViewModel(partyViewModel(id));
   const { colors, effects } = useTheme();
-  const isDesktop = useIsDesktop();
   const [sheet, setSheet] = useState<'famille' | 'candidat' | null>(null);
   const party = vm.party;
+  // Compteurs de la liste verticale : seule « Positions » en a un (le nombre de questions).
+  const tabsWithCounts = vm.sections.map((s) =>
+    s.id === 'positions' ? { ...s, count: String(vm.stances.length) } : s
+  );
   const presidential = vm.presidential;
   const section = sectionFromPath(pathname) ?? 'en-bref';
 
@@ -43,50 +47,46 @@ export default function PartyLayout() {
     <Page
       meta={null}
       article
-      wide
       breadcrumb={vm.metaBySection?.[section]?.breadcrumb}
       loading={vm.status !== 'loaded'}
       back={{ label: 'Partis', href: '/partis' }}
       onReachEnd={vm.markRead}
-    >
-      {party ? (
-        <>
-          <View
-            style={{
-              flexDirection: isDesktop ? 'row' : 'column',
-              alignItems: 'flex-start',
-              gap: effects.spacing.lg,
-            }}
-          >
-            <View
-              style={[
-                { gap: effects.spacing.md },
-                isDesktop
-                  ? ({ width: 340, position: 'sticky', top: 16 } as never)
-                  : { width: '100%' },
-              ]}
-            >
-              <PartyHeader
-                party={party}
-                candidacy={presidential?.candidacy ?? null}
-                identityLine={vm.identityLine}
-                onOpenFamily={() => setSheet('famille')}
-                onOpenCandidate={() => setSheet('candidat')}
+      railOnMobile="stack"
+      rail={
+        party ? (
+          <>
+            <PartyHeader
+              party={party}
+              candidacy={presidential?.candidacy ?? null}
+              identityLine={vm.identityLine}
+              onOpenFamily={() => setSheet('famille')}
+              onOpenCandidate={() => setSheet('candidat')}
+            />
+            {/* Même navigation, deux présentations : liste verticale dès 1024 px, onglets sinon. */}
+            <Only from="lg">
+              <Tabs
+                tabs={tabsWithCounts}
+                value={section}
+                hrefOf={(sectionId) => partyHref(party.id, sectionId)}
+                navLabel="Sections de la fiche"
+                vertical
               />
+            </Only>
+            <Only below="lg">
               <Tabs
                 tabs={vm.sections}
                 value={section}
                 hrefOf={(sectionId) => partyHref(party.id, sectionId)}
                 navLabel="Sections de la fiche"
-                vertical={isDesktop}
               />
-            </View>
-            <View
-              style={{ flex: isDesktop ? 1 : undefined, width: isDesktop ? undefined : '100%' }}
-            >
-              <Slot />
-            </View>
-          </View>
+            </Only>
+          </>
+        ) : undefined
+      }
+    >
+      {party ? (
+        <>
+          <Slot />
 
           <Sheet
             isOpen={sheet === 'famille'}

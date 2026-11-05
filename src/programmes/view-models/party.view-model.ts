@@ -30,6 +30,7 @@ import {
   PARTY_SECTIONS,
   type PartySection,
 } from '@/src/programmes/models/seo/party-sections';
+import { stancesByTheme } from '@/src/programmes/models/stances-by-theme.service';
 import {
   selectCatalog,
   selectCatalogStatus,
@@ -124,6 +125,13 @@ export const partyViewModel =
                 };
               })
             : [];
+        const stances =
+          party && catalog
+            ? catalog.questions.map((question) => ({
+                question,
+                stance: party.stances[question.id] ?? null,
+              }))
+            : [];
         return {
           status,
           party,
@@ -191,13 +199,10 @@ export const partyViewModel =
                   })),
                 }
               : null,
-          stances:
-            party && catalog
-              ? catalog.questions.map((question) => ({
-                  question,
-                  stance: party.stances[question.id] ?? null,
-                }))
-              : [],
+          stances,
+          partyCount: catalog?.parties.length ?? 0,
+          /** Mêmes groupes, dans le même ordre (celui des thèmes), pour les dix partis. */
+          stancesByTheme: catalog ? stancesByTheme(stances, catalog.themes) : [],
         };
       }
     );

@@ -5,16 +5,22 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
+import { Pressable } from '@/components/ui/Pressable';
+import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { guideSectionViewModel } from '@/src/programmes/view-models/guide.view-model';
+import {
+  guideSectionViewModel,
+  guideViewModel,
+} from '@/src/programmes/view-models/guide.view-model';
 
 export default function GuideSectionScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const vm = useViewModel(guideSectionViewModel(id));
+  const guide = useViewModel(guideViewModel);
   const { colors, effects, fonts } = useTheme();
   const [openIndex, setOpenIndex] = useState(0);
   const section = vm.section;
@@ -39,6 +45,62 @@ export default function GuideSectionScreen() {
       article
       loading={vm.status !== 'loaded'}
       back={{ label: 'Comprendre', href: '/comprendre' }}
+      railOnMobile="hidden"
+      rail={
+        section ? (
+          <>
+            <View
+              role="navigation"
+              aria-label="Sommaire du guide"
+              style={{ gap: effects.spacing.sm }}
+            >
+              {guide.groups.map((group) => (
+                <View key={group.id} style={{ gap: effects.spacing.xxs }}>
+                  <Text variant="caption">{group.title}</Text>
+                  {group.rows.map(({ section: item }) => {
+                    const current = item.id === section.id;
+                    return (
+                      <Link
+                        key={item.id}
+                        href={{ pathname: '/comprendre/[id]', params: { id: item.id } }}
+                        asChild
+                      >
+                        <Pressable
+                          accessibilityRole="link"
+                          aria-current={current ? 'page' : undefined}
+                          hoverStyle={{ backgroundColor: colors.surface.hover }}
+                          style={{
+                            minHeight: 40,
+                            justifyContent: 'center',
+                            paddingHorizontal: effects.spacing.sm,
+                            borderRadius: effects.borderRadius.xs,
+                            backgroundColor: current ? colors.tintSoft : 'transparent',
+                          }}
+                        >
+                          <Text
+                            style={{
+                              ...(current ? fonts.bold : fonts.regular),
+                              fontSize: 15,
+                              color: current ? colors.tint : colors.text.primary,
+                            }}
+                          >
+                            {item.title}
+                          </Text>
+                        </Pressable>
+                      </Link>
+                    );
+                  })}
+                </View>
+              ))}
+            </View>
+            {vm.next ? (
+              <Button variant="secondary" href={`/comprendre/${vm.next.id}`} onPress={vm.markRead}>
+                {`Section suivante : ${vm.next.title}`}
+              </Button>
+            ) : null}
+          </>
+        ) : undefined
+      }
     >
       {section ? (
         <>
@@ -83,7 +145,7 @@ export default function GuideSectionScreen() {
           </View>
 
           {vm.next ? (
-            <View style={{ gap: effects.spacing.xs }}>
+            <Only below="lg" style={{ gap: effects.spacing.xs }}>
               <Text variant="caption">À suivre</Text>
               <Text style={{ fontSize: effects.sizes.text.body, lineHeight: 24 }}>
                 {vm.next.title}
@@ -91,7 +153,7 @@ export default function GuideSectionScreen() {
               <Button variant="brand" href={`/comprendre/${vm.next.id}`} onPress={vm.markRead}>
                 Section suivante
               </Button>
-            </View>
+            </Only>
           ) : (
             <Link href="/comprendre">
               <Text style={{ color: colors.tint, ...fonts.bold }}>Retour au sommaire →</Text>
