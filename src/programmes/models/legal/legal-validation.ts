@@ -336,6 +336,10 @@ function checkCoherence(c: Collector, e: LegalEntry) {
       if (lastStep.outcome !== 'annulation')
         c.add('coherence', 'steps', 'la dernière étape n’annule pas la mise en examen');
       break;
+    case 'demande-rejetee':
+      if (lastStep.outcome !== 'rejet')
+        c.add('coherence', 'steps', 'la dernière étape n’est pas une décision civile de rejet');
+      break;
     case 'condamnation-non-definitive':
       if (lastDecision?.outcome !== 'condamnation')
         c.add('coherence', 'steps', 'la dernière décision n’est pas une condamnation');

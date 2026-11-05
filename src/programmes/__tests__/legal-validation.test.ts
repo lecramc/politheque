@@ -169,6 +169,18 @@ describe('Feature: validation d’un dossier de procédures', () => {
     expect(rules(checkEntry({ status, steps: [legalStepFactory()] }))).toContain('coherence');
   });
 
+  it('should accept a rejected request only if the last step is a civil decision of rejection', () => {
+    const status = 'demande-rejetee' as const;
+    const rejected = legalStepFactory({
+      kind: 'jugement',
+      court: 'Tribunal judiciaire de Paris',
+      decision: 'Le tribunal déboute le demandeur de sa demande.',
+      outcome: 'rejet',
+    });
+    expect(checkEntry({ status, nature: 'civile-administrative', steps: [rejected] })).toEqual([]);
+    expect(rules(checkEntry({ status, steps: [legalStepFactory()] }))).toContain('coherence');
+  });
+
   it('should reject penalties on a step that is not a conviction', () => {
     const issues = checkEntry({
       steps: [legalStepFactory({ penalties: [{ kind: 'amende', euros: 1000 }] })],

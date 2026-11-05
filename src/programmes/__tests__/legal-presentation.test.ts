@@ -25,7 +25,8 @@ describe('Feature: présentation des procédures', () => {
       'Condamnation non définitive (recours en cours)'
     );
     expect(STATUS_LABELS.classement).toBe('Classement sans suite');
-    expect(Object.keys(STATUS_LABELS)).toHaveLength(14);
+    expect(Object.keys(STATUS_LABELS)).toHaveLength(15);
+    expect(STATUS_LABELS['demande-rejetee']).toBe('Demande rejetée');
   });
 
   it('should label an annulled mise en examen without any hint of guilt', () => {
@@ -99,6 +100,22 @@ describe('Feature: présentation des procédures', () => {
     );
     expect(entry.categoryLabel).toBe('Décision civile ou administrative');
     expect(entry.statusLabel).toBe('Décision définitive défavorable');
+  });
+
+  it('should present a rejected civil request as a civil decision, without presumption notice nor hint of guilt', () => {
+    const [entry] = allEntries(
+      present(
+        legalEntryFactory({
+          nature: 'civile-administrative',
+          status: 'demande-rejetee',
+          category: 'propos-discrimination',
+        })
+      )
+    );
+    expect(entry.categoryLabel).toBe('Décision civile ou administrative');
+    expect(entry.statusLabel).toBe('Demande rejetée');
+    expect(entry.presumptionNotice).toBeNull();
+    expect(entry.statusLabel).not.toMatch(/condamn|coupable|relaxe/i);
   });
 
   it('should show the editor wording of an entry next to its status, except when generated', () => {

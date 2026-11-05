@@ -60,6 +60,7 @@ export const STATUS_LABELS: Record<LegalStatus, string> = {
   classement: 'Classement sans suite',
   'extinction-action-publique': 'Action publique éteinte',
   'mise-en-examen-annulee': 'Mise en examen annulée',
+  'demande-rejetee': 'Demande rejetée',
 };
 
 /** Statuts pour lesquels le rappel de la présomption d'innocence est affiché. */

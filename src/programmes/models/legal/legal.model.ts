@@ -20,6 +20,7 @@ export const LEGAL_STATUSES = [
   'classement',
   'extinction-action-publique', // décès, prescription
   'mise-en-examen-annulee', // annulée par une juridiction, sans non-lieu (brief § 7.3)
+  'demande-rejetee', // décision civile favorable à la personne, ex. déboutement (brief § 10.3)
 ] as const;
 /** Statut juridique exact, liste fermée (brief § 2, D-A4). */
 export type LegalStatus = (typeof LEGAL_STATUSES)[number];
@@ -74,7 +75,13 @@ export const STEP_KINDS = [
 ] as const;
 export type StepKind = (typeof STEP_KINDS)[number];
 
-export const STEP_OUTCOMES = ['condamnation', 'relaxe', 'acquittement', 'annulation'] as const;
+export const STEP_OUTCOMES = [
+  'condamnation',
+  'relaxe',
+  'acquittement',
+  'annulation',
+  'rejet',
+] as const;
 export type StepOutcome = (typeof STEP_OUTCOMES)[number] | null;
 
 export interface LegalStep {

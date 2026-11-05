@@ -63,6 +63,7 @@ export const STATUS_STEP: Record<LegalStatus, { kind: StepKind | 'court'; outcom
     classement: { kind: 'classement', outcome: null },
     'extinction-action-publique': { kind: 'extinction', outcome: null },
     'mise-en-examen-annulee': { kind: 'mise-en-examen', outcome: 'annulation' },
+    'demande-rejetee': { kind: 'court', outcome: 'rejet' },
   };
 
 const DATE_PART = String.raw`\d{4}(?:-\d{2}(?!\d)(?:-\d{2}(?!\d))?)?`;

@@ -319,6 +319,29 @@ describe('Feature: promotion d’un brouillon-2 (schéma des dossiers docs/affai
     expect(result.dossier.entries[1].steps[0].outcome).toBe('annulation');
   });
 
+  it('should promote a rejected civil request with a rejection outcome', () => {
+    const result = promoteDraft(
+      brouillon({
+        entries: [
+          brouillonEntry({
+            nature: 'civile-administrative',
+            statut: 'demande-rejetee',
+            peine: null,
+            resume: 'Le tribunal a débouté le demandeur de sa demande.',
+          }),
+        ],
+      }),
+      ctx
+    );
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+    expect(result.dossier.entries[0]).toMatchObject({
+      status: 'demande-rejetee',
+      nature: 'civile-administrative',
+    });
+    expect(result.dossier.entries[0].steps.at(-1)?.outcome).toBe('rejet');
+  });
+
   it('should date an undated step from the earliest precise source, never from a bare year', () => {
     const dated = (date: string, host = 'lemonde.fr') => ({
       ...source('Article', `https://www.${host}/a`),
