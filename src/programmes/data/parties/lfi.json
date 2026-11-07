@@ -4,7 +4,7 @@
   "shortName": "LFI",
   "color": "#CC2443",
   "family": "Gauche radicale (la plupart des politistes ; « gauche populiste » pour certains ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, rattachement jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse l'étiquette « extrême gauche »)",
-  "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est annoncée pour les 6 et 7 novembre 2026. Jean-Luc Mélenchon a été condamné en 2019 à une peine d'emprisonnement avec sursis pour rébellion et provocation ; voir le détail de la candidature.",
+  "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est parue en librairie le 6 novembre 2026. Jean-Luc Mélenchon a été condamné en 2019 à une peine d'emprisonnement avec sursis pour rébellion et provocation ; voir le détail de la candidature.",
   "foundedYear": 2016,
   "leader": {
     "name": "Manuel Bompard",
@@ -14,7 +14,7 @@
     {
       "id": "retablir-l-impot-sur-la-fortune-et-creer-la-taxe-z",
       "title": "Rétablir l'impôt sur la fortune et créer la taxe Zucman",
-      "text": "Un « impôt sur la fortune renforcé » et un impôt minimum sur les patrimoines de plus de 100 millions d'euros.",
+      "text": "Rétablir un ISF « incluant un volet climatique » et un impôt minimum sur les patrimoines de plus de 100 millions d'euros.",
       "measureRefs": ["economie.0"],
       "relatedQuestionIds": ["q01-isf"]
     },
@@ -26,11 +26,11 @@
       "relatedQuestionIds": ["q05-smic"]
     },
     {
-      "id": "interdire-le-glyphosate-et-les-neonicotinoides",
-      "title": "Interdire le glyphosate et les néonicotinoïdes",
-      "text": "Interdire le glyphosate et les néonicotinoïdes, avec un accompagnement financier des agriculteurs.",
-      "measureRefs": ["ecologie.2"],
-      "relatedQuestionIds": ["q14-normes-agricoles"]
+      "id": "inscrire-la-regle-verte-dans-la-constitution",
+      "title": "Inscrire la « règle verte » dans la Constitution",
+      "text": "Interdire de prélever sur la nature davantage que ce qu'elle peut reconstituer, par une règle inscrite dans la Constitution.",
+      "measureRefs": ["ecologie.4"],
+      "relatedQuestionIds": []
     },
     {
       "id": "passer-a-une-6e-republique",
@@ -658,7 +658,7 @@
     },
     "q04-retraite": {
       "stance": 2,
-      "justification": "LFI propose d'abroger la réforme de 2023 et vise la retraite à 60 ans avec 40 annuités au cours du mandat, ce qui inclut le retour à 62 ans.",
+      "justification": "L'édition 2027 de « L'Avenir en commun » prévoit d'abroger la réforme de 2023 et de revenir à 62 ans, avant de rétablir « à terme » la retraite à 60 ans pour 40 annuités.",
       "sources": [
         {
           "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -677,6 +677,18 @@
           "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
           "date": "2026-10-14",
           "kind": "presse"
+        },
+        {
+          "title": "France 24 (AFP), « La France insoumise présente un programme pour la présidentielle 2027 fidèle à sa volonté de rupture »",
+          "url": "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
+          "date": "2026-11-06",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+          "date": "2026-11-06",
+          "kind": "presse"
         }
       ]
     },
@@ -694,6 +706,12 @@
           "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
           "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
           "date": "2026-10-30",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+          "date": "2026-11-06",
           "kind": "presse"
         }
       ]
@@ -796,7 +814,7 @@
     },
     "q12-nucleaire": {
       "stance": -2,
-      "justification": "« L'Avenir en commun » (2022) prévoit de sortir du nucléaire et d'abandonner les projets d'EPR. Édition 2027 du programme non encore publiée.",
+      "justification": "L'édition 2027 de « L'Avenir en commun » maintient la sortie « progressive » du nucléaire ; l'édition 2022 prévoyait d'abandonner les projets d'EPR.",
       "sources": [
         {
           "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
@@ -815,12 +833,24 @@
           "url": "https://www.linfodurable.fr/politique/le-programme-ecolo-de-jean-luc-melenchon-31349",
           "date": "2022-03-29",
           "kind": "presse"
+        },
+        {
+          "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+          "date": "2026-11-06",
+          "kind": "presse"
+        },
+        {
+          "title": "France 24 (AFP), « La France insoumise présente un programme pour la présidentielle 2027 fidèle à sa volonté de rupture »",
+          "url": "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
+          "date": "2026-11-06",
+          "kind": "presse"
         }
       ]
     },
     "q13-renouvelables": {
       "stance": 2,
-      "justification": "Objectif de 100 % d'énergies renouvelables en 2050 ; le NFP vise à faire de la France le leader européen de l'éolien en mer.",
+      "justification": "Objectif de 100 % d'énergies renouvelables « au plus tard en 2060 » (2050 dans l'édition 2022) ; le NFP vise à faire de la France le leader européen de l'éolien en mer.",
       "sources": [
         {
           "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
@@ -833,6 +863,18 @@
           "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
           "date": "2024-06",
           "kind": "programme"
+        },
+        {
+          "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+          "date": "2026-11-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme »",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+          "date": "2026-11-06",
+          "kind": "presse"
         }
       ]
     },
@@ -959,6 +1001,12 @@
           "url": "https://howtheyvote.eu/votes/160105",
           "date": "2023-11-21",
           "kind": "vote"
+        },
+        {
+          "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+          "date": "2026-11-06",
+          "kind": "presse"
         }
       ]
     },
@@ -993,7 +1041,7 @@
     },
     "q24-proportionnelle": {
       "stance": 2,
-      "justification": "Le programme NFP soutenu par LFI prévoit d'instaurer la proportionnelle.",
+      "justification": "L'édition 2027 de « L'Avenir en commun », comme le programme NFP soutenu par LFI, prévoit d'élire l'Assemblée nationale à la proportionnelle.",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
@@ -1005,6 +1053,12 @@
           "title": "Public Sénat, « Le programme des 100 premiers jours du \"Nouveau Front populaire\" »",
           "url": "https://www.publicsenat.fr/actualites/politique/le-programme-des-100-premiers-jours-du-nouveau-front-populaire",
           "date": "2024-06-14",
+          "kind": "presse"
+        },
+        {
+          "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+          "date": "2026-11-06",
           "kind": "presse"
         }
       ]
@@ -1280,14 +1334,14 @@
       "status": "declare",
       "statusLabel": "Candidat déclaré",
       "candidate": "Jean-Luc Mélenchon a déclaré sa candidature le 3 mai 2026 au journal de 20 h de TF1, après sa désignation le même jour par les élus du mouvement. Le 9 décembre 2019, le tribunal correctionnel de Bobigny l'avait condamné à trois mois d'emprisonnement avec sursis et 8 000 € d'amende pour rébellion et provocation lors de la perquisition du siège de LFI en octobre 2018 ; il avait dénoncé un « jugement politique » et n'avait pas fait appel.",
-      "programmeStatus": "Une nouvelle édition de « L'Avenir en commun » pour 2027 (intitulée « Nouvelle France » selon LCP) a été annoncée pour les 6 et 7 novembre 2026 ; tant qu'elle n'est pas intégrée ici, la fiche s'appuie sur les documents antérieurs : le document d'orientations budgétaires 2027 publié en octobre 2026, « L'Avenir en commun » édition 2022, le contrat de législature du Nouveau Front populaire (2024) et les votes du groupe LFI-NFP.",
-      "programmeState": "non-publie",
+      "programmeStatus": "Programme présidentiel 2027 « L'Avenir en commun », sous-titré « le programme de la Nouvelle France », paru en librairie le 6 novembre 2026 (cinquième édition, 1 069 mesures dont 238 nouvelles selon le mouvement). Le texte intégral n'est pas publié en ligne : les mesures de cette édition sont citées d'après des comptes rendus de presse. La fiche s'appuie aussi sur les orientations budgétaires 2027 (octobre 2026), le contrat de législature du Nouveau Front populaire (2024), « L'Avenir en commun » édition 2022 et les votes du groupe LFI-NFP.",
+      "programmeState": "publie",
       "themes": {
         "economie": {
           "summary": "LFI propose d'augmenter les recettes fiscales d'environ 106 Md€ en 2027 en ciblant les plus hauts patrimoines, les revenus du capital et les grandes entreprises, et de financer des investissements via un « pôle public bancaire ». Elle rejette la réduction des dépenses publiques comme moyen de réduire la dette.",
           "measures": [
             {
-              "text": "Rétablir un « impôt sur la fortune renforcé » (10 Md€ attendus) et instaurer la taxe Zucman sur les patrimoines de plus de 100 M€ (15 Md€).",
+              "text": "Rétablir l'impôt sur la fortune, « incluant un volet climatique » (10 Md€ attendus), et instaurer la taxe Zucman sur les patrimoines de plus de 100 M€ (15 Md€).",
               "sources": [
                 {
                   "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -1299,6 +1353,12 @@
                   "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
                   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
                   "date": "2026-10-14",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
                   "kind": "presse"
                 }
               ]
@@ -1329,11 +1389,17 @@
                   "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
                   "date": "2024-06-14",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Réformer les droits de succession (20 Md€ la première année) et instaurer un « héritage maximum » (NFP 2024).",
+              "text": "Réformer les droits de succession (20 Md€ la première année) et instaurer un « héritage maximal » de 12 millions d'euros.",
               "sources": [
                 {
                   "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -1357,6 +1423,12 @@
                   "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
                   "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
                   "date": "2024-06-14",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
                   "kind": "presse"
                 }
               ]
@@ -1392,7 +1464,7 @@
           ]
         },
         "travail": {
-          "summary": "Le mouvement propose une hausse du SMIC, l'abrogation de la réforme des retraites de 2023 avec un objectif de retraite à 60 ans, et l'abrogation des réformes récentes de l'assurance chômage et du RSA.",
+          "summary": "Le mouvement propose une hausse du SMIC, l'abrogation de la réforme des retraites de 2023 avec un retour à 62 ans puis, « à terme », la retraite à 60 ans, et l'abrogation des réformes récentes de l'assurance chômage et du RSA.",
           "measures": [
             {
               "text": "Porter le SMIC à 1 700 € net, convoquer une conférence sur les salaires et indexer les salaires sur l'inflation.",
@@ -1408,11 +1480,17 @@
                   "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
                   "date": "2026-10-30",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Abroger la réforme portant l'âge légal à 64 ans (9 Md€), « premier pas » vers la retraite à 60 ans avec 40 annuités sur le mandat.",
+              "text": "Abroger la réforme portant l'âge légal à 64 ans (9 Md€) et revenir à 62 ans, puis rétablir « à terme » la retraite à 60 ans à taux plein pour 40 annuités.",
               "sources": [
                 {
                   "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
@@ -1430,6 +1508,24 @@
                   "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
                   "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
                   "date": "2024-06-14",
+                  "kind": "presse"
+                },
+                {
+                  "title": "France 24 (AFP), « La France insoumise présente un programme pour la présidentielle 2027 fidèle à sa volonté de rupture »",
+                  "url": "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
+                  "date": "2026-11-06",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Public Sénat, « Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+                  "date": "2026-11-06",
                   "kind": "presse"
                 }
               ]
@@ -1458,13 +1554,19 @@
               ]
             },
             {
-              "text": "Augmenter de 10 % le point d'indice des fonctionnaires (17 Md€).",
+              "text": "Augmenter de 10 % le point d'indice des fonctionnaires (17 Md€) et les APL.",
               "sources": [
                 {
                   "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
                   "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
                   "date": "2026-10",
                   "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
@@ -1638,10 +1740,10 @@
           ]
         },
         "ecologie": {
-          "summary": "LFI défend une « planification écologique » visant 100 % d'énergies renouvelables en 2050 et une sortie du nucléaire. Elle s'oppose aux traités de libre-échange et à la loi Duplomb.",
+          "summary": "LFI place la « bifurcation écologique et sociale » en tête de son programme de 2027 : « règle verte » dans la Constitution, 100 % d'énergies renouvelables au plus tard en 2060 et sortie « progressive » du nucléaire. Elle s'oppose aux traités de libre-échange et à la loi Duplomb.",
           "measures": [
             {
-              "text": "Sortir du nucléaire : abandonner les projets d'EPR et planifier le démantèlement des sites.",
+              "text": "Sortir « progressivement » du nucléaire : abandonner les projets d'EPR et planifier le démantèlement des sites.",
               "sources": [
                 {
                   "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
@@ -1660,22 +1762,40 @@
                   "url": "https://www.linfodurable.fr/politique/le-programme-ecolo-de-jean-luc-melenchon-31349",
                   "date": "2022-03-29",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
+                },
+                {
+                  "title": "France 24 (AFP), « La France insoumise présente un programme pour la présidentielle 2027 fidèle à sa volonté de rupture »",
+                  "url": "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Atteindre 100 % d'énergies renouvelables en 2050 et rénover 700 000 logements par an.",
+              "text": "Atteindre 100 % d'énergies renouvelables « au plus tard en 2060 » (2050 dans l'édition 2022) et baisser de 65 % les émissions de gaz à effet de serre d'ici 2033.",
               "sources": [
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Public Sénat, « Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+                  "date": "2026-11-06",
+                  "kind": "presse"
+                },
                 {
                   "title": "L'Avenir en commun (édition 2022), section 19 « Organiser le 100 % d'énergies renouvelables en 2050 et la rénovation énergétique »",
                   "url": "https://laec.fr/section/19/organiser-le-100-denergies-renouvelables-en-2050-et-la-renovation-energetique",
                   "date": "2021-11",
-                  "kind": "programme"
-                },
-                {
-                  "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
-                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
-                  "date": "2026-10",
                   "kind": "programme"
                 }
               ]
@@ -1704,8 +1824,14 @@
               ]
             },
             {
-              "text": "Investir 10 Md€ dès la première année dans l'adaptation au dérèglement climatique.",
+              "text": "Créer une « conscription citoyenne écologique » obligatoire, rémunérée au SMIC, et investir 10 Md€ dès la première année dans l'adaptation au dérèglement climatique.",
               "sources": [
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
+                },
                 {
                   "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
                   "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
@@ -1715,18 +1841,24 @@
               ]
             },
             {
-              "text": "Annuler le CETA et renoncer à l'accord UE-Mercosur.",
+              "text": "Inscrire dans la Constitution la « règle verte » : ne pas prélever sur la nature davantage que ce qu'elle peut reconstituer.",
               "sources": [
                 {
-                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-                  "date": "2024-06",
-                  "kind": "programme"
+                  "title": "Public Sénat, « Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 },
                 {
-                  "title": "Pleinchamp, « Législatives 2024 : les simili-programmes agricoles et agro-environnementaux »",
-                  "url": "https://www.pleinchamp.com/actualite/legislatives-2024-les-simili-programmes-agricoles-et-agro-environnementaux",
-                  "date": "2024-06",
+                  "title": "France 24 (AFP), « La France insoumise présente un programme pour la présidentielle 2027 fidèle à sa volonté de rupture »",
+                  "url": "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
+                  "date": "2026-11-06",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
                   "kind": "presse"
                 }
               ]
@@ -1890,22 +2022,34 @@
                   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
                   "date": "2026-10-14",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             }
           ]
         },
         "europe": {
-          "summary": "LFI propose de « désobéir » aux règles européennes jugées incompatibles avec son programme et d'affirmer la supériorité de la Constitution sur le droit européen. Le mouvement est opposé aux traités de libre-échange ; sur l'Ukraine, le programme NFP 2024 prévoyait des livraisons d'armes, mais le groupe a voté contre les textes de soutien de 2024 et 2025.",
+          "summary": "LFI propose de « désobéir » aux règles européennes jugées « bloquantes » et d'affirmer la supériorité de la Constitution sur le droit européen. Le mouvement est opposé aux traités de libre-échange et prévoit de quitter l'OTAN. Sur l'Ukraine, le programme de 2027 met en avant un cadre diplomatique ; celui du NFP (2024) prévoyait des livraisons d'armes, et le groupe a voté contre les textes de soutien de 2024 et 2025.",
           "measures": [
             {
-              "text": "Cesser d'appliquer unilatéralement les règles européennes jugées incompatibles (règles budgétaires, concurrence, travail détaché).",
+              "text": "« Désobéir » aux règles européennes « bloquantes » chaque fois que nécessaire et faire voter un moratoire sur les règles de concurrence appliquées aux services publics.",
               "sources": [
                 {
                   "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
                   "url": "https://laec.fr/section/70/desobeir-a-chaque-fois-que-cest-necessaire-pour-mettre-en-uvre-notre-programme",
                   "date": "2021-11",
                   "kind": "programme"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
@@ -1921,7 +2065,7 @@
               ]
             },
             {
-              "text": "Refuser le pacte de stabilité budgétaire et mettre fin aux traités de libre-échange.",
+              "text": "Refuser le pacte de stabilité budgétaire, mettre fin aux traités de libre-échange, annuler le CETA et renoncer à l'accord UE-Mercosur.",
               "sources": [
                 {
                   "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
@@ -1934,11 +2078,17 @@
                   "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
                   "date": "2024-06-14",
                   "kind": "presse"
+                },
+                {
+                  "title": "Pleinchamp, « Législatives 2024 : les simili-programmes agricoles et agro-environnementaux »",
+                  "url": "https://www.pleinchamp.com/actualite/legislatives-2024-les-simili-programmes-agricoles-et-agro-environnementaux",
+                  "date": "2024-06",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Suspendre la participation de la France à « l'Europe de la défense » (opt-out) ; sortir des alliances militaires permanentes comme l'OTAN.",
+              "text": "Quitter « immédiatement » le commandement intégré de l'OTAN, puis l'organisation « par étapes » ; suspendre la participation à « l'Europe de la défense ».",
               "sources": [
                 {
                   "title": "L'Avenir en commun (édition 2022), section 70 « Désobéir à chaque fois que c'est nécessaire pour mettre en œuvre notre programme »",
@@ -1963,22 +2113,22 @@
                   "url": "https://www.publicsenat.fr/article/politique/otan-les-propositions-des-candidats-a-la-presidentielle-200136",
                   "date": "2022-03-25",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
             {
-              "text": "Défendre la souveraineté de l'Ukraine « par la livraison d'armes nécessaires », la saisie des avoirs des oligarques et l'annulation de sa dette extérieure (programme NFP 2024).",
+              "text": "Agir pour un « cadre diplomatique » permettant un cessez-le-feu en Ukraine, le retrait des troupes russes et des négociations, avec des « garanties de sécurité collective ».",
               "sources": [
                 {
-                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-                  "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-                  "date": "2024-06",
-                  "kind": "programme"
-                },
-                {
-                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
-                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
-                  "date": "2024-06-14",
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
                   "kind": "presse"
                 }
               ]
@@ -1986,7 +2136,7 @@
           ]
         },
         "institutions": {
-          "summary": "LFI propose de convoquer une Assemblée constituante pour passer à une 6e République, d'instaurer la proportionnelle et le référendum d'initiative citoyenne, et d'abroger l'article 49.3.",
+          "summary": "LFI propose de convoquer par référendum une Assemblée constituante pour passer à une 6e République, présentée en fin de programme en 2027, d'instaurer la proportionnelle et le référendum d'initiative citoyenne, et d'abroger l'article 49.3.",
           "measures": [
             {
               "text": "Convoquer par référendum (article 11) une Assemblée constituante dont le projet serait soumis à référendum après deux ans.",
@@ -2001,6 +2151,12 @@
                   "title": "Public Sénat, « Le programme des 100 premiers jours du \"Nouveau Front populaire\" »",
                   "url": "https://www.publicsenat.fr/actualites/politique/le-programme-des-100-premiers-jours-du-nouveau-front-populaire",
                   "date": "2024-06-14",
+                  "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
                   "kind": "presse"
                 }
               ]
@@ -2019,6 +2175,12 @@
                   "url": "https://www.publicsenat.fr/actualites/politique/le-programme-des-100-premiers-jours-du-nouveau-front-populaire",
                   "date": "2024-06-14",
                   "kind": "presse"
+                },
+                {
+                  "title": "LCP, « Présidentielle 2027: ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
@@ -2034,13 +2196,19 @@
               ]
             },
             {
-              "text": "Reconnaître le vote blanc, instaurer le vote obligatoire et des parrainages citoyens pour la présidentielle.",
+              "text": "Reconnaître le vote blanc, instaurer le vote obligatoire, le droit de vote à 16 ans et des parrainages citoyens pour la présidentielle.",
               "sources": [
                 {
                   "title": "L'Avenir en commun (édition 2022), section 4 « Une République permettant l'intervention populaire »",
                   "url": "https://laec.fr/section/4/une-republique-permettant-lintervention-populaire",
                   "date": "2021-11",
                   "kind": "programme"
+                },
+                {
+                  "title": "Public Sénat, « Présidentielle 2027 : avec la « Nouvelle France », Jean-Luc Mélenchon fait de l'écologie la clé de voûte de son programme »",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-avec-la-nouvelle-france-jean-luc-melenchon-fait-de-lecologie-la-cle-de-voute-de-son-programme",
+                  "date": "2026-11-06",
+                  "kind": "presse"
                 }
               ]
             },
