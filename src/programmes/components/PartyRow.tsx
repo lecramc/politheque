@@ -1,13 +1,20 @@
 import { Link } from 'expo-router';
 import React, { ReactNode } from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { tv } from '@/src/core/web/tv';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import type { Party } from '@/src/programmes/models/programme.model';
 import { partyHref, type PartySection } from '@/src/programmes/models/seo/party-sections';
+
+const styles = StyleSheet.create({
+  // Traits de la grille à deux colonnes : largeur ici (StyleSheet), la feuille CSS les retire ou
+  // les ajoute selon la colonne ; la couleur vient du thème (style en ligne).
+  gridTopRule: { borderTopWidth: 1 },
+});
 
 /** Ligne dense d'une liste de partis : anneau, nom, une ligne de contexte, chevron. */
 export function PartyRow({
@@ -61,12 +68,14 @@ export function PartyRow({
   );
 }
 
-/** Conteneur blanc qui regroupe des lignes. */
-export function RowGroup({ children }: { children: ReactNode }) {
+/** Conteneur blanc qui regroupe des lignes. `grid` : deux colonnes dès 1024 px (CSS). */
+export function RowGroup({ children, grid = false }: { children: ReactNode; grid?: boolean }) {
   const { colors, effects } = useTheme();
+  const items = React.Children.toArray(children);
   return (
     <View
       role="list"
+      {...(grid ? tv('row-grid') : {})}
       style={{
         backgroundColor: colors.surface.primary,
         borderWidth: 1,
@@ -75,8 +84,31 @@ export function RowGroup({ children }: { children: ReactNode }) {
         overflow: 'hidden',
       }}
     >
-      {React.Children.map(children, (child) =>
-        child ? <View role="listitem">{child}</View> : null
+      {items.map((child, index) =>
+        grid ? (
+          // Grille : c'est l'élément de liste qui porte les traits (la ligne n'en trace pas).
+          <View
+            key={index}
+            role="listitem"
+            {...tv(
+              'row-item',
+              ...(index < 2 ? ['row-no-top'] : []),
+              ...(index % 2 === 0 && index < items.length - 1 ? ['row-rule-right'] : [])
+            )}
+            style={[
+              index > 0 ? styles.gridTopRule : null,
+              { borderColor: colors.surface.border.primary },
+            ]}
+          >
+            {React.isValidElement<{ first?: boolean }>(child)
+              ? React.cloneElement(child, { first: true })
+              : child}
+          </View>
+        ) : (
+          <View key={index} role="listitem">
+            {child}
+          </View>
+        )
       )}
     </View>
   );

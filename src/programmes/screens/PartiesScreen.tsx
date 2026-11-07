@@ -50,14 +50,15 @@ export default function PartiesScreen() {
 
   return (
     <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
-      <View {...tv('list-col')} style={{ gap: effects.spacing.lg }}>
-        <View style={{ gap: 6 }}>
+      <View style={{ gap: effects.spacing.lg }}>
+        <View {...tv('list-col')} style={{ gap: 6 }}>
           <Text variant="title">Les partis</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
             {vm.parties.length} partis, par ordre alphabétique.
           </Text>
         </View>
         <ScrollView
+          {...tv('list-col')}
           horizontal
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={{ gap: 8 }}
@@ -65,7 +66,7 @@ export default function PartiesScreen() {
           {chip('Tous', !onlyRunning, () => setOnlyRunning(false))}
           {chip('Avec une candidature en 2027', onlyRunning, () => setOnlyRunning(true))}
         </ScrollView>
-        <RowGroup>
+        <RowGroup grid>
           {parties.map((party, index) => {
             const candidacy = party.candidacies[ELECTION_ID];
             const founded = party.history

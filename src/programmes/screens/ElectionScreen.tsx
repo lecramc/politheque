@@ -58,7 +58,7 @@ export default function ElectionScreen() {
         strokeWidth={12}
         accessibilityLabel={`${vm.daysLeft} jours avant le ${vm.round.label}`}
       >
-        <Text style={{ ...fonts.displayBold, fontSize: 36, lineHeight: 40, color: colors.tint }}>
+        <Text style={{ ...fonts.displayBold, fontSize: 28, lineHeight: 30, color: colors.tint }}>
           {vm.daysLeft}
         </Text>
         <Text style={{ color: colors.text.secondary, fontSize: 13 }}>jours</Text>

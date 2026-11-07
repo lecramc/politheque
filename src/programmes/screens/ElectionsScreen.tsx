@@ -24,105 +24,115 @@ export default function ElectionsScreen() {
 
   return (
     <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
-      <View {...tv('list-col')} style={{ gap: effects.spacing.lg }}>
-        <View style={{ gap: 6 }}>
+      <View style={{ gap: effects.spacing.lg }}>
+        <View {...tv('list-col')} style={{ gap: 6 }}>
           <Text variant="title">Les élections</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
             Le calendrier, les règles et les candidatures.
           </Text>
         </View>
 
-        {vm.elections.map((election) => {
-          const round = nextRound(election, now);
-          const days = round ? daysUntil(round.date, now) : null;
-          return (
-            <Link
-              key={election.id}
-              href={{ pathname: '/elections/[id]', params: { id: election.id } }}
-              asChild
-            >
-              <Pressable
-                large
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  gap: 14,
-                  padding: effects.spacing.md,
-                  borderRadius: effects.borderRadius.small,
-                  backgroundColor: colors.tintSoft,
-                  borderWidth: 1,
-                  borderColor: colors.tintBorder,
-                }}
+        {/* Cartes en deux colonnes dès 1024 px (CSS) ; une colonne en dessous. */}
+        <View {...tv('grid-2-lg')} style={{ gap: effects.spacing.lg }}>
+          {vm.elections.map((election) => {
+            const round = nextRound(election, now);
+            const days = round ? daysUntil(round.date, now) : null;
+            return (
+              <Link
+                key={election.id}
+                href={{ pathname: '/elections/[id]', params: { id: election.id } }}
+                asChild
               >
-                {days !== null ? (
-                  <Arc
-                    value={1 - days / 365}
-                    size={96}
-                    strokeWidth={10}
-                    accessibilityLabel={`${election.title} : dans ${days} jours`}
-                  >
-                    <Text style={{ ...fonts.displayBold, fontSize: 22, color: colors.tint }}>
-                      {days} j
+                <Pressable
+                  large
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    gap: 14,
+                    padding: effects.spacing.md,
+                    borderRadius: effects.borderRadius.small,
+                    backgroundColor: colors.tintSoft,
+                    borderWidth: 1,
+                    borderColor: colors.tintBorder,
+                  }}
+                >
+                  {days !== null ? (
+                    <Arc
+                      value={1 - days / 365}
+                      size={96}
+                      strokeWidth={10}
+                      accessibilityLabel={`${election.title} : dans ${days} jours`}
+                    >
+                      <Text
+                        style={{
+                          ...fonts.displayBold,
+                          fontSize: 17,
+                          lineHeight: 20,
+                          color: colors.tint,
+                        }}
+                      >
+                        {days} j
+                      </Text>
+                    </Arc>
+                  ) : null}
+                  <View style={{ flex: 1, gap: 4 }}>
+                    <Text variant="caption">
+                      {
+                        { 'a-venir': 'À venir', 'en-cours': 'En cours', passee: 'Passée' }[
+                          election.status
+                        ]
+                      }
                     </Text>
-                  </Arc>
-                ) : null}
-                <View style={{ flex: 1, gap: 4 }}>
-                  <Text variant="caption">
-                    {
-                      { 'a-venir': 'À venir', 'en-cours': 'En cours', passee: 'Passée' }[
-                        election.status
-                      ]
-                    }
-                  </Text>
-                  <Text style={{ ...fonts.display, fontSize: 20 }}>{election.title}</Text>
-                  <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                    {election.rounds
-                      .map((r) => `${r.label} : ${formatLongDate(r.date)}`)
-                      .join('\n')}
-                  </Text>
-                </View>
-                <Icon name="chevron-forward" variant="onGlass" size="small" />
-              </Pressable>
-            </Link>
-          );
-        })}
+                    <Text style={{ ...fonts.display, fontSize: 20 }}>{election.title}</Text>
+                    <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                      {election.rounds
+                        .map((r) => `${r.label} : ${formatLongDate(r.date)}`)
+                        .join('\n')}
+                    </Text>
+                  </View>
+                  <Icon name="chevron-forward" variant="onGlass" size="small" />
+                </Pressable>
+              </Link>
+            );
+          })}
 
-        <Link href={{ pathname: '/comprendre/[id]', params: { id: 'comment-voter' } }} asChild>
-          <Pressable
-            large
-            style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              gap: 14,
-              padding: effects.spacing.md,
-              borderRadius: effects.borderRadius.small,
-              backgroundColor: colors.surface.primary,
-              borderWidth: 1,
-              borderColor: colors.surface.border.primary,
-            }}
-          >
-            <View
+          <Link href={{ pathname: '/comprendre/[id]', params: { id: 'comment-voter' } }} asChild>
+            <Pressable
+              large
               style={{
-                width: 44,
-                height: 44,
-                borderRadius: 22,
+                flexDirection: 'row',
                 alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: colors.tintSoft,
+                gap: 14,
+                padding: effects.spacing.md,
+                borderRadius: effects.borderRadius.small,
+                backgroundColor: colors.surface.primary,
+                borderWidth: 1,
+                borderColor: colors.surface.border.primary,
               }}
             >
-              <Icon name="checkbox-outline" variant="onGlass" size="medium" />
-            </View>
-            <View style={{ flex: 1 }}>
-              <Text style={{ ...fonts.bold, fontSize: 17 }}>Comment voter</Text>
-              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                Inscription, procuration, pièces à fournir
-              </Text>
-            </View>
-            <Icon name="chevron-forward" variant="secondary" size="small" />
-          </Pressable>
-        </Link>
-        <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+              <View
+                style={{
+                  width: 44,
+                  height: 44,
+                  borderRadius: 22,
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  backgroundColor: colors.tintSoft,
+                }}
+              >
+                <Icon name="checkbox-outline" variant="onGlass" size="medium" />
+              </View>
+              <View style={{ flex: 1 }}>
+                <Text style={{ ...fonts.bold, fontSize: 17 }}>Comment voter</Text>
+                <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                  Inscription, procuration, pièces à fournir
+                </Text>
+              </View>
+              <Icon name="chevron-forward" variant="secondary" size="small" />
+            </Pressable>
+          </Link>
+        </View>
+        <Text {...tv('list-col')} style={{ color: colors.text.secondary, fontSize: 14 }}>
           D'autres scrutins (législatives, municipales, européennes…) apparaîtront ici dès qu'ils
           seront documentés.
         </Text>

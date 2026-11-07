@@ -8,7 +8,7 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { duration, useMotion } from '@/components/motion';
-import { useTheme } from '@/components/ThemeContext';
+import { theme as baseTheme, useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { Only } from '@/src/core/components/Only';
@@ -17,6 +17,9 @@ import { tv } from '@/src/core/web/tv';
 
 const styles = StyleSheet.create({
   stanceCell: { alignItems: 'flex-start', flexShrink: 0 },
+  // Titre « regular » : gras sous 768 px (cette classe), graisse normale ensuite (règle CSS
+  // `title-regular`). Doit venir de StyleSheet pour que la feuille puisse la surcharger.
+  titleBoldBelowMd: { ...baseTheme.fonts.bold },
 });
 
 /** Bloc repliable : titre + phrase-clé fermé, détail ouvert. */
@@ -141,12 +144,15 @@ export function Accordion({
           {leading}
           <View style={{ flex: 1, gap: 2 }}>
             <Text
-              style={{
-                ...(titleWeight === 'bold' ? fonts.bold : fonts.regular),
-                fontSize: 16,
-                lineHeight: titleWeight === 'bold' ? undefined : 23,
-                color: colors.text.primary,
-              }}
+              {...(titleWeight === 'bold' ? {} : tv('title-regular'))}
+              style={[
+                titleWeight === 'bold' ? fonts.bold : styles.titleBoldBelowMd,
+                {
+                  fontSize: 16,
+                  lineHeight: titleWeight === 'bold' ? undefined : 23,
+                  color: colors.text.primary,
+                },
+              ]}
             >
               {title}
             </Text>

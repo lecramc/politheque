@@ -41,6 +41,8 @@ export const layoutCss: string = [
   rule(['footer-text'], 'text-align: left;'),
   rule(['footer-rule'], 'border-top-width: 1px; padding-top: 20px;'),
   // Badge de position : cellule fixe, un seul alignement des ronds par liste.
+  // Titres d'affirmation : gras sous 768 px (StyleSheet), graisse normale ensuite.
+  rule(['title-regular'], "font-family: 'AtkinsonHyperlegible_400Regular';"),
   rule(['stance-cell'], `width: ${layout.stanceCell.md}px; align-self: center; flex-shrink: 0;`),
   rule(['stance-row'], 'flex-direction: row; align-items: center; column-gap: 16px;'),
   rule(['stance-row-label'], 'flex: 1 1 0%;'),
@@ -74,6 +76,16 @@ export const layoutCss: string = [
     ['grid-3-lg'],
     'display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px;'
   ),
+  rule(
+    ['grid-2-lg'],
+    'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start;'
+  ),
+  // Liste de partis en deux colonnes : traits du haut et de séparation tracés par les lignes
+  // (la couleur vient du style de la ligne, la largeur de la feuille).
+  rule(['row-grid'], 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));'),
+  rule(['row-item'], 'min-width: 0;'),
+  rule(['row-no-top'], 'border-top-width: 0;'),
+  rule(['row-rule-right'], 'border-right-width: 1px;'),
   rule(['cal-grid'], 'display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;'),
   rule(['hdr-slot'], 'min-height: 0;'),
   '}',

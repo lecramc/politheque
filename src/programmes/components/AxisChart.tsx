@@ -5,6 +5,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { describeLean } from '@/src/programmes/models/axis-explanation.service';
+import { layoutChartLabels } from '@/src/programmes/models/chart-label-layout.service';
 import type { AxisPosition } from '@/src/programmes/models/matching.service';
 import { leanText } from '@/src/programmes/models/presentation.service';
 import type { Axis, Party } from '@/src/programmes/models/programme.model';
@@ -51,6 +52,18 @@ export function AxisChart({
   ];
 
   const toRatio = (v: number) => INSET + ((v + 1) / 2) * (1 - 2 * INSET);
+  const plotted = points.filter(
+    (p) => p.position.economique !== null && p.position.societal !== null
+  );
+  // Étiquettes décalées quand deux points sont proches : règle pure, ordre alphabétique.
+  const labelOffsets = layoutChartLabels(
+    plotted.map((p) => ({
+      key: p.key,
+      label: p.label,
+      x: toRatio(p.position.economique!) * size,
+      y: (1 - toRatio(p.position.societal!)) * size,
+    }))
+  );
   const caption = { fontSize: 12, color: colors.text.secondary };
   const dot = (p: Point) =>
     p.isUser ? (
@@ -111,32 +124,45 @@ export function AxisChart({
             backgroundColor: colors.surface.border.secondary,
           }}
         />
-        {points
-          .filter((p) => p.position.economique !== null && p.position.societal !== null)
-          .map((p) => (
-            <View
-              key={p.key}
+        {plotted.map((p) => (
+          <View
+            key={p.key}
+            style={{
+              position: 'absolute',
+              left: toRatio(p.position.economique!) * size - 8,
+              top: (1 - toRatio(p.position.societal!)) * size - 8,
+              flexDirection: 'row',
+              alignItems: 'center',
+              gap: 3,
+              zIndex: p.isUser ? 2 : 1,
+            }}
+          >
+            {dot(p)}
+            {labelOffsets[p.key] ? (
+              // Étiquette décalée : un trait fin la relie à son point.
+              <View
+                style={{
+                  position: 'absolute',
+                  left: 8,
+                  top: labelOffsets[p.key] > 0 ? 8 : 8 + labelOffsets[p.key],
+                  width: 1,
+                  height: Math.abs(labelOffsets[p.key]),
+                  backgroundColor: colors.text.secondary,
+                }}
+              />
+            ) : null}
+            <Text
               style={{
-                position: 'absolute',
-                left: toRatio(p.position.economique!) * size - 8,
-                top: (1 - toRatio(p.position.societal!)) * size - 8,
-                flexDirection: 'row',
-                alignItems: 'center',
-                gap: 3,
-                zIndex: p.isUser ? 2 : 1,
+                fontSize: 11,
+                position: 'relative',
+                top: labelOffsets[p.key] ?? 0,
+                ...(p.isUser ? { ...fonts.bold, color: colors.tint } : fonts.regular),
               }}
             >
-              {dot(p)}
-              <Text
-                style={{
-                  fontSize: 11,
-                  ...(p.isUser ? { ...fonts.bold, color: colors.tint } : fonts.regular),
-                }}
-              >
-                {p.label}
-              </Text>
-            </View>
-          ))}
+              {p.label}
+            </Text>
+          </View>
+        ))}
       </View>
       <Text style={[caption, { textAlign: 'center' }]}>↓ {soc?.negativePole}</Text>
       <View style={{ width: size, flexDirection: 'row', justifyContent: 'space-between', gap: 12 }}>
