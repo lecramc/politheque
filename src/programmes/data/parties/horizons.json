@@ -810,11 +810,6 @@
         }
       ]
     },
-    "q23-referendum": {
-      "stance": null,
-      "justification": "Pas de position publique sur un référendum consacré à l'immigration ; le seul référendum proposé par Édouard Philippe porte sur une règle d'or budgétaire.",
-      "sources": []
-    },
     "q24-proportionnelle": {
       "stance": -2,
       "justification": "S'est dit « défavorable » à la proportionnelle en mai 2025 ; Horizons s'est opposé au projet porté par François Bayrou.",
@@ -1033,6 +1028,42 @@
           "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
           "url": "https://datan.fr/votes/legislature-17/vote_1624",
           "date": "2025-05-13",
+          "kind": "vote"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": 2,
+      "justification": "Le programme d'Édouard Philippe prévoit de « supprimer un tiers des fonctionnaires partant à la retraite, soit plus de 250 000 postes sur le quinquennat », et de « fusionner et supprimer des dizaines d'opérateurs, d'agences et de comités publics ».",
+      "sources": [
+        {
+          "title": "Avec Édouard 2027, « Pour une France plus prospère »",
+          "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": -1,
+      "justification": "Devant le congrès de la FNAIM en décembre 2025, Édouard Philippe a critiqué l'encadrement des loyers : « lorsque vous interdisez au prix de faire ce à quoi il sert », « vous créez des problèmes ». Les députés Horizons ont voté contre sa pérennisation le 11 décembre 2025 (6 contre) ; au Sénat, le groupe Les Indépendants, où siègent les sénateurs Horizons, a voté sa prolongation de deux ans le 21 octobre 2026 (15 pour).",
+      "sources": [
+        {
+          "title": "Empruntis, « Logement : les pistes d'Édouard Philippe pour sortir de la crise » (congrès de la FNAIM)",
+          "url": "https://www.empruntis.com/financement/actualites/2025/logement-pistes-edouard-philippe-sortir-crise-20373/",
+          "date": "2025-12-10",
+          "kind": "presse"
+        },
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21",
           "kind": "vote"
         }
       ]

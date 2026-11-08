@@ -1,18 +1,20 @@
 import type { Answers, PartyProximity } from '@/src/programmes/models/matching.service';
 import type { Party, Question, Stance } from '@/src/programmes/models/programme.model';
 
-/** Nombre de réponses d'un questionnaire complet : la marge de référence s'y rapporte. */
-const FULL_QUESTIONNAIRE = 30;
-/** Marge (en points de score) sur un questionnaire complet, estimée à 90 % : audit-questionnaire § 3.1. */
+/**
+ * Marge (en points de score) sur un questionnaire complet, estimée à 90 % : audit-questionnaire § 3.1.
+ * Le « questionnaire complet » est celui du catalogue : sa taille n'est jamais écrite en dur.
+ */
 const BASE_MARGIN = 5;
 
 /**
  * Marge d'incertitude de l'écart entre deux scores, en points. Elle ne dépend que du nombre de
- * réponses de l'utilisateur : la même pour tous les partis. ±5 sur 30 réponses, plus large quand
- * il y en a moins (proportionnelle à 1/√n : environ ±10 avec 8 réponses).
+ * réponses de l'utilisateur et sur la taille du questionnaire : la même pour tous les partis.
+ * ±5 sur un questionnaire complet, plus large quand il y a moins de réponses (proportionnelle
+ * à 1/√n : environ ±10 avec 8 réponses sur 31).
  */
-export const scoreMargin = (answeredCount: number): number =>
-  Math.max(BASE_MARGIN, Math.round(BASE_MARGIN * Math.sqrt(FULL_QUESTIONNAIRE / answeredCount)));
+export const scoreMargin = (answeredCount: number, questionCount: number): number =>
+  Math.max(BASE_MARGIN, Math.round(BASE_MARGIN * Math.sqrt(questionCount / answeredCount)));
 
 export interface RankedProximity extends PartyProximity {
   /** Rang « à la compétition » sur le score arrondi (1, 1, 3…), null sans score. */
@@ -35,9 +37,10 @@ export interface PresentedRanking {
  */
 export const presentRanking = (
   proximities: PartyProximity[],
-  answeredCount: number
+  answeredCount: number,
+  questionCount: number
 ): PresentedRanking => {
-  const margin = scoreMargin(answeredCount);
+  const margin = scoreMargin(answeredCount, questionCount);
   const scored = proximities.filter((p) => p.score !== null);
   const items = proximities.map((p) => {
     if (p.score === null) return { ...p, rank: null, tied: false };

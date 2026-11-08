@@ -1,5 +1,74 @@
 [
   {
+    "id": "2026-11-08-les-idees-cles-reduire-l-immigration-par-referen",
+    "date": "2026-11-08",
+    "kind": "mise-a-jour",
+    "pages": ["/partis/lr", "/partis/rn"],
+    "summary": "Les idées clés « Réduire l'immigration par référendum » (LR) et « Instaurer la priorité nationale » (RN) ne s'appuient plus sur l'affirmation retirée du questionnaire ; elles restent recoupées par leurs propres sources."
+  },
+  {
+    "id": "2026-11-08-justifications-precisees-pour-deux-positions-enc",
+    "date": "2026-11-08",
+    "kind": "mise-a-jour",
+    "pages": ["/partis/ps-place-publique/positions", "/partis/rn/positions"],
+    "summary": "Justifications précisées pour deux positions encore inconnues : immigration pour le PS (convention citoyenne annoncée le 24 mai 2026, sans objectif chiffré) et temps de travail pour le RN (seule source retrouvée : Marine Le Pen en 2017)."
+  },
+  {
+    "id": "2026-11-08-sept-positions-jusque-la-inconnues-documentees-n",
+    "date": "2026-11-08",
+    "kind": "ajout",
+    "pages": [
+      "/partis/nouvelle-energie/positions",
+      "/partis/reconquete/positions",
+      "/partis/pcf/positions"
+    ],
+    "summary": "Sept positions jusque-là inconnues documentées : Nouvelle Énergie sur les énergies renouvelables, l'aide militaire à l'Ukraine, la proportionnelle et le voile en compétition ; Reconquête sur l'installation des médecins et le veto européen ; le PCF sur la défense européenne."
+  },
+  {
+    "id": "2026-11-08-position-de-chaque-parti-ajoutee-sur-les-deux-no",
+    "date": "2026-11-08",
+    "kind": "ajout",
+    "pages": [
+      "/partis/ecologistes/positions",
+      "/partis/horizons/positions",
+      "/partis/lfi/positions",
+      "/partis/lr/positions",
+      "/partis/nouvelle-energie/positions",
+      "/partis/pcf/positions",
+      "/partis/ps-place-publique/positions",
+      "/partis/reconquete/positions",
+      "/partis/renaissance/positions",
+      "/partis/rn/positions"
+    ],
+    "summary": "Position de chaque parti ajoutée sur les deux nouvelles affirmations du questionnaire (fonctionnaires, encadrement des loyers), avec ses sources. Nouvelle Énergie et Reconquête n'ont pas de position connue sur l'encadrement des loyers."
+  },
+  {
+    "id": "2026-11-08-l-affirmation-il-faut-organiser-un-referendum-su",
+    "date": "2026-11-08",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/me-situer",
+      "/partis/ecologistes/positions",
+      "/partis/horizons/positions",
+      "/partis/lfi/positions",
+      "/partis/lr/positions",
+      "/partis/nouvelle-energie/positions",
+      "/partis/pcf/positions",
+      "/partis/ps-place-publique/positions",
+      "/partis/reconquete/positions",
+      "/partis/renaissance/positions",
+      "/partis/rn/positions"
+    ],
+    "summary": "L'affirmation « Il faut organiser un référendum sur l'immigration » est retirée du questionnaire, car les positions de seulement six partis sur dix y étaient documentées. Les liens de résultats déjà partagés restent lisibles."
+  },
+  {
+    "id": "2026-11-08-deux-affirmations-ajoutees-au-questionnaire-il-f",
+    "date": "2026-11-08",
+    "kind": "ajout",
+    "pages": ["/me-situer"],
+    "summary": "Deux affirmations ajoutées au questionnaire : « Il faut réduire le nombre de fonctionnaires » (dix partis) et « Il faut continuer d'encadrer les loyers dans les villes où se loger coûte le plus cher » (huit partis sur dix). Le questionnaire compte désormais 31 affirmations."
+  },
+  {
     "id": "2026-11-07-l-idee-cle-interdire-le-glyphosate-et-les-neonic",
     "date": "2026-11-07",
     "kind": "mise-a-jour",

@@ -388,15 +388,16 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
     }
   });
 
-  it('should expose the same 7 great questions for the ten parties', () => {
+  it('should expose the same 8 great questions for the ten parties', () => {
     expect(glanceQuestionIds(QUESTIONS, PARTIES)).toEqual([
       'q01-isf',
       'q04-retraite',
       'q08-preference',
       'q10-peines-planchers',
       'q12-nucleaire',
-      'q16-fin-de-vie',
-      'q19-droit-europeen',
+      'q15-medecins',
+      'q18-ukraine',
+      'q24-proportionnelle',
     ]);
   });
 

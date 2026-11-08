@@ -50,7 +50,11 @@ export const resultsViewModel = ({ dispatch, router }: { dispatch: AppDispatch; 
       const questions = catalog?.questions ?? [];
       const answeredCount = Object.values(answers).filter((a) => a.value !== null).length;
 
-      const presented = presentRanking(rankParties(answers, parties), answeredCount);
+      const presented = presentRanking(
+        rankParties(answers, parties),
+        answeredCount,
+        questions.length
+      );
       const ranking = presented.items.map((proximity) => {
         const party = parties.find((p) => p.id === proximity.partyId)!;
         const fewCompared = isFewCompared(proximity.comparedCount, answeredCount);

@@ -23,7 +23,8 @@ export const AXES: Axis[] = [
 
 // Questionnaire v2 (docs/questionnaire-v2.md) : une idée par affirmation, formulations alternées
 // (être d'accord ne pousse pas toujours dans le même sens), positions documentables pour ≥ 8 partis.
-// Ids supprimés en v2, à ne pas réutiliser : q03-charges, q11-police, q21-libre-echange, q22-vie-republique.
+// Ids supprimés en v2, à ne pas réutiliser : q03-charges, q11-police, q21-libre-echange, q22-vie-republique, q23-referendum (v3).
+// Réservés, jamais utilisés comme question : q35-chasse-dimanche, q37-audiovisuel-public, q38-abaya (v3, non retenues).
 export const QUESTIONS: Question[] = [
   {
     id: 'q01-isf',
@@ -72,6 +73,25 @@ export const QUESTIONS: Question[] = [
     help: "Depuis le 1er août 2025, toute la facture d'électricité, abonnement compris, est soumise à une TVA de 20 %. L'abonnement était auparavant taxé à 5,5 %. Baisser cette TVA réduirait les factures des ménages, mais aussi les recettes de l'État. Le pouvoir d'achat et le prix de l'énergie figurent parmi les premières préoccupations des Français en 2026.",
     axis: null,
     direction: 1,
+  },
+  {
+    id: 'q36-fonctionnaires',
+    theme: 'economie',
+    statement: 'Il faut réduire le nombre de fonctionnaires.',
+    shortLabel: 'Réduire le nombre de fonctionnaires',
+    help: "Fin 2024, 5,9 millions de personnes travaillent dans la fonction publique : 2,6 millions pour l'État, 2,0 millions dans les collectivités locales et 1,25 million dans les hôpitaux et établissements médico-sociaux publics. Le projet de budget 2027 du gouvernement, en discussion au Parlement, prévoit environ 8 000 postes de plus dans les ministères, surtout dans l'éducation, les armées, la police et la justice, et 1 200 postes de moins dans les agences de l'État. Les partisans d'une baisse veulent réduire la dépense publique, ses opposants craignent un recul des services publics.",
+    axis: 'economique',
+    direction: 1,
+  },
+  {
+    id: 'q39-encadrement-loyers',
+    theme: 'economie',
+    statement:
+      "Il faut continuer d'encadrer les loyers dans les villes où se loger coûte le plus cher.",
+    shortLabel: "Continuer d'encadrer les loyers dans les villes chères",
+    help: "Depuis 2019 à Paris, puis dans d'autres territoires (Lille, Lyon et Villeurbanne, Bordeaux, Montpellier, Grenoble, Plaine Commune, Est Ensemble, Pays basque), environ 70 communes plafonnent les loyers du parc privé, ce qui concerne 1,2 million de locataires selon la Cour des comptes. Cette expérimentation prend fin le 24 novembre 2026 : le Sénat a voté le 21 octobre 2026, par 325 voix contre 17, sa prolongation de deux ans sans nouvelles villes, et l'Assemblée doit se prononcer le 18 novembre. Un rapport remis au gouvernement en mai 2026 estime la baisse des loyers à 2 à 4 % dans les villes les plus tendues ; les opposants estiment que le plafonnement réduit le nombre de logements proposés à la location.",
+    axis: 'economique',
+    direction: -1,
   },
   {
     id: 'q04-retraite',
@@ -283,15 +303,6 @@ export const QUESTIONS: Question[] = [
     help: "La plupart des décisions européennes se prennent à la « majorité qualifiée » : 55 % des États représentant 65 % de la population. Pour la politique étrangère, les impôts, l'élargissement ou le budget pluriannuel, l'unanimité reste obligatoire, ce qui donne un droit de veto à chaque pays. Plusieurs États, dont la France, ont proposé d'étendre la majorité qualifiée à la politique étrangère.",
     axis: 'europe',
     direction: -1,
-  },
-  {
-    id: 'q23-referendum',
-    theme: 'institutions',
-    statement: "Il faut organiser un référendum sur l'immigration.",
-    shortLabel: "Référendum sur l'immigration",
-    help: "Selon la majorité des constitutionnalistes, l'article 11 de la Constitution ne permet pas aujourd'hui d'organiser un référendum direct sur l'immigration. Ses partisans proposent donc de modifier d'abord la Constitution. Ses opposants y voient un risque pour les droits fondamentaux.",
-    axis: 'societal',
-    direction: 1,
   },
   {
     id: 'q24-proportionnelle',

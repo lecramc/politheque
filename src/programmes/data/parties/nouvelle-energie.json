@@ -805,9 +805,28 @@
       ]
     },
     "q13-renouvelables": {
-      "stance": null,
-      "justification": "Pas de position explicite sur l'éolien et le solaire : le candidat défend une électricité nucléaire « décarbonée et pilotable » (12 août 2026) et, selon le site du parti (entretiens du 29 novembre 2025 et du 21 janvier 2026), juge incohérent de combiner nucléaire et énergies intermittentes, sans proposition explicite sur leur développement. Nouvelle Énergie n'ayant pas de groupe parlementaire, aucun vote de groupe ne permet de trancher.",
-      "sources": []
+      "stance": -1,
+      "justification": "Le programme dénonce une stratégie d'« énergies renouvelables » « dérogatoires aux prix du marché et aux règles d'urbanisme » et veut « mettre un terme à cette gabegie en faisant rentrer ces projets dans le droit commun », la priorité allant au nucléaire. Le 27 octobre 2026, David Lisnard dit ne pas s'opposer « aux énergies renouvelables, notamment au solaire en autoconsommation », et veut juger chaque investissement sur son rapport coût-bénéfice.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – Programme, axe « Générer un renouveau civique » (page non datée, consultée en novembre 2026)",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+          "date": "2026-11",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouvelle Énergie – « L'énergie doit réconcilier l'industrie et l'écologie » (Grand entretien de l'écologie avec François de Rugy et Laurent Lesage)",
+          "url": "https://www.unenouvelleenergie.fr/lenergie-doit-reconcilier-lindustrie-et-lecologie/",
+          "date": "2026-10-27",
+          "kind": "declaration"
+        },
+        {
+          "title": "Nouvelle Énergie – « Quel candidat défend une écologie pragmatique et non punitive ? » (entretien avec Tom Benoit du 29 novembre 2025)",
+          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
+          "date": "2026-10-16",
+          "kind": "declaration"
+        }
+      ]
     },
     "q14-normes-agricoles": {
       "stance": 2,
@@ -870,9 +889,16 @@
       ]
     },
     "q18-ukraine": {
-      "stance": null,
-      "justification": "Pas d'engagement explicite identifié sur la poursuite des livraisons d'armes : David Lisnard estimait en 2024 que « l'intérêt de la France c'est que la Russie ne gagne pas cette guerre » (Sud Radio). Nouvelle Énergie n'a ni groupe à l'Assemblée ni eurodéputé : aucun vote ne permet de trancher.",
-      "sources": []
+      "stance": 2,
+      "justification": "Sur le site de son parti, mis à jour le 16 octobre 2026, David Lisnard « demande de produire et de livrer des armes, sans se laisser entraîner dans des escalades verbales ». La même page reprend ses propos du 29 février 2024 sur Sud Radio : « l'intérêt de la France c'est que la Russie ne gagne pas cette guerre ». Nouvelle Énergie n'a ni groupe à l'Assemblée ni eurodéputé.",
+      "sources": [
+        {
+          "title": "Nouvelle Énergie – « Quelle est la position de David Lisnard sur la guerre en Ukraine ? » (mis à jour le 16 octobre 2026)",
+          "url": "https://www.unenouvelleenergie.fr/questions/quelle-est-la-position-de-david-lisnard-sur-la-guerre-en-ukraine/",
+          "date": "2026-10-16",
+          "kind": "declaration"
+        }
+      ]
     },
     "q19-droit-europeen": {
       "stance": 1,
@@ -897,22 +923,17 @@
       "justification": "Pas de position publique identifiée sur un emprunt européen commun ; le candidat juge la hausse du budget de défense national « incontournable ». Nouvelle Énergie n'a ni groupe parlementaire ni eurodéputé.",
       "sources": []
     },
-    "q23-referendum": {
-      "stance": 2,
-      "justification": "David Lisnard propose des référendums sur l'immigration (« comment on remaîtrise les flux migratoires, ça veut dire des référendums », TF1, 8 octobre 2025), après un « élargissement […] du champ de l'article onze de la Constitution » (meeting de Saint-Raphaël, 3 juillet 2026).",
+    "q24-proportionnelle": {
+      "stance": -1,
+      "justification": "Dans une chronique pour L'Opinion reprise par son parti le 9 octobre 2025, David Lisnard cite ceux qui veulent « réformer le mode de scrutin, introduire la proportionnelle intégrale », puis répond : « C'est une erreur. Les institutions de la Ve République sont solides. » Nouvelle Énergie n'a pas de groupe parlementaire.",
       "sources": [
         {
-          "title": "Nouvelle Énergie – « Quel candidat propose un référendum sur l'immigration ? »",
-          "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-un-referendum-sur-l-immigration/",
-          "date": "2026-11",
+          "title": "Nouvelle Énergie – « Légitimité légale, légitimité politique : la difficile équation présidentielle » (chronique de David Lisnard pour L'Opinion)",
+          "url": "https://www.unenouvelleenergie.fr/legitimite-legale-legitimite-politique-la-difficile-equation-presidentielle/",
+          "date": "2025-10-09",
           "kind": "declaration"
         }
       ]
-    },
-    "q24-proportionnelle": {
-      "stance": null,
-      "justification": "Pas de position publique de David Lisnard sur la proportionnelle aux législatives. Nouvelle Énergie n'ayant pas de groupe parlementaire, aucun vote de groupe ne permet de trancher.",
-      "sources": []
     },
     "q25-successions": {
       "stance": 2,
@@ -979,9 +1000,22 @@
       ]
     },
     "q31-voile-sport": {
-      "stance": null,
-      "justification": "Pas de position publique de David Lisnard sur les signes religieux dans les compétitions sportives. Son programme propose d'interdire le voile à l'université, ce qui ne permet pas de déduire une position sur le sport. Pas de groupe parlementaire.",
-      "sources": []
+      "stance": -2,
+      "justification": "Dans une tribune au Figaro du 7 mars 2025 (alors membre des Républicains), David Lisnard salue la loi votée par le Sénat : « La droite sénatoriale a eu le courage de faire interdire les signes religieux dans les compétitions sportives », et demande au gouvernement de suivre, avec « un cadre législatif clair ». Il critique ceux qui « défendent le droit des femmes voilées à concourir ».",
+      "sources": [
+        {
+          "title": "Le Figaro, « David Lisnard : \"Quand la ministre des Sports fait du déni de prosélytisme islamiste\" » (tribune)",
+          "url": "https://www.lefigaro.fr/vox/politique/david-lisnard-quand-la-ministre-des-sports-fait-du-deni-de-proselytisme-islamiste-20250307",
+          "date": "2025-03-07",
+          "kind": "declaration"
+        },
+        {
+          "title": "Nouvelle Énergie – « David Lisnard : quand la ministre des Sports fait du déni de prosélytisme islamiste » (reprise de la tribune)",
+          "url": "https://www.unenouvelleenergie.fr/david-lisnard-quand-la-ministre-des-sports-fait-du-deni-de-proselytisme-islamiste/",
+          "date": "2025-03-07",
+          "kind": "declaration"
+        }
+      ]
     },
     "q32-ukraine-ue": {
       "stance": null,
@@ -1004,6 +1038,35 @@
           "kind": "programme"
         }
       ]
+    },
+    "q36-fonctionnaires": {
+      "stance": 2,
+      "justification": "David Lisnard propose de ne plus remplacer l'ensemble des agents qui quittent chaque année la fonction publique, en commençant par les fonctions administratives (octobre 2026), et de réduire « d'un tiers, puis de moitié » les organismes publics qu'il juge inutiles (29 août 2026). Il veut « moins de bureaucratie, moins de fonctions support inutiles » pour avoir « plus de policiers, plus d'infirmiers, plus d'enseignants » (14 avril 2025).",
+      "sources": [
+        {
+          "title": "Acteurs publics, « Réforme de l'État : David Lisnard défend un État moins bureaucratique et plus décentralisé »",
+          "url": "https://acteurspublics.fr/articles/reforme-de-letat-david-lisnard-defend-un-etat-moins-bureaucratique-et-plus-decentralise/",
+          "date": "2026-10-29",
+          "kind": "presse"
+        },
+        {
+          "title": "Nouvelle Énergie, « Le programme de David Lisnard est-il chiffré ? »",
+          "url": "https://www.unenouvelleenergie.fr/questions/le-programme-de-david-lisnard-est-il-chiffre/",
+          "date": "2026-09",
+          "kind": "programme"
+        },
+        {
+          "title": "Sud Radio, « Bercoff dans tous ses états » : David Lisnard sur l'État-providence, les fonctionnaires et la bureaucratie",
+          "url": "https://www.sudradio.fr/bercoff-dans-tous-ses-etats/david-lisnard-etat-providence-fonctionnaires-bureaucratie",
+          "date": "2025-04-14",
+          "kind": "declaration"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": null,
+      "justification": "Pas de déclaration explicite de David Lisnard ni de programme de Nouvelle Énergie sur l'encadrement des loyers.",
+      "sources": []
     }
   },
   "candidacies": {

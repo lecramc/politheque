@@ -30,9 +30,9 @@ describe('Feature: neutralité de la fiche « En bref »', () => {
     }
   });
 
-  it('should ask the same 7 questions of every party, each with a position', () => {
+  it('should ask the same 8 questions of every party, each with a position', () => {
     const ids = glanceQuestionIds(catalog.questions, catalog.parties);
-    expect(ids).toHaveLength(7);
+    expect(ids).toHaveLength(8);
     for (const party of catalog.parties) {
       expect(
         vmOf(party.id).glance.map((g) => g.questionId),

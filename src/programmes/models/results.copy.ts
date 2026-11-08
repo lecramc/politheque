@@ -18,12 +18,16 @@ export const fewComparedNote = (unknownCount: number) =>
 
 export const TIED_LABEL = 'à égalité';
 
-/** Trois phrases de la méthodologie : la marge, les positions inconnues, la réponse « Neutre ». */
-export const METHOD_SENTENCES = [
-  "La marge : un écart de moins de ± 5 points entre deux partis (davantage si vous avez répondu à moins de 30 questions) n'est pas significatif ; ces partis forment un groupe de tête et ne sont pas départagés.",
-  'Les positions inconnues : une question sans position connue pour un parti est ignorée pour ce parti, qui est alors comparé sur moins de sujets ; cela peut gonfler son score.',
-  "La réponse « Neutre » compte comme une position (0) et rapproche des partis dont la position est modérée ; « Je ne sais pas / pas d'avis » écarte la question du calcul pour tous les partis.",
-] as const;
+/**
+ * Trois phrases de la méthodologie : la marge, les positions inconnues, la réponse « Neutre ».
+ * `questionCount` : taille du questionnaire du catalogue, jamais écrite en dur.
+ */
+export const methodSentences = (questionCount: number) =>
+  [
+    `La marge : un écart de moins de ± 5 points entre deux partis (davantage si vous avez répondu à moins de ${questionCount} questions) n'est pas significatif ; ces partis forment un groupe de tête et ne sont pas départagés.`,
+    'Les positions inconnues : une question sans position connue pour un parti est ignorée pour ce parti, qui est alors comparé sur moins de sujets ; cela peut gonfler son score.',
+    "La réponse « Neutre » compte comme une position (0) et rapproche des partis dont la position est modérée ; « Je ne sais pas / pas d'avis » écarte la question du calcul pour tous les partis.",
+  ] as const;
 
 /** Questionnaire terminé (tampon) mais réponses absentes de la mémoire : jamais « Pas encore de réponses ». */
 export const ANSWERS_NOT_KEPT =

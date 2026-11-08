@@ -829,9 +829,16 @@
       ]
     },
     "q15-medecins": {
-      "stance": null,
-      "justification": "Pas de position publique sur la régulation de l'installation : le programme 2022 propose de recruter 1 000 médecins salariés par l'État pour les déserts médicaux et de rétablir une garde obligatoire, sans contrainte d'installation. Reconquête n'a pas de groupe à l'Assemblée.",
-      "sources": []
+      "stance": -2,
+      "justification": "Pendant la campagne de 2022, Éric Zemmour a écarté toute régulation de l'installation : « Il n'est pas question de remettre en cause la liberté d'installation, que ce soit par la contrainte dans les secteurs sous-dotés ou par un conventionnement sélectif », et proposait à la place une majoration de la consultation dans les zones « désertifiées » (entretien du 1er avril 2022). Position de 2022 ; Reconquête n'a pas de groupe à l'Assemblée.",
+      "sources": [
+        {
+          "title": "Le Quotidien du médecin, « Éric Zemmour (Reconquête) : \"Un conventionnement préférentiel pourra être mis en place\" »",
+          "url": "https://cancerologie.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/eric-zemmour-reconquete-un-conventionnement-preferentiel-pourra-etre-mis-en-place",
+          "date": "2022-04-01",
+          "kind": "declaration"
+        }
+      ]
     },
     "q16-fin-de-vie": {
       "stance": -2,
@@ -907,24 +914,6 @@
           "url": "https://www.budget2027.fr/",
           "date": "2026-09",
           "kind": "declaration"
-        }
-      ]
-    },
-    "q23-referendum": {
-      "stance": 2,
-      "justification": "Le programme présidentiel 2022 d'Éric Zemmour prévoit un grand référendum sur l'immigration, la sécurité et la justice, et de « rendre aux souverainetés nationales la question de l'immigration par référendum ». Position de 2022.",
-      "sources": [
-        {
-          "title": "Programme d'Éric Zemmour « Pour que la France reste la France » (présidentielle 2022, copie PDF hébergée par la FHF)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/ez-programme-2022-final6-compressed-623218e2a2ef4036050815.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        },
-        {
-          "title": "Institut Montaigne – Présidentielle 2022, propositions d'Éric Zemmour",
-          "url": "https://www.institutmontaigne.org/presidentielle-2022/eric-zemmour",
-          "date": "2022",
-          "kind": "presse"
         }
       ]
     },
@@ -1046,9 +1035,16 @@
       ]
     },
     "q33-veto-europeen": {
-      "stance": null,
-      "justification": "Seul indice : l'eurodéputé Reconquête de 2023 (Nicolas Bay, qui a quitté le parti depuis) a voté contre la révision des traités ; Sarah Knafo n'a pas pris part au vote du 22 octobre 2025. Pas de position explicite du parti ou d'Éric Zemmour identifiée.",
-      "sources": []
+      "stance": 2,
+      "justification": "Le programme de Reconquête pour les élections européennes du 9 juin 2024 promet la « préservation du droit de véto de la France ». Il refuse de « supprimer le principe de l'unanimité dans les décisions prises au sein du Conseil », car « en supprimant le droit de véto de chaque État membre, il en serait en effet terminé des souverainetés nationales ».",
+      "sources": [
+        {
+          "title": "Reconquête, « Notre projet pour l'Europe des nations et de la civilisation – Les 92 propositions de Reconquête! » (élections européennes du 9 juin 2024), p. 8 et quatrième de couverture",
+          "url": "https://ojim.fr/wp-content/uploads/2024/06/Programme-Reconque%CC%82te-Europe%CC%81ennes-2024.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
     },
     "q34-mineurs": {
       "stance": 2,
@@ -1067,6 +1063,29 @@
           "kind": "programme"
         }
       ]
+    },
+    "q36-fonctionnaires": {
+      "stance": 2,
+      "justification": "Le plan « Budget 2027 » de Sarah Knafo, vice-présidente de Reconquête et députée européenne, prévoit le « non-remplacement de 800 000 départs administratifs sur l'ensemble du quinquennat ». Éric Zemmour n'a pas publié de chiffre propre.",
+      "sources": [
+        {
+          "title": "Sarah Knafo, « Budget 2027 – au moins 140 Md€ d'économies » (mesure 1, « Fonction publique et effectifs »)",
+          "url": "https://www.budget2027.fr/",
+          "date": "2026",
+          "kind": "programme"
+        },
+        {
+          "title": "Paris Match, « La rappeuse Koxie […] s'engage en politique aux côtés de Sarah Knafo » (fonction de Sarah Knafo)",
+          "url": "https://www.parismatch.be/actualites/people/2026/02/18/la-rappeuse-koxie-interprete-de-garcon-fait-son-retour-elle-sengage-en-politique-aux-cotes-de-sarah-knafo-4SD7DA24QNBZDJQS2FQFRU7ARY/",
+          "date": "2026-02-18",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": null,
+      "justification": "Pas de déclaration explicite d'Éric Zemmour ni de programme de Reconquête sur l'encadrement des loyers.",
+      "sources": []
     }
   },
   "candidacies": {

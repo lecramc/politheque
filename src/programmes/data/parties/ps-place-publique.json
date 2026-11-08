@@ -851,10 +851,10 @@
     },
     "q07-immigration": {
       "stance": null,
-      "justification": "Renvoie la question des niveaux d'immigration à une convention citoyenne ; parle d'une régulation « réaliste et cohérente » sans objectif de baisse ou de hausse.",
+      "justification": "Le 24 mai 2026, Raphaël Glucksmann a proposé de confier la question des niveaux d'immigration à une convention citoyenne, dont les propositions seraient soumises au Parlement. Il ne fixe pas d'objectif de baisse ou de hausse de l'immigration légale.",
       "sources": [
         {
-          "title": "Glucksmann veut une convention citoyenne sur l'immigration",
+          "title": "France 24 (AFP), « Glucksmann veut une convention citoyenne sur l'immigration »",
           "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
           "date": "2026-05-24",
           "kind": "presse"
@@ -1082,11 +1082,6 @@
           "kind": "vote"
         }
       ]
-    },
-    "q23-referendum": {
-      "stance": null,
-      "justification": "Pas de position explicite sur un référendum sur l'immigration. Raphaël Glucksmann propose à la place une convention citoyenne sur l'immigration, dont les propositions seraient votées par le Parlement (26 mai 2026), sans se prononcer sur le référendum.",
-      "sources": []
     },
     "q24-proportionnelle": {
       "stance": 2,
@@ -1330,6 +1325,42 @@
           "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
           "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
           "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": -2,
+      "justification": "Le Parti socialiste et Place publique ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et dans les services de l'État. Raphaël Glucksmann n'a pas publié de chiffre sur le nombre total d'agents publics.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": 2,
+      "justification": "La proposition de loi qui rend l'encadrement des loyers permanent et l'ouvre à d'autres communes est celle du député socialiste Iñaki Echaniz ; les députés socialistes l'ont votée le 11 décembre 2025 (54 pour) et les sénateurs socialistes ont voté sa prolongation le 21 octobre 2026 (62 pour).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Encadrement des loyers : l'Assemblée vote en faveur d'une pérennisation du dispositif »",
+          "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-vote-en-faveur-d-une-perennisation-du-dispositif",
+          "date": "2025-12-11",
           "kind": "presse"
         }
       ]

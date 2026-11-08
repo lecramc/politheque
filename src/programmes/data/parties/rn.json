@@ -30,7 +30,7 @@
       "title": "Instaurer la « priorité nationale »",
       "text": "Par un référendum qui modifierait la Constitution : priorité aux Français pour l'emploi et le logement, aides de solidarité réservées aux Français, regroupement familial encadré ou interdit.",
       "measureRefs": ["immigration.0"],
-      "relatedQuestionIds": ["q08-preference", "q23-referendum"]
+      "relatedQuestionIds": ["q08-preference"]
     },
     {
       "id": "retablir-les-peines-planchers",
@@ -1120,30 +1120,6 @@
         }
       ]
     },
-    "q23-referendum": {
-      "stance": 2,
-      "justification": "Le RN propose un référendum sur l'immigration (programme 2022). En août 2026, Jordan Bardella a annoncé plusieurs référendums, « le premier sur l'immigration ».",
-      "sources": [
-        {
-          "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
-          "url": "https://rassemblementnational.fr/documents/projet/projet-controle-de-limmigration.pdf",
-          "date": "2022-03",
-          "kind": "programme"
-        },
-        {
-          "title": "La Gazette France – Interdiction du voile et amendes : le RN pousse un marqueur du lepénisme et propose un référendum",
-          "url": "https://www.lagazettefrance.fr/article/interdiction-du-voile-et-amendes-le-rn-pousse-un-marqueur-du-lepenisme-et-propose-un-referendum",
-          "date": "2026-08-31",
-          "kind": "presse"
-        },
-        {
-          "title": "Institut Montaigne – Présidentielle 2022, propositions de Marine Le Pen (« Faire un référendum sur l'immigration »)",
-          "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen",
-          "date": "2022",
-          "kind": "presse"
-        }
-      ]
-    },
     "q24-proportionnelle": {
       "stance": 2,
       "justification": "L'instauration de la proportionnelle figure dans les 22 mesures du programme présidentiel 2022 ; en avril 2025, Marine Le Pen a jugé le scrutin de 1986 (proportionnelle départementale) « un moindre mal » lors des consultations de François Bayrou.",
@@ -1206,8 +1182,21 @@
     },
     "q27-temps-de-travail": {
       "stance": null,
-      "justification": "Marine Le Pen ne s'est pas exprimée sur la durée légale depuis 2022 ; en 2017, elle s'engageait à « maintenir les 35h ». Jordan Bardella, président du parti, a dit en novembre 2024 qu'« il faut pouvoir revenir sur les 35 heures dans les entreprises » par accords de branche, sans « suppression générale ».",
-      "sources": []
+      "justification": "Pas de déclaration explicite de Marine Le Pen sur la durée légale du travail en vue de 2027. En 2017, elle s'engageait à « maintenir les 35h » et proposait de ne permettre d'allonger le temps de travail que par accord de branche, avec une « compensation salariale intégrale ».",
+      "sources": [
+        {
+          "title": "Institut Montaigne, « Temps de travail : que proposent les candidats ? »",
+          "url": "https://institutmontaigne.org/expressions/temps-de-travail-que-proposent-les-candidats",
+          "date": "2017-03-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Travailler plus ou moins ? Les enjeux d'un clivage fort de la campagne »",
+          "url": "https://www.publicsenat.fr/actualites/politique/travailler-plus-ou-moins-les-enjeux-d-un-clivage-fort-de-la-campagne-57351",
+          "date": "2017-03-17",
+          "kind": "presse"
+        }
+      ]
     },
     "q28-prix-energie": {
       "stance": 2,
@@ -1391,6 +1380,54 @@
           "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
           "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
           "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": 2,
+      "justification": "Le plan budgétaire présenté par Marine Le Pen le 6 octobre 2026 prévoit que les collectivités et les agences de l'État voient « leurs effectifs réduits d'au moins 200.000 postes en cinq ans », selon le député Jean-Philippe Tanguy, qui vise le « millefeuille administratif » et des « organismes parasites ».",
+      "sources": [
+        {
+          "title": "Sud Radio, « Présidentielle : en quête de crédibilité budgétaire, Le Pen promet un effort « radical » de 140 milliards net »",
+          "url": "https://www.sudradio.fr/societe/presidentielle-en-quete-de-credibilite-budgetaire-le-pen-promet-un-effort-radical-de-140-milliards-net",
+          "date": "2026-10-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Public Sénat, « Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? »",
+          "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": -2,
+      "justification": "Les députés RN ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (28 contre, 1 abstention), et leurs sénateurs ont été les seuls à voter contre sa prolongation le 21 octobre 2026 (15 contre). Le sénateur Joshua Hochart a dénoncé une « fuite en avant », estimant que le plafonnement réduit l'offre locative.",
+      "sources": [
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Banque des Territoires (Localtis), « Encadrement des loyers : le Sénat prolonge l'expérimentation de deux ans, l'Assemblée sous pression avant le 23 novembre »",
+          "url": "https://www.banquedesterritoires.fr/encadrement-des-loyers-le-senat-prolonge-lexperimentation-de-deux-ans-lassemblee-sous-pression",
+          "date": "2026-10-22",
+          "kind": "presse"
+        },
+        {
+          "title": "Journal de l'économie, « Loyers : le Sénat vote la prolongation de l'encadrement pour deux ans »",
+          "url": "https://www.journaldeleconomie.fr/?p=49938",
+          "date": "2026-10-22",
           "kind": "presse"
         }
       ]

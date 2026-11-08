@@ -1034,11 +1034,6 @@
         }
       ]
     },
-    "q23-referendum": {
-      "stance": null,
-      "justification": "Ni Jean-Luc Mélenchon ni le groupe LFI ne se sont prononcés explicitement sur un référendum consacré à l'immigration. LFI défend le référendum d'initiative citoyenne et une Assemblée constituante.",
-      "sources": []
-    },
     "q24-proportionnelle": {
       "stance": 2,
       "justification": "L'édition 2027 de « L'Avenir en commun », comme le programme NFP soutenu par LFI, prévoit d'élire l'Assemblée nationale à la proportionnelle.",
@@ -1323,6 +1318,48 @@
           "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
           "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
           "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": -2,
+      "justification": "Les orientations budgétaires 2027 de La France insoumise prévoient d'« ouvrir des postes », dont 10 000 postes d'enseignants dès 2027 et au moins 10 000 postes de soignants, et parlent de « reconstruction des effectifs de fonctionnaires ». Le programme commun des législatives de 2024 prévoyait déjà le « rattrapage des postes manquants de fonctionnaires ».",
+      "sources": [
+        {
+          "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+          "date": "2026-10",
+          "kind": "programme"
+        },
+        {
+          "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+          "date": "2026-10-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": 2,
+      "justification": "Les députés LFI ont voté le 11 décembre 2025 la proposition de loi qui rend l'encadrement des loyers permanent et l'ouvre à d'autres communes (30 pour, aucun contre). En 2022, Jean-Luc Mélenchon proposait de le généraliser « en fixant le loyer maximal à 20 % au-dessous du loyer médian ».",
+      "sources": [
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs (première lecture), adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
+        },
+        {
+          "title": "MonImmeuble, « Logements : quelles sont les propositions des candidats à la présidentielle ? »",
+          "url": "https://monimmeuble.com/actualite/logements-quelles-sont-les-propositions-des-candidats-a-la-presidentielle",
+          "date": "2022-04-09",
           "kind": "presse"
         }
       ]

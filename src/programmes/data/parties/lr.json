@@ -30,7 +30,7 @@
       "title": "Réduire l'immigration par référendum",
       "text": "Soumettre à référendum des lois visant à « réduire drastiquement l'immigration », après une révision de la Constitution.",
       "measureRefs": ["immigration.0"],
-      "relatedQuestionIds": ["q07-immigration", "q23-referendum"]
+      "relatedQuestionIds": ["q07-immigration"]
     },
     {
       "id": "reformer-la-justice-penale-par-referendum",
@@ -1107,24 +1107,6 @@
         }
       ]
     },
-    "q23-referendum": {
-      "stance": 2,
-      "justification": "Bruno Retailleau propose de réviser la Constitution pour soumettre à référendum des lois visant à « réduire drastiquement l'immigration » (annonce de candidature, 12 février 2026) ; il le défendait déjà en mai 2023 : « C'est parce que cette question est sensible qu'il faut faire un référendum ».",
-      "sources": [
-        {
-          "title": "Euronews – Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums",
-          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
-          "date": "2026-02-12",
-          "kind": "presse"
-        },
-        {
-          "title": "Public Sénat – Immigration : « C'est parce que cette question est sensible qu'il faut faire un référendum », demande Bruno Retailleau",
-          "url": "https://www.publicsenat.fr/actualites/politique/immigration-cest-parce-que-cette-question-est-sensible-quil-faut-faire-un-referendum-demande-bruno-retailleau",
-          "date": "2023-05-24",
-          "kind": "presse"
-        }
-      ]
-    },
     "q24-proportionnelle": {
       "stance": -2,
       "justification": "Le bureau politique de LR a réaffirmé le 28 mai 2025 sa « ferme opposition à l'introduction de la proportionnelle » ; Bruno Retailleau la juge « le plus sûr moyen de ne pas donner à la France une majorité » (avril 2025).",
@@ -1350,6 +1332,48 @@
           "url": "https://www.publicsenat.fr/emission/100-senat/justice-des-mineurs-le-senat-adopte-definitivement-le-texte-e235",
           "date": "2025-05-19",
           "kind": "presse"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": 2,
+      "justification": "Lors du débat organisé par le Medef le 27 août 2026, Bruno Retailleau a proposé de réduire les effectifs « de 250 à 300 000 fonctionnaires » et de supprimer les agences de l'État qui ne justifient pas leur existence, avec « le statut pour le régalien, le contrat pour les autres ».",
+      "sources": [
+        {
+          "title": "Public Sénat, « Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? »",
+          "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": -2,
+      "justification": "Le programme logement des Républicains, « Se loger mieux et moins cher ! », présenté par Bruno Retailleau le 28 mai 2026, prévoit que « les dispositifs d'encadrement des loyers issus de la loi ELAN seront supprimés ». Les sénateurs LR ont toutefois voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (119 pour, 2 contre), après le vote contre sa pérennisation des députés de la Droite républicaine le 11 décembre 2025 (2 contre).",
+      "sources": [
+        {
+          "title": "Les Républicains, « Se loger mieux et moins cher ! » (nos propositions pour la France)",
+          "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+          "date": "2026-05",
+          "kind": "programme"
+        },
+        {
+          "title": "Journal de l'Agence, « Présidentielle 2027 : les propositions de Bruno Retailleau pour relancer le logement »",
+          "url": "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement",
+          "date": "2026-06-10",
+          "kind": "presse"
+        },
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
         }
       ]
     }

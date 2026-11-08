@@ -22,9 +22,16 @@ const stances = (value: number, overrides: Record<string, number | null> = {}) =
     IDS.map((id) => [id, overrides[id] === undefined ? value : overrides[id]])
   ) as Record<string, never>;
 
+// Questionnaire de 30 questions dont les 10 premières sont répondues : la marge s'élargit à ± 9.
+const UNANSWERED_IDS = Array.from({ length: 20 }, (_, index) => `u${index}`);
+
 const results = async (parties: ReturnType<typeof partyFactory>[], userValue = 2) => {
   const gateway = new FakeProgrammeGateway();
-  gateway.catalog = { ...gateway.catalog, questions: IDS.map(question), parties };
+  gateway.catalog = {
+    ...gateway.catalog,
+    questions: [...IDS, ...UNANSWERED_IDS].map(question),
+    parties,
+  };
   const store = createTestStore({ dependencies: { programmeGateway: gateway } });
   await store.dispatch(loadCatalogUsecase());
   for (const id of IDS) {

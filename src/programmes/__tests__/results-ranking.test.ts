@@ -17,23 +17,28 @@ const prox = (partyId: string, rawScore: number | null, comparedCount = 30): Par
 
 describe("Feature: marge d'incertitude du score", () => {
   it('should be 5 points on a full questionnaire and never below', () => {
-    expect(scoreMargin(30)).toBe(5);
-    expect(scoreMargin(40)).toBe(5);
+    expect(scoreMargin(31, 31)).toBe(5);
+    expect(scoreMargin(40, 31)).toBe(5);
   });
 
   it('should widen when the user answered fewer questions', () => {
-    expect(scoreMargin(15)).toBe(7);
-    expect(scoreMargin(8)).toBe(10);
+    expect(scoreMargin(15, 31)).toBe(7);
+    expect(scoreMargin(8, 31)).toBe(10);
+  });
+
+  it('should take the size of the questionnaire as reference, not a fixed count', () => {
+    expect(scoreMargin(10, 40)).toBe(10);
+    expect(scoreMargin(10, 20)).toBe(7);
   });
 
   it('should depend on the answers only, so it is the same for every party', () => {
-    expect(scoreMargin(20)).toBe(scoreMargin(20));
+    expect(scoreMargin(20, 31)).toBe(scoreMargin(20, 31));
   });
 });
 
 describe('Feature: classement présenté', () => {
   it('should give the same rank to equal rounded scores and flag them as tied', () => {
-    const { items } = presentRanking([prox('a', 80.4), prox('b', 79.6), prox('c', 60)], 30);
+    const { items } = presentRanking([prox('a', 80.4), prox('b', 79.6), prox('c', 60)], 31, 31);
     expect(items.map((i) => [i.partyId, i.rank, i.tied])).toEqual([
       ['a', 1, true],
       ['b', 1, true],
@@ -42,25 +47,26 @@ describe('Feature: classement présenté', () => {
   });
 
   it('should not rank parties without a score and leave them untied', () => {
-    const { items } = presentRanking([prox('a', 70), prox('x', null, 2)], 30);
+    const { items } = presentRanking([prox('a', 70), prox('x', null, 2)], 31, 31);
     expect(items[1]).toMatchObject({ partyId: 'x', rank: null, tied: false });
   });
 
   it('should gather in the leading group the parties within the margin of the first', () => {
     const result = presentRanking(
       [prox('a', 80), prox('b', 76), prox('c', 75.5), prox('d', 50)],
-      30
+      31,
+      31
     );
     expect(result.margin).toBe(5);
     expect(result.leaders).toEqual(['a', 'b', 'c']);
   });
 
   it('should have a single leader when the first is far ahead', () => {
-    expect(presentRanking([prox('a', 90), prox('b', 70)], 30).leaders).toEqual(['a']);
+    expect(presentRanking([prox('a', 90), prox('b', 70)], 31, 31).leaders).toEqual(['a']);
   });
 
   it('should have no leading group when nobody has a score', () => {
-    expect(presentRanking([prox('a', null, 1)], 30).leaders).toEqual([]);
+    expect(presentRanking([prox('a', null, 1)], 31, 31).leaders).toEqual([]);
   });
 });
 

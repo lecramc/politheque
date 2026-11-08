@@ -1083,18 +1083,6 @@
         }
       ]
     },
-    "q23-referendum": {
-      "stance": -2,
-      "justification": "Après les Rencontres de Saint-Denis du 17 novembre 2023, Marine Tondelier s'est félicitée « qu'il n'y aura pas de référendum sur l'immigration ». Position de 2023 ; pas de déclaration plus récente.",
-      "sources": [
-        {
-          "title": "Europe 1 – Rencontres de Saint-Denis : Emmanuel Macron évoque l'élargissement du référendum, avec de nombreux absents",
-          "url": "https://www.europe1.fr/politique/rencontres-de-saint-denis-emmanuel-macron-evoque-lelargissement-du-referendum-avec-de-nombreux-absents-4215037",
-          "date": "2023-11-17",
-          "kind": "presse"
-        }
-      ]
-    },
     "q24-proportionnelle": {
       "stance": 2,
       "justification": "Proportionnelle intégrale sans prime majoritaire aux législatives. En juillet 2024, la sénatrice écologiste Mélanie Vogel a déposé une proposition de loi instaurant la proportionnelle intégrale.",
@@ -1325,6 +1313,48 @@
           "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
           "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
           "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": -2,
+      "justification": "Les Écologistes ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et les services de l'État, et le rétablissement des « milliers de postes supprimés » à l'ONF, à l'OFB et à Météo-France. Leur programme 2027 prévoit un « plan de titularisation » des agents publics sous contrat privé et plus de moyens humains pour certaines autorités.",
+      "sources": [
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        },
+        {
+          "title": "Acteurs publics, « Les Écologistes veulent en finir avec le new public management et les cabinets de conseil »",
+          "url": "https://acteurspublics.fr/articles/les-ecologistes-veulent-en-finir-avec-le-new-public-management-et-les-cabinets-de-conseil/",
+          "date": "2026-07-17",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": 2,
+      "justification": "Les députés écologistes ont voté le 11 décembre 2025 la pérennisation de l'encadrement des loyers (17 pour), et les sénateurs écologistes sa prolongation le 21 octobre 2026 (15 pour). Le député Boris Tavernier estime que l'encadrement n'a pas d'effet sur la baisse de l'offre locative.",
+      "sources": [
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Encadrement des loyers : l'Assemblée vote en faveur d'une pérennisation du dispositif »",
+          "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-vote-en-faveur-d-une-perennisation-du-dispositif",
+          "date": "2025-12-11",
           "kind": "presse"
         }
       ]

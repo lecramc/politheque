@@ -952,32 +952,20 @@
       ]
     },
     "q20-defense-europe": {
-      "stance": null,
-      "justification": "Le texte du 40e congrès (juillet 2026) s'oppose à « la militarisation de l'UE » et aux « projets d'une armée européenne », mais ne se prononce pas explicitement sur un emprunt commun de l'UE pour la défense. Le PCF n'a pas d'eurodéputé.",
+      "stance": -1,
+      "justification": "Le cahier « Paix & défense nationale » adopté par le PCF le 9 mai 2026 dénonce le plan « Rearm EU » et juge que « les 800 milliards de dépenses militaires supplémentaires décidés par l'UE sont destinés à enrichir les marchands de canons ». Il ne parle pas de l'emprunt commun en tant que tel. Le PCF n'a pas d'eurodéputé.",
       "sources": [
+        {
+          "title": "PCF, Les cahiers thématiques des Jours heureux, « Paix & défense nationale – Regagner la paix ! »",
+          "url": "https://assets.nationbuilder.com/pcf/pages/41211/attachments/original/1779954906/document_cahier_paix_ppp_stc.pdf",
+          "date": "2026-05-09",
+          "kind": "programme"
+        },
         {
           "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
           "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
           "date": "2026-07-15",
           "kind": "programme"
-        }
-      ]
-    },
-    "q23-referendum": {
-      "stance": -2,
-      "justification": "Ian Brossat, porte-parole du PCF, s'est félicité de l'échec de la proposition de LR d'étendre le référendum à l'immigration (« C'est un fiasco et tant mieux », décembre 2023). Le même mois, Fabien Roussel avait fait état d'un « consensus » à Saint-Denis sur la difficulté d'élargir le référendum aux sujets de société (17 novembre 2023). Positions de 2023.",
-      "sources": [
-        {
-          "title": "Public Sénat – Référendum sur l'immigration : « C'est un fiasco et tant mieux », se félicite Ian Brossat",
-          "url": "https://www.publicsenat.fr/actualites/projet-de-loi-immigration/referendum-sur-limmigration-cest-un-fiasco-et-tant-mieux-se-felicite-ian-brossat-apres-les-revers-des-republicains",
-          "date": "2023-12-08",
-          "kind": "declaration"
-        },
-        {
-          "title": "Europe 1 – Rencontres de Saint-Denis : Emmanuel Macron évoque l'élargissement du référendum, avec de nombreux absents",
-          "url": "https://www.europe1.fr/politique/rencontres-de-saint-denis-emmanuel-macron-evoque-lelargissement-du-referendum-avec-de-nombreux-absents-4215037",
-          "date": "2023-11-17",
-          "kind": "presse"
         }
       ]
     },
@@ -1175,6 +1163,48 @@
           "title": "LCP – Délinquance des mineurs : approuvée par l'Assemblée, la proposition de loi de Gabriel Attal…",
           "url": "https://lcp.fr/actualites/delinquance-des-mineurs-approuvee-par-l-assemblee-la-proposition-de-loi-de-gabriel-attal",
           "date": "2025-05-13",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": -2,
+      "justification": "Le programme présidentiel de Fabien Roussel en 2022 proposait de développer les services publics « par l'embauche de 500 000 nouveaux agents », dont 100 000 à l'hôpital et 90 000 dans l'Éducation nationale. Le PCF a signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires ». Programme 2027 non publié.",
+      "sources": [
+        {
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
+          "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
+          "date": "2022-01",
+          "kind": "programme"
+        },
+        {
+          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+          "date": "2024-06",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": 2,
+      "justification": "Les députés communistes (groupe GDR) ont voté le 11 décembre 2025 la pérennisation de l'encadrement des loyers (3 pour), et les sénateurs CRCE-K ont voté sa prolongation le 21 octobre 2026 (18 pour). Le sénateur Ian Brossat a jugé que ce vote « permet d'échapper au pire » et regretté une version « minimaliste ».",
+      "sources": [
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21",
+          "kind": "vote"
+        },
+        {
+          "title": "Banque des Territoires (Localtis), « Encadrement des loyers : le Sénat prolonge l'expérimentation de deux ans, l'Assemblée sous pression avant le 23 novembre »",
+          "url": "https://www.banquedesterritoires.fr/encadrement-des-loyers-le-senat-prolonge-lexperimentation-de-deux-ans-lassemblee-sous-pression",
+          "date": "2026-10-22",
           "kind": "presse"
         }
       ]

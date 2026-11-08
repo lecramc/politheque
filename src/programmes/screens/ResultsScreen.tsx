@@ -68,7 +68,7 @@ export default function ResultsScreen() {
   const [themeFilter, setThemeFilter] = useState<string | null>(null);
   const dispatch = appDispatch();
 
-  // Lien personnel (#r=v1.…) : lu après l'hydratation seulement (le HTML statique ne voit pas le
+  // Lien personnel (#r=v2.…) : lu après l'hydratation seulement (le HTML statique ne voit pas le
   // fragment, le premier rendu reste donc identique). Les réponses vont en mémoire, jamais dans
   // le stockage, et le parcours n'est pas touché.
   const [link, setLink] = useState<'checking' | 'none' | 'loaded' | 'invalid'>('checking');

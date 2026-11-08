@@ -926,11 +926,6 @@
         }
       ]
     },
-    "q23-referendum": {
-      "stance": null,
-      "justification": "Gabriel Attal propose une « journée référendaire par an » sans en préciser les thèmes ; son programme prévoit des quotas migratoires sans référendum. Il ne s'est pas prononcé explicitement pour ou contre un référendum sur l'immigration.",
-      "sources": []
-    },
     "q24-proportionnelle": {
       "stance": 1,
       "justification": "S'est dit favorable « à titre personnel » à la proportionnelle en juin 2025, sans engager le groupe EPR, dont plusieurs députés redoutaient « une perte de stabilité » (Europe 1). Aucune déclaration plus récente identifiée ; ses propositions institutionnelles de 2026 (référendum annuel, réduction du nombre de parlementaires) ne mentionnent pas le mode de scrutin.",
@@ -1160,6 +1155,48 @@
           "title": "Public Sénat – Justice des mineurs : le Conseil constitutionnel censure largement le texte Attal, notamment la dérogation de l'excuse de minorité",
           "url": "https://www.publicsenat.fr/actualites/politique/justice-des-mineurs-le-conseil-constitutionnel-censure-largement-le-texte-attal-notamment-la-derogation-de-lexcuse-de-minorite",
           "date": "2025-06-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    "q36-fonctionnaires": {
+      "stance": 2,
+      "justification": "Gabriel Attal propose « 100 000 postes supprimés » dans l'État et les collectivités sur le quinquennat, par le non-remplacement de certains départs à la retraite et un plan de départs volontaires, en épargnant l'Éducation, les Armées, la Justice et l'Intérieur (entretien au Parisien, 2 juillet 2026).",
+      "sources": [
+        {
+          "title": "Acteurs publics, « Gabriel Attal propose 100 000 fonctionnaires en moins et « l'impunité zéro » pour les ministres dépensiers »",
+          "url": "https://acteurspublics.fr/articles/gabriel-attal-propose-100-000-fonctionnaires-en-moins-et-limpunite-zero-pour-les-ministres-depensiers/",
+          "date": "2026-07-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Mes chantiers capitaux – Gabriel Attal Président",
+          "url": "https://attalpresident.fr/programme",
+          "date": "2026-11",
+          "kind": "programme"
+        }
+      ]
+    },
+    "q39-encadrement-loyers": {
+      "stance": 0,
+      "justification": "Les députés Ensemble pour la République ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (13 contre, 3 abstentions), leur oratrice Annaïg Le Meur jugeant l'évaluation « une étape indispensable avant de prendre une décision définitive ». Les sénateurs RDPI ont voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (16 pour).",
+      "sources": [
+        {
+          "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "date": "2025-12-11",
+          "kind": "vote"
+        },
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21",
+          "kind": "vote"
+        },
+        {
+          "title": "LCP, « Encadrement des loyers : l'Assemblée vote en faveur d'une pérennisation du dispositif »",
+          "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-vote-en-faveur-d-une-perennisation-du-dispositif",
+          "date": "2025-12-11",
           "kind": "presse"
         }
       ]

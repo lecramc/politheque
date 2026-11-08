@@ -1,7 +1,7 @@
 import {
   fewComparedNote,
   leadGroupSentence,
-  METHOD_SENTENCES,
+  methodSentences,
   marginSentence,
 } from '@/src/programmes/models/results.copy';
 
@@ -31,9 +31,15 @@ describe('Feature: phrases de la page de résultats', () => {
   });
 
   it('should give the methodology three sentences: margin, unknown positions, neutral answer', () => {
-    expect(METHOD_SENTENCES).toHaveLength(3);
-    expect(METHOD_SENTENCES[0]).toContain('± 5 points');
-    expect(METHOD_SENTENCES[1]).toContain('positions inconnues');
-    expect(METHOD_SENTENCES[2]).toContain('« Neutre »');
+    const sentences = methodSentences(31);
+    expect(sentences).toHaveLength(3);
+    expect(sentences[0]).toContain('± 5 points');
+    expect(sentences[1]).toContain('positions inconnues');
+    expect(sentences[2]).toContain('« Neutre »');
+  });
+
+  it('should derive the size of the questionnaire in the margin sentence', () => {
+    expect(methodSentences(31)[0]).toContain('moins de 31 questions');
+    expect(methodSentences(34)[0]).toContain('moins de 34 questions');
   });
 });

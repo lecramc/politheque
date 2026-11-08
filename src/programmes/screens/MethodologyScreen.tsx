@@ -4,13 +4,14 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
+import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Page } from '@/src/programmes/components/Page';
 import { RowGroup } from '@/src/programmes/components/PartyRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import type { Source } from '@/src/programmes/models/programme.model';
-import { METHOD_SENTENCES } from '@/src/programmes/models/results.copy';
 import { methodologyMeta } from '@/src/programmes/models/seo/page-meta';
+import { methodologyViewModel } from '@/src/programmes/view-models/methodology.view-model';
 
 const COMMITMENTS = [
   { icon: 'checkmark', title: 'Chaque information a sa source', text: 'Avec sa date et sa nature' },
@@ -41,12 +42,14 @@ const COMMITMENTS = [
   },
 ];
 
-const RULES: {
+type Rule = {
   title: string;
   body: string;
   extra?: readonly string[];
   link?: { label: string; href: string };
-}[] = [
+};
+
+const rulesWith = (methodSentences: readonly string[]): Rule[] => [
   {
     title: 'Comment les 4 idées de chaque parti sont choisies',
     body: "C'est le seul endroit d'une fiche où l'on choisit ; le choix est encadré et identique pour les dix partis. Chaque parti a exactement 4 idées, de 4 thèmes différents, toujours rangées dans l'ordre des thèmes du site : l'ordre ne dit rien du parti. Chaque idée reprend une mesure déjà présente dans le programme de la fiche, formulée dans les termes du parti (les mots connotés restent entre guillemets), sans chiffre ni mesure ajoutés. On retient d'abord ce que le parti ou son candidat présente lui-même comme prioritaire, puis une mesure liée à une question où sa position est explicite ; à égalité, la source la plus forte et la plus récente. Chaque idée est appuyée par au moins 2 sources de sites différents, dont une indépendante du parti, prises parmi celles de la mesure et de ses questions liées. Une idée qui n'atteint pas ce seuil n'est pas publiée. L'origine affichée (« Programme, mars 2022 ») n'efface jamais l'âge de la source. Les questions de « Pour ou contre ? » sont les mêmes pour les dix partis : pour chaque thème, la première question à laquelle tous ont une position.",
@@ -57,7 +60,7 @@ const RULES: {
   },
   {
     title: 'Le calcul de proximité',
-    extra: METHOD_SENTENCES,
+    extra: methodSentences,
     body: "Pour chaque question, l'écart entre votre réponse et la position du parti (de −2 à +2) donne un accord de 0 à 100 %. Exemple : vous répondez « Plutôt d'accord » (+1) et le parti est « Pour » (+2) : écart de 1, accord de 75 %. La moyenne est pondérée : une question « compte double » pèse deux fois. Les questions sans avis, ou sans position connue du parti, sont ignorées ; le nombre de questions comparées est toujours affiché. Un pourcentage de proximité n'est calculé qu'à partir de 5 questions comparables ; en dessous, le parti n'est pas noté. L'arc est tracé en pointillés lorsque la comparaison porte sur moins de 15 questions : le résultat est alors moins solide.",
   },
   {
@@ -104,6 +107,7 @@ const META = methodologyMeta();
 
 export default function MethodologyScreen() {
   const { colors, effects, fonts } = useTheme();
+  const vm = useViewModel(methodologyViewModel);
   return (
     <Page meta={META} back={{ label: 'Retour', href: '/' }}>
       <View style={{ gap: 6 }}>
@@ -170,7 +174,7 @@ export default function MethodologyScreen() {
       </View>
 
       <View style={{ gap: effects.spacing.xs }}>
-        {RULES.map((rule) => (
+        {rulesWith(vm.methodSentences).map((rule) => (
           <Accordion key={rule.title} title={rule.title}>
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{rule.body}</Text>
             {rule.extra?.map((sentence) => (
