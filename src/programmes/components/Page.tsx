@@ -106,7 +106,7 @@ function BottomTabBar() {
 
   return (
     <View
-      {...tv('bottom-bar')}
+      {...tv('bottom-bar', 'no-print')}
       role="navigation"
       aria-label="Rubriques"
       onLayout={onLayout}
@@ -258,9 +258,10 @@ export function Page({
   };
 
   return (
-    <View style={{ flex: 1, backgroundColor: colors.background.secondary }}>
+    <View {...tv('print-flow')} style={{ flex: 1, backgroundColor: colors.background.secondary }}>
       {headMeta ? <SeoHead meta={headMeta} /> : null}
       <View
+        {...tv('no-print')}
         role="banner"
         style={{
           backgroundColor: colors.background.primary,
@@ -334,8 +335,11 @@ export function Page({
           {focus && back ? <Only below="md">{methodologyLink}</Only> : methodologyLink}
         </View>
       </View>
-      <Tricolore />
+      <View {...tv('no-print')}>
+        <Tricolore />
+      </View>
       <View
+        {...tv('no-print')}
         style={{
           backgroundColor: colors.tintSoft,
           paddingVertical: 6,
@@ -354,6 +358,7 @@ export function Page({
       </View>
 
       <ScrollView
+        {...tv('print-flow')}
         style={{ flex: 1 }}
         scrollEventThrottle={200}
         onScroll={onReachEnd ? onScroll : undefined}
@@ -380,9 +385,11 @@ export function Page({
               style={{ gap: effects.spacing.lg }}
             >
               {trail.length > 1 ? (
-                <Only from="md">
-                  <Breadcrumb trail={trail} />
-                </Only>
+                <View {...tv('no-print')}>
+                  <Only from="md">
+                    <Breadcrumb trail={trail} />
+                  </Only>
+                </View>
               ) : null}
               <View role={article ? 'article' : undefined} style={{ gap: effects.spacing.lg }}>
                 {template === 'hub' ? (
@@ -397,7 +404,7 @@ export function Page({
           )}
         </View>
         <View
-          {...tv('container')}
+          {...tv('container', 'no-print')}
           role="contentinfo"
           style={[styles.container, styles.footerPadding]}
         >
@@ -428,7 +435,10 @@ export function Page({
           </View>
         </View>
         {/* Réserve de la barre du bas : retirée par la CSS à partir de 768 px. */}
-        <View {...tv('scroll-pad')} style={showTabBar ? styles.padWithTabBar : styles.pad} />
+        <View
+          {...tv('scroll-pad', 'no-print')}
+          style={showTabBar ? styles.padWithTabBar : styles.pad}
+        />
       </ScrollView>
 
       {showTabBar ? <BottomTabBar /> : null}

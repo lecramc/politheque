@@ -1,7 +1,9 @@
 import { createSelector } from 'reselect';
 
+import { SITE_URL } from '@/src/core/config/app';
 import type { Router } from '@/src/core/hooks/useViewModel';
 import type { AppDispatch } from '@/src/core/store/create-store';
+import { buildPersonalLink } from '@/src/programmes/models/answer-link.service';
 import {
   describeLean,
   explainAxisPosition,
@@ -14,6 +16,11 @@ import {
   partyToValues,
   rankParties,
 } from '@/src/programmes/models/matching.service';
+import {
+  answerLabel,
+  buildMailto,
+  type RecapInput,
+} from '@/src/programmes/models/results-recap.service';
 import { selectAnswers, selectCatalog } from '@/src/programmes/store/programmes.selector';
 import { quizActions } from '@/src/programmes/store/quiz.slice';
 
@@ -31,8 +38,36 @@ export const resultsViewModel = ({ dispatch, router }: { dispatch: AppDispatch; 
       return { ...proximity, party, ...agreementsWith(answers, party, questions) };
     });
 
+    const personalLink = buildPersonalLink(SITE_URL, answers);
+    const recap: RecapInput = {
+      date: new Date(),
+      ranking: ranking.map((r) => ({
+        name: r.party.name,
+        score: r.score,
+        comparedCount: r.comparedCount,
+      })),
+      axes: catalog?.axes ?? [],
+      userPosition: computeAxisPosition(answersToValues(answers), questions),
+      link: personalLink,
+    };
+    const alphabetical = [...parties].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
+
     return {
       ready: parties.length > 0,
+      /** Lien personnel : les réponses sont dans le fragment, jamais envoyées au serveur. */
+      personalLink,
+      mailto: buildMailto(recap),
+      recapDate: recap.date,
+      /** Vue imprimable : toutes les questions, positions des partis par ordre alphabétique. */
+      printQuestions: questions.map((question) => ({
+        question,
+        answerLabel: answerLabel(answers[question.id]?.value),
+        important: answers[question.id]?.important ?? false,
+        positions: alphabetical.map((party) => ({
+          party,
+          stance: party.stances[question.id] ?? null,
+        })),
+      })),
       answeredCount,
       enoughAnswers: answeredCount >= MIN_ANSWERS,
       minAnswers: MIN_ANSWERS,

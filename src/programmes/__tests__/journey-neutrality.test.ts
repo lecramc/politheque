@@ -101,22 +101,27 @@ describe('Feature: neutralité du parcours', () => {
     await quizViewModel({ dispatch: store.dispatch, router })(store.getState()).showResults();
   };
 
-  it('should produce the same journey and passport whatever the quiz answers', async () => {
-    const results = [];
-    for (const value of [2, -2, null] as AnswerValue[]) {
-      const { store } = completeQuiz(value);
-      await finish(store);
-      const state = store.getState();
-      results.push({
-        journey: plain(journeyViewModel(NOW)({ dispatch: store.dispatch })(state)),
-        step: plain(journeyStepViewModel('les-partis')()(state)),
-        passport: plain(passportViewModel()({ dispatch: store.dispatch })(state)),
-        entryKeys: Object.keys(state.progress.entries).sort(),
-      });
+  // Trois questionnaires complets : plus lent que le délai par défaut quand la suite tourne en parallèle.
+  it(
+    'should produce the same journey and passport whatever the quiz answers',
+    { timeout: 30_000 },
+    async () => {
+      const results = [];
+      for (const value of [2, -2, null] as AnswerValue[]) {
+        const { store } = completeQuiz(value);
+        await finish(store);
+        const state = store.getState();
+        results.push({
+          journey: plain(journeyViewModel(NOW)({ dispatch: store.dispatch })(state)),
+          step: plain(journeyStepViewModel('les-partis')()(state)),
+          passport: plain(passportViewModel()({ dispatch: store.dispatch })(state)),
+          entryKeys: Object.keys(state.progress.entries).sort(),
+        });
+      }
+      expect(results[1]).toEqual(results[0]);
+      expect(results[2]).toEqual(results[0]);
     }
-    expect(results[1]).toEqual(results[0]);
-    expect(results[2]).toEqual(results[0]);
-  });
+  );
 
   it('should never persist quiz answers, only the quiz:done key and a date', async () => {
     const { store, gateway } = completeQuiz(2);

@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-import type { AnswerValue } from '@/src/programmes/models/matching.service';
+import type { AnswerValue, Answers } from '@/src/programmes/models/matching.service';
 
 /**
  * Réponses et importance sont stockées séparément : marquer une question « compte double »
@@ -24,6 +24,18 @@ export const quizSlice = createSlice({
     },
     toggleImportant(state, action: PayloadAction<string>) {
       state.important[action.payload] = !state.important[action.payload];
+    },
+    /**
+     * Charge en mémoire des réponses venues d'un lien personnel. Rien n'est persisté, la question
+     * courante et `finished` restent inchangés : le lien n'influence ni le questionnaire ni le parcours.
+     */
+    loadAnswers(state, action: PayloadAction<Answers>) {
+      state.values = {};
+      state.important = {};
+      for (const [id, answer] of Object.entries(action.payload)) {
+        state.values[id] = answer.value;
+        state.important[id] = answer.important;
+      }
     },
     goTo(state, action: PayloadAction<number>) {
       state.currentIndex = Math.max(0, action.payload);

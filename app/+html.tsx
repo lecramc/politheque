@@ -3,6 +3,7 @@ import type { PropsWithChildren } from 'react';
 
 import { APP_NAME, SITE_LOCALE } from '@/src/core/config/app';
 import { layoutCss } from '@/src/core/web/layout-css';
+import { printCss } from '@/src/core/web/print-css';
 
 // Document HTML racine de l'export web statique : uniquement les invariants du site.
 // Tout ce qui dépend de la page (title, description, canonical, Open Graph, JSON-LD)
@@ -21,6 +22,8 @@ export default function Root({ children }: PropsWithChildren) {
         <ScrollViewStyleReset />
         {/* Mise en page desktop : media queries sur data-tv, identique au premier rendu client. */}
         <style id="travee-layout" dangerouslySetInnerHTML={{ __html: layoutCss }} />
+        {/* Impression (« Télécharger en PDF / imprimer ») : voir src/core/web/print-css.ts. */}
+        <style id="travee-print" dangerouslySetInnerHTML={{ __html: printCss }} />
       </head>
       <body>{children}</body>
     </html>
