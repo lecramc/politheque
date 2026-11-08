@@ -1,5 +1,5 @@
-/** Nom du site : défini à un seul endroit (le nom définitif n'est pas encore arrêté). */
-export const APP_NAME = 'Travée';
+/** Nom du site : défini à un seul endroit. */
+export const APP_NAME = 'Polithèque';
 
 /** URL canonique du site, sans barre finale. Seul endroit à modifier lors du passage au .fr. */
 export const SITE_URL = 'https://travee-ebon.vercel.app';

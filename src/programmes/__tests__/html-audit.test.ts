@@ -5,7 +5,7 @@ const DESC =
   'Description factuelle de la page, suffisamment longue pour passer le contrôle de longueur minimal.';
 
 const page = (overrides: { head?: string; body?: string } = {}) => `<!DOCTYPE html><html><head>
-<title>Titre · Travée</title>
+<title>Titre · Polithèque</title>
 <meta name="description" content="${DESC}"/>
 <link rel="canonical" href="${SITE_URL}/partis/rn"/>
 <meta name="robots" content="index, follow"/>

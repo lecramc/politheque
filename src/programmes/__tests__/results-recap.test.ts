@@ -68,7 +68,7 @@ describe('Feature: récapitulatif par e-mail', () => {
     const url = buildMailto(input());
     expect(url.startsWith('mailto:?subject=')).toBe(true);
     expect(decodeURIComponent(url)).toContain(`subject=${MAILTO_SUBJECT}`);
-    expect(MAILTO_SUBJECT).toBe('Mes résultats Travée');
+    expect(MAILTO_SUBJECT).toBe('Mes résultats Polithèque');
   });
 
   it('should keep the whole mailto: URL under 1800 characters with the ten real party names', () => {

@@ -9,7 +9,7 @@ import { canCopy, canPrint, copyText, printPage } from '@/src/core/web/browser-a
 import { Card } from '@/src/programmes/components/Card';
 
 export const PRIVACY_SENTENCE =
-  "Rien n'est envoyé à Travée : le lien et l'e-mail sont créés sur votre appareil.";
+  "Rien n'est envoyé à Polithèque : le lien et l'e-mail sont créés sur votre appareil.";
 
 /** « Garder mes résultats » : lien personnel, e-mail (mailto:), impression / PDF. */
 export function KeepResults({ personalLink, mailto }: { personalLink: string; mailto: string }) {

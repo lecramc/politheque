@@ -19,7 +19,7 @@ const sel = (...names: string[]) => names.map((n) => `:root [data-tv~="${n}"]`).
 const rule = (names: string[], body: string) => `${sel(...names)} {\n  ${body}\n}`;
 
 export const layoutCss: string = [
-  '/* Travée : mise en page desktop (généré depuis components/layout.ts) */',
+  '/* Polithèque : mise en page desktop (généré depuis components/layout.ts) */',
 
   // Typographie : retours à la ligne soignés ; les titres (déclarés après) l'emportent avec balance.
   ':root [dir="auto"] {\n  text-wrap: pretty;\n}',

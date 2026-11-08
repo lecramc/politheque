@@ -61,9 +61,16 @@ export type PageMeta = {
 export const TITLE_MAX = 70;
 export const DESCRIPTION_MAX = 160;
 export const OG_IMAGE_ALT =
-  'Travée : comprendre la politique française, chaque information sourcée et datée';
+  'Polithèque : comprendre la politique française, chaque information sourcée et datée';
 
-export const brandTitle = (core: string) => `${core} · ${APP_NAME}`;
+/**
+ * « Titre · Polithèque ». Même règle pour toutes les pages : si l'ensemble dépasse TITLE_MAX,
+ * le nom du site est retiré plutôt que de couper le titre.
+ */
+export const brandTitle = (core: string) => {
+  const branded = `${core} · ${APP_NAME}`;
+  return branded.length <= TITLE_MAX ? branded : core;
+};
 
 /** Coupe à une limite de mot et ajoute « … » si le texte dépasse `max`. */
 export function clampText(text: string, max: number): string {
@@ -155,7 +162,7 @@ const make = (
 });
 
 export function homeMeta(_catalog: Catalog): PageMeta {
-  const title = `${APP_NAME} · Comprendre la politique française et la présidentielle 2027`;
+  const title = `${APP_NAME} · Comprendre la politique française, présidentielle 2027`;
   const description =
     'Institutions, partis, grands débats et présidentielle 2027 expliqués, avec une source datée pour chaque information. Site indépendant et non partisan.';
   return {
@@ -284,7 +291,7 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
   };
   // Même règle pour tous : le sigle seul quand le nom complet allonge trop le title.
   const title =
-    brandTitle(titleCore(label)).length <= TITLE_MAX
+    `${titleCore(label)} · ${APP_NAME}`.length <= TITLE_MAX
       ? brandTitle(titleCore(label))
       : brandTitle(titleCore(party.shortName));
 
@@ -421,7 +428,7 @@ export function methodologyMeta(): PageMeta {
   return make({
     title: brandTitle('Méthodologie, sources et corrections'),
     description:
-      'Comment Travée choisit ses sources, code les positions des partis, calcule les proximités et corrige ses erreurs.',
+      'Comment Polithèque choisit ses sources, code les positions des partis, calcule les proximités et corrige ses erreurs.',
     path: '/methodologie',
     breadcrumb: [HOME, { name: 'Méthodologie', path: '/methodologie' }],
     kind: 'webpage',
@@ -434,7 +441,7 @@ export function correctionsMeta(): PageMeta {
   return make({
     title: brandTitle('Journal des corrections'),
     description:
-      'Toutes les modifications de fond du contenu de Travée, datées, avec les pages concernées : corrections, mises à jour, ajouts et retraits.',
+      'Toutes les modifications de fond du contenu de Polithèque, datées, avec les pages concernées : corrections, mises à jour, ajouts et retraits.',
     path: '/corrections',
     breadcrumb: [HOME, { name: 'Corrections', path: '/corrections' }],
     kind: 'collection',
@@ -448,7 +455,7 @@ export function nonIndexableMeta(title: string, path: string): PageMeta {
   return {
     title: brandTitle(title),
     description:
-      'Page de navigation de Travée : comprendre la politique française, chaque information sourcée et datée.',
+      'Page de navigation de Polithèque : comprendre la politique française, chaque information sourcée et datée.',
     path,
     robots: 'noindex, follow',
     ogType: 'website',

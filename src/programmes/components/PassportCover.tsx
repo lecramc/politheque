@@ -46,7 +46,7 @@ export function PassportCover({
   }, [celebrate, onCelebrated, reduce]);
   return (
     <Card style={{ alignItems: 'center', gap: effects.spacing.md, padding: effects.spacing.lg }}>
-      <LogoMark width={72} />
+      <LogoMark height={56} />
       <Text variant="caption">{JOURNEY_COPY.passportKicker}</Text>
       <Text variant="title" style={{ textAlign: 'center', fontSize: 30, lineHeight: 36 }}>
         {heading}

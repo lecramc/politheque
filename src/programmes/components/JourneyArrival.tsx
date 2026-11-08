@@ -22,7 +22,7 @@ export function JourneyArrival({
   return (
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.sm }}>
       <View style={{ width: 84, alignItems: 'center' }}>
-        <LogoMark width={48} muted={!finished} animateIn={animateIn && finished} />
+        <LogoMark height={40} muted={!finished} animateIn={animateIn && finished} />
       </View>
       <View style={{ flex: 1 }}>
         <Text style={{ ...fonts.bold, fontSize: 17 }}>{JOURNEY_COPY.arrivalKicker}</Text>

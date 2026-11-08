@@ -7,7 +7,7 @@ import {
 import { leanText } from '@/src/programmes/models/presentation.service';
 import type { Axis } from '@/src/programmes/models/programme.model';
 
-export const MAILTO_SUBJECT = 'Mes résultats Travée';
+export const MAILTO_SUBJECT = 'Mes résultats Polithèque';
 /** Au-delà, certains clients de messagerie tronquent ou refusent le lien mailto:. */
 export const MAILTO_MAX_LENGTH = 1800;
 
@@ -72,7 +72,7 @@ export const buildRecapBody = ({ date, ranking, axes, userPosition, link }: Reca
       : `${axis.label} : ${leanText(describeLean({ position, count: 0 }), axis)}`;
   });
   return [
-    `Mes résultats Travée du ${formatLongDate(date)}`,
+    `Mes résultats Polithèque du ${formatLongDate(date)}`,
     METHOD_REMINDER,
     '',
     'Proximités :',

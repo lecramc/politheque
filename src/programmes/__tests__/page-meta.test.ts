@@ -81,7 +81,7 @@ describe('Feature: textes de métadonnées', () => {
 describe('Feature: métadonnées des pages', () => {
   it('should describe the home page with the fixed site description', () => {
     const meta = homeMeta(catalog);
-    expect(meta.title).toBe('Travée · Comprendre la politique française et la présidentielle 2027');
+    expect(meta.title).toBe('Polithèque · Comprendre la politique française, présidentielle 2027');
     expect(meta.path).toBe('/');
     expect(meta.breadcrumb).toEqual([]);
   });
@@ -89,23 +89,23 @@ describe('Feature: métadonnées des pages', () => {
   it('should build each party section title from the same template', () => {
     const ctx = partyPageContext(alpha, catalog);
     expect(partySectionMeta(ctx, 'en-bref').title).toBe(
-      'Alpha (ABC) : histoire, idées et positions · Travée'
+      'Alpha (ABC) : histoire, idées et positions · Polithèque'
     );
     expect(partySectionMeta(ctx, 'histoire').title).toBe(
-      'Alpha (ABC) : histoire, fondateurs et dates clés · Travée'
+      'Alpha (ABC) : histoire, fondateurs et dates clés · Polithèque'
     );
     expect(partySectionMeta(ctx, 'positions').title).toBe(
-      'Alpha (ABC) : positions sur 3 questions · Travée'
+      'Alpha (ABC) : positions sur 3 questions · Polithèque'
     );
     expect(partySectionMeta(ctx, 'programme-2027').title).toBe(
-      'Alpha (ABC) : propositions pour la présidentielle 2027 · Travée'
+      'Alpha (ABC) : propositions pour la présidentielle 2027 · Polithèque'
     );
   });
 
   it('should fall back to the short name when the full label makes the title too long', () => {
     const long = catalog.parties[1];
     expect(partySectionMeta(partyPageContext(long, catalog), 'programme-2027').title).toBe(
-      'PS-PP : propositions pour la présidentielle 2027 · Travée'
+      'PS-PP : propositions pour la présidentielle 2027 · Polithèque'
     );
   });
 
@@ -251,13 +251,13 @@ describe('Feature: métadonnées de la section procédures', () => {
     partySectionMeta(partyPageContext(published.parties[index], published), 'procedures');
 
   it('should build the procedures title and description from the same template for every party', () => {
-    expect(procedures(0).title).toBe('Alpha (ABC) : procédures judiciaires · Travée');
+    expect(procedures(0).title).toBe('Alpha (ABC) : procédures judiciaires · Polithèque');
     expect(procedures(0).description).toBe(
       'Procédures judiciaires concernant Alpha (ABC), ses dirigeants, candidats et élus nationaux : statut exact, décisions, sources. Arrêté au 3 novembre 2026.'
     );
     expect(procedures(0).path).toBe('/partis/alpha/procedures-judiciaires');
     // Même règle de repli que les autres sections quand le nom complet est trop long.
-    expect(procedures(1).title).toBe('PS-PP : procédures judiciaires · Travée');
+    expect(procedures(1).title).toBe('PS-PP : procédures judiciaires · Polithèque');
     expect(procedures(1).description.length).toBeLessThanOrEqual(160);
     expect(procedures(1).description).toContain('concernant PS-PP,');
     for (const index of [0, 1]) {

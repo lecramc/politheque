@@ -10,7 +10,7 @@
 const sel = (name: string) => `:root [data-tv~="${name}"]`;
 
 export const printCss: string = [
-  '/* Travée : impression */',
+  '/* Polithèque : impression */',
   `${sel('print-only')} {\n  display: none;\n}`,
   '@media print {',
   '@page {\n  margin: 14mm;\n}',

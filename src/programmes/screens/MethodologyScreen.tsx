@@ -38,7 +38,7 @@ const COMMITMENTS = [
   {
     icon: 'phone-portrait-outline',
     title: 'Données personnelles',
-    text: "Votre progression de lecture reste sur votre appareil, sans vos réponses au questionnaire. Vous pouvez l'effacer depuis l'accueil. Vos réponses au questionnaire ne sont jamais enregistrées. Si vous le demandez, le lien personnel de résultats les place après le « # » de l'adresse, une partie que le navigateur n'envoie à aucun serveur, et l'e-mail récapitulatif est un brouillon ouvert dans votre messagerie, qui l'envoie elle-même : ni l'un ni l'autre ne passe par Travée. Ce lien et cet e-mail contiennent vos réponses, à ne partager qu'avec qui vous voulez.",
+    text: "Votre progression de lecture reste sur votre appareil, sans vos réponses au questionnaire. Vous pouvez l'effacer depuis l'accueil. Vos réponses au questionnaire ne sont jamais enregistrées. Si vous le demandez, le lien personnel de résultats les place après le « # » de l'adresse, une partie que le navigateur n'envoie à aucun serveur, et l'e-mail récapitulatif est un brouillon ouvert dans votre messagerie, qui l'envoie elle-même : ni l'un ni l'autre ne passe par Polithèque. Ce lien et cet e-mail contiennent vos réponses, à ne partager qu'avec qui vous voulez.",
   },
 ];
 

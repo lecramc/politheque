@@ -44,7 +44,7 @@ export function ResultsPrint({
   return (
     <View {...tv('print-only')} style={{ gap: effects.spacing.md }}>
       <View style={{ gap: effects.spacing.xxs }}>
-        <Text style={{ ...fonts.display, fontSize: 26 }}>Mes résultats Travée</Text>
+        <Text style={{ ...fonts.display, fontSize: 26 }}>Mes résultats Polithèque</Text>
         <Text style={small}>{formatLongDate(date)}</Text>
         <Text style={small}>
           {METHOD_REMINDER} Un parti n'est noté que si au moins 5 de vos réponses peuvent être

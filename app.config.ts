@@ -13,13 +13,13 @@ interface EnvConfig {
 
 const ENV_CONFIG: Record<string, EnvConfig> = {
   development: {
-    name: 'Travée (Dev)',
+    name: 'Polithèque (Dev)',
     bundleId: 'com.clarity.travee.dev',
     androidPackage: 'com.clarity.travee.dev',
     scheme: 'travee-dev',
   },
   production: {
-    name: 'Travée',
+    name: 'Polithèque',
     bundleId: 'com.clarity.travee',
     androidPackage: 'com.clarity.travee',
     scheme: 'travee',

@@ -1,4 +1,4 @@
-# Charte éditoriale — Travée
+# Charte éditoriale — Polithèque
 
 Objectif : permettre de comprendre les programmes des principales forces politiques
 pour la présidentielle 2027, **sans désinformation et sans orienter le lecteur**.

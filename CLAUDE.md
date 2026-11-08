@@ -1,4 +1,4 @@
-# Travée — Project Memory
+# Polithèque — Project Memory
 
 ## Règles Git
 
@@ -40,7 +40,7 @@ Le hook `.husky/post-commit` bumpe `package.json` automatiquement après chaque 
 
 ## Produit
 
-**Travée** : site web neutre et non partisan pour comprendre la politique française —
+**Polithèque** (anciennement « Travée ») : site web neutre et non partisan pour comprendre la politique française —
 institutions (guide « Comprendre »), partis (histoire, idées, positions), élections (la
 présidentielle 2027 est à la une), grands débats, et questionnaire de positionnement.
 Architecture de l'information : `docs/architecture-information.md`.

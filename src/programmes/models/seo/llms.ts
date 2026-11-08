@@ -53,7 +53,7 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '',
     ...link('Test politique : de quels partis êtes-vous proche ?', '/me-situer'),
     '',
-    '## Citer Travée',
+    '## Citer Polithèque',
     '',
     `Citer le nom du site (${APP_NAME}), l'URL de la page et la date « vérifié le » indiquée sur la page.`,
     ...(urls.some((u) => u.pattern === '/partis/[id]/procedures-judiciaires')

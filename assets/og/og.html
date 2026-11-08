@@ -18,6 +18,11 @@
         font-weight: 700;
       }
       @font-face {
+        font-family: 'Fraunces';
+        src: url('../../node_modules/@expo-google-fonts/fraunces/600SemiBold/Fraunces_600SemiBold.ttf');
+        font-weight: 600;
+      }
+      @font-face {
         font-family: 'Atkinson';
         src: url('../../node_modules/@expo-google-fonts/atkinson-hyperlegible/400Regular/AtkinsonHyperlegible_400Regular.ttf');
         font-weight: 400;
@@ -29,13 +34,9 @@
       .stripe .b { background: #1e3f8f; }
       .stripe .w { background: #ffffff; border-bottom: 1px solid #d9d1c4; }
       .stripe .r { background: #d2394a; }
-      .brand { position: absolute; left: 90px; top: 90px; display: flex; align-items: flex-end; gap: 24px; }
-      .mark { position: relative; width: 120px; height: 60px; }
-      .mark i { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); border-radius: 999px 999px 0 0; }
-      .mark .o { width: 120px; height: 60px; background: #d2394a; }
-      .mark .m { width: 88px; height: 44px; background: #ffffff; }
-      .mark .n { width: 56px; height: 28px; background: #1e3f8f; }
-      .name { font-family: 'Fraunces', serif; font-weight: 700; font-size: 72px; line-height: 64px; }
+      .brand { position: absolute; left: 90px; top: 90px; display: flex; align-items: baseline; }
+      .mark { display: block; margin-bottom: -1.4px; margin-right: 1.3px; margin-left: -2.2px; }
+      .name { font-family: 'Fraunces', serif; font-weight: 600; font-size: 72px; line-height: 64px; }
       h1 { position: absolute; left: 90px; top: 250px; width: 1000px; font-family: 'Fraunces', serif; font-weight: 700; font-size: 84px; line-height: 92px; }
       .sub { position: absolute; left: 90px; top: 480px; font-size: 34px; color: #4b5468; }
       .src { position: absolute; left: 90px; top: 540px; font-size: 28px; color: #1e3f8f; }
@@ -44,8 +45,9 @@
   <body>
     <div class="stripe"><div class="b"></div><div class="w"></div><div class="r"></div></div>
     <div class="brand">
-      <div class="mark"><i class="o"></i><i class="m"></i><i class="n"></i></div>
-      <div class="name">Travée</div>
+      <svg class="mark" viewBox="0 0 1300 1480" width="46.8" height="53.3" aria-hidden="true">
+<g transform="translate(-60 40)"><defs><mask id="pr24" maskUnits="userSpaceOnUse" x="0" y="-100" width="1500" height="1600"><rect x="0" y="-100" width="1500" height="1600" fill="#fff"/><path d="M563 99L563 1233Q563 1255 575 1270Q587 1286 613 1290L700 1302Q725 1307 736 1319Q747 1331 747 1354Q747 1375 732 1388Q718 1400 687 1400L165 1400Q134 1400 119 1388Q104 1375 104 1354Q104 1316 146 1303L204 1290Q228 1283 240 1269Q253 1255 253 1233L253 167Q253 145 240 131Q228 117 204 110L146 97Q104 84 104 46Q104 24 119 12Q134 0 165 0L563 0L563 99Z" fill="#000" stroke="#000" stroke-width="48" stroke-linejoin="round"/></mask></defs><g mask="url(#pr24)"><path d="M420 0 L700 0 A638 467 0 0 1 700 934 L420 934 L420 899 L700 899 A532 432 0 0 0 700 35 L420 35 Z" fill="#D2394A"/><path d="M420 35 L700 35 A532 432 0 0 1 700 899 L420 899 L420 868 L700 868 A440 401 0 0 0 700 66 L420 66 Z" fill="#FFFFFF"/><path d="M420 66 L700 66 A440 401 0 0 1 700 868 L420 868 L420 833 L700 833 A334 366 0 0 0 700 101 L420 101 Z" fill="#1E3F8F"/></g><path d="M563 99L563 1233Q563 1255 575 1270Q587 1286 613 1290L700 1302Q725 1307 736 1319Q747 1331 747 1354Q747 1375 732 1388Q718 1400 687 1400L165 1400Q134 1400 119 1388Q104 1375 104 1354Q104 1316 146 1303L204 1290Q228 1283 240 1269Q253 1255 253 1233L253 167Q253 145 240 131Q228 117 204 110L146 97Q104 84 104 46Q104 24 119 12Q134 0 165 0L563 0L563 99Z" fill="#15203A"/></g>
+</svg><div class="name">olithèque</div>
     </div>
     <h1>Comprendre la politique française</h1>
     <div class="sub">Institutions · Partis · Grands débats · Présidentielle 2027</div>
