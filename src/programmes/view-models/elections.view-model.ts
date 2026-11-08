@@ -1,7 +1,13 @@
 import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
-import { candidatesOf, daysUntil, nextRound } from '@/src/programmes/models/election.service';
+import {
+  candidatesOf,
+  daysUntil,
+  nextRound,
+  voteSteps,
+} from '@/src/programmes/models/election.service';
+import { readingMinutes } from '@/src/programmes/models/presentation.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import { electionMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { selectCatalog, selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
@@ -32,5 +38,18 @@ export const electionViewModel =
           ? (catalog?.guide ?? []).filter((s) => election.guideSectionIds.includes(s.id))
           : [],
         themes: catalog?.themes ?? [],
+        /** Une seule liste de dates (parrainages, inscription, tours), dans l'ordre du calendrier. */
+        dates: election
+          ? [...election.keyDates, ...election.rounds].sort((a, b) => a.date.localeCompare(b.date))
+          : [],
+        voteSteps: election ? voteSteps(election) : [],
+        voteGuide: {
+          href: '/comprendre/comment-voter',
+          minutes: readingMinutes(
+            (catalog?.guide ?? [])
+              .find((s) => s.id === 'comment-voter')
+              ?.blocks.flatMap((b) => [b.heading, ...b.paragraphs, ...(b.more ?? [])]) ?? []
+          ),
+        },
       };
     });

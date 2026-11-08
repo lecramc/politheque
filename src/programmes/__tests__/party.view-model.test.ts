@@ -40,25 +40,23 @@ const vmOf = (id: string, dispatch = vi.fn()) =>
 
 describe('Feature: fiche parti découpée en sections', () => {
   it('should expose available sections in fixed order', () => {
-    expect(vmOf('alpha').sections.map((s) => s.id)).toEqual([
-      'en-bref',
-      'positions',
-      'programme-2027',
-      'histoire',
-    ]);
+    expect(vmOf('alpha').sections.map((s) => s.id)).toEqual(['programme', 'positions', 'histoire']);
     expect(vmOf('alpha').sections.map((s) => s.label)).toEqual([
-      'En bref',
+      'Programme',
       'Positions',
-      'Programme 2027',
       'Histoire',
     ]);
-    expect(vmOf('sans-histoire').sections.map((s) => s.id)).toEqual(['en-bref', 'positions']);
+    expect(vmOf('sans-histoire').sections.map((s) => s.id)).toEqual(['positions']);
   });
 
   it('should expose sources and meta per section', () => {
     const vm = vmOf('alpha');
     expect(vm.metaBySection?.['histoire'].path).toBe('/partis/alpha/histoire');
-    expect(vm.metaBySection?.['en-bref'].title).toContain('Alpha');
+    expect(vm.metaBySection?.['programme'].title).toContain('Alpha');
+    expect(vm.aliasMeta).toMatchObject({
+      path: '/partis/alpha/programme-2027',
+      jsonLd: null,
+    });
     expect(vm.sourcesBySection['positions']).toEqual([]);
   });
 

@@ -16,6 +16,7 @@ import {
   nonIndexableMeta,
   partyLabel,
   partyPageContext,
+  partyAliasMeta,
   partySectionMeta,
   quizMeta,
   rubricMeta,
@@ -88,8 +89,8 @@ describe('Feature: métadonnées des pages', () => {
 
   it('should build each party section title from the same template', () => {
     const ctx = partyPageContext(alpha, catalog);
-    expect(partySectionMeta(ctx, 'en-bref').title).toBe(
-      'Alpha (ABC) : histoire, idées et positions · Polithèque'
+    expect(partySectionMeta(ctx, 'programme').title).toBe(
+      'Alpha (ABC) : programme 2027 · Polithèque'
     );
     expect(partySectionMeta(ctx, 'histoire').title).toBe(
       'Alpha (ABC) : histoire, fondateurs et dates clés · Polithèque'
@@ -97,35 +98,54 @@ describe('Feature: métadonnées des pages', () => {
     expect(partySectionMeta(ctx, 'positions').title).toBe(
       'Alpha (ABC) : positions sur 3 questions · Polithèque'
     );
-    expect(partySectionMeta(ctx, 'programme-2027').title).toBe(
-      'Alpha (ABC) : propositions pour la présidentielle 2027 · Polithèque'
-    );
   });
 
-  it('should fall back to the short name when the full label makes the title too long', () => {
+  it('should never reduce the programme title to the acronym alone, even when the name is long', () => {
     const long = catalog.parties[1];
-    expect(partySectionMeta(partyPageContext(long, catalog), 'programme-2027').title).toBe(
-      'PS-PP : propositions pour la présidentielle 2027 · Polithèque'
+    const title = partySectionMeta(partyPageContext(long, catalog), 'programme').title;
+    expect(title).toContain(long.name);
+    expect(title).toContain(': programme 2027');
+    expect(title.startsWith('PS-PP')).toBe(false);
+  });
+
+  it('should fall back to the short name for the other sections when the label is too long', () => {
+    const long = catalog.parties[1];
+    expect(partySectionMeta(partyPageContext(long, catalog), 'positions').title).toBe(
+      'PS-PP : positions sur 3 questions · Polithèque'
     );
   });
 
   it('should mention the verification date in every party description', () => {
     const ctx = partyPageContext(alpha, catalog);
-    for (const section of ['en-bref', 'histoire', 'positions', 'programme-2027'] as const) {
+    for (const section of ['programme', 'histoire', 'positions'] as const) {
       expect(partySectionMeta(ctx, section).description).toContain(
         'Fiche vérifiée le 3 novembre 2026'
       );
     }
   });
 
+  it('should open the programme description with the name, without any article', () => {
+    const meta = partySectionMeta(partyPageContext(alpha, catalog), 'programme');
+    expect(meta.description).toMatch(
+      /^Alpha \(ABC\) : programme 2027 en \d+ thèmes, avec ses sources\./
+    );
+  });
+
+  it('should keep the bare party address as a canonical-only alias, never noindex and canonical together', () => {
+    const meta = partyAliasMeta(partyPageContext(alpha, catalog));
+    expect(meta.path).toBe('/partis/alpha/programme-2027');
+    expect(meta.robots).toBe('index, follow');
+    expect(meta.jsonLd).toBeNull();
+  });
+
   it('should state the candidate name and its status label on the 2027 page', () => {
-    const meta = partySectionMeta(partyPageContext(alpha, catalog), 'programme-2027');
+    const meta = partySectionMeta(partyPageContext(alpha, catalog), 'programme');
     expect(meta.description).toContain('Jeanne Dupont (Candidate déclarée)');
   });
 
   it('should not mention any party family in a party description', () => {
     const party = { ...alpha, family: 'Extrême droite (qualification)' };
-    const meta = partySectionMeta(partyPageContext(party, catalog), 'en-bref');
+    const meta = partySectionMeta(partyPageContext(party, catalog), 'programme');
     expect(meta.description).not.toContain('Extrême');
   });
 
@@ -181,7 +201,7 @@ describe('Feature: métadonnées des pages', () => {
   });
 
   it('should describe the 2027 candidate as a Person without memberOf', () => {
-    const meta = partySectionMeta(partyPageContext(alpha, catalog), 'programme-2027');
+    const meta = partySectionMeta(partyPageContext(alpha, catalog), 'programme');
     const json = JSON.stringify(meta.jsonLd);
     expect(json).toContain('"Person"');
     expect(json).not.toContain('memberOf');
@@ -195,9 +215,9 @@ describe('Feature: métadonnées des pages', () => {
   it('should omit datePublished everywhere', () => {
     const metas = [
       homeMeta(catalog),
-      rubricMeta('debats', catalog),
+      rubricMeta('partis', catalog),
       debateMeta(catalog.themes[0], catalog),
-      partySectionMeta(partyPageContext(alpha, catalog), 'en-bref'),
+      partySectionMeta(partyPageContext(alpha, catalog), 'programme'),
     ];
     for (const meta of metas)
       expect(JSON.stringify(meta.jsonLd)).not.toContain('"datePublished":"2026-11-03"');
@@ -208,7 +228,7 @@ describe('Feature: métadonnées des pages', () => {
   });
 
   it('should include a minimal publisher Organization node on every indexable page except home', () => {
-    const meta = rubricMeta('elections', catalog);
+    const meta = rubricMeta('comprendre', catalog);
     const org = meta.jsonLd!['@graph'].find((n) => n['@type'] === 'Organization')!;
     expect(org).not.toHaveProperty('logo');
     const home = homeMeta(catalog).jsonLd!['@graph'];

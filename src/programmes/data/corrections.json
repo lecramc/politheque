@@ -1,5 +1,48 @@
 [
   {
+    "id": "2026-11-08-resumes-du-guide-ramenes-a-deux-phrases-la-phras",
+    "date": "2026-11-08",
+    "kind": "mise-a-jour",
+    "pages": ["/comprendre/election-presidentielle", "/comprendre/comment-voter"],
+    "summary": "Résumés du guide ramenés à deux phrases : la phrase sur les élections législatives passe dans « En savoir plus », la date limite d'inscription est dite en une phrase."
+  },
+  {
+    "id": "2026-11-08-contexte-des-neuf-debats-raccourci-a-deux-phrase",
+    "date": "2026-11-08",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/partis",
+      "/debats/economie",
+      "/debats/travail",
+      "/debats/immigration",
+      "/debats/securite",
+      "/debats/ecologie",
+      "/debats/sante",
+      "/debats/education",
+      "/debats/europe",
+      "/debats/institutions"
+    ],
+    "summary": "Contexte des neuf débats raccourci à deux phrases ; le texte complet reste derrière « En savoir plus ». Aucune source ni aucun chiffre modifié."
+  },
+  {
+    "id": "2026-11-08-guide-reformule-en-phrases-courtes-le-premier-pa",
+    "date": "2026-11-08",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/comprendre",
+      "/comprendre/institutions",
+      "/comprendre/pouvoirs-du-president",
+      "/comprendre/election-presidentielle",
+      "/comprendre/comment-voter",
+      "/comprendre/gauche-droite",
+      "/comprendre/classement-des-partis",
+      "/comprendre/union-europeenne",
+      "/comprendre/budget-dette",
+      "/comprendre/desinformation"
+    ],
+    "summary": "Guide reformulé en phrases courtes : le premier paragraphe de chaque partie reste visible, le détail (articles, délais, exceptions) passe derrière « En savoir plus ». Aucune source ni aucun chiffre modifié."
+  },
+  {
     "id": "2026-11-08-les-idees-cles-reduire-l-immigration-par-referen",
     "date": "2026-11-08",
     "kind": "mise-a-jour",

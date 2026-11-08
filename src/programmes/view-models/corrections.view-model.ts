@@ -34,7 +34,10 @@ export const correctionsViewModel = () =>
             dateLabel: formatLongDate(e.date),
             kindLabel: CORRECTION_KIND_LABELS[e.kind],
             summary: e.summary,
-            pages: e.pages.map((path) => ({ path, label: labels[path] ?? path })),
+            pages: e.pages.map((path) => ({
+              path,
+              label: labels[path] ?? labels[`${path}/programme-2027`] ?? path,
+            })),
           })
         ),
       })),

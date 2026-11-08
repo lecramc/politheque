@@ -27,13 +27,7 @@ import { logger } from '@/src/core/utils/logger';
 SplashScreen.preventAutoHideAsync();
 
 /** Destinations de la barre d'onglets : on passe de l'une à l'autre en fondu, pas en poussée. */
-const SECTION_ROUTES = [
-  'index',
-  'comprendre/index',
-  'partis/index',
-  'elections/index',
-  'debats/index',
-] as const;
+const SECTION_ROUTES = ['index', 'comprendre/index', 'partis/index'] as const;
 
 /**
  * Transitions natives cohérentes : fondu entre rubriques, glissement pour entrer dans

@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
-import { ScrollView, View } from 'react-native';
+import { Link } from 'expo-router';
+import React from 'react';
+import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
-import { Text } from '@/components/Themed';
+import { Icon, Text } from '@/components/Themed';
+import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
+import { useScrollToHash } from '@/src/core/hooks/useScrollToHash';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { tv } from '@/src/core/web/tv';
 import { Page } from '@/src/programmes/components/Page';
@@ -15,76 +18,100 @@ import { partiesViewModel } from '@/src/programmes/view-models/parties.view-mode
 const ELECTION_ID = 'presidentielle-2027';
 const metaViewModel = pageMetaViewModel((catalog) => rubricMeta('partis', catalog));
 
+function DebateRow({
+  debate,
+  first = false,
+}: {
+  debate: { title: string; icon: string; href: string };
+  first?: boolean;
+}) {
+  const { colors, effects } = useTheme();
+  return (
+    <Link href={debate.href as never} asChild>
+      <Pressable
+        large
+        accessibilityRole="link"
+        style={{
+          flexDirection: 'row',
+          alignItems: 'center',
+          gap: effects.spacing.smd,
+          minHeight: 56,
+          paddingVertical: 10,
+          paddingHorizontal: effects.spacing.md,
+          borderTopWidth: first ? 0 : 1,
+          borderColor: colors.surface.border.primary,
+        }}
+      >
+        <Icon name={debate.icon} variant="onGlass" size="small" />
+        <Text style={{ flex: 1, fontSize: 16 }}>{debate.title}</Text>
+        <Icon name="chevron-forward" variant="secondary" size="small" />
+      </Pressable>
+    </Link>
+  );
+}
+
+/** Partis : les fiches, « Comparer deux partis » et les grands débats (ancre `#debats`). */
 export default function PartiesScreen() {
   const vm = useViewModel(partiesViewModel);
   const meta = useViewModel(metaViewModel);
-  const { colors, effects, fonts } = useTheme();
-  const [onlyRunning, setOnlyRunning] = useState(false);
-  const parties = onlyRunning ? vm.parties.filter((p) => p.candidacies[ELECTION_ID]) : vm.parties;
-
-  const chip = (label: string, active: boolean, onPress: () => void) => (
-    <Pressable
-      onPress={onPress}
-      accessibilityRole="button"
-      accessibilityState={{ selected: active }}
-      style={{
-        minHeight: 44,
-        justifyContent: 'center',
-        paddingHorizontal: 16,
-        borderRadius: effects.borderRadius.round,
-        borderWidth: 1.5,
-        borderColor: active ? colors.tint : colors.surface.border.tertiary,
-        backgroundColor: active ? colors.tintSoft : 'transparent',
-      }}
-    >
-      <Text
-        style={{
-          ...(active ? fonts.bold : fonts.regular),
-          color: active ? colors.tint : colors.text.primary,
-        }}
-      >
-        {label}
-      </Text>
-    </Pressable>
-  );
+  const { colors, effects } = useTheme();
+  useScrollToHash(vm.status === 'loaded');
 
   return (
     <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
       <View style={{ gap: effects.spacing.lg }}>
-        <View {...tv('list-col')} style={{ gap: 6 }}>
-          <Text variant="title">Les partis</Text>
+        <View {...tv('list-col')} style={{ gap: effects.spacing.xs }}>
+          <Text variant="title">Partis</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
-            {vm.parties.length} partis, par ordre alphabétique.
+            Ce que veut chaque parti, et ce qu'ils proposent sur chaque grand débat.
           </Text>
+          <View style={{ alignSelf: 'flex-start', marginTop: effects.spacing.xs }}>
+            <Button variant="secondary" fullWidth={false} href={vm.compareHref}>
+              Comparer deux partis
+            </Button>
+          </View>
         </View>
-        <ScrollView
-          {...tv('list-col')}
-          horizontal
-          showsHorizontalScrollIndicator={false}
-          // Marge intérieure (compensée à l'extérieur) : l'anneau de focus n'est pas rogné.
-          style={{ margin: -effects.spacing.xs }}
-          contentContainerStyle={{ gap: effects.spacing.xs, padding: effects.spacing.xs }}
-        >
-          {chip('Tous', !onlyRunning, () => setOnlyRunning(false))}
-          {chip('Avec une candidature en 2027', onlyRunning, () => setOnlyRunning(true))}
-        </ScrollView>
-        <RowGroup grid>
-          {parties.map((party, index) => {
-            const candidacy = party.candidacies[ELECTION_ID];
-            const founded = party.history
-              ? `Fondé en ${party.history.founded.match(/\d{4}/)?.[0] ?? ''}`
-              : '';
-            const candidate = candidacy ? `Candidature : ${candidacy.candidateName}` : '';
-            return (
-              <PartyRow
-                key={party.id}
-                party={party}
-                first={index === 0}
-                subtitle={[founded, candidate].filter(Boolean).join(' · ')}
-              />
-            );
-          })}
-        </RowGroup>
+
+        <View style={{ gap: effects.spacing.xs }}>
+          <View {...tv('list-col')}>
+            <Text variant="caption" headingLevel={2}>
+              Les {vm.parties.length} partis · A-Z
+            </Text>
+          </View>
+          <RowGroup grid>
+            {vm.parties.map((party, index) => {
+              const candidacy = party.candidacies[ELECTION_ID];
+              const founded = party.history
+                ? `Fondé en ${party.history.founded.match(/\d{4}/)?.[0] ?? ''}`
+                : '';
+              const candidate = candidacy ? `Candidature : ${candidacy.candidateName}` : '';
+              return (
+                <PartyRow
+                  key={party.id}
+                  party={party}
+                  first={index === 0}
+                  subtitle={[founded, candidate].filter(Boolean).join(' · ')}
+                />
+              );
+            })}
+          </RowGroup>
+        </View>
+
+        <View nativeID="debats" style={{ gap: effects.spacing.xs }}>
+          <View {...tv('list-col')} style={{ gap: effects.spacing.xxs }}>
+            <Text variant="caption" headingLevel={2}>
+              Les grands débats
+            </Text>
+            <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
+              Pour chaque débat : les enjeux, les chiffres clés et ce que propose chaque parti.
+            </Text>
+          </View>
+          <RowGroup grid>
+            {vm.debates.map((debate, index) => (
+              <DebateRow key={debate.id} debate={debate} first={index === 0} />
+            ))}
+          </RowGroup>
+        </View>
       </View>
     </Page>
   );

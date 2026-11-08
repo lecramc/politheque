@@ -1,5 +1,7 @@
 # Architecture de l'information
 
+> **Simplification v2 :** trois rubriques (Comprendre, Partis, Me situer) ; Débats et Comparer sont dans Partis, Élections est la pastille « 2027 ». Fiche parti à 4 onglets (Programme, Positions, Histoire, Procédures). Voir `docs/ux/spec-simplification-v2.md`.
+
 Le site explique **la politique française** dans la durée. La présidentielle 2027 est une
 rubrique d'actualité, pas le sujet du site.
 
@@ -7,8 +9,8 @@ rubrique d'actualité, pas le sujet du site.
 
 | Rubrique   | Route                                | Contenu                                                                                                                                                                             |
 | ---------- | ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Accueil    | `/`                                  | Parcours citoyen en six étapes + bandeau d'actualité (présidentielle 2027, J-n)                                                                                                     |
-| Étape      | `/parcours/[etape]`                  | Contenus d'une étape, état de lecture, suite conseillée (jamais verrouillée)                                                                                                        |
+| Accueil    | `/`                                  | Quatre tâches, les dix partis en accès direct, carte « Le parcours » ; pastille « 2027 · J-n » dans l'en-tête                                                                       |
+| (retirée)  | `/parcours/[etape]`                  | Redirigée vers `/comprendre#…`, `/partis`, `/partis#debats` ou `/me-situer` (301)                                                                                                   |
 | Passeport  | `/passeport`                         | Tampons d'étape, détail partis et débats ; `noindex`, progression locale à l'appareil                                                                                               |
 | Comprendre | `/comprendre`, `/comprendre/[id]`    | Guide pédagogique : institutions, pouvoirs du président, élections, voter, gauche/droite, UE, budget, désinformation (à étendre : collectivités, lexique, histoire des Républiques) |
 | Partis     | `/partis`, `/partis/[id]`            | Fiches permanentes : histoire, idées, positions sur les grands débats, + candidature à l'élection en cours                                                                          |

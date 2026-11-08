@@ -2,9 +2,7 @@ import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
-import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import {
-  glanceQuestionIds,
   hasKeyIdeasSection,
   keyIdeaMeasureSources,
   keyIdeaOrigin,
@@ -19,13 +17,13 @@ import type { Candidacy, Source, ThemeId } from '@/src/programmes/models/program
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import {
   nonIndexableMeta,
+  partyAliasMeta,
   partyPageContext,
   partySectionMeta,
   type PageMeta,
 } from '@/src/programmes/models/seo/page-meta';
 import {
   availableSections,
-  partyHref,
   hasLegalSection,
   PARTY_SECTIONS,
   type PartySection,
@@ -110,23 +108,6 @@ export const partyViewModel =
                 }),
               }
             : null;
-        const glance =
-          party && catalog
-            ? glanceQuestionIds(catalog.questions, catalog.parties).map((questionId) => {
-                const q = questionById(questionId)!;
-                const position = party.stances[questionId];
-                return {
-                  questionId,
-                  label: q.shortLabel,
-                  statement: q.statement,
-                  stance: position?.stance ?? null,
-                  justification: position?.justification ?? '',
-                  sources: position?.sources ?? [],
-                  /** Comparaison du débat de la question, ce parti présélectionné (même règle pour les dix). */
-                  compareHref: `/debats/${q.theme}?comparer=${party.id}`,
-                };
-              })
-            : [];
         const stances =
           party && catalog
             ? catalog.questions.map((question) => ({
@@ -143,29 +124,12 @@ export const partyViewModel =
           verifiedOn,
           updatedOn,
           keyIdeas,
-          glance,
-          glanceIntro: catalog
-            ? `${glance.length} questions, les mêmes pour les ${catalog.parties.length} partis. Touchez-en une pour voir pourquoi et les sources.`
-            : '',
-          positionsLabel: `Voir les ${catalog?.questions.length ?? 0} positions`,
-          // Seul lien sans onglet propre ; l'histoire et le programme sont des onglets de la fiche.
-          further:
-            party && catalog && party.history
-              ? [
-                  {
-                    key: 'definition',
-                    title: splitIdeals(party.history.ideals).others.length
-                      ? 'Comment il se définit, comment on le classe'
-                      : 'Comment on le classe',
-                    subtitle: null,
-                    href: partyHref(party.id, 'histoire'),
-                  },
-                ]
-              : [],
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,
           sections,
           metaBySection,
-          notFoundMeta: nonIndexableMeta('Parti introuvable', `/partis/${partyId}`),
+          /** `/partis/[id]` : canonical vers l'onglet Programme, hors index. */
+          aliasMeta: context ? partyAliasMeta(context) : null,
+          notFoundMeta: nonIndexableMeta('Parti introuvable', `/partis/${partyId}/programme-2027`),
           sourcesBySection,
           /** Dossier présenté (tri, libellés, rappel de présomption) ; null si la section n'existe pas. */
           procedures: context?.legal ? presentDossier(context.legal) : null,

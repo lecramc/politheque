@@ -4,7 +4,6 @@ import type {
   Measure,
   MeasureRef,
   Party,
-  Question,
   Source,
   SourceKind,
   ThemeId,
@@ -73,23 +72,6 @@ export const sortKeyIdeasByTheme = (ideas: KeyIdea[], themeOrder: readonly Theme
   [...ideas].sort(
     (a, b) => themeOrder.indexOf(keyIdeaTheme(a)) - themeOrder.indexOf(keyIdeaTheme(b))
   );
-
-/**
- * Les grandes questions : pour chaque thème, dans l'ordre des questions, la première à laquelle
- * les partis ont tous une position non nulle (au plus une par thème). Même liste pour tous.
- */
-export const glanceQuestionIds = (questions: Question[], parties: Party[]): string[] => {
-  const seen = new Set<string>();
-  const ids: string[] = [];
-  for (const question of questions) {
-    if (seen.has(question.theme)) continue;
-    if (parties.every((party) => party.stances[question.id]?.stance != null)) {
-      seen.add(question.theme);
-      ids.push(question.id);
-    }
-  }
-  return ids;
-};
 
 /** Fiche suivante dans l'ordre alphabétique ; après la dernière, on revient à la première. */
 export const nextPartyInJourney = (parties: Party[], currentId: string): Party => {

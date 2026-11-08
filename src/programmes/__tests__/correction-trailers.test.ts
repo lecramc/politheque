@@ -9,7 +9,13 @@ const line = (type: string, pages: string, summary = SUMMARY) =>
   `Correction-publique: ${type} | ${pages} | ${summary}`;
 const message = (...lines: string[]) => `fix: date de fondation\n\n${lines.join('\n')}\n`;
 
-const INDEXABLE = ['/partis/rn', '/partis/rn/histoire', '/me-situer', '/comprendre'];
+const INDEXABLE = [
+  '/partis/rn',
+  '/partis/rn/programme-2027',
+  '/partis/rn/histoire',
+  '/me-situer',
+  '/comprendre',
+];
 const resolve = (msg: string, stagedFiles: string[] = []) =>
   resolveCorrections(msg, { stagedFiles, indexablePaths: INDEXABLE });
 
@@ -83,12 +89,14 @@ describe('Feature: lecture des trailers de correction', () => {
   });
 
   it('should resolve « auto » pages from staged data file paths', () => {
-    expect(pagesForDataPath('src/programmes/data/parties/rn.json')).toEqual(['/partis/rn']);
+    expect(pagesForDataPath('src/programmes/data/parties/rn.json')).toEqual([
+      '/partis/rn/programme-2027',
+    ]);
     expect(pagesForDataPath('src/programmes/data/affaires/rn.json')).toEqual([
       '/partis/rn/procedures-judiciaires',
     ]);
     expect(pagesForDataPath('src/programmes/data/guide.json')).toEqual(['/comprendre']);
-    expect(pagesForDataPath('src/programmes/data/themes.json')).toEqual(['/debats']);
+    expect(pagesForDataPath('src/programmes/data/themes.json')).toEqual(['/partis']);
     expect(pagesForDataPath('src/programmes/data/elections/presidentielle-2027.json')).toEqual([
       '/elections/presidentielle-2027',
     ]);
@@ -102,7 +110,7 @@ describe('Feature: lecture des trailers de correction', () => {
     ]);
     expect(result).toMatchObject({
       ok: true,
-      corrections: [{ pages: ['/partis/rn', '/me-situer'] }],
+      corrections: [{ pages: ['/partis/rn/programme-2027', '/me-situer'] }],
     });
   });
 

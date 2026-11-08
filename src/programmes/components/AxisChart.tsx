@@ -21,15 +21,18 @@ type Point = {
 /** Marge intérieure : un point à ±1 reste dans le cadre avec son libellé. */
 const INSET = 0.1;
 
-/** Carte 2D (économie × société) + axe Europe. Positions de -1 à +1. */
+/** Carte 2D (économie × société) + axe Europe (`showEurope`). Positions de -1 à +1. */
 export function AxisChart({
   axes,
   user,
   parties,
+  showEurope = true,
 }: {
   axes: Axis[];
   user: AxisPosition;
   parties: { party: Party; position: AxisPosition }[];
+  /** Faux : seule la carte à deux axes ; l'axe « Europe » est dans « Voir la carte complète ». */
+  showEurope?: boolean;
 }) {
   const { colors, fonts } = useTheme();
   // Mesure du tracé, pas mise en page : la carte n'existe qu'après le questionnaire (rendu client
@@ -170,7 +173,7 @@ export function AxisChart({
         <Text style={[caption, { flex: 1, textAlign: 'right' }]}>{eco?.positivePole} →</Text>
       </View>
 
-      {eu ? (
+      {eu && showEurope ? (
         <View style={{ width: size, gap: 6, marginTop: 8 }}>
           <Text style={{ ...fonts.bold, fontSize: 14 }}>{eu.label}</Text>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>

@@ -7,15 +7,35 @@ import { Text } from '@/components/Themed';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Card } from '@/src/programmes/components/Card';
+import { MoreText } from '@/src/programmes/components/MoreText';
 import { PageSources } from '@/src/programmes/components/PageSources';
+import { ReadingGuide } from '@/src/programmes/components/ReadingGuide';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { SourcedAccordionList } from '@/src/programmes/components/SourcedAccordionList';
 import { TabPanel } from '@/src/programmes/components/Tabs';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
-import { formatSourceDate } from '@/src/programmes/models/presentation.service';
+import { foldAfterSentences, formatSourceDate } from '@/src/programmes/models/presentation.service';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
+
+/**
+ * Règle de repli mécanique, la même pour les dix partis : les deux premières phrases, puis
+ * « Lire la suite ». Le texte du parti n'est jamais réécrit.
+ */
+function FoldedText({ text }: { text: string }) {
+  const { visible, rest } = foldAfterSentences(text, 2);
+  return (
+    <>
+      <Text style={{ fontSize: 16, lineHeight: 25 }}>{visible}</Text>
+      {rest ? (
+        <MoreText label="Lire la suite">
+          <Text style={{ fontSize: 16, lineHeight: 25 }}>{rest}</Text>
+        </MoreText>
+      ) : null}
+    </>
+  );
+}
 
 /** « Histoire » : /partis/[id]/histoire. */
 export default function PartyHistoryScreen() {
@@ -47,16 +67,18 @@ export default function PartyHistoryScreen() {
           <SectionTitle>Comment on le classe</SectionTitle>
           <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.party?.family}</Text>
           <SourcedAccordionList items={classification} />
-          <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-            Les étiquettes viennent de la presse de référence, des politistes et du ministère de
-            l'Intérieur ; chaque parti peut les contester. Le même traitement s'applique à tous.
-          </Text>
+          <ReadingGuide>
+            <Text style={{ fontSize: 16, lineHeight: 25 }}>
+              Les étiquettes viennent de la presse de référence, des politistes et du ministère de
+              l'Intérieur ; chaque parti peut les contester. Le même traitement s'applique à tous.
+            </Text>
+          </ReadingGuide>
         </View>
 
         {history.whyCreated ? (
           <Card style={{ backgroundColor: colors.tintSoft, borderColor: colors.tintBorder }}>
             <SectionTitle>Pourquoi ce parti a été créé</SectionTitle>
-            <Text style={{ fontSize: 16, lineHeight: 25 }}>{history.whyCreated.text}</Text>
+            <FoldedText text={history.whyCreated.text} />
             <SourceChip sources={history.whyCreated.sources} />
           </Card>
         ) : (

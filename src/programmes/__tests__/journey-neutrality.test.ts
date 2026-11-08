@@ -6,8 +6,8 @@ import type { AnswerValue } from '@/src/programmes/models/matching.service';
 import { selectJourney } from '@/src/programmes/store/programmes.selector';
 import { quizActions } from '@/src/programmes/store/quiz.slice';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
-import { journeyStepViewModel } from '@/src/programmes/view-models/journey-step.view-model';
-import { journeyViewModel } from '@/src/programmes/view-models/journey.view-model';
+import { comprendreViewModel } from '@/src/programmes/view-models/comprendre.view-model';
+import { homeViewModel } from '@/src/programmes/view-models/home.view-model';
 import { passportViewModel } from '@/src/programmes/view-models/passport.view-model';
 import { quizViewModel } from '@/src/programmes/view-models/quiz.view-model';
 
@@ -15,55 +15,53 @@ const D1 = '2026-11-03T08:00:00.000Z';
 const D2 = '2026-11-04T08:00:00.000Z';
 const catalog = buildStaticCatalog();
 const partyIds = catalog.parties.map((p) => p.id);
-const NOW = new Date('2026-11-04T10:00:00.000Z');
 
 const base = () => stateBuilder().withCatalog(catalog).withProgressStatus('ready');
 const plain = <T>(value: T): T => JSON.parse(JSON.stringify(value));
 
 const partiesStep = (entries: Record<string, string> = {}) =>
-  journeyStepViewModel('les-partis')()(base().withEntries(entries).build());
+  computeJourneyProgress(selectJourney(base().build()), entries).steps.find(
+    (s) => s.step.id === 'les-partis'
+  )!;
+const passportOf = (entries: Record<string, string>) => {
+  const state = base().withEntries(entries).build();
+  const store = createTestStore({ initialState: state });
+  return passportViewModel()({ dispatch: store.dispatch })(state);
+};
 
 describe('Feature: neutralité du parcours', () => {
   it('should list the parties of the step in the gateway order (alphabetical, fr)', () => {
     const sorted = [...catalog.parties].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
-    expect(partiesStep().items.map((i) => i.key)).toEqual(sorted.map((p) => `party:${p.id}`));
+    expect(partiesStep().step.items.map((i) => i.key)).toEqual(sorted.map((p) => `party:${p.id}`));
   });
 
   it('should keep the catalog order of parties even when read dates differ', () => {
     const entries = { [`party:${partyIds[0]}`]: D2, [`party:${partyIds[1]}`]: D1 };
-    expect(partiesStep(entries).items.map((i) => i.key)).toEqual(
+    expect(partiesStep(entries).step.items.map((i) => i.key)).toEqual(
       partyIds.map((id) => `party:${id}`)
     );
   });
 
   it('should suggest as next party the first unread one in alphabetical order', () => {
     const entries = { [`party:${partyIds[0]}`]: D1, [`party:${partyIds[2]}`]: D1 };
-    expect(partiesStep(entries).nextItem?.href).toBe(`/partis/${partyIds[1]}`);
+    expect(partiesStep(entries).nextItem?.href).toBe(`/partis/${partyIds[1]}/programme-2027`);
   });
 
-  it('should give every party item the same stamp model, whatever the party', () => {
-    const items = partiesStep({ [`party:${partyIds[0]}`]: D1 }).items;
+  it('should give every party stamp of the passport the same model, whatever the party', () => {
+    const items = passportOf({ [`party:${partyIds[0]}`]: D1 }).parties.items;
     for (const item of items)
       expect(Object.keys(item).sort()).toEqual(Object.keys(items[0]).sort());
-    const empties = items.filter((i) => !i.read);
-    for (const item of empties) expect(item.stamp).toEqual(empties[0].stamp);
-    const read = partiesStep(Object.fromEntries(partyIds.map((id) => [`party:${id}`, D1]))).items;
-    for (const item of read) expect(item.stamp).toEqual(read[0].stamp);
+    const read = passportOf(Object.fromEntries(partyIds.map((id) => [`party:${id}`, D1]))).parties
+      .items;
+    for (const item of read) expect(item.state).toBe(read[0].state);
+    const empty = passportOf({}).parties.items;
+    for (const item of empty) expect(item.state).toBe('empty');
   });
 
-  it('should not expose any color in stamp models of the step and passport view-models', () => {
+  it('should not expose any color in stamp models of the passport view-model', () => {
     const entries = Object.fromEntries(partyIds.map((id) => [`party:${id}`, D1]));
-    const state = base()
-      .withEntries({ ...entries, 'stamp:les-partis': D1 })
-      .build();
-    const store = createTestStore({ initialState: state });
-    const passport = passportViewModel()({ dispatch: store.dispatch })(state);
-    const stampModels = [
-      ...partiesStep(entries).items.map((i) => i.stamp),
-      ...passport.stamps,
-      ...passport.parties.items,
-      ...passport.debates.items,
-    ];
+    const passport = passportOf({ ...entries, 'stamp:les-partis': D1 });
+    const stampModels = [...passport.stamps, ...passport.parties.items, ...passport.debates.items];
     for (const model of stampModels) {
       expect(Object.keys(model).join(',')).not.toMatch(/color/i);
     }
@@ -112,8 +110,9 @@ describe('Feature: neutralité du parcours', () => {
         await finish(store);
         const state = store.getState();
         results.push({
-          journey: plain(journeyViewModel(NOW)({ dispatch: store.dispatch })(state)),
-          step: plain(journeyStepViewModel('les-partis')()(state)),
+          home: plain(homeViewModel()(state)),
+          comprendre: plain(comprendreViewModel()(state)),
+          step: plain(partiesStep(state.progress.entries)),
           passport: plain(passportViewModel()({ dispatch: store.dispatch })(state)),
           entryKeys: Object.keys(state.progress.entries).sort(),
         });
@@ -135,17 +134,21 @@ describe('Feature: neutralité du parcours', () => {
     }
   });
 
-  it('should never reference quiz answers in the next step or next item suggestion', async () => {
-    const suggestions = [];
-    for (const value of [2, -2] as AnswerValue[]) {
-      const { store } = completeQuiz(value);
-      await finish(store);
-      const home = journeyViewModel(NOW)({ dispatch: store.dispatch })(store.getState());
-      suggestions.push({
-        next: home.summary?.next,
-        nextItem: partiesStep(store.getState().progress.entries).nextItem,
-      });
+  it(
+    'should never reference quiz answers in the next step or next item suggestion',
+    { timeout: 30_000 },
+    async () => {
+      const suggestions = [];
+      for (const value of [2, -2] as AnswerValue[]) {
+        const { store } = completeQuiz(value);
+        await finish(store);
+        const home = homeViewModel()(store.getState());
+        suggestions.push({
+          next: home.journey,
+          nextItem: partiesStep(store.getState().progress.entries).nextItem,
+        });
+      }
+      expect(suggestions[0]).toEqual(suggestions[1]);
     }
-    expect(suggestions[0]).toEqual(suggestions[1]);
-  });
+  );
 });

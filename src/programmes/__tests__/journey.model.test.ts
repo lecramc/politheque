@@ -70,12 +70,23 @@ describe('Feature: définition du parcours', () => {
 
   it('should link a single-content step directly to its content', () => {
     expect(stepHref(stepOf('me-situer'))).toBe('/me-situer');
-    expect(stepHref(stepOf('les-partis'))).toBe('/parcours/les-partis');
+  });
+
+  it('should link a multi-content step to its place in the site, without any /parcours page', () => {
+    const hrefs = Object.fromEntries(JOURNEY_STEP_IDS.map((id) => [id, stepHref(stepOf(id))]));
+    expect(hrefs).toEqual({
+      'les-bases': '/comprendre#les-bases',
+      'les-institutions': '/comprendre#les-institutions',
+      'les-partis': '/partis',
+      'les-grands-debats': '/partis#debats',
+      'presidentielle-2027': '/comprendre#presidentielle-2027',
+      'me-situer': '/me-situer',
+    });
   });
 
   it('should build canonical hrefs from content keys', () => {
     expect(hrefOf(contentKey.guide('institutions'))).toBe('/comprendre/institutions');
-    expect(hrefOf(contentKey.party('lfi'))).toBe('/partis/lfi');
+    expect(hrefOf(contentKey.party('lfi'))).toBe('/partis/lfi/programme-2027');
     expect(hrefOf(contentKey.debate('economie'))).toBe('/debats/economie');
     expect(hrefOf(contentKey.election('presidentielle-2027'))).toBe(
       '/elections/presidentielle-2027'

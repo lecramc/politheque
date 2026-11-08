@@ -3,7 +3,8 @@
     "id": "economie",
     "title": "Économie, impôts et dette",
     "icon": "cash-outline",
-    "context": "Ce thème couvre la fiscalité (impôts des ménages et des entreprises), le niveau de la dépense publique et la trajectoire de la dette. La France a un déficit public parmi les plus élevés de la zone euro et une dette qui augmente depuis plusieurs années. Les règles budgétaires européennes demandent de ramener le déficit sous 3 % du PIB. Les débats portent sur la manière de réduire le déficit : baisser les dépenses, augmenter certains impôts (par exemple sur les hauts patrimoines ou les grandes entreprises), ou miser sur la croissance. La répartition de l'effort entre ménages, entreprises, retraités et collectivités est au cœur des désaccords.",
+    "context": "Ce thème couvre la fiscalité (impôts des ménages et des entreprises), le niveau de la dépense publique et la trajectoire de la dette. La France a un déficit public parmi les plus élevés de la zone euro et une dette qui augmente depuis plusieurs années.",
+    "contextMore": "Les règles budgétaires européennes demandent de ramener le déficit sous 3 % du PIB. Les débats portent sur la manière de réduire le déficit : baisser les dépenses, augmenter certains impôts (par exemple sur les hauts patrimoines ou les grandes entreprises), ou miser sur la croissance. La répartition de l'effort entre ménages, entreprises, retraités et collectivités est au cœur des désaccords.",
     "keyFigures": [
       {
         "label": "Dette publique (fin du 2e trimestre 2026)",
@@ -79,7 +80,8 @@
     "id": "travail",
     "title": "Travail, salaires et retraites",
     "icon": "briefcase-outline",
-    "context": "Ce thème regroupe l'emploi, les salaires (dont le SMIC), l'assurance chômage, le RSA et le système de retraites. La réforme de 2023 a prévu de porter progressivement l'âge légal de départ de 62 à 64 ans ; la loi de financement de la Sécurité sociale pour 2026 a suspendu ce relèvement, l'âge restant fixé à 62 ans et 9 mois jusqu'au 1er janvier 2028. Le système de retraite par répartition dépend du rapport entre actifs et retraités, qui se dégrade avec le vieillissement de la population. Les règles de l'assurance chômage ont été resserrées à plusieurs reprises depuis 2019, en dernier lieu pour les ruptures conventionnelles en 2026. Le chômage est reparti à la hausse depuis 2025, ce qui alimente les débats sur le pouvoir d'achat et l'emploi.",
+    "context": "Ce thème regroupe l'emploi, les salaires (dont le SMIC), l'assurance chômage, le RSA et le système de retraites. L'âge légal de départ à la retraite reste fixé à 62 ans et 9 mois jusqu'au 1er janvier 2028.",
+    "contextMore": "La réforme de 2023 a prévu de porter progressivement l'âge légal de départ de 62 à 64 ans ; la loi de financement de la Sécurité sociale pour 2026 a suspendu ce relèvement, l'âge restant fixé à 62 ans et 9 mois jusqu'au 1er janvier 2028. Le système de retraite par répartition dépend du rapport entre actifs et retraités, qui se dégrade avec le vieillissement de la population. Les règles de l'assurance chômage ont été resserrées à plusieurs reprises depuis 2019, en dernier lieu pour les ruptures conventionnelles en 2026. Le chômage est reparti à la hausse depuis 2025, ce qui alimente les débats sur le pouvoir d'achat et l'emploi.",
     "keyFigures": [
       {
         "label": "Taux de chômage au sens du BIT (2e trimestre 2026)",
@@ -155,7 +157,8 @@
     "id": "immigration",
     "title": "Immigration",
     "icon": "earth-outline",
-    "context": "Ce thème porte sur l'immigration légale (titres de séjour pour études, famille, travail ou motifs humanitaires), l'asile, l'immigration irrégulière et l'intégration. Le cadre a été modifié par la loi du 26 janvier 2024, dont une partie a été censurée par le Conseil constitutionnel, puis par une circulaire de janvier 2025 restreignant les régularisations. Le nombre de premiers titres de séjour a augmenté en 2025, notamment pour motifs humanitaires. Une partie de l'encadrement relève du droit européen (pacte asile et migration, convention européenne des droits de l'homme). Les débats portent sur le niveau d'immigration souhaitable, les besoins de main-d'œuvre, l'exécution des mesures d'éloignement et l'accès des étrangers aux prestations sociales.",
+    "context": "Ce thème porte sur l'immigration légale (titres de séjour pour études, famille, travail ou motifs humanitaires), l'asile, l'immigration irrégulière et l'intégration. Le cadre a été modifié par la loi du 26 janvier 2024, en partie censurée, puis par une circulaire de janvier 2025.",
+    "contextMore": "Le cadre a été modifié par la loi du 26 janvier 2024, dont une partie a été censurée par le Conseil constitutionnel, puis par une circulaire de janvier 2025 restreignant les régularisations. Le nombre de premiers titres de séjour a augmenté en 2025, notamment pour motifs humanitaires. Une partie de l'encadrement relève du droit européen (pacte asile et migration, convention européenne des droits de l'homme). Les débats portent sur le niveau d'immigration souhaitable, les besoins de main-d'œuvre, l'exécution des mesures d'éloignement et l'accès des étrangers aux prestations sociales.",
     "keyFigures": [
       {
         "label": "Premiers titres de séjour délivrés (2025)",
@@ -219,7 +222,8 @@
     "id": "securite",
     "title": "Sécurité et justice",
     "icon": "shield-outline",
-    "context": "Ce thème couvre la délinquance, la police et la gendarmerie, le fonctionnement de la justice et la politique pénale, y compris les prisons. Les statistiques du ministère de l'Intérieur montrent des évolutions contrastées selon les infractions : hausse des violences physiques et sexuelles enregistrées en 2025, stabilité des homicides. La population carcérale atteint des niveaux record, avec une forte surpopulation dans les maisons d'arrêt. Les débats opposent souvent le renforcement des sanctions (peines minimales, construction de places de prison) à la prévention, aux alternatives à l'incarcération et au contrôle de l'action policière. Les moyens de la justice et les délais de jugement sont également discutés.",
+    "context": "Ce thème couvre la délinquance, la police et la gendarmerie, le fonctionnement de la justice et la politique pénale, y compris les prisons. Les statistiques du ministère de l'Intérieur montrent des évolutions contrastées selon les infractions.",
+    "contextMore": "Les statistiques du ministère de l'Intérieur montrent des évolutions contrastées selon les infractions : hausse des violences physiques et sexuelles enregistrées en 2025, stabilité des homicides. La population carcérale atteint des niveaux record, avec une forte surpopulation dans les maisons d'arrêt. Les débats opposent souvent le renforcement des sanctions (peines minimales, construction de places de prison) à la prévention, aux alternatives à l'incarcération et au contrôle de l'action policière. Les moyens de la justice et les délais de jugement sont également discutés.",
     "keyFigures": [
       {
         "label": "Personnes détenues (1er juillet 2026)",
@@ -293,7 +297,8 @@
     "id": "ecologie",
     "title": "Écologie et énergie",
     "icon": "leaf-outline",
-    "context": "Ce thème concerne la lutte contre le changement climatique, la production d'énergie, l'agriculture et la protection de la biodiversité. La France s'est engagée à atteindre la neutralité carbone en 2050 ; ses émissions continuent de baisser (-1,5 % en 2025 selon une estimation du Citepa), mais moins vite que les quelque 5 % par an nécessaires pour atteindre l'objectif de 2030. L'électricité française est très majoritairement bas carbone grâce au nucléaire, et la programmation pluriannuelle de l'énergie adoptée en février 2026 prévoit six nouveaux réacteurs EPR2. La France est en retard sur son objectif légal d'énergies renouvelables (23 % de la consommation finale en 2024, pour 33 % visés en 2030). Les débats portent sur la répartition entre nucléaire et renouvelables, le coût de la transition pour les ménages et les entreprises, et le niveau des normes environnementales, notamment agricoles.",
+    "context": "Ce thème concerne la lutte contre le changement climatique, la production d'énergie, l'agriculture et la protection de la biodiversité. La France s'est engagée à atteindre la neutralité carbone en 2050.",
+    "contextMore": "La France s'est engagée à atteindre la neutralité carbone en 2050 ; ses émissions continuent de baisser (-1,5 % en 2025 selon une estimation du Citepa), mais moins vite que les quelque 5 % par an nécessaires pour atteindre l'objectif de 2030. L'électricité française est très majoritairement bas carbone grâce au nucléaire, et la programmation pluriannuelle de l'énergie adoptée en février 2026 prévoit six nouveaux réacteurs EPR2. La France est en retard sur son objectif légal d'énergies renouvelables (23 % de la consommation finale en 2024, pour 33 % visés en 2030). Les débats portent sur la répartition entre nucléaire et renouvelables, le coût de la transition pour les ménages et les entreprises, et le niveau des normes environnementales, notamment agricoles.",
     "keyFigures": [
       {
         "label": "Émissions de gaz à effet de serre (2025, estimation d'avril 2026)",
@@ -357,7 +362,8 @@
     "id": "sante",
     "title": "Santé et fin de vie",
     "icon": "medkit-outline",
-    "context": "Ce thème couvre l'accès aux soins, l'hôpital, le financement de l'Assurance maladie et les questions de fin de vie. Plusieurs millions de personnes n'ont pas de médecin traitant et une partie du territoire est qualifiée de « désert médical ». La Sécurité sociale est en déficit, ce qui pèse sur les choix de remboursement et de financement de l'hôpital. Une loi créant un droit à l'aide à mourir a été adoptée définitivement en juillet 2026 et validée sous réserves par le Conseil constitutionnel en août 2026, aux côtés d'une loi sur les soins palliatifs. Les débats portent sur la régulation de l'installation des médecins, le reste à charge des patients, les moyens de l'hôpital et la mise en œuvre ou la remise en cause de la loi sur la fin de vie.",
+    "context": "Ce thème couvre l'accès aux soins, l'hôpital, le financement de l'Assurance maladie et les questions de fin de vie. Plusieurs millions de personnes n'ont pas de médecin traitant et une partie du territoire est qualifiée de « désert médical ».",
+    "contextMore": "La Sécurité sociale est en déficit, ce qui pèse sur les choix de remboursement et de financement de l'hôpital. Une loi créant un droit à l'aide à mourir a été adoptée définitivement en juillet 2026 et validée sous réserves par le Conseil constitutionnel en août 2026, aux côtés d'une loi sur les soins palliatifs. Les débats portent sur la régulation de l'installation des médecins, le reste à charge des patients, les moyens de l'hôpital et la mise en œuvre ou la remise en cause de la loi sur la fin de vie.",
     "keyFigures": [
       {
         "label": "Espérance de vie à la naissance (2025)",
@@ -421,7 +427,8 @@
     "id": "education",
     "title": "Éducation",
     "icon": "school-outline",
-    "context": "Ce thème couvre l'école, le collège, le lycée, l'enseignement supérieur et la place de l'enseignement privé. Les évaluations internationales (PISA) montrent une baisse du niveau des élèves français en mathématiques depuis 2012, comme dans de nombreux pays de l'OCDE. Le nombre d'élèves diminue sous l'effet de la baisse des naissances, ce qui pose la question des moyens et des fermetures de classes. L'enseignement privé sous contrat, financé majoritairement par l'État, scolarise une part importante des élèves et fait l'objet de débats sur la mixité sociale. Les autres sujets récurrents sont l'attractivité du métier d'enseignant, l'uniforme, les groupes de niveau et l'orientation.",
+    "context": "Ce thème couvre l'école, le collège, le lycée, l'enseignement supérieur et la place de l'enseignement privé. Les évaluations internationales (PISA) montrent une baisse du niveau des élèves français en mathématiques depuis 2012, comme dans de nombreux pays de l'OCDE.",
+    "contextMore": "Le nombre d'élèves diminue sous l'effet de la baisse des naissances, ce qui pose la question des moyens et des fermetures de classes. L'enseignement privé sous contrat, financé majoritairement par l'État, scolarise une part importante des élèves et fait l'objet de débats sur la mixité sociale. Les autres sujets récurrents sont l'attractivité du métier d'enseignant, l'uniforme, les groupes de niveau et l'orientation.",
     "keyFigures": [
       {
         "label": "Dépense intérieure d'éducation (2024)",
@@ -485,7 +492,8 @@
     "id": "europe",
     "title": "Europe, défense et international",
     "icon": "flag-outline",
-    "context": "Ce thème couvre la place de la France dans l'Union européenne, la défense, le soutien à l'Ukraine et la politique commerciale. Depuis l'invasion de l'Ukraine par la Russie en 2022, la France et ses partenaires augmentent leurs budgets militaires, et l'UE a créé en 2025 un instrument de prêts pour la défense (SAFE). L'accord commercial UE-Mercosur, signé en janvier 2026 malgré le vote contre de la France, s'applique provisoirement depuis le 1er mai 2026, tandis que la Cour de justice de l'UE doit rendre un avis sur sa compatibilité avec les traités. Les débats portent sur le degré d'intégration européenne souhaitable, le rapport entre droit national et droit européen, le financement commun de la défense et le libre-échange.",
+    "context": "Ce thème couvre la place de la France dans l'Union européenne, la défense, le soutien à l'Ukraine et la politique commerciale. Depuis l'invasion de l'Ukraine par la Russie en 2022, la France et ses partenaires augmentent leurs budgets militaires.",
+    "contextMore": "Depuis l'invasion de l'Ukraine par la Russie en 2022, la France et ses partenaires augmentent leurs budgets militaires, et l'UE a créé en 2025 un instrument de prêts pour la défense (SAFE). L'accord commercial UE-Mercosur, signé en janvier 2026 malgré le vote contre de la France, s'applique provisoirement depuis le 1er mai 2026, tandis que la Cour de justice de l'UE doit rendre un avis sur sa compatibilité avec les traités. Les débats portent sur le degré d'intégration européenne souhaitable, le rapport entre droit national et droit européen, le financement commun de la défense et le libre-échange.",
     "keyFigures": [
       {
         "label": "Budget des armées (projet de loi de finances 2026, hors pensions)",
@@ -559,7 +567,8 @@
     "id": "institutions",
     "title": "Institutions et démocratie",
     "icon": "business-outline",
-    "context": "Ce thème concerne le fonctionnement de la Ve République, le mode d'élection des députés, le référendum et la participation des citoyens. Depuis la dissolution de juin 2024, aucune force politique ne dispose de la majorité absolue à l'Assemblée nationale. Un gouvernement a été renversé par une motion de censure en décembre 2024, pour la première fois depuis 1962, et plusieurs Premiers ministres se sont succédé. Le recours à l'article 49.3 pour faire adopter les budgets reste fréquent. La confiance des Français envers les partis et les institutions nationales est faible selon les enquêtes. Les débats portent sur le mode de scrutin, les pouvoirs du président, le référendum d'initiative citoyenne et un éventuel changement de Constitution.",
+    "context": "Ce thème concerne le fonctionnement de la Ve République, le mode d'élection des députés, le référendum et la participation des citoyens. Depuis la dissolution de juin 2024, aucune force politique ne dispose de la majorité absolue à l'Assemblée nationale.",
+    "contextMore": "Un gouvernement a été renversé par une motion de censure en décembre 2024, pour la première fois depuis 1962, et plusieurs Premiers ministres se sont succédé. Le recours à l'article 49.3 pour faire adopter les budgets reste fréquent. La confiance des Français envers les partis et les institutions nationales est faible selon les enquêtes. Les débats portent sur le mode de scrutin, les pouvoirs du président, le référendum d'initiative citoyenne et un éventuel changement de Constitution.",
     "keyFigures": [
       {
         "label": "Participation au 1er tour des législatives (juin 2024)",

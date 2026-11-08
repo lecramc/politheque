@@ -10,7 +10,6 @@ import { Page } from '@/src/programmes/components/Page';
 import { PartyHeader } from '@/src/programmes/components/PartyHeader';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { StatusChip } from '@/src/programmes/components/StatusChip';
 import { Tabs } from '@/src/programmes/components/Tabs';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { partyHref, sectionFromPath } from '@/src/programmes/models/seo/party-sections';
@@ -18,7 +17,7 @@ import { bodyText } from '@/src/programmes/models/sourced-item.service';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 /**
- * Fiche parti : en-tête, onglets-liens et feuilles partagés ; le contenu de chaque section
+ * Fiche parti : en-tête, quatre onglets-liens (Programme, Positions, Histoire, Procédures) et feuille partagée ; le contenu de chaque section
  * est une vraie route (`<Slot />`), qui rend ses propres métadonnées.
  */
 export default function PartyLayout() {
@@ -26,14 +25,13 @@ export default function PartyLayout() {
   const pathname = usePathname();
   const vm = useViewModel(partyViewModel(id));
   const { colors, effects } = useTheme();
-  const [sheet, setSheet] = useState<'famille' | 'candidat' | null>(null);
+  const [familyOpen, setFamilyOpen] = useState(false);
   const party = vm.party;
   // Compteurs de la liste verticale : seule « Positions » en a un (le nombre de questions).
   const tabsWithCounts = vm.sections.map((s) =>
     s.id === 'positions' ? { ...s, count: String(vm.stances.length) } : s
   );
-  const presidential = vm.presidential;
-  const section = sectionFromPath(pathname) ?? 'en-bref';
+  const section = sectionFromPath(pathname) ?? 'programme';
 
   if (vm.status === 'loaded' && !party) {
     return (
@@ -57,10 +55,9 @@ export default function PartyLayout() {
           <>
             <PartyHeader
               party={party}
-              candidacy={presidential?.candidacy ?? null}
               identityLine={vm.identityLine}
-              onOpenFamily={() => setSheet('famille')}
-              onOpenCandidate={() => setSheet('candidat')}
+              compareHref={`/partis/comparer?a=${party.id}`}
+              onOpenFamily={() => setFamilyOpen(true)}
             />
             {/* Même navigation, deux présentations : liste verticale dès 1024 px, onglets sinon. */}
             <Only from="lg">
@@ -89,11 +86,7 @@ export default function PartyLayout() {
         <>
           <Slot />
 
-          <Sheet
-            isOpen={sheet === 'famille'}
-            onClose={() => setSheet(null)}
-            title="Famille politique"
-          >
+          <Sheet isOpen={familyOpen} onClose={() => setFamilyOpen(false)} title="Famille politique">
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{party.family}</Text>
             {splitIdeals(party.history?.ideals ?? []).classification.map((item) => (
               <View key={item.title} style={{ gap: effects.spacing.xs }}>
@@ -106,18 +99,6 @@ export default function PartyLayout() {
               l'Intérieur ; chaque parti peut les contester. Le même traitement s'applique à tous.
             </Text>
           </Sheet>
-          {presidential ? (
-            <Sheet
-              isOpen={sheet === 'candidat'}
-              onClose={() => setSheet(null)}
-              title={`Candidature 2027 : ${presidential.candidacy.candidateName}`}
-            >
-              <StatusChip label={presidential.candidacy.statusLabel} />
-              <Text style={{ fontSize: 16, lineHeight: 25 }}>
-                {presidential.candidacy.candidate}
-              </Text>
-            </Sheet>
-          ) : null}
         </>
       ) : null}
     </Page>

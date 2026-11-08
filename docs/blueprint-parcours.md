@@ -1,5 +1,7 @@
 # Blueprint — Parcours citoyen (piste A)
 
+> **Mise à jour (simplification v2, `docs/ux/spec-simplification-v2.md`).** Le chemin illustré de l'accueil et les pages `/parcours/*` n'existent plus. Les six étapes sont les chapitres de `/comprendre` (les bases, les institutions, la présidentielle) suivis de « Ensuite » (fiches, débats, questionnaire). L'accueil présente quatre tâches et une carte « Le parcours ». « Ma progression » (`/passeport`) et les tampons restent ; le registre de lecture (`progress.v1`) et la règle « mesurer la lecture, jamais les opinions » sont inchangés. Les anciennes adresses redirigent (`vercel.json`). Le reste de ce document décrit l'état avant v2.
+
 > Statut : blueprint d'implémentation, aucun code de production écrit.
 > Source UX : `docs/ux/maquettes-parcours.html` (piste A) et `docs/ux/captures-parcours/a1…a5`.
 > Décision de DA (validée) : **l'arc de progression reste bleu**. Le tricolore reste réservé au

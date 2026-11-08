@@ -59,10 +59,10 @@ describe('Feature: données structurées', () => {
     );
     expect(node).toEqual({
       '@type': 'PoliticalParty',
-      '@id': `${SITE_URL}/partis/rn#parti`,
+      '@id': `${SITE_URL}/partis/rn/programme-2027#parti`,
       name: 'Rassemblement national',
       alternateName: 'RN',
-      url: `${SITE_URL}/partis/rn`,
+      url: `${SITE_URL}/partis/rn/programme-2027`,
     });
     expect(
       politicalPartyNode(partyFactory({ name: 'Horizons', shortName: 'Horizons' }))

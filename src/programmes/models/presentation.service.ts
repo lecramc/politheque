@@ -15,6 +15,27 @@ export const afterFirstSentence = (text: string) =>
 export const firstSentences = (text: string, count: number) =>
   text.split(SENTENCE_END).slice(0, count).join(' ').trim();
 
+/**
+ * Règle de repli identique pour tous les textes : les `count` premières phrases restent visibles,
+ * le reste passe derrière « Lire la suite ». Mécanique : le texte n'est jamais réécrit ni résumé.
+ */
+export const foldAfterSentences = (text: string, count: number) => {
+  const sentences = text.split(SENTENCE_END);
+  return {
+    visible: sentences.slice(0, count).join(' ').trim(),
+    rest: sentences.slice(count).join(' ').trim(),
+  };
+};
+
+/** Un paragraphe peut porter une liste : une phrase d'introduction, puis des lignes « - … ». */
+export const splitBullets = (paragraph: string) => {
+  const [lead, ...lines] = paragraph.split('\n');
+  return {
+    lead: lead.trim(),
+    bullets: lines.map((line) => line.replace(/^\s*-\s*/, '').trim()).filter(Boolean),
+  };
+};
+
 /** Retire la précision entre parenthèses : « Extrême droite (qualification…) » → « Extrême droite ». */
 export const beforeParenthesis = (text: string) => text.split(' (')[0].trim();
 

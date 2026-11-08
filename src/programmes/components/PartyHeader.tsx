@@ -3,31 +3,29 @@ import { StyleSheet, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
+import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { tv } from '@/src/core/web/tv';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { beforeParenthesis } from '@/src/programmes/models/presentation.service';
-import type { Candidacy, Party } from '@/src/programmes/models/programme.model';
-
-const lowerFirst = (text: string) => text.charAt(0).toLowerCase() + text.slice(1);
+import type { Party } from '@/src/programmes/models/programme.model';
 
 /**
  * En-tête commun aux pages d'une fiche : le h1 est le nom du parti (l'entité), puis une ligne
- * famille (ligne seule), puis « Fondé en… · dirigeant » en dessous, et la candidature. La date de vérification est dans
- * « Sources de cette page », en bas.
+ * famille (ligne seule), puis « Fondé en… · dirigeant » en dessous, et « Comparer avec… ». La
+ * candidature est dans l'onglet Programme ; la date de vérification, dans « Sources de cette page ».
  */
 export function PartyHeader({
   party,
-  candidacy,
   identityLine,
+  compareHref,
   onOpenFamily,
-  onOpenCandidate,
 }: {
   party: Party;
-  candidacy: Candidacy | null;
   identityLine: string;
+  /** « Comparer avec… » : l'outil s'ouvre avec ce parti en premier, le second est à choisir. */
+  compareHref: string;
   onOpenFamily: () => void;
-  onOpenCandidate: () => void;
 }) {
   const { colors, effects, fonts } = useTheme();
   const family = beforeParenthesis(party.family);
@@ -67,31 +65,12 @@ export function PartyHeader({
         </Pressable>
         <Text style={{ fontSize: 16, color: colors.text.secondary }}>{identityLine}</Text>
       </View>
-      {candidacy ? (
-        <Pressable
-          onPress={onOpenCandidate}
-          accessibilityRole="button"
-          accessibilityLabel={`Candidature 2027 : ${candidacy.candidateName}, ${lowerFirst(candidacy.statusLabel)}. Voir le détail.`}
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            gap: 12,
-            minHeight: 56,
-            paddingHorizontal: effects.spacing.md,
-            paddingVertical: 12,
-            borderRadius: effects.borderRadius.small,
-            borderWidth: 1,
-            borderColor: colors.surface.border.primary,
-            backgroundColor: colors.surface.primary,
-          }}
-        >
-          <Text style={{ flex: 1, fontSize: 16, lineHeight: 22 }}>
-            <Text style={{ ...fonts.bold, fontSize: 16 }}>{candidacy.candidateName}</Text>,{' '}
-            {lowerFirst(candidacy.statusLabel)} à la présidentielle 2027
-          </Text>
-          <Icon name="chevron-forward" variant="secondary" size="small" />
-        </Pressable>
-      ) : null}
+      {/* Même action, même place, pour les dix partis. Aucun compteur de procédures. */}
+      <View style={{ alignSelf: 'flex-start' }}>
+        <Button variant="secondary" fullWidth={false} href={compareHref}>
+          Comparer avec…
+        </Button>
+      </View>
     </View>
   );
 }

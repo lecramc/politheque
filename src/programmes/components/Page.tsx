@@ -27,6 +27,7 @@ import { Only } from '@/src/core/components/Only';
 import { APP_NAME } from '@/src/core/config/app';
 import { tv } from '@/src/core/web/tv';
 import { Breadcrumb } from '@/src/programmes/components/Breadcrumb';
+import { ElectionChip } from '@/src/programmes/components/ElectionChip';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
 import { RailLayout } from '@/src/programmes/components/RailLayout';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
@@ -38,14 +39,39 @@ import {
   type PageMeta,
 } from '@/src/programmes/models/seo/page-meta';
 
-type Href = '/comprendre' | '/partis' | '/elections' | '/debats' | '/me-situer';
+type Href = '/' | '/comprendre' | '/partis' | '/me-situer';
 
-const NAV: { href: Href; label: string; icon: string }[] = [
-  { href: '/comprendre', label: 'Comprendre', icon: 'book-outline' },
-  { href: '/partis', label: 'Partis', icon: 'people-outline' },
-  { href: '/elections', label: 'Élections', icon: 'calendar-outline' },
-  { href: '/debats', label: 'Débats', icon: 'chatbubbles-outline' },
-  { href: '/me-situer', label: 'Me situer', icon: 'compass-outline' },
+type NavItem = { href: Href; label: string; icon: string; matches: (pathname: string) => boolean };
+
+/**
+ * Trois rubriques. Les débats (`/debats/[id]`) vivent dans Partis ; l'élection est la pastille de
+ * l'en-tête, hors rubrique.
+ */
+const NAV: NavItem[] = [
+  {
+    href: '/comprendre',
+    label: 'Comprendre',
+    icon: 'book-outline',
+    matches: (p) => p.startsWith('/comprendre') || p.startsWith('/passeport'),
+  },
+  {
+    href: '/partis',
+    label: 'Partis',
+    icon: 'people-outline',
+    matches: (p) => p.startsWith('/partis') || p.startsWith('/debats'),
+  },
+  {
+    href: '/me-situer',
+    label: 'Me situer',
+    icon: 'compass-outline',
+    matches: (p) => p.startsWith('/me-situer'),
+  },
+];
+
+/** Barre du bas en mobile : l'accueil, puis les trois rubriques. */
+const BOTTOM_NAV: NavItem[] = [
+  { href: '/', label: 'Accueil', icon: 'home-outline', matches: (p) => p === '/' || p === '' },
+  ...NAV,
 ];
 
 /** Largeur max du contenu en natif et sous 768 px (au-delà, la CSS `container` prend le relais). */
@@ -84,7 +110,7 @@ function BottomTabBar() {
   const { colors, fonts } = useTheme();
   const { reduce, timing } = useMotion();
   const pathname = usePathname();
-  const activeIndex = NAV.findIndex((item) => pathname.startsWith(item.href));
+  const activeIndex = BOTTOM_NAV.findIndex((item) => item.matches(pathname));
   // Calculé au premier rendu : l'arc fixe de l'onglet actif reste caché pendant le glissement.
   const [sliding, setSliding] = useState(
     () => !reduce && slideFrom !== null && activeIndex >= 0 && slideFrom !== activeIndex
@@ -98,7 +124,7 @@ function BottomTabBar() {
 
   const onLayout = (e: LayoutChangeEvent) => {
     if (!sliding || from === null) return;
-    const slot = e.nativeEvent.layout.width / NAV.length;
+    const slot = e.nativeEvent.layout.width / BOTTOM_NAV.length;
     const at = (index: number) => slot * (index + 0.5) - ARC_WIDTH / 2;
     x.value = at(from);
     x.value = withTiming(at(activeIndex), timing(duration.page, 'inOut'), (done) => {
@@ -122,7 +148,7 @@ function BottomTabBar() {
         },
       ]}
     >
-      {NAV.map((item, index) => {
+      {BOTTOM_NAV.map((item, index) => {
         const active = index === activeIndex;
         return (
           <Link key={item.href} href={item.href} asChild>
@@ -243,7 +269,7 @@ export function Page({
       <Only from="md">
         <Link href="/methodologie" asChild>
           <Pressable accessibilityRole="link" style={styles.desktopNavItem}>
-            <Text style={{ ...fonts.regular, color: colors.text.primary }}>Méthodologie</Text>
+            <Text style={{ ...fonts.regular, color: colors.text.primary }}>Méthode</Text>
           </Pressable>
         </Link>
       </Only>
@@ -316,7 +342,7 @@ export function Page({
               style={styles.desktopNav}
             >
               {NAV.map((item) => {
-                const active = pathname.startsWith(item.href);
+                const active = item.matches(pathname);
                 return (
                   <Link key={item.href} href={item.href} asChild>
                     <Pressable
@@ -348,6 +374,7 @@ export function Page({
               </TextLink>
             </Only>
           ) : null}
+          {focus ? null : <ElectionChip />}
           {focus && back ? <Only below="md">{methodologyLink}</Only> : methodologyLink}
         </View>
       </View>
@@ -438,7 +465,7 @@ export function Page({
               style={[styles.footerText, { color: colors.text.secondary, fontSize: 14 }]}
             >
               {showBetaBanner ? '' : 'Version bêta · '}Site indépendant et non officiel ·{' '}
-              <TextLink href="/methodologie">Méthodologie</TextLink> ·{' '}
+              <TextLink href="/methodologie">Méthode</TextLink> ·{' '}
               <TextLink href="/corrections">Corrections</TextLink>
             </Text>
           </View>

@@ -29,7 +29,7 @@ export default function PassportScreen() {
     <Page
       title={JOURNEY_COPY.passportHeading}
       loading={vm.status !== 'loaded'}
-      back={{ label: JOURNEY_COPY.back, href: '/' }}
+      back={{ label: JOURNEY_COPY.back, href: '/comprendre' }}
     >
       <PassportCover
         heading={vm.heading}

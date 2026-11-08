@@ -11,8 +11,6 @@ export function partySectionSources(
 ): Source[] {
   const history = party.history;
   switch (section) {
-    case 'en-bref':
-      return (history?.ideals ?? []).flatMap((i) => i.sources);
     case 'histoire':
       return history
         ? [
@@ -31,11 +29,14 @@ export function partySectionSources(
         ...entry.steps.flatMap((step) => step.sources),
         ...(entry.nextStep?.sources ?? []),
       ]);
-    case 'programme-2027': {
+    case 'programme': {
+      // Fusion des deux anciennes listes (« En bref » et « Programme 2027 »), sans doublon d'adresse.
       const candidacy = electionId ? party.candidacies[electionId] : undefined;
-      return candidacy
+      const measures = candidacy
         ? Object.values(candidacy.themes).flatMap((t) => t.measures.flatMap((m) => m.sources))
         : [];
+      const all = [...(history?.ideals ?? []).flatMap((i) => i.sources), ...measures];
+      return all.filter((source, index) => all.findIndex((s) => s.url === source.url) === index);
     }
   }
 }

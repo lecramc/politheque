@@ -4,6 +4,7 @@ import {
   parseContentKey,
   type ContentKey,
 } from '@/src/programmes/models/reading-progress.model';
+import { partyHref } from '@/src/programmes/models/seo/party-sections';
 
 export type JourneyStepId =
   | 'les-bases'
@@ -103,7 +104,7 @@ export function hrefOf(key: ContentKey): string {
     case 'guide':
       return `/comprendre/${parsed.id}`;
     case 'party':
-      return `/partis/${parsed.id}`;
+      return partyHref(parsed.id);
     case 'debate':
       return `/debats/${parsed.id}`;
     case 'election':
@@ -115,10 +116,21 @@ export function hrefOf(key: ContentKey): string {
   }
 }
 
-/** Lien d'une étape : contenu unique → ce contenu ; sinon la page d'étape. */
-export function stepHref(step: JourneyStep): string {
-  return step.items.length === 1 ? step.items[0].href : `/parcours/${step.id}`;
-}
+/**
+ * Lien d'une étape : sa place dans le site. Les pages `/parcours/*` n'existent plus (elles
+ * redirigent vers ces mêmes adresses) : les chapitres sont dans Comprendre, les fiches et les
+ * débats dans Partis.
+ */
+const STEP_HREFS: Record<JourneyStepId, string> = {
+  'les-bases': '/comprendre#les-bases',
+  'les-institutions': '/comprendre#les-institutions',
+  'les-partis': '/partis',
+  'les-grands-debats': '/partis#debats',
+  'presidentielle-2027': '/comprendre#presidentielle-2027',
+  'me-situer': '/me-situer',
+};
+
+export const stepHref = (step: Pick<JourneyStep, 'id'>): string => STEP_HREFS[step.id];
 
 /** Construit le parcours depuis le catalogue (l'ordre des partis est celui du catalogue). */
 export function buildJourney(catalog: Catalog): Journey {

@@ -11,8 +11,8 @@ import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { scrollToId } from '@/src/core/web/browser-actions';
 import { tv } from '@/src/core/web/tv';
 import { Accordion } from '@/src/programmes/components/Accordion';
-import { AnchorList } from '@/src/programmes/components/AnchorList';
 import { Card } from '@/src/programmes/components/Card';
+import { MoreText } from '@/src/programmes/components/MoreText';
 import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
@@ -20,11 +20,7 @@ import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
 import { splitFigure } from '@/src/programmes/models/key-figure.service';
-import {
-  displayName,
-  firstSentence,
-  firstSentences,
-} from '@/src/programmes/models/presentation.service';
+import { displayName, firstSentence } from '@/src/programmes/models/presentation.service';
 import type {
   KeyFigure,
   Party,
@@ -57,9 +53,9 @@ function ProgrammeDetail({ programme, party }: { programme: PartyThemeProgramme;
           <SourceChip sources={measure.sources} subject={measure.text} />
         </View>
       ))}
-      <Link href={partyHref(party.id, 'programme-2027') as never}>
+      <Link href={partyHref(party.id, 'programme') as never}>
         <Text style={{ color: colors.tint, fontSize: 15 }}>
-          {partyLinkLabel(party, 'programme-2027')}
+          {partyLinkLabel(party, 'programme')}
         </Text>
       </Link>
     </>
@@ -106,7 +102,7 @@ export default function ThemeScreen() {
 
   if (vm.status === 'loaded' && !theme) {
     return (
-      <Page meta={vm.notFoundMeta} back={{ label: 'Débats', href: '/debats' }}>
+      <Page meta={vm.notFoundMeta} back={{ label: 'Partis', href: '/partis' }}>
         <Text variant="title">Thème introuvable</Text>
       </Page>
     );
@@ -119,50 +115,27 @@ export default function ThemeScreen() {
         : [...current, partyId].slice(-2)
     );
   const compared = vm.comparisons.filter((c) => selected.includes(c.party.id));
-  const anchors = [
-    { id: 'enjeux', label: 'Les enjeux en bref' },
-    { id: 'chiffres-cles', label: 'Chiffres clés' },
-    { id: 'options', label: 'Les options en débat' },
-    { id: 'partis', label: 'Ce que proposent les partis' },
-    ...(vm.questions.length > 0
-      ? [{ id: 'qui-est-pour', label: 'Qui est pour, qui est contre ?' }]
-      : []),
-  ];
-
   return (
     <Page
       meta={vm.meta}
       article
       loading={vm.status !== 'loaded'}
-      back={{ label: 'Débats', href: '/debats' }}
+      back={{ label: 'Partis', href: '/partis' }}
       onReachEnd={vm.markRead}
       railOnMobile="hidden"
-      rail={
-        theme ? (
-          <>
-            <Text variant="caption">
-              Débat {vm.position.index} sur {vm.position.total}
-            </Text>
-            <AnchorList items={anchors} />
-            {vm.nextTheme ? (
-              <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
-                {`Débat suivant : ${vm.nextTheme.title}`}
-              </Button>
-            ) : null}
-          </>
-        ) : undefined
-      }
     >
       {theme ? (
         <>
           <View style={{ gap: effects.spacing.xs }}>
-            {/* Sous 1024 px, le repère « thème n / N » reste au-dessus du titre ; au-delà il est dans le rail. */}
-            <Only below="lg">
-              <Text variant="caption">
-                Débat {vm.position.index} sur {vm.position.total}
-              </Text>
-            </Only>
             <Text variant="title">{theme.title}</Text>
+            <Text style={{ fontSize: 16, lineHeight: 25 }}>{theme.context}</Text>
+            {theme.contextMore ? (
+              <MoreText>
+                <Text style={{ fontSize: 16, lineHeight: 25, color: colors.text.secondary }}>
+                  {theme.contextMore}
+                </Text>
+              </MoreText>
+            ) : null}
             <View style={{ alignSelf: 'flex-start' }}>
               <Button
                 variant="secondary"
@@ -172,19 +145,9 @@ export default function ThemeScreen() {
                   scrollToId('partis');
                 }}
               >
-                Comparer deux partis
+                Comparer deux partis sur ce débat
               </Button>
             </View>
-          </View>
-
-          <View nativeID="enjeux">
-            <Accordion
-              headingLevel={2}
-              title="Les enjeux en bref"
-              subtitle={firstSentences(theme.context, 2)}
-            >
-              <Text style={{ fontSize: 16, lineHeight: 25 }}>{theme.context}</Text>
-            </Accordion>
           </View>
 
           <View nativeID="chiffres-cles" style={{ gap: effects.spacing.xs }}>
@@ -212,33 +175,6 @@ export default function ThemeScreen() {
                 ))}
               </View>
             ) : null}
-          </View>
-
-          <View nativeID="options" style={{ gap: effects.spacing.sm }}>
-            <Text variant="caption" headingLevel={2}>
-              Les options en débat
-            </Text>
-            {theme.debates.map((debate, index) => (
-              <Accordion key={debate.question} title={debate.question} defaultOpen={index === 0}>
-                {debate.options.map((option) => (
-                  <Text
-                    key={option}
-                    style={{
-                      fontSize: 15,
-                      lineHeight: 23,
-                      paddingVertical: 6,
-                      borderTopWidth: 1,
-                      borderColor: colors.surface.border.primary,
-                    }}
-                  >
-                    {option}
-                  </Text>
-                ))}
-                <Text style={{ color: colors.text.secondary, fontSize: 13 }}>
-                  Options présentées sans ordre de préférence.
-                </Text>
-              </Accordion>
-            ))}
           </View>
 
           <View nativeID="partis" style={{ gap: effects.spacing.sm }}>
@@ -321,33 +257,55 @@ export default function ThemeScreen() {
             </TabPanel>
           </View>
 
-          {vm.questions.length > 0 ? (
-            <View nativeID="qui-est-pour" style={{ gap: effects.spacing.sm }}>
-              <Text variant="caption" headingLevel={2}>
-                Qui est pour, qui est contre ?
-              </Text>
-              {vm.questions.map(({ question, positions }) => (
-                <Accordion
-                  key={question.id}
-                  title={question.statement}
-                  titleWeight="regular"
-                  subtitle={undefined}
-                >
-                  <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                    {question.help}
-                  </Text>
-                  {positions.map(({ party, stance }) => (
-                    <PartyStanceRow
-                      key={party.id}
-                      party={party}
-                      stance={stance}
-                      href={partyHref(party.id, 'positions')}
-                    />
+          <View style={{ gap: effects.spacing.sm }}>
+            <Text variant="caption" headingLevel={2}>
+              Pour aller plus loin
+            </Text>
+            <Accordion headingLevel={3} title="Les options en débat">
+              {theme.debates.map((debate) => (
+                <View key={debate.question} style={{ gap: effects.spacing.xxs }}>
+                  <Text style={{ ...fonts.bold, fontSize: 16 }}>{debate.question}</Text>
+                  {debate.options.map((option) => (
+                    <Text
+                      key={option}
+                      style={{
+                        fontSize: 15,
+                        lineHeight: 23,
+                        paddingVertical: 6,
+                        borderTopWidth: 1,
+                        borderColor: colors.surface.border.primary,
+                      }}
+                    >
+                      {option}
+                    </Text>
                   ))}
-                </Accordion>
+                </View>
               ))}
-            </View>
-          ) : null}
+              <Text style={{ color: colors.text.secondary, fontSize: 13 }}>
+                Options présentées sans ordre de préférence.
+              </Text>
+            </Accordion>
+            {vm.questions.length > 0 ? (
+              <Accordion headingLevel={3} title="Qui est pour, qui est contre ?">
+                {vm.questions.map(({ question, positions }) => (
+                  <View key={question.id} style={{ gap: effects.spacing.xs }}>
+                    <Text style={{ ...fonts.bold, fontSize: 16 }}>{question.statement}</Text>
+                    <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                      {question.help}
+                    </Text>
+                    {positions.map(({ party, stance }) => (
+                      <PartyStanceRow
+                        key={party.id}
+                        party={party}
+                        stance={stance}
+                        href={partyHref(party.id, 'positions')}
+                      />
+                    ))}
+                  </View>
+                ))}
+              </Accordion>
+            ) : null}
+          </View>
 
           <PageSources
             sources={[
@@ -360,11 +318,9 @@ export default function ThemeScreen() {
           />
 
           {vm.nextTheme ? (
-            <Only below="lg">
-              <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
-                {`Débat suivant : ${vm.nextTheme.title}`}
-              </Button>
-            </Only>
+            <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
+              {`Débat suivant : ${vm.nextTheme.title}`}
+            </Button>
           ) : null}
         </>
       ) : null}

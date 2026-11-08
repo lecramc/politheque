@@ -1,6 +1,12 @@
 import { absoluteUrl } from '@/src/programmes/models/seo/site-routes';
 
-export type HtmlAuditExpectation = { path: string; indexable: boolean; content?: boolean };
+export type HtmlAuditExpectation = {
+  path: string;
+  indexable: boolean;
+  content?: boolean;
+  /** Alias d'une autre page : le canonical (et og:url) pointe vers cette adresse, pas vers `path`. */
+  canonicalPath?: string;
+};
 export type HtmlAuditIssue = { path: string; rule: string; detail: string };
 
 const count = (html: string, re: RegExp) => (html.match(re) ?? []).length;
@@ -24,7 +30,7 @@ export function auditHtml(html: string, expected: HtmlAuditExpectation): HtmlAud
   const issues: HtmlAuditIssue[] = [];
   const report = (rule: string, detail: string) =>
     issues.push({ path: expected.path, rule, detail });
-  const canonicalUrl = absoluteUrl(expected.path);
+  const canonicalUrl = absoluteUrl(expected.canonicalPath ?? expected.path);
 
   const titles = tags(html, /<title[^>]*>[\s\S]*?<\/title>/g);
   if (titles.length !== 1 || !/<title[^>]*>[^<]+<\/title>/.test(titles[0])) {
@@ -56,7 +62,11 @@ export function auditHtml(html: string, expected: HtmlAuditExpectation): HtmlAud
 
   const robots = tags(html, /<meta[^>]*\bname="robots"[^>]*>/g);
   const noindex = robots.some((tag) => /noindex/.test(attr(tag, 'content')));
-  if (noindex === expected.indexable) {
+  if (expected.canonicalPath) {
+    // Alias : un seul signal, le canonical (jamais `noindex` en plus).
+    if (noindex)
+      report('robots', 'noindex et canonical vers une autre page (signaux contradictoires)');
+  } else if (noindex === expected.indexable) {
     report('robots', expected.indexable ? 'noindex sur une page indexable' : 'noindex manquant');
   }
 

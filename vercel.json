@@ -14,6 +14,197 @@
           "type": "query",
           "key": "onglet",
           "value": "histoire"
+        },
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ],
+      "destination": "https://politheque.revaamp.com/partis/:id/histoire",
+      "permanent": true
+    },
+    {
+      "source": "/partis/:id",
+      "has": [
+        {
+          "type": "query",
+          "key": "onglet",
+          "value": "positions"
+        },
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ],
+      "destination": "https://politheque.revaamp.com/partis/:id/positions",
+      "permanent": true
+    },
+    {
+      "source": "/partis/:id",
+      "has": [
+        {
+          "type": "query",
+          "key": "onglet",
+          "value": "programme"
+        },
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ],
+      "destination": "https://politheque.revaamp.com/partis/:id/programme-2027",
+      "permanent": true
+    },
+    {
+      "source": "/parcours/les-bases",
+      "destination": "https://politheque.revaamp.com/comprendre#les-bases",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/parcours/les-institutions",
+      "destination": "https://politheque.revaamp.com/comprendre#les-institutions",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/parcours/les-partis",
+      "destination": "https://politheque.revaamp.com/partis",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/parcours/les-grands-debats",
+      "destination": "https://politheque.revaamp.com/partis#debats",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/parcours/presidentielle-2027",
+      "destination": "https://politheque.revaamp.com/comprendre#presidentielle-2027",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/parcours/me-situer",
+      "destination": "https://politheque.revaamp.com/me-situer",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/debats",
+      "destination": "https://politheque.revaamp.com/partis#debats",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/elections",
+      "destination": "https://politheque.revaamp.com/elections/presidentielle-2027",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/partis/:id((?!comparer$)[^/]+)\\.html",
+      "destination": "https://politheque.revaamp.com/partis/:id/programme-2027",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/partis/:id((?!comparer$)[^/]+)/",
+      "destination": "https://politheque.revaamp.com/partis/:id/programme-2027",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/partis/:id((?!comparer$)[^/]+)",
+      "destination": "https://politheque.revaamp.com/partis/:id/programme-2027",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ],
+      "destination": "https://politheque.revaamp.com/",
+      "permanent": true
+    },
+    {
+      "source": "/:path((?!google[^/]*\\.html$|BingSiteAuth\\.xml$).+)",
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ],
+      "destination": "https://politheque.revaamp.com/:path",
+      "permanent": true
+    },
+    {
+      "source": "/partis/:id",
+      "has": [
+        {
+          "type": "query",
+          "key": "onglet",
+          "value": "histoire"
         }
       ],
       "destination": "/partis/:id/histoire",
@@ -40,6 +231,61 @@
           "value": "programme"
         }
       ],
+      "destination": "/partis/:id/programme-2027",
+      "permanent": true
+    },
+    {
+      "source": "/parcours/les-bases",
+      "destination": "/comprendre#les-bases",
+      "permanent": true
+    },
+    {
+      "source": "/parcours/les-institutions",
+      "destination": "/comprendre#les-institutions",
+      "permanent": true
+    },
+    {
+      "source": "/parcours/les-partis",
+      "destination": "/partis",
+      "permanent": true
+    },
+    {
+      "source": "/parcours/les-grands-debats",
+      "destination": "/partis#debats",
+      "permanent": true
+    },
+    {
+      "source": "/parcours/presidentielle-2027",
+      "destination": "/comprendre#presidentielle-2027",
+      "permanent": true
+    },
+    {
+      "source": "/parcours/me-situer",
+      "destination": "/me-situer",
+      "permanent": true
+    },
+    {
+      "source": "/debats",
+      "destination": "/partis#debats",
+      "permanent": true
+    },
+    {
+      "source": "/elections",
+      "destination": "/elections/presidentielle-2027",
+      "permanent": false
+    },
+    {
+      "source": "/partis/:id((?!comparer$)[^/]+)\\.html",
+      "destination": "/partis/:id/programme-2027",
+      "permanent": true
+    },
+    {
+      "source": "/partis/:id((?!comparer$)[^/]+)/",
+      "destination": "/partis/:id/programme-2027",
+      "permanent": true
+    },
+    {
+      "source": "/partis/:id((?!comparer$)[^/]+)",
       "destination": "/partis/:id/programme-2027",
       "permanent": true
     }

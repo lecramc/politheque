@@ -224,7 +224,9 @@ export interface Theme {
   title: string;
   icon: string;
   /** Les enjeux : de quoi parle-t-on, pourquoi c'est débattu. */
+  /** Deux phrases de 25 mots au plus ; le détail est dans `contextMore` (« En savoir plus »). */
   context: string;
+  contextMore: string;
   keyFigures: KeyFigure[];
   /** Grandes options en débat, présentées sans hiérarchie. */
   debates: { question: string; options: string[] }[];
@@ -255,7 +257,10 @@ export interface Axis {
 
 export interface GuideBlock {
   heading: string;
+  /** Texte visible. Une ligne « - … » dans un paragraphe est une puce. */
   paragraphs: string[];
+  /** Détail derrière « En savoir plus » : articles, délais, exceptions. */
+  more?: string[];
   sources: Source[];
 }
 

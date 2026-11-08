@@ -4,6 +4,8 @@ import {
   fewComparedNote,
   leadGroupSentence,
   methodSentences,
+  RESULTS_INTRO,
+  howToReadBullets,
   marginSentence,
 } from '@/src/programmes/models/results.copy';
 
@@ -14,7 +16,7 @@ describe('Feature: phrases de la page de résultats', () => {
 
   it('should name the leading group without separating its members', () => {
     expect(leadGroupSentence(['PS', 'Les Écologistes'], 5)).toBe(
-      "Vos réponses sont proches de PS et Les Écologistes, sans qu'on puisse les départager : l'écart entre eux est inférieur à la marge de ± 5 points."
+      "Vos réponses sont proches de 2 partis, sans qu'on puisse les départager : PS et Les Écologistes. L'écart entre eux est inférieur à la marge de ± 5 points."
     );
     expect(leadGroupSentence(['A', 'B', 'C'], 7)).toContain('A, B et C');
   });
@@ -28,9 +30,9 @@ describe('Feature: phrases de la page de résultats', () => {
     expect(leadGroupSentence(['A', 'B', 'C', 'D'], 5)).toContain('proches de 4 partis');
   });
 
-  it('should point to the map and detail tabs when too many parties are in the margin', () => {
-    expect(BROAD_GROUP_POINTER).toContain('« Ma carte »');
-    expect(BROAD_GROUP_POINTER).toContain('« Détail »');
+  it('should point to the question-by-question block, not to tabs, when too many parties are in the margin', () => {
+    expect(BROAD_GROUP_POINTER).toContain('« Question par question »');
+    expect(BROAD_GROUP_POINTER).not.toMatch(/onglet/i);
   });
 
   it('should switch to the broad presentation from four parties', () => {
@@ -61,5 +63,23 @@ describe('Feature: phrases de la page de résultats', () => {
   it('should derive the size of the questionnaire in the margin sentence', () => {
     expect(methodSentences(31)[0]).toContain('moins de 31 questions');
     expect(methodSentences(34)[0]).toContain('moins de 34 questions');
+  });
+});
+
+describe('Feature: texte court des résultats (spec § 5.3)', () => {
+  it('should keep the visible intro to two short sentences, the voting disclaimer included', () => {
+    expect(RESULTS_INTRO).toBe(
+      "Proximité entre vos réponses et les positions publiques des partis. Ce n'est pas une consigne de vote."
+    );
+    expect(RESULTS_INTRO.split(/\s+/).length).toBeLessThanOrEqual(25);
+  });
+
+  it('should keep the three method reminders in the « Comment lire ces résultats » sheet', () => {
+    const bullets = howToReadBullets(5, 5);
+    expect(bullets).toHaveLength(3);
+    expect(bullets[0]).toBe("un parti n'est noté que sur au moins 5 de vos réponses ;");
+    expect(bullets[1]).toBe('moins de 5 points d’écart : on ne peut pas départager ;');
+    expect(bullets[2]).toContain('comparé sur moins de questions');
+    expect(bullets[2]).toContain('gonflé');
   });
 });

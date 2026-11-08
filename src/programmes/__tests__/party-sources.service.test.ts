@@ -59,8 +59,21 @@ describe("Feature: sources d'une section de fiche", () => {
     );
   });
 
-  it('should list every ideal on the overview, as displayed', () => {
-    expect(titles(partySectionSources(party, 'en-bref', 'presidentielle-2027'))).toEqual([
+  it('should list stance sources on the positions section', () => {
+    expect(titles(partySectionSources(party, 'positions', 'presidentielle-2027'))).toEqual([
+      'position',
+    ]);
+  });
+
+  it('should merge the ideal and measure sources on the programme tab, without duplicates', () => {
+    expect(titles(partySectionSources(party, 'programme', 'presidentielle-2027'))).toEqual([
+      'ideal1',
+      'ideal2',
+      'ideal3',
+      'ideal4',
+      'mesure',
+    ]);
+    expect(titles(partySectionSources(party, 'programme', null))).toEqual([
       'ideal1',
       'ideal2',
       'ideal3',
@@ -68,22 +81,9 @@ describe("Feature: sources d'une section de fiche", () => {
     ]);
   });
 
-  it('should list stance sources on the positions section', () => {
-    expect(titles(partySectionSources(party, 'positions', 'presidentielle-2027'))).toEqual([
-      'position',
-    ]);
-  });
-
-  it('should list programme measure sources on the 2027 section', () => {
-    expect(titles(partySectionSources(party, 'programme-2027', 'presidentielle-2027'))).toEqual([
-      'mesure',
-    ]);
-    expect(partySectionSources(party, 'programme-2027', null)).toEqual([]);
-  });
-
   it('should source every real party section that the page displays', () => {
     for (const real of PARTIES) {
-      for (const section of ['histoire', 'positions', 'programme-2027'] as const) {
+      for (const section of ['histoire', 'positions', 'programme'] as const) {
         expect(
           partySectionSources(real, section, 'presidentielle-2027').length,
           `${real.id} ${section}`

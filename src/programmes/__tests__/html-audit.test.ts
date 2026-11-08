@@ -33,6 +33,18 @@ describe('Feature: contrôle du HTML exporté', () => {
     expect(rules(page(), { path: '/partis/lfi', indexable: true })).toContain('canonical');
   });
 
+  it('should accept an alias page whose canonical points to its target', () => {
+    const alias = {
+      path: '/partis/rn/programme-2027',
+      indexable: false,
+      canonicalPath: '/partis/rn',
+    };
+    expect(auditHtml(page(), alias)).toEqual([]);
+    expect(rules(page(), { ...alias, canonicalPath: '/partis/lfi' })).toContain('canonical');
+    const contradictory = page().replace('index, follow', 'noindex, follow');
+    expect(rules(contradictory, alias)).toContain('robots');
+  });
+
   it('should report a missing noindex on a non-indexable page', () => {
     expect(rules(page(), { ...expected, indexable: false })).toContain('robots');
   });

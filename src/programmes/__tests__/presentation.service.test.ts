@@ -7,6 +7,8 @@ import {
   formatLongDate,
   formatSourceDate,
   firstSentence,
+  foldAfterSentences,
+  splitBullets,
   GUIDE_GROUPS,
   leanText,
   originLabel,
@@ -153,5 +155,41 @@ describe('Feature: origine d’une idée clé', () => {
   it('should read « Nature, date en toutes lettres »', () => {
     expect(originLabel({ kind: 'programme', date: '2022-03' })).toBe('Programme, mars 2022');
     expect(originLabel({ kind: 'presse', date: '2026-10-06' })).toBe('Presse, 6 octobre 2026');
+  });
+});
+
+describe('Feature: repli mécanique « les N premières phrases, puis Lire la suite »', () => {
+  const text = 'Première phrase. Deuxième phrase. Troisième phrase.';
+
+  it('should show the first N sentences and fold the rest', () => {
+    expect(foldAfterSentences(text, 2)).toEqual({
+      visible: 'Première phrase. Deuxième phrase.',
+      rest: 'Troisième phrase.',
+    });
+  });
+
+  it('should fold nothing when the text is not longer than N sentences', () => {
+    expect(foldAfterSentences('Une seule phrase.', 2)).toEqual({
+      visible: 'Une seule phrase.',
+      rest: '',
+    });
+  });
+
+  it('should never lose a word: visible and folded parts give back the text', () => {
+    const { visible, rest } = foldAfterSentences(text, 1);
+    expect(`${visible} ${rest}`).toBe(text);
+  });
+});
+
+describe('Feature: liste à puces dans un paragraphe', () => {
+  it('should split the lead sentence from its « - » lines', () => {
+    expect(splitBullets('Il peut :\n- nommer ;\n- dissoudre.')).toEqual({
+      lead: 'Il peut :',
+      bullets: ['nommer ;', 'dissoudre.'],
+    });
+  });
+
+  it('should leave a plain paragraph untouched', () => {
+    expect(splitBullets('Un paragraphe.')).toEqual({ lead: 'Un paragraphe.', bullets: [] });
   });
 });

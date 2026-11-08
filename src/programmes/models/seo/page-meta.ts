@@ -182,7 +182,7 @@ const RUBRICS = {
     name: 'Partis',
     title: 'Les partis politiques français : histoire, idées, positions',
     description: (catalog: Catalog) =>
-      `Les ${catalog.parties.length} partis présentés dans l'ordre alphabétique, avec le même format pour chacun : histoire, idées, positions et propositions pour 2027, sources à l'appui.`,
+      `Les ${catalog.parties.length} partis dans l'ordre alphabétique, le même format pour chacun : programme, positions, histoire. Comparez deux partis ou parcourez les grands débats.`,
   },
   comprendre: {
     pattern: '/comprendre',
@@ -190,20 +190,6 @@ const RUBRICS = {
     title: 'Comprendre la politique française simplement',
     description: () =>
       'Institutions, pouvoirs du président, mode de scrutin, classement des partis : les bases de la politique française, chaque information étant sourcée.',
-  },
-  debats: {
-    pattern: '/debats',
-    name: 'Débats',
-    title: 'Les grands débats politiques : enjeux et propositions',
-    description: () =>
-      'Économie, immigration, écologie, santé : les enjeux, les chiffres officiels et les propositions des partis sur chaque thème, dans le même format pour tous.',
-  },
-  elections: {
-    pattern: '/elections',
-    name: 'Élections',
-    title: 'Les élections en France : calendrier et règles',
-    description: () =>
-      'Les élections à venir en France : calendrier, candidatures déclarées et règles du scrutin, avec les sources officielles.',
   },
 } as const;
 
@@ -229,6 +215,7 @@ export type PartyPageContext = {
   /** Dossier de procédures, seulement quand la section existe pour tous les partis. */
   legal: LegalDossier | null;
   sources: Record<PartySection, Source[]>;
+  themeCount: number;
 };
 
 export function partyPageContext(party: Party, catalog: Catalog): PartyPageContext {
@@ -245,20 +232,19 @@ export function partyPageContext(party: Party, catalog: Catalog): PartyPageConte
     presidential: election && candidacy ? { election, candidacy } : null,
     legal,
     sources: {
-      'en-bref': sourcesFor('en-bref'),
+      programme: sourcesFor('programme'),
       histoire: sourcesFor('histoire'),
       positions: sourcesFor('positions'),
-      'programme-2027': sourcesFor('programme-2027'),
       procedures: sourcesFor('procedures'),
     },
+    themeCount: catalog.themes.length,
   };
 }
 
 const PARTY_PATTERNS: Record<PartySection, RoutePattern> = {
-  'en-bref': '/partis/[id]',
+  programme: '/partis/[id]/programme-2027',
   histoire: '/partis/[id]/histoire',
   positions: '/partis/[id]/positions',
-  'programme-2027': '/partis/[id]/programme-2027',
   procedures: '/partis/[id]/procedures-judiciaires',
 };
 
@@ -268,7 +254,7 @@ const PARTY_PATTERN_SECTIONS = Object.fromEntries(
 
 export function partySectionMeta(ctx: PartyPageContext, section: PartySection): PageMeta {
   const { party, questionCount, presidential, legal } = ctx;
-  if ((section === 'programme-2027' && !presidential) || (section === 'procedures' && !legal)) {
+  if ((section === 'programme' && !presidential) || (section === 'procedures' && !legal)) {
     return nonIndexableMeta(party.name, partyHref(party.id, section));
   }
   // Le dossier de procédures a sa propre date de recensement, distincte de celle de la fiche.
@@ -277,34 +263,34 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
 
   const titleCore = (name: string): string => {
     switch (section) {
-      case 'en-bref':
-        return `${name} : histoire, idées et positions`;
       case 'histoire':
         return `${name} : histoire, fondateurs et dates clés`;
       case 'positions':
         return `${name} : positions sur ${questionCount} questions`;
-      case 'programme-2027':
-        return `${name} : propositions pour la présidentielle 2027`;
+      case 'programme':
+        return `${name} : programme 2027`;
       case 'procedures':
         return `${name} : procédures judiciaires`;
     }
   };
   // Même règle pour tous : le sigle seul quand le nom complet allonge trop le title.
+  // Programme : jamais le sigle seul (le nom complet est la requête d'entité) ; la marque saute avant le nom.
+  const fits = (core: string) => core.length <= TITLE_MAX;
   const title =
-    `${titleCore(label)} · ${APP_NAME}`.length <= TITLE_MAX
-      ? brandTitle(titleCore(label))
-      : brandTitle(titleCore(party.shortName));
+    section === 'programme'
+      ? brandTitle(fits(titleCore(label)) ? titleCore(label) : titleCore(party.name))
+      : `${titleCore(label)} · ${APP_NAME}`.length <= TITLE_MAX
+        ? brandTitle(titleCore(label))
+        : brandTitle(titleCore(party.shortName));
 
   const descriptionFor = (name: string): string => {
     switch (section) {
-      case 'en-bref':
-        return `${name} : histoire, idées et positions sur les grands débats, chaque information sourcée et datée. Fiche vérifiée le ${date}.`;
       case 'histoire':
-        return `Les origines de ${name}, ses fondateurs et figures, ses dates clés et ses courants de pensée, résumés et sourcés. Fiche vérifiée le ${date}.`;
+        return `${name} : origines, fondateurs, dates clés et courants de pensée, résumés et sourcés. Fiche vérifiée le ${date}.`;
       case 'positions':
-        return `Ce que défend ${name} sur ${questionCount} questions de société, d'après ses programmes, ses votes et ses déclarations datés. Fiche vérifiée le ${date}.`;
-      case 'programme-2027':
-        return `${name} : propositions pour 2027, thème par thème, avec leurs sources. ${presidential!.candidacy.candidateName} (${beforeParenthesis(presidential!.candidacy.statusLabel)}). Fiche vérifiée le ${date}.`;
+        return `${name} : ses positions sur ${questionCount} questions, d'après ses programmes, votes et déclarations datés. Fiche vérifiée le ${date}.`;
+      case 'programme':
+        return `${name} : programme 2027 en ${ctx.themeCount} thèmes, avec ses sources. ${presidential!.candidacy.candidateName} (${beforeParenthesis(presidential!.candidacy.statusLabel)}). Fiche vérifiée le ${date}.`;
       case 'procedures':
         // Jamais de nom de personne ici : un extrait « X mis en examen » hors contexte serait trompeur.
         return `Procédures judiciaires concernant ${name}, ses dirigeants, candidats et élus nationaux : statut exact, décisions, sources. Arrêté au ${date}.`;
@@ -318,7 +304,7 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
     HOME,
     { name: 'Partis', path: '/partis' },
     { name: party.name, path: partyHref(party.id) },
-    ...(section === 'en-bref' ? [] : [{ name: partySectionLabel(section), path }]),
+    ...(section === 'programme' ? [] : [{ name: partySectionLabel(section), path }]),
   ];
   return make({
     title,
@@ -327,11 +313,11 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
     breadcrumb: trail,
     kind: 'article',
     pattern: PARTY_PATTERNS[section],
-    name: section === 'en-bref' ? party.name : `${party.name} · ${partySectionLabel(section)}`,
+    name: section === 'programme' ? party.name : `${party.name} · ${partySectionLabel(section)}`,
     dateModified: section === 'procedures' ? dossierLastmod(legal!) : party.lastVerified,
     about: [
       politicalPartyNode(party),
-      ...(section === 'programme-2027' ? [personNode(presidential!.candidacy.candidateName)] : []),
+      ...(section === 'programme' ? [personNode(presidential!.candidacy.candidateName)] : []),
     ],
     // Procédures : citations réduites au domaine (nom et URL), les titres comme les URL d'articles
     // étant nominatifs. Les sources complètes restent affichées sur la page, par entrée.
@@ -344,6 +330,16 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
           }))
         : ctx.sources[section],
   });
+}
+
+/**
+ * `/partis/[id]` : alias de l'onglet Programme, qui garde son adresse `/programme-2027` (décision
+ * D7). Canonical vers l'onglet, hors sitemap, sans JSON-LD. Un seul signal : le canonical, sans
+ * `noindex` (les deux se contrediraient). La page n'est de toute façon jamais servie : la 301 passe avant.
+ */
+export function partyAliasMeta(ctx: PartyPageContext): PageMeta {
+  const meta = partySectionMeta(ctx, 'programme');
+  return { ...meta, jsonLd: null };
 }
 
 export function debateMeta(theme: Theme, catalog: Catalog): PageMeta {
@@ -365,7 +361,8 @@ export function debateMeta(theme: Theme, catalog: Catalog): PageMeta {
     title: brandTitle(`${theme.title} : que proposent les partis ?`),
     description,
     path,
-    breadcrumb: [HOME, { name: 'Débats', path: '/debats' }, { name: theme.title, path }],
+    // Pas de niveau « Grands débats » : son adresse (`/partis#debats`) se confond avec `/partis`.
+    breadcrumb: [HOME, { name: 'Partis', path: '/partis' }, { name: theme.title, path }],
     kind: 'article',
     pattern: '/debats/[id]',
     name: theme.title,
@@ -395,12 +392,12 @@ export function guideSectionMeta(section: GuideSection): PageMeta {
 export function electionMeta(election: Election, catalog: Catalog): PageMeta {
   const path = `/elections/${election.id}`;
   const description =
-    'Calendrier, candidatures déclarées et leur statut daté, parrainages et règles du scrutin, avec les sources officielles.';
+    'Dates du scrutin, comment voter en trois gestes, puis les candidatures déclarées et leur statut daté, avec les sources officielles.';
   return make({
-    title: brandTitle(`${election.title} : dates, candidats et règles`),
+    title: brandTitle(`${election.title} : dates, comment voter, candidats`),
     description,
     path,
-    breadcrumb: [HOME, { name: 'Élections', path: '/elections' }, { name: election.title, path }],
+    breadcrumb: [HOME, { name: election.title, path }],
     kind: 'article',
     pattern: '/elections/[id]',
     name: election.title,
@@ -409,6 +406,19 @@ export function electionMeta(election: Election, catalog: Catalog): PageMeta {
       ...election.summarySources,
       ...[...election.keyDates, ...election.rounds].flatMap((s) => s.sources),
     ],
+  });
+}
+
+export function compareMeta(catalog: Catalog): PageMeta {
+  const path = '/partis/comparer';
+  return make({
+    title: brandTitle('Comparer deux partis : programme et positions'),
+    description: `Choisissez deux partis parmi les ${catalog.parties.length} : programme 2027 et ${catalog.questions.length} positions côte à côte, thème par thème, sans score ni classement.`,
+    path,
+    breadcrumb: [HOME, { name: 'Partis', path: '/partis' }, { name: 'Comparer deux partis', path }],
+    kind: 'webpage',
+    pattern: '/partis/comparer',
+    name: 'Comparer deux partis',
   });
 }
 
@@ -469,14 +479,13 @@ export function partyLinkLabel(
   party: Pick<Party, 'name' | 'shortName' | 'id'>,
   section: PartySection
 ): string {
-  return section === 'programme-2027'
+  return section === 'programme'
     ? `Toutes les propositions de ${displayName(party)} pour 2027 →`
     : party.name;
 }
 
 const NON_INDEXABLE_TITLES: Partial<Record<RoutePattern, string>> = {
   '/me-situer/resultats': 'Vos résultats',
-  '/parcours/[etape]': 'Parcours citoyen',
   '/passeport': 'Ma progression',
 };
 
@@ -491,23 +500,24 @@ export function allPageMetas(catalog: Catalog): PageMeta[] {
         return rubricMeta('partis', catalog);
       case '/comprendre':
         return rubricMeta('comprendre', catalog);
-      case '/debats':
-        return rubricMeta('debats', catalog);
-      case '/elections':
-        return rubricMeta('elections', catalog);
       case '/comprendre/[id]':
         return guideSectionMeta(catalog.guide.find((s) => s.id === id)!);
       case '/debats/[id]':
         return debateMeta(catalog.themes.find((t) => t.id === id)!, catalog);
       case '/elections/[id]':
         return electionMeta(catalog.elections.find((e) => e.id === id)!, catalog);
+      case '/partis/comparer':
+        return compareMeta(catalog);
       case '/me-situer':
         return quizMeta(catalog.questions.length);
       case '/methodologie':
         return methodologyMeta();
       case '/corrections':
         return correctionsMeta();
-      case '/partis/[id]':
+      case '/partis/[id]': {
+        const party = catalog.parties.find((p) => p.id === id)!;
+        return partyAliasMeta(partyPageContext(party, catalog));
+      }
       case '/partis/[id]/histoire':
       case '/partis/[id]/positions':
       case '/partis/[id]/programme-2027':

@@ -19,6 +19,7 @@ export function buildSeoFiles() {
     pages: urls.map((u) => ({
       path: u.path,
       indexable: u.indexable,
+      canonicalPath: u.canonicalPath,
       // Pages de contenu (motifs dynamiques indexables) : au moins un <h2>.
       content: u.indexable && u.pattern.includes('['),
     })),

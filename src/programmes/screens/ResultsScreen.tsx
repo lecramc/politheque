@@ -18,33 +18,35 @@ import { Arc } from '@/src/programmes/components/Arc';
 import { AxisChart } from '@/src/programmes/components/AxisChart';
 import { Card } from '@/src/programmes/components/Card';
 import { KeepResults } from '@/src/programmes/components/KeepResults';
+import { MoreText } from '@/src/programmes/components/MoreText';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { PartyPlacement } from '@/src/programmes/components/PartyPlacement';
 import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
+import { ReadingGuide } from '@/src/programmes/components/ReadingGuide';
 import { ResultsPrint } from '@/src/programmes/components/ResultsPrint';
 import { SeparatingQuestions } from '@/src/programmes/components/SeparatingQuestions';
+import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { STANCE_LABEL } from '@/src/programmes/components/StanceBadge';
 import { StanceLegend } from '@/src/programmes/components/StanceLegend';
-import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
 import {
   decodeAnswers,
   INVALID_LINK_MESSAGE,
   readCodeFromHash,
 } from '@/src/programmes/models/answer-link.service';
 import { chartLegend } from '@/src/programmes/models/chart-legend.service';
-import { MIN_AXIS_COUNT } from '@/src/programmes/models/matching.service';
+import { MIN_AXIS_COUNT, MIN_COMPARED } from '@/src/programmes/models/matching.service';
 import type { Source } from '@/src/programmes/models/programme.model';
-import { TIED_LABEL } from '@/src/programmes/models/results.copy';
+import { howToReadBullets, RESULTS_INTRO, TIED_LABEL } from '@/src/programmes/models/results.copy';
 import { nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
+import { partyHref } from '@/src/programmes/models/seo/party-sections';
 import { quizActions } from '@/src/programmes/store/quiz.slice';
 import { resultsViewModel } from '@/src/programmes/view-models/results.view-model';
 
 /** Page non indexée, avec ses balises dès le HTML statique (même pendant la lecture du lien). */
 const RESULTS_META = nonIndexableMeta('Vos résultats', '/me-situer/resultats');
 
-type Tab = 'proximite' | 'carte' | 'detail';
 /** Source du contrôle de cohérence : l'ordre des partis est comparé à l'enquête d'experts CHES. */
 const CHES_SOURCES: Source[] = [
   {
@@ -64,7 +66,7 @@ const CHES_SOURCES: Source[] = [
 export default function ResultsScreen() {
   const vm = useViewModel(resultsViewModel);
   const { colors, effects, fonts } = useTheme();
-  const [tab, setTab] = useState<Tab>('proximite');
+  const [mapOpen, setMapOpen] = useState(false);
   const [alphabetical, setAlphabetical] = useState(false);
   const [themeFilter, setThemeFilter] = useState<string | null>(null);
   const dispatch = appDispatch();
@@ -144,11 +146,6 @@ export default function ResultsScreen() {
     ? vm.details.filter((d) => d.question.theme === themeFilter)
     : vm.details;
 
-  const tabList: { id: Tab; label: string }[] = [
-    { id: 'proximite', label: 'Proximité' },
-    { id: 'carte', label: 'Ma carte' },
-    { id: 'detail', label: 'Détail' },
-  ];
   const themeChip = (theme: { id: string | null; title: string }) => {
     const active = themeFilter === theme.id;
     return (
@@ -184,7 +181,6 @@ export default function ResultsScreen() {
       railOnMobile="hidden"
       rail={
         <>
-          <Tabs tabs={tabList} value={tab} onChange={setTab} vertical />
           <Button variant="secondary" onPress={vm.restart}>
             Recommencer le questionnaire
           </Button>
@@ -200,13 +196,18 @@ export default function ResultsScreen() {
             <Text role="alert">{INVALID_LINK_MESSAGE}</Text>
           </Card>
         ) : null}
-        <View style={{ gap: effects.spacing.xs }}>
+        <View style={{ gap: effects.spacing.xxs }}>
           <Text variant="title">Vos résultats</Text>
-          <Text style={{ color: colors.text.secondary, fontSize: 16 }}>
-            Proximité avec les positions publiques des partis, pas une consigne de vote. Un parti
-            n'est noté que si au moins 5 de vos réponses peuvent être comparées à ses positions.{' '}
+          <Text style={{ color: colors.text.secondary, fontSize: 16 }}>{RESULTS_INTRO}</Text>
+          <ReadingGuide label="Comment lire ces résultats">
+            <Text style={{ fontSize: 16, lineHeight: 25 }}>Comment lire ces résultats :</Text>
+            {howToReadBullets(MIN_COMPARED, vm.margin).map((bullet) => (
+              <Text key={bullet} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+                {`• ${bullet}`}
+              </Text>
+            ))}
             <TextLink href="/methodologie">Comment ça marche</TextLink>
-          </Text>
+          </ReadingGuide>
         </View>
 
         {!vm.enoughAnswers ? (
@@ -218,278 +219,208 @@ export default function ResultsScreen() {
           </Card>
         ) : null}
 
-        {/* Sous 1024 px : onglets soulignés ici ; dès 1024 px : liste verticale dans le rail. */}
-        <Only below="lg">
-          <Tabs tabs={tabList} value={tab} onChange={setTab} />
-        </Only>
+        {vm.leadGroup.sentence ? (
+          <Card>
+            <Text variant="caption" headingLevel={2}>
+              Groupe de tête
+            </Text>
+            <Text>{vm.leadGroup.sentence}</Text>
+            {vm.separating.length ? (
+              <MoreText
+                label={`Ce qui les départage · ${vm.separating.length} question${vm.separating.length > 1 ? 's' : ''}`}
+              >
+                <SeparatingQuestions items={vm.separating} />
+              </MoreText>
+            ) : null}
+            {vm.leadGroup.pointer ? <Text>{vm.leadGroup.pointer}</Text> : null}
+          </Card>
+        ) : null}
 
-        <TabPanel id={tab}>
-          {tab === 'proximite' ? (
-            <View style={{ gap: effects.spacing.sm }}>
-              {vm.leadGroup.sentence ? (
-                <Card>
-                  <Text variant="caption" headingLevel={2}>
-                    Groupe de tête
-                  </Text>
-                  <Text>{vm.leadGroup.sentence}</Text>
-                  {vm.separating.length ? (
-                    <View style={{ gap: effects.spacing.xs }}>
-                      <Text variant="caption" headingLevel={3}>
-                        Ce qui les départage
-                      </Text>
-                      <SeparatingQuestions items={vm.separating} />
-                    </View>
-                  ) : null}
-                  {vm.leadGroup.pointer ? <Text>{vm.leadGroup.pointer}</Text> : null}
-                </Card>
-              ) : null}
-              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                {vm.marginSentence} Les pourcentages ne portent pas sur le même nombre de questions
-                selon les partis : un parti qui s'exprime peu est comparé sur moins de sujets, ce
-                qui peut gonfler son score.
-              </Text>
-              <View style={{ flexDirection: 'row', gap: effects.spacing.xs, alignItems: 'center' }}>
-                <Text style={{ color: colors.text.secondary }}>Ordre :</Text>
-                {[
-                  { id: false, label: 'Proximité' },
-                  { id: true, label: 'A-Z' },
-                ].map((option) => (
-                  <Pressable
-                    key={option.label}
-                    onPress={() => setAlphabetical(option.id)}
-                    accessibilityRole="button"
-                    accessibilityState={{ selected: alphabetical === option.id }}
-                    style={{
-                      minHeight: 44,
-                      justifyContent: 'center',
-                      paddingHorizontal: 14,
-                      borderRadius: effects.borderRadius.round,
-                      borderWidth: 1.5,
-                      borderColor:
-                        alphabetical === option.id ? colors.tint : colors.surface.border.tertiary,
-                      backgroundColor: alphabetical === option.id ? colors.tintSoft : 'transparent',
-                    }}
-                  >
-                    <Text
-                      style={
-                        alphabetical === option.id
-                          ? { ...fonts.bold, color: colors.tint }
-                          : undefined
-                      }
-                    >
-                      {option.label}
-                    </Text>
-                  </Pressable>
-                ))}
-              </View>
-              {ranking.map(
-                ({
-                  party,
-                  score,
-                  comparedCount,
-                  agree,
-                  disagree,
-                  tied,
-                  fewCompared,
-                  fewComparedNote,
-                }) => (
-                  <Accordion
-                    key={party.id}
-                    title={party.name}
-                    subtitle={`Comparé sur ${comparedCount} question${comparedCount > 1 ? 's' : ''}${tied ? ` · ${TIED_LABEL}` : ''}`}
-                    leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
-                    trailing={
-                      score === null ? (
-                        <Text
-                          style={{
-                            width: 84,
-                            fontSize: 12,
-                            color: colors.text.secondary,
-                            textAlign: 'right',
-                          }}
-                        >
-                          Pas assez de positions connues
-                        </Text>
-                      ) : (
-                        <Arc
-                          value={score / 100}
-                          size={64}
-                          strokeWidth={7}
-                          delay={revealDelays[party.id] ?? 0}
-                          animate={!revealPlayed.current}
-                          dashedRemainder={fewCompared}
-                          accessibilityLabel={`Proximité avec ${party.name} : ${score} %, sur ${comparedCount} questions`}
-                        >
-                          <Text
-                            plainDigits
-                            style={{ ...fonts.bold, fontSize: 14, color: colors.tint }}
-                          >
-                            {score} %
-                          </Text>
-                        </Arc>
-                      )
+        <View style={{ gap: effects.spacing.sm }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: effects.spacing.sm,
+            }}
+          >
+            <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+              {`Les ${vm.ranking.length} partis`}
+            </Text>
+            <View style={{ flexDirection: 'row', gap: effects.spacing.xxs }}>
+              {[
+                { id: false, label: 'Proximité' },
+                { id: true, label: 'A-Z' },
+              ].map((option) => (
+                <Pressable
+                  key={option.label}
+                  onPress={() => setAlphabetical(option.id)}
+                  accessibilityRole="button"
+                  accessibilityState={{ selected: alphabetical === option.id }}
+                  style={{
+                    minHeight: 44,
+                    justifyContent: 'center',
+                    paddingHorizontal: 14,
+                    borderRadius: effects.borderRadius.round,
+                    borderWidth: 1.5,
+                    borderColor:
+                      alphabetical === option.id ? colors.tint : colors.surface.border.tertiary,
+                    backgroundColor: alphabetical === option.id ? colors.tintSoft : 'transparent',
+                  }}
+                >
+                  <Text
+                    style={
+                      alphabetical === option.id ? { ...fonts.bold, color: colors.tint } : undefined
                     }
                   >
-                    {fewComparedNote ? (
-                      <Text style={{ fontSize: 14, color: colors.text.secondary }}>
-                        {fewComparedNote}
-                      </Text>
-                    ) : null}
-                    {agree.length ? (
-                      <View style={{ gap: effects.spacing.xxs }}>
-                        <Text variant="caption">Vous êtes proches sur</Text>
-                        {agree.slice(0, 3).map((q) => (
-                          <Text key={q.id} style={{ fontSize: 15 }}>
-                            • {q.statement}
-                          </Text>
-                        ))}
-                      </View>
-                    ) : null}
-                    {disagree.length ? (
-                      <View style={{ gap: effects.spacing.xxs }}>
-                        <Text variant="caption">Vous divergez sur</Text>
-                        {disagree.slice(0, 3).map((q) => (
-                          <Text key={q.id} style={{ fontSize: 15 }}>
-                            • {q.statement}
-                          </Text>
-                        ))}
-                      </View>
-                    ) : null}
-                    <TextLink href={`/partis/${party.id}`} standalone>
-                      Voir la fiche du parti
-                    </TextLink>
-                  </Accordion>
-                )
-              )}
+                    {option.label}
+                  </Text>
+                </Pressable>
+              ))}
             </View>
-          ) : null}
-
-          {tab === 'carte' ? (
-            <Card>
-              {/* Tracé + légende alphabétique (aucun second classement) : côte à côte dès 1200 px. */}
-              <View {...tv('map-layout')} style={{ gap: effects.spacing.md }}>
-                <AxisChart axes={vm.axes} user={vm.userPosition} parties={vm.partyPositions} />
-                <View
-                  role="list"
-                  aria-label="Légende : partis par ordre alphabétique"
-                  style={{ gap: effects.spacing.xs, flexShrink: 1 }}
-                >
-                  <Text variant="caption">Légende · A-Z</Text>
-                  {legend.map((party) => (
-                    <View
-                      key={party.id}
-                      role="listitem"
+          </View>
+          {ranking.map(
+            ({
+              party,
+              score,
+              comparedCount,
+              agree,
+              disagree,
+              tied,
+              fewCompared,
+              fewComparedNote,
+            }) => (
+              <Accordion
+                key={party.id}
+                title={party.name}
+                subtitle={`Comparé sur ${comparedCount} question${comparedCount > 1 ? 's' : ''}${tied ? ` · ${TIED_LABEL}` : ''}`}
+                leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
+                trailing={
+                  score === null ? (
+                    <Text
                       style={{
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        gap: effects.spacing.xs,
+                        width: 84,
+                        fontSize: 12,
+                        color: colors.text.secondary,
+                        textAlign: 'right',
                       }}
                     >
-                      <PartyDot color={party.color} size={14} />
-                      <Text style={{ fontSize: 14, flexShrink: 1 }}>
-                        <Text style={{ ...fonts.bold, fontSize: 14 }}>{party.shortName}</Text>
-                        {` · ${party.name}`}
+                      Pas assez de positions connues
+                    </Text>
+                  ) : (
+                    <Arc
+                      value={score / 100}
+                      size={64}
+                      strokeWidth={7}
+                      delay={revealDelays[party.id] ?? 0}
+                      animate={!revealPlayed.current}
+                      dashedRemainder={fewCompared}
+                      accessibilityLabel={`Proximité avec ${party.name} : ${score} %, sur ${comparedCount} questions`}
+                    >
+                      <Text plainDigits style={{ ...fonts.bold, fontSize: 14, color: colors.tint }}>
+                        {score} %
                       </Text>
-                    </View>
-                  ))}
-                </View>
-              </View>
-              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                Plus deux points sont proches, plus les réponses se ressemblent. Positions calculées
-                uniquement à partir des affirmations du questionnaire : les axes simplifient la
-                réalité.
-              </Text>
-            </Card>
-          ) : null}
+                    </Arc>
+                  )
+                }
+              >
+                {fewComparedNote ? (
+                  <Text style={{ fontSize: 14, color: colors.text.secondary }}>
+                    {fewComparedNote}
+                  </Text>
+                ) : null}
+                {agree.length ? (
+                  <View style={{ gap: effects.spacing.xxs }}>
+                    <Text variant="caption">Vous êtes proches sur</Text>
+                    {agree.slice(0, 3).map((q) => (
+                      <Text key={q.id} style={{ fontSize: 15 }}>
+                        • {q.statement}
+                      </Text>
+                    ))}
+                  </View>
+                ) : null}
+                {disagree.length ? (
+                  <View style={{ gap: effects.spacing.xxs }}>
+                    <Text variant="caption">Vous divergez sur</Text>
+                    {disagree.slice(0, 3).map((q) => (
+                      <Text key={q.id} style={{ fontSize: 15 }}>
+                        • {q.statement}
+                      </Text>
+                    ))}
+                  </View>
+                ) : null}
+                <TextLink href={partyHref(party.id)} standalone>
+                  Voir la fiche du parti
+                </TextLink>
+              </Accordion>
+            )
+          )}
+        </View>
 
-          {tab === 'carte' ? (
-            <View style={{ gap: effects.spacing.sm }}>
-              <Text
-                accessibilityRole="header"
-                aria-level={2}
-                style={{
-                  ...fonts.display,
-                  fontSize: effects.sizes.text.display,
-                  color: colors.text.strong,
-                }}
-              >
-                Comment les partis sont placés
-              </Text>
-              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                Chaque point de la carte est la moyenne des positions publiques du parti sur les
-                affirmations du questionnaire liées à cet axe. Ouvrez un parti pour voir ces
-                positions et leurs sources.
-              </Text>
-              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                Un parti n'est placé sur un axe qu'à partir de {MIN_AXIS_COUNT} positions connues.
-              </Text>
-              {vm.axisExplanations.map((placement) => (
-                <PartyPlacement
-                  key={placement.party.id}
-                  party={placement.party}
-                  axes={vm.axes}
-                  placement={placement}
-                />
+        <Accordion headingLevel={2} title={`Question par question · ${vm.details.length}`}>
+          <StanceLegend />
+          {/* Mobile : puces en défilement horizontal. Dès 768 px : elles passent à la ligne. */}
+          <Only below="md">
+            <ScrollView
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              // Marge intérieure (compensée à l'extérieur) : l'anneau de focus n'est pas rogné.
+              style={{ margin: -effects.spacing.xs }}
+              contentContainerStyle={{ gap: effects.spacing.xs, padding: effects.spacing.xs }}
+            >
+              {themeChips.map(themeChip)}
+            </ScrollView>
+          </Only>
+          <Only
+            from="md"
+            style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}
+          >
+            {themeChips.map(themeChip)}
+          </Only>
+          {details.map(({ question, userValue, important, positions }) => (
+            <Accordion
+              key={question.id}
+              headingLevel={3}
+              title={question.statement}
+              titleWeight="regular"
+              subtitle={`Vous : ${STANCE_LABEL[String(userValue)]}${important ? ' (compte double)' : ''}`}
+            >
+              {positions.map(({ party, stance }) => (
+                <PartyStanceRow key={party.id} party={party} stance={stance} />
               ))}
-              <View
-                style={{
-                  flexDirection: 'row',
-                  alignItems: 'center',
-                  gap: effects.spacing.xs,
-                  flexWrap: 'wrap',
-                }}
-              >
-                <Text style={{ flexShrink: 1, fontSize: 14, color: colors.text.secondary }}>
-                  Contrôle de cohérence : l'ordre des partis a été comparé à celui d'une enquête
-                  d'experts indépendante, la Chapel Hill Expert Survey 2024.
-                </Text>
-                <SourceChip
-                  compact
-                  sources={CHES_SOURCES}
-                  subject="Contrôle de cohérence des positions"
-                />
-              </View>
-            </View>
-          ) : null}
+            </Accordion>
+          ))}
+        </Accordion>
 
-          {tab === 'detail' ? (
-            <View style={{ gap: effects.spacing.sm }}>
-              <Only from="md">
-                <StanceLegend />
-              </Only>
-              {/* Mobile : puces en défilement horizontal. Dès 768 px : elles passent à la ligne. */}
-              <Only below="md">
-                <ScrollView
-                  horizontal
-                  showsHorizontalScrollIndicator={false}
-                  // Marge intérieure (compensée à l'extérieur) : l'anneau de focus n'est pas rogné.
-                  style={{ margin: -effects.spacing.xs }}
-                  contentContainerStyle={{ gap: effects.spacing.xs, padding: effects.spacing.xs }}
-                >
-                  {themeChips.map(themeChip)}
-                </ScrollView>
-              </Only>
-              <Only
-                from="md"
-                style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}
-              >
-                {themeChips.map(themeChip)}
-              </Only>
-              {details.map(({ question, userValue, important, positions }) => (
-                <Accordion
-                  key={question.id}
-                  title={question.statement}
-                  titleWeight="regular"
-                  subtitle={`Vous : ${STANCE_LABEL[String(userValue)]}${important ? ' (compte double)' : ''}`}
-                >
-                  {positions.map(({ party, stance }) => (
-                    <PartyStanceRow key={party.id} party={party} stance={stance} />
-                  ))}
-                </Accordion>
-              ))}
+        <View style={{ gap: effects.spacing.xs }}>
+          <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+            Votre place sur la carte
+          </Text>
+          <Card>
+            <View {...tv('map-layout')} style={{ gap: effects.spacing.md }}>
+              <AxisChart
+                axes={vm.axes}
+                user={vm.userPosition}
+                parties={vm.partyPositions}
+                showEurope={false}
+              />
             </View>
-          ) : null}
-        </TabPanel>
+            <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+              Les axes simplifient la réalité. Positions établies uniquement à partir des
+              affirmations du questionnaire.
+            </Text>
+            <Pressable
+              onPress={() => setMapOpen(true)}
+              accessibilityRole="button"
+              style={{ minHeight: 44, justifyContent: 'center', alignSelf: 'flex-start' }}
+            >
+              <Text style={{ color: colors.tint, textDecorationLine: 'underline', fontSize: 15 }}>
+                Voir la carte complète
+              </Text>
+            </Pressable>
+          </Card>
+        </View>
 
         {vm.answeredCount > 0 ? (
           <KeepResults personalLink={vm.personalLink} mailto={vm.mailto} />
@@ -501,6 +432,67 @@ export default function ResultsScreen() {
           </Button>
         </Only>
       </View>
+
+      <Sheet isOpen={mapOpen} onClose={() => setMapOpen(false)} title="La carte complète">
+        <AxisChart axes={vm.axes} user={vm.userPosition} parties={vm.partyPositions} />
+        <View
+          role="list"
+          aria-label="Légende : partis par ordre alphabétique"
+          style={{ gap: effects.spacing.xs }}
+        >
+          <Text variant="caption">Légende · A-Z</Text>
+          {legend.map((party) => (
+            <View
+              key={party.id}
+              role="listitem"
+              style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
+            >
+              <PartyDot color={party.color} size={14} />
+              <Text style={{ fontSize: 14, flexShrink: 1 }}>
+                <Text style={{ ...fonts.bold, fontSize: 14 }}>{party.shortName}</Text>
+                {` · ${party.name}`}
+              </Text>
+            </View>
+          ))}
+        </View>
+        <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+          Plus deux points sont proches, plus les réponses se ressemblent.
+        </Text>
+        <Text variant="caption" headingLevel={2}>
+          Comment les partis sont placés
+        </Text>
+        <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+          Chaque point est la moyenne des positions publiques du parti sur les affirmations liées à
+          cet axe. Un parti n'est placé sur un axe qu'à partir de {MIN_AXIS_COUNT} positions
+          connues.
+        </Text>
+        {vm.axisExplanations.map((placement) => (
+          <PartyPlacement
+            key={placement.party.id}
+            party={placement.party}
+            axes={vm.axes}
+            placement={placement}
+          />
+        ))}
+        <View
+          style={{
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: effects.spacing.xs,
+            flexWrap: 'wrap',
+          }}
+        >
+          <Text style={{ flexShrink: 1, fontSize: 14, color: colors.text.secondary }}>
+            Contrôle de cohérence : l'ordre des partis a été comparé à celui d'une enquête d'experts
+            indépendante, la Chapel Hill Expert Survey 2024.
+          </Text>
+          <SourceChip
+            compact
+            sources={CHES_SOURCES}
+            subject="Contrôle de cohérence des positions"
+          />
+        </View>
+      </Sheet>
 
       <ResultsPrint
         date={vm.recapDate}

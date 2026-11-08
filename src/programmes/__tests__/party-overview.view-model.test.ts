@@ -119,6 +119,7 @@ const catalogOf = (parties: Party[]): Catalog =>
       title: `Titre ${id}`,
       icon: 'x',
       context: '',
+      contextMore: '',
       keyFigures: [],
       debates: [],
     })),
@@ -214,72 +215,9 @@ describe('Feature: « Ce qu’il propose »', () => {
   });
 });
 
-describe('Feature: Pour ou contre ?', () => {
-  it('should list the same great questions, in the order of the questionnaire', () => {
-    const a = vmOf(complete, 'alpha').glance.map((g) => g.questionId);
-    const b = vmOf(complete, 'beta').glance.map((g) => g.questionId);
-    expect(a).toEqual(['q1', 'q3']);
-    expect(b).toEqual(a);
-  });
-
-  it('should give each line its short label, stance, justification and sources', () => {
-    expect(vmOf(complete, 'beta').glance[0]).toMatchObject({
-      label: 'Impôt minimum',
-      stance: 2,
-      statement: 'Affirmation q1',
-      justification: 'Parce que.',
-      sources: [vote],
-    });
-  });
-
-  it('should link each line to the comparison of its debate, with this party preselected', () => {
-    const theme = vmOf(complete, 'beta').stances[0].question.theme;
-    expect(vmOf(complete, 'beta').glance[0].compareHref).toBe(`/debats/${theme}?comparer=beta`);
-    expect(vmOf(complete, 'alpha').glance[0].compareHref).toBe(`/debats/${theme}?comparer=alpha`);
-  });
-});
-
 describe('Feature: bas de fiche', () => {
   it('should offer the next sheet in alphabetical order', () => {
     expect(vmOf(complete, 'alpha').nextParty).toMatchObject({ id: 'beta', name: 'Beta' });
     expect(vmOf(complete, 'beta').nextParty).toMatchObject({ id: 'alpha', name: 'Alpha' });
-  });
-});
-
-describe('Feature: pour aller plus loin', () => {
-  it('should only link the definition, the other sections being tabs of the same sheet', () => {
-    expect(vmOf(complete, 'alpha').further).toEqual([
-      {
-        key: 'definition',
-        title: 'Comment il se définit, comment on le classe',
-        subtitle: null,
-        href: '/partis/alpha/histoire',
-      },
-    ]);
-  });
-
-  it('should not promise a self-definition when the party has no such ideal', () => {
-    const noSelfDefinition = catalogOf([
-      {
-        ...partyOf('alpha', 'Alpha'),
-        history: {
-          ...partyOf('alpha', 'Alpha').history!,
-          ideals: [{ title: 'Classement par la presse', text: '', sources: [] }],
-        },
-      },
-      withStanceSources(partyOf('beta', 'Beta')),
-    ]);
-    expect(vmOf(noSelfDefinition, 'alpha').further[0]).toMatchObject({
-      key: 'definition',
-      title: 'Comment on le classe',
-    });
-  });
-
-  it('should word the great questions block from the real counts', () => {
-    const vm = vmOf(complete, 'alpha');
-    expect(vm.glanceIntro).toBe(
-      '2 questions, les mêmes pour les 2 partis. Touchez-en une pour voir pourquoi et les sources.'
-    );
-    expect(vm.positionsLabel).toBe('Voir les 3 positions');
   });
 });

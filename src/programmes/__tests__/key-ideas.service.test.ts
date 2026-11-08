@@ -5,14 +5,13 @@ import {
   isKeyIdeaVerified,
   keyIdeaTheme,
   sortKeyIdeasByTheme,
-  glanceQuestionIds,
   nextPartyInJourney,
   hasKeyIdeasSection,
   KEY_IDEAS_COUNT,
 } from '@/src/programmes/models/key-ideas.service';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import { emptyThemes } from '@/src/programmes/models/party.factory';
-import type { KeyIdea, Party, Question, Source } from '@/src/programmes/models/programme.model';
+import type { KeyIdea, Party, Source } from '@/src/programmes/models/programme.model';
 
 const ELECTION = 'presidentielle-2027';
 
@@ -171,46 +170,6 @@ describe('Feature: thème et ordre des idées clés', () => {
       idea({ id: 'i', measureRefs: ['immigration.1'] }),
     ];
     expect(sortKeyIdeasByTheme(ideas, THEMES).map((i) => i.id)).toEqual(['a', 'i', 'e']);
-  });
-});
-
-describe('Feature: les grandes questions, identiques pour tous les partis', () => {
-  const q = (id: string, theme: Question['theme']): Question => ({
-    id,
-    theme,
-    statement: id,
-    shortLabel: id,
-    help: '',
-    axis: null,
-    direction: 1,
-  });
-  const questions = [
-    q('q1', 'economie'),
-    q('q2', 'economie'),
-    q('q3', 'travail'),
-    q('q4', 'education'),
-  ];
-
-  it('should keep, per theme, the first question on which every party has a position', () => {
-    const parties = [
-      partyFactory({ id: 'a', stanceValues: { q1: 2, q2: 1, q3: -1 } }),
-      partyFactory({ id: 'b', stanceValues: { q1: null, q2: -2, q3: 0 } }),
-    ];
-    expect(glanceQuestionIds(questions, parties)).toEqual(['q2', 'q3']);
-  });
-
-  it('should skip a theme where no question has a position for every party', () => {
-    const parties = [
-      partyFactory({ id: 'a', stanceValues: { q4: 2 } }),
-      partyFactory({ id: 'b', stanceValues: {} }),
-    ];
-    expect(glanceQuestionIds(questions, parties)).toEqual([]);
-  });
-
-  it('should follow the order of the questions, not the order of the parties', () => {
-    const a = partyFactory({ id: 'a', stanceValues: { q1: 2, q3: 2 } });
-    const b = partyFactory({ id: 'b', stanceValues: { q1: 1, q3: 1 } });
-    expect(glanceQuestionIds(questions, [a, b])).toEqual(glanceQuestionIds(questions, [b, a]));
   });
 });
 

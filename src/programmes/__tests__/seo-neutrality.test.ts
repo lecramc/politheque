@@ -46,7 +46,10 @@ const maskedDescription = (party: Party, section: PartySection) => {
 
 const maskedTitle = (party: Party, section: PartySection) =>
   metaOf(party, section)
-    .title.replace(partyLabel(party), '{label}')
+    // Le nom du site saute quand le titre est trop long : même règle pour tous, hors gabarit.
+    .title.replace(/ · Polithèque$/, '')
+    .replace(partyLabel(party), '{label}')
+    .replace(party.name, '{label}')
     .replace(party.shortName, '{label}');
 
 describe('Feature: neutralité des métadonnées', () => {
@@ -95,7 +98,10 @@ describe('Feature: neutralité des métadonnées', () => {
   });
 
   it('should produce unique titles and descriptions across all indexable pages', () => {
-    const indexable = allPageMetas(catalog).filter((m) => m.robots === 'index, follow');
+    // L'alias `/partis/[id]` partage l'adresse canonique et les balises de l'onglet Programme.
+    const indexable = allPageMetas(catalog)
+      .filter((m) => m.robots === 'index, follow')
+      .filter((m, i, all) => all.findIndex((o) => o.path === m.path) === i);
     expect(new Set(indexable.map((m) => m.title)).size).toBe(indexable.length);
     expect(new Set(indexable.map((m) => m.description)).size).toBe(indexable.length);
   });
@@ -132,16 +138,14 @@ describe('Feature: neutralité des données structurées', () => {
 describe('Feature: libellés de liens vers les fiches', () => {
   it('should build the same link label for every party, only the short name changing', () => {
     const labels = new Set(
-      catalog.parties.map((p) =>
-        partyLinkLabel(p, 'programme-2027').replace(/^.*?(?= pour 2027)/, '…')
-      )
+      catalog.parties.map((p) => partyLinkLabel(p, 'programme').replace(/^.*?(?= pour 2027)/, '…'))
     );
     expect(labels.size).toBe(1);
   });
 
   it('should point debate party links to the 2027 section and stance links to the positions section', () => {
     const party = catalog.parties[0];
-    expect(partyLinkLabel(party, 'programme-2027')).toMatch(/pour 2027/);
+    expect(partyLinkLabel(party, 'programme')).toMatch(/pour 2027/);
     expect(partyLinkLabel(party, 'positions')).toBe(party.name);
   });
 });
@@ -168,6 +172,44 @@ describe('Feature: aucun nom de personne dans les métadonnées des procédures'
         expect(json, meta.path).not.toContain(name);
         expect(json.toLowerCase(), meta.path).not.toContain(slug(name));
       }
+    }
+  });
+});
+
+describe('Feature: grammaire des descriptions de fiches (audit SEO C2)', () => {
+  const real = buildStaticCatalog();
+  const metas = real.parties.flatMap((party) =>
+    (['programme', 'positions', 'histoire'] as const).map((section) => ({
+      party,
+      section,
+      meta: partySectionMeta(partyPageContext(party, real), section),
+    }))
+  );
+
+  it('should open every programme, positions and history description with the party name', () => {
+    for (const { party, meta } of metas) {
+      const head = meta.description.split(' : ')[0];
+      expect(
+        [party.name, `${party.name} (${party.shortName})`, party.shortName],
+        party.id
+      ).toContain(head);
+    }
+  });
+
+  it('should never write « de Les… », « de Rassemblement national » or « de RN » in any of the 10 parties', () => {
+    for (const { party, meta } of metas) {
+      expect(meta.description, party.id).not.toMatch(/ de (Le|La|Les) /);
+      expect(meta.description, party.id).not.toMatch(/ de [A-Z]{2,}/);
+      expect(meta.description, party.id).not.toContain(` de ${party.name}`);
+      expect(meta.description, party.id).not.toContain(` de ${party.shortName}`);
+    }
+  });
+
+  it('should write the programme title with the full name, never the acronym alone', () => {
+    for (const { party, section, meta } of metas) {
+      if (section !== 'programme') continue;
+      expect(meta.title, party.id).toContain(`${party.name}`);
+      expect(meta.title, party.id).toContain(': programme 2027');
     }
   });
 });

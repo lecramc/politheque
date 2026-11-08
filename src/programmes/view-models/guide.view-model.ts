@@ -17,7 +17,7 @@ import {
 import { markContentReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
 
 const minutesOf = (section: GuideSection) =>
-  readingMinutes(section.blocks.flatMap((b) => [b.heading, ...b.paragraphs]));
+  readingMinutes(section.blocks.flatMap((b) => [b.heading, ...b.paragraphs, ...(b.more ?? [])]));
 
 const toRow = (section: GuideSection, readIds: string[]) => ({
   section,

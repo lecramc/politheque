@@ -1,5 +1,4 @@
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
-import { glanceQuestionIds } from '@/src/programmes/models/key-ideas.service';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
@@ -27,18 +26,6 @@ describe('Feature: neutralité de la fiche « En bref »', () => {
         expect(idea.title, `${party.id}/${idea.id}`).not.toMatch(/^\s*\d+[.)\s]/);
         expect(idea.id, `${party.id}/${idea.id}`).not.toMatch(/^\d/);
       }
-    }
-  });
-
-  it('should ask the same 8 questions of every party, each with a position', () => {
-    const ids = glanceQuestionIds(catalog.questions, catalog.parties);
-    expect(ids).toHaveLength(8);
-    for (const party of catalog.parties) {
-      expect(
-        vmOf(party.id).glance.map((g) => g.questionId),
-        party.id
-      ).toEqual(ids);
-      for (const id of ids) expect(party.stances[id].stance, `${party.id}/${id}`).not.toBeNull();
     }
   });
 

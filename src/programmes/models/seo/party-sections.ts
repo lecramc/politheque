@@ -1,22 +1,19 @@
 import type { Catalog, Party } from '@/src/programmes/models/programme.model';
 
-export type PartySection = 'en-bref' | 'histoire' | 'positions' | 'programme-2027' | 'procedures';
+export type PartySection = 'programme' | 'positions' | 'histoire' | 'procedures';
 
-/** `label` : titre complet (fil d'Ariane, métadonnées) ; `tabLabel` : libellé court de l'onglet. */
+/**
+ * `label` : titre complet (fil d'Ariane, métadonnées, onglet dès 768 px) ; `tabLabel` : libellé
+ * court de l'onglet. Ordre des onglets : Programme (par défaut), Positions, Histoire, Procédures.
+ */
 export const PARTY_SECTIONS: readonly {
   id: PartySection;
   label: string;
   tabLabel: string;
-  segment: string | null;
+  segment: string;
 }[] = [
-  { id: 'en-bref', label: 'En bref', tabLabel: 'En bref', segment: null },
+  { id: 'programme', label: 'Programme', tabLabel: 'Programme', segment: 'programme-2027' },
   { id: 'positions', label: 'Positions', tabLabel: 'Positions', segment: 'positions' },
-  {
-    id: 'programme-2027',
-    label: 'Programme 2027',
-    tabLabel: 'Programme 2027',
-    segment: 'programme-2027',
-  },
   { id: 'histoire', label: 'Histoire', tabLabel: 'Histoire', segment: 'histoire' },
   {
     id: 'procedures',
@@ -29,16 +26,20 @@ export const PARTY_SECTIONS: readonly {
 export const partySectionLabel = (section: PartySection) =>
   PARTY_SECTIONS.find((s) => s.id === section)!.label;
 
-export function partyHref(partyId: string, section: PartySection = 'en-bref'): string {
-  const segment = PARTY_SECTIONS.find((s) => s.id === section)?.segment;
-  return segment ? `/partis/${partyId}/${segment}` : `/partis/${partyId}`;
+/**
+ * Adresse d'un onglet. L'onglet par défaut (Programme) garde `/programme-2027` : `/partis/[id]` n'est
+ * qu'un alias (canonical vers cette adresse), jamais le lien que le site publie.
+ */
+export function partyHref(partyId: string, section: PartySection = 'programme'): string {
+  const segment = PARTY_SECTIONS.find((s) => s.id === section)!.segment;
+  return `/partis/${partyId}/${segment}`;
 }
 
-/** Section active d'après le chemin : '/partis/rn/histoire' → 'histoire' ; '/partis/rn' → 'en-bref'. */
+/** Section active d'après le chemin : '/partis/rn/histoire' → 'histoire' ; '/partis/rn' → 'programme'. */
 export function sectionFromPath(pathname: string): PartySection | null {
   const match = /^\/partis\/[^/]+(?:\/([^/]+))?\/?$/.exec(pathname);
   if (!match) return null;
-  if (!match[1]) return 'en-bref';
+  if (!match[1]) return 'programme';
   return PARTY_SECTIONS.find((s) => s.segment === match[1])?.id ?? null;
 }
 
@@ -54,8 +55,8 @@ export function hasLegalSection(catalog: Pick<Catalog, 'parties' | 'legal'>): bo
 }
 
 /**
- * Même règle pour tous : histoire si `history`, 2027 si candidature à l'élection mise en avant,
- * procédures si les dossiers sont publiés (`legalPublished`, voir `hasLegalSection`).
+ * Même règle pour tous : histoire si `history`, programme si candidature à l'élection mise en
+ * avant, procédures si les dossiers sont publiés (`legalPublished`, voir `hasLegalSection`).
  */
 export function availableSections(
   party: Party,
@@ -65,17 +66,16 @@ export function availableSections(
   return PARTY_SECTIONS.map((s) => s.id).filter(
     (id) =>
       (id !== 'histoire' || !!party.history) &&
-      (id !== 'programme-2027' ||
-        (!!featuredElectionId && !!party.candidacies[featuredElectionId])) &&
+      (id !== 'programme' || (!!featuredElectionId && !!party.candidacies[featuredElectionId])) &&
       (id !== 'procedures' || legalPublished)
   );
 }
 
 const LEGACY_TABS: Record<string, PartySection> = {
-  bref: 'en-bref',
+  bref: 'programme',
   histoire: 'histoire',
   positions: 'positions',
-  programme: 'programme-2027',
+  programme: 'programme',
 };
 
 /** Compatibilité des anciens liens `?onglet=` ; null si la valeur est inconnue. */

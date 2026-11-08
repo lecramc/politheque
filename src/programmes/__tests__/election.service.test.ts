@@ -1,4 +1,11 @@
-import { candidatesOf, daysUntil, nextRound } from '@/src/programmes/models/election.service';
+import {
+  candidatesOf,
+  chipLabel,
+  daysUntil,
+  electionFacts,
+  nextRound,
+  voteSteps,
+} from '@/src/programmes/models/election.service';
 import { emptyThemes, partyFactory } from '@/src/programmes/models/party.factory';
 import type { Election } from '@/src/programmes/models/programme.model';
 
@@ -50,5 +57,65 @@ describe('Feature: calendrier électoral', () => {
       partyFactory({ id: 'a', name: 'Abeille', candidacies: { 'presidentielle-2027': candidacy } }),
     ];
     expect(candidatesOf(election, parties).map((c) => c.party.id)).toEqual(['a', 'z']);
+  });
+});
+
+describe('Feature: pastille « 2027 » de l’en-tête', () => {
+  it('should show only the year of the first round before the countdown is known', () => {
+    expect(chipLabel(election, null)).toBe('2027');
+  });
+
+  it('should add the days left once the countdown is known', () => {
+    expect(chipLabel(election, 161)).toBe('2027 · J-161');
+  });
+
+  it('should show J-0 on the day of the vote and nothing negative after', () => {
+    expect(chipLabel(election, 0)).toBe('2027 · J-0');
+    expect(chipLabel(election, -3)).toBe('2027');
+  });
+});
+
+describe('Feature: faits du scrutin pour l’accueil et « Comment voter »', () => {
+  const withRegistration: Election = {
+    ...election,
+    keyDates: [
+      {
+        label:
+          'Date limite de dépôt des 500 parrainages au Conseil constitutionnel (date calculée)',
+        date: '2027-03-12',
+        sources: [],
+      },
+      {
+        label: "Date limite d'inscription sur les listes électorales, en ligne comme en mairie",
+        date: '2027-03-12',
+        sources: [],
+      },
+    ],
+  };
+
+  it('should give the first round and the registration deadline in the reader words', () => {
+    expect(electionFacts(withRegistration)).toEqual({
+      firstRound: '18 avril',
+      registrationDeadline: '12 mars',
+    });
+  });
+
+  it('should give no registration deadline when the data has none', () => {
+    expect(electionFacts(election).registrationDeadline).toBeNull();
+  });
+
+  it('should explain how to vote in three gestures, the same wording for every election', () => {
+    const steps = voteSteps(withRegistration);
+    expect(steps).toHaveLength(3);
+    expect(steps[0]).toEqual({
+      title: 'Vérifiez votre inscription',
+      text: 'avant le 12 mars, sur service-public.fr.',
+    });
+    expect(steps[1].title).toBe('Le jour du vote');
+    expect(steps[2].title).toBe('Absent ?');
+  });
+
+  it('should keep a registration step even without a deadline in the data', () => {
+    expect(voteSteps(election)[0].text).toBe('sur service-public.fr.');
   });
 });

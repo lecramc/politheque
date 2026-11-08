@@ -16,7 +16,6 @@ import { editorialIssues } from '@/src/programmes/models/editorial-vocabulary';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 import {
-  glanceQuestionIds,
   hasKeyIdeasSection,
   isKeyIdeaVerified,
   KEY_IDEAS_COUNT,
@@ -26,7 +25,7 @@ import {
 import { followUps } from '@/src/programmes/models/legal/legal-followup';
 import { promoteDraft } from '@/src/programmes/models/legal/legal-promotion';
 import { validateLegalDossier } from '@/src/programmes/models/legal/legal-validation';
-import { formatLongDate } from '@/src/programmes/models/presentation.service';
+import { firstSentences, formatLongDate } from '@/src/programmes/models/presentation.service';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { expandRoutes } from '@/src/programmes/models/seo/site-routes';
 import { TITLE_MAX_LENGTH } from '@/src/programmes/models/sourced-item.service';
@@ -81,6 +80,55 @@ const expectValidSource = (source: Source, where: string) => {
   expect(source.date, where).toMatch(/^\d{4}(-\d{2}(-\d{2})?)?$/);
   expect(KINDS, where).toContain(source.kind);
 };
+
+const wordCount = (text: string) => text.split(/\s+/).filter(Boolean).length;
+const sentencesOf = (text: string) => {
+  const count = text.split(/(?<=[.!?…])\s+(?=[A-ZÀ-ÖØ-Þ«])/).length;
+  return { count, first: firstSentences(text, 2) };
+};
+
+describe('Feature: règle de rédaction des textes du site (spec § 5.2)', () => {
+  const shortTexts = [
+    ...guide.map((s) => ({ where: `guide ${s.id}`, text: s.summary })),
+    ...themes.map((t) => ({ where: `débat ${t.id}`, text: t.context })),
+  ];
+
+  it('should keep every guide summary and debate context to 2 sentences of 25 words at most', () => {
+    for (const { where, text } of shortTexts) {
+      const { count } = sentencesOf(text);
+      expect(count, `${where} : phrases`).toBeLessThanOrEqual(2);
+      for (const sentence of text.split(/(?<=[.!?…])\s+(?=[A-ZÀ-ÖØ-Þ«])/)) {
+        expect(wordCount(sentence), `${where} : ${sentence}`).toBeLessThanOrEqual(25);
+      }
+    }
+  });
+
+  it('should keep the detail of a debate context behind « En savoir plus », never dropped', () => {
+    for (const theme of themes) {
+      expect(theme.contextMore.length, theme.id).toBeGreaterThan(0);
+    }
+  });
+
+  it('should show one paragraph per guide block list and keep the rest in `more`', () => {
+    for (const section of guide) {
+      for (const block of section.blocks) {
+        const paragraphs = block.paragraphs as string[];
+        const more = (block as { more?: string[] }).more ?? [];
+        expect(paragraphs.length + more.length, `${section.id} / ${block.heading}`).toBeGreaterThan(
+          0
+        );
+        expect(paragraphs.length, `${section.id} / ${block.heading}`).toBeLessThanOrEqual(2);
+      }
+    }
+  });
+
+  it('should not write party texts differently from the data: party keys stay the source of display', () => {
+    // La règle de repli porte sur l'affichage (foldAfterSentences), jamais sur les données.
+    for (const party of PARTIES) {
+      expect(party.description, party.id).toBe(party.description.trim());
+    }
+  });
+});
 
 describe('Feature: intégrité des données', () => {
   it('should define every theme exactly once', () => {
@@ -288,7 +336,8 @@ describe('Feature: intégrité du journal des corrections (ajout)', () => {
   const catalog = buildStaticCatalog();
   const today = new Date().toISOString().slice(0, 10);
   const indexablePaths = expandRoutes(catalog)
-    .filter((u) => u.indexable)
+    // `/partis/[id]` (alias de l'onglet Programme) reste une adresse valide pour les entrées anciennes.
+    .filter((u) => u.indexable || u.pattern === '/partis/[id]')
     .map((u) => u.path);
 
   it('should only contain valid, unique, sorted entries on indexable pages', () => {
@@ -386,19 +435,6 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
       expect(question.shortLabel.length, question.id).toBeLessThanOrEqual(80);
       expect(editorialIssues(question.shortLabel), question.id).toEqual([]);
     }
-  });
-
-  it('should expose the same 8 great questions for the ten parties', () => {
-    expect(glanceQuestionIds(QUESTIONS, PARTIES)).toEqual([
-      'q01-isf',
-      'q04-retraite',
-      'q08-preference',
-      'q10-peines-planchers',
-      'q12-nucleaire',
-      'q15-medecins',
-      'q18-ukraine',
-      'q24-proportionnelle',
-    ]);
   });
 
   describe('Feature: key ideas section (charter, rule 11)', () => {

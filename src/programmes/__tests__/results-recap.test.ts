@@ -89,7 +89,7 @@ describe('Feature: récapitulatif par e-mail', () => {
       input({
         ranking,
         userPosition: { economique: -0.9, societal: 0.9, europe: -0.9 },
-        link: `https://travee-ebon.vercel.app/me-situer/resultats#r=v1.${'b'.repeat(30)}`,
+        link: `https://politheque.revaamp.com/me-situer/resultats#r=v1.${'b'.repeat(30)}`,
       })
     );
     expect(url.length).toBeLessThan(MAILTO_MAX_LENGTH);

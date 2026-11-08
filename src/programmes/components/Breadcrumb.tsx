@@ -18,7 +18,7 @@ export function Breadcrumb({ trail }: { trail: BreadcrumbTrail }) {
       {trail.map((crumb, index) => {
         const last = index === trail.length - 1;
         return (
-          <View key={crumb.path} style={{ flexDirection: 'row', gap: 6 }}>
+          <View key={`${index}-${crumb.path}`} style={{ flexDirection: 'row', gap: 6 }}>
             {last ? (
               <Text aria-current="page" style={{ fontSize: 14, color: colors.text.secondary }}>
                 {crumb.name}

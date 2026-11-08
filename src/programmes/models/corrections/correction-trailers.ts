@@ -80,12 +80,12 @@ export function pagesForDataPath(file: string): string[] {
   if (!file.startsWith(DATA_DIR)) return [];
   const rel = file.slice(DATA_DIR.length);
   let match: RegExpExecArray | null;
-  if ((match = /^parties\/([^/]+)\.json$/.exec(rel))) return [`/partis/${match[1]}`];
+  if ((match = /^parties\/([^/]+)\.json$/.exec(rel))) return [`/partis/${match[1]}/programme-2027`];
   if ((match = /^affaires\/([^/]+)\.json$/.exec(rel)))
     return [`/partis/${match[1]}/procedures-judiciaires`];
   if ((match = /^elections\/([^/]+)\.json$/.exec(rel))) return [`/elections/${match[1]}`];
   if (rel === 'guide.json') return ['/comprendre'];
-  if (rel === 'themes.json') return ['/debats'];
+  if (rel === 'themes.json') return ['/partis'];
   if (rel === 'questions.ts') return ['/me-situer'];
   return [];
 }

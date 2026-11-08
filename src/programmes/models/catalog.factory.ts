@@ -32,6 +32,7 @@ const theme = (id: Theme['id']): Theme => ({
   title: `Thème ${id}`,
   icon: 'help-outline',
   context: '',
+  contextMore: '',
   keyFigures: [],
   debates: [],
 });

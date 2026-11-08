@@ -7,6 +7,7 @@ import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { tv } from '@/src/core/web/tv';
 import { Card } from '@/src/programmes/components/Card';
+import { ReadingGuide } from '@/src/programmes/components/ReadingGuide';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceList } from '@/src/programmes/components/SourceChip';
@@ -81,10 +82,12 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
           </View>
         ))}
       </View>
-      <Text style={{ fontSize: 14, color: colors.text.secondary }}>
-        Les mots entre guillemets sont ceux du parti.{' '}
+      <ReadingGuide>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>
+          Les mots entre guillemets sont ceux du parti.
+        </Text>
         <TextLink href="/methodologie">Comment ces 4 idées sont choisies</TextLink>
-      </Text>
+      </ReadingGuide>
       <Sheet isOpen={!!open} onClose={() => setOpenId(null)} title={open?.title ?? ''}>
         {open ? <IdeaSheetBody item={open} partyName={partyName} /> : null}
       </Sheet>

@@ -110,16 +110,33 @@ describe('Feature: registre des routes', () => {
   it('should list parties in alphabetical order (fr) in expanded URLs', () => {
     const urls = expandRoutes(catalog)
       .map((u) => u.path)
-      .filter((p) => /^\/partis\/[^/]+$/.test(p));
+      .filter((p) => /^\/partis\/[^/]+$/.test(p) && p !== '/partis/comparer');
     expect(urls).toEqual(['/partis/alpha', '/partis/zeta']);
   });
 
-  it('should mark passeport, quiz results and journey steps as not indexable', () => {
+  it('should mark passeport, quiz results and the bare party alias as not indexable', () => {
     const urls = expandRoutes(catalog);
     expect(find(urls, '/passeport')?.indexable).toBe(false);
     expect(find(urls, '/me-situer/resultats')?.indexable).toBe(false);
-    expect(find(urls, '/parcours/les-bases')?.indexable).toBe(false);
+    expect(find(urls, '/partis/alpha')?.indexable).toBe(false);
+    expect(find(urls, '/partis/alpha/programme-2027')?.indexable).toBe(true);
     expect(find(urls, '/me-situer')?.indexable).toBe(true);
+  });
+
+  it('should point the bare party alias to the programme tab as its canonical', () => {
+    const alias = find(expandRoutes(catalog), '/partis/alpha');
+    expect(alias?.canonicalPath).toBe('/partis/alpha/programme-2027');
+    expect(
+      find(expandRoutes(catalog), '/partis/alpha/programme-2027')?.canonicalPath
+    ).toBeUndefined();
+  });
+
+  it('should keep the thin compare tool out of the index, and drop the retired hubs', () => {
+    const urls = expandRoutes(catalog).map((u) => u.path);
+    expect(find(expandRoutes(catalog), '/partis/comparer')?.indexable).toBe(false);
+    expect(urls).not.toContain('/debats');
+    expect(urls).not.toContain('/elections');
+    expect(urls.some((p) => p.startsWith('/parcours'))).toBe(false);
   });
 
   it('should date a party page with the party lastVerified', () => {

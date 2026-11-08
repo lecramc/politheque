@@ -4,15 +4,15 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
-import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { PageSources } from '@/src/programmes/components/PageSources';
+import { ReadingGuide } from '@/src/programmes/components/ReadingGuide';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
-import { StanceLegend } from '@/src/programmes/components/StanceLegend';
+import { STANCE_LEGEND_TEXT, StanceLegend } from '@/src/programmes/components/StanceLegend';
 import { StanceColumnHead } from '@/src/programmes/components/StanceRow';
 import { TabPanel } from '@/src/programmes/components/Tabs';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
@@ -38,19 +38,14 @@ export default function PartyPositionsScreen() {
       {meta ? <SeoHead meta={meta} /> : null}
       <View style={{ gap: effects.spacing.xs }}>
         <SectionTitle>Positions sur {vm.stances.length} questions</SectionTitle>
-        <Text style={{ color: colors.text.secondary }}>
-          Ce que le parti défend sur les {vm.stances.length} affirmations du questionnaire, d'après
-          ses programmes, ses votes et ses déclarations.
-        </Text>
-        <Only from="md">
-          <Text style={{ color: colors.text.secondary }}>
-            Les thèmes sont toujours dans le même ordre, pour les {vm.partyCount} partis.
-          </Text>
-        </Only>
       </View>
-      <Only from="md">
-        <StanceLegend />
-      </Only>
+      <StanceLegend />
+      <ReadingGuide>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>
+          {`Ce que le parti défend sur les ${vm.stances.length} affirmations du questionnaire, d'après ses programmes, ses votes et ses déclarations. Les thèmes sont toujours dans le même ordre, pour les ${vm.partyCount} partis.`}
+        </Text>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{STANCE_LEGEND_TEXT}</Text>
+      </ReadingGuide>
       <View style={{ gap: effects.spacing.md }}>
         <StanceColumnHead
           left="Affirmation"

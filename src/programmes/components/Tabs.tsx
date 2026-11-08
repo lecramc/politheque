@@ -206,7 +206,8 @@ export function Tabs<T extends string>({
                   tab={tab}
                   style={{
                     ...(active ? fonts.bold : fonts.regular),
-                    fontSize: 16,
+                    // Quatre onglets sur 375 px : 14 px évite de couper « Programme » en deux.
+                    fontSize: tabs.length > 3 ? 14 : 16,
                     textAlign: 'center',
                     color: active ? colors.tint : colors.text.secondary,
                   }}
@@ -216,7 +217,11 @@ export function Tabs<T extends string>({
           );
           // La largeur vient d'une classe (StyleSheet) : la CSS peut la surcharger, pas un style en ligne.
           return (
-            <View key={tab.id} {...tv('tab-wrap')} style={styles.wrapItem}>
+            <View
+              key={tab.id}
+              {...tv('tab-wrap')}
+              style={tabs.length > 3 ? styles.wrapItemQuarter : styles.wrapItem}
+            >
               {hrefOf ? (
                 <Link href={hrefOf(tab.id) as never} asChild>
                   {item}
@@ -335,11 +340,13 @@ function TabText({
 const styles = StyleSheet.create({
   // Trois onglets par ligne ; la feuille CSS libère la largeur dès 768 px (une seule ligne).
   wrapItem: { flexGrow: 1, flexBasis: '33.33%' },
+  // Quatre onglets (fiche parti) : une seule ligne dès l'écran de 375 px.
+  wrapItemQuarter: { flexGrow: 1, flexBasis: '25%' },
   wrapPressable: { minHeight: 48, justifyContent: 'center' },
   wrapLabel: {
     minHeight: 48,
     justifyContent: 'center',
-    paddingHorizontal: 6,
+    paddingHorizontal: 2,
     borderBottomWidth: 3,
   },
 });

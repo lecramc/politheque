@@ -33,7 +33,11 @@ describe('Feature: vue du journal des corrections', () => {
         kind: 'mise-a-jour',
         pages: ['/partis/alpha/positions'],
       }),
-      entry({ id: 'a', date: '2026-11-03', pages: ['/partis/alpha', '/partis/zeta'] }),
+      entry({
+        id: 'a',
+        date: '2026-11-03',
+        pages: ['/partis/alpha/positions', '/partis/zeta/positions'],
+      }),
     ]);
     expect(result.isEmpty).toBe(false);
     expect(result.months.map((m) => m.label)).toEqual(['Décembre 2026', 'Novembre 2026']);
@@ -44,8 +48,8 @@ describe('Feature: vue du journal des corrections', () => {
       pages: [{ path: '/partis/alpha/positions', label: 'Positions' }],
     });
     expect(result.months[1].entries[0].pages).toEqual([
-      { path: '/partis/alpha', label: 'Alpha' },
-      { path: '/partis/zeta', label: 'Zeta' },
+      { path: '/partis/alpha/positions', label: 'Positions' },
+      { path: '/partis/zeta/positions', label: 'Positions' },
     ]);
   });
 });

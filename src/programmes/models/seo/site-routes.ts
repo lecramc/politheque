@@ -1,12 +1,12 @@
 import { SITE_URL } from '@/src/core/config/app';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
-import { JOURNEY_STEP_IDS } from '@/src/programmes/models/journey.model';
 import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
 import type { Catalog, Party } from '@/src/programmes/models/programme.model';
 import { maxIsoDate } from '@/src/programmes/models/seo/dates';
 import {
   availableSections,
   hasLegalSection,
+  partyHref,
   type PartySection,
 } from '@/src/programmes/models/seo/party-sections';
 
@@ -20,15 +20,13 @@ export type RoutePattern =
   | '/partis/[id]/positions'
   | '/partis/[id]/programme-2027'
   | '/partis/[id]/procedures-judiciaires'
-  | '/elections'
+  | '/partis/comparer'
   | '/elections/[id]'
-  | '/debats'
   | '/debats/[id]'
   | '/me-situer'
   | '/me-situer/resultats'
   | '/methodologie'
   | '/corrections'
-  | '/parcours/[etape]'
   | '/passeport';
 
 export type RouteParams = Record<string, string>;
@@ -51,6 +49,8 @@ export type RouteDefinition = {
   params?: (catalog: Catalog) => RouteParams[];
   /** false → <meta name="robots" content="noindex, follow"> et absent du sitemap. */
   indexable: boolean;
+  /** Alias : adresse canonique de la page vers laquelle celle-ci pointe (jamais indexée elle-même). */
+  canonical?: (params: RouteParams) => string;
   /** Date ISO de la dernière vérification réelle ; null → pas de <lastmod>. */
   lastmod: (catalog: Catalog, params: RouteParams) => string | null;
 };
@@ -60,6 +60,7 @@ export type SiteUrl = {
   path: string;
   indexable: boolean;
   lastmod: string | null;
+  canonicalPath?: string;
 };
 
 const featuredElectionId = (catalog: Catalog) =>
@@ -124,19 +125,23 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
     indexable: true,
     lastmod: (c, p) => c.guide.find((s) => s.id === p.id)?.lastVerified ?? null,
   },
-  '/partis': fixed(true, (c) => maxIsoDate(partyDates(c))),
-  '/partis/[id]': partyPage('en-bref'),
+  '/partis': fixed(true, (c) =>
+    maxIsoDate([...partyDates(c), ...c.themes.map((t) => t.lastVerified)])
+  ),
+  // Alias de l'onglet Programme (D7) : exporté pour que le lien nu fonctionne, jamais indexé.
+  '/partis/[id]': {
+    ...partyPage('programme'),
+    indexable: false,
+    canonical: (params) => partyHref(params.id, 'programme'),
+  },
   '/partis/[id]/histoire': partyPage('histoire'),
   '/partis/[id]/positions': partyPage('positions'),
-  '/partis/[id]/programme-2027': partyPage('programme-2027'),
+  '/partis/[id]/programme-2027': partyPage('programme'),
   '/partis/[id]/procedures-judiciaires': {
     params: partyParams('procedures'),
     indexable: true,
     lastmod: (c, p) => legalLastmod(c, p.id),
   },
-  '/elections': fixed(true, (c) =>
-    maxIsoDate([...c.elections.map((e) => e.lastVerified), ...partyDates(c)])
-  ),
   '/elections/[id]': {
     params: (c) => c.elections.map((e) => ({ id: e.id })),
     indexable: true,
@@ -146,9 +151,6 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
         ...c.parties.filter((party) => party.candidacies[p.id]).map((party) => party.lastVerified),
       ]),
   },
-  '/debats': fixed(true, (c) =>
-    maxIsoDate([...c.themes.map((t) => t.lastVerified), ...partyDates(c)])
-  ),
   '/debats/[id]': {
     params: (c) => c.themes.map((t) => ({ id: t.id })),
     indexable: true,
@@ -156,16 +158,14 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
     lastmod: (c, p) =>
       maxIsoDate([c.themes.find((t) => t.id === p.id)?.lastVerified, ...partyDates(c)]),
   },
+  // Outil de comparaison : sans paire, la page ne montre que deux sélecteurs (contenu léger). Hors
+  // index (`noindex, follow`) jusqu'à ce qu'on lui ajoute du contenu ; la paire (?a=&b=) est lue côté client.
+  '/partis/comparer': fixed(false),
   '/me-situer': fixed(true, (c) => maxIsoDate(partyDates(c))),
   '/me-situer/resultats': fixed(false),
   '/methodologie': fixed(true),
   // Corrections triées du plus récent au plus ancien : la première date est la dernière modification.
   '/corrections': fixed(true, (c) => maxIsoDate(c.corrections.map((e) => e.date))),
-  '/parcours/[etape]': {
-    params: () => JOURNEY_STEP_IDS.filter((id) => id !== 'me-situer').map((etape) => ({ etape })),
-    indexable: false,
-    lastmod: () => null,
-  },
   '/passeport': fixed(false),
 };
 
@@ -178,6 +178,7 @@ export function expandRoutes(catalog: Catalog): SiteUrl[] {
         path: fillPattern(pattern, params),
         indexable: def.indexable,
         lastmod: def.indexable ? def.lastmod(catalog, params) : null,
+        ...(def.canonical ? { canonicalPath: def.canonical(params) } : {}),
       }))
   );
 }

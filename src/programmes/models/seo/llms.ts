@@ -15,7 +15,7 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
   return [
     `# ${APP_NAME}`,
     '',
-    `> Site indépendant et non partisan pour comprendre la politique française : institutions, partis, élections, grands débats. Chaque information est sourcée et datée.`,
+    `> Site indépendant et non partisan pour comprendre la politique française : institutions, partis, grands débats, présidentielle 2027. Chaque information est sourcée et datée.`,
     '',
     '## Charte',
     '',
@@ -32,7 +32,8 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '',
     '## Partis (ordre alphabétique)',
     '',
-    ...link('Tous les partis', '/partis'),
+    ...link('Tous les partis et les grands débats', '/partis'),
+    ...link('Comparer deux partis', '/partis/comparer'),
     ...parties.flatMap((party) =>
       PARTY_SECTIONS.flatMap((section) =>
         link(`${party.name} : ${section.label}`, partyHref(party.id, section.id))
@@ -41,12 +42,10 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '',
     '## Grands débats',
     '',
-    ...link('Tous les débats', '/debats'),
     ...catalog.themes.flatMap((t) => link(t.title, `/debats/${t.id}`)),
     '',
     '## Élections',
     '',
-    ...link('Les élections', '/elections'),
     ...catalog.elections.flatMap((e) => link(e.title, `/elections/${e.id}`)),
     '',
     '## Outils',

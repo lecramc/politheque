@@ -94,7 +94,7 @@ describe('Feature: présentation des résultats', () => {
     expect(vm.leadGroup.sentence).toContain('proches de 4 partis de sensibilités différentes');
     expect(vm.leadGroup.sentence).not.toContain('Parti a');
     expect(vm.separating).toEqual([]);
-    expect(vm.leadGroup.pointer).toContain('« Ma carte »');
+    expect(vm.leadGroup.pointer).toContain('« Question par question »');
   });
 
   it('should keep the compact separation for a leading group of two or three parties', async () => {

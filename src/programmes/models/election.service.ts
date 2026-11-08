@@ -40,3 +40,41 @@ export const formatLongDate = (isoDate: string) =>
     year: 'numeric',
     timeZone: 'Europe/Paris',
   });
+
+/** Pastille de l'en-tête : « 2027 », puis « 2027 · J-161 » quand le compte à rebours est connu. */
+export const chipLabel = (election: Election, daysLeft: number | null): string => {
+  const year = election.rounds[0]?.date.slice(0, 4) ?? '';
+  return daysLeft !== null && daysLeft >= 0 ? `${year} · J-${daysLeft}` : year;
+};
+
+const shortDay = (isoDate: string) =>
+  new Date(`${isoDate}T12:00:00Z`).toLocaleDateString('fr-FR', {
+    day: 'numeric',
+    month: 'long',
+    timeZone: 'Europe/Paris',
+  });
+
+/** Dates à dire avec les mots du lecteur : « 18 avril », « 12 mars » (le terme exact reste dans la page). */
+export const electionFacts = (election: Election) => {
+  const registration = election.keyDates.find((step) => /inscription/i.test(step.label));
+  return {
+    firstRound: election.rounds[0] ? shortDay(election.rounds[0].date) : null,
+    registrationDeadline: registration ? shortDay(registration.date) : null,
+  };
+};
+
+/** « Comment voter » en trois gestes. Le détail (pièces, procuration) est dans le guide. */
+export const voteSteps = (election: Election): { title: string; text: string }[] => {
+  const { registrationDeadline } = electionFacts(election);
+  return [
+    {
+      title: 'Vérifiez votre inscription',
+      text: `${registrationDeadline ? `avant le ${registrationDeadline}, ` : ''}sur service-public.fr.`,
+    },
+    {
+      title: 'Le jour du vote',
+      text: "apportez une pièce d'identité avec photo (communes de 1 000 habitants ou plus).",
+    },
+    { title: 'Absent ?', text: 'Donnez procuration à un autre électeur.' },
+  ];
+};

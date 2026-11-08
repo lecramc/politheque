@@ -8,7 +8,9 @@
       {
         "heading": "La Constitution, la règle du jeu",
         "paragraphs": [
-          "La Constitution est le texte le plus important de l'État. Elle date du 4 octobre 1958 : c'est le début de la « Ve République ».",
+          "La Constitution est le texte le plus important de l'État. Elle date du 4 octobre 1958 : c'est le début de la « Ve République »."
+        ],
+        "more": [
           "Elle dit qui a le pouvoir, comment on le gagne et comment on le contrôle. Toutes les lois doivent la respecter."
         ],
         "sources": [
@@ -23,7 +25,9 @@
       {
         "heading": "Le président de la République",
         "paragraphs": [
-          "Le président est élu directement par les citoyens, pour 5 ans (on parle de « quinquennat »). Il ne peut pas faire plus de deux mandats de suite.",
+          "Le président est élu directement par les citoyens, pour 5 ans (on parle de « quinquennat »). Il ne peut pas faire plus de deux mandats de suite."
+        ],
+        "more": [
           "Il nomme le Premier ministre. Il est le chef des armées. Il négocie et ratifie les traités internationaux.",
           "Certaines décisions, il les prend seul (on dit « sans contreseing ») : par exemple dissoudre l'Assemblée nationale ou saisir le Conseil constitutionnel. Pour la plupart des autres, la signature du Premier ministre est nécessaire."
         ],
@@ -45,7 +49,9 @@
       {
         "heading": "Le Premier ministre et le gouvernement",
         "paragraphs": [
-          "Le gouvernement, c'est le Premier ministre et les ministres. Selon l'article 20 de la Constitution, il « détermine et conduit la politique de la nation ».",
+          "Le gouvernement, c'est le Premier ministre et les ministres. Selon l'article 20 de la Constitution, il « détermine et conduit la politique de la nation »."
+        ],
+        "more": [
           "Il prépare la plupart des projets de loi et le budget. Il fait appliquer les lois avec des décrets.",
           "Le gouvernement est « responsable » devant l'Assemblée nationale : si une majorité de députés vote une « motion de censure », le gouvernement doit démissionner."
         ],
@@ -61,7 +67,9 @@
       {
         "heading": "Le Parlement : Assemblée nationale et Sénat",
         "paragraphs": [
-          "Le Parlement vote les lois et le budget, et contrôle le gouvernement. Il a deux « chambres ».",
+          "Le Parlement vote les lois et le budget, et contrôle le gouvernement. Il a deux « chambres »."
+        ],
+        "more": [
           "L'Assemblée nationale compte 577 députés, élus directement par les citoyens pour 5 ans. Elle seule peut renverser le gouvernement. Elle seule peut être dissoute par le président.",
           "Le Sénat compte 348 sénateurs, élus pour 6 ans par des élus locaux (on dit « suffrage indirect »). Il représente les collectivités territoriales. Il ne peut pas être dissous.",
           "Une loi doit être votée dans les mêmes termes par les deux chambres. En cas de désaccord persistant, le gouvernement peut en général donner le « dernier mot » à l'Assemblée nationale."
@@ -84,7 +92,9 @@
       {
         "heading": "Le Conseil constitutionnel",
         "paragraphs": [
-          "Il vérifie que les lois respectent la Constitution. Une loi (ou une partie de loi) jugée contraire est « censurée » : elle ne s'applique pas.",
+          "Il vérifie que les lois respectent la Constitution. Une loi (ou une partie de loi) jugée contraire est « censurée » : elle ne s'applique pas."
+        ],
+        "more": [
           "Il a 9 membres nommés pour 9 ans : 3 par le président de la République, 3 par le président de l'Assemblée nationale, 3 par le président du Sénat.",
           "Il contrôle aussi l'élection présidentielle : il reçoit les parrainages, publie la liste des candidats et proclame les résultats."
         ],
@@ -100,7 +110,9 @@
       {
         "heading": "La justice",
         "paragraphs": [
-          "La justice française a deux « ordres ». L'ordre judiciaire juge les conflits entre personnes privées et les infractions (vols, violences…). Sa plus haute juridiction est la Cour de cassation.",
+          "La justice française a deux « ordres ». L'ordre judiciaire juge les conflits entre personnes privées et les infractions (vols, violences…). Sa plus haute juridiction est la Cour de cassation."
+        ],
+        "more": [
           "L'ordre administratif juge les conflits entre les citoyens et l'administration. Sa plus haute juridiction est le Conseil d'État, qui conseille aussi le gouvernement sur ses projets de loi.",
           "La Constitution fait du président le garant de l'indépendance de l'autorité judiciaire (article 64)."
         ],
@@ -130,11 +142,14 @@
       {
         "heading": "Ce que le président peut décider seul",
         "paragraphs": [
-          "Nommer le Premier ministre (article 8).",
-          "Dissoudre l'Assemblée nationale (article 12) : de nouvelles élections législatives ont alors lieu 20 à 40 jours après. Il ne peut pas recommencer pendant un an.",
-          "Soumettre un projet de loi au référendum (article 11), mais seulement sur certains sujets (organisation des pouvoirs publics, politique économique, sociale ou environnementale, ratification d'un traité) et sur proposition du gouvernement ou des deux assemblées.",
-          "Prendre des « pouvoirs exceptionnels » (article 16) en cas de menace grave et immédiate sur les institutions ou le pays. Son usage est exceptionnel.",
-          "Il est aussi chef des armées (article 15) et peut saisir le Conseil constitutionnel."
+          "Le président a des pouvoirs propres. Il peut :\n- nommer le Premier ministre ;\n- dissoudre l'Assemblée nationale ;\n- soumettre certains projets de loi au référendum ;\n- prendre des pouvoirs exceptionnels en cas de menace grave ;\n- saisir le Conseil constitutionnel.",
+          "Il est aussi chef des armées."
+        ],
+        "more": [
+          "Articles 8, 11, 12, 15 et 16 de la Constitution.",
+          "Après une dissolution, les élections législatives ont lieu 20 à 40 jours plus tard. Le président ne peut pas recommencer pendant un an.",
+          "Le référendum de l'article 11 ne porte que sur certains sujets : organisation des pouvoirs publics, politique économique, sociale ou environnementale, ratification d'un traité. Il se fait sur proposition du gouvernement ou des deux assemblées.",
+          "Les pouvoirs exceptionnels de l'article 16 supposent une menace grave et immédiate sur les institutions ou le pays."
         ],
         "sources": [
           {
@@ -154,7 +169,9 @@
       {
         "heading": "Ce qui demande une loi votée",
         "paragraphs": [
-          "Beaucoup de promesses touchent aux impôts, aux retraites, au travail, à l'école, à la justice… Ces sujets relèvent de « la loi » (article 34 de la Constitution). Il faut donc un vote du Parlement.",
+          "Beaucoup de promesses touchent aux impôts, aux retraites, au travail, à l'école, à la justice… Ces sujets relèvent de « la loi » (article 34 de la Constitution). Il faut donc un vote du Parlement."
+        ],
+        "more": [
           "Le budget de l'État et celui de la Sécurité sociale doivent aussi être votés chaque année par le Parlement.",
           "Concrètement : un président peut annoncer une mesure, mais si les députés et sénateurs ne la votent pas, elle ne s'applique pas."
         ],
@@ -176,7 +193,9 @@
       {
         "heading": "Changer la Constitution : une procédure exigeante",
         "paragraphs": [
-          "Certaines promesses demandent de modifier la Constitution. C'est l'article 89 qui le permet.",
+          "Certaines promesses demandent de modifier la Constitution. C'est l'article 89 qui le permet."
+        ],
+        "more": [
           "Le texte doit d'abord être voté dans les mêmes termes par l'Assemblée nationale et par le Sénat.",
           "Ensuite, il faut soit un référendum, soit un vote du Parlement réuni en « Congrès » à Versailles, avec au moins 3/5 des voix exprimées. Le choix du Congrès n'est possible que si le texte vient du gouvernement.",
           "Comme le Sénat doit être d'accord, un président ne peut pas réviser la Constitution par l'article 89 sans l'accord des deux chambres."
@@ -193,7 +212,9 @@
       {
         "heading": "Les limites : Constitution et traités européens",
         "paragraphs": [
-          "Une loi contraire à la Constitution peut être censurée par le Conseil constitutionnel.",
+          "Une loi contraire à la Constitution peut être censurée par le Conseil constitutionnel."
+        ],
+        "more": [
           "La France a signé des traités européens et internationaux. Selon l'article 55 de la Constitution, les traités ont une autorité supérieure aux lois. Une promesse contraire à un traité suppose donc, en principe, de renégocier ce traité ou de réviser la Constitution (voir la section sur l'Union européenne)."
         ],
         "sources": [
@@ -213,8 +234,8 @@
       },
       {
         "heading": "Pourquoi la majorité à l'Assemblée compte autant",
-        "paragraphs": [
-          "La majorité absolue à l'Assemblée nationale, c'est 289 députés sur 577.",
+        "paragraphs": ["La majorité absolue à l'Assemblée nationale, c'est 289 députés sur 577."],
+        "more": [
           "Quand le président a une majorité de députés qui le soutient, il est le principal moteur de la politique du pays.",
           "Quand la majorité des députés est opposée au président, il doit nommer un Premier ministre qu'elle accepte. C'est la « cohabitation ». Le pouvoir passe alors en grande partie au gouvernement. Le président garde ses pouvoirs propres et un rôle important en défense et en affaires étrangères.",
           "Il y a eu trois cohabitations : 1986, 1993 et 1997."
@@ -231,7 +252,9 @@
       {
         "heading": "Depuis 2024 : une Assemblée sans majorité absolue",
         "paragraphs": [
-          "Le 9 juin 2024, le président Emmanuel Macron a dissous l'Assemblée nationale. Des élections législatives anticipées ont eu lieu les 30 juin et 7 juillet 2024.",
+          "Le 9 juin 2024, le président Emmanuel Macron a dissous l'Assemblée nationale. Des élections législatives anticipées ont eu lieu les 30 juin et 7 juillet 2024."
+        ],
+        "more": [
           "À l'issue du second tour, aucun bloc n'a obtenu la majorité absolue de 289 sièges. Le Nouveau Front populaire est arrivé en tête en nombre de sièges, devant la coalition présidentielle Ensemble puis le Rassemblement national et ses alliés.",
           "Depuis, les gouvernements successifs doivent chercher des soutiens texte par texte, ou utiliser l'article 49.3. En décembre 2024, une motion de censure a été adoptée contre le gouvernement de Michel Barnier, qui a démissionné.",
           "À l'automne 2026, le gouvernement de Sébastien Lecornu examine le budget 2027 sans disposer d'une majorité à l'Assemblée."
@@ -275,12 +298,15 @@
     "id": "election-presidentielle",
     "title": "Comment se déroule l'élection présidentielle",
     "icon": "calendar-outline",
-    "summary": "Pour se présenter, il faut 500 parrainages d'élus. Le vote a lieu en deux tours : le 18 avril et le 2 mai 2027. Les élections législatives suivent en général quelques semaines plus tard ; en 2027, seulement si le nouveau président dissout l'Assemblée.",
+    "summary": "Pour se présenter, il faut 500 parrainages d'élus. Le vote a lieu en deux tours : le 18 avril et le 2 mai 2027.",
     "blocks": [
       {
         "heading": "Les dates de 2027",
         "paragraphs": [
-          "Le premier tour aura lieu le dimanche 18 avril 2027, le second tour le dimanche 2 mai 2027.",
+          "Le premier tour aura lieu le dimanche 18 avril 2027, le second tour le dimanche 2 mai 2027."
+        ],
+        "more": [
+          "Les élections législatives suivent en général quelques semaines plus tard ; en 2027, seulement si le nouveau président dissout l'Assemblée.",
           "Dans certains territoires d'outre-mer (Antilles, Guyane, Saint-Pierre-et-Miquelon, Saint-Barthélemy, Saint-Martin, Polynésie française), on vote la veille, le samedi, à cause du décalage horaire.",
           "Ces dates ont été fixées en Conseil des ministres le 1er juillet 2026. Le décret officiel de convocation des électeurs doit être publié au moins dix semaines avant le premier tour."
         ],
@@ -308,7 +334,9 @@
       {
         "heading": "Les 500 parrainages",
         "paragraphs": [
-          "Pour être candidat, il faut être « présenté » par au moins 500 élus : maires, députés, sénateurs, conseillers départementaux et régionaux, députés européens…",
+          "Pour être candidat, il faut être « présenté » par au moins 500 élus : maires, députés, sénateurs, conseillers départementaux et régionaux, députés européens…"
+        ],
+        "more": [
           "Ces élus doivent venir d'au moins 30 départements ou collectivités d'outre-mer différents. Pas plus d'un dixième d'entre eux ne peut venir du même département.",
           "Les parrainages doivent arriver au Conseil constitutionnel au plus tard le sixième vendredi avant le premier tour, à 18 heures. Avec un premier tour le 18 avril 2027, cela correspond au vendredi 12 mars 2027 : c'est un calcul à partir de la règle, la date doit être confirmée par le décret de convocation.",
           "Le Conseil constitutionnel vérifie les parrainages et publie la liste officielle des candidats. Les noms des élus qui parrainent sont rendus publics."
@@ -331,7 +359,9 @@
       {
         "heading": "Un scrutin à deux tours",
         "paragraphs": [
-          "On vote pour une seule personne (scrutin « uninominal »). Pour gagner dès le premier tour, il faut plus de la moitié des suffrages exprimés (la « majorité absolue »).",
+          "On vote pour une seule personne (scrutin « uninominal »). Pour gagner dès le premier tour, il faut plus de la moitié des suffrages exprimés (la « majorité absolue »)."
+        ],
+        "more": [
           "Si personne ne l'obtient, un second tour a lieu deux semaines plus tard. Seuls les deux candidats arrivés en tête au premier tour peuvent y participer (après d'éventuels retraits).",
           "Au second tour, celui ou celle qui obtient le plus de voix est élu(e)."
         ],
@@ -347,7 +377,9 @@
       {
         "heading": "Temps de parole et argent de la campagne",
         "paragraphs": [
-          "Les télévisions et radios doivent respecter des règles de temps de parole contrôlées par l'Arcom. Avant la campagne officielle, c'est l'« équité » (un temps proportionnel à la représentativité de chaque candidat). Pendant la campagne officielle, c'est l'« égalité » stricte.",
+          "Les télévisions et radios doivent respecter des règles de temps de parole contrôlées par l'Arcom. Avant la campagne officielle, c'est l'« équité » (un temps proportionnel à la représentativité de chaque candidat). Pendant la campagne officielle, c'est l'« égalité » stricte."
+        ],
+        "more": [
           "Les dépenses de campagne sont plafonnées. Pour 2027, la CNCCFP (Commission nationale des comptes de campagne) indique environ 16,9 millions d'euros par candidat au premier tour et 22,5 millions pour les deux candidats du second tour.",
           "L'État rembourse une partie des dépenses. Le remboursement est plus élevé pour les candidats qui dépassent 5 % des suffrages exprimés au premier tour."
         ],
@@ -375,7 +407,9 @@
       {
         "heading": "Ensuite : les élections législatives",
         "paragraphs": [
-          "Depuis le passage au quinquennat (référendum de 2000) et une loi de 2001, l'élection présidentielle a lieu quelques semaines avant les élections législatives.",
+          "Depuis le passage au quinquennat (référendum de 2000) et une loi de 2001, l'élection présidentielle a lieu quelques semaines avant les élections législatives."
+        ],
+        "more": [
           "Ce calendrier rend plus probable que les électeurs donnent au président une majorité de députés. Mais ce n'est pas automatique.",
           "Attention : l'Assemblée actuelle (XVIIe législature) a été élue en juillet 2024 pour 5 ans. Son mandat ne se termine donc pas en 2027. Des législatives ne suivront la présidentielle que si le nouveau président dissout l'Assemblée. C'est un choix qui lui appartient."
         ],
@@ -412,12 +446,14 @@
     "id": "comment-voter",
     "title": "Comment voter",
     "icon": "checkbox-outline",
-    "summary": "Pour voter, il faut être inscrit sur les listes électorales. Pour 2027, la date limite calculée selon la règle est le vendredi 12 mars 2027. Si vous ne pouvez pas vous déplacer, vous pouvez donner procuration.",
+    "summary": "Pour voter, il faut être inscrit sur les listes électorales avant le vendredi 12 mars 2027 (date calculée selon la règle). Si vous ne pouvez pas vous déplacer, donnez procuration.",
     "blocks": [
       {
         "heading": "Qui peut voter ?",
         "paragraphs": [
-          "Pour voter à l'élection présidentielle, il faut être de nationalité française, avoir 18 ans et jouir de ses droits civiques.",
+          "Pour voter à l'élection présidentielle, il faut être de nationalité française, avoir 18 ans et jouir de ses droits civiques."
+        ],
+        "more": [
           "Si vous avez fait votre recensement citoyen à 16 ans, vous êtes en principe inscrit automatiquement sur les listes à vos 18 ans, dans la commune indiquée lors du recensement. Mieux vaut vérifier."
         ],
         "sources": [
@@ -432,7 +468,9 @@
       {
         "heading": "S'inscrire et vérifier son inscription",
         "paragraphs": [
-          "Vous pouvez vérifier en quelques minutes si vous êtes inscrit, et où vous votez, sur service-public.fr (« Vérifier votre inscription électorale et votre bureau de vote »).",
+          "Vous pouvez vérifier en quelques minutes si vous êtes inscrit, et où vous votez, sur service-public.fr (« Vérifier votre inscription électorale et votre bureau de vote »)."
+        ],
+        "more": [
           "Si vous n'êtes pas inscrit, ou si vous avez déménagé, vous pouvez vous inscrire en ligne sur service-public.fr, en mairie ou par courrier. Il faut un justificatif d'identité et un justificatif de domicile de moins de 3 mois.",
           "Depuis le 1er juillet 2026, la date limite est la même en ligne et en mairie : le sixième vendredi avant le scrutin. Pour le premier tour du 18 avril 2027, cela donne le vendredi 12 mars 2027 (date calculée à partir de cette règle)."
         ],
@@ -460,7 +498,9 @@
       {
         "heading": "Le jour du vote : la pièce d'identité",
         "paragraphs": [
-          "Dans les communes de 1 000 habitants ou plus, il faut présenter une pièce d'identité avec photo. La carte électorale n'est pas obligatoire.",
+          "Dans les communes de 1 000 habitants ou plus, il faut présenter une pièce d'identité avec photo. La carte électorale n'est pas obligatoire."
+        ],
+        "more": [
           "Dans les communes de moins de 1 000 habitants, la pièce d'identité n'est pas exigée, mais le président du bureau de vote peut vous demander de prouver votre identité.",
           "La liste précise des pièces acceptées est sur service-public.fr."
         ],
@@ -476,7 +516,9 @@
       {
         "heading": "Absent ? Donnez procuration",
         "paragraphs": [
-          "Si vous ne pouvez pas aller voter, vous pouvez demander à un autre électeur de voter à votre place : c'est la procuration.",
+          "Si vous ne pouvez pas aller voter, vous pouvez demander à un autre électeur de voter à votre place : c'est la procuration."
+        ],
+        "more": [
           "La personne choisie peut être inscrite dans une autre commune que vous, mais elle doit venir voter dans votre bureau de vote.",
           "La demande se fait sur maprocuration.gouv.fr. Avec une identité numérique certifiée (application France Identité), tout se fait en ligne. Sinon, il faut ensuite passer au commissariat ou à la gendarmerie pour faire vérifier son identité.",
           "Faites-le tôt : la procuration doit être enregistrée avant le jour du vote."
@@ -499,7 +541,9 @@
       {
         "heading": "Vote blanc et vote nul",
         "paragraphs": [
-          "Un vote blanc, c'est une enveloppe vide ou un bulletin sans nom. Un vote nul, c'est par exemple un bulletin déchiré ou annoté.",
+          "Un vote blanc, c'est une enveloppe vide ou un bulletin sans nom. Un vote nul, c'est par exemple un bulletin déchiré ou annoté."
+        ],
+        "more": [
           "Les votes blancs sont comptés à part depuis une loi de 2014. Mais les votes blancs et nuls ne font pas partie des « suffrages exprimés ». Ce sont uniquement les suffrages exprimés qui servent à calculer les résultats."
         ],
         "sources": [
@@ -528,7 +572,9 @@
       {
         "heading": "Une origine : 1789",
         "paragraphs": [
-          "En septembre 1789, les députés de l'Assemblée constituante débattent du droit de veto du roi.",
+          "En septembre 1789, les députés de l'Assemblée constituante débattent du droit de veto du roi."
+        ],
+        "more": [
           "Les partisans d'un veto fort pour le roi s'installent à droite du président de séance. Ceux qui veulent le limiter s'installent à gauche.",
           "Cette répartition dans la salle a donné les mots « droite » et « gauche » que l'on utilise encore aujourd'hui."
         ],
@@ -544,7 +590,9 @@
       {
         "heading": "Ce qui distingue les camps, en général",
         "paragraphs": [
-          "Les politologues utilisent souvent deux axes. Un axe économique et social : le rôle de l'État, les impôts, la redistribution, le travail. Un axe culturel : l'immigration, la sécurité et la justice, l'environnement, les questions de société.",
+          "Les politologues utilisent souvent deux axes. Un axe économique et social : le rôle de l'État, les impôts, la redistribution, le travail. Un axe culturel : l'immigration, la sécurité et la justice, l'environnement, les questions de société."
+        ],
+        "more": [
           "Une troisième question divise aussi, parfois à l'intérieur d'un même camp : la place de la France dans l'Union européenne et dans la mondialisation.",
           "Habituellement, la gauche met en avant l'égalité, la redistribution et l'intervention de l'État. La droite met en avant la liberté d'entreprendre, l'ordre et l'autorité. Le centre se présente comme une synthèse entre les deux. Ce sont des tendances générales, pas des règles : sur un même sujet, deux partis du même camp peuvent avoir des positions différentes."
         ],
@@ -566,7 +614,9 @@
       {
         "heading": "Origine des mots « extrême gauche » et « extrême droite »",
         "paragraphs": [
-          "Les partis choisissent eux-mêmes leur nom et souvent refusent certaines étiquettes. Pour présenter les résultats des élections, le ministère de l'Intérieur attribue aussi une « nuance » à chaque candidat, puis regroupe ces nuances en grands « blocs » (extrême gauche, gauche, centre, droite, extrême droite…).",
+          "Les partis choisissent eux-mêmes leur nom et souvent refusent certaines étiquettes. Pour présenter les résultats des élections, le ministère de l'Intérieur attribue aussi une « nuance » à chaque candidat, puis regroupe ces nuances en grands « blocs » (extrême gauche, gauche, centre, droite, extrême droite…)."
+        ],
+        "more": [
           "Ces classements sont parfois contestés devant le Conseil d'État. Le juge vérifie seulement qu'il n'y a pas d'« erreur manifeste ». En mars 2024, il a jugé qu'il n'y en avait pas dans le classement du Rassemblement national dans le bloc « extrême droite » pour les sénatoriales de 2023. En février 2026, il a rejeté les recours de La France insoumise et de l'UDR contre leur classement en « extrême gauche » et « extrême droite » pour les municipales.",
           "Sur ce site, quand nous utilisons ces qualifications, nous suivons ce nuancier officiel et l'usage de la presse de référence. Elles décrivent une position dans le paysage politique ; elles ne sont pas un jugement."
         ],
@@ -610,7 +660,9 @@
       {
         "heading": "Un axe ancien, toujours utilisé, mais incomplet",
         "paragraphs": [
-          "Les mots « gauche » et « droite » datent de 1789 (voir la section « Gauche, droite, centre »). Ils restent utilisés parce qu'ils sont simples et que la plupart des électeurs savent s'y situer.",
+          "Les mots « gauche » et « droite » datent de 1789 (voir la section « Gauche, droite, centre »). Ils restent utilisés parce qu'ils sont simples et que la plupart des électeurs savent s'y situer."
+        ],
+        "more": [
           "Mais un seul axe ne suffit pas. Les politistes distinguent au moins un axe économique (rôle de l'État, impôts, redistribution), un axe culturel (immigration, sécurité, mœurs) et un axe européen (plus ou moins d'intégration dans l'Union européenne).",
           "Deux partis proches sur un axe peuvent être éloignés sur un autre. Exemple : le politiste Gilles Ivaldi (CEVIPOF) présente Marine Le Pen et Éric Zemmour comme les deux principaux candidats de la « droite radicale » en 2022, mais oppose le programme économique de la première (« social-populisme », centré sur la redistribution) à celui du second (« capitalisme populaire », davantage orienté à droite sur l'économie)."
         ],
@@ -650,7 +702,9 @@
       {
         "heading": "Gauche radicale, extrême gauche, ultragauche",
         "paragraphs": [
-          "Ces mots ne veulent pas dire la même chose, et les chercheurs ne sont pas tous d'accord sur leurs limites.",
+          "Ces mots ne veulent pas dire la même chose, et les chercheurs ne sont pas tous d'accord sur leurs limites."
+        ],
+        "more": [
           "Pour le chercheur Aurélien Dubuisson (Sciences Po), l'extrême gauche réunit surtout des courants trotskistes, libertaires et « alternatifs ». Ses critères : vouloir rompre avec le capitalisme, critiquer la gauche de gouvernement et viser la révolution. Ces organisations se présentent souvent aux élections pour diffuser leurs idées plutôt que pour gouverner.",
           "La « gauche radicale » désigne en général des partis qui veulent une transformation profonde de l'économie, mais par les élections et les institutions. L'« ultragauche » désigne des mouvements autonomes, sans parti centralisé, dont une partie accepte l'action violente (Fondation Jean-Jaurès).",
           "Le politiste Philippe Raynaud parle d'une « extrême gauche plurielle », partagée entre « démocratie radicale » et « révolution ». Le débat porte notamment sur La France insoumise : beaucoup de politistes la rangent à la « gauche radicale » ; d'autres observateurs, et le ministère de l'Intérieur depuis 2026, à l'« extrême gauche »."
@@ -679,7 +733,9 @@
       {
         "heading": "Droite radicale, extrême droite, national-populisme",
         "paragraphs": [
-          "Le politiste néerlandais Cas Mudde définit la « droite radicale populiste » par trois traits : le nativisme (l'idée que l'État doit être peuplé avant tout par les « natifs »), l'autoritarisme (priorité à l'ordre et à l'autorité) et le populisme (« le peuple pur » contre « les élites corrompues »).",
+          "Le politiste néerlandais Cas Mudde définit la « droite radicale populiste » par trois traits : le nativisme (l'idée que l'État doit être peuplé avant tout par les « natifs »), l'autoritarisme (priorité à l'ordre et à l'autorité) et le populisme (« le peuple pur » contre « les élites corrompues »)."
+        ],
+        "more": [
           "Mudde réserve le terme « extrême droite » aux mouvements dont le projet est hostile à la démocratie elle-même. Pour lui, la droite radicale accepte les élections mais entre en tension avec certains principes de la démocratie libérale (droits des minorités, contre-pouvoirs).",
           "En France, Pierre-André Taguieff a proposé dès les années 1980 le terme « national-populisme » : un discours nationaliste porté par un appel direct au « peuple » contre les élites. Jean-Yves Camus et Nicolas Lebourg parlent de « droites extrêmes » au pluriel, pour distinguer des courants différents (national-populisme, néofascisme, intégrismes religieux…).",
           "Les chercheurs débattent : certains insistent sur l'évolution des partis et préfèrent « droite radicale » ; d'autres insistent sur la continuité des idées (priorité aux nationaux, refus de l'immigration) et gardent « extrême droite ». Les deux termes coexistent dans les travaux universitaires."
@@ -714,7 +770,9 @@
       {
         "heading": "Qui classe ? Cinq acteurs, cinq objectifs",
         "paragraphs": [
-          "1. Le ministère de l'Intérieur. Pour chaque élection, une circulaire fixe une grille de « nuances ». Les préfets attribuent une nuance à chaque candidat ou liste, selon le parti qui le soutient, son programme et son parcours. Les nuances sont regroupées en blocs (pour les municipales de 2026 : extrême gauche, gauche, divers, centre, droite, extrême droite). Le but est statistique : additionner les résultats de façon homogène dans tout le pays.",
+          "1. Le ministère de l'Intérieur. Pour chaque élection, une circulaire fixe une grille de « nuances ». Les préfets attribuent une nuance à chaque candidat ou liste, selon le parti qui le soutient, son programme et son parcours. Les nuances sont regroupées en blocs (pour les municipales de 2026 : extrême gauche, gauche, divers, centre, droite, extrême droite). Le but est statistique : additionner les résultats de façon homogène dans tout le pays."
+        ],
+        "more": [
           "2. Le Conseil d'État. Il juge les recours contre ces circulaires. Il ne dit pas ce qu'est « vraiment » un parti : il vérifie seulement que le ministre n'a pas commis d'« erreur manifeste d'appréciation ». Le 11 mars 2024, il a rejeté le recours du RN contre son rattachement au bloc « extrême droite » (sénatoriales 2023). Le 27 février 2026, il a rejeté ceux de LFI (classée « extrême gauche ») et de l'UDR d'Éric Ciotti (classée « extrême droite ») pour les municipales, en tenant compte de la situation politique et des alliances observées.",
           "3. Les chercheurs (politistes, historiens, centres comme le CEVIPOF). Ils classent à partir des idées, des programmes et de l'histoire des partis, et publient leurs critères. Ils ne sont pas toujours d'accord entre eux.",
           "4. Les médias. Chaque rédaction choisit ses mots, souvent en s'appuyant sur les travaux des chercheurs ; aucune autorité ne leur impose une règle commune.",
@@ -762,7 +820,9 @@
       {
         "heading": "Les étiquettes appliquées aux partis de gauche",
         "paragraphs": [
-          "Lutte ouvrière et NPA. Les encyclopédies et le nuancier de 2026 les classent à l'extrême gauche. Les deux se revendiquent eux-mêmes révolutionnaires et anticapitalistes ; LO se réclame du trotskisme. Le NPA s'est divisé en deux organisations (NPA-L'Anticapitaliste et NPA-Révolutionnaires).",
+          "Lutte ouvrière et NPA. Les encyclopédies et le nuancier de 2026 les classent à l'extrême gauche. Les deux se revendiquent eux-mêmes révolutionnaires et anticapitalistes ; LO se réclame du trotskisme. Le NPA s'est divisé en deux organisations (NPA-L'Anticapitaliste et NPA-Révolutionnaires)."
+        ],
+        "more": [
           "La France insoumise. Les politistes la classent le plus souvent à la « gauche radicale », parfois « gauche populiste ». Le ministère de l'Intérieur l'a placée à l'« extrême gauche » en 2026 (elle était auparavant dans le bloc « gauche ») ; le Conseil d'État a jugé ce choix sans erreur manifeste. LFI rejette cette étiquette : ses dirigeants font valoir que l'extrême gauche « se revendique comme telle » et ne cherche pas à gouverner par les élections.",
           "PCF. Classé à gauche par le nuancier ; les ouvrages de référence parlent de gauche communiste ou radicale. Ses statuts (39e congrès, 2023) évoquent un « projet révolutionnaire » visant le « dépassement » du capitalisme, mais il participe aux alliances de gauche et a gouverné (1944-1947, 1981-1984, 1997-2002).",
           "PS et Les Écologistes. Classés à gauche par le nuancier et les encyclopédies ; le PS se réclame du « socialisme démocratique », les Écologistes de « l'écologie politique ». Ces étiquettes ne sont pas contestées par les partis."
@@ -827,7 +887,9 @@
       {
         "heading": "Les étiquettes appliquées au centre et à droite",
         "paragraphs": [
-          "Renaissance et Horizons. Classés au centre par le nuancier ; les analystes situent Renaissance au centre (parfois au centre droit) et Horizons au centre droit. Renaissance se présente comme le parti « du dépassement » du clivage gauche-droite.",
+          "Renaissance et Horizons. Classés au centre par le nuancier ; les analystes situent Renaissance au centre (parfois au centre droit) et Horizons au centre droit. Renaissance se présente comme le parti « du dépassement » du clivage gauche-droite."
+        ],
+        "more": [
           "Les Républicains. Classés à droite par les encyclopédies (« de la droite libérale au centre droit », héritiers du gaullisme). Le parti revendique lui-même l'étiquette de « droite ».",
           "Rassemblement national. Les encyclopédies et la presse de référence le classent à l'extrême droite ; une partie des politistes utilise « droite radicale » ou « national-populisme ». Le nuancier le rattache au bloc « extrême droite », ce que le Conseil d'État a jugé légal en 2024. Le RN récuse ce terme et se présente comme « national » et « patriote ».",
           "Reconquête. Classé à l'extrême droite par de nombreux politistes (Jean-Yves Camus voit dans l'« identitarisme » son marqueur) ; Gilles Ivaldi parle de « droite radicale ». Nous n'avons pas trouvé de prise de position officielle du parti sur cette étiquette. L'UDR d'Éric Ciotti, alliée du RN, a été classée « extrême droite » par le nuancier de 2026 et conteste ce classement."
@@ -910,7 +972,9 @@
       {
         "heading": "Les autorités qui encadrent la vie politique",
         "paragraphs": [
-          "Conseil constitutionnel : il veille à la régularité de l'élection présidentielle. Il vérifie les parrainages (500 signatures d'élus), arrête la liste des candidats, examine les réclamations et proclame les résultats.",
+          "Conseil constitutionnel : il veille à la régularité de l'élection présidentielle. Il vérifie les parrainages (500 signatures d'élus), arrête la liste des candidats, examine les réclamations et proclame les résultats."
+        ],
+        "more": [
           "Conseil d'État : plus haute juridiction administrative. Il contrôle les décisions du gouvernement, dont les circulaires de nuances, et tranche en dernier recours les contestations des élections locales.",
           "Ministère de l'Intérieur : avec les préfectures, il organise les scrutins, attribue les nuances et publie les résultats. Pour la présidentielle, les résultats définitifs sont proclamés par le Conseil constitutionnel.",
           "CNCCFP (Commission nationale des comptes de campagne et des financements politiques) : elle contrôle les comptes de campagne des candidats, dont dépend le remboursement par l'État, et les comptes des partis politiques.",
@@ -966,7 +1030,9 @@
       {
         "heading": "Lire une étiquette avec un regard critique",
         "paragraphs": [
-          "Demandez-vous qui parle : un ministère, un juge, un chercheur, un journaliste, un adversaire politique ou le parti lui-même. Chacun a ses raisons et ses critères.",
+          "Demandez-vous qui parle : un ministère, un juge, un chercheur, un journaliste, un adversaire politique ou le parti lui-même. Chacun a ses raisons et ses critères."
+        ],
+        "more": [
           "Cherchez le critère : rapport à la démocratie et aux élections, à la révolution, au nationalisme, à l'immigration, à l'Europe, à l'économie. Une étiquette sans critère explicite dit peu de choses.",
           "Regardez la date : les partis évoluent, et les classements aussi (LFI a changé de bloc dans le nuancier en 2026).",
           "Une décision du Conseil d'État sur le nuancier ne « qualifie » pas un parti : elle dit seulement que le classement administratif n'est pas manifestement erroné.",
@@ -1004,7 +1070,9 @@
       {
         "heading": "Qui décide quoi ?",
         "paragraphs": [
-          "L'Union européenne (UE) ne peut agir que dans les domaines que les traités lui confient. Tout le reste appartient aux États.",
+          "L'Union européenne (UE) ne peut agir que dans les domaines que les traités lui confient. Tout le reste appartient aux États."
+        ],
+        "more": [
           "Compétences « exclusives » : seule l'UE décide. Exemples : l'union douanière, la politique commerciale (les accords de libre-échange), la politique monétaire pour les pays de l'euro.",
           "Compétences « partagées » : l'UE et les États peuvent agir. Les États gardent la main là où l'UE n'a pas légiféré. Exemples : le marché intérieur, l'agriculture, l'environnement, l'énergie, les transports, la protection des consommateurs.",
           "Compétences « d'appui » : l'UE aide, coordonne ou complète, sans remplacer les États. Exemples : la santé, l'éducation, la culture, le tourisme.",
@@ -1028,7 +1096,9 @@
       {
         "heading": "Le droit européen passe avant la loi française",
         "paragraphs": [
-          "Depuis un arrêt de la Cour de justice européenne de 1964 (Costa contre ENEL), le droit européen « prime » sur le droit national : en cas de conflit, c'est la règle européenne qui s'applique.",
+          "Depuis un arrêt de la Cour de justice européenne de 1964 (Costa contre ENEL), le droit européen « prime » sur le droit national : en cas de conflit, c'est la règle européenne qui s'applique."
+        ],
+        "more": [
           "En France, l'article 55 de la Constitution place déjà les traités au-dessus des lois.",
           "Mais pour le Conseil constitutionnel et le Conseil d'État, la Constitution française reste au sommet en droit interne. Quand un traité européen est contraire à la Constitution, la France révise sa Constitution avant de le ratifier."
         ],
@@ -1056,7 +1126,9 @@
       {
         "heading": "Ce que cela change pour les promesses de campagne",
         "paragraphs": [
-          "Une mesure qui touche un domaine européen (par exemple les droits de douane, les règles du marché unique ou certaines normes agricoles) ne peut pas être décidée seule par la France. Il faut convaincre les autres pays et les institutions européennes, ou obtenir une dérogation.",
+          "Une mesure qui touche un domaine européen (par exemple les droits de douane, les règles du marché unique ou certaines normes agricoles) ne peut pas être décidée seule par la France. Il faut convaincre les autres pays et les institutions européennes, ou obtenir une dérogation."
+        ],
+        "more": [
           "Un candidat peut aussi proposer de renégocier des traités. Modifier un traité demande l'accord de tous les États membres.",
           "Face à une promesse, posez-vous la question : ce sujet se décide-t-il à Paris, à Bruxelles et Strasbourg, ou aux deux ?"
         ],
@@ -1086,7 +1158,9 @@
       {
         "heading": "Comment un budget est voté",
         "paragraphs": [
-          "Chaque automne, le gouvernement présente deux textes : le projet de loi de finances (PLF), pour le budget de l'État, et le projet de loi de financement de la Sécurité sociale (PLFSS), pour la santé, les retraites, la famille…",
+          "Chaque automne, le gouvernement présente deux textes : le projet de loi de finances (PLF), pour le budget de l'État, et le projet de loi de financement de la Sécurité sociale (PLFSS), pour la santé, les retraites, la famille…"
+        ],
+        "more": [
           "Le Parlement a 70 jours pour voter le PLF et 50 jours pour le PLFSS (articles 47 et 47-1 de la Constitution). S'il ne s'est pas prononcé à temps, le gouvernement peut mettre le texte en vigueur par ordonnance.",
           "Pour le PLF 2027, le délai de 70 jours se termine le 17 décembre 2026 à minuit, selon LCP."
         ],
@@ -1114,7 +1188,9 @@
       {
         "heading": "Le « 49.3 »",
         "paragraphs": [
-          "L'article 49, alinéa 3 de la Constitution permet au Premier ministre de faire adopter un texte sans vote des députés.",
+          "L'article 49, alinéa 3 de la Constitution permet au Premier ministre de faire adopter un texte sans vote des députés."
+        ],
+        "more": [
           "En échange, il met en jeu la survie de son gouvernement : les députés ont 24 heures pour déposer une motion de censure. Si elle est votée par la majorité des députés (289), le texte est rejeté et le gouvernement doit démissionner. Sinon, le texte est considéré comme adopté.",
           "Il peut être utilisé sans limite pour les budgets (PLF et PLFSS), et pour un seul autre texte par session.",
           "En décembre 2024, le gouvernement de Michel Barnier a été renversé après un 49.3 sur le budget de la Sécurité sociale pour 2025."
@@ -1131,7 +1207,9 @@
       {
         "heading": "Déficit et dette : les chiffres officiels",
         "paragraphs": [
-          "Le déficit, c'est quand les dépenses publiques d'une année dépassent les recettes. En 2025, le déficit public a été de 152,5 milliards d'euros, soit 5,1 % du PIB (la richesse produite en un an), selon l'Insee.",
+          "Le déficit, c'est quand les dépenses publiques d'une année dépassent les recettes. En 2025, le déficit public a été de 152,5 milliards d'euros, soit 5,1 % du PIB (la richesse produite en un an), selon l'Insee."
+        ],
+        "more": [
           "La dette, c'est l'accumulation des déficits passés. Fin juin 2026, la dette publique atteignait 3 595,5 milliards d'euros, soit 119,0 % du PIB, selon l'Insee.",
           "Les règles européennes fixent des valeurs de référence de 3 % du PIB pour le déficit et de 60 % pour la dette."
         ],
@@ -1159,7 +1237,9 @@
       {
         "heading": "Pourquoi c'est important pour lire un programme",
         "paragraphs": [
-          "Une dette plus élevée signifie plus d'intérêts à payer chaque année, donc moins d'argent pour d'autres dépenses.",
+          "Une dette plus élevée signifie plus d'intérêts à payer chaque année, donc moins d'argent pour d'autres dépenses."
+        ],
+        "more": [
           "Face à une promesse qui coûte (baisse d'impôt, nouvelle dépense), une bonne question est : comment est-elle financée ? Par des économies ailleurs, de nouveaux impôts, ou plus de dette ?",
           "Sur ce site, les coûts et critiques d'une mesure ne sont cités que s'ils viennent d'une source identifiée (Cour des comptes, instituts de chiffrage, économistes nommés), de la même façon pour tous les partis."
         ],
@@ -1183,7 +1263,9 @@
       {
         "heading": "Qui l'a dit, où et quand ?",
         "paragraphs": [
-          "Avant de partager une information, cherchez sa source d'origine : qui l'a dit ? Dans quel document, quelle interview, quel discours ? À quelle date ?",
+          "Avant de partager une information, cherchez sa source d'origine : qui l'a dit ? Dans quel document, quelle interview, quel discours ? À quelle date ?"
+        ],
+        "more": [
           "Une capture d'écran sans lien, une vidéo coupée ou une citation sans date sont des signaux d'alerte.",
           "Une position peut avoir changé : une déclaration de 2022 n'est pas forcément la position de 2027."
         ],
@@ -1199,7 +1281,9 @@
       {
         "heading": "Programme, déclaration, rumeur : pas le même poids",
         "paragraphs": [
-          "Le programme officiel est le document publié par le candidat ou le parti. C'est la source la plus solide sur ce qu'il propose.",
+          "Le programme officiel est le document publié par le candidat ou le parti. C'est la source la plus solide sur ce qu'il propose."
+        ],
+        "more": [
           "Une déclaration (interview, meeting, réseau social) engage la personne, mais peut être imprécise ou évoluer.",
           "Une rumeur (« on dit que… », message transféré sans source) n'a aucune valeur tant qu'elle n'est pas confirmée par une source vérifiable.",
           "C'est cette hiérarchie que suit ce site : programme, puis votes à l'Assemblée, propositions de loi, déclarations, et enfin articles de presse."
@@ -1216,7 +1300,9 @@
       {
         "heading": "Des outils de vérification reconnus",
         "paragraphs": [
-          "AFP Factuel : le service de vérification de l'Agence France-Presse. Il vérifie notamment des images, vidéos et déclarations qui circulent sur les réseaux sociaux.",
+          "AFP Factuel : le service de vérification de l'Agence France-Presse. Il vérifie notamment des images, vidéos et déclarations qui circulent sur les réseaux sociaux."
+        ],
+        "more": [
           "Les Décodeurs (Le Monde) : la rubrique de vérification du journal Le Monde.",
           "« Vrai ou fake » (franceinfo) : une plateforme commune de l'audiovisuel public (France Télévisions, Radio France, France Médias Monde…).",
           "Si plusieurs de ces services n'ont rien publié sur une information surprenante, restez prudent avant de la croire ou de la partager."

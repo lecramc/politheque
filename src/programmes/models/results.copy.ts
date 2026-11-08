@@ -12,13 +12,13 @@ export const marginSentence = (margin: number) =>
 export const BROAD_GROUP_SIZE = 4;
 
 export const BROAD_GROUP_POINTER =
-  'Pour comparer ces partis question par question, ouvrez les onglets « Ma carte » et « Détail ».';
+  'Pour comparer ces partis question par question, ouvrez « Question par question » plus bas.';
 
 export const leadGroupSentence = (names: string[], margin: number) =>
   names.length >= BROAD_GROUP_SIZE
     ? `Vos réponses sont proches de ${names.length} partis de sensibilités différentes : aucun ne se détache nettement (écart inférieur à la marge de ± ${margin} points).`
     : names.length > 1
-      ? `Vos réponses sont proches de ${joinNames(names)}, sans qu'on puisse les départager : l'écart entre eux est inférieur à la marge de ± ${margin} points.`
+      ? `Vos réponses sont proches de ${names.length} partis, sans qu'on puisse les départager : ${joinNames(names)}. L'écart entre eux est inférieur à la marge de ± ${margin} points.`
       : `${names[0]} se détache : son avance sur les autres partis dépasse la marge de ± ${margin} points.`;
 
 export const fewComparedNote = (unknownCount: number) =>
@@ -40,3 +40,18 @@ export const methodSentences = (questionCount: number) =>
 /** Questionnaire terminé (tampon) mais réponses absentes de la mémoire : jamais « Pas encore de réponses ». */
 export const ANSWERS_NOT_KEPT =
   'Vos réponses ne sont pas conservées : refaites le questionnaire ou ouvrez votre lien de résultats.';
+
+/** Introduction visible de la page : la consigne de vote reste toujours à l'écran. */
+export const RESULTS_INTRO =
+  "Proximité entre vos réponses et les positions publiques des partis. Ce n'est pas une consigne de vote.";
+
+/**
+ * Les trois rappels de méthode, réunis dans la feuille « Comment lire ces résultats » :
+ * `minCompared` réponses comparables pour noter un parti, `margin` points de marge.
+ */
+export const howToReadBullets = (minCompared: number, margin: number) =>
+  [
+    `un parti n'est noté que sur au moins ${minCompared} de vos réponses ;`,
+    `moins de ${margin} points d’écart : on ne peut pas départager ;`,
+    "un parti qui s'exprime peu est comparé sur moins de questions, et son score peut en être gonflé.",
+  ] as const;

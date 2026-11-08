@@ -1,15 +1,14 @@
-import { Link, useLocalSearchParams } from 'expo-router';
+import { useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
-import { Platform, ScrollView, View } from 'react-native';
+import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
-import { Icon, Text } from '@/components/Themed';
+import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
-import { Only } from '@/src/core/components/Only';
+import { TextLink } from '@/components/ui/TextLink';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { tv } from '@/src/core/web/tv';
-import { Arc } from '@/src/programmes/components/Arc';
 import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyRow, RowGroup } from '@/src/programmes/components/PartyRow';
@@ -44,30 +43,11 @@ export default function ElectionScreen() {
 
   if (vm.status === 'loaded' && !election) {
     return (
-      <Page meta={vm.notFoundMeta} back={{ label: 'Élections', href: '/elections' }}>
+      <Page meta={vm.notFoundMeta} back={{ label: 'Accueil', href: '/' }}>
         <Text variant="title">Élection introuvable</Text>
       </Page>
     );
   }
-
-  const steps = election
-    ? [...election.keyDates, ...election.rounds].sort((a, b) => a.date.localeCompare(b.date))
-    : [];
-
-  const countdown =
-    daysLeft !== null && vm.round ? (
-      <Arc
-        value={1 - daysLeft / 365}
-        size={120}
-        strokeWidth={12}
-        accessibilityLabel={`${daysLeft} jours avant le ${vm.round.label}`}
-      >
-        <Text style={{ ...fonts.displayBold, fontSize: 28, lineHeight: 30, color: colors.tint }}>
-          {daysLeft}
-        </Text>
-        <Text style={{ color: colors.text.secondary, fontSize: 13 }}>jours</Text>
-      </Arc>
-    ) : null;
 
   /** Carte d'une étape du calendrier (largeur fixe en défilement, souple en grille). */
   const stepCard = (s: DatedStep, width?: number) => {
@@ -107,59 +87,73 @@ export default function ElectionScreen() {
       meta={vm.meta}
       article
       loading={vm.status !== 'loaded'}
-      back={{ label: 'Élections', href: '/elections' }}
+      back={{ label: 'Accueil', href: '/' }}
       onReachEnd={vm.markRead}
-      railOnMobile="hidden"
-      rail={
-        election ? (
-          // Les dates sont dans le calendrier de la colonne : le rail ne garde que le compte à rebours.
-          <>{countdown}</>
-        ) : undefined
-      }
     >
       {election ? (
         <>
-          <Text variant="title">{election.title}</Text>
-          <View style={{ gap: 12, alignItems: 'center' }}>
-            {/* Compte à rebours : dans le rail dès 1024 px, ici en dessous. */}
-            <Only below="lg">{countdown}</Only>
-            <View style={{ gap: effects.spacing.xs, alignSelf: 'stretch' }}>
-              <Text style={{ fontSize: 16, lineHeight: 24 }}>{election.summary}</Text>
-              <SourceChip sources={election.summarySources} />
-            </View>
-          </View>
-
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption" headingLevel={2}>
-              Le calendrier
-            </Text>
-            <Only below="lg">
-              <ScrollView
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                contentContainerStyle={{ gap: effects.spacing.sm, paddingRight: 16 }}
-              >
-                {steps.map((s) => stepCard(s, 170))}
-              </ScrollView>
-            </Only>
-            {Platform.OS === 'web' ? (
-              <View {...tv('only-from-lg', 'cal-grid')}>{steps.map((s) => stepCard(s))}</View>
+            {/* Le compte à rebours dépend du jour : rendu après l'hydratation seulement. */}
+            {daysLeft !== null ? (
+              <Text plainDigits style={{ color: colors.text.secondary, fontSize: 15 }}>
+                {`J-${daysLeft}`}
+              </Text>
             ) : null}
+            <Text variant="title">{election.title}</Text>
+            <Text style={{ fontSize: 17, lineHeight: 26 }}>{election.summary}</Text>
+            <SourceChip sources={election.summarySources} />
           </View>
 
-          <View
-            style={{
-              backgroundColor: colors.tintSoft,
-              borderRadius: effects.borderRadius.small,
-              padding: effects.spacing.md,
-            }}
-          >
-            <Text style={{ fontSize: 15, lineHeight: 23 }}>{election.candidaciesNote}</Text>
+          <View {...tv('cal-grid')} role="list" style={{ gap: effects.spacing.xs }}>
+            {vm.dates.map((s) => (
+              <View key={s.label} role="listitem">
+                {stepCard(s)}
+              </View>
+            ))}
+          </View>
+
+          <View style={{ gap: effects.spacing.sm }}>
+            <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+              Comment voter
+            </Text>
+            {vm.voteSteps.map((item, index) => (
+              <View
+                key={item.title}
+                style={{ flexDirection: 'row', alignItems: 'flex-start', gap: effects.spacing.smd }}
+              >
+                <View
+                  style={{
+                    width: 28,
+                    height: 28,
+                    borderRadius: 14,
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backgroundColor: colors.tint,
+                  }}
+                >
+                  <Text
+                    plainDigits
+                    style={{ ...fonts.bold, fontSize: 14, color: colors.text.onColor }}
+                  >
+                    {index + 1}
+                  </Text>
+                </View>
+                <Text style={{ flex: 1, fontSize: 16, lineHeight: 25 }}>
+                  <Text style={{ ...fonts.bold, fontSize: 16 }}>{item.title}</Text> {item.text}
+                </Text>
+              </View>
+            ))}
+            <TextLink href={vm.voteGuide.href} standalone>
+              {`Tout savoir pour voter (guide, ${vm.voteGuide.minutes} min)`}
+            </TextLink>
           </View>
 
           <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption" headingLevel={2}>
-              Candidatures · ordre alphabétique
+            <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+              Les candidatures
+              <Text style={{ fontSize: 15, color: colors.text.secondary }}>
+                {' · ordre alphabétique'}
+              </Text>
             </Text>
             <RowGroup>
               {vm.candidates.map(({ party, candidacy }, index) => (
@@ -167,63 +161,21 @@ export default function ElectionScreen() {
                   key={party.id}
                   party={party}
                   first={index === 0}
-                  section="programme-2027"
+                  section="programme"
                   subtitle={candidacy.candidateName}
                   badge={<StatusChip label={candidacy.statusLabel} />}
                 />
               ))}
             </RowGroup>
-          </View>
-
-          <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption" headingLevel={2}>
-              Comparer les programmes par thème
+            <Text style={{ fontSize: 15, lineHeight: 23, color: colors.text.secondary }}>
+              {election.candidaciesNote}{' '}
+              <TextLink href="/partis/comparer">Comparer les programmes</TextLink>
             </Text>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}>
-              {vm.themes.map((theme) => (
-                <Link
-                  key={theme.id}
-                  href={{ pathname: '/debats/[id]', params: { id: theme.id } }}
-                  asChild
-                >
-                  <Pressable
-                    style={{
-                      flexDirection: 'row',
-                      alignItems: 'center',
-                      gap: effects.spacing.xs,
-                      minHeight: 44,
-                      paddingHorizontal: 14,
-                      borderRadius: effects.borderRadius.round,
-                      borderWidth: 1,
-                      borderColor: colors.surface.border.primary,
-                      backgroundColor: colors.surface.primary,
-                    }}
-                  >
-                    <Icon name={theme.icon} variant="onGlass" size="small" />
-                    <Text style={{ fontSize: 15 }}>{theme.title}</Text>
-                  </Pressable>
-                </Link>
-              ))}
-            </View>
           </View>
 
-          <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="caption" headingLevel={2}>
-              Pour bien comprendre
-            </Text>
-            {vm.guideSections.map((section) => (
-              <Link
-                key={section.id}
-                href={{ pathname: '/comprendre/[id]', params: { id: section.id } }}
-              >
-                <Text style={{ color: colors.tint, ...fonts.bold, fontSize: 16 }}>
-                  {section.title} →
-                </Text>
-              </Link>
-            ))}
-          </View>
-
-          <PageSources sources={[...election.summarySources, ...steps.flatMap((s) => s.sources)]} />
+          <PageSources
+            sources={[...election.summarySources, ...vm.dates.flatMap((s) => s.sources)]}
+          />
 
           <Sheet
             isOpen={!!step}
