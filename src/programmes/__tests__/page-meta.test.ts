@@ -1,5 +1,5 @@
 import { APP_NAME } from '@/src/core/config/app';
-import { catalogFactory } from '@/src/programmes/models/catalog.factory';
+import { catalogFactory, electionFactory } from '@/src/programmes/models/catalog.factory';
 import {
   legalDossierFactory,
   legalEntryFactory,
@@ -184,9 +184,25 @@ describe('Feature: métadonnées des pages', () => {
     expect(meta.jsonLd).toBeNull();
   });
 
-  it('should emit no Event for an election whose dates are provisional', () => {
-    const meta = electionMeta(catalog.elections[0], catalog);
-    expect(JSON.stringify(meta.jsonLd)).not.toContain('"Event"');
+  it('should emit one Event per round with its official date', () => {
+    const election = electionFactory({
+      rounds: [
+        { label: '1er tour', date: '2027-04-18', sources: [] },
+        { label: '2nd tour', date: '2027-05-02', sources: [] },
+      ],
+    });
+    const events = electionMeta(election, catalog).jsonLd!['@graph'].filter(
+      (n) => n['@type'] === 'Event'
+    ) as unknown as { name: string; startDate: string }[];
+    expect(events.map((e) => e.startDate)).toEqual(['2027-04-18', '2027-05-02']);
+    expect(events[0].name).toBe('Élection présidentielle 2027 : 1er tour');
+  });
+
+  it('should emit no Event for a round whose date is provisional', () => {
+    const election = electionFactory({
+      rounds: [{ label: '2nd tour (date calculée, à confirmer)', date: '2027-05-02', sources: [] }],
+    });
+    expect(JSON.stringify(electionMeta(election, catalog).jsonLd)).not.toContain('"Event"');
   });
 
   it('should list the parties mentioned on a debate page in alphabetical order', () => {

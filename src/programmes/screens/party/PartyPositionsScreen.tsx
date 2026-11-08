@@ -4,6 +4,7 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { TextLink } from '@/components/ui/TextLink';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { PageSources } from '@/src/programmes/components/PageSources';
@@ -12,9 +13,13 @@ import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
-import { STANCE_LEGEND_TEXT, StanceLegend } from '@/src/programmes/components/StanceLegend';
+import { StanceLegend } from '@/src/programmes/components/StanceLegend';
 import { StanceColumnHead } from '@/src/programmes/components/StanceRow';
 import { TabPanel } from '@/src/programmes/components/Tabs';
+import {
+  GUIDE_ANCHORS,
+  positionsGuideParagraphs,
+} from '@/src/programmes/models/reading-guides.copy';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 /** « Positions » : /partis/[id]/positions. */
@@ -40,11 +45,12 @@ export default function PartyPositionsScreen() {
         <SectionTitle>Positions sur {vm.stances.length} questions</SectionTitle>
       </View>
       <StanceLegend />
-      <ReadingGuide>
-        <Text style={{ fontSize: 16, lineHeight: 25 }}>
-          {`Ce que le parti défend sur les ${vm.stances.length} affirmations du questionnaire, d'après ses programmes, ses votes et ses déclarations. Les thèmes sont toujours dans le même ordre, pour les ${vm.partyCount} partis.`}
-        </Text>
-        <Text style={{ fontSize: 16, lineHeight: 25 }}>{STANCE_LEGEND_TEXT}</Text>
+      <ReadingGuide anchor={GUIDE_ANCHORS.positions}>
+        {positionsGuideParagraphs(vm.stances.length, vm.partyCount).map((paragraph) => (
+          <Text key={paragraph} style={{ fontSize: 16, lineHeight: 25 }}>
+            {paragraph}
+          </Text>
+        ))}
       </ReadingGuide>
       <View style={{ gap: effects.spacing.md }}>
         <StanceColumnHead
@@ -70,6 +76,9 @@ export default function PartyPositionsScreen() {
             >
               {group.theme.title}
             </Text>
+            <TextLink href={`/debats/${group.theme.id}`} standalone>
+              {`Le grand débat : ${group.theme.title}`}
+            </TextLink>
             {group.items.map(({ question, stance }) => (
               <Accordion
                 key={question.id}

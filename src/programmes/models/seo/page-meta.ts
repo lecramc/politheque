@@ -2,7 +2,11 @@ import { APP_NAME } from '@/src/core/config/app';
 import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
 import type { LegalDossier } from '@/src/programmes/models/legal/legal.model';
 import { partySectionSources } from '@/src/programmes/models/party-sources.service';
-import { beforeParenthesis, displayName } from '@/src/programmes/models/presentation.service';
+import {
+  beforeParenthesis,
+  displayName,
+  stepLabel,
+} from '@/src/programmes/models/presentation.service';
 import type {
   Candidacy,
   Catalog,
@@ -16,6 +20,7 @@ import { formatLongDate } from '@/src/programmes/models/seo/dates';
 import {
   articleNode,
   breadcrumbNode,
+  eventNode,
   graph,
   organizationNode,
   personNode,
@@ -56,6 +61,8 @@ export type PageMeta = {
   jsonLd: JsonLdGraph | null;
   /** Fil d'Ariane (même source pour le visuel desktop et le JSON-LD). Vide sur l'accueil. */
   breadcrumb: Breadcrumb;
+  /** `false` : ni canonical ni og:url (page d'erreur, qui n'a pas d'adresse propre). */
+  canonical?: boolean;
 };
 
 export const TITLE_MAX = 70;
@@ -107,6 +114,7 @@ const pageGraph = (input: {
   about?: JsonLdNode[];
   mentions?: JsonLdNode[];
   sources?: Source[];
+  events?: JsonLdNode[];
 }): JsonLdGraph =>
   graph(
     organizationNode(false),
@@ -126,7 +134,8 @@ const pageGraph = (input: {
           description: input.description,
           type: input.kind === 'collection' ? 'CollectionPage' : 'WebPage',
         }),
-    breadcrumbNode(input.breadcrumb)
+    breadcrumbNode(input.breadcrumb),
+    ...(input.events ?? [])
   );
 
 const make = (
@@ -138,6 +147,7 @@ const make = (
     about?: JsonLdNode[];
     mentions?: JsonLdNode[];
     sources?: Source[];
+    events?: JsonLdNode[];
   }
 ): PageMeta => ({
   title: meta.title,
@@ -157,6 +167,7 @@ const make = (
         about: meta.about,
         mentions: meta.mentions,
         sources: meta.sources,
+        events: meta.events,
       })
     : null,
 });
@@ -402,6 +413,16 @@ export function electionMeta(election: Election, catalog: Catalog): PageMeta {
     pattern: '/elections/[id]',
     name: election.title,
     dateModified: lastmodOf('/elections/[id]', catalog, { id: election.id }),
+    events: election.rounds
+      // Une date « calculée, à confirmer » n'est pas une date officielle : aucun Event.
+      .filter((round) => !stepLabel(round.label).note)
+      .map((round) =>
+        eventNode({
+          name: `${election.title} : ${stepLabel(round.label).title}`,
+          path,
+          startDate: round.date,
+        })
+      ),
     sources: [
       ...election.summarySources,
       ...[...election.keyDates, ...election.rounds].flatMap((s) => s.sources),
@@ -461,7 +482,11 @@ export function correctionsMeta(): PageMeta {
 }
 
 /** Passeport, résultats, parcours, 404, contenus introuvables : jamais indexés. */
-export function nonIndexableMeta(title: string, path: string): PageMeta {
+export function nonIndexableMeta(
+  title: string,
+  path: string,
+  options: { canonical?: boolean } = {}
+): PageMeta {
   return {
     title: brandTitle(title),
     description:
@@ -471,6 +496,7 @@ export function nonIndexableMeta(title: string, path: string): PageMeta {
     ogType: 'website',
     jsonLd: null,
     breadcrumb: [],
+    ...(options.canonical === false ? { canonical: false } : {}),
   };
 }
 

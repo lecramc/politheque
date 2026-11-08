@@ -39,6 +39,7 @@ const files = seo.buildSeoFiles();
 fs.writeFileSync(path.join(dist, 'sitemap.xml'), files.sitemap);
 fs.writeFileSync(path.join(dist, 'robots.txt'), files.robots);
 fs.writeFileSync(path.join(dist, 'llms.txt'), files.llms);
+fs.writeFileSync(path.join(dist, 'llms-full.txt'), files.llmsFull);
 
 // 3. Contrôle de l'export.
 const errors = [];
@@ -92,10 +93,26 @@ for (const file of walk(dist).filter((f) => f.endsWith('.html'))) {
     fs.rmSync(file);
   }
 }
+// Gabarits de routes dynamiques (`[id].html`, `partis/[id]/…`) : jamais des adresses publiques, et
+// ils masqueraient la 404 pour un identifiant inconnu. Retirés de `dist/`.
+const walkDirs = (dir) =>
+  fs
+    .readdirSync(dir, { withFileTypes: true })
+    .filter((entry) => entry.isDirectory())
+    .flatMap((entry) => {
+      const full = path.join(dir, entry.name);
+      return [full, ...walkDirs(full)];
+    });
+const TEMPLATE = /\[[^\]]+\]/;
+for (const entry of walkDirs(dist).filter((d) => TEMPLATE.test(path.basename(d)))) {
+  fs.rmSync(entry, { recursive: true, force: true });
+}
+for (const file of walk(dist).filter((f) => TEMPLATE.test(path.basename(f)))) {
+  fs.rmSync(file, { force: true });
+}
 for (const file of walk(dist).filter((f) => f.endsWith('.html'))) {
   const relative = path.relative(dist, file);
-  // `[id].html` : gabarit de repli d'Expo Router pour une route dynamique (jamais une URL publique).
-  if (IGNORED.has(relative) || /\[[^\]]+\]/.test(relative)) continue;
+  if (IGNORED.has(relative)) continue;
   if (!expectedFiles.has(file)) {
     errors.push(`${path.relative(dist, file)} : page exportée absente du registre des routes`);
   }
@@ -116,5 +133,5 @@ if (errors.length) {
   process.exit(1);
 }
 console.log(
-  `Export vérifié : ${files.pages.length} pages, sitemap, robots.txt et llms.txt écrits.`
+  `Export vérifié : ${files.pages.length} pages, sitemap, robots.txt, llms.txt et llms-full.txt écrits.`
 );

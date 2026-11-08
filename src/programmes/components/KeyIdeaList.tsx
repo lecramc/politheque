@@ -12,6 +12,7 @@ import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceList } from '@/src/programmes/components/SourceChip';
 import { StanceRow } from '@/src/programmes/components/StanceRow';
+import { GUIDE_ANCHORS, KEY_IDEAS_GUIDE_TEXT } from '@/src/programmes/models/reading-guides.copy';
 import type { PartyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 type KeyIdeas = NonNullable<PartyViewModel['keyIdeas']>;
@@ -82,10 +83,8 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
           </View>
         ))}
       </View>
-      <ReadingGuide>
-        <Text style={{ fontSize: 16, lineHeight: 25 }}>
-          Les mots entre guillemets sont ceux du parti.
-        </Text>
+      <ReadingGuide anchor={GUIDE_ANCHORS.keyIdeas}>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{KEY_IDEAS_GUIDE_TEXT}</Text>
         <TextLink href="/methodologie">Comment ces 4 idées sont choisies</TextLink>
       </ReadingGuide>
       <Sheet isOpen={!!open} onClose={() => setOpenId(null)} title={open?.title ?? ''}>

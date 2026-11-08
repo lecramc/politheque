@@ -160,7 +160,9 @@ export default function MethodologyScreen() {
           padding: effects.spacing.md,
         }}
       >
-        <Text variant="caption">Les niveaux de source</Text>
+        <Text variant="caption" headingLevel={2}>
+          Les niveaux de source
+        </Text>
         <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
           <SourceChip sources={EXAMPLE.croisee} />
           <Text style={{ flex: 1, fontSize: 15 }}>
@@ -175,7 +177,7 @@ export default function MethodologyScreen() {
 
       <View style={{ gap: effects.spacing.xs }}>
         {rulesWith(vm.methodSentences).map((rule) => (
-          <Accordion key={rule.title} title={rule.title}>
+          <Accordion key={rule.title} title={rule.title} headingLevel={2}>
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{rule.body}</Text>
             {rule.extra?.map((sentence) => (
               <Text key={sentence} style={{ fontSize: 16, lineHeight: 25 }}>
@@ -188,6 +190,29 @@ export default function MethodologyScreen() {
               </TextLink>
             ) : null}
           </Accordion>
+        ))}
+      </View>
+
+      <View style={{ gap: effects.spacing.sm }}>
+        <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+          Comment lire les pages
+        </Text>
+        {vm.readingGuides.map((guide) => (
+          <View key={guide.anchor} id={guide.anchor} style={{ gap: effects.spacing.xs }}>
+            <Text variant="display" headingLevel={3}>
+              {guide.title}
+            </Text>
+            {guide.paragraphs.map((paragraph) => (
+              <Text key={paragraph} style={{ fontSize: 16, lineHeight: 25 }}>
+                {paragraph}
+              </Text>
+            ))}
+            {guide.bullets?.map((bullet) => (
+              <Text key={bullet} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+                {`• ${bullet}`}
+              </Text>
+            ))}
+          </View>
         ))}
       </View>
     </Page>

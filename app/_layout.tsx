@@ -67,13 +67,18 @@ function NavigationThemeWrapper({ children }: { children: ReactNode }) {
 }
 
 export default function RootLayout() {
-  const [fontsLoaded, error] = useFonts({
-    AtkinsonHyperlegible_400Regular,
-    AtkinsonHyperlegible_400Regular_Italic,
-    AtkinsonHyperlegible_700Bold,
-    Fraunces_600SemiBold,
-    Fraunces_700Bold,
-  });
+  // Web : polices déclarées en @font-face statiques dans `+html.tsx` (swap, 2 préchargements).
+  const [fontsLoaded, error] = useFonts(
+    Platform.OS === 'web'
+      ? {}
+      : {
+          AtkinsonHyperlegible_400Regular,
+          AtkinsonHyperlegible_400Regular_Italic,
+          AtkinsonHyperlegible_700Bold,
+          Fraunces_600SemiBold,
+          Fraunces_700Bold,
+        }
+  );
   useEffect(() => {
     initI18n();
   }, []);

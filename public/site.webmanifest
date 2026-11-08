@@ -1,0 +1,19 @@
+{
+  "name": "Polithèque",
+  "short_name": "Polithèque",
+  "description": "Site indépendant et non partisan pour comprendre la politique française : institutions, partis, grands débats, présidentielle 2027.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#FBF8F3",
+  "theme_color": "#FBF8F3",
+  "icons": [
+    {
+      "src": "/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

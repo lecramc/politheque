@@ -3,6 +3,7 @@ import React, { ReactNode, useState } from 'react';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { TextLink } from '@/components/ui/TextLink';
 import { Sheet } from '@/src/programmes/components/Sheet';
 
 /**
@@ -12,10 +13,13 @@ import { Sheet } from '@/src/programmes/components/Sheet';
 export function ReadingGuide({
   label = 'Comment lire cette page',
   title = label,
+  anchor,
   children,
 }: {
   label?: string;
   title?: string;
+  /** Ancre de /methodologie où le même texte est publié (visible dans le HTML). */
+  anchor: string;
   children: ReactNode;
 }) {
   const { colors, fonts } = useTheme();
@@ -41,6 +45,9 @@ export function ReadingGuide({
       </Pressable>
       <Sheet isOpen={open} onClose={() => setOpen(false)} title={title}>
         {children}
+        <TextLink href={`/methodologie#${anchor}`} standalone>
+          Voir ce texte dans la méthodologie
+        </TextLink>
       </Sheet>
     </>
   );

@@ -17,6 +17,10 @@ import { SourcedAccordionList } from '@/src/programmes/components/SourcedAccordi
 import { TabPanel } from '@/src/programmes/components/Tabs';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { foldAfterSentences, formatSourceDate } from '@/src/programmes/models/presentation.service';
+import {
+  CLASSIFICATION_GUIDE_TEXT,
+  GUIDE_ANCHORS,
+} from '@/src/programmes/models/reading-guides.copy';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 /**
@@ -67,11 +71,8 @@ export default function PartyHistoryScreen() {
           <SectionTitle>Comment on le classe</SectionTitle>
           <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.party?.family}</Text>
           <SourcedAccordionList items={classification} />
-          <ReadingGuide>
-            <Text style={{ fontSize: 16, lineHeight: 25 }}>
-              Les étiquettes viennent de la presse de référence, des politistes et du ministère de
-              l'Intérieur ; chaque parti peut les contester. Le même traitement s'applique à tous.
-            </Text>
+          <ReadingGuide anchor={GUIDE_ANCHORS.classification}>
+            <Text style={{ fontSize: 16, lineHeight: 25 }}>{CLASSIFICATION_GUIDE_TEXT}</Text>
           </ReadingGuide>
         </View>
 

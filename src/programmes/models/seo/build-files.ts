@@ -1,7 +1,9 @@
 // Point d'entrée du script post-export (scripts/postexport.mjs).
 // N'importe que des données et des modules purs : jamais react-native ni expo-router.
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
+import { foldedSnippets } from '@/src/programmes/models/seo/folded-content';
 import { buildLlmsTxt } from '@/src/programmes/models/seo/llms';
+import { buildLlmsFullTxt } from '@/src/programmes/models/seo/llms-full';
 import { buildRobotsTxt } from '@/src/programmes/models/seo/robots';
 import { expandRoutes } from '@/src/programmes/models/seo/site-routes';
 import { buildSitemapXml } from '@/src/programmes/models/seo/sitemap';
@@ -16,10 +18,12 @@ export function buildSeoFiles() {
     sitemap: buildSitemapXml(urls),
     robots: buildRobotsTxt({ allowTraining: ALLOW_AI_TRAINING }),
     llms: buildLlmsTxt(catalog, urls),
+    llmsFull: buildLlmsFullTxt(catalog),
     pages: urls.map((u) => ({
       path: u.path,
       indexable: u.indexable,
       canonicalPath: u.canonicalPath,
+      mustContain: foldedSnippets(catalog, u.path),
       // Pages de contenu (motifs dynamiques indexables) : au moins un <h2>.
       content: u.indexable && u.pattern.includes('['),
     })),

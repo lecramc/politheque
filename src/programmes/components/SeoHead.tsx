@@ -18,11 +18,11 @@ export function SeoHead({ meta }: { meta: PageMeta }) {
     <Head>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
-      <link rel="canonical" href={url} />
+      {meta.canonical === false ? null : <link rel="canonical" href={url} />}
       <meta name="robots" content={meta.robots} />
       <meta property="og:title" content={meta.title} />
       <meta property="og:description" content={meta.description} />
-      <meta property="og:url" content={url} />
+      {meta.canonical === false ? null : <meta property="og:url" content={url} />}
       <meta property="og:type" content={meta.ogType} />
       <meta property="og:image" content={`${SITE_URL}/og.png`} />
       <meta property="og:image:width" content="1200" />

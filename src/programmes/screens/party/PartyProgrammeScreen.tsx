@@ -5,6 +5,7 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { TextLink } from '@/components/ui/TextLink';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { KeyIdeaList } from '@/src/programmes/components/KeyIdeaList';
@@ -102,6 +103,9 @@ export default function PartyProgrammeScreen() {
                     <SourceChip sources={measure.sources} subject={measure.text} />
                   </View>
                 ))}
+                <TextLink href={`/debats/${theme.id}`} standalone>
+                  {`Le grand débat : ${theme.title}`}
+                </TextLink>
               </Accordion>
             ) : null
           )}

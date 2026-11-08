@@ -11,6 +11,10 @@ export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const OG_IMAGE_URL = `${SITE_URL}/og.png`;
 export const LOGO_URL = `${SITE_URL}/logo-512.png`;
 
+/** Description du site, reprise par `Organization` (E-E-A-T) : mêmes mots que llms.txt. */
+export const SITE_DESCRIPTION =
+  'Site indépendant et non partisan pour comprendre la politique française : institutions, partis, grands débats, présidentielle 2027. Chaque information est sourcée et datée.';
+
 const METHODOLOGY_URL = `${SITE_URL}/methodologie`;
 const CORRECTIONS_URL = `${SITE_URL}/corrections`;
 
@@ -24,6 +28,7 @@ export function organizationNode(full: boolean): JsonLdNode {
   if (!full) return base;
   return {
     ...base,
+    description: SITE_DESCRIPTION,
     logo: { '@type': 'ImageObject', url: LOGO_URL },
     publishingPrinciples: METHODOLOGY_URL,
     correctionsPolicy: CORRECTIONS_URL,
@@ -36,6 +41,7 @@ export function websiteNode(): JsonLdNode {
     '@id': WEBSITE_ID,
     url: `${SITE_URL}/`,
     name: APP_NAME,
+    alternateName: [APP_NAME],
     inLanguage: SITE_LANG,
     publisher: { '@id': ORGANIZATION_ID },
   };
@@ -68,6 +74,15 @@ export function personNode(name: string): JsonLdNode {
   return { '@type': 'Person', name };
 }
 
+/**
+ * Une source de référence (`statistique` : textes officiels, encyclopédies, données publiques)
+ * porte sa date de consultation, pas sa date de publication : `datePublished` est alors omis.
+ * Règle sans date butoir, pour ne pas dépendre du moment où la source a été ajoutée.
+ */
+export function isConsultationDate(source: Pick<Source, 'kind' | 'date'>): boolean {
+  return source.kind === 'statistique';
+}
+
 /** Sources uniques (par URL), ordre d'apparition conservé : aucune sélection arbitraire. */
 export function citationNodes(sources: Source[]): JsonLdNode[] {
   const unique = [...new Map(sources.map((s) => [s.url, s])).values()];
@@ -75,8 +90,20 @@ export function citationNodes(sources: Source[]): JsonLdNode[] {
     '@type': 'CreativeWork',
     name: s.title,
     url: s.url,
-    datePublished: s.date,
+    ...(isConsultationDate(s) ? {} : { datePublished: s.date }),
   }));
+}
+
+/** Scrutin daté (un tour) : date officielle déjà présente dans les données, jamais déduite. */
+export function eventNode(input: { name: string; path: string; startDate: string }): JsonLdNode {
+  return {
+    '@type': 'Event',
+    name: input.name,
+    startDate: input.startDate,
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: { '@type': 'Country', name: 'France' },
+    url: absoluteUrl(input.path),
+  };
 }
 
 const HEADLINE_MAX = 110;

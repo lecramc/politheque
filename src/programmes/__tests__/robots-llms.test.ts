@@ -2,6 +2,7 @@ import { APP_NAME, SITE_URL } from '@/src/core/config/app';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
 import { legalDossierFactory } from '@/src/programmes/models/legal/legal.factory';
 import { buildLlmsTxt } from '@/src/programmes/models/seo/llms';
+import { buildLlmsFullTxt } from '@/src/programmes/models/seo/llms-full';
 import {
   AI_TRAINING_BOTS,
   buildRobotsTxt,
@@ -70,6 +71,19 @@ describe('Feature: llms.txt', () => {
     expect(llms).toContain(`${SITE_URL}/methodologie`);
   });
 
+  it('should describe each key page on its line, with the same wording for every party', () => {
+    expect(llms).toMatch(new RegExp(`\\(${SITE_URL}/methodologie\\): .+`));
+    const lines = catalog.parties.map(
+      (p) => llms.split('\n').find((l) => l.includes(`(${SITE_URL}/partis/${p.id}/positions)`))!
+    );
+    const descriptions = lines.map((l) => l.replace(/^.*\): /, ''));
+    expect(new Set(descriptions).size).toBe(1);
+  });
+
+  it('should point to llms-full.txt', () => {
+    expect(llms).toContain(`(${SITE_URL}/llms-full.txt)`);
+  });
+
   it('should link the corrections journal in the charter section', () => {
     expect(llms).toContain(`(${SITE_URL}/corrections)`);
   });
@@ -92,5 +106,25 @@ describe('Feature: llms.txt et procédures judiciaires', () => {
     expect(llms).toContain(
       "Procédures judiciaires : citer le statut exact et la date de vérification ; une procédure non définitive n'établit pas la culpabilité."
     );
+  });
+});
+
+describe('Feature: llms-full.txt', () => {
+  const full = buildLlmsFullTxt(catalog);
+
+  it('should contain a guide paragraph, a party measure and a party stance justification', () => {
+    const block = catalog.guide[0].blocks[0];
+    expect(full).toContain(block.paragraphs[0]);
+    const rn = catalog.parties.find((p) => p.id === 'rn')!;
+    const [question] = catalog.questions;
+    expect(full).toContain(rn.stances[question.id].justification);
+  });
+
+  it('should list parties in alphabetical order', () => {
+    const names = [...catalog.parties]
+      .sort((a, b) => a.name.localeCompare(b.name, 'fr'))
+      .map((p) => full.indexOf(`## ${p.name} (`));
+    expect(names).toEqual([...names].sort((a, b) => a - b));
+    expect(names.every((i) => i >= 0)).toBe(true);
   });
 });

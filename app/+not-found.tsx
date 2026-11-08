@@ -10,7 +10,7 @@ const SECTIONS = [
   { href: '/debats', label: 'Débats' },
 ] as const;
 
-const META = nonIndexableMeta('Page introuvable', '/404');
+const META = nonIndexableMeta('Page introuvable', '/404', { canonical: false });
 
 export default function NotFoundScreen() {
   return (

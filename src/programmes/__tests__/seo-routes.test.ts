@@ -8,6 +8,7 @@ import {
   legalEntryFactory,
 } from '@/src/programmes/models/legal/legal.factory';
 import { partyFactory } from '@/src/programmes/models/party.factory';
+import { foldedSnippets } from '@/src/programmes/models/seo/folded-content';
 import {
   expandRoutes,
   SITE_ROUTES,
@@ -218,5 +219,23 @@ describe('Feature: registre des routes', () => {
     expect(find(urls, '/partis/alpha/procedures-judiciaires')?.lastmod).toBe('2026-11-04');
     expect(find(urls, '/partis/zeta/procedures-judiciaires')?.lastmod).toBe('2026-10-20');
     expect(find(urls, '/partis/zeta/histoire')?.lastmod).toBe('2026-10-01');
+  });
+});
+
+describe('Feature: contenu replié attendu dans le HTML', () => {
+  const catalog = buildStaticCatalog();
+
+  it('should expect one folded fragment on guide, debate and programme pages', () => {
+    for (const path of [
+      '/comprendre/comment-voter',
+      '/debats/economie',
+      '/partis/rn/programme-2027',
+    ]) {
+      expect(foldedSnippets(catalog, path)).toHaveLength(1);
+    }
+  });
+
+  it('should expect nothing on pages without folded content', () => {
+    expect(foldedSnippets(catalog, '/partis')).toEqual([]);
   });
 });

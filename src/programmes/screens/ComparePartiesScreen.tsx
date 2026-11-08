@@ -18,6 +18,7 @@ import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { parseCompareParams, type CompareTheme } from '@/src/programmes/models/compare.service';
 import { displayName } from '@/src/programmes/models/presentation.service';
+import { COMPARE_GUIDE_TEXT, GUIDE_ANCHORS } from '@/src/programmes/models/reading-guides.copy';
 import { compareViewModel } from '@/src/programmes/view-models/compare.view-model';
 
 type Option = { id: string; name: string; shortName: string; color: string };
@@ -272,12 +273,8 @@ export default function ComparePartiesScreen() {
             {themes.map((block) => (
               <ThemeBlock key={block.theme.id} block={block} names={names} />
             ))}
-            <ReadingGuide>
-              <Text style={{ fontSize: 16, lineHeight: 25 }}>
-                Positions établies d'après les programmes, les votes et les déclarations des partis.
-                Chaque position renvoie à ses sources. Les partis sont présentés dans l'ordre où
-                vous les avez choisis, sans score ni classement.
-              </Text>
+            <ReadingGuide anchor={GUIDE_ANCHORS.compare}>
+              <Text style={{ fontSize: 16, lineHeight: 25 }}>{COMPARE_GUIDE_TEXT}</Text>
             </ReadingGuide>
           </>
         ) : (

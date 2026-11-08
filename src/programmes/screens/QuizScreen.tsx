@@ -134,7 +134,7 @@ export default function QuizScreen() {
               {vm.question.statement}
             </Text>
 
-            <Accordion title="Besoin d'un coup de pouce ?">
+            <Accordion headingLevel={2} title="Besoin d'un coup de pouce ?">
               <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.question.help}</Text>
             </Accordion>
 

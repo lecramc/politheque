@@ -38,6 +38,7 @@ import {
 import { chartLegend } from '@/src/programmes/models/chart-legend.service';
 import { MIN_AXIS_COUNT, MIN_COMPARED } from '@/src/programmes/models/matching.service';
 import type { Source } from '@/src/programmes/models/programme.model';
+import { GUIDE_ANCHORS, RESULTS_GUIDE_INTRO } from '@/src/programmes/models/reading-guides.copy';
 import { howToReadBullets, RESULTS_INTRO, TIED_LABEL } from '@/src/programmes/models/results.copy';
 import { nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
@@ -199,14 +200,13 @@ export default function ResultsScreen() {
         <View style={{ gap: effects.spacing.xxs }}>
           <Text variant="title">Vos résultats</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 16 }}>{RESULTS_INTRO}</Text>
-          <ReadingGuide label="Comment lire ces résultats">
-            <Text style={{ fontSize: 16, lineHeight: 25 }}>Comment lire ces résultats :</Text>
+          <ReadingGuide label="Comment lire ces résultats" anchor={GUIDE_ANCHORS.results}>
+            <Text style={{ fontSize: 16, lineHeight: 25 }}>{RESULTS_GUIDE_INTRO}</Text>
             {howToReadBullets(MIN_COMPARED, vm.margin).map((bullet) => (
               <Text key={bullet} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
                 {`• ${bullet}`}
               </Text>
             ))}
-            <TextLink href="/methodologie">Comment ça marche</TextLink>
           </ReadingGuide>
         </View>
 

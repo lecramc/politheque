@@ -6,6 +6,8 @@ export type HtmlAuditExpectation = {
   content?: boolean;
   /** Alias d'une autre page : le canonical (et og:url) pointe vers cette adresse, pas vers `path`. */
   canonicalPath?: string;
+  /** Fragments de texte qui doivent figurer dans la page, même repliés (espaces normalisés). */
+  mustContain?: string[];
 };
 export type HtmlAuditIssue = { path: string; rule: string; detail: string };
 
@@ -22,6 +24,12 @@ const decodeEntities = (text: string) =>
 
 const attr = (tag: string, name: string) =>
   decodeEntities(new RegExp(`\\b${name}="([^"]*)"`).exec(tag)?.[1] ?? '');
+
+/** Texte brut d'un HTML : sans balises, entités décodées, toutes les espaces (insécables comprises) réduites. */
+const plainText = (html: string) =>
+  decodeEntities(html.replace(/<[^>]+>/g, ''))
+    .replace(/[\s\u00A0\u202F]+/g, ' ')
+    .trim();
 
 const tags = (html: string, re: RegExp) => html.match(re) ?? [];
 
@@ -87,6 +95,15 @@ export function auditHtml(html: string, expected: HtmlAuditExpectation): HtmlAud
   if (/\bhref="[^"]*onglet=/.test(html)) report('onglet', 'lien interne portant ?onglet=');
 
   if (expected.content && count(html, /<h2[\s>]/g) === 0) report('h2', 'aucun <h2>');
+
+  if (expected.mustContain?.length) {
+    const text = plainText(html);
+    for (const fragment of expected.mustContain) {
+      if (!text.includes(plainText(fragment))) {
+        report('contenu-replie', `texte absent du HTML : « ${fragment} »`);
+      }
+    }
+  }
 
   return issues;
 }

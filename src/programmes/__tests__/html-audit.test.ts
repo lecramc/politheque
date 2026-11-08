@@ -81,6 +81,21 @@ describe('Feature: contrôle du HTML exporté', () => {
     expect(rules(html)).not.toContain('description');
   });
 
+  it('should find a folded sentence in the HTML despite tags, entities and non-breaking spaces', () => {
+    const html = page({
+      body: '<div style="display:none"><span>Délai\u00a0: l&#x27;élection <b>a lieu</b>   le dimanche</span></div>',
+    });
+    expect(
+      rules(html, { ...expected, mustContain: ["Délai : l'élection a lieu le dimanche"] })
+    ).toEqual([]);
+  });
+
+  it('should report a folded sentence that is missing from the HTML', () => {
+    expect(rules(page(), { ...expected, mustContain: ['phrase repliée absente'] })).toContain(
+      'contenu-replie'
+    );
+  });
+
   it('should not require a single h1 on a non-indexable page', () => {
     const html = page().replace('<h1>Parti</h1>', '').replace('index, follow', 'noindex, follow');
     expect(rules(html, { ...expected, indexable: false })).not.toContain('h1');

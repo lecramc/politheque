@@ -87,6 +87,28 @@ describe('Feature: données structurées', () => {
     });
   });
 
+  it('should omit datePublished when the source date is a consultation date', () => {
+    const consulted: Source = {
+      title: 'Texte intégral de la Constitution',
+      url: 'https://c.fr',
+      date: '2026-11-03',
+      kind: 'statistique',
+    };
+    const [node] = citationNodes([consulted]);
+    expect(node).not.toHaveProperty('datePublished');
+  });
+
+  it('should keep datePublished for a dated publication', () => {
+    const [node] = citationNodes([{ ...source('https://d.fr'), kind: 'presse', date: '2026-01' }]);
+    expect(node).toHaveProperty('datePublished', '2026-01');
+  });
+
+  it('should give the site an alternate name and the organization a description', () => {
+    expect(websiteNode()).toMatchObject({ alternateName: [APP_NAME] });
+    expect(organizationNode(true)).toHaveProperty('description');
+    expect(organizationNode(false)).not.toHaveProperty('description');
+  });
+
   it('should build an article with dateModified, citations and no datePublished', () => {
     const node = articleNode({
       path: '/partis/rn',
