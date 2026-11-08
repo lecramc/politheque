@@ -23,6 +23,7 @@ import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { PartyPlacement } from '@/src/programmes/components/PartyPlacement';
 import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
 import { ResultsPrint } from '@/src/programmes/components/ResultsPrint';
+import { SeparatingQuestions } from '@/src/programmes/components/SeparatingQuestions';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { STANCE_LABEL } from '@/src/programmes/components/StanceBadge';
 import { StanceLegend } from '@/src/programmes/components/StanceLegend';
@@ -236,19 +237,10 @@ export default function ResultsScreen() {
                       <Text variant="caption" headingLevel={3}>
                         Ce qui les départage
                       </Text>
-                      {vm.separating.map((item) => (
-                        <View key={item.id} style={{ gap: effects.spacing.xxs }}>
-                          <Text style={fonts.bold}>{item.statement}</Text>
-                          <Text variant="secondary">Vous : {item.userLabel}</Text>
-                          {item.positions.map((position) => (
-                            <Text key={position.name} variant="secondary">
-                              {position.name} : {STANCE_LABEL[String(position.stance)]}
-                            </Text>
-                          ))}
-                        </View>
-                      ))}
+                      <SeparatingQuestions items={vm.separating} />
                     </View>
                   ) : null}
+                  {vm.leadGroup.pointer ? <Text>{vm.leadGroup.pointer}</Text> : null}
                 </Card>
               ) : null}
               <Text style={{ color: colors.text.secondary, fontSize: 14 }}>

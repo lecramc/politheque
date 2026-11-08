@@ -80,6 +80,34 @@ describe('Feature: présentation des résultats', () => {
     expect(vm.separating[0].positions.map((p) => p.name)).toEqual(['Abel', 'Bravo']);
   });
 
+  it('should not separate nor list a leading group of four parties or more', async () => {
+    const vm = await results(
+      ['a', 'b', 'c', 'd'].map((id, index) =>
+        partyFactory({
+          id,
+          name: `Parti ${id}`,
+          stanceValues: stances(2, { q1: index % 2 === 0 ? 0 : 2 }),
+        })
+      )
+    );
+    expect(vm.leadGroup.broad).toBe(true);
+    expect(vm.leadGroup.sentence).toContain('proches de 4 partis de sensibilités différentes');
+    expect(vm.leadGroup.sentence).not.toContain('Parti a');
+    expect(vm.separating).toEqual([]);
+    expect(vm.leadGroup.pointer).toContain('« Ma carte »');
+  });
+
+  it('should keep the compact separation for a leading group of two or three parties', async () => {
+    const vm = await results(
+      ['a', 'b', 'c'].map((id, index) =>
+        partyFactory({ id, name: `Parti ${id}`, stanceValues: stances(2, { q1: index }) })
+      )
+    );
+    expect(vm.leadGroup.broad).toBe(false);
+    expect(vm.leadGroup.pointer).toBeNull();
+    expect(vm.separating[0].positions).toHaveLength(3);
+  });
+
   it('should flag a party compared on less than 80 % of the answers, with a warning', async () => {
     const vm = await results([
       partyFactory({

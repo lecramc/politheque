@@ -1,4 +1,6 @@
 import {
+  BROAD_GROUP_POINTER,
+  BROAD_GROUP_SIZE,
   fewComparedNote,
   leadGroupSentence,
   methodSentences,
@@ -15,6 +17,24 @@ describe('Feature: phrases de la page de résultats', () => {
       "Vos réponses sont proches de PS et Les Écologistes, sans qu'on puisse les départager : l'écart entre eux est inférieur à la marge de ± 5 points."
     );
     expect(leadGroupSentence(['A', 'B', 'C'], 7)).toContain('A, B et C');
+  });
+
+  it('should not list the parties when four or more are in the margin', () => {
+    const sentence = leadGroupSentence(['A', 'B', 'C', 'D', 'E', 'F', 'G'], 9);
+    expect(sentence).toBe(
+      'Vos réponses sont proches de 7 partis de sensibilités différentes : aucun ne se détache nettement (écart inférieur à la marge de ± 9 points).'
+    );
+    expect(sentence).not.toContain('A,');
+    expect(leadGroupSentence(['A', 'B', 'C', 'D'], 5)).toContain('proches de 4 partis');
+  });
+
+  it('should point to the map and detail tabs when too many parties are in the margin', () => {
+    expect(BROAD_GROUP_POINTER).toContain('« Ma carte »');
+    expect(BROAD_GROUP_POINTER).toContain('« Détail »');
+  });
+
+  it('should switch to the broad presentation from four parties', () => {
+    expect(BROAD_GROUP_SIZE).toBe(4);
   });
 
   it('should say when a single party stands out', () => {

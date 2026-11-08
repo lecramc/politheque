@@ -28,6 +28,8 @@ import {
 } from '@/src/programmes/models/results-recap.service';
 import {
   ANSWERS_NOT_KEPT,
+  BROAD_GROUP_POINTER,
+  BROAD_GROUP_SIZE,
   fewComparedNote,
   leadGroupSentence,
   marginSentence,
@@ -74,14 +76,17 @@ export const resultsViewModel = ({ dispatch, router }: { dispatch: AppDispatch; 
         .map((id) => parties.find((p) => p.id === id)!)
         .sort((a, b) => a.name.localeCompare(b.name, 'fr'));
       const leaderNames = leaderParties.map((p) => p.name);
-      const separating = separatingQuestions(answers, leaderParties, questions).map((item) => ({
+      const broadLeadGroup = leaderParties.length >= BROAD_GROUP_SIZE;
+      const separating = (
+        broadLeadGroup ? [] : separatingQuestions(answers, leaderParties, questions)
+      ).map((item) => ({
         id: item.question.id,
         statement: item.question.statement,
         userLabel: answerLabel(item.userValue),
-        positions: item.stances.map((s) => ({
-          name: parties.find((p) => p.id === s.partyId)!.name,
-          stance: s.stance,
-        })),
+        positions: item.stances.map((s) => {
+          const party = parties.find((p) => p.id === s.partyId)!;
+          return { name: party.name, party, stance: s.stance };
+        }),
       }));
 
       const personalLink = buildPersonalLink(SITE_URL, answers);
@@ -127,6 +132,9 @@ export const resultsViewModel = ({ dispatch, router }: { dispatch: AppDispatch; 
         /** Partis dont l'écart avec le premier est inférieur à la marge (vide sans score). */
         leadGroup: {
           names: leaderNames,
+          /** Quatre partis ou plus dans la marge : ni énumération, ni « ce qui les départage ». */
+          broad: broadLeadGroup,
+          pointer: broadLeadGroup ? BROAD_GROUP_POINTER : null,
           sentence: leaderNames.length ? leadGroupSentence(leaderNames, presented.margin) : null,
         },
         /** « Ce qui les départage » : questions où les partis de tête diffèrent le plus. */

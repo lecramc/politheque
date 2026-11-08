@@ -8,10 +8,18 @@ const joinNames = (names: string[]) =>
 export const marginSentence = (margin: number) =>
   `Les pourcentages sont arrondis et approximatifs : un écart de moins de ± ${margin} points ne permet pas de départager deux partis.`;
 
+/** À partir de ce nombre de partis dans la marge, on ne les énumère plus et on ne les départage plus. */
+export const BROAD_GROUP_SIZE = 4;
+
+export const BROAD_GROUP_POINTER =
+  'Pour comparer ces partis question par question, ouvrez les onglets « Ma carte » et « Détail ».';
+
 export const leadGroupSentence = (names: string[], margin: number) =>
-  names.length > 1
-    ? `Vos réponses sont proches de ${joinNames(names)}, sans qu'on puisse les départager : l'écart entre eux est inférieur à la marge de ± ${margin} points.`
-    : `${names[0]} se détache : son avance sur les autres partis dépasse la marge de ± ${margin} points.`;
+  names.length >= BROAD_GROUP_SIZE
+    ? `Vos réponses sont proches de ${names.length} partis de sensibilités différentes : aucun ne se détache nettement (écart inférieur à la marge de ± ${margin} points).`
+    : names.length > 1
+      ? `Vos réponses sont proches de ${joinNames(names)}, sans qu'on puisse les départager : l'écart entre eux est inférieur à la marge de ± ${margin} points.`
+      : `${names[0]} se détache : son avance sur les autres partis dépasse la marge de ± ${margin} points.`;
 
 export const fewComparedNote = (unknownCount: number) =>
   `Position inconnue sur ${unknownCount} de vos réponses : le score porte sur moins de sujets et peut paraître plus élevé.`;
