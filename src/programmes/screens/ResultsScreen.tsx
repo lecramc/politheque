@@ -7,6 +7,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
+import { TextLink } from '@/components/ui/TextLink';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { appDispatch } from '@/src/core/store/create-store';
@@ -34,6 +35,7 @@ import {
 import { chartLegend } from '@/src/programmes/models/chart-legend.service';
 import { MIN_AXIS_COUNT } from '@/src/programmes/models/matching.service';
 import type { Source } from '@/src/programmes/models/programme.model';
+import { TIED_LABEL } from '@/src/programmes/models/results.copy';
 import { nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { quizActions } from '@/src/programmes/store/quiz.slice';
 import { resultsViewModel } from '@/src/programmes/view-models/results.view-model';
@@ -58,13 +60,9 @@ const CHES_SOURCES: Source[] = [
   },
 ];
 
-/** En dessous, l'arc de proximité affiche sa part « non comparée » en pointillés. */
-const FEW_COMPARED = 15;
-
 export default function ResultsScreen() {
   const vm = useViewModel(resultsViewModel);
   const { colors, effects, fonts } = useTheme();
-  const [revealed, setRevealed] = useState(false);
   const [tab, setTab] = useState<Tab>('proximite');
   const [alphabetical, setAlphabetical] = useState(false);
   const [themeFilter, setThemeFilter] = useState<string | null>(null);
@@ -80,7 +78,6 @@ export default function ResultsScreen() {
     const decoded = decodeAnswers(code);
     if (!decoded.ok) return setLink('invalid');
     dispatch(quizActions.loadAnswers(decoded.answers));
-    setRevealed(true);
     setLink('loaded');
   }, [dispatch]);
   const ready = vm.ready && link !== 'checking';
@@ -97,12 +94,12 @@ export default function ResultsScreen() {
   }, [vm.ranking]);
   const revealPlayed = useRef(false);
   useEffect(() => {
-    if (revealed && vm.ready) revealPlayed.current = true;
-  }, [revealed, vm.ready]);
+    if (ready && vm.answeredCount > 0) revealPlayed.current = true;
+  }, [ready, vm.answeredCount]);
 
   if (ready && vm.answeredCount === 0) {
     return (
-      <Page meta={RESULTS_META} back={{ label: 'Questionnaire', href: '/me-situer' }}>
+      <Page meta={RESULTS_META} back={{ label: 'Me situer', href: '/me-situer' }}>
         <View
           style={{
             alignItems: 'center',
@@ -110,12 +107,20 @@ export default function ResultsScreen() {
             paddingVertical: effects.spacing.xl,
           }}
         >
-          <Text style={{ ...fonts.display, fontSize: 24, textAlign: 'center' }}>
-            Pas encore de réponses
-          </Text>
-          <Text style={{ color: colors.text.secondary, textAlign: 'center', fontSize: 17 }}>
-            Répondez à quelques affirmations pour voir de quels programmes vous êtes proche.
-          </Text>
+          {vm.resultsLost ? (
+            <Text role="status" style={{ textAlign: 'center', fontSize: 17 }}>
+              {vm.resultsLostMessage}
+            </Text>
+          ) : (
+            <>
+              <Text variant="display" style={{ textAlign: 'center' }}>
+                Pas encore de réponses
+              </Text>
+              <Text style={{ color: colors.text.secondary, textAlign: 'center', fontSize: 17 }}>
+                Répondez à quelques affirmations pour voir de quels programmes vous êtes proche.
+              </Text>
+            </>
+          )}
           {link === 'invalid' ? (
             <Text role="alert" style={{ textAlign: 'center', fontSize: 16 }}>
               {INVALID_LINK_MESSAGE}
@@ -126,52 +131,6 @@ export default function ResultsScreen() {
               Commencer le questionnaire →
             </Text>
           </Link>
-        </View>
-      </Page>
-    );
-  }
-
-  if (ready && !revealed) {
-    return (
-      <Page meta={RESULTS_META} focus back={{ label: 'Questionnaire', href: '/me-situer' }}>
-        <View
-          style={{
-            alignItems: 'center',
-            gap: effects.spacing.md,
-            paddingVertical: effects.spacing.xxl,
-          }}
-        >
-          <Arc
-            value={1}
-            size={200}
-            strokeWidth={16}
-            accessibilityLabel={`${vm.answeredCount} réponses`}
-          >
-            <Text
-              style={{ ...fonts.displayBold, fontSize: 52, lineHeight: 58, color: colors.tint }}
-            >
-              {vm.answeredCount}
-            </Text>
-            <Text style={{ color: colors.text.secondary }}>réponses</Text>
-          </Arc>
-          <Text style={{ ...fonts.display, fontSize: 26, textAlign: 'center' }}>
-            Vos réponses sont prêtes
-          </Text>
-          <Text
-            style={{
-              color: colors.text.secondary,
-              textAlign: 'center',
-              fontSize: 17,
-              maxWidth: 420,
-            }}
-          >
-            Vous allez voir votre proximité avec les positions publiques de chaque parti.
-          </Text>
-          <View style={{ alignSelf: 'stretch' }}>
-            <Button variant="brand" onPress={() => setRevealed(true)}>
-              Voir mes résultats
-            </Button>
-          </View>
         </View>
       </Page>
     );
@@ -220,7 +179,7 @@ export default function ResultsScreen() {
     <Page
       meta={RESULTS_META}
       loading={!ready}
-      back={{ label: 'Questionnaire', href: '/me-situer' }}
+      back={{ label: 'Me situer', href: '/me-situer' }}
       railOnMobile="hidden"
       rail={
         <>
@@ -240,17 +199,12 @@ export default function ResultsScreen() {
             <Text role="alert">{INVALID_LINK_MESSAGE}</Text>
           </Card>
         ) : null}
-        <View style={{ gap: 8 }}>
+        <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title">Vos résultats</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 16 }}>
             Proximité avec les positions publiques des partis, pas une consigne de vote. Un parti
             n'est noté que si au moins 5 de vos réponses peuvent être comparées à ses positions.{' '}
-            <Link
-              href="/methodologie"
-              style={{ color: colors.tint, textDecorationLine: 'underline' }}
-            >
-              Comment ça marche
-            </Link>
+            <TextLink href="/methodologie">Comment ça marche</TextLink>
           </Text>
         </View>
 
@@ -271,11 +225,38 @@ export default function ResultsScreen() {
         <TabPanel id={tab}>
           {tab === 'proximite' ? (
             <View style={{ gap: effects.spacing.sm }}>
+              {vm.leadGroup.sentence ? (
+                <Card>
+                  <Text variant="caption" headingLevel={2}>
+                    Groupe de tête
+                  </Text>
+                  <Text>{vm.leadGroup.sentence}</Text>
+                  {vm.separating.length ? (
+                    <View style={{ gap: effects.spacing.xs }}>
+                      <Text variant="caption" headingLevel={3}>
+                        Ce qui les départage
+                      </Text>
+                      {vm.separating.map((item) => (
+                        <View key={item.id} style={{ gap: effects.spacing.xxs }}>
+                          <Text style={fonts.bold}>{item.statement}</Text>
+                          <Text variant="secondary">Vous : {item.userLabel}</Text>
+                          {item.positions.map((position) => (
+                            <Text key={position.name} variant="secondary">
+                              {position.name} : {STANCE_LABEL[String(position.stance)]}
+                            </Text>
+                          ))}
+                        </View>
+                      ))}
+                    </View>
+                  ) : null}
+                </Card>
+              ) : null}
               <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                Les pourcentages ne portent pas sur le même nombre de questions selon les partis :
-                un parti qui s'exprime peu est comparé sur moins de sujets.
+                {vm.marginSentence} Les pourcentages ne portent pas sur le même nombre de questions
+                selon les partis : un parti qui s'exprime peu est comparé sur moins de sujets, ce
+                qui peut gonfler son score.
               </Text>
-              <View style={{ flexDirection: 'row', gap: 8, alignItems: 'center' }}>
+              <View style={{ flexDirection: 'row', gap: effects.spacing.xs, alignItems: 'center' }}>
                 <Text style={{ color: colors.text.secondary }}>Ordre :</Text>
                 {[
                   { id: false, label: 'Proximité' },
@@ -309,68 +290,85 @@ export default function ResultsScreen() {
                   </Pressable>
                 ))}
               </View>
-              {ranking.map(({ party, score, comparedCount, agree, disagree }) => (
-                <Accordion
-                  key={party.id}
-                  title={party.name}
-                  subtitle={`Comparé sur ${comparedCount} question${comparedCount > 1 ? 's' : ''}`}
-                  leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
-                  trailing={
-                    score === null ? (
-                      <Text
-                        style={{
-                          width: 84,
-                          fontSize: 12,
-                          color: colors.text.secondary,
-                          textAlign: 'right',
-                        }}
-                      >
-                        Pas assez de positions connues
+              {ranking.map(
+                ({
+                  party,
+                  score,
+                  comparedCount,
+                  agree,
+                  disagree,
+                  tied,
+                  fewCompared,
+                  fewComparedNote,
+                }) => (
+                  <Accordion
+                    key={party.id}
+                    title={party.name}
+                    subtitle={`Comparé sur ${comparedCount} question${comparedCount > 1 ? 's' : ''}${tied ? ` · ${TIED_LABEL}` : ''}`}
+                    leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
+                    trailing={
+                      score === null ? (
+                        <Text
+                          style={{
+                            width: 84,
+                            fontSize: 12,
+                            color: colors.text.secondary,
+                            textAlign: 'right',
+                          }}
+                        >
+                          Pas assez de positions connues
+                        </Text>
+                      ) : (
+                        <Arc
+                          value={score / 100}
+                          size={64}
+                          strokeWidth={7}
+                          delay={revealDelays[party.id] ?? 0}
+                          animate={!revealPlayed.current}
+                          dashedRemainder={fewCompared}
+                          accessibilityLabel={`Proximité avec ${party.name} : ${score} %, sur ${comparedCount} questions`}
+                        >
+                          <Text
+                            plainDigits
+                            style={{ ...fonts.bold, fontSize: 14, color: colors.tint }}
+                          >
+                            {score} %
+                          </Text>
+                        </Arc>
+                      )
+                    }
+                  >
+                    {fewComparedNote ? (
+                      <Text style={{ fontSize: 14, color: colors.text.secondary }}>
+                        {fewComparedNote}
                       </Text>
-                    ) : (
-                      <Arc
-                        value={score / 100}
-                        size={64}
-                        strokeWidth={7}
-                        delay={revealDelays[party.id] ?? 0}
-                        animate={!revealPlayed.current}
-                        dashedRemainder={comparedCount < FEW_COMPARED}
-                        accessibilityLabel={`Proximité avec ${party.name} : ${score} %, sur ${comparedCount} questions`}
-                      >
-                        <Text style={{ ...fonts.bold, fontSize: 14, color: colors.tint }}>
-                          {score} %
-                        </Text>
-                      </Arc>
-                    )
-                  }
-                >
-                  {agree.length ? (
-                    <View style={{ gap: 4 }}>
-                      <Text variant="caption">Vous êtes proches sur</Text>
-                      {agree.slice(0, 3).map((q) => (
-                        <Text key={q.id} style={{ fontSize: 15 }}>
-                          • {q.statement}
-                        </Text>
-                      ))}
-                    </View>
-                  ) : null}
-                  {disagree.length ? (
-                    <View style={{ gap: 4 }}>
-                      <Text variant="caption">Vous divergez sur</Text>
-                      {disagree.slice(0, 3).map((q) => (
-                        <Text key={q.id} style={{ fontSize: 15 }}>
-                          • {q.statement}
-                        </Text>
-                      ))}
-                    </View>
-                  ) : null}
-                  <Link href={{ pathname: '/partis/[id]', params: { id: party.id } }}>
-                    <Text style={{ color: colors.tint, ...fonts.bold }}>
-                      Voir la fiche du parti →
-                    </Text>
-                  </Link>
-                </Accordion>
-              ))}
+                    ) : null}
+                    {agree.length ? (
+                      <View style={{ gap: effects.spacing.xxs }}>
+                        <Text variant="caption">Vous êtes proches sur</Text>
+                        {agree.slice(0, 3).map((q) => (
+                          <Text key={q.id} style={{ fontSize: 15 }}>
+                            • {q.statement}
+                          </Text>
+                        ))}
+                      </View>
+                    ) : null}
+                    {disagree.length ? (
+                      <View style={{ gap: effects.spacing.xxs }}>
+                        <Text variant="caption">Vous divergez sur</Text>
+                        {disagree.slice(0, 3).map((q) => (
+                          <Text key={q.id} style={{ fontSize: 15 }}>
+                            • {q.statement}
+                          </Text>
+                        ))}
+                      </View>
+                    ) : null}
+                    <TextLink href={`/partis/${party.id}`} standalone>
+                      Voir la fiche du parti
+                    </TextLink>
+                  </Accordion>
+                )
+              )}
             </View>
           ) : null}
 
@@ -389,7 +387,11 @@ export default function ResultsScreen() {
                     <View
                       key={party.id}
                       role="listitem"
-                      style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}
+                      style={{
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: effects.spacing.xs,
+                      }}
                     >
                       <PartyDot color={party.color} size={14} />
                       <Text style={{ fontSize: 14, flexShrink: 1 }}>
@@ -438,7 +440,12 @@ export default function ResultsScreen() {
                 />
               ))}
               <View
-                style={{ flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' }}
+                style={{
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  gap: effects.spacing.xs,
+                  flexWrap: 'wrap',
+                }}
               >
                 <Text style={{ flexShrink: 1, fontSize: 14, color: colors.text.secondary }}>
                   Contrôle de cohérence : l'ordre des partis a été comparé à celui d'une enquête
@@ -463,18 +470,24 @@ export default function ResultsScreen() {
                 <ScrollView
                   horizontal
                   showsHorizontalScrollIndicator={false}
-                  contentContainerStyle={{ gap: 8 }}
+                  // Marge intérieure (compensée à l'extérieur) : l'anneau de focus n'est pas rogné.
+                  style={{ margin: -effects.spacing.xs }}
+                  contentContainerStyle={{ gap: effects.spacing.xs, padding: effects.spacing.xs }}
                 >
                   {themeChips.map(themeChip)}
                 </ScrollView>
               </Only>
-              <Only from="md" style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+              <Only
+                from="md"
+                style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}
+              >
                 {themeChips.map(themeChip)}
               </Only>
               {details.map(({ question, userValue, important, positions }) => (
                 <Accordion
                   key={question.id}
                   title={question.statement}
+                  titleWeight="regular"
                   subtitle={`Vous : ${STANCE_LABEL[String(userValue)]}${important ? ' (compte double)' : ''}`}
                 >
                   {positions.map(({ party, stance }) => (

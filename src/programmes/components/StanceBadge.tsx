@@ -38,7 +38,7 @@ export function StanceBadge({
   variant?: 'inline' | 'cell';
   label?: 'short' | 'full';
 }) {
-  const { colors, fonts } = useTheme();
+  const { colors, effects, fonts } = useTheme();
   const key = String(stance);
   const strong = stance === 2 || stance === -2;
   const unknown = stance === null;
@@ -50,7 +50,7 @@ export function StanceBadge({
       style={{
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 8,
+        gap: effects.spacing.xs,
         flexShrink: variant === 'cell' ? 1 : 0,
         ...(variant === 'cell' ? { width: '100%' } : null),
       }}

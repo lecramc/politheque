@@ -66,17 +66,12 @@ export default function HomeScreen() {
   );
 
   const celebrate = focused ? vm.celebrations : NO_CELEBRATION;
+  const startHref = vm.nodes[0]?.href ?? '/parcours/les-bases';
   const passport = <PassportLink label={vm.passport.label} />;
   const privacy = <PrivacyNote onClear={() => setClearOpen(true)} />;
 
   return (
     <Page meta={meta} loading={!vm.loaded} template="hub">
-      {vm.news ? (
-        <Only below="lg">
-          <NewsBanner news={vm.news} variant="line" />
-        </Only>
-      ) : null}
-
       {/* Titre : un seul <h1>, dans le HTML statique comme au premier rendu client. */}
       <View {...tv('hdr-slot')} style={styles.header}>
         {vm.summary ? (
@@ -87,11 +82,11 @@ export default function HomeScreen() {
               </Enter>
             </Only>
             <Only from="lg">
-              <JourneyIntro />
+              <JourneyIntro startHref={startHref} />
             </Only>
           </>
         ) : (
-          <JourneyIntro />
+          <JourneyIntro startHref={startHref} />
         )}
       </View>
 
@@ -126,6 +121,12 @@ export default function HomeScreen() {
             />
           </Only>
           <JourneyArrival finished={vm.finished} animateIn={arriving} />
+          {/* L'élection passe sous le parcours (elle est déjà dans l'étape 5) ; dès 1024 px, dans le rail. */}
+          {vm.news ? (
+            <Only below="lg">
+              <NewsBanner news={vm.news} variant="line" />
+            </Only>
+          ) : null}
           <Only below="lg" style={{ gap: effects.spacing.md }}>
             {passport}
             {privacy}

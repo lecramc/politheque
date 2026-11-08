@@ -62,7 +62,7 @@ export const partyViewModel =
         const sections = party
           ? PARTY_SECTIONS.filter((s) =>
               availableSections(party, featuredId, legalPublished).includes(s.id)
-            ).map((s) => ({ id: s.id, label: s.tabLabel }))
+            ).map((s) => ({ id: s.id, label: s.tabLabel, longLabel: s.label }))
           : [];
         const context = party && catalog ? partyPageContext(party, catalog) : null;
         const sourcesBySection = Object.fromEntries(
@@ -122,6 +122,8 @@ export const partyViewModel =
                   stance: position?.stance ?? null,
                   justification: position?.justification ?? '',
                   sources: position?.sources ?? [],
+                  /** Comparaison du débat de la question, ce parti présélectionné (même règle pour les dix). */
+                  compareHref: `/debats/${q.theme}?comparer=${party.id}`,
                 };
               })
             : [];
@@ -145,38 +147,19 @@ export const partyViewModel =
           glanceIntro: catalog
             ? `${glance.length} questions, les mêmes pour les ${catalog.parties.length} partis. Touchez-en une pour voir pourquoi et les sources.`
             : '',
-          positionsLabel: `Ses positions sur les ${catalog?.questions.length ?? 0} questions`,
+          positionsLabel: `Voir les ${catalog?.questions.length ?? 0} positions`,
+          // Seul lien sans onglet propre ; l'histoire et le programme sont des onglets de la fiche.
           further:
-            party && catalog
+            party && catalog && party.history
               ? [
-                  ...(party.history
-                    ? [
-                        {
-                          key: 'histoire',
-                          title: 'Son histoire',
-                          subtitle: `Fondé en ${party.foundedYear} · ${party.history.timeline.length} dates clés`,
-                          href: partyHref(party.id, 'histoire'),
-                        },
-                        {
-                          key: 'definition',
-                          title: splitIdeals(party.history.ideals).others.length
-                            ? 'Comment il se définit, comment on le classe'
-                            : 'Comment on le classe',
-                          subtitle: null,
-                          href: partyHref(party.id, 'histoire'),
-                        },
-                      ]
-                    : []),
-                  ...(featured && party.candidacies[featured.id]
-                    ? [
-                        {
-                          key: 'programme',
-                          title: 'Son programme pour 2027',
-                          subtitle: `${catalog.themes.length} thèmes, chaque mesure sourcée`,
-                          href: partyHref(party.id, 'programme-2027'),
-                        },
-                      ]
-                    : []),
+                  {
+                    key: 'definition',
+                    title: splitIdeals(party.history.ideals).others.length
+                      ? 'Comment il se définit, comment on le classe'
+                      : 'Comment on le classe',
+                    subtitle: null,
+                    href: partyHref(party.id, 'histoire'),
+                  },
                 ]
               : [],
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,

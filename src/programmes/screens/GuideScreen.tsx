@@ -52,7 +52,7 @@ export default function GuideScreen() {
             style={{
               flexDirection: 'row',
               alignItems: 'center',
-              gap: 8,
+              gap: effects.spacing.xs,
               padding: effects.spacing.md,
               borderRadius: effects.borderRadius.small,
               backgroundColor: colors.tintSoft,
@@ -91,7 +91,7 @@ export default function GuideScreen() {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      gap: 14,
+                      gap: effects.spacing.smd,
                       minHeight: 64,
                       paddingHorizontal: effects.spacing.md,
                       paddingVertical: 12,
@@ -115,7 +115,7 @@ export default function GuideScreen() {
                         <Icon name={section.icon} variant="onGlass" size="small" />
                       )}
                     </View>
-                    <View style={{ flex: 1, gap: 2 }}>
+                    <View style={{ flex: 1, gap: effects.spacing.xxs }}>
                       <Text style={{ ...fonts.bold, fontSize: 16 }}>{section.title}</Text>
                       <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
                         {minutes} min{read ? ' · lu' : ''}

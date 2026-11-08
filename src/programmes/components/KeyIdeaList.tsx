@@ -1,10 +1,10 @@
-import { Link } from 'expo-router';
 import React, { useState } from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { TextLink } from '@/components/ui/TextLink';
 import { tv } from '@/src/core/web/tv';
 import { Card } from '@/src/programmes/components/Card';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
@@ -24,7 +24,7 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
 
   return (
     <View style={{ gap: effects.spacing.sm }}>
-      <View style={{ gap: 4 }}>
+      <View style={{ gap: effects.spacing.xxs }}>
         <SectionTitle>Ce qu'il propose</SectionTitle>
         {keyIdeas.programmeLine ? (
           <Text style={{ fontSize: 16, color: colors.text.secondary }}>
@@ -35,7 +35,7 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
       <View {...tv('grid-2')} role="list" style={{ gap: effects.spacing.sm }}>
         {keyIdeas.items.map((item) => (
           <View key={item.id} role="listitem" style={{ minWidth: 0 }}>
-            <Card style={{ gap: 8, flex: 1 }}>
+            <Card style={{ gap: effects.spacing.xs, flex: 1 }}>
               <Text style={{ ...fonts.bold, fontSize: 15, color: colors.tint }}>
                 {item.themeTitle}
               </Text>
@@ -48,7 +48,14 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
               </Text>
               <Text style={{ fontSize: 16, lineHeight: 24 }}>{item.text}</Text>
               <View
-                style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 4 }}
+                style={{
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  alignItems: 'center',
+                  gap: effects.spacing.xxs,
+                  // Collée au bas de la carte : alignée d'une carte à l'autre.
+                  marginTop: 'auto',
+                }}
               >
                 <Text style={{ fontSize: 14, color: colors.text.secondary }}>{item.origin} ·</Text>
                 <Pressable
@@ -76,12 +83,7 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
       </View>
       <Text style={{ fontSize: 14, color: colors.text.secondary }}>
         Les mots entre guillemets sont ceux du parti.{' '}
-        <Link
-          href="/methodologie"
-          style={{ ...fonts.bold, color: colors.tint, textDecorationLine: 'underline' }}
-        >
-          Comment ces 4 idées sont choisies
-        </Link>
+        <TextLink href="/methodologie">Comment ces 4 idées sont choisies</TextLink>
       </Text>
       <Sheet isOpen={!!open} onClose={() => setOpenId(null)} title={open?.title ?? ''}>
         {open ? <IdeaSheetBody item={open} partyName={partyName} /> : null}

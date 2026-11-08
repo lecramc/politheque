@@ -43,7 +43,7 @@ export function ResultsPrint({
   const small = { fontSize: 13, lineHeight: 18 } as const;
   return (
     <View {...tv('print-only')} style={{ gap: effects.spacing.md }}>
-      <View style={{ gap: 4 }}>
+      <View style={{ gap: effects.spacing.xxs }}>
         <Text style={{ ...fonts.display, fontSize: 26 }}>Mes résultats Travée</Text>
         <Text style={small}>{formatLongDate(date)}</Text>
         <Text style={small}>
@@ -52,7 +52,7 @@ export function ResultsPrint({
         </Text>
       </View>
 
-      <View {...tv('print-avoid')} style={{ gap: 4 }}>
+      <View {...tv('print-avoid')} style={{ gap: effects.spacing.xxs }}>
         <Text style={{ ...fonts.bold, fontSize: 18 }}>Proximité avec chaque parti</Text>
         {ranking.map(({ party, score, comparedCount }) => (
           <Text key={party.id} style={small}>
@@ -63,7 +63,7 @@ export function ResultsPrint({
         ))}
       </View>
 
-      <View {...tv('print-avoid')} style={{ gap: 4 }}>
+      <View {...tv('print-avoid')} style={{ gap: effects.spacing.xxs }}>
         <Text style={{ ...fonts.bold, fontSize: 18 }}>Ma carte</Text>
         <AxisChart axes={axes} user={userPosition} parties={partyPositions} />
         {axes.map((axis) => {
@@ -86,7 +86,7 @@ export function ResultsPrint({
         <View
           key={question.id}
           {...tv('print-avoid')}
-          style={{ gap: 2, borderTopWidth: 1, paddingTop: 6 }}
+          style={{ gap: effects.spacing.xxs, borderTopWidth: 1, paddingTop: 6 }}
         >
           <Text style={{ ...fonts.bold, ...small }}>
             {index + 1}. {question.statement}

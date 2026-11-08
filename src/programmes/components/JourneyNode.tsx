@@ -85,7 +85,9 @@ export function JourneyNode({
           gap: effects.spacing.sm,
           padding: effects.spacing.md,
           borderRadius: effects.borderRadius.small,
-          borderWidth: node.isNext ? 2 : 1,
+          // Bordure de 1 px partout : l'étape conseillée s'épaissit vers l'intérieur (pas de décalage).
+          borderWidth: 1,
+          ...(node.isNext ? { boxShadow: `inset 0 0 0 1px ${colors.tint}` } : null),
           borderColor: node.isNext ? colors.tint : colors.surface.border.primary,
           backgroundColor: colors.surface.primary,
         }}

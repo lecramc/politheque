@@ -1,0 +1,339 @@
+[
+  {
+    "question": "q07-immigration",
+    "partial": true,
+    "positions": {
+      "ps-place-publique": {
+        "stance": null,
+        "justification": "Le 24 mai 2026, Raphaël Glucksmann a proposé de confier la question des niveaux d'immigration à une convention citoyenne, dont les propositions seraient soumises au Parlement. Il ne fixe pas d'objectif de baisse ou de hausse de l'immigration légale.",
+        "sources": [
+          {
+            "title": "France 24 (AFP), « Glucksmann veut une convention citoyenne sur l'immigration »",
+            "url": "https://www.france24.com/fr/info-en-continu/20260524-glucksmann-veut-une-convention-citoyenne-sur-l-immigration",
+            "date": "2026-05-24",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "A3",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "La PPL n° 2785 (M. Bartolomé Lenoir, déposée le 12 mai 2026, rapport n° 2929 du 17 juin 2026) vise à « suspendre le regroupement familial et la réunification familiale des étrangers bénéficiaires de la protection subsidiaire ». Elle ne porte que sur une catégorie et n'est donc pas un texte de référence sur la réduction de l'immigration légale. Le dossier ne montre ni examen en séance ni scrutin public. Les amendements de suppression déposés par le groupe Socialistes (le texte est jugé « aussi inutile que dangereuse ») s'opposent à cette mesure précise, pas à l'objectif général. Le candidat renvoie la question à une convention citoyenne : null maintenu. Une seule amélioration : dater la position du candidat dans la justification."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A3] Piste non instruite faute de quota : vote du groupe Socialistes sur la PPL n° 2785 (suspension du regroupement familial pour les bénéficiaires de la protection subsidiaire, juin 2026) ; ce texte ne porte que sur une catégorie et ne suffirait pas comme texte de référence pour « réduire fortement l'immigration légale »."
+  },
+  {
+    "question": "q13-renouvelables",
+    "partial": true,
+    "positions": {
+      "nouvelle-energie": {
+        "stance": -1,
+        "justification": "Le programme dénonce une stratégie d'« énergies renouvelables » « dérogatoires aux prix du marché et aux règles d'urbanisme » et veut « mettre un terme à cette gabegie en faisant rentrer ces projets dans le droit commun », la priorité allant au nucléaire. Le 27 octobre 2026, David Lisnard dit ne pas s'opposer « aux énergies renouvelables, notamment au solaire en autoconsommation », et veut juger chaque investissement sur son rapport coût-bénéfice.",
+        "sources": [
+          {
+            "title": "Nouvelle Énergie – Programme, axe « Générer un renouveau civique » (page non datée, consultée en novembre 2026)",
+            "url": "https://www.unenouvelleenergie.fr/notre-programme/generer-un-renouveau-civique/",
+            "date": "2026-11",
+            "kind": "programme"
+          },
+          {
+            "title": "Nouvelle Énergie – « L'énergie doit réconcilier l'industrie et l'écologie » (Grand entretien de l'écologie avec François de Rugy et Laurent Lesage)",
+            "url": "https://www.unenouvelleenergie.fr/lenergie-doit-reconcilier-lindustrie-et-lecologie/",
+            "date": "2026-10-27",
+            "kind": "declaration"
+          },
+          {
+            "title": "Nouvelle Énergie – « Quel candidat défend une écologie pragmatique et non punitive ? » (entretien avec Tom Benoit du 29 novembre 2025)",
+            "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
+            "date": "2026-10-16",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "A1",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "confirmee",
+              "before": -1,
+              "after": -1,
+              "comment": "L'entretien du 27 octobre 2026 contient bien « Sans s'opposer aux énergies renouvelables, notamment au solaire en autoconsommation » et le critère coût-bénéfice ; le texte ne dit rien de l'éolien. Le programme contient « gabegie », le retour au « droit commun » et la priorité au nucléaire. L'énoncé dit « accélérer » : refuser le régime dérogatoire qui sert à accélérer, sans opposition de principe, donne bien −1. La justification est écrite pour le lecteur."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A1] −1 et non −2 : refus explicite du régime dérogatoire qui sert à accélérer éolien et solaire, et priorité au nucléaire, mais pas d'opposition de principe (« sans s'opposer aux énergies renouvelables »). Aucun mot sur l'éolien en tant que tel. Le texte du programme n'est pas daté : je l'ai daté « 2026-11 » (consultation), comme les autres fiches NE. La position AMF de 2022 (« la loi ne doit pas se faire contre les maires ») porte sur la concertation et n'a pas été retenue."
+  },
+  {
+    "question": "q15-medecins",
+    "partial": true,
+    "positions": {
+      "reconquete": {
+        "stance": -2,
+        "justification": "Pendant la campagne de 2022, Éric Zemmour a écarté toute régulation de l'installation : « Il n'est pas question de remettre en cause la liberté d'installation, que ce soit par la contrainte dans les secteurs sous-dotés ou par un conventionnement sélectif », et proposait à la place une majoration de la consultation dans les zones « désertifiées » (entretien du 1er avril 2022). Position de 2022 ; Reconquête n'a pas de groupe à l'Assemblée.",
+        "sources": [
+          {
+            "title": "Le Quotidien du médecin, « Éric Zemmour (Reconquête) : \"Un conventionnement préférentiel pourra être mis en place\" »",
+            "url": "https://cancerologie.lequotidiendumedecin.fr/actus-medicales/politique-de-sante/eric-zemmour-reconquete-un-conventionnement-preferentiel-pourra-etre-mis-en-place",
+            "date": "2022-04-01",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "A2",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Article du 1er avril 2022 (Julien Moschetti). Les deux citations y figurent : « Il n'est pas question de remettre en cause la liberté d'installation », « par un conventionnement sélectif, car la coercition n'est pas une solution ». Le conventionnement sélectif est le mécanisme visé par l'énoncé : refus explicite, donc −2. Même règle que pour les autres partis : une position de 2022 seule, datée dans la justification, est retenue. Reconquête est à −2 sur q29 sur une déclaration de 2022 de Zemmour, et le PCF à +2 sur q15 sur son programme de 2022 (avec des votes en plus). Une seule source, mais c'est un entretien direct dans la presse spécialisée nationale. Zemmour préside toujours Reconquête : règle 2 bis respectée."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A2] Le « conventionnement sélectif » qu'il refuse est précisément le mécanisme visé par l'énoncé (refuser l'installation conventionnée en zone bien dotée) : −2 plutôt que −1. Position datée d'avril 2022, à actualiser si le programme 2027 en parle."
+  },
+  {
+    "question": "q18-ukraine",
+    "partial": true,
+    "positions": {
+      "nouvelle-energie": {
+        "stance": 2,
+        "justification": "Sur le site de son parti, mis à jour le 16 octobre 2026, David Lisnard « demande de produire et de livrer des armes, sans se laisser entraîner dans des escalades verbales ». La même page reprend ses propos du 29 février 2024 sur Sud Radio : « l'intérêt de la France c'est que la Russie ne gagne pas cette guerre ». Nouvelle Énergie n'a ni groupe à l'Assemblée ni eurodéputé.",
+        "sources": [
+          {
+            "title": "Nouvelle Énergie – « Quelle est la position de David Lisnard sur la guerre en Ukraine ? » (mis à jour le 16 octobre 2026)",
+            "url": "https://www.unenouvelleenergie.fr/questions/quelle-est-la-position-de-david-lisnard-sur-la-guerre-en-ukraine/",
+            "date": "2026-10-16",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "A1",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "Valeur maintenue à +2. La page du parti (« Mis à jour le 16 octobre 2026 ») contient « demande de produire et de livrer des armes, sans se laisser entraîner dans des escalades verbales » : c'est la position que le parti affiche pour sa campagne, donc un texte du parti lui-même. Même règle que pour les autres : PS-Place publique est à +2 sur une déclaration de 2026 de son candidat (« renforcer l'aide »), Horizons et Renaissance sur des déclarations d'octobre 2026 et des votes. Une position de campagne explicite en faveur des livraisons vaut +2. En revanche, l'article Sud Radio du 29 février 2024 cité comme source ne contient ni « l'intérêt de la France c'est que la Russie ne gagne pas cette guerre » ni « il est temps de passer commande » : ces phrases viennent de la vidéo de l'émission, que la page du parti cite (YouTube) et que je n'ai pas ouverte. L'article ne parle que de l'envoi de troupes (« Nous n'avons pas les réserves de munitions pour envoyer notre armée »). J'ai retiré cette source et attribué les citations de 2024 à la page du parti. Une seule source, issue du parti, et une recherche de source indépendante sans résultat : à recouper si possible."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A1] La phrase « produire et livrer des armes » est une formulation du site du parti (déclaration de la campagne), pas une citation datée du candidat ; les citations datées sont de février 2024, quand il était LR. +2 retenu car la demande de livraison est explicite ; le vérificateur peut ramener à +1 s'il exige une citation directe postérieure à 2024. Le texte d'aide est correct."
+  },
+  {
+    "question": "q20-defense-europe",
+    "partial": true,
+    "positions": {
+      "pcf": {
+        "stance": -1,
+        "justification": "Le cahier « Paix & défense nationale » adopté par le PCF le 9 mai 2026 dénonce le plan « Rearm EU » et juge que « les 800 milliards de dépenses militaires supplémentaires décidés par l'UE sont destinés à enrichir les marchands de canons ». Il ne parle pas de l'emprunt commun en tant que tel. Le PCF n'a pas d'eurodéputé.",
+        "sources": [
+          {
+            "title": "PCF, Les cahiers thématiques des Jours heureux, « Paix & défense nationale – Regagner la paix ! »",
+            "url": "https://assets.nationbuilder.com/pcf/pages/41211/attachments/original/1779954906/document_cahier_paix_ppp_stc.pdf",
+            "date": "2026-05-09",
+            "kind": "programme"
+          },
+          {
+            "title": "PCF, CommunisteS n° 1095, 40e Congrès (Lille, 3-5 juillet 2026), texte de la Base commune, p. 30",
+            "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
+            "date": "2026-07-15",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "A3",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "modifiee",
+              "before": null,
+              "after": -1,
+              "comment": "Le cahier « Paix & défense nationale » (Les cahiers thématiques des Jours heureux) est bien le texte voté le 9 mai 2026, selon l'intervention de Fabien Roussel au Conseil national (PDF Interv_FR_090526). Il ne mentionne ni emprunt commun, ni dette commune, ni SAFE. Mais il condamne explicitement le plan européen dont SAFE (150 milliards d'euros de prêts financés par un emprunt de l'UE) fait partie : « Les 800 milliards de dépenses militaires supplémentaires décidés par l'UE sont destinés à enrichir les marchands de canons et constituent une nouvelle étape dans l'escalade guerrière » ; il dénonce aussi le plan « Rearm EU ». Opposition explicite au financement européen de la défense : −1, et non −2, car le mode de financement par emprunt n'est pas visé en tant que tel. C'est comparable à Reconquête (−1) et à LFI (−1), codés sur des votes contre des textes qui demandaient seulement d'« explorer » des obligations de défense. Point de jugement : si le coordinateur exige une mention de l'emprunt lui-même, garder null. Une recherche sur le programme Deffontaines 2024 n'a rien donné."
+            },
+            {
+              "verifier": "V6",
+              "verdict": "confirmee",
+              "before": null,
+              "after": -1,
+              "comment": "Citations exactes. Page 14 : « Les 800 milliards de dépenses militaires supplémentaires décidés par l'UE sont destinés à enrichir les marchands de canons et constituent une nouvelle étape dans l'escalade guerrière ». Page 5 : « Le plan « Rearm EU » de l'Union européenne, chiffré à 800 milliards d'euros », que le cahier dit « financé en grande partie par une ponction des fonds structurels ». Date confirmée par l'intervention de Fabien Roussel au Conseil national du 9 mai 2026, qui cite le cahier « sur la paix et la défense nationale voté ce samedi 9 mai ». Lien avec SAFE : selon la Commission (19 mars 2025), le plan ReArm Europe/Readiness 2030 « pourrait permettre de mobiliser près de 800 milliards d'euros », dont « 150 milliards d'euros de prêts aux États membres » au titre du nouvel instrument SAFE. L'énoncé précise que ces prêts sont financés par un emprunt de l'UE. Le PCF condamne donc le plan qui contient l'emprunt, mais pour sa finalité (« militarisation ») et non pour son mode de financement, qu'il décrit d'ailleurs autrement. C'est le même type de preuve que pour LFI (−1) et Reconquête (−1), codés sur un vote contre un texte d'ensemble qui demandait seulement d'« explorer » des obligations de défense : la note de q20-defense-europe.json réserve ±2 aux textes explicites sur l'emprunt ou SAFE. −1 est donc cohérent ; null serait plus sévère que la règle appliquée à LFI et Reconquête. Justification de V1 conforme. Ajout facultatif : préciser que « Rearm EU » comprend les prêts SAFE, avec la page de la Commission en source."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A1] Il juge le projet d'avion franco-allemand « l'échec d'une méthode » et défend la seule « souveraineté nationale » : cela ne dit rien de l'emprunt commun. Ne pas déduire. [A3] Le cahier thématique PCF « paix et défense nationale » voté le 9 mai 2026 (cité par Roussel au Conseil national) est la meilleure piste primaire ; non trouvé en ligne."
+  },
+  {
+    "question": "q24-proportionnelle",
+    "partial": true,
+    "positions": {
+      "nouvelle-energie": {
+        "stance": -1,
+        "justification": "Dans une chronique pour L'Opinion reprise par son parti le 9 octobre 2025, David Lisnard cite ceux qui veulent « réformer le mode de scrutin, introduire la proportionnelle intégrale », puis répond : « C'est une erreur. Les institutions de la Ve République sont solides. » Nouvelle Énergie n'a pas de groupe parlementaire.",
+        "sources": [
+          {
+            "title": "Nouvelle Énergie – « Légitimité légale, légitimité politique : la difficile équation présidentielle » (chronique de David Lisnard pour L'Opinion)",
+            "url": "https://www.unenouvelleenergie.fr/legitimite-legale-legitimite-politique-la-difficile-equation-presidentielle/",
+            "date": "2025-10-09",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "A1",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "modifiee",
+              "before": null,
+              "after": -1,
+              "comment": "Le PDF du discours de Saint-Raphaël est introuvable (une recherche ciblée ne le fait pas apparaître). Le texte intégral du discours de Bayeux ne parle pas du mode de scrutin. En revanche, dans une chronique pour L'Opinion reprise par son parti le 9 octobre 2025, David Lisnard range « introduire la proportionnelle intégrale » parmi les réformes de ceux qui réclament une VIe République, puis répond : « C'est une erreur. Les institutions de la Ve République sont solides. » Il rejette explicitement le recours à la proportionnelle (intégrale) comme remède, sans en faire le thème principal de son texte : −1 plutôt que −2. La « dose de proportionnelle » évoquée par un site de vulgarisation reste sans source primaire et contredit cette chronique : ne pas la retenir. Point de jugement : le coordinateur peut garder null s'il estime que le refus porte sur le diagnostic plus que sur la mesure."
+            },
+            {
+              "verifier": "V6",
+              "verdict": "confirmee",
+              "before": null,
+              "after": -1,
+              "comment": "Les citations, la date (9 octobre 2025), l'auteur (David Lisnard, président du parti et candidat déclaré, ce qui respecte la règle 2 bis) et la reprise d'une chronique pour L'Opinion sont exacts. Le refus vise un ensemble : « Certains réclament une VIe République. Ils veulent réformer le mode de scrutin, introduire la proportionnelle intégrale », ainsi qu'affaiblir l'exécutif. La réponse est « C'est une erreur. » C'est un rejet explicite mais indirect, qui porte sur la proportionnelle « intégrale » et pas sur une dose. Cela correspond à −1. Comparaison : LR est à −2 sur une « ferme opposition à l'introduction de la proportionnelle » du bureau politique (28 mai 2025), et Horizons à −2 parce qu'Édouard Philippe se dit « défavorable » à la proportionnelle elle-même. Ces deux refus portent sur la mesure et sont formulés directement, alors que celui de Lisnard ne l'est pas : −2 serait excessif. null ne se justifie pas non plus, puisque la proportionnelle intégrale est nommée puis rejetée. Un site de vulgarisation (ÉlyséeScope) prête à Lisnard une « dose de proportionnelle » sans citer aucune source primaire : à ne pas retenir. Il faudra rouvrir ce codage si une source primaire confirme cette dose. Justification de V1 conforme et prête pour le lecteur."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A1] Piste à vérifier par un humain : l'affirmation non sourcée d'une « dose de proportionnelle » (site de vulgarisation) ; je n'ai trouvé aucune source primaire. Le PDF du discours de Saint-Raphaël (3 juillet 2026) n'a pas pu être lu."
+  },
+  {
+    "question": "q27-temps-de-travail",
+    "partial": true,
+    "positions": {
+      "rn": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite de Marine Le Pen sur la durée légale du travail en vue de 2027. En 2017, elle s'engageait à « maintenir les 35h » et proposait de ne permettre d'allonger le temps de travail que par accord de branche, avec une « compensation salariale intégrale ».",
+        "sources": [
+          {
+            "title": "Institut Montaigne, « Temps de travail : que proposent les candidats ? »",
+            "url": "https://institutmontaigne.org/expressions/temps-de-travail-que-proposent-les-candidats",
+            "date": "2017-03-15",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Travailler plus ou moins ? Les enjeux d'un clivage fort de la campagne »",
+            "url": "https://www.publicsenat.fr/actualites/politique/travailler-plus-ou-moins-les-enjeux-d-un-clivage-fort-de-la-campagne-57351",
+            "date": "2017-03-17",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "A3",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "modifiee",
+              "before": null,
+              "after": null,
+              "comment": "Deux recherches : aucune source sur le programme de 2022 ni sur une déclaration de 2025-2026. Les seules sources ouvertes datent de 2017 : Le Pen « s'engage à maintenir les 35h » (Institut Montaigne) et n'autoriserait que la négociation de branche pour allonger le temps de travail, avec « compensation salariale intégrale » (Public Sénat). La fiche 2022 de l'Institut Montaigne ne mentionne pas le temps de travail. null maintenu : une position de 2017 seule, sur un sujet que le président du parti a rouvert depuis. La justification actuelle pose deux problèmes au regard de la règle 1. D'abord, elle affirme « ne s'est pas exprimée … depuis 2022 », ce qui n'est pas démontrable. Ensuite, elle cite Bardella (novembre 2024) avec `sources: []`. Je propose une justification sourcée, sans la citation de Bardella. Elle peut être rétablie si l'on retrouve sa source (absente aussi de rn.json)."
+            },
+            {
+              "verifier": "V6",
+              "verdict": "modifiee",
+              "before": null,
+              "after": null,
+              "comment": "null confirmé ; légère retouche de la justification. Sources exactes. Institut Montaigne (15 mars 2017) : Marine Le Pen « s'engage à maintenir les 35h », avec la possibilité de déroger « par des négociations d'entreprise » dont elle « n'a pas précisé les modalités ». Public Sénat (17 mars 2017) : elle « n'autorisera elle que les négociations de branche pour allonger le temps de travail », sous condition de « compensation salariale intégrale » (« 37 heures payées 37 »). Les deux articles divergent un peu (entreprise ou branche), et la position de 2017 est elle-même ambiguë : la durée légale est maintenue, mais des allongements négociés sont permis. Avec une seule position, ancienne et ambiguë, null reste juste. Bardella : il préside le parti, donc sa parole serait recevable au titre de la règle 2 bis (a). Mais sa déclaration de novembre 2024 reste sans source ouverte (page CNews inaccessible, et une recherche ciblée ne la retrouve pas). V1 a eu raison de la retirer (règle 1). Si la source est retrouvée, elle peut être mentionnée, sans changer la valeur tant que la candidate ne s'est pas exprimée. La reformulation proposée met la position de 2017 au conditionnel du programme, cite « maintenir les 35h » entre guillemets comme la source, et reprend la formule type des positions null."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A2] La défiscalisation des heures supplémentaires ne vaut pas position sur la durée légale (ce serait une déduction). [A3] RN : la seule position explicite de la candidate (2017) est le maintien de la durée légale (ce qui donnerait −1 ou −2), mais elle est ancienne et partiellement contredite par le président du parti (2024) ; programme 2022 non vérifié faute de quota. À instruire en priorité si une recherche supplémentaire est accordée (programme 2022, chapitre travail)."
+  },
+  {
+    "question": "q31-voile-sport",
+    "partial": true,
+    "positions": {
+      "nouvelle-energie": {
+        "stance": -2,
+        "justification": "Dans une tribune au Figaro du 7 mars 2025 (alors membre des Républicains), David Lisnard salue la loi votée par le Sénat : « La droite sénatoriale a eu le courage de faire interdire les signes religieux dans les compétitions sportives », et demande au gouvernement de suivre, avec « un cadre législatif clair ». Il critique ceux qui « défendent le droit des femmes voilées à concourir ».",
+        "sources": [
+          {
+            "title": "Le Figaro, « David Lisnard : \"Quand la ministre des Sports fait du déni de prosélytisme islamiste\" » (tribune)",
+            "url": "https://www.lefigaro.fr/vox/politique/david-lisnard-quand-la-ministre-des-sports-fait-du-deni-de-proselytisme-islamiste-20250307",
+            "date": "2025-03-07",
+            "kind": "declaration"
+          },
+          {
+            "title": "Nouvelle Énergie – « David Lisnard : quand la ministre des Sports fait du déni de prosélytisme islamiste » (reprise de la tribune)",
+            "url": "https://www.unenouvelleenergie.fr/david-lisnard-quand-la-ministre-des-sports-fait-du-deni-de-proselytisme-islamiste/",
+            "date": "2025-03-07",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "A1",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "La page lefigaro.fr refuse les requêtes automatisées. La reprise du parti, datée du 7 mars 2025, renvoie à la tribune du Figaro (« Retrouvez cette tribune sur le site du Figaro ») et contient les trois passages cités mot pour mot : « La droite sénatoriale a eu le courage de faire interdire les signes religieux dans les compétitions sportives », « un cadre législatif clair », « défendent le droit des femmes voilées à concourir ». Le sens est juste : il soutient l'interdiction, et l'énoncé dit « doit pouvoir porter le voile », donc −2. La règle 2 bis est respectée : Lisnard était alors chez LR, mais il est aujourd'hui président et candidat de Nouvelle Énergie. La justification date la tribune. Le titre de la source Figaro n'a pas pu être vérifié sur la page d'origine."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A1] Attention au sens : l'énoncé est « Une sportive doit pouvoir porter le voile » (direction −1) ; un soutien explicite à l'interdiction se code −2. Tribune de mars 2025, avant le départ de LR (25 mars 2026) : déclaration personnelle, datée dans la justification. Texte lu sur la reprise du parti ; la page du Figaro n'a pas été ouverte directement (URL relevée sur la reprise)."
+  },
+  {
+    "question": "q33-veto-europeen",
+    "partial": true,
+    "positions": {
+      "reconquete": {
+        "stance": 2,
+        "justification": "Le programme de Reconquête pour les élections européennes du 9 juin 2024 promet la « préservation du droit de véto de la France ». Il refuse de « supprimer le principe de l'unanimité dans les décisions prises au sein du Conseil », car « en supprimant le droit de véto de chaque État membre, il en serait en effet terminé des souverainetés nationales ».",
+        "sources": [
+          {
+            "title": "Reconquête, « Notre projet pour l'Europe des nations et de la civilisation – Les 92 propositions de Reconquête! » (élections européennes du 9 juin 2024), p. 8 et quatrième de couverture",
+            "url": "https://ojim.fr/wp-content/uploads/2024/06/Programme-Reconque%CC%82te-Europe%CC%81ennes-2024.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "A2",
+          "checks": [
+            {
+              "verifier": "V1",
+              "verdict": "modifiee",
+              "before": null,
+              "after": 2,
+              "comment": "Le programme européen de Reconquête pour le 9 juin 2024 (« Les 92 propositions de Reconquête! », liste soutenue par Éric Zemmour) défend explicitement le droit de veto. Page 4 : « la sanctuarisation de la souveraineté des États et de leur droit de véto ». Page 8 : il refuse de « supprimer le principe de l'unanimité dans les décisions prises au sein du Conseil », car « En supprimant le droit de véto de chaque État membre, il en serait en effet terminé des souverainetés nationales ». Page 18 : « préservation du droit de véto de la France ». C'est le dernier programme du parti (hiérarchie de la charte), donc +2, comme LR et RN codés +2 sur des votes. La règle 2 bis est respectée : c'est un programme du parti lui-même. Réserve sur l'hébergement : le PDF est servi par ojim.fr, un site tiers, et le site du parti n'offre pas de lien direct. Le contenu est bien le document du parti, mais il faut le remplacer par une copie officielle si on en trouve une."
+            },
+            {
+              "verifier": "V6",
+              "verdict": "modifiee",
+              "before": null,
+              "after": 2,
+              "comment": "Valeur +2 confirmée, justification et sources à corriger. (1) Le document est bien le programme du parti et non un texte personnel : il s'intitule « Les 92 propositions de Reconquête! », « liste soutenue par Éric Zemmour », et la tête de liste Marion Maréchal le présente comme le projet « porté par Marion Maréchal et Reconquête! ». C'est un programme du parti, donc la règle 2 bis (b) est respectée. (2) La citation « sanctuarisation de la souveraineté des États et de leur droit de véto » vient de l'éditorial de la page 4, signé « Nicolas Bay, député européen (groupe ECR), coordinateur du projet ». Nicolas Bay a quitté Reconquête, comme le note déjà la fiche. Mieux vaut fonder la position sur le texte non signé du parti : la page 8 (« Constat et analyse » du chapitre « Libérer la France de la bureaucratie et du centralisme bruxellois ») et la quatrième de couverture, qui liste les engagements du parti. (3) HowTheyVote 186518 (stratégie d'élargissement du 11 mars 2026) : Sarah Knafo y figure « DID_NOT_VOTE ». Ce vote ne prouve donc rien pour Reconquête et doit être retiré des sources. (4) Copie officielle : la recherche et les pages du parti n'en donnent aucune. Le PDF n'est disponible que sur ojim.fr (Observatoire du journalisme, site tiers qui ne fait que l'héberger). Le contenu reste celui du parti, mais le coordinateur doit savoir que l'URL est tierce. Aucun article de presse nationale reprenant la mesure n'a été trouvé avec la recherche autorisée. La valeur repose sur un texte explicite du parti (refus de supprimer l'unanimité, défense du veto), donc +2, comme le RN."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[A1] La formule de Bayeux (17 juin 2026) va dans le sens du maintien du veto mais n'en parle pas : la coder serait une déduction. Si le vérificateur juge qu'elle suffit, la valeur serait +1 au plus. [A2] Groupe de Sarah Knafo au PE vérifié : ESN (Europe des nations souveraines). Le vote du 22 novembre 2023 sur la révision des traités est antérieur à son mandat (élue en 2024) ; l'eurodéputé Reconquête de l'époque, Nicolas Bay, siège aujourd'hui à l'ECR et a quitté le parti : son vote ne peut pas engager Reconquête en 2026. Le vote contre de Knafo sur le Livre blanc défense (12 mars 2025) porte sur un texte général : en tirer une position sur le veto serait une déduction. [A3] La formule du congrès sur la souveraineté des peuples va dans le sens du veto mais reste une déduction : non codée (règle 4)."
+  }
+]

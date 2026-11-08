@@ -1,5 +1,5 @@
 import { Link, useLocalSearchParams } from 'expo-router';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Platform, ScrollView, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
@@ -8,6 +8,7 @@ import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { scrollToId } from '@/src/core/web/browser-actions';
 import { tv } from '@/src/core/web/tv';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { AnchorList } from '@/src/programmes/components/AnchorList';
@@ -70,26 +71,38 @@ function KeyFigureCard({ figure }: { figure: KeyFigure }) {
   const { colors, fonts } = useTheme();
   const { headline, detail } = splitFigure(figure.value);
   return (
-    <Card style={{ minWidth: 0 }}>
+    <Card style={{ minWidth: 0, flex: 1 }}>
       <Text style={{ ...fonts.displayBold, fontSize: 28, lineHeight: 34, color: colors.tint }}>
         {headline}
       </Text>
+      <Text style={{ fontSize: 14 }}>{figure.label}</Text>
       {detail ? (
         <Text style={{ fontSize: 14, lineHeight: 20, color: colors.text.secondary }}>{detail}</Text>
       ) : null}
-      <Text style={{ fontSize: 14 }}>{figure.label}</Text>
-      <SourceChip sources={[figure.source]} subject={figure.label} />
+      {/* Pastille collée au bas de la carte : alignée d'une carte à l'autre. */}
+      <View style={{ marginTop: 'auto' }}>
+        <SourceChip sources={[figure.source]} subject={figure.label} />
+      </View>
     </Card>
   );
 }
 
 export default function ThemeScreen() {
-  const { id } = useLocalSearchParams<{ id: string }>();
+  const { id, comparer } = useLocalSearchParams<{ id: string; comparer?: string }>();
   const vm = useViewModel(themeViewModel(id));
   const { colors, effects, fonts } = useTheme();
   const [mode, setMode] = useState<Mode>('tous');
   const [selected, setSelected] = useState<string[]>([]);
   const theme = vm.theme;
+
+  // Lien « Comparer avec un autre parti » (fiche parti) : comparaison ouverte, ce parti choisi.
+  // Lu après l'hydratation : le HTML statique ne connaît pas la requête.
+  useEffect(() => {
+    if (!comparer || !vm.comparisons.some((c) => c.party.id === comparer)) return;
+    setMode('comparer');
+    setSelected([comparer]);
+    scrollToId('partis');
+  }, [comparer, vm.comparisons.length]);
 
   if (vm.status === 'loaded' && !theme) {
     return (
@@ -128,12 +141,12 @@ export default function ThemeScreen() {
         theme ? (
           <>
             <Text variant="caption">
-              {theme.title} · thème {vm.position.index} / {vm.position.total}
+              Débat {vm.position.index} sur {vm.position.total}
             </Text>
             <AnchorList items={anchors} />
             {vm.nextTheme ? (
               <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
-                {`Thème suivant : ${vm.nextTheme.title}`}
+                {`Débat suivant : ${vm.nextTheme.title}`}
               </Button>
             ) : null}
           </>
@@ -142,14 +155,26 @@ export default function ThemeScreen() {
     >
       {theme ? (
         <>
-          <View style={{ gap: 8 }}>
+          <View style={{ gap: effects.spacing.xs }}>
             {/* Sous 1024 px, le repère « thème n / N » reste au-dessus du titre ; au-delà il est dans le rail. */}
             <Only below="lg">
               <Text variant="caption">
-                {theme.title} · thème {vm.position.index} / {vm.position.total}
+                Débat {vm.position.index} sur {vm.position.total}
               </Text>
             </Only>
-            <Text variant="title">{theme.debates[0]?.question ?? theme.title}</Text>
+            <Text variant="title">{theme.title}</Text>
+            <View style={{ alignSelf: 'flex-start' }}>
+              <Button
+                variant="secondary"
+                fullWidth={false}
+                onPress={() => {
+                  setMode('comparer');
+                  scrollToId('partis');
+                }}
+              >
+                Comparer deux partis
+              </Button>
+            </View>
           </View>
 
           <View nativeID="enjeux">
@@ -171,7 +196,7 @@ export default function ThemeScreen() {
               <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={{ gap: 10, paddingRight: 16 }}
+                contentContainerStyle={{ gap: effects.spacing.sm, paddingRight: 16 }}
               >
                 {theme.keyFigures.map((figure) => (
                   <View key={figure.label} style={{ width: 230 }}>
@@ -189,7 +214,7 @@ export default function ThemeScreen() {
             ) : null}
           </View>
 
-          <View nativeID="options" style={{ gap: effects.spacing.xs }}>
+          <View nativeID="options" style={{ gap: effects.spacing.sm }}>
             <Text variant="caption" headingLevel={2}>
               Les options en débat
             </Text>
@@ -223,7 +248,7 @@ export default function ThemeScreen() {
             <Tabs
               tabs={[
                 { id: 'tous', label: 'Tous (A-Z)' },
-                { id: 'comparer', label: 'Comparer 2 partis' },
+                { id: 'comparer', label: 'Comparer deux partis' },
               ]}
               value={mode}
               onChange={setMode}
@@ -248,7 +273,7 @@ export default function ThemeScreen() {
               ) : (
                 <>
                   <Text style={{ color: colors.text.secondary }}>Choisissez deux partis :</Text>
-                  <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+                  <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}>
                     {vm.comparisons.map(({ party }) => {
                       const active = selected.includes(party.id);
                       return (
@@ -277,7 +302,7 @@ export default function ThemeScreen() {
                     })}
                   </View>
                   {compared.length === 2 ? (
-                    <View style={{ flexDirection: 'row', gap: 10 }}>
+                    <View style={{ flexDirection: 'row', gap: effects.spacing.sm }}>
                       {compared.map(({ party, programme }) => (
                         <Card key={party.id} style={{ flex: 1, padding: 12 }}>
                           <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
@@ -297,12 +322,17 @@ export default function ThemeScreen() {
           </View>
 
           {vm.questions.length > 0 ? (
-            <View nativeID="qui-est-pour" style={{ gap: effects.spacing.xs }}>
+            <View nativeID="qui-est-pour" style={{ gap: effects.spacing.sm }}>
               <Text variant="caption" headingLevel={2}>
                 Qui est pour, qui est contre ?
               </Text>
               {vm.questions.map(({ question, positions }) => (
-                <Accordion key={question.id} title={question.statement} subtitle={undefined}>
+                <Accordion
+                  key={question.id}
+                  title={question.statement}
+                  titleWeight="regular"
+                  subtitle={undefined}
+                >
                   <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
                     {question.help}
                   </Text>
@@ -332,7 +362,7 @@ export default function ThemeScreen() {
           {vm.nextTheme ? (
             <Only below="lg">
               <Button variant="secondary" href={`/debats/${vm.nextTheme.id}`}>
-                {`Thème suivant : ${vm.nextTheme.title}`}
+                {`Débat suivant : ${vm.nextTheme.title}`}
               </Button>
             </Only>
           ) : null}

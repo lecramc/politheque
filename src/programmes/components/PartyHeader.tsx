@@ -33,7 +33,7 @@ export function PartyHeader({
   const family = beforeParenthesis(party.family);
   return (
     <View style={{ gap: effects.spacing.sm }}>
-      <View style={{ flexDirection: 'row', gap: 14, alignItems: 'center' }}>
+      <View style={{ flexDirection: 'row', gap: effects.spacing.smd, alignItems: 'center' }}>
         <PartyDot color={party.color} size={56} label={party.shortName} />
         <Text {...tv('party-name')} variant="title" style={styles.name}>
           {party.name}
@@ -48,7 +48,7 @@ export function PartyHeader({
             flexDirection: 'row',
             alignItems: 'center',
             alignSelf: 'flex-start',
-            gap: 4,
+            gap: effects.spacing.xxs,
             minHeight: 44,
           }}
         >

@@ -1,8 +1,9 @@
 import { ScrollViewStyleReset } from 'expo-router/html';
 import type { PropsWithChildren } from 'react';
 
+import { theme } from '@/components/ThemeContext';
 import { APP_NAME, SITE_LOCALE } from '@/src/core/config/app';
-import { layoutCss } from '@/src/core/web/layout-css';
+import { colorSchemeCss, layoutCss } from '@/src/core/web/layout-css';
 import { printCss } from '@/src/core/web/print-css';
 
 // Document HTML racine de l'export web statique : uniquement les invariants du site.
@@ -15,7 +16,13 @@ export default function Root({ children }: PropsWithChildren) {
         <meta charSet="utf-8" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="theme-color" content="#FBF8F3" />
+        <meta name="theme-color" content="#FBF8F3" media="(prefers-color-scheme: light)" />
+        <meta
+          name="theme-color"
+          content={theme.dark.background.secondary}
+          media="(prefers-color-scheme: dark)"
+        />
+        <meta name="color-scheme" content="light dark" />
         <meta property="og:site_name" content={APP_NAME} />
         <meta property="og:locale" content={SITE_LOCALE} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -23,6 +30,10 @@ export default function Root({ children }: PropsWithChildren) {
         {/* Mise en page desktop : media queries sur data-tv, identique au premier rendu client. */}
         <style id="travee-layout" dangerouslySetInnerHTML={{ __html: layoutCss }} />
         {/* Impression (« Télécharger en PDF / imprimer ») : voir src/core/web/print-css.ts. */}
+        <style
+          id="travee-scheme"
+          dangerouslySetInnerHTML={{ __html: colorSchemeCss(theme.dark.background.secondary) }}
+        />
         <style id="travee-print" dangerouslySetInnerHTML={{ __html: printCss }} />
       </head>
       <body>{children}</body>

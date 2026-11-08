@@ -159,7 +159,7 @@ describe('Feature: métadonnées des pages', () => {
   });
 
   it('should mark non-indexable pages as "noindex, follow" without JSON-LD', () => {
-    const meta = nonIndexableMeta('Mon passeport', '/passeport');
+    const meta = nonIndexableMeta('Ma progression', '/passeport');
     expect(meta.robots).toBe('noindex, follow');
     expect(meta.jsonLd).toBeNull();
   });

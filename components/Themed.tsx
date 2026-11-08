@@ -1,19 +1,36 @@
-import { Text as DefaultText, View as DefaultView } from 'react-native';
+import { Ref, useContext } from 'react';
+import { StyleSheet, Text as DefaultText, TextStyle, View as DefaultView } from 'react-native';
 
+import { PressableHoverContext } from '@/components/ui/Pressable/hover-context';
+import { isIsolatedNumber, splitDates, splitDigits } from '@/src/programmes/models/digits.service';
+import { lineHeightFor } from '@/src/programmes/models/line-height.service';
 import { frenchTypography } from '@/src/programmes/models/typography.service';
 
 import { useTheme } from './ThemeContext';
 
 export type TextProps = DefaultText['props'] & {
-  variant?: 'body' | 'title' | 'subtitle' | 'caption' | 'quote';
+  /**
+   * Échelle typographique partagée (tailles lues dans `effects.sizes.text`) :
+   * `title` 28/34 · `display` 22/28 · `subtitle` 18 · `body` 16/24 · `secondary` 15/22 ·
+   * `caption` 14 en capitales · `label` 13.
+   */
+  variant?: 'body' | 'title' | 'display' | 'subtitle' | 'secondary' | 'label' | 'caption' | 'quote';
   /** Niveau de titre (structure), indépendant de la variante (visuel). `title` vaut 1 par défaut. */
   headingLevel?: 1 | 2 | 3 | 4;
+  /**
+   * Chiffres sans zéro barré (Atkinson barre le zéro) pour les titres, compteurs et grands chiffres
+   * isolés. Hors titres, n'agit que sur un libellé composé uniquement d'un nombre.
+   */
+  plainDigits?: boolean;
+  /** Transmise au texte natif (React 19 : `ref` est une prop ordinaire). */
+  ref?: Ref<DefaultText>;
 };
 export type ViewProps = DefaultView['props'];
 
 export function Text(props: TextProps) {
-  const { style, variant = 'body', headingLevel, children, ...otherProps } = props;
+  const { style, variant = 'body', headingLevel, plainDigits, children, ...otherProps } = props;
   const { colors, effects, fonts } = useTheme();
+  const underlined = useContext(PressableHoverContext);
 
   const getTextStyle = () => {
     switch (variant) {
@@ -23,6 +40,25 @@ export function Text(props: TextProps) {
           lineHeight: Math.round(effects.sizes.text.title * 1.2),
           ...fonts.display,
           color: colors.text.strong,
+        };
+      case 'display':
+        return {
+          fontSize: effects.sizes.text.display,
+          lineHeight: 28,
+          ...fonts.display,
+          color: colors.text.strong,
+        };
+      case 'secondary':
+        return {
+          fontSize: effects.sizes.text.secondary,
+          ...fonts.regular,
+          color: colors.text.secondary,
+        };
+      case 'label':
+        return {
+          fontSize: effects.sizes.text.label,
+          ...fonts.regular,
+          color: colors.text.secondary,
         };
       case 'subtitle':
         return {
@@ -42,7 +78,7 @@ export function Text(props: TextProps) {
         return {
           fontSize: effects.sizes.text.quote,
           fontStyle: 'italic' as const,
-          lineHeight: 22,
+          lineHeight: 30,
           color: colors.text.secondary,
         };
       case 'body':
@@ -58,9 +94,43 @@ export function Text(props: TextProps) {
   // Les titres de page sont de vrais titres pour les lecteurs d'écran et le référencement.
   const level = headingLevel ?? (variant === 'title' ? 1 : undefined);
   const headingProps = level ? { accessibilityRole: 'header' as const, 'aria-level': level } : {};
-  const content = typeof children === 'string' ? frenchTypography(children) : children;
+  // Sans interligne explicite : proportionnel à la taille réellement affichée (16 px : 24 px).
+  const flat = StyleSheet.flatten([getTextStyle(), style]) as TextStyle;
+  const lineHeight = flat.lineHeight ?? lineHeightFor(flat.fontSize ?? effects.sizes.text.body);
+  const typeset = typeof children === 'string' ? frenchTypography(children) : children;
+  const digitFont = String(flat.fontFamily ?? '').includes('Bold')
+    ? fonts.displayBold
+    : fonts.display;
+  // Titres : dates sans zéro barré (`plainDigits` : tous les chiffres). Texte courant : Atkinson
+  // d'un bout à l'autre, sauf un libellé composé uniquement d'un nombre avec `plainDigits`.
+  const isHeading = variant === 'title' || variant === 'display' || variant === 'subtitle';
+  const digitRuns =
+    typeof typeset !== 'string'
+      ? null
+      : isHeading
+        ? plainDigits
+          ? splitDigits(typeset)
+          : splitDates(typeset)
+        : plainDigits && isIsolatedNumber(typeset)
+          ? splitDigits(typeset)
+          : null;
+  const content = digitRuns
+    ? digitRuns.map((run, index) =>
+        run.digits ? (
+          <DefaultText key={index} style={digitFont}>
+            {run.text}
+          </DefaultText>
+        ) : (
+          run.text
+        )
+      )
+    : typeset;
   return (
-    <DefaultText style={[getTextStyle(), style]} {...headingProps} {...otherProps}>
+    <DefaultText
+      style={[flat, { lineHeight }, underlined ? { textDecorationLine: 'underline' } : null]}
+      {...headingProps}
+      {...otherProps}
+    >
       {content}
     </DefaultText>
   );

@@ -44,7 +44,7 @@ export default function CorrectionsScreen() {
           mise en page n'y figurent pas. Le journal commence à la mise en ligne du site, le 3
           novembre 2026.
         </Text>
-        <View style={{ gap: 4 }}>
+        <View style={{ gap: effects.spacing.xxs }}>
           {KIND_MEANING.map(([kind, meaning]) => (
             <Text key={kind} style={{ fontSize: 15, lineHeight: 23 }}>
               <Text style={{ ...fonts.bold, fontSize: 15 }}>{CORRECTION_KIND_LABELS[kind]}</Text> :{' '}

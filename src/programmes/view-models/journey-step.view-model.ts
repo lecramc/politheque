@@ -9,17 +9,25 @@ import {
 } from '@/src/programmes/models/journey.copy';
 import { computeJourneyProgress } from '@/src/programmes/models/journey.service';
 import { isRead } from '@/src/programmes/models/reading-progress.model';
+import { ANSWERS_NOT_KEPT } from '@/src/programmes/models/results.copy';
 import {
   selectCatalogStatus,
   selectJourney,
   selectProgressStatus,
   selectReadingEntries,
+  selectResultsLost,
 } from '@/src/programmes/store/programmes.selector';
 
 export const journeyStepViewModel = (stepId: string) => () =>
   createSelector(
-    [selectCatalogStatus, selectProgressStatus, selectJourney, selectReadingEntries],
-    (status, progressStatus, journey, entries) => {
+    [
+      selectCatalogStatus,
+      selectProgressStatus,
+      selectJourney,
+      selectReadingEntries,
+      selectResultsLost,
+    ],
+    (status, progressStatus, journey, entries, resultsLost) => {
       const hydrated = progressStatus === 'ready';
       // Avant le chargement : état neutre, identique pour tout le monde.
       const progress = computeJourneyProgress(journey, hydrated ? entries : {});
@@ -38,6 +46,7 @@ export const journeyStepViewModel = (stepId: string) => () =>
           itemTotal: 0,
           listTitle: '',
           invite: null,
+          notice: null as string | null,
           orderNote: null,
           items: [],
           nextItem: null,
@@ -60,6 +69,8 @@ export const journeyStepViewModel = (stepId: string) => () =>
         itemTotal: p.total,
         listTitle: `Les ${p.total} ${p.total > 1 ? p.step.unit.many : p.step.unit.one}`,
         invite: stepInvite(p),
+        /** Étape du questionnaire : les réponses ne sont pas conservées (jamais « pas encore de réponses »). */
+        notice: hydrated && stepId === 'me-situer' && resultsLost ? ANSWERS_NOT_KEPT : null,
         orderNote: isParties ? JOURNEY_COPY.orderNote : null,
         items: p.step.items.map((item) => {
           const read = hydrated && isRead(entries, item.key);

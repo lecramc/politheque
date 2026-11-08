@@ -40,6 +40,7 @@ export default function JourneyStepScreen() {
         itemTotal={vm.itemTotal}
       />
       {vm.invite ? <StepInvite text={vm.invite} /> : null}
+      {vm.notice ? <StepInvite text={vm.notice} /> : null}
       <View style={{ gap: effects.spacing.xs }}>
         <View
           style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'baseline' }}

@@ -15,6 +15,8 @@ import Animated from 'react-native-reanimated';
 
 import { cssEasing, duration, press, useKeyboardModality, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
+import { PressableHoverContext } from '@/components/ui/Pressable/hover-context';
+import { hoverKind } from '@/src/core/web/hover-kind';
 
 const AnimatedPressable = Animated.createAnimatedComponent(RNPressable);
 const isWeb = Platform.OS === 'web';
@@ -30,17 +32,20 @@ type Props = Omit<PressableProps, 'style' | 'children'> & {
   pressedStyle?: StyleProp<ViewStyle>;
   /** Style de survol (web). Par défaut : bordure ou fond qui s'éclaircit. */
   hoverStyle?: StyleProp<ViewStyle>;
-  /** Grandes surfaces (cartes, tuiles) : enfoncement plus discret. */
+  /** Grandes surfaces (cartes, tuiles) : enfoncement plus discret, anneau de focus intérieur. */
   large?: boolean;
+  /**
+   * Anneau de focus clavier (web). `inside` : tracé à l'intérieur de la boîte, pour les zones
+   * pleine largeur dans un conteneur `overflow: hidden` (accordéon, onglets, lignes de liste)
+   * où un anneau extérieur serait rogné. Défaut : `inside` si `large`, sinon `outside`.
+   */
+  ring?: 'outside' | 'inside';
   /** Retour haptique léger à l'appui (natif uniquement). */
   haptic?: boolean;
   accessibilityLabel?: string;
   accessibilityRole?: AccessibilityRole;
   accessibilityState?: AccessibilityState;
 };
-
-const isVisible = (color: unknown) =>
-  typeof color === 'string' && color !== 'transparent' && !/rgba\(.*,\s*0\)$/.test(color);
 
 /**
  * Pressable — zone tappable sans style propre, avec un retour de mouvement commun :
@@ -67,13 +72,14 @@ export const Pressable = ({
   pressedStyle,
   hoverStyle,
   large = false,
+  ring: ringPlacement,
   haptic = false,
   accessibilityLabel,
   accessibilityRole,
   accessibilityState,
   ...rest
 }: Props) => {
-  const { colors } = useTheme();
+  const { colors, effects } = useTheme();
   const { reduce } = useMotion();
   const keyboard = useKeyboardModality();
   const [pressed, setPressed] = useState(false);
@@ -83,17 +89,39 @@ export const Pressable = ({
   const base = StyleSheet.flatten(style) ?? {};
   const interactive = !disabled;
 
+  // L'élément courant (onglet actif, page en cours) ne réagit pas au survol : on sait où l'on est.
+  const ariaCurrent = (rest as { 'aria-current'?: unknown })['aria-current'];
+  const current =
+    (ariaCurrent !== undefined && ariaCurrent !== false) ||
+    accessibilityState?.selected === true ||
+    (rest as { 'aria-selected'?: unknown })['aria-selected'] === true;
+
   let hover: ViewStyle | undefined;
-  if (isWeb && hovered && interactive) {
-    if (hoverStyle) hover = StyleSheet.flatten(hoverStyle);
-    else if ((base.borderWidth ?? 0) > 0) hover = { borderColor: colors.tintBorder };
-    else if (!isVisible(base.backgroundColor)) hover = { backgroundColor: colors.surface.hover };
-    else hover = { opacity: 0.92 };
+  let textHover = false;
+  if (isWeb && hovered && interactive && !current) {
+    if (hoverStyle) {
+      hover = StyleSheet.flatten(hoverStyle);
+    } else {
+      const kind = hoverKind(base, effects.spacing.sm);
+      if (kind === 'border') hover = { borderColor: colors.tintBorder };
+      else if (kind === 'surface')
+        hover = {
+          backgroundColor: colors.surface.hover,
+          borderRadius: base.borderRadius ?? effects.borderRadius.xs,
+        };
+      else if (kind === 'filled') hover = { opacity: 0.92 };
+      else {
+        // Sans marge latérale, un fond serait collé aux lettres : soulignement et opacité.
+        hover = { opacity: 0.8 };
+        textHover = true;
+      }
+    }
   }
 
   const active = pressed && interactive;
   const scale = active && !reduce ? (large ? press.scaleLarge : press.scale) : 1;
   const ring = isWeb && focused && keyboard;
+  const ringInside = (ringPlacement ?? (large ? 'inside' : 'outside')) === 'inside';
 
   const animated = {
     ...base,
@@ -107,11 +135,11 @@ export const Pressable = ({
     transform: [...((base.transform as never[]) ?? []), { scale }],
     ...(isWeb
       ? {
-          cursor: disabled ? ('auto' as const) : ('pointer' as const),
+          cursor: disabled || current ? ('auto' as const) : ('pointer' as const),
           outlineStyle: 'solid' as const,
           outlineWidth: ring ? 2 : 0,
           outlineColor: ring ? colors.tint : 'transparent',
-          outlineOffset: 2,
+          outlineOffset: ringInside ? -2 : 2,
         }
       : null),
     transitionProperty: ['transform', 'opacity', 'backgroundColor', 'borderColor'] as (
@@ -159,7 +187,7 @@ export const Pressable = ({
       accessibilityState={accessibilityState}
       style={animated}
     >
-      {children}
+      <PressableHoverContext.Provider value={textHover}>{children}</PressableHoverContext.Provider>
     </AnimatedPressable>
   );
 };

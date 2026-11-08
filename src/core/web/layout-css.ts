@@ -21,6 +21,17 @@ const rule = (names: string[], body: string) => `${sel(...names)} {\n  ${body}\n
 export const layoutCss: string = [
   '/* Travée : mise en page desktop (généré depuis components/layout.ts) */',
 
+  // Typographie : retours à la ligne soignés ; les titres (déclarés après) l'emportent avec balance.
+  ':root [dir="auto"] {\n  text-wrap: pretty;\n}',
+  ':root [role="heading"] {\n  text-wrap: balance;\n}',
+
+  // Liens texte (composant TextLink) : zone cliquable plus haute sans changer l'interligne,
+  // survol par un soulignement plus épais, anneau de focus de la couleur du texte.
+  rule(['text-link'], 'padding-block: 3px;'),
+  rule(['text-link-block'], 'display: inline-block;'),
+  `${sel('text-link')}:hover {\n  text-decoration-thickness: 2px;\n}`,
+  `${sel('text-link')}:focus-visible {\n  outline: 2px solid currentColor;\n  outline-offset: 2px;\n  border-radius: 4px;\n}`,
+
   // Base : tout ce qui n'existe qu'à partir d'un seuil est masqué.
   rule(['only-from-md', 'only-from-lg', 'colhead'], 'display: none;'),
 
@@ -38,6 +49,10 @@ export const layoutCss: string = [
     'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px;'
   ),
   rule(['wrap'], 'flex-wrap: wrap;'),
+  // Pastille de sources : compacte sous 768 px (la zone cliquable reste de 44 px), plus large ensuite.
+  rule(['source-chip'], 'min-height: 36px; padding-left: 10px; padding-right: 10px; gap: 6px;'),
+  // Onglets de la fiche : une seule ligne dès 768 px (3 + 2 en dessous).
+  rule(['tab-wrap'], 'flex-basis: 0%;'),
   rule(['footer-text'], 'text-align: left;'),
   rule(['footer-rule'], 'border-top-width: 1px; padding-top: 20px;'),
   // Badge de position : cellule fixe, un seul alignement des ronds par liste.
@@ -100,3 +115,11 @@ export const layoutCss: string = [
   rule(['map-layout'], 'flex-direction: row; align-items: flex-start; gap: 28px;'),
   '}',
 ].join('\n');
+
+/**
+ * Le HTML statique est toujours rendu en clair (le thème réel s'applique à l'hydratation, voir
+ * ThemeContext). Pour un appareil en sombre, on peint le fond du document dès le premier octet,
+ * afin qu'aucun éclair de crème n'entoure le contenu.
+ */
+export const colorSchemeCss = (darkBackground: string): string =>
+  `@media (prefers-color-scheme: dark) {\n  html,\n  body {\n    background-color: ${darkBackground};\n  }\n}`;

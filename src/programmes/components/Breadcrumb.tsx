@@ -1,9 +1,9 @@
-import { Link } from 'expo-router';
 import React from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { TextLink } from '@/components/ui/TextLink';
 import type { Breadcrumb as BreadcrumbTrail } from '@/src/programmes/models/seo/page-meta';
 
 /** Fil d'Ariane visible (desktop) : même liste que le BreadcrumbList du JSON-LD. */
@@ -25,9 +25,9 @@ export function Breadcrumb({ trail }: { trail: BreadcrumbTrail }) {
               </Text>
             ) : (
               <>
-                <Link href={crumb.path as never}>
-                  <Text style={{ fontSize: 14, color: colors.tint }}>{crumb.name}</Text>
-                </Link>
+                <TextLink href={crumb.path} size={14} standalone>
+                  {crumb.name}
+                </TextLink>
                 <Text style={{ fontSize: 14, color: colors.text.secondary }}>›</Text>
               </>
             )}

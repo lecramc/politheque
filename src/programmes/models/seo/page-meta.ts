@@ -470,7 +470,7 @@ export function partyLinkLabel(
 const NON_INDEXABLE_TITLES: Partial<Record<RoutePattern, string>> = {
   '/me-situer/resultats': 'Vos résultats',
   '/parcours/[etape]': 'Parcours citoyen',
-  '/passeport': 'Mon passeport citoyen',
+  '/passeport': 'Ma progression',
 };
 
 /** Métadonnées de toutes les pages du registre (tests, script post-export). */

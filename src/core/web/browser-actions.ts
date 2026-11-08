@@ -1,4 +1,4 @@
-/* global window, navigator */
+/* global window, navigator, document */
 /**
  * Actions du navigateur utilisées par « Garder mes résultats ». Tout reste sur l'appareil : presse-
  * papiers, impression et lecture du fragment d'URL. Sur natif, `window.print` n'existe pas.
@@ -21,6 +21,12 @@ export const copyText = async (text: string): Promise<boolean> => {
   } catch {
     return false;
   }
+};
+
+/** Fait défiler jusqu'à l'élément d'identifiant `id` (web). Sans effet ailleurs. */
+export const scrollToId = (id: string): void => {
+  const doc = typeof document === 'undefined' ? undefined : document;
+  doc?.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
 };
 
 /** Fragment de l'URL courante (`#r=…`), vide hors navigateur. Jamais envoyé au serveur. */

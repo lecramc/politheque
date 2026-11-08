@@ -34,7 +34,7 @@ export default function PartyPositionsScreen() {
   const meta = vm.metaBySection?.['positions'];
 
   return (
-    <TabPanel id="positions">
+    <TabPanel id="positions" style={{ gap: effects.spacing.lg }}>
       {meta ? <SeoHead meta={meta} /> : null}
       <View style={{ gap: effects.spacing.xs }}>
         <SectionTitle>Positions sur {vm.stances.length} questions</SectionTitle>
@@ -61,21 +61,20 @@ export default function PartyPositionsScreen() {
         />
         {vm.stancesByTheme.map((group) => (
           <View key={group.theme.id} style={{ gap: effects.spacing.xs }}>
-            <Only from="md">
-              <Text
-                accessibilityRole="header"
-                aria-level={2}
-                style={{
-                  ...fonts.bold,
-                  fontSize: 15,
-                  letterSpacing: 0.8,
-                  textTransform: 'uppercase',
-                  color: colors.text.secondary,
-                }}
-              >
-                {group.theme.title}
-              </Text>
-            </Only>
+            {/* Intertitre de thème à toutes les largeurs : même ordre pour les dix partis. */}
+            <Text
+              accessibilityRole="header"
+              aria-level={2}
+              style={{
+                ...fonts.bold,
+                fontSize: 15,
+                letterSpacing: 0.8,
+                textTransform: 'uppercase',
+                color: colors.text.secondary,
+              }}
+            >
+              {group.theme.title}
+            </Text>
             {group.items.map(({ question, stance }) => (
               <Accordion
                 key={question.id}

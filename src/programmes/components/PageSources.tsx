@@ -1,9 +1,9 @@
-import { Link } from 'expo-router';
 import React from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { TextLink } from '@/components/ui/TextLink';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { SourceList } from '@/src/programmes/components/SourceChip';
 import { groupPageSources } from '@/src/programmes/models/page-sources.service';
@@ -19,7 +19,7 @@ export function PageSources({
   verifiedOn?: string;
   updatedOn?: string | null;
 }) {
-  const { colors } = useTheme();
+  const { colors, effects } = useTheme();
   const groups = groupPageSources(sources);
   const count = groups.reduce((n, g) => n + g.sources.length, 0);
   if (count === 0) return null;
@@ -37,13 +37,11 @@ export function PageSources({
         <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
           Fiche vérifiée en entier le {verifiedOn} ; depuis, seuls les éléments modifiés ont été
           revérifiés (mise à jour le {updatedOn}).{' '}
-          <Link href="/corrections" style={{ color: colors.tint, textDecorationLine: 'underline' }}>
-            Voir le journal des corrections
-          </Link>
+          <TextLink href="/corrections">Voir le journal des corrections</TextLink>
         </Text>
       ) : null}
       {groups.map((group) => (
-        <View key={group.kind} style={{ gap: 4 }}>
+        <View key={group.kind} style={{ gap: effects.spacing.xxs }}>
           <Text variant="caption">
             {group.label} ({group.sources.length})
           </Text>

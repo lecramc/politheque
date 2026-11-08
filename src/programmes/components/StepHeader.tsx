@@ -38,7 +38,7 @@ export function StepHeader({
           </Text>
           <Text style={{ color: colors.text.secondary, fontSize: 13 }}>sur {itemTotal}</Text>
         </Arc>
-        <View style={{ flex: 1, gap: 2 }}>
+        <View style={{ flex: 1, gap: effects.spacing.xxs }}>
           <Text variant="caption">
             Étape {index} sur {total}
           </Text>

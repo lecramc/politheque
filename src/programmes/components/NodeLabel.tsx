@@ -24,7 +24,7 @@ export function NodeLabel({
 }) {
   const { colors, fonts, effects } = useTheme();
   return (
-    <View style={{ flex: 1, gap: 2 }}>
+    <View style={{ flex: 1, gap: effects.spacing.xxs }}>
       <Text variant="caption" style={{ fontSize: 12 }}>
         Étape {index}
       </Text>
@@ -41,7 +41,7 @@ export function NodeLabel({
             alignSelf: 'flex-start',
             flexDirection: 'row',
             alignItems: 'center',
-            gap: 4,
+            gap: effects.spacing.xxs,
             marginTop: 4,
             minHeight: 36,
             paddingHorizontal: 14,

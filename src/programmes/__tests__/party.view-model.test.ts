@@ -90,7 +90,11 @@ describe('Feature: section procédures de la fiche parti', () => {
 
   it('should expose the presented dossier and the procedures meta', () => {
     const vm = publishedVm('alpha');
-    expect(vm.sections.at(-1)).toMatchObject({ id: 'procedures', label: 'Procédures' });
+    expect(vm.sections.at(-1)).toMatchObject({
+      id: 'procedures',
+      label: 'Procédures',
+      longLabel: 'Procédures judiciaires',
+    });
     expect(vm.procedures?.ongoing).toHaveLength(1);
     expect(vm.procedures?.ongoing[0].presumptionNotice).toContain("Présomption d'innocence");
     expect(vm.metaBySection?.procedures.path).toBe('/partis/alpha/procedures-judiciaires');

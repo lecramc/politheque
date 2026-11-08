@@ -78,6 +78,7 @@ export default function PartyLayout() {
                 value={section}
                 hrefOf={(sectionId) => partyHref(party.id, sectionId)}
                 navLabel="Sections de la fiche"
+                wrap
               />
             </Only>
           </>

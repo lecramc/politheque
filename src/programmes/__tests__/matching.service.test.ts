@@ -33,6 +33,7 @@ describe('Feature: proximité avec un parti', () => {
     expect(computeProximity(answers(2), party)).toEqual({
       partyId: 'parti-test',
       score: 100,
+      rawScore: 100,
       comparedCount: 5,
     });
   });
@@ -45,7 +46,12 @@ describe('Feature: proximité avec un parti', () => {
   it('should not compute a score below the minimum number of compared questions', () => {
     const party = partyFactory({ stanceValues: { q1: 2, q2: null } });
     const result = computeProximity(answers(2), party);
-    expect(result).toEqual({ partyId: 'parti-test', score: null, comparedCount: 1 });
+    expect(result).toEqual({
+      partyId: 'parti-test',
+      score: null,
+      rawScore: null,
+      comparedCount: 1,
+    });
   });
 
   it('should ignore questions without opinion or without known party stance', () => {
@@ -79,6 +85,22 @@ describe('Feature: proximité avec un parti', () => {
     const unknown = partyFactory({ id: 'inconnu', name: 'Inconnu', stanceValues: {} });
     const ranking = rankParties(answers(2), [unknown, far, near]);
     expect(ranking.map((r) => r.partyId)).toEqual(['proche', 'loin', 'inconnu']);
+  });
+
+  it('should rank on the unrounded score, not on the rounded one', () => {
+    const nine = Object.fromEntries(
+      Array.from({ length: 9 }, (_, i) => [`q${i + 1}`, { value: 2 as const, important: false }])
+    );
+    const near = (count: number) =>
+      Object.fromEntries(
+        Array.from({ length: count }, (_, i) => [`q${i + 1}`, i === 0 ? 1 : 2])
+      ) as Record<string, never>;
+    // Les deux affichent 97 %, mais Zed (97,2) est plus proche qu'Abel (96,9).
+    const abel = partyFactory({ id: 'abel', name: 'Abel', stanceValues: near(8) });
+    const zed = partyFactory({ id: 'zed', name: 'Zed', stanceValues: near(9) });
+    const ranking = rankParties(nine, [abel, zed]);
+    expect(ranking.map((r) => r.score)).toEqual([97, 97]);
+    expect(ranking.map((r) => r.partyId)).toEqual(['zed', 'abel']);
   });
 });
 

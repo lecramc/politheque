@@ -1,9 +1,9 @@
-import { Link } from 'expo-router';
 import React from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { TextLink } from '@/components/ui/TextLink';
 
 /** Encadré sobre, identique pour les dix partis. Le texte vient du modèle (un seul drapeau). */
 export function ProceduresNotice({ text }: { text: string }) {
@@ -21,12 +21,9 @@ export function ProceduresNotice({ text }: { text: string }) {
       }}
     >
       <Text style={{ fontSize: 15, lineHeight: 23 }}>{text}</Text>
-      <Link
-        href="/methodologie"
-        style={{ color: colors.tint, textDecorationLine: 'underline', fontSize: 14 }}
-      >
+      <TextLink href="/methodologie" size={14} standalone>
         Notre méthode
-      </Link>
+      </TextLink>
     </View>
   );
 }

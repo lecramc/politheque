@@ -142,7 +142,7 @@ export function Accordion({
           }}
         >
           {leading}
-          <View style={{ flex: 1, gap: 2 }}>
+          <View style={{ flex: 1, gap: effects.spacing.xxs }}>
             <Text
               {...(titleWeight === 'bold' ? {} : tv('title-regular'))}
               style={[

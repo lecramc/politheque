@@ -5,21 +5,18 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
-import { tv } from '@/src/core/web/tv';
-import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import type { PartyViewModel } from '@/src/programmes/view-models/party.view-model';
 
 /**
- * « Pour aller plus loin » : cartes-liens vers les onglets qui développent la fiche. Une colonne
- * sous 768 px, deux de 768 à 1023 px, trois à partir de 1024 px (CSS `grid-3`).
+ * Liens de fin d'en-bref qui n'ont pas d'onglet propre (« Comment il se définit, comment on le
+ * classe »). L'histoire, les positions et le programme sont des onglets de la fiche : pas de doublon.
  */
 export function FurtherLinks({ links }: { links: PartyViewModel['further'] }) {
   const { colors, effects, fonts } = useTheme();
   if (links.length === 0) return null;
   return (
     <View style={{ gap: effects.spacing.sm }}>
-      <SectionTitle>Pour aller plus loin</SectionTitle>
-      <View {...tv('grid-3')} style={{ gap: effects.spacing.sm }}>
+      <View style={{ gap: effects.spacing.sm }}>
         {links.map((link) => (
           <Link key={link.key} href={link.href as never} asChild>
             <Pressable

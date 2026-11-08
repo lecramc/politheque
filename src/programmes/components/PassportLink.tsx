@@ -7,7 +7,7 @@ import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { JOURNEY_COPY } from '@/src/programmes/models/journey.copy';
 
-/** Ligne « Mon passeport · 3 tampons sur 6 ». Le compte est masqué tant que rien n'est chargé. */
+/** Ligne « Ma progression · 3 tampons sur 6 ». Le compte est masqué tant que rien n'est chargé. */
 export function PassportLink({ label }: { label: string | null }) {
   const { colors, effects, fonts } = useTheme();
   return (

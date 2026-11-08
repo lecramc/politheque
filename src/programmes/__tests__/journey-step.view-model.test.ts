@@ -73,4 +73,16 @@ describe("Feature: page d'étape", () => {
     expect(vm.readCount).toBe(0);
     expect(vm.items.every((i) => i.stamp.state === 'empty')).toBe(true);
   });
+
+  it('should say the answers are not kept when the questionnaire stamp exists without answers', () => {
+    const vm = vmOf('me-situer', { 'quiz:done': D });
+    expect(vm.notice).toBe(
+      'Vos réponses ne sont pas conservées : refaites le questionnaire ou ouvrez votre lien de résultats.'
+    );
+  });
+
+  it('should show no notice before the questionnaire is done, nor on another step', () => {
+    expect(vmOf('me-situer').notice).toBeNull();
+    expect(vmOf('les-partis', { 'quiz:done': D }).notice).toBeNull();
+  });
 });

@@ -88,6 +88,12 @@ describe('Feature: accueil en parcours', () => {
     expect(vm.nodes[4].meta).toBe('3 lectures · J-165');
   });
 
+  it('should not compute days left before hydration (same output as the static HTML)', () => {
+    const { vm } = vmOf(stateBuilder().withCatalog(catalogFactory()).build());
+    expect(vm.news?.daysLeft).toBeNull();
+    expect(vm.nodes[4].meta).toBe('3 lectures');
+  });
+
   it('should have no news when no election is featured', () => {
     const catalog = catalogFactory({ elections: [electionFactory({ featured: false })] });
     const { vm } = vmOf(stateBuilder().withCatalog(catalog).withProgressStatus('ready').build());

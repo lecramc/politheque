@@ -15,12 +15,12 @@ export function LegalStepList({ steps }: { steps: PresentedEntry['steps'] }) {
         borderLeftWidth: 2,
         borderColor: colors.tintBorder,
         marginLeft: 6,
-        gap: 14,
+        gap: effects.spacing.smd,
         paddingVertical: 4,
       }}
     >
       {steps.map((step, index) => (
-        <View key={`${step.date}-${index}`} style={{ paddingLeft: 16, gap: 4 }}>
+        <View key={`${step.date}-${index}`} style={{ paddingLeft: 16, gap: effects.spacing.xxs }}>
           <Text style={{ ...fonts.bold, color: colors.tint }}>{step.date}</Text>
           {step.court ? (
             <Text style={{ fontSize: 14, color: colors.text.secondary }}>{step.court}</Text>

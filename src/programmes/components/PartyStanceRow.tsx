@@ -3,7 +3,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { layout } from '@/components/layout';
-import { useTheme } from '@/components/ThemeContext';
+import { theme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { tv } from '@/src/core/web/tv';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
@@ -64,7 +64,13 @@ export function PartyStanceRow({
 }
 
 const styles = StyleSheet.create({
-  row: { flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', columnGap: 8, rowGap: 6 },
+  row: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    columnGap: theme.effects.spacing.xs,
+    rowGap: 6,
+  },
   name: { flex: 1, fontSize: 14, minWidth: 0 },
   cell: { width: layout.stanceCell.base, flexShrink: 0 },
   full: { flexBasis: '100%' },

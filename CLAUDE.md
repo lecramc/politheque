@@ -152,12 +152,13 @@ Toujours utiliser ces composants avant d'en créer de nouveaux.
 
 ### Composants partagés — `components/`
 
-| Composant       | Usage                                                                      |
-| --------------- | -------------------------------------------------------------------------- |
-| `Text`          | Text themé avec variants : `body`, `title`, `subtitle`, `caption`, `quote` |
-| `View`          | View de base                                                               |
-| `ErrorBoundary` | Wrapping d'erreurs React                                                   |
-| `ThemeContext`  | Provider + `useTheme()` hook                                               |
+| Composant       | Usage                                                                                                                                                                   |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `Text`          | Text themé, variants : `title` 28/34, `display` 22/28, `subtitle`, `body` 16/24, `secondary` 15/22, `label` 13, `caption`, `quote` ; interligne proportionnel si absent |
+| `TextLink`      | Lien texte unique (`components/ui/TextLink`) : `tint`, souligné, survol et `:focus-visible` par la feuille CSS                                                          |
+| `View`          | View de base                                                                                                                                                            |
+| `ErrorBoundary` | Wrapping d'erreurs React                                                                                                                                                |
+| `ThemeContext`  | Provider + `useTheme()` hook                                                                                                                                            |
 
 ### Hooks core — `src/core/hooks/`
 
@@ -204,7 +205,7 @@ colors.shadow.color / elevation
 ```
 effects.blur                   // 25
 effects.opacity.disabled (0.5) / pressed (0.7)
-effects.borderRadius.xs (8) / small (16) / medium (20) / large (28) / round (100)
+effects.borderRadius.xs (8) / small (14) / medium (14) / large (28) / round (100)
 effects.borderRadius.input (16) / inputGrouped (10)
 effects.spacing.none/xxs/xs/sm/smd/md/lg/xl/xxl   // 0/3/6/12/16/20/28/36/48
 effects.shadow.sm / md / lg    // { shadowOffset, shadowRadius, shadowOpacity }

@@ -1,9 +1,9 @@
-import { Link } from 'expo-router';
 import React from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { TextLink } from '@/components/ui/TextLink';
 import { Card } from '@/src/programmes/components/Card';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
 import type { PresentedCorrection } from '@/src/programmes/view-models/corrections.view-model';
@@ -23,13 +23,9 @@ export function CorrectionItem({ item }: { item: PresentedCorrection }) {
         <Text style={{ fontSize: 16, lineHeight: 25 }}>{item.summary}</Text>
         <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.sm }}>
           {item.pages.map((page) => (
-            <Link
-              key={page.path}
-              href={page.path as never}
-              style={{ color: colors.tint, textDecorationLine: 'underline', fontSize: 14 }}
-            >
-              {page.label} →
-            </Link>
+            <TextLink key={page.path} href={page.path} size={14} standalone>
+              {page.label}
+            </TextLink>
           ))}
         </View>
       </Card>

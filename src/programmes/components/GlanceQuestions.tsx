@@ -1,10 +1,10 @@
-import { Link } from 'expo-router';
 import React, { useState } from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { TextLink } from '@/components/ui/TextLink';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceList } from '@/src/programmes/components/SourceChip';
@@ -26,14 +26,27 @@ export function GlanceQuestions({
   positionsLabel: string;
   positionsHref: string;
 }) {
-  const { colors, effects, fonts } = useTheme();
+  const { colors, effects } = useTheme();
   const [openId, setOpenId] = useState<string | null>(null);
   const open = items.find((item) => item.questionId === openId) ?? null;
 
   return (
     <View style={{ gap: effects.spacing.sm }}>
-      <View style={{ gap: 4 }}>
-        <SectionTitle>Pour ou contre ?</SectionTitle>
+      <View style={{ gap: effects.spacing.xxs }}>
+        <View
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            alignItems: 'baseline',
+            justifyContent: 'space-between',
+            columnGap: effects.spacing.sm,
+          }}
+        >
+          <SectionTitle>Pour ou contre ?</SectionTitle>
+          <TextLink href={positionsHref} size={15} standalone>
+            {positionsLabel}
+          </TextLink>
+        </View>
         <Text style={{ fontSize: 16, color: colors.text.secondary }}>{intro}</Text>
       </View>
       <View
@@ -55,6 +68,7 @@ export function GlanceQuestions({
         {items.map((item, index) => (
           <View key={item.questionId} role="listitem">
             <Pressable
+              ring="inside"
               onPress={() => setOpenId(item.questionId)}
               accessibilityRole="button"
               accessibilityLabel={`${item.label} : ${STANCE_LABEL[String(item.stance)]}. Ouvrir la justification et les sources.`}
@@ -69,26 +83,16 @@ export function GlanceQuestions({
             >
               <StanceRow label={item.label} stance={item.stance} />
             </Pressable>
+            <View
+              style={{ paddingHorizontal: effects.spacing.md, paddingBottom: effects.spacing.sm }}
+            >
+              <TextLink href={item.compareHref} size={14} standalone>
+                Comparer avec un autre parti
+              </TextLink>
+            </View>
           </View>
         ))}
       </View>
-      <Link href={positionsHref as never} asChild>
-        <Pressable
-          accessibilityRole="link"
-          style={{
-            minHeight: 52,
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingHorizontal: effects.spacing.md,
-            borderRadius: effects.borderRadius.small,
-            borderWidth: 1.5,
-            borderColor: colors.text.secondary,
-            backgroundColor: colors.surface.primary,
-          }}
-        >
-          <Text style={{ ...fonts.bold, fontSize: 16, textAlign: 'center' }}>{positionsLabel}</Text>
-        </Pressable>
-      </Link>
       <Sheet isOpen={!!open} onClose={() => setOpenId(null)} title={open?.label ?? ''}>
         {open ? (
           <>

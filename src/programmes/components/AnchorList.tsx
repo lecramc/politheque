@@ -3,6 +3,7 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { tv } from '@/src/core/web/tv';
 
 export interface AnchorItem {
   /** Identifiant de l'ancre : le bloc cible porte `nativeID` avec la même valeur. */
@@ -26,6 +27,7 @@ export function AnchorList({
         <Text
           key={item.id}
           role="link"
+          {...tv('text-link', 'text-link-block')}
           {...({ href: `#${item.id}` } as object)}
           style={{
             ...fonts.regular,

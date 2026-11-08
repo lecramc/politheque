@@ -45,7 +45,7 @@ export default function DebatesScreen() {
                 flexGrow: 1,
                 flexBasis: 150,
                 minHeight: 170,
-                gap: 10,
+                gap: effects.spacing.sm,
                 padding: effects.spacing.md,
                 borderRadius: effects.borderRadius.small,
                 borderWidth: 1,

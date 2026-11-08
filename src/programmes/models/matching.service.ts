@@ -15,8 +15,10 @@ export const MIN_COMPARED = 5;
 
 export interface PartyProximity {
   partyId: string;
-  /** 0 à 100, ou null si moins de MIN_COMPARED questions comparables. */
+  /** 0 à 100, arrondi à l'unité (affichage), ou null si moins de MIN_COMPARED questions comparables. */
   score: number | null;
+  /** Même valeur sans arrondi : sert au classement et à la marge, jamais à l'affichage. */
+  rawScore: number | null;
   /** Nombre de questions réellement comparées (réponse utilisateur ET position du parti connues). */
   comparedCount: number;
 }
@@ -38,22 +40,27 @@ export const computeProximity = (answers: Answers, party: Party): PartyProximity
     comparedCount += 1;
   }
 
+  const rawScore = comparedCount < MIN_COMPARED ? null : (weightedAgreement / totalWeight) * 100;
   return {
     partyId: party.id,
-    score:
-      comparedCount < MIN_COMPARED ? null : Math.round((weightedAgreement / totalWeight) * 100),
+    score: rawScore === null ? null : Math.round(rawScore),
+    rawScore,
     comparedCount,
   };
 };
 
-/** Du plus proche au plus éloigné ; scores non calculables en dernier ; égalités par nom. */
+/**
+ * Du plus proche au plus éloigné, sur le score non arrondi ; scores non calculables en dernier.
+ * Le nom ne sert qu'à rendre l'ordre déterministe quand deux scores sont exactement égaux : la
+ * présentation (`presentRanking`) affiche alors « à égalité », jamais un « premier » par le nom.
+ */
 export const rankParties = (answers: Answers, parties: Party[]): PartyProximity[] => {
   const names = new Map(parties.map((p) => [p.id, p.name]));
   return parties
     .map((party) => computeProximity(answers, party))
     .sort(
       (a, b) =>
-        (b.score ?? -1) - (a.score ?? -1) ||
+        (b.rawScore ?? -1) - (a.rawScore ?? -1) ||
         (names.get(a.partyId) ?? '').localeCompare(names.get(b.partyId) ?? '', 'fr')
     );
 };

@@ -5,7 +5,11 @@ import { buildJourney } from '@/src/programmes/models/journey.model';
 import { computeJourneyProgress } from '@/src/programmes/models/journey.service';
 import type { Answers } from '@/src/programmes/models/matching.service';
 import type { Catalog } from '@/src/programmes/models/programme.model';
-import { parseContentKey } from '@/src/programmes/models/reading-progress.model';
+import {
+  contentKey,
+  isRead,
+  parseContentKey,
+} from '@/src/programmes/models/reading-progress.model';
 
 export const selectCatalog = (state: AppState) => state.programmes.catalog;
 export const selectCatalogStatus = (state: AppState) => state.programmes.status;
@@ -44,6 +48,16 @@ export const selectJourney = createSelector([selectCatalog], (catalog) =>
 export const selectJourneyProgress = createSelector(
   [selectJourney, selectReadingEntries],
   computeJourneyProgress
+);
+
+/**
+ * Le questionnaire a été terminé (tampon de lecture) mais aucune réponse n'est en mémoire : les
+ * réponses ne sont jamais persistées, un rechargement de la page les efface.
+ */
+export const selectResultsLost = createSelector(
+  [selectReadingEntries, selectQuiz],
+  (entries, quiz) =>
+    isRead(entries, contentKey.quizDone) && Object.values(quiz.values).every((v) => v === null)
 );
 
 /** Réponses données (y compris « pas d'avis »), avec leur importance. */

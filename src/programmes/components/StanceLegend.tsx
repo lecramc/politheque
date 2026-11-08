@@ -26,7 +26,14 @@ export function StanceLegend() {
       }}
     >
       <Text variant="caption">Légende</Text>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', columnGap: 20, rowGap: 8 }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          columnGap: 20,
+          rowGap: effects.spacing.xs,
+        }}
+      >
         {STANCE_SCALE.map((stance) => (
           <StanceBadge key={String(stance)} stance={stance} label="full" />
         ))}

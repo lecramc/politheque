@@ -231,6 +231,12 @@ describe('Feature: Pour ou contre ?', () => {
       sources: [vote],
     });
   });
+
+  it('should link each line to the comparison of its debate, with this party preselected', () => {
+    const theme = vmOf(complete, 'beta').stances[0].question.theme;
+    expect(vmOf(complete, 'beta').glance[0].compareHref).toBe(`/debats/${theme}?comparer=beta`);
+    expect(vmOf(complete, 'alpha').glance[0].compareHref).toBe(`/debats/${theme}?comparer=alpha`);
+  });
 });
 
 describe('Feature: bas de fiche', () => {
@@ -241,25 +247,13 @@ describe('Feature: bas de fiche', () => {
 });
 
 describe('Feature: pour aller plus loin', () => {
-  it('should link the history, the definition and the 2027 programme with their counts', () => {
+  it('should only link the definition, the other sections being tabs of the same sheet', () => {
     expect(vmOf(complete, 'alpha').further).toEqual([
-      {
-        key: 'histoire',
-        title: 'Son histoire',
-        subtitle: 'Fondé en 1972 · 2 dates clés',
-        href: '/partis/alpha/histoire',
-      },
       {
         key: 'definition',
         title: 'Comment il se définit, comment on le classe',
         subtitle: null,
         href: '/partis/alpha/histoire',
-      },
-      {
-        key: 'programme',
-        title: 'Son programme pour 2027',
-        subtitle: '4 thèmes, chaque mesure sourcée',
-        href: '/partis/alpha/programme-2027',
       },
     ]);
   });
@@ -275,7 +269,7 @@ describe('Feature: pour aller plus loin', () => {
       },
       withStanceSources(partyOf('beta', 'Beta')),
     ]);
-    expect(vmOf(noSelfDefinition, 'alpha').further[1]).toMatchObject({
+    expect(vmOf(noSelfDefinition, 'alpha').further[0]).toMatchObject({
       key: 'definition',
       title: 'Comment on le classe',
     });
@@ -286,6 +280,6 @@ describe('Feature: pour aller plus loin', () => {
     expect(vm.glanceIntro).toBe(
       '2 questions, les mêmes pour les 2 partis. Touchez-en une pour voir pourquoi et les sources.'
     );
-    expect(vm.positionsLabel).toBe('Ses positions sur les 3 questions');
+    expect(vm.positionsLabel).toBe('Voir les 3 positions');
   });
 });

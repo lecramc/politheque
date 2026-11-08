@@ -49,7 +49,9 @@ export const journeyViewModel =
       (status, progress, entries, celebrations, election, catalog) => {
         const hydrated = status === 'ready';
         const round = election ? nextRound(election, now) : null;
-        const daysLeft = round ? daysUntil(round.date, now) : null;
+        // « J-n » dépend du jour : calculé après l'hydratation seulement, sinon le client
+        // rejouerait un texte différent de celui du HTML statique (erreur React #418).
+        const daysLeft = hydrated && round ? daysUntil(round.date, now) : null;
         const questionCount = catalog?.questions.length ?? 0;
         const opts = { daysLeft, questionCount };
         const nextId = hydrated ? (progress.next?.step.id ?? null) : null;

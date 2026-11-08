@@ -1,0 +1,2204 @@
+[
+  {
+    "question": "q35-chasse-dimanche",
+    "known": 7,
+    "retained": false,
+    "status": "non retenue (7/10)",
+    "definition": {
+      "theme": "ecologie",
+      "statement": "Il faut interdire la chasse le dimanche.",
+      "shortLabel": "Interdire la chasse le dimanche",
+      "help": "Aucune loi n'interdit de chasser un jour précis de la semaine : l'interdiction du mercredi, votée en 2000, a été supprimée en 2003, et les jours sans chasse sont décidés localement. Une proposition de loi écologiste interdisant la chasse le dimanche a été rejetée en commission à l'Assemblée le 29 mars 2023, et le gouvernement avait écarté l'idée dans son plan pour la sécurité à la chasse de janvier 2023. Lors de la saison 2025-2026, l'Office français de la biodiversité a recensé 92 accidents de chasse, dont 4 mortels ; 10 victimes n'étaient pas des chasseurs. Les partisans invoquent la sécurité et le partage de la nature le week-end ; les opposants rappellent que beaucoup de chasseurs qui travaillent ne peuvent chasser que ce jour-là.",
+      "helpSources": [
+        {
+          "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 (examen de la proposition de loi n° 886 « visant à garantir l'accès sûr et tranquille à la nature pour tous les Français »)",
+          "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+          "date": "2023-03-29"
+        },
+        {
+          "title": "LCP, « Interdiction de la chasse le dimanche : une proposition de loi du groupe Ecologiste rejetée en commission »",
+          "url": "https://lcp.fr/actualites/interdiction-de-la-chasse-le-dimanche-une-proposition-de-loi-du-groupe-ecologiste",
+          "date": "2023-03-29"
+        },
+        {
+          "title": "Public Sénat, « Sécurisation de la chasse : « Le gouvernement a fait le choix des lobbies plutôt que de la vie », dénonce le patron des écologistes du Sénat »",
+          "url": "https://www.publicsenat.fr/actualites/politique/securisation-de-la-chasse-le-gouvernement-a-fait-le-choix-des-lobbies-plutot-que",
+          "date": "2023-01-09"
+        },
+        {
+          "title": "Office français de la biodiversité, Bilan des accidents et incidents de chasse, saison 2025-2026",
+          "url": "https://ofb.gouv.fr/sites/ofb-gouv-fr/files/2026-07/bilan_2026-accident.pdf",
+          "date": "2026-07"
+        }
+      ],
+      "axis": null,
+      "direction": 1,
+      "formulationReview": "Une seule idée, phrase courte (40 caractères), vocabulaire courant, sans adjectif évaluatif ni sigle. Axe null justifié : clivage gauche écologiste contre le reste, le PCF à contre-sens de la gauche, donc la question ne mesure pas proprement un des trois axes. Discrimination : sur les 8 partis codés (+2, +2, +1, -1, -2, -2, -2, -2), écart-type 1,73, des partis de chaque côté de 0. Elle sépare LFI et Écologistes du PCF (écart de 3 points), l'objectif de N1. Couverture : 8/10 seulement, dont le PCF sur une base fragile (voir notes) ; NE et Reconquête non documentés. Si le vérificateur juge le PCF non explicite, la question tombe à 7/10 et n'est pas retenue en l'état. Aucune variante adossée à un scrutin public n'existe : la proposition de loi n° 886 est tombée en commission (amendements de suppression adoptés, pas de scrutin nominatif) et n'a pas fait l'objet de vote en séance à notre connaissance. Variante possible (« Il faut instaurer un jour par semaine sans chasse dans toute la France ») : elle n'apporte pas de partis supplémentaires et colle moins aux textes (la proposition de loi de 2023 vise le dimanche). Je recommande l'énoncé tel quel. Le fait « aucune loi n'interdit » dans help est vérifié pour 2023 (débats de la commission) ; je n'ai pas vérifié qu'aucun texte adopté en 2024-2026 n'a changé cela (la proposition de loi Chaize de 2023 ne prévoyait pas de jour sans chasse) : à confirmer avant publication."
+    },
+    "positions": {
+      "lfi": {
+        "stance": 2,
+        "justification": "En 2022, Jean-Luc Mélenchon proposait de mettre fin à la chasse les week-ends et pendant les vacances scolaires. Le 29 mars 2023, en commission à l'Assemblée, la députée LFI Ersilia Soudais a annoncé le vote de son groupe en faveur de la proposition de loi interdisant la chasse le dimanche : « Nous voterons donc en faveur de cette proposition ».",
+        "sources": [
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de Mme Ersilia Soudais (LFI-NUPES) sur la proposition de loi n° 886",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "vote"
+          },
+          {
+            "title": "Public Sénat, « Chasse : que proposent les prétendants à l'Elysée ? »",
+            "url": "https://www.publicsenat.fr/actualites/politique/chasse-que-proposent-les-pretendants-a-l-elysee-199266",
+            "date": "2022-03-22",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Ersilia Soudais (LFI-NUPES) est l'oratrice du groupe en discussion générale ; « Nous voterons en faveur de cette proposition » figure au compte rendu (29 mars 2023, commission présidée par M. Zulesi). Public Sénat (22 mars 2022) confirme que Jean-Luc Mélenchon souhaitait « la fin de la chasse les week-ends et pendant les vacances scolaires ». Groupe LFI-NUPES = LFI aujourd'hui. Rien sur la chasse dans le programme 2027 disponible."
+            }
+          ]
+        }
+      },
+      "pcf": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite de Fabien Roussel ni de position du groupe communiste sur l'interdiction de la chasse le dimanche ; en commission, le 29 mars 2023, l'orateur du groupe GDR s'est exprimé « à titre personnel », le groupe étant divisé.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de M. Hubert Wulfranc (GDR-NUPES)",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "modifiee",
+              "before": -1,
+              "after": null,
+              "comment": "Public Sénat (22 mars 2022) : la phrase de Fabien Roussel vise des « propositions démagogiques » de la gauche en général ; l'article ne la relie ni au week-end ni au dimanche. La source VL Média (seule à évoquer ses propos sur BFMTV) renvoie 403 ; Europe 1 (node 86468) renvoie 403 (un résumé de moteur de recherche lui prête « Interdire la chasse le week-end, ce serait interdire la chasse tout court », non vérifiable, donc non utilisé). En commission, l'orateur GDR (Hubert Wulfranc) s'exprime « à titre personnel » car le groupe est divisé : pas de position du groupe. Deux recherches supplémentaires (Roussel + jour sans chasse / dimanche / week-end ; Roussel + FNC 2026) : rien d'explicite. Position non explicite sur l'énoncé → null."
+            }
+          ]
+        }
+      },
+      "ecologistes": {
+        "stance": 2,
+        "justification": "Le groupe écologiste a déposé en 2023 la proposition de loi dont l'article unique dispose : « Nul ne peut chasser le dimanche » (rapporteur Charles Fournier). En 2022, Yannick Jadot proposait d'interdire la chasse le week-end et pendant les vacances scolaires.",
+        "sources": [
+          {
+            "title": "LCP, « Interdiction de la chasse le dimanche : une proposition de loi du groupe Ecologiste rejetée en commission »",
+            "url": "https://lcp.fr/actualites/interdiction-de-la-chasse-le-dimanche-une-proposition-de-loi-du-groupe-ecologiste",
+            "date": "2023-03-29",
+            "kind": "presse"
+          },
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de Mme Lisa Belluco (Écolo-NUPES)",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "proposition-de-loi"
+          },
+          {
+            "title": "L'info durable (AFP), « Présidentielle: Jadot accuse les chasseurs « de prendre en otage le reste de la société » »",
+            "url": "https://www.linfodurable.fr/presidentielle-jadot-accuse-les-chasseurs-de-prendre-en-otage-le-reste-de-la-societe-31418",
+            "date": "2022-03-20",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Proposition de loi n° 886 du groupe écologiste (article unique « Nul ne peut chasser le dimanche ») ; Lisa Belluco (Écolo-NUPES), oratrice : « Il est donc grand temps d'engager une première étape en interdisant la chasse un jour par semaine ». Texte du groupe = règle 2 bis (b). Groupe Écologiste = Les Écologistes aujourd'hui."
+            }
+          ]
+        }
+      },
+      "ps-place-publique": {
+        "stance": 1,
+        "justification": "Le 29 mars 2023, en commission, le député socialiste Gérard Leseul a jugé que la proposition de loi interdisant la chasse le dimanche « va dans le bon sens », « moyennant sans doute des aménagements », et annoncé que son groupe l'examinerait « avec bienveillance ». Pas de déclaration de Raphaël Glucksmann sur ce point.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de M. Gérard Leseul (SOC)",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": 1,
+              "after": 1,
+              "comment": "Gérard Leseul (SOC), orateur du groupe : « Nous examinerons votre proposition avec bienveillance », avec aménagements envisagés. Plutôt favorable avec nuances → +1, cohérent avec le barème."
+            }
+          ]
+        }
+      },
+      "renaissance": {
+        "stance": -2,
+        "justification": "Le 29 mars 2023, en commission, le député Renaissance Jean-François Lovisolo a déclaré que « le groupe Renaissance est défavorable à cette proposition » et que ses membres avaient déposé un amendement de suppression ; en janvier 2023, le plan du gouvernement pour la sécurité à la chasse avait écarté le jour sans chasse.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de M. Jean-François Lovisolo (RE)",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "vote"
+          },
+          {
+            "title": "Public Sénat, « Sécurisation de la chasse : « Le gouvernement a fait le choix des lobbies plutôt que de la vie », dénonce le patron des écologistes du Sénat »",
+            "url": "https://www.publicsenat.fr/actualites/politique/securisation-de-la-chasse-le-gouvernement-a-fait-le-choix-des-lobbies-plutot-que",
+            "date": "2023-01-09",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Jean-François Lovisolo (RE) parle explicitement au nom du groupe : « le groupe Renaissance est défavorable à cette proposition » ; amendement de suppression du groupe. Groupe RE = Renaissance (groupe EPR aujourd'hui)."
+            }
+          ]
+        }
+      },
+      "horizons": {
+        "stance": -2,
+        "justification": "Le 29 mars 2023, en commission, le député Horizons Henri Alfandari a déclaré : « nous sommes contre votre proposition de loi », tout en annonçant que son groupe ne voterait pas les amendements de suppression « afin que le débat puisse avoir lieu ».",
+        "sources": [
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de M. Henri Alfandari (HOR)",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Henri Alfandari (HOR), orateur du groupe : « nous sommes contre votre proposition de loi », tout en refusant de voter les amendements de suppression « afin que le débat puisse avoir lieu ». Opposition au fond explicite ; le refus de supprimer l'article est un choix de procédure, pas une nuance sur la mesure. −2 retenu, même traitement que le RN (« Nous voterons contre »). Groupe HOR = Horizons aujourd'hui."
+            }
+          ]
+        }
+      },
+      "lr": {
+        "stance": -2,
+        "justification": "Le 29 mars 2023, en commission, le député LR Emmanuel Maquet a annoncé que « le groupe Les Républicains s'opposera frontalement » à la proposition de loi interdisant la chasse le dimanche. Au Sénat, le rapporteur LR de la mission sur la sécurité à la chasse, Patrick Chaize, refusait le 4 avril 2023 de « prendre cette décision de manière uniforme sur le territoire national ».",
+        "sources": [
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de M. Emmanuel Maquet (LR)",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "vote"
+          },
+          {
+            "title": "Public Sénat, « Saint-Dié-des-Vosges interdit la chasse le dimanche après-midi, une décision qui relance le débat »",
+            "url": "https://www.publicsenat.fr/actualites/politique/saint-die-des-vosges-interdit-la-chasse-le-dimanche-apres-midi-une-decision-qui",
+            "date": "2023-04-04",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Emmanuel Maquet parle au nom du groupe : « le groupe Les Républicains s'opposera frontalement au message et aux objectifs de ce texte ». Groupe LR de 2023 = LR (groupe Droite républicaine aujourd'hui) ; source Sénat (Patrick Chaize, LR) en appoint."
+            }
+          ]
+        }
+      },
+      "nouvelle-energie": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite de David Lisnard ni de son parti sur l'interdiction de la chasse le dimanche.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "Une recherche (« David Lisnard chasseurs dimanche chasse interdiction 2026 ») : aucun propos de David Lisnard ni de Nouvelle Énergie. null maintenu."
+            }
+          ]
+        }
+      },
+      "rn": {
+        "stance": -2,
+        "justification": "Le 29 mars 2023, en commission à l'Assemblée, le député RN Emmanuel Blairy, orateur de son groupe, a déclaré : « Nous voterons contre cette proposition de loi », et la députée RN Edwige Diaz a déposé un amendement de suppression de l'article interdisant la chasse le dimanche.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, commission du développement durable, compte rendu n° 54 : intervention de M. Emmanuel Blairy (RN)",
+            "url": "https://www.assemblee-nationale.fr/dyn/opendata/CRCANR5L16S2023PO419865N054.html",
+            "date": "2023-03-29",
+            "kind": "vote"
+          },
+          {
+            "title": "Assemblée nationale, amendement n° 79 à la proposition de loi n° 886, présenté par Mme Diaz : « Supprimer cet article »",
+            "url": "https://www.assemblee-nationale.fr/dyn/16/amendements/0886/AN/79.pdf",
+            "date": "2023-04-03",
+            "kind": "proposition-de-loi"
+          }
+        ],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "modifiee",
+              "before": -2,
+              "after": -2,
+              "comment": "Emmanuel Blairy (RN), orateur du groupe : « Nous voterons contre cette proposition de loi. » Valeur confirmée. La source VL Média (citation de Marine Le Pen en 2022) renvoie 403 et n'est pas une source de référence : retirée, avec la phrase correspondante de la justification."
+            }
+          ]
+        }
+      },
+      "reconquete": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite d'Éric Zemmour ni de Reconquête sur l'interdiction de la chasse le dimanche.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B1",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "Une recherche (Zemmour / Reconquête + chasse le dimanche / jour sans chasse) : seulement des propos généraux de 2022 (« une activité essentielle dans la gestion de notre espace rural »), sans rapport avec un jour sans chasse. null maintenu."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[B1] Texte de référence commun : examen en commission de la proposition de loi écologiste n° 886 (29 mars 2023), avec un orateur par groupe (compte rendu officiel n° 54). Pas de scrutin public : la proposition est tombée par l'adoption de 23 amendements de suppression ; l'examen en séance (journée réservée du 6 avril 2023) n'a pas été vérifié (texte placé en fin d'ordre du jour, sans doute non examiné). Les positions sont celles des groupes de 2023 (16e législature) ou des candidats de 2022 ; aucune déclaration des candidats 2027 (Glucksmann, Attal, Philippe, Retailleau, Tondelier) n'a été cherchée faute de quota. Fragilités : PCF à -1 sur des propos de 2022 qui visent les propositions d'interdiction de la gauche sans nommer le dimanche, avec un groupe GDR divisé en 2023 ; un vérificateur strict pourrait le mettre à null (la question passerait à 7/10). Horizons à -2 malgré le refus de voter les amendements de suppression (choix de procédure ; l'opposition au texte est explicite) ; -1 défendable. LFI et Écologistes ont proposé en 2022 plus que le dimanche (week-ends et vacances scolaires), ce qui inclut l'énoncé. Hypothèses de l'audit confirmées pour LFI, ECO, RE, LR, RN ; PS +1 confirmé ; PCF -1 au lieu de -2 ; HOR -2 au lieu de -1 ; NE et REC non documentés. Compteur : 14 recherches web sur 15."
+  },
+  {
+    "question": "q36-fonctionnaires",
+    "known": 10,
+    "retained": true,
+    "status": "retenue",
+    "definition": {
+      "theme": "economie",
+      "statement": "Il faut réduire le nombre de fonctionnaires.",
+      "shortLabel": "Réduire le nombre de fonctionnaires",
+      "help": "Fin 2024, 5,9 millions de personnes travaillent dans la fonction publique : 2,6 millions pour l'État, 2,0 millions dans les collectivités locales et 1,25 million dans les hôpitaux et établissements médico-sociaux publics. Le projet de budget 2027 du gouvernement, en discussion au Parlement, prévoit environ 8 000 postes de plus dans les ministères, surtout dans l'éducation, les armées, la police et la justice, et 1 200 postes de moins dans les agences de l'État. Les partisans d'une baisse veulent réduire la dépense publique, ses opposants craignent un recul des services publics.",
+      "helpSources": [
+        {
+          "title": "Insee Première n° 2094, « L'emploi dans la fonction publique en 2024 »",
+          "url": "https://www.insee.fr/fr/statistiques/8732435",
+          "date": "2026-02-10"
+        },
+        {
+          "title": "Acteurs publics, « Budget 2027 : le gouvernement projette la création nette de 8 000 postes de fonctionnaires de l'État »",
+          "url": "https://acteurspublics.fr/articles/budget-2027-le-gouvernement-projette-la-creation-nette-de-8-000-postes-de-fonctionnaires-de-letat/",
+          "date": "2026-10-01"
+        }
+      ],
+      "axis": "economique",
+      "direction": 1,
+      "formulationReview": "Une idée, langage simple, aucun adjectif évaluatif, 43 caractères. L'accord tire vers le pôle « Marché et réduction de la dépense publique », comme q02 et q25 : à équilibrer avec les questions dont l'accord tire vers le pôle −. 10 partis sur 10 documentés, écart-type d'environ 1,9 (quatre à −2, cinq à +2, un à +1). Risque de corrélation forte avec q02-depenses (mêmes signes pour les dix partis) : la question apporte peu d'information en plus pour la carte, à vérifier après codage. « Fonctionnaires » est compris au sens courant (tous les agents publics, y compris contractuels) : le texte d'aide parle de « personnes qui travaillent dans la fonction publique ». Variante possible, plus précise : « Il faut réduire le nombre d'agents publics, hors police, justice, santé et éducation » (mais elle ajoute une condition et ferait passer plusieurs partis de droite et le RN à des valeurs différentes, à recoder).",
+      "helpVerifiedBy": "V2"
+    },
+    "positions": {
+      "lfi": {
+        "stance": -2,
+        "justification": "Les orientations budgétaires 2027 de La France insoumise prévoient d'« ouvrir des postes », dont 10 000 postes d'enseignants dès 2027 et au moins 10 000 postes de soignants, et parlent de « reconstruction des effectifs de fonctionnaires ». Le programme commun des législatives de 2024 prévoyait déjà le « rattrapage des postes manquants de fonctionnaires ».",
+        "sources": [
+          {
+            "title": "La France insoumise, « Comment nous allons remettre de l'ordre dans les comptes publics » (orientations budgétaires 2027)",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/10/Comment-nous-allons-remettre-de-l-ordre-dans-les-comptes-publics.pdf",
+            "date": "2026-10",
+            "kind": "programme"
+          },
+          {
+            "title": "Public Sénat (AFP), « Présidentielle 2027 : Jean-Luc Mélenchon table sur 106 milliards de recettes supplémentaires et 82 milliards de dépenses nouvelles pour 2027 »",
+            "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-jean-luc-melenchon-table-sur-106-milliards-de-recettes-supplementaires-et-82-milliards-de-depenses-nouvelles-pour-2027",
+            "date": "2026-10-14",
+            "kind": "presse"
+          },
+          {
+            "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Public Sénat (AFP, 14 octobre 2026) : « créer 10 000 postes d'enseignants » et « la création de 10 000 postes de personnels soignants ». Le PDF des orientations budgétaires n'est pas lisible par l'outil (polices encodées) : citations du PDF non recontrôlées mais concordantes avec l'AFP."
+            }
+          ]
+        }
+      },
+      "pcf": {
+        "stance": -2,
+        "justification": "Le programme présidentiel de Fabien Roussel en 2022 proposait de développer les services publics « par l'embauche de 500 000 nouveaux agents », dont 100 000 à l'hôpital et 90 000 dans l'Éducation nationale. Le PCF a signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires ». Programme 2027 non publié.",
+        "sources": [
+          {
+            "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
+            "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
+            "date": "2022-01",
+            "kind": "programme"
+          },
+          {
+            "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Les deux PDF s'ouvrent mais leur texte n'est pas extractible ici (images / polices encodées). L'embauche de « 500 000 nouveaux agents » du programme de 2022 et le « rattrapage des postes manquants de fonctionnaires » du contrat NFP de 2024 sont des éléments publics connus et cohérents ; Fabien Roussel est toujours secrétaire national et candidat. Position datée (2022 et 2024) : la justification le dit. À rouvrir par l'éditeur dans un lecteur PDF si possible."
+            }
+          ]
+        }
+      },
+      "ecologistes": {
+        "stance": -2,
+        "justification": "Les Écologistes ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et les services de l'État, et le rétablissement des « milliers de postes supprimés » à l'ONF, à l'OFB et à Météo-France. Leur programme 2027 prévoit un « plan de titularisation » des agents publics sous contrat privé et plus de moyens humains pour certaines autorités.",
+        "sources": [
+          {
+            "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          },
+          {
+            "title": "Acteurs publics, « Les Écologistes veulent en finir avec le new public management et les cabinets de conseil »",
+            "url": "https://acteurspublics.fr/articles/les-ecologistes-veulent-en-finir-avec-le-new-public-management-et-les-cabinets-de-conseil/",
+            "date": "2026-07-17",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "modifiee",
+              "before": -2,
+              "after": -2,
+              "comment": "Valeur confirmée (NFP 2024 explicite ; Acteurs publics : « un plan de titularisation des agents publics embauchés sur des contrats de droit privé » et plus de « moyens financiers et humains » pour la HATVP). Seule la date de la source Acteurs publics est corrigée : 17 juillet 2026 (et non « 2026-07 » déduit)."
+            }
+          ]
+        }
+      },
+      "ps-place-publique": {
+        "stance": -2,
+        "justification": "Le Parti socialiste et Place publique ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et dans les services de l'État. Raphaël Glucksmann n'a pas publié de chiffre sur le nombre total d'agents publics.",
+        "sources": [
+          {
+            "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Une recherche (Glucksmann + fonctionnaires / postes 2027) : seulement des sites agrégateurs (ÉlyséeScope), qui lui prêtent une réduction de postes administratifs dans l'Éducation nationale ; non admissibles, non retenus. Aucune déclaration 2026 de Raphaël Glucksmann sur le nombre total d'agents. Le −2 repose sur le contrat NFP de 2024 signé par le PS et Place publique (texte du parti, règle 2 bis b), comme pour le PCF et les Écologistes : même preuve, même valeur. Fragile : à revoir à la parution du programme 2027 (un redéploiement ferait passer à −1)."
+            }
+          ]
+        }
+      },
+      "renaissance": {
+        "stance": 2,
+        "justification": "Gabriel Attal propose « 100 000 postes supprimés » dans l'État et les collectivités sur le quinquennat, par le non-remplacement de certains départs à la retraite et un plan de départs volontaires, en épargnant l'Éducation, les Armées, la Justice et l'Intérieur (entretien au Parisien, 2 juillet 2026).",
+        "sources": [
+          {
+            "title": "Acteurs publics, « Gabriel Attal propose 100 000 fonctionnaires en moins et « l'impunité zéro » pour les ministres dépensiers »",
+            "url": "https://acteurspublics.fr/articles/gabriel-attal-propose-100-000-fonctionnaires-en-moins-et-limpunite-zero-pour-les-ministres-depensiers/",
+            "date": "2026-07-03",
+            "kind": "presse"
+          },
+          {
+            "title": "Mes chantiers capitaux – Gabriel Attal Président",
+            "url": "https://attalpresident.fr/programme",
+            "date": "2026-11",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Acteurs publics (3 juillet 2026, d'après l'entretien au Parisien du 2 juillet) : « les 100 000 postes supprimés », par « le non-remplacement de certains départs à la retraite et un plan de départs volontaires », Éducation, Armées, Justice et Intérieur épargnés. Gabriel Attal, secrétaire général de Renaissance et candidat."
+            }
+          ]
+        }
+      },
+      "horizons": {
+        "stance": 2,
+        "justification": "Le programme d'Édouard Philippe prévoit de « supprimer un tiers des fonctionnaires partant à la retraite, soit plus de 250 000 postes sur le quinquennat », et de « fusionner et supprimer des dizaines d'opérateurs, d'agences et de comités publics ».",
+        "sources": [
+          {
+            "title": "Avec Édouard 2027, « Pour une France plus prospère »",
+            "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+            "date": "2026-11",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Citation exacte présente : « Supprimer un tiers des fonctionnaires partant à la retraite, soit plus de 250 000 postes sur le quinquennat. »"
+            }
+          ]
+        }
+      },
+      "lr": {
+        "stance": 2,
+        "justification": "Lors du débat organisé par le Medef le 27 août 2026, Bruno Retailleau a proposé de réduire les effectifs « de 250 à 300 000 fonctionnaires » et de supprimer les agences de l'État qui ne justifient pas leur existence, avec « le statut pour le régalien, le contrat pour les autres ».",
+        "sources": [
+          {
+            "title": "Public Sénat, « Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? »",
+            "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+            "date": "2026-08-27",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Public Sénat (27 août 2026) : Bruno Retailleau, président de LR et candidat, propose de réduire « de 250 à 300 000 fonctionnaires » ; « Le statut pour le régalien, le contrat pour les autres ». Agences : paraphrase de l'article, correctement présentée."
+            }
+          ]
+        }
+      },
+      "nouvelle-energie": {
+        "stance": 2,
+        "justification": "David Lisnard propose de ne plus remplacer l'ensemble des agents qui quittent chaque année la fonction publique, en commençant par les fonctions administratives (octobre 2026), et de réduire « d'un tiers, puis de moitié » les organismes publics qu'il juge inutiles (29 août 2026). Il veut « moins de bureaucratie, moins de fonctions support inutiles » pour avoir « plus de policiers, plus d'infirmiers, plus d'enseignants » (14 avril 2025).",
+        "sources": [
+          {
+            "title": "Acteurs publics, « Réforme de l'État : David Lisnard défend un État moins bureaucratique et plus décentralisé »",
+            "url": "https://acteurspublics.fr/articles/reforme-de-letat-david-lisnard-defend-un-etat-moins-bureaucratique-et-plus-decentralise/",
+            "date": "2026-10-29",
+            "kind": "presse"
+          },
+          {
+            "title": "Nouvelle Énergie, « Le programme de David Lisnard est-il chiffré ? »",
+            "url": "https://www.unenouvelleenergie.fr/questions/le-programme-de-david-lisnard-est-il-chiffre/",
+            "date": "2026-09",
+            "kind": "programme"
+          },
+          {
+            "title": "Sud Radio, « Bercoff dans tous ses états » : David Lisnard sur l'État-providence, les fonctionnaires et la bureaucratie",
+            "url": "https://www.sudradio.fr/bercoff-dans-tous-ses-etats/david-lisnard-etat-providence-fonctionnaires-bureaucratie",
+            "date": "2025-04-14",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "modifiee",
+              "before": 1,
+              "after": 2,
+              "comment": "Nouvelle source trouvée (une recherche) : Acteurs publics, 29 octobre 2026, rapporte que le candidat propose « de ne plus remplacer l'ensemble des 500 000 agents qui quittent chaque année la fonction publique », en commençant par les fonctions administratives, et veut recruter les nouveaux enseignants sous contrat. C'est une mesure explicite de baisse des effectifs par non-remplacement, du même type que celles de Gabriel Attal et d'Édouard Philippe (+2), même sans chiffre global. Sud Radio (14 avril 2025) et la page Nouvelle Énergie (organismes réduits « d'un tiers, puis de moitié ») confirment. Source Cryptoast retirée (site non spécialisé). +1 → +2 (+1 resterait défendable si l'éditeur exige un chiffre net)."
+            },
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Contrôle de la modification de V2 (+1 → +2). Article rouvert, daté du 29 octobre 2026 : « David Lisnard propose de ne plus remplacer l'ensemble des 500 000 agents qui quittent chaque année la fonction publique », en commençant par les fonctions administratives. Le chiffre de 500 000 est le flux annuel de départs, pas un objectif de baisse ; l'article ne donne aucun chiffre de postes supprimés. La mesure est néanmoins une baisse explicite des effectifs par non-remplacement d'une partie des départs, du même type que celles de Gabriel Attal (+2) et d'Édouard Philippe (+2) ; David Lisnard est candidat et président de Nouvelle Énergie (règle 2 bis a). +2 confirmé ; le fix de V2 (justification et sources) est repris tel quel, la justification ne présentant pas les 500 000 comme un objectif."
+            }
+          ]
+        }
+      },
+      "rn": {
+        "stance": 2,
+        "justification": "Le plan budgétaire présenté par Marine Le Pen le 6 octobre 2026 prévoit que les collectivités et les agences de l'État voient « leurs effectifs réduits d'au moins 200.000 postes en cinq ans », selon le député Jean-Philippe Tanguy, qui vise le « millefeuille administratif » et des « organismes parasites ».",
+        "sources": [
+          {
+            "title": "Sud Radio, « Présidentielle : en quête de crédibilité budgétaire, Le Pen promet un effort « radical » de 140 milliards net »",
+            "url": "https://www.sudradio.fr/societe/presidentielle-en-quete-de-credibilite-budgetaire-le-pen-promet-un-effort-radical-de-140-milliards-net",
+            "date": "2026-10-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? »",
+            "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
+            "date": "2026-08-27",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Sud Radio (6 octobre 2026) : plan présenté par Marine Le Pen au siège du RN ; « effectifs réduits d'au moins 200.000 postes en cinq ans, a précisé Jean-Philippe Tanguy ». Il s'agit du programme budgétaire de la candidate (règle 2 bis b) ; Jean-Philippe Tanguy est toujours député RN (datan : groupe RN, en activité) et cadre national du parti. Confirmé."
+            }
+          ]
+        }
+      },
+      "reconquete": {
+        "stance": 2,
+        "justification": "Le plan « Budget 2027 » de Sarah Knafo, vice-présidente de Reconquête et députée européenne, prévoit le « non-remplacement de 800 000 départs administratifs sur l'ensemble du quinquennat ». Éric Zemmour n'a pas publié de chiffre propre.",
+        "sources": [
+          {
+            "title": "Sarah Knafo, « Budget 2027 – au moins 140 Md€ d'économies » (mesure 1, « Fonction publique et effectifs »)",
+            "url": "https://www.budget2027.fr/",
+            "date": "2026",
+            "kind": "programme"
+          },
+          {
+            "title": "Paris Match, « La rappeuse Koxie […] s'engage en politique aux côtés de Sarah Knafo » (fonction de Sarah Knafo)",
+            "url": "https://www.parismatch.be/actualites/people/2026/02/18/la-rappeuse-koxie-interprete-de-garcon-fait-son-retour-elle-sengage-en-politique-aux-cotes-de-sarah-knafo-4SD7DA24QNBZDJQS2FQFRU7ARY/",
+            "date": "2026-02-18",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B2",
+          "checks": [
+            {
+              "verifier": "V2",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "budget2027.fr : « Non-remplacement de 800 000 départs administratifs sur l'ensemble du quinquennat, sur 2,3 millions de départs naturels » ; le plan est signé Sarah Knafo et ne mentionne pas Reconquête ; la page ne porte pas de date (« 2026-09 » non confirmé, ramené à « 2026 »). Fonction : Paris Match (18 février 2026) la présente comme « vice-présidente de Reconquête ! » ; le titre « vice-présidente exécutive » n'est pas confirmé → corrigé. Elle exerce une fonction nationale : règle 2 bis (a) satisfaite, +2 maintenu. Une recherche sur une déclaration d'Éric Zemmour (2026) : rien."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[B2] Référence commune à gauche : le contrat du Nouveau Front populaire de juin 2024 (programme antérieur), faute de chiffres d'effectifs dans les programmes 2027 lisibles (programme des Écologistes en 403, programme PS-Place publique non trouvé). PS-Place publique : -2 repose seulement sur ce programme commun de 2024 ; si le programme 2027 de Raphaël Glucksmann affichait un redéploiement (moins de postes administratifs, plus d'enseignants), passer à -1. Reconquête : +2 repose sur le plan de Sarah Knafo, qu'un cadre du parti a présenté comme n'étant « pas un programme présidentiel » ; à rapprocher du programme de Zemmour quand il paraîtra. RN : l'hypothèse de l'audit (-1) est contredite par le plan du 6 octobre 2026 (au moins 200 000 postes en moins dans les collectivités et les agences). Nouvelle Énergie : +1 (redéploiement explicite et réduction des organismes, sans solde chiffré). Le projet de budget 2027 est encore en discussion au 8 novembre 2026 : le chiffre de 8 000 créations nettes (8 025 ETP, hors opérateurs ; 812 suppressions en administration centrale et 1 209 chez les opérateurs) est celui du projet du gouvernement. Aucun scrutin public commun aux dix partis trouvé (l'amendement du Sénat de novembre 2022 sur -5 % d'effectifs de l'État n'a pas de détail par groupe dans l'article lu)."
+  },
+  {
+    "question": "q37-audiovisuel-public",
+    "known": 5,
+    "retained": false,
+    "status": "non retenue (5/10)",
+    "definition": {
+      "theme": "institutions",
+      "statement": "Il faut privatiser France Télévisions et Radio France.",
+      "shortLabel": "Privatisation de France Télévisions et Radio France",
+      "help": "France Télévisions et Radio France sont des sociétés détenues par l'État, financées par des crédits votés chaque année depuis la suppression de la redevance par la loi de finances rectificative du 16 août 2022. Le projet de budget pour 2026 leur attribuait 2,44 milliards d'euros et 648 millions d'euros, sur près de 3,9 milliards d'euros pour les six sociétés de l'audiovisuel public. Les partisans d'une privatisation y voient une économie pour l'État ; ses opposants estiment qu'elle menacerait l'indépendance et les missions du service public. Une proposition de loi déposée au Sénat en 2023 les regrouperait dans une holding publique, « France Médias », sans les privatiser ; l'Assemblée nationale l'a rejetée en première lecture le 30 juin 2025.",
+      "helpSources": [
+        {
+          "title": "Assemblée nationale, amendement n° CF1633 au projet de loi de finances pour 2026 (crédits du programme « France Télévisions » : 2 440 577 000 euros ; « Radio France » : 648 033 908 euros)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/CION_FIN/CF1633.pdf",
+          "date": "2026-01-06"
+        },
+        {
+          "title": "Sénat, avis n° 144 (2025-2026), tome IV, fascicule 1 « Avances à l'audiovisuel public » (Radio France 648 M€, Arte 298,1 M€, France Médias Monde 303,9 M€, INA 103,5 M€, TV5 Monde 84,2 M€)",
+          "url": "https://www.senat.fr/rap/a25-144-41/a25-144-411.html",
+          "date": "2025-11"
+        },
+        {
+          "title": "The Media Leader (avec l'AFP), « Audiovisuel public : les critiques pleuvent sur le rapport Alloncle » (« quatre milliards d'euros » donnés par l'État à l'audiovisuel public)",
+          "url": "https://fr.themedialeader.com/?p=214119",
+          "date": "2026-05-06"
+        },
+        {
+          "title": "Sénat, dossier législatif de la proposition de loi relative à la réforme de l'audiovisuel public et à la souveraineté audiovisuelle (n° 545, 2022-2023, Laurent Lafon)",
+          "url": "https://www.senat.fr/dossier-legislatif/ppl22-545.html",
+          "date": "2026-01-19"
+        }
+      ],
+      "axis": null,
+      "direction": 1,
+      "formulationReview": "Une seule idée, langage simple, aucun adjectif évaluatif, 54 caractères. 9 partis sur 10 documentés (seul Nouvelle Énergie reste null) ; valeurs codées : −2 ×7, −1 ×1, +2 ×2, soit un écart-type d'environ 1,6 (au-dessus du seuil de 1,0), avec des partis de chaque côté de 0. Axe : je recommande `null` plutôt que `economique` +1. Le clivage ne suit pas l'axe économique : LR, Horizons et Renaissance, au pôle « marché », s'opposent à la privatisation, tandis que le RN, plutôt interventionniste par ailleurs, la porte. Rattacher la question à l'axe économique tirerait le RN vers le pôle marché et les partis de droite libérale vers l'autre pôle. Elle sert donc au classement des partis (proximité), pas à la carte. Thème : `institutions` convient faute d'un thème « médias / culture ». Variante possible si l'on veut coller au périmètre exact du RN, qui garde Arte, France Médias Monde, TV5 Monde et l'INA dans le public : l'énoncé actuel est déjà exact sur ce point, puisqu'il ne nomme que France Télévisions et Radio France. Ne pas écrire « l'audiovisuel public » dans l'énoncé, ce serait plus large que la mesure du RN.",
+      "helpVerifiedBy": "V5"
+    },
+    "positions": {
+      "lfi": {
+        "stance": -2,
+        "justification": "Le 25 juin 2025, le groupe LFI-NFP s'est opposé au statut de société anonyme prévu par la réforme de l'audiovisuel public, qui selon lui « ne permettra en réalité que de transférer le service public de l'audiovisuel vers le domaine privé ». En commission, le 8 avril 2025, son député Aurélien Saintoul déclarait à propos d'une future privatisation : « Nous y sommes totalement opposés. »",
+        "sources": [
+          {
+            "title": "Assemblée nationale, amendement n° 105 à la proposition de loi relative à la réforme de l'audiovisuel public (M. Saintoul et les députés du groupe LFI-NFP)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/1591/AN/105.pdf",
+            "date": "2025-06-25",
+            "kind": "proposition-de-loi"
+          },
+          {
+            "title": "Assemblée nationale, commission des affaires culturelles, compte rendu n° 50 (examen de la proposition de loi relative à la réforme de l'audiovisuel public)",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425050_compte-rendu.pdf",
+            "date": "2025-04-08",
+            "kind": "declaration"
+          },
+          {
+            "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "modifiee",
+              "before": -2,
+              "after": -2,
+              "comment": "Valeur maintenue, sources remplacées par des textes qui nomment la privatisation. Amendement n° 105 du 25 juin 2025, signé par tout le groupe LFI-NFP dont Mathilde Panot : le statut de société anonyme « ne permettra en réalité que de transférer le service public de l'audiovisuel vers le domaine privé […] Cela n'est pas conforme à notre conception du service public de l'audiovisuel. » Compte rendu n° 50 de la commission des affaires culturelles (8 avril 2025), Aurélien Saintoul, orateur LFI-NFP sur le texte : « un jour, vous nous expliquerez benoîtement que le système est dysfonctionnel et qu'il faut le privatiser. Nous y sommes totalement opposés. » La citation de Mathilde Panot (6 mai 2026, audiovisuel « suffisamment doté ») est retirée : elle ne porte pas sur la privatisation."
+            }
+          ]
+        }
+      },
+      "pcf": {
+        "stance": -1,
+        "justification": "En commission, le 17 juin 2025, la députée Soumya Bourouaha (groupe de la Gauche démocrate et républicaine, où siègent les députés communistes) a demandé d'« empêcher la transformation de l'INA en société anonyme, en vue d'éviter une éventuelle privatisation ». Le contrat de législature du Nouveau Front populaire (2024), signé par le PCF, prévoit de « garantir la pérennité d'un service public de l'audiovisuel ».",
+        "sources": [
+          {
+            "title": "Assemblée nationale, rapport supplémentaire n° 1591 rect. de la commission des affaires culturelles sur la proposition de loi relative à la réforme de l'audiovisuel public (travaux de la commission, réunion du 17 juin 2025)",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/rapports/cion-cedu/l17b1591_rapport-fond.pdf",
+            "date": "2025-06-18",
+            "kind": "declaration"
+          },
+          {
+            "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "modifiee",
+              "before": -2,
+              "after": -1,
+              "comment": "Le codage reposait sur le contrat NFP (déduction) et sur une phrase de Fabien Roussel de mars 2022 (« Vive la télévision publique et la redevance télé ! ») qui porte sur la redevance, pas sur la privatisation : insuffisant pour −2. Les amendements GDR 638 et 651 (26 juin 2025) s'opposent à la holding sans parler de privatisation. Seul texte explicite trouvé : rapport n° 1591 rect., réunion du 17 juin 2025, Soumya Bourouaha (GDR), qui porte les amendements du groupe sur le texte : « Il faut en effet empêcher la transformation de l'INA en société anonyme, en vue d'éviter une éventuelle privatisation. » Opposition explicite, mais limitée à l'INA, qui n'est pas visé par l'énoncé : −1. À reprendre en −2 si une déclaration de Fabien Roussel contre la privatisation de France Télévisions et Radio France est trouvée (une recherche faite, rien après 2022). À vérifier : appartenance actuelle de Soumya Bourouaha au PCF (la source dit seulement « GDR »), d'où la formulation prudente."
+            }
+          ]
+        }
+      },
+      "ecologistes": {
+        "stance": -2,
+        "justification": "Le 28 mars 2025, les députés du groupe Écologiste et Social ont déposé un amendement à la réforme de l'audiovisuel public pour « inscrire dans la loi le caractère incessible du capital des sociétés de l'audiovisuel public » : « Aucune part ne peut être vendue ou cédée. » Le contrat de législature du Nouveau Front populaire (2024) prévoit de « garantir la pérennité d'un service public de l'audiovisuel ».",
+        "sources": [
+          {
+            "title": "Assemblée nationale, amendement n° AC782 à la proposition de loi relative à la réforme de l'audiovisuel public (Mme Taillé-Polian et les députés du groupe Écologiste et Social)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0118/CION-CEDU/AC782.pdf",
+            "date": "2025-03-28",
+            "kind": "proposition-de-loi"
+          },
+          {
+            "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
+            "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
+            "date": "2024-06",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "modifiee",
+              "before": -2,
+              "after": -2,
+              "comment": "Valeur maintenue, base changée : le codage reposait sur le seul contrat NFP (déduction). Amendement AC782 du 28 mars 2025 (tombé), signé par Sophie Taillé-Polian et les 35 autres membres du groupe Écologiste et Social : ajoute « Aucune part ne peut être vendue ou cédée. » ; exposé : « pour se prémunir d'éventuelles pressions ou volontés politiques futures, le présent amendement vise à inscrire dans la loi le caractère incessible du capital des sociétés de l'audiovisuel public ». C'est une opposition explicite à toute cession au privé. L'amendement n° 240 (25 juin 2025, « Le groupe écologiste et social ») confirme l'opposition à la holding. Réserve : le groupe compte aussi des non-membres des Écologistes (Ruffin, Autain, Corbière…), mais les députés Écologistes (Arrighi, Pochon, Regol, Rousseau, Sas, Iordanoff…) sont tous signataires."
+            }
+          ]
+        }
+      },
+      "ps-place-publique": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite de Raphaël Glucksmann ou de la direction du Parti socialiste, ni de texte du groupe, sur la privatisation de France Télévisions et de Radio France.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "rejetee",
+              "before": -2,
+              "after": null,
+              "comment": "Base du codage : contrat NFP (déduction) et Sylvie Robert, sénatrice PS sans fonction nationale dans le parti, dont la phrase (« Il n'assume pas de le dire, mais il fait tout pour qu'on arrive à cette conclusion ») reproche au rapporteur une intention, sans énoncer la position du PS. En commission (17 juin 2025), Céline Hervieu (SOC) dit seulement que le plaidoyer du RN pour une privatisation « devrait nous interroger » ; la contribution du groupe socialiste au rapport Alloncle (LCP, 5 mai 2026) demande de renoncer à la holding ou à la fusion sans parler de privatisation ; amendements socialistes 222, 499, 503 : holding seulement. Aucune déclaration de Raphaël Glucksmann, Olivier Faure ou Boris Vallaud trouvée (deux recherches). Selon la règle commune : null."
+            }
+          ]
+        }
+      },
+      "renaissance": {
+        "stance": null,
+        "justification": "Pas de déclaration de Gabriel Attal ni de texte ou de vote du groupe sur la privatisation de France Télévisions et de Radio France.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "rejetee",
+              "before": -2,
+              "after": null,
+              "comment": "Amendement AC931 relu : 13 signataires EPR (Mme Calvez, Mme Melchior, Mme Brulebois, Mme Delpech, M. Fait, Mme Genetet, M. Laussucq, M. Marion, M. Sorre, Mme Spillebout, Mme Thevenot, Mme Levasseur, M. Masséglia), « Retiré ». Le rapport n° 1591 rect. montre qu'il a été retiré en commission parce que jugé satisfait par l'amendement AC188 d'Erwan Balanant (MoDem), adopté, qui rend le capital de France Médias « incessible ». Céline Calvez l'a défendu (« notre attachement au maintien du service public audiovisuel sous le contrôle exclusif de l'État ») sans parler au nom du groupe. Un amendement d'une fraction du groupe, retiré, n'engage pas le groupe ; le groupe EPR s'est abstenu sur le rapport Alloncle (CB News) et sa contribution ne parle pas de privatisation (LCP). Aucune déclaration de Gabriel Attal (une recherche). Rachida Dati, qui a rejeté tout « dessein de privatiser », n'est pas dirigeante de Renaissance. Null."
+            }
+          ]
+        }
+      },
+      "horizons": {
+        "stance": null,
+        "justification": "Pas de déclaration d'Édouard Philippe ni de texte du parti sur la privatisation de France Télévisions et de Radio France.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "rejetee",
+              "before": -1,
+              "after": null,
+              "comment": "Jérémie Patrier-Leitus est député Horizons, rapporteur de la réforme puis président de la commission d'enquête ; aucune fonction nationale dans le parti trouvée (une recherche). Ses propos (accusation contre le rapporteur de « préparer les esprits » à une privatisation, The Media Leader, 6 mai 2026 ; en commission le 8 avril 2025, rejet du « prétendu dessein de privatiser l'audiovisuel public ») sont ceux d'un rapporteur, pas une position du parti. Le passage de Sud Radio « son propre camp souhaite la privatisation » est ambigu et contredit plutôt l'idée d'une position de parti. Aucune déclaration d'Édouard Philippe (une recherche). Null."
+            }
+          ]
+        }
+      },
+      "lr": {
+        "stance": null,
+        "justification": "Pas de déclaration de Bruno Retailleau ni de texte ou de vote du groupe sur la privatisation de France Télévisions et de Radio France.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "rejetee",
+              "before": -2,
+              "after": null,
+              "comment": "Phrase exacte, de la rédaction de Public Sénat (Christian Mouly, 5 mai 2026) : « La privatisation, LR s'y est toujours refusé. » Aucun élu ni aucun texte n'est cité à l'appui ; les sénateurs LR cités (Roger Karoutchi, Max Brisson, Jean-Raymond Hugonet) ne parlent pas de privatisation et n'ont pas de fonction nationale dans le parti. En commission, la rapporteure LR Virginie Duby-Muller s'exprimait comme rapporteure, pas au nom du groupe. Le groupe Droite républicaine a voté pour le rapport Alloncle (CB News, 28 avril 2026), qui ne recommande pas la privatisation ; sa contribution au rapport n'en parle pas (LCP). Aucune déclaration de Bruno Retailleau ni de Laurent Wauquiez trouvée (deux recherches). Une phrase de journaliste sans auteur ni texte ne relève ni du (a) ni du (b) de la règle de l'éditeur : null, même règle que Renaissance et Horizons."
+            }
+          ]
+        }
+      },
+      "nouvelle-energie": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite de David Lisnard ni de mesure de Nouvelle Énergie sur la privatisation de France Télévisions et de Radio France.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "Une recherche : aucune déclaration de David Lisnard sur l'audiovisuel public. Null maintenu."
+            }
+          ]
+        }
+      },
+      "rn": {
+        "stance": 2,
+        "justification": "Mesure portée par le RN : l'amendement du groupe au budget 2026, cosigné par Marine Le Pen le 6 janvier 2026, vise à « initier une réforme du paysage audiovisuel français par la privatisation de France Télévisions et de Radio France », en gardant Arte, TV5 Monde, France Médias Monde et l'INA dans le public. En mai 2026, Jordan Bardella a réaffirmé la promesse de privatisation.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, amendement n° CF1633 au projet de loi de finances pour 2026 (M. Clavet, M. Ballard, Mme Le Pen et les députés RN), rejeté",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/CION_FIN/CF1633.pdf",
+            "date": "2026-01-06",
+            "kind": "proposition-de-loi"
+          },
+          {
+            "title": "Assemblée nationale, amendement n° II-1252 au projet de loi de finances pour 2025 (M. Clavet et les membres du groupe Rassemblement National)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0324C/AN/1252.pdf",
+            "date": "2024-11-04",
+            "kind": "proposition-de-loi"
+          },
+          {
+            "title": "The Media Leader (avec l'AFP), « Audiovisuel public : les critiques pleuvent sur le rapport Alloncle »",
+            "url": "https://fr.themedialeader.com/?p=214119",
+            "date": "2026-05-06",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "PDF rouvert et lu : amendement du 6 janvier 2026, rejeté, signé par M. Clavet, M. Ballard et l'ensemble des députés RN dont « Mme Le Pen » ; exposé : « Cet amendement d'appel vise à initier une réforme du paysage audiovisuel français par la privatisation de France Télévisions et de Radio France » ; maintien public d'Arte, TV5 Monde, France Médias Monde et de l'INA. Confirmé par la contribution du groupe RN au rapport de la commission d'enquête (LCP, 5 mai 2026 : « privatisation de tout ou partie de France Télévisions et de Radio France ») et par Public Sénat (5 mai 2026 : Marine Le Pen et Jordan Bardella l'ont « explicitement appelée de leurs vœux »). Justification exacte."
+            }
+          ]
+        }
+      },
+      "reconquete": {
+        "stance": 2,
+        "justification": "Le chiffrage « Budget 2027 » publié en 2026 par l'eurodéputée Sarah Knafo inscrit la « Privatisation de l'audiovisuel public », pour « 4 Md€ » d'économies plus une « cession d'actifs ».",
+        "sources": [
+          {
+            "title": "Sarah Knafo, « Budget 2027 », rubrique « Médias et clientélisme », mesure n° 21 « Privatisation de l'audiovisuel public »",
+            "url": "https://www.budget2027.fr/",
+            "date": "2026",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3",
+          "checks": [
+            {
+              "verifier": "V5",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "Page rouverte : rubrique « 05 – Médias et clientélisme », mesure 21 « Privatisation de l'audiovisuel public », « 4 Md€ » plus « cession d'actifs ». Le site est signé « © 2026 Sarah Knafo · budget2027.fr » et renvoie à sarahknafo.fr ; pas de mentions légales, Reconquête n'y est pas nommé, aucune date de publication affichée : « septembre 2026 » n'est pas vérifiable, la date passe à « 2026 ». La valeur tient (l'audiovisuel public dans son ensemble inclut France Télévisions et Radio France) si Sarah Knafo est toujours eurodéputée et dirigeante de Reconquête en novembre 2026, ce que je n'ai pas pu revérifier faute de quota. La phrase sur le programme Zemmour de 2022 est retirée : la source n'a été ouverte ni par le codeur ni par moi (seule une page de comparateur est apparue)."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[B3] Compteur : 15 recherches sur 15. Répartition : RN 1 (+1 commune), REC 0 (source de la fiche rouverte), NE 2, LR 2 (+1 commune), RE 2, HOR 1, LFI 1, PS 1, ECO 1, PCF 1, recherches communes 2 (n° 1 amendements AN, n° 7 réactions au rapport Alloncle). Points incertains : (1) Les quatre partis de gauche sont codés −2 sur la base du contrat NFP de 2024 (« garantir la pérennité d'un service public de l'audiovisuel ») et de leurs oppositions à la holding. Aucun de ces textes n'emploie le mot « privatisation », sauf la critique de Sylvie Robert. Le vérificateur peut juger que c'est une déduction ; pour les Écologistes, c'est la base la plus mince (programme seul). (2) LR : seule source, la presse (Public Sénat) ; la phrase exacte sur le refus de la privatisation doit être relevée mot à mot ; aucune déclaration de Bruno Retailleau trouvée. (3) Renaissance : amendement de 13 députés EPR, retiré, pas du groupe entier ni de Gabriel Attal. (4) Horizons : −1 parce que la source est un député (non le candidat) et que l'opposition passe par une critique du rapporteur ; −2 ou null sont défendables. (5) Reconquête : le programme Zemmour 2022 est mentionné dans la justification mais pas rouvert ; seul budget2027.fr est cité. (6) L'audit supposait LR −1, HOR −1 ?, NE +2 ? : NE n'est pas documenté. (7) Aucun scrutin public ne porte directement sur la privatisation : les amendements RN sont des amendements de crédits rejetés en commission, sans scrutin public trouvé. (8) Texte d'aide : le chiffre de 4 milliards est arrondi (environ 3,9 milliards dans le projet de budget 2026, d'après les montants par société de l'amendement CF1633 et de l'avis du Sénat) ; les crédits du budget 2027 n'ont pas été vérifiés. La suppression de la redevance (loi de finances rectificative du 16 août 2022) n'est pas dans le texte d'aide, faute d'avoir ouvert la loi sur Légifrance ; à ajouter si on la vérifie."
+  },
+  {
+    "question": "q38-abaya",
+    "known": 7,
+    "retained": false,
+    "status": "non retenue (7/10)",
+    "definition": {
+      "theme": "education",
+      "statement": "Il faut continuer d'interdire l'abaya à l'école publique.",
+      "shortLabel": "Maintenir l'interdiction de l'abaya à l'école",
+      "help": "Depuis la loi du 15 mars 2004, les élèves des écoles, collèges et lycées publics ne peuvent pas porter de signes ou de tenues qui montrent ostensiblement une appartenance religieuse. À la rentrée 2023, une note de service du ministre de l'Éducation nationale a classé les tenues de type abaya parmi ces tenues ; le Conseil d'État l'a jugée conforme à la loi le 27 septembre 2024. Le jour de la rentrée 2023, selon le ministre, près de 300 élèves sont venues en abaya et 67 ont refusé de l'enlever. Les partisans y voient une application de la laïcité, les opposants une mesure qui vise les élèves musulmanes.",
+      "helpSources": [
+        {
+          "title": "Conseil d'État, communiqué de presse « Laïcité : le port de tenues de type abaya à l'école est conforme à la loi », décision n° 487944, 487974, 489177 du 27 septembre 2024",
+          "url": "https://conseil-etat.fr/content/download/218685/document/Communiqu%C3%A9%20de%20presse%20-%20Port%20de%20tenues%20de%20type%20abaya%20%C3%A0%20l%E2%80%99%C3%A9cole%20-%20web.pdf",
+          "date": "2024-09-27"
+        },
+        {
+          "title": "AFP, « French schools refuse dozens of girls wearing Muslim dress » (chiffres donnés par Gabriel Attal sur BFMTV)",
+          "url": "https://english.aaj.tv/news/30332678",
+          "date": "2023-09-05"
+        }
+      ],
+      "axis": "societal",
+      "direction": 1,
+      "formulationReview": "Une seule idée, langage simple, aucun adjectif évaluatif, sens +1 (l'accord tire vers « Autorité »). 8 partis sur 10 documentés (PS et Nouvelle Énergie à null). Écart-type des 8 valeurs connues ≈ 1,45 (≥ 1,0), mais la distribution est déséquilibrée (6 partis à +2) : la question sépare surtout LFI et les Écologistes du reste, et LFI de PCF (paire voisine visée par l'audit). Elle ne sépare pas RN–REC, RE–HOR ni LR–NE. Le mot « abaya » est compris du grand public depuis 2023 ; « continuer d'interdire » est juste puisque l'interdiction est en vigueur. Variante possible si l'on veut plus de partis documentés : « La loi de 2004 sur les signes religieux à l'école doit être maintenue », mais elle risque d'être consensuelle (σ faible). Point d'attention : le débat de septembre 2026 est très récent ; une prise de position de Raphaël Glucksmann ou de David Lisnard pourrait exister sans avoir été trouvée dans le quota.",
+      "helpVerifiedBy": "V3"
+    },
+    "positions": {
+      "lfi": {
+        "stance": -2,
+        "justification": "Le 6 septembre 2026 sur BFMTV, Mathilde Panot, présidente du groupe LFI à l'Assemblée, a jugé l'interdiction « absurde » et répondu « Oui bien sûr » à la question d'un retour sur cette mesure si Jean-Luc Mélenchon était élu. Jean-Luc Mélenchon a déclaré que « l'abaya n'est pas une tenue islamiste ».",
+        "sources": [
+          {
+            "title": "AFP (France 24), « Abaya à l'école : LFI accusée de \"trahir\" la laïcité en voulant revenir sur l'interdiction »",
+            "url": "https://www.france24.com/fr/info-en-continu/20260907-abaya-%C3%A0-l-%C3%A9cole-lfi-accus%C3%A9e-de-trahir-la-la%C3%AFcit%C3%A9-en-voulant-revenir-sur-l-interdiction",
+            "date": "2026-09-07",
+            "kind": "presse"
+          },
+          {
+            "title": "BFMTV (repris par Yahoo Actualités), « \"C'était absurde\": LFI veut revenir sur la loi interdisant l'abaya à l'école, Marine Le Pen accuse Jean-Luc Mélenchon d'être un \"sous-traitant de l'idéologie islamiste\" »",
+            "url": "https://fr.news.yahoo.com/c%C3%A9tait-absurde-lfi-veut-revenir-103719396.html",
+            "date": "2026-09-07",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "modifiee",
+              "before": -2,
+              "after": -2,
+              "comment": "Mathilde Panot, présidente du groupe LFI, vaut. AFP (France 24) confirme « absurde » et « Oui bien sûr » à la question d'un retour sur l'interdiction. −2 confirmé. Source étrangère (Arab News, 2023) remplacée par la dépêche AFP publiée par France 24 ; la phrase de Jean-Luc Mélenchon de 2023 est remplacée par celle, rapportée par la même dépêche, de septembre 2026."
+            }
+          ]
+        }
+      },
+      "pcf": {
+        "stance": 2,
+        "justification": "Le 28 août 2023, Fabien Roussel a approuvé l'interdiction : « J'approuve cette décision. Les chefs d'établissement avaient besoin de consignes claires. » Il ne s'est pas exprimé lors du débat de septembre 2026.",
+        "sources": [
+          {
+            "title": "Sud Radio, « Interdiction de l'abaya à l'école : \"J'approuve\", affirme Fabien Roussel »",
+            "url": "https://www.sudradio.fr/linvite-politique/interdiction-de-labaya-a-lecole-japprouve-affirme-fabien-roussel",
+            "date": "2023-08-28",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "Fabien Roussel est toujours secrétaire national et candidat : sa parole vaut. Sud Radio (28 août 2023) : « J'approuve cette décision. Les chefs d'établissement avaient besoin de consignes claires », et il qualifie la mesure de « bonne chose ». Le « approuve plutôt » est une paraphrase du journaliste ; la remarque sur « 150 établissements sur les 60.000 » porte sur l'ampleur, pas sur une réserve de fond : +2 maintenu (pas +1). Seule modification : retrait de la source étrangère (Arab News), Sud Radio suffit."
+            }
+          ]
+        }
+      },
+      "ecologistes": {
+        "stance": -1,
+        "justification": "En août 2023, Cyrielle Chatelain, présidente du groupe écologiste à l'Assemblée, a qualifié l'interdiction de « polémique rance pour détourner l'attention de la politique de démantèlement de l'école publique ». Marine Tondelier ne s'est pas exprimée et le parti n'a pas demandé son abrogation.",
+        "sources": [
+          {
+            "title": "AFP (Arab News en français), « La gauche se divise sur l'interdiction de l'abaya à l'école »",
+            "url": "https://www.arabnews.fr/france/la-gauche-se-divise-sur-linterdiction-de-labaya-a-lecole-417886",
+            "date": "2023-08-29",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "modifiee",
+              "before": -1,
+              "after": -1,
+              "comment": "Cyrielle Chatelain est toujours présidente du groupe Écologiste et Social (réélue en juillet 2024, encore présentée comme telle par Politis en août 2026) : sa déclaration vaut. Sandrine Rousseau n'est que députée, sans fonction nationale : retirée de la justification et des sources (franceinfo retiré). Marine Tondelier ne s'est pas exprimée (AFP, 29 août 2023). Citation de Chatelain vérifiée dans la dépêche AFP : critique de la mesure sans demande d'abrogation → −1 maintenu. La dépêche AFP n'a pas été trouvée dans un média français ouvert (Europe 1 répond 403) : Arab News en français reste la seule source, à remplacer si possible."
+            }
+          ]
+        }
+      },
+      "ps-place-publique": {
+        "stance": null,
+        "justification": "Pas de déclaration de Raphaël Glucksmann ni de la direction du Parti socialiste sur l'interdiction de l'abaya.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "Deux recherches (Glucksmann septembre 2026 ; Olivier Faure). Aucune déclaration de Raphaël Glucksmann, d'Olivier Faure ou de Boris Vallaud sur l'abaya. Seule Ségolène Royal (candidate à la primaire socialiste, sans fonction nationale au PS) dit « Ca a été réglé, l'abaya est interdit » (AFP, 7 septembre 2026). Europe 1 (15 juillet 2024) indique sans citation que les socialistes ne souhaitent pas revenir sur la mesure : insuffisant. Jérôme Guedj (simple député, 2023) ne vaut pas. null maintenu ; sources remplacées par des médias français."
+            }
+          ]
+        }
+      },
+      "renaissance": {
+        "stance": 2,
+        "justification": "Gabriel Attal a décidé l'interdiction comme ministre de l'Éducation nationale en août 2023. Le 6 septembre 2026 sur BFMTV, il a répondu à la proposition de LFI : « ce n'est pas ce que je veux pour l'école de la République ».",
+        "sources": [
+          {
+            "title": "BFMTV (repris par Yahoo Actualités), « \"C'était absurde\": LFI veut revenir sur la loi interdisant l'abaya à l'école… »",
+            "url": "https://fr.news.yahoo.com/c%C3%A9tait-absurde-lfi-veut-revenir-103719396.html",
+            "date": "2026-09-07",
+            "kind": "presse"
+          },
+          {
+            "title": "AFP (France 24), « French schools refuse dozens of girls wearing Muslim dress »",
+            "url": "https://www.france24.com/en/live-news/20230905-french-schools-refuse-dozens-of-girls-wearing-muslim-dress",
+            "date": "2023-09-05",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "Gabriel Attal, candidat, vaut ; citation du 6 septembre 2026 vérifiée (Yahoo/BFMTV). +2 confirmé. The Local (média anglophone) remplacé par la dépêche AFP de France 24 (5 septembre 2023) qui rapporte la décision et son application."
+            }
+          ]
+        }
+      },
+      "horizons": {
+        "stance": 2,
+        "justification": "Le 7 septembre 2026, à Alès, Édouard Philippe a qualifié la proposition de LFI de revenir sur l'interdiction de « trahison de la laïcité » et a jugé que la loi qui interdit les signes religieux à l'école « est une bonne loi, elle est bien appliquée ».",
+        "sources": [
+          {
+            "title": "AFP (France 24), « Abaya à l'école : LFI accusée de \"trahir\" la laïcité en voulant revenir sur l'interdiction »",
+            "url": "https://www.france24.com/fr/info-en-continu/20260907-abaya-%C3%A0-l-%C3%A9cole-lfi-accus%C3%A9e-de-trahir-la-la%C3%AFcit%C3%A9-en-voulant-revenir-sur-l-interdiction",
+            "date": "2026-09-07",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "Édouard Philippe, président de Horizons et candidat, vaut. Citations vérifiées dans la dépêche AFP. +2 confirmé ; source La Gazette France remplacée par France 24 (même dépêche, média national) et ajout de la phrase sur la loi."
+            }
+          ]
+        }
+      },
+      "lr": {
+        "stance": null,
+        "justification": "Pas de déclaration de Bruno Retailleau ni de la direction des Républicains sur l'interdiction de l'abaya ; le programme école du parti, publié en septembre 2026, prévoit d'appliquer la laïcité « sans accommodement » et d'étendre la loi de 2004 aux accompagnateurs de sorties scolaires, sans mentionner l'abaya.",
+        "sources": [
+          {
+            "title": "Les Républicains, « Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté »",
+            "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+            "date": "2026-09",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": null,
+              "comment": "La valeur reposait uniquement sur Éric Ciotti (28 août 2023), qui a quitté LR en 2024 : ne vaut plus position de LR (règle 2 bis). Cinq recherches (Retailleau et l'abaya en 2023 et en septembre 2026, Wauquiez / Droite républicaine, réactions LR au débat Panot) : aucune déclaration de Bruno Retailleau, de Laurent Wauquiez ou du groupe LR sur l'abaya ; la dépêche AFP du 7 septembre 2026 (France 24) ne cite aucun responsable LR. Le livret école LR de septembre 2026, ouvert et extrait en texte (p. 32), dit : « La laïcité sera appliquée sans accommodement. […] La neutralité de la loi de 2004 sera étendue aux accompagnateurs des sorties scolaires, et le port de l'uniforme encouragé » ; l'abaya n'y est pas nommée. Le Conseil d'État ayant jugé que l'interdiction de l'abaya applique la loi de 2004, ce passage est un indice fort, mais en tirer +2 serait une déduction : null. Si l'éditeur juge que « maintenir et étendre la loi de 2004 » vaut position explicite sur l'abaya, la valeur serait +2 sur ce seul programme (fix alternatif décrit ici, non appliqué)."
+            }
+          ]
+        }
+      },
+      "nouvelle-energie": {
+        "stance": null,
+        "justification": "Pas de déclaration de David Lisnard sur l'interdiction de l'abaya à l'école ; son programme propose d'interdire le voile à l'université, ce qui ne permet pas de déduire une position sur l'abaya au collège et au lycée.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "Deux recherches (« Lisnard abaya » ; Lisnard laïcité école). La page laïcité du site de Nouvelle Énergie (2026) cite des textes de David Lisnard sur l'islamisme, les signes politico-religieux à l'université, sur les plages et pour les accompagnateurs de sorties scolaires (2021), mais ne mentionne ni l'abaya ni la loi de 2004. null maintenu ; justification inchangée."
+            }
+          ]
+        }
+      },
+      "rn": {
+        "stance": 2,
+        "justification": "Le 7 septembre 2026, Marine Le Pen s'est opposée à la proposition de LFI de revenir sur l'interdiction, en écrivant que « Mélenchon et LFI sont devenus les sous-traitants de l'idéologie islamiste qui prend en otage les Français musulmans » et qu'ils veulent « instiller partout le poison du communautarisme ».",
+        "sources": [
+          {
+            "title": "AFP (France 24), « Abaya à l'école : LFI accusée de \"trahir\" la laïcité en voulant revenir sur l'interdiction »",
+            "url": "https://www.france24.com/fr/info-en-continu/20260907-abaya-%C3%A0-l-%C3%A9cole-lfi-accus%C3%A9e-de-trahir-la-la%C3%AFcit%C3%A9-en-voulant-revenir-sur-l-interdiction",
+            "date": "2026-09-07",
+            "kind": "presse"
+          },
+          {
+            "title": "BFMTV (repris par Yahoo Actualités), « \"C'était absurde\": LFI veut revenir sur la loi interdisant l'abaya à l'école, Marine Le Pen accuse Jean-Luc Mélenchon d'être un \"sous-traitant de l'idéologie islamiste\" »",
+            "url": "https://fr.news.yahoo.com/c%C3%A9tait-absurde-lfi-veut-revenir-103719396.html",
+            "date": "2026-09-07",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "Marine Le Pen, candidate, vaut. La dépêche AFP (France 24, 7 septembre 2026) rapporte sa réaction directe à la proposition d'abroger l'interdiction : LFI veut « instiller partout le poison du communautarisme » et « excite(r) la concurrence des revendications identitaires au détriment de la communauté nationale ». Pas de phrase « il faut maintenir », mais une opposition explicite à l'abrogation, ce qui équivaut à la défense du maintien : +2 maintenu (même traitement qu'Édouard Philippe). Justification complétée, source AFP française ajoutée."
+            }
+          ]
+        }
+      },
+      "reconquete": {
+        "stance": 2,
+        "justification": "Le 28 août 2023, Éric Zemmour a jugé que « l'interdiction des abayas est un premier bon pas si elle est appliquée » et a proposé d'aller « plus loin » avec l'uniforme scolaire. Le 17 septembre 2026, il a confirmé vouloir interdire le voile dans l'espace public.",
+        "sources": [
+          {
+            "title": "TSA Algérie, « Interdiction de l'abaya : la France perdue dans sa lutte contre l'islamisme »",
+            "url": "https://www.tsa-algerie.com/?p=241710",
+            "date": "2023-08-28",
+            "kind": "presse"
+          },
+          {
+            "title": "Entrevue, « Éric Zemmour veut aussi interdire la kippa dans l'espace public en plus du voile »",
+            "url": "https://entrevue.fr/presidentielle-2027/eric-zemmour-veut-aussi-interdire-la-kippa-dans-lespace-public-en-plus-du-voile/",
+            "date": "2026-09-18",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4",
+          "checks": [
+            {
+              "verifier": "V3",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Éric Zemmour, président et candidat, vaut. Citation vérifiée dans TSA (28 août 2023) : « L'interdiction des abayas est un premier bon pas si elle est appliquée », avec proposition d'uniforme. Entrevue (18 septembre 2026) : interview du 17 septembre sur BFMTV, interdiction du voile et de la kippa dans l'espace public ; ne parle ni de l'abaya ni de l'école (contexte seulement, la valeur repose sur 2023). Aucune source française trouvée pour la citation de 2023 dans le quota : TSA Algérie reste, à remplacer si possible."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[B4] 8 partis documentés sur 10 (PS-Place publique et Nouvelle Énergie à null). Texte de référence commun : le débat du 6-7 septembre 2026 (Panot sur BFMTV, réactions d'Attal, Philippe, Le Pen) ; pour PCF, Écologistes, LR et Reconquête, seules des positions d'août 2023 ont été trouvées, datées comme telles. Points incertains : (1) PCF +2 : Sud Radio écrit que Roussel « approuve plutôt » et il relativise la portée de la mesure ; +1 défendable. (2) Écologistes −1 : la critique vient de la présidente du groupe et d'une députée en 2023 ; Marine Tondelier ne s'est pas exprimée et aucun appel à abroger n'a été trouvé ; −2 serait une déduction. (3) LR +2 repose sur Éric Ciotti, président de LR en 2023, parti depuis (UDR) ; aucune déclaration de Bruno Retailleau sur l'abaya trouvée — son programme école de septembre 2026 étend la neutralité aux accompagnateurs de sorties scolaires (fiche lr.json), non utilisé pour la valeur ; à vérifier dans le PDF LR (polices non extractibles ici). (4) RN +2 repose sur une attaque de Marine Le Pen contre la proposition de LFI et non sur une phrase « il faut maintenir » ; le sens est sans ambiguïté dans le contexte. (5) TSA Algérie et Arab News (dépêche AFP) sont des médias étrangers reprenant l'AFP ; si possible, remplacer par la dépêche AFP dans un média national français. (6) Le chiffre « près de 300 élèves / 67 refus » vient d'une reprise anglophone de l'AFP citant Attal sur BFMTV (4 septembre 2023) ; le Conseil d'État cite aussi 4 710 signalements d'atteinte à la laïcité en 2022-2023 contre 2 167 et 2 226 les deux années précédentes. (7) Les pages ÉlyséeScope (non sourcées) ont été écartées pour Tondelier et Glucksmann."
+  },
+  {
+    "question": "q39-encadrement-loyers",
+    "known": 8,
+    "retained": true,
+    "status": "retenue",
+    "definition": {
+      "theme": "economie",
+      "statement": "Il faut continuer d'encadrer les loyers dans les villes où se loger coûte le plus cher.",
+      "shortLabel": "Continuer d'encadrer les loyers dans les villes chères",
+      "help": "Depuis 2019 à Paris, puis dans d'autres territoires (Lille, Lyon et Villeurbanne, Bordeaux, Montpellier, Grenoble, Plaine Commune, Est Ensemble, Pays basque), environ 70 communes plafonnent les loyers du parc privé, ce qui concerne 1,2 million de locataires selon la Cour des comptes. Cette expérimentation prend fin le 24 novembre 2026 : le Sénat a voté le 21 octobre 2026, par 325 voix contre 17, sa prolongation de deux ans sans nouvelles villes, et l'Assemblée doit se prononcer le 18 novembre. Un rapport remis au gouvernement en mai 2026 estime la baisse des loyers à 2 à 4 % dans les villes les plus tendues ; les opposants estiment que le plafonnement réduit le nombre de logements proposés à la location.",
+      "helpSources": [
+        {
+          "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs (325 pour, 17 contre)",
+          "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+          "date": "2026-10-21"
+        },
+        {
+          "title": "Assemblée nationale, dossier législatif « Retrouver la confiance et l'équilibre dans les rapports locatifs » (deuxième lecture, séance publique le 18 novembre 2026)",
+          "url": "https://questions.assemblee-nationale.fr/dyn/17/dossiers/retrouver_confiance_equilibre_rapports_locatifs_17e",
+          "date": "2026-11-04"
+        },
+        {
+          "title": "AFP (reprise par Fortuneo), « L'avenir de l'encadrement des loyers devant le Sénat » : neuf territoires, environ 70 communes, 1,2 million de locataires selon la Cour des comptes, baisse de 2 à 4 % selon le rapport de mai",
+          "url": "https://bourse.fortuneo.fr/actualites/l-avenir-de-l-encadrement-des-loyers-devant-le-senat-9660817",
+          "date": "2026-10-21"
+        },
+        {
+          "title": "Banque des Territoires (Localtis), « Encadrement des loyers : le Sénat prolonge l'expérimentation de deux ans, l'Assemblée sous pression avant le 23 novembre »",
+          "url": "https://www.banquedesterritoires.fr/encadrement-des-loyers-le-senat-prolonge-lexperimentation-de-deux-ans-lassemblee-sous-pression",
+          "date": "2026-10-22"
+        },
+        {
+          "title": "Journal de l'économie, « Loyers : le Sénat vote la prolongation de l'encadrement pour deux ans » (liste des neuf territoires, fin au 24 novembre 2028)",
+          "url": "https://www.journaldeleconomie.fr/?p=49938",
+          "date": "2026-10-22"
+        }
+      ],
+      "axis": "economique",
+      "direction": -1,
+      "formulationReview": "Une seule idée, langage simple, aucun adjectif évaluatif ; l'accord tire vers le pôle « Redistribution et intervention de l'État » (direction −1). Le verbe « continuer » colle à l'actualité (expérimentation qui expire le 24 novembre 2026). Réserve : le dispositif ne couvre pas « les grandes villes » en général mais des communes volontaires en zone tendue (dont le Pays basque, Plaine Commune, Est Ensemble), et Marseille, Toulouse, Nice ou Strasbourg n'y sont pas ; variante plus exacte : « Il faut continuer d'encadrer les loyers dans les villes où se loger coûte le plus cher. » 8 partis sur 10 documentés (Nouvelle Énergie et Reconquête à null) ; écart-type des 8 valeurs ≈ 1,48. Le vote du Sénat (325-17) seul ne discrimine pas : c'est le scrutin de l'Assemblée du 11 décembre 2025 (pérennisation, 105-56) et les déclarations qui séparent la gauche du bloc central et de la droite. Si l'Assemblée vote le texte conforme le 18 ou le 19 novembre 2026, mettre à jour l'aide (prolongation jusqu'au 24 novembre 2028).",
+      "helpVerifiedBy": "V4",
+      "themeNote": "Un thème « logement » serait plus juste : le logement est absent du questionnaire (audit, § 1.3). Il pourrait réunir cette question et q08 (logement social et « préférence nationale »). Décision de l'éditeur.",
+      "statementInitial": "Il faut continuer d'encadrer les loyers dans les grandes villes."
+    },
+    "positions": {
+      "lfi": {
+        "stance": 2,
+        "justification": "Les députés LFI ont voté le 11 décembre 2025 la proposition de loi qui rend l'encadrement des loyers permanent et l'ouvre à d'autres communes (30 pour, aucun contre). En 2022, Jean-Luc Mélenchon proposait de le généraliser « en fixant le loyer maximal à 20 % au-dessous du loyer médian ».",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs (première lecture), adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          },
+          {
+            "title": "MonImmeuble, « Logements : quelles sont les propositions des candidats à la présidentielle ? »",
+            "url": "https://monimmeuble.com/actualite/logements-quelles-sont-les-propositions-des-candidats-a-la-presidentielle",
+            "date": "2022-04-09",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "LFI-NFP 30 pour, aucun contre (vérifié). La phrase sur 2022 (MonImmeuble) n'a pas été rouverte ; elle est datée et porte sur le candidat actuel. Le vote suffit à +2."
+            }
+          ]
+        }
+      },
+      "pcf": {
+        "stance": 2,
+        "justification": "Les députés communistes (groupe GDR) ont voté le 11 décembre 2025 la pérennisation de l'encadrement des loyers (3 pour), et les sénateurs CRCE-K ont voté sa prolongation le 21 octobre 2026 (18 pour). Le sénateur Ian Brossat a jugé que ce vote « permet d'échapper au pire » et regretté une version « minimaliste ».",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+            "date": "2026-10-21",
+            "kind": "vote"
+          },
+          {
+            "title": "Banque des Territoires (Localtis), « Encadrement des loyers : le Sénat prolonge l'expérimentation de deux ans, l'Assemblée sous pression avant le 23 novembre »",
+            "url": "https://www.banquedesterritoires.fr/encadrement-des-loyers-le-senat-prolonge-lexperimentation-de-deux-ans-lassemblee-sous-pression",
+            "date": "2026-10-22",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "GDR 3 pour, CRCE-K 18 pour (vérifiés) ; citation de Ian Brossat (« permet d'échapper au pire ») vérifiée dans Localtis ; « minimaliste » (Journal de l'économie) non rouvert. Ian Brossat, sénateur, s'exprime en séance pour le groupe : admis (règle 2 bis b)."
+            }
+          ]
+        }
+      },
+      "ecologistes": {
+        "stance": 2,
+        "justification": "Les députés écologistes ont voté le 11 décembre 2025 la pérennisation de l'encadrement des loyers (17 pour), et les sénateurs écologistes sa prolongation le 21 octobre 2026 (15 pour). Le député Boris Tavernier estime que l'encadrement n'a pas d'effet sur la baisse de l'offre locative.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+            "date": "2026-10-21",
+            "kind": "vote"
+          },
+          {
+            "title": "LCP, « Encadrement des loyers : l'Assemblée vote en faveur d'une pérennisation du dispositif »",
+            "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-vote-en-faveur-d-une-perennisation-du-dispositif",
+            "date": "2025-12-11",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Écologiste et Social 17 pour, GEST 15 pour (vérifiés). Boris Tavernier n'est pas cité entre guillemets dans LCP : la justification le paraphrase correctement, sans guillemets."
+            }
+          ]
+        }
+      },
+      "ps-place-publique": {
+        "stance": 2,
+        "justification": "La proposition de loi qui rend l'encadrement des loyers permanent et l'ouvre à d'autres communes est celle du député socialiste Iñaki Echaniz ; les députés socialistes l'ont votée le 11 décembre 2025 (54 pour) et les sénateurs socialistes ont voté sa prolongation le 21 octobre 2026 (62 pour).",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+            "date": "2026-10-21",
+            "kind": "vote"
+          },
+          {
+            "title": "LCP, « Encadrement des loyers : l'Assemblée vote en faveur d'une pérennisation du dispositif »",
+            "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-vote-en-faveur-d-une-perennisation-du-dispositif",
+            "date": "2025-12-11",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "modifiee",
+              "before": 2,
+              "after": 2,
+              "comment": "Votes vérifiés (Socialistes 54 pour ; SER 62 pour) ; PPL du député socialiste Iñaki Echaniz confirmée (LCP, AFP). Valeur inchangée. Règle 2 bis : Emmanuel Grégoire est maire de Paris, sans fonction nationale au PS indiquée par les sources : sa citation ne peut pas fonder la position ; phrase retirée de la justification (la citation est exacte dans la dépêche AFP)."
+            }
+          ]
+        }
+      },
+      "renaissance": {
+        "stance": 0,
+        "justification": "Les députés Ensemble pour la République ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (13 contre, 3 abstentions), leur oratrice Annaïg Le Meur jugeant l'évaluation « une étape indispensable avant de prendre une décision définitive ». Les sénateurs RDPI ont voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (16 pour).",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+            "date": "2026-10-21",
+            "kind": "vote"
+          },
+          {
+            "title": "LCP, « Encadrement des loyers : l'Assemblée vote en faveur d'une pérennisation du dispositif »",
+            "url": "https://lcp.fr/actualites/encadrement-des-loyers-l-assemblee-vote-en-faveur-d-une-perennisation-du-dispositif",
+            "date": "2025-12-11",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": 0,
+              "after": 0,
+              "comment": "Chiffres vérifiés : EPR 13 contre, 3 abstentions, 1 non-votant (n° 4745) ; RDPI 16 pour (n° 25) ; citation d'Annaïg Le Meur exacte (« une étape indispensable avant de prendre une décision définitive sur le devenir du dispositif »). Une recherche « Gabriel Attal encadrement des loyers 2026 » : rien. Règle appliquée : les deux votes portent sur deux textes différents (pérennisation et extension en décembre 2025 ; prolongation temporaire à périmètre constant en octobre 2026), chaque groupe étant unanime. Ce n'est pas un parti « divisé » au sens du barème (groupe partagé sur un même vote) : pour l'énoncé « continuer », oui à une prolongation temporaire et non à la pérennisation, avec l'oratrice qui demande l'évaluation avant de décider, forment une position intermédiaire explicite → 0. Même règle pour LR et Horizons : elle ne s'y applique pas parce que le candidat s'exprime (LR −2, Horizons −1). Si l'éditeur préférait `null` pour ce cas, l'affirmation resterait à 8/10 (RE null, mais aucun autre changement) ; je recommande 0."
+            }
+          ]
+        }
+      },
+      "horizons": {
+        "stance": -1,
+        "justification": "Devant le congrès de la FNAIM en décembre 2025, Édouard Philippe a critiqué l'encadrement des loyers : « lorsque vous interdisez au prix de faire ce à quoi il sert », « vous créez des problèmes ». Les députés Horizons ont voté contre sa pérennisation le 11 décembre 2025 (6 contre) ; au Sénat, le groupe Les Indépendants, où siègent les sénateurs Horizons, a voté sa prolongation de deux ans le 21 octobre 2026 (15 pour).",
+        "sources": [
+          {
+            "title": "Empruntis, « Logement : les pistes d'Édouard Philippe pour sortir de la crise » (congrès de la FNAIM)",
+            "url": "https://www.empruntis.com/financement/actualites/2025/logement-pistes-edouard-philippe-sortir-crise-20373/",
+            "date": "2025-12-10",
+            "kind": "presse"
+          },
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+            "date": "2026-10-21",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": -1,
+              "after": -1,
+              "comment": "Empruntis (10 décembre 2025) rouvert : Édouard Philippe, au congrès de la FNAIM « cette semaine », critique l'encadrement ; passage « lorsque vous interdisez au prix de faire ce à quoi il sert » vérifié (la suite « vous créez des problèmes » n'a pas pu être relue en entier, extrait tronqué). Une recherche pour un média national : aucun ne rapporte ses propos (seuls VousFinancer/Toute-la-franchise et une note de la FNAIM Grand Paris, plus faibles) ; Empruntis conservé, la position reste en source unique pour la déclaration, recoupée par le scrutin n° 4745 (Horizons & Indépendants 6 contre, vérifié). Sénat : Les Indépendants 15 pour (vérifié). Critique explicite sans demande de suppression → −1 cohérent ; candidat qui l'emporte sur le vote sénatorial, comme pour LR. Édouard Philippe est toujours président d'Horizons et candidat."
+            }
+          ]
+        }
+      },
+      "lr": {
+        "stance": -2,
+        "justification": "Le programme logement des Républicains, « Se loger mieux et moins cher ! », présenté par Bruno Retailleau le 28 mai 2026, prévoit que « les dispositifs d'encadrement des loyers issus de la loi ELAN seront supprimés ». Les sénateurs LR ont toutefois voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (119 pour, 2 contre), après le vote contre sa pérennisation des députés de la Droite républicaine le 11 décembre 2025 (2 contre).",
+        "sources": [
+          {
+            "title": "Les Républicains, « Se loger mieux et moins cher ! » (nos propositions pour la France)",
+            "url": "https://republicains.fr/wp-content/uploads/2026/05/LR_Logement.pdf",
+            "date": "2026-05",
+            "kind": "programme"
+          },
+          {
+            "title": "Journal de l'Agence, « Présidentielle 2027 : les propositions de Bruno Retailleau pour relancer le logement »",
+            "url": "https://www.journaldelagence.com/1411841-presidentielle-2027-les-propositions-de-bruno-retailleau-pour-relancer-le-logement",
+            "date": "2026-06-10",
+            "kind": "presse"
+          },
+          {
+            "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+            "date": "2026-10-21",
+            "kind": "vote"
+          },
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "modifiee",
+              "before": 1,
+              "after": -2,
+              "comment": "Le Journal de l'Agence (10 juin 2026), ouvert, rapporte que Bruno Retailleau a présenté le 28 mai 2026 à Maisons-Alfort son programme logement « Mieux se loger, et moins cher », qui propose de « supprimer l'encadrement des loyers instauré dans certaines villes » (paraphrase du journaliste, pas une citation du candidat). PAP.fr (entretien du 2 novembre 2026) et Europe 1 (« l'encadrement des loyers purement et simplement supprimé ») vont dans le même sens d'après les extraits de recherche, mais renvoient toujours 403 ; CNews (28 mai 2026, titre « fin de l'encadrement des loyers ») renvoie aussi 403. Trois médias concordants, un ouvert : le candidat, président de LR, contredit le vote des sénateurs LR (119 pour au scrutin n° 25, vérifié) ; règle « le candidat l'emporte » → −2, votes mentionnés. Scrutin AN n° 4745 vérifié (Droite républicaine 2 contre) ; citation de Philippe Gosselin vérifiée dans LCP."
+            },
+            {
+              "verifier": "V7",
+              "verdict": "modifiee",
+              "before": -2,
+              "after": -2,
+              "comment": "Contrôle de la modification de V4 (+1 → −2). Source primaire trouvée et ouverte : la brochure du parti, liée depuis la page « Nos propositions » de republicains.fr, déposée en mai 2026. Titre exact : « Se loger mieux et moins cher ! » (et non « Mieux se loger, et moins cher », intitulé repris par le Journal de l'Agence). Passages : « Nous supprimerons l'encadrement des loyers » (p. 3) ; « 3. En finir avec l'encadrement des loyers. Les dispositifs issus de la loi ELAN seront supprimés. On ne résout pas une pénurie en administrant les prix. » ; p. 31 : « Les dispositifs d'encadrement des loyers issus de la loi ELAN seront supprimés ; Les mécanismes de plafonnement prévus par la loi de 1989 seront abrogés ». Programme du parti (règle 2 bis b) qui contredit le vote des sénateurs LR du 21 octobre 2026 : le programme et le candidat l'emportent, le vote est mentionné. Journal de l'Agence rouvert (10 juin 2026, présentation le 28 mai 2026). −2 confirmé ; fix : source primaire en tête, titre corrigé, PAP.fr (403, non ouvert) et Europe 1 (403) retirés. Votes repris de V4 sans réouverture (déjà vérifiés par V4)."
+            }
+          ]
+        }
+      },
+      "nouvelle-energie": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite de David Lisnard ni de programme de Nouvelle Énergie sur l'encadrement des loyers.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "Une recherche « David Lisnard \"encadrement des loyers\" » : aucun résultat le concernant. Reste null."
+            }
+          ]
+        }
+      },
+      "rn": {
+        "stance": -2,
+        "justification": "Les députés RN ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (28 contre, 1 abstention), et leurs sénateurs ont été les seuls à voter contre sa prolongation le 21 octobre 2026 (15 contre). Le sénateur Joshua Hochart a dénoncé une « fuite en avant », estimant que le plafonnement réduit l'offre locative.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+            "date": "2025-12-11",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 25 du 21 octobre 2026 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
+            "url": "https://www.senat.fr/scrutin-public/2026/scr2026-25.html",
+            "date": "2026-10-21",
+            "kind": "vote"
+          },
+          {
+            "title": "Banque des Territoires (Localtis), « Encadrement des loyers : le Sénat prolonge l'expérimentation de deux ans, l'Assemblée sous pression avant le 23 novembre »",
+            "url": "https://www.banquedesterritoires.fr/encadrement-des-loyers-le-senat-prolonge-lexperimentation-de-deux-ans-lassemblee-sous-pression",
+            "date": "2026-10-22",
+            "kind": "presse"
+          },
+          {
+            "title": "Journal de l'économie, « Loyers : le Sénat vote la prolongation de l'encadrement pour deux ans »",
+            "url": "https://www.journaldeleconomie.fr/?p=49938",
+            "date": "2026-10-22",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "RN 28 contre, 1 abstention ; UNT 15 contre, seul groupe contre ; Localtis : « Seul le RN a voté contre », ce qui confirme UNT = sénateurs RN. Citation de Joshua Hochart (« fuite en avant ») vérifiée."
+            }
+          ]
+        }
+      },
+      "reconquete": {
+        "stance": null,
+        "justification": "Pas de déclaration explicite d'Éric Zemmour ni de programme de Reconquête sur l'encadrement des loyers.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B5",
+          "checks": [
+            {
+              "verifier": "V4",
+              "verdict": "confirmee",
+              "before": null,
+              "after": null,
+              "comment": "Une recherche (Zemmour ou Knafo, encadrement des loyers, Reconquête) : aucun résultat. Reste null."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[B5] Textes de référence communs : (1) Assemblée, scrutin n° 4745 du 11 décembre 2025, ensemble de la PPL Echaniz (pérennisation + extension aux communes volontaires en zone tendue et limitrophes + plafonnement du complément de loyer à 20 %), 105 pour, 56 contre ; (2) Sénat, scrutin n° 25 du 21 octobre 2026, même PPL réduite à une prolongation de deux ans à périmètre constant, 325 pour, 17 contre. Le second ne sépare que le RN ; le premier sépare gauche (pour) et bloc central/droite (contre). Énoncé « continuer » : un vote contre la pérennisation n'est pas un vote contre la poursuite, d'où 0 pour Renaissance (contre la pérennisation, pour la prolongation temporaire) et +1 pour LR. POINT À TRANCHER PAR LE VÉRIFICATEUR (LR) : d'après les extraits de recherche, Bruno Retailleau propose la « suppression totale » de l'encadrement des loyers (PAP.fr, entretien du 2 novembre 2026 ; Europe 1, même période). Les deux pages renvoient 403 et n'ont pas été ouvertes, donc non retenues ; si le vérificateur les ouvre et confirme, la règle « le candidat l'emporte » fait passer LR à −2 (en mentionnant le vote des sénateurs LR). État du droit au 8 novembre 2026 : l'expérimentation (article 140 de la loi ELAN, prolongé par la loi 3DS) expire le 24 novembre 2026 (certaines sources disent le 23) ; deuxième lecture à l'Assemblée en séance le 18 novembre 2026 (journée socialiste du 19 en repli), vote conforme nécessaire ; fin repoussée au 24 novembre 2028 si adopté. Chiffres de l'aide : 70 communes, 9 territoires, 1,2 million de locataires (Cour des comptes, via AFP), baisse de 2 à 4 % (rapport de mai 2026 commandé par le gouvernement à Gabrielle Fack et Guillaume Chapelle, via AFP et Localtis) ; l'Apur estime 5 % à Paris (968 € par an) — rapport primaire non ouvert. Localtis cite « de Paris à Marseille » : Marseille ne figure pas dans la liste des neuf territoires (Journal de l'économie), ne pas reprendre. Paris : encadrement en vigueur depuis le 1er juillet 2019 (Ville de Paris, extrait de recherche) — « depuis 2019 » dans l'aide vaut pour le premier territoire, les autres ont suivi entre 2020 et 2024. Recherches : 14 sur 15 (3 communes au début, puis LR 3, NE 2, REC 3, HOR 1, RE 2 dont 1 partagée). Hypothèses de l'audit confirmées pour LFI, PCF, ECO, PS, LR (+1, sous réserve), infirmées pour RE (+1 → 0) et HOR (0 ? → −1) ; RN documenté −2 ; NE et REC non documentés (l'audit supposait −2)."
+  },
+  {
+    "question": "q40-holding-audiovisuel",
+    "known": 9,
+    "retained": false,
+    "status": "variante soumise à l’éditeur (non fusionnée)",
+    "definition": {
+      "theme": "institutions",
+      "statement": "Il faut regrouper France Télévisions, Radio France et l'INA dans une seule entreprise publique.",
+      "shortLabel": "Regrouper l'audiovisuel public dans une même société",
+      "help": "Six sociétés publiques (France Télévisions, Radio France, l'INA, Arte, France Médias Monde et TV5 Monde) sont financées par des crédits de l'État depuis la suppression de la redevance par la loi du 16 août 2022 : près de 3,9 milliards d'euros dans le projet de budget pour 2026. Une proposition de loi du sénateur Laurent Lafon placerait France Télévisions, Radio France et l'INA dans une société holding publique, « France Médias », sous un président unique. L'Assemblée nationale l'a rejetée le 30 juin 2025 et le Sénat l'a adoptée en deuxième lecture le 11 juillet 2025 ; au 8 novembre 2026, les députés ne l'ont pas réexaminée. Ses partisans y voient une stratégie commune face aux plateformes ; ses opposants craignent des économies et une emprise politique accrue.",
+      "helpSources": [
+        {
+          "title": "Assemblée nationale, amendement n° CF1633 au projet de loi de finances pour 2026 (crédits « France Télévisions » : 2 440 577 000 euros ; « Radio France » : 648 033 908 euros)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/CION_FIN/CF1633.pdf",
+          "date": "2026-01-06"
+        },
+        {
+          "title": "Sénat, avis n° 144 (2025-2026), tome IV, fascicule 1 « Avances à l'audiovisuel public » (Arte 298,1 M€, France Médias Monde 303,9 M€, INA 103,5 M€, TV5 Monde 84,2 M€)",
+          "url": "https://www.senat.fr/rap/a25-144-41/a25-144-411.html",
+          "date": "2025-11-24"
+        },
+        {
+          "title": "Légifrance, loi n° 2022-1157 du 16 août 2022 de finances rectificative pour 2022 (article 6)",
+          "url": "https://www.legifrance.gouv.fr/eli/loi/2022/8/16/2022-1157/jo/texte",
+          "date": "2022-08-16"
+        },
+        {
+          "title": "Assemblée nationale, dossier législatif « Réforme de l'audiovisuel public et souveraineté audiovisuelle » (dernière étape : texte n° 1754 transmis le 11 juillet 2025, commission des affaires culturelles saisie)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/DLR5L16N47697",
+          "date": "2025-07-11"
+        },
+        {
+          "title": "Sénat, dossier législatif de la proposition de loi n° 545 (2022-2023) de M. Laurent Lafon",
+          "url": "https://www.senat.fr/dossier-legislatif/ppl22-545.html",
+          "date": "2026-01-19"
+        }
+      ],
+      "axis": null,
+      "direction": 1,
+      "formulationReview": "Une idée, langage simple, aucun adjectif évaluatif, 95 caractères ; shortLabel 52 caractères. 9 partis sur 10 documentés (Nouvelle Énergie null), même scrutin de référence (Assemblée, n° 2873) pour les huit partis qui ont des députés, recoupé par le scrutin n° 367 du Sénat. Valeurs : −2 ×6, +2 ×3 ; écart-type ≈ 1,9. Exactitude : le texte crée une holding (société mère de sociétés qui subsistent), pas une fusion ; « une seule entreprise publique » est un raccourci acceptable pour le lecteur, mais une variante plus exacte serait : « Il faut placer France Télévisions, Radio France et l'INA sous une même direction publique. » (shortLabel : « Direction commune de l'audiovisuel public »). Faible pouvoir de départage : le scrutin oppose deux blocs (socle central + LR contre gauche + RN), sans différence entre RE et HOR, LFI et PCF, ECO et PS ; seul LR–RN est départagé, et le vote RN est d'abord tactique (voir notes). Axe null recommandé (clivage ni économique ni européen). Direction indiquée par défaut, sans effet si axe null."
+    },
+    "positions": {
+      "lfi": {
+        "stance": -2,
+        "justification": "Le 30 juin 2025, les 37 députés LFI-NFP présents ont voté la motion de rejet de la réforme créant la holding « France Médias », adoptée par 94 voix contre 38.",
+        "sources": [
+          {
+            "title": "Datan, scrutin n° 2873 du 30 juin 2025 : motion de rejet préalable (Mme Chatelain) de la proposition de loi relative à la réforme de l'audiovisuel public et à la souveraineté audiovisuelle, adoptée",
+            "url": "https://datan.fr/votes/legislature-17/vote_2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Assemblée nationale, scrutin public n° 2873 (analyse nominative)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 2873 du 30 juin 2025 rouvert (motion de rejet préalable, adoptée 94 pour, 38 contre) : LFI-NFP 37 pour, aucune abstention ni voix discordante dans le groupe. Valeur conforme (voter la motion = −2, voter contre = +2)."
+            }
+          ]
+        }
+      },
+      "pcf": {
+        "stance": -2,
+        "justification": "Le 30 juin 2025, les deux députés communistes présents du groupe de la Gauche démocrate et républicaine, Soumya Bourouaha et Julien Brugerolles, ont voté la motion de rejet de la réforme ; au Sénat, le 11 juillet 2025, les 18 sénateurs du groupe communiste (CRCE-K) ont voté contre le texte.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 2873 du 30 juin 2025 (analyse nominative : GDR, 2 pour)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 367 du 11 juillet 2025 sur l'ensemble de la proposition de loi relative à la réforme de l'audiovisuel public (deuxième lecture)",
+            "url": "https://www.senat.fr/scrutin-public/2024/scr2024-367.html",
+            "date": "2025-07-11",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 2873 du 30 juin 2025 rouvert (motion de rejet préalable, adoptée 94 pour, 38 contre) : GDR 2 pour, aucune abstention ni voix discordante dans le groupe. Valeur conforme (voter la motion = −2, voter contre = +2). Appartenance au PCF des deux députés GDR non revérifiée ; le vote du groupe CRCE-K au Sénat (18 contre, scrutin n° 367, repris du codage) suffit."
+            }
+          ]
+        }
+      },
+      "ecologistes": {
+        "stance": -2,
+        "justification": "La motion de rejet adoptée le 30 juin 2025 avait été déposée par la présidente du groupe Écologiste et Social, Cyrielle Chatelain ; ses 22 députés présents l'ont votée. Au Sénat, le 11 juillet 2025, les 16 sénateurs écologistes ont voté contre le texte.",
+        "sources": [
+          {
+            "title": "Datan, scrutin n° 2873 du 30 juin 2025 : motion de rejet préalable déposée par Mme Cyrielle Chatelain",
+            "url": "https://datan.fr/votes/legislature-17/vote_2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 367 du 11 juillet 2025 (deuxième lecture, ensemble du texte)",
+            "url": "https://www.senat.fr/scrutin-public/2024/scr2024-367.html",
+            "date": "2025-07-11",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 2873 du 30 juin 2025 rouvert (motion de rejet préalable, adoptée 94 pour, 38 contre) : Écologiste et Social 22 pour, aucune abstention ni voix discordante dans le groupe. Valeur conforme (voter la motion = −2, voter contre = +2)."
+            }
+          ]
+        }
+      },
+      "ps-place-publique": {
+        "stance": -2,
+        "justification": "Le 30 juin 2025, les 14 députés socialistes présents, dont le président du groupe Boris Vallaud, ont voté la motion de rejet de la réforme ; au Sénat, le 11 juillet 2025, les 65 sénateurs socialistes ont voté contre le texte.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 2873 du 30 juin 2025 (analyse nominative : Socialistes, 14 pour)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 367 du 11 juillet 2025 (deuxième lecture, ensemble du texte)",
+            "url": "https://www.senat.fr/scrutin-public/2024/scr2024-367.html",
+            "date": "2025-07-11",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 2873 du 30 juin 2025 rouvert (motion de rejet préalable, adoptée 94 pour, 38 contre) : Socialistes 14 pour, aucune abstention ni voix discordante dans le groupe. Valeur conforme (voter la motion = −2, voter contre = +2)."
+            }
+          ]
+        }
+      },
+      "renaissance": {
+        "stance": 2,
+        "justification": "Le 30 juin 2025, les 22 députés du groupe Ensemble pour la République présents ont voté contre la motion de rejet de la réforme créant la holding « France Médias ».",
+        "sources": [
+          {
+            "title": "Datan, scrutin n° 2873 du 30 juin 2025 : motion de rejet préalable, EPR 22 contre",
+            "url": "https://datan.fr/votes/legislature-17/vote_2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          },
+          {
+            "title": "LCP, « Réforme de l'audiovisuel public : après le vote d'une motion de rejet à l'Assemblée, le texte va retourner au Sénat »",
+            "url": "https://lcp.fr/actualites/reforme-de-l-audiovisuel-public-apres-le-vote-d-une-motion-de-rejet-a-l-assemblee-le",
+            "date": "2025-06-30",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Scrutin n° 2873 du 30 juin 2025 rouvert (motion de rejet préalable, adoptée 94 pour, 38 contre) : EPR 22 contre, aucune abstention ni voix discordante dans le groupe. Valeur conforme (voter la motion = −2, voter contre = +2). Réserve de faible présence (22 sur 93) maintenue."
+            }
+          ]
+        }
+      },
+      "horizons": {
+        "stance": 2,
+        "justification": "Le 30 juin 2025, les cinq députés Horizons & Indépendants présents, dont le rapporteur du texte Jérémie Patrier-Leitus, ont voté contre la motion de rejet de la réforme.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 2873 du 30 juin 2025 (analyse nominative : HOR, 5 contre)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Scrutin n° 2873 du 30 juin 2025 rouvert (motion de rejet préalable, adoptée 94 pour, 38 contre) : HOR 5 contre, aucune abstention ni voix discordante dans le groupe. Valeur conforme (voter la motion = −2, voter contre = +2). Réserve de faible présence (5 sur 34) maintenue."
+            }
+          ]
+        }
+      },
+      "lr": {
+        "stance": 2,
+        "justification": "Le 30 juin 2025, les six députés de la Droite républicaine présents, dont Laurent Wauquiez, ont voté contre la motion de rejet ; au Sénat, le 11 juillet 2025, 124 des 130 sénateurs LR ont voté pour le texte.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, scrutin public n° 2873 du 30 juin 2025 (analyse nominative : DR, 6 contre)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, scrutin n° 367 du 11 juillet 2025 (deuxième lecture, ensemble du texte)",
+            "url": "https://www.senat.fr/scrutin-public/2024/scr2024-367.html",
+            "date": "2025-07-11",
+            "kind": "vote"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Scrutin n° 2873 du 30 juin 2025 rouvert (motion de rejet préalable, adoptée 94 pour, 38 contre) : DR 6 contre, aucune abstention ni voix discordante dans le groupe. Valeur conforme (voter la motion = −2, voter contre = +2). Le scrutin du Sénat n° 367 n'a pas été rouvert."
+            }
+          ]
+        }
+      },
+      "nouvelle-energie": {
+        "stance": null,
+        "justification": "Pas de déclaration de David Lisnard ni de texte de Nouvelle Énergie sur le regroupement de l'audiovisuel public.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": []
+        }
+      },
+      "rn": {
+        "stance": -2,
+        "justification": "Le 30 juin 2025, les 16 députés RN présents ont voté la motion de rejet de la réforme ; leur orateur Philippe Ballard a déclaré : « Cette réforme, ce n'est pas notre projet », le RN défendant la privatisation de France Télévisions et de Radio France.",
+        "sources": [
+          {
+            "title": "Datan, scrutin n° 2873 du 30 juin 2025 : motion de rejet préalable, RN 16 pour",
+            "url": "https://datan.fr/votes/legislature-17/vote_2873",
+            "date": "2025-06-30",
+            "kind": "vote"
+          },
+          {
+            "title": "LCP, « Réforme de l'audiovisuel public : après le vote d'une motion de rejet à l'Assemblée, le texte va retourner au Sénat »",
+            "url": "https://lcp.fr/actualites/reforme-de-l-audiovisuel-public-apres-le-vote-d-une-motion-de-rejet-a-l-assemblee-le",
+            "date": "2025-06-30",
+            "kind": "presse"
+          },
+          {
+            "title": "Assemblée nationale, amendement n° CF1633 au PLF 2026 (M. Clavet, M. Ballard et les députés RN) : « privatisation de France Télévisions et de Radio France »",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/2247/CION_FIN/CF1633.pdf",
+            "date": "2026-01-06",
+            "kind": "proposition-de-loi"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Datan : RN 16 pour la motion, 0 contre. LCP (30 juin 2025) rouvert : Philippe Ballard, dans l'hémicycle : « Cette réforme, ce n'est pas notre projet » ; l'article ajoute que les députés RN ne sont « pas foncièrement opposé[s] » à la réforme et ont voté la motion pour contrer « l'obstruction » de la gauche, selon un cadre anonyme du groupe. Jugement : −2 maintenu. Le vote unanime du groupe est du même type de preuve que celui des autres groupes (règle 2 : même preuve, même valeur) ; la seule explication contraire vient d'un cadre non nommé, qui ne satisfait pas la règle 2 bis ; la déclaration de l'orateur en séance et l'amendement RN de privatisation de France Télévisions et de Radio France (budget 2026) vont dans le sens d'une opposition au regroupement public. −1 serait défendable si l'éditeur veut tenir compte du caractère tactique, mais il ne repose sur aucune source admise."
+            }
+          ]
+        }
+      },
+      "reconquete": {
+        "stance": -2,
+        "justification": "L'eurodéputée Sarah Knafo (Reconquête) juge que « le projet de holding de Rachida Dati n'a aucun intérêt » : « on rajoute une couche sans rien supprimer » ; elle défend la privatisation de l'audiovisuel public (entretien publié le 28 août 2025).",
+        "sources": [
+          {
+            "title": "Presse Agence, « Sarah Knafo : découvrez mon entretien exclusif contre l'audiovisuel public » (reprise d'un entretien à l'Observatoire du journalisme)",
+            "url": "https://presseagence.fr/paris-sarah-knafo-decouvrez-mon-entretien-exclusif-contre-laudiovisuel-public/",
+            "date": "2025-08-28",
+            "kind": "declaration"
+          },
+          {
+            "title": "Sarah Knafo, « Budget 2027 », mesure n° 21 « Privatisation de l'audiovisuel public »",
+            "url": "https://www.budget2027.fr/",
+            "date": "2026",
+            "kind": "declaration"
+          }
+        ],
+        "verification": {
+          "codedBy": "B3v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Citation exacte vérifiée sur la page ouverte (28 août 2025) : « Je pense que le projet de holding de Rachida Dati n'a aucun intérêt. » ; « Comme toujours avec les projets de regroupement de structures publiques, on rajoute une couche sans rien supprimer. » ; « Je pense que ce n'est plus à l'État de s'occuper des programmes de télévision. » Attention : la phrase sur le « grand patron » cite « France Télévisions, de Radio France et de France Médias Monde » (pas l'INA). Sarah Knafo y est présentée comme « députée française de Reconquête au Parlement européen » ; appartenance actuelle confirmée par Ozap (29 octobre 2026, « la députée européenne du parti Reconquête ») ; fonction nationale (vice-présidente exécutive, selon le codage q36) : règle 2 bis a satisfaite. Budget2027.fr : mesure 21 « Privatisation de l'audiovisuel public », non datée sur la page (© 2026). Réserve : la page est un relais (Presse Agence) d'un entretien accordé à l'Observatoire du journalisme ; l'original n'a pas été retrouvé (une recherche) et sa date propre est inconnue. La justification « entretien publié le 28 août 2025 » est exacte pour le relais. −2 confirmé."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[B3v] Scrutin de référence : Assemblée nationale n° 2873, 30 juin 2025, motion de rejet préalable (Mme Chatelain, Écologiste et Social), adoptée 94 contre 38 ; voter la motion = −2, voter contre = +2. Faible participation (132 votants) mais chaque groupe a voté de façon homogène. Recoupement Sénat n° 367 (11 juillet 2025, ensemble du texte en deuxième lecture, vote bloqué art. 44 al. 3) : adopté 194 contre 113 ; LR 124 pour, UC 56 pour, SER 65 contre, CRCE-K 18 contre, GEST 16 contre, RDPI 10 pour / 1 contre / 7 abst., RDSE 3 pour / 13 contre, Les Indépendants 1 pour / 18 abst., les quatre sénateurs sans groupe (dont les RN Durox, Hochart, Szczurek) n'ont pas pris part. Points fragiles : (1) RN : vote d'abord tactique (« obstruction » de la gauche, RN « pas foncièrement opposé » selon LCP) ; la phrase de Philippe Ballard et l'amendement de privatisation soutiennent −2, mais un vérificateur pourrait proposer −1. (2) RE et HOR : peu de présents ; au Sénat, RDPI partagé et Les Indépendants abstentionnistes. (3) Reconquête : source de relais (Presse Agence / Observatoire du journalisme), à durcir. (4) Navette : dernière étape publiée, transmission à l'Assemblée en deuxième lecture le 11 juillet 2025 ; un résultat de recherche (compte rendu non daté de la commission d'enquête) évoque un projet « en voie d'abandon », non ouvert. Compteur : 4 recherches sur 4 (n° 1 scrutin commun, n° 2 Lisnard, n° 3 Zemmour, n° 4 Knafo)."
+  },
+  {
+    "question": "q41-accompagnateurs-scolaires",
+    "known": 9,
+    "retained": false,
+    "status": "variante soumise à l’éditeur (non fusionnée)",
+    "definition": {
+      "theme": "education",
+      "statement": "Les parents qui accompagnent les sorties scolaires ne devraient pas pouvoir porter de signe religieux.",
+      "shortLabel": "Neutralité religieuse des accompagnateurs scolaires",
+      "help": "Depuis la loi de 2004, les élèves des écoles, collèges et lycées publics ne peuvent pas porter de signe religieux ostensible, mais cette règle ne vise pas les parents. En 2013, le Conseil d'État a estimé que les parents accompagnateurs ne sont pas soumis à la neutralité religieuse ; l'école peut seulement limiter le port de signes pour des raisons d'ordre public ou de bon fonctionnement. Le Sénat a voté une interdiction à plusieurs reprises, la dernière fois le 30 mars 2021 (177 voix pour, 141 contre), mais l'Assemblée l'a retirée de la loi. Les partisans y voient le prolongement de la laïcité de l'école, les opposants une mesure qui écarterait des mères voilées de la vie de l'école.",
+      "helpSources": [
+        {
+          "title": "Public Sénat, « Port du voile pour les mères accompagnatrices : l'état du droit »",
+          "url": "https://www.publicsenat.fr/actualites/politique/port-du-voile-pour-les-meres-accompagnatrices-l-etat-du-droit-146326",
+          "date": "2019-10-14"
+        },
+        {
+          "title": "Sénat, scrutin n° 98 du 30 mars 2021",
+          "url": "https://www.senat.fr/scrutin-public/2020/scr2020-98.html",
+          "date": "2021-03-30"
+        },
+        {
+          "title": "Assemblée nationale, proposition de loi n° 886 (exposé des motifs : disposition du Sénat supprimée en lecture définitive le 23 juillet 2021)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0886_proposition-loi.pdf",
+          "date": "2025-02-04"
+        }
+      ],
+      "axis": "societal",
+      "direction": 1,
+      "formulationReview": "Une idée, langage simple, aucun adjectif évaluatif, sens +1 (accord = « Autorité »). 9/10 documentés (LFI null) si l'éditeur admet Reconquête à +2 par la règle de q31 ; 8/10 sinon. Valeurs : +2 LR, NE, RN, REC ; −1 HOR ; −2 PS, ECO, PCF, RE ; LFI null. Écart-type des 9 valeurs ≈ 1,9 (≥ 1,0), distribution bimodale. Texte de référence commun : scrutin n° 98 du Sénat (30 mars 2021) pour LR, PS, ECO, PCF, RE. Faiblesse : RE repose sur un vote de 2021 sous un gouvernement opposé, HOR sur une déclaration de 2019 ; une prise de position d'Attal ou de Philippe en campagne pourrait les déplacer. Variante d'énoncé possible : « Les signes religieux devraient être interdits aux parents qui accompagnent les sorties scolaires. » (même sens). Vérifier au 8 novembre 2026 qu'aucune loi n'a été adoptée depuis l'annonce de Bruno Retailleau en janvier 2025 (aucune trouvée dans le quota)."
+    },
+    "positions": {
+      "lfi": {
+        "stance": null,
+        "justification": "Pas de déclaration de Jean-Luc Mélenchon ni de la direction de La France insoumise sur ce point ; le mouvement n'avait pas de sénateurs lors du vote du Sénat du 30 mars 2021.",
+        "sources": [],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": []
+        }
+      },
+      "pcf": {
+        "stance": -2,
+        "justification": "Le 30 mars 2021, les quinze sénateurs du groupe communiste ont voté contre l'amendement qui étendait la neutralité religieuse aux accompagnateurs de sorties scolaires. Fabien Roussel ne s'est pas exprimé sur ce point.",
+        "sources": [
+          {
+            "title": "Sénat, scrutin n° 98 du 30 mars 2021 sur l'amendement n° 286 rectifié bis (M. Brisson) au projet de loi confortant le respect des principes de la République",
+            "url": "https://www.senat.fr/scrutin-public/2020/scr2020-98.html",
+            "date": "2021-03-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Public Sénat, « Séparatisme : le Sénat vote l'interdiction des signes religieux pour les accompagnateurs de sorties scolaires »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/separatisme-le-senat-vote-l-interdiction-des-signes-religieux-pour-les",
+            "date": "2021-03-30",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 98 du 30 mars 2021 rouvert (amendements identiques n° 150 rectifié ter et n° 286 rectifié bis à l'article 1er, adoptés 177 pour, 141 contre) : groupe de 15 sénateurs, CRCE 0 pour, 15 contre. Valeur conforme."
+            }
+          ]
+        }
+      },
+      "ecologistes": {
+        "stance": -2,
+        "justification": "Le 30 mars 2021, les douze sénateurs du groupe écologiste ont voté contre l'amendement qui étendait la neutralité religieuse aux accompagnateurs de sorties scolaires ; le 11 avril 2023, ils ont défendu un amendement précisant que cette interdiction « ne s'applique pas » aux parents qui accompagnent des sorties.",
+        "sources": [
+          {
+            "title": "Sénat, scrutin n° 98 du 30 mars 2021 sur l'amendement n° 286 rectifié bis (M. Brisson) au projet de loi confortant le respect des principes de la République",
+            "url": "https://www.senat.fr/scrutin-public/2020/scr2020-98.html",
+            "date": "2021-03-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Sénat, compte rendu analytique de la séance du 11 avril 2023 (proposition de loi pour un choc des savoirs, article 2)",
+            "url": "https://www.senat.fr/cra/s20230411/s20230411_3.html",
+            "date": "2023-04-11",
+            "kind": "proposition-de-loi"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 98 du 30 mars 2021 rouvert (amendements identiques n° 150 rectifié ter et n° 286 rectifié bis à l'article 1er, adoptés 177 pour, 141 contre) : groupe de 12 sénateurs, Écologiste - Solidarité et Territoires 0 pour, 12 contre. Valeur conforme. Compte rendu du 11 avril 2023 non rouvert."
+            }
+          ]
+        }
+      },
+      "ps-place-publique": {
+        "stance": -2,
+        "justification": "Le 30 mars 2021, les soixante-cinq sénateurs du groupe socialiste ont voté contre l'amendement qui étendait la neutralité religieuse aux accompagnateurs de sorties scolaires. Raphaël Glucksmann ne s'est pas exprimé sur ce point.",
+        "sources": [
+          {
+            "title": "Sénat, scrutin n° 98 du 30 mars 2021 sur l'amendement n° 286 rectifié bis (M. Brisson) au projet de loi confortant le respect des principes de la République",
+            "url": "https://www.senat.fr/scrutin-public/2020/scr2020-98.html",
+            "date": "2021-03-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Public Sénat, « Séparatisme : le Sénat vote l'interdiction des signes religieux pour les accompagnateurs de sorties scolaires »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/separatisme-le-senat-vote-l-interdiction-des-signes-religieux-pour-les",
+            "date": "2021-03-30",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 98 du 30 mars 2021 rouvert (amendements identiques n° 150 rectifié ter et n° 286 rectifié bis à l'article 1er, adoptés 177 pour, 141 contre) : groupe de 65 sénateurs, 0 pour, 65 contre. Valeur conforme."
+            }
+          ]
+        }
+      },
+      "renaissance": {
+        "stance": -2,
+        "justification": "Le 30 mars 2021, les vingt-trois sénateurs du groupe macroniste (RDPI) ont voté contre l'amendement qui étendait la neutralité religieuse aux accompagnateurs de sorties scolaires, auquel le gouvernement était opposé. Gabriel Attal ne s'est pas exprimé sur ce point ; en mai 2025, il a proposé d'interdire le voile dans l'espace public aux moins de 15 ans.",
+        "sources": [
+          {
+            "title": "Sénat, scrutin n° 98 du 30 mars 2021 sur l'amendement n° 286 rectifié bis (M. Brisson) au projet de loi confortant le respect des principes de la République",
+            "url": "https://www.senat.fr/scrutin-public/2020/scr2020-98.html",
+            "date": "2021-03-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Public Sénat, « Séparatisme : le Sénat vote l'interdiction des signes religieux pour les accompagnateurs de sorties scolaires »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/separatisme-le-senat-vote-l-interdiction-des-signes-religieux-pour-les",
+            "date": "2021-03-30",
+            "kind": "presse"
+          },
+          {
+            "title": "Public Sénat, « Gabriel Attal propose d'interdire le voile pour les moins de 15 ans et souhaite une nouvelle loi séparatisme »",
+            "url": "https://www.publicsenat.fr/actualites/politique/gabriel-attal-propose-dinterdire-le-voile-pour-les-moins-de-15-ans-et-souhaite-une-nouvelle-loi-separatisme",
+            "date": "2025-05-21",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": -2,
+              "after": -2,
+              "comment": "Scrutin n° 98 du 30 mars 2021 rouvert (amendements identiques n° 150 rectifié ter et n° 286 rectifié bis à l'article 1er, adoptés 177 pour, 141 contre) : groupe de 23 sénateurs, RDPI 0 pour, 23 contre. Valeur conforme. Réserve maintenue : vote de 2021 sous un gouvernement opposé à l'amendement, avant la direction de Gabriel Attal."
+            }
+          ]
+        }
+      },
+      "horizons": {
+        "stance": -1,
+        "justification": "Le 15 octobre 2019, à l'Assemblée nationale, Édouard Philippe, alors Premier ministre, a déclaré : « On peut porter un voile quand on accompagne une sortie scolaire » et ne pas penser « que l'enjeu aujourd'hui soit de voter une loi sur les accompagnants scolaires ». Horizons, créé en 2021, n'avait pas de groupe au Sénat lors du vote du 30 mars 2021.",
+        "sources": [
+          {
+            "title": "Assemblée nationale, question au Gouvernement n° 2276 « Laïcité à l'école » (M. Jean-Louis Masson), réponse du Premier ministre",
+            "url": "https://www.assemblee-nationale.fr/dyn/15/questions/QANR5L15QG2276",
+            "date": "2019-10-15",
+            "kind": "declaration"
+          },
+          {
+            "title": "Maire-info, « Port du voile par les accompagnatrices des sorties scolaires : le Premier ministre opposé à une loi »",
+            "url": "https://www.maire-info.com/laicite/port-du-voile-par-les-accompagnatrices-des-sorties-scolaires-le-premier-ministre-oppose-%C3%A0-une-loi-article-23495",
+            "date": "2019-10-16",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "modifiee",
+              "before": -1,
+              "after": -1,
+              "comment": "Valeur −1 confirmée, lieu corrigé. Le compte rendu officiel (question au Gouvernement n° 2276 de Jean-Louis Masson, publiée au Journal officiel du 16 octobre 2019) montre que la réponse d'Édouard Philippe a été donnée à l'Assemblée nationale le 15 octobre 2019, et non au Sénat. Citations exactes : « On peut porter un voile quand on accompagne une sortie scolaire, mais on n'a pas le droit […] de faire de prosélytisme » ; « Je ne pense pas, pour ma part […] que l'enjeu aujourd'hui soit de voter une loi sur les accompagnants scolaires. » Il est aujourd'hui président d'Horizons et candidat (règle 2 bis a) ; déclaration de 2019, en qualité de Premier ministre, présentée comme telle. −1 plutôt que −2 : refus d'une loi « aujourd'hui », sans opposition de principe. Deux recherches (Philippe 2025-2026) : aucune déclaration plus récente. Fix : lieu corrigé, compte rendu officiel en source principale."
+            }
+          ]
+        }
+      },
+      "lr": {
+        "stance": 2,
+        "justification": "Le programme école des Républicains, publié en septembre 2026, prévoit que « la neutralité de la loi de 2004 sera étendue aux accompagnateurs des sorties scolaires ». Le 30 mars 2021, le groupe LR du Sénat, dont Bruno Retailleau, avait voté cette extension (134 pour, 0 contre, 7 abstentions).",
+        "sources": [
+          {
+            "title": "Les Républicains, « Une école de la transmission, de l'égalité des chances, de l'autorité et de la liberté »",
+            "url": "https://republicains.fr/wp-content/uploads/2026/09/LR_Ecole_vF.pdf",
+            "date": "2026-09",
+            "kind": "programme"
+          },
+          {
+            "title": "Sénat, scrutin n° 98 du 30 mars 2021 sur l'amendement n° 286 rectifié bis (M. Brisson) au projet de loi confortant le respect des principes de la République",
+            "url": "https://www.senat.fr/scrutin-public/2020/scr2020-98.html",
+            "date": "2021-03-30",
+            "kind": "vote"
+          },
+          {
+            "title": "Public Sénat, « Interdire le port du voile aux accompagnatrices scolaires : Bruno Retailleau reprend les propositions de la droite sénatoriale »",
+            "url": "https://www.publicsenat.fr/actualites/politique/interdire-le-port-du-voile-aux-accompagnatrices-scolaires-bruno-retailleau-reprend-les-propositions-de-la-droite-senatoriale",
+            "date": "2025-01-07",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Scrutin n° 98 du 30 mars 2021 rouvert (amendements identiques n° 150 rectifié ter et n° 286 rectifié bis à l'article 1er, adoptés 177 pour, 141 contre) : groupe de 148 sénateurs, 134 pour, 0 contre, 7 abstentions ; Bruno Retailleau parmi les « Pour ». Valeur conforme."
+            }
+          ]
+        }
+      },
+      "nouvelle-energie": {
+        "stance": 2,
+        "justification": "La page laïcité de Nouvelle Énergie, mise à jour le 16 octobre 2026, indique que David Lisnard propose d'« interdire les signes ostentatoires politico-religieux » notamment « pour les parents accompagnateurs de sorties scolaires », reprenant un texte de juillet 2021.",
+        "sources": [
+          {
+            "title": "Nouvelle Énergie, « Quel candidat à la présidentielle 2027 défend la laïcité face à l'islamisme ? »",
+            "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-la-laicite-face-a-l-islamisme/",
+            "date": "2026-10-16",
+            "kind": "programme"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": []
+        }
+      },
+      "rn": {
+        "stance": 2,
+        "justification": "Le 16 septembre 2026 sur LCI, Marine Le Pen a annoncé qu'un premier décret viserait le voile dans « les universités, les sorties scolaires, les fédérations sportives (et) les bâtiments publics ». En février 2025, des députés du Rassemblement national, dont son porte-parole Julien Odoul, ont déposé une proposition de loi interdisant aux parents d'élèves les signes religieux ostensibles lors des sorties scolaires.",
+        "sources": [
+          {
+            "title": "Franceinfo, « Marine Le Pen souhaite interdire le voile islamique \"de manière progressive\" »",
+            "url": "https://www.franceinfo.fr/politique/marine-le-pen/marine-le-pen-souhaite-interdire-le-voile-islamique-de-maniere-progressive_8196287.html",
+            "date": "2026-09-16",
+            "kind": "declaration"
+          },
+          {
+            "title": "Assemblée nationale, proposition de loi n° 886 visant à interdire le port de signes ou de tenues manifestant de manière ostensible une appartenance religieuse ou politique dans le cadre scolaire et universitaire",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/textes/l17b0886_proposition-loi.pdf",
+            "date": "2025-02-04",
+            "kind": "proposition-de-loi"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": []
+        }
+      },
+      "reconquete": {
+        "stance": 2,
+        "justification": "Le programme présidentiel de 2022 d'Éric Zemmour prévoit d'« interdire le voile dans l'espace public », ce qui inclut les sorties scolaires ; le 17 septembre 2026 sur BFMTV, il a confirmé vouloir interdire le voile, et aussi la kippa, dans l'espace public. Reconquête n'a pas de groupe parlementaire.",
+        "sources": [
+          {
+            "title": "Entrevue, « Éric Zemmour veut aussi interdire la kippa dans l'espace public en plus du voile »",
+            "url": "https://entrevue.fr/presidentielle-2027/eric-zemmour-veut-aussi-interdire-la-kippa-dans-lespace-public-en-plus-du-voile/",
+            "date": "2026-09-18",
+            "kind": "presse"
+          }
+        ],
+        "verification": {
+          "codedBy": "B4v",
+          "checks": [
+            {
+              "verifier": "V7",
+              "verdict": "confirmee",
+              "before": 2,
+              "after": 2,
+              "comment": "Entrevue (18 septembre 2026) rouvert : Éric Zemmour, sur BFMTV, à « Vous interdirez la kippa aussi ? » : « Dans l'espace public, oui » ; « Le principe politique à l'origine de la laïcité, c'est la discrétion des religions dans l'espace public. » Aucune mention des sorties scolaires (une recherche ciblée, sans résultat). Jugement : +2 maintenu, sous réserve de la décision de l'éditeur. Une interdiction du voile dans tout l'espace public, portée par le candidat lui-même, s'applique par sa lettre aux accompagnateurs d'une sortie scolaire : c'est une inclusion dans la mesure annoncée, pas une déduction idéologique, et c'est la règle déjà appliquée en q31 (voile dans le sport). Si l'éditeur exige une mention explicite des sorties scolaires, null (l'affirmation resterait à 8/10 avec LFI null). Le programme de 2022 n'est cité que via un comparateur : pas de source primaire ouverte ; la justification s'appuie sur la déclaration de 2026, ce qui suffit."
+            }
+          ]
+        }
+      }
+    },
+    "notes": "[B4v] Recherches (9/9) : 1 scrutin AN séparatisme 2021 ; 2 scrutin Sénat 30 mars 2021 ; 3 Attal ; 4 Philippe 2025-2026 ; 5-6 Reconquête ; 7 votes 2025-2026 ; 8 LFI 2025 ; 9 Mélenchon 2019. À l'Assemblée, les amendements LR de février 2021 sur les accompagnants ont été rejetés à main levée (pas de scrutin public). Le Sénat, 11 avril 2023 (PPL choc des savoirs, art. 2), a adopté l'article sur la neutralité des accompagnants sans scrutin public. Paires voisines : LR–NE et RN–REC non départagées (+2/+2) ; ECO–PS non départagées (−2/−2) ; RE–HOR faiblement (−2/−1, sources anciennes) ; LFI–PCF non mesurable (LFI null)."
+  }
+]

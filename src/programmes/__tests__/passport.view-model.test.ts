@@ -41,7 +41,7 @@ describe('Feature: passeport du citoyen', () => {
   });
 
   it('should show the final message only when the six stamps are acquired', () => {
-    expect(vmOf({ 'stamp:les-bases': D }).heading).toBe('Passeport du citoyen');
+    expect(vmOf({ 'stamp:les-bases': D }).heading).toBe('Ma progression');
     expect(vmOf({ 'stamp:les-bases': D }).finished).toBe(false);
     const all = Object.fromEntries(STEPS.map((id) => [`stamp:${id}`, D]));
     const vm = vmOf(all);

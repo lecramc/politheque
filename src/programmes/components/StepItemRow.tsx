@@ -26,6 +26,7 @@ export function StepItemRow({ item, last }: { item: Item; last: boolean }) {
   return (
     <Link href={item.href as never} asChild>
       <Pressable
+        ring="inside"
         accessibilityRole="link"
         accessibilityLabel={`${item.title}, ${item.statusLabel}`}
         style={{

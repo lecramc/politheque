@@ -18,10 +18,11 @@ import Animated, {
 
 import { layout } from '@/components/layout';
 import { duration, useMotion } from '@/components/motion';
-import { useTheme } from '@/components/ThemeContext';
+import { theme, useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
+import { TextLink } from '@/components/ui/TextLink';
 import { Only } from '@/src/core/components/Only';
 import { APP_NAME } from '@/src/core/config/app';
 import { tv } from '@/src/core/web/tv';
@@ -68,6 +69,9 @@ function ActiveArc({ color }: { color: string }) {
     />
   );
 }
+
+/** Pages qui portent le bandeau « Version bêta ». */
+const BETA_BANNER_PATHS = ['/', '/methodologie'];
 
 /** Chemin canonique du repli : sans requête ni barre finale. */
 const canonicalPath = (pathname: string) =>
@@ -123,6 +127,7 @@ function BottomTabBar() {
         return (
           <Link key={item.href} href={item.href} asChild>
             <Pressable
+              ring="inside"
               accessibilityRole="link"
               aria-current={active ? 'page' : undefined}
               accessibilityLabel={item.label}
@@ -216,29 +221,44 @@ export function Page({
       : meta;
   const trail = breadcrumb ?? headMeta?.breadcrumb ?? [];
   const showTabBar = !focus;
+  // Le bandeau « Version bêta » n'est affiché que sur l'accueil et la méthodologie ; ailleurs, la
+  // mention est dans le pied de page. Le chemin est connu au rendu statique : premier rendu identique.
+  const showBetaBanner = BETA_BANNER_PATHS.includes(canonicalPath(pathname));
   const logo = (
     <Link href="/" asChild>
-      <Pressable accessibilityRole="link" accessibilityLabel="Accueil" style={styles.headerButton}>
+      <Pressable
+        accessibilityRole="link"
+        accessibilityLabel="Accueil"
+        hoverStyle={{ opacity: effects.opacity.pressed }}
+        style={styles.headerButton}
+      >
         <Logo />
       </Pressable>
     </Link>
   );
 
+  // Desktop : une rubrique comme les autres (pilule, sans soulignement). Mobile : icône ⓘ.
   const methodologyLink = (
-    <Link href="/methodologie" asChild>
-      <Pressable
-        accessibilityRole="link"
-        accessibilityLabel="Méthodologie"
-        style={StyleSheet.flatten([styles.headerButton, { alignItems: 'flex-end' }])}
-      >
-        <Only from="md">
-          <Text style={{ color: colors.tint, textDecorationLine: 'underline' }}>Méthodologie</Text>
-        </Only>
-        <Only below="md">
-          <Icon name="information-circle-outline" variant="onGlass" size="medium" />
-        </Only>
-      </Pressable>
-    </Link>
+    <>
+      <Only from="md">
+        <Link href="/methodologie" asChild>
+          <Pressable accessibilityRole="link" style={styles.desktopNavItem}>
+            <Text style={{ ...fonts.regular, color: colors.text.primary }}>Méthodologie</Text>
+          </Pressable>
+        </Link>
+      </Only>
+      <Only below="md">
+        <Link href="/methodologie" asChild>
+          <Pressable
+            accessibilityRole="link"
+            accessibilityLabel="Méthodologie"
+            style={StyleSheet.flatten([styles.headerButton, { alignItems: 'flex-end' }])}
+          >
+            <Icon name="information-circle-outline" variant="onGlass" size="medium" />
+          </Pressable>
+        </Link>
+      </Only>
+    </>
   );
 
   const measures = useRef({ offsetY: 0, viewportHeight: 0, contentHeight: 0 });
@@ -323,13 +343,9 @@ export function Page({
 
           {focus && back ? (
             <Only from="md">
-              <Link href={back.href as never} asChild>
-                <Pressable accessibilityRole="link" style={styles.headerButton}>
-                  <Text style={{ color: colors.tint, textDecorationLine: 'underline' }}>
-                    {back.label}
-                  </Text>
-                </Pressable>
-              </Link>
+              <TextLink href={back.href} standalone>
+                {back.label}
+              </TextLink>
             </Only>
           ) : null}
           {focus && back ? <Only below="md">{methodologyLink}</Only> : methodologyLink}
@@ -338,24 +354,28 @@ export function Page({
       <View {...tv('no-print')}>
         <Tricolore />
       </View>
-      <View
-        {...tv('no-print')}
-        style={{
-          backgroundColor: colors.tintSoft,
-          paddingVertical: 6,
-          paddingHorizontal: effects.spacing.md,
-        }}
-      >
-        <Text style={{ fontSize: 14, color: colors.text.primary, textAlign: 'center' }}>
-          Version bêta : contenus en cours de relecture.{' '}
-          <Link
-            href="/methodologie"
-            style={{ color: colors.tint, textDecorationLine: 'underline' }}
-          >
-            Notre méthode
-          </Link>
-        </Text>
-      </View>
+      {showBetaBanner ? (
+        <View
+          {...tv('no-print')}
+          style={{
+            backgroundColor: colors.tintSoft,
+            paddingVertical: 6,
+            paddingHorizontal: effects.spacing.md,
+          }}
+        >
+          {/* Une seule ligne sous 768 px : texte court. */}
+          <Only below="md">
+            <Text style={{ fontSize: 14, color: colors.text.primary, textAlign: 'center' }}>
+              Version bêta : contenus en relecture.
+            </Text>
+          </Only>
+          <Only from="md">
+            <Text style={{ fontSize: 14, color: colors.text.primary, textAlign: 'center' }}>
+              Version bêta : contenus en cours de relecture.
+            </Text>
+          </Only>
+        </View>
+      ) : null}
 
       <ScrollView
         {...tv('print-flow')}
@@ -417,20 +437,9 @@ export function Page({
               {...tv('footer-text')}
               style={[styles.footerText, { color: colors.text.secondary, fontSize: 14 }]}
             >
-              Site indépendant et non officiel ·{' '}
-              <Link
-                href="/methodologie"
-                style={{ color: colors.tint, textDecorationLine: 'underline' }}
-              >
-                Méthodologie
-              </Link>{' '}
-              ·{' '}
-              <Link
-                href="/corrections"
-                style={{ color: colors.tint, textDecorationLine: 'underline' }}
-              >
-                Corrections
-              </Link>
+              {showBetaBanner ? '' : 'Version bêta · '}Site indépendant et non officiel ·{' '}
+              <TextLink href="/methodologie">Méthodologie</TextLink> ·{' '}
+              <TextLink href="/corrections">Corrections</TextLink>
             </Text>
           </View>
         </View>
@@ -475,8 +484,17 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   headerButton: { minHeight: 44, minWidth: 44, justifyContent: 'center' },
-  desktopNav: { flexDirection: 'row', gap: 4, flex: 1, justifyContent: 'center' },
-  desktopNavItem: { paddingHorizontal: 10, paddingVertical: 8, borderRadius: 999 },
+  desktopNav: {
+    flexDirection: 'row',
+    gap: theme.effects.spacing.xxs,
+    flex: 1,
+    justifyContent: 'center',
+  },
+  desktopNavItem: {
+    paddingHorizontal: theme.effects.spacing.sm,
+    paddingVertical: theme.effects.spacing.xs + 2,
+    borderRadius: theme.effects.borderRadius.round,
+  },
   slidingArc: { position: 'absolute', top: 3, left: 0 },
   tabBar: {
     position: 'absolute',

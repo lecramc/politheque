@@ -3,6 +3,7 @@ import React, { createContext, ReactNode, useContext, useEffect, useMemo } from 
 import { useColorScheme } from 'react-native';
 
 import { layout } from '@/components/layout';
+import { useHydrated } from '@/src/core/hooks/useHydrated';
 
 export type ThemeType = 'light' | 'dark';
 
@@ -26,7 +27,7 @@ export const theme = {
       glass: 'rgba(255, 255, 255, 0.72)',
       transparent: 'transparent',
       disabled: 'rgba(21, 32, 58, 0.08)',
-      hover: 'rgba(30, 63, 143, 0.06)', // survol web des zones cliquables sans bordure
+      hover: 'rgba(30, 63, 143, 0.08)', // survol web des zones cliquables sans bordure
       border: {
         primary: '#E8E2D8',
         secondary: '#D9D1C4',
@@ -85,7 +86,7 @@ export const theme = {
       disabled: 'rgba(244, 242, 237, 0.08)',
       hover: 'rgba(157, 183, 242, 0.1)',
       border: {
-        primary: '#29334D',
+        primary: '#34405E', // filets internes : 1,6:1 sur carte, visibles (V17)
         secondary: '#34405E',
         tertiary: '#8A93A8',
         glass: 'rgba(244, 242, 237, 0.08)',
@@ -231,7 +232,12 @@ const ThemeContext = createContext<ThemeContextProps | undefined>(undefined);
 
 export const ThemeProviderCustom = ({ children }: { children: ReactNode }) => {
   const systemColorScheme = useColorScheme();
-  const resolvedSystemTheme: ThemeType = systemColorScheme === 'dark' ? 'dark' : 'light';
+  // Le HTML statique est rendu en clair, et React ne corrige pas les classes qui diffèrent à
+  // l'hydratation : tant que le client n'a pas rejoué le rendu statique, on reste en clair, puis
+  // on applique la préférence réelle (second rendu). Sur natif, `hydrated` est vrai d'emblée.
+  const hydrated = useHydrated();
+  const resolvedSystemTheme: ThemeType =
+    hydrated && systemColorScheme === 'dark' ? 'dark' : 'light';
 
   // The app follows the OS appearance only — there is no in-app theme toggle.
   // This guarantees `colors` and `systemColors` are always identical, so content

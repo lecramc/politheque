@@ -61,7 +61,9 @@ export default function PartiesScreen() {
           {...tv('list-col')}
           horizontal
           showsHorizontalScrollIndicator={false}
-          contentContainerStyle={{ gap: 8 }}
+          // Marge intérieure (compensée à l'extérieur) : l'anneau de focus n'est pas rogné.
+          style={{ margin: -effects.spacing.xs }}
+          contentContainerStyle={{ gap: effects.spacing.xs, padding: effects.spacing.xs }}
         >
           {chip('Tous', !onlyRunning, () => setOnlyRunning(false))}
           {chip('Avec une candidature en 2027', onlyRunning, () => setOnlyRunning(true))}

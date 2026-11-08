@@ -1,9 +1,9 @@
-import { Link } from 'expo-router';
 import React from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { Accordion } from '@/src/programmes/components/Accordion';
 import { Card } from '@/src/programmes/components/Card';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { STATUS_LABELS } from '@/src/programmes/models/legal/legal-vocabulary';
@@ -23,16 +23,6 @@ export function ProceduresIntro({ reviewedOn }: { reviewedOn: string }) {
     <Card>
       <SectionTitle>Ce que recense cette page</SectionTitle>
       <Text style={{ fontSize: 16, lineHeight: 25 }}>
-        Les procédures judiciaires, de la même façon pour tous les partis, visant :
-      </Text>
-      <View style={{ gap: 2 }}>
-        {SCOPE.map((item) => (
-          <Text key={item} style={{ fontSize: 15, lineHeight: 23 }}>
-            · {item}
-          </Text>
-        ))}
-      </View>
-      <Text style={{ fontSize: 16, lineHeight: 25 }}>
         Chaque procédure indique son statut juridique exact, la juridiction, les dates, les recours
         en cours et au moins deux sources indépendantes. Les issues favorables (relaxe,
         acquittement, non-lieu, classement) sont toujours indiquées lorsque la procédure a été
@@ -42,19 +32,27 @@ export function ProceduresIntro({ reviewedOn }: { reviewedOn: string }) {
         Présomption d'innocence : une enquête, une mise en examen ou une condamnation non définitive
         n'établit pas la culpabilité.
       </Text>
-      <Text style={{ fontSize: 14, lineHeight: 22, color: colors.text.secondary }}>
-        Statuts utilisés : {Object.values(STATUS_LABELS).join(' · ')}.
-      </Text>
+      {/* Périmètre et statuts repliés ; l'avertissement et la présomption d'innocence restent visibles. */}
+      <Accordion flat last title="Périmètre et statuts utilisés">
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>
+          Les procédures judiciaires, de la même façon pour tous les partis, visant :
+        </Text>
+        <View style={{ gap: effects.spacing.xxs }}>
+          {SCOPE.map((item) => (
+            <View key={item} style={{ flexDirection: 'row', gap: effects.spacing.xs }}>
+              <Text style={{ width: 12, fontSize: 15, lineHeight: 23 }}>·</Text>
+              <Text style={{ flex: 1, fontSize: 15, lineHeight: 23 }}>{item}</Text>
+            </View>
+          ))}
+        </View>
+        <Text style={{ fontSize: 14, lineHeight: 22, color: colors.text.secondary }}>
+          Statuts utilisés : {Object.values(STATUS_LABELS).join(' · ')}.
+        </Text>
+      </Accordion>
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.sm }}>
         <Text style={{ fontSize: 14, color: colors.text.secondary }}>
           Recensement arrêté au {reviewedOn}.
         </Text>
-        <Link
-          href="/methodologie"
-          style={{ color: colors.tint, textDecorationLine: 'underline', fontSize: 14 }}
-        >
-          Méthode
-        </Link>
       </View>
     </Card>
   );

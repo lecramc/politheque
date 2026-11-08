@@ -52,7 +52,7 @@ export function PartyRow({
         }}
       >
         <PartyDot color={party.color} size={36} label={party.shortName} />
-        <View style={{ flex: 1, minWidth: 0, gap: 2 }}>
+        <View style={{ flex: 1, minWidth: 0, gap: effects.spacing.xxs }}>
           <Text style={{ ...fonts.bold, fontSize: 16 }}>{party.name}</Text>
           {subtitle ? (
             <Text style={{ color: colors.text.secondary, fontSize: 14 }} numberOfLines={2}>

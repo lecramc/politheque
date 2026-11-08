@@ -6,6 +6,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { Only } from '@/src/core/components/Only';
+import { useHydrated } from '@/src/core/hooks/useHydrated';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { tv } from '@/src/core/web/tv';
 import { Arc } from '@/src/programmes/components/Arc';
@@ -34,6 +35,9 @@ const weekday = (iso: string) =>
 export default function ElectionScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
   const vm = useViewModel(electionViewModel(id));
+  // Le compte à rebours dépend du jour : rendu après l'hydratation seulement (voir useHydrated).
+  const hydrated = useHydrated();
+  const daysLeft = hydrated ? vm.daysLeft : null;
   const { colors, effects, fonts } = useTheme();
   const [step, setStep] = useState<DatedStep | null>(null);
   const election = vm.election;
@@ -51,15 +55,15 @@ export default function ElectionScreen() {
     : [];
 
   const countdown =
-    vm.daysLeft !== null && vm.round ? (
+    daysLeft !== null && vm.round ? (
       <Arc
-        value={1 - vm.daysLeft / 365}
+        value={1 - daysLeft / 365}
         size={120}
         strokeWidth={12}
-        accessibilityLabel={`${vm.daysLeft} jours avant le ${vm.round.label}`}
+        accessibilityLabel={`${daysLeft} jours avant le ${vm.round.label}`}
       >
         <Text style={{ ...fonts.displayBold, fontSize: 28, lineHeight: 30, color: colors.tint }}>
-          {vm.daysLeft}
+          {daysLeft}
         </Text>
         <Text style={{ color: colors.text.secondary, fontSize: 13 }}>jours</Text>
       </Arc>
@@ -77,7 +81,7 @@ export default function ElectionScreen() {
         style={{
           ...(width ? { width } : null),
           padding: 14,
-          gap: 4,
+          gap: effects.spacing.xxs,
           borderRadius: effects.borderRadius.small,
           borderWidth: 1,
           borderColor: isRound ? colors.tintBorder : colors.surface.border.primary,
@@ -88,9 +92,7 @@ export default function ElectionScreen() {
         <Text style={{ ...fonts.displayBold, fontSize: 24, color: colors.tint }}>
           {shortDate(s.date)}
         </Text>
-        <Text style={{ fontSize: 14 }} numberOfLines={3}>
-          {stepLabel(s.label).title}
-        </Text>
+        <Text style={{ fontSize: 14 }}>{stepLabel(s.label).title}</Text>
         {stepLabel(s.label).note ? (
           <Text style={{ fontSize: 12, color: colors.text.secondary }}>
             {stepLabel(s.label).note}
@@ -110,20 +112,8 @@ export default function ElectionScreen() {
       railOnMobile="hidden"
       rail={
         election ? (
-          <>
-            {countdown}
-            <View style={{ gap: effects.spacing.xs }}>
-              <Text variant="caption">Dates clés</Text>
-              {steps.map((s) => (
-                <View key={s.label} style={{ gap: 2 }}>
-                  <Text style={{ ...fonts.bold, fontSize: 15, color: colors.tint }}>
-                    {shortDate(s.date)}
-                  </Text>
-                  <Text style={{ fontSize: 14, lineHeight: 20 }}>{stepLabel(s.label).title}</Text>
-                </View>
-              ))}
-            </View>
-          </>
+          // Les dates sont dans le calendrier de la colonne : le rail ne garde que le compte à rebours.
+          <>{countdown}</>
         ) : undefined
       }
     >
@@ -133,7 +123,7 @@ export default function ElectionScreen() {
           <View style={{ gap: 12, alignItems: 'center' }}>
             {/* Compte à rebours : dans le rail dès 1024 px, ici en dessous. */}
             <Only below="lg">{countdown}</Only>
-            <View style={{ gap: 8, alignSelf: 'stretch' }}>
+            <View style={{ gap: effects.spacing.xs, alignSelf: 'stretch' }}>
               <Text style={{ fontSize: 16, lineHeight: 24 }}>{election.summary}</Text>
               <SourceChip sources={election.summarySources} />
             </View>
@@ -147,7 +137,7 @@ export default function ElectionScreen() {
               <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={{ gap: 10, paddingRight: 16 }}
+                contentContainerStyle={{ gap: effects.spacing.sm, paddingRight: 16 }}
               >
                 {steps.map((s) => stepCard(s, 170))}
               </ScrollView>
@@ -189,7 +179,7 @@ export default function ElectionScreen() {
             <Text variant="caption" headingLevel={2}>
               Comparer les programmes par thème
             </Text>
-            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}>
               {vm.themes.map((theme) => (
                 <Link
                   key={theme.id}
@@ -200,7 +190,7 @@ export default function ElectionScreen() {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      gap: 8,
+                      gap: effects.spacing.xs,
                       minHeight: 44,
                       paddingHorizontal: 14,
                       borderRadius: effects.borderRadius.round,

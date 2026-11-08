@@ -35,7 +35,7 @@ export function PageSkeleton() {
             },
       ]}
     >
-      <View style={{ gap: 10 }}>
+      <View style={{ gap: effects.spacing.sm }}>
         <View style={block('35%', 14)} />
         <View style={block('70%', 30)} />
         <View style={block('90%', 16)} />

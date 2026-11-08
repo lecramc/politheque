@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { View } from 'react-native';
+import { Platform, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import { cssEasing, duration, useMotion } from '@/components/motion';
@@ -8,8 +8,10 @@ import { Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { radioKeyAction } from '@/src/core/web/radio-keys';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Arc } from '@/src/programmes/components/Arc';
+import { Card } from '@/src/programmes/components/Card';
 import { Page } from '@/src/programmes/components/Page';
 import type { AnswerValue } from '@/src/programmes/models/matching.service';
 import { quizMeta } from '@/src/programmes/models/seo/page-meta';
@@ -42,6 +44,33 @@ export default function QuizScreen() {
     timer.current = null;
     setPending(null);
   };
+  // Clavier : après une réponse, le focus passe au titre de la question suivante (sinon il
+  // retombe sur <body> et il faudrait retraverser l'en-tête à chaque question).
+  const titleRef = useRef<{ focus?: () => void } | null>(null);
+  const firstQuestion = useRef(true);
+  useEffect(() => {
+    if (!vm.question) return;
+    if (firstQuestion.current) {
+      firstQuestion.current = false;
+      return;
+    }
+    titleRef.current?.focus?.();
+  }, [vm.question?.id]);
+
+  // Groupe radio (web) : Espace choisit, les flèches déplacent le focus. Entrée est déjà un appui.
+  const onRadioKey = (value: AnswerValue) => (event: unknown) => {
+    if (Platform.OS !== 'web') return;
+    const e = event as { key: string; currentTarget: HTMLElement; preventDefault: () => void };
+    const radios = [
+      ...(e.currentTarget.closest('[role="radiogroup"]')?.querySelectorAll('[role="radio"]') ?? []),
+    ] as HTMLElement[];
+    const action = radioKeyAction(e.key, radios.indexOf(e.currentTarget), radios.length);
+    if (!action) return;
+    e.preventDefault();
+    if (action.type === 'choose') choose(value);
+    else radios[action.index]?.focus();
+  };
+
   // La réponse est enregistrée tout de suite ; seule l'avance est différée.
   const choose = (value: AnswerValue) => {
     if (pending) return;
@@ -64,43 +93,28 @@ export default function QuizScreen() {
     vm.showResults();
   };
   const selectedValue = pending ? pending.value : vm.selectedValue;
-  const transition = {
-    transitionProperty: ['width', 'backgroundColor'] as ('width' | 'backgroundColor')[],
-    transitionDuration: ms(duration.open),
-    transitionTimingFunction: cssEasing.inOut,
-  };
-
   return (
     <Page meta={meta} loading={!vm.ready} focus back={{ label: 'Quitter', href: '/' }}>
       {vm.question ? (
         <View style={{ gap: effects.spacing.md }}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+          {vm.resultsLostMessage && vm.answeredCount === 0 ? (
+            <Card>
+              <Text role="status">{vm.resultsLostMessage}</Text>
+            </Card>
+          ) : null}
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.smd }}>
             <Arc
               value={(vm.index + 1) / vm.total}
-              size={84}
+              size={96}
               strokeWidth={9}
               accessibilityLabel={`Question ${vm.index + 1} sur ${vm.total}`}
             >
-              <Text style={{ ...fonts.displayBold, fontSize: 17, color: colors.tint }}>
+              <Text style={{ ...fonts.displayBold, fontSize: 16, color: colors.tint }}>
                 {vm.index + 1}/{vm.total}
               </Text>
             </Arc>
             <View style={{ flex: 1, gap: 6 }}>
               <Text variant="caption">{vm.themeTitle}</Text>
-              <View style={{ flexDirection: 'row', gap: 5 }} accessibilityElementsHidden>
-                {Array.from({ length: vm.themeCount }, (_, i) => (
-                  <Animated.View
-                    key={i}
-                    style={{
-                      width: i === vm.themeIndex ? 18 : 8,
-                      height: 8,
-                      borderRadius: 4,
-                      backgroundColor: i <= vm.themeIndex ? colors.tint : colors.tintSoft,
-                      ...transition,
-                    }}
-                  />
-                ))}
-              </View>
             </View>
           </View>
 
@@ -111,7 +125,12 @@ export default function QuizScreen() {
             reducedFade
             style={{ gap: effects.spacing.md }}
           >
-            <Text variant="title" style={{ fontSize: 25, lineHeight: 32 }}>
+            <Text
+              ref={titleRef as never}
+              {...({ tabIndex: -1 } as object)}
+              variant="title"
+              style={{ fontSize: 25, lineHeight: 32, outlineStyle: 'none' as never }}
+            >
               {vm.question.statement}
             </Text>
 
@@ -119,7 +138,7 @@ export default function QuizScreen() {
               <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.question.help}</Text>
             </Accordion>
 
-            <View style={{ gap: 10 }} accessibilityRole="radiogroup">
+            <View style={{ gap: effects.spacing.sm }} accessibilityRole="radiogroup">
               {opinions.map((choice) => {
                 const selected = selectedValue === choice.value;
                 return (
@@ -127,13 +146,14 @@ export default function QuizScreen() {
                     key={String(choice.value)}
                     haptic
                     onPress={() => choose(choice.value)}
+                    {...({ onKeyDown: onRadioKey(choice.value) } as object)}
                     accessibilityRole="radio"
                     accessibilityState={{ checked: selected }}
                     aria-checked={selected}
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      gap: 14,
+                      gap: effects.spacing.smd,
                       minHeight: 56,
                       paddingHorizontal: 14,
                       borderRadius: effects.borderRadius.small,
@@ -172,23 +192,24 @@ export default function QuizScreen() {
               <Pressable
                 haptic
                 onPress={() => choose(null)}
+                {...({ onKeyDown: onRadioKey(null) } as object)}
                 accessibilityRole="radio"
                 accessibilityState={{ checked: selectedValue === null }}
                 aria-checked={selectedValue === null}
                 style={{
-                  minHeight: 48,
+                  flexDirection: 'row',
                   alignItems: 'center',
-                  justifyContent: 'center',
+                  minHeight: 56,
+                  paddingHorizontal: effects.spacing.smd,
                   borderRadius: effects.borderRadius.small,
+                  borderWidth: 1.5,
+                  borderStyle: 'dashed',
+                  borderColor: selectedValue === null ? colors.tint : colors.surface.border.primary,
+                  backgroundColor: selectedValue === null ? colors.tintSoft : 'transparent',
                 }}
               >
                 <Text
-                  style={{
-                    color: colors.tint,
-                    textDecorationLine: 'underline',
-                    fontSize: 16,
-                    ...(selectedValue === null ? fonts.bold : null),
-                  }}
+                  style={{ fontSize: 17, ...(selectedValue === null ? fonts.bold : fonts.regular) }}
                 >
                   Je ne sais pas / pas d'avis
                 </Text>
@@ -224,7 +245,7 @@ export default function QuizScreen() {
                   height: 30,
                   borderRadius: 15,
                   padding: 3,
-                  backgroundColor: vm.important ? colors.tint : colors.surface.border.secondary,
+                  backgroundColor: vm.important ? colors.tint : colors.surface.border.tertiary,
                   transitionProperty: 'backgroundColor',
                   transitionDuration: ms(duration.open),
                 }}
@@ -234,7 +255,7 @@ export default function QuizScreen() {
                     width: 24,
                     height: 24,
                     borderRadius: 12,
-                    backgroundColor: '#FFFFFF',
+                    backgroundColor: colors.background.primary,
                     transform: [{ translateX: vm.important ? 20 : 0 }],
                     transitionProperty: 'transform',
                     transitionDuration: ms(duration.open),

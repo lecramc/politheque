@@ -4,6 +4,7 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
+import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Arc } from '@/src/programmes/components/Arc';
@@ -73,7 +74,7 @@ export function PartyJourneyBlock({
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          gap: 14,
+          gap: effects.spacing.smd,
           minHeight: 64,
           borderTopWidth: 1,
           borderColor: colors.surface.border.primary,
@@ -87,7 +88,7 @@ export function PartyJourneyBlock({
             vm.stamp === 'stamped' ? 'Fiche lue : tampon obtenu' : 'Tampon pas encore obtenu'
           }
         />
-        <View style={{ flex: 1, gap: 2 }}>
+        <View style={{ flex: 1, gap: effects.spacing.xxs }}>
           {vm.title ? <Text style={{ ...fonts.bold, fontSize: 16 }}>{vm.title}</Text> : null}
           {vm.text ? (
             <Text style={{ fontSize: 16, color: colors.text.secondary }}>{vm.text}</Text>
@@ -97,25 +98,9 @@ export function PartyJourneyBlock({
           ) : null}
         </View>
       </View>
-      <Link href={(vm.completion?.nextHref ?? nextHref) as never} asChild>
-        <Pressable
-          accessibilityRole="link"
-          style={{
-            minHeight: 52,
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingHorizontal: effects.spacing.md,
-            borderRadius: effects.borderRadius.small,
-            borderWidth: 1.5,
-            borderColor: colors.tint,
-            backgroundColor: colors.surface.primary,
-          }}
-        >
-          <Text style={{ ...fonts.bold, fontSize: 16, textAlign: 'center' }}>
-            {vm.completion?.nextLabel ?? PARTY_JOURNEY_COPY.nextParty(nextName)}
-          </Text>
-        </Pressable>
-      </Link>
+      <Button variant="secondary" href={vm.completion?.nextHref ?? nextHref}>
+        {vm.completion?.nextLabel ?? PARTY_JOURNEY_COPY.nextParty(nextName)}
+      </Button>
       {vm.completion ? (
         <Text style={{ fontSize: 14, color: colors.text.secondary }}>{vm.completion.privacy}</Text>
       ) : null}

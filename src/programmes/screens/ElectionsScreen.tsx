@@ -5,6 +5,7 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { useHydrated } from '@/src/core/hooks/useHydrated';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { tv } from '@/src/core/web/tv';
 import { Arc } from '@/src/programmes/components/Arc';
@@ -20,6 +21,8 @@ export default function ElectionsScreen() {
   const vm = useViewModel(electionsViewModel);
   const meta = useViewModel(metaViewModel);
   const { colors, effects, fonts } = useTheme();
+  // Le compte à rebours dépend du jour : rendu après l'hydratation seulement (voir useHydrated).
+  const hydrated = useHydrated();
   const now = new Date();
 
   return (
@@ -36,7 +39,7 @@ export default function ElectionsScreen() {
         <View {...tv('grid-2-lg')} style={{ gap: effects.spacing.lg }}>
           {vm.elections.map((election) => {
             const round = nextRound(election, now);
-            const days = round ? daysUntil(round.date, now) : null;
+            const days = hydrated && round ? daysUntil(round.date, now) : null;
             return (
               <Link
                 key={election.id}
@@ -48,7 +51,7 @@ export default function ElectionsScreen() {
                   style={{
                     flexDirection: 'row',
                     alignItems: 'center',
-                    gap: 14,
+                    gap: effects.spacing.smd,
                     padding: effects.spacing.md,
                     borderRadius: effects.borderRadius.small,
                     backgroundColor: colors.tintSoft,
@@ -75,7 +78,7 @@ export default function ElectionsScreen() {
                       </Text>
                     </Arc>
                   ) : null}
-                  <View style={{ flex: 1, gap: 4 }}>
+                  <View style={{ flex: 1, gap: effects.spacing.xxs }}>
                     <Text variant="caption">
                       {
                         { 'a-venir': 'À venir', 'en-cours': 'En cours', passee: 'Passée' }[
@@ -102,7 +105,7 @@ export default function ElectionsScreen() {
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
-                gap: 14,
+                gap: effects.spacing.smd,
                 padding: effects.spacing.md,
                 borderRadius: effects.borderRadius.small,
                 backgroundColor: colors.surface.primary,

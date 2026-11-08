@@ -1,11 +1,12 @@
 import { Link } from 'expo-router';
 import React, { useState } from 'react';
-import { Linking, Platform, View } from 'react-native';
+import { Linking, Platform, StyleSheet, View } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
-import { useTheme } from '@/components/ThemeContext';
+import { theme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { tv } from '@/src/core/web/tv';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { formatLongDate, SOURCE_KIND_LABEL } from '@/src/programmes/models/presentation.service';
 import type { Source } from '@/src/programmes/models/programme.model';
@@ -34,7 +35,7 @@ function MicroArc({ full }: { full: boolean }) {
       <Path d="M 2 9 A 7 7 0 0 1 9 2" stroke={colors.tint} strokeWidth={2.5} fill="none" />
       <Path
         d="M 9 2 A 7 7 0 0 1 16 9"
-        stroke={full ? colors.tint : colors.tintBorder}
+        stroke={full ? colors.tint : colors.surface.border.tertiary}
         strokeWidth={2.5}
         fill="none"
         strokeDasharray={full ? undefined : '2 2'}
@@ -60,7 +61,7 @@ export function SourceList({ sources }: { sources: Source[] }) {
               paddingVertical: 10,
               borderBottomWidth: 1,
               borderColor: colors.surface.border.primary,
-              gap: 2,
+              gap: effects.spacing.xxs,
             }}
           >
             <Text style={{ fontSize: 14, color: colors.text.secondary }}>
@@ -98,35 +99,40 @@ export function SourceChip({
 
   return (
     <>
+      {/* Zone cliquable de 44 px minimum ; la pastille, plus compacte sous 768 px, est dedans. */}
       <Pressable
+        ring="inside"
         onPress={() => setOpen(true)}
         accessibilityRole="button"
-        hitSlop={compact ? 8 : 6}
         accessibilityLabel={`${label}, ${crossChecked ? 'information recoupée' : 'source unique'}. Ouvrir la liste`}
         style={{
           alignSelf: 'flex-start',
-          minHeight: compact ? 28 : 36,
-          flexDirection: 'row',
-          alignItems: 'center',
-          gap: compact ? 4 : 6,
-          paddingHorizontal: compact ? 8 : 10,
-          borderRadius: effects.borderRadius.round,
-          borderWidth: 1,
-          borderStyle: crossChecked ? 'solid' : 'dashed',
-          borderColor: crossChecked ? colors.tintBorder : colors.surface.border.tertiary,
-          backgroundColor: crossChecked ? colors.tintSoft : 'transparent',
+          minHeight: effects.sizes.row.sm,
+          justifyContent: 'center',
         }}
       >
-        <MicroArc full={crossChecked} />
-        <Text
-          style={{
-            ...fonts.bold,
-            fontSize: 14,
-            color: colors.tint,
-          }}
+        <View
+          {...tv(compact ? 'source-chip-compact' : 'source-chip')}
+          style={[
+            compact ? styles.chipCompact : styles.chip,
+            {
+              borderStyle: crossChecked ? 'solid' : 'dashed',
+              borderColor: crossChecked ? colors.tintBorder : colors.surface.border.tertiary,
+              backgroundColor: crossChecked ? colors.tintSoft : 'transparent',
+            },
+          ]}
         >
-          {label}
-        </Text>
+          <MicroArc full={crossChecked} />
+          <Text
+            style={{
+              ...fonts.bold,
+              fontSize: 14,
+              color: colors.tint,
+            }}
+          >
+            {label}
+          </Text>
+        </View>
       </Pressable>
       <Sheet isOpen={open} onClose={() => setOpen(false)} title="D'où vient cette info ?">
         {subject ? (
@@ -141,3 +147,27 @@ export function SourceChip({
     </>
   );
 }
+
+// Largeurs et hauteurs dans une feuille de style : la CSS (`source-chip`) les élargit dès 768 px.
+const styles = StyleSheet.create({
+  chip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    minHeight: 28,
+    gap: 4,
+    paddingHorizontal: 8,
+    borderRadius: theme.effects.borderRadius.round,
+    borderWidth: 1,
+  },
+  chipCompact: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    minHeight: 28,
+    gap: 4,
+    paddingHorizontal: 8,
+    borderRadius: theme.effects.borderRadius.round,
+    borderWidth: 1,
+  },
+});
