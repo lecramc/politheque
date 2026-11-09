@@ -1,11 +1,12 @@
 import { Link, useLocalSearchParams, usePathname, useRouter } from 'expo-router';
 import React, { useEffect, useState } from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
+import { useColorStyle } from '@/components/webTheme';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { KeyIdeaList } from '@/src/programmes/components/KeyIdeaList';
@@ -32,6 +33,7 @@ export default function PartyProgrammeScreen() {
   const router = useRouter();
   const vm = useViewModel(partyViewModel(id));
   const { colors, effects, fonts } = useTheme();
+  const c = useColorStyle();
   const [openTheme, setOpenTheme] = useState<string | null>(null);
   const alias = !pathname.endsWith('/programme-2027');
 
@@ -92,14 +94,9 @@ export default function PartyProgrammeScreen() {
                 {programme.measures.map((measure) => (
                   <View
                     key={measure.text}
-                    style={{
-                      gap: 6,
-                      paddingTop: 10,
-                      borderTopWidth: 1,
-                      borderColor: colors.surface.border.primary,
-                    }}
+                    style={[styles.measure, c((p) => ({ borderColor: p.surface.border.primary }))]}
                   >
-                    <Text style={{ fontSize: 16, lineHeight: 24 }}>{measure.text}</Text>
+                    <Text style={styles.measureText}>{measure.text}</Text>
                     <SourceChip sources={measure.sources} subject={measure.text} />
                   </View>
                 ))}
@@ -129,3 +126,8 @@ export default function PartyProgrammeScreen() {
     </TabPanel>
   );
 }
+
+const styles = StyleSheet.create({
+  measure: { gap: 6, paddingTop: 10, borderTopWidth: 1 },
+  measureText: { fontSize: 16, lineHeight: 24 },
+});

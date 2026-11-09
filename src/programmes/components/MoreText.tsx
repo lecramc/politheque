@@ -1,9 +1,10 @@
 import React, { ReactNode, useState } from 'react';
-import { Platform, View } from 'react-native';
+import { Platform, StyleSheet, View } from 'react-native';
 
-import { useTheme } from '@/components/ThemeContext';
+import { theme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { useColorStyle } from '@/components/webTheme';
 
 /**
  * « En savoir plus » / « Lire la suite » : le détail reste dans la page (présent dans le HTML,
@@ -17,34 +18,38 @@ export function MoreText({
   label?: string;
   children: ReactNode;
 }) {
-  const { colors, effects, fonts } = useTheme();
+  const c = useColorStyle();
   const [open, setOpen] = useState(false);
   return (
-    <View style={{ gap: effects.spacing.xs }}>
+    <View style={styles.root}>
       <Pressable
         onPress={() => setOpen((v) => !v)}
         accessibilityRole="button"
         accessibilityState={{ expanded: open }}
         aria-expanded={open}
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          alignSelf: 'flex-start',
-          gap: effects.spacing.xxs,
-          minHeight: 44,
-        }}
+        style={styles.toggle}
       >
         <Icon name={open ? 'chevron-down' : 'chevron-forward'} variant="onGlass" size="small" />
-        <Text style={{ ...fonts.bold, fontSize: 16, color: colors.tint }}>{label}</Text>
+        <Text style={[styles.label, c((p) => ({ color: p.tint }))]}>{label}</Text>
       </Pressable>
       {open || Platform.OS === 'web' ? (
-        <View
-          style={[{ gap: effects.spacing.xs }, open ? null : { display: 'none' }]}
-          aria-hidden={!open}
-        >
+        <View style={[styles.root, open ? null : styles.hidden]} aria-hidden={!open}>
           {children}
         </View>
       ) : null}
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  root: { gap: theme.effects.spacing.xs },
+  toggle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    alignSelf: 'flex-start',
+    gap: theme.effects.spacing.xxs,
+    minHeight: 44,
+  },
+  label: { ...theme.fonts.bold, fontSize: 16 },
+  hidden: { display: 'none' },
+});

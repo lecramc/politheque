@@ -1,8 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import { useTheme } from '@/components/ThemeContext';
+import { theme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { registerStyle, useColorStyle } from '@/components/webTheme';
 
 /**
  * Pastille de parti : un anneau de la couleur d'identification autour de l'initiale.
@@ -17,31 +18,37 @@ export function PartyDot({
   size?: number;
   label?: string;
 }) {
-  const { colors, fonts } = useTheme();
+  const c = useColorStyle();
   const ring = Math.max(2, Math.round(size / 9));
   return (
     <View
-      style={{
-        padding: 1,
-        borderRadius: size,
-        borderWidth: 1,
-        borderColor: colors.surface.border.tertiary,
-      }}
+      style={[
+        styles.outer,
+        registerStyle({ borderRadius: size }),
+        c((p) => ({ borderColor: p.surface.border.tertiary })),
+      ]}
     >
       <View
-        style={{
-          width: size,
-          height: size,
-          borderRadius: size / 2,
-          borderWidth: ring,
-          borderColor: color,
-          backgroundColor: colors.surface.primary,
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
+        style={[
+          styles.inner,
+          registerStyle({
+            width: size,
+            height: size,
+            borderRadius: size / 2,
+            borderWidth: ring,
+            borderColor: color,
+          }),
+          c((p) => ({ backgroundColor: p.surface.primary })),
+        ]}
       >
         {label && size >= 20 ? (
-          <Text style={{ ...fonts.bold, fontSize: size * 0.38, color: colors.text.primary }}>
+          <Text
+            style={[
+              styles.initial,
+              registerStyle({ fontSize: size * 0.38 }),
+              c((p) => ({ color: p.text.primary })),
+            ]}
+          >
             {label.slice(0, 1)}
           </Text>
         ) : null}
@@ -49,3 +56,9 @@ export function PartyDot({
     </View>
   );
 }
+
+const styles = StyleSheet.create({
+  outer: { padding: 1, borderWidth: 1 },
+  inner: { alignItems: 'center', justifyContent: 'center' },
+  initial: { ...theme.fonts.bold },
+});

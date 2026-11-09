@@ -1,6 +1,14 @@
+/* global document */
 import * as SystemUI from 'expo-system-ui';
-import React, { createContext, ReactNode, useContext, useEffect, useMemo } from 'react';
-import { useColorScheme } from 'react-native';
+import React, {
+  createContext,
+  ReactNode,
+  useContext,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+} from 'react';
+import { Platform, useColorScheme } from 'react-native';
 
 import { layout } from '@/components/layout';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
@@ -245,6 +253,12 @@ export const ThemeProviderCustom = ({ children }: { children: ReactNode }) => {
   const colors = useMemo(() => theme[resolvedSystemTheme], [resolvedSystemTheme]);
   const effects = theme.effects;
   const fonts = theme.fonts;
+
+  // Web : les variables CSS du thème (components/webTheme.ts) suivent le même thème que `colors`,
+  // posé dans le même commit (avant la peinture) : jamais de mélange clair / sombre.
+  useLayoutEffect(() => {
+    if (Platform.OS === 'web') document.documentElement.dataset.theme = resolvedSystemTheme;
+  }, [resolvedSystemTheme]);
 
   useEffect(() => {
     SystemUI.setBackgroundColorAsync(colors.background.default).catch(() => {});

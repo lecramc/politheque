@@ -8,9 +8,10 @@ import Animated, {
 } from 'react-native-reanimated';
 
 import { duration, useMotion } from '@/components/motion';
-import { theme as baseTheme, useTheme } from '@/components/ThemeContext';
+import { theme as baseTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { useColorStyle } from '@/components/webTheme';
 import { Only } from '@/src/core/components/Only';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
 import { tv } from '@/src/core/web/tv';
@@ -20,6 +21,32 @@ const styles = StyleSheet.create({
   // Titre « regular » : gras sous 768 px (cette classe), graisse normale ensuite (règle CSS
   // `title-regular`). Doit venir de StyleSheet pour que la feuille puisse la surcharger.
   titleBoldBelowMd: { ...baseTheme.fonts.bold },
+  titleBold: { ...baseTheme.fonts.bold },
+  title: { fontSize: 16 },
+  titleRegularLine: { lineHeight: 23 },
+  subtitle: { fontSize: 14 },
+  card: {
+    borderWidth: 1,
+    borderRadius: baseTheme.effects.borderRadius.small,
+    overflow: 'hidden',
+  },
+  flat: { borderBottomWidth: 1 },
+  flatLast: { borderBottomWidth: 0 },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    minHeight: 56,
+    paddingVertical: 12,
+  },
+  headerCard: { paddingHorizontal: baseTheme.effects.spacing.md },
+  texts: { flex: 1, gap: baseTheme.effects.spacing.xxs },
+  stanceBelow: { alignSelf: 'flex-start', marginTop: 6 },
+  body: { paddingBottom: baseTheme.effects.spacing.md, gap: baseTheme.effects.spacing.sm },
+  bodyCard: { paddingHorizontal: baseTheme.effects.spacing.md },
+  hidden: { display: 'none' },
+  moving: { overflow: 'hidden' },
+  movingBody: { position: 'absolute', top: 0, left: 0, right: 0 },
 });
 
 /** Bloc repliable : titre + phrase-clé fermé, détail ouvert. */
@@ -60,7 +87,7 @@ export function Accordion({
   /** Niveau de titre de l'en-tête dans la structure de la page (h2 à h4). */
   headingLevel?: 2 | 3 | 4;
 }) {
-  const { colors, effects, fonts } = useTheme();
+  const c = useColorStyle();
   const { timing } = useMotion();
   // L'identifiant généré diffère entre le HTML statique et le premier rendu client (frontière de
   // Suspense d'Expo Router) : il n'est posé qu'après l'hydratation.
@@ -96,11 +123,7 @@ export function Accordion({
     contentHeight.value = e.nativeEvent.layout.height;
   };
 
-  const bodyPadding = {
-    paddingHorizontal: flat ? 0 : effects.spacing.md,
-    paddingBottom: effects.spacing.md,
-    gap: effects.spacing.sm,
-  };
+  const bodyPadding = [styles.body, flat ? null : styles.bodyCard];
 
   const bodyStyle = useAnimatedStyle(() => ({
     height: contentHeight.value * progress.value,
@@ -114,14 +137,17 @@ export function Accordion({
     <View
       style={
         flat
-          ? { borderBottomWidth: last ? 0 : 1, borderColor: colors.surface.border.primary }
-          : {
-              backgroundColor: colors.surface.primary,
-              borderWidth: 1,
-              borderColor: colors.surface.border.primary,
-              borderRadius: effects.borderRadius.small,
-              overflow: 'hidden',
-            }
+          ? [
+              last ? styles.flatLast : styles.flat,
+              c((p) => ({ borderColor: p.surface.border.primary })),
+            ]
+          : [
+              styles.card,
+              c((p) => ({
+                backgroundColor: p.surface.primary,
+                borderColor: p.surface.border.primary,
+              })),
+            ]
       }
     >
       <View role="heading" aria-level={headingLevel}>
@@ -132,38 +158,32 @@ export function Accordion({
           accessibilityState={{ expanded: open }}
           aria-expanded={open}
           aria-controls={bodyId}
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            gap: 12,
-            minHeight: 56,
-            paddingHorizontal: flat ? 0 : effects.spacing.md,
-            paddingVertical: 12,
-          }}
+          style={[styles.header, flat ? null : styles.headerCard]}
         >
           {leading}
-          <View style={{ flex: 1, gap: effects.spacing.xxs }}>
+          <View style={styles.texts}>
             <Text
               {...(titleWeight === 'bold' ? {} : tv('title-regular'))}
               style={[
-                titleWeight === 'bold' ? fonts.bold : styles.titleBoldBelowMd,
-                {
-                  fontSize: 16,
-                  lineHeight: titleWeight === 'bold' ? undefined : 23,
-                  color: colors.text.primary,
-                },
+                titleWeight === 'bold' ? styles.titleBold : styles.titleBoldBelowMd,
+                styles.title,
+                titleWeight === 'bold' ? null : styles.titleRegularLine,
+                c((p) => ({ color: p.text.primary })),
               ]}
             >
               {title}
             </Text>
             {subtitle && !open ? (
-              <Text style={{ fontSize: 14, color: colors.text.secondary }} numberOfLines={2}>
+              <Text
+                style={[styles.subtitle, c((p) => ({ color: p.text.secondary }))]}
+                numberOfLines={2}
+              >
                 {subtitle}
               </Text>
             ) : null}
             {/* Sous 768 px : la position sous l'affirmation, alignée sur son début. */}
             {stance ? (
-              <Only below="md" style={{ alignSelf: 'flex-start', marginTop: 6 }}>
+              <Only below="md" style={styles.stanceBelow}>
                 {stance}
               </Only>
             ) : null}
@@ -186,16 +206,13 @@ export function Accordion({
         </View>
       ) : null}
       {phase === 'closed' && Platform.OS === 'web' ? (
-        <View id={bodyId} aria-hidden style={[bodyPadding, { display: 'none' }]}>
+        <View id={bodyId} aria-hidden style={[bodyPadding, styles.hidden]}>
           {children}
         </View>
       ) : null}
       {phase === 'moving' ? (
-        <Animated.View style={[{ overflow: 'hidden' }, bodyStyle]}>
-          <View
-            onLayout={onContentLayout}
-            style={[bodyPadding, { position: 'absolute', top: 0, left: 0, right: 0 }]}
-          >
+        <Animated.View style={[styles.moving, bodyStyle]}>
+          <View onLayout={onContentLayout} style={[bodyPadding, styles.movingBody]}>
             {children}
           </View>
         </Animated.View>

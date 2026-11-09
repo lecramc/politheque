@@ -3,8 +3,9 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { layout } from '@/components/layout';
-import { theme, useTheme } from '@/components/ThemeContext';
+import { theme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import { useColorStyle } from '@/components/webTheme';
 import { tv } from '@/src/core/web/tv';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
@@ -33,12 +34,12 @@ export function PartyStanceRow({
   /** Intitulé lu par la feuille de sources (l'affirmation concernée). */
   subject?: string;
 }) {
-  const { colors } = useTheme();
+  const c = useColorStyle();
   return (
     <View {...tv('psr')} style={styles.row}>
       <PartyDot color={party.color} size={24} label={party.shortName} />
       {href ? (
-        <Link href={href as never} style={[styles.name, { color: colors.tint }]}>
+        <Link href={href as never} style={[styles.name, c((p) => ({ color: p.tint }))]}>
           {displayName(party)}
         </Link>
       ) : (
@@ -54,7 +55,7 @@ export function PartyStanceRow({
       ) : null}
       {stance?.justification ? (
         <View {...tv('psr-just')} style={styles.full}>
-          <Text style={{ fontSize: 14, lineHeight: 20, color: colors.text.secondary }}>
+          <Text style={[styles.justification, c((p) => ({ color: p.text.secondary }))]}>
             {stance.justification}
           </Text>
         </View>
@@ -74,4 +75,5 @@ const styles = StyleSheet.create({
   name: { flex: 1, fontSize: 14, minWidth: 0 },
   cell: { width: layout.stanceCell.base, flexShrink: 0 },
   full: { flexBasis: '100%' },
+  justification: { fontSize: 14, lineHeight: 20 },
 });

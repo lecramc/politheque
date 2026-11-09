@@ -3,6 +3,7 @@ import React from 'react';
 import { TextStyle, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
+import { registerStyle } from '@/components/webTheme';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
 
 interface IconProps {
@@ -34,7 +35,8 @@ export function Icon({
   // Le glyphe dépend de la police d'icônes, chargée côté client seulement : avant l'hydratation,
   // une boîte de la même taille (HTML statique et premier rendu client identiques, sans saut de mise en page).
   const hydrated = useHydrated();
-  if (!hydrated) return <View aria-hidden style={{ width: iconSize, height: iconSize }} />;
+  if (!hydrated)
+    return <View aria-hidden style={registerStyle({ width: iconSize, height: iconSize })} />;
 
   const getIconColor = () => {
     switch (variant) {

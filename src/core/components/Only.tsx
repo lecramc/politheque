@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { Platform, StyleProp, View, ViewStyle } from 'react-native';
+import { Platform, StyleProp, StyleSheet, View, ViewStyle } from 'react-native';
 
 import { tv } from '@/src/core/web/tv';
 
@@ -17,8 +17,10 @@ export function Only({ from, below, style, children }: Props) {
   if (Platform.OS !== 'web') return from ? null : <>{children}</>;
   const name = from ? `only-from-${from}` : `only-below-${below}`;
   return (
-    <View {...tv(name)} style={[{ flexDirection: 'column' }, style]}>
+    <View {...tv(name)} style={[styles.column, style]}>
       {children}
     </View>
   );
 }
+
+const styles = StyleSheet.create({ column: { flexDirection: 'column' } });

@@ -1,4 +1,5 @@
 import { layout } from '@/components/layout';
+import { cssEasing, duration } from '@/components/motion-tokens';
 
 /**
  * Feuille responsive du web : le mobile est dans les styles React Native, le desktop se règle ici,
@@ -31,6 +32,15 @@ export const layoutCss: string = [
   rule(['text-link-block'], 'display: inline-block;'),
   `${sel('text-link')}:hover {\n  text-decoration-thickness: 2px;\n}`,
   `${sel('text-link')}:focus-visible {\n  outline: 2px solid currentColor;\n  outline-offset: 2px;\n  border-radius: 4px;\n}`,
+
+  // Zone tappable (composant Pressable) : état de repos, identique pour toutes. Le survol, l'appui,
+  // le focus et l'état désactivé sont en ligne (ils l'emportent sur cette règle). `press-in` :
+  // anneau de focus tracé à l'intérieur de la boîte.
+  rule(
+    ['press'],
+    `cursor: pointer; transform: scale(1); outline: 0px solid transparent; outline-offset: 2px; transition-property: transform, opacity, background-color, border-color; transition-duration: ${duration.release}ms; transition-timing-function: ${cssEasing.inOut};`
+  ),
+  rule(['press-in'], 'outline-offset: -2px;'),
 
   // Base : tout ce qui n'existe qu'à partir d'un seuil est masqué.
   rule(['only-from-md', 'only-from-lg', 'colhead'], 'display: none;'),

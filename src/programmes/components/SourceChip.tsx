@@ -6,6 +6,7 @@ import Svg, { Path } from 'react-native-svg';
 import { theme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { useColorStyle } from '@/components/webTheme';
 import { tv } from '@/src/core/web/tv';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { formatLongDate, SOURCE_KIND_LABEL } from '@/src/programmes/models/presentation.service';
@@ -45,9 +46,9 @@ function MicroArc({ full }: { full: boolean }) {
 }
 
 export function SourceList({ sources }: { sources: Source[] }) {
-  const { colors, effects, fonts } = useTheme();
+  const c = useColorStyle();
   return (
-    <View role="list" style={{ gap: effects.spacing.xs }}>
+    <View role="list" style={styles.list}>
       {sources.map((source) => (
         <View key={source.url + source.title} role="listitem">
           <Pressable
@@ -57,20 +58,13 @@ export function SourceList({ sources }: { sources: Source[] }) {
               : { onPress: () => Linking.openURL(source.url) })}
             accessibilityRole="link"
             accessibilityLabel={`${source.title}, ${domainOf(source.url)} (nouvel onglet)`}
-            style={{
-              paddingVertical: 10,
-              borderBottomWidth: 1,
-              borderColor: colors.surface.border.primary,
-              gap: effects.spacing.xxs,
-            }}
+            style={[styles.item, c((p) => ({ borderColor: p.surface.border.primary }))]}
           >
-            <Text style={{ fontSize: 14, color: colors.text.secondary }}>
+            <Text style={[styles.itemMeta, c((p) => ({ color: p.text.secondary }))]}>
               {SOURCE_KIND_LABEL[source.kind] ?? source.kind} · {formatLongDate(source.date)} ·{' '}
               {domainOf(source.url)}
             </Text>
-            <Text style={{ ...fonts.bold, color: colors.tint, textDecorationLine: 'underline' }}>
-              {source.title}
-            </Text>
+            <Text style={[styles.itemTitle, c((p) => ({ color: p.tint }))]}>{source.title}</Text>
           </Pressable>
         </View>
       ))}
@@ -88,7 +82,7 @@ export function SourceChip({
   subject?: string;
   compact?: boolean;
 }) {
-  const { colors, effects, fonts } = useTheme();
+  const c = useColorStyle();
   const [open, setOpen] = useState(false);
   if (sources.length === 0) return null;
   const level = verificationLevel(sources);
@@ -105,43 +99,33 @@ export function SourceChip({
         onPress={() => setOpen(true)}
         accessibilityRole="button"
         accessibilityLabel={`${label}, ${crossChecked ? 'information recoupée' : 'source unique'}. Ouvrir la liste`}
-        style={{
-          alignSelf: 'flex-start',
-          minHeight: effects.sizes.row.sm,
-          justifyContent: 'center',
-        }}
+        style={styles.hit}
       >
         <View
           {...tv(compact ? 'source-chip-compact' : 'source-chip')}
           style={[
             compact ? styles.chipCompact : styles.chip,
-            {
-              borderStyle: crossChecked ? 'solid' : 'dashed',
-              borderColor: crossChecked ? colors.tintBorder : colors.surface.border.tertiary,
-              backgroundColor: crossChecked ? colors.tintSoft : 'transparent',
-            },
+            crossChecked ? styles.chipSolid : styles.chipDashed,
+            c((p) => ({
+              borderColor: crossChecked ? p.tintBorder : p.surface.border.tertiary,
+              backgroundColor: crossChecked ? p.tintSoft : 'transparent',
+            })),
           ]}
         >
           <MicroArc full={crossChecked} />
-          <Text
-            style={{
-              ...fonts.bold,
-              fontSize: 14,
-              color: colors.tint,
-            }}
-          >
-            {label}
-          </Text>
+          <Text style={[styles.chipLabel, c((p) => ({ color: p.tint }))]}>{label}</Text>
         </View>
       </Pressable>
       <Sheet isOpen={open} onClose={() => setOpen(false)} title="D'où vient cette info ?">
         {subject ? (
-          <Text style={{ color: colors.text.secondary, fontStyle: 'italic' }}>« {subject} »</Text>
+          <Text style={[styles.subject, c((p) => ({ color: p.text.secondary }))]}>
+            « {subject} »
+          </Text>
         ) : null}
         <Text>{LEVEL_TEXT[level]}</Text>
         <SourceList sources={sources} />
         <Link href="/methodologie" onPress={() => setOpen(false)}>
-          <Text style={{ color: colors.tint, marginTop: 8 }}>Comment on vérifie →</Text>
+          <Text style={[styles.how, c((p) => ({ color: p.tint }))]}>Comment on vérifie →</Text>
         </Link>
       </Sheet>
     </>
@@ -150,6 +134,24 @@ export function SourceChip({
 
 // Largeurs et hauteurs dans une feuille de style : la CSS (`source-chip`) les élargit dès 768 px.
 const styles = StyleSheet.create({
+  list: { gap: theme.effects.spacing.xs },
+  item: {
+    paddingVertical: 10,
+    borderBottomWidth: 1,
+    gap: theme.effects.spacing.xxs,
+  },
+  itemMeta: { fontSize: 14 },
+  itemTitle: { ...theme.fonts.bold, textDecorationLine: 'underline' },
+  hit: {
+    alignSelf: 'flex-start',
+    minHeight: theme.effects.sizes.row.sm,
+    justifyContent: 'center',
+  },
+  chipSolid: { borderStyle: 'solid' },
+  chipDashed: { borderStyle: 'dashed' },
+  chipLabel: { ...theme.fonts.bold, fontSize: 14 },
+  subject: { fontStyle: 'italic' },
+  how: { marginTop: 8 },
   chip: {
     flexDirection: 'row',
     alignItems: 'center',

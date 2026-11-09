@@ -9,6 +9,7 @@ import { ScrollViewStyleReset } from 'expo-router/html';
 import type { PropsWithChildren } from 'react';
 
 import { theme } from '@/components/ThemeContext';
+import { themeVarsCss } from '@/components/webTheme';
 import { APP_NAME, SITE_LOCALE } from '@/src/core/config/app';
 import { colorSchemeCss, layoutCss } from '@/src/core/web/layout-css';
 import { printCss } from '@/src/core/web/print-css';
@@ -78,6 +79,8 @@ export default function Root({ children }: PropsWithChildren) {
           id="travee-scheme"
           dangerouslySetInnerHTML={{ __html: colorSchemeCss(theme.dark.background.secondary) }}
         />
+        {/* Couleurs du thème en variables CSS : voir components/webTheme.ts. */}
+        <style id="travee-theme" dangerouslySetInnerHTML={{ __html: themeVarsCss }} />
         <style id="travee-print" dangerouslySetInnerHTML={{ __html: printCss }} />
       </head>
       <body>{children}</body>

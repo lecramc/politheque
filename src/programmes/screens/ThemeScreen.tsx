@@ -1,11 +1,12 @@
 import { Link, useLocalSearchParams } from 'expo-router';
 import React, { useEffect, useState } from 'react';
-import { Platform, ScrollView, View } from 'react-native';
+import { Platform, ScrollView, StyleSheet, View } from 'react-native';
 
-import { useTheme } from '@/components/ThemeContext';
+import { theme as baseTheme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
+import { useColorStyle } from '@/components/webTheme';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { scrollToId } from '@/src/core/web/browser-actions';
@@ -33,28 +34,23 @@ import { themeViewModel } from '@/src/programmes/view-models/theme.view-model';
 type Mode = 'tous' | 'comparer';
 
 function ProgrammeDetail({ programme, party }: { programme: PartyThemeProgramme; party: Party }) {
-  const { colors } = useTheme();
+  const c = useColorStyle();
   return (
     <>
-      <Text style={{ color: colors.text.secondary, fontSize: 15, lineHeight: 23 }}>
+      <Text style={[styles.body15, c((p) => ({ color: p.text.secondary }))]}>
         {programme.summary}
       </Text>
       {programme.measures.map((measure) => (
         <View
           key={measure.text}
-          style={{
-            gap: 6,
-            paddingTop: 10,
-            borderTopWidth: 1,
-            borderColor: colors.surface.border.primary,
-          }}
+          style={[styles.measure, c((p) => ({ borderColor: p.surface.border.primary }))]}
         >
-          <Text style={{ fontSize: 15, lineHeight: 23 }}>{measure.text}</Text>
+          <Text style={styles.body15}>{measure.text}</Text>
           <SourceChip sources={measure.sources} subject={measure.text} />
         </View>
       ))}
       <Link href={partyHref(party.id, 'programme') as never}>
-        <Text style={{ color: colors.tint, fontSize: 15 }}>
+        <Text style={[styles.link15, c((p) => ({ color: p.tint }))]}>
           {partyLinkLabel(party, 'programme')}
         </Text>
       </Link>
@@ -64,19 +60,17 @@ function ProgrammeDetail({ programme, party }: { programme: PartyThemeProgramme;
 
 /** Chiffre clé : la valeur en gros, sa précision en dessous (présentation, le texte ne change pas). */
 function KeyFigureCard({ figure }: { figure: KeyFigure }) {
-  const { colors, fonts } = useTheme();
+  const c = useColorStyle();
   const { headline, detail } = splitFigure(figure.value);
   return (
-    <Card style={{ minWidth: 0, flex: 1 }}>
-      <Text style={{ ...fonts.displayBold, fontSize: 28, lineHeight: 34, color: colors.tint }}>
-        {headline}
-      </Text>
-      <Text style={{ fontSize: 14 }}>{figure.label}</Text>
+    <Card style={styles.figureCard}>
+      <Text style={[styles.figureValue, c((p) => ({ color: p.tint }))]}>{headline}</Text>
+      <Text style={styles.text14}>{figure.label}</Text>
       {detail ? (
-        <Text style={{ fontSize: 14, lineHeight: 20, color: colors.text.secondary }}>{detail}</Text>
+        <Text style={[styles.detail, c((p) => ({ color: p.text.secondary }))]}>{detail}</Text>
       ) : null}
       {/* Pastille collée au bas de la carte : alignée d'une carte à l'autre. */}
-      <View style={{ marginTop: 'auto' }}>
+      <View style={styles.pushDown}>
         <SourceChip sources={[figure.source]} subject={figure.label} />
       </View>
     </Card>
@@ -87,6 +81,7 @@ export default function ThemeScreen() {
   const { id, comparer } = useLocalSearchParams<{ id: string; comparer?: string }>();
   const vm = useViewModel(themeViewModel(id));
   const { colors, effects, fonts } = useTheme();
+  const c = useColorStyle();
   const [mode, setMode] = useState<Mode>('tous');
   const [selected, setSelected] = useState<string[]>([]);
   const theme = vm.theme;
@@ -199,7 +194,7 @@ export default function ThemeScreen() {
                       subtitle={firstSentence(programme.summary)}
                       leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
                     >
-                      <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                      <Text style={[styles.text14, c((p) => ({ color: p.text.secondary }))]}>
                         {candidate.split(' (')[0]}
                       </Text>
                       <ProgrammeDetail programme={programme} party={party} />
@@ -263,34 +258,28 @@ export default function ThemeScreen() {
             </Text>
             <Accordion headingLevel={3} title="Les options en débat">
               {theme.debates.map((debate) => (
-                <View key={debate.question} style={{ gap: effects.spacing.xxs }}>
-                  <Text style={{ ...fonts.bold, fontSize: 16 }}>{debate.question}</Text>
+                <View key={debate.question} style={styles.debate}>
+                  <Text style={styles.heading16}>{debate.question}</Text>
                   {debate.options.map((option) => (
                     <Text
                       key={option}
-                      style={{
-                        fontSize: 15,
-                        lineHeight: 23,
-                        paddingVertical: 6,
-                        borderTopWidth: 1,
-                        borderColor: colors.surface.border.primary,
-                      }}
+                      style={[styles.option, c((p) => ({ borderColor: p.surface.border.primary }))]}
                     >
                       {option}
                     </Text>
                   ))}
                 </View>
               ))}
-              <Text style={{ color: colors.text.secondary, fontSize: 13 }}>
+              <Text style={[styles.text13, c((p) => ({ color: p.text.secondary }))]}>
                 Options présentées sans ordre de préférence.
               </Text>
             </Accordion>
             {vm.questions.length > 0 ? (
               <Accordion headingLevel={3} title="Qui est pour, qui est contre ?">
                 {vm.questions.map(({ question, positions }) => (
-                  <View key={question.id} style={{ gap: effects.spacing.xs }}>
-                    <Text style={{ ...fonts.bold, fontSize: 16 }}>{question.statement}</Text>
-                    <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
+                  <View key={question.id} style={styles.question}>
+                    <Text style={styles.heading16}>{question.statement}</Text>
+                    <Text style={[styles.text14, c((p) => ({ color: p.text.secondary }))]}>
                       {question.help}
                     </Text>
                     {positions.map(({ party, stance }) => (
@@ -327,3 +316,20 @@ export default function ThemeScreen() {
     </Page>
   );
 }
+
+// Parties statiques en feuille de style (classes sur le web) ; les couleurs viennent de `useColorStyle`.
+const styles = StyleSheet.create({
+  body15: { fontSize: 15, lineHeight: 23 },
+  link15: { fontSize: 15 },
+  text14: { fontSize: 14 },
+  text13: { fontSize: 13 },
+  detail: { fontSize: 14, lineHeight: 20 },
+  heading16: { ...baseTheme.fonts.bold, fontSize: 16 },
+  measure: { gap: 6, paddingTop: 10, borderTopWidth: 1 },
+  figureCard: { minWidth: 0, flex: 1 },
+  figureValue: { ...baseTheme.fonts.displayBold, fontSize: 28, lineHeight: 34 },
+  pushDown: { marginTop: 'auto' },
+  debate: { gap: baseTheme.effects.spacing.xxs },
+  question: { gap: baseTheme.effects.spacing.xs },
+  option: { fontSize: 15, lineHeight: 23, paddingVertical: 6, borderTopWidth: 1 },
+});

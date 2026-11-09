@@ -152,9 +152,43 @@ export const Pressable = ({
     transitionTimingFunction: active ? cssEasing.out : cssEasing.inOut,
   };
 
+  const cursor = disabled || current ? ('auto' as const) : ('pointer' as const);
+
+  // Web : l'état de repos (curseur, anneau transparent, transition) vient de la feuille
+  // `layout-css.ts` (crochet `press`), et le style de l'appelant reste une référence : seuls les
+  // écarts à cet état (survol, appui, focus, désactivé) sont en ligne. Rendu identique à l'état
+  // complet qui était calculé à chaque rendu, sans le répéter dans chaque élément du HTML.
+  const baseTransform = (base.transform as never[] | undefined) ?? [];
+  const deviations: ViewStyle & Record<string, unknown> = {
+    ...hover,
+    ...(active
+      ? pressedStyle
+        ? StyleSheet.flatten(pressedStyle)
+        : { opacity: press.opacity }
+      : null),
+    ...(disabled ? { opacity: 0.5 } : null),
+    ...(scale !== 1 ? { transform: [...baseTransform, { scale }] } : null),
+    ...(cursor === 'auto' ? { cursor } : null),
+    ...(ring ? { outlineWidth: 2, outlineColor: colors.tint } : null),
+    ...(active
+      ? { transitionDuration: reduce ? 0 : duration.press, transitionTimingFunction: cssEasing.out }
+      : reduce
+        ? { transitionDuration: 0 }
+        : null),
+  };
+  const restDataSet = (rest as { dataSet?: { tv?: string } }).dataSet;
+  const webProps = {
+    dataSet: {
+      ...restDataSet,
+      tv: ['press', ringInside ? 'press-in' : '', restDataSet?.tv ?? ''].filter(Boolean).join(' '),
+    },
+  };
+
+  const Host = isWeb ? RNPressable : AnimatedPressable;
   return (
-    <AnimatedPressable
+    <Host
       {...rest}
+      {...(isWeb ? webProps : null)}
       onPress={onPress}
       onPressIn={(e) => {
         setPressed(true);
@@ -185,9 +219,9 @@ export const Pressable = ({
       accessibilityRole={accessibilityRole}
       accessibilityLabel={accessibilityLabel}
       accessibilityState={accessibilityState}
-      style={animated}
+      style={isWeb ? [style, deviations] : animated}
     >
       <PressableHoverContext.Provider value={textHover}>{children}</PressableHoverContext.Provider>
-    </AnimatedPressable>
+    </Host>
   );
 };
