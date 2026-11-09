@@ -1196,6 +1196,22 @@
       "status": "declare",
       "statusLabel": "Candidat déclaré",
       "candidate": "Gabriel Attal a déclaré sa candidature le 22 mai 2026 à Mur-de-Barrez (Aveyron).",
+      "candidateDate": "2026-05-22",
+      "candidateSummary": "Gabriel Attal a déclaré sa candidature le 22 mai 2026 à Mur-de-Barrez, dans l'Aveyron.",
+      "candidateSources": [
+        {
+          "title": "Présidentielle 2027 : Gabriel Attal officialise sa candidature (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-gabriel-attal-officialise-sa-candidature-436721",
+          "date": "2026-05-22",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : en Aveyron, Gabriel Attal officialise sa candidature (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-gabriel-attal-officialise-sa-candidature-en-aveyron",
+          "date": "2026-05-22",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Pas de programme complet chiffré au 3 novembre 2026 ; le site de campagne attalpresident.fr présente 96 mesures (« chantiers capitaux »). Fiche fondée sur ces mesures, les déclarations du candidat (2025-2026) et les votes du groupe EPR, avec mention de la date quand la position est antérieure à 2026.",
       "programmeState": "partiel",
       "programmeStateDetail": "96 mesures",

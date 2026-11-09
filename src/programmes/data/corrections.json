@@ -1,5 +1,26 @@
 [
   {
+    "id": "2026-11-09-note-sous-les-candidatures-elle-ne-parle-plus-de",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/elections/presidentielle-2027"],
+    "summary": "Note sous les candidatures : elle ne parle plus de « principales candidatures » et renvoie vers la page « Les candidats », qui réunit toutes les candidatures déclarées ou annoncées."
+  },
+  {
+    "id": "2026-11-09-statut-de-candidature-des-dix-partis-suivis-date",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Statut de candidature des dix partis suivis : date de l'annonce, de l'investiture ou de la désignation, phrase factuelle et au moins deux sources de presse indépendantes pour chacun."
+  },
+  {
+    "id": "2026-11-09-nouvelle-page-les-28-candidatures-declarees-ou-a",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/elections/presidentielle-2027/candidats", "/elections/presidentielle-2027"],
+    "summary": "Nouvelle page : les 28 candidatures déclarées ou annoncées à l'élection présidentielle 2027 au 9 novembre 2026, dont celle de Teddy Riner, par ordre alphabétique, chacune datée et attestée par au moins deux sources."
+  },
+  {
     "id": "2026-11-09-metadonnees-de-sources-corrigees-autrice-de-la-n",
     "date": "2026-11-09",
     "kind": "correction",

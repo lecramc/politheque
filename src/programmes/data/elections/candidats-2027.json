@@ -1,0 +1,504 @@
+{
+  "electionId": "presidentielle-2027",
+  "lastVerified": "2026-11-09",
+  "candidates": [
+    {
+      "id": "nathalie-arthaud",
+      "name": "Nathalie Arthaud",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2025-12-08",
+      "affiliation": "Lutte ouvrière",
+      "role": "Porte-parole de Lutte ouvrière",
+      "summary": "Nathalie Arthaud a déclaré sa candidature le 8 décembre 2025 lors d'une conférence de presse à Paris.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : Nathalie Arthaud, porte-parole de Lutte ouvrière, annonce sa candidature (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/nathalie-arthaud/presidentielle-2027-nathalie-arthaud-porte-parole-de-lutte-ouvriere-annonce-sa-candidature_7665874.html",
+          "date": "2025-12-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : qui sont les candidats officiellement déclarés ? (France 24)",
+          "url": "https://www.france24.com/fr/france/20260524-france-presidentielle-2027-qui-sont-les-candidats-officiellement-declares",
+          "date": "2026-10-11",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "delphine-batho",
+      "name": "Delphine Batho",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2025-11-25",
+      "affiliation": "Génération écologie",
+      "role": "Présidente de Génération écologie, députée des Deux-Sèvres",
+      "summary": "Delphine Batho a déclaré sa candidature le 25 novembre 2025 dans un entretien à L'Obs.",
+      "sources": [
+        {
+          "title": "L'ex-ministre Delphine Batho candidate à la présidentielle (France 24, AFP)",
+          "url": "https://www.france24.com/fr/info-en-continu/20251125-l-ex-ministre-delphine-batho-candidate-%C3%A0-la-pr%C3%A9sidentielle-pour-conjurer-la-rikikisation-de-l-%C3%A9cologie",
+          "date": "2025-11-25",
+          "kind": "presse"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "olivier-becht",
+      "name": "Olivier Becht",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-09-24",
+      "affiliation": "Sans étiquette",
+      "role": "Député du Haut-Rhin",
+      "summary": "Olivier Becht a déclaré sa candidature le 24 septembre 2026 dans un entretien à Paris Match.",
+      "sources": [
+        {
+          "title": "Qui est Olivier Becht, cet ancien ministre qui se lance dans la course à l'Élysée ? (Sud Radio)",
+          "url": "https://www.sudradio.fr/politique/qui-est-olivier-becht-cet-ancien-ministre-qui-se-lance-dans-la-course-a-lelysee",
+          "date": "2026-10-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : la liste des candidats déjà en lice et des prétendants (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "xavier-bertrand",
+      "name": "Xavier Bertrand",
+      "status": "intention",
+      "statusLabel": "Intention de candidature annoncée",
+      "date": "2026-08-27",
+      "affiliation": "Nous France",
+      "role": "Président de la région Hauts-de-France",
+      "summary": "Xavier Bertrand a annoncé le 27 août 2026, lors de l'université de rentrée du Medef, son intention d'être candidat, en réservant sa déclaration formelle à une date ultérieure.",
+      "sources": [
+        {
+          "title": "Xavier Bertrand, figure de la droite et président de la région Hauts-de-France, annonce sa candidature à l'élection présidentielle (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/xavier-bertrand-figure-de-la-droite-et-president-de-la-region-hauts-de-france-annonce-sa-candidature-a-l-election-presidentielle_8164871.html",
+          "date": "2026-08-27",
+          "kind": "presse"
+        },
+        {
+          "title": "2027 : figure de la droite, Xavier Bertrand confirme qu'il sera candidat à l'élection (LCP)",
+          "url": "https://lcp.fr/actualites/2027-figure-de-la-droite-xavier-bertrand-confirme-qu-il-sera-candidat-a-l-election",
+          "date": "2026-08-27",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "karim-bouamrane",
+      "name": "Karim Bouamrane",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-06-09",
+      "affiliation": "Parti socialiste",
+      "role": "Maire de Saint-Ouen-sur-Seine",
+      "summary": "Karim Bouamrane a déclaré sa candidature le 9 juin 2026 sur France Inter.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : qui est Karim Bouamrane, le maire socialiste de Saint-Ouen (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-qui-est-karim-bouamrane-le-maire-socialiste-de-saint-ouen-et-nouveau",
+          "date": "2026-06-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Le maire de Saint-Ouen Karim Bouamrane annonce être candidat pour être le prochain président de la République (Europe 1, AFP)",
+          "url": "https://www.europe1.fr/politique/le-maire-de-saint-ouen-karim-bouamrane-annonce-etre-candidat-pour-etre-le-prochain-president-de-la-republique-943214",
+          "date": "2026-06-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "juan-branco",
+      "name": "Juan Branco",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2025-12-19",
+      "affiliation": "Les Ruches",
+      "role": "Essayiste",
+      "summary": "Juan Branco a déclaré sa candidature le 19 décembre 2025 sur Sud Radio.",
+      "sources": [
+        {
+          "title": "L'avocat Juan Branco candidat à la présidentielle (Sud Radio)",
+          "url": "https://www.sudradio.fr/sud-radio/lavocat-juan-branco-candidat-a-la-presidentielle",
+          "date": "2025-12-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "nicolas-dupont-aignan",
+      "name": "Nicolas Dupont-Aignan",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-09-19",
+      "affiliation": "Debout la France",
+      "role": "Président de Debout la France, maire de Yerres",
+      "summary": "Nicolas Dupont-Aignan a déclaré sa candidature le 19 septembre 2026 à Yerres, dans l'Essonne.",
+      "sources": [
+        {
+          "title": "Nicolas Dupont-Aignan se lance dans sa quatrième campagne présidentielle (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/nicolas-dupont-aignan/je-serai-le-seul-candidat-qui-propose-de-sortir-de-l-union-europeenne-dit-nicolas-dupont-aignan-qui-se-lance-dans-sa-quatrieme-campagne-presidentielle_8201024.html",
+          "date": "2026-09-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "sylvain-durif",
+      "name": "Sylvain Durif",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-08",
+      "affiliation": "Sans étiquette",
+      "role": "",
+      "summary": "Sylvain Durif a déclaré sa candidature fin août 2026 par une vidéo publiée sur les réseaux sociaux.",
+      "sources": [
+        {
+          "title": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Qui est ce Sylvain Durif, candidat à la présidentielle 2027 ? (Sud Radio)",
+          "url": "https://www.sudradio.fr/politique/qui-est-ce-sylvain-durif-le-christ-cosmique-candidat-a-la-presidentielle-2027",
+          "date": "2026-10-21",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "clara-egger",
+      "name": "Clara Egger",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-04-20",
+      "affiliation": "Solution démocratique",
+      "role": "Politologue, présidente de Solution démocratique",
+      "summary": "Clara Egger a déclaré sa candidature le 20 avril 2026 par un communiqué de Solution démocratique.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : qui sont les candidats déclarés ? (Sud Radio)",
+          "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+          "date": "2026-07-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Premières retombées médias pour notre campagne présidentielle (Solution démocratique)",
+          "url": "https://solutiondemocratique.substack.com/p/premieres-retombees-medias-pour-notre",
+          "date": "2026-04-26",
+          "kind": "declaration"
+        },
+        {
+          "title": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "anasse-kazib",
+      "name": "Anasse Kazib",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-06-01",
+      "affiliation": "Révolution permanente",
+      "role": "Cheminot, syndicaliste à SUD-Rail",
+      "summary": "Anasse Kazib a déclaré sa candidature le 1er juin 2026 par un clip de campagne publié sur ses réseaux sociaux.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : le cheminot Anasse Kazib annonce sa candidature (franceinfo, AFP)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-cheminot-anasse-kazib-annonce-sa-candidature_8040020.html",
+          "date": "2026-06-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : qui sont les candidats déclarés ? (Sud Radio)",
+          "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+          "date": "2026-07-20",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "selma-labib",
+      "name": "Selma Labib",
+      "status": "designe",
+      "statusLabel": "Candidate désignée par le NPA-Révolutionnaires",
+      "date": "2026-06-17",
+      "affiliation": "NPA-Révolutionnaires",
+      "role": "Porte-parole du NPA-Révolutionnaires",
+      "summary": "Selma Labib a été désignée candidate par le comité politique national du NPA-Révolutionnaires réuni les 6 et 7 juin 2026, ce que le parti a annoncé par un communiqué le 17 juin 2026.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : Selma Labib, une candidature ouvrière et révolutionnaire (communiqué du NPA-Révolutionnaires)",
+          "url": "https://npa-revolutionnaires.org/articles/communique-presidentielle-2027-selma-labib-une-candidature-ouvriere-et-revolutionnaire-soutenue-par-gael-quirante",
+          "date": "2026-06-17",
+          "kind": "declaration"
+        },
+        {
+          "title": "Présidentielle 2027 : qui sont les candidats officiellement déclarés ? (France 24)",
+          "url": "https://www.france24.com/fr/france/20260524-france-presidentielle-2027-qui-sont-les-candidats-officiellement-declares",
+          "date": "2026-10-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : Philippe Poutou renonce à se présenter et se range derrière Jean-Luc Mélenchon (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-philippe-poutou-renonce-a-se-presenter-et-se-range-derriere-jean-luc",
+          "date": "2026-06-29",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "francis-lalanne",
+      "name": "Francis Lalanne",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-08-18",
+      "affiliation": "France Libre",
+      "role": "Chanteur",
+      "summary": "Francis Lalanne a officialisé sa candidature le 18 août 2026 par un communiqué.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : le chanteur Francis Lalanne officiellement candidat (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-chanteur-francis-lalanne-officiellement-candidat-premier-meeting-vendredi-a-paris_8153588.html",
+          "date": "2026-08-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle : Francis Lalanne en meeting pour lancer sa campagne (France 24, AFP)",
+          "url": "https://www.france24.com/fr/info-en-continu/20260819-pr%C3%A9sidentielle-francis-lalanne-en-meeting-samedi-pour-lancer-sa-campagne",
+          "date": "2026-08-19",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "antoine-mikolajczak",
+      "name": "Antoine Mikolajczak",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-06",
+      "affiliation": "Équinoxe",
+      "role": "Ingénieur",
+      "summary": "Antoine Mikolajczak, désigné par un vote des adhérents d'Équinoxe, a déclaré sa candidature en juin 2026.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : qui sont les candidats déclarés ? (Sud Radio)",
+          "url": "https://www.sudradio.fr/sud-radio/presidentielle-2027-qui-sont-les-candidats-declares",
+          "date": "2026-07-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Qui est Antoine Mikolajczak ? (Équinoxe)",
+          "url": "https://parti-equinoxe.fr/qui-est-antoine-mikolajczak/",
+          "date": "2026-11-09",
+          "kind": "declaration"
+        },
+        {
+          "title": "Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "florian-philippot",
+      "name": "Florian Philippot",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-05-09",
+      "affiliation": "Les Patriotes",
+      "role": "Président des Patriotes",
+      "summary": "Florian Philippot a déclaré sa candidature le 9 mai 2026 sur France 2.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : le souverainiste Florian Philippot annonce sa candidature à l'Élysée (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-le-souverainiste-florian-philippot-annonce-sa-candidature-a-l-elysee_7993346.html",
+          "date": "2026-05-09",
+          "kind": "presse"
+        },
+        {
+          "title": "« Je suis candidat » : Florian Philippot se lance pour la présidentielle de 2027 (Sud Radio)",
+          "url": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027",
+          "date": "2026-05-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "gilles-platret",
+      "name": "Gilles Platret",
+      "status": "intention",
+      "statusLabel": "Intention de candidature annoncée",
+      "date": "2026-10-08",
+      "affiliation": "Divers droite",
+      "role": "Maire de Chalon-sur-Saône",
+      "summary": "Gilles Platret a annoncé le 8 octobre 2026, lors d'une réunion publique à Chalon-sur-Saône, son intention de se présenter, sans employer le mot « candidat ».",
+      "sources": [
+        {
+          "title": "Gilles Platret, le maire de Chalon-sur-Saône, se déclare candidat à l'élection présidentielle (France 3 Bourgogne-Franche-Comté)",
+          "url": "https://france3-regions.franceinfo.fr/bourgogne-franche-comte/saone-et-loire/chalon-sur-saone/gilles-platret-le-maire-de-chalon-sur-saone-se-declare-candidat-a-l-election-presidentielle-je-m-engage-resolument-vers-2027-3430416.html",
+          "date": "2026-10-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "natacha-polony",
+      "name": "Natacha Polony",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-10-14",
+      "affiliation": "Sans étiquette",
+      "role": "Journaliste et essayiste",
+      "summary": "Natacha Polony a déclaré sa candidature le 14 octobre 2026 sur France Inter.",
+      "sources": [
+        {
+          "title": "Natacha Polony annonce sa candidature à l'élection présidentielle (LCP)",
+          "url": "https://lcp.fr/actualites/natacha-polony-annonce-sa-candidature-a-l-election-presidentielle-443808",
+          "date": "2026-10-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "teddy-riner",
+      "name": "Teddy Riner",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-11-09",
+      "affiliation": "Sans étiquette",
+      "role": "Judoka",
+      "summary": "Teddy Riner a déclaré sa candidature le 9 novembre 2026 par une vidéo publiée sur ses réseaux sociaux.",
+      "sources": [
+        {
+          "title": "Le judoka Teddy Riner annonce sa candidature à l'élection présidentielle de 2027 (LCP)",
+          "url": "https://lcp.fr/actualites/le-judoka-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-de-2027-444920",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "« La résignation n'est pas une option » : Teddy Riner annonce sa candidature à l'élection présidentielle 2027 (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/la-resignation-n-est-pas-une-option-teddy-riner-annonce-sa-candidature-a-l-election-presidentielle-2027_8274359.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "francois-ruffin",
+      "name": "François Ruffin",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-05-12",
+      "affiliation": "Debout !",
+      "role": "Député de la Somme, président de Debout !",
+      "summary": "François Ruffin a annoncé le 12 mai 2026 sur France Inter qu'il serait candidat en l'absence de primaire de la gauche, puis a maintenu sa candidature après l'abandon de la primaire unitaire en juillet 2026.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : « S'il n'y a pas de primaire, moi j'y vais », annonce François Ruffin (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-s-il-n-y-a-pas-de-primaire-moi-j-y-vais-annonce-francois-ruffin",
+          "date": "2026-05-12",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : qui sont les candidats officiellement déclarés ? (France 24)",
+          "url": "https://www.france24.com/fr/france/20260524-france-presidentielle-2027-qui-sont-les-candidats-officiellement-declares",
+          "date": "2026-10-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : quel est le dernier décompte des candidats déjà sur la ligne de départ ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-le-dernier-decompte-des-candidats-deja-sur-la-ligne-de-depart",
+          "date": "2026-09-18",
+          "kind": "presse"
+        }
+      ]
+    }
+  ],
+  "withdrawn": [
+    {
+      "id": "clementine-autain",
+      "name": "Clémentine Autain",
+      "date": "2026-07-11",
+      "summary": "Clémentine Autain a retiré le 11 juillet 2026 sur France 2 sa candidature à la primaire unitaire de la gauche, qui n'a pas eu lieu, et a écarté une candidature à la présidentielle.",
+      "sources": [
+        {
+          "title": "Présidentielle : la députée Clémentine Autain retire sa candidature (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-la-deputee-clementine-autain-retire-sa-candidature-denoncant-l-empilement-des-candidatures-a-gauche_8103848.html",
+          "date": "2026-07-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : la liste des candidats déjà en lice et des prétendants (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "benjamin-lucas",
+      "name": "Benjamin Lucas",
+      "date": "2026-07-07",
+      "summary": "Benjamin Lucas a retiré le 7 juillet 2026, dans un entretien au Parisien, sa candidature à la primaire unitaire de la gauche, qui n'a pas eu lieu.",
+      "sources": [
+        {
+          "title": "« Ma candidature à la primaire n'a plus de sens » : le député Benjamin Lucas retire sa candidature à la primaire unitaire de la gauche (France 3 Hauts-de-France)",
+          "url": "https://france3-regions.franceinfo.fr/hauts-de-france/somme/amiens/ma-candidature-a-la-primaire-n-a-plus-de-sens-le-depute-benjamin-lucas-originaire-d-amiens-retire-sa-candidature-a-la-primaire-unitaire-de-la-gauche-3382807.html",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : la liste des candidats déjà en lice et des prétendants (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    }
+  ]
+}

@@ -1336,6 +1336,28 @@
       "status": "investi",
       "statusLabel": "Candidat investi",
       "candidate": "Raphaël Glucksmann a déclaré sa candidature le 23 août 2026 ; il a été désigné le 11 octobre 2026 par la primaire organisée par le Parti socialiste, Place publique et la Gauche républicaine et socialiste (GRS), remportée dès le premier tour avec 66,17 % des voix selon Public Sénat, devant Olivier Faure (14,46 %).",
+      "candidateDate": "2026-10-11",
+      "candidateSummary": "Raphaël Glucksmann a été désigné candidat le 11 octobre 2026 en remportant dès le premier tour la primaire organisée par le Parti socialiste et deux autres partis.",
+      "candidateSources": [
+        {
+          "title": "Primaire de la gauche : Raphaël Glucksmann plie le match et remporte le scrutin dès le premier tour avec 66 % (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/primaire-de-la-gauche-raphael-glucksmann-plie-le-match-et-remporte-le-scrutin-des-le-premier-tour-avec-66",
+          "date": "2026-10-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Primaire sociale-démocrate : large victoire de Raphaël Glucksmann dès le premier tour (Euronews)",
+          "url": "https://fr.euronews.com/2026/10/11/primaire-sociale-democrate-large-victoire-de-raphael-glucksmann-des-le-premier-tour",
+          "date": "2026-10-11",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle : Raphaël Glucksmann, vainqueur de la primaire du PS, désormais face à la difficile question du rassemblement à gauche (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-raphael-glucksmann-vainqueur-de-la-primaire-du-ps-desormais-face-a-la-difficile-question-du-rassemblement-a-gauche",
+          "date": "2026-10-11",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026 (en cours de rédaction, une trentaine de groupes de travail selon franceinfo, 13 octobre 2026). Fiche fondée sur les déclarations du candidat (2025-2026), son livre « Nous avons encore envie » (mai 2026) tel que rapporté par la presse, le programme européen PS–Place publique 2024 et les votes du groupe Socialistes à l'Assemblée.",
       "programmeState": "non-publie",
       "themes": {

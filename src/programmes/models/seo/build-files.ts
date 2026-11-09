@@ -33,6 +33,7 @@ export function buildSeoFiles() {
             CONTENUS_2027_PATHS.lexicon,
             CONTENUS_2027_PATHS.faq,
             CONTENUS_2027_PATHS.voter,
+            CONTENUS_2027_PATHS.candidates,
           ].includes(u.path as never)),
     })),
   };

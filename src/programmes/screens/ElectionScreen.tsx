@@ -184,6 +184,11 @@ export default function ElectionScreen() {
               {election.candidaciesNote}{' '}
               <TextLink href="/partis/comparer">Comparer les programmes</TextLink>
             </Text>
+            {vm.contentLinks ? (
+              <TextLink href={vm.contentLinks.candidates} standalone>
+                Tous les candidats déclarés
+              </TextLink>
+            ) : null}
           </View>
 
           <PageSources

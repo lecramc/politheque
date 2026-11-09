@@ -32,4 +32,8 @@ describe('Feature: page de l’élection (dates, puis comment voter, puis candid
     expect(vm.voteSteps).toHaveLength(3);
     expect(vm.voteGuide.href).toBe('/comprendre/comment-voter');
   });
+
+  it('should point to the full list of declared candidates from the candidacies section', () => {
+    expect(vmOf().contentLinks?.candidates).toBe('/elections/presidentielle-2027/candidats');
+  });
 });

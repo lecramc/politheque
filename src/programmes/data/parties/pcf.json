@@ -1210,6 +1210,22 @@
       "status": "investi",
       "statusLabel": "Candidat investi",
       "candidate": "Fabien Roussel a été investi par un vote des adhérents du 3 au 6 septembre 2026, avec environ 72 % des voix selon LCP, et a annoncé sa candidature le 6 septembre 2026.",
+      "candidateDate": "2026-09-06",
+      "candidateSummary": "Fabien Roussel a été investi par un vote des adhérents du Parti communiste français du 3 au 6 septembre 2026, puis a annoncé sa candidature le 6 septembre 2026 au journal de 20 heures de TF1.",
+      "candidateSources": [
+        {
+          "title": "Fabien Roussel officiellement candidat du PCF à l'élection présidentielle de 2027 (LCP)",
+          "url": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
+          "date": "2026-09-06",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : Fabien Roussel officialise sa candidature avec le PCF (France 24)",
+          "url": "https://www.france24.com/fr/france/20260906-pr%C3%A9sidentielle-2027-fabien-roussel-officialise-sa-candidature-avec-le-pcf",
+          "date": "2026-09-06",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le programme présidentiel 2022 « La France des Jours heureux », sur la base commune adoptée au 40e congrès (juillet 2026), sur le contrat de législature du Nouveau Front populaire (2024) et sur les votes du groupe GDR. Les positions issues du programme 2022 sont signalées comme telles.",
       "programmeState": "non-publie",
       "themes": {

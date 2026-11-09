@@ -47,7 +47,11 @@ export const electionViewModel =
         /** Pages de détail (comment voter, questions-réponses) : seulement pour la présidentielle 2027. */
         contentLinks:
           election && catalog?.voter.electionId === election.id
-            ? { voter: CONTENUS_2027_PATHS.voter, faq: CONTENUS_2027_PATHS.faq }
+            ? {
+                voter: CONTENUS_2027_PATHS.voter,
+                faq: CONTENUS_2027_PATHS.faq,
+                candidates: CONTENUS_2027_PATHS.candidates,
+              }
             : null,
         voteGuide: {
           href: '/comprendre/comment-voter',

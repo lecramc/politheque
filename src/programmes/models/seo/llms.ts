@@ -104,6 +104,11 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
       CONTENUS_2027_PATHS.voter,
       "s'inscrire, vérifier son bureau de vote, procuration, vote depuis l'étranger, jour du scrutin."
     ),
+    ...link(
+      "Les candidats à l'élection présidentielle 2027",
+      CONTENUS_2027_PATHS.candidates,
+      'toutes les candidatures déclarées ou annoncées, en ordre alphabétique du nom de famille, avec leur statut daté et leurs sources.'
+    ),
     '',
     '## Outils',
     '',
@@ -115,7 +120,7 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '',
     '## Texte intégral',
     '',
-    `- [llms-full.txt](${absoluteUrl('/llms-full.txt')}): texte des fiches de partis, du guide « Comprendre », du lexique, des questions-réponses et de la page « Comment voter », avec leurs sources.`,
+    `- [llms-full.txt](${absoluteUrl('/llms-full.txt')}): texte des fiches de partis, du guide « Comprendre », du lexique, des questions-réponses, de la page « Comment voter » et de la liste des candidats, avec leurs sources.`,
     '',
     '## Citer Polithèque',
     '',

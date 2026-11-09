@@ -1,4 +1,5 @@
 import { APP_NAME } from '@/src/core/config/app';
+import { buildCandidateList } from '@/src/programmes/models/candidates.service';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
 import type { LegalDossier } from '@/src/programmes/models/legal/legal.model';
@@ -25,6 +26,7 @@ import {
   faqPageNode,
   graph,
   lexiconNodes,
+  personListNode,
   organizationNode,
   personNode,
   politicalPartyNode,
@@ -489,6 +491,29 @@ export function voterMeta(catalog: Catalog): PageMeta {
   });
 }
 
+export function candidatesMeta(catalog: Catalog): PageMeta {
+  const path = CONTENUS_2027_PATHS.candidates;
+  const { candidates } = catalog;
+  const entries = buildCandidateList(catalog.parties, candidates.candidates, candidates.electionId);
+  const name = "Les candidats à l'élection présidentielle 2027";
+  return make({
+    title: brandTitle(name),
+    description: `${entries.length} candidatures déclarées ou annoncées à la présidentielle 2027, en ordre alphabétique : statut daté, sources. Liste officielle : Conseil constitutionnel.`,
+    path,
+    breadcrumb: [HOME, featuredElectionCrumb(catalog), { name: 'Les candidats', path }],
+    kind: 'webpage',
+    pattern: '/elections/presidentielle-2027/candidats',
+    name,
+    extraNodes: [
+      personListNode(
+        path,
+        name,
+        entries.map((e) => e.name)
+      ),
+    ],
+  });
+}
+
 export function compareMeta(catalog: Catalog): PageMeta {
   const path = '/partis/comparer';
   return make({
@@ -595,6 +620,8 @@ export function allPageMetas(catalog: Catalog): PageMeta[] {
         return faqMeta(catalog);
       case '/elections/presidentielle-2027/voter':
         return voterMeta(catalog);
+      case '/elections/presidentielle-2027/candidats':
+        return candidatesMeta(catalog);
       case '/elections/[id]':
         return electionMeta(catalog.elections.find((e) => e.id === id)!, catalog);
       case '/partis/comparer':

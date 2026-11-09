@@ -1,4 +1,9 @@
 import { APP_NAME } from '@/src/core/config/app';
+import {
+  buildCandidateList,
+  candidatesIntro,
+  candidatesRule,
+} from '@/src/programmes/models/candidates.service';
 import { CONTENUS_2027_PATHS, calculatedDateText } from '@/src/programmes/models/contenus-2027';
 import type {
   CalculatedDate,
@@ -145,6 +150,39 @@ function voterText(catalog: Catalog): string[] {
   return [...lines, ...sourceLines(sources), ''];
 }
 
+function candidatesText(catalog: Catalog): string[] {
+  const { candidates } = catalog;
+  const entries = buildCandidateList(catalog.parties, candidates.candidates, candidates.electionId);
+  const sources: Source[] = [];
+  const lines = [
+    "## Les candidats à l'élection présidentielle 2027",
+    '',
+    `Page : ${absoluteUrl(CONTENUS_2027_PATHS.candidates)}`,
+    '',
+    candidatesIntro(catalog.faq),
+    candidatesRule(candidates.lastVerified),
+    'Ordre alphabétique du nom de famille ; même gabarit pour chaque candidat.',
+  ];
+  for (const entry of entries) {
+    lines.push(
+      '',
+      `### ${entry.name}`,
+      '',
+      `${entry.statusLabel}${entry.date ? ` (${formatPartialDate(entry.date)})` : ''}. ${entry.affiliation}${entry.role ? ` ; ${entry.role}` : ''}.`,
+      entry.summary
+    );
+    sources.push(...entry.sources);
+  }
+  if (candidates.withdrawn.length) {
+    lines.push('', '### Candidatures retirées');
+    for (const item of candidates.withdrawn) {
+      lines.push('', `${item.name} (${formatPartialDate(item.date)}) : ${item.summary}`);
+      sources.push(...item.sources);
+    }
+  }
+  return [...lines, ...sourceLines(sources), ''];
+}
+
 /**
  * Texte intégral pour les moteurs de réponse : fiches des partis (ordre alphabétique, même gabarit
  * pour tous) et guide « Comprendre ». Généré à partir des données du catalogue, jamais saisi.
@@ -170,7 +208,7 @@ export function buildLlmsFullTxt(catalog: Catalog): string {
   return [
     `# ${APP_NAME} : texte intégral`,
     '',
-    `> Texte des fiches de partis, du guide « Comprendre la politique française », du lexique, de la page « Comment voter » et des questions-réponses sur la présidentielle 2027, généré à partir des données publiées sur ${absoluteUrl('/')}. Site indépendant et non partisan : chaque information est sourcée et datée, et les partis sont présentés dans l'ordre alphabétique avec le même gabarit (${PARTY_SECTIONS.map((s) => s.label.toLowerCase()).join(', ')}).`,
+    `> Texte des fiches de partis, du guide « Comprendre la politique française », du lexique, de la page « Comment voter », des questions-réponses et de la liste des candidats à la présidentielle 2027, généré à partir des données publiées sur ${absoluteUrl('/')}. Site indépendant et non partisan : chaque information est sourcée et datée, et les partis sont présentés dans l'ordre alphabétique avec le même gabarit (${PARTY_SECTIONS.map((s) => s.label.toLowerCase()).join(', ')}).`,
     '',
     '# Guide : Comprendre la politique française',
     '',
@@ -182,6 +220,7 @@ export function buildLlmsFullTxt(catalog: Catalog): string {
     '',
     ...voterText(catalog),
     ...faqText(catalog),
+    ...candidatesText(catalog),
     '# Partis (ordre alphabétique)',
     '',
     ...parties.flatMap((party) => partyText(party, catalog)),

@@ -20,6 +20,7 @@ export const emptyCatalog = (): Catalog => ({
     lastVerified: '',
     sections: [],
   },
+  candidates: { electionId: '', lastVerified: '', candidates: [], withdrawn: [] },
   corrections: [],
   legal: [],
 });

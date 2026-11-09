@@ -1396,6 +1396,28 @@
       "status": "investi",
       "statusLabel": "Candidat investi",
       "candidate": "Bruno Retailleau a déclaré sa candidature le 12 février 2026 ; les adhérents LR l'ont désigné candidat le 19 avril 2026, en choisissant à 73,8 % sa désignation directe plutôt qu'une primaire ouverte (14 %) ou fermée (12,2 %).",
+      "candidateDate": "2026-04-19",
+      "candidateSummary": "Bruno Retailleau a été désigné candidat le 19 avril 2026 par un vote des adhérents des Républicains, après avoir déclaré sa candidature le 12 février 2026.",
+      "candidateSources": [
+        {
+          "title": "Présidentielle : les adhérents LR désignent Bruno Retailleau comme candidat (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-bruno-retailleau-designe-candidat-par-les-adherents-lr",
+          "date": "2026-04-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle : Bruno Retailleau choisi comme candidat officiel des Républicains (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-bruno-retailleau-choisi-comme-candidat-officiel-des-republicains-435440",
+          "date": "2026-04-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
+          "url": "https://fr.euronews.com/2026/02/12/presidentielle-de-2027-bruno-retailleau-annonce-sa-candidature-et-promet-des-referendums",
+          "date": "2026-02-12",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Programme présidentiel 2027 en cours de publication par livrets thématiques (« Le travail gagnant », réindustrialisation, agriculture, famille, électricité, logement, IA, école, décembre 2025 à septembre 2026), complété par les annonces de Bruno Retailleau (référendums, retraites) et les votes du groupe Droite républicaine. Pas de document programmatique identifié sur la santé.",
       "programmeState": "partiel",
       "programmeStateDetail": "livrets thématiques",

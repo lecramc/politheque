@@ -1062,6 +1062,22 @@
       "status": "declare",
       "statusLabel": "Candidat déclaré",
       "candidate": "David Lisnard a confirmé sa candidature le 31 mars 2026 sur France 2, après avoir annoncé le 25 mars son départ des Républicains. Il plaide pour une primaire ouverte de la droite et du centre.",
+      "candidateDate": "2026-03-31",
+      "candidateSummary": "David Lisnard a déclaré sa candidature le 31 mars 2026 au journal de 20 heures de France 2.",
+      "candidateSources": [
+        {
+          "title": "« Je suis candidat » : David Lisnard quitte LR et relance le débat sur une primaire à droite (LCP)",
+          "url": "https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite",
+          "date": "2026-04-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : David Lisnard, maire de Cannes, annonce sa candidature et quitte officiellement les LR (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-david-lisnard-maire-de-cannes-annonce-sa-candidature-et-quitte-officiellement-les-lr",
+          "date": "2026-04-01",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Pas de programme présidentiel complet et daté : le site de Nouvelle Énergie publie un programme en trois axes et des pages thématiques (éducation, sécurité, santé, agriculture, immigration) qui ne portent aucune date de publication ; d'après les archives d'Internet, les trois axes sont en ligne au moins depuis août 2025 et les pages thématiques au moins depuis octobre 2025. Les mesures qui ne reposent que sur ces pages sont signalées « page de programme non datée ». Le site publie aussi une foire aux questions (mise à jour le 16 octobre 2026) reprenant les déclarations datées du candidat (2021-2026). Le parti n'ayant pas de groupe parlementaire (une députée en double étiquette au groupe Droite républicaine), aucune position ne repose sur des votes : la fiche est fondée sur ces pages et sur les déclarations du candidat.",
       "programmeState": "partiel",
       "programmeStateDetail": "axes et pages thématiques",

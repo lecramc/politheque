@@ -1,6 +1,7 @@
 import { LEGAL_DOSSIERS } from '@/src/programmes/data/affaires';
 import corrections from '@/src/programmes/data/corrections.json';
 import { ELECTIONS } from '@/src/programmes/data/elections';
+import candidates from '@/src/programmes/data/elections/candidats-2027.json';
 import faq from '@/src/programmes/data/faq-presidentielle-2027.json';
 import guide from '@/src/programmes/data/guide.json';
 import lexicon from '@/src/programmes/data/lexique.json';
@@ -12,6 +13,7 @@ import type { ProgrammeGateway } from '@/src/programmes/gateways/programme.gatew
 import type { CorrectionEntry } from '@/src/programmes/models/corrections/corrections.model';
 import type {
   Catalog,
+  ElectionCandidates,
   FaqEntry,
   GuideSection,
   LexiconEntry,
@@ -31,6 +33,7 @@ export const buildStaticCatalog = (): Catalog => ({
   lexicon: lexicon as LexiconEntry[],
   faq: faq as FaqEntry[],
   voter: voter as VoterGuide,
+  candidates: candidates as ElectionCandidates,
   corrections: corrections as CorrectionEntry[],
   legal: LEGAL_DOSSIERS,
 });

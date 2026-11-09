@@ -99,6 +99,23 @@ export function citationNodes(sources: Source[]): JsonLdNode[] {
   }));
 }
 
+/** Liste ordonnée de personnes : l'ordre est celui de la page (alphabétique, sans hiérarchie). */
+export function personListNode(path: string, name: string, names: string[]): JsonLdNode {
+  return {
+    '@type': 'ItemList',
+    '@id': `${absoluteUrl(path)}#candidats`,
+    name,
+    url: absoluteUrl(path),
+    itemListOrder: 'https://schema.org/ItemListOrderAscending',
+    numberOfItems: names.length,
+    itemListElement: names.map((person, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: personNode(person),
+    })),
+  };
+}
+
 /** Scrutin daté (un tour) : date officielle déjà présente dans les données, jamais déduite. */
 export function eventNode(input: { name: string; path: string; startDate: string }): JsonLdNode {
   return {

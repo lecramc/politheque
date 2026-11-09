@@ -1081,6 +1081,28 @@
       "status": "declare",
       "statusLabel": "Candidat déclaré",
       "candidate": "Édouard Philippe a annoncé sa candidature le 3 septembre 2024 dans un entretien au Point.",
+      "candidateDate": "2024-09-03",
+      "candidateSummary": "Édouard Philippe a annoncé sa candidature le 3 septembre 2024 dans un entretien à l'hebdomadaire Le Point.",
+      "candidateSources": [
+        {
+          "title": "Édouard Philippe annonce officiellement sa candidature à la prochaine élection présidentielle (Europe 1)",
+          "url": "https://www.europe1.fr/politique/edouard-philippe-annonce-officiellement-sa-candidature-a-la-prochaine-election-presidentielle-4265431",
+          "date": "2024-09-03",
+          "kind": "presse"
+        },
+        {
+          "title": "« Je serai candidat à la prochaine élection présidentielle » : Édouard Philippe officialise sa candidature (France 3 Normandie)",
+          "url": "https://france3-regions.franceinfo.fr/normandie/seine-maritime/havre/je-serai-candidat-a-la-prochaine-election-presidentielle-edouard-philippe-l-ancien-premier-ministre-et-maire-du-havre-officialise-sa-candidature-3026366.html",
+          "date": "2024-09-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : la liste des candidats déjà en lice et des prétendants (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Le site de campagne edouardphilippe.fr publie de « premières orientations » détaillées en quatre priorités (France « plus prospère », « plus sûre », « plus attentive à ses enfants », « plus conquérante ») ; pas de document programmatique complet daté. Fiche fondée sur ces pages, les déclarations du candidat (2025-2026) et les votes du groupe Horizons.",
       "programmeState": "partiel",
       "programmeStateDetail": "quatre priorités",

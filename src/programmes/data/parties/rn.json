@@ -1415,6 +1415,22 @@
       "status": "declare",
       "statusLabel": "Candidate déclarée",
       "candidate": "Marine Le Pen a annoncé sa candidature le 7 juillet 2026 ; Jordan Bardella a déclaré qu'il serait le candidat du parti si elle était « empêchée ». Le même jour, la cour d'appel de Paris l'a condamnée, notamment à une peine d'inéligibilité dont la partie ferme est considérée comme déjà exécutée, et elle s'est pourvue en cassation : la Cour de cassation a indiqué pouvoir statuer « au plus tard début avril 2027 ». Voir la section Procédures judiciaires.",
+      "candidateDate": "2026-07-07",
+      "candidateSummary": "Marine Le Pen a annoncé sa candidature le 7 juillet 2026 sur TF1.",
+      "candidateSources": [
+        {
+          "title": "« Ce soir, je suis candidate à l'élection présidentielle », annonce Marine Le Pen (LCP)",
+          "url": "https://lcp.fr/actualites/ce-soir-je-suis-candidate-a-l-election-presidentielle-annonce-marine-le-pen-438886",
+          "date": "2026-07-07",
+          "kind": "presse"
+        },
+        {
+          "title": "« Je suis candidate à l'élection présidentielle », annonce Marine Le Pen sur TF1 (Euronews)",
+          "url": "https://fr.euronews.com/2026/07/07/je-suis-candidate-a-lelection-presidentielle-annonce-marine-le-pen-sur-tf1",
+          "date": "2026-07-07",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le contre-budget 2026 (octobre 2025), la trajectoire budgétaire 2027-2032 présentée le 6 octobre 2026, le programme des législatives 2024, le programme présidentiel 2022 (22 mesures et livrets thématiques) et les votes du groupe RN à l'Assemblée (XVIIe législature). Les positions de 2022 sont signalées comme telles. Les chiffres de la trajectoire 2027-2032 proviennent de comptes rendus de presse (Public Sénat, AFP) de la conférence de presse du 6 octobre 2026.",
       "programmeState": "non-publie",
       "themes": {

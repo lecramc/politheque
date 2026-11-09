@@ -146,6 +146,12 @@ export interface Candidacy {
   statusLabel: string;
   /** Détail daté et sourcé du statut (dates, désignation, procédures) : affiché en feuille. */
   candidate: string;
+  /** Date (ISO, AAAA-MM-JJ ou AAAA-MM) de l'annonce, de l'investiture ou de la désignation qui fonde le statut. */
+  candidateDate?: string;
+  /** Une phrase factuelle sur le statut (qui, quoi, quand, comment), même gabarit que `candidats-2027.json`. */
+  candidateSummary?: string;
+  /** Au moins deux sources indépendantes du statut de candidature. */
+  candidateSources?: Source[];
   programmeStatus: string;
   /** Liste fermée ; `programmeStatus` reste le détail. */
   programmeState: ProgrammeState;
@@ -335,6 +341,43 @@ export interface VoterGuide {
   sections: VoterSection[];
 }
 
+/** Statut d'une candidature hors des dix partis suivis par le site. */
+export type DeclaredCandidateStatus = 'declare' | 'intention' | 'investi' | 'designe';
+
+/** Candidat déclaré publiquement et attesté par au moins deux sources (hors fiches de partis). */
+export interface DeclaredCandidate {
+  id: string;
+  name: string;
+  status: DeclaredCandidateStatus;
+  /** Libellé uniforme (« Candidature déclarée »). */
+  statusLabel: string;
+  /** Date du statut (ISO AAAA-MM-JJ, ou AAAA-MM si seul le mois est établi). */
+  date: string;
+  /** Parti, mouvement ou « Sans étiquette ». */
+  affiliation: string;
+  /** Fonction, telle que décrite par les sources ; chaîne vide si aucune source n'en donne. */
+  role: string;
+  summary: string;
+  sources: Source[];
+}
+
+export interface WithdrawnCandidate {
+  id: string;
+  name: string;
+  /** Date du retrait (ISO AAAA-MM-JJ, ou AAAA-MM). */
+  date: string;
+  summary: string;
+  sources: Source[];
+}
+
+/** Candidats déclarés d'une élection, hors partis suivis (fichier `elections/candidats-2027.json`). */
+export interface ElectionCandidates {
+  electionId: string;
+  lastVerified: string;
+  candidates: DeclaredCandidate[];
+  withdrawn: WithdrawnCandidate[];
+}
+
 export interface Catalog {
   parties: Party[];
   elections: Election[];
@@ -348,6 +391,8 @@ export interface Catalog {
   faq: FaqEntry[];
   /** Page « Comment voter » de la présidentielle 2027. */
   voter: VoterGuide;
+  /** Autres candidats déclarés à la présidentielle 2027 (page « Les candidats »). */
+  candidates: ElectionCandidates;
   /** Journal public des corrections, du plus récent au plus ancien. */
   corrections: CorrectionEntry[];
   /** Procédures judiciaires : un dossier par parti, ou aucun (tous ou aucun). */

@@ -1038,6 +1038,22 @@
       "status": "annonce",
       "statusLabel": "Candidature annoncée",
       "candidate": "Éric Zemmour a déclaré le 17 septembre 2026 sur BFMTV : « Je serai candidat à l'élection présidentielle » (LCP, 17 septembre 2026) ; selon Public Sénat (18 septembre 2026), il ne s'agissait « pas encore d'une déclaration de candidature officielle », attendue à l'automne.",
+      "candidateDate": "2026-09-17",
+      "candidateSummary": "Éric Zemmour a annoncé le 17 septembre 2026 sur BFMTV qu'il serait candidat à l'élection présidentielle.",
+      "candidateSources": [
+        {
+          "title": "Présidentielle 2027 : Éric Zemmour officialise sa candidature (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
+          "date": "2026-09-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
+          "date": "2026-09-18",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026 (une consultation « Le Programme pour la France » est en cours sur leprogrammepourlafrance.fr). Fiche fondée sur le programme présidentiel 2022, le chiffrage budgétaire « Budget 2027 » publié par Sarah Knafo (2026, présenté par un cadre du parti comme n'étant « pas un programme présidentiel ») et les déclarations d'Éric Zemmour en 2026. Faute de groupe parlementaire, aucune position ne repose sur des votes à l'Assemblée. Les positions de 2022 sont signalées comme telles.",
       "programmeState": "non-publie",
       "themes": {

@@ -107,6 +107,7 @@ describe('Feature: liens de la page élection vers les contenus 2027', () => {
     expect(vmOf('presidentielle-2027').contentLinks).toEqual({
       voter: '/elections/presidentielle-2027/voter',
       faq: '/elections/presidentielle-2027/questions',
+      candidates: '/elections/presidentielle-2027/candidats',
     });
   });
 

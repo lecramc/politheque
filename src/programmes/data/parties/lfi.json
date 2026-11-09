@@ -1371,6 +1371,22 @@
       "status": "declare",
       "statusLabel": "Candidat déclaré",
       "candidate": "Jean-Luc Mélenchon a déclaré sa candidature le 3 mai 2026 au journal de 20 h de TF1, après sa désignation le même jour par les élus du mouvement.",
+      "candidateDate": "2026-05-03",
+      "candidateSummary": "Jean-Luc Mélenchon a déclaré sa candidature le 3 mai 2026 au journal de 20 heures de TF1, après sa désignation le même jour par les élus de La France insoumise.",
+      "candidateSources": [
+        {
+          "title": "Présidentielle : Jean-Luc Mélenchon officialise sa candidature pour 2027 (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-jean-luc-melenchon-officialise-sa-candidature-pour-2027-435851",
+          "date": "2026-05-03",
+          "kind": "presse"
+        },
+        {
+          "title": "Jean-Luc Mélenchon officialise sa candidature à la présidentielle 2027 (La Libre Belgique)",
+          "url": "https://www.lalibre.be/international/europe/2026/05/03/jean-luc-melenchon-officialise-sa-candidature-a-la-presidentielle-2027-62WVGQMVUREGHCOMM2PKZ2DE7M/",
+          "date": "2026-05-03",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Programme présidentiel 2027 « L'Avenir en commun », sous-titré « le programme de la Nouvelle France », paru en librairie le 6 novembre 2026 (cinquième édition, 1 069 mesures dont 238 nouvelles selon le mouvement). Le texte intégral n'est pas publié en ligne : les mesures de cette édition sont citées d'après des comptes rendus de presse. La fiche s'appuie aussi sur les orientations budgétaires 2027 (octobre 2026), le contrat de législature du Nouveau Front populaire (2024), « L'Avenir en commun » édition 2022 et les votes du groupe LFI-NFP.",
       "programmeState": "publie",
       "themes": {

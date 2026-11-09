@@ -89,6 +89,12 @@ export const catalogFactory = (overrides: Partial<Catalog> = {}): Catalog => ({
     lastVerified: '2026-11-08',
     sections: [],
   },
+  candidates: {
+    electionId: 'presidentielle-2027',
+    lastVerified: '2026-11-09',
+    candidates: [],
+    withdrawn: [],
+  },
   corrections: [],
   legal: [],
   ...overrides,

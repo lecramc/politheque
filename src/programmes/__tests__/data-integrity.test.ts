@@ -483,6 +483,21 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
       }
     });
 
+    it('should source its candidacy status with a date, one summary sentence and 2 sources', () => {
+      expect(candidacy.candidateDate, party.id).toMatch(/^\d{4}-\d{2}(-\d{2})?$/);
+      const summary = candidacy.candidateSummary ?? '';
+      expect(summary.startsWith(candidacy.candidateName), party.id).toBe(true);
+      expect(sentencesOf(summary).count, party.id).toBe(1);
+      expect(editorialIssues(summary), party.id).toEqual([]);
+      const sources = candidacy.candidateSources ?? [];
+      expect(sources.length, party.id).toBeGreaterThanOrEqual(2);
+      expect(new Set(sources.map((s) => s.url)).size, party.id).toBe(sources.length);
+      for (const source of sources) {
+        expectValidSource(source, `${party.id}/candidature`);
+        expect(isAggregator(source.url), `${party.id}: ${source.url}`).toBe(false);
+      }
+    });
+
     it('should have at most 4 key ideas (charter, rule 11)', () => {
       expect(party.keyIdeas.length, party.id).toBeLessThanOrEqual(KEY_IDEAS_COUNT);
     });

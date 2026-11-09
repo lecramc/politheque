@@ -1282,6 +1282,34 @@
       "status": "designe",
       "statusLabel": "Candidate désignée",
       "candidate": "Marine Tondelier a été désignée en décembre 2025 par un vote des adhérents (86 % des voix) pour représenter Les Écologistes à la primaire de la gauche. Le conseil fédéral du 21 septembre 2026 a maintenu cette investiture jusqu'au vote des adhérents, du 10 au 13 décembre 2026, qui doit trancher entre une candidature autonome et le ralliement à un autre candidat de gauche.",
+      "candidateDate": "2025-12-08",
+      "candidateSummary": "Marine Tondelier a été désignée le 8 décembre 2025 par un vote des adhérents des Écologistes, puis maintenue comme candidate par le conseil fédéral du 21 septembre 2026 jusqu'au vote des adhérents du 10 au 13 décembre 2026.",
+      "candidateSources": [
+        {
+          "title": "Sans surprise, Tondelier représentera les Ecologistes à la primaire de la gauche (France 24, AFP)",
+          "url": "https://www.france24.com/fr/info-en-continu/20251208-sans-surprise-tondelier-repr%C3%A9sentera-les-ecologistes-%C3%A0-la-primaire-de-la-gauche",
+          "date": "2025-12-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Marine Tondelier désignée sans surprise pour représenter le parti Les Ecologistes à la primaire de la gauche (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/eelv/presidentielle-2027-sans-surprise-marine-tondelier-a-ete-designee-pour-representer-les-ecologistes-a-la-primaire-de-la-gauche_7666159.html",
+          "date": "2025-12-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Candidature à la présidentielle : pas de choix définitif des Écologistes avant la mi-décembre (LCP)",
+          "url": "https://lcp.fr/actualites/candidature-a-la-presidentielle-pas-de-choix-definitif-des-ecologistes-avant-la-mi",
+          "date": "2026-09-21",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : les Écologistes reportent l'heure du choix à décembre, Marine Tondelier toujours en lice (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-les-ecologistes-reportent-lheure-du-choix-a-decembre-marine-tondelier-toujours-en-lice",
+          "date": "2026-09-21",
+          "kind": "presse"
+        }
+      ],
       "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique », présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Les mesures sont citées d'après le document du parti et des comptes rendus de presse. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
       "programmeState": "publie",
       "themes": {

@@ -28,6 +28,10 @@ export function foldedSnippets(catalog: Catalog, path: string): string[] {
     const more = catalog.voter.sections.flatMap((s) => s.more ?? [])[0];
     return more ? [snippet(more)] : [];
   }
+  if (path === CONTENUS_2027_PATHS.candidates) {
+    const withdrawn = catalog.candidates.withdrawn[0];
+    return withdrawn ? [snippet(withdrawn.summary)] : [];
+  }
   const guide = /^\/comprendre\/([^/]+)$/.exec(path);
   if (guide) {
     const more = catalog.guide

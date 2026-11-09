@@ -9,6 +9,7 @@ export const CONTENUS_2027_PATHS = {
   election: FEATURED_ELECTION,
   faq: `${FEATURED_ELECTION}/questions`,
   voter: `${FEATURED_ELECTION}/voter`,
+  candidates: `${FEATURED_ELECTION}/candidats`,
 } as const;
 
 const WEEKDAYS = ['dimanche', 'lundi', 'mardi', 'mercredi', 'jeudi', 'vendredi', 'samedi'];

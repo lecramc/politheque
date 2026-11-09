@@ -25,6 +25,7 @@ export type RoutePattern =
   | '/elections/[id]'
   | '/elections/presidentielle-2027/questions'
   | '/elections/presidentielle-2027/voter'
+  | '/elections/presidentielle-2027/candidats'
   | '/debats/[id]'
   | '/me-situer'
   | '/me-situer/resultats'
@@ -160,6 +161,9 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
     maxIsoDate(c.faq.map((q) => q.lastVerified))
   ),
   '/elections/presidentielle-2027/voter': fixed(true, (c) => maxIsoDate([c.voter.lastVerified])),
+  '/elections/presidentielle-2027/candidats': fixed(true, (c) =>
+    maxIsoDate([c.candidates.lastVerified])
+  ),
   '/debats/[id]': {
     params: (c) => c.themes.map((t) => ({ id: t.id })),
     indexable: true,
