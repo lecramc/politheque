@@ -10,6 +10,7 @@ import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
+import { withdrawalLabel } from '@/src/programmes/models/candidates.service';
 import { formatPartialDate } from '@/src/programmes/models/seo/dates';
 import { candidatesViewModel } from '@/src/programmes/view-models/candidates.view-model';
 
@@ -93,7 +94,7 @@ export default function CandidatesScreen() {
                   {item.name}
                 </Text>
                 <Text style={{ fontSize: 14, color: colors.text.secondary }}>
-                  {`Retrait le ${formatPartialDate(item.date)}`}
+                  {withdrawalLabel(item.date)}
                 </Text>
                 <Text style={{ fontSize: 16, lineHeight: 25 }}>{item.summary}</Text>
                 <SourceChip sources={item.sources} subject={item.name} />

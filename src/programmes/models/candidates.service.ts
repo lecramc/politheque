@@ -1,12 +1,27 @@
 import { calculatedDateText } from '@/src/programmes/models/contenus-2027';
 import type {
+  CandidacyStatus,
   DeclaredCandidate,
+  DeclaredCandidateStatus,
   FaqEntry,
   Party,
   Source,
 } from '@/src/programmes/models/programme.model';
-import { formatLongDate } from '@/src/programmes/models/seo/dates';
+import { formatLongDate, formatPartialDate } from '@/src/programmes/models/seo/dates';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
+
+/**
+ * Libellé de statut commun à tous les candidats de la page, tiré du code de statut et jamais du
+ * libellé propre à chaque fiche : même formulation, sans accord, pour les 10 partis comme pour les autres.
+ */
+export const UNIFORM_STATUS_LABELS: Record<CandidacyStatus | DeclaredCandidateStatus, string> = {
+  declare: 'Candidature déclarée',
+  annonce: 'Candidature annoncée',
+  intention: 'Intention de candidature annoncée',
+  investi: 'Investiture par son parti',
+  designe: 'Désignation par son parti',
+  pressenti: 'Candidature envisagée',
+};
 
 /** Un candidat dans la liste : même gabarit pour tous, d'où qu'il vienne. */
 export type CandidateEntry = {
@@ -30,7 +45,7 @@ const fromParty = (party: Party, electionId: string): CandidateEntry[] => {
         {
           id: party.id,
           name: candidacy.candidateName,
-          statusLabel: candidacy.statusLabel,
+          statusLabel: UNIFORM_STATUS_LABELS[candidacy.status],
           date: candidacy.candidateDate ?? null,
           affiliation: party.name,
           role: null,
@@ -46,7 +61,7 @@ const fromParty = (party: Party, electionId: string): CandidateEntry[] => {
 const fromOther = (c: DeclaredCandidate): CandidateEntry => ({
   id: c.id,
   name: c.name,
-  statusLabel: c.statusLabel,
+  statusLabel: UNIFORM_STATUS_LABELS[c.status],
   date: c.date,
   affiliation: c.affiliation,
   role: c.role || null,
@@ -105,3 +120,7 @@ export function candidatesIntro(faq: FaqEntry[]): string {
 /** Règle d'affichage, identique pour tous les candidats. */
 export const candidatesRule = (lastVerified: string): string =>
   `Candidatures déclarées ou annoncées publiquement, attestées par au moins deux sources ; mise à jour le ${formatLongDate(lastVerified)}.`;
+
+/** « Retrait le 7 juillet 2026 » ou, si seul le mois est établi, « Retrait en septembre 2026 ». */
+export const withdrawalLabel = (date: string): string =>
+  `Retrait ${/^\d{4}-\d{2}$/.test(date) ? 'en' : 'le'} ${formatPartialDate(date)}`;

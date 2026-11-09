@@ -303,6 +303,30 @@
       ]
     },
     {
+      "id": "mira-markovic",
+      "name": "Mira Markovic",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-10-02",
+      "affiliation": "Parti animaliste",
+      "role": "Cofondatrice et membre du bureau du Parti animaliste",
+      "summary": "Mira Markovic a présenté sa candidature le 2 octobre 2026 lors d'une conférence de presse du Parti animaliste.",
+      "sources": [
+        {
+          "title": "Présidentielle : la cofondatrice Mira Markovic est la candidate du Parti animaliste (Agra Presse)",
+          "url": "https://www.agra.fr/articles/presidentielle-la-cofondatrice-mira-markovic-est-la-candidate-du-parti-animaliste",
+          "date": "2026-10-08",
+          "kind": "presse"
+        },
+        {
+          "title": "Pour la présidentielle 2027, la candidate du Parti animaliste, Mira Markovic, cherche les 500 parrainages (HuffPost, repris par Yahoo Actualités)",
+          "url": "https://fr.news.yahoo.com/sport/pr%C3%A9sidentielle-2027-candidate-parti-animaliste-092813187.html",
+          "date": "2026-10-03",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
       "id": "antoine-mikolajczak",
       "name": "Antoine Mikolajczak",
       "status": "declare",
@@ -496,6 +520,26 @@
           "title": "Présidentielle 2027 : la liste des candidats déjà en lice et des prétendants (LCP)",
           "url": "https://lcp.fr/actualites/presidentielle-2027-la-liste-des-candidats-deja-en-lice-et-des-pretendants-436373",
           "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "lydie-massard",
+      "name": "Lydie Massard",
+      "date": "2026-09",
+      "summary": "Lydie Massard a retiré en septembre 2026 sa candidature à la primaire de la gauche, qu'elle avait annoncée en avril 2026.",
+      "sources": [
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : qui sont les principaux candidats déjà déclarés ? (Toute l'Europe)",
+          "url": "https://www.touteleurope.eu/vie-politique-des-etats-membres/presidentielle-2027-qui-sont-les-candidats-deja-declares/",
+          "date": "2026-11-09",
           "kind": "presse"
         }
       ]

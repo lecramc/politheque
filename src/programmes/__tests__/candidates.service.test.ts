@@ -1,5 +1,6 @@
 import {
   buildCandidateList,
+  withdrawalLabel,
   candidatesIntro,
   candidatesRule,
 } from '@/src/programmes/models/candidates.service';
@@ -62,6 +63,17 @@ describe('Feature: liste unique des candidats', () => {
   });
 });
 
+describe('Feature: libellé de statut identique pour tous', () => {
+  it('should give the same status wording to a party candidate and to another candidate with the same status', () => {
+    const [a, b] = buildCandidateList(
+      [party('lfi', 'La France insoumise', 'Jean-Luc Mélenchon', 'Candidat déclaré')],
+      [other()],
+      ELECTION
+    );
+    expect(a.statusLabel).toBe(b.statusLabel);
+  });
+});
+
 describe('Feature: candidats des dix partis dans la même liste', () => {
   it('should give a party candidate the same shape, with the programme link for the party', () => {
     const entries = buildCandidateList(
@@ -73,7 +85,7 @@ describe('Feature: candidats des dix partis dans la même liste', () => {
       {
         id: 'lfi',
         name: 'Jean-Luc Mélenchon',
-        statusLabel: 'Candidat déclaré',
+        statusLabel: 'Candidature déclarée',
         date: null,
         affiliation: 'La France insoumise',
         role: null,
@@ -204,5 +216,12 @@ describe('Feature: fonction absente', () => {
   it('should expose no role, not a placeholder, when no source gives one', () => {
     const [entry] = buildCandidateList([], [other({ role: '' })], ELECTION);
     expect(entry.role).toBeNull();
+  });
+});
+
+describe('Feature: date de retrait', () => {
+  it('should write « en » before a month and « le » before a full date', () => {
+    expect(withdrawalLabel('2026-09')).toBe('Retrait en septembre 2026');
+    expect(withdrawalLabel('2026-07-07')).toBe('Retrait le 7 juillet 2026');
   });
 });

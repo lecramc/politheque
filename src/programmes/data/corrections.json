@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-09-statuts-de-candidature-formules-de-la-meme-facon",
+    "date": "2026-11-09",
+    "kind": "mise-a-jour",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Statuts de candidature formulés de la même façon pour tous les candidats (candidature déclarée, candidature annoncée, investiture ou désignation par son parti), sans accord propre à chaque fiche."
+  },
+  {
+    "id": "2026-11-09-ajoutee-la-candidature-de-mira-markovic-parti-an",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Ajoutée la candidature de Mira Markovic (Parti animaliste), présentée le 2 octobre 2026, et ajouté à la liste des retraits celui de Lydie Massard, qui a retiré en septembre 2026 sa candidature à la primaire de la gauche."
+  },
+  {
     "id": "2026-11-09-note-sous-les-candidatures-elle-ne-parle-plus-de",
     "date": "2026-11-09",
     "kind": "correction",
