@@ -109,7 +109,7 @@ describe('Feature: faits du scrutin pour l’accueil et « Comment voter »', ()
     expect(steps).toHaveLength(3);
     expect(steps[0]).toEqual({
       title: 'Vérifiez votre inscription',
-      text: 'avant le 12 mars, sur service-public.fr.',
+      text: 'au plus tard le 12 mars, sur service-public.fr.',
     });
     expect(steps[1].title).toBe('Le jour du vote');
     expect(steps[2].title).toBe('Absent ?');

@@ -151,6 +151,10 @@ export default function GuideScreen() {
             )}
           </View>
         </View>
+
+        <TextLink href={vm.lexicon.href} standalone>
+          {vm.lexicon.label}
+        </TextLink>
       </View>
     </Page>
   );

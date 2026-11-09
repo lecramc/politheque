@@ -1,5 +1,10 @@
 import { APP_NAME, SITE_LANG, SITE_URL } from '@/src/core/config/app';
-import type { Party, Source } from '@/src/programmes/models/programme.model';
+import type {
+  FaqEntry,
+  LexiconEntry,
+  Party,
+  Source,
+} from '@/src/programmes/models/programme.model';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
 import { absoluteUrl } from '@/src/programmes/models/seo/site-routes';
 
@@ -103,6 +108,52 @@ export function eventNode(input: { name: string; path: string; startDate: string
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: { '@type': 'Country', name: 'France' },
     url: absoluteUrl(input.path),
+  };
+}
+
+/** URL d'un terme du lexique : la page, plus l'ancre du terme. */
+export const lexiconTermUrl = (pagePath: string, id: string) => `${absoluteUrl(pagePath)}#${id}`;
+
+/** Le lexique et ses termes : un nœud par terme, rattaché à l'ensemble par `inDefinedTermSet`. */
+export function lexiconNodes(
+  pagePath: string,
+  name: string,
+  entries: LexiconEntry[]
+): JsonLdNode[] {
+  const setId = `${absoluteUrl(pagePath)}#lexique`;
+  return [
+    {
+      '@type': 'DefinedTermSet',
+      '@id': setId,
+      name,
+      url: absoluteUrl(pagePath),
+      inLanguage: SITE_LANG,
+    },
+    ...entries.map(
+      (entry): JsonLdNode => ({
+        '@type': 'DefinedTerm',
+        '@id': lexiconTermUrl(pagePath, entry.id),
+        name: entry.term,
+        description: entry.definition,
+        url: lexiconTermUrl(pagePath, entry.id),
+        inDefinedTermSet: { '@id': setId },
+      })
+    ),
+  ];
+}
+
+/** Questions et réponses courtes affichées sur la page (jamais un texte absent de la page). */
+export function faqPageNode(path: string, entries: FaqEntry[]): JsonLdNode {
+  return {
+    '@type': 'FAQPage',
+    '@id': `${absoluteUrl(path)}#faq`,
+    url: absoluteUrl(path),
+    inLanguage: SITE_LANG,
+    mainEntity: entries.map((entry) => ({
+      '@type': 'Question',
+      name: entry.question,
+      acceptedAnswer: { '@type': 'Answer', text: entry.answer },
+    })),
   };
 }
 

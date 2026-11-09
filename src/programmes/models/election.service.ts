@@ -69,7 +69,7 @@ export const voteSteps = (election: Election): { title: string; text: string }[]
   return [
     {
       title: 'Vérifiez votre inscription',
-      text: `${registrationDeadline ? `avant le ${registrationDeadline}, ` : ''}sur service-public.fr.`,
+      text: `${registrationDeadline ? `au plus tard le ${registrationDeadline}, ` : ''}sur service-public.fr.`,
     },
     {
       title: 'Le jour du vote',

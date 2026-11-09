@@ -55,3 +55,12 @@ describe('Feature: Comprendre avec le suivi de lecture', () => {
     expect(vmOf().progressHref).toBe('/passeport');
   });
 });
+
+describe('Feature: lien vers le lexique depuis Comprendre', () => {
+  it('should link to the lexicon without counting it as a lesson of the reading', () => {
+    const vm = vmOf();
+    expect(vm.lexicon.href).toBe('/comprendre/lexique');
+    expect(vm.reading.total).toBe(9);
+    expect(vm.chapters.flatMap((c) => c.items.map((i) => i.href))).not.toContain(vm.lexicon.href);
+  });
+});

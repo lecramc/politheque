@@ -1,17 +1,9 @@
 import type { ProgrammeGateway } from '@/src/programmes/gateways/programme.gateway';
+import { emptyCatalog } from '@/src/programmes/models/empty-catalog';
 import type { Catalog } from '@/src/programmes/models/programme.model';
 
 export class FakeProgrammeGateway implements ProgrammeGateway {
-  catalog: Catalog = {
-    parties: [],
-    elections: [],
-    themes: [],
-    questions: [],
-    axes: [],
-    guide: [],
-    corrections: [],
-    legal: [],
-  };
+  catalog: Catalog = emptyCatalog();
   error: Error | null = null;
 
   async loadCatalog(): Promise<Catalog> {

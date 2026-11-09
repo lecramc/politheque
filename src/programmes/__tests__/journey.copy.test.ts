@@ -19,7 +19,7 @@ describe('Feature: libellés de la progression et de l’accueil', () => {
   it('should write the home task subtitles from real numbers and dates', () => {
     expect(situerSubtitle(31)).toBe("31 affirmations · 5 min · rien n'est envoyé");
     expect(voterSubtitle('18 avril', '12 mars')).toBe(
-      "1er tour le 18 avril · s'inscrire avant le 12 mars"
+      "1er tour le 18 avril · s'inscrire jusqu'au 12 mars"
     );
     expect(voterSubtitle('18 avril', null)).toBe('1er tour le 18 avril');
   });

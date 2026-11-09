@@ -14,6 +14,7 @@ export type RoutePattern =
   | '/'
   | '/comprendre'
   | '/comprendre/[id]'
+  | '/comprendre/lexique'
   | '/partis'
   | '/partis/[id]'
   | '/partis/[id]/histoire'
@@ -22,6 +23,8 @@ export type RoutePattern =
   | '/partis/[id]/procedures-judiciaires'
   | '/partis/comparer'
   | '/elections/[id]'
+  | '/elections/presidentielle-2027/questions'
+  | '/elections/presidentielle-2027/voter'
   | '/debats/[id]'
   | '/me-situer'
   | '/me-situer/resultats'
@@ -125,6 +128,8 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
     indexable: true,
     lastmod: (c, p) => c.guide.find((s) => s.id === p.id)?.lastVerified ?? null,
   },
+  // Une seule page pour les termes (pas de page par terme : contenu trop mince).
+  '/comprendre/lexique': fixed(true, (c) => maxIsoDate(c.lexicon.map((t) => t.lastVerified))),
   '/partis': fixed(true, (c) =>
     maxIsoDate([...partyDates(c), ...c.themes.map((t) => t.lastVerified)])
   ),
@@ -151,6 +156,10 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
         ...c.parties.filter((party) => party.candidacies[p.id]).map((party) => party.lastVerified),
       ]),
   },
+  '/elections/presidentielle-2027/questions': fixed(true, (c) =>
+    maxIsoDate(c.faq.map((q) => q.lastVerified))
+  ),
+  '/elections/presidentielle-2027/voter': fixed(true, (c) => maxIsoDate([c.voter.lastVerified])),
   '/debats/[id]': {
     params: (c) => c.themes.map((t) => ({ id: t.id })),
     indexable: true,

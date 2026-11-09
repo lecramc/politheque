@@ -38,7 +38,7 @@ describe('Feature: accueil à quatre tâches', () => {
   });
 
   it('should word the vote task with the two dates a voter needs', () => {
-    expect(vmOf().tasks[3].subtitle).toBe("1er tour le 18 avril · s'inscrire avant le 12 mars");
+    expect(vmOf().tasks[3].subtitle).toBe("1er tour le 18 avril · s'inscrire jusqu'au 12 mars");
   });
 
   it('should drop the vote task when no election is featured', () => {

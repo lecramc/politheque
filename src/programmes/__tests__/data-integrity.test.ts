@@ -4,10 +4,13 @@ import path from 'node:path';
 import { LEGAL_DOSSIERS } from '@/src/programmes/data/affaires';
 import corrections from '@/src/programmes/data/corrections.json';
 import { ELECTIONS } from '@/src/programmes/data/elections';
+import faq from '@/src/programmes/data/faq-presidentielle-2027.json';
 import guide from '@/src/programmes/data/guide.json';
+import lexicon from '@/src/programmes/data/lexique.json';
 import { PARTIES } from '@/src/programmes/data/parties';
 import { QUESTIONS } from '@/src/programmes/data/questions';
 import themes from '@/src/programmes/data/themes.json';
+import voter from '@/src/programmes/data/voter-2027.json';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
 import { isAggregator } from '@/src/programmes/models/aggregators';
 import { validateJournal } from '@/src/programmes/models/corrections/corrections.service';
@@ -26,7 +29,12 @@ import { followUps } from '@/src/programmes/models/legal/legal-followup';
 import { promoteDraft } from '@/src/programmes/models/legal/legal-promotion';
 import { validateLegalDossier } from '@/src/programmes/models/legal/legal-validation';
 import { firstSentences, formatLongDate } from '@/src/programmes/models/presentation.service';
-import type { Source } from '@/src/programmes/models/programme.model';
+import type {
+  CalculatedDate,
+  FaqEntry,
+  Source,
+  VoterSection,
+} from '@/src/programmes/models/programme.model';
 import { expandRoutes } from '@/src/programmes/models/seo/site-routes';
 import { TITLE_MAX_LENGTH } from '@/src/programmes/models/sourced-item.service';
 import { verificationLevel } from '@/src/programmes/models/verification.service';
@@ -526,5 +534,104 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
         expect(isKeyIdeaVerified(party, ELECTION, idea), where).toBe(true);
       }
     });
+  });
+});
+
+describe('Feature: intégrité des contenus 2027 (lexique, FAQ, comment voter)', () => {
+  const guideIds = guide.map((s) => s.id);
+  const today = new Date().toISOString().slice(0, 10);
+  const calculated: CalculatedDate[] = [
+    ...faq.flatMap((q) => (q as FaqEntry).calculated ?? []),
+    ...voter.sections.flatMap((s) => (s as VoterSection).calculated ?? []),
+  ];
+  const sourced: { where: string; sources: Source[] }[] = [
+    ...lexicon.map((t) => ({ where: `lexique ${t.id}`, sources: t.sources as Source[] })),
+    ...faq.map((q) => ({ where: `faq ${q.id}`, sources: q.sources as Source[] })),
+    { where: 'voter résumé', sources: voter.summarySources as Source[] },
+    ...voter.sections.map((s) => ({ where: `voter ${s.id}`, sources: s.sources as Source[] })),
+  ];
+
+  it('should give every entry at least one source with an https url, a date and a kind', () => {
+    for (const { where, sources } of sourced) {
+      expect(sources.length, where).toBeGreaterThan(0);
+      for (const source of sources) expectValidSource(source, where);
+    }
+  });
+
+  it('should never cite an aggregator nor a weak source', () => {
+    for (const { where, sources } of sourced) {
+      for (const source of sources) {
+        expect(isAggregator(source.url), `${where} ${source.url}`).toBe(false);
+        expect(source.title + source.url, where).not.toMatch(WEAK_SOURCE_NAMES);
+      }
+    }
+  });
+
+  it('should use real ISO verification dates, never in the future', () => {
+    const dates = [
+      ...lexicon.map((t) => ({ id: t.id, date: t.lastVerified })),
+      ...faq.map((q) => ({ id: q.id, date: q.lastVerified })),
+      { id: voter.id, date: voter.lastVerified },
+    ];
+    for (const { id, date } of dates) {
+      expect(date, id).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(date <= today, id).toBe(true);
+    }
+  });
+
+  it('should have unique ids in the lexicon, the FAQ and the voter sections', () => {
+    for (const ids of [
+      lexicon.map((t) => t.id),
+      faq.map((q) => q.id),
+      voter.sections.map((s) => s.id),
+    ]) {
+      expect(new Set(ids).size).toBe(ids.length);
+    }
+  });
+
+  it('should only relate to existing guide sections', () => {
+    for (const entry of [...lexicon, ...faq]) {
+      for (const id of entry.related) expect(guideIds, entry.id).toContain(id);
+    }
+    expect(guideIds).toContain(voter.guideSectionId);
+  });
+
+  it('should link the voter page to the featured election', () => {
+    expect(ELECTIONS.map((e) => e.id)).toContain(voter.electionId);
+    expect(ELECTIONS.find((e) => e.featured)?.id).toBe(voter.electionId);
+  });
+
+  it('should write every calculated date as an ISO date with its rule', () => {
+    expect(calculated.length).toBeGreaterThan(0);
+    for (const item of calculated) {
+      expect(item.date, item.label).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+      expect(item.rule.length, item.label).toBeGreaterThan(20);
+      if (item.time) expect(item.time, item.label).toMatch(/^\d{2}:\d{2}$/);
+    }
+  });
+
+  it('should keep work notes and unsourced wording out of the displayed texts', () => {
+    const texts = [
+      ...lexicon.flatMap((t) => [t.definition, ...t.more]),
+      ...faq.flatMap((q) => [q.answer, ...(q.more ?? [])]),
+      voter.summary,
+      ...voter.sections.flatMap((s) => [...s.paragraphs, ...(('more' in s && s.more) || [])]),
+    ];
+    for (const text of texts) {
+      expect(text).not.toMatch(WORK_NOTES);
+      expect(editorialIssues(text), text).toEqual([]);
+    }
+  });
+
+  it('should keep every FAQ answer short (60 words at most) and sort-friendly lexicon terms non-empty', () => {
+    for (const q of faq) expect(wordCount(q.answer), q.id).toBeLessThanOrEqual(60);
+    for (const t of lexicon) expect(t.term.trim().length, t.id).toBeGreaterThan(0);
+  });
+
+  it('should load the three data sets into the static catalog', () => {
+    const catalog = buildStaticCatalog();
+    expect(catalog.lexicon).toHaveLength(lexicon.length);
+    expect(catalog.faq).toHaveLength(faq.length);
+    expect(catalog.voter.id).toBe(voter.id);
   });
 });

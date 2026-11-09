@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 
 import type { AppState } from '@/src/core/store/create-store';
+import { emptyCatalog } from '@/src/programmes/models/empty-catalog';
 import { buildJourney } from '@/src/programmes/models/journey.model';
 import { computeJourneyProgress } from '@/src/programmes/models/journey.service';
 import type { Answers } from '@/src/programmes/models/matching.service';
@@ -18,16 +19,7 @@ export const selectQuiz = (state: AppState) => state.quiz;
 export const selectFeaturedElection = (state: AppState) =>
   state.programmes.catalog?.elections.find((e) => e.featured) ?? null;
 
-const EMPTY_CATALOG: Catalog = {
-  parties: [],
-  elections: [],
-  themes: [],
-  questions: [],
-  axes: [],
-  guide: [],
-  corrections: [],
-  legal: [],
-};
+const EMPTY_CATALOG: Catalog = emptyCatalog();
 
 export const selectProgressStatus = (state: AppState) => state.progress.status;
 export const selectReadingEntries = (state: AppState) => state.progress.entries;

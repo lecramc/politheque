@@ -1,4 +1,5 @@
 import { APP_NAME } from '@/src/core/config/app';
+import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import type { Catalog } from '@/src/programmes/models/programme.model';
 import { maxIsoDate } from '@/src/programmes/models/seo/dates';
 import {
@@ -58,6 +59,11 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
       `guide en ${catalog.guide.length} leçons : institutions, élections, partis, droits.`
     ),
     ...catalog.guide.flatMap((s) => link(s.title, `/comprendre/${s.id}`, s.summary)),
+    ...link(
+      'Lexique de la politique française',
+      CONTENUS_2027_PATHS.lexicon,
+      `${catalog.lexicon.length} termes expliqués en ordre alphabétique, chacun avec ses sources.`
+    ),
     '',
     '## Partis (ordre alphabétique)',
     '',
@@ -88,6 +94,16 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '## Élections',
     '',
     ...catalog.elections.flatMap((e) => link(e.title, `/elections/${e.id}`, e.summary)),
+    ...link(
+      'Présidentielle 2027 : questions-réponses',
+      CONTENUS_2027_PATHS.faq,
+      `${catalog.faq.length} questions sur les dates, l'inscription, les candidatures et le scrutin, avec réponse courte et sources.`
+    ),
+    ...link(
+      'Comment voter à la présidentielle 2027',
+      CONTENUS_2027_PATHS.voter,
+      "s'inscrire, vérifier son bureau de vote, procuration, vote depuis l'étranger, jour du scrutin."
+    ),
     '',
     '## Outils',
     '',
@@ -99,7 +115,7 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '',
     '## Texte intégral',
     '',
-    `- [llms-full.txt](${absoluteUrl('/llms-full.txt')}): texte des fiches de partis et du guide « Comprendre », avec leurs sources.`,
+    `- [llms-full.txt](${absoluteUrl('/llms-full.txt')}): texte des fiches de partis, du guide « Comprendre », du lexique, des questions-réponses et de la page « Comment voter », avec leurs sources.`,
     '',
     '## Citer Polithèque',
     '',

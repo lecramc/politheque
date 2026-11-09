@@ -446,7 +446,7 @@
     "id": "comment-voter",
     "title": "Comment voter",
     "icon": "checkbox-outline",
-    "summary": "Pour voter, il faut être inscrit sur les listes électorales avant le vendredi 12 mars 2027 (date calculée selon la règle). Si vous ne pouvez pas vous déplacer, donnez procuration.",
+    "summary": "Pour voter, il faut être inscrit sur les listes électorales au plus tard le vendredi 12 mars 2027 (date calculée selon la règle). Si vous ne pouvez pas vous déplacer, donnez procuration.",
     "blocks": [
       {
         "heading": "Qui peut voter ?",
@@ -521,7 +521,7 @@
         "more": [
           "La personne choisie peut être inscrite dans une autre commune que vous, mais elle doit venir voter dans votre bureau de vote.",
           "La demande se fait sur maprocuration.gouv.fr. Avec une identité numérique certifiée (application France Identité), tout se fait en ligne. Sinon, il faut ensuite passer au commissariat ou à la gendarmerie pour faire vérifier son identité.",
-          "Faites-le tôt : la procuration doit être enregistrée avant le jour du vote."
+          "Aucune date limite n'est fixée, mais faites la démarche le plus tôt possible pour qu'elle soit transmise à temps à votre mairie."
         ],
         "sources": [
           {

@@ -275,6 +275,66 @@ export interface GuideSection {
   lastVerified?: string;
 }
 
+/** Date déduite d'une règle (jamais annoncée telle quelle) : toujours présentée avec sa règle. */
+export interface CalculatedDate {
+  label: string;
+  /** ISO 8601 (AAAA-MM-JJ). */
+  date: string;
+  /** Règle et texte source qui produisent la date. */
+  rule: string;
+  /** Heure limite éventuelle (HH:MM). */
+  time?: string;
+}
+
+/** Terme du lexique de la politique française. */
+export interface LexiconEntry {
+  /** Identifiant stable, aussi ancre de la page (`/comprendre/lexique#<id>`). */
+  id: string;
+  term: string;
+  /** Définition courte, visible. */
+  definition: string;
+  more: string[];
+  /** Identifiants de leçons du guide. */
+  related: string[];
+  sources: Source[];
+  lastVerified: string;
+}
+
+/** Question de la FAQ sur la présidentielle 2027. */
+export interface FaqEntry {
+  id: string;
+  question: string;
+  /** Réponse courte, visible (60 mots au plus). */
+  answer: string;
+  more?: string[];
+  calculated?: CalculatedDate[];
+  related: string[];
+  sources: Source[];
+  lastVerified: string;
+}
+
+export interface VoterSection {
+  id: string;
+  title: string;
+  /** Une ligne « - … » devient une puce. */
+  paragraphs: string[];
+  more?: string[];
+  calculated?: CalculatedDate[];
+  sources: Source[];
+}
+
+/** Page « Comment voter » d'une élection : le détail de la leçon `guideSectionId`. */
+export interface VoterGuide {
+  id: string;
+  title: string;
+  summary: string;
+  summarySources: Source[];
+  guideSectionId: string;
+  electionId: string;
+  lastVerified: string;
+  sections: VoterSection[];
+}
+
 export interface Catalog {
   parties: Party[];
   elections: Election[];
@@ -282,6 +342,12 @@ export interface Catalog {
   questions: Question[];
   axes: Axis[];
   guide: GuideSection[];
+  /** Lexique, du premier au dernier terme dans l'ordre du fichier (l'ordre alphabétique est calculé). */
+  lexicon: LexiconEntry[];
+  /** Questions fréquentes sur la présidentielle 2027. */
+  faq: FaqEntry[];
+  /** Page « Comment voter » de la présidentielle 2027. */
+  voter: VoterGuide;
   /** Journal public des corrections, du plus récent au plus ancien. */
   corrections: CorrectionEntry[];
   /** Procédures judiciaires : un dossier par parti, ou aucun (tous ou aucun). */

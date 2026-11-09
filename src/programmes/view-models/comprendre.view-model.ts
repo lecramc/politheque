@@ -1,5 +1,6 @@
 import { createSelector } from 'reselect';
 
+import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { stepHref, type JourneyStepId } from '@/src/programmes/models/journey.model';
 import { readingMinutes } from '@/src/programmes/models/presentation.service';
 import { isRead } from '@/src/programmes/models/reading-progress.model';
@@ -68,6 +69,11 @@ export const comprendreViewModel = () =>
           visible: hydrated,
         },
         progressHref: '/passeport',
+        /** Lien sobre vers le lexique : hors parcours, il ne compte pas dans la progression. */
+        lexicon: {
+          href: CONTENUS_2027_PATHS.lexicon,
+          label: `Lexique : ${catalog?.lexicon.length ?? 0} mots de la politique expliqués`,
+        },
         chapters: CHAPTERS.map((id, index) => {
           const { step } = stepOf(id);
           return {

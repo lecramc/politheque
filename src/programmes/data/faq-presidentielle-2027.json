@@ -1,0 +1,475 @@
+[
+  {
+    "id": "quand-vote-t-on",
+    "question": "Quand a lieu l'élection présidentielle de 2027 ?",
+    "answer": "Le premier tour a lieu le dimanche 18 avril 2027 et le second tour le dimanche 2 mai 2027. En Guadeloupe, en Martinique, en Guyane, à Saint-Pierre-et-Miquelon, à Saint-Barthélemy, à Saint-Martin et en Polynésie française, on vote la veille, les samedis 17 avril et 1er mai 2027.",
+    "more": ["Ces dates ont été fixées par le Conseil des ministres du 1er juillet 2026."],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Élection présidentielle 2027 : les dates sont connues",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053",
+        "date": "2026-07-02",
+        "kind": "statistique"
+      },
+      {
+        "title": "Vote d'un Français installé à l'étranger",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16904",
+        "date": "2026-11-06",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "decret-de-convocation",
+    "question": "Les dates sont-elles officielles ?",
+    "answer": "Elles ont été fixées par le Conseil des ministres du 1er juillet 2026. Le décret qui convoque officiellement les électeurs doit être publié au moins dix semaines avant le premier tour, soit au plus tard le 7 février 2027 (date calculée à partir de cette règle).",
+    "calculated": [
+      {
+        "label": "Date au plus tard de publication du décret de convocation des électeurs",
+        "date": "2027-02-07",
+        "rule": "Au moins dix semaines avant le premier tour (loi n° 62-1292 du 6 novembre 1962, article 1er bis), soit 70 jours avant le 18 avril 2027."
+      }
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Élection présidentielle 2027 : les dates sont connues",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053",
+        "date": "2026-07-02",
+        "kind": "statistique"
+      },
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 1er bis)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "qui-peut-voter",
+    "question": "Qui peut voter à l'élection présidentielle ?",
+    "answer": "Il faut être de nationalité française, avoir au moins 18 ans la veille du scrutin, jouir de ses droits civils et politiques, et être inscrit sur une liste électorale (d'une commune ou d'un consulat).",
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 3)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Listes électorales : en cas de première inscription",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1367",
+        "date": "2026-03-03",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "date-limite-inscription",
+    "question": "Jusqu'à quand peut-on s'inscrire sur les listes électorales ?",
+    "answer": "Jusqu'au vendredi 12 mars 2027 inclus pour voter dès le premier tour. Cette date est calculée à partir de la règle : la demande doit être déposée au plus tard le sixième vendredi avant le scrutin. Depuis le 1er juillet 2026, c'est la même date en ligne, en mairie et par courrier.",
+    "more": [
+      "Certaines personnes peuvent s'inscrire jusqu'au dixième jour avant le premier tour, soit le 8 avril 2027 (date calculée) : jeunes ayant 18 ans après le 12 mars, personnes mutées ou parties à la retraite, militaires rendus à la vie civile, personnes devenues françaises ou ayant retrouvé le droit de vote après cette date."
+    ],
+    "calculated": [
+      {
+        "label": "Date limite d'inscription sur les listes électorales",
+        "date": "2027-03-12",
+        "rule": "Sixième vendredi précédant le scrutin (code électoral, article L17), même date en ligne, en mairie et par courrier depuis le 1er juillet 2026 (décret n° 2026-493 du 12 juin 2026), appliqué au premier tour du 18 avril 2027."
+      },
+      {
+        "label": "Date limite d'inscription dans les cas dérogatoires (18 ans atteints tardivement, mutation, naturalisation…)",
+        "date": "2027-04-08",
+        "rule": "Dixième jour précédant le premier tour (code électoral, articles L30 à L32), appliqué au premier tour du 18 avril 2027."
+      }
+    ],
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Code électoral, article L17",
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032964790",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Inscription sur les listes électorales : des changements à partir de juillet 2026",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18967",
+        "date": "2026-06-18",
+        "kind": "statistique"
+      },
+      {
+        "title": "Élections : peut-on s'inscrire sur la liste électorale et voter la même année ?",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34240",
+        "date": "2026-08-13",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "verifier-inscription",
+    "question": "Comment savoir si je suis inscrit et où je vote ?",
+    "answer": "Le service en ligne « Vérifier votre inscription électorale et votre bureau de vote », sur service-public.fr, indique la commune d'inscription, le bureau de vote et les procurations enregistrées. On s'y connecte avec FranceConnect.",
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Vérifier votre inscription électorale et votre bureau de vote",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/1?idFicheParent=N47",
+        "date": "2026-06-18",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "jeunes-18-ans",
+    "question": "J'aurai 18 ans avant le scrutin : suis-je inscrit automatiquement ?",
+    "answer": "Oui, si vous avez fait votre recensement citoyen à 16 ans : l'Insee vous inscrit d'office dans la commune du recensement. Sinon, il faut faire la démarche. Si vous avez 18 ans entre les deux tours, vous ne pouvez voter qu'au second tour.",
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Liste électorale : inscription d'office à 18 ans si le recensement citoyen a été fait à 16 ans",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1961",
+        "date": "2025-11-28",
+        "kind": "statistique"
+      },
+      {
+        "title": "Élections : peut-on s'inscrire sur la liste électorale et voter la même année ?",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34240",
+        "date": "2026-08-13",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "procuration",
+    "question": "Peut-on voter par procuration ?",
+    "answer": "Oui. Vous choisissez un autre électeur, qui vote à votre place dans votre bureau de vote. La demande se fait sur Maprocuration, puis au commissariat ou à la gendarmerie pour vérifier votre identité, ou entièrement en ligne avec une identité numérique France Identité certifiée.",
+    "more": [
+      "En France, un électeur ne peut détenir qu'une seule procuration établie en France.",
+      "Aucune date limite n'est fixée, mais il est conseillé de faire la démarche le plus tôt possible."
+    ],
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Vote par procuration - En France",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/2_0",
+        "date": "2026-02-02",
+        "kind": "statistique"
+      },
+      {
+        "title": "Décret n° 2025-1059 du 3 novembre 2025 relatif à la dématérialisation complète de l'établissement et de la résiliation d'une procuration",
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052533291",
+        "date": "2025-11-07",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "piece-identite",
+    "question": "Quelle pièce d'identité faut-il présenter pour voter ?",
+    "answer": "Dans les communes de 1 000 habitants ou plus, une pièce d'identité est obligatoire : carte nationale d'identité, passeport, permis de conduire, carte Vitale avec photo, entre autres. La carte d'identité et le passeport sont acceptés jusqu'à cinq ans après leur expiration. Une photo ou une photocopie ne suffit pas.",
+    "more": [
+      "Dans les communes de moins de 1 000 habitants, la pièce d'identité n'est pas obligatoire, mais le président du bureau de vote peut demander de prouver son identité.",
+      "La carte électorale n'est pas une pièce d'identité."
+    ],
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Élections : papiers d'identité à présenter pour voter",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1361",
+        "date": "2026-09-21",
+        "kind": "statistique"
+      },
+      {
+        "title": "Arrêté du 16 novembre 2018 pris en application des articles R. 5, R. 6 et R. 60 du code électoral (article 1er)",
+        "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043176003",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "horaires",
+    "question": "À quelle heure ouvrent les bureaux de vote ?",
+    "answer": "Pour l'élection présidentielle, les bureaux de vote sont ouverts de 8 heures à 19 heures. Le préfet peut avancer l'ouverture ou retarder la fermeture, sans dépasser 20 heures. Les horaires exacts de votre bureau sont donnés par votre mairie.",
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Élections politiques : déroulement du scrutin",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
+        "date": "2025-10-13",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "qui-peut-etre-candidat",
+    "question": "Qui peut être candidat ?",
+    "answer": "Pour figurer sur la liste officielle, il faut être présenté par au moins 500 élus, venant d'au moins 30 départements ou collectivités d'outre-mer. C'est le Conseil constitutionnel qui reçoit ces présentations, les vérifie et établit la liste des candidats.",
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 58)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "parrainages",
+    "question": "Combien de parrainages faut-il, et jusqu'à quand ?",
+    "answer": "Il faut au moins 500 parrainages d'élus, de 30 départements ou collectivités d'outre-mer au minimum, sans dépasser un dixième pour un même département. Ils doivent arriver au Conseil constitutionnel au plus tard le vendredi 12 mars 2027 à 18 heures : date calculée (sixième vendredi avant le premier tour), à confirmer par le décret de convocation.",
+    "calculated": [
+      {
+        "label": "Date limite de réception des parrainages par le Conseil constitutionnel",
+        "date": "2027-03-12",
+        "time": "18:00",
+        "rule": "Sixième vendredi précédant le premier tour, à 18 heures (loi n° 62-1292 du 6 novembre 1962, article 3), appliqué au premier tour du 18 avril 2027."
+      }
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "parrainages-publics",
+    "question": "Les noms des élus qui parrainent sont-ils publics ?",
+    "answer": "Oui. Le Conseil constitutionnel publie le nom et la qualité des élus qui ont présenté un candidat, au moins deux fois par semaine pendant la période de recueil.",
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "president-sortant",
+    "question": "Le président sortant peut-il se représenter ?",
+    "answer": "Non. La Constitution interdit d'exercer plus de deux mandats consécutifs. Emmanuel Macron, élu le 7 mai 2017 puis réélu le 24 avril 2022, exerce son deuxième mandat consécutif, commencé le 14 mai 2022.",
+    "related": ["institutions", "election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 6)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Emmanuel Macron",
+        "url": "https://www.elysee.fr/emmanuel-macron",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Annonce des résultats officiels du second tour de l'élection présidentielle et proclamation de l'élection du Président de la République",
+        "url": "https://www.conseil-constitutionnel.fr/actualites/annonce-des-resultats-officiels-du-second-tour-de-l-election-presidentielle-et-proclamation-de-l",
+        "date": "2022-04-27",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "premier-tour",
+    "question": "Peut-on être élu dès le premier tour ?",
+    "answer": "Oui, si un candidat obtient la majorité absolue des suffrages exprimés, c'est-à-dire plus de la moitié. Les votes blancs et nuls ne comptent pas dans les suffrages exprimés.",
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 7)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Élections politiques : déroulement du scrutin",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
+        "date": "2025-10-13",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "second-tour",
+    "question": "Que se passe-t-il au second tour ?",
+    "answer": "Si personne n'a la majorité absolue au premier tour, un second tour a lieu quatorze jours plus tard, le 2 mai 2027. Seuls les deux candidats arrivés en tête peuvent s'y présenter, après d'éventuels retraits. Celui ou celle qui obtient le plus de voix est élu.",
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 7)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Élection présidentielle 2027 : les dates sont connues",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053",
+        "date": "2026-07-02",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "resultats-officiels",
+    "question": "Qui proclame les résultats ?",
+    "answer": "Le Conseil constitutionnel veille à la régularité de l'élection, examine les réclamations et proclame les résultats officiels. En 2022, il a proclamé les résultats du second tour le 27 avril 2022, trois jours après le scrutin.",
+    "related": ["institutions", "election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 58)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Annonce des résultats officiels du second tour de l'élection présidentielle et proclamation de l'élection du Président de la République",
+        "url": "https://www.conseil-constitutionnel.fr/actualites/annonce-des-resultats-officiels-du-second-tour-de-l-election-presidentielle-et-proclamation-de-l",
+        "date": "2022-04-27",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "depenses-campagne",
+    "question": "Combien un candidat peut-il dépenser ?",
+    "answer": "Pour 2027, le plafond est de 16,851 millions d'euros pour un candidat au premier tour et de 22,509 millions d'euros pour les deux candidats du second tour. L'État rembourse au plus 47,5 % du plafond aux candidats ayant obtenu au moins 5 % des suffrages exprimés, et 4,75 % aux autres.",
+    "more": [
+      "La période de financement de la campagne a commencé le 1er avril 2026. Chaque candidat reçoit une avance forfaitaire de 200 000 euros à la publication de la liste des candidats.",
+      "Les comptes doivent être déposés à la Commission nationale des comptes de campagne au plus tard le vendredi 2 juillet 2027 à 18 heures.",
+      "La loi de 1962 fixe des montants de 13,7 et 18,3 millions d'euros ; les plafonds appliqués sont majorés par un décret du 30 décembre 2009, selon le guide de la Commission."
+    ],
+    "calculated": [
+      {
+        "label": "Date limite de dépôt des comptes de campagne",
+        "date": "2027-07-02",
+        "time": "18:00",
+        "rule": "Onzième vendredi suivant le premier tour, à 18 heures (loi n° 62-1292 du 6 novembre 1962, article 3 ; guide de la CNCCFP). La CNCCFP indique elle-même le 2 juillet 2027."
+      }
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Guide à l'usage des candidats à l'élection du Président de la République et de leur mandataire, édition 2026-2027",
+        "url": "https://cnccfp.fr/wp-content/uploads/2026/04/Guide-a-lusage-des-candidats-a-lelection-du-President-de-la-Republique-2027.pdf",
+        "date": "2026-06-11",
+        "kind": "statistique"
+      },
+      {
+        "title": "Élection du Président de la République 2027",
+        "url": "https://cnccfp.fr/elections/election-du-president-de-la-republique-2027/",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "temps-de-parole",
+    "question": "Les candidats ont-ils le même temps de parole à la radio et à la télévision ?",
+    "answer": "Pas pendant toute la campagne. De la publication de la liste des candidats à la veille de la campagne officielle, les radios et télévisions appliquent le principe d'équité. Pendant la campagne officielle, c'est l'égalité. Le 9 juillet 2026, l'Arcom a indiqué qu'elle publierait ses recommandations pour 2027 à l'automne.",
+    "related": ["election-presidentielle", "desinformation"],
+    "sources": [
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Pluralisme politique : l'Arcom publie son rapport sur la campagne des municipales et précise les modalités de mesure des temps de parole des personnalités politiques",
+        "url": "https://www.arcom.fr/presse/pluralisme-politique-larcom-publie-son-rapport-sur-la-campagne-des-municipales-et-precise-les-modalites-de-mesure-des-temps-de-parole-des-personnalites-politiques",
+        "date": "2026-07-09",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "francais-etranger",
+    "question": "Peut-on voter depuis l'étranger ?",
+    "answer": "Oui, si vous êtes inscrit sur une liste électorale consulaire, au plus tard le sixième vendredi avant le scrutin. Pour la présidentielle, on vote à l'urne au consulat ou à l'ambassade, ou par procuration. On ne peut pas être inscrit à la fois dans une commune et dans un consulat.",
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Vote d'un Français installé à l'étranger",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16904",
+        "date": "2026-11-06",
+        "kind": "statistique"
+      },
+      {
+        "title": "Liste électorale consulaire",
+        "url": "https://www.diplomatie.gouv.fr/fr/services-aux-francaises-et-aux-francais/vie-administrative-et-elections/elections-a-l-etranger/liste-electorale-consulaire",
+        "date": "2026-08-03",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "legislatives-apres",
+    "question": "Y aura-t-il des élections législatives après la présidentielle ?",
+    "answer": "Pas automatiquement. L'Assemblée nationale actuelle a été élue les 30 juin et 7 juillet 2024 ; ses pouvoirs expirent le troisième mardi de juin 2029, soit le 19 juin 2029 (date calculée). Des législatives n'auront lieu en 2027 que si le nouveau président dissout l'Assemblée, ce qu'il peut décider seul.",
+    "calculated": [
+      {
+        "label": "Fin des pouvoirs de l'Assemblée nationale élue en 2024 (hors dissolution)",
+        "date": "2029-06-19",
+        "rule": "Troisième mardi de juin de la cinquième année qui suit son élection (code électoral, article LO121), appliqué à l'élection de juillet 2024."
+      }
+    ],
+    "related": ["election-presidentielle", "pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Code électoral, articles LO119 à LO122 (composition de l'Assemblée nationale et durée du mandat des députés)",
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070239/LEGISCTA000006148463/",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Dissolution de l'Assemblée nationale, en application de l'article 12 de la Constitution",
+        "url": "https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/dissolution-de-l-assemblee-nationale-en-application-de-l-article-12-de-la-constitution",
+        "date": "2024-06-10",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 12 et 19)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  }
+]

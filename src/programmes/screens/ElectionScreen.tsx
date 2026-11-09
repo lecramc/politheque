@@ -143,8 +143,18 @@ export default function ElectionScreen() {
                 </Text>
               </View>
             ))}
+            {vm.contentLinks ? (
+              <>
+                <TextLink href={vm.contentLinks.voter} standalone>
+                  Tout savoir pour voter
+                </TextLink>
+                <TextLink href={vm.contentLinks.faq} standalone>
+                  Questions fréquentes sur la présidentielle 2027
+                </TextLink>
+              </>
+            ) : null}
             <TextLink href={vm.voteGuide.href} standalone>
-              {`Tout savoir pour voter (guide, ${vm.voteGuide.minutes} min)`}
+              {`La leçon « Comment voter » (${vm.voteGuide.minutes} min)`}
             </TextLink>
             <TextLink href="/comprendre/election-presidentielle" standalone>
               Comment se déroule l'élection présidentielle

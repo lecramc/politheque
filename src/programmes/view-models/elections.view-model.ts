@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
+import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import {
   candidatesOf,
   daysUntil,
@@ -43,6 +44,11 @@ export const electionViewModel =
           ? [...election.keyDates, ...election.rounds].sort((a, b) => a.date.localeCompare(b.date))
           : [],
         voteSteps: election ? voteSteps(election) : [],
+        /** Pages de détail (comment voter, questions-réponses) : seulement pour la présidentielle 2027. */
+        contentLinks:
+          election && catalog?.voter.electionId === election.id
+            ? { voter: CONTENUS_2027_PATHS.voter, faq: CONTENUS_2027_PATHS.faq }
+            : null,
         voteGuide: {
           href: '/comprendre/comment-voter',
           minutes: readingMinutes(

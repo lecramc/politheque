@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-11-09-date-limite-d-inscription-au-plus-tard-le-vendre",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/comment-voter", "/elections/presidentielle-2027", "/"],
+    "summary": "Date limite d'inscription : « au plus tard le vendredi 12 mars 2027 » (le 12 mars inclus) au lieu de « avant ». Procuration : il n'existe pas de date limite légale, il est conseillé de faire la démarche le plus tôt possible."
+  },
+  {
+    "id": "2026-11-09-nouvelle-page-comment-voter-a-la-presidentielle",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/elections/presidentielle-2027/voter", "/elections/presidentielle-2027"],
+    "summary": "Nouvelle page : comment voter à la présidentielle 2027 en sept étapes (inscription, vérification, 18 ans, procuration, étranger, pièce d'identité, bureau de vote), avec sources officielles."
+  },
+  {
+    "id": "2026-11-09-nouvelle-page-20-questions-reponses-sur-la-presi",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/elections/presidentielle-2027/questions", "/elections/presidentielle-2027"],
+    "summary": "Nouvelle page : 20 questions-réponses sur la présidentielle 2027 (dates, inscription, candidatures, scrutin), avec réponse courte, sources officielles et dates calculées signalées."
+  },
+  {
+    "id": "2026-11-09-nouvelle-page-lexique-de-la-politique-francaise",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/comprendre/lexique"],
+    "summary": "Nouvelle page : lexique de la politique française, 39 termes expliqués par ordre alphabétique, chacun avec sa définition, son détail et ses sources."
+  },
+  {
     "id": "2026-11-08-resumes-du-guide-ramenes-a-deux-phrases-la-phras",
     "date": "2026-11-08",
     "kind": "mise-a-jour",

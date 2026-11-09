@@ -1,0 +1,254 @@
+{
+  "id": "voter-2027",
+  "title": "Comment voter à l'élection présidentielle de 2027",
+  "summary": "Le premier tour a lieu le 18 avril 2027 et le second le 2 mai 2027. Pour voter, inscrivez-vous au plus tard le vendredi 12 mars 2027 (date calculée selon la règle du sixième vendredi avant le scrutin) ; si vous êtes absent, donnez procuration.",
+  "summarySources": [
+    {
+      "title": "Élection présidentielle 2027 : les dates sont connues",
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053",
+      "date": "2026-07-02",
+      "kind": "statistique"
+    },
+    {
+      "title": "Code électoral, article L17",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032964790",
+      "date": "2026-11-08",
+      "kind": "statistique"
+    },
+    {
+      "title": "Inscription sur les listes électorales : des changements à partir de juillet 2026",
+      "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18967",
+      "date": "2026-06-18",
+      "kind": "statistique"
+    }
+  ],
+  "guideSectionId": "comment-voter",
+  "electionId": "presidentielle-2027",
+  "lastVerified": "2026-11-08",
+  "sections": [
+    {
+      "id": "s-inscrire",
+      "title": "S'inscrire sur les listes électorales",
+      "paragraphs": [
+        "Pour voter dès le premier tour, inscrivez-vous au plus tard le vendredi 12 mars 2027. Cette date est calculée à partir de la règle : la demande doit être déposée au plus tard le sixième vendredi avant le scrutin.",
+        "Trois façons de s'inscrire, avec la même date limite depuis le 1er juillet 2026 :\n- en ligne, sur service-public.fr (à partir de 18 ans) ;\n- en mairie ;\n- par courrier (la mairie doit recevoir le dossier avant la date limite)."
+      ],
+      "more": [
+        "Il faut un justificatif d'identité et un justificatif de domicile de moins de trois mois. En mairie ou par courrier, on remplit aussi le formulaire cerfa n° 12669.",
+        "Si vous avez déménagé, il faut vous inscrire dans votre nouvelle commune. Après la date limite, vous ne pourrez pas voter dans la nouvelle commune pour cette élection ; si vous êtes encore inscrit dans l'ancienne, vous pouvez y voter, par exemple par procuration.",
+        "Certaines personnes peuvent s'inscrire jusqu'au dixième jour avant le premier tour, soit le 8 avril 2027 (date calculée) : personnes mutées ou parties à la retraite après le 12 mars, militaires rendus à la vie civile, personnes devenues françaises ou ayant retrouvé le droit de vote après cette date."
+      ],
+      "calculated": [
+        {
+          "label": "Date limite d'inscription",
+          "date": "2027-03-12",
+          "rule": "Sixième vendredi précédant le scrutin (code électoral, article L17), appliqué au premier tour du 18 avril 2027."
+        },
+        {
+          "label": "Date limite dans les cas dérogatoires",
+          "date": "2027-04-08",
+          "rule": "Dixième jour précédant le premier tour (code électoral, articles L30 à L32), appliqué au premier tour du 18 avril 2027."
+        }
+      ],
+      "sources": [
+        {
+          "title": "Code électoral, article L17",
+          "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032964790",
+          "date": "2026-11-08",
+          "kind": "statistique"
+        },
+        {
+          "title": "Inscription sur les listes électorales : des changements à partir de juillet 2026",
+          "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18967",
+          "date": "2026-06-18",
+          "kind": "statistique"
+        },
+        {
+          "title": "Élections : peut-on s'inscrire sur la liste électorale et voter la même année ?",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34240",
+          "date": "2026-08-13",
+          "kind": "statistique"
+        },
+        {
+          "title": "Listes électorales : en cas de première inscription",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1367",
+          "date": "2026-03-03",
+          "kind": "statistique"
+        }
+      ]
+    },
+    {
+      "id": "verifier",
+      "title": "Vérifier son inscription et son bureau de vote",
+      "paragraphs": [
+        "Le service en ligne « Vérifier votre inscription électorale et votre bureau de vote », sur service-public.fr, indique en quelques minutes votre commune d'inscription, votre bureau de vote et vos procurations."
+      ],
+      "more": [
+        "On s'y connecte avec FranceConnect. On indique si l'on vote en France ou à l'étranger, puis sa commune. Une attestation d'inscription peut être téléchargée."
+      ],
+      "sources": [
+        {
+          "title": "Vérifier votre inscription électorale et votre bureau de vote",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/1?idFicheParent=N47",
+          "date": "2026-06-18",
+          "kind": "statistique"
+        }
+      ]
+    },
+    {
+      "id": "jeunes",
+      "title": "Vous avez 18 ans : l'inscription d'office",
+      "paragraphs": [
+        "Si vous avez fait votre recensement citoyen à 16 ans, vous êtes inscrit d'office sur la liste électorale à 18 ans, dans la commune du recensement. Vérifiez-le quand même avec le service en ligne.",
+        "Pour voter, il faut avoir 18 ans au plus tard la veille du scrutin."
+      ],
+      "more": [
+        "Si vous n'avez pas été inscrit d'office (recensement non fait ou tardif), il faut faire la démarche vous-même, avant le 12 mars 2027.",
+        "Si vous avez 18 ans après le 12 mars 2027 mais avant la veille du premier tour, vous pouvez vous inscrire jusqu'au 8 avril 2027 (date calculée), en mairie : l'inscription en ligne n'est pas possible dans ce cas.",
+        "Si vous avez 18 ans entre les deux tours, vous ne pouvez voter qu'au second tour.",
+        "Votre carte électorale vous est remise lors d'une cérémonie de citoyenneté ou envoyée par courrier, au plus tard trois jours avant le scrutin."
+      ],
+      "sources": [
+        {
+          "title": "Liste électorale : inscription d'office à 18 ans si le recensement citoyen a été fait à 16 ans",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1961",
+          "date": "2025-11-28",
+          "kind": "statistique"
+        },
+        {
+          "title": "Listes électorales : en cas de première inscription",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1367",
+          "date": "2026-03-03",
+          "kind": "statistique"
+        },
+        {
+          "title": "Élections : peut-on s'inscrire sur la liste électorale et voter la même année ?",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34240",
+          "date": "2026-08-13",
+          "kind": "statistique"
+        }
+      ]
+    },
+    {
+      "id": "procuration",
+      "title": "Absent le jour du vote : la procuration",
+      "paragraphs": [
+        "Vous pouvez confier votre vote à un autre électeur : c'est la procuration. Cette personne vote à votre place, dans votre bureau de vote, même si elle est inscrite dans une autre commune.",
+        "Trois façons de faire la demande :\n- sur Maprocuration, puis passage au commissariat ou à la gendarmerie pour vérifier votre identité ;\n- entièrement en ligne sur Maprocuration, avec une identité numérique France Identité certifiée ;\n- avec le formulaire papier cerfa n° 12675, déposé en personne au commissariat, à la gendarmerie ou au tribunal judiciaire."
+      ],
+      "more": [
+        "En France, une même personne ne peut détenir qu'une seule procuration établie en France.",
+        "La procuration peut valoir pour un seul tour, pour les deux tours, ou pour une durée maximale d'un an. Pour avoir deux personnes différentes au premier et au second tour, il faut faire deux procurations.",
+        "Aucune date limite n'est fixée, mais faites la démarche le plus tôt possible pour qu'elle soit transmise à temps à votre mairie.",
+        "Si vous ne pouvez pas vous déplacer pour raison de santé ou de handicap, vous pouvez demander par écrit qu'un policier ou un gendarme vienne vérifier votre identité chez vous.",
+        "Depuis le décret du 3 novembre 2025, la procuration entièrement en ligne est ouverte à toutes les élections politiques, à condition d'utiliser France Identité."
+      ],
+      "sources": [
+        {
+          "title": "Vote par procuration - En France",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/2_0",
+          "date": "2026-02-02",
+          "kind": "statistique"
+        },
+        {
+          "title": "Décret n° 2025-1059 du 3 novembre 2025 relatif à la dématérialisation complète de l'établissement et de la résiliation d'une procuration",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052533291",
+          "date": "2025-11-07",
+          "kind": "statistique"
+        }
+      ]
+    },
+    {
+      "id": "francais-etranger",
+      "title": "Vous vivez à l'étranger",
+      "paragraphs": [
+        "Pour voter depuis l'étranger, il faut être inscrit sur une liste électorale consulaire, au plus tard le sixième vendredi avant le scrutin. On peut s'y inscrire en ligne, en même temps que l'inscription au registre des Français établis hors de France, ou au consulat.",
+        "Pour l'élection présidentielle, on vote à l'urne au consulat ou à l'ambassade, ou par procuration."
+      ],
+      "more": [
+        "On ne peut pas être inscrit à la fois sur une liste communale et sur une liste consulaire.",
+        "Un mandataire peut détenir jusqu'à deux procurations, et jusqu'à trois si au moins un des mandants est inscrit sur une liste consulaire ; une seule d'entre elles peut avoir été établie en France.",
+        "Une procuration faite par un électeur inscrit sur une liste consulaire peut valoir jusqu'à trois ans."
+      ],
+      "sources": [
+        {
+          "title": "Vote d'un Français installé à l'étranger",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F16904",
+          "date": "2026-11-06",
+          "kind": "statistique"
+        },
+        {
+          "title": "Liste électorale consulaire",
+          "url": "https://www.diplomatie.gouv.fr/fr/services-aux-francaises-et-aux-francais/vie-administrative-et-elections/elections-a-l-etranger/liste-electorale-consulaire",
+          "date": "2026-08-03",
+          "kind": "statistique"
+        },
+        {
+          "title": "Vote par procuration - En France",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/2_0",
+          "date": "2026-02-02",
+          "kind": "statistique"
+        }
+      ]
+    },
+    {
+      "id": "piece-identite",
+      "title": "Le jour du vote : la pièce d'identité",
+      "paragraphs": [
+        "Dans les communes de 1 000 habitants ou plus, il faut présenter une pièce d'identité. La carte électorale n'est pas obligatoire, et elle n'est pas une pièce d'identité.",
+        "Pièces acceptées, notamment :\n- carte nationale d'identité ou passeport, en cours de validité ou expirés depuis moins de cinq ans ;\n- permis de conduire ;\n- carte Vitale avec photo ;\n- carte d'invalidité ou carte mobilité inclusion avec photo."
+      ],
+      "more": [
+        "La liste complète est fixée par un arrêté du 16 novembre 2018. Elle comprend aussi, par exemple, la carte d'identité de parlementaire ou d'élu local avec photo, la carte du combattant, la carte d'identité de fonctionnaire de l'État et la carte d'identité militaire.",
+        "Une photo, un document téléchargé sur un téléphone ou une photocopie ne sont pas acceptés.",
+        "Dans les communes de moins de 1 000 habitants, la pièce d'identité n'est pas obligatoire, mais le président du bureau de vote peut vous demander de prouver votre identité."
+      ],
+      "sources": [
+        {
+          "title": "Élections : papiers d'identité à présenter pour voter",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1361",
+          "date": "2026-09-21",
+          "kind": "statistique"
+        },
+        {
+          "title": "Arrêté du 16 novembre 2018 pris en application des articles R. 5, R. 6 et R. 60 du code électoral (article 1er)",
+          "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000043176003",
+          "date": "2026-11-08",
+          "kind": "statistique"
+        },
+        {
+          "title": "Élections politiques : déroulement du scrutin",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
+          "date": "2025-10-13",
+          "kind": "statistique"
+        }
+      ]
+    },
+    {
+      "id": "bureau-de-vote",
+      "title": "Au bureau de vote",
+      "paragraphs": [
+        "Votre bureau de vote est indiqué sur votre carte électorale et sur le service en ligne de vérification. Pour l'élection présidentielle, il est ouvert de 8 heures à 19 heures ; le préfet peut prolonger jusqu'à 20 heures au plus.",
+        "Avant de voter à l'urne, le passage par l'isoloir est obligatoire."
+      ],
+      "more": [
+        "Les horaires exacts de votre bureau sont donnés par votre mairie.",
+        "Un vote blanc (enveloppe vide ou bulletin sans nom) et un vote nul (bulletin déchiré ou annoté) sont comptés parmi les votants, mais pas parmi les suffrages exprimés."
+      ],
+      "sources": [
+        {
+          "title": "Élections politiques : déroulement du scrutin",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
+          "date": "2025-10-13",
+          "kind": "statistique"
+        },
+        {
+          "title": "Vérifier votre inscription électorale et votre bureau de vote",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/1?idFicheParent=N47",
+          "date": "2026-06-18",
+          "kind": "statistique"
+        }
+      ]
+    }
+  ]
+}

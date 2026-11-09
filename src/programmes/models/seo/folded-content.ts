@@ -1,3 +1,4 @@
+import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import type { Catalog } from '@/src/programmes/models/programme.model';
 import { STANCE_LEGEND_TEXT } from '@/src/programmes/models/reading-guides.copy';
 
@@ -14,6 +15,19 @@ const snippet = (text: string): string => text.replace(/^[-•*]\s+/, '').slice(
  * Un fragment par page concernée ; `[]` pour les autres pages.
  */
 export function foldedSnippets(catalog: Catalog, path: string): string[] {
+  // Avant le motif des leçons : `/comprendre/lexique` n'en est pas une.
+  if (path === CONTENUS_2027_PATHS.lexicon) {
+    const more = catalog.lexicon.flatMap((t) => t.more)[0];
+    return more ? [snippet(more)] : [];
+  }
+  if (path === CONTENUS_2027_PATHS.faq) {
+    const more = catalog.faq.flatMap((q) => q.more ?? [])[0];
+    return more ? [snippet(more)] : [];
+  }
+  if (path === CONTENUS_2027_PATHS.voter) {
+    const more = catalog.voter.sections.flatMap((s) => s.more ?? [])[0];
+    return more ? [snippet(more)] : [];
+  }
   const guide = /^\/comprendre\/([^/]+)$/.exec(path);
   if (guide) {
     const more = catalog.guide

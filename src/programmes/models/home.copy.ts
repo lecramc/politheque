@@ -36,7 +36,7 @@ export const situerSubtitle = (questionCount: number) =>
 export const voterSubtitle = (firstRound: string | null, registration: string | null) =>
   [
     firstRound ? `1er tour le ${firstRound}` : null,
-    registration ? `s'inscrire avant le ${registration}` : null,
+    registration ? `s'inscrire jusqu'au ${registration}` : null,
   ]
     .filter(Boolean)
     .join(' · ');

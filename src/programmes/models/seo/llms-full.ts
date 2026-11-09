@@ -1,5 +1,11 @@
 import { APP_NAME } from '@/src/core/config/app';
-import type { Catalog, Party, Source } from '@/src/programmes/models/programme.model';
+import { CONTENUS_2027_PATHS, calculatedDateText } from '@/src/programmes/models/contenus-2027';
+import type {
+  CalculatedDate,
+  Catalog,
+  Party,
+  Source,
+} from '@/src/programmes/models/programme.model';
 import { formatLongDate, formatPartialDate } from '@/src/programmes/models/seo/dates';
 import { PARTY_SECTIONS, partyHref } from '@/src/programmes/models/seo/party-sections';
 import { absoluteUrl } from '@/src/programmes/models/seo/site-routes';
@@ -79,6 +85,66 @@ function partyText(party: Party, catalog: Catalog): string[] {
   return [...lines, ...sourceLines(sources), ''];
 }
 
+const calculatedLines = (items: CalculatedDate[] = []): string[] =>
+  items.flatMap((item) => [
+    '',
+    `Date calculée : ${item.label}, ${calculatedDateText(item)}. Règle : ${item.rule}`,
+  ]);
+
+function lexiconText(catalog: Catalog): string[] {
+  const sources: Source[] = [];
+  const lines = [
+    '## Lexique de la politique française',
+    '',
+    `Page : ${absoluteUrl(CONTENUS_2027_PATHS.lexicon)}`,
+  ];
+  for (const entry of [...catalog.lexicon].sort((a, b) => a.term.localeCompare(b.term, 'fr'))) {
+    lines.push(
+      '',
+      `### ${entry.term}`,
+      '',
+      `Ancre : ${absoluteUrl(CONTENUS_2027_PATHS.lexicon)}#${entry.id}`,
+      entry.definition,
+      ...entry.more
+    );
+    sources.push(...entry.sources);
+  }
+  return [...lines, ...sourceLines(sources), ''];
+}
+
+function faqText(catalog: Catalog): string[] {
+  const sources: Source[] = [];
+  const lines = [
+    '## Présidentielle 2027 : questions-réponses',
+    '',
+    `Page : ${absoluteUrl(CONTENUS_2027_PATHS.faq)}`,
+  ];
+  for (const entry of catalog.faq) {
+    lines.push('', `### ${entry.question}`, '', entry.answer, ...(entry.more ?? []));
+    lines.push(...calculatedLines(entry.calculated));
+    sources.push(...entry.sources);
+  }
+  return [...lines, ...sourceLines(sources), ''];
+}
+
+function voterText(catalog: Catalog): string[] {
+  const { voter } = catalog;
+  const sources: Source[] = [...voter.summarySources];
+  const lines = [
+    `## ${voter.title}`,
+    '',
+    `Page : ${absoluteUrl(CONTENUS_2027_PATHS.voter)}`,
+    '',
+    voter.summary,
+  ];
+  for (const section of voter.sections) {
+    lines.push('', `### ${section.title}`, '', ...section.paragraphs, ...(section.more ?? []));
+    lines.push(...calculatedLines(section.calculated));
+    sources.push(...section.sources);
+  }
+  return [...lines, ...sourceLines(sources), ''];
+}
+
 /**
  * Texte intégral pour les moteurs de réponse : fiches des partis (ordre alphabétique, même gabarit
  * pour tous) et guide « Comprendre ». Généré à partir des données du catalogue, jamais saisi.
@@ -104,11 +170,18 @@ export function buildLlmsFullTxt(catalog: Catalog): string {
   return [
     `# ${APP_NAME} : texte intégral`,
     '',
-    `> Texte des fiches de partis et du guide « Comprendre la politique française », généré à partir des données publiées sur ${absoluteUrl('/')}. Site indépendant et non partisan : chaque information est sourcée et datée, et les partis sont présentés dans l'ordre alphabétique avec le même gabarit (${PARTY_SECTIONS.map((s) => s.label.toLowerCase()).join(', ')}).`,
+    `> Texte des fiches de partis, du guide « Comprendre la politique française », du lexique, de la page « Comment voter » et des questions-réponses sur la présidentielle 2027, généré à partir des données publiées sur ${absoluteUrl('/')}. Site indépendant et non partisan : chaque information est sourcée et datée, et les partis sont présentés dans l'ordre alphabétique avec le même gabarit (${PARTY_SECTIONS.map((s) => s.label.toLowerCase()).join(', ')}).`,
     '',
     '# Guide : Comprendre la politique française',
     '',
     ...guide,
+    '# Lexique',
+    '',
+    ...lexiconText(catalog),
+    '# Présidentielle 2027 : comment voter et questions-réponses',
+    '',
+    ...voterText(catalog),
+    ...faqText(catalog),
     '# Partis (ordre alphabétique)',
     '',
     ...parties.flatMap((party) => partyText(party, catalog)),

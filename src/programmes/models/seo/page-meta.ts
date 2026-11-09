@@ -1,4 +1,5 @@
 import { APP_NAME } from '@/src/core/config/app';
+import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
 import type { LegalDossier } from '@/src/programmes/models/legal/legal.model';
 import { partySectionSources } from '@/src/programmes/models/party-sources.service';
@@ -21,7 +22,9 @@ import {
   articleNode,
   breadcrumbNode,
   eventNode,
+  faqPageNode,
   graph,
+  lexiconNodes,
   organizationNode,
   personNode,
   politicalPartyNode,
@@ -114,7 +117,7 @@ const pageGraph = (input: {
   about?: JsonLdNode[];
   mentions?: JsonLdNode[];
   sources?: Source[];
-  events?: JsonLdNode[];
+  extraNodes?: JsonLdNode[];
 }): JsonLdGraph =>
   graph(
     organizationNode(false),
@@ -135,7 +138,7 @@ const pageGraph = (input: {
           type: input.kind === 'collection' ? 'CollectionPage' : 'WebPage',
         }),
     breadcrumbNode(input.breadcrumb),
-    ...(input.events ?? [])
+    ...(input.extraNodes ?? [])
   );
 
 const make = (
@@ -147,7 +150,7 @@ const make = (
     about?: JsonLdNode[];
     mentions?: JsonLdNode[];
     sources?: Source[];
-    events?: JsonLdNode[];
+    extraNodes?: JsonLdNode[];
   }
 ): PageMeta => ({
   title: meta.title,
@@ -167,7 +170,7 @@ const make = (
         about: meta.about,
         mentions: meta.mentions,
         sources: meta.sources,
-        events: meta.events,
+        extraNodes: meta.extraNodes,
       })
     : null,
 });
@@ -413,7 +416,7 @@ export function electionMeta(election: Election, catalog: Catalog): PageMeta {
     pattern: '/elections/[id]',
     name: election.title,
     dateModified: lastmodOf('/elections/[id]', catalog, { id: election.id }),
-    events: election.rounds
+    extraNodes: election.rounds
       // Une date « calculée, à confirmer » n'est pas une date officielle : aucun Event.
       .filter((round) => !stepLabel(round.label).note)
       .map((round) =>
@@ -427,6 +430,62 @@ export function electionMeta(election: Election, catalog: Catalog): PageMeta {
       ...election.summarySources,
       ...[...election.keyDates, ...election.rounds].flatMap((s) => s.sources),
     ],
+  });
+}
+
+export function lexiconMeta(catalog: Catalog): PageMeta {
+  const path = CONTENUS_2027_PATHS.lexicon;
+  const count = catalog.lexicon.length;
+  const name = 'Lexique de la politique française';
+  return make({
+    title: brandTitle(`${name} : ${count} mots expliqués`),
+    description: `${count} mots de la politique française en ordre alphabétique : 49.3, motion de censure, scrutin majoritaire, parrainages. Chaque définition est sourcée.`,
+    path,
+    breadcrumb: [HOME, { name: 'Comprendre', path: '/comprendre' }, { name: 'Lexique', path }],
+    kind: 'webpage',
+    pattern: '/comprendre/lexique',
+    name,
+    extraNodes: lexiconNodes(path, name, catalog.lexicon),
+  });
+}
+
+const featuredElectionCrumb = (catalog: Catalog) => {
+  const election = catalog.elections.find((e) => e.id === catalog.voter.electionId);
+  return {
+    name: election?.title ?? 'Élection présidentielle 2027',
+    path: CONTENUS_2027_PATHS.election,
+  };
+};
+
+export function faqMeta(catalog: Catalog): PageMeta {
+  const path = CONTENUS_2027_PATHS.faq;
+  const count = catalog.faq.length;
+  return make({
+    title: brandTitle(`Présidentielle 2027 : ${count} questions-réponses`),
+    description: `Dates, inscription, parrainages, procuration, second tour : ${count} questions sur la présidentielle 2027, avec une réponse courte et ses sources officielles.`,
+    path,
+    breadcrumb: [HOME, featuredElectionCrumb(catalog), { name: 'Questions-réponses', path }],
+    kind: 'webpage',
+    pattern: '/elections/presidentielle-2027/questions',
+    name: `Présidentielle 2027 : ${count} questions-réponses`,
+    extraNodes: [faqPageNode(path, catalog.faq)],
+  });
+}
+
+export function voterMeta(catalog: Catalog): PageMeta {
+  const path = CONTENUS_2027_PATHS.voter;
+  const { voter } = catalog;
+  return make({
+    title: brandTitle('Comment voter à la présidentielle 2027'),
+    description:
+      "S'inscrire, vérifier son bureau de vote, donner procuration, voter depuis l'étranger, pièce d'identité : tout pour voter en 2027, avec sources officielles.",
+    path,
+    breadcrumb: [HOME, featuredElectionCrumb(catalog), { name: 'Comment voter', path }],
+    kind: 'article',
+    pattern: '/elections/presidentielle-2027/voter',
+    name: voter.title,
+    dateModified: voter.lastVerified,
+    sources: [...voter.summarySources, ...voter.sections.flatMap((s) => s.sources)],
   });
 }
 
@@ -530,6 +589,12 @@ export function allPageMetas(catalog: Catalog): PageMeta[] {
         return guideSectionMeta(catalog.guide.find((s) => s.id === id)!);
       case '/debats/[id]':
         return debateMeta(catalog.themes.find((t) => t.id === id)!, catalog);
+      case '/comprendre/lexique':
+        return lexiconMeta(catalog);
+      case '/elections/presidentielle-2027/questions':
+        return faqMeta(catalog);
+      case '/elections/presidentielle-2027/voter':
+        return voterMeta(catalog);
       case '/elections/[id]':
         return electionMeta(catalog.elections.find((e) => e.id === id)!, catalog);
       case '/partis/comparer':

@@ -1,0 +1,934 @@
+[
+  {
+    "id": "article-49-3",
+    "term": "49.3",
+    "definition": "L'article 49, alinéa 3, de la Constitution permet au Premier ministre de faire adopter un texte sans vote des députés. En contrepartie, les députés peuvent déposer une motion de censure : si elle est adoptée, le texte est rejeté et le gouvernement doit démissionner.",
+    "more": [
+      "Les députés ont 24 heures pour déposer la motion de censure. Si aucune motion n'est déposée, ou si elle n'est pas adoptée, le texte est considéré comme adopté.",
+      "Depuis la révision constitutionnelle du 23 juillet 2008, le 49.3 peut être utilisé sans limite pour les lois de finances et les lois de financement de la sécurité sociale, et pour un seul autre texte par session.",
+      "Selon l'Assemblée nationale, il a été utilisé 23 fois sous la XVIe législature. En décembre 2024, une motion de censure déposée après un 49.3 sur le budget de la Sécurité sociale pour 2025 a été adoptée, et le gouvernement de Michel Barnier a démissionné."
+    ],
+    "related": ["budget-dette", "pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 49)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 64 : La mise en cause de la responsabilité du Gouvernement",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
+        "date": "2024-12",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "motion-de-censure",
+    "term": "Motion de censure",
+    "definition": "Une motion de censure permet aux députés de renverser le gouvernement. Si elle est adoptée par la majorité absolue des membres de l'Assemblée nationale, le Premier ministre doit remettre la démission du gouvernement au président de la République.",
+    "more": [
+      "Elle doit être signée par au moins un dixième des députés, soit 58 quand tous les sièges sont pourvus. Le vote ne peut avoir lieu que 48 heures après son dépôt, et seuls les votes favorables sont comptés.",
+      "Un député ne peut signer plus de trois motions de ce type par session ordinaire. Les motions déposées en réponse à un 49.3 ne comptent pas dans cette limite.",
+      "Selon la fiche de l'Assemblée nationale mise à jour en décembre 2024, deux motions de censure ont été adoptées depuis 1958 : en 1962 et le 4 décembre 2024."
+    ],
+    "related": ["institutions", "budget-dette"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 49 et 50)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 64 : La mise en cause de la responsabilité du Gouvernement",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
+        "date": "2024-12",
+        "kind": "statistique"
+      },
+      {
+        "title": "Lexique de l'Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "question-de-confiance",
+    "term": "Question de confiance",
+    "definition": "Le Premier ministre peut demander aux députés de voter sur son programme ou sur une déclaration de politique générale (article 49, alinéa 1). Si l'Assemblée nationale les désapprouve, le gouvernement doit démissionner.",
+    "more": [
+      "La décision est prise après délibération du Conseil des ministres. Le vote a lieu par scrutin public, à la majorité absolue des suffrages exprimés."
+    ],
+    "related": ["institutions"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 49 et 50)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 64 : La mise en cause de la responsabilité du Gouvernement",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
+        "date": "2024-12",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "dissolution",
+    "term": "Dissolution",
+    "definition": "La dissolution met fin au mandat de tous les députés avant son terme. Le président de la République la décide seul, après avoir consulté le Premier ministre et les présidents des deux assemblées ; de nouvelles élections législatives ont lieu 20 à 40 jours plus tard.",
+    "more": [
+      "Une nouvelle dissolution est impossible dans l'année qui suit ces élections. Elle est aussi impossible pendant l'application de l'article 16.",
+      "C'est un « pouvoir propre » : la décision n'a pas besoin de la signature du Premier ministre."
+    ],
+    "related": ["pouvoirs-du-president", "institutions"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 12 et 19)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Le rôle du Président de la République",
+        "url": "https://www.elysee.fr/la-presidence/le-role-du-president",
+        "date": "2022-12-15",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "cohabitation",
+    "term": "Cohabitation",
+    "definition": "Il y a cohabitation quand le président de la République et la majorité des députés appartiennent à des camps politiques opposés. Le président nomme alors un Premier ministre capable d'obtenir le soutien de l'Assemblée nationale.",
+    "more": [
+      "Le président garde ses pouvoirs propres (article 19 de la Constitution) et un rôle central en matière de défense, d'affaires étrangères et de justice.",
+      "Il y a eu trois cohabitations : en 1986 (François Mitterrand président, Jacques Chirac Premier ministre), en 1993 (François Mitterrand, Édouard Balladur) et en 1997 (Jacques Chirac, Lionel Jospin)."
+    ],
+    "related": ["pouvoirs-du-president", "institutions"],
+    "sources": [
+      {
+        "title": "Comment la Constitution organise-t-elle la cohabitation ?",
+        "url": "https://www.conseil-constitutionnel.fr/la-constitution/comment-la-constitution-organise-t-elle-la-cohabitation",
+        "date": "2021-10-01",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 8 et 19)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "referendum-article-11",
+    "term": "Référendum de l'article 11",
+    "definition": "Le président de la République peut soumettre directement un projet de loi aux électeurs, sur proposition du gouvernement ou des deux assemblées. Le sujet doit porter sur l'organisation des pouvoirs publics, la politique économique, sociale ou environnementale, ou la ratification de certains traités.",
+    "more": [
+      "La décision de recourir au référendum est un pouvoir propre du président : elle n'a pas besoin de la signature du Premier ministre."
+    ],
+    "related": ["pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 11)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Le rôle du Président de la République",
+        "url": "https://www.elysee.fr/la-presidence/le-role-du-president",
+        "date": "2022-12-15",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "referendum-initiative-partagee",
+    "term": "Référendum d'initiative partagée (RIP)",
+    "definition": "Le référendum d'initiative partagée part d'une proposition de loi signée par un cinquième des parlementaires et soutenue par un dixième des électeurs inscrits. Il est prévu par l'article 11 de la Constitution.",
+    "more": [
+      "La proposition ne peut pas abroger une loi promulguée depuis moins d'un an. Si une proposition est rejetée par référendum, aucune nouvelle proposition sur le même sujet ne peut être présentée avant deux ans."
+    ],
+    "related": ["pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 11)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "revision-constitutionnelle",
+    "term": "Révision de la Constitution (article 89)",
+    "definition": "Pour modifier la Constitution, le texte doit être voté dans les mêmes termes par l'Assemblée nationale et par le Sénat. Il est ensuite approuvé par référendum, ou par le Parlement réuni en Congrès à la majorité des trois cinquièmes des suffrages exprimés.",
+    "more": [
+      "L'initiative appartient au président de la République, sur proposition du Premier ministre, et aux parlementaires. Le passage par le Congrès plutôt que par le référendum n'est possible que pour un projet venu de l'exécutif.",
+      "Aucune révision n'est possible quand l'intégrité du territoire est menacée. La forme républicaine du gouvernement ne peut pas être révisée."
+    ],
+    "related": ["pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 89)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "congres",
+    "term": "Congrès",
+    "definition": "Le Congrès est la réunion des députés et des sénateurs en une seule assemblée, à Versailles. Il se réunit pour réviser la Constitution ou pour entendre une déclaration du président de la République.",
+    "more": [
+      "Pour réviser la Constitution, un projet doit y obtenir au moins trois cinquièmes des suffrages exprimés."
+    ],
+    "related": ["pouvoirs-du-president", "institutions"],
+    "sources": [
+      {
+        "title": "Lexique de l'Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 18 et 89)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "qpc",
+    "term": "Question prioritaire de constitutionnalité (QPC)",
+    "definition": "Lors d'un procès, une partie peut soutenir qu'une loi appliquée à son affaire porte atteinte aux droits et libertés garantis par la Constitution. Si le Conseil d'État ou la Cour de cassation transmet la question, le Conseil constitutionnel la juge et peut abroger la loi.",
+    "more": [
+      "La QPC existe depuis le 1er mars 2010. Elle a été créée par la révision constitutionnelle du 23 juillet 2008.",
+      "Trois conditions : la loi s'applique au litige, elle n'a pas déjà été déclarée conforme à la Constitution (sauf changement de circonstances), et la question est sérieuse.",
+      "Le Conseil d'État ou la Cour de cassation a trois mois pour décider de transmettre ; le Conseil constitutionnel a ensuite trois mois pour juger."
+    ],
+    "related": ["institutions"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 61-1)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "La question prioritaire de constitutionnalité",
+        "url": "https://www.conseil-constitutionnel.fr/les-membres/la-question-prioritaire-de-constitutionnalite",
+        "date": "2011-02-16",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "conseil-constitutionnel",
+    "term": "Conseil constitutionnel",
+    "definition": "Le Conseil constitutionnel vérifie que les lois respectent la Constitution. Il veille aussi à la régularité de l'élection présidentielle et en proclame les résultats.",
+    "more": [
+      "Il compte neuf membres nommés pour neuf ans, un mandat non renouvelable. Trois sont nommés par le président de la République, trois par le président de l'Assemblée nationale, trois par le président du Sénat. Le Conseil est renouvelé par tiers tous les trois ans.",
+      "Les anciens présidents de la République en sont membres de droit, à vie.",
+      "Il juge aussi les contestations des élections des députés et des sénateurs."
+    ],
+    "related": ["institutions", "election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 56, 58 et 61)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Le Conseil constitutionnel",
+        "url": "https://www.conseil-constitutionnel.fr/le-conseil-constitutionnel",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "parrainages",
+    "term": "Parrainages",
+    "definition": "Pour être candidat à l'élection présidentielle, il faut être présenté par au moins 500 élus (maires, parlementaires, conseillers départementaux et régionaux, notamment). On parle couramment de « parrainages » ; la loi parle de « présentations ».",
+    "more": [
+      "Ces élus doivent venir d'au moins 30 départements ou collectivités d'outre-mer, et pas plus d'un dixième d'entre eux du même département.",
+      "Les présentations doivent parvenir au Conseil constitutionnel au plus tard le sixième vendredi avant le premier tour, à 18 heures.",
+      "Le Conseil constitutionnel publie le nom et la qualité des élus qui ont présenté un candidat, au moins deux fois par semaine."
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "scrutin-majoritaire-deux-tours",
+    "term": "Scrutin majoritaire à deux tours",
+    "definition": "On vote pour une personne. Pour être élu au premier tour, il faut la majorité absolue des suffrages exprimés ; sinon, un second tour a lieu, où il suffit d'arriver en tête.",
+    "more": [
+      "C'est le mode de scrutin de l'élection présidentielle et des élections législatives.",
+      "À la présidentielle, seuls les deux candidats arrivés en tête au premier tour (après d'éventuels retraits) peuvent se présenter au second tour, quatorze jours plus tard.",
+      "Aux législatives, être élu au premier tour exige aussi d'avoir réuni un nombre de voix égal au quart des électeurs inscrits. En cas d'égalité au second tour, le candidat le plus âgé est élu."
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 7)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Code électoral, articles L123 à L126 (mode de scrutin des députés)",
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070239/LEGISCTA000006148464/",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "scrutin-proportionnel",
+    "term": "Scrutin proportionnel (proportionnelle)",
+    "definition": "On vote pour une liste, et les sièges sont répartis entre les listes selon leur part des voix. En France, les représentants au Parlement européen sont élus ainsi.",
+    "more": [
+      "Aux élections européennes, seules les listes ayant obtenu au moins 5 % des suffrages exprimés reçoivent des sièges. La répartition suit la règle de la « plus forte moyenne ».",
+      "Les sièges sont attribués aux candidats dans l'ordre de la liste. L'électeur ne peut ni modifier la liste ni voter pour un candidat en particulier."
+    ],
+    "related": ["union-europeenne"],
+    "sources": [
+      {
+        "title": "Loi n° 77-729 du 7 juillet 1977 relative à l'élection des représentants au Parlement européen (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/article_lc/LEGIARTI000037103519",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "majorite-absolue",
+    "term": "Majorité absolue",
+    "definition": "La majorité absolue, c'est plus de la moitié des voix comptées. À l'Assemblée nationale, la majorité absolue des 577 députés est de 289 sièges.",
+    "more": [
+      "Pour être élu président au premier tour, il faut la majorité absolue des suffrages exprimés.",
+      "Une motion de censure doit être adoptée à la majorité absolue des membres qui composent l'Assemblée, et pas seulement des présents."
+    ],
+    "related": ["pouvoirs-du-president", "election-presidentielle"],
+    "sources": [
+      {
+        "title": "Code électoral, articles LO119 à LO122 (composition de l'Assemblée nationale et durée du mandat des députés)",
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070239/LEGISCTA000006148463/",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 7 et 49)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "majorite-relative",
+    "term": "Majorité relative",
+    "definition": "Avoir la majorité relative, c'est obtenir plus de voix ou de sièges que chacun des autres, sans dépasser la moitié. Au second tour des élections législatives, la majorité relative suffit pour être élu.",
+    "more": [
+      "À l'Assemblée nationale, on parle de majorité relative quand le groupe ou la coalition le plus nombreux a moins de 289 sièges : le gouvernement doit alors chercher d'autres soutiens pour faire adopter ses textes."
+    ],
+    "related": ["pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Code électoral, articles L123 à L126 (mode de scrutin des députés)",
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070239/LEGISCTA000006148464/",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "suffrages-exprimes",
+    "term": "Suffrages exprimés",
+    "definition": "Les suffrages exprimés sont les bulletins valables portant le nom d'un candidat ou d'une liste. Les votes blancs et nuls n'en font pas partie : ils sont comptés parmi les votants, pas dans les résultats.",
+    "more": [
+      "Les résultats de l'élection présidentielle (y compris la majorité absolue nécessaire au premier tour) sont calculés sur les suffrages exprimés."
+    ],
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Élections politiques : déroulement du scrutin",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
+        "date": "2025-10-13",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "vote-blanc",
+    "term": "Vote blanc et vote nul",
+    "definition": "Un vote blanc est une enveloppe vide ou un bulletin sans nom de candidat. Un vote nul est par exemple un bulletin déchiré ou annoté.",
+    "more": [
+      "Les votes blancs et nuls sont comptés parmi les votants, mais pas parmi les suffrages exprimés."
+    ],
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Élections politiques : déroulement du scrutin",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
+        "date": "2025-10-13",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "navette-parlementaire",
+    "term": "Navette parlementaire",
+    "definition": "La navette, ce sont les allers-retours d'un projet ou d'une proposition de loi entre l'Assemblée nationale et le Sénat. Elle s'arrête quand les deux assemblées ont adopté le même texte.",
+    "more": [
+      "À chaque lecture, seuls les articles qui n'ont pas encore été adoptés dans les mêmes termes sont discutés.",
+      "Si les deux assemblées restent en désaccord, le Premier ministre peut réunir une commission mixte paritaire. En dernier recours, le gouvernement peut demander à l'Assemblée nationale de statuer définitivement."
+    ],
+    "related": ["institutions", "pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Fiche de synthèse n° 46 : La procédure législative",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+        "date": "2025-05",
+        "kind": "statistique"
+      },
+      {
+        "title": "Lexique de l'Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 45)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "commission-mixte-paritaire",
+    "term": "Commission mixte paritaire (CMP)",
+    "definition": "La commission mixte paritaire réunit sept députés et sept sénateurs pour proposer un texte commun quand les deux assemblées ne sont pas d'accord sur une loi. Elle est convoquée à l'initiative du gouvernement.",
+    "more": [
+      "Elle se réunit normalement après deux lectures dans chaque assemblée, ou une seule si le gouvernement a engagé la « procédure accélérée ».",
+      "Si elle échoue, le gouvernement peut, après une nouvelle lecture, donner le dernier mot à l'Assemblée nationale (« lecture définitive »)."
+    ],
+    "related": ["institutions"],
+    "sources": [
+      {
+        "title": "Lexique de l'Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 46 : La procédure législative",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+        "date": "2025-05",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 45)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "projet-et-proposition-de-loi",
+    "term": "Projet de loi et proposition de loi",
+    "definition": "Un projet de loi est un texte présenté par le gouvernement. Une proposition de loi est un texte déposé par des députés ou des sénateurs.",
+    "more": [
+      "Les projets de loi sont délibérés en Conseil des ministres après avis du Conseil d'État.",
+      "Une proposition de loi ne peut pas diminuer les ressources publiques ni créer ou aggraver une charge publique (article 40 de la Constitution)."
+    ],
+    "related": ["institutions", "pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 39 et 40)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 46 : La procédure législative",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+        "date": "2025-05",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "promulgation",
+    "term": "Promulgation",
+    "definition": "La promulgation est la signature, par le président de la République, d'une loi définitivement adoptée, qui permet de la publier au Journal officiel. Il dispose de quinze jours pour le faire.",
+    "more": [
+      "Avant la fin de ce délai, le président peut demander au Parlement une nouvelle délibération de la loi, qui ne peut pas être refusée.",
+      "Si le Conseil constitutionnel est saisi, le délai de promulgation est suspendu."
+    ],
+    "related": ["institutions"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 10)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 46 : La procédure législative",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+        "date": "2025-05",
+        "kind": "statistique"
+      },
+      {
+        "title": "Le rôle du Président de la République",
+        "url": "https://www.elysee.fr/la-presidence/le-role-du-president",
+        "date": "2022-12-15",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "loi-de-finances",
+    "term": "Loi de finances (budget de l'État)",
+    "definition": "La loi de finances prévoit et autorise, pour une année, les recettes et les dépenses de l'État. Seul le gouvernement peut présenter un projet de loi de finances (PLF).",
+    "more": [
+      "Le projet de loi de finances de l'année doit être déposé au plus tard le premier mardi d'octobre, d'abord à l'Assemblée nationale.",
+      "Le Parlement a 70 jours pour se prononcer. Passé ce délai, le gouvernement peut mettre le projet en vigueur par ordonnance.",
+      "Il existe aussi des lois de finances rectificatives, une loi de fin de gestion et une loi d'approbation des comptes."
+    ],
+    "related": ["budget-dette"],
+    "sources": [
+      {
+        "title": "Fiche de synthèse n° 53 : L'examen parlementaire des lois de finances",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-examen-parlementaire-des-lois-de-finances",
+        "date": "2022-09",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 47)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "plfss",
+    "term": "Loi de financement de la sécurité sociale (PLFSS)",
+    "definition": "La loi de financement de la sécurité sociale fixe chaque année les prévisions de recettes et les objectifs de dépenses de la Sécurité sociale : maladie, retraites, famille, accidents du travail, autonomie. Avant son vote, on parle de « projet de loi de financement » (PLFSS).",
+    "more": [
+      "Elle a été créée par la révision constitutionnelle du 22 février 1996. Ce n'est pas un budget au sens strict : elle fixe des objectifs, dont l'objectif national de dépenses d'assurance maladie (Ondam).",
+      "Le Parlement a 50 jours pour se prononcer. Passé ce délai, le gouvernement peut la mettre en vigueur par ordonnance."
+    ],
+    "related": ["budget-dette"],
+    "sources": [
+      {
+        "title": "Fiche de synthèse n° 54 : L'examen parlementaire des projets de loi de financement de la sécurité sociale",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-examen-parlementaire-des-projets-de-loi-de-financement-de-la-securite-sociale",
+        "date": "2023-09",
+        "kind": "statistique"
+      },
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 47-1)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "ordonnance",
+    "term": "Ordonnance",
+    "definition": "Une ordonnance est un texte pris par le gouvernement dans un domaine qui relève normalement de la loi, après autorisation du Parlement. Elle est adoptée en Conseil des ministres après avis du Conseil d'État.",
+    "more": [
+      "L'autorisation est donnée pour un temps limité, par une loi d'habilitation. L'ordonnance devient caduque si le projet de loi de ratification n'est pas déposé avant la date fixée.",
+      "Elle ne peut être ratifiée que de manière expresse, par un vote du Parlement."
+    ],
+    "related": ["institutions"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 38)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "article-16",
+    "term": "Article 16 (pouvoirs exceptionnels)",
+    "definition": "L'article 16 permet au président de la République de prendre les mesures exigées par les circonstances en cas de menace grave et immédiate sur les institutions, l'indépendance du pays ou l'intégrité du territoire, quand le fonctionnement des pouvoirs publics est interrompu.",
+    "more": [
+      "Il doit d'abord consulter officiellement le Premier ministre, les présidents des assemblées et le Conseil constitutionnel. Le Parlement se réunit de plein droit et l'Assemblée nationale ne peut pas être dissoute.",
+      "Après 30 jours, le Conseil constitutionnel peut être saisi pour vérifier si les conditions sont toujours réunies. Il se prononce de lui-même après 60 jours, puis à tout moment au-delà."
+    ],
+    "related": ["pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 16 et 19)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Le rôle du Président de la République",
+        "url": "https://www.elysee.fr/la-presidence/le-role-du-president",
+        "date": "2022-12-15",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "pouvoirs-propres",
+    "term": "Pouvoirs propres du président",
+    "definition": "Les pouvoirs propres sont les décisions que le président de la République prend seul, sans la signature (le « contreseing ») du Premier ministre. Ils sont énumérés à l'article 19 de la Constitution.",
+    "more": [
+      "Il s'agit notamment de nommer le Premier ministre, de soumettre un projet de loi au référendum, de dissoudre l'Assemblée nationale, de mettre en œuvre l'article 16, d'adresser des messages au Parlement, de nommer trois membres du Conseil constitutionnel et de le saisir.",
+      "Les autres actes du président (nommer les ministres, signer les décrets et les ordonnances, promulguer les lois…) doivent être contresignés par le Premier ministre et, le cas échéant, par les ministres concernés."
+    ],
+    "related": ["pouvoirs-du-president"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 19)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Le rôle du Président de la République",
+        "url": "https://www.elysee.fr/la-presidence/le-role-du-president",
+        "date": "2022-12-15",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "groupe-parlementaire",
+    "term": "Groupe parlementaire",
+    "definition": "Un groupe parlementaire réunit des députés selon leurs affinités politiques. À l'Assemblée nationale, il faut au moins 15 députés pour former un groupe.",
+    "more": [
+      "Un groupe se constitue en remettant à la présidence de l'Assemblée une déclaration politique signée par ses membres. Un député ne peut appartenir qu'à un seul groupe.",
+      "Un groupe peut se déclarer d'opposition ; il bénéficie alors de droits spécifiques (article 51-1 de la Constitution). Les groupes qui ne se déclarent pas d'opposition, sauf le plus nombreux, sont dits « minoritaires ».",
+      "Les groupes sont distincts juridiquement des partis politiques."
+    ],
+    "related": ["institutions", "classement-des-partis"],
+    "sources": [
+      {
+        "title": "Fiche de synthèse : Les groupes politiques",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/deputes-groupes-parlementaires/les-groupes-politiques",
+        "date": "2023-09",
+        "kind": "statistique"
+      },
+      {
+        "title": "Lexique de l'Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "non-inscrit",
+    "term": "Député non inscrit",
+    "definition": "Un député non inscrit n'appartient à aucun groupe parlementaire et n'est rattaché à aucun groupe comme « apparenté ».",
+    "more": [
+      "Un député peut être « apparenté » à un groupe avec l'accord de son bureau : il n'est pas compté pour atteindre le seuil de 15 membres, mais il l'est pour les autres règles de fonctionnement."
+    ],
+    "related": ["institutions"],
+    "sources": [
+      {
+        "title": "Fiche de synthèse : Les groupes politiques",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/deputes-groupes-parlementaires/les-groupes-politiques",
+        "date": "2023-09",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "legislature",
+    "term": "Législature",
+    "definition": "La législature est la période pendant laquelle une Assemblée nationale élue exerce ses pouvoirs, normalement cinq ans. Elle prend fin plus tôt en cas de dissolution.",
+    "more": [
+      "Les pouvoirs de l'Assemblée expirent le troisième mardi de juin de la cinquième année qui suit son élection. Hors dissolution, les élections législatives ont lieu dans les 60 jours qui précèdent."
+    ],
+    "related": ["institutions", "election-presidentielle"],
+    "sources": [
+      {
+        "title": "Lexique de l'Assemblée nationale",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Code électoral, articles LO119 à LO122 (composition de l'Assemblée nationale et durée du mandat des députés)",
+        "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000006070239/LEGISCTA000006148463/",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "primaire",
+    "term": "Primaire",
+    "definition": "Une primaire est un vote organisé par un ou plusieurs partis pour désigner leur candidat unique à une élection. Ce sont les partis organisateurs qui la mettent en place et la financent.",
+    "more": [
+      "Les dépenses d'organisation de la primaire restent à la charge du ou des partis organisateurs. En revanche, les dépenses du candidat désigné pour se faire connaître au-delà des adhérents entrent dans son compte de campagne présidentielle, selon la Commission nationale des comptes de campagne."
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Guide à l'usage des candidats à l'élection du Président de la République et de leur mandataire, édition 2026-2027",
+        "url": "https://cnccfp.fr/wp-content/uploads/2026/04/Guide-a-lusage-des-candidats-a-lelection-du-President-de-la-Republique-2027.pdf",
+        "date": "2026-06-11",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "quinquennat",
+    "term": "Quinquennat",
+    "definition": "Le quinquennat est le mandat de cinq ans du président de la République. Nul ne peut exercer plus de deux mandats consécutifs.",
+    "more": [
+      "Le mandat était de sept ans (septennat) jusqu'au référendum du 24 septembre 2000, où le « oui » a obtenu 73 % des suffrages exprimés. La loi constitutionnelle a été promulguée le 2 octobre 2000."
+    ],
+    "related": ["institutions", "election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 6)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Référendum sur le quinquennat",
+        "url": "https://www.conseil-constitutionnel.fr/evenements/referendum-sur-le-quinquennat",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "suffrage-universel-direct",
+    "term": "Suffrage universel direct",
+    "definition": "Le suffrage est universel quand tous les citoyens majeurs jouissant de leurs droits civils et politiques peuvent voter. Il est direct quand les électeurs choisissent eux-mêmes l'élu, comme pour le président de la République.",
+    "more": ["La Constitution précise que le suffrage est « toujours universel, égal et secret »."],
+    "related": ["election-presidentielle", "comment-voter"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 3 et 6)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "decret-de-convocation",
+    "term": "Décret de convocation des électeurs",
+    "definition": "Le décret de convocation fixe officiellement la date d'une élection. Pour l'élection présidentielle, il doit être publié au moins dix semaines avant le premier tour.",
+    "more": [
+      "Pour 2027, les dates ont été annoncées après le Conseil des ministres du 1er juillet 2026 : le 18 avril et le 2 mai 2027."
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 1er bis)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Élection présidentielle 2027 : les dates sont connues",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053",
+        "date": "2026-07-02",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "interim-presidentiel",
+    "term": "Intérim du président de la République",
+    "definition": "Si le président de la République meurt, démissionne ou est empêché, ses fonctions sont exercées provisoirement par le président du Sénat. Une nouvelle élection a alors lieu 20 à 35 jours après le début de la vacance.",
+    "more": [
+      "Pendant l'intérim, le président du Sénat ne peut ni recourir au référendum (article 11) ni dissoudre l'Assemblée nationale (article 12)."
+    ],
+    "related": ["institutions", "election-presidentielle"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 7)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "compte-de-campagne",
+    "term": "Compte de campagne",
+    "definition": "Le compte de campagne retrace toutes les recettes et les dépenses engagées par un candidat pour obtenir les suffrages des électeurs. Les dépenses sont plafonnées, et le compte est contrôlé par la Commission nationale des comptes de campagne (CNCCFP).",
+    "more": [
+      "Pour 2027, le plafond est de 16,851 millions d'euros pour un candidat présent au premier tour, et de 22,509 millions d'euros pour les deux candidats du second tour.",
+      "Tout candidat doit désigner un mandataire financier, seul habilité à recueillir les fonds et à payer les dépenses.",
+      "Le compte doit être déposé au plus tard à 18 heures le onzième vendredi après le premier tour."
+    ],
+    "related": ["election-presidentielle"],
+    "sources": [
+      {
+        "title": "Guide à l'usage des candidats à l'élection du Président de la République et de leur mandataire, édition 2026-2027",
+        "url": "https://cnccfp.fr/wp-content/uploads/2026/04/Guide-a-lusage-des-candidats-a-lelection-du-President-de-la-Republique-2027.pdf",
+        "date": "2026-06-11",
+        "kind": "statistique"
+      },
+      {
+        "title": "Élection du Président de la République 2027",
+        "url": "https://cnccfp.fr/elections/election-du-president-de-la-republique-2027/",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "temps-de-parole",
+    "term": "Temps de parole",
+    "definition": "Pendant l'élection présidentielle, les radios et télévisions doivent respecter des règles de temps de parole entre candidats : l'équité, puis l'égalité stricte pendant la campagne officielle. L'Arcom contrôle ces règles.",
+    "more": [
+      "Le principe d'équité s'applique de la publication de la liste des candidats jusqu'à la veille de la campagne officielle. Le principe d'égalité s'applique ensuite, jusqu'au tour où l'élection est acquise.",
+      "Le 9 juillet 2026, l'Arcom a annoncé qu'elle publierait à l'automne ses recommandations pour l'élection présidentielle de 2027."
+    ],
+    "related": ["election-presidentielle", "desinformation"],
+    "sources": [
+      {
+        "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+        "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Pluralisme politique : l'Arcom publie son rapport sur la campagne des municipales et précise les modalités de mesure des temps de parole des personnalités politiques",
+        "url": "https://www.arcom.fr/presse/pluralisme-politique-larcom-publie-son-rapport-sur-la-campagne-des-municipales-et-precise-les-modalites-de-mesure-des-temps-de-parole-des-personnalites-politiques",
+        "date": "2026-07-09",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "procuration",
+    "term": "Procuration",
+    "definition": "La procuration permet à un électeur absent (le « mandant ») de confier son vote à un autre électeur (le « mandataire »), qui vote à sa place dans son bureau de vote.",
+    "more": [
+      "Le mandataire peut être inscrit dans une autre commune, mais il vote dans le bureau du mandant. En France, il ne peut détenir qu'une seule procuration établie en France.",
+      "La demande se fait sur Maprocuration, puis par une vérification d'identité au commissariat ou à la gendarmerie. Depuis un décret du 3 novembre 2025, elle peut se faire entièrement en ligne avec une identité numérique certifiée France Identité."
+    ],
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Vote par procuration - En France",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/2_0",
+        "date": "2026-02-02",
+        "kind": "statistique"
+      },
+      {
+        "title": "Décret n° 2025-1059 du 3 novembre 2025 relatif à la dématérialisation complète de l'établissement et de la résiliation d'une procuration",
+        "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000052533291",
+        "date": "2025-11-07",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "liste-electorale",
+    "term": "Liste électorale",
+    "definition": "Pour voter, il faut être inscrit sur la liste électorale d'une commune ou sur une liste électorale consulaire à l'étranger. Pour participer à un scrutin, la demande d'inscription doit être déposée au plus tard le sixième vendredi qui le précède.",
+    "more": [
+      "Depuis le 1er juillet 2026, la date limite est la même en ligne, en mairie et par courrier.",
+      "Les jeunes qui ont fait leur recensement citoyen sont inscrits d'office à 18 ans."
+    ],
+    "related": ["comment-voter"],
+    "sources": [
+      {
+        "title": "Code électoral, article L17",
+        "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032964790",
+        "date": "2026-11-08",
+        "kind": "statistique"
+      },
+      {
+        "title": "Listes électorales : en cas de première inscription",
+        "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1367",
+        "date": "2026-03-03",
+        "kind": "statistique"
+      },
+      {
+        "title": "Inscription sur les listes électorales : des changements à partir de juillet 2026",
+        "url": "https://www.service-public.gouv.fr/particuliers/actualites/A18967",
+        "date": "2026-06-18",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-08"
+  }
+]

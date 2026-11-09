@@ -9,34 +9,15 @@ import { Pressable } from '@/components/ui/Pressable';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
+import { GuideParagraph } from '@/src/programmes/components/GuideParagraph';
 import { MoreText } from '@/src/programmes/components/MoreText';
 import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { splitBullets } from '@/src/programmes/models/presentation.service';
 import {
   guideSectionViewModel,
   guideViewModel,
 } from '@/src/programmes/view-models/guide.view-model';
-
-/** Un paragraphe du guide ; une ligne « - … » devient une puce. */
-function GuideParagraph({ text, small = false }: { text: string; small?: boolean }) {
-  const { colors, effects } = useTheme();
-  const { lead, bullets } = splitBullets(text);
-  const style = small
-    ? { fontSize: 15, lineHeight: 23, color: colors.text.secondary }
-    : { fontSize: 17, lineHeight: 27 };
-  return (
-    <View style={{ gap: effects.spacing.xxs }}>
-      <Text style={style}>{lead}</Text>
-      {bullets.map((bullet) => (
-        <Text key={bullet} style={[style, { paddingLeft: effects.spacing.sm }]}>
-          {`• ${bullet}`}
-        </Text>
-      ))}
-    </View>
-  );
-}
 
 export default function GuideSectionScreen() {
   const { id } = useLocalSearchParams<{ id: string }>();
