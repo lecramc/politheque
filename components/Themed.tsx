@@ -152,9 +152,9 @@ export function Text(props: TextProps) {
       )
     : typeset;
   // Sur le web, les styles restent des références (classes) au lieu d'être fusionnés en un objet
-  // en ligne. Exception : un texte portant un crochet `data-tv` garde le style fusionné, pour que
-  // la feuille responsive ne surcharge pas ses classes (comportement historique).
-  const byReference = isWeb && !('dataSet' in otherProps);
+  // en ligne. Y compris pour un texte portant un crochet `data-tv` : un style en ligne l'emporterait
+  // sur la feuille responsive (`footer-text`, `title-regular`, `party-name` n'avaient aucun effet).
+  const byReference = isWeb;
   return (
     <DefaultText
       style={

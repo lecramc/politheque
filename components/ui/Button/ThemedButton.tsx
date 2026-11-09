@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleProp, TouchableOpacity, TouchableOpacityProps, ViewStyle } from 'react-native';
 
+import { tv } from '@/src/core/web/tv';
+
 import { useTheme } from '../../ThemeContext';
 
 export type VariantType = 'tint' | 'primary' | 'secondary' | 'tertiary' | 'danger';
@@ -112,6 +114,8 @@ export function ThemedButton({
 
   return (
     <TouchableOpacity
+      // Web : anneau de focus clavier de 2 px `tint`, comme le reste du site (feuille `layout-css`).
+      {...tv('focus-ring')}
       style={[getButtonStyle(), style]}
       activeOpacity={0.7}
       onPress={onPress}

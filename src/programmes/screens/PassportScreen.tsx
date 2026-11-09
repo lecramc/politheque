@@ -15,6 +15,13 @@ import { StampGrid } from '@/src/programmes/components/StampGrid';
 import { JOURNEY_COPY } from '@/src/programmes/models/journey.copy';
 import { passportViewModel } from '@/src/programmes/view-models/passport.view-model';
 
+/** Fil d'Ariane visible (desktop) : la page est sous la rubrique Comprendre. Non indexée : pas de JSON-LD. */
+const PASSPORT_TRAIL = [
+  { name: 'Accueil', path: '/' },
+  { name: 'Comprendre', path: '/comprendre' },
+  { name: JOURNEY_COPY.passportHeading, path: '/passeport' },
+];
+
 /**
  * Passeport du citoyen : tampons d'étape, détail par partis et débats.
  * Aucun partage, aucun résultat du questionnaire, aucune date de lecture.
@@ -28,6 +35,7 @@ export default function PassportScreen() {
   return (
     <Page
       title={JOURNEY_COPY.passportHeading}
+      breadcrumb={PASSPORT_TRAIL}
       loading={vm.status !== 'loaded'}
       back={{ label: JOURNEY_COPY.back, href: '/comprendre' }}
     >

@@ -20,7 +20,7 @@ import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
-import { splitFigure } from '@/src/programmes/models/key-figure.service';
+import { figureColumns, splitFigure } from '@/src/programmes/models/key-figure.service';
 import { displayName, firstSentence } from '@/src/programmes/models/presentation.service';
 import type {
   KeyFigure,
@@ -131,25 +131,14 @@ export default function ThemeScreen() {
                 </Text>
               </MoreText>
             ) : null}
-            <View style={{ alignSelf: 'flex-start' }}>
-              <Button
-                variant="secondary"
-                fullWidth={false}
-                onPress={() => {
-                  setMode('comparer');
-                  scrollToId('partis');
-                }}
-              >
-                Comparer deux partis sur ce débat
-              </Button>
-            </View>
           </View>
 
           <View nativeID="chiffres-cles" style={{ gap: effects.spacing.xs }}>
             <Text variant="caption" headingLevel={2}>
               Chiffres clés
             </Text>
-            {/* Sous 1024 px : défilement horizontal. Dès 1024 px : grille de 3 colonnes (CSS). */}
+            {/* Sous 1024 px : défilement horizontal. Dès 1024 px : grille de 3 colonnes (2 si une carte
+                resterait seule sur la dernière ligne), par CSS. */}
             <Only below="lg">
               <ScrollView
                 horizontal
@@ -164,7 +153,13 @@ export default function ThemeScreen() {
               </ScrollView>
             </Only>
             {Platform.OS === 'web' ? (
-              <View {...tv('only-from-lg', 'grid-3-lg')}>
+              <View
+                {...tv(
+                  'only-from-lg',
+                  figureColumns(theme.keyFigures.length) === 2 ? 'grid-2-lg' : 'grid-3-lg',
+                  'grid-stretch'
+                )}
+              >
                 {theme.keyFigures.map((figure) => (
                   <KeyFigureCard key={figure.label} figure={figure} />
                 ))}

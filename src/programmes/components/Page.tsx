@@ -247,6 +247,8 @@ export function Page({
       : meta;
   const trail = breadcrumb ?? headMeta?.breadcrumb ?? [];
   const showTabBar = !focus;
+  // Sans rail, une page `object` est une colonne de lecture centrée (voir `RailLayout`).
+  const solo = template === 'object' && !rail;
   // Le bandeau « Version bêta » n'est affiché que sur l'accueil et la méthodologie ; ailleurs, la
   // mention est dans le pied de page. Le chemin est connu au rendu statique : premier rendu identique.
   const showBetaBanner = BETA_BANNER_PATHS.includes(canonicalPath(pathname));
@@ -316,23 +318,27 @@ export function Page({
         }}
       >
         <View {...tv('container')} style={styles.headerInner}>
+          {/* Trois emplacements : les deux extrémités ont la même largeur (`flex: 1`), la navigation
+              est donc sur l'axe de la page, comme la colonne de contenu et le pied de page. */}
           {/* Une seule arborescence : la CSS choisit la variante (mobile < 768 px, desktop). */}
-          {back ? (
-            <>
-              <Only below="md">
-                <Link href={back.href as never} asChild>
-                  <Pressable accessibilityRole="link" style={styles.headerButton}>
-                    <Text style={{ ...fonts.bold, color: colors.tint, fontSize: 16 }}>
-                      ‹ {back.label}
-                    </Text>
-                  </Pressable>
-                </Link>
-              </Only>
-              <Only from="md">{logo}</Only>
-            </>
-          ) : (
-            logo
-          )}
+          <View style={styles.headerSlot}>
+            {back ? (
+              <>
+                <Only below="md">
+                  <Link href={back.href as never} asChild>
+                    <Pressable accessibilityRole="link" style={styles.headerButton}>
+                      <Text style={{ ...fonts.bold, color: colors.tint, fontSize: 16 }}>
+                        ‹ {back.label}
+                      </Text>
+                    </Pressable>
+                  </Link>
+                </Only>
+                <Only from="md">{logo}</Only>
+              </>
+            ) : (
+              logo
+            )}
+          </View>
 
           {focus ? null : (
             <View
@@ -352,9 +358,11 @@ export function Page({
                         { backgroundColor: active ? colors.tintSoft : 'transparent' },
                       ])}
                     >
+                      {/* Graisse constante : l'état actif tient au fond et à la couleur, sans
+                          que la largeur de la rubrique (donc ses voisines) change d'une page à l'autre. */}
                       <Text
                         style={{
-                          ...(active ? fonts.bold : fonts.regular),
+                          ...fonts.regular,
                           color: active ? colors.tint : colors.text.primary,
                         }}
                       >
@@ -374,8 +382,10 @@ export function Page({
               </TextLink>
             </Only>
           ) : null}
-          {focus ? null : <ElectionChip />}
-          {focus && back ? <Only below="md">{methodologyLink}</Only> : methodologyLink}
+          <View style={[styles.headerSlot, styles.headerSlotEnd]}>
+            {focus ? null : <ElectionChip />}
+            {focus && back ? <Only below="md">{methodologyLink}</Only> : methodologyLink}
+          </View>
         </View>
       </View>
       <View {...tv('no-print')}>
@@ -432,7 +442,9 @@ export function Page({
               style={{ gap: effects.spacing.lg }}
             >
               {trail.length > 1 ? (
-                <View {...tv('no-print')}>
+                // Colonne seule (ni rail ni page pleine largeur) : le fil d'Ariane suit le bord
+                // gauche de la colonne centrée.
+                <View {...(solo ? tv('no-print', 'solo') : tv('no-print'))}>
                   <Only from="md">
                     <Breadcrumb trail={trail} />
                   </Only>
@@ -511,10 +523,12 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   headerButton: { minHeight: 44, minWidth: 44, justifyContent: 'center' },
+  // Extrémités de l'en-tête : même `flex: 1`, donc la rubrique du milieu est sur l'axe de la page.
+  headerSlot: { flex: 1, flexDirection: 'row', alignItems: 'center' },
+  headerSlotEnd: { justifyContent: 'flex-end', gap: theme.effects.spacing.sm },
   desktopNav: {
     flexDirection: 'row',
     gap: theme.effects.spacing.xxs,
-    flex: 1,
     justifyContent: 'center',
   },
   desktopNavItem: {

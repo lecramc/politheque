@@ -27,18 +27,26 @@ export function AxisChart({
   user,
   parties,
   showEurope = true,
+  large = false,
 }: {
   axes: Axis[];
   user: AxisPosition;
   parties: { party: Party; position: AxisPosition }[];
   /** Faux : seule la carte à deux axes ; l'axe « Europe » est dans « Voir la carte complète ». */
   showEurope?: boolean;
+  /**
+   * Carte posée dans la colonne de la page (et non dans une feuille) : tracé plus grand, pour
+   * écarter les points et limiter les étiquettes superposées (LFI, Écologistes, PS-PP, PCF).
+   */
+  large?: boolean;
 }) {
   const { colors, fonts } = useTheme();
   // Mesure du tracé, pas mise en page : la carte n'existe qu'après le questionnaire (rendu client
-  // uniquement, jamais dans le HTML statique). 460 px dès 1024 px, 420 px au plus sinon.
+  // uniquement, jamais dans le HTML statique). 460 px dès 1024 px, 420 px au plus sinon ; 560 px
+  // pour la carte de la page dès 1024 px (la colonne de 640 px minimum laisse 598 px utiles).
   const { width } = useWindowDimensions();
-  const size = Math.min(width >= 1024 ? 460 : 420, width - 80);
+  const base = width >= 1024 ? (large ? 560 : 460) : 420;
+  const size = Math.min(base, width - 80);
   const eco = axes.find((a) => a.id === 'economique');
   const soc = axes.find((a) => a.id === 'societal');
   const eu = axes.find((a) => a.id === 'europe');

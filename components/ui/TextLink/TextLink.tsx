@@ -38,6 +38,8 @@ export function TextLink({
       style={[
         { ...fonts.regular, color: colors.tint, textDecorationLine: 'underline' },
         size ? { fontSize: size } : null,
+        // Seul sur sa ligne : la zone cliquable et le survol épousent le texte, pas la colonne.
+        standalone ? { alignSelf: 'flex-start' } : null,
         style,
       ]}
     >

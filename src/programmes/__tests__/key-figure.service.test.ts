@@ -1,4 +1,14 @@
-import { splitFigure } from '@/src/programmes/models/key-figure.service';
+import { figureColumns, splitFigure } from '@/src/programmes/models/key-figure.service';
+
+describe('Feature: grille des chiffres clés', () => {
+  it('should use three columns when the last row is not a lone card', () => {
+    expect([3, 5, 6].map(figureColumns)).toEqual([3, 3, 3]);
+  });
+
+  it('should use two columns when a third column would leave one orphan card', () => {
+    expect([4, 7].map(figureColumns)).toEqual([2, 2]);
+  });
+});
 
 describe('Feature: chiffre clé, valeur et précision', () => {
   it('should keep a short value as the headline', () => {

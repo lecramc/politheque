@@ -204,8 +204,11 @@ export default function QuizScreen() {
                   borderRadius: effects.borderRadius.small,
                   borderWidth: 1.5,
                   borderStyle: 'dashed',
-                  borderColor: selectedValue === null ? colors.tint : colors.surface.border.primary,
-                  backgroundColor: selectedValue === null ? colors.tintSoft : 'transparent',
+                  // Même contour que les autres réponses (visible), en pointillé : réponse « neutre ».
+                  borderColor:
+                    selectedValue === null ? colors.tint : colors.surface.border.tertiary,
+                  backgroundColor:
+                    selectedValue === null ? colors.tintSoft : colors.surface.primary,
                 }}
               >
                 <Text

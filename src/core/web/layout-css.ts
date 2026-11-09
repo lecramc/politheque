@@ -33,6 +33,10 @@ export const layoutCss: string = [
   `${sel('text-link')}:hover {\n  text-decoration-thickness: 2px;\n}`,
   `${sel('text-link')}:focus-visible {\n  outline: 2px solid currentColor;\n  outline-offset: 2px;\n  border-radius: 4px;\n}`,
 
+  // Boutons (ThemedButton, hors Pressable) : même anneau de focus clavier que le reste du site,
+  // 2 px de la couleur `tint`, à l'extérieur, au lieu de l'anneau bleu du navigateur.
+  `${sel('focus-ring')}:focus-visible {\n  outline: 2px solid var(--tint);\n  outline-offset: 2px;\n}`,
+
   // Zone tappable (composant Pressable) : état de repos, identique pour toutes. Le survol, l'appui,
   // le focus et l'état désactivé sont en ligne (ils l'emportent sur cette règle). `press-in` :
   // anneau de focus tracé à l'intérieur de la boîte.
@@ -89,13 +93,23 @@ export const layoutCss: string = [
     ['container'],
     `max-width: ${container + gutter.lg * 2}px; padding-left: ${gutter.lg}px; padding-right: ${gutter.lg}px;`
   ),
+  // Rail + colonne remplissent le conteneur de l'en-tête : la colonne va jusqu'à 768 px et, s'il reste
+  // de la place (1152 à 1199 px de fenêtre), la gouttière grandit au lieu de laisser un vide à droite.
   rule(
     ['rail-layout'],
-    `display: grid; grid-template-columns: ${rail.lg}px minmax(0, 1fr); column-gap: ${railGap.lg}px; align-items: start;`
+    `display: grid; grid-template-columns: ${rail.lg}px minmax(0, ${main.xl}px); column-gap: ${railGap.lg}px; justify-content: space-between; align-items: start;`
   ),
   rule(['rail'], `position: sticky; top: ${railTop}px;`),
-  rule(['main'], `max-width: ${main.lg}px;`),
-  rule(['list-col'], `max-width: ${main.xl}px;`),
+  // Rail étroit (264 px entre 1024 et 1199 px) : « Rassemblement » en 28 px déborderait dans la colonne.
+  rule(['party-name'], 'font-size: 24px; line-height: 29px;'),
+  rule(['main'], `max-width: ${main.xl}px;`),
+  // Colonne de lecture seule (sans rail) : 768 px centrés dans le conteneur, jamais calés à gauche.
+  // `width: 100%` est obligatoire : dans une colonne flex, `margin: auto` réduit sinon l'élément à
+  // la largeur de son contenu.
+  rule(
+    ['solo', 'list-col'],
+    `width: 100%; max-width: ${main.xl}px; margin-left: auto; margin-right: auto;`
+  ),
   rule(['grid-3'], 'grid-template-columns: repeat(3, minmax(0, 1fr));'),
   rule(
     ['grid-3-lg'],
@@ -105,6 +119,8 @@ export const layoutCss: string = [
     ['grid-2-lg'],
     'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start;'
   ),
+  // Cartes de même hauteur par ligne (chiffres clés) : défait le `align-items: start` de grid-2-lg.
+  rule(['grid-stretch'], 'align-items: stretch;'),
   // Liste de partis en deux colonnes : traits du haut et de séparation tracés par les lignes
   // (la couleur vient du style de la ligne, la largeur de la feuille).
   rule(['row-grid'], 'display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));'),
@@ -121,15 +137,16 @@ export const layoutCss: string = [
     `grid-template-columns: ${rail.xl}px minmax(0, ${main.xl}px); column-gap: ${railGap.xl}px;`
   ),
   rule(['main'], `max-width: ${main.xl}px;`),
+  rule(['party-name'], 'font-size: 28px; line-height: 33px;'),
   // Carte des résultats : légende à côté du tracé (728 px utiles dans la colonne de 768 px).
   rule(['map-layout'], 'flex-direction: row; align-items: flex-start; gap: 28px;'),
   '}',
 ].join('\n');
 
 /**
- * Le HTML statique est toujours rendu en clair (le thème réel s'applique à l'hydratation, voir
- * ThemeContext). Pour un appareil en sombre, on peint le fond du document dès le premier octet,
- * afin qu'aucun éclair de crème n'entoure le contenu.
+ * Les couleurs des composants sont des variables CSS (voir ThemeContext et webTheme) : sombres dès
+ * le premier octet sur un appareil en sombre, par `prefers-color-scheme`. On peint en plus le fond
+ * du document, pour qu'aucun éclair de crème n'entoure le contenu (marges, overscroll).
  */
 export const colorSchemeCss = (darkBackground: string): string =>
   `@media (prefers-color-scheme: dark) {\n  html,\n  body {\n    background-color: ${darkBackground};\n  }\n}`;

@@ -404,6 +404,7 @@ export default function ResultsScreen() {
                 user={vm.userPosition}
                 parties={vm.partyPositions}
                 showEurope={false}
+                large
               />
             </View>
             <Text style={{ color: colors.text.secondary, fontSize: 14 }}>

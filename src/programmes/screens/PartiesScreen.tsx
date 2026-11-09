@@ -8,7 +8,6 @@ import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { useScrollToHash } from '@/src/core/hooks/useScrollToHash';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
-import { tv } from '@/src/core/web/tv';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyRow, RowGroup } from '@/src/programmes/components/PartyRow';
 import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
@@ -60,7 +59,7 @@ export default function PartiesScreen() {
   return (
     <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
       <View style={{ gap: effects.spacing.lg }}>
-        <View {...tv('list-col')} style={{ gap: effects.spacing.xs }}>
+        <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title">Partis</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
             Ce que veut chaque parti, et ce qu'ils proposent sur chaque grand débat.
@@ -73,11 +72,9 @@ export default function PartiesScreen() {
         </View>
 
         <View style={{ gap: effects.spacing.xs }}>
-          <View {...tv('list-col')}>
-            <Text variant="caption" headingLevel={2}>
-              Les {vm.parties.length} partis · A-Z
-            </Text>
-          </View>
+          <Text variant="caption" headingLevel={2}>
+            Les {vm.parties.length} partis · A-Z
+          </Text>
           <RowGroup grid>
             {vm.parties.map((party, index) => {
               const candidacy = party.candidacies[ELECTION_ID];
@@ -98,7 +95,7 @@ export default function PartiesScreen() {
         </View>
 
         <View nativeID="debats" style={{ gap: effects.spacing.xs }}>
-          <View {...tv('list-col')} style={{ gap: effects.spacing.xxs }}>
+          <View style={{ gap: effects.spacing.xxs }}>
             <Text variant="caption" headingLevel={2}>
               Les grands débats
             </Text>

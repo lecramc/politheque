@@ -5,6 +5,7 @@ import { ScrollView, View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { tv } from '@/src/core/web/tv';
 import { Accordion } from '@/src/programmes/components/Accordion';
@@ -22,6 +23,9 @@ import { COMPARE_GUIDE_TEXT, GUIDE_ANCHORS } from '@/src/programmes/models/readi
 import { compareViewModel } from '@/src/programmes/view-models/compare.view-model';
 
 type Option = { id: string; name: string; shortName: string; color: string };
+
+/** Largeur de base d'un sélecteur : deux ne tiennent sur une ligne qu'à partir d'environ 500 px. */
+const PICKER_BASIS = 240;
 
 function PartyPicker({
   label,
@@ -46,7 +50,11 @@ function PartyPicker({
         accessibilityRole="button"
         accessibilityLabel={`${label} : ${chosen ? chosen.name : 'choisir un parti'}`}
         style={{
-          flex: 1,
+          // Deux sélecteurs côte à côte quand la ligne le permet, empilés sinon (375 px : « Rassemblement »
+          // est un mot insécable, plus large que la moitié de la ligne).
+          flexGrow: 1,
+          flexShrink: 1,
+          flexBasis: PICKER_BASIS,
           minWidth: 0,
           flexDirection: 'row',
           alignItems: 'center',
@@ -60,10 +68,12 @@ function PartyPicker({
         }}
       >
         {chosen ? <PartyDot color={chosen.color} size={28} label={chosen.shortName} /> : null}
-        <Text style={{ ...fonts.bold, fontSize: 15, flex: 1 }} numberOfLines={2}>
+        <Text style={{ ...fonts.bold, fontSize: 15, flex: 1, minWidth: 0 }} numberOfLines={2}>
           {chosen ? chosen.name : label}
         </Text>
-        <Icon name="chevron-down" variant="secondary" size="small" />
+        <View style={{ flexShrink: 0 }}>
+          <Icon name="chevron-down" variant="secondary" size="small" />
+        </View>
       </Pressable>
       <Sheet isOpen={open} onClose={() => setOpen(false)} title={label}>
         {options.map((option) => (
@@ -240,9 +250,9 @@ export default function ComparePartiesScreen() {
       back={{ label: 'Partis', href: '/partis' }}
       template="hub"
     >
-      <View {...tv('list-col')} style={{ gap: effects.spacing.md }}>
+      <View style={{ gap: effects.spacing.md }}>
         <Text variant="title">Comparer deux partis</Text>
-        <View style={{ flexDirection: 'row', gap: effects.spacing.sm }}>
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.sm }}>
           <PartyPicker
             label="Premier parti"
             value={a}
@@ -261,15 +271,26 @@ export default function ComparePartiesScreen() {
 
         {result ? (
           <>
-            <ScrollView
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              style={{ margin: -effects.spacing.xs }}
-              contentContainerStyle={{ gap: effects.spacing.xs, padding: effects.spacing.xs }}
+            {/* Sous 768 px : une bande qui défile. Dès 768 px : toutes les puces, à la ligne, sans
+                sujet caché hors de l'écran (la souris n'a pas de défilement horizontal). */}
+            <Only below="md">
+              <ScrollView
+                horizontal
+                showsHorizontalScrollIndicator={false}
+                style={{ margin: -effects.spacing.xs }}
+                contentContainerStyle={{ gap: effects.spacing.xs, padding: effects.spacing.xs }}
+              >
+                {chip(null, 'Tous les sujets')}
+                {result.themes.map((t) => chip(t.theme.id, t.theme.title.split(',')[0]))}
+              </ScrollView>
+            </Only>
+            <Only
+              from="md"
+              style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}
             >
               {chip(null, 'Tous les sujets')}
               {result.themes.map((t) => chip(t.theme.id, t.theme.title.split(',')[0]))}
-            </ScrollView>
+            </Only>
             {themes.map((block) => (
               <ThemeBlock key={block.theme.id} block={block} names={names} />
             ))}

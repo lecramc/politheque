@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { Platform, StyleSheet, View } from 'react-native';
 
 import { layout } from '@/components/layout';
-import { useTheme } from '@/components/ThemeContext';
+import { theme, useTheme } from '@/components/ThemeContext';
 import { tv } from '@/src/core/web/tv';
 
 /**
@@ -21,14 +21,15 @@ export function RailLayout({
 }) {
   const { effects } = useTheme();
   if (!rail) {
+    // Colonne de lecture seule : la CSS la centre dans le conteneur à partir de 1024 px (`solo`).
     return (
-      <View {...tv('main')} style={styles.main}>
+      <View {...tv('main', 'solo')} style={styles.main}>
         {children}
       </View>
     );
   }
   return (
-    <View {...tv('rail-layout')} style={{ gap: effects.spacing.lg }}>
+    <View {...tv('rail-layout')} style={styles.layout}>
       {railOnMobile === 'hidden' ? (
         Platform.OS === 'web' ? (
           <View {...tv('rail', 'only-from-lg')} style={[styles.rail, { gap: effects.spacing.md }]}>
@@ -48,6 +49,9 @@ export function RailLayout({
 }
 
 const styles = StyleSheet.create({
+  // `rowGap` (empilement mobile) et non `gap` : la CSS desktop pose `column-gap` (gouttière du
+  // rail), et un `gap` en ligne l'écraserait (28 px au lieu de 56).
+  layout: { rowGap: theme.effects.spacing.lg },
   main: { width: '100%', minWidth: 0, maxWidth: layout.main.xl },
   rail: { width: '100%' },
 });

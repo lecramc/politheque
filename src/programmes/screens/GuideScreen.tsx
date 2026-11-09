@@ -70,7 +70,9 @@ export default function GuideScreen() {
 
   return (
     <Page meta={meta} loading={vm.status !== 'loaded'} template="hub">
-      <View {...tv('list-col')} style={{ gap: effects.spacing.lg }}>
+      {/* Pleine largeur du conteneur (comme /partis) : trois chapitres de 357 px chacun dès 1024 px,
+          au lieu de trois colonnes de 235 px dans une colonne de 768 px. */}
+      <View style={{ gap: effects.spacing.lg }}>
         <View style={{ gap: 6 }}>
           <Text variant="title">Comprendre</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>

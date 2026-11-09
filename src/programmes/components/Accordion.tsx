@@ -39,7 +39,11 @@ const styles = StyleSheet.create({
     minHeight: 56,
     paddingVertical: 12,
   },
-  headerCard: { paddingHorizontal: baseTheme.effects.spacing.md },
+  // Carte : l'anneau de focus intérieur suit le rayon de la carte (pas d'angles vifs).
+  headerCard: {
+    paddingHorizontal: baseTheme.effects.spacing.md,
+    borderRadius: baseTheme.effects.borderRadius.small,
+  },
   texts: { flex: 1, gap: baseTheme.effects.spacing.xxs },
   stanceBelow: { alignSelf: 'flex-start', marginTop: 6 },
   body: { paddingBottom: baseTheme.effects.spacing.md, gap: baseTheme.effects.spacing.sm },
@@ -174,10 +178,8 @@ export function Accordion({
               {title}
             </Text>
             {subtitle && !open ? (
-              <Text
-                style={[styles.subtitle, c((p) => ({ color: p.text.secondary }))]}
-                numberOfLines={2}
-              >
+              // Jamais tronqué : une liste de partis doit traiter chacun de la même façon.
+              <Text style={[styles.subtitle, c((p) => ({ color: p.text.secondary }))]}>
                 {subtitle}
               </Text>
             ) : null}

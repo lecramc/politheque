@@ -1,7 +1,7 @@
 import { useMemo } from 'react';
 import { Platform, StyleSheet, type StyleProp } from 'react-native';
 
-import { theme, useTheme } from '@/components/ThemeContext';
+import { cssColors, kebab, theme, useTheme } from '@/components/ThemeContext';
 
 /**
  * Couleurs du thème en variables CSS (web uniquement).
@@ -9,8 +9,12 @@ import { theme, useTheme } from '@/components/ThemeContext';
  * Pourquoi : `useTheme()` donne des objets de style en ligne, que react-native-web ne peut pas
  * compiler en classes atomiques ; le même style revenait des centaines de fois dans le HTML
  * (voir docs/seo/audit-v2.md § 3.5). Sur le web, les couleurs deviennent donc `var(--…)`, définies
- * une fois dans `<head>` : `:root` en clair, `data-theme="dark"` en sombre, attribut posé par
- * `ThemeContext` au même moment que son thème (l'app suit l'OS, appliqué après l'hydratation). Un style qui n'a plus rien d'en ligne devient une classe.
+ * une fois dans `<head>` : `:root` en clair, sombre selon `prefers-color-scheme` (dès le premier
+ * octet, sans éclair) et `data-theme` (posé par `ThemeContext` après l'hydratation). Un style qui
+ * n'a plus rien d'en ligne devient une classe.
+ *
+ * Depuis que `useTheme().colors` vaut `cssColors` sur le web, plus aucune couleur littérale ne
+ * reste en ligne : le HTML statique est déjà au bon thème.
  *
  * Sur natif, rien ne change : `useTheme()` et des objets de style ordinaires.
  */
@@ -18,46 +22,32 @@ type Palette = typeof theme.light;
 
 const isWeb = Platform.OS === 'web';
 
-const kebab = (path: string[]) =>
-  path
-    .join('-')
-    .replace(/([a-z])([A-Z])/g, '$1-$2')
-    .toLowerCase();
-
-/** Reproduit la forme de `theme.light` en remplaçant chaque couleur par `var(--chemin)`. */
-const toVars = (node: unknown, path: string[] = []): unknown => {
-  // `transparent` reste littéral : `hoverKind` s'appuie sur lui pour détecter un fond invisible.
-  if (node === 'transparent') return node;
-  if (typeof node === 'string') return `var(--${kebab(path)})`;
-  if (node && typeof node === 'object' && !Array.isArray(node)) {
-    return Object.fromEntries(
-      Object.entries(node).map(([key, value]) => [key, toVars(value, [...path, key])])
-    );
-  }
-  return node;
-};
-
-/** Palette dont chaque couleur est une variable CSS (`cssColors.text.primary` → `var(--text-primary)`). */
-export const cssColors = toVars(theme.light) as Palette;
+export { cssColors };
 
 const declarations = (node: unknown, path: string[] = []): string[] => {
   if (node === 'transparent') return [];
   if (typeof node === 'string') return [`--${kebab(path)}:${node}`];
-  if (node && typeof node === 'object' && !Array.isArray(node)) {
+  if (Array.isArray(node)) {
+    return node.flatMap((value, index) => declarations(value, [...path, `${index}`]));
+  }
+  if (node && typeof node === 'object') {
     return Object.entries(node).flatMap(([key, value]) => declarations(value, [...path, key]));
   }
   return [];
 };
 
+const darkVars = declarations(theme.dark).join(';');
+
 /**
- * Feuille des variables : clair par défaut, sombre quand `ThemeProviderCustom` pose
- * `data-theme="dark"` sur `<html>`. Le HTML statique est toujours clair et le thème réel ne
- * s'applique qu'à l'hydratation (voir ThemeContext) : un `@media (prefers-color-scheme: dark)`
- * mélangerait, avant l'hydratation, des textes sombres-sur-sombre et des fonds encore clairs.
+ * Feuille des variables : clair par défaut ; sombre (1) par `prefers-color-scheme: dark` tant que
+ * `data-theme` n'est pas posé, donc dès le HTML statique, (2) par `data-theme="dark"` ensuite.
+ * Toutes les couleurs des composants sont des `var(--…)` (voir ThemeContext), le statique et
+ * l'hydraté sont donc identiques dans les deux thèmes.
  */
 export const themeVarsCss: string = [
   `:root{${declarations(theme.light).join(';')}}`,
-  `:root[data-theme="dark"]{${declarations(theme.dark).join(';')}}`,
+  `@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){${darkVars}}}`,
+  `:root[data-theme="dark"]{${darkVars}}`,
 ].join('\n');
 
 type Style = Record<string, unknown>;

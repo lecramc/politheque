@@ -1,4 +1,12 @@
 /**
+ * Colonnes de la grille de chiffres clés (desktop) : 3, sauf si la dernière ligne n'aurait qu'une
+ * carte (4, 7… chiffres) : 2 colonnes, jamais de carte orpheline (spec desktop §4.2).
+ */
+export function figureColumns(count: number): 2 | 3 {
+  return count % 3 === 1 ? 2 : 3;
+}
+
+/**
  * Présentation d'un chiffre clé : la valeur en gros, la précision en dessous. Coupe au premier
  * « ( », « ; » ou « , soit ». Le texte publié ne change pas : c'est une présentation, pas une donnée.
  */

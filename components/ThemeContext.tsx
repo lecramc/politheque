@@ -35,7 +35,7 @@ export const theme = {
       glass: 'rgba(255, 255, 255, 0.72)',
       transparent: 'transparent',
       disabled: 'rgba(21, 32, 58, 0.08)',
-      hover: 'rgba(30, 63, 143, 0.08)', // survol web des zones cliquables sans bordure
+      hover: 'rgba(30, 63, 143, 0.1)', // survol web des zones cliquables sans bordure
       border: {
         primary: '#E8E2D8',
         secondary: '#D9D1C4',
@@ -92,7 +92,7 @@ export const theme = {
       glass: 'rgba(22, 30, 51, 0.72)',
       transparent: 'transparent',
       disabled: 'rgba(244, 242, 237, 0.08)',
-      hover: 'rgba(157, 183, 242, 0.1)',
+      hover: 'rgba(157, 183, 242, 0.16)', // 0,10 était invisible sur les cartes sombres
       border: {
         primary: '#34405E', // filets internes : 1,6:1 sur carte, visibles (V17)
         secondary: '#34405E',
@@ -226,6 +226,32 @@ export const theme = {
 
 export type Theme = typeof theme;
 
+export const kebab = (path: string[]) =>
+  path
+    .join('-')
+    .replace(/([a-z])([A-Z])/g, '$1-$2')
+    .toLowerCase();
+
+/** Reproduit la forme de `theme.light` en remplaçant chaque couleur par `var(--chemin)`. */
+const toVars = (node: unknown, path: string[] = []): unknown => {
+  // `transparent` reste littéral : `hoverKind` s'appuie sur lui pour détecter un fond invisible.
+  if (node === 'transparent') return node;
+  if (typeof node === 'string') return `var(--${kebab(path)})`;
+  if (Array.isArray(node)) return node.map((value, index) => toVars(value, [...path, `${index}`]));
+  if (node && typeof node === 'object') {
+    return Object.fromEntries(
+      Object.entries(node).map(([key, value]) => [key, toVars(value, [...path, key])])
+    );
+  }
+  return node;
+};
+
+/**
+ * Palette dont chaque couleur est une variable CSS (`cssColors.text.primary` → `var(--text-primary)`).
+ * Définie ici (et réexportée par `webTheme`) pour que `ThemeProviderCustom` la serve sur le web.
+ */
+export const cssColors = toVars(theme.light) as typeof theme.light;
+
 interface ThemeContextProps {
   theme: ThemeType;
   systemTheme: ThemeType;
@@ -250,19 +276,25 @@ export const ThemeProviderCustom = ({ children }: { children: ReactNode }) => {
   // The app follows the OS appearance only — there is no in-app theme toggle.
   // This guarantees `colors` and `systemColors` are always identical, so content
   // on native surfaces (BottomSheet, pickers) can never desync from the app theme.
-  const colors = useMemo(() => theme[resolvedSystemTheme], [resolvedSystemTheme]);
+  // Web : `colors` donne des variables CSS (`var(--text-primary)`…), définies dans `<head>`
+  // (components/webTheme.ts) : clair par défaut, sombre via `prefers-color-scheme` dès le premier
+  // octet puis `data-theme`. Le HTML statique et le premier rendu client sont donc identiques et
+  // déjà aux bonnes couleurs, sans éclair clair. Natif : couleurs réelles du thème courant.
+  const realColors = theme[resolvedSystemTheme];
+  const colors = useMemo(() => (Platform.OS === 'web' ? cssColors : realColors), [realColors]);
   const effects = theme.effects;
   const fonts = theme.fonts;
 
-  // Web : les variables CSS du thème (components/webTheme.ts) suivent le même thème que `colors`,
-  // posé dans le même commit (avant la peinture) : jamais de mélange clair / sombre.
+  // Web : `data-theme` n'est posé qu'après l'hydratation (même valeur que la media query). Avant,
+  // c'est la media query seule qui choisit : poser « clair » au premier rendu ferait un éclair.
   useLayoutEffect(() => {
-    if (Platform.OS === 'web') document.documentElement.dataset.theme = resolvedSystemTheme;
-  }, [resolvedSystemTheme]);
+    if (Platform.OS === 'web' && hydrated)
+      document.documentElement.dataset.theme = resolvedSystemTheme;
+  }, [hydrated, resolvedSystemTheme]);
 
   useEffect(() => {
-    SystemUI.setBackgroundColorAsync(colors.background.default).catch(() => {});
-  }, [colors.background.default]);
+    SystemUI.setBackgroundColorAsync(realColors.background.default).catch(() => {});
+  }, [realColors.background.default]);
 
   return (
     <ThemeContext.Provider

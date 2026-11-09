@@ -96,7 +96,7 @@ export default function GuideSectionScreen() {
               ))}
             </View>
             {vm.next ? (
-              <Button variant="secondary" href={`/comprendre/${vm.next.id}`} onPress={vm.markRead}>
+              <Button variant="brand" href={`/comprendre/${vm.next.id}`} onPress={vm.markRead}>
                 {`Section suivante : ${vm.next.title}`}
               </Button>
             ) : null}

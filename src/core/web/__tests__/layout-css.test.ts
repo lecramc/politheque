@@ -49,8 +49,18 @@ describe('Feature: feuille CSS responsive', () => {
   });
 
   it('should use the same rail widths as the tokens', () => {
-    expect(layoutCss).toContain(`${layout.rail.lg}px minmax(0, 1fr)`);
+    expect(layoutCss).toContain(`${layout.rail.lg}px minmax(0, ${layout.main.xl}px)`);
     expect(layoutCss).toContain(`${layout.rail.xl}px minmax(0, ${layout.main.xl}px)`);
+  });
+
+  it('should fill the 1120px container exactly with rail, gutter and column from 1200px', () => {
+    expect(layout.rail.xl + layout.railGap.xl + layout.main.xl).toBe(layout.container);
+  });
+
+  it('should centre single columns and give them an explicit width', () => {
+    expect(layoutCss).toMatch(
+      /\[data-tv~="solo"\],\s*:root \[data-tv~="list-col"\]\s*{[^}]*width: 100%;[^}]*margin-left: auto;[^}]*margin-right: auto;/
+    );
   });
 
   it('should fix the stance cell width at 152px from 768px', () => {
