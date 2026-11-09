@@ -23,11 +23,13 @@ export { cssEasing, duration };
 /**
  * Les mêmes courbes, typées pour les styles d'animation et de transition CSS de reanimated
  * (`animationTimingFunction`, `transitionTimingFunction`) : reanimated accepte la chaîne
- * `cubic-bezier(…)`, mais son type ne connaît que les mots-clés et ses objets `cubicBezier()`.
+ * `cubic-bezier(…)`. Selon les déclarations chargées, le type attendu est celui de reanimated
+ * (`CSSTimingFunction`) ou une simple chaîne (avec `expo-env.d.ts`, généré par Expo) :
+ * l'intersection convient aux deux.
  */
 export const cssTiming = cssEasing as unknown as Record<
   keyof typeof cssEasing,
-  CSSAnimationTimingFunction
+  CSSAnimationTimingFunction & string
 >;
 
 export type Curve = keyof typeof BEZIER;
