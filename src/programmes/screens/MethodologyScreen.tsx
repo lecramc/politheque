@@ -72,6 +72,10 @@ const rulesWith = (methodSentences: readonly string[]): Rule[] => [
     body: "Les qualifications (« extrême droite », « gauche radicale »…) suivent l'usage de la presse de référence, des politistes et du nuancier du ministère de l'Intérieur. La position du parti sur sa propre étiquette est indiquée lorsqu'elle est publique.",
   },
   {
+    title: 'Moteurs de recherche et intelligence artificielle',
+    body: "Le site est ouvert aux moteurs de recherche et aux assistants qui citent leurs sources (Google, Bing, ChatGPT, Perplexity, Claude…). Il n'interdit pas non plus aux robots d'entraînement des modèles d'IA de lire ses pages : une information sourcée et neutre sur la vie politique a vocation à circuler. Ce choix est inscrit dans le fichier robots.txt et peut être revu ; il ne change rien à la règle des sources, ni au fait que vos réponses au questionnaire ne quittent jamais votre appareil.",
+  },
+  {
     title: 'Corrections',
     body: 'Les données sont versionnées et chaque correction est datée. Une erreur signalée avec une source est vérifiée puis corrigée. Chaque modification de fond est inscrite au journal public.',
     link: { label: 'Voir le journal des corrections', href: '/corrections' },
