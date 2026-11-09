@@ -391,7 +391,8 @@ describe('Feature: intégrité du journal des corrections (ajout)', () => {
 describe('Feature: intégrité des procédures judiciaires (ajout)', () => {
   const partyIds = PARTIES.map((p) => p.id);
   const today = new Date().toISOString().slice(0, 10);
-  const DRAFTS_DIR = path.resolve(__dirname, '../../../docs/affaires');
+  // Brouillons dans le dépôt privé (`prive/`), absent d'un clone public : la comparaison est alors sautée.
+  const DRAFTS_DIR = path.resolve(__dirname, '../../../prive/docs/affaires');
 
   it('should publish a dossier for every party or for none', () => {
     expect([0, PARTIES.length]).toContain(LEGAL_DOSSIERS.length);
@@ -417,15 +418,21 @@ describe('Feature: intégrité des procédures judiciaires (ajout)', () => {
     }
   });
 
-  it('should match the promoted docs/affaires draft exactly (no hand edit in src/)', () => {
-    for (const dossier of LEGAL_DOSSIERS) {
-      const file = path.join(DRAFTS_DIR, `${dossier.partyId}.json`);
-      expect(fs.existsSync(file), `${dossier.partyId}: brouillon introuvable`).toBe(true);
-      const promoted = promoteDraft(JSON.parse(fs.readFileSync(file, 'utf8')), { today, partyIds });
-      expect(promoted.ok, dossier.partyId).toBe(true);
-      if (promoted.ok) expect(dossier).toEqual(promoted.dossier);
+  it.skipIf(!fs.existsSync(DRAFTS_DIR))(
+    'should match the promoted prive/docs/affaires draft exactly (no hand edit in src/)',
+    () => {
+      for (const dossier of LEGAL_DOSSIERS) {
+        const file = path.join(DRAFTS_DIR, `${dossier.partyId}.json`);
+        expect(fs.existsSync(file), `${dossier.partyId}: brouillon introuvable`).toBe(true);
+        const promoted = promoteDraft(JSON.parse(fs.readFileSync(file, 'utf8')), {
+          today,
+          partyIds,
+        });
+        expect(promoted.ok, dossier.partyId).toBe(true);
+        if (promoted.ok) expect(dossier).toEqual(promoted.dossier);
+      }
     }
-  });
+  );
 
   it('should not leave an announced next step overdue by more than 10 days', () => {
     const overdue = followUps(LEGAL_DOSSIERS, today).filter((f) => f.kind === 'depassee');

@@ -45,3 +45,8 @@ app-example
 # Vercel
 .vercel
 .env*
+
+# Documents de travail non publiés (dépôt privé lecramc/politheque-prive)
+/prive/
+.claude/agent-memory
+.claude/design-spec.md

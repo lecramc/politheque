@@ -1,4 +1,4 @@
-// Rapport d'échéances des procédures judiciaires publiées → bloc balisé de docs/a-verifier.md.
+// Rapport d'échéances des procédures judiciaires publiées → bloc balisé de prive/docs/a-verifier.md (dépôt privé).
 //   node scripts/affaires-echeances.mjs [--file <fichier>]
 // À lancer manuellement, en début de chaque session de mise à jour.
 import fs from 'node:fs';
@@ -10,7 +10,7 @@ import { runnerImport } from 'vite';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 const fileIndex = args.indexOf('--file');
-const target = path.resolve(root, fileIndex >= 0 ? args[fileIndex + 1] : 'docs/a-verifier.md');
+const target = path.resolve(root, fileIndex >= 0 ? args[fileIndex + 1] : 'prive/docs/a-verifier.md');
 
 const { module: legal } = await runnerImport('/src/programmes/models/legal/legal-cli.ts', {
   root,

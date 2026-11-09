@@ -1,50 +1,51 @@
-# Welcome to your Expo app 👋
+# Polithèque
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Site neutre et non partisan pour comprendre la politique française : les institutions, les dix
+principaux partis (histoire, idées, programme 2027, positions), la présidentielle 2027, les grands
+débats et un questionnaire de positionnement.
 
-## Get started
+**En ligne : https://politheque.revaamp.com**
 
-1. Install dependencies
+## Principes
 
-   ```bash
-   npm install
-   ```
+- **Aucune affirmation sans source datée.** Chaque information du site renvoie à ses sources ; les
+  règles sont dans la [charte éditoriale](docs/charte-editoriale.md).
+- **Même traitement pour tous les partis**, vérifié par des tests automatiques
+  ([`data-integrity.test.ts`](src/programmes/__tests__/data-integrity.test.ts)).
+- **Corrections publiques** : chaque modification des données est inscrite au
+  [journal des corrections](https://politheque.revaamp.com/corrections).
+- **Aucune donnée personnelle** : site statique, sans compte ni serveur ; les réponses du
+  questionnaire ne quittent jamais le navigateur et ne sont jamais enregistrées.
 
-2. Start the app
+## Signaler une erreur
 
-   ```bash
-   npx expo start
-   ```
+Une source qui ne dit pas ce qu'on lui fait dire, une position mal codée, un oubli : ouvrez une
+[issue](../../issues) avec la page concernée et, si possible, une source datée. Voir
+[CONTRIBUTING.md](CONTRIBUTING.md).
 
-In the output, you'll find options to open the app in a
+## Développement
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+Expo (React Native Web) avec export web statique, Redux Toolkit, tests Vitest.
 
 ```bash
-npm run reset-project
+npm install
+npm run web          # serveur de développement
+npm run test:run     # tests, dont l'intégrité éditoriale des données
+npm run build:web    # export statique dans dist/
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Les données sont dans [`src/programmes/data/`](src/programmes/data/) (JSON). La méthode de
+recherche et de codage est dans [`docs/`](docs/) : briefs de recherche, codage des positions,
+méthode du questionnaire.
 
-## Learn more
+Certains documents de travail ne sont pas publiés (brouillons sur les procédures judiciaires
+avant relecture juridique, maquettes, notes internes). Sans eux, un test de comparaison avec les
+brouillons judiciaires est simplement sauté.
 
-To learn more about developing your project with Expo, look at the following resources:
+## Licences
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- **Code** : [GNU AGPL 3.0](LICENSE). Une version modifiée mise en ligne doit publier son code.
+- **Contenus** (textes, fiches, positions, données de `src/programmes/data/` et `docs/`) :
+  [CC BY-SA 4.0](LICENSE-CONTENU.md), avec mention « Polithèque » et lien vers le site.
+- Les sources citées restent la propriété de leurs auteurs ; les polices ont leur propre licence
+  ([`public/assets/fonts/`](public/assets/fonts/)).

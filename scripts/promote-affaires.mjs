@@ -1,4 +1,4 @@
-// Promotion des brouillons validés : docs/affaires/<id>.json → src/programmes/data/affaires/<id>.json
+// Promotion des brouillons validés : prive/docs/affaires/ (dépôt privé)<id>.json → src/programmes/data/affaires/<id>.json
 // (artefact généré, jamais édité à la main) + regénération de data/affaires/index.ts.
 //
 //   node scripts/promote-affaires.mjs <partyId|--all> [--dry-run] [--from <dossier>]
@@ -19,7 +19,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 const has = (flag) => args.includes(flag);
 const fromIndex = args.indexOf('--from');
-const draftsDir = path.resolve(root, fromIndex >= 0 ? args[fromIndex + 1] : 'docs/affaires');
+const draftsDir = path.resolve(root, fromIndex >= 0 ? args[fromIndex + 1] : 'prive/docs/affaires');
 const outDir = path.join(root, 'src/programmes/data/affaires');
 const target = args.find((a, i) => !a.startsWith('--') && args[i - 1] !== '--from');
 

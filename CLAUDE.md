@@ -38,6 +38,13 @@ Le hook `.husky/post-commit` bumpe `package.json` automatiquement après chaque 
 
 ---
 
+## Dépôt public et dépôt privé
+
+- `lecramc/travee` est **public** (open source) : code sous AGPL-3.0 (`LICENSE`), contenus sous CC BY-SA 4.0 (`LICENSE-CONTENU.md`).
+- Les documents de travail non publiés vivent dans le dépôt **privé** `lecramc/politheque-prive`, cloné dans `prive/` (ignoré par git) : brouillons judiciaires (`prive/docs/affaires/`), dossier avocat, relecture éditeur, maquettes et audits UX (`prive/docs/ux/`, `prive/docs/marque/`), SEO, recoupements (`prive/docs/verification/`), recensement des candidats, `reste-a-faire.md`, `a-verifier.md`, mémoire des agents.
+- **Règle : rien de judiciaire non publié, aucun compte ni adresse e-mail, aucune note de travail sur une personne ne va dans le dépôt public.** Dans le doute, l'écrire dans `prive/` et commiter là-bas.
+- Seules restent publiques les pièces de méthode : charte, briefs, architecture, questionnaire, codage des positions.
+
 ## Produit
 
 **Polithèque** (anciennement « Travée ») : site web neutre et non partisan pour comprendre la politique française —
@@ -49,7 +56,7 @@ Architecture de l'information : `docs/architecture-information.md`.
 de toucher aux données. Format d'une fiche parti : `docs/brief-recherche-parti.md`.
 Les tests `src/programmes/__tests__/data-integrity.test.ts` font respecter la charte.
 
-- Parcours citoyen : l'accueil présente **quatre tâches** (me situer, ce que veut chaque parti, comparer deux partis, voter en 2027), les dix partis en accès direct et une carte « Le parcours ». Le chemin en six étapes (`src/programmes/models/journey.*`) n'est plus une page : ses étapes sont les chapitres de `/comprendre` (leçons, fiches, débats, questionnaire), calculées depuis le catalogue et un registre local de contenus lus (`progress.v1`, clés `type:id` → date ISO) ; « Ma progression » (`/passeport`) reste reliée depuis Comprendre. Les anciennes adresses `/parcours/*` redirigent (`vercel.json`). **Règle : mesurer la lecture, jamais les opinions** — les réponses du questionnaire ne sont jamais persistées ni utilisées pour suggérer une étape. Spec : `docs/blueprint-parcours.md`, `docs/ux/spec-simplification-v2.md`.
+- Parcours citoyen : l'accueil présente **quatre tâches** (me situer, ce que veut chaque parti, comparer deux partis, voter en 2027), les dix partis en accès direct et une carte « Le parcours ». Le chemin en six étapes (`src/programmes/models/journey.*`) n'est plus une page : ses étapes sont les chapitres de `/comprendre` (leçons, fiches, débats, questionnaire), calculées depuis le catalogue et un registre local de contenus lus (`progress.v1`, clés `type:id` → date ISO) ; « Ma progression » (`/passeport`) reste reliée depuis Comprendre. Les anciennes adresses `/parcours/*` redirigent (`vercel.json`). **Règle : mesurer la lecture, jamais les opinions** — les réponses du questionnaire ne sont jamais persistées ni utilisées pour suggérer une étape. Spec : `docs/blueprint-parcours.md`, `prive/docs/ux/spec-simplification-v2.md`.
 - Données : `src/programmes/data/` (JSON + `questions.ts`), chargées via `StaticProgrammeGateway`.
 - Calcul : `src/programmes/models/matching.service.ts` (pur, testé).
 - Journal public des corrections : `src/programmes/data/corrections.json`, page `/corrections`.
@@ -58,7 +65,7 @@ Les tests `src/programmes/__tests__/data-integrity.test.ts` font respecter la ch
   (règle 8 de la charte).
 - Fiche parti : 4 onglets (Programme par défaut à `/partis/[id]/programme-2027`, Positions, Histoire, Procédures). `/partis/[id]` n'est qu'un alias (canonical vers le Programme, 301 sur Vercel). Navigation : 3 rubriques (Comprendre, Partis, Me situer) + pastille « 2027 · J-n » ; les débats (`/debats/[id]`) et `/partis/comparer` vivent dans Partis.
 - Procédures judiciaires : section `/partis/[id]/procedures-judiciaires` (tous les partis ou aucun),
-  alimentée par `src/programmes/data/affaires/` généré depuis `docs/affaires/` par
+  alimentée par `src/programmes/data/affaires/` généré depuis `prive/docs/affaires/` par
   `npm run affaires:promote` (règle 5 de la charte).
 - Pas de backend : site statique (`npm run build:web` → `dist/`), aucune réponse n'est envoyée.
 
