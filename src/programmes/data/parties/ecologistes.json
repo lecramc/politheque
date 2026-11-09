@@ -4,7 +4,7 @@
   "shortName": "Écologistes",
   "color": "#00C000",
   "family": "Gauche (écologie politique pour la presse et les ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame de « l'écologie politique » et ne conteste pas cette étiquette)",
-  "description": "Les Écologistes sont issus des Verts, fondés en 1984, devenus Europe Écologie Les Verts (EELV) en 2010 puis Les Écologistes en 2023 ; le parti est dirigé par la secrétaire nationale Marine Tondelier. Yannick Jadot a obtenu 4,63 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Marie Toussaint 5,50 % aux européennes de 2024. Membre du Nouveau Front populaire en 2024, le parti siège à l'Assemblée au sein du groupe Écologiste et social, qui compte 38 députés (novembre 2026, selon Datan). Les adhérents votent du 10 au 13 décembre 2026 sur le maintien d'une candidature autonome.",
+  "description": "Les Écologistes sont issus des Verts, fondés en 1984, devenus Europe Écologie Les Verts (EELV) en 2010 puis Les Écologistes en 2023 ; le parti est dirigé par la secrétaire nationale Marine Tondelier. Yannick Jadot a obtenu 4,63 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Marie Toussaint 5,50 % aux européennes de 2024. Membre du Nouveau Front populaire en 2024, le parti siège à l'Assemblée au sein du groupe Écologiste et social, qui compte 38 députés (novembre 2026, selon Datan), dont des élus d'autres formations. Les adhérents votent du 10 au 13 décembre 2026 sur le maintien d'une candidature autonome.",
   "foundedYear": 1984,
   "leader": {
     "name": "Marine Tondelier",
@@ -27,8 +27,8 @@
     },
     {
       "id": "faire-un-saut-federal-europeen",
-      "title": "Faire un « saut fédéral européen »",
-      "text": "Remplacer le droit de veto de chaque pays par des décisions à la majorité qualifiée dans l'Union européenne.",
+      "title": "Faire « un saut fédéral » européen",
+      "text": "Mettre fin au droit de veto de chaque pays dans l'Union européenne, dans le cadre d'« un saut fédéral ».",
       "measureRefs": ["europe.0"],
       "relatedQuestionIds": ["q33-veto-europeen"]
     },
@@ -719,18 +719,12 @@
     },
     "q04-retraite": {
       "stance": 2,
-      "justification": "Le programme 2027 prévoit le retour de l'âge légal à 62 ans, puis 60 ans pour les carrières longues et les métiers pénibles. Le 5 juin 2025, le groupe Écologiste et social a voté pour une résolution demandant l'abrogation de la réforme des retraites de 2023.",
+      "justification": "Marine Tondelier veut « abroger » la réforme de 2023 (« On revient mécaniquement à 62 ans en un trait de plume »), puis revenir à 60 ans, en priorité pour les carrières longues et les métiers pénibles (30 septembre 2026). Le 5 juin 2025, le groupe Écologiste et social a voté pour une résolution demandant l'abrogation de la réforme des retraites de 2023.",
       "sources": [
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 116",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
-          "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-          "date": "2026-07-13",
+          "title": "franceinfo, « Changement de système, passage à 60 ou à 65 ans, capitalisation... Que proposent les principaux candidats à l'élection présidentielle pour les retraites ? »",
+          "url": "https://www.franceinfo.fr/economie/retraite/reforme-des-retraites/changement-de-systeme-passage-a-60-ou-a-65-ans-capitalisation-que-proposent-les-principaux-candidats-a-l-election-presidentielle-pour-les-retraites_8215784.html",
+          "date": "2026-09-30",
           "kind": "presse"
         },
         {
@@ -785,20 +779,8 @@
     },
     "q07-immigration": {
       "stance": -2,
-      "justification": "Le programme veut refaire de la France « un pays attractif pour les migrant·es » (p. 177) et « rendre effectif le droit au regroupement familial » (p. 178). Le groupe écologiste a voté contre la loi immigration le 19 décembre 2023.",
+      "justification": "Le groupe écologiste a voté contre la loi « pour contrôler l'immigration, améliorer l'intégration » le 19 décembre 2023.",
       "sources": [
-        {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 177-178",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-          "url": "https://monvote2027.fr/candidat/tondelier",
-          "date": "2026-10-16",
-          "kind": "presse"
-        },
         {
           "title": "Datan, « Vote n° 3213 — vote final, projet de loi pour contrôler l'immigration, améliorer l'intégration » (16e législature)",
           "url": "https://datan.fr/votes/legislature-16/vote_3213",
@@ -827,25 +809,19 @@
     },
     "q09-regularisation": {
       "stance": 2,
-      "justification": "Régularisation selon des critères objectifs.",
+      "justification": "En avril 2026, Marine Tondelier a inscrit « la régularisation des travailleurs sans-papiers » parmi les priorités du socle programmatique qu'elle proposait aux autres partis de gauche.",
       "sources": [
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 178",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
-          "url": "https://lacampagne2027.com/candidats/marine-tondelier",
-          "date": "2026-11",
+          "title": "France 24 (AFP), « Fragilisée en interne, Marine Tondelier veut mettre \"du fond\" dans la campagne pour 2027 »",
+          "url": "https://www.france24.com/fr/info-en-continu/20260421-fragilis%C3%A9e-en-interne-marine-tondelier-veut-mettre-du-fond-dans-la-campagne-pour-2027",
+          "date": "2026-04-21",
           "kind": "presse"
         }
       ]
     },
     "q10-peines-planchers": {
       "stance": -2,
-      "justification": "Le groupe Écologiste et social a déposé en octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262), jugées sans « efficacité prouvée » et contraires à l'individualisation des peines ; le programme 2027 indique que « la prison doit rester l'exception ».",
+      "justification": "Le groupe Écologiste et social a déposé le 24 octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262), dispositif sans « aucune efficacité prouvée » selon lui et contraire au principe d'individualisation de la peine, puis a voté le 3 avril 2025 pour la suppression d'une peine minimale pour les violences en récidive (8 pour, 0 contre).",
       "sources": [
         {
           "title": "Assemblée nationale, amendement n° 7 (groupe Écologiste et social, M. Iordanoff et al.) de suppression de l'article 1er de la PPL n° 262 « Instauration de peines planchers »",
@@ -854,16 +830,10 @@
           "kind": "proposition-de-loi"
         },
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 170",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-          "url": "https://monvote2027.fr/candidat/tondelier",
-          "date": "2026-10-16",
-          "kind": "presse"
+          "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1263",
+          "date": "2025-04-03",
+          "kind": "vote"
         },
         {
           "title": "Europe 1, « Peines minimales : le gouvernement plaide pour, la gauche s'y oppose »",
@@ -875,18 +845,12 @@
     },
     "q12-nucleaire": {
       "stance": -2,
-      "justification": "Sortie planifiée du nucléaire et arrêt des projets EPR2 et SMR.",
+      "justification": "Le 23 juin 2026, Marine Tondelier a déclaré que « le nucléaire n'est pas une option viable, ni une alternative crédible », et que les EPR2 « ne seront pas livrés avant 2040 ou 2050 » ; pour la députée Julie Laernoes, « il est impossible d'être pronucléaire et écologiste » (septembre 2026).",
       "sources": [
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 17",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
-          "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-          "date": "2026-07-13",
+          "title": "Revue générale nucléaire (Sfen), « [Présidentielle 2027] Au colloque de l'UFE, les grands partis listent leurs positions sur le nucléaire »",
+          "url": "https://www.sfen.org/rgn/presidentielle-2027-au-colloque-de-lufe-les-grands-partis-listent-leurs-positions-sur-le-nucleaire/",
+          "date": "2026-07-02",
           "kind": "presse"
         },
         {
@@ -899,18 +863,12 @@
     },
     "q13-renouvelables": {
       "stance": 2,
-      "justification": "Le programme fonde la politique énergétique sur « un bouquet d'énergies renouvelables » (p. 15) et prévoit la sortie du nucléaire (p. 17). Le 19 juin 2025, le groupe a voté contre un moratoire sur les nouvelles installations éoliennes et photovoltaïques.",
+      "justification": "Le 23 juin 2026, Marine Tondelier a déclaré qu'« il faudra d'abord déployer le plus vite possible les énergies renouvelables » avant de fermer les centrales nucléaires. Le 19 juin 2025, le groupe a voté contre un moratoire sur les nouvelles installations éoliennes et photovoltaïques.",
       "sources": [
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 15",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-          "url": "https://monvote2027.fr/candidat/tondelier",
-          "date": "2026-10-16",
+          "title": "Revue générale nucléaire (Sfen), « [Présidentielle 2027] Au colloque de l'UFE, les grands partis listent leurs positions sur le nucléaire »",
+          "url": "https://www.sfen.org/rgn/presidentielle-2027-au-colloque-de-lufe-les-grands-partis-listent-leurs-positions-sur-le-nucleaire/",
+          "date": "2026-07-02",
           "kind": "presse"
         },
         {
@@ -1061,20 +1019,8 @@
     },
     "q24-proportionnelle": {
       "stance": 2,
-      "justification": "Proportionnelle intégrale sans prime majoritaire aux législatives. En juillet 2024, la sénatrice écologiste Mélanie Vogel a déposé une proposition de loi instaurant la proportionnelle intégrale.",
+      "justification": "En juillet 2024, la sénatrice écologiste Mélanie Vogel a déposé une proposition de loi instaurant la proportionnelle intégrale aux législatives, avec un seuil de 5 %.",
       "sources": [
-        {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 162",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-          "url": "https://monvote2027.fr/candidat/tondelier",
-          "date": "2026-10-16",
-          "kind": "presse"
-        },
         {
           "title": "Public Sénat, « Législatives : une proposition de loi visant à instaurer la proportionnelle intégrale déposée au Sénat »",
           "url": "https://www.publicsenat.fr/actualites/parlementaire/legislatives-une-proposition-de-loi-visant-a-instaurer-la-proportionnelle-integrale-deposee-au-senat",
@@ -1163,19 +1109,19 @@
     },
     "q29-cannabis": {
       "stance": 2,
-      "justification": "Le programme présidentiel 2027 des Écologistes (15 juillet 2026, p. 184) prévoit de « Légaliser et encadrer la production, la vente et la consommation de cannabis ».",
+      "justification": "Marine Tondelier se prononce pour la « légalisation du cannabis » (mars 2024) ; en novembre 2025, les sénateurs écologistes ont déposé un amendement créant une accise sur le cannabis, que Thomas Dossus présente ainsi : « Ça légalise le cannabis en réalité ».",
       "sources": [
         {
-          "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 184",
-          "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-          "date": "2026-07-15",
-          "kind": "programme"
+          "title": "franceinfo, « Déficit public, lutte contre le trafic de drogue et accord du CETA... le \"8h30 franceinfo\" de Marine Tondelier »",
+          "url": "https://www.franceinfo.fr/replay-radio/8h30-fauvelle-dely/deficit-public-lutte-contre-le-trafic-de-drogue-et-accord-du-ceta-le-8h30-franceinfo-de-marine-tondelier_6418306.html",
+          "date": "2024-03-26",
+          "kind": "presse"
         },
         {
-          "title": "Les Écologistes, « Projet 2027 » (page officielle du programme)",
-          "url": "https://lesecologistes.fr/pages/6ImK65GKUnvibm33WGkjkj/projet-2027",
-          "date": "2026-07",
-          "kind": "programme"
+          "title": "Public Sénat, « Budget de la Sécu : les sénateurs écologistes veulent créer une taxe sur le cannabis »",
+          "url": "https://www.publicsenat.fr/actualites/politique/budget-de-la-secu-les-senateurs-ecologistes-veulent-creer-une-taxe-sur-le-cannabis",
+          "date": "2025-11-18",
+          "kind": "presse"
         }
       ]
     },
@@ -1289,7 +1235,7 @@
     },
     "q36-fonctionnaires": {
       "stance": -2,
-      "justification": "Les Écologistes ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et les services de l'État. Leur programme 2027 prévoit un « plan de titularisation » des agents publics sous contrat privé et plus de moyens humains pour certaines autorités.",
+      "justification": "En 2024, Les Écologistes ont signé le contrat du Nouveau Front populaire, qui prévoyait de « lancer le rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice, la police et les services de l'État. Leur programme 2027 prévoit un « plan de titularisation des agents publics embauchés sur des contrats de droit privé » et « une augmentation des moyens financiers et humains » pour la HATVP et l'AFA.",
       "sources": [
         {
           "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
@@ -1345,24 +1291,6 @@
             {
               "text": "Instaurer la taxe Zucman : impôt minimum de 2 % sur les patrimoines supérieurs à 100 M€ (proposition de loi du groupe écologiste adoptée en première lecture par l'Assemblée le 20 février 2025).",
               "sources": [
-                {
-                  "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 66",
-                  "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                },
-                {
-                  "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-                  "url": "https://monvote2027.fr/candidat/tondelier",
-                  "date": "2026-10-16",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Parlons Politique, « Ce que le programme écologiste de Marine Tondelier changerait pour les retraites, le nucléaire et les impôts »",
-                  "url": "https://www.parlons-politique.fr/elections/ce-que-le-programme-ecologiste-de-marine-tondelier-changerait-pour-les-retraites-le-nucleaire-et-les-impots_23570/",
-                  "date": "2026-07-13",
-                  "kind": "presse"
-                },
                 {
                   "title": "LCP, « Fiscalité : en première lecture, l'Assemblée adopte un \"impôt plancher de 2% sur le patrimoine des ultra riches\" »",
                   "url": "https://lcp.fr/actualites/fiscalite-en-premiere-lecture-l-assemblee-adopte-un-impot-plancher-de-2-sur-le",
@@ -1848,20 +1776,8 @@
           "summary": "Le parti se situe dans une tradition fédéraliste et propose un « saut fédéral européen », un commandement militaire européen intégré et le soutien militaire à l'Ukraine, y compris par des capacités de frappe à longue portée.",
           "measures": [
             {
-              "text": "Opérer un « saut fédéral européen » et remplacer les vetos nationaux par la majorité qualifiée (le programme des européennes d'avril 2024 proposait déjà « un saut fédéral pour un sursaut européen »).",
+              "text": "Opérer « un saut fédéral pour un sursaut européen » et mettre fin au « droit de veto des Etats membres » (programme des européennes, avril 2024).",
               "sources": [
-                {
-                  "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 190",
-                  "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                },
-                {
-                  "title": "MonVote2027, fiche « Marine Tondelier : programme et positions » (extraits paginés du programme)",
-                  "url": "https://monvote2027.fr/candidat/tondelier",
-                  "date": "2026-10-16",
-                  "kind": "presse"
-                },
                 {
                   "title": "L'info durable (AFP), « Européennes : l'écologiste Marie Toussaint présente son programme pour \"sauver le climat\" et \"changer de modèle\" »",
                   "url": "https://www.linfodurable.fr/europeennes-lecologiste-marie-toussaint-presente-son-programme-pour-sauver-le-climat-et-changer-de",

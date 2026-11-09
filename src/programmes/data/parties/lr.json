@@ -269,7 +269,7 @@
       },
       {
         "date": "2024-06-11",
-        "event": "Le président du parti Éric Ciotti annonce une alliance avec le RN pour les législatives anticipées ; le bureau politique vote son exclusion, suspendue en référé par la justice le 14 juin, et il fonde ensuite l'UDR avant d'annoncer son départ de LR en septembre 2024. Aux législatives, LR obtient environ 50 députés.",
+        "event": "Le président du parti Éric Ciotti annonce une alliance avec le RN pour les législatives anticipées ; le bureau politique vote son exclusion, suspendue en référé par la justice le 14 juin, et il fonde ensuite l'UDR avant d'annoncer son départ de LR en septembre 2024. Après les législatives, le groupe Droite républicaine compte 47 députés à sa formation, en juillet 2024.",
         "sources": [
           {
             "title": "Alliance avec le RN : Éric Ciotti exclu des Républicains (Public Sénat)",
@@ -300,12 +300,18 @@
             "url": "https://www.europe1.fr/politique/eric-ciotti-annonce-quil-quitte-les-republicains-4268889",
             "date": "2024-09-22",
             "kind": "presse"
+          },
+          {
+            "title": "Groupes à l'Assemblée : les gagnants et les perdants depuis les législatives de 2024 (LCP)",
+            "url": "https://lcp.fr/actualites/groupes-a-l-assemblee-les-gagnants-et-les-perdants-depuis-les-legislatives-de-2024",
+            "date": "2025-07-24",
+            "kind": "presse"
           }
         ]
       },
       {
-        "date": "2024-09",
-        "event": "LR entre au gouvernement de Michel Barnier, Bruno Retailleau devenant ministre de l'Intérieur ; le 11 octobre 2025, LR refuse d'entrer au nouveau gouvernement de Sébastien Lecornu, auquel il n'apporte qu'un « soutien texte par texte », et Laurent Nuñez succède à Bruno Retailleau à l'Intérieur le 12 octobre 2025.",
+        "date": "2024-09-21",
+        "event": "LR entre au gouvernement de Michel Barnier, Bruno Retailleau devenant ministre de l'Intérieur.",
         "sources": [
           {
             "title": "Wikipédia, « Les Républicains »",
@@ -320,15 +326,9 @@
             "kind": "presse"
           },
           {
-            "title": "franceinfo, « Les Républicains refusent d'entrer au nouveau gouvernement de Sébastien Lecornu, ne lui apportant qu'un « soutien texte par texte » »",
-            "url": "https://www.franceinfo.fr/politique/gouvernement-de-sebastien-lecornu/les-republicains-refuse-d-entrer-au-nouveau-gouvernement-de-sebastien-lecornu-ne-lui-apportant-qu-un-soutien-texte-par-texte_7546486.html",
-            "date": "2025-10-11",
-            "kind": "presse"
-          },
-          {
-            "title": "France 3 Paris Île-de-France, « Gouvernement Lecornu 2 : qui sont Laurent Nuñez et Vincent Jeanbrun, les nouveaux ministres franciliens ? »",
-            "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/gouvernement-lecornu-2-qui-sont-laurent-nunez-et-vincent-jeanbrun-les-nouveaux-ministres-franciliens-3232127.html",
-            "date": "2025-10",
+            "title": "franceinfo, « Gouvernement de Michel Barnier : Bruno Retailleau, un conservateur fervent opposant à Emmanuel Macron, nommé au ministère de l'Intérieur »",
+            "url": "https://www.franceinfo.fr/politique/gouvernement-de-michel-barnier/gouvernement-de-michel-barnier-bruno-retailleau-un-conservateur-fervent-opposant-a-emmanuel-macron-nomme-au-ministere-de-l-interieur_6794272.html",
+            "date": "2024-09-21",
             "kind": "presse"
           }
         ]
@@ -354,6 +354,30 @@
             "url": "https://fr.wikipedia.org/wiki/Les_R%C3%A9publicains",
             "date": "2026-11",
             "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2025-10-11",
+        "event": "LR refuse d'entrer au nouveau gouvernement de Sébastien Lecornu, auquel il n'apporte qu'un « soutien texte par texte » ; Laurent Nuñez succède à Bruno Retailleau au ministère de l'Intérieur le 12 octobre 2025.",
+        "sources": [
+          {
+            "title": "franceinfo, « Les Républicains refusent d'entrer au nouveau gouvernement de Sébastien Lecornu, ne lui apportant qu'un « soutien texte par texte » »",
+            "url": "https://www.franceinfo.fr/politique/gouvernement-de-sebastien-lecornu/les-republicains-refuse-d-entrer-au-nouveau-gouvernement-de-sebastien-lecornu-ne-lui-apportant-qu-un-soutien-texte-par-texte_7546486.html",
+            "date": "2025-10-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Les Républicains ne participeront pas au gouvernement Lecornu 2 (LCP)",
+            "url": "https://lcp.fr/actualites/les-republicains-ne-participeront-pas-au-gouvernement-lecornu-2-408213",
+            "date": "2025-10-11",
+            "kind": "presse"
+          },
+          {
+            "title": "France 3 Paris Île-de-France, « Gouvernement Lecornu 2 : qui sont Laurent Nuñez et Vincent Jeanbrun, les nouveaux ministres franciliens ? »",
+            "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/paris/gouvernement-lecornu-2-qui-sont-laurent-nunez-et-vincent-jeanbrun-les-nouveaux-ministres-franciliens-3232127.html",
+            "date": "2025-10",
+            "kind": "presse"
           }
         ]
       },
@@ -905,7 +929,7 @@
     },
     "q10-peines-planchers": {
       "stance": 1,
-      "justification": "Bruno Retailleau a co-déposé au Sénat avec François-Noël Buffet une proposition de loi « tendant à renforcer l'efficacité de la justice pénale », dont la version adoptée en commission en janvier 2017 rétablissait les peines planchers ; en 2024, des députés Droite républicaine qualifiaient les peines planchers de « proposition de droite ». Pas d'engagement explicite identifié dans le programme 2027, dont les propositions sourcées portent sur les courtes peines.",
+      "justification": "Bruno Retailleau a co-déposé au Sénat avec François-Noël Buffet une proposition de loi « tendant à renforcer l'efficacité de la justice pénale », dont la version adoptée en commission en janvier 2017 rétablissait les peines planchers ; le 31 octobre 2024, le député Droite républicaine Ian Boucard les qualifiait de « proposition de droite ». Pas d'engagement explicite identifié dans le programme 2027, dont les propositions sourcées portent sur les courtes peines.",
       "sources": [
         {
           "title": "Sénat, communiqué : « La commission des lois du Sénat renforce l'efficacité de la justice pénale » (PPL n° 126 Buffet-Retailleau)",
@@ -965,7 +989,7 @@
     },
     "q15-medecins": {
       "stance": 1,
-      "justification": "Plutôt favorable, sous une forme assouplie : la PPL du sénateur LR Philippe Mouiller, adoptée par le Sénat le 13 mai 2025, subordonne l'installation en zone « sur-dense » à un engagement d'exercer en partie dans une zone moins dotée ; au Sénat, la majorité de droite a réécrit en ce sens l'article 1er de la PPL Garot le 11 juin 2026 (215 voix contre 118). À l'Assemblée, le groupe DR s'est partagé sur la version Garot (vote n° 1214 : 8 pour, 6 contre). Pas de position du candidat.",
+      "justification": "La proposition de loi du sénateur LR Philippe Mouiller, adoptée par le Sénat le 13 mai 2025, subordonne l'installation en zone « sur-dense » à un engagement d'exercer en partie dans une zone moins dotée ; le 11 juin 2026, le Sénat a adopté une version assouplie de l'article 1er de la proposition de loi Garot, qui lie l'autorisation d'installation à une contrepartie de ce type (215 voix contre 118). À l'Assemblée, le groupe Droite républicaine s'est partagé sur la version Garot (vote n° 1214 : 8 pour, 6 contre). Pas de position du candidat.",
       "sources": [
         {
           "title": "Installation des médecins, déserts médicaux… Le Sénat adopte la proposition de loi pour « améliorer l'accès aux soins dans les territoires » (Public Sénat)",
@@ -1061,7 +1085,7 @@
     },
     "q19-droit-europeen": {
       "stance": 1,
-      "justification": "Bruno Retailleau propose des référendums qui « rétabliraient la primauté de notre droit national chaque fois qu'il s'agit de protéger nos intérêts fondamentaux » (12 février 2026), soit une primauté ciblée et non générale ; les eurodéputés LR ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (6 contre, 2 abstentions).",
+      "justification": "Bruno Retailleau propose des référendums qui « rétabliraient la primauté de notre droit national chaque fois qu'il s'agit de protéger nos intérêts fondamentaux » (12 février 2026), soit une primauté ciblée et non générale ; les eurodéputés LR ont voté contre la résolution du PE du 21 novembre 2023 sur la primauté du droit de l'Union (6 contre, 1 abstention).",
       "sources": [
         {
           "title": "Euronews, « Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums »",

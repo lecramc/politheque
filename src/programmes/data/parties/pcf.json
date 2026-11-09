@@ -21,8 +21,8 @@
     {
       "id": "faire-des-salaires-la-question-centrale",
       "title": "Faire des salaires « la question centrale »",
-      "text": "Porter le SMIC à 1 500 € net et aucune pension sous 1 200 € net (programme 2022), priorité réaffirmée au congrès de 2026.",
-      "measureRefs": ["travail.0"],
+      "text": "Augmenter de 5 % les salaires et pensions inférieurs à 2 500 € net par mois, et faire des salaires « la question centrale » de 2027.",
+      "measureRefs": ["travail.5", "travail.0"],
       "relatedQuestionIds": ["q05-smic"]
     },
     {
@@ -35,7 +35,7 @@
     {
       "id": "creer-un-revenu-etudiant-d-au-moins-850-par-mois",
       "title": "Créer un revenu étudiant d'au moins 850 € par mois",
-      "text": "Un revenu d'au moins 850 € par mois pour les étudiants (programme 2022).",
+      "text": "Verser aux étudiants un revenu d'au moins 850 € par mois.",
       "measureRefs": ["education.2"],
       "relatedQuestionIds": []
     }
@@ -767,13 +767,19 @@
     },
     "q10-peines-planchers": {
       "stance": -2,
-      "justification": "Les députés communistes du groupe GDR ont déposé en octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262) ; le congrès 2026 du PCF prône de favoriser les peines aménagées.",
+      "justification": "Les députés communistes du groupe GDR ont déposé le 25 octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262), et le groupe a voté le 3 avril 2025 pour l'amendement d'Elsa Faucillon supprimant une peine minimale pour les violences en récidive (2 pour, 0 contre) ; la base commune du congrès 2026 estime que « les peines aménagées doivent être favorisées pour les personnes les moins dangereuses ».",
       "sources": [
         {
           "title": "Assemblée nationale, amendement n° 9 (groupe GDR, Mme K/Bidi, Mme Faucillon et al.) de suppression de l'article 1er de la PPL n° 262 « Instauration de peines planchers »",
           "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0262/AN/9.pdf",
           "date": "2024-10-25",
           "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1263",
+          "date": "2025-04-03",
+          "kind": "vote"
         },
         {
           "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
@@ -1055,19 +1061,25 @@
     },
     "q29-cannabis": {
       "stance": null,
-      "justification": "Positions divergentes : Fabien Roussel se disait en 2022 opposé à la légalisation mais plutôt favorable à la dépénalisation, alors que les députés communistes du groupe GDR ont soutenu la proposition de loi de légalisation sous contrôle de l'État en janvier 2022 et l'amendement de dépénalisation de l'usage en juillet 2026. Pas de déclaration récente du candidat.",
+      "justification": "Positions divergentes : en janvier 2022, la presse présentait Fabien Roussel comme opposé à la légalisation, alors que les deux députés communistes votants du groupe GDR ont voté le 13 janvier 2022 contre la suppression de l'article 1er de la proposition de loi de légalisation sous contrôle de l'État. Pas de déclaration récente du candidat.",
       "sources": [
         {
           "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
           "url": "https://datan.fr/votes/legislature-15/vote_4296",
           "date": "2022-01-13",
           "kind": "vote"
+        },
+        {
+          "title": "France 3 Centre-Val de Loire (franceinfo), « Cannabis : ce qu'il faut savoir sur la proposition de loi de légalisation »",
+          "url": "https://france3-regions.franceinfo.fr/centre-val-de-loire/loiret/cannabis-ce-qu-il-faut-savoir-sur-la-proposition-de-loi-de-legalisation-2416279.html",
+          "date": "2022-01-13",
+          "kind": "presse"
         }
       ]
     },
     "q30-zfe": {
-      "stance": 0,
-      "justification": "Fabien Roussel a demandé en février 2023 un moratoire sur les ZFE (« Il faut un moratoire, il faut déplacer ces ZFE, il faut les décaler dans le temps »). Position de 2023. Les députés GDR ont voté le 8 octobre 2026 pour supprimer l'article abrogeant les ZFE (3 pour, 0 contre), et se sont abstenus le 14 avril 2026 sur l'amendement rendant les ZFE facultatives.",
+      "stance": null,
+      "justification": "Positions divergentes : en février 2023, Fabien Roussel demandait un moratoire sur les ZFE (« Il faut un moratoire, il faut déplacer ces ZFE, il faut les décaler dans le temps »), alors que le 8 octobre 2026 les trois députés GDR votants, dont deux communistes, ont voté pour supprimer l'article abrogeant les ZFE. Pas de déclaration récente du candidat.",
       "sources": [
         {
           "title": "Linfodurable (AFP) – Roussel (PCF) veut « revenir en arrière » sur les zones à faible émission",
@@ -1370,6 +1382,17 @@
                   "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
                   "date": "2022-01",
                   "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Augmenter de 5 % l'ensemble des salaires et pensions inférieurs à 2 500 € net par mois et indexer tous les salaires sur l'inflation (proposition de mai 2026).",
+              "sources": [
+                {
+                  "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
+                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
+                  "date": "2026-10-30",
+                  "kind": "presse"
                 }
               ]
             }

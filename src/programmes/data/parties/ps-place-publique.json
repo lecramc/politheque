@@ -767,7 +767,7 @@
     },
     "q04-retraite": {
       "stance": 1,
-      "justification": "Raphaël Glucksmann veut abroger la réforme de 2023 : « On ne pourra pas faire 60 ans, ce sera 62 ans » (débat de la primaire, 4 octobre 2026) ; il veut aussi fonder la réforme sur la pénibilité et a indiqué que certains Français devront travailler plus longtemps.",
+      "justification": "Raphaël Glucksmann veut abroger la réforme de 2023. Le 30 septembre 2026, il voulait « cesser la focalisation sur le seul âge légal » et fonder une réforme « sur la pénibilité », en indiquant que certains Français devront travailler plus longtemps ; lors du débat de la primaire du 4 octobre 2026, il a précisé : « On ne pourra pas faire 60 ans, ce sera 62 ans ».",
       "sources": [
         {
           "title": "Glucksmann face à Royal, divisions sur LFI, lycées… Ce qu'il faut retenir du dernier débat de la primaire socialiste",
@@ -868,9 +868,15 @@
       ]
     },
     "q10-peines-planchers": {
-      "stance": -1,
-      "justification": "Pas de déclaration du candidat identifiée. Le groupe Socialistes a voté pour l'amendement de suppression de l'article instaurant une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (forme de peines planchers) dans la proposition de loi « Restaurer l'autorité de l'État » (vote n° 1263 du 3 avril 2025 : 5 pour sur 5 députés socialistes votants) ; il s'agit d'un vote sur un amendement, avec une faible participation.",
+      "stance": -2,
+      "justification": "Le groupe Socialistes a déposé le 24 octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262), texte qu'il jugeait « entièrement fondé sur des présupposés non étayés », puis a voté le 3 avril 2025 pour la suppression d'une peine minimale d'un an d'emprisonnement pour les violences commises en récidive (5 pour, 0 contre). Pas de déclaration du candidat identifiée.",
       "sources": [
+        {
+          "title": "Assemblée nationale, amendement n° 5 (groupe Socialistes et apparentés, Mme Capdevielle et al.) de suppression de l'article 1er de la PPL n° 262 « Instauration de peines planchers »",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0262/AN/5.pdf",
+          "date": "2024-10-24",
+          "kind": "proposition-de-loi"
+        },
         {
           "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
           "url": "https://datan.fr/votes/legislature-17/vote_1263",
@@ -887,7 +893,7 @@
     },
     "q12-nucleaire": {
       "stance": 1,
-      "justification": "Estime qu'il faut construire de nouveaux EPR, contrairement à Yannick Jadot, chargé de la planification écologique ; il reconnaît que « la question des nouveaux réacteurs nucléaires » reste « à discuter » entre eux (25 août 2026).",
+      "justification": "Estime qu'il faut développer de nouveaux EPR, contrairement à Yannick Jadot, chargé de préparer son « état d'urgence écologique » ; la question des nouveaux réacteurs n'est pas tranchée entre eux (25 août 2026).",
       "sources": [
         {
           "title": "Présidentielle 2027 : s'il gagne, Raphaël Glucksmann engagera « les 100 jours de la révolution écologique »",
@@ -1145,7 +1151,7 @@
     },
     "q29-cannabis": {
       "stance": 1,
-      "justification": "En 2019, Raphaël Glucksmann a cosigné une tribune de plus de 70 personnalités appelant à une « légalisation encadrée » du cannabis. Le groupe socialiste a soutenu en janvier 2022 la proposition de loi de légalisation sous contrôle de l'État (5 voix contre l'amendement de suppression de l'article 1er). Pas de déclaration du candidat en 2025-2026.",
+      "justification": "En juin 2019, Raphaël Glucksmann figurait parmi les plus de 70 personnalités qui appelaient à légaliser le cannabis pour les consommateurs majeurs. En janvier 2022, les députés socialistes ont voté contre la suppression de l'article 1er de la proposition de loi de légalisation sous contrôle de l'État (5 contre). Pas de déclaration du candidat en 2025-2026.",
       "sources": [
         {
           "title": "Public Sénat – Cannabis : 70 personnalités appellent à légaliser au nom du « pragmatisme »",

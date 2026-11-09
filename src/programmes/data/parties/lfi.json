@@ -3,7 +3,7 @@
   "name": "La France insoumise",
   "shortName": "LFI",
   "color": "#CC2443",
-  "family": "Gauche radicale (la plupart des politistes ; « gauche populiste » pour certains ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, rattachement jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse l'étiquette « extrême gauche »)",
+  "family": "Gauche radicale (la plupart des politistes ; « populisme de gauche » pour d'autres, dont Manuel Cervera-Marzal ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse cette étiquette)",
   "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est parue le 6 novembre 2026.",
   "foundedYear": 2016,
   "leader": {
@@ -287,13 +287,19 @@
       },
       {
         "date": "2024-07-07",
-        "event": "Législatives anticipées : LFI concourt au sein du Nouveau Front populaire, arrivé en tête en nombre de sièges ; le groupe LFI compte 72 députés à l'ouverture de la législature, et des députés en rupture fondent L'Après.",
+        "event": "Législatives anticipées : LFI concourt au sein du Nouveau Front populaire, arrivé en tête en nombre de sièges ; le groupe LFI compte 72 députés à l'ouverture de la législature (71 membres et 1 apparenté), et des députés en rupture fondent L'Après.",
         "sources": [
           {
             "title": "Public Sénat, « Les résultats du second tour des élections législatives 2024 : le Nouveau Front populaire en tête »",
             "url": "https://www.publicsenat.fr/actualites/politique/resultat-des-legislatives-2024-le-nouveau-front-populaire-en-tete-suivi-par-le-camp-presidentiel-le-rn-trebuche",
             "date": "2024-07-07",
             "kind": "presse"
+          },
+          {
+            "title": "Vie-publique.fr, « Élections législatives : 81 recours devant le Conseil constitutionnel » (tableau des groupes)",
+            "url": "https://www.vie-publique.fr/en-bref/294996-elections-legislatives-81-recours-devant-le-conseil-constitutionnel",
+            "date": "2024-07-25",
+            "kind": "statistique"
           },
           {
             "title": "Wikipédia, « La France insoumise »",
@@ -311,12 +317,18 @@
       }
     ],
     "whyCreated": {
-      "text": "La France insoumise est l'aboutissement d'une lignée ouverte par Jean-Luc Mélenchon en novembre 2008 : après le congrès de Reims, il quitte le PS avec le député Marc Dolez et lance le Parti de gauche (PG), sur le modèle allemand de Die Linke d'Oskar Lafontaine, officiellement fondé début 2009. Le PG s'allie la même année au PCF dans le Front de gauche, dont Mélenchon est le candidat à la présidentielle de 2012 (11,1 %). Après le revers des européennes de 2014, il théorise dans L'Ère du peuple (2014) un appel au « peuple » plutôt qu'aux partis ; le 10 février 2016, sur TF1, il propose sa candidature à la présidentielle de 2017 « hors cadre de partis » et sans primaire, rompant avec la logique de cartel du Front de gauche, et lance à cette occasion le mouvement La France insoumise pour la porter.",
+      "text": "La France insoumise est l'aboutissement d'une lignée ouverte par Jean-Luc Mélenchon en novembre 2008 : après le congrès de Reims, il quitte le PS avec le député Marc Dolez et lance le Parti de gauche (PG), sur le modèle allemand de Die Linke d'Oskar Lafontaine, officiellement fondé début 2009. Le PG s'allie la même année au PCF dans le Front de gauche, dont Mélenchon est le candidat à la présidentielle de 2012 (11,10 % des suffrages exprimés). Après les européennes de 2014, il théorise dans L'Ère du peuple (2014) un appel au « peuple » plutôt qu'aux partis ; le 10 février 2016, sur TF1, il propose sa candidature à la présidentielle de 2017 « hors cadre de partis » et sans primaire, rompant avec la logique de cartel du Front de gauche, et lance à cette occasion le mouvement La France insoumise pour la porter.",
       "sources": [
         {
           "title": "Encyclopédie Larousse, « Jean-Luc Mélenchon »",
           "url": "https://www.larousse.fr/encyclopedie/personnage/wd/185944",
           "date": "2026-11",
+          "kind": "statistique"
+        },
+        {
+          "title": "Conseil constitutionnel, décision n° 2012-152 PDR du 25 avril 2012 (résultats du 1er tour)",
+          "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012152PDR.htm",
+          "date": "2012-04-25",
           "kind": "statistique"
         },
         {
@@ -736,7 +748,7 @@
     },
     "q07-immigration": {
       "stance": -2,
-      "justification": "Le programme prévoit de faciliter l'accès aux visas, d'instaurer la carte de séjour de dix ans comme titre de référence et d'abroger les lois immigration récentes.",
+      "justification": "Le contrat du Nouveau Front populaire (2024) prévoit de « faciliter l'accès aux visas », d'« instituer la carte de séjour de dix ans comme titre de séjour de référence » et d'« abroger les lois asile et immigration de Macron » ; « L'Avenir en commun » (2022) proposait déjà d'« abroger la loi asile et immigration ».",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
@@ -772,7 +784,7 @@
     },
     "q09-regularisation": {
       "stance": 2,
-      "justification": "Régularisation des travailleurs, étudiants et parents d'enfants scolarisés.",
+      "justification": "Le contrat du Nouveau Front populaire (2024) et « L'Avenir en commun » (2022) prévoient de « régulariser les travailleurs, étudiants, parents d'enfants scolarisés ».",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
@@ -790,13 +802,19 @@
     },
     "q10-peines-planchers": {
       "stance": -2,
-      "justification": "Le groupe LFI-NFP a déposé en octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262), jugé « grave politiquement » et inefficace contre la récidive ; Europe 1 rapporte en juin 2025 l'opposition de la gauche aux peines minimales.",
+      "justification": "Le groupe LFI-NFP a déposé le 23 octobre 2024 un amendement de suppression du rétablissement des peines planchers (PPL n° 262), jugé « grave politiquement » et qui « n'a pas de sens pour lutter contre la récidive », puis a voté le 3 avril 2025 pour la suppression d'une peine minimale pour les violences en récidive (17 pour, 0 contre) ; Europe 1 rapporte en juin 2025 l'opposition de la gauche aux peines minimales.",
       "sources": [
         {
           "title": "Assemblée nationale, amendement n° 1 (groupe LFI-NFP, M. Bernalicis et al.) de suppression de l'article 1er de la PPL n° 262 « Instauration de peines planchers »",
           "url": "https://www.assemblee-nationale.fr/dyn/17/amendements/0262/AN/1.pdf",
           "date": "2024-10-23",
           "kind": "proposition-de-loi"
+        },
+        {
+          "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
+          "url": "https://datan.fr/votes/legislature-17/vote_1263",
+          "date": "2025-04-03",
+          "kind": "vote"
         },
         {
           "title": "Europe 1, « Peines minimales : le gouvernement plaide pour, la gauche s'y oppose »",
@@ -928,7 +946,7 @@
     },
     "q17-ecole-privee": {
       "stance": 2,
-      "justification": "Le programme soutenu par LFI prévoit de « moduler les dotations des établissements, y compris privés, selon des objectifs de mixité sociale » et d'abroger la loi Carle ; le député LFI Paul Vannier est l'auteur de la PPL n° 418 (2024) en ce sens.",
+      "justification": "Le contrat du Nouveau Front populaire (2024) prévoit de « moduler les dotations des établissements scolaires », y compris privés, « en fonction de leur respect d'objectifs de mixité sociale » ; « L'Avenir en commun » (2022) proposait d'« abroger la loi Carle ». Le député LFI Paul Vannier est l'auteur de la proposition de loi n° 418 (2024) en ce sens, rejetée en commission le 20 novembre 2024.",
       "sources": [
         {
           "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
@@ -1204,11 +1222,11 @@
     },
     "q31-voile-sport": {
       "stance": 1,
-      "justification": "En mars 2025, Jean-Luc Mélenchon a qualifié de « surenchère raciste » le débat sur l'interdiction du voile dans le sport (« C'est misérable, c'est lamentable »). LFI n'a pas de sénateurs et n'a donc pas pris part au scrutin du Sénat.",
+      "justification": "Le 19 mars 2025, Jean-Luc Mélenchon a qualifié de « surenchère raciste » le débat sur le voile dans le sport (« C'est misérable, c'est lamentable ») et estimé qu'il revenait aux fédérations sportives de décider. LFI n'a pas de sénateurs et n'a donc pas pris part au scrutin du Sénat.",
       "sources": [
         {
-          "title": "Europe 1 – Voile dans le sport : Jean-Luc Mélenchon dénonce une « surenchère raciste »",
-          "url": "https://www.europe1.fr/node/668697",
+          "title": "France 3 Bretagne (franceinfo), « Jean-Luc Mélenchon dénonce une \"surenchère raciste\" à propos du débat sur le port du voile dans le sport »",
+          "url": "https://france3-regions.franceinfo.fr/bretagne/finistere/brest/jean-luc-melenchon-denonce-une-surenchere-raciste-a-propos-du-debat-sur-le-port-du-voile-dans-le-sport-3125116.html",
           "date": "2025-03-19",
           "kind": "presse"
         }

@@ -669,7 +669,7 @@
     },
     "q05-smic": {
       "stance": -1,
-      "justification": "En 2022, Éric Zemmour proposait de ne pas augmenter directement le SMIC mais de baisser la CSG sur les salaires du SMIC à 2 000 € (« équivalent d'un 13e mois »). Pas de position 2026 identifiée.",
+      "justification": "En 2022, Éric Zemmour ne proposait pas d'augmenter directement le SMIC, mais une baisse dégressive de la CSG sur les salaires allant du SMIC à 2 000 €, pour « toucher l'équivalent d'un 13ème mois ». Position de 2022.",
       "sources": [
         {
           "title": "La Finance pour tous, « De nombreux candidats en faveur d'une augmentation du Smic »",
@@ -939,16 +939,9 @@
       "sources": []
     },
     "q29-cannabis": {
-      "stance": -2,
-      "justification": "Pendant la campagne de 2022, Éric Zemmour a déclaré : « Après mûre réflexion, je suis contre » la légalisation du cannabis. Il avait évoqué en mai 2021, avant sa candidature, une « légalisation organisée ». Position de 2022 ; Reconquête n'a pas de groupe parlementaire.",
-      "sources": [
-        {
-          "title": "CNews – Répression, légalisation, dépénalisation… Que pensent les candidats à la présidentielle du cannabis ?",
-          "url": "https://www.cnews.fr/france/2022-02-01/repression-legalisation-depenalisation-que-pensent-les-candidats-la-presidentielle",
-          "date": "2022-02-01",
-          "kind": "presse"
-        }
-      ]
+      "stance": null,
+      "justification": "Pas de position établie : le programme présidentiel de 2022 d'Éric Zemmour ne traite pas du cannabis, aucune déclaration récente n'est identifiée, et Reconquête n'a pas de groupe parlementaire.",
+      "sources": []
     },
     "q30-zfe": {
       "stance": 2,

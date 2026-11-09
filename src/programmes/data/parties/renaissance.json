@@ -766,7 +766,7 @@
     },
     "q13-renouvelables": {
       "stance": 1,
-      "justification": "Défend un mix entre nucléaire et renouvelables (juillet 2025), sans objectif chiffré d'accélération identifié.",
+      "justification": "Gabriel Attal défend « un mix d'énergies nucléaire et renouvelables » (21 juillet 2025), sans objectif chiffré d'accélération de l'éolien ou du solaire.",
       "sources": [
         {
           "title": "Attal propose une « nouvelle donne » écologique en même temps qu'économique",
@@ -1005,7 +1005,7 @@
     },
     "q29-cannabis": {
       "stance": -2,
-      "justification": "Le groupe LaREM a voté en janvier 2022 la suppression de l'article 1er de la proposition de loi légalisant le cannabis sous le contrôle de l'État (34 pour, 2 abstentions, 2 contre). Le groupe EPR a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 12 contre). En 2020, Gabriel Attal s'était dit « favorable par principe » à l'ouverture d'un débat sur la légalisation, sans prendre position.",
+      "justification": "Le groupe LaREM a voté en janvier 2022 la suppression de l'article 1er de la proposition de loi légalisant le cannabis sous le contrôle de l'État (34 pour, 2 abstentions, 2 contre). Le groupe EPR a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 12 contre). Le 15 janvier 2020, Gabriel Attal s'était dit « favorable par définition, par principe » à un débat sur la légalisation, sans prendre position sur la légalisation elle-même.",
       "sources": [
         {
           "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
@@ -1022,7 +1022,7 @@
         {
           "title": "Public Sénat – Cannabis : Attal « favorable » à un débat autour de la légalisation",
           "url": "https://www.publicsenat.fr/actualites/politique/cannabis-attal-favorable-a-un-debat-autour-de-la-legalisation-149169",
-          "date": "2020-01",
+          "date": "2020-01-15",
           "kind": "presse"
         }
       ]
@@ -1166,8 +1166,8 @@
       ]
     },
     "q39-encadrement-loyers": {
-      "stance": 0,
-      "justification": "Les députés Ensemble pour la République ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (13 contre, 3 abstentions), leur oratrice Annaïg Le Meur jugeant l'évaluation « une étape indispensable avant de prendre une décision définitive ». Les sénateurs RDPI ont voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (16 pour).",
+      "stance": null,
+      "justification": "Les élus du parti se sont prononcés différemment selon la chambre : les députés Ensemble pour la République ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (13 contre, 3 abstentions), leur oratrice Annaïg Le Meur jugeant l'évaluation « une étape indispensable avant de prendre une décision définitive » ; les sénateurs RDPI ont voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (16 pour). Pas de déclaration de Gabriel Attal.",
       "sources": [
         {
           "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
@@ -1211,6 +1211,12 @@
                   "url": "https://attalpresident.fr/programme",
                   "date": "2026-11",
                   "kind": "programme"
+                },
+                {
+                  "title": "MoneyVox, « Attal veut 100 000 départs volontaires de fonctionnaires et “impunité budgétaire zéro” »",
+                  "url": "https://www.moneyvox.fr/impot/actualites/109548/attal-veut-100-000-departs-volontaires-de-fonctionnaires-et-impunite-budgetaire-zero",
+                  "date": "2026-07-03",
+                  "kind": "presse"
                 }
               ]
             },

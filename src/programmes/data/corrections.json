@@ -1,5 +1,155 @@
 [
   {
+    "id": "2026-11-09-source-de-l-entree-sur-le-proces-de-rachida-dati",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/lr/procedures-judiciaires"],
+    "summary": "Source de l'entrée sur le procès de Rachida Dati : l'article est signé 6Médias avec L'Express, et non l'AFP comme indiqué. Les faits rapportés sont inchangés."
+  },
+  {
+    "id": "2026-11-09-etiquette-precisee-populisme-de-gauche-pour-d-au",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/lfi", "/partis/lfi/histoire"],
+    "summary": "Étiquette précisée (« populisme de gauche » pour d'autres politistes, dont Manuel Cervera-Marzal) ; résultat de 2012 donné à deux décimales (11,10 % au lieu de 11,1 %) ; mot « revers » retiré ; 72 députés de juillet 2024 détaillés (71 membres et 1 apparenté)."
+  },
+  {
+    "id": "2026-11-09-mesure-ajoutee-hausse-de-5-des-salaires-et-pensi",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/partis/pcf", "/partis/pcf/programme-2027"],
+    "summary": "Mesure ajoutée : hausse de 5 % des salaires et pensions inférieurs à 2 500 € net par mois, proposée en mai 2026 ; elle remplace dans les idées clés le SMIC à 1 500 € du programme de 2022. Mention « (programme 2022) » retirée des textes des idées clés."
+  },
+  {
+    "id": "2026-11-09-idees-cles-sur-l-impot-minimum-et-le-saut-federa",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/ecologistes", "/partis/ecologistes/programme-2027"],
+    "summary": "Idées clés sur l'impôt minimum et le « saut fédéral » européen : origine ramenée aux sources consultables (février 2025 et avril 2024) ; texte européen aligné sur le programme des européennes de 2024, sans la mention de la majorité qualifiée."
+  },
+  {
+    "id": "2026-11-09-fiche-des-ecologistes-positions-sur-la-retraite",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/ecologistes",
+      "/partis/ecologistes/positions",
+      "/partis/ecologistes/programme-2027"
+    ],
+    "summary": "Fiche des Écologistes : positions sur la retraite, le nucléaire, les renouvelables, le cannabis, la régularisation et les peines planchers fondées sur des déclarations et votes datés ; citations du programme non consultables retirées ; élus d'autres formations du groupe mentionnés."
+  },
+  {
+    "id": "2026-11-09-justifications-precisees-citations-du-contrat-du",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/lfi/positions",
+      "/partis/ps-place-publique/positions",
+      "/partis/pcf/positions"
+    ],
+    "summary": "Justifications précisées : citations du contrat du Nouveau Front populaire reprises à l'identique, votes du 3 avril 2025 sur les peines minimales ajoutés, formule « légalisation encadrée » et affirmations sans source sur le cannabis (PCF) retirées, nouvelle source pour le voile dans le sport (LFI)."
+  },
+  {
+    "id": "2026-11-09-positions-revues-peines-planchers-ps-passee-de-p",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/ps-place-publique/positions", "/partis/pcf/positions"],
+    "summary": "Positions revues : peines planchers (PS) passée de plutôt contre à contre, d'après l'amendement de suppression du groupe socialiste du 24 octobre 2024 ; zones à faibles émissions (PCF) passée de position intermédiaire à non établie, les prises de position divergeant."
+  },
+  {
+    "id": "2026-11-09-vote-du-8-octobre-2026-sur-l-abrogation-des-zone",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/partis/horizons/positions"],
+    "summary": "Vote du 8 octobre 2026 sur l'abrogation des zones à faibles émissions (scrutin n° 8613) ajouté à la justification d'Horizons, qui reste sans position établie sur cette question."
+  },
+  {
+    "id": "2026-11-09-chronologie-precisee-30-deputes-dont-2-apparente",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/horizons"],
+    "summary": "Chronologie précisée : 30 députés, dont 2 apparentés, au groupe Horizons en juin 2022 (« 30 à 31 » auparavant) et 31 à la formation du groupe Horizons & Indépendants le 18 juillet 2024 (« 34 à l'été 2025 » auparavant) ; gain des retraites estimé à « environ » 30 Md€."
+  },
+  {
+    "id": "2026-11-09-chronologie-corrigee-47-deputes-droite-republica",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/lr"],
+    "summary": "Chronologie corrigée : 47 députés Droite républicaine à la formation du groupe en juillet 2024 (« environ 50 » auparavant) ; l'entrée au gouvernement Barnier (21 septembre 2024) et le refus d'entrer au gouvernement Lecornu (11 octobre 2025) sont séparés."
+  },
+  {
+    "id": "2026-11-09-justifications-precisees-sans-changement-de-posi",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/lr/positions",
+      "/partis/horizons/positions",
+      "/partis/renaissance/positions",
+      "/partis/nouvelle-energie/positions"
+    ],
+    "summary": "Justifications précisées sans changement de position : propos de Ian Boucard (31 octobre 2024), vote du Sénat du 11 juin 2026, propos de Jérémie Patrier-Leitus, de Gabriel Attal et de David Lisnard cités à l'identique."
+  },
+  {
+    "id": "2026-11-09-idee-cle-sur-les-peines-planchers-ramenee-au-tex",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/rn"],
+    "summary": "Idée clé sur les peines planchers ramenée au texte de la mesure, « Rétablir les peines planchers et instaurer des peines minimales » : la mention « pour certains délits » ne figurait pas dans les sources."
+  },
+  {
+    "id": "2026-11-09-justifications-precisees-regroupement-familial-e",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/rn/positions"],
+    "summary": "Justifications précisées : regroupement familial « encadré par la loi » et pouvant « être interdit ou limité » (projet de 2022), au lieu de « encadré ou interdit par référendum » ; proposition de loi RN de 2023 sur les hausses de salaire de 10 % jusqu'à trois fois le SMIC."
+  },
+  {
+    "id": "2026-11-09-citations-retablies-a-l-identique-de-leur-source",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/rn/positions",
+      "/partis/renaissance/positions",
+      "/partis/reconquete/positions"
+    ],
+    "summary": "Citations rétablies à l'identique de leur source : Jordan Bardella sur le cannabis (21 juin 2019), Gabriel Attal sur un débat sur la légalisation (15 janvier 2020), Éric Zemmour sur la baisse de la CSG (programme de 2022)."
+  },
+  {
+    "id": "2026-11-09-votes-des-eurodeputes-horizons-sur-l-ukraine-pre",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/horizons/positions"],
+    "summary": "Votes des eurodéputés Horizons sur l'Ukraine précisés : 1 pour et 1 non-votant le 9 septembre 2025 (2 pour étaient indiqués) ; l'échange sur l'adhésion de l'Ukraine du 26 mai 2026 est attribué à Volodymyr Zelensky, qui l'a rapporté."
+  },
+  {
+    "id": "2026-11-09-vote-des-eurodeputes-lr-sur-la-primaute-du-droit",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/lr/positions"],
+    "summary": "Vote des eurodéputés LR sur la primauté du droit de l'Union du 21 novembre 2023 corrigé : 6 contre et 1 abstention, au lieu de 6 contre et 2 abstentions."
+  },
+  {
+    "id": "2026-11-09-position-sur-l-allongement-de-la-duree-legale-du",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/nouvelle-energie/positions"],
+    "summary": "Position sur l'allongement de la durée légale du travail ramenée à « pas de position établie » (« plutôt favorable » auparavant) : David Lisnard renvoie le temps de travail aux accords d'entreprise sans se prononcer sur la durée légale."
+  },
+  {
+    "id": "2026-11-09-position-sur-l-encadrement-des-loyers-ramenee-a",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/renaissance/positions"],
+    "summary": "Position sur l'encadrement des loyers ramenée à « pas de position établie » (« intermédiaire » auparavant) : les députés Ensemble pour la République ont voté contre sa pérennisation le 11 décembre 2025, les sénateurs RDPI pour sa prolongation le 21 octobre 2026."
+  },
+  {
+    "id": "2026-11-09-position-d-eric-zemmour-sur-la-legalisation-du-c",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/reconquete/positions"],
+    "summary": "Position d'Éric Zemmour sur la légalisation du cannabis retirée (« explicitement opposé » auparavant) : aucune source accessible ne confirme la déclaration de 2022 citée, et le programme de 2022 ne traite pas du sujet."
+  },
+  {
     "id": "2026-11-09-citations-alignees-sur-leurs-sources-nativisme-s",
     "date": "2026-11-09",
     "kind": "correction",

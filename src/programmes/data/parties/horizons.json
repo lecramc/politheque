@@ -149,7 +149,7 @@
       },
       {
         "date": "2022-06",
-        "event": "Législatives : Horizons, membre de la coalition Ensemble, forme le groupe « Horizons et apparentés » (30 à 31 députés selon les décomptes).",
+        "event": "Législatives : Horizons, membre de la coalition Ensemble, forme le 28 juin 2022 le groupe « Horizons et apparentés » (30 députés, dont 2 apparentés, au 29 juin 2022).",
         "sources": [
           {
             "title": "Datan – Groupe Horizons et apparentés (16e législature)",
@@ -191,7 +191,7 @@
       },
       {
         "date": "2024-07",
-        "event": "Après les législatives anticipées, création du groupe « Horizons & Indépendants » à l'Assemblée (34 députés à l'été 2025 selon LCP).",
+        "event": "Après les législatives anticipées, création le 18 juillet 2024 du groupe « Horizons & Indépendants » à l'Assemblée (31 députés à sa formation).",
         "sources": [
           {
             "title": "Datan – Groupe Horizons & Indépendants (17e législature)",
@@ -734,7 +734,7 @@
     },
     "q17-ecole-privee": {
       "stance": -1,
-      "justification": "Lors de l'examen de la PPL n° 418 en commission (20 novembre 2024), l'orateur Horizons Jérémie Patrier-Leitus a voté la suppression de l'article unique modulant le financement selon la mixité, en estimant que la mixité doit être traitée « pour les établissements publics comme privés ». Aucune position d'Édouard Philippe ; son programme n'en parle pas.",
+      "justification": "Lors de l'examen de la PPL n° 418 en commission (20 novembre 2024), l'orateur Horizons Jérémie Patrier-Leitus a annoncé que son groupe voterait les amendements de suppression de l'article unique modulant le financement selon la mixité, la question appelant selon lui « une réflexion globale », « privés comme publics », « plutôt qu'un dispositif punitif et uniforme ». Aucune position d'Édouard Philippe ; son programme n'en parle pas.",
       "sources": [
         {
           "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
@@ -926,7 +926,7 @@
     },
     "q30-zfe": {
       "stance": null,
-      "justification": "Pas de position publique claire et sourcée à ce jour : Édouard Philippe ne s'est pas prononcé, et le groupe Horizons s'est partagé sur la suppression des ZFE le 28 mai 2025 (1 pour, 1 abstention, 2 contre) ; le 14 avril 2026, il a voté à 16 voix contre 5 (1 abstention) l'amendement du gouvernement qui maintenait les ZFE en les rendant facultatives, rejeté par l'Assemblée.",
+      "justification": "Pas de position publique claire et sourcée à ce jour : Édouard Philippe ne s'est pas prononcé, et le groupe Horizons s'est partagé sur la suppression des ZFE le 28 mai 2025 (1 pour, 1 abstention, 2 contre) ; le 14 avril 2026, il a voté à 16 voix contre 5 (1 abstention) l'amendement du gouvernement qui maintenait les ZFE en les rendant facultatives, rejeté par l'Assemblée ; le 8 octobre 2026, son seul député votant a soutenu l'amendement de suppression de l'article abrogeant les ZFE (vote n° 8613, rejeté).",
       "sources": [
         {
           "title": "Datan – Vote n° 6183, « Maintenir l'existence des ZFE mais les rendre facultatives »",
@@ -944,6 +944,12 @@
           "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
           "url": "https://datan.fr/votes/legislature-17/vote_2190",
           "date": "2025-05-28",
+          "kind": "vote"
+        },
+        {
+          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "date": "2026-10-08",
           "kind": "vote"
         }
       ]
@@ -974,7 +980,7 @@
     },
     "q32-ukraine-ue": {
       "stance": 2,
-      "justification": "Les eurodéputés Horizons ont voté pour les résolutions du PE sur l'Ukraine du 9 septembre 2025 et du 8 juillet 2026 (2 pour), qui soutiennent l'adhésion de l'Ukraine ; Édouard Philippe a évoqué le parcours d'adhésion de l'Ukraine avec Volodymyr Zelensky à Kyiv le 26 mai 2026.",
+      "justification": "Les eurodéputés Horizons ont voté pour les résolutions du PE sur l'Ukraine, qui soutiennent son adhésion, du 9 septembre 2025 (1 pour, 1 non votant) et du 8 juillet 2026 (2 pour) ; selon Volodymyr Zelensky, Édouard Philippe et lui ont « évoqué l'adhésion de l'Ukraine à l'Union européenne » à Kyiv le 26 mai 2026.",
       "sources": [
         {
           "title": "HowTheyVote.eu, vote nominatif du Parlement européen « 2023 and 2024 reports on Ukraine » (détail par délégation nationale)",
@@ -1161,7 +1167,7 @@
           "summary": "Le candidat propose de porter progressivement l'âge de départ à 65 ans et la durée de cotisation à 45 ans, de sortir des 35 heures et de réduire la durée d'indemnisation du chômage.",
           "measures": [
             {
-              "text": "Âge de départ porté progressivement à 65 ans et durée de cotisation à 45 ans en moins de dix ans, « pour ceux qui le peuvent » ; un Français sur trois pourrait partir avant 65 ans (carrières longues, pénibilité, handicap) ; gain estimé par le candidat à 30 Md€ en année pleine.",
+              "text": "Âge de départ porté progressivement à 65 ans et durée de cotisation à 45 ans en moins de dix ans, « pour ceux qui le peuvent » ; un Français sur trois pourrait partir avant 65 ans (carrières longues, pénibilité, handicap) ; gain estimé par le candidat à environ 30 Md€ en année pleine.",
               "sources": [
                 {
                   "title": "Pour une France plus prospère — Avec Édouard 2027",
