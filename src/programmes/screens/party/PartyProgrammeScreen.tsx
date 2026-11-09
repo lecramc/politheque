@@ -52,6 +52,12 @@ export default function PartyProgrammeScreen() {
   return (
     <TabPanel id="programme" style={{ gap: effects.spacing.lg }}>
       {meta ? <SeoHead meta={meta} /> : null}
+      {/* Phrase datée et autonome, même gabarit pour les dix partis (audit SEO § 5.1). */}
+      {vm.summary ? (
+        <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
+          {vm.summary}
+        </Text>
+      ) : null}
       {vm.keyIdeas ? <KeyIdeaList keyIdeas={vm.keyIdeas} partyName={party.name} /> : null}
 
       {candidacy ? (

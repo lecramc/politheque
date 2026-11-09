@@ -123,6 +123,12 @@ export default function ThemeScreen() {
         <>
           <View style={{ gap: effects.spacing.xs }}>
             <Text variant="title">{theme.title}</Text>
+            {/* Phrase datée et autonome, même gabarit pour les neuf débats (audit SEO § 5.1). */}
+            {vm.summary ? (
+              <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
+                {vm.summary}
+              </Text>
+            ) : null}
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{theme.context}</Text>
             {theme.contextMore ? (
               <MoreText>

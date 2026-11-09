@@ -2,8 +2,10 @@ import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { candidatesOf } from '@/src/programmes/models/election.service';
+import { debateSummary } from '@/src/programmes/models/page-summary.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import { debateMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
+import { SITE_ROUTES } from '@/src/programmes/models/seo/site-routes';
 import {
   selectCatalog,
   selectCatalogStatus,
@@ -29,10 +31,17 @@ export const themeViewModel =
         );
         const themes = catalog?.themes ?? [];
         const index = themes.findIndex((t) => t.id === themeId);
+        const candidates = election ? candidatesOf(election, parties) : [];
+        const date = catalog ? SITE_ROUTES['/debats/[id]'].lastmod(catalog, { id: themeId }) : null;
         return {
           status,
           theme,
           meta: theme && catalog ? debateMeta(theme, catalog) : null,
+          /** Phrase datée sous le titre, même gabarit pour les neuf débats (audit SEO § 5.1). */
+          summary:
+            theme && date && candidates.length
+              ? debateSummary({ theme, date, candidacies: candidates.map((c) => c.candidacy) })
+              : null,
           notFoundMeta: nonIndexableMeta('Thème introuvable', `/debats/${themeId}`),
           markRead: () => dispatch(markContentReadUsecase(contentKey.debate(themeId))),
           election,

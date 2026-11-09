@@ -12,6 +12,7 @@ import {
   sortKeyIdeasByTheme,
 } from '@/src/programmes/models/key-ideas.service';
 import { presentDossier } from '@/src/programmes/models/legal/legal-presentation';
+import { electionPhrase, partySummary } from '@/src/programmes/models/page-summary.service';
 import { formatLongDate, originLabel } from '@/src/programmes/models/presentation.service';
 import type { Candidacy, Source, ThemeId } from '@/src/programmes/models/programme.model';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
@@ -123,6 +124,16 @@ export const partyViewModel =
             : '',
           verifiedOn,
           updatedOn,
+          /** Phrase datée en tête de la fiche, même gabarit pour tous (audit SEO § 5.1). */
+          summary:
+            party && catalog && featured && party.candidacies[featured.id]
+              ? partySummary({
+                  party,
+                  candidacy: party.candidacies[featured.id],
+                  electionTitle: electionPhrase(featured),
+                  themeIds: catalog.themes.map((t) => t.id),
+                })
+              : null,
           keyIdeas,
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,
           sections,
