@@ -1,5 +1,19 @@
 [
   {
+    "id": "2026-11-09-l-enquete-du-parquet-national-financier-visant-f",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/pcf/procedures-judiciaires"],
+    "summary": "L'enquête du Parquet national financier visant Fabien Roussel est désormais classée au titre de candidat à l'élection présidentielle (2022 et 2027), et non plus de dirigeant, comme pour les autres candidats."
+  },
+  {
+    "id": "2026-11-09-ajout-de-la-condamnation-d-eric-zemmour-par-la-c",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/partis/reconquete/procedures-judiciaires"],
+    "summary": "Ajout de la condamnation d'Éric Zemmour par la cour d'appel de Paris le 2 avril 2025 (10 000 € d'amende, contestation de crime contre l'humanité, propos de 2019 sur Pétain). Pourvoi en cassation formé, issue non connue : condamnation non définitive, présomption d'innocence."
+  },
+  {
     "id": "2026-11-09-fiches-ps-pcf-lfi-renaissance-horizons-et-lr-cor",
     "date": "2026-11-09",
     "kind": "correction",
