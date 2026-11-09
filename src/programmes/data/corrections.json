@@ -1,5 +1,149 @@
 [
   {
+    "id": "2026-11-09-fiches-ps-pcf-lfi-renaissance-horizons-et-lr-cor",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/ps-place-publique",
+      "/partis/pcf",
+      "/partis/pcf/histoire",
+      "/partis/pcf/positions",
+      "/partis/lfi/positions",
+      "/partis/lfi/histoire",
+      "/partis/renaissance/positions",
+      "/partis/horizons/positions",
+      "/partis/lr/positions"
+    ],
+    "summary": "Fiches PS, PCF, LFI, Renaissance, Horizons et LR corrigées : affirmations sans source retirées, résultat de 1946 du PCF ramené à un seul chiffre, sources faibles ou commerciales remplacées, notes de codage supprimées."
+  },
+  {
+    "id": "2026-11-09-fiche-des-ecologistes-corrigee-objet-du-vote-de",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/ecologistes",
+      "/partis/ecologistes/positions",
+      "/partis/ecologistes/programme-2027"
+    ],
+    "summary": "Fiche des Écologistes corrigée : objet du vote de décembre 2025 précisé (primaire de la gauche), deux idées clés remplacées par des mesures du programme 2027, cinq mesures sans source valable retirées, contrat du Nouveau Front populaire cité par la presse."
+  },
+  {
+    "id": "2026-11-09-fiche-nouvelle-energie-corrigee-immigration-succ",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/nouvelle-energie",
+      "/partis/nouvelle-energie/positions",
+      "/partis/nouvelle-energie/programme-2027"
+    ],
+    "summary": "Fiche Nouvelle Énergie corrigée : immigration, successions et dépenses publiques reformulées d'après les textes du parti et d'Europe 1 ; répartition des économies limitée à ce que publie le parti ; sources faibles retirées."
+  },
+  {
+    "id": "2026-11-09-positions-revues-voile-en-competition-horizons-p",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/horizons/positions",
+      "/partis/renaissance/positions",
+      "/partis/ps-place-publique/positions",
+      "/partis/nouvelle-energie/positions",
+      "/partis/ecologistes/positions"
+    ],
+    "summary": "Positions revues : voile en compétition (Horizons) passée de plutôt pour à plutôt contre ; passées à non établies faute de source claire : Horizons ZFE et loyers, Renaissance école privée, PS nationalisations, Nouvelle Énergie proportionnelle et fin de vie, Écologistes dépenses."
+  },
+  {
+    "id": "2026-11-09-fiche-lr-corrigee-vote-contre-de-bruno-retaillea",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/lr", "/partis/lr/positions", "/partis/lr/programme-2027"],
+    "summary": "Fiche LR corrigée : vote contre de Bruno Retailleau sur l'encadrement des loyers mentionné, mot « révolution » retiré faute de source, titre de l'idée sur la retraite reformulé, sources faibles retirées, européennes de 2024 citées."
+  },
+  {
+    "id": "2026-11-09-fiche-reconquete-corrigee-economies-annoncees-au",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/partis/reconquete",
+      "/partis/reconquete/positions",
+      "/partis/reconquete/programme-2027"
+    ],
+    "summary": "Fiche Reconquête corrigée : économies annoncées « au minimum » 140 Md€ par an, idée « remigration » datée de septembre 2026, idée sur l'énergie reformulée selon le programme 2022, sources faibles retirées, positions sur l'ISF et le droit de veto passées à non établies."
+  },
+  {
+    "id": "2026-11-09-fiche-rn-corrigee-vote-des-senateurs-sur-l-encad",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/rn", "/partis/rn/positions", "/partis/rn/programme-2027"],
+    "summary": "Fiche RN corrigée : vote des sénateurs sur l'encadrement des loyers (ils n'étaient pas les seuls contre), alternative du programme 2022 sur les aides de solidarité rétablie, chiffre attribué à tort à Public Sénat retiré, européennes de 2024 citées dans l'en-tête."
+  },
+  {
+    "id": "2026-11-09-candidature-d-eric-zemmour-la-mention-d-une-decl",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/reconquete"],
+    "summary": "Candidature d'Éric Zemmour : la mention d'une déclaration formelle qui n'avait pas eu lieu au 3 novembre 2026 est remplacée par ses propos du 17 septembre 2026 et par la précision de Public Sénat ; le statut reste « candidature annoncée »."
+  },
+  {
+    "id": "2026-11-09-detail-des-procedures-judiciaires-retire-des-en",
+    "date": "2026-11-09",
+    "kind": "retrait",
+    "pages": [
+      "/partis/horizons",
+      "/partis/lfi",
+      "/partis/reconquete",
+      "/partis/rn",
+      "/partis/lr/histoire",
+      "/partis/pcf/histoire",
+      "/partis/renaissance",
+      "/partis/rn/histoire",
+      "/partis/lfi/histoire"
+    ],
+    "summary": "Détail des procédures judiciaires retiré des en-têtes, des candidatures et des biographies ; seule reste, pour Marine Le Pen, une phrase sur l'inéligibilité et le pourvoi, avec renvoi à la section Procédures judiciaires."
+  },
+  {
+    "id": "2026-11-09-explication-des-etiquettes-politiques-presentee",
+    "date": "2026-11-09",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/partis/ecologistes",
+      "/partis/horizons",
+      "/partis/lfi",
+      "/partis/lr",
+      "/partis/nouvelle-energie",
+      "/partis/pcf",
+      "/partis/ps-place-publique",
+      "/partis/reconquete",
+      "/partis/renaissance",
+      "/partis/rn"
+    ],
+    "summary": "Explication des étiquettes politiques présentée dans le même ordre pour les dix partis (presse et politistes, bloc du nuancier, position du parti) ; mention « ou radicale » retirée pour le PCF, faute de source."
+  },
+  {
+    "id": "2026-11-09-guide-precise-seuil-de-la-motion-de-censure-port",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/comprendre/budget-dette",
+      "/comprendre/classement-des-partis",
+      "/comprendre/gauche-droite",
+      "/comprendre/desinformation"
+    ],
+    "summary": "Guide précisé : seuil de la motion de censure, portée de la décision du Conseil d'État du 11 mars 2024 (sénatoriales de 2023), PCF présenté comme parti communiste, règle d'affichage des étiquettes écrite ; sources faibles remplacées ou retirées."
+  },
+  {
+    "id": "2026-11-09-chiffres-cles-mis-a-jour-ou-corriges-deficit-de",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": [
+      "/debats/sante",
+      "/debats/securite",
+      "/debats/immigration",
+      "/debats/education",
+      "/debats/ecologie"
+    ],
+    "summary": "Chiffres clés mis à jour ou corrigés : déficit de la Sécurité sociale 2024 (16,3 Md€ au lieu de 15,3), détenus au 1er octobre 2026, immigrés en 2025, score PISA 2025, baisse des émissions nécessaire (environ 4 % par an au lieu de 5 %), assurés sans médecin traitant chiffrés."
+  },
+  {
     "id": "2026-11-09-date-limite-d-inscription-au-plus-tard-le-vendre",
     "date": "2026-11-09",
     "kind": "correction",

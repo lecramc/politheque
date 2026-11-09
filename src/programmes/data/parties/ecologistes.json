@@ -3,7 +3,7 @@
   "name": "Les Écologistes",
   "shortName": "Écologistes",
   "color": "#00C000",
-  "family": "Gauche (écologie politique ; presse et ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame de « l'écologie politique » et ne conteste pas cette étiquette)",
+  "family": "Gauche (écologie politique pour la presse et les ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame de « l'écologie politique » et ne conteste pas cette étiquette)",
   "description": "Les Écologistes sont issus des Verts, fondés en 1984, devenus Europe Écologie Les Verts (EELV) en 2010 puis Les Écologistes en 2023 ; le parti est dirigé par la secrétaire nationale Marine Tondelier. Yannick Jadot a obtenu 4,63 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Marie Toussaint 5,50 % aux européennes de 2024. Membre du Nouveau Front populaire en 2024, le parti siège à l'Assemblée au sein du groupe Écologiste et social, qui compte 38 députés (novembre 2026, selon Datan). Les adhérents votent du 10 au 13 décembre 2026 sur le maintien d'une candidature autonome.",
   "foundedYear": 1984,
   "leader": {
@@ -19,18 +19,11 @@
       "relatedQuestionIds": ["q01-isf"]
     },
     {
-      "id": "abroger-les-reformes-de-l-assurance-chomage",
-      "title": "Abroger les réformes de l'assurance chômage",
-      "text": "Engagement du contrat de législature du Nouveau Front populaire (2024), signé par Les Écologistes.",
-      "measureRefs": ["travail.2"],
-      "relatedQuestionIds": ["q06-chomage"]
-    },
-    {
-      "id": "renoncer-a-l-accord-ue-mercosur-et-annuler-le-ceta",
-      "title": "Renoncer à l'accord UE-Mercosur et annuler le CETA",
-      "text": "Engagement du contrat de législature du Nouveau Front populaire (2024), qui vise les accords de libre-échange de l'Union européenne avec le Mercosur et avec le Canada.",
-      "measureRefs": ["ecologie.4"],
-      "relatedQuestionIds": []
+      "id": "porter-le-smic-a-2-000-brut-par-mois",
+      "title": "Porter le SMIC à 2 000 € brut par mois",
+      "text": "Porter le salaire minimum à « 2 000 euros brut par mois dès 2027 ».",
+      "measureRefs": ["travail.1"],
+      "relatedQuestionIds": ["q05-smic"]
     },
     {
       "id": "faire-un-saut-federal-europeen",
@@ -38,6 +31,13 @@
       "text": "Remplacer le droit de veto de chaque pays par des décisions à la majorité qualifiée dans l'Union européenne.",
       "measureRefs": ["europe.0"],
       "relatedQuestionIds": ["q33-veto-europeen"]
+    },
+    {
+      "id": "fonder-une-premiere-republique-ecologique-et-citoy",
+      "title": "Fonder une « Première République écologique et citoyenne »",
+      "text": "Engager un processus constituant pour mettre fin au « présidentialisme ».",
+      "measureRefs": ["institutions.0"],
+      "relatedQuestionIds": []
     }
   ],
   "lastVerified": "2026-11-03",
@@ -706,15 +706,9 @@
       ]
     },
     "q02-depenses": {
-      "stance": -1,
-      "justification": "Le contrat du NFP (2024), signé par Les Écologistes, prévoit de « refuser les contraintes austéritaires du pacte budgétaire ». Pas de position identifiée sur la dette dans le programme 2027.",
+      "stance": null,
+      "justification": "Pas de position publique claire et sourcée à ce jour propre au parti : le contrat du Nouveau Front populaire (2024), qu'il a signé, prévoit de refuser le pacte de stabilité budgétaire européen, sans arbitrage explicite entre baisse des dépenses et réduction de la dette.",
       "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
         {
           "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
           "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
@@ -762,12 +756,6 @@
           "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
           "date": "2026-07-15",
           "kind": "programme"
-        },
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
         }
       ]
     },
@@ -776,10 +764,10 @@
       "justification": "Le contrat du NFP, signé par Les Écologistes, prévoit l'abrogation des réformes de l'assurance chômage ; le groupe a voté contre la loi de juin 2026 (2 juin 2026 : 14 contre) et pour la suppression de son article unique (16 avril 2026 : 18 pour).",
       "sources": [
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
         },
         {
           "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
@@ -821,18 +809,12 @@
     },
     "q08-preference": {
       "stance": -2,
-      "justification": "Le programme 2027 garantit l'accès des personnes exilées aux droits fondamentaux, et le contrat NFP (2024) l'accès aux services publics sans condition de nationalité ; le groupe Écologiste a voté contre l'amendement RN ajoutant la nationalité française aux critères d'accès au logement social (scrutin n° 4960 du 12 janvier 2026 : 3 contre).",
+      "justification": "Le programme 2027 garantit l'accès des personnes exilées aux droits fondamentaux ; le groupe Écologiste a voté contre l'amendement RN ajoutant la nationalité française aux critères d'accès au logement social (scrutin n° 4960 du 12 janvier 2026 : 3 contre).",
       "sources": [
         {
           "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 178",
           "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
           "date": "2026-07-15",
-          "kind": "programme"
-        },
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
           "kind": "programme"
         },
         {
@@ -968,10 +950,10 @@
           "kind": "vote"
         },
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
         }
       ]
     },
@@ -995,14 +977,8 @@
     },
     "q17-ecole-privee": {
       "stance": 2,
-      "justification": "Le contrat du NFP (2024), signé par Les Écologistes, prévoit de moduler les dotations des établissements, y compris privés, selon des objectifs de mixité sociale ; le groupe Écologiste a défendu en commission la PPL n° 418 qui modulait ce financement (20 novembre 2024).",
+      "justification": "Le contrat du NFP (2024), signé par Les Écologistes, prévoit de « conditionner un certain nombre d'aides à l'inclusion sociale » pour les établissements privés ; le groupe Écologiste a défendu en commission la PPL n° 418 qui modulait ce financement (20 novembre 2024).",
       "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
         {
           "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
           "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
@@ -1153,12 +1129,6 @@
       "stance": -2,
       "justification": "Les Écologistes ont signé le contrat du Nouveau Front populaire (2024), qui prévoit de rétablir la durée effective de 35 heures et de passer aux 32 heures dans les métiers pénibles ou de nuit : ils veulent réduire, et non augmenter, la durée du travail.",
       "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
         {
           "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
           "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
@@ -1319,13 +1289,13 @@
     },
     "q36-fonctionnaires": {
       "stance": -2,
-      "justification": "Les Écologistes ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et les services de l'État, et le rétablissement des « milliers de postes supprimés » à l'ONF, à l'OFB et à Météo-France. Leur programme 2027 prévoit un « plan de titularisation » des agents publics sous contrat privé et plus de moyens humains pour certaines autorités.",
+      "justification": "Les Écologistes ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et les services de l'État. Leur programme 2027 prévoit un « plan de titularisation » des agents publics sous contrat privé et plus de moyens humains pour certaines autorités.",
       "sources": [
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
         },
         {
           "title": "Acteurs publics, « Les Écologistes veulent en finir avec le new public management et les cabinets de conseil »",
@@ -1365,12 +1335,12 @@
       "candidateName": "Marine Tondelier",
       "status": "designe",
       "statusLabel": "Candidate désignée",
-      "candidate": "Marine Tondelier a été désignée en décembre 2025 par un vote interne (86 % des voix) pour porter la candidature des Écologistes. Le conseil fédéral du 21 septembre 2026 a maintenu cette investiture jusqu'au vote des adhérents, du 10 au 13 décembre 2026, qui doit trancher entre une candidature autonome et le ralliement à un autre candidat de gauche.",
-      "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique » présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Le document officiel n'a pas pu être consulté en ligne : les mesures sont citées d'après des comptes rendus de presse et des sites qui reproduisent des extraits paginés du programme. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
+      "candidate": "Marine Tondelier a été désignée en décembre 2025 par un vote des adhérents (86 % des voix) pour représenter Les Écologistes à la primaire de la gauche. Le conseil fédéral du 21 septembre 2026 a maintenu cette investiture jusqu'au vote des adhérents, du 10 au 13 décembre 2026, qui doit trancher entre une candidature autonome et le ralliement à un autre candidat de gauche.",
+      "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique », présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Les mesures sont citées d'après le document du parti et des comptes rendus de presse. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
       "programmeState": "publie",
       "themes": {
         "economie": {
-          "summary": "Le programme vise une « prospérité écologique » et une « fiscalité verte et juste » : impôt plancher sur les très grandes fortunes, « ISF climatique », TVA verte et tranche supérieure d'impôt sur le revenu. Le groupe écologiste est à l'origine de la proposition de loi « taxe Zucman » adoptée à l'Assemblée en février 2025.",
+          "summary": "Le programme vise une « prospérité écologique » et une « fiscalité verte et juste » : impôt plancher sur les très grandes fortunes, « ISF climatique » et TVA verte. Le groupe écologiste est à l'origine de la proposition de loi « taxe Zucman » adoptée à l'Assemblée en février 2025.",
           "measures": [
             {
               "text": "Instaurer la taxe Zucman : impôt minimum de 2 % sur les patrimoines supérieurs à 100 M€ (proposition de loi du groupe écologiste adoptée en première lecture par l'Assemblée le 20 février 2025).",
@@ -1408,17 +1378,6 @@
                   "title": "La Gazette France (AFP), « 2027 : les Écologistes veulent instaurer la Première République écologique et citoyenne »",
                   "url": "https://www.lagazettefrance.fr/article/2027-les-ecologistes-veulent-instaurer-la-premiere-republique-ecologique-et-citoyenne",
                   "date": "2026-07-13",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Créer une tranche d'impôt sur le revenu à 60 % au-delà de 250 000 €.",
-              "sources": [
-                {
-                  "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
-                  "url": "https://lacampagne2027.com/candidats/marine-tondelier",
-                  "date": "2026-11",
                   "kind": "presse"
                 }
               ]
@@ -1469,7 +1428,7 @@
               ]
             },
             {
-              "text": "Porter le salaire minimum à 2 000 € brut par mois dès 2027 (Public Sénat, octobre 2026 ; p. 55 du programme). Les comptes rendus divergent : un autre compte rendu de presse (juillet 2026) indique au contraire que le programme ne promet pas de hausse directe du SMIC.",
+              "text": "Porter le salaire minimum à « 2 000 euros brut par mois dès 2027 » (Public Sénat, 30 octobre 2026).",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 55",
@@ -1506,12 +1465,6 @@
             {
               "text": "Abroger les réformes de l'assurance chômage (contrat NFP 2024, signé par Les Écologistes).",
               "sources": [
-                {
-                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-                  "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-                  "date": "2024-06",
-                  "kind": "programme"
-                },
                 {
                   "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
                   "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
@@ -1688,7 +1641,7 @@
           ]
         },
         "ecologie": {
-          "summary": "Le parti défend une sortie planifiée du nucléaire et un système électrique fondé sur les renouvelables, une agriculture plus biologique et la rénovation thermique des logements. Son groupe a voté contre la loi Duplomb.",
+          "summary": "Le parti défend une sortie planifiée du nucléaire et un système électrique fondé sur les renouvelables. Son groupe a voté contre la loi Duplomb.",
           "measures": [
             {
               "text": "Planifier la sortie du nucléaire et arrêter les projets d'EPR2 et de SMR.",
@@ -1743,40 +1696,12 @@
               ]
             },
             {
-              "text": "Réaliser 500 000 rénovations énergétiques par an.",
-              "sources": [
-                {
-                  "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
-                  "url": "https://lacampagne2027.com/candidats/marine-tondelier",
-                  "date": "2026-11",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Atteindre 21 % de surfaces agricoles en bio et planter 60 000 km de haies d'ici 2030.",
-              "sources": [
-                {
-                  "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
-                  "url": "https://lacampagne2027.com/candidats/marine-tondelier",
-                  "date": "2026-11",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
               "text": "Renoncer à l'accord UE-Mercosur et annuler le CETA (contrat NFP 2024).",
               "sources": [
                 {
-                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-                  "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-                  "date": "2024-06",
-                  "kind": "programme"
-                },
-                {
                   "title": "Pleinchamp, « Législatives 2024 : les simili-programmes agricoles et agro-environnementaux »",
                   "url": "https://www.pleinchamp.com/actualite/legislatives-2024-les-simili-programmes-agricoles-et-agro-environnementaux",
-                  "date": "2024-06",
+                  "date": "2024-06-27",
                   "kind": "presse"
                 }
               ]
@@ -1836,10 +1761,10 @@
               "text": "Réguler l'installation des médecins dans les déserts médicaux (contrat NFP 2024 ; vote de la PPL transpartisane en mai 2025).",
               "sources": [
                 {
-                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-                  "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-                  "date": "2024-06",
-                  "kind": "programme"
+                  "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+                  "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+                  "date": "2024-06-14",
+                  "kind": "presse"
                 },
                 {
                   "title": "Scrutin n° 1607 du 07/05/2025, proposition de loi transpartisane contre les déserts médicaux (régulation de l'installation), vote final en première lecture",
@@ -1852,7 +1777,7 @@
           ]
         },
         "education": {
-          "summary": "Le programme prévoit de réduire les effectifs par classe, de revaloriser les enseignants et de supprimer Parcoursup.",
+          "summary": "Le programme prévoit de réduire les effectifs par classe et de supprimer Parcoursup.",
           "measures": [
             {
               "text": "Atteindre 19 élèves par classe en 2032 et 12 en éducation prioritaire (REP et REP+).",
@@ -1869,17 +1794,6 @@
                   "date": "2026-10-16",
                   "kind": "presse"
                 },
-                {
-                  "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
-                  "url": "https://lacampagne2027.com/candidats/marine-tondelier",
-                  "date": "2026-11",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Augmenter de 15 % la rémunération des enseignants sur cinq ans.",
-              "sources": [
                 {
                   "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
                   "url": "https://lacampagne2027.com/candidats/marine-tondelier",
@@ -1918,14 +1832,8 @@
               ]
             },
             {
-              "text": "Moduler les dotations des établissements scolaires, y compris privés, selon des objectifs de mixité sociale (contrat NFP 2024).",
+              "text": "Conditionner une partie des aides publiques aux établissements privés à l'« inclusion sociale » (contrat NFP 2024).",
               "sources": [
-                {
-                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-                  "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-                  "date": "2024-06",
-                  "kind": "programme"
-                },
                 {
                   "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
                   "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
@@ -2020,7 +1928,7 @@
           "summary": "Le programme propose une « Première République écologique et citoyenne » mettant fin au « présidentialisme », avec la proportionnelle intégrale et un référendum d'initiative citoyenne.",
           "measures": [
             {
-              "text": "Engager un processus constituant pour une « Première République écologique et citoyenne » et abolir la « monarchie présidentielle ».",
+              "text": "Engager un processus constituant pour une « Première République écologique et citoyenne », qui mettrait fin au « présidentialisme » (AFP), et abolir la « monarchie présidentielle ».",
               "sources": [
                 {
                   "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique », p. 159",
@@ -2107,17 +2015,6 @@
                   "title": "LCP, « Polluants éternels, agriculture, 49.3, médias, énergie et climat : les priorités du groupe écologiste »",
                   "url": "https://lcp.fr/actualites/polluants-eternels-agriculture-493-medias-energie-et-climat-les-priorites-du-groupe",
                   "date": "2024-03-25",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Instaurer un mandat présidentiel unique de sept ans.",
-              "sources": [
-                {
-                  "title": "La Campagne 2027, fiche « Marine Tondelier : programme, sondages et déclarations »",
-                  "url": "https://lacampagne2027.com/candidats/marine-tondelier",
-                  "date": "2026-11",
                   "kind": "presse"
                 }
               ]

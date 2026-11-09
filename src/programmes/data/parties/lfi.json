@@ -4,7 +4,7 @@
   "shortName": "LFI",
   "color": "#CC2443",
   "family": "Gauche radicale (la plupart des politistes ; « gauche populiste » pour certains ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, rattachement jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse l'étiquette « extrême gauche »)",
-  "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est parue en librairie le 6 novembre 2026. Jean-Luc Mélenchon a été condamné en 2019 à une peine d'emprisonnement avec sursis pour rébellion et provocation ; voir le détail de la candidature.",
+  "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est parue le 6 novembre 2026.",
   "foundedYear": 2016,
   "leader": {
     "name": "Manuel Bompard",
@@ -436,7 +436,7 @@
       {
         "name": "Adrien Quatennens",
         "role": "Coordinateur du mouvement (juin 2019 - septembre 2022), député du Nord (2017-2024)",
-        "background": "Engagé à 16 ans contre le contrat première embauche, il adhère au Parti de gauche en 2013. Il se retire de la coordination en septembre 2022 après des accusations de violences portées par son épouse ; le 13 décembre 2022, il est condamné par le tribunal de Lille, dans le cadre d'une procédure de plaider-coupable, à quatre mois d'emprisonnement avec sursis pour violences conjugales, puis suspendu quatre mois du groupe LFI. Investi par LFI en 2024 hors accord du Nouveau Front populaire, il retire sa candidature.",
+        "background": "Engagé à 16 ans contre le contrat première embauche, il adhère au Parti de gauche en 2013. Il se retire de la coordination en septembre 2022, puis est suspendu quatre mois du groupe LFI. Investi par LFI en 2024 hors accord du Nouveau Front populaire, il retire sa candidature.",
         "sources": [
           {
             "title": "Wikipédia, « Adrien Quatennens »",
@@ -536,12 +536,6 @@
             "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
             "date": "2019-08",
             "kind": "programme"
-          },
-          {
-            "title": "Hérodote.net, bibliographie : Jean-Luc Mélenchon, L'Ère du peuple (Fayard, 2014)",
-            "url": "https://www.herodote.net/L_ere_du_peuple-bibliographie-568.php",
-            "date": "2026-11",
-            "kind": "presse"
           },
           {
             "title": "Slate, « Le mystérieux et désespéré appel au peuple de Mélenchon » (sur L'Ère du peuple)",
@@ -821,12 +815,6 @@
           "url": "https://laec.fr/section/19/organiser-le-100-denergies-renouvelables-en-2050-et-la-renovation-energetique",
           "date": "2021-11",
           "kind": "programme"
-        },
-        {
-          "title": "MonVote2027, fiche « Jean-Luc Mélenchon : programme et positions » (positions sourcées)",
-          "url": "https://monvote2027.fr/candidat/melenchon",
-          "date": "2026-11",
-          "kind": "presse"
         },
         {
           "title": "ID, l'Info durable, « Le programme écolo de Jean-Luc Mélenchon »",
@@ -1159,10 +1147,10 @@
       "justification": "Le programme 2022 « L'Avenir en commun » propose de « légaliser et encadrer par un monopole d'État » la production, la vente et la consommation de cannabis. Le groupe a défendu en janvier 2022 une proposition de loi en ce sens (10 voix contre l'amendement de suppression de l'article 1er), puis voté en juillet 2026 un amendement de dépénalisation de l'usage (20 pour, 0 contre). Manuel Bompard, coordinateur de LFI, a redit le 8 novembre 2024 : « je plaide pour la légalisation du cannabis ».",
       "sources": [
         {
-          "title": "Institut Montaigne – Présidentielle 2022, propositions de Jean-Luc Mélenchon",
-          "url": "https://www.institutmontaigne.org/presidentielle-2022/jean-luc-melenchon",
-          "date": "2022",
-          "kind": "presse"
+          "title": "L'Avenir en commun (édition 2022), section 11 « Addictions et drogues : il faut changer de stratégie »",
+          "url": "https://laec.fr/section/11/addictions-et-drogues-il-faut-changer-de-strategie",
+          "date": "2021-11",
+          "kind": "programme"
         },
         {
           "title": "Europe 1 – Lutte contre le trafic de drogue : Manuel Bompard plaide pour la légalisation du cannabis",
@@ -1216,14 +1204,8 @@
     },
     "q31-voile-sport": {
       "stance": 1,
-      "justification": "En mars 2025, Jean-Luc Mélenchon a jugé « misérable » le débat sur l'interdiction du voile dans le sport et estimé que la décision revient aux fédérations sportives. LFI n'a pas de sénateurs et n'a donc pas pris part au scrutin du Sénat.",
+      "justification": "En mars 2025, Jean-Luc Mélenchon a qualifié de « surenchère raciste » le débat sur l'interdiction du voile dans le sport (« C'est misérable, c'est lamentable »). LFI n'a pas de sénateurs et n'a donc pas pris part au scrutin du Sénat.",
       "sources": [
-        {
-          "title": "Hespress FR – France : le port du voile dans le sport divise la scène politique",
-          "url": "https://fr.hespress.com/416209-france-le-port-du-voile-dans-le-sport-divise-la-scene-politique.html",
-          "date": "2025-03-19",
-          "kind": "presse"
-        },
         {
           "title": "Europe 1 – Voile dans le sport : Jean-Luc Mélenchon dénonce une « surenchère raciste »",
           "url": "https://www.europe1.fr/node/668697",
@@ -1348,7 +1330,7 @@
     },
     "q39-encadrement-loyers": {
       "stance": 2,
-      "justification": "Les députés LFI ont voté le 11 décembre 2025 la proposition de loi qui rend l'encadrement des loyers permanent et l'ouvre à d'autres communes (30 pour, aucun contre). En 2022, Jean-Luc Mélenchon proposait de le généraliser « en fixant le loyer maximal à 20 % au-dessous du loyer médian ».",
+      "justification": "Les députés LFI ont voté le 11 décembre 2025 la proposition de loi qui rend l'encadrement des loyers permanent et l'ouvre à d'autres communes (30 pour, aucun contre). Son programme de 2022 proposait d'« encadrer les loyers partout sur le territoire et à la baisse dans les grandes villes ».",
       "sources": [
         {
           "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs (première lecture), adopté",
@@ -1357,10 +1339,10 @@
           "kind": "vote"
         },
         {
-          "title": "MonImmeuble, « Logements : quelles sont les propositions des candidats à la présidentielle ? »",
-          "url": "https://monimmeuble.com/actualite/logements-quelles-sont-les-propositions-des-candidats-a-la-presidentielle",
-          "date": "2022-04-09",
-          "kind": "presse"
+          "title": "L'Avenir en commun (édition 2022), section 54 « Garantir le droit au logement »",
+          "url": "https://laec.fr/section/54/garantir-le-droit-au-logement",
+          "date": "2021-11",
+          "kind": "programme"
         }
       ]
     }
@@ -1370,7 +1352,7 @@
       "candidateName": "Jean-Luc Mélenchon",
       "status": "declare",
       "statusLabel": "Candidat déclaré",
-      "candidate": "Jean-Luc Mélenchon a déclaré sa candidature le 3 mai 2026 au journal de 20 h de TF1, après sa désignation le même jour par les élus du mouvement. Le 9 décembre 2019, le tribunal correctionnel de Bobigny l'avait condamné à trois mois d'emprisonnement avec sursis et 8 000 € d'amende pour rébellion et provocation lors de la perquisition du siège de LFI en octobre 2018 ; il avait dénoncé un « jugement politique » et n'avait pas fait appel.",
+      "candidate": "Jean-Luc Mélenchon a déclaré sa candidature le 3 mai 2026 au journal de 20 h de TF1, après sa désignation le même jour par les élus du mouvement.",
       "programmeStatus": "Programme présidentiel 2027 « L'Avenir en commun », sous-titré « le programme de la Nouvelle France », paru en librairie le 6 novembre 2026 (cinquième édition, 1 069 mesures dont 238 nouvelles selon le mouvement). Le texte intégral n'est pas publié en ligne : les mesures de cette édition sont citées d'après des comptes rendus de presse. La fiche s'appuie aussi sur les orientations budgétaires 2027 (octobre 2026), le contrat de législature du Nouveau Front populaire (2024), « L'Avenir en commun » édition 2022 et les votes du groupe LFI-NFP.",
       "programmeState": "publie",
       "themes": {

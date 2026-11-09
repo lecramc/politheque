@@ -3,7 +3,7 @@
   "name": "Nouvelle Énergie",
   "shortName": "NE",
   "color": "#1D257A",
-  "family": "Droite (presse de référence : droite libérale ; pas de classement académique dédié ; position du parti sur cette étiquette non connue)",
+  "family": "Droite (presse de référence : droite libérale ; pas de classement académique dédié ; aucune prise de position du parti sur cette étiquette n'est connue)",
   "description": "Nouvelle Énergie est le parti fondé à Cannes par David Lisnard (association déclarée en septembre 2014) et déployé au niveau national à partir de juin 2021 ; il est présidé par David Lisnard, maire de Cannes depuis 2014 et président de l'Association des maires de France (AMF) depuis novembre 2021. Il n'a pas de groupe parlementaire : la députée Alexandra Martin, élue en 2024 sous la double étiquette Droite républicaine et Nouvelle Énergie, siège au groupe Droite républicaine, et plusieurs sénateurs s'en réclament, souvent en double appartenance. David Lisnard a quitté Les Républicains et confirmé sa candidature à la présidentielle le 31 mars 2026.",
   "foundedYear": 2014,
   "leader": {
@@ -14,7 +14,7 @@
     {
       "id": "baisser-la-depense-publique-de-200-milliards",
       "title": "Baisser la dépense publique de 200 milliards",
-      "text": "200 milliards d'euros d'économies, dont 120 pour le salaire net, 40 pour baisser les impôts de production et 40 pour les finances publiques.",
+      "text": "200 milliards d'euros d'économies, dont 120 pour le salaire net et 40 pour baisser les impôts de production.",
       "measureRefs": ["economie.0"],
       "relatedQuestionIds": ["q02-depenses"]
     },
@@ -639,7 +639,7 @@
     },
     "q02-depenses": {
       "stance": 2,
-      "justification": "Le candidat propose une baisse de la dépense publique de 200 Md€, atteinte « en année pleine en fin de quinquennat » selon le parti (« sur le quinquennat » selon Europe 1, 27 mai 2026), dont 80 Md€ dès la première année, juge 300 Md€ « très raisonnable » et propose une règle d'or limitant les déficits de fonctionnement.",
+      "justification": "Le candidat propose une baisse de la dépense publique de 200 Md€, atteinte « en année pleine en fin de quinquennat » selon le parti (« sur le quinquennat » selon Europe 1, 27 mai 2026), dont 80 Md€ dès la première année ; il juge une baisse de 300 Md€ « très raisonnable » (Europe 1) et propose une « règle d'or » de limitation des déficits publics qui « s'appliquerait aux dépenses de fonctionnement mais pas à l'investissement ».",
       "sources": [
         {
           "title": "Nouvelle Énergie – « Le programme de David Lisnard est-il chiffré ? »",
@@ -651,12 +651,6 @@
           "title": "Europe 1, « “Aujourd'hui en France, on dépouille les actifs au profit des inactifs”, dénonce David Lisnard »",
           "url": "https://www.europe1.fr/politique/aujourdhui-en-france-on-depouille-les-actifs-au-profit-des-inactifs-denonce-david-lisnard-938960",
           "date": "2026-05-27",
-          "kind": "presse"
-        },
-        {
-          "title": "Cryptoast, « David Lisnard promet 120 milliards pour les salaires nets : est-ce crédible ? »",
-          "url": "https://cryptoast.fr/?p=230808",
-          "date": "2026-10-22",
           "kind": "presse"
         },
         {
@@ -716,7 +710,7 @@
     },
     "q07-immigration": {
       "stance": 2,
-      "justification": "Le programme propose de « diviser par huit la délivrance de titres de séjour » (« la diviser au moins par huit », publication du 3 septembre 2026) et de conditionner le regroupement familial à des critères de ressources et à des tests d'intégration ; le 3 septembre 2026, le candidat propose aussi une révision constitutionnelle permettant des quotas d'immigration.",
+      "justification": "Le programme propose de « diviser par huit la délivrance de titres de séjour » (« la diviser au moins par huit », publication du 3 septembre 2026) et de conditionner le regroupement familial à des critères de ressources et à des tests d'intégration ; le programme prévoit aussi « une révision constitutionnelle » ou « des renégociations de traités internationaux », par référendum, et des quotas d'immigration de travail limités aux secteurs « sous tension ».",
       "sources": [
         {
           "title": "Nouvelle Énergie – Programme « Immigration » (page non datée, consultée en novembre 2026)",
@@ -731,10 +725,10 @@
           "kind": "declaration"
         },
         {
-          "title": "Wikipédia (en) – David Lisnard",
-          "url": "https://en.wikipedia.org/wiki/David_Lisnard",
+          "title": "Nouvelle Énergie – Programme, axe « Réussir une nouvelle ambition française » (page non datée, consultée en novembre 2026)",
+          "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "programme"
         }
       ]
     },
@@ -865,16 +859,9 @@
       ]
     },
     "q16-fin-de-vie": {
-      "stance": -1,
-      "justification": "En janvier 2025, avant l'adoption de la loi, David Lisnard s'opposait à une loi sur l'euthanasie, « un basculement anthropologique majeur », et défendait la loi Claeys-Leonetti. Pas de position sur l'abrogation de la loi de 2026.",
-      "sources": [
-        {
-          "title": "Aleteia, « David Lisnard se confie sans détour sur sa foi » (reprise d'un entretien au Point du 12/01/2025)",
-          "url": "https://fr.aleteia.org/2025/01/18/david-lisnard-se-confie-sans-detour-sur-sa-foi/",
-          "date": "2025-01-18",
-          "kind": "presse"
-        }
-      ]
+      "stance": null,
+      "justification": "Pas de position publique claire et sourcée à ce jour sur la loi de 2026 sur la fin de vie.",
+      "sources": []
     },
     "q17-ecole-privee": {
       "stance": -2,
@@ -924,8 +911,8 @@
       "sources": []
     },
     "q24-proportionnelle": {
-      "stance": -1,
-      "justification": "Dans une chronique pour L'Opinion reprise par son parti le 9 octobre 2025, David Lisnard cite ceux qui veulent « réformer le mode de scrutin, introduire la proportionnelle intégrale », puis répond : « C'est une erreur. Les institutions de la Ve République sont solides. » Nouvelle Énergie n'a pas de groupe parlementaire.",
+      "stance": null,
+      "justification": "Pas de position publique claire et sourcée à ce jour sur la proportionnelle aux législatives en général : dans une chronique pour L'Opinion reprise par son parti le 9 octobre 2025, David Lisnard cite ceux qui veulent « réformer le mode de scrutin, introduire la proportionnelle intégrale », puis répond : « C'est une erreur. Les institutions de la Ve République sont solides. » Nouvelle Énergie n'a pas de groupe parlementaire.",
       "sources": [
         {
           "title": "Nouvelle Énergie – « Légitimité légale, légitimité politique : la difficile équation présidentielle » (chronique de David Lisnard pour L'Opinion)",
@@ -937,19 +924,13 @@
     },
     "q25-successions": {
       "stance": 2,
-      "justification": "David Lisnard propose « la suppression des droits de succession en ligne directe » (tribune « Changer de logiciel fiscal », 16 avril 2026), une transmission d'entreprise exonérée et un taux marginal maximal de 20 % pour les autres héritages.",
+      "justification": "David Lisnard propose « la suppression des droits de succession en ligne directe », « ce qui règle par ailleurs la transmission des entreprises familiales », et le maintien d'« un impôt proportionnel à taux bas en ligne indirecte et collatérale » (tribune « Changer de logiciel fiscal », 16 avril 2026).",
       "sources": [
         {
           "title": "Nouvelle Énergie, « Changer de logiciel fiscal » (David Lisnard)",
           "url": "https://unenouvelleenergie.fr/changer-de-logiciel-fiscal/",
           "date": "2026-04-16",
           "kind": "declaration"
-        },
-        {
-          "title": "Planet.fr, « Héritage : Lisnard veut supprimer les droits de succession entre parents et enfants »",
-          "url": "https://www.planet.fr/heritage-lisnard-veut-supprimer-les-droits-de-succession-entre-parents-et-enfants-ce-que-ca-changerait-pour-vos-enfants.3000097.817026.html",
-          "date": "2026",
-          "kind": "presse"
         }
       ]
     },
@@ -1083,7 +1064,7 @@
           "summary": "Le candidat fait de la baisse de la dépense publique sa priorité : 200 Md€ d'économies sur le quinquennat, redistribuées principalement en hausse du salaire net et en baisse des impôts de production. Il propose une règle d'or budgétaire et la réduction du nombre d'agences de l'État.",
           "measures": [
             {
-              "text": "Baisse de la dépense publique de 200 Md€, atteinte « en année pleine en fin de quinquennat » selon le parti (« sur le quinquennat » selon Europe 1 et l'AFP), dont 80 Md€ la première année ; répartition annoncée : 120 Md€ pour le salaire net (baisse des cotisations), 40 Md€ pour la baisse des impôts de production et 40 Md€ pour les finances publiques ; objectif évoqué de 300 Md€.",
+              "text": "Baisse de la dépense publique de 200 Md€, atteinte « en année pleine en fin de quinquennat » selon le parti (« sur le quinquennat » selon Europe 1 et l'AFP), dont 80 Md€ la première année ; répartition annoncée : 120 Md€ pour le salaire net (baisse des cotisations) et 40 Md€ pour la baisse des impôts de production ; objectif évoqué de 300 Md€.",
               "sources": [
                 {
                   "title": "Nouvelle Énergie – « Le programme de David Lisnard est-il chiffré ? »",
@@ -1098,16 +1079,16 @@
                   "kind": "presse"
                 },
                 {
-                  "title": "Cryptoast, « David Lisnard promet 120 milliards pour les salaires nets : est-ce crédible ? »",
-                  "url": "https://cryptoast.fr/?p=230808",
-                  "date": "2026-10-22",
-                  "kind": "presse"
-                },
-                {
                   "title": "The Times of Israel (AFP), « Présidentielle : Lisnard appelle Ciotti à “se séparer” du RN et à le rejoindre »",
                   "url": "https://fr.timesofisrael.com/presidentielle-lisnard-appelle-ciotti-a-se-separer-du-rn-et-a-le-rejoindre/amp/",
                   "date": "2026-10-28",
                   "kind": "presse"
+                },
+                {
+                  "title": "Nouvelle Énergie – « David Lisnard veut-il baisser les impôts ? »",
+                  "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
+                  "date": "2026-11",
+                  "kind": "declaration"
                 }
               ]
             },
@@ -1125,12 +1106,6 @@
                   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
                   "date": "2026-11",
                   "kind": "programme"
-                },
-                {
-                  "title": "Cryptoast, « David Lisnard promet 120 milliards pour les salaires nets : est-ce crédible ? »",
-                  "url": "https://cryptoast.fr/?p=230808",
-                  "date": "2026-10-22",
-                  "kind": "presse"
                 }
               ]
             },
@@ -1159,12 +1134,6 @@
                   "url": "https://www.unenouvelleenergie.fr/questions/le-programme-de-david-lisnard-est-il-chiffre/",
                   "date": "2026-11",
                   "kind": "declaration"
-                },
-                {
-                  "title": "Cryptoast, « David Lisnard promet 120 milliards pour les salaires nets : est-ce crédible ? »",
-                  "url": "https://cryptoast.fr/?p=230808",
-                  "date": "2026-10-22",
-                  "kind": "presse"
                 }
               ]
             },
@@ -1198,12 +1167,6 @@
                   "url": "https://www.europe1.fr/politique/aujourdhui-en-france-on-depouille-les-actifs-au-profit-des-inactifs-denonce-david-lisnard-938960",
                   "date": "2026-05-27",
                   "kind": "presse"
-                },
-                {
-                  "title": "Cryptoast, « David Lisnard promet 120 milliards pour les salaires nets : est-ce crédible ? »",
-                  "url": "https://cryptoast.fr/?p=230808",
-                  "date": "2026-10-22",
-                  "kind": "presse"
                 }
               ]
             },
@@ -1215,12 +1178,6 @@
                   "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
                   "date": "2026-11",
                   "kind": "declaration"
-                },
-                {
-                  "title": "Cryptoast, « David Lisnard promet 120 milliards pour les salaires nets : est-ce crédible ? »",
-                  "url": "https://cryptoast.fr/?p=230808",
-                  "date": "2026-10-22",
-                  "kind": "presse"
                 }
               ]
             },

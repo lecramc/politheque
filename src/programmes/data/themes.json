@@ -171,12 +171,12 @@
         }
       },
       {
-        "label": "Personnes immigrées vivant en France (2024)",
-        "value": "7,7 millions, soit 11,3 % de la population",
+        "label": "Personnes immigrées vivant en France (2025, données provisoires)",
+        "value": "8,0 millions, soit 11,6 % de la population",
         "source": {
-          "title": "Insee Première n° 2076 – En 2024, 6,0 millions d'étrangers vivent en France",
-          "url": "https://www.insee.fr/fr/statistiques/8651304",
-          "date": "2025-10-07",
+          "title": "Insee – L'essentiel sur… les immigrés et les étrangers",
+          "url": "https://www.insee.fr/fr/statistiques/3633212",
+          "date": "2026-06-25",
           "kind": "statistique"
         }
       },
@@ -203,7 +203,7 @@
       {
         "question": "Faut-il réserver certaines prestations aux nationaux ?",
         "options": [
-          "Oui, par une « préférence nationale » inscrite dans la Constitution",
+          "Oui, par une « priorité nationale » inscrite dans la Constitution",
           "Oui, en exigeant une durée de résidence plus longue avant l'accès aux aides",
           "Non, au nom du principe d'égalité de traitement"
         ]
@@ -226,12 +226,12 @@
     "contextMore": "Les statistiques du ministère de l'Intérieur montrent des évolutions contrastées selon les infractions : hausse des violences physiques et sexuelles enregistrées en 2025, stabilité des homicides. La population carcérale atteint des niveaux record, avec une forte surpopulation dans les maisons d'arrêt. Les débats opposent souvent le renforcement des sanctions (peines minimales, construction de places de prison) à la prévention, aux alternatives à l'incarcération et au contrôle de l'action policière. Les moyens de la justice et les délais de jugement sont également discutés.",
     "keyFigures": [
       {
-        "label": "Personnes détenues (1er juillet 2026)",
-        "value": "89 500, dont 1 500 dans les collectivités d'outre-mer (+5,2 % sur un an)",
+        "label": "Personnes détenues (1er octobre 2026)",
+        "value": "90 900, dont 1 500 dans les collectivités d'outre-mer (+7,0 % sur un an hors collectivités d'outre-mer)",
         "source": {
-          "title": "Ministère de la Justice (SSER) – Infos rapides Justice n° 42 : au 1er juillet 2026, +5,2 % de personnes détenues sur un an",
-          "url": "https://www.justice.gouv.fr/documentation/etudes-et-statistiques/au-1er-juillet-2026-52-personnes-detenues",
-          "date": "2026-07-16",
+          "title": "Ministère de la Justice (SSER) – Infos rapides Justice n° 45 : au 1er octobre 2026, + 7 % de personnes détenues sur un an",
+          "url": "https://www.justice.gouv.fr/sites/default/files/2026-10/Infos_Rapides_Justice_n45.pdf",
+          "date": "2026-10",
           "kind": "statistique"
         }
       },
@@ -298,7 +298,7 @@
     "title": "Écologie et énergie",
     "icon": "leaf-outline",
     "context": "Ce thème concerne la lutte contre le changement climatique, la production d'énergie, l'agriculture et la protection de la biodiversité. La France s'est engagée à atteindre la neutralité carbone en 2050.",
-    "contextMore": "La France s'est engagée à atteindre la neutralité carbone en 2050 ; ses émissions continuent de baisser (-1,5 % en 2025 selon une estimation du Citepa), mais moins vite que les quelque 5 % par an nécessaires pour atteindre l'objectif de 2030. L'électricité française est très majoritairement bas carbone grâce au nucléaire, et la programmation pluriannuelle de l'énergie adoptée en février 2026 prévoit six nouveaux réacteurs EPR2. La France est en retard sur son objectif légal d'énergies renouvelables (23 % de la consommation finale en 2024, pour 33 % visés en 2030). Les débats portent sur la répartition entre nucléaire et renouvelables, le coût de la transition pour les ménages et les entreprises, et le niveau des normes environnementales, notamment agricoles.",
+    "contextMore": "La France s'est engagée à atteindre la neutralité carbone en 2050 ; ses émissions continuent de baisser (-1,5 % en 2025 selon une estimation du Citepa), mais moins vite que la baisse d'environ 4 % par an en moyenne nécessaire pour atteindre l'objectif de 2030. L'électricité française est très majoritairement bas carbone grâce au nucléaire, et la programmation pluriannuelle de l'énergie adoptée en février 2026 prévoit six nouveaux réacteurs EPR2. La France est en retard sur son objectif légal d'énergies renouvelables (23 % de la consommation finale en 2024, pour 33 % visés en 2030). Les débats portent sur la répartition entre nucléaire et renouvelables, le coût de la transition pour les ménages et les entreprises, et le niveau des normes environnementales, notamment agricoles.",
     "keyFigures": [
       {
         "label": "Émissions de gaz à effet de serre (2025, estimation d'avril 2026)",
@@ -306,7 +306,7 @@
         "source": {
           "title": "Citepa – Baromètre des émissions, communiqué d'avril 2026",
           "url": "https://www.citepa.org/wp-content/uploads/2026/04/CP-Citepa_Barometre_avril2026.pdf",
-          "date": "2026-04",
+          "date": "2026-04-08",
           "kind": "statistique"
         }
       },
@@ -362,7 +362,7 @@
     "id": "sante",
     "title": "Santé et fin de vie",
     "icon": "medkit-outline",
-    "context": "Ce thème couvre l'accès aux soins, l'hôpital, le financement de l'Assurance maladie et les questions de fin de vie. Plusieurs millions de personnes n'ont pas de médecin traitant et une partie du territoire est qualifiée de « désert médical ».",
+    "context": "Ce thème couvre l'accès aux soins, l'hôpital, le financement de l'Assurance maladie et les questions de fin de vie. En 2025, 6,3 millions d'assurés adultes n'avaient pas de médecin traitant déclaré (Cour des comptes) ; certains territoires sont qualifiés de « déserts médicaux ».",
     "contextMore": "La Sécurité sociale est en déficit, ce qui pèse sur les choix de remboursement et de financement de l'hôpital. Une loi créant un droit à l'aide à mourir a été adoptée définitivement en juillet 2026 et validée sous réserves par le Conseil constitutionnel en août 2026, aux côtés d'une loi sur les soins palliatifs. Les débats portent sur la régulation de l'installation des médecins, le reste à charge des patients, les moyens de l'hôpital et la mise en œuvre ou la remise en cause de la loi sur la fin de vie.",
     "keyFigures": [
       {
@@ -387,11 +387,11 @@
       },
       {
         "label": "Déficit de la Sécurité sociale (2025)",
-        "value": "21,6 Md€ (15,3 Md€ en 2024)",
+        "value": "21,6 Md€ (16,3 Md€ en 2024)",
         "source": {
           "title": "Sénat – Avis sur le projet de loi d'approbation des comptes de la Sécurité sociale 2025 (synthèse)",
           "url": "https://www.senat.fr/rap/a25-747/a25-747-syn.pdf",
-          "date": "2026",
+          "date": "2026-06-16",
           "kind": "statistique"
         }
       }
@@ -441,12 +441,12 @@
         }
       },
       {
-        "label": "Score PISA en mathématiques (2022)",
-        "value": "474 points (495 en 2012 ; moyenne OCDE : 472)",
+        "label": "Score PISA en mathématiques (2025)",
+        "value": "458 points (474 en 2022 ; moyenne OCDE : 463)",
         "source": {
-          "title": "DEPP – PISA 2022 : la France ne fait pas exception à la baisse généralisée des performances en culture mathématique",
-          "url": "https://www.education.gouv.fr/pisa-2022-la-france-ne-fait-pas-exception-la-baisse-generalisee-des-performances-en-culture-380205",
-          "date": "2023-12",
+          "title": "DEPP – Note d'information n° 26.40, « PISA 2025 : les acquis des élèves de 15 ans en compréhension de l'écrit et en culture mathématique en baisse en France et dans l'OCDE »",
+          "url": "https://www.education.gouv.fr/sites/default/files/document/depp-ni-2026-40pisa-mathspdf-520231.pdf",
+          "date": "2026-09",
           "kind": "statistique"
         }
       },

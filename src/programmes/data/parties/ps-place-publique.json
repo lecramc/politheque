@@ -4,7 +4,7 @@
   "shortName": "PS-PP",
   "color": "#E4467C",
   "family": "Gauche (social-démocratie ; presse et ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur pour le PS comme pour Place publique ; le PS se réclame du « socialisme démocratique » et ne conteste pas cette étiquette)",
-  "description": "Le Parti socialiste (fondé en 1969, dirigé par Olivier Faure) et Place publique (fondé en 2018 par Raphaël Glucksmann) ont organisé avec la Gauche républicaine et socialiste (GRS) une primaire commune pour 2027. Anne Hidalgo (PS) avait obtenu 1,75 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux européennes de 2024, la liste PS–Place publique conduite par Raphaël Glucksmann a obtenu 13,83 %. À l'Assemblée, le groupe Socialistes et apparentés compte 68 députés (novembre 2026, selon Datan). Raphaël Glucksmann, député européen, a remporté la primaire dès le premier tour le 11 octobre 2026 ; il est le premier candidat soutenu par le PS à la présidentielle à ne pas être issu de ses rangs.",
+  "description": "Le Parti socialiste (fondé en 1969, dirigé par Olivier Faure) et Place publique (fondé en 2018 par Raphaël Glucksmann) ont organisé avec la Gauche républicaine et socialiste (GRS) une primaire commune pour 2027. Anne Hidalgo (PS) a obtenu 1,75 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste PS–Place publique conduite par Raphaël Glucksmann 13,83 % aux européennes de 2024. À l'Assemblée, le groupe Socialistes et apparentés compte 68 députés (novembre 2026, selon Datan). Raphaël Glucksmann, député européen, a remporté la primaire dès le premier tour le 11 octobre 2026.",
   "foundedYear": 1969,
   "leader": {
     "name": "Olivier Faure",
@@ -386,12 +386,6 @@
           "kind": "statistique"
         },
         {
-          "title": "Hérodote.net, « 23-26 avril 1905 : fondation de la SFIO »",
-          "url": "https://www.herodote.net/23_26_avril_1905-evenement-19050426.php",
-          "date": "2026-11",
-          "kind": "presse"
-        },
-        {
           "title": "Larousse – Encyclopédie : Parti socialiste (PS)",
           "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
           "date": "2026-11",
@@ -436,12 +430,6 @@
             "kind": "statistique"
           },
           {
-            "title": "Hérodote.net, « 23-26 avril 1905 : fondation de la SFIO »",
-            "url": "https://www.herodote.net/23_26_avril_1905-evenement-19050426.php",
-            "date": "2026-11",
-            "kind": "presse"
-          },
-          {
             "title": "Wikipedia (en), « Jean Jaurès »",
             "url": "https://en.wikipedia.org/wiki/Jean_Jaur%C3%A8s",
             "date": "2026-11",
@@ -460,12 +448,6 @@
         "role": "Cofondateur de la SFIO (1905), chef du courant marxiste ; ministre pendant la Première Guerre mondiale",
         "background": "Républicain devenu socialiste au moment de la Commune, il découvre le marxisme en exil et fonde en 1879 avec Paul Lafargue le Parti ouvrier, d'orientation marxiste, révolutionnaire et collectiviste. À la tête du Parti socialiste de France, il voit sa ligne doctrinale prévaloir lors de l'unification de 1905 ; en 1914, il soutient l'« Union sacrée » et entre au gouvernement.",
         "sources": [
-          {
-            "title": "Hérodote.net, « Jules Guesde (1845-1922) »",
-            "url": "https://www.herodote.net/Bio/Guesde-biographie-R3Vlc2Rl.php",
-            "date": "2026-11",
-            "kind": "presse"
-          },
           {
             "title": "Larousse – Encyclopédie : SFIO (Section française de l'Internationale ouvrière)",
             "url": "https://www.larousse.fr/encyclopedie/divers/wd/144647",
@@ -640,12 +622,6 @@
             "url": "https://www.larousse.fr/encyclopedie/divers/wd/144647",
             "date": "2026-11",
             "kind": "statistique"
-          },
-          {
-            "title": "Hérodote.net, « 23-26 avril 1905 : fondation de la SFIO »",
-            "url": "https://www.herodote.net/23_26_avril_1905-evenement-19050426.php",
-            "date": "2026-11",
-            "kind": "presse"
           },
           {
             "title": "Encyclopædia Universalis, « Jaurès Jean (1859-1914) »",
@@ -1114,8 +1090,8 @@
       ]
     },
     "q26-nationalisations": {
-      "stance": 2,
-      "justification": "Le groupe Socialistes a voté pour la nationalisation d'ArcelorMittal France aux deux lectures (27 novembre 2025 : 28 pour, 1 abstention ; 11 juin 2026 : 25 pour). En juin 2025, avant ces votes, Raphaël Glucksmann avait jugé, selon des propos repris par François Ruffin et Clémence Guetté, que « la nationalisation n'est pas la solution » dans ce dossier précis, en privilégiant la conditionnalité des aides publiques ; il ne s'est pas exprimé depuis sur le texte voté.",
+      "stance": null,
+      "justification": "Pas de position publique claire et sourcée à ce jour du candidat : le groupe Socialistes a voté la nationalisation d'ArcelorMittal France aux deux lectures (27 novembre 2025 : 28 pour, 1 abstention ; 11 juin 2026 : 25 pour), mais Raphaël Glucksmann ne s'est pas prononcé publiquement sur ce texte.",
       "sources": [
         {
           "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
@@ -1128,18 +1104,6 @@
           "url": "https://datan.fr/votes/legislature-17/vote_7380",
           "date": "2026-06-11",
           "kind": "vote"
-        },
-        {
-          "title": "François Ruffin, « Glucksmann, Arcelor et le travail : un planneur politique » (cite un entretien au Monde)",
-          "url": "https://francoisruffin.fr/glucksmann-arcelor-et-le-travail-un-planneur-politique/",
-          "date": "2025-06-20",
-          "kind": "presse"
-        },
-        {
-          "title": "Clémence Guetté, « Programme de Glucksmann : un autre Macron est possible »",
-          "url": "https://clemenceguette.fr/programme-de-glucksmann-un-autre-macron-est-possible/",
-          "date": "2025-06-23",
-          "kind": "presse"
         }
       ]
     },
@@ -1147,12 +1111,6 @@
       "stance": -2,
       "justification": "Le PS et Place publique ont signé en 2024 le contrat du Nouveau Front populaire, qui prévoit de rétablir la durée effective de 35 heures et de passer aux 32 heures dans les métiers pénibles ou de nuit. Raphaël Glucksmann ne s'est pas exprimé depuis sur la durée légale.",
       "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
         {
           "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
           "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
@@ -1334,10 +1292,10 @@
       "justification": "Le Parti socialiste et Place publique ont signé en 2024 le programme commun qui prévoyait le « rattrapage des postes manquants de fonctionnaires » à l'hôpital, à l'école, dans la justice et dans les services de l'État. Raphaël Glucksmann n'a pas publié de chiffre sur le nombre total d'agents publics.",
       "sources": [
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
         }
       ]
     },
@@ -1371,7 +1329,7 @@
       "candidateName": "Raphaël Glucksmann",
       "status": "investi",
       "statusLabel": "Candidat investi",
-      "candidate": "Raphaël Glucksmann a déclaré sa candidature le 23 août 2026 ; il a été désigné le 11 octobre 2026 par la primaire organisée par le Parti socialiste, Place publique et la Gauche républicaine et socialiste (GRS), remportée dès le premier tour avec 66,17 % des voix selon Public Sénat, devant Olivier Faure (14,46 %). Le PS met à sa disposition ses moyens militants et financiers.",
+      "candidate": "Raphaël Glucksmann a déclaré sa candidature le 23 août 2026 ; il a été désigné le 11 octobre 2026 par la primaire organisée par le Parti socialiste, Place publique et la Gauche républicaine et socialiste (GRS), remportée dès le premier tour avec 66,17 % des voix selon Public Sénat, devant Olivier Faure (14,46 %).",
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026 (en cours de rédaction, une trentaine de groupes de travail selon franceinfo, 13 octobre 2026). Fiche fondée sur les déclarations du candidat (2025-2026), son livre « Nous avons encore envie » (mai 2026) tel que rapporté par la presse, le programme européen PS–Place publique 2024 et les votes du groupe Socialistes à l'Assemblée.",
       "programmeState": "non-publie",
       "themes": {

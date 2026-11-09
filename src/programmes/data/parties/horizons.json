@@ -3,8 +3,8 @@
   "name": "Horizons",
   "shortName": "HOR",
   "color": "#1B3D8F",
-  "family": "Centre droit (presse de référence et analystes ; bloc « centre » du nuancier du ministère de l'Intérieur ; position du parti sur cette étiquette non connue)",
-  "description": "Horizons est le parti fondé le 9 octobre 2021 au Havre par Édouard Philippe, Premier ministre de 2017 à 2020 et maire du Havre, qui le préside. À l'Assemblée, il dispose du groupe Horizons & Indépendants, qui compte 35 députés (novembre 2026, selon Datan). Aux européennes de 2024, Horizons figurait sur la liste « Besoin d'Europe » conduite par Valérie Hayer (14,60 %). Édouard Philippe a annoncé sa candidature à la présidentielle dès septembre 2024. Depuis le 29 octobre 2026, il est témoin assisté (et non mis en examen) dans une information judiciaire sur la gestion de la Cité numérique du Havre ; voir le détail de la candidature.",
+  "family": "Centre droit (presse de référence et analystes ; bloc « centre » du nuancier du ministère de l'Intérieur ; aucune prise de position du parti sur cette étiquette n'est connue)",
+  "description": "Horizons est le parti fondé le 9 octobre 2021 au Havre par Édouard Philippe, Premier ministre de 2017 à 2020 et maire du Havre, qui le préside. À l'Assemblée, il dispose du groupe Horizons & Indépendants, qui compte 35 députés (novembre 2026, selon Datan). Aux européennes de 2024, Horizons figurait sur la liste « Besoin d'Europe » conduite par Valérie Hayer (14,60 %). Édouard Philippe a annoncé sa candidature à la présidentielle dès septembre 2024.",
   "foundedYear": 2021,
   "leader": {
     "name": "Édouard Philippe",
@@ -525,7 +525,7 @@
     },
     "q05-smic": {
       "stance": -1,
-      "justification": "Édouard Philippe ne propose pas de hausse du SMIC mais l'exonération des heures supplémentaires (« travailler plus pour gagner plus »). Le groupe Horizons a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (20 contre, 2 abstentions). Vote ancien : on code « plutôt défavorable ».",
+      "justification": "Édouard Philippe ne propose pas de hausse du SMIC mais l'exonération des heures supplémentaires (« travailler plus pour gagner plus »). Le groupe Horizons a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (20 contre, 2 abstentions).",
       "sources": [
         {
           "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
@@ -584,7 +584,7 @@
         {
           "title": "Édouard Philippe veut « diviser par deux » l'immigration légale et propose un moratoire sur le regroupement familial",
           "url": "https://lcp.fr/actualites/edouard-philippe-veut-diviser-par-deux-l-immigration-legale-et-propose-un-moratoire-sur",
-          "date": "2026-10-08",
+          "date": "2026-10-09",
           "kind": "presse"
         }
       ]
@@ -925,8 +925,8 @@
       ]
     },
     "q30-zfe": {
-      "stance": -1,
-      "justification": "Le groupe Horizons a voté le 14 avril 2026, à 16 voix contre 5 (1 abstention), l'amendement du gouvernement qui maintenait les ZFE en les rendant facultatives, rejeté par l'Assemblée. Sur la suppression elle-même, le groupe était partagé le 28 mai 2025 (1 pour, 1 abstention, 2 contre). Pas de déclaration d'Édouard Philippe.",
+      "stance": null,
+      "justification": "Pas de position publique claire et sourcée à ce jour : Édouard Philippe ne s'est pas prononcé, et le groupe Horizons s'est partagé sur la suppression des ZFE le 28 mai 2025 (1 pour, 1 abstention, 2 contre) ; le 14 avril 2026, il a voté à 16 voix contre 5 (1 abstention) l'amendement du gouvernement qui maintenait les ZFE en les rendant facultatives, rejeté par l'Assemblée.",
       "sources": [
         {
           "title": "Datan – Vote n° 6183, « Maintenir l'existence des ZFE mais les rendre facultatives »",
@@ -949,13 +949,19 @@
       ]
     },
     "q31-voile-sport": {
-      "stance": 1,
-      "justification": "Édouard Philippe a déclaré le 18 mars 2025 : « une interdiction générale et absolue du port du voile dans le sport serait contraire à ce qu'est la laïcité en France ». Les sénateurs du groupe Les Indépendants – République et Territoires, où siègent les sénateurs Horizons, ont voté la proposition de loi d'interdiction (18 pour, 0 contre).",
+      "stance": -1,
+      "justification": "Édouard Philippe s'est dit favorable à l'interdiction du voile dans les compétitions sportives (« interdiction du voile dans les compétitions sportives, oui », propos tenus sur CNews et rapportés par Sud Radio le 19 mars 2025), mais opposé à une « interdiction générale et absolue du port du voile dans le sport » (18 mars 2025). Les sénateurs du groupe Les Indépendants – République et Territoires, où siègent les sénateurs Horizons, ont voté la proposition de loi d'interdiction le 18 février 2025 (18 pour, 0 contre).",
       "sources": [
         {
           "title": "Europe 1 – « Une interdiction du port du voile dans le sport serait contraire à ce qu'est la laïcité en France », estime Édouard Philippe",
           "url": "https://www.europe1.fr/politique/une-interdiction-du-port-du-voile-dans-le-sport-serait-contraire-a-ce-quest-la-laicite-en-france-estime-edouard-philippe-668465",
           "date": "2025-03-18",
+          "kind": "presse"
+        },
+        {
+          "title": "Sud Radio, « Dites-le franchement » du 19 mars 2025 (propos d'Édouard Philippe sur CNews)",
+          "url": "https://www.sudradio.fr/emission/dites-le-franchement-366",
+          "date": "2025-03-19",
           "kind": "presse"
         },
         {
@@ -1045,15 +1051,9 @@
       ]
     },
     "q39-encadrement-loyers": {
-      "stance": -1,
-      "justification": "Devant le congrès de la FNAIM en décembre 2025, Édouard Philippe a critiqué l'encadrement des loyers : « lorsque vous interdisez au prix de faire ce à quoi il sert », « vous créez des problèmes ». Les députés Horizons ont voté contre sa pérennisation le 11 décembre 2025 (6 contre) ; au Sénat, le groupe Les Indépendants, où siègent les sénateurs Horizons, a voté sa prolongation de deux ans le 21 octobre 2026 (15 pour).",
+      "stance": null,
+      "justification": "Pas de position publique claire et sourcée à ce jour : les députés Horizons ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (6 contre) ; au Sénat, le groupe Les Indépendants, où siègent les sénateurs Horizons, a voté sa prolongation de deux ans le 21 octobre 2026 (15 pour).",
       "sources": [
-        {
-          "title": "Empruntis, « Logement : les pistes d'Édouard Philippe pour sortir de la crise » (congrès de la FNAIM)",
-          "url": "https://www.empruntis.com/financement/actualites/2025/logement-pistes-edouard-philippe-sortir-crise-20373/",
-          "date": "2025-12-10",
-          "kind": "presse"
-        },
         {
           "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
           "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
@@ -1074,7 +1074,7 @@
       "candidateName": "Édouard Philippe",
       "status": "declare",
       "statusLabel": "Candidat déclaré",
-      "candidate": "Édouard Philippe a annoncé sa candidature le 3 septembre 2024 dans un entretien au Point. Le 29 octobre 2026, il a été entendu par deux juges d'instruction financiers de Paris et placé sous le statut de témoin assisté (et non mis en examen) dans une information judiciaire portant notamment sur des soupçons de détournement de fonds publics, de favoritisme et de harcèlement moral liés à la gestion de la Cité numérique du Havre. L'enquête, d'abord préliminaire (Parquet national financier, plainte de 2023), a été confiée en mai 2026 à des juges d'instruction après une plainte avec constitution de partie civile déposée en juin 2025. Le statut de témoin assisté peut évoluer au cours de l'instruction. Son avocat, Emmanuel Marsigny, a déclaré que ce statut confirmait qu'il n'y avait « rien à lui reprocher » ; l'avocat de la plaignante, Jérôme Karsenti, a déclaré : « Nous nous réjouissons que l'instruction suive son cours ».",
+      "candidate": "Édouard Philippe a annoncé sa candidature le 3 septembre 2024 dans un entretien au Point.",
       "programmeStatus": "Le site de campagne edouardphilippe.fr publie de « premières orientations » détaillées en quatre priorités (France « plus prospère », « plus sûre », « plus attentive à ses enfants », « plus conquérante ») ; pas de document programmatique complet daté. Fiche fondée sur ces pages, les déclarations du candidat (2025-2026) et les votes du groupe Horizons.",
       "programmeState": "partiel",
       "programmeStateDetail": "quatre priorités",
@@ -1268,7 +1268,7 @@
                 {
                   "title": "Édouard Philippe veut « diviser par deux » l'immigration légale et propose un moratoire sur le regroupement familial",
                   "url": "https://lcp.fr/actualites/edouard-philippe-veut-diviser-par-deux-l-immigration-legale-et-propose-un-moratoire-sur",
-                  "date": "2026-10-08",
+                  "date": "2026-10-09",
                   "kind": "presse"
                 }
               ]
@@ -1285,7 +1285,7 @@
                 {
                   "title": "Édouard Philippe veut « diviser par deux » l'immigration légale et propose un moratoire sur le regroupement familial",
                   "url": "https://lcp.fr/actualites/edouard-philippe-veut-diviser-par-deux-l-immigration-legale-et-propose-un-moratoire-sur",
-                  "date": "2026-10-08",
+                  "date": "2026-10-09",
                   "kind": "presse"
                 }
               ]

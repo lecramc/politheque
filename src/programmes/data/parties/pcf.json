@@ -3,8 +3,8 @@
   "name": "Parti communiste français",
   "shortName": "PCF",
   "color": "#DD0000",
-  "family": "Gauche (communiste ; gauche communiste ou radicale selon les ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame du communisme)",
-  "description": "Le Parti communiste français a été fondé en 1920 au congrès de Tours ; il est dirigé depuis 2018 par Fabien Roussel et a tenu son 40e congrès à Lille du 3 au 5 juillet 2026. Fabien Roussel a obtenu 2,28 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel). Membre du Nouveau Front populaire en 2024, le PCF siège à l'Assemblée au sein du groupe Gauche démocrate et républicaine (GDR), qui compte 17 députés (novembre 2026, selon Datan), dont des élus ultramarins non communistes. Fabien Roussel a été investi candidat par un vote des adhérents en septembre 2026.",
+  "family": "Gauche (communiste ; parti communiste selon les ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame du communisme)",
+  "description": "Le Parti communiste français a été fondé en 1920 au congrès de Tours ; il est dirigé depuis 2018 par Fabien Roussel et a tenu son 40e congrès à Lille du 3 au 5 juillet 2026. Fabien Roussel a obtenu 2,28 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste de la Gauche unie, soutenue par le PCF, 2,36 % aux européennes de 2024. Membre du Nouveau Front populaire en 2024, le PCF siège à l'Assemblée au sein du groupe Gauche démocrate et républicaine (GDR), qui compte 17 députés (novembre 2026, selon Datan), dont des élus ultramarins non communistes. Fabien Roussel a été investi candidat par un vote des adhérents en septembre 2026.",
   "foundedYear": 1920,
   "leader": {
     "name": "Fabien Roussel",
@@ -149,7 +149,7 @@
       },
       {
         "date": "1946-11",
-        "event": "Législatives : le PCF devient le premier parti de France avec 28,3 % à 28,6 % des suffrages selon les sources (de 169 à 182 sièges selon les décomptes).",
+        "event": "Législatives : le PCF devient le premier parti de France avec 28,6 % des suffrages et 169 députés.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
@@ -400,7 +400,7 @@
       {
         "name": "Maurice Thorez",
         "role": "Secrétaire général (1930-1964), puis président du parti (1964)",
-        "background": "Fils de mineur, mineur lui-même dès 1912 dans le Pas-de-Calais, il rejoint le mouvement communiste après la scission de Tours et entre au bureau politique en 1925 ; il prend la tête du parti en 1930 après un séjour à Moscou. Mobilisé en septembre 1939, il déserte le 4 octobre 1939, après l'interdiction du parti, et gagne l'URSS, la direction clandestine étant assurée en France par Jacques Duclos et Benoît Frachon ; condamné par contumace pour désertion (la peine diffère selon les sources), il est gracié par le général de Gaulle et rentre en France en novembre 1944.",
+        "background": "Fils de mineur, mineur lui-même dès 1912 dans le Pas-de-Calais, il rejoint le mouvement communiste après la scission de Tours et entre au bureau politique en 1925 ; il prend la tête du parti en 1930 après un séjour à Moscou. Mobilisé en septembre 1939, il déserte le 4 octobre 1939, après l'interdiction du parti, et gagne l'URSS, la direction clandestine étant assurée en France par Jacques Duclos et Benoît Frachon ; il rentre en France en novembre 1944.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Thorez Maurice (1900-1964) »",
@@ -425,12 +425,6 @@
             "url": "https://en.wikipedia.org/wiki/Maurice_Thorez",
             "date": "2026-11",
             "kind": "statistique"
-          },
-          {
-            "title": "Hérodote.net, « Maurice Thorez (1900-1964) : un stalinien pur jus aux commandes du PCF »",
-            "url": "https://www.herodote.net/Un_stalinien_pur_jus_aux_commandes_du_PCF-synthese-3685.php",
-            "date": "2026-11",
-            "kind": "presse"
           }
         ]
       },
@@ -554,7 +548,7 @@
       },
       {
         "title": "Place de la Résistance",
-        "text": "La Résistance occupe une place centrale dans l'identité revendiquée : le parti, qui engage la lutte armée en 1941 (Front national, créé en mai 1941, puis FTPF dirigés par Charles Tillon à partir de 1942 selon Larousse), se présente à la Libération comme le « parti des 75 000 fusillés » (Hérodote mentionne aussi la formule des « 100 000 fusillés »). Ce chiffre est jugé exagéré (Hérodote) ; les estimations alternatives varient selon les critères de comptage et aucune n'est retenue ici.",
+        "text": "La Résistance occupe une place centrale dans l'identité revendiquée : le parti crée le 25 mai 1941 le Front national contre l'occupant et le gouvernement de Vichy, lance ses premières actions armées en août 1941, puis fonde au début de 1942 les Francs-Tireurs et Partisans français (FTPF), dirigés par Charles Tillon.",
         "sources": [
           {
             "title": "Wikipédia, « Parti communiste français »",
@@ -563,14 +557,14 @@
             "kind": "statistique"
           },
           {
-            "title": "Hérodote.net, « La Résistance communiste : questions troublantes »",
-            "url": "https://www.herodote.net/La_resistance_communiste_questions_troublantes-article-2944.php",
-            "date": "2026-11",
-            "kind": "presse"
-          },
-          {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
+            "date": "2026-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Tillon Charles (1897-1993) »",
+            "url": "https://www.universalis.fr/encyclopedie/charles-tillon/",
             "date": "2026-11",
             "kind": "statistique"
           }
@@ -638,8 +632,8 @@
       "justification": "Le programme 2022 prévoit de mettre fin au « carcan austéritaire » du pacte de stabilité et à la règle des 3 % de déficit. Position de 2022.",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         }
@@ -680,10 +674,10 @@
           "kind": "programme"
         },
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024)",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
         },
         {
           "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
@@ -698,8 +692,8 @@
       "justification": "Le programme 2022 de Fabien Roussel prévoyait l'abrogation de la réforme de l'assurance chômage ; le groupe GDR a voté contre la loi de juin 2026 (2 juin 2026 : 17 contre, 0 pour).",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         },
@@ -722,8 +716,8 @@
       "justification": "Le programme 2022 prévoit des voies légales de migration et le renforcement de l'accueil ; le congrès 2026 refuse « la stigmatisation de l'immigration » et la remise en cause du droit du sol.",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         },
@@ -758,8 +752,8 @@
       "justification": "Régularisation des travailleurs sans papiers et des familles d'enfants scolarisés (programme 2022, congrès 2026).",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         },
@@ -800,8 +794,8 @@
       "justification": "Le programme 2022 prévoit au moins six EPR supplémentaires ; le congrès 2026 défend un mix « alliant nucléaire et renouvelables ».",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         },
@@ -830,8 +824,8 @@
           "kind": "programme"
         },
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         }
@@ -854,8 +848,8 @@
       "justification": "Le programme 2022 prévoit un conventionnement sélectif à l'installation ; le groupe GDR a voté à l'unanimité l'article 1er de la PPL Garot (vote n° 1214 : 10 pour) et le texte entier (vote n° 1607 : 7 pour).",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         },
@@ -887,14 +881,8 @@
     },
     "q17-ecole-privee": {
       "stance": 2,
-      "justification": "Le contrat du NFP (2024), signé par le PCF, prévoit de moduler les dotations des établissements privés selon la mixité sociale ; le groupe GDR a soutenu la PPL n° 418 en commission (20 novembre 2024).",
+      "justification": "Le contrat du NFP (2024), signé par le PCF, prévoit de « conditionner un certain nombre d'aides à l'inclusion sociale » pour les établissements privés ; le groupe GDR a soutenu la PPL n° 418 en commission (20 novembre 2024).",
       "sources": [
-        {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
-        },
         {
           "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
           "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
@@ -944,8 +932,8 @@
           "kind": "programme"
         },
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         }
@@ -974,8 +962,8 @@
       "justification": "Proportionnelle intégrale (programme 2022) et « proportionnelle réelle » (congrès 2026).",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         },
@@ -995,12 +983,6 @@
           "title": "France 24 (AFP), « Roussel promet \"zéro taxation\" en dessous de 118.000 euros d'héritage »",
           "url": "https://www.france24.com/fr/info-en-continu/20220117-roussel-promet-z%C3%A9ro-taxation-en-dessous-de-118-000-euros-d-h%C3%A9ritage",
           "date": "2022-01-17",
-          "kind": "presse"
-        },
-        {
-          "title": "Boursorama (avec LabSense), « Succession : les propositions des candidats à la présidentielle »",
-          "url": "https://www.boursorama.com/impots/succession/actualites/succession-les-propositions-des-candidats-a-la-presidentielle-e3ba343c7ca1178adf2448b03b0b2aeb",
-          "date": "2022-02-02",
           "kind": "presse"
         }
       ]
@@ -1052,8 +1034,8 @@
       "justification": "Le programme 2022 de Fabien Roussel prévoyait de fixer à 5,5 % la TVA sur les consommations d'énergie. Le groupe GDR a fait adopter la TVA à 5,5 % sur l'abonnement d'électricité (amendement d'Emmanuel Maurel, 20 novembre 2025) et a voté l'amendement LFI ramenant la TVA sur l'électricité à 5,5 % (2 novembre 2026 : 2 pour). Programme 2027 non publié.",
       "sources": [
         {
-          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale)",
-          "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+          "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+          "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
           "date": "2022-01",
           "kind": "programme"
         },
@@ -1178,10 +1160,10 @@
           "kind": "programme"
         },
         {
-          "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024) : « Lancer le rattrapage des postes manquants de fonctionnaires »",
-          "url": "https://melenchon2027.fr/wp-content/uploads/2026/04/PROGRAMME-FRONT-POPULAIRE.pdf",
-          "date": "2024-06",
-          "kind": "programme"
+          "title": "LCP, « Accord à gauche : retraites, salaires, fiscalité, international… que contient le programme du Nouveau Front populaire »",
+          "url": "https://lcp.fr/actualites/accord-a-gauche-retraites-salaires-fiscalite-international-que-contient-le-programme-de",
+          "date": "2024-06-14",
+          "kind": "presse"
         }
       ]
     },
@@ -1243,8 +1225,8 @@
               "text": "Créer un impôt sur les sociétés progressif, plus élevé pour les groupes qui délocalisent, suppriment des emplois ou polluent (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 },
@@ -1260,8 +1242,8 @@
               "text": "Supprimer le CICE et les exonérations sociales et fiscales « n'ayant pour effet que de gonfler les profits » ; créer des commissions de contrôle des aides publiques (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1373,8 +1355,8 @@
               "text": "Abroger la loi El Khomri, les ordonnances Macron et la réforme de l'assurance chômage ; ouvrir le RSA aux moins de 25 ans (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1406,8 +1388,8 @@
                   "kind": "programme"
                 },
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1417,8 +1399,8 @@
               "text": "Ouvrir des voies légales et sécurisées pour les migrants ; renforcer les moyens de l'Ofpra et de l'Ofii ; dénoncer les accords du Touquet et de Dublin (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1439,8 +1421,8 @@
               "text": "Interdire les tests osseux pour les mineurs non accompagnés (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1477,8 +1459,8 @@
               "text": "Mettre en place le récépissé lors des contrôles d'identité pour combattre les contrôles au faciès (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1488,8 +1470,8 @@
               "text": "Confier à une instance indépendante le contrôle de l'activité policière (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1526,8 +1508,8 @@
               "text": "Construire au moins six EPR supplémentaires et développer solaire, éolien et hydraulique (programme 2022) ; mix « alliant nucléaire et renouvelables » (congrès 2026).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 },
@@ -1565,8 +1547,8 @@
               "text": "Remettre en cause les accords de libre-échange et sortir l'agriculture des négociations de l'OMC (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1609,8 +1591,8 @@
               "text": "Conventionnement sélectif à l'installation : en zone dense, un médecin ne s'installe que si un autre part (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1620,8 +1602,8 @@
               "text": "Ouvrir 12 000 places par an en études de médecine (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1683,14 +1665,8 @@
               ]
             },
             {
-              "text": "Moduler les dotations des établissements scolaires, y compris privés, selon des objectifs de mixité sociale (NFP 2024).",
+              "text": "Conditionner une partie des aides publiques aux établissements privés à l'« inclusion sociale » (NFP 2024).",
               "sources": [
-                {
-                  "title": "Nouveau Front populaire, « Contrat de législature » (législatives 2024), copie hébergée par LFI",
-                  "url": "https://lafranceinsoumise.fr/wp-content/uploads/2024/06/PROGRAMME-FRONT-POPULAIRE.pdf",
-                  "date": "2024-06",
-                  "kind": "programme"
-                },
                 {
                   "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
                   "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
@@ -1708,8 +1684,8 @@
               "text": "Engager un processus de rupture avec les traités européens et mettre fin au pacte de stabilité (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1780,8 +1756,8 @@
               "text": "Supprimer l'élection du président au suffrage universel et le limiter à un rôle de représentation ; investiture du gouvernement par l'Assemblée (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1791,8 +1767,8 @@
               "text": "Abroger les articles 49.3 et 40 de la Constitution (programme 2022).",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 }
@@ -1802,8 +1778,8 @@
               "text": "Instaurer la proportionnelle intégrale aux législatives.",
               "sources": [
                 {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, 180 propositions)",
-                  "url": "https://xn--ambitionsant2022-mqb.fhf.fr/medias/exe-la-france-des-jours-heureux-livre-stc-compressed-6232177c5af32228446743.pdf",
+                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
+                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
                   "date": "2022-01",
                   "kind": "programme"
                 },

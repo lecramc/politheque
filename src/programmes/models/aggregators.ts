@@ -10,6 +10,7 @@ export const AGGREGATOR_DOMAINS: readonly string[] = [
   'parlons-politique.fr',
   'casier-politique.fr',
   'poligraph.fr',
+  'lacampagne2027.com',
 ];
 
 export const isAggregator = (url: string) => AGGREGATOR_DOMAINS.includes(domainOf(url));

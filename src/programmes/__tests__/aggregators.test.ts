@@ -7,6 +7,7 @@ describe('Feature: domaines agrégateurs (pistes, jamais sources)', () => {
     expect(isAggregator('https://parlons-politique.fr/')).toBe(true);
     expect(isAggregator('https://casier-politique.fr/a')).toBe(true);
     expect(isAggregator('https://www.poligraph.fr/b')).toBe(true);
+    expect(isAggregator('https://lacampagne2027.com/candidats/x')).toBe(true);
   });
 
   it('should not flag reference sources', () => {
@@ -21,6 +22,7 @@ describe('Feature: domaines agrégateurs (pistes, jamais sources)', () => {
       'parlons-politique.fr',
       'casier-politique.fr',
       'poligraph.fr',
+      'lacampagne2027.com',
     ]);
   });
 });

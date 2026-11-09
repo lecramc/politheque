@@ -580,10 +580,10 @@
         ],
         "sources": [
           {
-            "title": "11 septembre 1789 : Naissance de la droite et de la gauche",
-            "url": "https://www.herodote.net/almanach-ID-1703.php",
-            "date": "2026-11-03",
-            "kind": "presse"
+            "title": "Michel Winock, « L'opposition gauche-droite dans la vie politique française », Cahiers français, mai-juin 2018 (vie-publique.fr)",
+            "url": "https://www.vie-publique.fr/files/fiche_produit/pdf/3303330404041_EX.pdf",
+            "date": "2018-05",
+            "kind": "statistique"
           }
         ]
       },
@@ -618,7 +618,7 @@
         ],
         "more": [
           "Ces classements sont parfois contestés devant le Conseil d'État. Le juge vérifie seulement qu'il n'y a pas d'« erreur manifeste ». En mars 2024, il a jugé qu'il n'y en avait pas dans le classement du Rassemblement national dans le bloc « extrême droite » pour les sénatoriales de 2023. En février 2026, il a rejeté les recours de La France insoumise et de l'UDR contre leur classement en « extrême gauche » et « extrême droite » pour les municipales.",
-          "Sur ce site, quand nous utilisons ces qualifications, nous suivons ce nuancier officiel et l'usage de la presse de référence. Elles décrivent une position dans le paysage politique ; elles ne sont pas un jugement."
+          "Sur ce site, l'étiquette affichée en tête de chaque fiche reprend l'usage de la presse de référence et des politistes ; le bloc de ce nuancier officiel est indiqué à côté, avec la position du parti. Elles décrivent une position dans le paysage politique ; elles ne sont pas un jugement."
         ],
         "sources": [
           {
@@ -668,10 +668,10 @@
         ],
         "sources": [
           {
-            "title": "11 septembre 1789 : Naissance de la droite et de la gauche",
-            "url": "https://www.herodote.net/almanach-ID-1703.php",
-            "date": "2026-11-03",
-            "kind": "presse"
+            "title": "Michel Winock, « L'opposition gauche-droite dans la vie politique française », Cahiers français, mai-juin 2018 (vie-publique.fr)",
+            "url": "https://www.vie-publique.fr/files/fiche_produit/pdf/3303330404041_EX.pdf",
+            "date": "2018-05",
+            "kind": "statistique"
           },
           {
             "title": "Le clivage gauche-droite au cœur de la campagne présidentielle",
@@ -824,7 +824,7 @@
         ],
         "more": [
           "La France insoumise. Les politistes la classent le plus souvent à la « gauche radicale », parfois « gauche populiste ». Le ministère de l'Intérieur l'a placée à l'« extrême gauche » en 2026 (elle était auparavant dans le bloc « gauche ») ; le Conseil d'État a jugé ce choix sans erreur manifeste. LFI rejette cette étiquette : ses dirigeants font valoir que l'extrême gauche « se revendique comme telle » et ne cherche pas à gouverner par les élections.",
-          "PCF. Classé à gauche par le nuancier ; les ouvrages de référence parlent de gauche communiste ou radicale. Ses statuts (39e congrès, 2023) évoquent un « projet révolutionnaire » visant le « dépassement » du capitalisme, mais il participe aux alliances de gauche et a gouverné (1944-1947, 1981-1984, 1997-2002).",
+          "PCF. Classé à gauche par le nuancier ; les ouvrages de référence le présentent comme un parti communiste. Ses statuts (39e congrès, 2023) évoquent un « projet révolutionnaire » visant le « dépassement » du capitalisme, mais il participe aux alliances de gauche et a gouverné (1944-1947, 1981-1984, 1997-2002).",
           "PS et Les Écologistes. Classés à gauche par le nuancier et les encyclopédies ; le PS se réclame du « socialisme démocratique », les Écologistes de « l'écologie politique ». Ces étiquettes ne sont pas contestées par les partis."
         ],
         "sources": [
@@ -891,8 +891,8 @@
         ],
         "more": [
           "Les Républicains. Classés à droite par les encyclopédies (« de la droite libérale au centre droit », héritiers du gaullisme). Le parti revendique lui-même l'étiquette de « droite ».",
-          "Rassemblement national. Les encyclopédies et la presse de référence le classent à l'extrême droite ; une partie des politistes utilise « droite radicale » ou « national-populisme ». Le nuancier le rattache au bloc « extrême droite », ce que le Conseil d'État a jugé légal en 2024. Le RN récuse ce terme et se présente comme « national » et « patriote ».",
-          "Reconquête. Classé à l'extrême droite par de nombreux politistes (Jean-Yves Camus voit dans l'« identitarisme » son marqueur) ; Gilles Ivaldi parle de « droite radicale ». Nous n'avons pas trouvé de prise de position officielle du parti sur cette étiquette. L'UDR d'Éric Ciotti, alliée du RN, a été classée « extrême droite » par le nuancier de 2026 et conteste ce classement."
+          "Rassemblement national. Les encyclopédies et la presse de référence le classent à l'extrême droite ; une partie des politistes utilise « droite radicale » ou « national-populisme ». Le nuancier le rattache au bloc « extrême droite » ; pour les sénatoriales de 2023, le Conseil d'État a jugé ce rattachement sans erreur manifeste d'appréciation (11 mars 2024). Le RN récuse ce terme et se présente comme « national » et « patriote ».",
+          "Reconquête. Classé à l'extrême droite par de nombreux politistes (Jean-Yves Camus voit dans l'« identitarisme » son marqueur) ; Gilles Ivaldi parle de « droite radicale ». Aucune prise de position du parti sur cette étiquette n'est connue. L'UDR d'Éric Ciotti, alliée du RN, a été classée « extrême droite » par le nuancier de 2026 et conteste ce classement."
         ],
         "sources": [
           {
@@ -947,12 +947,6 @@
             "title": "Gilles Ivaldi (CEVIPOF), « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire »",
             "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
             "date": "2022-03",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Reconquête (parti politique) »",
-            "url": "https://fr.wikipedia.org/wiki/Reconqu%C3%AAte_(parti_politique)",
-            "date": "2026-11-03",
             "kind": "statistique"
           },
           {
@@ -1191,7 +1185,7 @@
           "L'article 49, alinéa 3 de la Constitution permet au Premier ministre de faire adopter un texte sans vote des députés."
         ],
         "more": [
-          "En échange, il met en jeu la survie de son gouvernement : les députés ont 24 heures pour déposer une motion de censure. Si elle est votée par la majorité des députés (289), le texte est rejeté et le gouvernement doit démissionner. Sinon, le texte est considéré comme adopté.",
+          "En échange, il met en jeu la survie de son gouvernement : les députés ont 24 heures pour déposer une motion de censure. Si elle est votée par la majorité absolue des membres composant l'Assemblée (289 députés quand les 577 sièges sont pourvus), le texte est rejeté et le gouvernement doit démissionner. Sinon, le texte est considéré comme adopté.",
           "Il peut être utilisé sans limite pour les budgets (PLF et PLFSS), et pour un seul autre texte par session.",
           "En décembre 2024, le gouvernement de Michel Barnier a été renversé après un 49.3 sur le budget de la Sécurité sociale pour 2025."
         ],
@@ -1299,9 +1293,7 @@
       },
       {
         "heading": "Des outils de vérification reconnus",
-        "paragraphs": [
-          "AFP Factuel : le service de vérification de l'Agence France-Presse. Il vérifie notamment des images, vidéos et déclarations qui circulent sur les réseaux sociaux."
-        ],
+        "paragraphs": ["AFP Factuel : le service de vérification de l'Agence France-Presse."],
         "more": [
           "Les Décodeurs (Le Monde) : la rubrique de vérification du journal Le Monde.",
           "« Vrai ou fake » (franceinfo) : une plateforme commune de l'audiovisuel public (France Télévisions, Radio France, France Médias Monde…).",
@@ -1315,9 +1307,9 @@
             "kind": "statistique"
           },
           {
-            "title": "Éducation aux médias et à l'information : 5 sites de presse qui font la chasse aux fake news",
-            "url": "https://outilstice.com/education-aux-medias-et-a-linformation-5-sites-de-presse-fake-news/",
-            "date": "2026-11-03",
+            "title": "Ozap, « Européennes : 19 médias, dont 5 rédactions françaises, lancent une plateforme de fact-checking »",
+            "url": "https://www.ozap.com/actu/europeennes-19-medias-dont-5-redactions-francaises-lancent-une-plateforme-de-fact-checking/576251",
+            "date": "2019-03-20",
             "kind": "presse"
           }
         ]

@@ -374,7 +374,7 @@
       {
         "name": "Richard Ferrand",
         "role": "Secrétaire général d'En marche (2016-2017), président de l'Assemblée nationale (2018-2022) ; président du Conseil constitutionnel depuis mars 2025",
-        "background": "Élu socialiste du Finistère, ancien soutien de Martine Aubry au PS, il est rapporteur de la loi Macron puis, en avril 2016, le premier parlementaire à rejoindre En marche. Mis en examen en septembre 2019 pour prise illégale d'intérêts dans l'affaire des Mutuelles de Bretagne, qu'il dirigeait (location en 2011 de locaux appartenant à sa compagne), il conteste toute irrégularité ; la cour d'appel de Douai constate en mars 2021 la prescription de l'action publique, sans jugement sur le fond.",
+        "background": "Élu socialiste du Finistère, ancien soutien de Martine Aubry au PS, il est rapporteur de la loi Macron puis, en avril 2016, le premier parlementaire à rejoindre En marche.",
         "sources": [
           {
             "title": "Europe 1, « Alliés politiques, proches : qui fait partie de la galaxie Macron ? »",
@@ -386,12 +386,6 @@
             "title": "Public Sénat, « L'écurie Macron : des strauss-kahniens, chiraquiens, centristes… »",
             "url": "https://www.publicsenat.fr/actualites/non-classe/l-ecurie-macron-des-strauss-kahniens-chiraquiens-centristes-58326",
             "date": "2017-04-05",
-            "kind": "presse"
-          },
-          {
-            "title": "Public Sénat, « Mutuelles de Bretagne : Ferrand, mis en examen, entend rester à son poste »",
-            "url": "https://www.publicsenat.fr/actualites/politique/mutuelles-de-bretagne-ferrand-mis-en-examen-entend-rester-a-son-poste-145289",
-            "date": "2019-09-12",
             "kind": "presse"
           },
           {
@@ -659,7 +653,7 @@
     },
     "q05-smic": {
       "stance": -1,
-      "justification": "Gabriel Attal ne propose pas de hausse du SMIC et mise sur « une réduction des charges sociales » (octobre 2026). Le groupe Renaissance a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (114 contre, 0 pour). Vote ancien et portant sur une hausse importante : on code « plutôt défavorable ».",
+      "justification": "Gabriel Attal ne propose pas de hausse du SMIC et mise sur « une réduction des charges sociales » (octobre 2026). Le groupe Renaissance a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (114 contre, 0 pour).",
       "sources": [
         {
           "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
@@ -837,8 +831,8 @@
       ]
     },
     "q17-ecole-privee": {
-      "stance": 0,
-      "justification": "Position intermédiaire du groupe EPR : en commission (20 novembre 2024), le député EPR Jean Laussucq a déposé un amendement de suppression de la PPL n° 418, tandis que Céline Calvez (EPR) proposait un système incitatif de « bonus » et de « malus » à enveloppe constante pour les établissements privés selon leurs efforts de mixité ; en 2024, le corapporteur Renaissance Christopher Weissberg proposait de « moduler les montants du forfait d'externat en fonction de la mixité sociale ». Aucune des 96 mesures de Gabriel Attal ne traite du sujet.",
+      "stance": null,
+      "justification": "Pas de position publique claire et sourcée à ce jour : le groupe s'est divisé en commission le 20 novembre 2024, le député EPR Jean Laussucq proposant de supprimer la proposition de loi n° 418 et Céline Calvez (EPR) un système de « bonus » et de « malus » à enveloppe constante selon les efforts de mixité des établissements privés.",
       "sources": [
         {
           "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
@@ -928,18 +922,12 @@
     },
     "q24-proportionnelle": {
       "stance": 1,
-      "justification": "S'est dit favorable « à titre personnel » à la proportionnelle en juin 2025, sans engager le groupe EPR, dont plusieurs députés redoutaient « une perte de stabilité » (Europe 1). Aucune déclaration plus récente identifiée ; ses propositions institutionnelles de 2026 (référendum annuel, réduction du nombre de parlementaires) ne mentionnent pas le mode de scrutin.",
+      "justification": "S'est dit favorable « à titre personnel » à la proportionnelle en juin 2025, sans engager le groupe EPR, dont plusieurs députés redoutaient « une perte de stabilité » (Europe 1).",
       "sources": [
         {
           "title": "Proportionnelle : François Bayrou annonce un texte avant la fin de l'année, un projet qui divise le socle commun",
           "url": "https://www.europe1.fr/politique/proportionnelle-francois-bayrou-annonce-un-texte-avant-la-fin-de-lannee-un-projet-qui-divise-le-socle-commun-761497",
           "date": "2025-06-29",
-          "kind": "presse"
-        },
-        {
-          "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
-          "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
-          "date": "2026-08-02",
           "kind": "presse"
         }
       ]
@@ -1699,12 +1687,6 @@
                   "kind": "presse"
                 },
                 {
-                  "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
-                  "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
-                  "date": "2026-08-02",
-                  "kind": "presse"
-                },
-                {
                   "title": "LCP, « À Arras, Gabriel Attal prône \"une nouvelle République\" en vue de l'élection présidentielle de 2027 »",
                   "url": "https://lcp.fr/actualites/a-arras-gabriel-attal-prone-une-nouvelle-republique-en-vue-de-l-election-presidentielle",
                   "date": "2025-09-21",
@@ -1722,12 +1704,6 @@
                   "kind": "programme"
                 },
                 {
-                  "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
-                  "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
-                  "date": "2026-08-02",
-                  "kind": "presse"
-                },
-                {
                   "title": "La Gazette France (dépêche AFP), « Réseaux sociaux : Attal alimente le débat sur le référendum »",
                   "url": "https://www.lagazettefrance.fr/article/reseaux-sociaux-attal-alimente-le-debat-sur-le-referendum",
                   "date": "2026-08-16",
@@ -1742,12 +1718,6 @@
                   "title": "En meeting à Arras, Gabriel Attal appelle à une « Ve République du XXIe siècle »",
                   "url": "https://www.franceinfo.fr/politique/gabriel-attal/en-meeting-a-arras-gabriel-attal-appelle-a-une-ve-republique-du-21e-siecle_7505410.html",
                   "date": "2025-09-21",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Réforme institutionnelle : référendum annuel et moins d'élus, Gabriel Attal veut rebattre les règles du pouvoir",
-                  "url": "https://www.parlons-politique.fr/elections/reforme-institutionnelle-referendum-annuel-et-moins-delus-gabriel-attal-veut-rebattre-les-regles-du-pouvoir_24653/",
-                  "date": "2026-08-02",
                   "kind": "presse"
                 },
                 {

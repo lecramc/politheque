@@ -3,8 +3,8 @@
   "name": "Rassemblement national",
   "shortName": "RN",
   "color": "#0D378A",
-  "family": "Extrême droite (presse de référence, encyclopédies et nombreux politistes ; « droite radicale » ou « national-populisme » pour d'autres politistes ; bloc « extrême droite » du nuancier du ministère de l'Intérieur, rattachement jugé légal par le Conseil d'État le 11 mars 2024 ; le parti récuse ce terme et se présente comme « national » et « patriote »)",
-  "description": "Le Rassemblement national a été fondé en 1972 sous le nom de Front national et renommé en 2018 ; il est présidé par Jordan Bardella, réélu le 24 octobre 2026 au congrès d'Orléans. Marine Le Pen a obtenu 23,15 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux législatives de 2024, le RN et ses alliés ont recueilli 33,15 % au premier tour, et le groupe RN compte 121 députés (novembre 2026, selon Datan). Marine Le Pen a été condamnée en appel le 7 juillet 2026 pour détournement de fonds publics, notamment à une peine d'inéligibilité, et s'est pourvue en cassation ; voir le détail de la candidature.",
+  "family": "Extrême droite (presse de référence, encyclopédies et nombreux politistes ; « droite radicale » ou « national-populisme » pour d'autres politistes ; bloc « extrême droite » du nuancier du ministère de l'Intérieur, rattachement jugé sans erreur manifeste d'appréciation par le Conseil d'État le 11 mars 2024 pour les sénatoriales de 2023 ; le parti récuse ce terme et se présente comme « national » et « patriote »)",
+  "description": "Le Rassemblement national a été fondé en 1972 sous le nom de Front national et renommé en 2018 ; il est présidé par Jordan Bardella, réélu le 24 octobre 2026 au congrès d'Orléans. Marine Le Pen a obtenu 23,15 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux européennes de 2024, la liste conduite par Jordan Bardella a obtenu 31,37 %, et le groupe RN compte 121 députés (novembre 2026, selon Datan). Condamnée en appel le 7 juillet 2026, notamment à une peine d'inéligibilité, Marine Le Pen s'est pourvue en cassation. Voir la section Procédures judiciaires.",
   "foundedYear": 1972,
   "leader": {
     "name": "Jordan Bardella",
@@ -28,7 +28,7 @@
     {
       "id": "instaurer-la-priorite-nationale",
       "title": "Instaurer la « priorité nationale »",
-      "text": "Par un référendum qui modifierait la Constitution : priorité aux Français pour l'emploi et le logement, aides de solidarité réservées aux Français, regroupement familial encadré ou interdit.",
+      "text": "Par référendum : « priorité nationale » pour l'emploi et le logement, aides de solidarité soit réservées aux Français, soit soumises à cinq ans de travail, regroupement familial encadré.",
       "measureRefs": ["immigration.0"],
       "relatedQuestionIds": ["q08-preference"]
     },
@@ -305,7 +305,7 @@
       },
       {
         "date": "2026-07-07",
-        "event": "La cour d'appel de Paris confirme la culpabilité de Marine Le Pen pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN, avec des peines différentes de celles de la première instance ; elle forme un pourvoi en cassation (détail dans la fiche de candidature).",
+        "event": "La cour d'appel de Paris confirme la culpabilité de Marine Le Pen pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN, avec des peines différentes de celles de la première instance ; elle forme un pourvoi en cassation (voir la section Procédures judiciaires).",
         "sources": [
           {
             "title": "Marine Le Pen condamnée dans l'affaire des assistants parlementaires, reste éligible pour 2027 (LCP)",
@@ -385,7 +385,7 @@
       {
         "name": "Jean-Marie Le Pen",
         "role": "Cofondateur et président du FN (1972-2011), président d'honneur jusqu'en 2018 ; exclu du parti en 2015 ; mort le 7 janvier 2025",
-        "background": "Ancien parachutiste de la Légion étrangère en Indochine (1954) puis en Algérie, il est élu député de la Seine en 1956 sur les listes poujadistes (UDCA de Pierre Poujade), réélu en 1958 et battu en 1962. Il a été condamné à plusieurs reprises pour ses propos : au civil en 1991 et 1999 pour avoir qualifié les chambres à gaz de « point de détail » de l'histoire de la Seconde Guerre mondiale (1987), puis au pénal pour contestation de crime contre l'humanité (2012, propos de 2005 sur l'Occupation ; 2017, confirmé en cassation en 2018, après la réitération du « détail » en 2015), ainsi que pour injure (« Durafour crématoire », 1993) et provocation à la haine. En 2002, le journal Le Monde a publié les témoignages de quatre Algériens l'accusant d'avoir pris part à des actes de torture en 1957 pendant la guerre d'Algérie, accusations qu'il a contestées.",
+        "background": "Ancien parachutiste de la Légion étrangère en Indochine (1954) puis en Algérie, il est élu député de la Seine en 1956 sur les listes poujadistes (UDCA de Pierre Poujade), réélu en 1958 et battu en 1962. En 2002, le journal Le Monde a publié les témoignages de quatre Algériens l'accusant d'avoir pris part à des actes de torture en 1957 pendant la guerre d'Algérie, accusations qu'il a contestées.",
         "sources": [
           {
             "title": "Jean-Marie Le Pen, cofondateur et figure emblématique du Front national, est mort (LCP)",
@@ -472,7 +472,7 @@
       {
         "name": "Roger Holeindre",
         "role": "Cofondateur, secrétaire général adjoint (1972) puis vice-président du FN (1973-1978) ; député de Seine-Saint-Denis (1986-1988)",
-        "background": "Engagé à 15 ans dans des actions de résistance (1944), volontaire en Indochine puis en Algérie, partisan de l'Algérie française, il crée en décembre 1961, après la création de l'OAS, le maquis « Bonaparte » dans le Constantinois ; incarcéré en métropole en février 1962 et condamné à quatorze ans de détention, il est amnistié en 1965. Soutien de la campagne présidentielle de Jean-Louis Tixier-Vignancour (1965), il quitte le FN en 2011, à l'arrivée de Marine Le Pen, et suit Carl Lang au Parti de la France. L'historien Nicolas Lebourg le décrit comme « national populiste », anticommuniste et défenseur de l'Algérie française. Mort en 2020.",
+        "background": "Engagé à 15 ans dans des actions de résistance (1944), volontaire en Indochine puis en Algérie, partisan de l'Algérie française, il crée en décembre 1961, après la création de l'OAS, le maquis « Bonaparte » dans le Constantinois. Soutien de la campagne présidentielle de Jean-Louis Tixier-Vignancour (1965), il quitte le FN en 2011, à l'arrivée de Marine Le Pen, et suit Carl Lang au Parti de la France. L'historien Nicolas Lebourg le décrit comme « national populiste », anticommuniste et défenseur de l'Algérie française. Mort en 2020.",
         "sources": [
           {
             "title": "Assemblée nationale, base Sycomore des députés, « Roger Holeindre »",
@@ -735,12 +735,6 @@
       "justification": "Le RN annonce « 140 milliards net » d'économies d'ici 2032 et un déficit inférieur à 3 % en 2030, ciblées sur l'immigration, l'UE et les agences, tout en prévoyant 30 Md€ de baisses d'impôts et le retour de la retraite à 62 ans (coût chiffré à 9 Md€ par Marine Le Pen).",
       "sources": [
         {
-          "title": "Le budget RN promet 140 milliards d'économies (Parlons Politique)",
-          "url": "https://www.parlons-politique.fr/economie-societe/le-budget-rn-promet-140-milliards-deconomies-les-baisses-dimpots-tiendront-elles-face-aux-coupes-annoncees_28920/",
-          "date": "2026-10-08",
-          "kind": "presse"
-        },
-        {
           "title": "140 milliards d'euros d'économies d'ici 2032 : « l'effort radical » proposé par Marine Le Pen (Public Sénat)",
           "url": "https://www.publicsenat.fr/actualites/politique/140-milliards-deuros-deconomies-dici-2032-leffort-radical-propose-par-marine-le-pen-pour-redresser-les-f",
           "date": "2026-10-06",
@@ -931,12 +925,6 @@
           "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
           "date": "2024-06-24",
           "kind": "presse"
-        },
-        {
-          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
-          "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
-          "date": "2022-04",
-          "kind": "presse"
         }
       ]
     },
@@ -955,12 +943,6 @@
           "url": "https://rassemblementnational.fr/documents/GRN-CONTRE-BUDGET-2026.pdf",
           "date": "2025-10-23",
           "kind": "programme"
-        },
-        {
-          "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
-          "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
-          "date": "2022-04",
-          "kind": "presse"
         }
       ]
     },
@@ -1185,12 +1167,6 @@
       "justification": "Pas de déclaration explicite de Marine Le Pen sur la durée légale du travail en vue de 2027. En 2017, elle s'engageait à « maintenir les 35h » et proposait de ne permettre d'allonger le temps de travail que par accord de branche, avec une « compensation salariale intégrale ».",
       "sources": [
         {
-          "title": "Institut Montaigne, « Temps de travail : que proposent les candidats ? »",
-          "url": "https://institutmontaigne.org/expressions/temps-de-travail-que-proposent-les-candidats",
-          "date": "2017-03-15",
-          "kind": "presse"
-        },
-        {
           "title": "Public Sénat, « Travailler plus ou moins ? Les enjeux d'un clivage fort de la campagne »",
           "url": "https://www.publicsenat.fr/actualites/politique/travailler-plus-ou-moins-les-enjeux-d-un-clivage-fort-de-la-campagne-57351",
           "date": "2017-03-17",
@@ -1230,14 +1206,8 @@
     },
     "q29-cannabis": {
       "stance": -2,
-      "justification": "En 2022, Marine Le Pen jugeait que la légalisation n'est « évidemment pas la solution » et qu'« il faut mener la guerre contre la drogue ». Jordan Bardella estimait en 2019 que « légaliser le cannabis c'est envoyer un signal dramatique ». Le groupe RN a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 16 contre).",
+      "justification": "Jordan Bardella estimait en 2019 que « légaliser le cannabis c'est envoyer un signal dramatique ». Le groupe RN a voté contre la dépénalisation de l'usage en juillet 2026 (0 pour, 16 contre).",
       "sources": [
-        {
-          "title": "Greenboyz – Cannabis, CBD et élection présidentielle : la position des candidats",
-          "url": "https://greenboyz.fr/cannabis-cbd-election-presidentielle-candidats-legalisation/",
-          "date": "2022-03",
-          "kind": "presse"
-        },
         {
           "title": "Europe 1 – Légaliser le cannabis, c'est envoyer un signal dramatique, estime Jordan Bardella",
           "url": "https://www.europe1.fr/politique/legaliser-le-cannabis-cest-envoyer-un-signal-dramatique-estime-jordan-bardella-3905772",
@@ -1404,7 +1374,7 @@
     },
     "q39-encadrement-loyers": {
       "stance": -2,
-      "justification": "Les députés RN ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (28 contre, 1 abstention), et leurs sénateurs ont été les seuls à voter contre sa prolongation le 21 octobre 2026 (15 contre). Le sénateur Joshua Hochart a dénoncé une « fuite en avant », estimant que le plafonnement réduit l'offre locative.",
+      "justification": "Les députés RN ont voté contre la pérennisation de l'encadrement des loyers le 11 décembre 2025 (28 contre, 1 abstention), et le groupe Union nationale pour les territoires, qui réunit les sénateurs RN, a voté contre sa prolongation le 21 octobre 2026 (15 contre). Le sénateur Joshua Hochart a dénoncé une « fuite en avant », estimant que le plafonnement réduit l'offre locative.",
       "sources": [
         {
           "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
@@ -1438,7 +1408,7 @@
       "candidateName": "Marine Le Pen",
       "status": "declare",
       "statusLabel": "Candidate déclarée",
-      "candidate": "Marine Le Pen a annoncé sa candidature le 7 juillet 2026, jour de l'arrêt de la cour d'appel de Paris. Ce jour-là, la cour l'a condamnée pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du FN à trois ans d'emprisonnement dont deux avec sursis (un an ferme aménageable sous bracelet électronique), 100 000 € d'amende et une peine d'inéligibilité de 45 mois dont 30 avec sursis, contre cinq ans d'inéligibilité avec exécution provisoire en première instance (31 mars 2025). La cour ayant considéré les 15 mois d'inéligibilité ferme comme déjà exécutés depuis le jugement de première instance, elle est présentée comme éligible. Elle conteste sa condamnation et a formé un pourvoi en cassation : la Cour de cassation a indiqué le 8 juillet 2026 pouvoir statuer « au plus tard début avril 2027 », calendrier « susceptible d'évoluer », et des questions prioritaires de constitutionnalité doivent être examinées le 16 décembre 2026. L'effet du pourvoi est discuté : le procureur général près la Cour de cassation, Rémy Heitz, a déclaré le 9 juillet 2026 que le pourvoi « suspend l'exécution de l'arrêt », tandis que Didier Guérin, président de chambre honoraire à la Cour de cassation, a soutenu dans Le Monde le 27 octobre 2026 qu'elle serait « actuellement inéligible » (ses avocats l'ont signalé au Conseil supérieur de la magistrature). Jordan Bardella a déclaré qu'il serait le candidat du parti si Marine Le Pen était « empêchée ».",
+      "candidate": "Marine Le Pen a annoncé sa candidature le 7 juillet 2026 ; Jordan Bardella a déclaré qu'il serait le candidat du parti si elle était « empêchée ». Le même jour, la cour d'appel de Paris l'a condamnée, notamment à une peine d'inéligibilité dont la partie ferme est considérée comme déjà exécutée, et elle s'est pourvue en cassation : la Cour de cassation a indiqué pouvoir statuer « au plus tard début avril 2027 ». Voir la section Procédures judiciaires.",
       "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le contre-budget 2026 (octobre 2025), la trajectoire budgétaire 2027-2032 présentée le 6 octobre 2026, le programme des législatives 2024, le programme présidentiel 2022 (22 mesures et livrets thématiques) et les votes du groupe RN à l'Assemblée (XVIIe législature). Les positions de 2022 sont signalées comme telles. Les chiffres de la trajectoire 2027-2032 proviennent de comptes rendus de presse (Public Sénat, AFP) de la conférence de presse du 6 octobre 2026.",
       "programmeState": "non-publie",
       "themes": {
@@ -1469,7 +1439,7 @@
               ]
             },
             {
-              "text": "Baisse de la TVA sur les énergies (gaz, électricité, carburants, bois, fioul) et suppression de la TVA sur « 100 produits de première nécessité » (3,5 Md€ pour ce second volet selon le contre-budget 2026 ; plus de 14 Md€ pour l'ensemble selon Public Sénat).",
+              "text": "Baisse de la TVA sur les énergies (gaz, électricité, carburants, bois, fioul) et suppression de la TVA sur « 100 produits de première nécessité » (3,5 Md€ pour ce second volet selon le contre-budget 2026).",
               "sources": [
                 {
                   "title": "Contre-budget 2026 du Rassemblement national",
@@ -1601,12 +1571,6 @@
                   "url": "https://rassemblementnational.fr/22-mesures",
                   "date": "2022-03",
                   "kind": "programme"
-                },
-                {
-                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
-                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
-                  "date": "2022-04",
-                  "kind": "presse"
                 }
               ]
             },
@@ -1626,12 +1590,6 @@
                   "kind": "programme"
                 },
                 {
-                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
-                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
-                  "date": "2022-04",
-                  "kind": "presse"
-                },
-                {
                   "title": "Contre-budget du RN : « Des propositions qui manquent de crédibilité économique, mais trahissent une véritable cohérence doctrinale » (Public Sénat)",
                   "url": "https://www.publicsenat.fr/actualites/economie/contre-budget-du-rn-des-propositions-qui-manquent-de-credibilite-economique-mais-trahissent-une-veritable-coherence-doctrinale",
                   "date": "2025-10-24",
@@ -1645,7 +1603,7 @@
           "summary": "Le RN propose un référendum révisant la Constitution pour instaurer la « priorité nationale », restreindre le regroupement familial et supprimer le droit du sol. Il chiffre à 12 à 15 Md€ par an les économies attendues sur l'immigration.",
           "measures": [
             {
-              "text": "Référendum portant révision de la Constitution permettant d'instaurer la « priorité nationale » pour l'emploi et le logement, d'encadrer ou d'interdire le regroupement familial et de réserver aux Français les prestations de solidarité non contributives (programme 2022).",
+              "text": "Référendum portant révision de la Constitution permettant d'instaurer la « priorité nationale » pour l'emploi et le logement ; regroupement familial « encadré par la loi », qui « pourra être interdit ou limité » ; prestations de solidarité non contributives « soit réservées aux Français, soit soumises à des conditions », notamment cinq années de travail en France (programme 2022).",
               "sources": [
                 {
                   "title": "Projet pour la France de Marine Le Pen – livret « Le contrôle de l'immigration »",
@@ -1759,12 +1717,6 @@
                   "url": "https://rassemblementnational.fr/documents/projet/projet-la-securite.pdf",
                   "date": "2022-03",
                   "kind": "programme"
-                },
-                {
-                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
-                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
-                  "date": "2022-04",
-                  "kind": "presse"
                 }
               ]
             },
@@ -1808,12 +1760,6 @@
                   "title": "Législatives 2024 : Jordan Bardella dévoile le programme du RN (LCP)",
                   "url": "https://lcp.fr/actualites/legislatives-2024-pouvoir-d-achat-immigration-ecole-jordan-bardella-devoile-le-programme",
                   "date": "2024-06-24",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
-                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
-                  "date": "2022-04",
                   "kind": "presse"
                 }
               ]
@@ -1881,12 +1827,6 @@
                   "url": "https://rassemblementnational.fr/22-mesures",
                   "date": "2022-03",
                   "kind": "programme"
-                },
-                {
-                  "title": "Institut Montaigne, Présidentielle 2022 – synthèse du chiffrage du programme de Marine Le Pen",
-                  "url": "https://www.institutmontaigne.org/presidentielle-2022/marine-le-pen/synthese/",
-                  "date": "2022-04",
-                  "kind": "presse"
                 }
               ]
             },

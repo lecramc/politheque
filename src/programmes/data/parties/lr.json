@@ -4,7 +4,7 @@
   "shortName": "LR",
   "color": "#0066CC",
   "family": "Droite (presse et ouvrages de référence : de la droite libérale au centre droit, héritière du gaullisme ; bloc « droite » du nuancier du ministère de l'Intérieur ; le parti revendique lui-même l'étiquette de « droite »)",
-  "description": "Les Républicains ont succédé à l'UMP en 2015 ; le parti est présidé depuis mai 2025 par Bruno Retailleau, ancien ministre de l'Intérieur (2024-2025). Valérie Pécresse a obtenu 4,78 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; à l'Assemblée, le groupe Droite républicaine compte 46 députés (novembre 2026, selon Datan). Le 19 avril 2026, les adhérents ont choisi à 73,8 % de désigner directement Bruno Retailleau comme candidat plutôt que d'organiser une primaire. Xavier Bertrand, président (LR) de la région Hauts-de-France, a annoncé le 27 août 2026 qu'il serait lui aussi candidat, en « candidat indépendant », avec une déclaration formelle annoncée pour « la fin de l'année ».",
+  "description": "Les Républicains ont succédé à l'UMP en 2015 ; le parti est présidé depuis mai 2025 par Bruno Retailleau, ancien ministre de l'Intérieur (2024-2025). Valérie Pécresse a obtenu 4,78 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste des Républicains 7,25 % aux européennes de 2024 ; à l'Assemblée, le groupe Droite républicaine compte 46 députés (novembre 2026, selon Datan). Le 19 avril 2026, les adhérents ont choisi de désigner directement Bruno Retailleau comme candidat. Xavier Bertrand, président (LR) de la région Hauts-de-France, a annoncé le 27 août 2026 qu'il serait lui aussi candidat, en « candidat indépendant ».",
   "foundedYear": 2015,
   "leader": {
     "name": "Bruno Retailleau",
@@ -19,8 +19,8 @@
       "relatedQuestionIds": ["q02-depenses"]
     },
     {
-      "id": "retraite-depart-a-63-ans-au-plus-tot-taux-plein-a",
-      "title": "Retraite : départ à 63 ans au plus tôt, taux plein à 65",
+      "id": "fixer-un-age-minimal-de-63-ans-et-le-taux-plein-a",
+      "title": "Fixer un âge minimal de 63 ans et le taux plein à 65 ans",
       "text": "Un âge minimal de départ de 63 ans, sauf métiers pénibles, et le taux plein automatique à 65 ans.",
       "measureRefs": ["travail.0"],
       "relatedQuestionIds": ["q04-retraite"]
@@ -477,7 +477,7 @@
       {
         "name": "Jacques Chirac",
         "role": "Fondateur et président du RPR (1976-1994), président de la République (1995-2007), à l'origine de l'UMP (2002)",
-        "background": "Premier ministre de Valéry Giscard d'Estaing, il démissionne en août 1976 et transforme l'UDR en RPR le 5 décembre 1976, en le présentant comme gaulliste et membre de la majorité. Le 15 décembre 2011, il est condamné à deux ans de prison avec sursis pour détournement de fonds publics, abus de confiance et prise illégale d'intérêts dans l'affaire des emplois fictifs de la Ville de Paris, les poursuites n'ayant pu être engagées qu'après la fin de son mandat présidentiel ; il n'a pas fait appel.",
+        "background": "Premier ministre de Valéry Giscard d'Estaing, il démissionne en août 1976 et transforme l'UDR en RPR le 5 décembre 1976, en le présentant comme gaulliste et membre de la majorité.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Rassemblement pour la République (RPR) »",
@@ -508,7 +508,7 @@
       {
         "name": "Alain Juppé",
         "role": "Premier président de l'UMP (2002-2004)",
-        "background": "Proche collaborateur de Jacques Chirac, Premier ministre de 1995 à 1997 et maire de Bordeaux, il devient en novembre 2002 le premier président de l'UMP, à la tête de laquelle Nicolas Sarkozy lui succède en novembre 2004. Le 1er décembre 2004, la cour d'appel de Versailles le condamne à quatorze mois de prison avec sursis et un an d'inéligibilité (contre dix ans en première instance) pour des emplois de la Ville de Paris occupés par des salariés du RPR, dont il était secrétaire général au moment des faits.",
+        "background": "Proche collaborateur de Jacques Chirac, Premier ministre de 1995 à 1997 et maire de Bordeaux, il devient en novembre 2002 le premier président de l'UMP, à la tête de laquelle Nicolas Sarkozy lui succède en novembre 2004.",
         "sources": [
           {
             "title": "Emplois fictifs : un classique en politique (Public Sénat)",
@@ -533,7 +533,7 @@
       {
         "name": "Nicolas Sarkozy",
         "role": "Président de l'UMP (2004-2007, 2014-2015), président de la République (2007-2012), fondateur des Républicains (2015)",
-        "background": "Élu président de l'UMP en novembre 2004 puis président de la République en 2007, il revient à la tête du parti en 2014 et le rebaptise Les Républicains en 2015. Il a été condamné définitivement dans l'affaire des écoutes, dite « Bismuth » (corruption et trafic d'influence ; trois ans dont un ferme sous bracelet électronique, pourvoi rejeté le 18 décembre 2024), puis dans l'affaire Bygmalion (financement illégal de la campagne de 2012, pourvoi rejeté en novembre 2025). Condamné en première instance le 25 septembre 2025 à cinq ans d'emprisonnement, avec mandat de dépôt à effet différé et exécution provisoire, et 100 000 € d'amende pour association de malfaiteurs dans l'affaire du financement libyen de la campagne de 2007 (relaxé des chefs de corruption passive, de détournement de fonds publics libyens et de financement illicite de campagne), il a été incarcéré une vingtaine de jours ; il conteste les faits, le parquet général a requis sept ans en appel et l'arrêt de la cour d'appel de Paris est attendu le 30 novembre 2026 (condamnation non définitive).",
+        "background": "Élu président de l'UMP en novembre 2004 puis président de la République en 2007, il revient à la tête du parti en 2014 et le rebaptise Les Républicains en 2015.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Les Républicains, parti politique »",
@@ -749,19 +749,13 @@
     },
     "q02-depenses": {
       "stance": 2,
-      "justification": "LR présente la réduction de l'« assistanat » et des dépenses sociales comme la source de ses économies (13 Md€ par an sur l'assurance chômage, 40 Md€ sur cinq ans sur les retraites) et propose de ne pas remplacer une partie des fonctionnaires.",
+      "justification": "LR présente la réduction de l'« assistanat » et des dépenses sociales comme la source de ses économies (13 Md€ par an sur l'assurance chômage, 40 Md€ sur cinq ans sur les retraites) et propose de réduire de « 250 à 300 000 » le nombre de fonctionnaires (27 août 2026).",
       "sources": [
         {
           "title": "Le travail gagnant – Nos propositions pour la France (Les Républicains)",
           "url": "https://republicains.fr/wp-content/uploads/2026/01/51705_LesRepublicains_Brochures_A5-40P_DEF.pdf",
           "date": "2025-12",
           "kind": "programme"
-        },
-        {
-          "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
-          "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
-          "date": "2026-02-16",
-          "kind": "presse"
         },
         {
           "title": "Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? (Public Sénat)",
@@ -803,7 +797,7 @@
     },
     "q05-smic": {
       "stance": -1,
-      "justification": "Bruno Retailleau ne propose pas de hausse du SMIC mais un seuil « zéro cotisation » au-delà de 1 623 heures annuelles. Le groupe LR a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (19 contre, 0 pour). Vote ancien : on code « plutôt défavorable ».",
+      "justification": "Bruno Retailleau ne propose pas de hausse du SMIC mais un seuil « zéro cotisation » au-delà de 1 623 heures annuelles. Le groupe LR a voté contre un SMIC à 1 500 € net le 20 juillet 2022 (19 contre, 0 pour).",
       "sources": [
         {
           "title": "Datan, scrutin n° 44 du 20 juillet 2022 (16e législature) : « Augmenter le salaire minimum (SMIC) à 1500 euros net mensuel », amendements identiques rejetés",
@@ -1241,7 +1235,7 @@
     },
     "q31-voile-sport": {
       "stance": -2,
-      "justification": "La proposition de loi d'interdiction a été déposée par le sénateur LR Michel Savin ; le groupe Les Républicains l'a votée (Sénat, 18 février 2025 : 129 pour, 0 contre). Bruno Retailleau, alors ministre de l'Intérieur, a soutenu l'interdiction en mars 2025, estimant que le voile « n'est pas qu'un bout de tissu, c'est un étendard ».",
+      "justification": "La proposition de loi d'interdiction a été déposée par le sénateur LR Michel Savin ; le groupe Les Républicains l'a votée (Sénat, 18 février 2025 : 129 pour, 0 contre).",
       "sources": [
         {
           "title": "Sénat – Scrutin n° 199, proposition de loi visant à assurer le respect du principe de laïcité dans le sport",
@@ -1253,12 +1247,6 @@
           "title": "Public Sénat – Laïcité : le Sénat vote l'interdiction du port de signes religieux dans les compétitions sportives et les piscines",
           "url": "https://www.publicsenat.fr/actualites/parlementaire/laicite-le-senat-vote-linterdiction-du-port-de-signes-religieux-dans-les-competitions-sportives-et-les-piscines",
           "date": "2025-02-18",
-          "kind": "presse"
-        },
-        {
-          "title": "Hespress FR – France : le port du voile dans le sport divise la scène politique",
-          "url": "https://fr.hespress.com/416209-france-le-port-du-voile-dans-le-sport-divise-la-scene-politique.html",
-          "date": "2025-03-19",
           "kind": "presse"
         }
       ]
@@ -1349,7 +1337,7 @@
     },
     "q39-encadrement-loyers": {
       "stance": -2,
-      "justification": "Le programme logement des Républicains, « Se loger mieux et moins cher ! », présenté par Bruno Retailleau le 28 mai 2026, prévoit que « les dispositifs d'encadrement des loyers issus de la loi ELAN seront supprimés ». Les sénateurs LR ont toutefois voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (119 pour, 2 contre), après le vote contre sa pérennisation des députés de la Droite républicaine le 11 décembre 2025 (2 contre).",
+      "justification": "Le programme logement des Républicains, « Se loger mieux et moins cher ! », présenté par Bruno Retailleau le 28 mai 2026, prévoit que « les dispositifs d'encadrement des loyers issus de la loi ELAN seront supprimés ». Les sénateurs LR ont toutefois voté le 21 octobre 2026 sa prolongation de deux ans sans nouvelles villes (119 pour, 2 contre, dont Bruno Retailleau, sénateur), après le vote contre sa pérennisation des députés de la Droite républicaine le 11 décembre 2025 (2 contre).",
       "sources": [
         {
           "title": "Les Républicains, « Se loger mieux et moins cher ! » (nos propositions pour la France)",
@@ -1437,14 +1425,8 @@
               ]
             },
             {
-              "text": "Réduction des effectifs de la fonction publique par le non-remplacement d'une partie des départs à la retraite ; lors du débat du Medef du 27 août 2026, Bruno Retailleau a évoqué « 250 à 300 000 fonctionnaires » de moins et la suppression des agences de l'État ne justifiant pas leur existence tous les trois ans.",
+              "text": "Réduction des effectifs de la fonction publique : lors du débat du Medef du 27 août 2026, Bruno Retailleau a évoqué « 250 à 300 000 fonctionnaires » de moins (« le statut pour le régalien, le contrat pour les autres ») et la suppression des agences de l'État, ou à défaut « tous les trois ans une justification de leur existence ».",
               "sources": [
-                {
-                  "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
-                  "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
-                  "date": "2026-02-16",
-                  "kind": "presse"
-                },
                 {
                   "title": "Dette, retraites, fiscalité… que retenir du premier débat des candidats à l'élection présidentielle ? (Public Sénat)",
                   "url": "https://www.publicsenat.fr/actualites/politique/dette-retraites-fiscalite-que-retenir-du-premier-debat-des-candidats-a-lelection-presidentielle",
@@ -1575,12 +1557,6 @@
                   "kind": "presse"
                 },
                 {
-                  "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
-                  "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
-                  "date": "2026-02-16",
-                  "kind": "presse"
-                },
-                {
                   "title": "Immigration : que contiennent les deux propositions de loi LR ? (Public Sénat)",
                   "url": "https://www.publicsenat.fr/actualites/politique/immigration-ce-que-contiennent-les-deux-propositions-de-loi-lr",
                   "date": "2023-06-02",
@@ -1622,7 +1598,7 @@
           "summary": "Bruno Retailleau se présente comme le candidat « de la loi et de l'ordre » et propose une réforme de la justice pénale soumise à référendum. Il propose un régime d'urgence pour les quartiers touchés par le narcotrafic.",
           "measures": [
             {
-              "text": "Réforme (« révolution ») de la justice pénale soumise à référendum.",
+              "text": "Réforme de la justice pénale soumise à référendum.",
               "sources": [
                 {
                   "title": "Présidentielle de 2027 : Bruno Retailleau annonce sa candidature et promet des référendums (Euronews)",
@@ -1635,12 +1611,6 @@
             {
               "text": "Rétablissement des courtes peines de prison, dès les premiers délits, et retour sur la loi Belloubet de 2019, que Bruno Retailleau dit avoir « toujours combattue » .",
               "sources": [
-                {
-                  "title": "Présidentielle 2027 : justice, immigration et RSA, le programme de Retailleau (Planet.fr)",
-                  "url": "https://www.planet.fr/politique-presidentielle-2027-justice-immigration-et-rsa-le-programme-radical-de-retailleau.2994292.29334.html",
-                  "date": "2026-02-16",
-                  "kind": "presse"
-                },
                 {
                   "title": "Bruno Retailleau favorable aux courtes peines de prison : « Ce n'est pas une solution magique » (Public Sénat)",
                   "url": "https://www.publicsenat.fr/actualites/politique/bruno-retailleau-favorable-aux-courtes-peines-de-prison-ce-nest-pas-une-solution-magique",

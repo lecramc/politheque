@@ -146,7 +146,7 @@ export const QUESTIONS: Question[] = [
     statement:
       'Les Français devraient passer avant les étrangers pour obtenir un logement social ou certaines aides sociales.',
     shortLabel: 'Les Français avant les étrangers pour le logement social et certaines aides',
-    help: "C'est la « préférence nationale » (ou « priorité nationale »). Ses partisans proposent de l'inscrire dans la Constitution, notamment par référendum. Ses opposants estiment qu'elle est contraire au principe d'égalité inscrit dans la Constitution.",
+    help: "C'est ce que le Rassemblement national appelle la « priorité nationale ». Ses partisans proposent de l'inscrire dans la Constitution, notamment par référendum. Ses opposants estiment qu'elle est contraire au principe d'égalité inscrit dans la Constitution.",
     axis: 'societal',
     direction: 1,
   },
