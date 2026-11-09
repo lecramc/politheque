@@ -10,7 +10,7 @@ type Redirect = {
 
 const config = JSON.parse(
   fs.readFileSync(path.resolve(__dirname, '../../../vercel.json'), 'utf8')
-) as { redirects: Redirect[] };
+) as { redirects: Redirect[]; cleanUrls?: boolean; trailingSlash?: boolean };
 const allRedirects = config.redirects;
 const isHostRule = (r: Redirect) => (r.has ?? []).some((h) => h.type === 'host');
 /** Règles de chemin : celles de la bascule de domaine sont testées plus bas. */
@@ -34,7 +34,9 @@ const find = (pathname: string, query: Record<string, string> = {}) => {
   return (
     rule && {
       ...rule,
-      destination: rule.destination.replace(':id', pathname.split('/')[2]?.replace(/\.html$/, '')),
+      destination: rule.destination
+        .replace(':id', pathname.split('/')[2]?.replace(/\.html$/, ''))
+        .replace(':path', pathname.slice(1, -1)),
     }
   );
 };
@@ -105,6 +107,23 @@ describe('Feature: redirections des adresses retirées (spec § 1.2)', () => {
 });
 
 describe('Feature: adresse nue d’une fiche, un seul saut (audit SEO)', () => {
+  // Vercel applique `trailingSlash` et `cleanUrls` AVANT les `redirects` : avec `trailingSlash: false`,
+  // /partis/rn/ faisait /partis/rn puis /programme-2027 (2 sauts). La barre finale est donc retirée
+  // par une règle à nous, placée en dernier, après les règles précises.
+  // Limite connue : `cleanUrls` (indispensable pour servir /x depuis x.html) redirige toujours
+  // /partis/rn.html vers /partis/rn avant nos règles, d'où 2 sauts pour cette forme, jamais liée.
+  it('should not let Vercel strip the trailing slash before our own rules', () => {
+    expect(config.trailingSlash).toBeUndefined();
+    expect(config.cleanUrls).toBe(true);
+  });
+
+  it('should strip a trailing slash in one hop, last, after the precise rules', () => {
+    expect(find('/comprendre/')).toMatchObject({ destination: '/comprendre', permanent: true });
+    expect(find('/partis/rn/positions/')).toMatchObject({ destination: '/partis/rn/positions' });
+    expect(find('/')).toBeUndefined();
+    expect(redirects.at(-1)?.source).toBe('/:path(.+)/');
+  });
+
   it('should send /partis/rn/ and /partis/rn.html straight to the programme tab', () => {
     for (const bare of ['/partis/rn/', '/partis/rn.html']) {
       expect(find(bare), bare).toMatchObject({
@@ -133,7 +152,7 @@ describe('Feature: bascule vers politheque.revaamp.com', () => {
         ...rule,
         destination: rule.destination
           .replace(':id', pathname.split('/')[2]?.replace(/\.html$/, ''))
-          .replace(':path', pathname.slice(1)),
+          .replace(':path', pathname.slice(1).replace(/\/$/, '')),
       }
     );
   };
@@ -163,6 +182,9 @@ describe('Feature: bascule vers politheque.revaamp.com', () => {
     for (const bare of ['/partis/rn', '/partis/rn/', '/partis/rn.html']) {
       expect(findOld(bare)?.destination, bare).toBe(`${NEW}/partis/rn/programme-2027`);
     }
+    expect(findOld('/comprendre/institutions/')?.destination).toBe(
+      `${NEW}/comprendre/institutions`
+    );
     expect(findOld('/partis/rn', { onglet: 'histoire' })?.destination).toBe(
       `${NEW}/partis/rn/histoire`
     );

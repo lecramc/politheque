@@ -5,7 +5,6 @@
   "buildCommand": "npm run build:web",
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "trailingSlash": false,
   "redirects": [
     {
       "source": "/partis/:id",
@@ -177,6 +176,17 @@
       ]
     },
     {
+      "source": "/:path(.+)/",
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ],
+      "destination": "https://politheque.revaamp.com/:path",
+      "permanent": true
+    },
+    {
       "source": "/",
       "has": [
         {
@@ -287,6 +297,11 @@
     {
       "source": "/partis/:id((?!comparer$)[^/]+)",
       "destination": "/partis/:id/programme-2027",
+      "permanent": true
+    },
+    {
+      "source": "/:path(.+)/",
+      "destination": "/:path",
       "permanent": true
     }
   ],
