@@ -113,6 +113,8 @@ for (const file of walk(dist).filter((f) => TEMPLATE.test(path.basename(f)))) {
 for (const file of walk(dist).filter((f) => f.endsWith('.html'))) {
   const relative = path.relative(dist, file);
   if (IGNORED.has(relative)) continue;
+  // Fichiers de vérification Search Console (public/google<code>.html) : pas des pages du site.
+  if (/^google[0-9a-f]+\.html$/.test(relative)) continue;
   if (!expectedFiles.has(file)) {
     errors.push(`${path.relative(dist, file)} : page exportée absente du registre des routes`);
   }

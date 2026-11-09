@@ -169,6 +169,10 @@ describe('Feature: bascule vers politheque.revaamp.com', () => {
   it('should keep the Search Console and Bing verification files on the old host', () => {
     expect(findOld('/google1a2b3c4d5e6f.html')).toBeUndefined();
     expect(findOld('/BingSiteAuth.xml')).toBeUndefined();
+    // `cleanUrls` redirige d'abord /googleXXX.html vers /googleXXX sur le même hôte : cette forme
+    // doit aussi rester servie, sinon la vérification part vers le nouveau domaine.
+    expect(findOld('/googleffef207cbb352571')).toBeUndefined();
+    expect(findOld('/BingSiteAuth')).toBeUndefined();
     expect(findOld('/googleapis.html')).toBeUndefined();
   });
 

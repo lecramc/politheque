@@ -198,7 +198,7 @@
       "permanent": true
     },
     {
-      "source": "/:path((?!google[^/]*\\.html$|BingSiteAuth\\.xml$).+)",
+      "source": "/:path((?!google[^/]*$|BingSiteAuth[^/]*$).+)",
       "has": [
         {
           "type": "host",
