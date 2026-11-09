@@ -51,6 +51,11 @@ export default function Root({ children }: PropsWithChildren) {
           media="(prefers-color-scheme: dark)"
         />
         <meta name="color-scheme" content="light dark" />
+        {/* Vérification de la propriété Search Console https://politheque.revaamp.com/ : ne pas retirer. */}
+        <meta
+          name="google-site-verification"
+          content="C5MAACishvsX3if_MYlszbfkc1qucwkB863xlbhsur0"
+        />
         <meta property="og:site_name" content={APP_NAME} />
         <meta property="og:locale" content={SITE_LOCALE} />
         <meta name="twitter:card" content="summary_large_image" />
