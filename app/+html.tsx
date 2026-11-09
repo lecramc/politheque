@@ -1,10 +1,3 @@
-import {
-  AtkinsonHyperlegible_400Regular,
-  AtkinsonHyperlegible_400Regular_Italic,
-  AtkinsonHyperlegible_700Bold,
-} from '@expo-google-fonts/atkinson-hyperlegible';
-import { Fraunces_600SemiBold, Fraunces_700Bold } from '@expo-google-fonts/fraunces';
-import { Asset } from 'expo-asset';
 import { ScrollViewStyleReset } from 'expo-router/html';
 import type { PropsWithChildren } from 'react';
 
@@ -18,24 +11,27 @@ import { printCss } from '@/src/core/web/print-css';
 // en `@font-face` statiques avec `font-display: swap` (texte visible tout de suite, police système
 // en attendant) ; `app/_layout.tsx` ne les charge plus via `useFonts` sur le web. Seules les deux
 // polices du texte courant et des titres sont préchargées : les autres variantes se chargent à la demande.
+// Fichiers WOFF2 (`public/assets/fonts/`, cache immuable d'un an) convertis sans sous-ensemble depuis
+// les TTF de `@expo-google-fonts` : le suffixe est l'empreinte du fichier, à changer s'il est régénéré.
+// Procédure : `public/assets/fonts/README.md`.
 const FONT_FILES = [
   {
     family: 'AtkinsonHyperlegible_400Regular',
-    module: AtkinsonHyperlegible_400Regular,
+    file: 'AtkinsonHyperlegible_400Regular.8e0c323aed.woff2',
     preload: true,
   },
   {
     family: 'AtkinsonHyperlegible_400Regular_Italic',
-    module: AtkinsonHyperlegible_400Regular_Italic,
+    file: 'AtkinsonHyperlegible_400Regular_Italic.7306c563cc.woff2',
   },
-  { family: 'AtkinsonHyperlegible_700Bold', module: AtkinsonHyperlegible_700Bold },
-  { family: 'Fraunces_600SemiBold', module: Fraunces_600SemiBold, preload: true },
-  { family: 'Fraunces_700Bold', module: Fraunces_700Bold },
-].map((font) => ({ ...font, uri: Asset.fromModule(font.module).uri }));
+  { family: 'AtkinsonHyperlegible_700Bold', file: 'AtkinsonHyperlegible_700Bold.10cd24314b.woff2' },
+  { family: 'Fraunces_600SemiBold', file: 'Fraunces_600SemiBold.c882f3e141.woff2', preload: true },
+  { family: 'Fraunces_700Bold', file: 'Fraunces_700Bold.77ea9b849f.woff2' },
+].map((font) => ({ ...font, uri: `/assets/fonts/${font.file}` }));
 
 const fontFaceCss = FONT_FILES.map(
   (font) =>
-    `@font-face{font-family:"${font.family}";src:url("${font.uri}") format("truetype");font-style:normal;font-display:swap}`
+    `@font-face{font-family:"${font.family}";src:url("${font.uri}") format("woff2");font-style:normal;font-display:swap}`
 ).join('\n');
 
 // Document HTML racine de l'export web statique : uniquement les invariants du site.
@@ -66,7 +62,7 @@ export default function Root({ children }: PropsWithChildren) {
             rel="preload"
             href={font.uri}
             as="font"
-            type="font/ttf"
+            type="font/woff2"
             crossOrigin="anonymous"
           />
         ))}
