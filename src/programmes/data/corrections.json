@@ -1,5 +1,75 @@
 [
   {
+    "id": "2026-11-09-citations-alignees-sur-leurs-sources-nativisme-s",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/classement-des-partis"],
+    "summary": "Citations alignées sur leurs sources : nativisme selon Cas Mudde, phrase absente de la source retirée, courants des « droites extrêmes ». Source inaccessible remplacée ; loi de 1962 et page de la CNCCFP ajoutées."
+  },
+  {
+    "id": "2026-11-09-arret-costa-contre-enel-date-15-juillet-1964-la",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/union-europeenne"],
+    "summary": "Arrêt Costa contre ENEL daté (15 juillet 1964). La Constitution n'est révisée avant ratification que si le Conseil constitutionnel constate une contradiction (article 54). Sources ajoutées : Constitution, article 48 du traité sur l'UE."
+  },
+  {
+    "id": "2026-11-09-c-est-la-demande-d-inscription-qui-doit-etre-dep",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/comment-voter"],
+    "summary": "C'est la demande d'inscription qui doit être déposée au plus tard le 12 mars 2027. Conditions pour voter alignées sur la loi. La pièce d'identité n'a pas toujours de photo. Ajout du formulaire papier de procuration ; dates de sources corrigées."
+  },
+  {
+    "id": "2026-11-09-le-second-tour-n-a-lieu-que-si-personne-n-a-la-m",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/election-presidentielle"],
+    "summary": "Le second tour n'a lieu que si personne n'a la majorité absolue au premier. L'équité du temps de parole tient aussi compte de l'implication dans la campagne. Plafonds précisés : 16,851 et 22,509 millions d'euros. Sources primaires ajoutées."
+  },
+  {
+    "id": "2026-11-09-ajouts-adoption-sans-vote-par-le-49-3-deux-condi",
+    "date": "2026-11-09",
+    "kind": "mise-a-jour",
+    "pages": ["/comprendre/pouvoirs-du-president"],
+    "summary": "Ajouts : adoption sans vote par le 49.3, deux conditions de l'article 16, Congrès réservé aux projets de révision, chute du gouvernement Bayrou le 8 septembre 2025."
+  },
+  {
+    "id": "2026-11-09-articles-sans-contreseing-corriges-8-11-12-16-54",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/pouvoirs-du-president"],
+    "summary": "Articles sans contreseing corrigés (8, 11, 12, 16, 54, 61). Pas de nouvelle dissolution dans l'année qui suit les élections. Une promesse contraire à un traité suppose de le renégocier ou d'obtenir une dérogation, pas de réviser la Constitution."
+  },
+  {
+    "id": "2026-11-09-lecon-reverifiee-vrai-ou-fake-date-de-2018-le-co",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/desinformation"],
+    "summary": "Leçon revérifiée : « Vrai ou fake » date de 2018 ; le conseil de prudence ne s'appuie plus sur l'absence de vérification par les services de fact-checking ; source du CLEMI ajoutée."
+  },
+  {
+    "id": "2026-11-09-lecon-reverifiee-resume-fonde-sur-les-chiffres-d",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/budget-dette"],
+    "summary": "Leçon revérifiée : résumé fondé sur les chiffres de l'Insee (déficit de 5,1 % du PIB et dette de plus de 115 % fin 2025) au lieu d'une affirmation non sourcée ; ajout du rejet du projet de loi de finances 2027 par l'Assemblée en première lecture le 4 novembre 2026 ; source Insee mise à jour."
+  },
+  {
+    "id": "2026-11-09-lecon-reverifiee-retrait-d-une-phrase-non-source",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/gauche-droite"],
+    "summary": "Leçon revérifiée : retrait d'une phrase non sourcée attribuant des valeurs à la gauche, à la droite et au centre ; en 1789, la droite défendait un veto royal absolu ; dates exactes et décisions du Conseil d'État ajoutées (11 mars 2024, 27 février 2026)."
+  },
+  {
+    "id": "2026-11-09-lecon-reverifiee-la-motion-de-censure-exige-la-m",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/institutions"],
+    "summary": "Leçon revérifiée : la motion de censure exige la majorité absolue des députés (289 sur 577) ; le Sénat est élu par environ 160 000 grands électeurs et renouvelé par moitié tous les 3 ans ; le mandat au Conseil constitutionnel n'est pas renouvelable et les anciens présidents en sont membres de droit."
+  },
+  {
     "id": "2026-11-09-l-enquete-du-parquet-national-financier-visant-f",
     "date": "2026-11-09",
     "kind": "correction",

@@ -4,6 +4,7 @@
     "title": "Les institutions de la Ve République",
     "icon": "business-outline",
     "summary": "Qui fait quoi en France : le président, le gouvernement, le Parlement, le Conseil constitutionnel et la justice. Les règles viennent de la Constitution de 1958.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "La Constitution, la règle du jeu",
@@ -53,7 +54,7 @@
         ],
         "more": [
           "Il prépare la plupart des projets de loi et le budget. Il fait appliquer les lois avec des décrets.",
-          "Le gouvernement est « responsable » devant l'Assemblée nationale : si une majorité de députés vote une « motion de censure », le gouvernement doit démissionner."
+          "Le gouvernement est « responsable » devant l'Assemblée nationale. Si la majorité absolue des députés (289 sur 577) vote une « motion de censure », le gouvernement doit démissionner."
         ],
         "sources": [
           {
@@ -71,7 +72,7 @@
         ],
         "more": [
           "L'Assemblée nationale compte 577 députés, élus directement par les citoyens pour 5 ans. Elle seule peut renverser le gouvernement. Elle seule peut être dissoute par le président.",
-          "Le Sénat compte 348 sénateurs, élus pour 6 ans par des élus locaux (on dit « suffrage indirect »). Il représente les collectivités territoriales. Il ne peut pas être dissous.",
+          "Le Sénat compte 348 sénateurs, élus pour 6 ans par environ 160 000 « grands électeurs », surtout des élus locaux (on dit « suffrage indirect »). Il est renouvelé par moitié tous les 3 ans. Il représente les collectivités territoriales. Il ne peut pas être dissous.",
           "Une loi doit être votée dans les mêmes termes par les deux chambres. En cas de désaccord persistant, le gouvernement peut en général donner le « dernier mot » à l'Assemblée nationale."
         ],
         "sources": [
@@ -95,7 +96,7 @@
           "Il vérifie que les lois respectent la Constitution. Une loi (ou une partie de loi) jugée contraire est « censurée » : elle ne s'applique pas."
         ],
         "more": [
-          "Il a 9 membres nommés pour 9 ans : 3 par le président de la République, 3 par le président de l'Assemblée nationale, 3 par le président du Sénat.",
+          "Il a 9 membres nommés pour 9 ans, sans renouvellement possible : 3 par le président de la République, 3 par le président de l'Assemblée nationale, 3 par le président du Sénat. Les anciens présidents de la République en sont aussi membres de droit.",
           "Il contrôle aussi l'élection présidentielle : il reçoit les parrainages, publie la liste des candidats et proclame les résultats."
         ],
         "sources": [
@@ -138,6 +139,7 @@
     "title": "Ce qu'un président peut faire seul… et ce qu'il ne peut pas",
     "icon": "scale-outline",
     "summary": "Un président a des pouvoirs propres, mais la plupart des promesses de campagne demandent une loi votée par le Parlement. Sans majorité à l'Assemblée, c'est beaucoup plus difficile.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "Ce que le président peut décider seul",
@@ -146,10 +148,10 @@
           "Il est aussi chef des armées."
         ],
         "more": [
-          "Articles 8, 11, 12, 15 et 16 de la Constitution.",
-          "Après une dissolution, les élections législatives ont lieu 20 à 40 jours plus tard. Le président ne peut pas recommencer pendant un an.",
+          "Articles 8, 11, 12, 16, 54 et 61 de la Constitution. Le rôle de chef des armées vient de l'article 15.",
+          "Après une dissolution, les élections législatives ont lieu 20 à 40 jours plus tard. Le président ne peut pas dissoudre à nouveau pendant l'année qui suit ces élections.",
           "Le référendum de l'article 11 ne porte que sur certains sujets : organisation des pouvoirs publics, politique économique, sociale ou environnementale, ratification d'un traité. Il se fait sur proposition du gouvernement ou des deux assemblées.",
-          "Les pouvoirs exceptionnels de l'article 16 supposent une menace grave et immédiate sur les institutions ou le pays."
+          "Les pouvoirs exceptionnels de l'article 16 supposent deux conditions : une menace grave et immédiate sur les institutions ou le pays, et l'interruption du fonctionnement normal des pouvoirs publics."
         ],
         "sources": [
           {
@@ -173,7 +175,7 @@
         ],
         "more": [
           "Le budget de l'État et celui de la Sécurité sociale doivent aussi être votés chaque année par le Parlement.",
-          "Concrètement : un président peut annoncer une mesure, mais si les députés et sénateurs ne la votent pas, elle ne s'applique pas."
+          "Concrètement : un président peut annoncer une mesure, mais elle ne s'applique que si le Parlement l'adopte. Le gouvernement peut faire adopter un texte sans vote avec l'article 49.3. Il s'expose alors à une motion de censure."
         ],
         "sources": [
           {
@@ -187,6 +189,12 @@
             "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
             "date": "2026-11-03",
             "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°64 : La mise en cause de la responsabilité du Gouvernement",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
+            "date": "2026-11-09",
+            "kind": "statistique"
           }
         ]
       },
@@ -197,7 +205,7 @@
         ],
         "more": [
           "Le texte doit d'abord être voté dans les mêmes termes par l'Assemblée nationale et par le Sénat.",
-          "Ensuite, il faut soit un référendum, soit un vote du Parlement réuni en « Congrès » à Versailles, avec au moins 3/5 des voix exprimées. Le choix du Congrès n'est possible que si le texte vient du gouvernement.",
+          "Ensuite, il faut soit un référendum, soit un vote du Parlement réuni en « Congrès » à Versailles, avec au moins 3/5 des voix exprimées. Le Congrès n'est possible que pour un « projet » de révision, présenté par le président sur proposition du Premier ministre. Une révision proposée par des parlementaires passe obligatoirement par référendum.",
           "Comme le Sénat doit être d'accord, un président ne peut pas réviser la Constitution par l'article 89 sans l'accord des deux chambres."
         ],
         "sources": [
@@ -215,7 +223,7 @@
           "Une loi contraire à la Constitution peut être censurée par le Conseil constitutionnel."
         ],
         "more": [
-          "La France a signé des traités européens et internationaux. Selon l'article 55 de la Constitution, les traités ont une autorité supérieure aux lois. Une promesse contraire à un traité suppose donc, en principe, de renégocier ce traité ou de réviser la Constitution (voir la section sur l'Union européenne)."
+          "La France a signé des traités européens et internationaux. Selon l'article 55 de la Constitution, les traités ont une autorité supérieure aux lois. Les juges peuvent écarter une loi contraire à un traité. Une promesse contraire à un traité suppose donc, en principe, de renégocier ce traité ou d'obtenir une dérogation (voir la section sur l'Union européenne)."
         ],
         "sources": [
           {
@@ -237,7 +245,7 @@
         "paragraphs": ["La majorité absolue à l'Assemblée nationale, c'est 289 députés sur 577."],
         "more": [
           "Quand le président a une majorité de députés qui le soutient, il est le principal moteur de la politique du pays.",
-          "Quand la majorité des députés est opposée au président, il doit nommer un Premier ministre qu'elle accepte. C'est la « cohabitation ». Le pouvoir passe alors en grande partie au gouvernement. Le président garde ses pouvoirs propres et un rôle important en défense et en affaires étrangères.",
+          "Quand la majorité des députés est opposée au président, il nomme en pratique un Premier ministre qu'elle accepte, car elle peut renverser le gouvernement. C'est la « cohabitation ». Le pouvoir passe alors en grande partie au gouvernement. Le président garde ses pouvoirs propres et un rôle important en défense et en affaires étrangères.",
           "Il y a eu trois cohabitations : 1986, 1993 et 1997."
         ],
         "sources": [
@@ -256,8 +264,8 @@
         ],
         "more": [
           "À l'issue du second tour, aucun bloc n'a obtenu la majorité absolue de 289 sièges. Le Nouveau Front populaire est arrivé en tête en nombre de sièges, devant la coalition présidentielle Ensemble puis le Rassemblement national et ses alliés.",
-          "Depuis, les gouvernements successifs doivent chercher des soutiens texte par texte, ou utiliser l'article 49.3. En décembre 2024, une motion de censure a été adoptée contre le gouvernement de Michel Barnier, qui a démissionné.",
-          "À l'automne 2026, le gouvernement de Sébastien Lecornu examine le budget 2027 sans disposer d'une majorité à l'Assemblée."
+          "Depuis, les gouvernements successifs doivent chercher des soutiens texte par texte, ou utiliser l'article 49.3. En décembre 2024, une motion de censure a été adoptée contre le gouvernement de Michel Barnier, qui a démissionné. Le 8 septembre 2025, l'Assemblée a refusé sa confiance au gouvernement de François Bayrou, qui a démissionné.",
+          "À l'automne 2026, l'Assemblée examine le budget 2027 présenté par le gouvernement de Sébastien Lecornu, qui n'y dispose pas d'une majorité."
         ],
         "sources": [
           {
@@ -289,6 +297,12 @@
             "url": "https://lcp.fr/actualites/budget-2027-calendrier-procedure-pistes-d-atterrissage-ou-en-est-on-des-debats",
             "date": "2026-11-02",
             "kind": "presse"
+          },
+          {
+            "title": "Vote de confiance : l'Assemblée nationale a désapprouvé la déclaration de politique générale du Gouvernement",
+            "url": "https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/vote-de-confiance-l-assemblee-nationale-a-desapprouve-la-declaration-de-politique-generale-du-gouvernement",
+            "date": "2025-09-08",
+            "kind": "statistique"
           }
         ]
       }
@@ -298,7 +312,8 @@
     "id": "election-presidentielle",
     "title": "Comment se déroule l'élection présidentielle",
     "icon": "calendar-outline",
-    "summary": "Pour se présenter, il faut 500 parrainages d'élus. Le vote a lieu en deux tours : le 18 avril et le 2 mai 2027.",
+    "summary": "Pour se présenter, il faut 500 parrainages d'élus. Le premier tour a lieu le 18 avril 2027 et, s'il le faut, le second le 2 mai 2027.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "Les dates de 2027",
@@ -377,17 +392,17 @@
       {
         "heading": "Temps de parole et argent de la campagne",
         "paragraphs": [
-          "Les télévisions et radios doivent respecter des règles de temps de parole contrôlées par l'Arcom. Avant la campagne officielle, c'est l'« équité » (un temps proportionnel à la représentativité de chaque candidat). Pendant la campagne officielle, c'est l'« égalité » stricte."
+          "Les télévisions et radios doivent respecter des règles de temps de parole contrôlées par l'Arcom. Avant la campagne officielle, c'est l'« équité » : le temps tient compte de la représentativité de chaque candidat et de son implication dans la campagne. Pendant la campagne officielle, c'est l'« égalité » stricte."
         ],
         "more": [
-          "Les dépenses de campagne sont plafonnées. Pour 2027, la CNCCFP (Commission nationale des comptes de campagne) indique environ 16,9 millions d'euros par candidat au premier tour et 22,5 millions pour les deux candidats du second tour.",
+          "Les dépenses de campagne sont plafonnées. Pour 2027, le plafond est de 16,851 millions d'euros par candidat au premier tour et de 22,509 millions pour les deux candidats du second tour, selon la CNCCFP (Commission nationale des comptes de campagne).",
           "L'État rembourse une partie des dépenses. Le remboursement est plus élevé pour les candidats qui dépassent 5 % des suffrages exprimés au premier tour."
         ],
         "sources": [
           {
             "title": "Élection présidentielle 2022 : le rôle de l'Arcom",
             "url": "https://www.arcom.fr/actualites/election-presidentielle-2022-le-role-de-larcom",
-            "date": "2022",
+            "date": "2021-12-30",
             "kind": "statistique"
           },
           {
@@ -400,6 +415,18 @@
             "title": "Guide à l'usage des candidats à l'élection du Président de la République 2027",
             "url": "https://cnccfp.fr/wp-content/uploads/2026/04/Guide-a-lusage-des-candidats-a-lelection-du-President-de-la-Republique-2027.pdf",
             "date": "2026-04",
+            "kind": "statistique"
+          },
+          {
+            "title": "Protéger le pluralisme politique",
+            "url": "https://www.arcom.fr/nous-connaitre-nos-missions/garantir-le-pluralisme-et-la-cohesion-sociale/proteger-le-pluralisme-politique",
+            "date": "2026-11-09",
+            "kind": "statistique"
+          },
+          {
+            "title": "Décision du 26 mars 2026 relative à la présentation des comptes de campagne en vue de l'élection du Président de la République",
+            "url": "https://www.legifrance.gouv.fr/jorf/id/JORFSCTA000053763015",
+            "date": "2026-04-04",
             "kind": "statistique"
           }
         ]
@@ -433,9 +460,15 @@
             "kind": "statistique"
           },
           {
-            "title": "Assemblée nationale : les députés de la XVIIe législature",
-            "url": "https://www.assemblee-nationale.fr/",
-            "date": "2026-11-03",
+            "title": "Code électoral, article LO121",
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006353288",
+            "date": "2026-11-09",
+            "kind": "statistique"
+          },
+          {
+            "title": "Loi organique n° 2001-419 du 15 mai 2001 modifiant la date d'expiration des pouvoirs de l'Assemblée nationale",
+            "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000404920",
+            "date": "2001-05-16",
             "kind": "statistique"
           }
         ]
@@ -446,12 +479,13 @@
     "id": "comment-voter",
     "title": "Comment voter",
     "icon": "checkbox-outline",
-    "summary": "Pour voter, il faut être inscrit sur les listes électorales au plus tard le vendredi 12 mars 2027 (date calculée selon la règle). Si vous ne pouvez pas vous déplacer, donnez procuration.",
+    "summary": "Pour voter, il faut demander son inscription sur les listes électorales au plus tard le vendredi 12 mars 2027 (date calculée selon la règle). Si vous ne pouvez pas vous déplacer, donnez procuration.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "Qui peut voter ?",
         "paragraphs": [
-          "Pour voter à l'élection présidentielle, il faut être de nationalité française, avoir 18 ans et jouir de ses droits civiques."
+          "Pour voter à l'élection présidentielle, il faut être de nationalité française, avoir au moins 18 ans la veille du scrutin, jouir de ses droits civils et politiques et être inscrit sur une liste électorale."
         ],
         "more": [
           "Si vous avez fait votre recensement citoyen à 16 ans, vous êtes en principe inscrit automatiquement sur les listes à vos 18 ans, dans la commune indiquée lors du recensement. Mieux vaut vérifier."
@@ -460,7 +494,13 @@
           {
             "title": "Liste électorale : inscription d'office à 18 ans si le recensement citoyen a été fait à 16 ans",
             "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1961",
-            "date": "2026-11-03",
+            "date": "2025-11-28",
+            "kind": "statistique"
+          },
+          {
+            "title": "Listes électorales : en cas de première inscription",
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1367",
+            "date": "2026-03-03",
             "kind": "statistique"
           }
         ]
@@ -478,7 +518,7 @@
           {
             "title": "Vérifier votre inscription électorale et votre bureau de vote",
             "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/1?idFicheParent=N47",
-            "date": "2026-11-03",
+            "date": "2026-06-18",
             "kind": "statistique"
           },
           {
@@ -492,13 +532,25 @@
             "url": "https://www.service-public.gouv.fr/particuliers/actualites/A15053",
             "date": "2026-07-02",
             "kind": "statistique"
+          },
+          {
+            "title": "Code électoral, article L17",
+            "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000032964790",
+            "date": "2026-11-09",
+            "kind": "statistique"
+          },
+          {
+            "title": "Listes électorales : en cas de première inscription",
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1367",
+            "date": "2026-03-03",
+            "kind": "statistique"
           }
         ]
       },
       {
         "heading": "Le jour du vote : la pièce d'identité",
         "paragraphs": [
-          "Dans les communes de 1 000 habitants ou plus, il faut présenter une pièce d'identité avec photo. La carte électorale n'est pas obligatoire."
+          "Dans les communes de 1 000 habitants ou plus, il faut présenter une pièce d'identité. La carte électorale n'est pas obligatoire, et elle n'est pas une pièce d'identité."
         ],
         "more": [
           "Dans les communes de moins de 1 000 habitants, la pièce d'identité n'est pas exigée, mais le président du bureau de vote peut vous demander de prouver votre identité.",
@@ -510,6 +562,12 @@
             "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
             "date": "2025-10-13",
             "kind": "statistique"
+          },
+          {
+            "title": "Élections : papiers d'identité à présenter pour voter",
+            "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1361",
+            "date": "2026-09-21",
+            "kind": "statistique"
           }
         ]
       },
@@ -520,14 +578,14 @@
         ],
         "more": [
           "La personne choisie peut être inscrite dans une autre commune que vous, mais elle doit venir voter dans votre bureau de vote.",
-          "La demande se fait sur maprocuration.gouv.fr. Avec une identité numérique certifiée (application France Identité), tout se fait en ligne. Sinon, il faut ensuite passer au commissariat ou à la gendarmerie pour faire vérifier son identité.",
+          "La demande se fait sur maprocuration.gouv.fr. Avec une identité numérique certifiée (application France Identité), tout se fait en ligne. Sinon, il faut ensuite passer au commissariat ou à la gendarmerie pour faire vérifier son identité. On peut aussi remplir le formulaire papier (cerfa n° 12675) et le déposer en personne au commissariat, à la gendarmerie ou au tribunal judiciaire.",
           "Aucune date limite n'est fixée, mais faites la démarche le plus tôt possible pour qu'elle soit transmise à temps à votre mairie."
         ],
         "sources": [
           {
             "title": "Vote par procuration - En France",
             "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/2_0",
-            "date": "2026-11-03",
+            "date": "2026-02-02",
             "kind": "statistique"
           },
           {
@@ -544,7 +602,7 @@
           "Un vote blanc, c'est une enveloppe vide ou un bulletin sans nom. Un vote nul, c'est par exemple un bulletin déchiré ou annoté."
         ],
         "more": [
-          "Les votes blancs sont comptés à part depuis une loi de 2014. Mais les votes blancs et nuls ne font pas partie des « suffrages exprimés ». Ce sont uniquement les suffrages exprimés qui servent à calculer les résultats."
+          "Depuis une loi de 2014, les votes blancs sont comptés à part. Mais les votes blancs et nuls ne font pas partie des « suffrages exprimés ». Ce sont uniquement les suffrages exprimés qui servent à calculer les résultats."
         ],
         "sources": [
           {
@@ -554,9 +612,15 @@
             "kind": "statistique"
           },
           {
-            "title": "Qu'est-ce que le vote blanc ?",
-            "url": "https://www.interieur.gouv.fr/Archives/Archives-des-actualites/2019-Actualites/Qu-est-ce-que-le-vote-blanc",
-            "date": "2019",
+            "title": "Loi n° 2014-172 du 21 février 2014 visant à reconnaître le vote blanc aux élections",
+            "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028636783",
+            "date": "2014-02-21",
+            "kind": "statistique"
+          },
+          {
+            "title": "Sept questions sur le vote blanc (vie-publique.fr)",
+            "url": "https://www.vie-publique.fr/questions-reponses/23932-7-questions-sur-le-vote-blanc",
+            "date": "2026-04-16",
             "kind": "statistique"
           }
         ]
@@ -568,6 +632,7 @@
     "title": "Gauche, droite, centre… à quoi ça correspond",
     "icon": "git-compare-outline",
     "summary": "Le clivage gauche-droite est né en 1789. Il aide à se repérer, mais reste une simplification : chaque parti a ses propres positions, à vérifier dans son programme.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "Une origine : 1789",
@@ -575,7 +640,7 @@
           "En septembre 1789, les députés de l'Assemblée constituante débattent du droit de veto du roi."
         ],
         "more": [
-          "Les partisans d'un veto fort pour le roi s'installent à droite du président de séance. Ceux qui veulent le limiter s'installent à gauche.",
+          "Les partisans d'un veto absolu pour le roi s'installent à droite du président de séance. Ceux qui le refusent, ou n'acceptent qu'un veto limité, s'installent à gauche.",
           "Cette répartition dans la salle a donné les mots « droite » et « gauche » que l'on utilise encore aujourd'hui."
         ],
         "sources": [
@@ -594,7 +659,7 @@
         ],
         "more": [
           "Une troisième question divise aussi, parfois à l'intérieur d'un même camp : la place de la France dans l'Union européenne et dans la mondialisation.",
-          "Habituellement, la gauche met en avant l'égalité, la redistribution et l'intervention de l'État. La droite met en avant la liberté d'entreprendre, l'ordre et l'autorité. Le centre se présente comme une synthèse entre les deux. Ce sont des tendances générales, pas des règles : sur un même sujet, deux partis du même camp peuvent avoir des positions différentes."
+          "Ces axes décrivent des tendances générales, pas des règles : sur un même sujet, deux partis du même camp peuvent avoir des positions différentes."
         ],
         "sources": [
           {
@@ -612,12 +677,12 @@
         ]
       },
       {
-        "heading": "Origine des mots « extrême gauche » et « extrême droite »",
+        "heading": "Qui classe les partis aux « extrêmes » ?",
         "paragraphs": [
           "Les partis choisissent eux-mêmes leur nom et souvent refusent certaines étiquettes. Pour présenter les résultats des élections, le ministère de l'Intérieur attribue aussi une « nuance » à chaque candidat, puis regroupe ces nuances en grands « blocs » (extrême gauche, gauche, centre, droite, extrême droite…)."
         ],
         "more": [
-          "Ces classements sont parfois contestés devant le Conseil d'État. Le juge vérifie seulement qu'il n'y a pas d'« erreur manifeste ». En mars 2024, il a jugé qu'il n'y en avait pas dans le classement du Rassemblement national dans le bloc « extrême droite » pour les sénatoriales de 2023. En février 2026, il a rejeté les recours de La France insoumise et de l'UDR contre leur classement en « extrême gauche » et « extrême droite » pour les municipales.",
+          "Ces classements sont parfois contestés devant le Conseil d'État. Le juge vérifie seulement qu'il n'y a pas d'« erreur manifeste ». Le 11 mars 2024, il a jugé qu'il n'y en avait pas dans le classement du Rassemblement national dans le bloc « extrême droite » pour les sénatoriales de 2023. Le 27 février 2026, il a rejeté les recours de La France insoumise et de l'UDR contre leur classement en « extrême gauche » et « extrême droite » pour les municipales.",
           "Sur ce site, l'étiquette affichée en tête de chaque fiche reprend l'usage de la presse de référence et des politistes ; le bloc de ce nuancier officiel est indiqué à côté, avec la position du parti. Elles décrivent une position dans le paysage politique ; elles ne sont pas un jugement."
         ],
         "sources": [
@@ -632,6 +697,18 @@
             "url": "https://www.leclubdesjuristes.com/justice/le-conseil-detat-a-t-il-qualifie-le-rn-dextreme-droite-6426/",
             "date": "2024-06-28",
             "kind": "presse"
+          },
+          {
+            "title": "Conseil d'État, décision n° 488378 du 11 mars 2024 (nuances politiques, Rassemblement national)",
+            "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-03-11/488378",
+            "date": "2024-03-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Élections municipales 2026 : le Conseil d'État rejette les recours de LFI et de l'UDR contre la circulaire attribuant des nuances politiques pour la présentation des résultats",
+            "url": "https://www.conseil-etat.fr/actualites/elections-municipales-2026-le-conseil-d-etat-rejette-les-recours-de-lfi-et-de-l-udr-contre-la-circulaire-attribuant-des-nuances-politiques-pour-l",
+            "date": "2026-02-27",
+            "kind": "statistique"
           }
         ]
       },
@@ -723,8 +800,8 @@
             "kind": "statistique"
           },
           {
-            "title": "Philippe Raynaud, « L'extrême gauche plurielle : entre démocratie radicale et révolution » (CEVIPOF-Autrement), notice de bibliothèque",
-            "url": "https://nantilus.univ-nantes.fr/vufind/Record/PPN108854841/Description?lng=en",
+            "title": "Philippe Raynaud, « L'extrême gauche plurielle : entre démocratie radicale et révolution » (Autrement, coll. CEVIPOF-Autrement), notice SUDOC",
+            "url": "https://www.sudoc.fr/108854841",
             "date": "2006",
             "kind": "statistique"
           }
@@ -733,11 +810,11 @@
       {
         "heading": "Droite radicale, extrême droite, national-populisme",
         "paragraphs": [
-          "Le politiste néerlandais Cas Mudde définit la « droite radicale populiste » par trois traits : le nativisme (l'idée que l'État doit être peuplé avant tout par les « natifs »), l'autoritarisme (priorité à l'ordre et à l'autorité) et le populisme (« le peuple pur » contre « les élites corrompues »)."
+          "Le politiste néerlandais Cas Mudde définit la « droite radicale populiste » par trois traits : le nativisme (l'idée que l'État doit être habité exclusivement par les « natifs »), l'autoritarisme (priorité à l'ordre et à l'autorité) et le populisme (« le peuple pur » contre « les élites corrompues »)."
         ],
         "more": [
-          "Mudde réserve le terme « extrême droite » aux mouvements dont le projet est hostile à la démocratie elle-même. Pour lui, la droite radicale accepte les élections mais entre en tension avec certains principes de la démocratie libérale (droits des minorités, contre-pouvoirs).",
-          "En France, Pierre-André Taguieff a proposé dès les années 1980 le terme « national-populisme » : un discours nationaliste porté par un appel direct au « peuple » contre les élites. Jean-Yves Camus et Nicolas Lebourg parlent de « droites extrêmes » au pluriel, pour distinguer des courants différents (national-populisme, néofascisme, intégrismes religieux…).",
+          "Mudde réserve le terme « extrême droite » aux mouvements dont le projet est hostile à la démocratie elle-même.",
+          "En France, Pierre-André Taguieff a proposé dès les années 1980 le terme « national-populisme » : un discours nationaliste porté par un appel direct au « peuple » contre les élites. Jean-Yves Camus et Nicolas Lebourg parlent de « droites extrêmes » au pluriel, pour distinguer plusieurs familles de courants.",
           "Les chercheurs débattent : certains insistent sur l'évolution des partis et préfèrent « droite radicale » ; d'autres insistent sur la continuité des idées (priorité aux nationaux, refus de l'immigration) et gardent « extrême droite ». Les deux termes coexistent dans les travaux universitaires."
         ],
         "sources": [
@@ -782,7 +859,7 @@
           {
             "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires)",
             "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
-            "date": "2026-02",
+            "date": "2026-02-09",
             "kind": "presse"
           },
           {
@@ -812,7 +889,7 @@
           {
             "title": "Sénat, rapport sur le projet de loi de finances pour 2018, « Le financement de la vie politique »",
             "url": "https://www.senat.fr/rap/l17-108-32/l17-108-3210.html",
-            "date": "2017-11",
+            "date": "2017-11-23",
             "kind": "statistique"
           }
         ]
@@ -849,7 +926,7 @@
           {
             "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires)",
             "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
-            "date": "2026-02",
+            "date": "2026-02-09",
             "kind": "presse"
           },
           {
@@ -898,7 +975,7 @@
           {
             "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires)",
             "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
-            "date": "2026-02",
+            "date": "2026-02-09",
             "kind": "presse"
           },
           {
@@ -992,7 +1069,7 @@
           {
             "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires)",
             "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
-            "date": "2026-02",
+            "date": "2026-02-09",
             "kind": "presse"
           },
           {
@@ -1004,7 +1081,7 @@
           {
             "title": "Élection présidentielle 2022 : le rôle de l'Arcom",
             "url": "https://www.arcom.fr/actualites/election-presidentielle-2022-le-role-de-larcom",
-            "date": "2022",
+            "date": "2021-12-30",
             "kind": "statistique"
           },
           {
@@ -1018,6 +1095,18 @@
             "url": "https://www.publicsenat.fr/actualites/politique/jugement-de-marine-le-pen-aux-origines-de-la-peine-dineligibilite-la-loi-sapin-ii",
             "date": "2025-04-01",
             "kind": "presse"
+          },
+          {
+            "title": "Loi n° 62-1292 du 6 novembre 1962 relative à l'élection du Président de la République au suffrage universel (article 3)",
+            "url": "https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037",
+            "date": "2026-11-09",
+            "kind": "statistique"
+          },
+          {
+            "title": "CNCCFP, « Partis politiques »",
+            "url": "https://cnccfp.fr/partis-politiques/",
+            "date": "2026-11-09",
+            "kind": "statistique"
           }
         ]
       },
@@ -1060,6 +1149,7 @@
     "title": "La France dans l'Union européenne",
     "icon": "globe-outline",
     "summary": "Certains sujets se décident au niveau européen, d'autres à Paris, d'autres encore à deux. Une promesse de campagne doit en tenir compte.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "Qui décide quoi ?",
@@ -1069,7 +1159,7 @@
         "more": [
           "Compétences « exclusives » : seule l'UE décide. Exemples : l'union douanière, la politique commerciale (les accords de libre-échange), la politique monétaire pour les pays de l'euro.",
           "Compétences « partagées » : l'UE et les États peuvent agir. Les États gardent la main là où l'UE n'a pas légiféré. Exemples : le marché intérieur, l'agriculture, l'environnement, l'énergie, les transports, la protection des consommateurs.",
-          "Compétences « d'appui » : l'UE aide, coordonne ou complète, sans remplacer les États. Exemples : la santé, l'éducation, la culture, le tourisme.",
+          "Compétences « d'appui » : l'UE aide, coordonne ou complète, sans remplacer les États. Exemples : la protection de la santé, l'éducation, la culture, le tourisme.",
           "Les impôts sur le revenu, les retraites, l'organisation de l'école ou de la police restent pour l'essentiel décidés en France."
         ],
         "sources": [
@@ -1090,29 +1180,35 @@
       {
         "heading": "Le droit européen passe avant la loi française",
         "paragraphs": [
-          "Depuis un arrêt de la Cour de justice européenne de 1964 (Costa contre ENEL), le droit européen « prime » sur le droit national : en cas de conflit, c'est la règle européenne qui s'applique."
+          "Depuis l'arrêt Costa contre ENEL, rendu le 15 juillet 1964 par la Cour de justice des Communautés européennes, le droit européen « prime » sur le droit national : en cas de conflit, c'est la règle européenne qui s'applique."
         ],
         "more": [
           "En France, l'article 55 de la Constitution place déjà les traités au-dessus des lois.",
-          "Mais pour le Conseil constitutionnel et le Conseil d'État, la Constitution française reste au sommet en droit interne. Quand un traité européen est contraire à la Constitution, la France révise sa Constitution avant de le ratifier."
+          "Mais pour le Conseil constitutionnel et le Conseil d'État, la Constitution française reste au sommet en droit interne. Si le Conseil constitutionnel juge qu'un traité contient une clause contraire à la Constitution, la France doit réviser sa Constitution avant de le ratifier (article 54)."
         ],
         "sources": [
           {
             "title": "Le droit européen prime-t-il le droit français ?",
             "url": "https://www.touteleurope.eu/fonctionnement-de-l-ue/droit-europeen-droit-national-quels-liens-entretiennent-ils/",
-            "date": "2026-11-03",
+            "date": "2025-07-31",
             "kind": "presse"
           },
           {
             "title": "Quel rapport à l'Europe fixe la Constitution ?",
             "url": "https://www.conseil-constitutionnel.fr/la-constitution/quel-rapport-a-l-europe-fixe-la-constitution",
-            "date": "2026-11-03",
+            "date": "2020-02-11",
             "kind": "statistique"
           },
           {
             "title": "Le juge administratif et le droit de l'Union européenne",
             "url": "https://www.conseil-etat.fr/decisions-de-justice/jurisprudence/analyses-de-jurisprudence/dossiers-thematiques/le-juge-administratif-et-le-droit-de-l-union-europeenne",
-            "date": "2026-11-03",
+            "date": "2022-03-10",
+            "kind": "statistique"
+          },
+          {
+            "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 54 et 55)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-09",
             "kind": "statistique"
           }
         ]
@@ -1136,8 +1232,14 @@
           {
             "title": "Primauté du droit européen (glossaire)",
             "url": "https://www.touteleurope.eu/le-glossaire-de-l-europe/primaute-du-droit-europeen/",
-            "date": "2026-11-03",
+            "date": "2022-05-03",
             "kind": "presse"
+          },
+          {
+            "title": "Traité sur l'Union européenne, version consolidée (article 48)",
+            "url": "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:12016M/TXT",
+            "date": "2016-06-07",
+            "kind": "statistique"
           }
         ]
       }
@@ -1147,7 +1249,8 @@
     "id": "budget-dette",
     "title": "Le budget et la dette en bref",
     "icon": "wallet-outline",
-    "summary": "Chaque année, le Parlement vote le budget de l'État et celui de la Sécurité sociale. La France dépense plus qu'elle ne gagne depuis des décennies, ce qui pèse sur ce que les candidats peuvent promettre.",
+    "summary": "Chaque année, le Parlement vote le budget de l'État et celui de la Sécurité sociale. Fin 2025, le déficit public atteignait 5,1 % du PIB et la dette plus de 115 % : cela pèse sur les promesses.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "Comment un budget est voté",
@@ -1156,7 +1259,7 @@
         ],
         "more": [
           "Le Parlement a 70 jours pour voter le PLF et 50 jours pour le PLFSS (articles 47 et 47-1 de la Constitution). S'il ne s'est pas prononcé à temps, le gouvernement peut mettre le texte en vigueur par ordonnance.",
-          "Pour le PLF 2027, le délai de 70 jours se termine le 17 décembre 2026 à minuit, selon LCP."
+          "Pour le PLF 2027, déposé le 1er octobre 2026, le délai de 70 jours se termine le 17 décembre 2026 à minuit, selon LCP. Ce délai ne part pas forcément du jour du dépôt. Le 4 novembre 2026, l'Assemblée nationale a rejeté le texte en première lecture."
         ],
         "sources": [
           {
@@ -1176,6 +1279,12 @@
             "url": "https://lcp.fr/actualites/budget-2027-calendrier-procedure-pistes-d-atterrissage-ou-en-est-on-des-debats",
             "date": "2026-11-02",
             "kind": "presse"
+          },
+          {
+            "title": "Projet de loi de finances pour 2027 : dossier législatif",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/plf_2027",
+            "date": "2026-11-09",
+            "kind": "statistique"
           }
         ]
       },
@@ -1209,9 +1318,9 @@
         ],
         "sources": [
           {
-            "title": "En 2025, le déficit public s'établit à 5,1 % du PIB, la dette publique à 115,6 % du PIB (Informations rapides n° 78)",
-            "url": "https://www.insee.fr/fr/statistiques/8956575",
-            "date": "2026-03-27",
+            "title": "Le compte des administrations publiques en 2025 (Insee Première n° 2106)",
+            "url": "https://www.insee.fr/fr/statistiques/8997691",
+            "date": "2026-05-29",
             "kind": "statistique"
           },
           {
@@ -1231,7 +1340,7 @@
       {
         "heading": "Pourquoi c'est important pour lire un programme",
         "paragraphs": [
-          "Une dette plus élevée signifie plus d'intérêts à payer chaque année, donc moins d'argent pour d'autres dépenses."
+          "Plus la dette est élevée, plus les intérêts à payer chaque année pèsent, surtout quand les taux montent. Cet argent ne finance pas d'autres dépenses."
         ],
         "more": [
           "Face à une promesse qui coûte (baisse d'impôt, nouvelle dépense), une bonne question est : comment est-elle financée ? Par des économies ailleurs, de nouveaux impôts, ou plus de dette ?",
@@ -1243,6 +1352,12 @@
             "url": "https://www.insee.fr/fr/statistiques/9053525",
             "date": "2026-09-29",
             "kind": "statistique"
+          },
+          {
+            "title": "Le compte des administrations publiques en 2025 (Insee Première n° 2106)",
+            "url": "https://www.insee.fr/fr/statistiques/8997691",
+            "date": "2026-05-29",
+            "kind": "statistique"
           }
         ]
       }
@@ -1253,6 +1368,7 @@
     "title": "Repérer la désinformation",
     "icon": "search-outline",
     "summary": "Pendant une campagne, beaucoup d'informations circulent, et toutes ne sont pas vraies. Quelques réflexes simples permettent de vérifier une promesse ou une citation.",
+    "lastVerified": "2026-11-09",
     "blocks": [
       {
         "heading": "Qui l'a dit, où et quand ?",
@@ -1268,6 +1384,12 @@
             "title": "Panorama des offres de fact-checking (CLEMI)",
             "url": "https://www.clemi.fr/sites/default/files/clemi/Ressources/Exposition%20fake%20news%2C%20arts%2C%20fiction%2C%20mensonge/Panorama%20des%20offres%20de%20fact%20checking.pdf",
             "date": "2026-11-03",
+            "kind": "statistique"
+          },
+          {
+            "title": "Vérifier l'information (CLEMI)",
+            "url": "https://www.clemi.fr/ressources/ressources-pedagogiques/verifier-linformation",
+            "date": "2026-11-09",
             "kind": "statistique"
           }
         ]
@@ -1296,14 +1418,14 @@
         "paragraphs": ["AFP Factuel : le service de vérification de l'Agence France-Presse."],
         "more": [
           "Les Décodeurs (Le Monde) : la rubrique de vérification du journal Le Monde.",
-          "« Vrai ou fake » (franceinfo) : une plateforme commune de l'audiovisuel public (France Télévisions, Radio France, France Médias Monde…).",
-          "Si plusieurs de ces services n'ont rien publié sur une information surprenante, restez prudent avant de la croire ou de la partager."
+          "« Vrai ou fake » (franceinfo) : une plateforme commune de l'audiovisuel public, lancée en 2018 (France Télévisions, Radio France, France Médias Monde, INA, Arte, TV5 Monde).",
+          "Si une information surprenante n'est reprise par aucun média reconnu, restez prudent avant de la croire ou de la partager."
         ],
         "sources": [
           {
             "title": "Vrai ou infox : l'audiovisuel public fait front commun contre la désinformation",
             "url": "https://www.culture.gouv.fr/fr/actualites/Vrai-ou-infox-l-audiovisuel-public-fait-front-commun-contre-la-desinformation",
-            "date": "2026-11-03",
+            "date": "2018-07-02",
             "kind": "statistique"
           },
           {
