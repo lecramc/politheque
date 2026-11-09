@@ -40,7 +40,8 @@ Le hook `.husky/post-commit` bumpe `package.json` automatiquement après chaque 
 
 ## Dépôt public et dépôt privé
 
-- `lecramc/travee` est **public** (open source) : code sous AGPL-3.0 (`LICENSE`), contenus sous CC BY-SA 4.0 (`LICENSE-CONTENU.md`).
+- `lecramc/politheque` est **public** (open source, `origin`) : code sous AGPL-3.0 (`LICENSE`), contenus sous CC BY-SA 4.0 (`LICENSE-CONTENU.md`).
+- `lecramc/travee` reste **privé** : même historique, il alimente Vercel tant que le projet n'est pas rebranché sur `politheque`. `git push` pousse vers les deux (deux URL de push sur `origin`).
 - Les documents de travail non publiés vivent dans le dépôt **privé** `lecramc/politheque-prive`, cloné dans `prive/` (ignoré par git) : brouillons judiciaires (`prive/docs/affaires/`), dossier avocat, relecture éditeur, maquettes et audits UX (`prive/docs/ux/`, `prive/docs/marque/`), SEO, recoupements (`prive/docs/verification/`), recensement des candidats, `reste-a-faire.md`, `a-verifier.md`, mémoire des agents.
 - **Règle : rien de judiciaire non publié, aucun compte ni adresse e-mail, aucune note de travail sur une personne ne va dans le dépôt public.** Dans le doute, l'écrire dans `prive/` et commiter là-bas.
 - Seules restent publiques les pièces de méthode : charte, briefs, architecture, questionnaire, codage des positions.
