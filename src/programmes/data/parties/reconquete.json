@@ -3,7 +3,7 @@
   "name": "Reconquête",
   "shortName": "REC",
   "color": "#1F1F3D",
-  "family": "Extrême droite (presse de référence et nombreux politistes ; « droite radicale » pour d'autres, dont Gilles Ivaldi ; bloc « extrême droite » du nuancier du ministère de l'Intérieur ; aucune prise de position du parti sur cette étiquette n'est connue)",
+  "family": "Extrême droite (presse de référence et nombreux politistes ; « droite radicale » pour d'autres, dont Gilles Ivaldi ; Éric Zemmour conteste ce classement)",
   "description": "Reconquête est le parti fondé le 5 décembre 2021 par Éric Zemmour, qui le préside. Éric Zemmour a obtenu 7,07 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; la liste conduite par Marion Maréchal a recueilli 5,47 % aux européennes de 2024, mais quatre des cinq eurodéputés élus ont été exclus ou ont quitté le parti en juin 2024, Sarah Knafo restant sa seule élue au Parlement européen. Reconquête n'a pas de groupe à l'Assemblée nationale.",
   "foundedYear": 2021,
   "leader": {
@@ -123,7 +123,7 @@
       },
       {
         "title": "Classement par la presse et les politistes",
-        "text": "La presse de référence et de nombreux politistes le situent à l'extrême droite (nationalisme, identitarisme, national-conservatisme, opposition à l'immigration et à l'islam)  ; la Fondation Jean-Jaurès range l'électorat d'Éric Zemmour dans le bloc d'extrême droite et lui prête un « tropisme identitaire et sécuritaire ». Le politiste Gilles Ivaldi (CNRS, CEVIPOF) emploie la catégorie de « droite radicale » pour Éric Zemmour comme pour Marine Le Pen, et oppose au « social-populisme » de cette dernière le « capitalisme populaire » du programme Zemmour 2022, plus libéral en économie. Aucune prise de position officielle du parti sur sa propre qualification n'est connue.",
+        "text": "La presse de référence et de nombreux politistes le situent à l'extrême droite (nationalisme, identitarisme, national-conservatisme, opposition à l'immigration et à l'islam)  ; la Fondation Jean-Jaurès range l'électorat d'Éric Zemmour dans le bloc d'extrême droite et lui prête un « tropisme identitaire et sécuritaire ». Le politiste Gilles Ivaldi (CNRS, CEVIPOF) emploie la catégorie de « droite radicale » pour Éric Zemmour comme pour Marine Le Pen, et oppose au « social-populisme » de cette dernière le « capitalisme populaire » du programme Zemmour 2022, plus libéral en économie. Éric Zemmour conteste être classé à l'extrême droite (Europe 1).",
         "sources": [
           {
             "title": "Wikipédia, « Reconquête (parti politique) »",
@@ -142,6 +142,12 @@
             "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
             "date": "2022-03",
             "kind": "statistique"
+          },
+          {
+            "title": "Europe 1, dossier « Éric Zemmour »",
+            "url": "https://www.europe1.fr/dossiers/eric-zemmour",
+            "date": "2026-11-09",
+            "kind": "presse"
           }
         ]
       }

@@ -784,7 +784,7 @@
         "more": [
           "Pour le chercheur Aurélien Dubuisson (Sciences Po), l'extrême gauche réunit surtout des courants trotskistes, libertaires et « alternatifs ». Ses critères : vouloir rompre avec le capitalisme, critiquer la gauche de gouvernement et viser la révolution. Ces organisations se présentent souvent aux élections pour diffuser leurs idées plutôt que pour gouverner.",
           "La « gauche radicale » désigne en général des partis qui veulent une transformation profonde de l'économie, mais par les élections et les institutions. L'« ultragauche » désigne des mouvements autonomes, sans parti centralisé, dont une partie accepte l'action violente (Fondation Jean-Jaurès).",
-          "Le politiste Philippe Raynaud parle d'une « extrême gauche plurielle », partagée entre « démocratie radicale » et « révolution ». Le débat porte notamment sur La France insoumise : beaucoup de politistes la rangent à la « gauche radicale » ; d'autres observateurs, et le ministère de l'Intérieur depuis 2026, à l'« extrême gauche »."
+          "Le politiste Philippe Raynaud parle d'une « extrême gauche plurielle », partagée entre « démocratie radicale » et « révolution ». Le débat porte notamment sur La France insoumise : des politistes la rangent à la « gauche radicale » ; d'autres observateurs, et le ministère de l'Intérieur depuis 2026, à l'« extrême gauche »."
         ],
         "sources": [
           {
@@ -803,6 +803,24 @@
             "title": "Philippe Raynaud, « L'extrême gauche plurielle : entre démocratie radicale et révolution » (Autrement, coll. CEVIPOF-Autrement), notice SUDOC",
             "url": "https://www.sudoc.fr/108854841",
             "date": "2006",
+            "kind": "statistique"
+          },
+          {
+            "title": "Chloé Alexandre, Antoine Bristielle, Laura Chazel, « From The Front de gauche to La France insoumise: Causes and Consequences of the Conversion of the French Radical Left to Populism », Partecipazione e Conflitto",
+            "url": "https://doaj.org/article/2b3c85e549e3452dad9b11fe44335225",
+            "date": "2021",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
+            "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
+            "date": "2019-03-11",
+            "kind": "statistique"
+          },
+          {
+            "title": "Élections municipales 2026 : le Conseil d'État rejette les recours de LFI et de l'UDR contre la circulaire attribuant des nuances politiques pour la présentation des résultats",
+            "url": "https://www.conseil-etat.fr/actualites/elections-municipales-2026-le-conseil-d-etat-rejette-les-recours-de-lfi-et-de-l-udr-contre-la-circulaire-attribuant-des-nuances-politiques-pour-l",
+            "date": "2026-02-27",
             "kind": "statistique"
           }
         ]
@@ -897,12 +915,12 @@
       {
         "heading": "Les étiquettes appliquées aux partis de gauche",
         "paragraphs": [
-          "Lutte ouvrière et NPA. Les encyclopédies et le nuancier de 2026 les classent à l'extrême gauche. Les deux se revendiquent eux-mêmes révolutionnaires et anticapitalistes ; LO se réclame du trotskisme. Le NPA s'est divisé en deux organisations (NPA-L'Anticapitaliste et NPA-Révolutionnaires)."
+          "Lutte ouvrière et NPA. Les encyclopédies et le nuancier de 2026 les classent à l'extrême gauche. LO se définit comme « une organisation communiste » et se réclame du trotskisme. Le NPA, qui porte l'anticapitalisme dans son nom, s'est divisé en deux organisations (NPA-L'Anticapitaliste et NPA-Révolutionnaires)."
         ],
         "more": [
           "La France insoumise. Les politistes la classent le plus souvent à la « gauche radicale », parfois « gauche populiste ». Le ministère de l'Intérieur l'a placée à l'« extrême gauche » en 2026 (elle était auparavant dans le bloc « gauche ») ; le Conseil d'État a jugé ce choix sans erreur manifeste. LFI rejette cette étiquette : ses dirigeants font valoir que l'extrême gauche « se revendique comme telle » et ne cherche pas à gouverner par les élections.",
           "PCF. Classé à gauche par le nuancier ; les ouvrages de référence le présentent comme un parti communiste. Ses statuts (39e congrès, 2023) évoquent un « projet révolutionnaire » visant le « dépassement » du capitalisme, mais il participe aux alliances de gauche et a gouverné (1944-1947, 1981-1984, 1997-2002).",
-          "PS et Les Écologistes. Classés à gauche par le nuancier et les encyclopédies ; le PS se réclame du « socialisme démocratique », les Écologistes de « l'écologie politique ». Ces étiquettes ne sont pas contestées par les partis."
+          "PS, Place publique et Les Écologistes. Classés à gauche par le nuancier et les encyclopédies ; la presse présente Raphaël Glucksmann, fondateur de Place publique, comme social-démocrate. Le PS se réclame du socialisme, les Écologistes de « l'écologie politique ». Ces étiquettes ne sont pas contestées par les partis."
         ],
         "sources": [
           {
@@ -958,18 +976,37 @@
             "url": "https://lesecologistes.fr/document/2TLrNhG1CUsDXa42e7GfPw/statuts-les-ecologistes-1.pdf",
             "date": "2024-03-18",
             "kind": "programme"
+          },
+          {
+            "title": "Lutte ouvrière, « Qui sommes-nous ? »",
+            "url": "https://www.lutte-ouvriere.org/portail/qui-sommes-nous/index.html",
+            "date": "2026-11-09",
+            "kind": "programme"
+          },
+          {
+            "title": "Parti socialiste, « Nos valeurs »",
+            "url": "https://parti-socialiste.fr/nos-valeurs/",
+            "date": "2026-11-09",
+            "kind": "programme"
+          },
+          {
+            "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France » (franceinfo)",
+            "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+            "date": "2025-06-23",
+            "kind": "presse"
           }
         ]
       },
       {
         "heading": "Les étiquettes appliquées au centre et à droite",
         "paragraphs": [
-          "Renaissance et Horizons. Classés au centre par le nuancier ; les analystes situent Renaissance au centre (parfois au centre droit) et Horizons au centre droit. Renaissance se présente comme le parti « du dépassement » du clivage gauche-droite."
+          "Renaissance et Horizons. Classés au centre par le nuancier ; les analystes situent Renaissance au centre (parfois au centre droit) et Horizons au centre droit. À son lancement en 2022, Emmanuel Macron a présenté Renaissance comme « ce parti du dépassement et de l'unité ». Aucune prise de position d'Horizons sur son étiquette n'est connue."
         ],
         "more": [
           "Les Républicains. Classés à droite par les encyclopédies (« de la droite libérale au centre droit », héritiers du gaullisme). Le parti revendique lui-même l'étiquette de « droite ».",
-          "Rassemblement national. Les encyclopédies et la presse de référence le classent à l'extrême droite ; une partie des politistes utilise « droite radicale » ou « national-populisme ». Le nuancier le rattache au bloc « extrême droite » ; pour les sénatoriales de 2023, le Conseil d'État a jugé ce rattachement sans erreur manifeste d'appréciation (11 mars 2024). Le RN récuse ce terme et se présente comme « national » et « patriote ».",
-          "Reconquête. Classé à l'extrême droite par de nombreux politistes (Jean-Yves Camus voit dans l'« identitarisme » son marqueur) ; Gilles Ivaldi parle de « droite radicale ». Aucune prise de position du parti sur cette étiquette n'est connue. L'UDR d'Éric Ciotti, alliée du RN, a été classée « extrême droite » par le nuancier de 2026 et conteste ce classement."
+          "Nouvelle Énergie. Le mouvement de David Lisnard se définit comme « une droite libre, indépendante et fière d'assumer une vision libérale ». Le politiste Raphaël Morisset le rattache à un courant libéral « conservateur ». Aucun classement académique dédié n'est connu.",
+          "Rassemblement national. Les encyclopédies, la presse de référence et de nombreux politistes le classent à l'extrême droite ; d'autres politistes utilisent « droite radicale » ou « national-populisme ». Le nuancier le rattache au bloc « extrême droite » ; le RN a contesté ce rattachement pour les sénatoriales de 2023, et le Conseil d'État l'a jugé sans erreur manifeste d'appréciation (11 mars 2024). Le RN récuse ce terme.",
+          "Reconquête. Classé à l'extrême droite par la presse de référence et de nombreux politistes ; en 2022, Jean-Yves Camus relevait que la candidature d'Éric Zemmour attirait des militants identitaires. Gilles Ivaldi parle de « droite radicale ». Éric Zemmour conteste être classé à l'extrême droite. L'UDR d'Éric Ciotti, alliée du RN, a été classée « extrême droite » par le nuancier de 2026 et conteste ce classement."
         ],
         "sources": [
           {
@@ -1015,12 +1052,6 @@
             "kind": "statistique"
           },
           {
-            "title": "Site officiel du Rassemblement national",
-            "url": "https://rassemblementnational.fr/",
-            "date": "2026-11-03",
-            "kind": "programme"
-          },
-          {
             "title": "Gilles Ivaldi (CEVIPOF), « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire »",
             "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
             "date": "2022-03",
@@ -1036,6 +1067,42 @@
             "title": "Municipales : le Conseil d'État confirme le nuançage aux « extrêmes » de LFI et de l'UDR (Banque des Territoires)",
             "url": "https://www.banquedesterritoires.fr/municipales-le-conseil-detat-confirme-le-nuancage-aux-extremes-de-lfi-et-de-ludr",
             "date": "2026-03-02",
+            "kind": "presse"
+          },
+          {
+            "title": "Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+            "date": "2022-09-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Le Conseil d'État a-t-il qualifié le RN « d'extrême droite » ? (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/justice/le-conseil-detat-a-t-il-qualifie-le-rn-dextreme-droite-6426/",
+            "date": "2024-06-28",
+            "kind": "presse"
+          },
+          {
+            "title": "Défections au RN : tectonique des plaques à l'extrême droite (Public Sénat, entretien avec Jean-Yves Camus)",
+            "url": "https://www.publicsenat.fr/actualites/politique/defections-au-rn-tectonique-des-plaques-a-l-extreme-droite-192012",
+            "date": "2022-01-24",
+            "kind": "presse"
+          },
+          {
+            "title": "Europe 1, dossier « Éric Zemmour »",
+            "url": "https://www.europe1.fr/dossiers/eric-zemmour",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Nouvelle Énergie, « Quel est le parti de David Lisnard ? »",
+            "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
+            "date": "2026-11-09",
+            "kind": "programme"
+          },
+          {
+            "title": "Présidentielle 2027 : derrière le phénomène TikTok, que défend David Lisnard ? (LCP)",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-derriere-le-phenomene-des-reseaux-sociaux-qui-est-david-lisnard",
+            "date": "2026-10-13",
             "kind": "presse"
           }
         ]

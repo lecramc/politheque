@@ -3,7 +3,7 @@
   "name": "Nouvelle Énergie",
   "shortName": "NE",
   "color": "#1D257A",
-  "family": "Droite (presse de référence : droite libérale ; pas de classement académique dédié ; aucune prise de position du parti sur cette étiquette n'est connue)",
+  "family": "Droite (presse de référence : droite libérale ; pas de classement académique dédié ; le mouvement se définit comme « une droite libre, indépendante et fière d'assumer une vision libérale »)",
   "description": "Nouvelle Énergie est le parti fondé à Cannes par David Lisnard (association déclarée en septembre 2014) et déployé au niveau national à partir de juin 2021 ; il est présidé par David Lisnard, maire de Cannes depuis 2014 et président de l'Association des maires de France (AMF) depuis novembre 2021. Il n'a pas de groupe parlementaire : la députée Alexandra Martin, élue en 2024 sous la double étiquette Droite républicaine et Nouvelle Énergie, siège au groupe Droite républicaine, et plusieurs sénateurs s'en réclament, souvent en double appartenance. David Lisnard a quitté Les Républicains et confirmé sa candidature à la présidentielle le 31 mars 2026.",
   "foundedYear": 2014,
   "leader": {
@@ -129,7 +129,7 @@
       },
       {
         "title": "Classement par la presse",
-        "text": "La presse décrit Nouvelle Énergie comme un mouvement libéral de droite (LCP, Il Foglio), parfois situé du centre droit à la droite. Dans LCP, le politologue Raphaël Morisset juge le terme « libéral » discutable et décrit un libéralisme « très illibéral sur le plan politique et sociétal ».",
+        "text": "La presse décrit Nouvelle Énergie comme un mouvement libéral de droite (LCP, Il Foglio), parfois situé du centre droit à la droite. Dans LCP, le politologue Raphaël Morisset juge le terme « libéral » discutable et décrit un libéralisme « très illibéral sur le plan politique et sociétal ». Le mouvement se définit lui-même comme « une droite libre, indépendante et fière d'assumer une vision libérale ».",
         "sources": [
           {
             "title": "LCP, « Présidentielle 2027 : derrière le phénomène des réseaux sociaux, qui est David Lisnard ? »",
@@ -148,6 +148,12 @@
             "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Nouvelle Énergie, « Quel est le parti de David Lisnard ? »",
+            "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
+            "date": "2026-11-09",
+            "kind": "programme"
           }
         ]
       }

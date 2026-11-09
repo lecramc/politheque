@@ -1,5 +1,40 @@
 [
   {
+    "id": "2026-11-09-metadonnees-de-sources-corrigees-autrice-de-la-n",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/renaissance/histoire", "/partis/rn/histoire"],
+    "summary": "Métadonnées de sources corrigées : autrice de la notice Store norske leksikon (Kjerstin Aukrust) et date de l'article du Club des juristes (28 juin 2024)."
+  },
+  {
+    "id": "2026-11-09-etiquettes-precisees-le-ps-se-reclame-du-sociali",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/ps-place-publique/histoire", "/partis/nouvelle-energie/histoire"],
+    "summary": "Étiquettes précisées : le PS se réclame du socialisme (expression « socialisme démocratique » sans source primaire lisible) ; Nouvelle Énergie se définit comme « une droite libre, indépendante et fière d'assumer une vision libérale »."
+  },
+  {
+    "id": "2026-11-09-la-fiche-indiquait-qu-aucune-position-du-parti-s",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/partis/reconquete/histoire"],
+    "summary": "La fiche indiquait qu'aucune position du parti sur son étiquette n'était connue : Éric Zemmour conteste être classé à l'extrême droite (Europe 1). Mention du nuancier de 2026 retirée, faute de source officielle lisible sur la nuance de Reconquête."
+  },
+  {
+    "id": "2026-11-09-etiquettes-alignees-sur-leurs-sources-place-publ",
+    "date": "2026-11-09",
+    "kind": "correction",
+    "pages": ["/comprendre/classement-des-partis"],
+    "summary": "Étiquettes alignées sur leurs sources : Place publique présentée comme sociale-démocrate, le PS se réclame du socialisme, citation exacte de Renaissance, contestation du classement par le RN devant le Conseil d'État, position d'Éric Zemmour sur l'étiquette."
+  },
+  {
+    "id": "2026-11-09-nouvelle-energie-ajoutee-a-la-lecon-comme-les-ne",
+    "date": "2026-11-09",
+    "kind": "ajout",
+    "pages": ["/comprendre/classement-des-partis"],
+    "summary": "Nouvelle Énergie ajoutée à la leçon, comme les neuf autres partis du site : sa propre définition (« une droite libre… ») et l'analyse du politiste Raphaël Morisset (LCP, octobre 2026)."
+  },
+  {
     "id": "2026-11-09-source-de-l-entree-sur-le-proces-de-rachida-dati",
     "date": "2026-11-09",
     "kind": "correction",
