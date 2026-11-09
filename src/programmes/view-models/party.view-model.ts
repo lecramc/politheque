@@ -126,10 +126,10 @@ export const partyViewModel =
           updatedOn,
           /** Phrase datée en tête de la fiche, même gabarit pour tous (audit SEO § 5.1). */
           summary:
-            party && catalog && featured && party.candidacies[featured.id]
+            party && catalog && featured
               ? partySummary({
                   party,
-                  candidacy: party.candidacies[featured.id],
+                  candidacy: party.candidacies[featured.id] ?? null,
                   electionTitle: electionPhrase(featured),
                   themeIds: catalog.themes.map((t) => t.id),
                 })

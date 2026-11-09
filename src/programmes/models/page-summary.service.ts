@@ -18,31 +18,69 @@ import { partyLabel } from '@/src/programmes/models/seo/page-meta';
 const plural = (count: number, singular: string, pluralForm = `${singular}s`) =>
   `${count} ${count > 1 ? pluralForm : singular}`;
 
-/** « de Marine Le Pen », « d'Éric Zemmour ». */
-const of = (name: string) => (/^[aeiouyàâäéèêëîïôöùûü]/i.test(name) ? `d'${name}` : `de ${name}`);
+const VOWEL = /^[aeiouyhàâäéèêëîïôöùûü]/i;
 
-const lowerFirst = (text: string) => text.charAt(0).toLocaleLowerCase('fr') + text.slice(1);
-
-const ELECTION_NAMES: Record<ElectionType, string> = {
-  presidentielle: "à l'élection présidentielle",
-  legislatives: 'aux élections législatives',
-  europeennes: 'aux élections européennes',
-  municipales: 'aux élections municipales',
-  senatoriales: 'aux élections sénatoriales',
-  regionales: 'aux élections régionales',
-  departementales: 'aux élections départementales',
+/** « du Parti communiste français », « des Républicains », « de La France insoumise », « d'Horizons ». */
+export const ofParty = (name: string): string => {
+  if (/^Les /.test(name)) return `des ${name.slice(4)}`;
+  if (/^Le /.test(name)) return `du ${name.slice(3)}`;
+  if (/^(La |L')/.test(name)) return `de ${name}`;
+  // Nom commun en tête, sans article dans le nom officiel : on emploie l'article (« du Parti… »).
+  if (/^(Parti|Rassemblement|Mouvement|Front|Centre|Nouveau)\b/.test(name)) return `du ${name}`;
+  return VOWEL.test(name) ? `d'${name}` : `de ${name}`;
 };
 
-/** « à l'élection présidentielle de 2027 » (année du premier tour). */
+/** « à l'élection… », « aux élections… ». */
+const toThe = (phrase: string) =>
+  phrase
+    .replace(/^les /, 'aux ')
+    .replace(/^le /, 'au ')
+    .replace(/^l'/, "à l'")
+    .replace(/^la /, 'à la ');
+
+const ELECTION_NAMES: Record<ElectionType, string> = {
+  presidentielle: "l'élection présidentielle",
+  legislatives: 'les élections législatives',
+  europeennes: 'les élections européennes',
+  municipales: 'les élections municipales',
+  senatoriales: 'les élections sénatoriales',
+  regionales: 'les élections régionales',
+  departementales: 'les élections départementales',
+};
+
+/** « l'élection présidentielle de 2027 » (année du premier tour). */
 export const electionPhrase = (election: Pick<Election, 'type' | 'rounds'>) =>
   `${ELECTION_NAMES[election.type]} de ${election.rounds[0]?.date.slice(0, 4) ?? ''}`.trim();
 
 const hasMeasures = (candidacy: Candidacy, themeId: ThemeId) =>
   (candidacy.themes[themeId]?.measures.length ?? 0) > 0;
 
+/** Le libellé de statut est accordé dans les données (charte, règle 4) : il donne le genre. */
+const isFeminine = (statusLabel: string) => /^Candidate\b/.test(statusLabel);
+
+/** Proposition principale, selon le statut (charte, règle 4). */
+const candidacyClause = (candidacy: Candidacy, party: string, election: string): string => {
+  const name = candidacy.candidateName;
+  const f = isFeminine(candidacy.statusLabel);
+  const theCandidate = f ? 'la candidate' : 'le candidat';
+  switch (candidacy.status) {
+    case 'declare':
+      return `${name} est ${theCandidate} ${f ? 'déclarée' : 'déclaré'} ${ofParty(party)} pour ${election}`;
+    case 'investi':
+      return `${name} est ${theCandidate} ${f ? 'investie' : 'investi'} ${ofParty(party)} pour ${election}`;
+    case 'designe':
+      return `${name} est ${theCandidate} ${f ? 'désignée' : 'désigné'} ${ofParty(party)} pour ${election}, avant un vote des adhérents`;
+    case 'annonce':
+      return `${name} a annoncé sa candidature ${toThe(election)} pour ${party}, sans l'avoir encore déclarée formellement`;
+    case 'pressenti':
+      return `${name} est ${f ? 'pressentie' : 'pressenti'} comme ${f ? 'candidate' : 'candidat'} ${ofParty(party)} pour ${election}`;
+  }
+};
+
 /**
- * « Au 3 novembre 2026, Rassemblement national (RN) : candidature de Marine Le Pen à l'élection
- * présidentielle de 2027 (candidate déclarée) ; propositions recensées dans 9 thèmes sur 9. »
+ * « Au 3 novembre 2026, Marine Le Pen est la candidate déclarée du Rassemblement national (RN) pour
+ * l'élection présidentielle de 2027 ; ses propositions sont recensées dans 9 thèmes sur 9. »
+ * Sans candidature : « Au …, aucune candidature du … n'est recensée pour l'élection … »
  */
 export function partySummary({
   party,
@@ -51,22 +89,26 @@ export function partySummary({
   themeIds,
 }: {
   party: Pick<Party, 'name' | 'shortName' | 'lastVerified'>;
-  candidacy: Candidacy;
-  /** « à l'élection présidentielle de 2027 » (`electionPhrase`). */
+  candidacy: Candidacy | null;
+  /** « l'élection présidentielle de 2027 » (`electionPhrase`). */
   electionTitle: string;
   themeIds: ThemeId[];
 }): string {
+  const date = `Au ${formatLongDate(party.lastVerified)}`;
+  const label = partyLabel(party);
+  if (!candidacy) {
+    return `${date}, aucune candidature ${ofParty(label)} n'est recensée pour ${electionTitle}.`;
+  }
   const covered = themeIds.filter((id) => hasMeasures(candidacy, id)).length;
   return (
-    `Au ${formatLongDate(party.lastVerified)}, ${partyLabel(party)} : candidature ` +
-    `${of(candidacy.candidateName)} ${electionTitle} (${lowerFirst(candidacy.statusLabel)}) ; ` +
-    `propositions recensées dans ${plural(covered, 'thème')} sur ${themeIds.length}.`
+    `${date}, ${candidacyClause(candidacy, label, electionTitle)} ; ` +
+    `ses propositions sont recensées dans ${plural(covered, 'thème')} sur ${themeIds.length}.`
   );
 }
 
 /**
- * « Au 8 novembre 2026, sur le thème « Économie, impôts et dette », Polithèque recense les
- * propositions de 10 partis sur 10, par ordre alphabétique, et 4 chiffres clés sourcés. »
+ * « Au 3 novembre 2026, Polithèque présente les propositions des 10 partis sur le thème « Économie,
+ * impôts et dette », par ordre alphabétique, avec 4 chiffres clés sourcés. »
  */
 export function debateSummary({
   theme,
@@ -80,9 +122,13 @@ export function debateSummary({
   candidacies: Candidacy[];
 }): string {
   const covered = candidacies.filter((c) => hasMeasures(c, theme.id)).length;
+  const parties =
+    covered === candidacies.length
+      ? `des ${plural(covered, 'parti')}`
+      : `de ${plural(covered, 'parti')} sur ${candidacies.length}`;
   return (
-    `Au ${formatLongDate(date)}, sur le thème « ${theme.title} », Polithèque recense les ` +
-    `propositions de ${plural(covered, 'parti')} sur ${candidacies.length}, par ordre alphabétique, ` +
-    `et ${plural(theme.keyFigures.length, 'chiffre clé sourcé', 'chiffres clés sourcés')}.`
+    `Au ${formatLongDate(date)}, Polithèque présente les propositions ${parties} sur le thème ` +
+    `« ${theme.title} », par ordre alphabétique, avec ` +
+    `${plural(theme.keyFigures.length, 'chiffre clé sourcé', 'chiffres clés sourcés')}.`
   );
 }
