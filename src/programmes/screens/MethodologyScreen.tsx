@@ -6,9 +6,11 @@ import { Icon, Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
+import { OnThisPage } from '@/src/programmes/components/OnThisPage';
 import { Page } from '@/src/programmes/components/Page';
 import { RowGroup } from '@/src/programmes/components/PartyRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
+import { METHODOLOGY_ANCHORS } from '@/src/programmes/models/on-this-page';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { methodologyMeta } from '@/src/programmes/models/seo/page-meta';
 import { methodologyViewModel } from '@/src/programmes/view-models/methodology.view-model';
@@ -121,6 +123,8 @@ export default function MethodologyScreen() {
         </Text>
       </View>
 
+      <OnThisPage items={METHODOLOGY_ANCHORS} />
+
       <RowGroup>
         {COMMITMENTS.map((item, index) => (
           <View
@@ -138,7 +142,7 @@ export default function MethodologyScreen() {
               style={{
                 width: 40,
                 height: 40,
-                borderRadius: 20,
+                borderRadius: effects.borderRadius.round,
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: colors.tintSoft,
@@ -155,6 +159,7 @@ export default function MethodologyScreen() {
       </RowGroup>
 
       <View
+        nativeID="niveaux-de-source"
         style={{
           gap: effects.spacing.sm,
           backgroundColor: colors.surface.primary,
@@ -179,7 +184,7 @@ export default function MethodologyScreen() {
         </View>
       </View>
 
-      <View style={{ gap: effects.spacing.xs }}>
+      <View nativeID="regles" style={{ gap: effects.spacing.xs }}>
         {rulesWith(vm.methodSentences).map((rule) => (
           <Accordion key={rule.title} title={rule.title} headingLevel={2}>
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{rule.body}</Text>
@@ -197,7 +202,7 @@ export default function MethodologyScreen() {
         ))}
       </View>
 
-      <View style={{ gap: effects.spacing.sm }}>
+      <View nativeID="comment-lire" style={{ gap: effects.spacing.sm }}>
         <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
           Comment lire les pages
         </Text>

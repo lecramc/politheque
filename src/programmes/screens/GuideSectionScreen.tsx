@@ -96,9 +96,17 @@ export default function GuideSectionScreen() {
               ))}
             </View>
             {vm.next ? (
-              <Button variant="brand" href={`/comprendre/${vm.next.id}`} onPress={vm.markRead}>
-                {`Section suivante : ${vm.next.title}`}
-              </Button>
+              // Même forme qu'en bas de page sous 1024 px : le titre au-dessus, un libellé court dans
+              // le bouton (un titre long ne tenait pas dans la pilule de 296 px).
+              <View style={{ gap: effects.spacing.xs }}>
+                <Text variant="caption">À suivre</Text>
+                <Text style={{ fontSize: effects.sizes.text.secondary, lineHeight: 22 }}>
+                  {vm.next.title}
+                </Text>
+                <Button variant="brand" href={`/comprendre/${vm.next.id}`} onPress={vm.markRead}>
+                  Section suivante
+                </Button>
+              </View>
             ) : null}
           </>
         ) : undefined

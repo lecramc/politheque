@@ -13,6 +13,7 @@ import { duration, easing, journeySequence, useMotion } from '@/components/motio
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { APP_NAME } from '@/src/core/config/app';
+import { paint } from '@/src/core/web/svg-paint';
 
 /*
  * Monogramme « P » (docs/marque/svg/politheque-c-monogramme/) : le P de Fraunces 600, dont la
@@ -112,11 +113,11 @@ export function LogoMark({
           </Mask>
         </Defs>
         <G mask={`url(#${maskId})`}>
-          <Path d={bands.red} fill={colors.tricolore.rouge} />
-          <Path d={bands.white} fill={colors.tricolore.blanc} />
-          <Path d={bands.blue} fill={colors.tricolore.bleu} />
+          <Path d={bands.red} {...paint({ fill: colors.tricolore.rouge })} />
+          <Path d={bands.white} {...paint({ fill: colors.tricolore.blanc })} />
+          <Path d={bands.blue} {...paint({ fill: colors.tricolore.bleu })} />
         </G>
-        <Path d={STEM} fill={colors.text.strong} />
+        <Path d={STEM} {...paint({ fill: colors.text.strong })} />
       </Svg>
     </Animated.View>
   );

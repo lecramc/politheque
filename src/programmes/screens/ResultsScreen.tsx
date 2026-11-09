@@ -37,7 +37,7 @@ import {
 } from '@/src/programmes/models/answer-link.service';
 import { chartLegend } from '@/src/programmes/models/chart-legend.service';
 import { MIN_AXIS_COUNT, MIN_COMPARED } from '@/src/programmes/models/matching.service';
-import type { Source } from '@/src/programmes/models/programme.model';
+import type { Party, Source } from '@/src/programmes/models/programme.model';
 import { GUIDE_ANCHORS, RESULTS_GUIDE_INTRO } from '@/src/programmes/models/reading-guides.copy';
 import { howToReadBullets, RESULTS_INTRO, TIED_LABEL } from '@/src/programmes/models/results.copy';
 import { nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
@@ -63,6 +63,33 @@ const CHES_SOURCES: Source[] = [
     kind: 'statistique',
   },
 ];
+
+/** Légende de la carte : un point et un nom par parti, par ordre alphabétique. */
+function MapLegend({ parties }: { parties: Party[] }) {
+  const { effects, fonts } = useTheme();
+  return (
+    <View
+      role="list"
+      aria-label="Légende : partis par ordre alphabétique"
+      style={{ gap: effects.spacing.xs, flexShrink: 1, minWidth: 0 }}
+    >
+      <Text variant="caption">Légende · A-Z</Text>
+      {parties.map((party) => (
+        <View
+          key={party.id}
+          role="listitem"
+          style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
+        >
+          <PartyDot color={party.color} size={14} />
+          <Text style={{ fontSize: 14, flexShrink: 1 }}>
+            <Text style={{ ...fonts.bold, fontSize: 14 }}>{party.shortName}</Text>
+            {` · ${party.name}`}
+          </Text>
+        </View>
+      ))}
+    </View>
+  );
+}
 
 export default function ResultsScreen() {
   const vm = useViewModel(resultsViewModel);
@@ -398,14 +425,18 @@ export default function ResultsScreen() {
             Votre place sur la carte
           </Text>
           <Card>
+            {/* Dès 1024 px, la légende A-Z accompagne la carte : dessous, puis à côté dès 1200 px
+                (map-layout). Sous 1024 px, elle reste dans « Voir la carte complète ». */}
             <View {...tv('map-layout')} style={{ gap: effects.spacing.md }}>
               <AxisChart
                 axes={vm.axes}
                 user={vm.userPosition}
                 parties={vm.partyPositions}
                 showEurope={false}
-                large
               />
+              <Only from="lg" style={{ flexShrink: 1, minWidth: 0 }}>
+                <MapLegend parties={legend} />
+              </Only>
             </View>
             <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
               Les axes simplifient la réalité. Positions établies uniquement à partir des
@@ -436,26 +467,7 @@ export default function ResultsScreen() {
 
       <Sheet isOpen={mapOpen} onClose={() => setMapOpen(false)} title="La carte complète">
         <AxisChart axes={vm.axes} user={vm.userPosition} parties={vm.partyPositions} />
-        <View
-          role="list"
-          aria-label="Légende : partis par ordre alphabétique"
-          style={{ gap: effects.spacing.xs }}
-        >
-          <Text variant="caption">Légende · A-Z</Text>
-          {legend.map((party) => (
-            <View
-              key={party.id}
-              role="listitem"
-              style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
-            >
-              <PartyDot color={party.color} size={14} />
-              <Text style={{ fontSize: 14, flexShrink: 1 }}>
-                <Text style={{ ...fonts.bold, fontSize: 14 }}>{party.shortName}</Text>
-                {` · ${party.name}`}
-              </Text>
-            </View>
-          ))}
-        </View>
+        <MapLegend parties={legend} />
         <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
           Plus deux points sont proches, plus les réponses se ressemblent.
         </Text>

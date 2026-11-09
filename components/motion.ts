@@ -2,6 +2,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Platform } from 'react-native';
 import {
+  type CSSAnimationTimingFunction,
   Easing,
   ReduceMotion,
   useReducedMotion,
@@ -18,6 +19,16 @@ import { BEZIER, cssEasing, duration } from '@/components/motion-tokens';
  * Durées et courbes CSS : `components/motion-tokens.ts` (réexportées ici).
  */
 export { cssEasing, duration };
+
+/**
+ * Les mêmes courbes, typées pour les styles d'animation et de transition CSS de reanimated
+ * (`animationTimingFunction`, `transitionTimingFunction`) : reanimated accepte la chaîne
+ * `cubic-bezier(…)`, mais son type ne connaît que les mots-clés et ses objets `cubicBezier()`.
+ */
+export const cssTiming = cssEasing as unknown as Record<
+  keyof typeof cssEasing,
+  CSSAnimationTimingFunction
+>;
 
 export type Curve = keyof typeof BEZIER;
 

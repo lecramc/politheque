@@ -2,6 +2,7 @@ import { useMemo } from 'react';
 import { Platform, StyleSheet, type StyleProp } from 'react-native';
 
 import { cssColors, kebab, theme, useTheme } from '@/components/ThemeContext';
+import { themeSwitchCss } from '@/src/core/web/theme-switch';
 
 /**
  * Couleurs du thème en variables CSS (web uniquement).
@@ -48,6 +49,8 @@ export const themeVarsCss: string = [
   `:root{${declarations(theme.light).join(';')}}`,
   `@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){${darkVars}}}`,
   `:root[data-theme="dark"]{${darkVars}}`,
+  // Pas de transition pendant un changement de thème (voir `guardThemeSwitch`).
+  themeSwitchCss,
 ].join('\n');
 
 type Style = Record<string, unknown>;

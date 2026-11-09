@@ -27,25 +27,19 @@ export function AxisChart({
   user,
   parties,
   showEurope = true,
-  large = false,
 }: {
   axes: Axis[];
   user: AxisPosition;
   parties: { party: Party; position: AxisPosition }[];
   /** Faux : seule la carte à deux axes ; l'axe « Europe » est dans « Voir la carte complète ». */
   showEurope?: boolean;
-  /**
-   * Carte posée dans la colonne de la page (et non dans une feuille) : tracé plus grand, pour
-   * écarter les points et limiter les étiquettes superposées (LFI, Écologistes, PS-PP, PCF).
-   */
-  large?: boolean;
 }) {
-  const { colors, fonts } = useTheme();
+  const { colors, effects, fonts } = useTheme();
   // Mesure du tracé, pas mise en page : la carte n'existe qu'après le questionnaire (rendu client
-  // uniquement, jamais dans le HTML statique). 460 px dès 1024 px, 420 px au plus sinon ; 560 px
-  // pour la carte de la page dès 1024 px (la colonne de 640 px minimum laisse 598 px utiles).
+  // uniquement, jamais dans le HTML statique). 460 px dès 1024 px, 420 px au plus sinon : dans la
+  // page, la légende A-Z tient à côté dès 1200 px (460 + 28 + 238 = 726 px utiles sur 768).
   const { width } = useWindowDimensions();
-  const base = width >= 1024 ? (large ? 560 : 460) : 420;
+  const base = width >= 1024 ? 460 : 420;
   const size = Math.min(base, width - 80);
   const eco = axes.find((a) => a.id === 'economique');
   const soc = axes.find((a) => a.id === 'societal');
@@ -78,7 +72,14 @@ export function AxisChart({
   const caption = { fontSize: 12, color: colors.text.secondary };
   const dot = (p: Point) =>
     p.isUser ? (
-      <View style={{ width: 16, height: 16, borderRadius: 8, backgroundColor: colors.tint }} />
+      <View
+        style={{
+          width: 16,
+          height: 16,
+          borderRadius: effects.borderRadius.round,
+          backgroundColor: colors.tint,
+        }}
+      />
     ) : (
       <PartyDot color={p.color} size={14} />
     );
@@ -112,7 +113,7 @@ export function AxisChart({
           borderWidth: 1,
           borderColor: colors.surface.border.tertiary,
           backgroundColor: colors.surface.secondary,
-          borderRadius: 8,
+          borderRadius: effects.borderRadius.xs,
         }}
       >
         <View

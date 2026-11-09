@@ -125,7 +125,7 @@ export default function ElectionScreen() {
                   style={{
                     width: 28,
                     height: 28,
-                    borderRadius: 14,
+                    borderRadius: effects.borderRadius.round,
                     alignItems: 'center',
                     justifyContent: 'center',
                     backgroundColor: colors.tint,

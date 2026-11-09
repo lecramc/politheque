@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
   circle: {
     width: 24,
     height: 24,
-    borderRadius: 12,
+    borderRadius: theme.effects.borderRadius.round,
     flexShrink: 0,
     alignItems: 'center',
     justifyContent: 'center',

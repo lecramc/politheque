@@ -10,6 +10,7 @@ import Svg, { Path } from 'react-native-svg';
 
 import { duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
+import { paint } from '@/src/core/web/svg-paint';
 
 const AnimatedPath = Animated.createAnimatedComponent(Path);
 
@@ -73,7 +74,7 @@ export function Arc({
       <Svg width={size} height={height}>
         <Path
           d={d}
-          stroke={colors.tintSoft}
+          {...paint({ stroke: colors.tintSoft })}
           strokeWidth={strokeWidth}
           strokeLinecap="round"
           fill="none"
@@ -81,6 +82,8 @@ export function Arc({
             dashedRemainder ? `${strokeWidth * 0.6} ${strokeWidth * 0.9}` : undefined
           }
         />
+        {/* Attribut seul : un `style` sur un composant animé de Reanimated écrase ses props
+            animées (le remplissage disparaissait). */}
         <AnimatedPath
           d={d}
           stroke={colors.tint}

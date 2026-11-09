@@ -34,8 +34,13 @@ export const layoutCss: string = [
   `${sel('text-link')}:focus-visible {\n  outline: 2px solid currentColor;\n  outline-offset: 2px;\n  border-radius: 4px;\n}`,
 
   // Boutons (ThemedButton, hors Pressable) : même anneau de focus clavier que le reste du site,
-  // 2 px de la couleur `tint`, à l'extérieur, au lieu de l'anneau bleu du navigateur.
-  `${sel('focus-ring')}:focus-visible {\n  outline: 2px solid var(--tint);\n  outline-offset: 2px;\n}`,
+  // 2 px de la couleur `tint`, à l'extérieur, au lieu de l'anneau bleu du navigateur. Écart de 3 px :
+  // autour d'un bouton plein (dégradé `tint`), l'anneau se détache du bouton au lieu de l'épaissir.
+  `${sel('focus-ring')}:focus-visible {\n  outline: 2px solid var(--tint);\n  outline-offset: 3px;\n}`,
+
+  // Zone de défilement de la page : sous 768 px, un élément qui prend le focus (Tab) défile au-dessus
+  // de la barre d'onglets du bas au lieu de rester caché dessous (retirée dès 768 px).
+  rule(['page-scroll'], `scroll-padding-bottom: ${layout.tabBar + 16}px;`),
 
   // Zone tappable (composant Pressable) : état de repos, identique pour toutes. Le survol, l'appui,
   // le focus et l'état désactivé sont en ligne (ils l'emportent sur cette règle). `press-in` :
@@ -54,6 +59,7 @@ export const layoutCss: string = [
   rule(['only-from-md'], 'display: flex;'),
   rule(['colhead'], 'display: flex;'),
   rule(['scroll-pad'], 'height: 16px;'),
+  rule(['page-scroll'], 'scroll-padding-bottom: 16px;'),
   rule(
     ['container'],
     `max-width: ${layout.single + gutter.md * 2}px; padding-left: ${gutter.md}px; padding-right: ${gutter.md}px;`

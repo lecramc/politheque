@@ -12,6 +12,7 @@ import { Platform, useColorScheme } from 'react-native';
 
 import { layout } from '@/components/layout';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
+import { guardThemeSwitch } from '@/src/core/web/theme-switch';
 
 export type ThemeType = 'light' | 'dark';
 
@@ -291,6 +292,9 @@ export const ThemeProviderCustom = ({ children }: { children: ReactNode }) => {
     if (Platform.OS === 'web' && hydrated)
       document.documentElement.dataset.theme = resolvedSystemTheme;
   }, [hydrated, resolvedSystemTheme]);
+
+  // Web : pas de transition de couleur quand le réglage système bascule (voir theme-switch).
+  useEffect(() => guardThemeSwitch(), []);
 
   useEffect(() => {
     SystemUI.setBackgroundColorAsync(realColors.background.default).catch(() => {});

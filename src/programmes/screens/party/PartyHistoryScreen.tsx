@@ -126,7 +126,7 @@ export default function PartyHistoryScreen() {
                     top: 4,
                     width: 12,
                     height: 12,
-                    borderRadius: 6,
+                    borderRadius: effects.borderRadius.round,
                     borderWidth: 2,
                     borderColor: colors.tint,
                     backgroundColor: colors.background.secondary,

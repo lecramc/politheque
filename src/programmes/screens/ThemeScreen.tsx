@@ -14,6 +14,7 @@ import { tv } from '@/src/core/web/tv';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Card } from '@/src/programmes/components/Card';
 import { MoreText } from '@/src/programmes/components/MoreText';
+import { OnThisPage } from '@/src/programmes/components/OnThisPage';
 import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
@@ -21,6 +22,7 @@ import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
 import { figureColumns, splitFigure } from '@/src/programmes/models/key-figure.service';
+import { DEBATE_ANCHORS } from '@/src/programmes/models/on-this-page';
 import { displayName, firstSentence } from '@/src/programmes/models/presentation.service';
 import type {
   KeyFigure,
@@ -117,7 +119,6 @@ export default function ThemeScreen() {
       loading={vm.status !== 'loaded'}
       back={{ label: 'Partis', href: '/partis' }}
       onReachEnd={vm.markRead}
-      railOnMobile="hidden"
     >
       {theme ? (
         <>
@@ -138,6 +139,8 @@ export default function ThemeScreen() {
               </MoreText>
             ) : null}
           </View>
+
+          <OnThisPage items={DEBATE_ANCHORS} onAction={() => setMode('comparer')} />
 
           <View nativeID="chiffres-cles" style={{ gap: effects.spacing.xs }}>
             <Text variant="caption" headingLevel={2}>
@@ -253,7 +256,7 @@ export default function ThemeScreen() {
             </TabPanel>
           </View>
 
-          <View style={{ gap: effects.spacing.sm }}>
+          <View nativeID="aller-plus-loin" style={{ gap: effects.spacing.sm }}>
             <Text variant="caption" headingLevel={2}>
               Pour aller plus loin
             </Text>

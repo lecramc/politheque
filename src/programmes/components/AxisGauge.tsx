@@ -5,6 +5,7 @@ import Svg, { Circle, Line } from 'react-native-svg';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Only } from '@/src/core/components/Only';
+import { paint } from '@/src/core/web/svg-paint';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 
 const GEOMETRY = {
@@ -101,7 +102,7 @@ function Gauge({
               x2={width - g.pad}
               y1={y}
               y2={y}
-              stroke={colors.surface.border.tertiary}
+              {...paint({ stroke: colors.surface.border.tertiary })}
               strokeWidth={g.gap}
               strokeDasharray={g.dash}
             />
@@ -112,7 +113,7 @@ function Gauge({
                 x2={width - g.pad}
                 y1={y}
                 y2={y}
-                stroke={colors.tintSoft}
+                {...paint({ stroke: colors.tintSoft })}
                 strokeWidth={g.track}
                 strokeLinecap="round"
               />
@@ -121,7 +122,7 @@ function Gauge({
                 x2={mid}
                 y1={g.tickFrom}
                 y2={g.tickTo}
-                stroke={colors.surface.border.tertiary}
+                {...paint({ stroke: colors.surface.border.tertiary })}
                 strokeWidth={g.tick}
               />
               {!neutral ? (
@@ -130,7 +131,7 @@ function Gauge({
                   x2={x(position)}
                   y1={y}
                   y2={y}
-                  stroke={colors.tint}
+                  {...paint({ stroke: colors.tint })}
                   strokeWidth={g.track}
                   strokeLinecap="butt"
                 />
@@ -140,9 +141,8 @@ function Gauge({
                   cx={x(position)}
                   cy={y}
                   r={4.5}
-                  stroke={color}
+                  {...paint({ stroke: color, fill: colors.surface.primary })}
                   strokeWidth={2.5}
-                  fill={colors.surface.primary}
                 />
               ) : null}
             </>

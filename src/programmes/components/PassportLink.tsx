@@ -30,7 +30,7 @@ export function PassportLink({ label }: { label: string | null }) {
           style={{
             width: 44,
             height: 44,
-            borderRadius: 22,
+            borderRadius: effects.borderRadius.round,
             alignItems: 'center',
             justifyContent: 'center',
             backgroundColor: colors.tintSoft,

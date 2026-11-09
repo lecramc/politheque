@@ -3,7 +3,7 @@ import { StyleProp, ViewStyle } from 'react-native';
 import Animated from 'react-native-reanimated';
 
 import {
-  cssEasing,
+  cssTiming,
   duration as durations,
   enterKeyframes,
   EnterKind,
@@ -42,7 +42,7 @@ export function Enter({
         ? {
             animationName: enterKeyframes.fade,
             animationDuration: 120,
-            animationTimingFunction: cssEasing.out,
+            animationTimingFunction: cssTiming.out,
           }
         : null
       : {
@@ -50,7 +50,7 @@ export function Enter({
           animationDuration: duration,
           animationDelay: delay,
           animationFillMode: 'backwards' as const,
-          animationTimingFunction: cssEasing.out,
+          animationTimingFunction: cssTiming.out,
         };
   return <Animated.View style={[style, animation]}>{children}</Animated.View>;
 }

@@ -7,6 +7,7 @@ import { theme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { useColorStyle } from '@/components/webTheme';
+import { paint } from '@/src/core/web/svg-paint';
 import { tv } from '@/src/core/web/tv';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { formatLongDate, SOURCE_KIND_LABEL } from '@/src/programmes/models/presentation.service';
@@ -33,10 +34,15 @@ function MicroArc({ full }: { full: boolean }) {
   const { colors } = useTheme();
   return (
     <Svg width={18} height={10}>
-      <Path d="M 2 9 A 7 7 0 0 1 9 2" stroke={colors.tint} strokeWidth={2.5} fill="none" />
+      <Path
+        d="M 2 9 A 7 7 0 0 1 9 2"
+        {...paint({ stroke: colors.tint })}
+        strokeWidth={2.5}
+        fill="none"
+      />
       <Path
         d="M 9 2 A 7 7 0 0 1 16 9"
-        stroke={full ? colors.tint : colors.surface.border.tertiary}
+        {...paint({ stroke: full ? colors.tint : colors.surface.border.tertiary })}
         strokeWidth={2.5}
         fill="none"
         strokeDasharray={full ? undefined : '2 2'}

@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { Platform, View } from 'react-native';
 import Animated from 'react-native-reanimated';
 
-import { cssEasing, duration, useMotion } from '@/components/motion';
+import { cssTiming, duration, useMotion } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
@@ -166,7 +166,7 @@ export default function QuizScreen() {
                       style={{
                         width: 34,
                         height: 30,
-                        borderRadius: 8,
+                        borderRadius: effects.borderRadius.xs,
                         borderWidth: 1.5,
                         borderColor: colors.tint,
                         alignItems: 'center',
@@ -246,7 +246,7 @@ export default function QuizScreen() {
                 style={{
                   width: 50,
                   height: 30,
-                  borderRadius: 15,
+                  borderRadius: effects.borderRadius.round,
                   padding: 3,
                   backgroundColor: vm.important ? colors.tint : colors.surface.border.tertiary,
                   transitionProperty: 'backgroundColor',
@@ -257,12 +257,12 @@ export default function QuizScreen() {
                   style={{
                     width: 24,
                     height: 24,
-                    borderRadius: 12,
+                    borderRadius: effects.borderRadius.round,
                     backgroundColor: colors.background.primary,
                     transform: [{ translateX: vm.important ? 20 : 0 }],
                     transitionProperty: 'transform',
                     transitionDuration: ms(duration.open),
-                    transitionTimingFunction: cssEasing.inOut,
+                    transitionTimingFunction: cssTiming.inOut,
                   }}
                 />
               </Animated.View>

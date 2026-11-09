@@ -23,6 +23,8 @@ export const layout = {
    */
   stanceCell: { md: 152, base: 148 },
   railTop: 20,
+  /** Barre d'onglets du bas (sous 768 px). */
+  tabBar: 64,
 } as const;
 
 export type Layout = typeof layout;

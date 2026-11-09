@@ -102,7 +102,7 @@ export default function GuideScreen() {
                 style={{
                   flex: 1,
                   height: 6,
-                  borderRadius: 3,
+                  borderRadius: effects.borderRadius.round,
                   backgroundColor:
                     i < vm.reading.readCount ? colors.tint : colors.surface.border.primary,
                 }}

@@ -76,7 +76,7 @@ const BOTTOM_NAV: NavItem[] = [
 
 /** Largeur max du contenu en natif et sous 768 px (au-delà, la CSS `container` prend le relais). */
 const BASE_MAX_WIDTH = 760;
-const TAB_BAR_HEIGHT = 64;
+const TAB_BAR_HEIGHT = layout.tabBar;
 const ARC_WIDTH = 24;
 
 /** Petit arc au-dessus de l'onglet actif : le motif signature sert aussi de repère. */
@@ -415,7 +415,7 @@ export function Page({
       ) : null}
 
       <ScrollView
-        {...tv('print-flow')}
+        {...tv('print-flow', 'page-scroll')}
         style={{ flex: 1 }}
         scrollEventThrottle={200}
         onScroll={onReachEnd ? onScroll : undefined}
