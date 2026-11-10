@@ -7,6 +7,11 @@ import {
   candidatesRule,
 } from '@/src/programmes/models/candidates.service';
 import { CONTENUS_2027_PATHS, calculatedDateText } from '@/src/programmes/models/contenus-2027';
+import {
+  NOT_PUBLISHED,
+  NOTHING_ON_THEME,
+  themeProgramme,
+} from '@/src/programmes/models/programme-publication.service';
 import type {
   CalculatedDate,
   Catalog,
@@ -53,13 +58,25 @@ function partyText(party: Party, catalog: Catalog): string[] {
       `${candidacy.candidateName} : ${candidacy.statusLabel}. ${candidacy.candidate}`,
       candidacy.programmeStatus
     );
-    for (const theme of catalog.themes) {
-      const programme = candidacy.themes[theme.id];
-      if (!programme) continue;
-      lines.push('', `#### ${theme.title}`, '', programme.summary);
-      for (const measure of programme.measures) {
-        lines.push(`- ${measure.text}`);
-        sources.push(...measure.sources);
+    if (candidacy.programmePublication) {
+      sources.push(...candidacy.programmePublication.sources);
+    }
+    if (candidacy.programmeState === 'non-publie') {
+      lines.push('', `${NOT_PUBLISHED}.`);
+      if (candidacy.programmePublication) lines.push(candidacy.programmePublication.text);
+    } else {
+      if (candidacy.programmePublication) lines.push('', candidacy.programmePublication.text);
+      for (const theme of catalog.themes) {
+        const programme = themeProgramme(candidacy, theme.id);
+        if (programme?.kind === 'mesures') {
+          lines.push('', `#### ${theme.title}`, '', programme.summary);
+          for (const measure of programme.measures) {
+            lines.push(`- ${measure.text}`);
+            sources.push(...measure.sources);
+          }
+        } else {
+          lines.push('', `#### ${theme.title}`, '', `${NOTHING_ON_THEME}.`);
+        }
       }
     }
   }

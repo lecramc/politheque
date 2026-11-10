@@ -24,19 +24,34 @@ import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
 import { figureColumns, splitFigure } from '@/src/programmes/models/key-figure.service';
 import { DEBATE_ANCHORS } from '@/src/programmes/models/on-this-page';
 import { displayName, firstSentence } from '@/src/programmes/models/presentation.service';
-import type {
-  KeyFigure,
-  Party,
-  PartyThemeProgramme,
-} from '@/src/programmes/models/programme.model';
+import type { ThemeProgramme } from '@/src/programmes/models/programme-publication.service';
+import type { KeyFigure, Party } from '@/src/programmes/models/programme.model';
 import { partyLinkLabel } from '@/src/programmes/models/seo/page-meta';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
 import { themeViewModel } from '@/src/programmes/view-models/theme.view-model';
 
 type Mode = 'tous' | 'comparer';
 
-function ProgrammeDetail({ programme, party }: { programme: PartyThemeProgramme; party: Party }) {
+/** Le sous-titre d'un parti : première phrase du résumé, ou la mention qui en tient lieu. */
+const programmeSubtitle = (programme: ThemeProgramme) =>
+  programme.kind === 'mesures' ? firstSentence(programme.summary) : programme.notice;
+
+function ProgrammeDetail({ programme, party }: { programme: ThemeProgramme; party: Party }) {
   const c = useColorStyle();
+  if (programme.kind !== 'mesures') {
+    return (
+      <>
+        <Text style={[styles.body15, c((p) => ({ color: p.text.secondary }))]}>
+          {programmeSubtitle(programme)}
+        </Text>
+        <Link href={partyHref(party.id, 'programme') as never}>
+          <Text style={[styles.link15, c((p) => ({ color: p.tint }))]}>
+            {partyLinkLabel(party, 'programme')}
+          </Text>
+        </Link>
+      </>
+    );
+  }
   return (
     <>
       <Text style={[styles.body15, c((p) => ({ color: p.text.secondary }))]}>
@@ -195,7 +210,7 @@ export default function ThemeScreen() {
                     <Accordion
                       key={party.id}
                       title={party.name}
-                      subtitle={firstSentence(programme.summary)}
+                      subtitle={programmeSubtitle(programme)}
                       leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
                     >
                       <Text style={[styles.text14, c((p) => ({ color: p.text.secondary }))]}>
@@ -303,9 +318,7 @@ export default function ThemeScreen() {
           <PageSources
             sources={[
               ...theme.keyFigures.map((f) => f.source),
-              ...vm.comparisons.flatMap(
-                (c) => c.programme?.measures.flatMap((m) => m.sources) ?? []
-              ),
+              ...vm.measureSources,
               ...vm.questions.flatMap((q) => q.positions.flatMap((p) => p.stance?.sources ?? [])),
             ]}
           />

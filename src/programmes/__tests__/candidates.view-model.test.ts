@@ -78,6 +78,7 @@ describe('Feature: view-model de la page des candidats', () => {
       },
     });
     expect(vm.intro).toContain('Conseil constitutionnel');
+    expect(vm.intro).not.toMatch(/calculée/);
     expect(vm.rule).toContain('au moins deux sources');
     expect(vm.rule).toContain('9 novembre 2026');
     expect(vm.electionHref).toBe('/elections/presidentielle-2027');

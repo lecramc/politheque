@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
+import { useScrollToHash } from '@/src/core/hooks/useScrollToHash';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { MoreText } from '@/src/programmes/components/MoreText';
 import { Page } from '@/src/programmes/components/Page';
@@ -21,6 +22,8 @@ import { candidatesViewModel } from '@/src/programmes/view-models/candidates.vie
 export default function CandidatesScreen() {
   const vm = useViewModel(candidatesViewModel);
   const { colors, effects } = useTheme();
+  // Les cartes de la page Partis renvoient à l'entrée d'un candidat (`#id`).
+  useScrollToHash(vm.status === 'loaded');
 
   return (
     <Page
@@ -33,6 +36,9 @@ export default function CandidatesScreen() {
         <Text variant="title">Les candidats à l'élection présidentielle 2027</Text>
         <Text style={{ fontSize: 17, lineHeight: 26 }}>{vm.intro}</Text>
         <Text style={{ fontSize: 14, color: colors.text.secondary }}>{vm.rule}</Text>
+        {vm.deadlineNote ? (
+          <Text style={{ fontSize: 14, color: colors.text.secondary }}>{vm.deadlineNote}</Text>
+        ) : null}
       </View>
 
       <View style={{ gap: effects.spacing.sm }}>

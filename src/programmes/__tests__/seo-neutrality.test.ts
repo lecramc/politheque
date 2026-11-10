@@ -39,6 +39,15 @@ const maskedDescription = (party: Party, section: PartySection) => {
       '{candidat}'
     );
   }
+  // Même gabarit pour tous ; seule la mention du programme varie avec son état de publication.
+  text = text.replace(
+    'programme 2027 pas encore publié',
+    'programme 2027 en {n} thèmes, avec ses sources'
+  );
+  text = text.replace(
+    /programme 2027 en \d+ thèmes?, avec ses sources/,
+    'programme 2027 en {n} thèmes, avec ses sources'
+  );
   for (const name of [partyLabel(party), party.shortName, party.name])
     text = text.replace(name, '{label}');
   return text;

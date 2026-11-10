@@ -62,7 +62,7 @@ const keyIdeas = (id: string): KeyIdea[] =>
     relatedQuestionIds: theme === 'economie' ? ['q1'] : [],
   }));
 
-const partyOf = (id: string, name: string, state: ProgrammeState = 'non-publie'): Party => {
+const partyOf = (id: string, name: string, state: ProgrammeState = 'partiel'): Party => {
   const themes = emptyThemes();
   for (const theme of THEME_IDS) {
     themes[theme].measures = [{ text: 'Mesure', sources: [programme, press] }];
@@ -205,13 +205,15 @@ describe('Feature: « Ce qu’il propose »', () => {
     expect(vmOf(catalog, 'beta').keyIdeas).toBeNull();
   });
 
-  it.each([
-    ['non-publie', 'Programme 2027 pas encore publié au 3 novembre 2026.'],
-    ['partiel', 'Programme 2027 partiel (96 mesures) au 3 novembre 2026.'],
-    ['publie', null],
-  ] as const)('should phrase the programme state « %s » in one line', (state, line) => {
-    const catalog = catalogOf([partyOf('alpha', 'Alpha', state)]);
-    expect(vmOf(catalog, 'alpha').keyIdeas?.programmeLine).toBe(line);
+  it('should leave the state of the programme to the notice, never repeat it above the ideas', () => {
+    const catalog = catalogOf([partyOf('alpha', 'Alpha', 'partiel')]);
+    expect(vmOf(catalog, 'alpha').keyIdeas).not.toHaveProperty('programmeLine');
+  });
+
+  it('should show the common notice instead of the ideas when the programme is not published', () => {
+    const vm = vmOf(catalogOf([partyOf('alpha', 'Alpha', 'non-publie')]), 'alpha');
+    expect(vm.keyIdeas).toBeNull();
+    expect(vm.programmeNotice?.title).toBe('Programme 2027 pas encore publié');
   });
 });
 

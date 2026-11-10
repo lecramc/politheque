@@ -1,4 +1,5 @@
 import { formatLongDate } from '@/src/programmes/models/presentation.service';
+import { themeMeasures } from '@/src/programmes/models/programme-publication.service';
 import type {
   Candidacy,
   Election,
@@ -53,7 +54,7 @@ export const electionPhrase = (election: Pick<Election, 'type' | 'rounds'>) =>
   `${ELECTION_NAMES[election.type]} de ${election.rounds[0]?.date.slice(0, 4) ?? ''}`.trim();
 
 const hasMeasures = (candidacy: Candidacy, themeId: ThemeId) =>
-  (candidacy.themes[themeId]?.measures.length ?? 0) > 0;
+  themeMeasures(candidacy, themeId).length > 0;
 
 /** Le libellé de statut est accordé dans les données (charte, règle 4) : il donne le genre. */
 const isFeminine = (statusLabel: string) => /^Candidate\b/.test(statusLabel);
@@ -77,10 +78,41 @@ const candidacyClause = (candidacy: Candidacy, party: string, election: string):
   }
 };
 
+type SummaryParty = Pick<Party, 'name' | 'shortName' | 'lastVerified'>;
+
+/** « Au 3 novembre 2026, Marine Le Pen est la candidate déclarée du RN pour l'élection… », sans point final. */
+const candidacyClauseDated = (
+  party: SummaryParty,
+  candidacy: Candidacy,
+  electionTitle: string
+): string =>
+  `Au ${formatLongDate(party.lastVerified)}, ${candidacyClause(candidacy, partyLabel(party), electionTitle)}`;
+
+const noCandidacy = (party: SummaryParty, electionTitle: string) =>
+  `Au ${formatLongDate(party.lastVerified)}, aucune candidature ${ofParty(partyLabel(party))} n'est recensée pour ${electionTitle}.`;
+
+/**
+ * Chapô affiché en tête de l'onglet Programme : la candidature seulement. L'état du programme est
+ * dit une fois, par la carte d'état juste dessous.
+ */
+export function candidacySummary({
+  party,
+  candidacy,
+  electionTitle,
+}: {
+  party: SummaryParty;
+  candidacy: Candidacy | null;
+  electionTitle: string;
+}): string {
+  if (!candidacy) return noCandidacy(party, electionTitle);
+  return `${candidacyClauseDated(party, candidacy, electionTitle)}.`;
+}
+
 /**
  * « Au 3 novembre 2026, Marine Le Pen est la candidate déclarée du Rassemblement national (RN) pour
  * l'élection présidentielle de 2027 ; ses propositions sont recensées dans 9 thèmes sur 9. »
  * Sans candidature : « Au …, aucune candidature du … n'est recensée pour l'élection … »
+ * Sert aux métadonnées (moteurs de recherche), pas à l'écran.
  */
 export function partySummary({
   party,
@@ -88,20 +120,20 @@ export function partySummary({
   electionTitle,
   themeIds,
 }: {
-  party: Pick<Party, 'name' | 'shortName' | 'lastVerified'>;
+  party: SummaryParty;
   candidacy: Candidacy | null;
   /** « l'élection présidentielle de 2027 » (`electionPhrase`). */
   electionTitle: string;
   themeIds: ThemeId[];
 }): string {
-  const date = `Au ${formatLongDate(party.lastVerified)}`;
-  const label = partyLabel(party);
-  if (!candidacy) {
-    return `${date}, aucune candidature ${ofParty(label)} n'est recensée pour ${electionTitle}.`;
+  if (!candidacy) return noCandidacy(party, electionTitle);
+  const clause = `${candidacyClauseDated(party, candidacy, electionTitle)} ; `;
+  if (candidacy.programmeState === 'non-publie') {
+    return `${clause}son programme 2027 n'est pas encore publié.`;
   }
   const covered = themeIds.filter((id) => hasMeasures(candidacy, id)).length;
   return (
-    `${date}, ${candidacyClause(candidacy, label, electionTitle)} ; ` +
+    `${clause}` +
     `ses propositions sont recensées dans ${plural(covered, 'thème')} sur ${themeIds.length}.`
   );
 }

@@ -52,6 +52,14 @@ export default function HomeScreen() {
           ))}
         </View>
 
+        {vm.candidatesLink ? (
+          <TaskCard
+            title={vm.candidatesLink.label}
+            icon="list-outline"
+            href={vm.candidatesLink.href}
+          />
+        ) : null}
+
         <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
             {HOME_COPY.partiesTitle}

@@ -1,5 +1,211 @@
 [
   {
+    "id": "2026-11-10-les-references-a-wikipedia-ont-ete-retirees-des",
+    "date": "2026-11-10",
+    "kind": "retrait",
+    "pages": [
+      "/partis/ecologistes/histoire",
+      "/partis/horizons/histoire",
+      "/partis/lfi/histoire",
+      "/partis/lr/histoire",
+      "/partis/nouvelle-energie/histoire",
+      "/partis/pcf/histoire",
+      "/partis/ps-place-publique/histoire",
+      "/partis/reconquete/histoire",
+      "/partis/renaissance/histoire",
+      "/partis/rn/histoire"
+    ],
+    "summary": "Les références à Wikipédia ont été retirées des sources de l'histoire des dix partis ; chaque entrée garde au moins deux sources indépendantes, et les faits qu'elles ne soutenaient plus ont été sourcés autrement ou retirés."
+  },
+  {
+    "id": "2026-11-10-retires-score-de-10-95-en-1984-role-de-tresorier",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/rn/histoire"],
+    "summary": "Retirés : score de 10,95 % en 1984, rôle de trésorier et dates de Pierre Bousquet, détails biographiques de François Brigneau et de François Duprat ; positions affichées par le parti reformulées d'après ses statuts."
+  },
+  {
+    "id": "2026-11-10-marion-marechal-presentee-comme-vice-presidente",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/reconquete/histoire"],
+    "summary": "Marion Maréchal présentée comme vice-présidente, et non vice-présidente exécutive ; mention d'une contestation par Éric Zemmour de son classement à l'extrême droite retirée, faute de source accessible ; dates non établies du parcours de Guillaume Peltier retirées."
+  },
+  {
+    "id": "2026-11-10-olivier-faure-a-adhere-au-ps-a-17-ans-et-non-a-1",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/ps-place-publique/histoire"],
+    "summary": "Olivier Faure a adhéré au PS à 17 ans, et non à 16, et a travaillé au ministère de l'Emploi ; premier meeting de Place publique daté du 15 novembre 2018 ; biographies de Jean Jaurès, Léon Blum et François Mitterrand limitées aux faits sourcés."
+  },
+  {
+    "id": "2026-11-10-en-1939-le-parti-refuse-de-desavouer-l-urss-au-l",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/pcf/histoire"],
+    "summary": "En 1939, le parti refuse de désavouer l'URSS, au lieu d'« approuve le pacte » germano-soviétique ; Ludovic-Oscar Frossard quitte le secrétariat général en 1922, et non le 1er janvier 1923 ; biographies précisées."
+  },
+  {
+    "id": "2026-11-10-annees-d-adhesion-de-david-lisnard-au-rpr-a-l-um",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/nouvelle-energie/histoire"],
+    "summary": "Années d'adhésion de David Lisnard au RPR, à l'UMP et à LR retirées ; arrivée d'Hervé Novelli datée de novembre 2024, et non de janvier 2024 ; classement « du centre droit à la droite » retiré ; biographie d'Étienne Blanc précisée."
+  },
+  {
+    "id": "2026-11-10-composantes-de-l-udf-decrites-d-apres-larousse-s",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/lr/histoire"],
+    "summary": "Composantes de l'UDF décrites d'après Larousse, sans les traditions « libérale » et « démocrate-chrétienne » attribuées auparavant ; source ajoutée pour l'élection de Bruno Retailleau à la présidence."
+  },
+  {
+    "id": "2026-11-10-retires-le-parti-de-gauche-principale-force-orga",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/lfi/histoire"],
+    "summary": "Retirés : le Parti de gauche « principale force organisée » en 2017, l'inspiration de Podemos et une investiture de 2024 « hors accord » du Nouveau Front populaire ; départ de Jean-Luc Mélenchon du PS daté d'avant le congrès de Reims ; biographies précisées."
+  },
+  {
+    "id": "2026-11-10-lancement-au-havre-decrit-par-les-elus-presents",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/horizons/histoire"],
+    "summary": "Lancement au Havre décrit par les élus présents, et non par une affluence d'environ 3 000 personnes ; présidence du groupe par Laurent Marcangeli complétée, de nouveau depuis le 31 mars 2026 ; détails non sourcés retirés."
+  },
+  {
+    "id": "2026-11-10-confederation-ecologiste-datee-de-decembre-1981",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/ecologistes/histoire"],
+    "summary": "Confédération écologiste datée de décembre 1981, et non de 1982 ; score d'Antoine Waechter en 1989 arrondi à 10,6 % ; biographies ramenées aux faits sourcés ; Mouvement écologique de 1974 et courants internes retirés."
+  },
+  {
+    "id": "2026-11-10-paragraphe-sur-l-affichage-des-etiquettes-reecri",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/comprendre/gauche-droite"],
+    "summary": "Paragraphe sur l'affichage des étiquettes réécrit : chaque fiche montre désormais les deux classements côte à côte, le détail s'ouvre au toucher."
+  },
+  {
+    "id": "2026-11-10-karim-bouamrane-presente-comme-membre-du-ps-sans",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Karim Bouamrane présenté comme membre du PS sans son investiture, et non sous l'étiquette « Parti socialiste » : le PS soutient Raphaël Glucksmann, vainqueur de la primaire du 11 octobre 2026."
+  },
+  {
+    "id": "2026-11-10-dix-autres-partis-presentant-un-candidat-en-2027",
+    "date": "2026-11-10",
+    "kind": "ajout",
+    "pages": [
+      "/partis",
+      "/elections/presidentielle-2027",
+      "/elections/presidentielle-2027/candidats"
+    ],
+    "summary": "Dix autres partis présentant un candidat en 2027 ajoutés à la page Partis (fiche courte sourcée, sans programme ni positions), et accès direct à la liste des 29 candidatures depuis Partis, l'accueil et la page 2027."
+  },
+  {
+    "id": "2026-11-10-deux-classements-affiches-cote-a-cote-pour-chaqu",
+    "date": "2026-11-10",
+    "kind": "ajout",
+    "pages": [
+      "/partis/lfi",
+      "/partis/pcf",
+      "/partis/rn",
+      "/partis/reconquete",
+      "/partis/lr",
+      "/partis/renaissance",
+      "/partis/horizons",
+      "/partis/ecologistes",
+      "/partis/ps-place-publique",
+      "/partis/nouvelle-energie"
+    ],
+    "summary": "Deux classements affichés côte à côte pour chaque parti : celui du ministère de l'Intérieur (circulaire du 2 février 2026) et l'étiquette employée par la presse et les politistes, avec leurs sources et la position du parti."
+  },
+  {
+    "id": "2026-11-10-date-et-etat-de-publication-du-programme-2027-aj",
+    "date": "2026-11-10",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/partis/lr/programme-2027",
+      "/partis/renaissance/programme-2027",
+      "/partis/horizons/programme-2027",
+      "/partis/nouvelle-energie/programme-2027",
+      "/partis/lfi/programme-2027",
+      "/partis/ecologistes/programme-2027"
+    ],
+    "summary": "Date et état de publication du programme 2027 ajoutés, avec leurs sources."
+  },
+  {
+    "id": "2026-11-10-onze-mesures-retirees-car-elles-reposaient-sur-d",
+    "date": "2026-11-10",
+    "kind": "retrait",
+    "pages": ["/partis/nouvelle-energie/programme-2027"],
+    "summary": "Onze mesures retirées car elles reposaient sur des déclarations compilées par la foire aux questions du parti ou sur la presse, et non sur ses pages de programme."
+  },
+  {
+    "id": "2026-11-10-quatre-mesures-retirees-car-absentes-du-site-de",
+    "date": "2026-11-10",
+    "kind": "retrait",
+    "pages": ["/partis/horizons/programme-2027"],
+    "summary": "Quatre mesures retirées car absentes du site de campagne : aide à mourir, Ukraine, ordonnances de juillet 2027, scrutin majoritaire."
+  },
+  {
+    "id": "2026-11-10-la-mesure-sur-la-fonction-publique-indiquait-ne",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/horizons/programme-2027"],
+    "summary": "La mesure sur la fonction publique indiquait « ne remplacer qu'un fonctionnaire sur trois partant à la retraite » ; le site de campagne propose de « supprimer un tiers des fonctionnaires partant à la retraite »."
+  },
+  {
+    "id": "2026-11-10-retraites-la-mesure-evoquait-un-systeme-universe",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/renaissance/programme-2027"],
+    "summary": "Retraites : la mesure évoquait un système universel avec décote et surcote ; le site de campagne indique seulement que l'âge légal serait remplacé par la durée de cotisation."
+  },
+  {
+    "id": "2026-11-10-neuf-mesures-retirees-car-absentes-du-site-de-ca",
+    "date": "2026-11-10",
+    "kind": "retrait",
+    "pages": ["/partis/renaissance/programme-2027"],
+    "summary": "Neuf mesures retirées car absentes du site de campagne, dont le plan de 150 milliards d'économies et les classes de moins de 20 élèves ; trois mesures réalignées sur le texte du site."
+  },
+  {
+    "id": "2026-11-10-mesure-sur-les-retraites-reecrite-d-apres-le-sit",
+    "date": "2026-11-10",
+    "kind": "correction",
+    "pages": ["/partis/lr/programme-2027"],
+    "summary": "Mesure sur les retraites réécrite d'après le site de campagne. Elle mentionnait des exceptions pour les métiers pénibles, une part de capitalisation de 25 à 30 % et 40 milliards d'économies, absents du document."
+  },
+  {
+    "id": "2026-11-10-dix-mesures-ajoutees-d-apres-le-site-de-campagne",
+    "date": "2026-11-10",
+    "kind": "ajout",
+    "pages": ["/partis/lr/programme-2027"],
+    "summary": "Dix mesures ajoutées d'après le site de campagne de Bruno Retailleau : droit du sol, quotas migratoires, prestations sociales, expulsions, droit à la sécurité, droit européen, clause de sauvegarde, référendum, censure des lois, initiative partagée."
+  },
+  {
+    "id": "2026-11-10-dix-sept-mesures-retirees-car-elles-ne-figuraien",
+    "date": "2026-11-10",
+    "kind": "retrait",
+    "pages": ["/partis/lr/programme-2027"],
+    "summary": "Dix-sept mesures retirées car elles ne figuraient dans aucun document de campagne de 2027 (comptes rendus de presse, votes, proposition de loi de 2023, déclarations)."
+  },
+  {
+    "id": "2026-11-10-l-onglet-programme-ne-montre-plus-que-le-program",
+    "date": "2026-11-10",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/partis/rn/programme-2027",
+      "/partis/ps-place-publique/programme-2027",
+      "/partis/pcf/programme-2027",
+      "/partis/reconquete/programme-2027"
+    ],
+    "summary": "L'onglet Programme ne montre plus que le programme 2027 publié officiellement : programme pas encore publié pour ces quatre partis, date non annoncée au 10 novembre 2026. Mesures tirées d'anciens programmes, de déclarations ou de la presse retirées ; idées clés tirées de leurs positions."
+  },
+  {
     "id": "2026-11-09-statuts-de-candidature-formules-de-la-meme-facon",
     "date": "2026-11-09",
     "kind": "mise-a-jour",

@@ -44,16 +44,10 @@
   "history": {
     "founded": "2016 (lancée le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; association de financement créée en janvier 2017)",
     "origins": {
-      "text": "La France insoumise est lancée en février 2016 par Jean-Luc Mélenchon pour porter sa candidature à la présidentielle de 2017 « hors cadre de parti ». Elle prolonge l'expérience du Front de gauche (2009-2016), alliance entre le Parti de gauche et le Parti communiste. Le Parti de gauche en constitue la principale force organisée lors de la campagne de 2017, tandis que le PCF mène une campagne autonome. Le mouvement se présente comme un mouvement citoyen plutôt que comme un parti classique.",
+      "text": "La France insoumise est lancée en février 2016 par Jean-Luc Mélenchon pour porter sa candidature à la présidentielle de 2017 « hors cadre de parti ». Elle prolonge l'expérience du Front de gauche (2009-2016), alliance entre le Parti de gauche et le Parti communiste. Le Parti de gauche, fondé par Jean-Luc Mélenchon en 2008, en est la « matrice » selon Politis, et la plupart des cadres insoumis en sont issus ; en novembre 2016, les adhérents du PCF choisissent d'appeler à voter pour Jean-Luc Mélenchon tout en menant une « campagne communiste autonome ». La France insoumise se présente comme un mouvement plutôt que comme un parti classique.",
       "sources": [
         {
-          "title": "Wikipédia, « La France insoumise »",
-          "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-          "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
-          "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+          "title": "La France insoumise, programme des AMFiS d'été 2019 (Toulouse), avec un bilan des trois premières années du mouvement",
           "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
           "date": "2019-08",
           "kind": "programme"
@@ -62,7 +56,19 @@
           "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
           "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
+        },
+        {
+          "title": "Politis (Agathe Mercante), « Parti de gauche, es-tu là ? »",
+          "url": "https://www.politis.fr/articles/2019/01/parti-de-gauche-es-tu-la-39879/",
+          "date": "2019-01-23",
+          "kind": "presse"
+        },
+        {
+          "title": "Politis (Pauline Graulle), « Le PCF entre (enfin) en campagne »",
+          "url": "https://www.politis.fr/articles/2016/11/le-pcf-entre-enfin-en-campagne-35859/",
+          "date": "2016-11-30",
+          "kind": "presse"
         }
       ]
     },
@@ -72,16 +78,10 @@
         "text": "Le mouvement se présente comme lancé « hors cadre de parti » et appelle de ses vœux une « Révolution citoyenne », qui suppose une « réappropriation massive de la chose politique par le peuple » ; son programme « L'Avenir en commun » porte notamment une 6e République et la planification écologique.",
         "sources": [
           {
-            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "title": "La France insoumise, programme des AMFiS d'été 2019 (Toulouse), avec un bilan des trois premières années du mouvement",
             "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
             "date": "2019-08",
             "kind": "programme"
-          },
-          {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
           },
           {
             "title": "Europe 1, « Mélenchon annonce sa candidature à l'élection présidentielle de 2017 »",
@@ -94,6 +94,12 @@
             "url": "https://reporterre.net/Melenchon-et-La-France-insoumise-proclament-l-union-populaire-et-ecologique",
             "date": "2021-08-30",
             "kind": "presse"
+          },
+          {
+            "title": "LCP, « Présidentielle 2027 : ce qui change dans le nouveau programme de Jean-Luc Mélenchon »",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qui-change-dans-le-nouveau-programme-de-jean-luc-melenchon-444841",
+            "date": "2026-11-06",
+            "kind": "presse"
           }
         ]
       },
@@ -102,22 +108,16 @@
         "text": "Les politistes le classent à la gauche radicale, certains l'associant au « populisme de gauche ».",
         "sources": [
           {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
             "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
             "date": "2019-03-11",
-            "kind": "statistique"
+            "kind": "politiste"
           },
           {
             "title": "Chloé Alexandre, Antoine Bristielle, Laura Chazel, « From The Front de gauche to La France insoumise: Causes and Consequences of the Conversion of the French Radical Left to Populism », Partecipazione e Conflitto",
             "url": "https://doaj.org/article/2b3c85e549e3452dad9b11fe44335225",
             "date": "2021",
-            "kind": "statistique"
+            "kind": "politiste"
           },
           {
             "title": "Politis (Roni Gocer), entretien avec le politiste Manuel Cervera-Marzal, « Mélenchon est la dernière chance du populisme de gauche »",
@@ -158,13 +158,7 @@
         "event": "Lancement de La France insoumise pour soutenir la candidature de Jean-Luc Mélenchon à la présidentielle de 2017.",
         "sources": [
           {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "title": "La France insoumise, programme des AMFiS d'été 2019 (Toulouse), avec un bilan des trois premières années du mouvement",
             "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
             "date": "2019-08",
             "kind": "programme"
@@ -200,13 +194,7 @@
         "event": "Législatives : 17 députés insoumis élus, qui forment un groupe à l'Assemblée nationale.",
         "sources": [
           {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "title": "La France insoumise, programme des AMFiS d'été 2019 (Toulouse), avec un bilan des trois premières années du mouvement",
             "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
             "date": "2019-08",
             "kind": "programme"
@@ -248,12 +236,6 @@
         "event": "Accord de la Nouvelle Union populaire écologique et sociale (NUPES) avec EELV, le PCF et le PS ; aux législatives de juin, LFI devient la première force de gauche à l'Assemblée.",
         "sources": [
           {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "LCP, « La NUPES présente son programme pour les législatives »",
             "url": "https://lcp.fr/actualites/la-nupes-presente-son-programme-pour-les-legislatives-114431",
             "date": "2022-06",
@@ -263,7 +245,7 @@
             "title": "Encyclopædia Universalis, « 7-30 juin 2022 : élections législatives »",
             "url": "https://www.universalis.fr/evenement/7-30-juin-2022-elections-legislatives/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -302,28 +284,28 @@
             "kind": "statistique"
           },
           {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "LCP, « Assemblée nationale : récit d'une semaine de grandes manœuvres pour la constitution des groupes politiques »",
             "url": "https://lcp.fr/actualites/assemblee-nationale-recit-d-une-semaine-de-grandes-manoeuvres-pour-la-constitution-des",
             "date": "2024-07-12",
             "kind": "presse"
+          },
+          {
+            "title": "Encyclopædia Universalis, chronologie France 2024 (7 juillet : second tour des élections législatives)",
+            "url": "https://www.universalis.fr/chronologie/france/2024/5/",
+            "date": "2026-11",
+            "kind": "encyclopedie"
           }
         ]
       }
     ],
     "whyCreated": {
-      "text": "La France insoumise est l'aboutissement d'une lignée ouverte par Jean-Luc Mélenchon en novembre 2008 : après le congrès de Reims, il quitte le PS avec le député Marc Dolez et lance le Parti de gauche (PG), sur le modèle allemand de Die Linke d'Oskar Lafontaine, officiellement fondé début 2009. Le PG s'allie la même année au PCF dans le Front de gauche, dont Mélenchon est le candidat à la présidentielle de 2012 (11,10 % des suffrages exprimés). Après les européennes de 2014, il théorise dans L'Ère du peuple (2014) un appel au « peuple » plutôt qu'aux partis ; le 10 février 2016, sur TF1, il propose sa candidature à la présidentielle de 2017 « hors cadre de partis » et sans primaire, rompant avec la logique de cartel du Front de gauche, et lance à cette occasion le mouvement La France insoumise pour la porter.",
+      "text": "La France insoumise est l'aboutissement d'une lignée ouverte par Jean-Luc Mélenchon en novembre 2008 : à l'issue du vote des militants préparant le congrès de Reims, il quitte le PS avec le député Marc Dolez et lance le Parti de gauche (PG), sur le modèle allemand de Die Linke d'Oskar Lafontaine, officiellement fondé début 2009. Le PG s'allie la même année au PCF dans le Front de gauche, dont Mélenchon est le candidat à la présidentielle de 2012 (11,10 % des suffrages exprimés). En octobre 2014, il expose dans son essai L'Ère du peuple une stratégie qui fait du clivage entre « le peuple » et « l'oligarchie » l'opposition centrale ; le 10 février 2016, sur TF1, il propose sa candidature à la présidentielle de 2017 « hors cadre de partis » et sans primaire, rompant avec la logique de cartel du Front de gauche, et lance à cette occasion le mouvement La France insoumise pour la porter.",
       "sources": [
         {
           "title": "Encyclopédie Larousse, « Jean-Luc Mélenchon »",
           "url": "https://www.larousse.fr/encyclopedie/personnage/wd/185944",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
           "title": "Conseil constitutionnel, décision n° 2012-152 PDR du 25 avril 2012 (résultats du 1er tour)",
@@ -350,10 +332,16 @@
           "kind": "presse"
         },
         {
-          "title": "Wikipédia, « La France insoumise »",
-          "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-          "date": "2026-11",
-          "kind": "statistique"
+          "title": "Fondation Jean-Jaurès (Gilles Finchelstein), « La question Mélenchon »",
+          "url": "https://www.jean-jaures.org/publication/la-question-melenchon/",
+          "date": "2017-09-02",
+          "kind": "politiste"
+        },
+        {
+          "title": "La France insoumise, programme des AMFiS d'été 2019 (Toulouse), avec un bilan des trois premières années du mouvement",
+          "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
+          "date": "2019-08",
+          "kind": "programme"
         }
       ]
     },
@@ -367,13 +355,13 @@
             "title": "Encyclopédie Larousse, « Jean-Luc Mélenchon »",
             "url": "https://www.larousse.fr/encyclopedie/personnage/wd/185944",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « Mélenchon Jean-Luc (1951- ) »",
             "url": "https://www.universalis.fr/encyclopedie/jean-luc-melenchon/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Politis, « Mélenchon et Dolez ne jouent plus »",
@@ -398,19 +386,13 @@
       {
         "name": "Manuel Bompard",
         "role": "Coordinateur national (2017-2019, puis depuis décembre 2022) ; directeur des campagnes présidentielles de 2017 et 2022",
-        "background": "Ingénieur et docteur en mathématiques appliquées, il est membre fondateur du Parti de gauche en 2009 et secrétaire national à partir de 2010. Député européen (2019-2022) puis député des Bouches-du-Rhône depuis 2022, il prend la tête de la direction collégiale présentée le 10 décembre 2022, désignée sans vote des adhérents.",
+        "background": "Ingénieur et docteur en mathématiques appliquées, il adhère au Parti de gauche dès sa création en 2009 et en devient secrétaire national en 2010. Député européen (2019-2022) puis député des Bouches-du-Rhône depuis 2022, il prend la tête de la direction collégiale présentée le 10 décembre 2022, désignée sans vote des adhérents.",
         "sources": [
-          {
-            "title": "Wikipedia (en), « Manuel Bompard »",
-            "url": "https://en.wikipedia.org/wiki/Manuel_Bompard",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Encyclopædia Universalis, chronologie France 2022 (10 décembre : nouvelle direction de LFI)",
             "url": "https://www.universalis.fr/chronologie/france/2022/2/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Sud Radio, « La biographie et le CV de Manuel Bompard »",
@@ -423,14 +405,8 @@
       {
         "name": "Éric Coquerel",
         "role": "Député de Seine-Saint-Denis depuis 2017, président de la commission des finances de l'Assemblée depuis 2022",
-        "background": "Militant de la Ligue communiste révolutionnaire (trotskiste) jusqu'en 1998, il passe brièvement par le Mouvement républicain et citoyen de Jean-Pierre Chevènement puis fonde en 2003 le Mouvement pour une alternative républicaine et sociale (MARS). Cofondateur du Parti de gauche avec Jean-Luc Mélenchon en 2008, il en devient coordinateur et secrétaire national.",
+        "background": "Militant de la Ligue communiste révolutionnaire jusqu'en 1998, il rejoint ensuite le Mouvement républicain et citoyen de Jean-Pierre Chevènement puis fonde en 2003 le Mouvement pour une alternative républicaine et sociale (MARS). Cofondateur du Parti de gauche avec Jean-Luc Mélenchon en 2008, il en devient coordinateur et secrétaire national.",
         "sources": [
-          {
-            "title": "Wikipédia, « Éric Coquerel »",
-            "url": "https://fr.wikipedia.org/wiki/%C3%89ric_Coquerel",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "VL Média, « Qui est Éric Coquerel, le nouveau président de la commission des finances ? »",
             "url": "https://vl-media.fr/qui-est-eric-coquerel-le-nouveau-president-de-la-commission-des-finances/",
@@ -448,14 +424,8 @@
       {
         "name": "Adrien Quatennens",
         "role": "Coordinateur du mouvement (juin 2019 - septembre 2022), député du Nord (2017-2024)",
-        "background": "Engagé à 16 ans contre le contrat première embauche, il adhère au Parti de gauche en 2013. Il se retire de la coordination en septembre 2022, puis est suspendu quatre mois du groupe LFI. Investi par LFI en 2024 hors accord du Nouveau Front populaire, il retire sa candidature.",
+        "background": "Lycéen, il est marqué par les mobilisations contre la réforme Fillon (2005) et le contrat première embauche (2006) ; il adhère au Parti de gauche à Lille en 2013. Il se met en retrait de la coordination en septembre 2022, puis est suspendu quatre mois du groupe LFI. Candidat de LFI aux législatives de 2024, il retire sa candidature.",
         "sources": [
-          {
-            "title": "Wikipédia, « Adrien Quatennens »",
-            "url": "https://fr.wikipedia.org/wiki/Adrien_Quatennens",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Public Sénat, « La loi n'oblige pas Adrien Quatennens à démissionner, la morale devrait l'y pousser »",
             "url": "https://www.publicsenat.fr/actualites/politique/la-loi-n-oblige-pas-adrien-quatennens-a-demissionner-la-morale-devrait-l",
@@ -473,20 +443,32 @@
             "url": "https://www.24matins.fr/adrien-quatennens-lfi-retire-sa-candidature-pour-les-legislatives-1376284",
             "date": "2024-06-16",
             "kind": "presse"
+          },
+          {
+            "title": "Politis (Agathe Mercante), « Adrien Quatennens, le gardien du temple insoumis »",
+            "url": "https://www.politis.fr/articles/2019/07/adrien-quatennens-le-gardien-du-temple-insoumis-40641/",
+            "date": "2019-07-09",
+            "kind": "presse"
+          },
+          {
+            "title": "franceinfo, « Adrien Quatennens devient le nouveau \"coordinateur\" de La France insoumise »",
+            "url": "https://www.franceinfo.fr/politique/la-france-insoumise/adrien-quatennens-devient-le-nouveau-coordinateur-de-la-france-insoumise_3502457.html",
+            "date": "2019-06-22",
+            "kind": "presse"
+          },
+          {
+            "title": "Blick (dépêche), « Adrien Quatennens se met en retrait de La France insoumise »",
+            "url": "https://www.blick.ch/fr/news/il-reconna-t-des-violences-domestiques-adrien-quatennens-se-met-en-retrait-de-la-france-insoumise-id17889455.html",
+            "date": "2022-09-18",
+            "kind": "presse"
           }
         ]
       },
       {
         "name": "François Ruffin",
         "role": "Député de la Somme depuis 2017, membre du groupe LFI jusqu'en 2024",
-        "background": "Journaliste, fondateur du journal Fakir et réalisateur du documentaire « Merci patron ! » (2016), il est élu en 2017 sous l'étiquette Picardie debout et siège avec le groupe insoumis tout en marquant des désaccords. Il rompt avec LFI et Jean-Luc Mélenchon en 2024, quitte le groupe et rejoint le groupe écologiste ; son mouvement devient Debout ! en 2025.",
+        "background": "Journaliste, fondateur du journal Fakir et réalisateur du documentaire « Merci patron ! » (2016), il est élu en 2017 sous l'étiquette Picardie debout et siège avec le groupe insoumis jusqu'en 2024. Il rompt alors avec LFI et Jean-Luc Mélenchon, quitte le groupe et rejoint le groupe écologiste ; il dirige depuis juin 2025 le parti Debout !.",
         "sources": [
-          {
-            "title": "Wikipedia (en), « François Ruffin »",
-            "url": "https://en.wikipedia.org/wiki/Fran%C3%A7ois_Ruffin",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Reporterre, « François Ruffin rêve de bâtir une “maison commune” à la gauche »",
             "url": "https://reporterre.net/Francois-Ruffin-reve-de-batir-une-maison-commune-a-la-gauche",
@@ -517,7 +499,7 @@
     "thought": [
       {
         "title": "Le « populisme de gauche »",
-        "text": "Une partie des chercheurs et de la presse décrit LFI comme un « populisme de gauche » : Jean-Luc Mélenchon s'inspire explicitement de la théorie d'Ernesto Laclau et Chantal Mouffe et de l'exemple de Podemos, et retourne la connotation négative du mot « populisme ». D'autres chercheurs jugent cette notion peu éclairante.",
+        "text": "Une partie des chercheurs et de la presse décrit LFI comme un « populisme de gauche » : selon la Fondation Jean-Jaurès, Jean-Luc Mélenchon reprend ce concept de la philosophe Chantal Mouffe et en retourne la connotation négative pour en faire un signe d'appartenance au « peuple ». D'autres chercheurs jugent cette notion peu éclairante.",
         "sources": [
           {
             "title": "Slate, « Qui est Chantal Mouffe, la penseuse qui inspire Hamon et Mélenchon ? »",
@@ -529,13 +511,7 @@
             "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
             "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
             "date": "2019-03-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
@@ -544,7 +520,7 @@
         "text": "Le mouvement revendique une « révolution citoyenne » et une Assemblée constituante pour une 6e République ; dans L'Ère du peuple (Fayard, 2014), Mélenchon définit le « peuple » comme la « multitude urbaine » prenant conscience d'elle-même, plutôt que la seule classe ouvrière, un choix que des commentateurs jugent peu défini.",
         "sources": [
           {
-            "title": "La France insoumise, « Programme 2019 » (texte d'orientation du mouvement, 3 ans de la FI)",
+            "title": "La France insoumise, programme des AMFiS d'été 2019 (Toulouse), avec un bilan des trois premières années du mouvement",
             "url": "https://lafranceinsoumise.fr/wp-content/uploads/2019/08/1-PROGRAMME-2019-HD-internet-5.pdf",
             "date": "2019-08",
             "kind": "programme"
@@ -616,10 +592,16 @@
             "kind": "presse"
           },
           {
-            "title": "Wikipédia, « La France insoumise »",
-            "url": "https://fr.wikipedia.org/wiki/La_France_insoumise",
+            "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Public Sénat, « Les résultats du second tour des élections législatives 2024 : le Nouveau Front populaire en tête »",
+            "url": "https://www.publicsenat.fr/actualites/politique/resultat-des-legislatives-2024-le-nouveau-front-populaire-en-tete-suivi-par-le-camp-presidentiel-le-rn-trebuche",
+            "date": "2024-07-07",
+            "kind": "presse"
           }
         ]
       }
@@ -1389,6 +1371,24 @@
       ],
       "programmeStatus": "Programme présidentiel 2027 « L'Avenir en commun », sous-titré « le programme de la Nouvelle France », paru en librairie le 6 novembre 2026 (cinquième édition, 1 069 mesures dont 238 nouvelles selon le mouvement). Le texte intégral n'est pas publié en ligne : les mesures de cette édition sont citées d'après des comptes rendus de presse. La fiche s'appuie aussi sur les orientations budgétaires 2027 (octobre 2026), le contrat de législature du Nouveau Front populaire (2024), « L'Avenir en commun » édition 2022 et les votes du groupe LFI-NFP.",
       "programmeState": "publie",
+      "programmePublication": {
+        "text": "Publié le 6 novembre 2026 : « L'Avenir en commun », le programme de la Nouvelle France, paru en livre.",
+        "date": "2026-11-06",
+        "sources": [
+          {
+            "title": "Sortie de l'Avenir en commun, le programme de la Nouvelle France, ce vendredi 6 novembre (La France insoumise)",
+            "url": "https://lafranceinsoumise.fr/2026/11/02/avenir-en-commun-nouvelle-france/",
+            "date": "2026-11-02",
+            "kind": "programme"
+          },
+          {
+            "title": "La France insoumise présente un programme pour la présidentielle 2027 fidèle à sa volonté de rupture (France 24)",
+            "url": "https://www.france24.com/fr/france/20261106-france-insoumise-jean-luc-melenchon-presente-programme-presidentielle-2027-fidele-volonte-rupture-lfi",
+            "date": "2026-11-06",
+            "kind": "presse"
+          }
+        ]
+      },
       "themes": {
         "economie": {
           "summary": "LFI propose d'augmenter les recettes fiscales d'environ 106 Md€ en 2027 en ciblant les plus hauts patrimoines, les revenus du capital et les grandes entreprises, et de financer des investissements via un « pôle public bancaire ». Elle rejette la réduction des dépenses publiques comme moyen de réduire la dette.",

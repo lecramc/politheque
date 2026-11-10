@@ -22,5 +22,11 @@ export const emptyCatalog = (): Catalog => ({
   },
   candidates: { electionId: '', lastVerified: '', candidates: [], withdrawn: [] },
   corrections: [],
+  etiquettes: {
+    verifiedOn: '',
+    circular: { title: '', nor: '', date: '', url: '' },
+    parties: [],
+  },
+  otherParties: { electionId: '', lastVerified: '', parties: [] },
   legal: [],
 });

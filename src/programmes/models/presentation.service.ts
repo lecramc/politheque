@@ -81,6 +81,8 @@ export const SOURCE_KIND_LABEL: Record<SourceKind, string> = {
   presse: 'Presse',
   statistique: 'Source officielle',
   justice: 'Décision de justice',
+  politiste: 'Politiste ou analyste',
+  encyclopedie: 'Ouvrage de référence',
 };
 
 /** « Programme, mars 2022 » : ce que dit la source la plus forte d'une idée, avec sa date. */

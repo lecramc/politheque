@@ -115,22 +115,20 @@ function ThemeBlock({ block, names }: { block: CompareTheme; names: [string, str
         {block.programmes.map((programme, index) => (
           <Card key={names[index]} style={{ minWidth: 0 }}>
             <Text style={{ ...fonts.bold, fontSize: 16 }}>{names[index]}</Text>
-            {programme ? (
+            {programme.kind === 'mesures' ? (
               <>
                 <Text style={{ fontSize: 16, lineHeight: 24 }}>{programme.summary}</Text>
-                {programme.measures.length ? (
-                  <MoreText label="En savoir plus">
-                    {programme.measures.map((measure) => (
-                      <View key={measure.text} style={{ gap: 6 }}>
-                        <Text style={{ fontSize: 15, lineHeight: 23 }}>{measure.text}</Text>
-                        <SourceChip sources={measure.sources} subject={measure.text} />
-                      </View>
-                    ))}
-                  </MoreText>
-                ) : null}
+                <MoreText label="En savoir plus">
+                  {programme.measures.map((measure) => (
+                    <View key={measure.text} style={{ gap: 6 }}>
+                      <Text style={{ fontSize: 15, lineHeight: 23 }}>{measure.text}</Text>
+                      <SourceChip sources={measure.sources} subject={measure.text} />
+                    </View>
+                  ))}
+                </MoreText>
               </>
             ) : (
-              <Text style={{ color: colors.text.secondary }}>Pas de programme publié.</Text>
+              <Text style={{ color: colors.text.secondary }}>{programme.notice}</Text>
             )}
           </Card>
         ))}

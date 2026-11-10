@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
 export function PartyRow({
   party,
   subtitle,
+  detail,
   trailing,
   section,
   badge,
@@ -27,6 +28,8 @@ export function PartyRow({
 }: {
   party: Party;
   subtitle?: string;
+  /** Deuxième ligne de contexte (classements), même forme pour tous. */
+  detail?: string;
   trailing?: ReactNode;
   /** Section de la fiche à ouvrir (vraie route, indexable). */
   section?: PartySection;
@@ -58,6 +61,9 @@ export function PartyRow({
             <Text style={{ color: colors.text.secondary, fontSize: 14 }} numberOfLines={2}>
               {subtitle}
             </Text>
+          ) : null}
+          {detail ? (
+            <Text style={{ color: colors.text.secondary, fontSize: 14 }}>{detail}</Text>
           ) : null}
           {badge ? <View style={{ marginTop: effects.spacing.xxs }}>{badge}</View> : null}
         </View>

@@ -40,7 +40,7 @@ const party = partyFactory({
       statusLabel: '',
       candidate: '',
       programmeStatus: '',
-      programmeState: 'non-publie' as const,
+      programmeState: 'partiel' as const,
       themes: {
         economie: { summary: '', measures: [{ text: '', sources: [src('mesure')] }] },
       } as never,
@@ -62,6 +62,36 @@ describe("Feature: sources d'une section de fiche", () => {
   it('should list stance sources on the positions section', () => {
     expect(titles(partySectionSources(party, 'positions', 'presidentielle-2027'))).toEqual([
       'position',
+    ]);
+  });
+
+  it('should cite the publication sources, never the measures of a programme that is not published', () => {
+    const notPublished = partyFactory({
+      candidacies: {
+        'presidentielle-2027': {
+          ...party.candidacies['presidentielle-2027'],
+          programmeState: 'non-publie',
+          programmePublication: { text: 'Pas publié.', date: null, sources: [src('publication')] },
+        },
+      },
+    });
+    expect(titles(partySectionSources(notPublished, 'programme', 'presidentielle-2027'))).toEqual([
+      'publication',
+    ]);
+  });
+
+  it('should add the publication sources before the measure sources of a partial programme', () => {
+    const partial = partyFactory({
+      candidacies: {
+        'presidentielle-2027': {
+          ...party.candidacies['presidentielle-2027'],
+          programmePublication: { text: 'En partie.', date: null, sources: [src('publication')] },
+        },
+      },
+    });
+    expect(titles(partySectionSources(partial, 'programme', 'presidentielle-2027'))).toEqual([
+      'publication',
+      'mesure',
     ]);
   });
 

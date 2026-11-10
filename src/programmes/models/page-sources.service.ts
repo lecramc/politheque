@@ -8,6 +8,8 @@ const KIND_ORDER: SourceKind[] = [
   'programme',
   'declaration',
   'presse',
+  'politiste',
+  'encyclopedie',
 ];
 
 export const KIND_GROUP_LABEL: Record<SourceKind, string> = {
@@ -18,6 +20,8 @@ export const KIND_GROUP_LABEL: Record<SourceKind, string> = {
   programme: 'Programmes et textes des partis',
   declaration: 'Déclarations',
   presse: 'Presse',
+  politiste: 'Politistes et analystes',
+  encyclopedie: 'Ouvrages de référence',
 };
 
 /** Toutes les sources d'une page, sans doublon (même URL), groupées par nature puis par date. */

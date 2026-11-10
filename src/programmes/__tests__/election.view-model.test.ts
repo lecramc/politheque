@@ -36,4 +36,27 @@ describe('Feature: page de l’élection (dates, puis comment voter, puis candid
   it('should point to the full list of declared candidates from the candidacies section', () => {
     expect(vmOf().contentLinks?.candidates).toBe('/elections/presidentielle-2027/candidats');
   });
+
+  it('should lead the candidacies section to the full list first, with its count', () => {
+    const withCandidate = catalogFactory({ elections: [election] });
+    withCandidate.candidates.candidates.push({
+      id: 'jean',
+      name: 'Jean Dupont',
+      status: 'declare',
+      statusLabel: 'Candidature déclarée',
+      date: '2026-05-01',
+      affiliation: 'Sans étiquette',
+      role: '',
+      summary: '',
+      sources: [],
+    });
+    const vm = electionViewModel('presidentielle-2027')({ dispatch: vi.fn() })(
+      stateBuilder().withCatalog(withCandidate).build()
+    );
+    expect(vm.candidatesEntry).toEqual({
+      count: 1,
+      href: '/elections/presidentielle-2027/candidats',
+      label: 'Présidentielle 2027 : 1 candidature',
+    });
+  });
 });

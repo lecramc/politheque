@@ -1,0 +1,1321 @@
+{
+  "verifiedOn": "2026-11-10",
+  "circular": {
+    "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026",
+    "nor": "INTP2602966C",
+    "date": "2026-02-02",
+    "url": "https://www.legifrance.gouv.fr/circulaire/id/45645"
+  },
+  "parties": [
+    {
+      "id": "lfi",
+      "name": "La France insoumise",
+      "ministry": {
+        "bloc": "Extrême gauche",
+        "nuance": "FI — La France insoumise (candidats) ; LFI — La France insoumise (listes)",
+        "note": "Nuance propre, rattachée au bloc extrême gauche par l'annexe 3 de la circulaire (auparavant au bloc gauche). Le Conseil d'État a rejeté le recours de LFI le 27 février 2026 : il a jugé qu'il n'y avait pas d'erreur manifeste, sans qualifier politiquement le mouvement.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Conseil d'État, « Élections municipales 2026 : le Conseil d'État rejette les recours de LFI et de l'UDR contre la circulaire attribuant des nuances politiques pour la présentation des résultats »",
+            "url": "https://www.conseil-etat.fr/actualites/elections-municipales-2026-le-conseil-d-etat-rejette-les-recours-de-lfi-et-de-l-udr-contre-la-circulaire-attribuant-des-nuances-politiques-pour-l",
+            "date": "2026-02-27",
+            "kind": "justice"
+          },
+          {
+            "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires / Localtis)",
+            "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
+            "date": "2026-02-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Municipales : le Conseil d'État confirme le nuançage aux « extrêmes » de LFI et de l'UDR (Banque des Territoires)",
+            "url": "https://www.banquedesterritoires.fr/municipales-le-conseil-detat-confirme-le-nuancage-aux-extremes-de-lfi-et-de-ludr",
+            "date": "2026-03-02",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Gauche radicale",
+        "note": "Étiquette employée par Gilles Finchelstein (2026) et dans la littérature sur le « populisme de gauche » (Manuel Cervera-Marzal). Désaccord : franceinfo range Jean-Luc Mélenchon dans la famille « Extrême gauche » de son recensement des candidats à la présidentielle 2027 (9 novembre 2026), comme le nuancier du ministère.",
+        "scholars": ["Gilles Finchelstein", "Manuel Cervera-Marzal", "Chloé Morin"],
+        "sources": [
+          {
+            "title": "Gilles Finchelstein (Fondation Jean-Jaurès), « Les quatre radicalités » (données Enquête électorale française Ipsos / Cevipof / Le Monde / Fondation Jean-Jaurès)",
+            "url": "https://www.jean-jaures.org/publication/les-quatre-radicalites/",
+            "date": "2026-04-13",
+            "kind": "politiste"
+          },
+          {
+            "title": "Politis, entretien avec le politiste Manuel Cervera-Marzal, « Mélenchon est la dernière chance du populisme de gauche »",
+            "url": "https://www.politis.fr/articles/2021/10/melenchon-est-la-derniere-chance-du-populisme-de-gauche-43669/",
+            "date": "2021-10-13",
+            "kind": "politiste"
+          },
+          {
+            "title": "Fondation Jean-Jaurès (Chloé Morin), « Des réponses progressistes face au populisme en France »",
+            "url": "https://www.jean-jaures.org/publication/des-reponses-progressistes-face-au-populisme-en-france/",
+            "date": "2019-03-11",
+            "kind": "politiste"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "LFI récuse l'étiquette « extrême gauche » : pour Manuel Bompard, l'extrême gauche « considère les élections comme une tribune et non pas comme un moyen de conquête du pouvoir » ; Jean-Luc Mélenchon a dénoncé un changement d'« étiquettes sur les partis politiques ».",
+        "sources": [
+          {
+            "title": "Municipales 2026 : la décision du ministère de l'Intérieur de classer La France insoumise à l'extrême gauche peut-elle être fondée ? (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/municipales-2026-la-decision-du-ministere-de-linterieur-de-classer-la-france-insoumise-a-lextreme-gauche-peut-elle-etre-fondee",
+            "date": "2026-02-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Conseil d'État, « Élections municipales 2026 : le Conseil d'État rejette les recours de LFI et de l'UDR contre la circulaire attribuant des nuances politiques pour la présentation des résultats »",
+            "url": "https://www.conseil-etat.fr/actualites/elections-municipales-2026-le-conseil-d-etat-rejette-les-recours-de-lfi-et-de-l-udr-contre-la-circulaire-attribuant-des-nuances-politiques-pour-l",
+            "date": "2026-02-27",
+            "kind": "justice"
+          }
+        ]
+      }
+    },
+    {
+      "id": "pcf",
+      "name": "Parti communiste français",
+      "ministry": {
+        "bloc": "Gauche",
+        "nuance": "COM — Parti communiste français (candidats) ; LCOM (listes)",
+        "note": "Nuance propre, bloc gauche (annexe 3).",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires / Localtis)",
+            "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
+            "date": "2026-02-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Gauche",
+        "note": "Les ouvrages de référence le décrivent comme un parti communiste ; franceinfo range Fabien Roussel dans la famille « Gauche ».",
+        "scholars": ["Bernard Pudal"],
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, Bernard Pudal (politiste), « PCF (Parti communiste français), parti politique » (consulté)",
+            "url": "https://www.universalis.fr/encyclopedie/pcf-parti-communiste-francais-parti-politique/",
+            "date": "2026-11-03",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Parti communiste français (PCF) » (consulté)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
+            "date": "2026-11-03",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Le PCF se réclame du communisme ; ses statuts (39e congrès, 2023) évoquent un « projet révolutionnaire » visant le « dépassement » du capitalisme. Pas de contestation connue de l'étiquette « gauche ».",
+        "sources": [
+          {
+            "title": "Parti communiste français, statuts adoptés au 39e congrès (préambule)",
+            "url": "https://assets.nationbuilder.com/pcf/pages/15897/attachments/original/1684999315/document_-_Statuts_39e_Congr%C3%A8s.pdf?1684999315",
+            "date": "2023-04",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ps-place-publique",
+      "name": "Parti socialiste – Place publique",
+      "ministry": {
+        "bloc": "Gauche",
+        "nuance": "SOC — Parti socialiste (candidats) / LSOC (listes) ; PLP — Place publique (candidats ; ses listes relèvent de LDVG)",
+        "note": "Le PS et Place publique sont tous deux au bloc gauche. Place publique n'a pas de nuance de liste propre : la circulaire la cite parmi les formations dont les listes relèvent de LDVG (Divers gauche), elle aussi au bloc gauche.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires / Localtis)",
+            "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
+            "date": "2026-02-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Gauche",
+        "note": "Social-démocratie pour le PS et Place publique dans la presse et les encyclopédies ; franceinfo range Raphaël Glucksmann (Place publique) et Karim Bouamrane (PS) dans la famille « Gauche ». Aucun politiste récent consulté ne classe nommément Place publique.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Parti socialiste (PS) » (consulté)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/PS/144648",
+            "date": "2026-11-03",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "À deux ans de l'élection présidentielle, le social-démocrate Raphaël Glucksmann présente sa « vision pour la France » (franceinfo)",
+            "url": "https://www.franceinfo.fr/politique/a-deux-ans-de-l-election-presidentielle-le-social-democrate-raphael-glucksmann-presente-sa-vision-pour-la-france_7332909.html",
+            "date": "2025-06-23",
+            "kind": "presse"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Le PS se réclame du socialisme et d'un « avenir social, écologique & démocratique » ; il ne conteste pas l'étiquette « gauche ».",
+        "sources": [
+          {
+            "title": "Parti socialiste, « Nos valeurs » (consulté)",
+            "url": "https://parti-socialiste.fr/nos-valeurs/",
+            "date": "2026-11-09",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "ecologistes",
+      "name": "Les Écologistes",
+      "ministry": {
+        "bloc": "Gauche",
+        "nuance": "VEC — Les Écologistes (candidats) ; LVEC (listes)",
+        "note": "Nuance propre, bloc gauche. À ne pas confondre avec ECO et LECO (autres écologistes), classées au bloc divers.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, « Rappel nuances – Élections municipales 2026 » (codes et libellés des nuances de listes, consulté le 2026-11-10)",
+            "url": "https://www.resultats-elections.interieur.gouv.fr/municipales2026/referentiel.html",
+            "date": "2026-11-10",
+            "kind": "statistique"
+          },
+          {
+            "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires / Localtis)",
+            "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
+            "date": "2026-02-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Gauche",
+        "note": "Le politiste Simon Persico juge l'écologie politique « de plus en plus clairement ancrée à gauche » ; Larousse retrace l'abandon du « ni droite ni gauche » au milieu des années 1990 ; franceinfo range Marine Tondelier dans la famille « Gauche ».",
+        "scholars": ["Simon Persico", "Sébastien Repaire"],
+        "sources": [
+          {
+            "title": "Reporterre, entretien avec Simon Persico (Sciences Po Grenoble, Pacte), « Les marches climat ont placé l'écologie au sommet des agendas politiques en Europe de l'Ouest »",
+            "url": "https://reporterre.net/Les-marches-climat-ont-place-l-ecologie-au-sommet-des-agendas-politiques-en-Europe",
+            "date": "2019-05-27",
+            "kind": "politiste"
+          },
+          {
+            "title": "Encyclopédie Larousse, « les Verts » (consulté)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
+            "date": "2026-11-03",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Sébastien Repaire (historien), « Les Verts, la gauche et le Parti socialiste : entre convergences et malentendus » (Fondation Jean-Jaurès)",
+            "url": "https://jean-jaures.org/nos-productions/les-verts-la-gauche-et-le-parti-socialiste-entre-convergences-et-malentendus",
+            "date": "2020-02-24",
+            "kind": "politiste"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Le parti se réclame de « l'écologie politique » (statuts, art. 3) et ne conteste pas l'étiquette « gauche ».",
+        "sources": [
+          {
+            "title": "Les Écologistes, statuts nationaux (art. 3 « Valeurs »)",
+            "url": "https://lesecologistes.fr/document/2TLrNhG1CUsDXa42e7GfPw/statuts-les-ecologistes-1.pdf",
+            "date": "2024-03-18",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "renaissance",
+      "name": "Renaissance",
+      "ministry": {
+        "bloc": "Centre",
+        "nuance": "REN — Renaissance (candidats) ; LREN (listes)",
+        "note": "Nuance propre, bloc centre.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires / Localtis)",
+            "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
+            "date": "2026-02-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Centre",
+        "note": "Store norske leksikon le dit considéré comme centriste malgré une politique économique qui penche à droite ; franceinfo range Gabriel Attal dans la famille « Centre ». Désaccord : l'analyste Yoann Taïeb (La Grande Conversation, Terra Nova) refuse de le qualifier de centriste (« une écurie présidentielle […] sans corps de doctrine »). Aucun politiste universitaire trouvé.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "Store norske leksikon, Kjerstin Aukrust, « Renaissance » (dernière mise à jour)",
+            "url": "https://snl.no/Renaissance",
+            "date": "2024-12-20",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Yoann Taïeb, « Macronisme, centrisme et bloc central » (La Grande Conversation, Terra Nova)",
+            "url": "https://www.lagrandeconversation.com/politique/macronisme-centrisme-et-bloc-central/",
+            "date": "2024-10-23",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "À son lancement, Emmanuel Macron l'a présenté comme le parti « du dépassement et de l'unité ».",
+        "sources": [
+          {
+            "title": "Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+            "date": "2022-09-17",
+            "kind": "presse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "horizons",
+      "name": "Horizons",
+      "ministry": {
+        "bloc": "Centre",
+        "nuance": "HOR — Horizons (candidats) ; LHOR (listes)",
+        "note": "Nuance propre, bloc centre.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Municipales : les nuances politiques attribuées aux candidats dans les communes de 3 500 habitants et plus (Banque des Territoires / Localtis)",
+            "url": "https://www.banquedesterritoires.fr/municipales-les-nuances-politiques-attribuees-aux-candidats-dans-les-communes-de-3500-habitants-et",
+            "date": "2026-02-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Centre droit",
+        "note": "« Parti de centre-droit » (La Libre) ; « Horizons occupera le centre-droit » (Yoann Taïeb, 2024). franceinfo range Édouard Philippe dans la famille « Centre » (pas de catégorie « centre droit » dans ce recensement). Aucun politiste universitaire trouvé.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "Hubert Leclercq, « Horizons rêve à court terme » (La Libre Belgique)",
+            "url": "https://www.lalibre.be/international/europe/elections-france/2026/03/12/horizons-reve-a-court-terme-MVIBRUNGGJDHDITRJ4ONC34LPU",
+            "date": "2026-03-12",
+            "kind": "presse"
+          },
+          {
+            "title": "Yoann Taïeb, « Macronisme, centrisme et bloc central » (La Grande Conversation, Terra Nova)",
+            "url": "https://www.lagrandeconversation.com/politique/macronisme-centrisme-et-bloc-central/",
+            "date": "2024-10-23",
+            "kind": "presse"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Le manifeste dit vouloir dépasser les « clivages artificiels » ; aucune prise de position du parti sur l'étiquette « centre droit » n'est connue.",
+        "sources": [
+          {
+            "title": "Horizons, « Le manifeste »",
+            "url": "https://horizonsleparti.fr/le-manifeste/",
+            "date": "2021-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lr",
+      "name": "Les Républicains",
+      "ministry": {
+        "bloc": "Droite",
+        "nuance": "LR — Les Républicains (candidats) ; LLR (listes)",
+        "note": "Nuance propre, bloc droite.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, « Rappel nuances – Élections municipales 2026 » (codes et libellés des nuances de listes, consulté le 2026-11-10)",
+            "url": "https://www.resultats-elections.interieur.gouv.fr/municipales2026/referentiel.html",
+            "date": "2026-11-10",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Droite",
+        "note": "Universalis décrit des sensibilités « de la droite libérale au centre droit » et des héritiers du gaullisme ; franceinfo range Bruno Retailleau dans la famille « Droite ». Aucun politiste récent consulté ne le classe nommément.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "Encyclopædia Universalis, « Les Républicains, parti politique » (consulté)",
+            "url": "https://www.universalis.fr/encyclopedie/les-republicains-parti-politique/",
+            "date": "2026-11-03",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Les Républicains, jusqu'en mai 2015 Union pour un mouvement populaire (UMP) » (consulté)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/UMP/147871",
+            "date": "2026-11-03",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Le parti revendique lui-même l'étiquette de « droite ».",
+        "sources": [
+          {
+            "title": "Les Républicains, « Qui sommes-nous ? » (consulté)",
+            "url": "https://republicains.fr/qui-sommes-nous/",
+            "date": "2026-11-03",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "nouvelle-energie",
+      "name": "Nouvelle Énergie",
+      "ministry": null,
+      "ministryNullReason": "Nouvelle Énergie n'a pas de nuance propre et n'est nommé dans aucune grille de la circulaire du 2 février 2026. Aucune source ne dit dans quelle nuance il tombe. Fait connexe, qui ne vaut pas classement du parti : la liste de David Lisnard à Cannes (« Cannes gagne avec David Lisnard ») a reçu la nuance LDVD (Divers droite, bloc droite) au premier tour des municipales de 2026.",
+      "press": {
+        "label": "Droite",
+        "note": "Presse : droite libérale (LCP, Il Foglio) ; franceinfo range David Lisnard dans la famille « Droite ». Le politologue Raphaël Morisset, dans LCP, juge « libéral » discutable (libéralisme « très illibéral sur le plan politique et sociétal »). Pas de classement académique dédié.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "LCP, « Présidentielle 2027 : derrière le phénomène des réseaux sociaux, qui est David Lisnard ? »",
+            "url": "https://lcp.fr/actualites/presidentielle-2027-derriere-le-phenomene-des-reseaux-sociaux-qui-est-david-lisnard",
+            "date": "2026-10-13",
+            "kind": "presse"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Il Foglio, « Everyone is talking about David Lisnard, the “French Milei” and mayor of Cannes… »",
+            "url": "https://www.ilfoglio.it/en/world/2026/10/17/news/everyone-is-talking-about-david-lisnard-the-french-milei-and-mayor-of-cannes-who-has-his-sights-set-on-the-elysee-palace--410836",
+            "date": "2026-10-17",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Le mouvement se définit comme « une droite libre, indépendante et fière d'assumer une vision libérale ».",
+        "sources": [
+          {
+            "title": "Nouvelle Énergie, « Quel est le parti de David Lisnard ? » (consulté)",
+            "url": "https://www.unenouvelleenergie.fr/questions/quel-est-le-parti-de-david-lisnard/",
+            "date": "2026-11-09",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rn",
+      "name": "Rassemblement national",
+      "ministry": {
+        "bloc": "Extrême droite",
+        "nuance": "RN — Rassemblement national (candidats) ; LRN (listes)",
+        "note": "Nuance propre, bloc extrême droite (annexe 3). Pour les sénatoriales de 2023, le Conseil d'État a jugé ce rattachement sans erreur manifeste d'appréciation le 11 mars 2024, sans qualifier politiquement le parti.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Conseil d'État, décision n° 488378 du 11 mars 2024 (nuances politiques, Rassemblement national)",
+            "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-03-11/488378",
+            "date": "2024-03-11",
+            "kind": "justice"
+          },
+          {
+            "title": "Le Conseil d'État a-t-il qualifié le RN « d'extrême droite » ? (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/justice/le-conseil-detat-a-t-il-qualifie-le-rn-dextreme-droite-6426/",
+            "date": "2024-06-28",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Extrême droite",
+        "note": "Encyclopédies, presse de référence et Gilles Finchelstein (2026) : « extrême droite ». Désaccord terminologique : Gilles Ivaldi emploie « droite radicale ». franceinfo range Marine Le Pen dans la famille « Extrême droite ».",
+        "scholars": ["Gilles Finchelstein", "Gilles Ivaldi"],
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « Front national (FN) » (consulté)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/Front_national/120460",
+            "date": "2026-11-03",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Gilles Finchelstein (Fondation Jean-Jaurès), « Les quatre radicalités » (données Enquête électorale française Ipsos / Cevipof / Le Monde / Fondation Jean-Jaurès)",
+            "url": "https://www.jean-jaures.org/publication/les-quatre-radicalites/",
+            "date": "2026-04-13",
+            "kind": "politiste"
+          },
+          {
+            "title": "Gilles Ivaldi (CNRS, CEVIPOF), « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique",
+            "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
+            "date": "2022-03",
+            "kind": "politiste"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Le RN récuse le terme « extrême droite » et se présente comme « national » et « patriote » ; il a contesté son rattachement au bloc extrême droite devant le Conseil d'État (rejeté le 11 mars 2024).",
+        "sources": [
+          {
+            "title": "Conseil d'État, décision n° 488378 du 11 mars 2024 (nuances politiques, Rassemblement national)",
+            "url": "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-03-11/488378",
+            "date": "2024-03-11",
+            "kind": "justice"
+          },
+          {
+            "title": "Le Conseil d'État a-t-il qualifié le RN « d'extrême droite » ? (Le Club des juristes)",
+            "url": "https://www.leclubdesjuristes.com/justice/le-conseil-detat-a-t-il-qualifie-le-rn-dextreme-droite-6426/",
+            "date": "2024-06-28",
+            "kind": "presse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "reconquete",
+      "name": "Reconquête",
+      "ministry": {
+        "bloc": "Extrême droite",
+        "nuance": "REC — Reconquête (candidats) ; LREC (listes)",
+        "note": "Nuance propre, bloc extrême droite (annexe 3). Aucun recours de Reconquête contre ce rattachement n'a été trouvé.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, « Rappel nuances – Élections municipales 2026 » (codes et libellés des nuances de listes, consulté le 2026-11-10)",
+            "url": "https://www.resultats-elections.interieur.gouv.fr/municipales2026/referentiel.html",
+            "date": "2026-11-10",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Extrême droite",
+        "note": "Gilles Finchelstein (2026) : « l'extrême droite (RN et Reconquête) » ; la Fondation Jean-Jaurès (2022) range l'électorat d'Éric Zemmour dans le bloc d'extrême droite. Désaccord terminologique : Gilles Ivaldi emploie « droite radicale ». Reconquête n'a pas de candidat dans le recensement de franceinfo du 9 novembre 2026.",
+        "scholars": ["Gilles Finchelstein", "Gilles Ivaldi"],
+        "sources": [
+          {
+            "title": "Gilles Finchelstein (Fondation Jean-Jaurès), « Les quatre radicalités » (données Enquête électorale française Ipsos / Cevipof / Le Monde / Fondation Jean-Jaurès)",
+            "url": "https://www.jean-jaures.org/publication/les-quatre-radicalites/",
+            "date": "2026-04-13",
+            "kind": "politiste"
+          },
+          {
+            "title": "Fondation Jean-Jaurès, « Radioscopie du zemmourisme » (P. Cébille, J. Fourquet, L. Jussian)",
+            "url": "https://www.jean-jaures.org/publication/radioscopie-du-zemmourisme/",
+            "date": "2022-03-26",
+            "kind": "politiste"
+          },
+          {
+            "title": "Gilles Ivaldi (CNRS, CEVIPOF), « Marine Le Pen, Éric Zemmour : social-populisme contre capitalisme populaire », note du Baromètre de la confiance politique",
+            "url": "https://www.sciencespo.fr/cevipof/sites/sciencespo.fr.cevipof/files/NoteBaroV13_GI_socialpopulisme_mars2022_V4.pdf",
+            "date": "2022-03",
+            "kind": "politiste"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Éric Zemmour conteste être classé à l'extrême droite.",
+        "sources": [
+          {
+            "title": "Europe 1, dossier « Éric Zemmour » (consulté)",
+            "url": "https://www.europe1.fr/dossiers/eric-zemmour",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "lutte-ouvriere",
+      "name": "Lutte ouvrière",
+      "ministry": {
+        "bloc": "Extrême gauche",
+        "nuance": "EXG — Extrême gauche (candidats) ; LEXG — Extrême gauche (listes)",
+        "note": "Pas de nuance propre : nommée dans les commentaires des nuances EXG et LEXG (« notamment Lutte ouvrière »), c'est-à-dire dans une nuance générique. Aux municipales de 2026, 240 listes intitulées « Lutte ouvrière » (et 23 en arrondissements de Paris, Lyon et Marseille) ont reçu LEXG ; Nathalie Arthaud avait la nuance EXG aux législatives de 2024.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – listes candidates au premier tour (fichier France entière, colonne « Code nuance de liste », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-152615/municipales-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – conseils d'arrondissement Paris, Lyon, Marseille, candidatures au premier tour (data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-151835/conseils-darrondissement-paris-lyon-marseille-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections législatives 2024 – liste des candidats du 1er tour (colonne « Code nuance », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-legislatives-des-30-juin-et-7-juillet-2024-liste-des-candidats-du-1er-tour/20240628-172440/legislatives-2024-candidatures-france-entiere-tour-1-2024-06-28.csv",
+            "date": "2024-06-28",
+            "kind": "statistique"
+          },
+          {
+            "title": "Municipales 2026 : la décision du ministère de l'Intérieur de classer La France insoumise à l'extrême gauche peut-elle être fondée ? (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/municipales-2026-la-decision-du-ministere-de-linterieur-de-classer-la-france-insoumise-a-lextreme-gauche-peut-elle-etre-fondee",
+            "date": "2026-02-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Extrême gauche",
+        "note": "Larousse : « parti politique français, d'extrême gauche » ; Aurélien Dubuisson et Paolo Stuppia (The Conversation) rangent LO parmi les organisations d'extrême gauche ; franceinfo : famille « Extrême gauche ». Gilles Finchelstein (2026) regroupe toutefois les sympathisants de LO dans la « gauche radicale » dans son analyse d'opinion.",
+        "scholars": ["Aurélien Dubuisson", "Paolo Stuppia"],
+        "sources": [
+          {
+            "title": "Encyclopédie Larousse, « LO, sigle de Lutte ouvrière » (consulté)",
+            "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+            "date": "2026-11-10",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Aurélien Dubuisson (CHSP, Sciences Po) et Paolo Stuppia (CESSP, Paris 1), « Pourquoi le Nouveau Front populaire et son programme commun ne sont pas d'« extrême gauche » » (The Conversation)",
+            "url": "https://theconversation.com/pourquoi-le-nouveau-front-populaire-et-son-programme-commun-ne-sont-pas-d-extreme-gauche-233845",
+            "date": "2024-07-04",
+            "kind": "politiste"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "« Lutte Ouvrière est une organisation communiste » qui se réclame du trotskisme et défend « l'idée d'un renversement révolutionnaire de la société capitaliste par le prolétariat ».",
+        "sources": [
+          {
+            "title": "Lutte ouvrière, « Qui sommes-nous ? » (consulté)",
+            "url": "https://www.lutte-ouvriere.org/portail/qui-sommes-nous/index.html",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "generation-ecologie",
+      "name": "Génération écologie",
+      "ministry": null,
+      "ministryNullReason": "Génération écologie n'est nommée dans aucune grille de la circulaire du 2 février 2026 et aucune source ne dit dans quelle nuance elle tombe. Aucune liste municipale de 2026 à son nom dans le fichier officiel. Fait connexe, qui ne vaut pas classement du parti : Delphine Batho avait la nuance individuelle ECO (Écologiste) aux législatives de 2024.",
+      "press": {
+        "label": "Gauche",
+        "note": "Source unique de presse de référence (franceinfo, famille « Gauche »). Universalis la présente seulement comme une formation écologiste fondée par Brice Lalonde. Aucun politiste récent trouvé.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Encyclopædia Universalis, « Les Verts (France) » (consulté)",
+            "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
+            "date": "2026-11-10",
+            "kind": "encyclopedie"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Se présente comme « le mouvement de l'écologie de gouvernement » et « le parti qui veut gouverner pour vivre autrement ».",
+        "sources": [
+          {
+            "title": "Génération écologie, « Qui sommes-nous ? » (consulté)",
+            "url": "https://www.generationecologie.fr/a-propos/generation-ecologie/qui-sommes-nous/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "debout-la-france",
+      "name": "Debout la France",
+      "ministry": {
+        "bloc": "Droite",
+        "nuance": "DSV — Droite souverainiste (candidats) ; LDSV (listes)",
+        "note": "Nommé dans les nuances DSV et LDSV (Droite souverainiste), rattachées au bloc droite : une nuance générique. Précédent : la circulaire de 2020 le plaçait au bloc extrême droite ; le juge des référés du Conseil d'État l'a suspendue sur ce point le 31 janvier 2020 et Debout la France a été replacé au bloc droite.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Conseil d'État, « Le juge des référés du Conseil d'État suspend en partie la circulaire relative à l'attribution des nuances politiques aux candidats aux élections municipales »",
+            "url": "https://conseil-etat.fr/site/actualites/le-juge-des-referes-du-conseil-d-etat-suspend-en-partie-la-circulaire-relative-a-l-attribution-des-nuances-politiques-aux-candidats-aux-elections-m",
+            "date": "2020-01-31",
+            "kind": "justice"
+          },
+          {
+            "title": "Attribution des nuances aux municipales : le gouvernement rétablit le seuil de 3 500 habitants (AMF / Maire-Info)",
+            "url": "https://www.amf.asso.fr/documents-attribution-nuances-aux-municipales-gouvernement-retablit-seuil-3-500-habitants/39871",
+            "date": "2020-02-05",
+            "kind": "presse"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Droite souverainiste",
+        "note": "Désaccord : « parti souverainiste » (Public Sénat), famille « Droite » et « gaullisme et souverainisme » (franceinfo) ; Jean-Yves Camus range la liste Debout la France de 2019 parmi les « sept familles » de la droite nationale et de l'extrême droite ; Gilles Finchelstein (2026) regroupe ses sympathisants avec ceux du RN et de Reconquête dans une « droite radicale » d'opinion. Aucun politiste ne le qualifie nommément d'« extrême droite ».",
+        "scholars": ["Jean-Yves Camus", "Gilles Finchelstein"],
+        "sources": [
+          {
+            "title": "Nicolas Dupont-Aignan réélu à la tête de Debout la France (Public Sénat)",
+            "url": "https://www.publicsenat.fr/actualites/politique/nicolas-dupont-aignan-reelu-a-la-tete-de-debout-la-france-146978",
+            "date": "2019-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Jean-Yves Camus (Fondation Jean-Jaurès), « L'extrême droite aux élections européennes : le jeu des sept familles »",
+            "url": "https://www.jean-jaures.org/publication/lextreme-droite-aux-elections-europeennes-le-jeu-des-sept-familles/",
+            "date": "2019-05-06",
+            "kind": "politiste"
+          },
+          {
+            "title": "Gilles Finchelstein (Fondation Jean-Jaurès), « Les quatre radicalités » (données Enquête électorale française Ipsos / Cevipof / Le Monde / Fondation Jean-Jaurès)",
+            "url": "https://www.jean-jaures.org/publication/les-quatre-radicalites/",
+            "date": "2026-04-13",
+            "kind": "politiste"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Statuts : DLF « promeut une « certaine idée de la France », indépendante, républicaine et sociale » ; il se réclame du gaullisme.",
+        "sources": [
+          {
+            "title": "Debout la France, « Statuts » (consulté)",
+            "url": "https://www.debout-la-france.fr/statuts-debout-la-france/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "solution-democratique",
+      "name": "Solution démocratique",
+      "ministry": null,
+      "ministryNullReason": "Solution démocratique n'est nommée dans aucune grille de la circulaire du 2 février 2026 et aucune source ne dit dans quelle nuance elle tombe.",
+      "press": null,
+      "pressNullReason": "Pas de classement établi par les politistes ou la presse de référence. franceinfo range Clara Egger dans la catégorie « Divers ».",
+      "party": {
+        "text": "« Solution Démocratique n'est ni de droite ni de gauche » ; elle veut « instaurer en France la démocratie directe et la décentralisation par le bas ».",
+        "sources": [
+          {
+            "title": "Solution démocratique, « Qui a fondé le parti Solution Démocratique et pourquoi ? » (consulté)",
+            "url": "https://solutiondemocratique.fr/qui-sommes-nous/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          },
+          {
+            "title": "Solution démocratique, communiqué de presse de lancement (journée internationale de la démocratie)",
+            "url": "https://solutiondemocratique.fr/communique-de-presse-lancement-a-loccasion-de-la-journee-internationale-de-la-democratie/",
+            "date": "2024-09-11",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "revolution-permanente",
+      "name": "Révolution permanente",
+      "ministry": {
+        "bloc": "Extrême gauche",
+        "nuance": "LEXG — Extrême gauche (nuance attribuée à ses listes ; parti non nommé par la circulaire)",
+        "note": "Nuance attribuée à ses listes de 2026 ; parti non nommé dans la circulaire. Ses listes municipales de 2026 (Montpellier, Rennes, Le Mans, Saint-Denis, Paris 13e) ont reçu LEXG, et Anasse Kazib avait la nuance EXG aux législatives de 2024. C'est une attribution constatée liste par liste, pas un classement nominatif du parti.",
+        "sources": [
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – listes candidates au premier tour (fichier France entière, colonne « Code nuance de liste », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-152615/municipales-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – conseils d'arrondissement Paris, Lyon, Marseille, candidatures au premier tour (data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-151835/conseils-darrondissement-paris-lyon-marseille-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections législatives 2024 – liste des candidats du 1er tour (colonne « Code nuance », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-legislatives-des-30-juin-et-7-juillet-2024-liste-des-candidats-du-1er-tour/20240628-172440/legislatives-2024-candidatures-france-entiere-tour-1-2024-06-28.csv",
+            "date": "2024-06-28",
+            "kind": "statistique"
+          },
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Extrême gauche",
+        "note": "AFP : « nouvelle organisation politique d'extrême gauche » ; The Conversation : « l'organisation trotskiste Révolution permanente » ; franceinfo : famille « Extrême gauche ».",
+        "scholars": ["Aurélien Dubuisson", "Paolo Stuppia"],
+        "sources": [
+          {
+            "title": "Congrès fondateur pour « Révolution permanente », soutenu par Rouillan et Assa Traoré (AFP, France 24)",
+            "url": "https://www.france24.com/fr/info-en-continu/20221217-congr%C3%A8s-fondateur-pour-r%C3%A9volution-permanente-soutenu-par-rouillan-et-assa-traor%C3%A9",
+            "date": "2022-12-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Aurélien Dubuisson (CHSP, Sciences Po) et Paolo Stuppia (CESSP, Paris 1), « Pourquoi le Nouveau Front populaire et son programme commun ne sont pas d'« extrême gauche » » (The Conversation)",
+            "url": "https://theconversation.com/pourquoi-le-nouveau-front-populaire-et-son-programme-commun-ne-sont-pas-d-extreme-gauche-233845",
+            "date": "2024-07-04",
+            "kind": "politiste"
+          },
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Se décrit comme « une organisation partisane militante et de combat » inscrite dans « la tradition marxiste révolutionnaire et trotskyste ».",
+        "sources": [
+          {
+            "title": "Révolution permanente, « Bases politiques d'une nouvelle organisation révolutionnaire » (texte du congrès de fondation)",
+            "url": "https://www.revolutionpermanente.fr/Bases-politiques-d-une-nouvelle-organisation-revolutionnaire",
+            "date": "2023-01-02",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "npa-revolutionnaires",
+      "name": "NPA-Révolutionnaires",
+      "ministry": {
+        "bloc": "Extrême gauche",
+        "nuance": "EXG / LEXG — Extrême gauche",
+        "note": "Nuance attribuée à ses listes de 2026 ; parti non nommé dans la circulaire, qui cite « le nouveau Parti Anticapitaliste » sans distinguer ses deux branches issues de la scission de décembre 2022. Les listes municipales de 2026 intitulées « NPA-Révolutionnaires » (Ivry-sur-Seine, Caen, Toulouse, Lyon, Paris…) ont reçu LEXG, et Selma Labib avait la nuance EXG aux législatives de 2024.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – listes candidates au premier tour (fichier France entière, colonne « Code nuance de liste », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-152615/municipales-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – conseils d'arrondissement Paris, Lyon, Marseille, candidatures au premier tour (data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-151835/conseils-darrondissement-paris-lyon-marseille-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections législatives 2024 – liste des candidats du 1er tour (colonne « Code nuance », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-legislatives-des-30-juin-et-7-juillet-2024-liste-des-candidats-du-1er-tour/20240628-172440/legislatives-2024-candidatures-france-entiere-tour-1-2024-06-28.csv",
+            "date": "2024-06-28",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Extrême gauche",
+        "note": "Presse seulement (franceinfo, Politis) ; aucun politiste trouvé qui nomme le NPA-R.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Selma Labib et le NPA-Révolutionnaires veulent « être les punaises de lit du système » (Politis)",
+            "url": "https://www.politis.fr/articles/2024/06/elections-europeennes-selma-labib-et-le-npa-revolutionnaires-veulent-etre-les-punaises-de-lit-du-systeme/",
+            "date": "2024-06",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Se présente comme le « Nouveau parti anticapitaliste – Révolutionnaires », qui « lutte pour une société débarrassée de l'exploitation et des oppressions ».",
+        "sources": [
+          {
+            "title": "NPA-Révolutionnaires, « À propos » (consulté)",
+            "url": "https://npa-revolutionnaires.org/a-propos",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "parti-animaliste",
+      "name": "Parti animaliste",
+      "ministry": {
+        "bloc": "Divers",
+        "nuance": "ANM — Animaliste (candidats) ; LDIV — Divers (listes)",
+        "note": "Nuance individuelle propre ANM (« candidats investis par le Parti animaliste »), rattachée au bloc divers ; ses listes relèvent de LDIV, qui le nomme. La liste « Parti animaliste » de Sète a reçu LDIV au premier tour des municipales de 2026. Ce bloc ne dit rien de la position gauche-droite du parti.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – listes candidates au premier tour (fichier France entière, colonne « Code nuance de liste », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-152615/municipales-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": null,
+      "pressNullReason": "Pas de classement établi par les politistes ou la presse de référence. franceinfo le range dans la catégorie « Divers » (non idéologique) et le dit « transpartisan » ; une étude de la Fondation Jean-Jaurès (2019) décrit son électorat sans le placer sur l'axe gauche-droite.",
+      "party": {
+        "text": "Se dit « centré sur la question animale, et transpartisan » ; pour Mira Markovic, le mouvement est « transpartisan, mais […] aussi humaniste, démocrate et républicain ».",
+        "sources": [
+          {
+            "title": "Parti animaliste, FAQ (consulté)",
+            "url": "https://parti-animaliste.fr/faq",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          },
+          {
+            "title": "Pourquoi le Parti animaliste a-t-il accepté d'intégrer des listes de droite ? (Reporterre)",
+            "url": "https://reporterre.net/Des-sujets-ni-de-droite-ni-de-gauche-le-Parti-animaliste-fait-une-percee-aux-municipales",
+            "date": "2026-03-26",
+            "kind": "presse"
+          }
+        ]
+      }
+    },
+    {
+      "id": "equinoxe",
+      "name": "Équinoxe",
+      "ministry": {
+        "bloc": "Gauche",
+        "nuance": "LDVG — Divers gauche (listes)",
+        "note": "Pas de nuance propre : nommé dans le commentaire de la nuance de listes LDVG (Divers gauche), c'est-à-dire dans une nuance générique du bloc gauche. La circulaire est appliquée de façon contradictoire : les listes « Équinoxe – Le Paris de la démocratie » (secteurs 5 et 11) ont reçu LDVG, mais la liste « Équinoxe Rennes » a reçu LECO (Écologiste, bloc divers).",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – conseils d'arrondissement Paris, Lyon, Marseille, candidatures au premier tour (data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-151835/conseils-darrondissement-paris-lyon-marseille-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          },
+          {
+            "title": "Ministère de l'Intérieur, Élections municipales 2026 – listes candidates au premier tour (fichier France entière, colonne « Code nuance de liste », data.gouv.fr)",
+            "url": "https://static.data.gouv.fr/resources/elections-municipales-2026-listes-candidates-au-premier-tour/20260313-152615/municipales-2026-candidatures-france-entiere-tour-1-2026-03-13.csv",
+            "date": "2026-03-13",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Gauche",
+        "note": "Presse seulement : franceinfo (famille « Gauche », « écologie pragmatique ») ; Reporterre (pronucléaire, « écologie de décroissance, à fibre sociale-démocrate »). Aucun politiste trouvé.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Équinoxe, quand des ingénieurs pronucléaires se lancent en politique (Reporterre)",
+            "url": "https://reporterre.net/Equinoxe-quand-des-ingenieurs-pronucleaires-se-lancent-en-politique",
+            "date": "2024-05-31",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Se présente comme « un parti pour le monde qui vient ».",
+        "sources": [
+          {
+            "title": "Équinoxe, page d'accueil (consulté)",
+            "url": "https://parti-equinoxe.fr/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "les-patriotes",
+      "name": "Les Patriotes",
+      "ministry": {
+        "bloc": "Extrême droite",
+        "nuance": "EXD — Extrême droite (candidats) ; LEXD (listes)",
+        "note": "Pas de nuance propre : nommé (« notamment Les Patriotes ») dans les nuances EXD et LEXD, c'est-à-dire dans une nuance générique du bloc extrême droite. Aucune contestation formelle du parti n'a été trouvée.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Extrême droite",
+        "note": "franceinfo : famille « Extrême droite » ; The Local (2018, avec le politiste Sylvain Crépon) : « far-right party ». Désaccord : Jean-Yves Camus parle en 2019 d'une liste d'orientation « résolument souverainiste » (parmi les « sept familles ») et Sud Radio de « mouvance souverainiste ».",
+        "scholars": ["Jean-Yves Camus"],
+        "sources": [
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "Les Patriotes: What you need to know about France's newest far-right party (The Local, citant le politiste Sylvain Crépon)",
+            "url": "https://www.thelocal.fr/20180219/les-patriotes-florian-philippot-what-you-need-to-know-france-newest-far-right-party",
+            "date": "2018-02-19",
+            "kind": "presse"
+          },
+          {
+            "title": "Jean-Yves Camus (Fondation Jean-Jaurès), « L'extrême droite aux élections européennes : le jeu des sept familles »",
+            "url": "https://www.jean-jaures.org/publication/lextreme-droite-aux-elections-europeennes-le-jeu-des-sept-familles/",
+            "date": "2019-05-06",
+            "kind": "politiste"
+          },
+          {
+            "title": "« Je suis candidat » : Florian Philippot se lance pour la présidentielle de 2027 (Sud Radio)",
+            "url": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027",
+            "date": "2026-05-09",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "La charte se fixe d'agir « en dépassant le clivage entre droite et gauche » et place la souveraineté au centre.",
+        "sources": [
+          {
+            "title": "Les Patriotes, « Notre charte des Patriotes » (consulté)",
+            "url": "https://les-patriotes.fr/notre-charte-des-patriotes/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    },
+    {
+      "id": "debout",
+      "name": "Debout !",
+      "ministry": {
+        "bloc": "Gauche",
+        "nuance": "LDVG — Divers gauche (listes)",
+        "note": "Pas de nuance propre : nommé dans le commentaire de la nuance de listes LDVG (Divers gauche), c'est-à-dire dans une nuance générique du bloc gauche. Aucune liste municipale de 2026 identifiable comme liste de Debout ! n'a été trouvée dans les fichiers officiels.",
+        "sources": [
+          {
+            "title": "Circulaire du ministre de l'Intérieur relative à l'attribution des nuances aux candidats aux élections municipales, communautaires, métropolitaines de Lyon et d'arrondissements des 15 et 22 mars 2026 (NOR INTP2602966C), annexes 1 (nuances individuelles), 2 (nuances de listes) et 3 (blocs de clivages)",
+            "url": "https://www.legifrance.gouv.fr/circulaire/id/45645",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          },
+          {
+            "title": "Même circulaire, texte intégral et annexes (PDF numérisé, Légifrance)",
+            "url": "https://www.legifrance.gouv.fr/download/file/pdf/cir_45645/CIRC",
+            "date": "2026-02-02",
+            "kind": "statistique"
+          }
+        ]
+      },
+      "ministryNullReason": null,
+      "press": {
+        "label": "Gauche",
+        "note": "Presse seulement : franceinfo (famille « Gauche ») et l'AFP, qui présente François Ruffin comme une « figure de l'union de la gauche ». Aucun politiste trouvé.",
+        "scholars": [],
+        "sources": [
+          {
+            "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+            "date": "2026-11-09",
+            "kind": "presse"
+          },
+          {
+            "title": "François Ruffin lance son nouveau mouvement, « Debout », avec 2027 dans le viseur (AFP, France 24)",
+            "url": "https://www.france24.com/fr/info-en-continu/20250628-fran%C3%A7ois-ruffin-lance-son-nouveau-mouvement-debout-avec-2027-dans-le-viseur",
+            "date": "2025-06-28",
+            "kind": "presse"
+          }
+        ]
+      },
+      "pressNullReason": null,
+      "party": {
+        "text": "Se présente comme un « mouvement national présidé par François Ruffin ».",
+        "sources": [
+          {
+            "title": "Debout !, « Notre mouvement » (consulté)",
+            "url": "https://www.debout.fr/notre-mouvement/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      }
+    }
+  ]
+}

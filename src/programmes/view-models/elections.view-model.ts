@@ -8,6 +8,7 @@ import {
   nextRound,
   voteSteps,
 } from '@/src/programmes/models/election.service';
+import { candidatesEntry } from '@/src/programmes/models/other-parties.service';
 import { readingMinutes } from '@/src/programmes/models/presentation.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import { electionMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
@@ -52,6 +53,11 @@ export const electionViewModel =
                 faq: CONTENUS_2027_PATHS.faq,
                 candidates: CONTENUS_2027_PATHS.candidates,
               }
+            : null,
+        /** Accès en tête de la section « Les candidatures » : la liste complète, avant les partis à fiche. */
+        candidatesEntry:
+          election && catalog && catalog.voter.electionId === election.id
+            ? candidatesEntry(catalog)
             : null,
         voteGuide: {
           href: '/comprendre/comment-voter',

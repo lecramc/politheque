@@ -2,33 +2,36 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
-import { Icon, Text } from '@/components/Themed';
+import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
-import { Pressable } from '@/components/ui/Pressable';
 import { tv } from '@/src/core/web/tv';
+import { LabelsLink } from '@/src/programmes/components/LabelsLink';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
-import { beforeParenthesis } from '@/src/programmes/models/presentation.service';
+import type { LabelLine } from '@/src/programmes/models/etiquettes.service';
 import type { Party } from '@/src/programmes/models/programme.model';
 
 /**
- * En-tête commun aux pages d'une fiche : le h1 est le nom du parti (l'entité), puis une ligne
- * famille (ligne seule), puis « Fondé en… · dirigeant » en dessous, et « Comparer avec… ». La
- * candidature est dans l'onglet Programme ; la date de vérification, dans « Sources de cette page ».
+ * En-tête commun aux pages d'une fiche : le h1 est le nom du parti (l'entité), puis les deux
+ * lignes d'étiquettes (ministère de l'Intérieur, presse et politistes) et le lien « D'où vient ce classement ? », puis « Fondé en… ·
+ * dirigeant » et « Comparer avec… ». La candidature est dans l'onglet Programme ; la date de
+ * vérification, dans « Sources de cette page ».
  */
 export function PartyHeader({
   party,
+  labels,
   identityLine,
   compareHref,
-  onOpenFamily,
+  onOpenLabels,
 }: {
   party: Party;
+  /** Les deux lignes d'étiquettes, identiques dans leur forme pour tous les partis. */
+  labels: LabelLine[];
   identityLine: string;
   /** « Comparer avec… » : l'outil s'ouvre avec ce parti en premier, le second est à choisir. */
   compareHref: string;
-  onOpenFamily: () => void;
+  onOpenLabels: () => void;
 }) {
   const { colors, effects, fonts } = useTheme();
-  const family = beforeParenthesis(party.family);
   return (
     <View style={{ gap: effects.spacing.sm }}>
       <View style={{ flexDirection: 'row', gap: effects.spacing.smd, alignItems: 'center' }}>
@@ -38,31 +41,22 @@ export function PartyHeader({
         </Text>
       </View>
       <View>
-        <Pressable
-          onPress={onOpenFamily}
-          accessibilityRole="button"
-          accessibilityLabel={`Famille politique : ${family}. Voir qui emploie cette étiquette.`}
-          style={{
-            flexDirection: 'row',
-            alignItems: 'center',
-            alignSelf: 'flex-start',
-            gap: effects.spacing.xxs,
-            minHeight: 44,
-          }}
-        >
-          <Text
-            style={{
-              ...fonts.bold,
-              fontSize: 16,
-              color: colors.text.primary,
-              textDecorationLine: 'underline',
-              textDecorationStyle: 'dotted',
-            }}
-          >
-            {family}
-          </Text>
-          <Icon name="information-circle-outline" variant="onGlass" size="small" />
-        </Pressable>
+        {/* Deux classements côte à côte, toujours les deux lignes ; le lien ouvre la feuille. */}
+        <View style={{ gap: effects.spacing.xs }}>
+          {labels.map((line) => (
+            <View key={line.id}>
+              <Text style={{ fontSize: 13, lineHeight: 18, color: colors.text.secondary }}>
+                {line.title}
+              </Text>
+              <Text
+                style={{ ...fonts.bold, fontSize: 16, lineHeight: 22, color: colors.text.primary }}
+              >
+                {line.value}
+              </Text>
+            </View>
+          ))}
+        </View>
+        <LabelsLink onPress={onOpenLabels} />
         <Text style={{ fontSize: 16, color: colors.text.secondary }}>{identityLine}</Text>
       </View>
       {/* Même action, même place, pour les dix partis. Aucun compteur de procédures. */}

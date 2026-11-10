@@ -44,32 +44,26 @@
   "history": {
     "founded": "1984 (Les Verts), 2010 (Europe Écologie Les Verts, EELV) puis Les Écologistes en 2023",
     "origins": {
-      "text": "Le parti est issu de l'écologie politique des années 1970, née notamment des luttes antinucléaires et de l'après-Mai 68. Les Verts sont fondés le 29 janvier 1984 à Clichy par l'unification de deux formations écologistes. Après le succès des listes Europe Écologie conduites par Daniel Cohn-Bendit aux européennes de 2009, les deux structures fusionnent le 13 novembre 2010 à Lyon pour former Europe Écologie Les Verts (EELV). Le parti prend le nom « Les Écologistes » en octobre 2023, inscrit dans ses statuts en 2024.",
+      "text": "Le parti est issu de l'écologie politique des années 1970, née notamment des luttes antinucléaires et de l'après-Mai 68. Les Verts sont fondés le 29 janvier 1984 à Clichy par l'unification de deux formations écologistes. Après le succès des listes Europe Écologie, rassemblées autour de Daniel Cohn-Bendit, aux européennes de 2009, les deux structures fusionnent le 13 novembre 2010 à Lyon pour former Europe Écologie Les Verts (EELV). Le parti prend le nom « Les Écologistes » en octobre 2023.",
       "sources": [
         {
           "title": "Encyclopédie Larousse, « les Verts »",
           "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
           "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
-          "title": "Wikipédia, « Les Écologistes »",
-          "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-          "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
           "title": "Lex (Den Store Danske), « Les Écologistes »",
           "url": "https://lex.dk/Les_%C3%89cologistes",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         }
       ]
     },
     "ideals": [
       {
         "title": "Ce que disent ses statuts",
-        "text": "Le parti se définit dans ses statuts comme reposant sur « les principes et valeurs de l'écologie politique » ; il revendique également le fédéralisme européen, la démocratie participative et le progressisme social.",
+        "text": "Le parti se définit dans ses statuts comme reposant sur « les principes et valeurs de l'écologie politique ». L'encyclopédie danoise Lex le décrit comme partisan d'une Union européenne forte et intégrée, d'une décentralisation poussée et de réformes démocratiques, avec une politique de valeurs ancrée à gauche, où le féminisme et l'antiracisme sont des priorités.",
         "sources": [
           {
             "title": "Les Écologistes, statuts nationaux adoptés le 18 mars 2024 (art. 3 « Valeurs »)",
@@ -78,16 +72,10 @@
             "kind": "programme"
           },
           {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Lex (Den Store Danske), Jørn Boisen (Univ. de Copenhague), « Les Écologistes »",
             "url": "https://lex.dk/Les_%C3%89cologistes",
             "date": "2026-03-26",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -96,46 +84,40 @@
         "text": "Les ouvrages de référence le classent à gauche ; il est décrit comme un parti de gauche pro-européen et décentralisateur, sans classement unique plus précis. Les encyclopédies relèvent une évolution : longtemps partagés sur la ligne « ni droite ni gauche » (associée à Antoine Waechter), les Verts optent au milieu des années 1990 pour des alliances avec la gauche, sous l'impulsion de Dominique Voynet.",
         "sources": [
           {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Lex (Den Store Danske), « Les Écologistes »",
             "url": "https://lex.dk/Les_%C3%89cologistes",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Sébastien Repaire, « Les Verts, la gauche et le Parti socialiste : entre convergences et malentendus » (Fondation Jean-Jaurès)",
+            "url": "https://jean-jaures.org/nos-productions/les-verts-la-gauche-et-le-parti-socialiste-entre-convergences-et-malentendus",
+            "date": "2020-02-24",
+            "kind": "politiste"
           }
         ]
       },
       {
         "title": "Courants internes",
-        "text": "Les observateurs signalent des courants internes (altermondialisme, écoféminisme, décroissance) ; l'opposition historique au nucléaire reste un marqueur, discuté en interne selon Lex.",
+        "text": "Larousse relève qu'une motion adoptée en 2008 prône une « décroissance sélective équitable et solidaire » ; l'opposition historique au nucléaire reste un marqueur, dont le rôle dans la transition fait l'objet de discussions internes selon Lex.",
         "sources": [
-          {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Lex (Den Store Danske), « Les Écologistes »",
             "url": "https://lex.dk/Les_%C3%89cologistes",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       }
@@ -149,25 +131,19 @@
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Alexis Vrignon, La naissance de l'écologie politique en France, Presses universitaires de Rennes, chap. VII « Vers l'unification des écologistes » (OpenEdition Books)",
             "url": "https://books.openedition.org/pur/154797",
             "date": "2017",
-            "kind": "statistique"
+            "kind": "politiste"
           },
           {
             "title": "Encyclopædia Universalis, « Verts (Les), France »",
             "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -179,13 +155,7 @@
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Parlement européen, « Résultats nationaux France 2009-2014 — Résultats par parti national (résultats définitifs) »",
@@ -197,7 +167,7 @@
             "title": "Sally Marthaler (Sussex European Institute), EPERN European Parliament Election Briefing No 31, « The European Parliament election in France, June 7 2009 »",
             "url": "https://www.sussex.ac.uk/sei/documents/epern-no-31-france-2009.pdf",
             "date": "2009-07-01",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
@@ -209,13 +179,7 @@
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Lyon Mag, « Un nouveau parti écologiste est né à Lyon »",
@@ -227,25 +191,25 @@
       },
       {
         "date": "2012-05",
-        "event": "Participation au gouvernement Ayrault (Cécile Duflot au Logement, Pascal Canfin au Développement) ; le parti quitte le gouvernement en avril 2014. Eva Joly avait obtenu 2,31 % à la présidentielle.",
+        "event": "Participation au gouvernement Ayrault (Cécile Duflot au Logement, Pascal Canfin au Développement) ; ses deux ministres quittent le gouvernement en avril 2014, à la formation du gouvernement Valls. Eva Joly avait obtenu 2,31 % à la présidentielle.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Conseil constitutionnel, décision n° 2012-152 PDR du 25 avril 2012 (résultats du 1er tour)",
             "url": "https://www.conseil-constitutionnel.fr/decision/2012/2012152PDR.htm",
             "date": "2012-04-25",
             "kind": "statistique"
+          },
+          {
+            "title": "Reporterre, « Cécile Duflot : Hors du gouvernement, mais dans la majorité »",
+            "url": "https://reporterre.net/Cecile-Duflot-Hors-du-gouvernement-mais-dans-la-majorite",
+            "date": "2014-04-07",
+            "kind": "presse"
           }
         ]
       },
@@ -253,12 +217,6 @@
         "date": "2019-05-26",
         "event": "Européennes : la liste conduite par Yannick Jadot obtient 13,47 % des suffrages exprimés et arrive 3e.",
         "sources": [
-          {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Parlement européen, « Résultats nationaux France 2019-2024 — Résultats officiels par parti national »",
             "url": "https://results.elections.europa.eu/en/national-results/france/2019-2024/constitutive-session/",
@@ -284,12 +242,6 @@
             "kind": "statistique"
           },
           {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Ministère de l'Intérieur (data.gouv.fr), « Élection présidentielle des 10 et 24 avril 2022 — Résultats définitifs du 1er tour » (fichier France entière)",
             "url": "https://www.data.gouv.fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour",
             "date": "2022-04-14",
@@ -302,16 +254,10 @@
         "event": "EELV adopte le nom « Les Écologistes ».",
         "sources": [
           {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Lex (Den Store Danske), « Les Écologistes »",
             "url": "https://lex.dk/Les_%C3%89cologistes",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Reporterre, « Tout va changer : pourquoi EELV devient Les Écologistes »",
@@ -323,7 +269,7 @@
       },
       {
         "date": "2024-06-09",
-        "event": "Européennes : la liste conduite par Marie Toussaint obtient 5,50 % des suffrages exprimés (contre 13,47 % en 2019) ; le parti rejoint ensuite le Nouveau Front populaire pour les législatives anticipées.",
+        "event": "Européennes : la liste conduite par Marie Toussaint obtient 5,5 % des suffrages exprimés (contre 13,47 % en 2019) ; le parti rejoint ensuite le Nouveau Front populaire, avec les communistes, les insoumis et les socialistes, pour les législatives anticipées.",
         "sources": [
           {
             "title": "Public Sénat, « Résultats européennes 2024 : Jordan Bardella en tête, Valérie Hayer en deuxième position, Glucksmann troisième »",
@@ -338,46 +284,64 @@
             "kind": "presse"
           },
           {
-            "title": "Wikipédia, « Les Écologistes »",
-            "url": "https://fr.wikipedia.org/wiki/Les_%C3%89cologistes",
-            "date": "2026-11",
+            "title": "Parlement européen, « Résultats nationaux France 2019-2024 — Résultats officiels par parti »",
+            "url": "https://results.elections.europa.eu/en/national-results/france/2019-2024/constitutive-session/",
+            "date": "2019-07",
             "kind": "statistique"
+          },
+          {
+            "title": "Reporterre, Justine Guitton-Boussion, « Marine Tondelier : « Il se passe quelque chose d'historique » »",
+            "url": "https://reporterre.net/Marine-Tondelier-Il-se-passe-quelque-chose-d-historique",
+            "date": "2024-06-27",
+            "kind": "presse"
           }
         ]
       }
     ],
     "whyCreated": {
-      "text": "L'écologie politique entre dans la vie électorale française avec la candidature de l'agronome René Dumont à la présidentielle de 1974 (1,32 %), dans le prolongement de l'après-Mai 68 et des luttes antinucléaires, qui servent de catalyseur au mouvement. Ses partisans fondent en 1974 le Mouvement écologique ; à la fin des années 1970 coexistent plusieurs structures rivales, dont le Mouvement d'écologie politique (MEP), devenu « Les Verts – Parti écologiste » en 1982, et la Confédération écologiste, fondée la même année. Les deux formations fusionnent les 28-29 janvier 1984 à Clichy pour créer Les Verts, afin de doter l'écologie d'une structure partisane durable, en s'inspirant des Grünen allemands. La lignée se poursuit avec Europe Écologie, rassemblement lancé en 2008 par Daniel Cohn-Bendit pour les européennes de 2009, qui fusionne avec Les Verts en 2010 (EELV), puis avec l'adoption du nom « Les Écologistes » en 2023.",
+      "text": "L'écologie politique entre dans la vie électorale française avec la candidature de l'agronome René Dumont à la présidentielle de 1974 (1,32 %), dans le prolongement de l'après-Mai 68 et des luttes antinucléaires, qui servent de catalyseur au mouvement. À la fin des années 1970 et au début des années 1980 coexistent plusieurs structures rivales, dont le Mouvement d'écologie politique (MEP), lancé en 1979, et la Confédération écologiste, créée en décembre 1981. En janvier 1984, au congrès de Clichy, la Confédération écologiste et le Parti écologiste s'unissent pour créer Les Verts, afin de doter l'écologie d'une structure partisane, sur le modèle des Grünen allemands. La lignée se poursuit avec Europe Écologie, rassemblement formé autour de Daniel Cohn-Bendit pour les européennes de 2009, qui fusionne avec Les Verts en 2010 (EELV), puis avec l'adoption du nom « Les Écologistes » en 2023.",
       "sources": [
         {
           "title": "Encyclopædia Universalis, « Les Verts (France) »",
           "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
           "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
-          "title": "Wikipédia, « Les Verts (France) »",
-          "url": "https://fr.wikipedia.org/wiki/Les_Verts_(France)",
-          "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
           "title": "Alexis Vrignon, La naissance de l'écologie politique en France, Presses universitaires de Rennes (OpenEdition Books)",
           "url": "https://books.openedition.org/pur/154722",
           "date": "2017",
-          "kind": "statistique"
+          "kind": "politiste"
         },
         {
           "title": "Encyclopédie Larousse, « les Verts »",
           "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
-          "title": "Wikipédia (en), « Europe Ecology »",
-          "url": "https://en.wikipedia.org/wiki/Europe_Ecology",
+          "title": "Public Sénat, « Ces « petits candidats » de la Vème République »",
+          "url": "https://www.publicsenat.fr/actualites/non-classe/ces-petits-candidats-de-la-veme-republique-57557",
+          "date": "2017-03-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Alexis Vrignon, La naissance de l'écologie politique en France, Presses universitaires de Rennes (chapitre sur la création des Verts)",
+          "url": "https://books.openedition.org/pur/154797",
+          "date": "2017",
+          "kind": "politiste"
+        },
+        {
+          "title": "Sally Marthaler (Sussex European Institute), EPERN European Parliament Election Briefing No 31 : The European Parliament Election in France, 7 June 2009",
+          "url": "https://www.sussex.ac.uk/sei/documents/epern-no-31-france-2009.pdf",
+          "date": "2009-07",
+          "kind": "politiste"
+        },
+        {
+          "title": "Lex (Den Store Danske), « Les Écologistes »",
+          "url": "https://lex.dk/Les_%C3%89cologistes",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         }
       ]
     },
@@ -385,14 +349,8 @@
       {
         "name": "René Dumont",
         "role": "Premier candidat écologiste à une élection présidentielle (1974) ; précurseur revendiqué, sans avoir fondé le parti (1904-2001)",
-        "background": "Ingénieur agronome, enseignant à l'Institut national agronomique de 1933 à sa retraite en 1974, spécialiste du développement du tiers-monde. Pendant l'Occupation, il publie en 1942-1943 des articles dans La Terre française, hebdomadaire lié à la propagande de Vichy ; selon les sources, ces articles sont décrits comme de vulgarisation technique agricole ou comme relayant le thème pétainiste du « retour à la terre » ; il s'est plus tard reproché son attentisme durant la guerre. En 1974, il obtient 1,32 % au premier tour de la présidentielle, avec Brice Lalonde comme directeur de campagne.",
+        "background": "Agronome, spécialiste du développement du tiers-monde. Pendant l'Occupation, il publie en 1942-1943 des articles de portée technique dans La Terre française, hebdomadaire lié à la propagande de Vichy. En 1974, il obtient 1,32 % au premier tour de la présidentielle, avec Brice Lalonde comme directeur de campagne.",
         "sources": [
-          {
-            "title": "Wikipédia, « René Dumont »",
-            "url": "https://fr.wikipedia.org/wiki/Ren%C3%A9_Dumont",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "La Vie des idées, A. Moatti, « René Dumont : les quarante ans d'une Utopie »",
             "url": "https://laviedesidees.fr/Rene-Dumont-les-quarante-ans-d-une",
@@ -403,46 +361,58 @@
             "title": "Larousse, Journal de l'année – chronologie de juin 2001 (décès de René Dumont)",
             "url": "https://www.larousse.fr/archives/journaux_annee/2002/chrono/2001-06",
             "date": "2001-06",
-            "kind": "statistique"
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Public Sénat, « Ces « petits candidats » de la Vème République »",
+            "url": "https://www.publicsenat.fr/actualites/non-classe/ces-petits-candidats-de-la-veme-republique-57557",
+            "date": "2017-03-20",
+            "kind": "presse"
           }
         ]
       },
       {
         "name": "Antoine Waechter",
-        "role": "Cofondateur des Verts (1984), porte-parole à partir de 1986, candidat à la présidentielle de 1988 ; quitte le parti en 1994",
-        "background": "Né en 1949 à Mulhouse, docteur en biologie-écologie, il est issu du mouvement naturaliste alsacien et participe en 1973 au lancement d'Écologie et Survie, l'un des premiers mouvements écologistes politiques. Majoritaire en 1986 avec une ligne d'autonomie stricte, il fait du « ni droite ni gauche » la position officielle des Verts ; il obtient 3,78 % à la présidentielle de 1988 et conduit la liste des européennes de 1989 (10,59 % des suffrages exprimés). Minoritaire face à la ligne d'alliance à gauche, il quitte les Verts en 1994 et fonde le Mouvement écologiste indépendant (MEI).",
+        "role": "Cofondateur des Verts (1984), candidat à la présidentielle de 1988 ; quitte le parti en 1994",
+        "background": "Ingénieur écologue, il domine à partir de 1986 une nouvelle majorité marquée par le courant naturaliste, qui impose une ligne d'autonomie stricte et fait du « ni droite ni gauche » la position officielle des Verts ; il obtient 3,78 % à la présidentielle de 1988 et conduit la liste d'union des européennes de 1989 (10,6 % des voix). Sa motion est mise en minorité en novembre 1993 (34,7 % des voix) face à la ligne de recomposition à gauche ; il quitte ensuite les Verts et fonde en 1994 le Mouvement écologiste indépendant (MEI).",
         "sources": [
-          {
-            "title": "Wikipédia, « Antoine Waechter »",
-            "url": "https://fr.wikipedia.org/wiki/Antoine_Waechter",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Encyclopædia Universalis, « Les Verts (France) »",
             "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "Encyclopædia Universalis, « France. Premier tour de l'élection présidentielle. 5-30 avril 1988 »",
+            "url": "https://www.universalis.fr/evenement/5-30-avril-1988-premier-tour-de-l-election-presidentielle/",
+            "date": "2026-11",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "L'Info durable (AFP), « L'écologiste Antoine Waechter candidat à l'élection présidentielle »",
+            "url": "https://www.linfodurable.fr/lecologiste-antoine-waechter-candidat-lelection-presidentielle-28619",
+            "date": "2021-09-15",
+            "kind": "presse"
+          },
+          {
+            "title": "Sébastien Repaire, « Les Verts, la gauche et le Parti socialiste : entre convergences et malentendus », Fondation Jean-Jaurès",
+            "url": "https://jean-jaures.org/nos-productions/les-verts-la-gauche-et-le-parti-socialiste-entre-convergences-et-malentendus",
+            "date": "2020-02-24",
+            "kind": "politiste"
           }
         ]
       },
       {
         "name": "Yves Cochet",
-        "role": "Cofondateur des Verts (1984), ministre de l'Aménagement du territoire et de l'Environnement (2001-2002)",
-        "background": "Né en 1946 à Rennes, mathématicien et enseignant-chercheur, il milite dans les années 1970 dans les luttes antinucléaires. Il est député à partir de 1997 et remplace Dominique Voynet au gouvernement Jospin en juillet 2001. Il est ensuite connu pour ses positions en faveur de la décroissance et ses travaux sur l'« effondrement ».",
+        "role": "Cofondateur des Verts, ministre de l'Aménagement du territoire et de l'Environnement du gouvernement Jospin à partir de juillet 2001",
+        "background": "Né en 1946 à Rennes, mathématicien, il est député du Val-d'Oise à partir de 1997, puis de Paris de 2002 à 2011, et remplace Dominique Voynet au gouvernement Jospin en juillet 2001. Il est ensuite connu pour ses positions sur l'« effondrement » de la civilisation.",
         "sources": [
-          {
-            "title": "Wikipédia, « Yves Cochet »",
-            "url": "https://fr.wikipedia.org/wiki/Yves_Cochet",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Maire-info, « Yves Cochet nommé ministre de l'Aménagement du territoire et de l'Environnement »",
             "url": "https://www.maire-info.com/yves-cochet-nomme-ministre-de-lamenagement-du-territoire-et-de-lenvironnement-article2-760",
@@ -450,16 +420,16 @@
             "kind": "presse"
           },
           {
-            "title": "Wikipédia, « Les Verts (France) »",
-            "url": "https://fr.wikipedia.org/wiki/Les_Verts_(France)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Assemblée nationale, base Sycomore, « Yves Cochet »",
             "url": "https://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1872",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Public Sénat, Hélène Duvigneau, « Yves Cochet, désespérément écolo »",
+            "url": "https://www.publicsenat.fr/actualites/politique/yves-cochet-desesperement-ecolo-145605",
+            "date": "2019-09-20",
+            "kind": "presse"
           }
         ]
       },
@@ -472,19 +442,13 @@
             "title": "Encyclopédie Larousse, « Dominique Voynet »",
             "url": "https://www.larousse.fr/encyclopedie/personnage/Voynet/149328",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Les Verts (France) »",
-            "url": "https://fr.wikipedia.org/wiki/Les_Verts_(France)",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Sénat, « VOYNET Dominique — ancienne sénatrice de la Seine-Saint-Denis »",
@@ -509,13 +473,13 @@
             "title": "Encyclopédie Larousse, « Daniel Cohn-Bendit »",
             "url": "https://www.larousse.fr/encyclopedie/personnage/Daniel_Cohn-Bendit/114030",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « Cohn-Bendit Daniel (1945- ) »",
             "url": "https://www.universalis.fr/encyclopedie/daniel-cohn-bendit/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "The Irish Times, « Cohn-Bendit defends article »",
@@ -528,14 +492,8 @@
       {
         "name": "Marine Tondelier",
         "role": "Secrétaire nationale d'EELV puis des Écologistes depuis le 10 décembre 2022, réélue le 18 avril 2025 (73 % des suffrages exprimés) ; candidate désignée pour 2027",
-        "background": "Née en 1986 dans le Pas-de-Calais, elle adhère à EELV en 2009. Conseillère municipale d'opposition à Hénin-Beaumont, ville dirigée par le Rassemblement national depuis 2014, elle est élue à la tête du parti lors du congrès de 2022 avec l'approbation de 90,8 % des votants, succédant à Julien Bayou ; c'est sous sa direction qu'EELV prend le nom « Les Écologistes » en 2023.",
+        "background": "Née en 1986 dans le Pas-de-Calais, elle adhère à EELV en 2009. Conseillère municipale d'opposition à Hénin-Beaumont à partir de 2014, face au maire FN Steeve Briois, elle est élue à la tête du parti le 10 décembre 2022 avec 90,8 % des votes des adhérents, succédant à Julien Bayou ; c'est sous sa direction qu'EELV prend le nom « Les Écologistes » en octobre 2023.",
         "sources": [
-          {
-            "title": "Wikipédia, « Marine Tondelier »",
-            "url": "https://fr.wikipedia.org/wiki/Marine_Tondelier",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Reporterre, « Marine Tondelier, à la tête d'EELV pour trouver un cap »",
             "url": "https://reporterre.net/Marine-Tondelier-a-la-tete-d-EELV-pour-trouver-un-cap",
@@ -553,6 +511,24 @@
             "url": "https://reporterre.net/Au-Congres-des-Ecologistes-Marine-Tondelier-sommee-de-clarifier-sa-ligne-politique",
             "date": "2025-04-25",
             "kind": "presse"
+          },
+          {
+            "title": "Sud Radio, « Marine Tondelier : biographie et CV politique »",
+            "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-marine-tondelier",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Lex (Den Store Danske), « Les Écologistes »",
+            "url": "https://lex.dk/Les_%C3%89cologistes",
+            "date": "2026-11",
+            "kind": "encyclopedie"
+          },
+          {
+            "title": "France 24 (AFP), « Sans surprise, Tondelier représentera les Ecologistes à la primaire de la gauche »",
+            "url": "https://www.france24.com/fr/info-en-continu/20251208-sans-surprise-tondelier-repr%C3%A9sentera-les-ecologistes-%C3%A0-la-primaire-de-la-gauche",
+            "date": "2025-12-08",
+            "kind": "presse"
           }
         ]
       }
@@ -566,13 +542,13 @@
             "title": "Alexis Vrignon, La naissance de l'écologie politique en France, Presses universitaires de Rennes (OpenEdition Books)",
             "url": "https://books.openedition.org/pur/154722",
             "date": "2017",
-            "kind": "statistique"
+            "kind": "politiste"
           },
           {
             "title": "Encyclopædia Universalis, « Les Verts (France) »",
             "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Reporterre, « La saga française de l'écologie politique » (recension d'Arthur Nazaret)",
@@ -590,7 +566,7 @@
             "title": "Encyclopædia Universalis, « Gorz André (1923-2007) »",
             "url": "https://www.universalis.fr/encyclopedie/andre-gorz/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "La Vie des idées, « Des racines et des fruits » (recension de P. Chastenet, Les racines libertaires de l'écologie politique)",
@@ -602,25 +578,25 @@
       },
       {
         "title": "Évolution stratégique",
-        "text": "Évolution stratégique : en 1986, une majorité menée par Antoine Waechter impose l'autonomie électorale et le « ni droite ni gauche » ; au milieu des années 1990, sous l'impulsion de Dominique Voynet, le parti accepte les alliances avec la gauche (entre 1994 et 1995 selon les sources), ce qui conduit à la participation au gouvernement Jospin (1997-2002) et à la scission de Waechter (MEI).",
+        "text": "Évolution stratégique : en 1986, une majorité menée par Antoine Waechter impose l'autonomie électorale et le « ni droite ni gauche » ; cette ligne est mise en minorité en novembre 1993, puis, sous l'impulsion de Dominique Voynet, le parti adopte en 1995 une motion d'alliance électorale avec la gauche, ce qui conduit à sa participation au gouvernement Jospin à partir de 1997.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Les Verts (France) »",
             "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopédie Larousse, « les Verts »",
             "url": "https://www.larousse.fr/encyclopedie/divers/Les_Verts/148680",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
-            "title": "Wikipédia, « Les Verts (France) »",
-            "url": "https://fr.wikipedia.org/wiki/Les_Verts_(France)",
-            "date": "2026-11",
-            "kind": "statistique"
+            "title": "Sébastien Repaire, « Les Verts, la gauche et le Parti socialiste : entre convergences et malentendus », Fondation Jean-Jaurès",
+            "url": "https://jean-jaures.org/nos-productions/les-verts-la-gauche-et-le-parti-socialiste-entre-convergences-et-malentendus",
+            "date": "2020-02-24",
+            "kind": "politiste"
           }
         ]
       },
@@ -632,19 +608,13 @@
             "title": "Encyclopædia Universalis, « France. L'année politique 2009 – Les élections européennes et leurs conséquences »",
             "url": "https://www.universalis.fr/encyclopedie/france-l-annee-politique-2009/3-les-elections-europeennes-et-leurs-consequences/",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia (en), « Europe Ecology »",
-            "url": "https://en.wikipedia.org/wiki/Europe_Ecology",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Sally Marthaler (Sussex European Institute), EPERN European Parliament Election Briefing No 31, « The European Parliament election in France, June 7 2009 »",
             "url": "https://www.sussex.ac.uk/sei/documents/epern-no-31-france-2009.pdf",
             "date": "2009-07-01",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
@@ -657,12 +627,6 @@
             "url": "https://reporterre.net/Ce-qu-il-faut-savoir-sur-la-primaire-ecologiste",
             "date": "2021-08-25",
             "kind": "presse"
-          },
-          {
-            "title": "Wikipédia (en), « 2021 French Green Party presidential primary »",
-            "url": "https://en.wikipedia.org/wiki/2021_French_Green_Party_presidential_primary",
-            "date": "2026-11",
-            "kind": "statistique"
           },
           {
             "title": "France 24 (AFP), « Présidentielle 2022 : Yannick Jadot remporte de justesse la primaire écologiste »",
@@ -1312,6 +1276,24 @@
       ],
       "programmeStatus": "Programme présidentiel 2027 « Pour une prospérité écologique », présenté le 13 juillet 2026 (557 propositions selon Reporterre ; présentation datée du 13 juillet par l'AFP). Les mesures sont citées d'après le document du parti et des comptes rendus de presse. Le maintien d'une candidature autonome sera tranché par les adhérents du 10 au 13 décembre 2026.",
       "programmeState": "publie",
+      "programmePublication": {
+        "text": "Publié le 13 juillet 2026 : « Pour une prospérité écologique », programme présenté par Les Écologistes.",
+        "date": "2026-07-13",
+        "sources": [
+          {
+            "title": "2027 : les Écologistes veulent instaurer la « Première République écologique et citoyenne » (France 24, AFP)",
+            "url": "https://www.france24.com/fr/info-en-continu/20260713-2027-les-ecologistes-veulent-instaurer-la-premi%C3%A8re-r%C3%A9publique-%C3%A9cologique-et-citoyenne",
+            "date": "2026-07-13",
+            "kind": "presse"
+          },
+          {
+            "title": "Les Écologistes, programme présidentiel 2027 « Pour une prospérité écologique »",
+            "url": "https://lesecologistes.fr/document/3N4JsAEmq6vsx42IITGNZa/vdef-programme-1.pdf",
+            "date": "2026-07-15",
+            "kind": "programme"
+          }
+        ]
+      },
       "themes": {
         "economie": {
           "summary": "Le programme vise une « prospérité écologique » et une « fiscalité verte et juste » : impôt plancher sur les très grandes fortunes, « ISF climatique » et TVA verte. Le groupe écologiste est à l'origine de la proposition de loi « taxe Zucman » adoptée à l'Assemblée en février 2025.",

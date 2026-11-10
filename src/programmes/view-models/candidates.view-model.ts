@@ -2,7 +2,8 @@ import { createSelector } from 'reselect';
 
 import {
   buildCandidateList,
-  candidatesIntro,
+  CANDIDATES_PAGE_INTRO,
+  candidatesDeadlineNote,
   candidatesRule,
 } from '@/src/programmes/models/candidates.service';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
@@ -24,7 +25,8 @@ export const candidatesViewModel = () =>
       status,
       meta: catalog ? candidatesMeta(catalog) : null,
       electionHref: CONTENUS_2027_PATHS.election,
-      intro: candidatesIntro(catalog?.faq ?? []),
+      intro: CANDIDATES_PAGE_INTRO,
+      deadlineNote: candidatesDeadlineNote(catalog?.faq ?? []),
       rule: file ? candidatesRule(file.lastVerified) : '',
       entries,
       withdrawn,

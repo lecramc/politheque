@@ -87,34 +87,14 @@ Les tests `src/programmes/__tests__/data-integrity.test.ts` font respecter la ch
 - **State** : Redux Toolkit
 - **Backend** : aucun (export web statique)
 - **Tests** : Vitest (`npm run test:run`)
-- **Builds** : EAS Build / `eas workflow:run build-prod.yml`
-- **Langues** : Français, Anglais (`i18n/`, `locales/`)
+- **Déploiement** : site web statique (`npm run build:web` → `dist/`), publié par Vercel à chaque push sur `main`. Les builds natifs (EAS) ne sont pas utilisés.
+- **Langue** : français uniquement. Les textes vivent dans les données (`src/programmes/data/`) et dans les fichiers `models/*.copy.ts`. Les dossiers `i18n/` et `locales/` sont des restes du modèle de départ, inutilisés.
 
 ---
 
-## Moments émotionnels — Emotional Theme
+## Thème
 
-Certains écrans sont des **moments émotionnels** : pics brand visuellement immersifs, toujours sombres, indépendants du mode système (light/dark).
-
-**Règle :** Ne jamais utiliser `useTheme()` dans ces écrans — utiliser `useEmotionalTheme()` depuis `components/EmotionalTheme.ts`.
-
-```typescript
-import { useEmotionalTheme } from '@/components/EmotionalTheme';
-const { colors, effects, fonts } = useEmotionalTheme();
-```
-
-**Tokens disponibles :**
-
-```
-colors.background.default / primary / clear
-colors.text.primary / secondary / disabled / onColor / skip
-colors.surface.border.primary
-colors.surface.skip.bg
-colors.surface.dot.inactive
-colors.tint / tintSoft / tintBorder
-colors.ctaGradient        // [string, string] — gradient bouton CTA brand
-colors.heroGradient       // [string, string, string, string] — gradient fond hero
-```
+Tous les écrans utilisent `useTheme()`. `components/EmotionalTheme.ts` est un reste du modèle de départ, inutilisé : ne pas s'en servir.
 
 ---
 
@@ -123,7 +103,7 @@ colors.heroGradient       // [string, string, string, string] — gradient fond 
 Avant de créer quoi que ce soit, chercher dans le projet :
 
 1. **Composants UI** → regarder `components/ui/` en premier
-2. **Thème** → utiliser `useTheme()` depuis `components/ThemeContext.tsx` (écrans normaux) ou `useEmotionalTheme()` (moments émotionnels)
+2. **Thème** → utiliser `useTheme()` depuis `components/ThemeContext.tsx`
 3. **Navigation** → utiliser les routes `app/` existantes
 4. **Icônes** → `Ionicons` via le composant `Icon` de `components/ui/Icon`
 5. **Animations** → durées et courbes dans `components/motion.ts` (`useMotion()`, mouvement réduit respecté), `react-native-reanimated` ; agent dédié : `.claude/agents/motion-designer.md`
@@ -253,15 +233,15 @@ src/<domain>/
 ### Règles de dépendance
 
 - Usecases → uniquement via gateways (`extra` Redux Toolkit)
-- View-models → uniquement selectors + usecases
-- Screens → uniquement via `useViewModel()`
-- Jamais de logique métier dans les composants
+- View-models → uniquement selectors + usecases ; les calculs viennent des fonctions pures de `models/`
+- Screens → données via `useViewModel()`. Un écran ou un composant peut importer des **types**, des **constantes** et des helpers de **présentation sans décision** (`partyHref`, `displayName`…), jamais une règle : quel message afficher, quel état, quel tri, quelle date formatée se décident dans le modèle ou le view-model, et l'écran affiche ce qu'il reçoit (ex. `ThemeProgramme.notice`)
+- Jamais de logique métier dans les composants (ni `filter`, `sort`, `find` sur des données métier)
 
 ### Pattern gateway
 
 1. `<n>.gateway.ts` — interface TypeScript
 2. `fake-<n>.gateway.ts` — in-memory pour les tests
-3. `supabase-<n>.gateway.ts` (ou `native-`, `expo-`) — implémentation réelle
+3. `static-<n>.gateway.ts` — implémentation réelle : lit les JSON statiques du site (pas de backend)
 
 ### Routing Expo Router
 
@@ -276,7 +256,7 @@ src/<domain>/
 - **Imports** : toujours absolus via `@/`
 - **Calculs** : dans `models/` (fonctions pures testées), jamais dans les composants
 - **TypeScript** : strict, pas de `any` non justifié
-- **i18n** : toutes les chaînes UI dans `locales/fr/` et `locales/en/`
+- **Textes** : en français, dans les données ou les fichiers `models/*.copy.ts` (testés), jamais en dur au milieu d'une décision dans un écran
 
 ---
 

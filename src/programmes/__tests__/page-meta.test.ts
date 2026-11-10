@@ -28,7 +28,7 @@ const candidacy = {
   statusLabel: 'Candidate déclarée',
   candidate: '',
   programmeStatus: '',
-  programmeState: 'non-publie' as const,
+  programmeState: 'partiel' as const,
   themes: {} as never,
 };
 const history = { founded: '', origins: { text: '', sources: [] }, ideals: [], timeline: [] };
@@ -127,7 +127,7 @@ describe('Feature: métadonnées des pages', () => {
   it('should open the programme description with the name, without any article', () => {
     const meta = partySectionMeta(partyPageContext(alpha, catalog), 'programme');
     expect(meta.description).toMatch(
-      /^Alpha \(ABC\) : programme 2027 en \d+ thèmes, avec ses sources\./
+      /^Alpha \(ABC\) : programme 2027 en \d+ thèmes?, avec ses sources\./
     );
   });
 

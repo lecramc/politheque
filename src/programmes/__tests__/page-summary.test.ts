@@ -1,5 +1,9 @@
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
-import { ofParty, partySummary } from '@/src/programmes/models/page-summary.service';
+import {
+  candidacySummary,
+  ofParty,
+  partySummary,
+} from '@/src/programmes/models/page-summary.service';
 import type { Candidacy, CandidacyStatus } from '@/src/programmes/models/programme.model';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
@@ -43,8 +47,11 @@ describe('Feature: phrase de résumé des fiches partis', () => {
       const summary = partySummaryOf(p.id)!;
       expect(summary, p.id).toMatch(DATE);
       expect(summary, p.id).toContain(p.candidacies[featured.id].candidateName);
+      // Un programme « non-publie » n'a aucune mesure : la phrase le dit au lieu de compter 0 thème.
       expect(summary, p.id).toMatch(
-        / ; ses propositions sont recensées dans \d+ thèmes? sur \d+\.$/
+        p.candidacies[featured.id].programmeState === 'non-publie'
+          ? / ; son programme 2027 n'est pas encore publié\.$/
+          : / ; ses propositions sont recensées dans \d+ thèmes? sur \d+\.$/
       );
     }
   });
@@ -65,7 +72,7 @@ describe('Feature: phrase de résumé des fiches partis', () => {
       expect(summary, p.id).not.toMatch(EVALUATIVE);
     }
     expect(partySummaryOf('pcf')).toBe(
-      "Au 3 novembre 2026, Fabien Roussel est le candidat investi du Parti communiste français (PCF) pour l'élection présidentielle de 2027 ; ses propositions sont recensées dans 9 thèmes sur 9."
+      "Au 3 novembre 2026, Fabien Roussel est le candidat investi du Parti communiste français (PCF) pour l'élection présidentielle de 2027 ; son programme 2027 n'est pas encore publié."
     );
   });
 
@@ -104,6 +111,30 @@ describe('Feature: phrase de résumé des fiches partis', () => {
     expect(summaryFor(candidacy(status, label))).toContain(expected);
   });
 
+  it('should say the programme is not published instead of counting zero themes', () => {
+    const notPublished = {
+      ...candidacy('declare', 'Candidate déclarée'),
+      programmeState: 'non-publie' as const,
+    };
+    expect(summaryFor(notPublished)).toBe(
+      "Au 1er novembre 2026, Camille Martin est la candidate déclarée des Exemples (LXP) pour l'élection présidentielle de 2027 ; son programme 2027 n'est pas encore publié."
+    );
+  });
+
+  it('should limit the on-screen intro to the candidacy, whatever the state of the programme', () => {
+    const intro = (state: Candidacy['programmeState']) =>
+      candidacySummary({
+        party,
+        candidacy: { ...candidacy('declare', 'Candidate déclarée'), programmeState: state },
+        electionTitle: "l'élection présidentielle de 2027",
+      });
+    const expected =
+      "Au 1er novembre 2026, Camille Martin est la candidate déclarée des Exemples (LXP) pour l'élection présidentielle de 2027.";
+    expect(intro('non-publie')).toBe(expected);
+    expect(intro('partiel')).toBe(expected);
+    expect(intro('publie')).toBe(expected);
+  });
+
   it('should say so when the party has no candidacy', () => {
     expect(summaryFor(null)).toBe(
       "Au 1er novembre 2026, aucune candidature des Exemples (LXP) n'est recensée pour l'élection présidentielle de 2027."
@@ -134,7 +165,7 @@ describe('Feature: phrase de résumé des débats', () => {
     });
     expect(new Set(skeletons).size, skeletons.join('\n')).toBe(1);
     expect(debateSummaryOf('economie')).toMatch(
-      /^Au .+, Polithèque présente les propositions des 10 partis sur le thème « Économie, impôts et dette », par ordre alphabétique, avec \d+ chiffres clés sourcés\.$/
+      /^Au .+, Polithèque présente les propositions (?:des 10 partis|de \d+ partis sur 10) sur le thème « Économie, impôts et dette », par ordre alphabétique, avec \d+ chiffres clés sourcés\.$/
     );
   });
 

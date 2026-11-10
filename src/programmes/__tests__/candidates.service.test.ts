@@ -1,6 +1,8 @@
 import {
   buildCandidateList,
   withdrawalLabel,
+  candidatesDeadlineNote,
+  CANDIDATES_PAGE_INTRO,
   candidatesIntro,
   candidatesRule,
 } from '@/src/programmes/models/candidates.service';
@@ -203,6 +205,28 @@ describe('Feature: phrases de contexte de la page', () => {
       'La liste officielle des candidats sera publiée par le Conseil constitutionnel après le dépôt des 500 parrainages.'
     );
     expect(candidatesIntro([])).toBe(intro);
+  });
+
+  it('should say in plain words what to wait for, with no deadline in the lead', () => {
+    expect(CANDIDATES_PAGE_INTRO).toBe(
+      "La liste officielle sera publiée par le Conseil constitutionnel une fois vérifiées les 500 signatures d'élus que chaque candidat doit réunir. En attendant, voici les candidatures annoncées publiquement."
+    );
+    expect(CANDIDATES_PAGE_INTRO).not.toMatch(/mars|18 h|calculée/);
+  });
+
+  it('should put the calculated deadline in a small note, taken from the FAQ', () => {
+    expect(
+      candidatesDeadlineNote(
+        faq([{ label: 'L', date: '2027-03-12', time: '18:00', rule: 'Règle' }])
+      )
+    ).toBe(
+      'Date limite de dépôt des parrainages : vendredi 12 mars 2027, 18 h (date calculée, à confirmer par le décret de convocation).'
+    );
+  });
+
+  it('should give no deadline note when the data has no calculated date', () => {
+    expect(candidatesDeadlineNote(faq(undefined))).toBeNull();
+    expect(candidatesDeadlineNote([])).toBeNull();
   });
 
   it('should state the display rule with the update date', () => {

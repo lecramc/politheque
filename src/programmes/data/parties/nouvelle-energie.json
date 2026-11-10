@@ -12,18 +12,18 @@
   },
   "keyIdeas": [
     {
-      "id": "baisser-la-depense-publique-de-200-milliards",
-      "title": "Baisser la dépense publique de 200 milliards",
-      "text": "200 milliards d'euros d'économies, dont 120 pour le salaire net et 40 pour baisser les impôts de production.",
-      "measureRefs": ["economie.0"],
+      "id": "instaurer-une-regle-d-or-budgetaire",
+      "title": "Instaurer une règle d'or budgétaire",
+      "text": "Limiter par une règle d'or les déficits de fonctionnement, hors investissement, et ramener la dépense publique sous 50 % du PIB.",
+      "measureRefs": ["economie.1"],
       "relatedQuestionIds": ["q02-depenses"]
     },
     {
-      "id": "augmenter-le-salaire-net-en-baissant-les-cotisatio",
-      "title": "Augmenter le salaire net en baissant les cotisations",
-      "text": "« Cotiser moins pour gagner plus » : baisser les cotisations sociales, avec un gain annoncé d'environ 400 € nets par mois.",
+      "id": "maintenir-l-age-legal-de-depart-a-65-ans",
+      "title": "Porter l'âge légal de départ à 65 ans",
+      "text": "Ne pas revenir sur la réforme des retraites de 2023 et fixer l'âge légal à 65 ans, présenté comme « un impératif national urgent ».",
       "measureRefs": ["travail.0"],
-      "relatedQuestionIds": []
+      "relatedQuestionIds": ["q04-retraite"]
     },
     {
       "id": "reserver-les-aides-aux-etrangers-residents-depuis",
@@ -44,11 +44,17 @@
   "history": {
     "founded": "2014 (association déclarée le 2 septembre 2014 à la sous-préfecture de Grasse, publiée au Journal officiel le 20 septembre 2014 ; le parti indique 2013) ; déploiement national décidé le 9 juin 2021",
     "origins": {
-      "text": "Nouvelle Énergie est fondé à Cannes par David Lisnard, puis étendu au niveau national à partir de juin 2021. Selon le Journal officiel, l'association « Nouvelle Energie » et son association de financement sont déclarées le 2 septembre 2014 à la sous-préfecture de Grasse (publication du 20 septembre 2014), avec pour objet de « promouvoir et d'accompagner l'émergence d'une nouvelle offre politique » ; son objet est redéfini en juillet 2021 et son siège transféré de Cannes à Paris en mars 2024. Les dates de création avancées divergent : 2013 sur la page de présentation du parti, 2021 dans une page de questions-réponses du parti (qui correspond au lancement national), 2022 selon une biographie de Sud Radio ; le Journal officiel ne mentionne que la déclaration de 2014. Le mouvement est issu de la droite LR : son fondateur a été membre du RPR (1996-2002), de l'UMP (2002-2015) puis de LR (2015-2026), et de nombreux élus du mouvement sont restés en double appartenance (LR ou Horizons). David Lisnard quitte LR le 31 mars 2026 et fait depuis de Nouvelle Énergie le support de sa candidature présidentielle.",
+      "text": "Nouvelle Énergie est fondé à Cannes par David Lisnard, puis étendu au niveau national à partir de juin 2021. Selon le Journal officiel, l'association « Nouvelle Energie » et son association de financement sont déclarées le 2 septembre 2014 à la sous-préfecture de Grasse (publication du 20 septembre 2014), avec pour objet de « promouvoir et d'accompagner l'émergence d'une nouvelle offre politique » ; son objet est redéfini en juillet 2021 et son siège transféré de Cannes à Paris en mars 2024. Les dates de création avancées divergent : 2013 sur la page de présentation du parti, 2021 dans une page de questions-réponses du parti (qui correspond au lancement national), 2022 selon une biographie de Sud Radio ; le Journal officiel ne mentionne que la déclaration de 2014. Le mouvement est issu de la droite LR : son fondateur, entré au RPR à 25 ans, a ensuite appartenu à l'UMP puis à LR, dont il a été vice-président, et plusieurs élus du mouvement sont restés en double appartenance (LR ou Horizons). David Lisnard quitte LR le 31 mars 2026 et fait depuis de Nouvelle Énergie le support de sa candidature présidentielle.",
       "sources": [
         {
           "title": "Journal officiel (JOAFE), annonce n° 53 du 20/09/2014 – création de l'association « Nouvelle Energie » (déclarée le 02/09/2014 à la sous-préfecture de Grasse)",
           "url": "https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:201400380053",
+          "date": "2014-09-20",
+          "kind": "statistique"
+        },
+        {
+          "title": "Journal officiel (JOAFE), annonce n° 55 du 20/09/2014 – création de l'« Association de financement \"Nouvelle Energie\" » (déclarée le 02/09/2014 à la sous-préfecture de Grasse)",
+          "url": "https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:201400380055",
           "date": "2014-09-20",
           "kind": "statistique"
         },
@@ -77,18 +83,6 @@
           "kind": "declaration"
         },
         {
-          "title": "Wikipédia (en) – New Energy (political party)",
-          "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-          "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
-          "title": "Wikipédia (en) – David Lisnard",
-          "url": "https://en.wikipedia.org/wiki/David_Lisnard",
-          "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
           "title": "Public Sénat, « Tentative de groupe Nouvelle Énergie et de putsch contre Claude Malhuret : c'est la folle semaine du mercato »",
           "url": "https://www.publicsenat.fr/actualites/politique/tentative-de-groupe-nouvelle-energie-et-de-putsch-contre-claude-malhuret-psychodrame-cest-la-folle-semaine-du-mercato",
           "date": "2026-10-01",
@@ -98,6 +92,12 @@
           "title": "Public Sénat (avec AFP), « Présidentielle 2027 : David Lisnard, maire de Cannes, annonce sa candidature et quitte officiellement les LR »",
           "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-david-lisnard-maire-de-cannes-annonce-sa-candidature-et-quitte-officiellement-les-lr",
           "date": "2026-04-01",
+          "kind": "presse"
+        },
+        {
+          "title": "Banque des Territoires / Localtis (T. Beurey, C. Mallet), « David Lisnard élu à la tête de l'Association des maires de France »",
+          "url": "https://www.banquedesterritoires.fr/david-lisnard-elu-la-tete-de-lassociation-des-maires-de-france",
+          "date": "2021-11-17",
           "kind": "presse"
         }
       ]
@@ -129,7 +129,7 @@
       },
       {
         "title": "Classement par la presse",
-        "text": "La presse décrit Nouvelle Énergie comme un mouvement libéral de droite (LCP, Il Foglio), parfois situé du centre droit à la droite. Dans LCP, le politologue Raphaël Morisset juge le terme « libéral » discutable et décrit un libéralisme « très illibéral sur le plan politique et sociétal ». Le mouvement se définit lui-même comme « une droite libre, indépendante et fière d'assumer une vision libérale ».",
+        "text": "Le quotidien italien Il Foglio décrit Nouvelle Énergie comme un « mouvement libéral » ; LCP présente la ligne de son fondateur comme libérale. Dans LCP, le politologue Raphaël Morisset juge le terme « libéral » discutable et décrit un libéralisme « très illibéral sur le plan politique et sociétal ». Le mouvement se définit lui-même comme « une droite libre, indépendante et fière d'assumer une vision libérale ».",
         "sources": [
           {
             "title": "LCP, « Présidentielle 2027 : derrière le phénomène des réseaux sociaux, qui est David Lisnard ? »",
@@ -142,12 +142,6 @@
             "url": "https://www.ilfoglio.it/en/world/2026/10/17/news/everyone-is-talking-about-david-lisnard-the-french-milei-and-mayor-of-cannes-who-has-his-sights-set-on-the-elysee-palace--410836",
             "date": "2026-10-17",
             "kind": "presse"
-          },
-          {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
           },
           {
             "title": "Nouvelle Énergie, « Quel est le parti de David Lisnard ? »",
@@ -163,12 +157,6 @@
         "date": "2014",
         "event": "David Lisnard devient maire de Cannes ; il est réélu en 2020 et en 2026.",
         "sources": [
-          {
-            "title": "Wikipédia (en) – David Lisnard",
-            "url": "https://en.wikipedia.org/wiki/David_Lisnard",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Sud Radio, « La biographie et le CV de David Lisnard »",
             "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-david-lisnard",
@@ -200,12 +188,6 @@
             "kind": "programme"
           },
           {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Journal officiel (JOAFE), annonce n° 56 du 20/07/2021 – modification de l'objet de « Nouvelle Energie » (déclarée le 16/07/2021)",
             "url": "https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:202100290056",
             "date": "2021-07-20",
@@ -222,12 +204,6 @@
             "url": "https://www.banquedesterritoires.fr/david-lisnard-elu-la-tete-de-lassociation-des-maires-de-france",
             "date": "2021-11-17",
             "kind": "presse"
-          },
-          {
-            "title": "Wikipédia (en) – David Lisnard",
-            "url": "https://en.wikipedia.org/wiki/David_Lisnard",
-            "date": "2026-11",
-            "kind": "statistique"
           },
           {
             "title": "Sud Radio, « La biographie et le CV de David Lisnard »",
@@ -254,40 +230,10 @@
             "kind": "presse"
           },
           {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Journal officiel (JOAFE), annonce du 02/04/2024 – transfert du siège de « Nouvelle Energie » à Paris (déclaré le 20/03/2024)",
             "url": "https://www.journal-officiel.gouv.fr/pages/associations-detail-annonce/?q.id=id:202400142143",
             "date": "2024-04-02",
             "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "date": "2024-01",
-        "event": "L'ancien ministre Hervé Novelli est chargé de piloter le projet du mouvement ; il est présenté en 2026 comme « coordinateur du projet Nouvelle Énergie ».",
-        "sources": [
-          {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Nouvelle Énergie – « Qui soutient David Lisnard ? »",
-            "url": "https://www.unenouvelleenergie.fr/questions/qui-soutient-david-lisnard/",
-            "date": "2026-11",
-            "kind": "declaration"
-          },
-          {
-            "title": "Presse Agence, « Vidauban : Nouvelle Énergie – Réunion publique avec Hervé Novelli et Alexandra Martin »",
-            "url": "https://presseagence.fr/?p=939661",
-            "date": "2026-03-11",
-            "kind": "presse"
           }
         ]
       },
@@ -306,12 +252,30 @@
             "url": "https://datan.fr/deputes/alpes-maritimes-06/depute_alexandra-martinalpesmaritimes",
             "date": "2026-11",
             "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "date": "2024-11",
+        "event": "La presse présente l'ancien ministre Hervé Novelli comme chargé de construire le programme du mouvement, organisé en dix pôles thématiques ; il est présenté en 2026 comme « coordinateur du projet Nouvelle Énergie ».",
+        "sources": [
+          {
+            "title": "Nouvelle Énergie – « Qui soutient David Lisnard ? »",
+            "url": "https://www.unenouvelleenergie.fr/questions/qui-soutient-david-lisnard/",
+            "date": "2026-11",
+            "kind": "declaration"
           },
           {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
+            "title": "Presse Agence, « Vidauban : Nouvelle Énergie – Réunion publique avec Hervé Novelli et Alexandra Martin »",
+            "url": "https://presseagence.fr/?p=939661",
+            "date": "2026-03-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Lyon Mag, « Hervé Novelli à Lyon pour donner un peu de nouvelle énergie à Béatrice de Montille »",
+            "url": "https://www.lyonmag.com/article/139453/herve-novelli-a-lyon-pour-donner-un-peu-de-nouvelle-energie-a-beatrice-de-montille",
+            "date": "2024-11-15",
+            "kind": "presse"
           }
         ]
       },
@@ -374,12 +338,6 @@
           "kind": "statistique"
         },
         {
-          "title": "Wikipédia (en) – New Energy (political party)",
-          "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-          "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
           "title": "Public Sénat, « David Lisnard, un nouveau souffle pour la droite qui séduit certains sénateurs LR »",
           "url": "https://www.publicsenat.fr/actualites/politique/david-lisnard-un-nouveau-souffle-pour-la-droite-qui-seduit-certains-senateurs-lr",
           "date": "2023-10-03",
@@ -391,14 +349,8 @@
       {
         "name": "David Lisnard",
         "role": "Fondateur et président de Nouvelle Énergie ; maire de Cannes depuis 2014 ; président de l'AMF depuis novembre 2021 ; candidat déclaré à la présidentielle de 2027",
-        "background": "Né le 2 février 1969 à Limoges, diplômé de l'Institut d'études politiques de Bordeaux, il travaille auprès de Jacques Pélissard, puis revient à Cannes où il devient l'adjoint et le successeur désigné du maire Bernard Brochand. Conseiller départemental des Alpes-Maritimes depuis 2008 et président de l'agglomération Cannes Pays de Lérins depuis 2017, il est membre du RPR (1996-2002), de l'UMP (2002-2015) puis de LR (2015-2026). Il quitte LR le 31 mars 2026 en déclarant que le parti « n'a pas levé ses ambiguïtés, notamment vis-à-vis de la macronie ».",
+        "background": "Né le 2 février 1969 à Limoges, diplômé de l'Institut d'études politiques de Bordeaux, il est chef de cabinet de Jacques Pélissard de 1996 à 1999, puis adjoint au maire de Cannes chargé du tourisme (2001-2008) et premier adjoint (2008-2014) avant de devenir maire. Conseiller départemental des Alpes-Maritimes depuis 2008 et président de l'agglomération Cannes Pays de Lérins depuis 2017, il adhère au RPR à 25 ans, puis appartient à l'UMP et à LR, dont il devient vice-président. Il quitte LR le 31 mars 2026 en déclarant que le parti « n'a pas levé ses ambiguïtés, notamment vis-à-vis de la macronie ».",
         "sources": [
-          {
-            "title": "Wikipédia (en) – David Lisnard",
-            "url": "https://en.wikipedia.org/wiki/David_Lisnard",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Sud Radio, « La biographie et le CV de David Lisnard »",
             "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-david-lisnard",
@@ -410,26 +362,20 @@
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-david-lisnard-maire-de-cannes-annonce-sa-candidature-et-quitte-officiellement-les-lr",
             "date": "2026-04-01",
             "kind": "presse"
+          },
+          {
+            "title": "Banque des Territoires / Localtis (T. Beurey, C. Mallet), « David Lisnard élu à la tête de l'Association des maires de France »",
+            "url": "https://www.banquedesterritoires.fr/david-lisnard-elu-la-tete-de-lassociation-des-maires-de-france",
+            "date": "2021-11-17",
+            "kind": "presse"
           }
         ]
       },
       {
         "name": "Alexandra Martin",
         "role": "Députée des Alpes-Maritimes (8e circonscription) depuis 2022, réélue en 2024 sous la double étiquette Droite républicaine et Nouvelle Énergie ; secrétaire générale du mouvement",
-        "background": "Née en 1968 à Nice, elle a étudié le droit à l'université de Nice. Selon LCP, elle a milité environ 35 ans sans mandat électif avant d'être élue députée en 2022, succédant à Bernard Brochand. Elle siège au groupe Droite républicaine et est rattachée financièrement à LR (Datan) ; David Lisnard la présente comme sa « partenaire politique depuis presque trente ans ».",
+        "background": "Née en 1968 à Nice. Selon LCP, elle a milité environ 35 ans sans mandat électif avant d'être élue députée en 2022. Elle siège au groupe Droite républicaine et est rattachée financièrement à LR (Datan) ; David Lisnard la présente comme sa « partenaire politique depuis presque trente ans ».",
         "sources": [
-          {
-            "title": "Wikipédia (en) – Alexandra Martin (born 1968)",
-            "url": "https://en.wikipedia.org/wiki/Alexandra_Martin_(born_1968)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "LCP, « La politique et moi » – Alexandra Martin, députée Droite républicaine des Alpes-Maritimes",
             "url": "https://lcp.fr/programmes/la-politique-et-moi/alexandra-martin-deputee-droite-republicaine-des-alpes-maritimes",
@@ -458,8 +404,8 @@
       },
       {
         "name": "Hervé Novelli",
-        "role": "Chargé du projet de Nouvelle Énergie depuis 2024 ; ancien secrétaire d'État (2007-2010)",
-        "background": "Né le 6 mars 1949, chef d'entreprise à Richelieu (Indre-et-Loire), il est chef de cabinet d'Alain Madelin au ministère de l'Industrie en 1986, secrétaire général du Parti républicain (UDF) en 1990, puis premier délégué général de Démocratie libérale à sa fondation fin 1997. Député d'Indre-et-Loire (1993-1997, puis UMP à partir de 2002) et député européen (1999-2002), il est nommé en juin 2007 secrétaire d'État chargé des Entreprises et du Commerce extérieur, puis en 2008 chargé du Commerce, de l'Artisanat, des PME, du Tourisme et des Services, jusqu'en 2010.",
+        "role": "Responsable du projet de Nouvelle Énergie ; ancien secrétaire d'État (2007-2010)",
+        "background": "Né le 6 mars 1949, chef d'entreprise à Richelieu (Indre-et-Loire), il est chef de cabinet d'Alain Madelin au ministère de l'Industrie en 1986, secrétaire général du Parti républicain (UDF) en 1990, puis premier délégué général de Démocratie libérale à sa fondation fin 1997. Député d'Indre-et-Loire (1993-1997, puis UMP à partir de 2002) et député européen (1999-2002), il est nommé en juin 2007 secrétaire d'État chargé des Entreprises et du Commerce extérieur, puis en 2008 chargé du Commerce, de l'Artisanat, des PME, du Tourisme et des Services ; il quitte le gouvernement lors du remaniement de novembre 2010.",
         "sources": [
           {
             "title": "TourMaG, « Hervé Novelli nouveau secrétaire d'État au Tourisme »",
@@ -468,21 +414,21 @@
             "kind": "presse"
           },
           {
-            "title": "Wikipédia (en) – Hervé Novelli",
-            "url": "https://en.wikipedia.org/wiki/Herv%C3%A9_Novelli",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia (en) – New Energy (political party)",
-            "url": "https://en.wikipedia.org/wiki/New_Energy_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Presse Agence, « Vidauban : Nouvelle Énergie – Réunion publique avec Hervé Novelli et Alexandra Martin »",
             "url": "https://presseagence.fr/?p=939661",
             "date": "2026-03-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Lyon Mag, « Hervé Novelli à Lyon pour donner un peu de nouvelle énergie à Béatrice de Montille »",
+            "url": "https://www.lyonmag.com/article/139453/herve-novelli-a-lyon-pour-donner-un-peu-de-nouvelle-energie-a-beatrice-de-montille",
+            "date": "2024-11-15",
+            "kind": "presse"
+          },
+          {
+            "title": "Acteurs publics, « Les partants, les nouveaux, les promus, les déçus »",
+            "url": "https://acteurspublics.fr/articles/les-partants-les-nouveaux-les-promus-les-decus/",
+            "date": "2010-11-14",
             "kind": "presse"
           }
         ]
@@ -490,14 +436,8 @@
       {
         "name": "Étienne Blanc",
         "role": "Sénateur LR du Rhône depuis 2020, membre de Nouvelle Énergie depuis 2023, nommé « porte-voix » du mouvement en avril 2025",
-        "background": "Né en 1954, il est maire de Divonne-les-Bains (Ain) à partir de 1991, député de la 3e circonscription de l'Ain de 2002 à 2016, puis premier vice-président de la région Auvergne-Rhône-Alpes (2016-2020) et candidat à la mairie de Lyon en 2020. Il rejoint Nouvelle Énergie en 2023 tout en restant membre de LR, évoquant « un nouveau souffle pour la droite ». Il est co-auteur d'un rapport sénatorial sur le narcotrafic.",
+        "background": "Né en 1954, il est maire de Divonne-les-Bains (Ain) à partir de 1991, député de la 3e circonscription de l'Ain de 2002 à 2016, puis premier vice-président de la région Auvergne-Rhône-Alpes chargé des finances jusqu'en 2020 et candidat à la mairie de Lyon en 2020. Il rejoint Nouvelle Énergie en 2023 tout en restant membre de LR, évoquant « un nouveau souffle pour la droite ». Il est co-auteur, avec Jérôme Durain, d'un rapport sénatorial sur le narcotrafic publié en 2024.",
         "sources": [
-          {
-            "title": "Wikipédia (en) – Étienne Blanc",
-            "url": "https://en.wikipedia.org/wiki/%C3%89tienne_Blanc",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Public Sénat, « David Lisnard, un nouveau souffle pour la droite qui séduit certains sénateurs LR »",
             "url": "https://www.publicsenat.fr/actualites/politique/david-lisnard-un-nouveau-souffle-pour-la-droite-qui-seduit-certains-senateurs-lr",
@@ -508,6 +448,30 @@
             "title": "Lyon Capitale, « Lyon : Béatrice de Montille et Étienne Blanc nommés “porte-voix” de David Lisnard »",
             "url": "https://www.lyoncapitale.fr/?p=440824",
             "date": "2025-04-17",
+            "kind": "presse"
+          },
+          {
+            "title": "Lyon Mag, « Etienne Blanc » (fiche personnalité)",
+            "url": "https://www.lyonmag.com/profil-personnalite-lyonnaise/167/etienne-blanc",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "Institut Montaigne, Municipales 2020 – Lyon, « Etienne Blanc : biographie »",
+            "url": "https://institutmontaigne.org/municipales-2020/lyon/etienne-blanc-biographie",
+            "date": "2020-02",
+            "kind": "politiste"
+          },
+          {
+            "title": "Lyon Mag, « Etienne Blanc officiellement candidat à la mairie de Lyon en 2020 »",
+            "url": "https://www.lyonmag.com/article/97756/etienne-blanc-officiellement-candidat-a-la-mairie-de-lyon-en-2020",
+            "date": "2018-10-24",
+            "kind": "presse"
+          },
+          {
+            "title": "Lyon Mag, « Etienne Blanc élu sénateur de l'année pour son rapport sur le narcotrafic »",
+            "url": "https://www.lyonmag.com/article/142136/etienne-blanc-elu-senateur-de-l-annee-pour-son-rapport-sur-le-narcotrafic",
+            "date": "2025-02-13",
             "kind": "presse"
           }
         ]
@@ -1078,42 +1042,37 @@
           "kind": "presse"
         }
       ],
-      "programmeStatus": "Pas de programme présidentiel complet et daté : le site de Nouvelle Énergie publie un programme en trois axes et des pages thématiques (éducation, sécurité, santé, agriculture, immigration) qui ne portent aucune date de publication ; d'après les archives d'Internet, les trois axes sont en ligne au moins depuis août 2025 et les pages thématiques au moins depuis octobre 2025. Les mesures qui ne reposent que sur ces pages sont signalées « page de programme non datée ». Le site publie aussi une foire aux questions (mise à jour le 16 octobre 2026) reprenant les déclarations datées du candidat (2021-2026). Le parti n'ayant pas de groupe parlementaire (une députée en double étiquette au groupe Droite républicaine), aucune position ne repose sur des votes : la fiche est fondée sur ces pages et sur les déclarations du candidat.",
+      "programmeStatus": "Programme publié en partie : « Le programme pour 2027 » de Nouvelle Énergie, en trois axes et cinq pages thématiques (éducation, sécurité, santé, agriculture, immigration), sans date affichée ; d'après les archives d'Internet, les axes sont en ligne au plus tard en août 2025 et les pages thématiques au plus tard en octobre 2025. Le site de campagne lisnard2027.fr n'est pas encore ouvert. Le parti n'ayant pas de groupe parlementaire, aucune position ne repose sur des votes.",
       "programmeState": "partiel",
       "programmeStateDetail": "axes et pages thématiques",
+      "programmePublication": {
+        "text": "Publié en partie : « Le programme pour 2027 » de Nouvelle Énergie, trois axes et cinq pages thématiques, en ligne au plus tard en août 2025 (d'après les archives d'Internet) ; programme complet sans date annoncée.",
+        "date": "2025-08",
+        "sources": [
+          {
+            "title": "Le programme pour 2027 – Nouvelle Énergie (consulté le 10 novembre 2026)",
+            "url": "https://www.unenouvelleenergie.fr/notre-programme/",
+            "date": "2026-11-10",
+            "kind": "programme"
+          },
+          {
+            "title": "Le programme pour 2027 – Nouvelle Énergie, copie du 28 août 2025 (archives d'Internet, Wayback Machine)",
+            "url": "https://web.archive.org/web/20250828211844/https://www.unenouvelleenergie.fr/notre-programme/",
+            "date": "2025-08-28",
+            "kind": "programme"
+          },
+          {
+            "title": "David Lisnard 2027 – « Le site de campagne ouvre prochainement » (consulté le 10 novembre 2026)",
+            "url": "https://www.lisnard2027.fr/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      },
       "themes": {
         "economie": {
-          "summary": "Le candidat fait de la baisse de la dépense publique sa priorité : 200 Md€ d'économies sur le quinquennat, redistribuées principalement en hausse du salaire net et en baisse des impôts de production. Il propose une règle d'or budgétaire et la réduction du nombre d'agences de l'État.",
+          "summary": "Le programme propose une règle d'or limitant les déficits de fonctionnement et une dépense publique ramenée sous 50 % du PIB. Le candidat propose de supprimer la C3S, puis de baisser les impôts de production, et de supprimer l'article 55 de la loi SRU.",
           "measures": [
-            {
-              "text": "Baisse de la dépense publique de 200 Md€, atteinte « en année pleine en fin de quinquennat » selon le parti (« sur le quinquennat » selon Europe 1 et l'AFP), dont 80 Md€ la première année ; répartition annoncée : 120 Md€ pour le salaire net (baisse des cotisations) et 40 Md€ pour la baisse des impôts de production ; objectif évoqué de 300 Md€.",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Le programme de David Lisnard est-il chiffré ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/le-programme-de-david-lisnard-est-il-chiffre/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                },
-                {
-                  "title": "Europe 1, « “Aujourd'hui en France, on dépouille les actifs au profit des inactifs”, dénonce David Lisnard »",
-                  "url": "https://www.europe1.fr/politique/aujourdhui-en-france-on-depouille-les-actifs-au-profit-des-inactifs-denonce-david-lisnard-938960",
-                  "date": "2026-05-27",
-                  "kind": "presse"
-                },
-                {
-                  "title": "The Times of Israel (AFP), « Présidentielle : Lisnard appelle Ciotti à “se séparer” du RN et à le rejoindre »",
-                  "url": "https://fr.timesofisrael.com/presidentielle-lisnard-appelle-ciotti-a-se-separer-du-rn-et-a-le-rejoindre/amp/",
-                  "date": "2026-10-28",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Nouvelle Énergie – « David Lisnard veut-il baisser les impôts ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/david-lisnard-veut-il-baisser-les-impots/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
-            },
             {
               "text": "Suppression de la C3S, puis baisse des impôts de production (entretien du 21 janvier 2026) ; le candidat refuse une baisse d'impôt financée par la dette (« baisser la dépense, puis rendre », LCI, 30 août 2023).",
               "sources": [
@@ -1149,17 +1108,6 @@
               ]
             },
             {
-              "text": "Réduction d'un tiers, puis de moitié, des organismes publics qu'il juge inutiles (le parti évoque les 1 153 entités créées par l'État).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Le programme de David Lisnard est-il chiffré ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/le-programme-de-david-lisnard-est-il-chiffre/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
-            },
-            {
               "text": "Suppression de l'article 55 de la loi SRU (quota de logements sociaux), qualifiée d'« idéologique et dirigiste » (page de programme non datée).",
               "sources": [
                 {
@@ -1173,36 +1121,8 @@
           ]
         },
         "travail": {
-          "summary": "Le candidat veut augmenter le salaire net par la baisse des cotisations et ajouter un étage de retraite par capitalisation. Il refuse de revenir sur la réforme des retraites de 2023 et propose une allocation sociale unique.",
+          "summary": "Le programme présente l'âge légal de 65 ans comme « un impératif national urgent » et le candidat refuse de revenir sur la réforme des retraites de 2023. Il propose un contrat de travail unique fusionnant CDI et CDD.",
           "measures": [
-            {
-              "text": "Baisse des cotisations sociales pour augmenter le salaire net (« cotiser moins pour gagner plus », Europe 1, 27 mai 2026), avec un gain annoncé d'environ 400 € nets par mois (entretien du 21 janvier 2026).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Comment David Lisnard veut-il augmenter les salaires sans augmenter le coût du travail ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/comment-david-lisnard-veut-il-augmenter-les-salaires-sans-augmenter-le-cout-du-travail/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                },
-                {
-                  "title": "Europe 1, « “Aujourd'hui en France, on dépouille les actifs au profit des inactifs”, dénonce David Lisnard »",
-                  "url": "https://www.europe1.fr/politique/aujourdhui-en-france-on-depouille-les-actifs-au-profit-des-inactifs-denonce-david-lisnard-938960",
-                  "date": "2026-05-27",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Étage de retraite par capitalisation obligatoire et collective, financé en partie par la désindexation des pensions supérieures à 2 000 € par mois (entretien du 29 novembre 2025).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Quel âge de départ à la retraite David Lisnard défend-il ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quel-age-de-depart-a-la-retraite-david-lisnard-defend-il/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
-            },
             {
               "text": "Refus de revenir sur la réforme des retraites de 2023 (franceinfo, 9 octobre 2024) ; une page du programme (non datée) présente l'âge légal de 65 ans comme « un impératif national urgent ».",
               "sources": [
@@ -1234,23 +1154,6 @@
                   "url": "https://www.unenouvelleenergie.fr/notre-programme/reussir-une-nouvelle-ambition-francaise/",
                   "date": "2026-11",
                   "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Allocation unique regroupant les aides, plafonnée à un pourcentage du SMIC ; un salarié à temps plein doit gagner « au moins 500 € de plus » qu'une personne sans emploi (26 septembre 2026) ; dégressivité des allocations chômage associée à la formation (Sud Radio, 29 février 2024).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Quel candidat veut regrouper les aides sociales en une allocation unique ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-regrouper-les-aides-sociales-en-une-allocation-unique/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                },
-                {
-                  "title": "Nouvelle Énergie – « Quel candidat veut réformer l'assurance chômage ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-reformer-l-assurance-chomage/",
-                  "date": "2026-11",
-                  "kind": "declaration"
                 }
               ]
             }
@@ -1447,17 +1350,6 @@
                   "kind": "programme"
                 }
               ]
-            },
-            {
-              "text": "Fixer des objectifs environnementaux sans imposer les moyens (« neutralité scientifique », entretien du 29 novembre 2025).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Quel candidat défend une écologie pragmatique et non punitive ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-defend-une-ecologie-pragmatique-et-non-punitive/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
             }
           ]
         },
@@ -1583,7 +1475,7 @@
           ]
         },
         "europe": {
-          "summary": "Le candidat ne propose pas de quitter l'Union européenne (« Nous n'avons pas vocation à sortir de l'Europe », Bayeux, 17 juin 2026) mais veut un « traité de démocratisation de l'Europe » redéfinissant ses compétences et la primauté du droit national en matière migratoire. Il juge « incontournable » la hausse du budget de défense.",
+          "summary": "Le programme propose un « traité de démocratisation de l'Europe » redéfinissant les compétences de l'Union, et l'inscription dans la Constitution de la primauté du droit national en matière migratoire.",
           "measures": [
             {
               "text": "Négocier un « traité de démocratisation de l'Europe » redéfinissant « les compétences indispensables à la plus-value européenne » ; n'accepter les transferts de cohésion que si les pays bénéficiaires respectent l'État de droit et les règles anti-corruption (page de programme non datée).",
@@ -1597,17 +1489,6 @@
               ]
             },
             {
-              "text": "Obtenir pour la France, comme le Danemark, une dérogation aux règles communes en matière d'asile et d'immigration (discours de Bayeux, 17 juin 2026).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Que pense David Lisnard de l'Union européenne ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/que-pense-david-lisnard-de-l-union-europeenne/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
-            },
-            {
               "text": "Inscrire dans la Constitution la primauté du droit national en matière migratoire pour rendre inapplicables les décisions de la CJUE et de la CEDH « contraires à l'intérêt national » (page de programme non datée).",
               "sources": [
                 {
@@ -1617,28 +1498,11 @@
                   "kind": "programme"
                 }
               ]
-            },
-            {
-              "text": "Hausse du budget de la défense, jugée « incontournable » (RMC, 21 avril 2026), et renforcement de l'industrie d'armement (« il est temps de passer commande », Sud Radio, 29 février 2024).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Quel candidat veut renforcer l'armée ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-veut-renforcer-l-armee/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                },
-                {
-                  "title": "Nouvelle Énergie – « Quelle est la position de David Lisnard sur la guerre en Ukraine ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quelle-est-la-position-de-david-lisnard-sur-la-guerre-en-ukraine/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
             }
           ]
         },
         "institutions": {
-          "summary": "Le programme propose une décentralisation avec des « provinces » remplaçant départements et régions, validée par référendum, et un recours accru au référendum. Le candidat plaide pour une primaire ouverte de la droite et du centre.",
+          "summary": "Le programme propose une décentralisation avec des « provinces » remplaçant départements et régions, soumise à référendum, et un président recentré sur trois fonctions.",
           "measures": [
             {
               "text": "Nouveau schéma à trois niveaux (État, « une quarantaine ou cinquantaine de provinces » remplaçant départements et régions, bloc communal), soumis à « un référendum constitutionnel » (page de programme non datée).",
@@ -1652,28 +1516,6 @@
               ]
             },
             {
-              "text": "Instaurer « un véritable référendum d'initiative populaire », sur le modèle suisse (meeting de Saint-Raphaël, 3 juillet 2026).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Quel candidat propose des référendums ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-des-referendums/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
-            },
-            {
-              "text": "Faire « consacrer par le référendum » la réforme économique si elle est bloquée (Saint-Raphaël, 3 juillet 2026).",
-              "sources": [
-                {
-                  "title": "Nouvelle Énergie – « Quel candidat propose des référendums ? »",
-                  "url": "https://www.unenouvelleenergie.fr/questions/quel-candidat-propose-des-referendums/",
-                  "date": "2026-11",
-                  "kind": "declaration"
-                }
-              ]
-            },
-            {
               "text": "Président recentré sur trois fonctions (grandes décisions, gestion des crises, lien avec les forces vives) ; loi limitée aux grands principes, sauf en matière fiscale et pénale (page de programme non datée).",
               "sources": [
                 {
@@ -1681,23 +1523,6 @@
                   "url": "https://www.unenouvelleenergie.fr/notre-programme/etre-maitre-de-notre-destin/",
                   "date": "2026-11",
                   "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Organiser une « grande primaire ouverte » de la droite et du centre pour 2027.",
-              "sources": [
-                {
-                  "title": "Public Sénat (avec AFP), « Présidentielle 2027 : David Lisnard, maire de Cannes, annonce sa candidature et quitte officiellement les LR »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-david-lisnard-maire-de-cannes-annonce-sa-candidature-et-quitte-officiellement-les-lr",
-                  "date": "2026-04-01",
-                  "kind": "presse"
-                },
-                {
-                  "title": "LCP, « “Je suis candidat” : David Lisnard quitte LR et relance le débat sur une primaire à droite »",
-                  "url": "https://lcp.fr/actualites/je-suis-candidat-david-lisnard-quitte-lr-et-relance-le-debat-sur-une-primaire-a-droite",
-                  "date": "2026-04-01",
-                  "kind": "presse"
                 }
               ]
             }
