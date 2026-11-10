@@ -6,7 +6,6 @@ import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import type { EtiquetteDetail } from '@/src/programmes/models/etiquettes.service';
-import { formatLongDate } from '@/src/programmes/models/presentation.service';
 
 /** Lien vers la leçon qui explique qui classe les partis (le bloc « aux extrêmes »). */
 export const LABELS_LESSON_HREF = '/comprendre/gauche-droite';
@@ -43,7 +42,7 @@ export function PartyLabelsDetail({
         >{`${detail.ministry.circular}, pour les municipales de 2026.`}</Text>
         {detail.ministry.councilOfState.map((decision) => (
           <Text key={decision.url} style={secondary}>
-            {`${decision.title} (${formatLongDate(decision.date)})`}
+            {decision.label}
           </Text>
         ))}
       </View>

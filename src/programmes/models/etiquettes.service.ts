@@ -64,7 +64,9 @@ export function etiquetteDetail(entry: PartyEtiquettes, circular: EtiquettesFile
       note: entry.ministry?.note ?? null,
       circular: circularLine(circular),
       /** Décisions du Conseil d'État qui touchent ce classement (sources de type `justice`). */
-      councilOfState: ministrySources.filter((s) => s.kind === 'justice'),
+      councilOfState: ministrySources
+        .filter((s) => s.kind === 'justice')
+        .map((s) => ({ ...s, label: `${s.title} (${formatLongDate(s.date)})` })),
       nullReason: entry.ministryNullReason,
     },
     press: {

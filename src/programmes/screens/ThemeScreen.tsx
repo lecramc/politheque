@@ -24,11 +24,7 @@ import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
 import { figureColumns, splitFigure } from '@/src/programmes/models/key-figure.service';
 import { DEBATE_ANCHORS } from '@/src/programmes/models/on-this-page';
 import { displayName, firstSentence } from '@/src/programmes/models/presentation.service';
-import {
-  NOT_PUBLISHED,
-  NOTHING_ON_THEME,
-  type ThemeProgramme,
-} from '@/src/programmes/models/programme-publication.service';
+import type { ThemeProgramme } from '@/src/programmes/models/programme-publication.service';
 import type { KeyFigure, Party } from '@/src/programmes/models/programme.model';
 import { partyLinkLabel } from '@/src/programmes/models/seo/page-meta';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
@@ -38,11 +34,7 @@ type Mode = 'tous' | 'comparer';
 
 /** Le sous-titre d'un parti : première phrase du résumé, ou la mention qui en tient lieu. */
 const programmeSubtitle = (programme: ThemeProgramme) =>
-  programme.kind === 'mesures'
-    ? firstSentence(programme.summary)
-    : programme.kind === 'rien'
-      ? NOTHING_ON_THEME
-      : NOT_PUBLISHED;
+  programme.kind === 'mesures' ? firstSentence(programme.summary) : programme.notice;
 
 function ProgrammeDetail({ programme, party }: { programme: ThemeProgramme; party: Party }) {
   const c = useColorStyle();

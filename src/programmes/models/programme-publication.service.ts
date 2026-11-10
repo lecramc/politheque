@@ -12,18 +12,20 @@ export const NOTHING_ON_THEME = 'Rien de publié sur ce thème dans le programme
  */
 export type ThemeProgramme =
   | { kind: 'mesures'; summary: string; measures: Measure[] }
-  | { kind: 'rien' }
-  | { kind: 'non-publie' };
+  /** `notice` : la mention à afficher telle quelle, identique pour tous les partis. */
+  | { kind: 'rien'; notice: string }
+  | { kind: 'non-publie'; notice: string };
 
 export function themeProgramme(
   candidacy: Candidacy | undefined,
   themeId: ThemeId
 ): ThemeProgramme | null {
   if (!candidacy) return null;
-  if (candidacy.programmeState === 'non-publie') return { kind: 'non-publie' };
+  if (candidacy.programmeState === 'non-publie')
+    return { kind: 'non-publie', notice: NOT_PUBLISHED };
   const programme = candidacy.themes[themeId];
   const measures = programme?.measures ?? [];
-  if (measures.length === 0) return { kind: 'rien' };
+  if (measures.length === 0) return { kind: 'rien', notice: NOTHING_ON_THEME };
   return { kind: 'mesures', summary: programme.summary, measures };
 }
 

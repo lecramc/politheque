@@ -1,4 +1,5 @@
 import {
+  NOT_PUBLISHED,
   themeProgramme,
   type ThemeProgramme,
 } from '@/src/programmes/models/programme-publication.service';
@@ -22,7 +23,7 @@ export type CompareQuestion = {
 export type CompareTheme = {
   theme: Theme;
   /** Mesures, « rien de publié sur ce thème » ou « programme pas encore publié » ; null sans candidature. */
-  programmes: [ThemeProgramme | null, ThemeProgramme | null];
+  programmes: [ThemeProgramme, ThemeProgramme];
   questions: CompareQuestion[];
 };
 
@@ -42,7 +43,9 @@ export function compareParties(catalog: Catalog, aId: string, bId: string): Comp
   if (!a || !b || a.id === b.id) return null;
   const election = catalog.elections.find((e) => e.featured);
   const programmeOf = (party: Party, theme: Theme) =>
-    election ? themeProgramme(party.candidacies[election.id], theme.id) : null;
+    (election ? themeProgramme(party.candidacies[election.id], theme.id) : null) ??
+    // Pas de candidature : même mention qu'un programme non publié, décidée ici et pas dans l'écran.
+    ({ kind: 'non-publie', notice: NOT_PUBLISHED } as const);
 
   const rows = catalog.questions.map((question) => ({ question }));
   const groups = stancesByTheme(rows, catalog.themes);

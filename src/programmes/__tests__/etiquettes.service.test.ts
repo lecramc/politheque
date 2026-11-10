@@ -95,7 +95,9 @@ describe('Feature: détail des étiquettes', () => {
       }),
       circular
     );
-    expect(detail.ministry.councilOfState).toEqual([decision]);
+    expect(detail.ministry.councilOfState).toEqual([
+      { ...decision, label: `${decision.title} (2 février 2026)` },
+    ]);
   });
 
   it('should explain why a classification is missing instead of leaving it empty', () => {

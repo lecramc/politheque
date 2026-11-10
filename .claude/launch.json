@@ -12,6 +12,17 @@
       "runtimeExecutable": "npx",
       "runtimeArgs": ["serve", "dist", "-l", "8098"],
       "port": 8098
+    },
+    {
+      "name": "apercu-hemicycle",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "serve",
+        "/private/tmp/claude-501/-Users-clementmarcel-Documents-Development-programmes-2027/1a70a611-10c2-4712-9d48-2d0bcff92eb2/scratchpad/apercu-hemicycle/dist",
+        "-l",
+        "8099"
+      ],
+      "port": 8099
     }
   ]
 }

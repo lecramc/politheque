@@ -18,7 +18,6 @@ import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
 import { TabPanel } from '@/src/programmes/components/Tabs';
 import { firstSentence } from '@/src/programmes/models/presentation.service';
-import { NOTHING_ON_THEME } from '@/src/programmes/models/programme-publication.service';
 import { legacyTabRedirect, partyHref } from '@/src/programmes/models/seo/party-sections';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
@@ -95,13 +94,13 @@ export default function PartyProgrammeScreen() {
               <Accordion
                 key={theme.id}
                 title={theme.title}
-                subtitle={NOTHING_ON_THEME}
+                subtitle={programme.notice}
                 leading={<Icon name={theme.icon} variant="onGlass" size="small" />}
                 open={openTheme === theme.id}
                 onToggle={(o) => setOpenTheme(o ? theme.id : null)}
               >
                 <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
-                  {NOTHING_ON_THEME}
+                  {programme.notice}
                 </Text>
                 <TextLink href={`/debats/${theme.id}`} standalone>
                   {`Le grand débat : ${theme.title}`}

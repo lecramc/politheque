@@ -87,18 +87,30 @@ describe('Feature: comparer deux partis', () => {
       ],
     });
     const [economie, travail] = compareParties(withUnpublished, 'zeta', 'sans-programme')!.themes;
-    expect(economie.programmes[1]).toEqual({ kind: 'non-publie' });
-    expect(travail.programmes[1]).toEqual({ kind: 'non-publie' });
+    expect(economie.programmes[1]).toEqual({
+      kind: 'non-publie',
+      notice: 'Programme 2027 pas encore publié',
+    });
+    expect(travail.programmes[1]).toEqual({
+      kind: 'non-publie',
+      notice: 'Programme 2027 pas encore publié',
+    });
   });
 
   it('should say nothing is published on a theme a partial programme leaves out', () => {
     const travail = compareParties(catalog, 'zeta', 'alpha')!.themes[1];
-    expect(travail.programmes).toEqual([{ kind: 'rien' }, { kind: 'rien' }]);
+    expect(travail.programmes).toEqual([
+      { kind: 'rien', notice: 'Rien de publié sur ce thème dans le programme 2027' },
+      { kind: 'rien', notice: 'Rien de publié sur ce thème dans le programme 2027' },
+    ]);
   });
 
-  it('should give no programme for a party without a candidacy', () => {
+  it('should give a party without a candidacy the same mention as an unpublished programme', () => {
     const economie = compareParties(catalog, 'zeta', 'milieu')!.themes[0];
-    expect(economie.programmes[1]).toBeNull();
+    expect(economie.programmes[1]).toEqual({
+      kind: 'non-publie',
+      notice: 'Programme 2027 pas encore publié',
+    });
   });
 
   it('should give each theme every question in questionnaire order, with both stances', () => {

@@ -43,18 +43,25 @@ describe('Feature: programme 2027 publié, partiel ou pas encore publié', () =>
   });
 
   it('should say nothing is published on a theme without measure, for a partial programme', () => {
-    expect(themeProgramme(candidacy('partiel'), 'travail')).toEqual({ kind: 'rien' });
+    expect(themeProgramme(candidacy('partiel'), 'travail')).toEqual({
+      kind: 'rien',
+      notice: 'Rien de publié sur ce thème dans le programme 2027',
+    });
     expect(NOTHING_ON_THEME).toBe('Rien de publié sur ce thème dans le programme 2027');
   });
 
   it('should never show a measure when the programme is not published, even if the data still has one', () => {
-    expect(themeProgramme(candidacy('non-publie'), 'economie')).toEqual({ kind: 'non-publie' });
+    expect(themeProgramme(candidacy('non-publie'), 'economie')).toEqual({
+      kind: 'non-publie',
+      notice: 'Programme 2027 pas encore publié',
+    });
     expect(NOT_PUBLISHED).toBe('Programme 2027 pas encore publié');
   });
 
   it('should not break when the theme is missing from the data', () => {
     expect(themeProgramme(candidacy('partiel', { themes: {} as never }), 'economie')).toEqual({
       kind: 'rien',
+      notice: 'Rien de publié sur ce thème dans le programme 2027',
     });
   });
 
