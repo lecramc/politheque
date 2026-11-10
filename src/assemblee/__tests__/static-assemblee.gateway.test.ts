@@ -2,7 +2,8 @@ import manifest from '@/src/assemblee/data/manifest.json';
 import { StaticAssembleeGateway } from '@/src/assemblee/gateways/static-assemblee.gateway';
 import { detailFactory } from '@/src/assemblee/models/scrutin.factory';
 
-const VERSION = manifest.sha256.scrutins.slice(0, 12);
+// Les fichiers dépendent des deux sources (scrutins et acteurs) : l'adresse change si l'une change.
+const VERSION = `${manifest.sha256.scrutins.slice(0, 12)}-${manifest.sha256.amo.slice(0, 12)}`;
 
 const fakeFetch = (body: unknown, ok = true, status = 200) => {
   const calls: string[] = [];

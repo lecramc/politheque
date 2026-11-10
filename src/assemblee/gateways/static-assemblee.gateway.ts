@@ -28,7 +28,8 @@ export class StaticAssembleeGateway implements AssembleeGateway {
   constructor(options: { fetchImpl?: typeof fetch; baseUrl?: string } = {}) {
     this.fetchImpl = options.fetchImpl ?? ((...args) => fetch(...args));
     this.baseUrl = options.baseUrl ?? '';
-    this.version = manifest.sha256.scrutins.slice(0, 12);
+    // Détails et annuaire dépendent des deux fichiers sources (scrutins et acteurs).
+    this.version = `${manifest.sha256.scrutins.slice(0, 12)}-${manifest.sha256.amo.slice(0, 12)}`;
   }
 
   async loadIndex(): Promise<ScrutinIndex> {

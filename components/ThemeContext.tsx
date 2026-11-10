@@ -11,6 +11,7 @@ import React, {
 import { Platform, useColorScheme } from 'react-native';
 
 import { layout } from '@/components/layout';
+import { votePalette } from '@/components/vote-colors';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
 import { guardThemeSwitch } from '@/src/core/web/theme-switch';
 
@@ -74,6 +75,7 @@ export const theme = {
       error: '#A3261D',
       info: '#1E3F8F',
     },
+    vote: votePalette.light, // positions de vote à l'Assemblée (forme + teinte, ni vert ni rouge)
     pastel: { bleu: '#DCE6F4', creme: '#FBF8F3', rose: '#F6E1DE' },
     tricolore: { bleu: '#1E3F8F', blanc: '#FFFFFF', rouge: '#D2394A', contourBlanc: '#7C8394' },
   },
@@ -131,6 +133,7 @@ export const theme = {
       error: '#F08A80',
       info: '#9DB7F2',
     },
+    vote: votePalette.dark,
     pastel: { bleu: '#1F2C4D', creme: '#0E1424', rose: '#3A2530' },
     tricolore: { bleu: '#6F8FE0', blanc: '#F4F2ED', rouge: '#E27783', contourBlanc: '#8A93A8' },
   },

@@ -1,3 +1,5 @@
+import { indexFactory, scrutinFactory } from '@/src/assemblee/models/scrutin.factory';
+import { assembleeStateBuilder } from '@/src/assemblee/store/state-builder';
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
@@ -53,6 +55,27 @@ describe('Feature: Comprendre avec le suivi de lecture', () => {
 
   it('should link to « Ma progression » and say the reading stays on the device', () => {
     expect(vmOf().progressHref).toBe('/passeport');
+  });
+});
+
+describe('Feature: entrée vers les votes de l’Assemblée depuis Comprendre', () => {
+  it('should offer a card to the Assemblée votes, with the number of scrutins published', () => {
+    const state = assembleeStateBuilder(ready().build())
+      .withIndex(
+        indexFactory({ scrutins: [scrutinFactory({ numero: 1 }), scrutinFactory({ numero: 2 })] })
+      )
+      .build();
+    expect(vmOf(state).assemblee).toEqual({
+      title: "Les grands votes de l'Assemblée",
+      text: 'Le résultat, le vote de chaque groupe et de chaque député sur les textes de loi, les scrutins solennels et les motions de censure.',
+      href: '/assemblee',
+      meta: '2 scrutins',
+    });
+  });
+
+  it('should not count the Assemblée votes as a lesson of the reading', () => {
+    expect(vmOf().reading.total).toBe(9);
+    expect(vmOf().chapters.flatMap((c) => c.items.map((i) => i.href))).not.toContain('/assemblee');
   });
 });
 

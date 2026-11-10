@@ -7,6 +7,7 @@ const IDLE = { status: 'idle' } as const;
 export const selectAssembleeIndex = (state: AppState) => state.assemblee.index;
 export const selectAssembleeManifest = (state: AppState) => state.assemblee.manifest;
 export const selectDeputes = (state: AppState) => state.assemblee.deputes;
+export const selectScrutinDetails = (state: AppState) => state.assemblee.details;
 
 export const selectScrutinDetail =
   (numero: number) =>

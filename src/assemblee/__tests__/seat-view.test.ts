@@ -48,6 +48,7 @@ describe('Feature: sièges affichables', () => {
       vote: 'P',
       depute: { id: 'PA1', nom: 'Jean Durand' },
       groupe: 'GA',
+      groupeIndex: 0,
       delegation: true,
     });
     expect(seat.x).toBeGreaterThan(0);

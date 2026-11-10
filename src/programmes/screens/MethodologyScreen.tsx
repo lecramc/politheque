@@ -224,6 +224,43 @@ export default function MethodologyScreen() {
           </View>
         ))}
       </View>
+
+      <View nativeID="votes-assemblee" id="votes-assemblee" style={{ gap: effects.spacing.sm }}>
+        <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+          {vm.assemblee.title}
+        </Text>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.assemblee.intro}</Text>
+        <Text variant="display" headingLevel={3}>
+          {vm.assemblee.criteriaTitle}
+        </Text>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.assemblee.criteriaLead}</Text>
+        {vm.assemblee.rules.map((rule) => (
+          <Text key={rule} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+            {`• ${rule}`}
+          </Text>
+        ))}
+        <Text variant="display" headingLevel={3}>
+          {vm.assemblee.sourceTitle}
+        </Text>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.assemblee.source}</Text>
+        {vm.assemblee.extraction ? (
+          <Text style={{ fontSize: 15, lineHeight: 23, color: colors.text.secondary }}>
+            {vm.assemblee.extraction}
+          </Text>
+        ) : null}
+        <Text variant="display" headingLevel={3}>
+          {vm.assemblee.limitsTitle}
+        </Text>
+        {vm.assemblee.limits.map((limit) => (
+          <Text key={limit} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+            {`• ${limit}`}
+          </Text>
+        ))}
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.assemblee.neutrality}</Text>
+        <TextLink href={vm.assemblee.link.href} size={16} standalone>
+          {vm.assemblee.link.label}
+        </TextLink>
+      </View>
     </Page>
   );
 }

@@ -1,3 +1,7 @@
+import {
+  buildStaticIndex,
+  buildStaticManifest,
+} from '@/src/assemblee/gateways/static-assemblee.gateway';
 import { SITE_URL } from '@/src/core/config/app';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
 import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
@@ -31,6 +35,8 @@ export type RoutePattern =
   | '/me-situer/resultats'
   | '/methodologie'
   | '/corrections'
+  | '/assemblee'
+  | '/assemblee/scrutins/[numero]'
   | '/passeport';
 
 export type RouteParams = Record<string, string>;
@@ -179,6 +185,15 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
   '/methodologie': fixed(true),
   // Corrections triées du plus récent au plus ancien : la première date est la dernière modification.
   '/corrections': fixed(true, (c) => maxIsoDate(c.corrections.map((e) => e.date))),
+  // Votes de l'Assemblée (open data) : liste datée de l'extraction, un scrutin daté de sa dernière
+  // modification réelle (jamais d'une date de build). Les filtres de la liste sont lus côté client.
+  '/assemblee': fixed(true, () => buildStaticManifest().extraitLe),
+  '/assemblee/scrutins/[numero]': {
+    params: () => buildStaticIndex().scrutins.map((s) => ({ numero: String(s.numero) })),
+    indexable: true,
+    lastmod: (_, p) =>
+      buildStaticIndex().scrutins.find((s) => String(s.numero) === p.numero)?.updatedAt ?? null,
+  },
   '/passeport': fixed(false),
 };
 

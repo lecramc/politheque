@@ -1,0 +1,210 @@
+{
+  "common": {
+    "back": "Comprendre",
+    "backToList": "Tous les scrutins",
+    "officialTitleNote": "Titre officiel de l'Assemblée nationale, reproduit tel quel.",
+    "source": "Source : Assemblée nationale, open data, {licence}. Données extraites le {date}.",
+    "sourceDetail": "Dernier scrutin publié : {dernier}. Empreinte SHA-256 du fichier des scrutins : {sha}…",
+    "officialListLink": "Tous les scrutins sur le site de l'Assemblée nationale"
+  },
+  "category": {
+    "texte": "Vote sur l'ensemble d'un texte",
+    "article-unique": "Vote sur l'article unique d'un texte",
+    "censure": "Motion de censure",
+    "declaration": "Déclaration du Gouvernement",
+    "premiere-partie-budget": "Première partie du projet de loi de finances",
+    "resolution": "Proposition de résolution",
+    "autre": "Autre scrutin solennel"
+  },
+  "voteType": {
+    "SPO": "Scrutin public ordinaire",
+    "SPS": "Scrutin public solennel",
+    "MOC": "Motion de censure"
+  },
+  "result": {
+    "adopte": "Adopté",
+    "rejete": "Rejeté",
+    "adoptee": "Adoptée",
+    "rejetee": "Rejetée"
+  },
+  "vote": {
+    "P": "Pour",
+    "C": "Contre",
+    "A": "Abstention",
+    "N": "Non-votant",
+    "none": "Pas de vote enregistré",
+    "vacant": "Siège vacant",
+    "censure": {
+      "none": "N'a pas voté la motion"
+    },
+    "delegation": "par délégation",
+    "miseAuPoint": "Mise au point publiée : souhaitait voter {souhait}. Elle ne modifie pas le résultat.",
+    "souhait": {
+      "P": "pour",
+      "C": "contre",
+      "A": "s'abstenir",
+      "N": "ne pas voter"
+    }
+  },
+  "list": {
+    "title": "Les grands votes de l'Assemblée",
+    "lead": "Les votes nominatifs des députés de la 17e législature sur les textes de loi, les scrutins solennels et les motions de censure, tels que l'Assemblée nationale les publie : le résultat, le vote de chaque groupe et de chaque député.",
+    "warning": "Seuls les votes par scrutin public sont enregistrés nominativement ; un texte adopté à main levée n'apparaît pas ici.",
+    "criteriaTitle": "Quels scrutins figurent ici ?",
+    "criteria": "Un scrutin est publié dès que l'une de ces règles s'applique, sans exception ni choix éditorial : il porte sur l'ensemble d'un texte, il porte sur l'article unique d'un projet ou d'une proposition de loi, l'Assemblée le classe comme scrutin public solennel, ou c'est une motion de censure. Les votes sur des amendements et sur des articles isolés ne sont pas repris.",
+    "methodLink": "Lire la méthode : votes de l'Assemblée",
+    "filters": {
+      "title": "Filtrer les scrutins",
+      "category": "Catégorie",
+      "allCategories": "Toutes",
+      "result": "Résultat",
+      "allResults": "Tous",
+      "period": "Période",
+      "allPeriods": "Toute la législature",
+      "search": "Rechercher dans le titre",
+      "searchPlaceholder": "Mot du titre officiel",
+      "reset": "Effacer les filtres"
+    },
+    "count": {
+      "one": "{count} scrutin sur {total}",
+      "other": "{count} scrutins sur {total}"
+    },
+    "empty": "Aucun scrutin ne correspond à ces filtres.",
+    "counts": "{pour} pour, {contre} contre",
+    "countsCensure": {
+      "one": "{count} voix pour, {requis} requises",
+      "other": "{count} voix pour, {requis} requises"
+    }
+  },
+  "scrutin": {
+    "pageTitle": "Scrutin n° {numero} du {date}",
+    "type": "Type de vote",
+    "category": "Catégorie",
+    "requestedBy": "Demandé par",
+    "date": "Date",
+    "resultTitle": "Résultat",
+    "synthesisTitle": "Synthèse",
+    "synthesis": {
+      "votants": "Votants",
+      "exprimes": "Suffrages exprimés",
+      "requis": "Majorité requise",
+      "pour": "Pour",
+      "contre": "Contre",
+      "abstentions": "Abstentions",
+      "nonVotants": "Non-votants"
+    },
+    "censureNote": "Pour une motion de censure, l'Assemblée ne recense que les voix pour : les autres députés n'ont pas voté la motion, ce qui n'est pas un vote contre."
+  },
+  "groups": {
+    "title": "Vote de chaque groupe",
+    "caption": "Vote de chaque groupe parlementaire au jour du scrutin, selon les décomptes de l'Assemblée nationale.",
+    "group": "Groupe",
+    "members": "Membres",
+    "pour": "Pour",
+    "contre": "Contre",
+    "abstention": "Abstentions",
+    "nonVotant": "Non-votants",
+    "noVote": "N'ont pas voté la motion",
+    "sortPlaces": "Ordre des places",
+    "sortAlpha": "Ordre alphabétique",
+    "sortLabel": "Ordre des groupes",
+    "note": "Un groupe parlementaire n'est pas un parti : ses membres ne sont pas tous membres du même parti, et un parti peut siéger dans plusieurs groupes.",
+    "select": "Mettre en évidence les sièges du groupe {groupe} sur le schéma"
+  },
+  "hemicycle": {
+    "title": "Le vote de chaque député",
+    "loading": "Chargement du détail par député",
+    "error": "Le détail par député n'a pas pu être chargé.",
+    "errorLink": "Voir ce scrutin sur le site de l'Assemblée nationale",
+    "retry": "Réessayer",
+    "label": "Hémicycle de l'Assemblée nationale au scrutin n° {numero} : {resume}.",
+    "mention": "Schéma : les sièges sont rangés selon leur numéro de place officiel. Ce n'est pas le plan exact de l'hémicycle, que l'Assemblée ne publie pas sous forme de coordonnées.",
+    "hint": "Survolez ou cliquez un siège pour voir le député. Touchez un groupe de l'arc, ou le nom d'un groupe dans le tableau des groupes, pour mettre ses sièges en évidence.",
+    "delegationsCount": {
+      "one": "{count} vote exprimé par délégation.",
+      "other": "{count} votes exprimés par délégation."
+    },
+    "misesAuPointCount": {
+      "one": "{count} mise au point publiée, sans effet sur le résultat.",
+      "other": "{count} mises au point publiées, sans effet sur le résultat."
+    },
+    "clearHighlight": "Retirer la mise en évidence",
+    "highlighted": "Sièges du groupe {groupe} en évidence.",
+    "unseatedTitle": "Députés sans siège identifiable ce jour-là",
+    "unseatedNote": "L'open data ne permet pas de savoir quel siège ces députés occupaient ce jour-là : leur position est listée ici, sans être placée sur le schéma.",
+    "tooltip": "{nom}, {groupe} : {position}"
+  },
+  "legend": {
+    "title": "Légende",
+    "delegation": "Vote exprimé par délégation (repère sur le siège)"
+  },
+  "deputies": {
+    "title": "Tableau des députés",
+    "caption": "Vote de chaque député, par ordre alphabétique.",
+    "search": "Rechercher un député",
+    "searchPlaceholder": "Nom ou prénom",
+    "filterGroup": "Groupe",
+    "filterPosition": "Position",
+    "all": "Tous",
+    "name": "Député",
+    "group": "Groupe",
+    "position": "Position",
+    "delegation": "Par délégation",
+    "yes": "oui",
+    "none": "Aucun député ne correspond à ces critères.",
+    "count": {
+      "one": "{count} député",
+      "other": "{count} députés"
+    }
+  },
+  "others": {
+    "title": "Autres votes sur ce texte",
+    "lead": "Autres scrutins de la liste portant sur le même dossier législatif officiel.",
+    "dossier": "Dossier législatif sur le site de l'Assemblée nationale"
+  },
+  "cited": {
+    "title": "Ce vote est cité dans",
+    "item": "{partie}, onglet {onglet}",
+    "note": "Fiches de Polithèque dont les sources citent ce scrutin."
+  },
+  "source": {
+    "title": "Source et licence",
+    "official": "Page officielle de ce scrutin sur le site de l'Assemblée nationale",
+    "licenceLine": "Données de l'Assemblée nationale réutilisées sous {licence}."
+  },
+  "seo": {
+    "listTitle": "Les grands votes de l'Assemblée nationale",
+    "listDescription": "{count} scrutins de la 17e législature : textes de loi, scrutins solennels et motions de censure, avec le vote de chaque groupe et de chaque député.",
+    "scrutinTitle": "Scrutin n° {numero} du {date} : {titre}",
+    "scrutinDescriptionAdopted": "Scrutin n° {numero}. Adopté : {pour} pour, {contre} contre. Vote de chaque groupe et de chaque député.",
+    "scrutinDescriptionRejected": "Scrutin n° {numero}. Rejeté : {pour} pour, {contre} contre. Vote de chaque groupe et de chaque député.",
+    "scrutinDescriptionCensureAdopted": "Scrutin n° {numero}. Motion adoptée : {pour} voix pour, {requis} requises. Vote de chaque groupe et de chaque député.",
+    "scrutinDescriptionCensureRejected": "Scrutin n° {numero}. Motion rejetée : {pour} voix pour, {requis} requises. Vote de chaque groupe et de chaque député."
+  },
+  "comprendre": {
+    "cardTitle": "Les grands votes de l'Assemblée",
+    "cardText": "Le résultat, le vote de chaque groupe et de chaque député sur les textes de loi, les scrutins solennels et les motions de censure.",
+    "cardMeta": "{count} scrutins"
+  },
+  "method": {
+    "title": "Votes de l'Assemblée",
+    "intro": "La page « Les grands votes de l'Assemblée » reprend, sans rien rédiger, les scrutins publics de la 17e législature publiés en open data par l'Assemblée nationale.",
+    "criteriaTitle": "Quels scrutins sont publiés",
+    "criteriaLead": "Un scrutin est publié si au moins une de ces règles s'applique. Elles sont évaluées par un programme, sans exception manuelle.",
+    "R1": "R1 : le titre officiel du scrutin commence par « l'ensemble » (vote sur l'ensemble d'un texte).",
+    "R2": "R2 : l'Assemblée classe le scrutin comme scrutin public solennel (code SPS).",
+    "R3": "R3 : le scrutin est une motion de censure (code MOC).",
+    "R4": "R4 : le scrutin porte sur l'article unique d'un projet ou d'une proposition de loi (organique comprise). Un vote sur l'article unique d'une proposition de résolution n'est pas retenu, sauf s'il est solennel (R2).",
+    "sourceTitle": "Source et licence",
+    "source": "Les données viennent des fichiers « Scrutins » et « Acteurs, mandats et organes » de l'open data de l'Assemblée nationale (data.assemblee-nationale.fr). Elles sont publiées sous Licence Ouverte / Open Licence (Etalab) : source citée sur chaque page, avec la date d'extraction. Chaque page de scrutin renvoie à la page officielle de l'Assemblée.",
+    "limitsTitle": "Limites à connaître",
+    "limitHand": "À main levée : seuls les votes par scrutin public sont enregistrés nominativement. Un texte adopté à main levée n'apparaît pas.",
+    "limitSchema": "Schéma : les sièges sont rangés selon leur numéro de place officiel ; ce n'est pas le plan exact de l'hémicycle, que l'Assemblée ne publie pas sous forme de coordonnées.",
+    "limitCensure": "Motions de censure : l'Assemblée ne recense que les voix pour ; les autres députés n'ont pas voté la motion, ce qui n'est pas un vote contre.",
+    "limitDelegation": "Délégations : un député peut voter par délégation d'un collègue ; la page l'indique sans l'interpréter.",
+    "limitPoint": "Mises au point : un député peut publier après coup qu'il souhaitait voter autrement. Elle est affichée comme telle, et ne modifie ni le résultat ni les décomptes.",
+    "limitGroups": "Groupes : un groupe parlementaire n'est pas un parti. Le groupe affiché est celui du jour du scrutin.",
+    "neutrality": "Aucun taux de présence, de loyauté ou de cohésion, aucun classement, aucun score : la page montre les votes, pas un jugement sur les députés ou les groupes.",
+    "link": "Voir les grands votes de l'Assemblée"
+  }
+}

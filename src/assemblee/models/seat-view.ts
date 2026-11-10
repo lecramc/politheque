@@ -15,6 +15,8 @@ export type SeatView = {
   depute: SeatDepute | null;
   /** Abréviation officielle du groupe au jour du vote. */
   groupe: string | null;
+  /** Indice du groupe dans l'index : distingue deux organes de même abréviation (mise en évidence). */
+  groupeIndex: number | null;
   delegation: boolean;
 };
 
@@ -82,6 +84,7 @@ export const seatViews = (
       glyph: GLYPHS[vote],
       depute: depute === -1 ? null : nameOf(deputes[depute]),
       groupe: groupe === -1 ? null : groupes[groupe].abrev,
+      groupeIndex: groupe === -1 ? null : groupe,
       delegation: detail.delegations.includes(i),
     };
   });

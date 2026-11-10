@@ -1,3 +1,5 @@
+import { buildStaticManifest } from '@/src/assemblee/gateways/static-assemblee.gateway';
+import { t } from '@/src/assemblee/i18n/translate';
 import { APP_NAME } from '@/src/core/config/app';
 import {
   buildCandidateList,
@@ -187,6 +189,28 @@ function candidatesText(catalog: Catalog): string[] {
  * Texte intégral pour les moteurs de réponse : fiches des partis (ordre alphabétique, même gabarit
  * pour tous) et guide « Comprendre ». Généré à partir des données du catalogue, jamais saisi.
  */
+/** Assemblée : seulement le critère de sélection et la source, pas les 286 scrutins. */
+function assembleeText(): string[] {
+  const manifest = buildStaticManifest();
+  return [
+    '',
+    '# Assemblée nationale : les grands votes',
+    '',
+    `Page : ${absoluteUrl('/assemblee')}`,
+    '',
+    t('list.warning'),
+    '',
+    t('method.criteriaLead'),
+    `- ${t('method.R1')}`,
+    `- ${t('method.R2')}`,
+    `- ${t('method.R3')}`,
+    `- ${t('method.R4')}`,
+    '',
+    `Source : Assemblée nationale, open data (${manifest.sources.scrutins}), ${manifest.licence}. Données extraites le ${formatLongDate(manifest.extraitLe)}.`,
+    '',
+  ];
+}
+
 export function buildLlmsFullTxt(catalog: Catalog): string {
   const parties = [...catalog.parties].sort((a, b) => a.name.localeCompare(b.name, 'fr'));
   const guide = catalog.guide.flatMap((section) => {
@@ -224,5 +248,6 @@ export function buildLlmsFullTxt(catalog: Catalog): string {
     '# Partis (ordre alphabétique)',
     '',
     ...parties.flatMap((party) => partyText(party, catalog)),
+    ...assembleeText(),
   ].join('\n');
 }
