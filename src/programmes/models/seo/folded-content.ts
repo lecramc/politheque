@@ -1,3 +1,6 @@
+import { buildStaticIndex } from '@/src/assemblee/gateways/static-assemblee.gateway';
+import { t } from '@/src/assemblee/i18n/translate';
+import { assembleeFoldedSnippets } from '@/src/assemblee/models/seo/assemblee-folded-content';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { themeMeasures } from '@/src/programmes/models/programme-publication.service';
 import type { Candidacy, Catalog, ThemeId } from '@/src/programmes/models/programme.model';
@@ -35,6 +38,15 @@ export function foldedSnippets(catalog: Catalog, path: string): string[] {
   if (path === CONTENUS_2027_PATHS.candidates) {
     const withdrawn = catalog.candidates.withdrawn[0];
     return withdrawn ? [snippet(withdrawn.summary)] : [];
+  }
+  // Assemblée : la liste porte l'avertissement « main levée », une page de scrutin son titre, sa
+  // date, son résultat et son premier groupe (le détail par député, lui, se charge côté client).
+  if (path === '/assemblee') return [t('list.warning')];
+  const scrutin = /^\/assemblee\/scrutins\/(\d+)$/.exec(path);
+  if (scrutin) {
+    const index = buildStaticIndex();
+    const found = index.scrutins.find((s) => String(s.numero) === scrutin[1]);
+    return found ? assembleeFoldedSnippets(found, index.groupes) : [];
   }
   const guide = /^\/comprendre\/([^/]+)$/.exec(path);
   if (guide) {

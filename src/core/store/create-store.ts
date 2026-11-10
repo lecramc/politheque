@@ -8,6 +8,8 @@ import {
 } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 
+import type { AssembleeGateway } from '@/src/assemblee/gateways/assemblee.gateway';
+import { assembleeSlice } from '@/src/assemblee/store/assemblee.slice';
 import { uiSlice } from '@/src/core/store/ui.slice';
 import type { Clock } from '@/src/programmes/gateways/clock.gateway';
 import type { ProgrammeGateway } from '@/src/programmes/gateways/programme.gateway';
@@ -20,11 +22,13 @@ export const rootReducers = combineReducers({
   programmes: programmesSlice.reducer,
   quiz: quizSlice.reducer,
   progress: progressSlice.reducer,
+  assemblee: assembleeSlice.reducer,
   ui: uiSlice.reducer,
 });
 
 export type Dependencies = {
   programmeGateway: ProgrammeGateway;
+  assembleeGateway: AssembleeGateway;
   readingProgressGateway: ReadingProgressGateway;
   clock: Clock;
 };

@@ -1,5 +1,7 @@
 import { createSelector } from 'reselect';
 
+import { t } from '@/src/assemblee/i18n/translate';
+import { selectAssembleeIndex } from '@/src/assemblee/store/assemblee.selector';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { stepHref, type JourneyStepId } from '@/src/programmes/models/journey.model';
 import { readingMinutes } from '@/src/programmes/models/presentation.service';
@@ -44,8 +46,9 @@ export const comprendreViewModel = () =>
       selectProgressStatus,
       selectJourneyProgress,
       selectReadingEntries,
+      selectAssembleeIndex,
     ],
-    (catalog, status, progressStatus, progress, entries) => {
+    (catalog, status, progressStatus, progress, entries, assembleeIndex) => {
       const hydrated = progressStatus === 'ready';
       const stepOf = (id: JourneyStepId) => progress.steps.find((s) => s.step.id === id)!;
       const guide = catalog?.guide ?? [];
@@ -69,6 +72,15 @@ export const comprendreViewModel = () =>
           visible: hydrated,
         },
         progressHref: '/passeport',
+        /** Carte d'entrée vers les votes de l'Assemblée : hors parcours, elle ne compte pas dans la lecture. */
+        assemblee: {
+          title: t('comprendre.cardTitle'),
+          text: t('comprendre.cardText'),
+          href: '/assemblee',
+          meta: assembleeIndex
+            ? t('comprendre.cardMeta', { count: assembleeIndex.scrutins.length })
+            : null,
+        },
         /** Lien sobre vers le lexique : hors parcours, il ne compte pas dans la progression. */
         lexicon: {
           href: CONTENUS_2027_PATHS.lexicon,

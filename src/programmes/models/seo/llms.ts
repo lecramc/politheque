@@ -1,3 +1,5 @@
+import { buildStaticIndex } from '@/src/assemblee/gateways/static-assemblee.gateway';
+import { t } from '@/src/assemblee/i18n/translate';
 import { APP_NAME } from '@/src/core/config/app';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import type { Catalog } from '@/src/programmes/models/programme.model';
@@ -108,6 +110,14 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
       "Les candidats à l'élection présidentielle 2027",
       CONTENUS_2027_PATHS.candidates,
       'toutes les candidatures déclarées ou annoncées, en ordre alphabétique du nom de famille, avec leur statut daté et leurs sources.'
+    ),
+    '',
+    '## Assemblée nationale',
+    '',
+    ...link(
+      t('list.title'),
+      '/assemblee',
+      `${buildStaticIndex().scrutins.length} scrutins publics de la 17e législature (textes de loi, scrutins solennels, motions de censure) : résultat, vote de chaque groupe et de chaque député, source Assemblée nationale (Licence Ouverte). Un texte adopté à main levée n'y figure pas.`
     ),
     '',
     '## Outils',
