@@ -1,0 +1,27 @@
+{
+  "sources": {
+    "scrutins": "https://data.assemblee-nationale.fr/static/openData/repository/17/loi/scrutins/Scrutins.json.zip",
+    "amo": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip"
+  },
+  "licence": "Licence Ouverte / Open Licence (Etalab)",
+  "extraitLe": "2026-11-10",
+  "publieLe": {
+    "scrutins": "2026-11-10",
+    "amo": "2026-11-10"
+  },
+  "sha256": {
+    "scrutins": "d91ab1475aaa65d8c585fe0da26efde56b4b65fd4228c306d8f7ff818b421835",
+    "amo": "914411af5731d6ef20fb144ae8babc08483b1d11be9c7105b0449a1ed124384f"
+  },
+  "scrutins": 286,
+  "votes": 70865,
+  "premier": "2024-10-08",
+  "dernier": "2026-11-04",
+  "versionScript": "1.0.0",
+  "regles": [
+    "R1 : le titre commence par « l'ensemble » (vote sur l'ensemble d'un texte)",
+    "R2 : scrutin public solennel (code SPS)",
+    "R3 : motion de censure (code MOC)",
+    "R4 : le scrutin porte sur l'article unique d'un projet ou d'une proposition de loi (organique comprise)"
+  ]
+}

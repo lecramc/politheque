@@ -50,3 +50,6 @@ app-example
 /prive/
 .claude/agent-memory
 .claude/design-spec.md
+
+# Données de l'Assemblée : archives de l'open data téléchargées (jamais commitées)
+.cache/
