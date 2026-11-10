@@ -205,12 +205,9 @@ describe('Feature: « Ce qu’il propose »', () => {
     expect(vmOf(catalog, 'beta').keyIdeas).toBeNull();
   });
 
-  it.each([
-    ['partiel', 'Programme 2027 partiel (96 mesures) au 3 novembre 2026.'],
-    ['publie', null],
-  ] as const)('should phrase the programme state « %s » in one line', (state, line) => {
-    const catalog = catalogOf([partyOf('alpha', 'Alpha', state)]);
-    expect(vmOf(catalog, 'alpha').keyIdeas?.programmeLine).toBe(line);
+  it('should leave the state of the programme to the notice, never repeat it above the ideas', () => {
+    const catalog = catalogOf([partyOf('alpha', 'Alpha', 'partiel')]);
+    expect(vmOf(catalog, 'alpha').keyIdeas).not.toHaveProperty('programmeLine');
   });
 
   it('should show the common notice instead of the ideas when the programme is not published', () => {

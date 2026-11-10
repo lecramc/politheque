@@ -58,10 +58,7 @@ describe('Feature: cartes des autres partis présentant un candidat', () => {
 
   it('should give the two label lines to every card, even without any classification', () => {
     const [card] = otherPartyCards(catalogWith([otherParty()]));
-    expect(card.labels.map((l) => l.value)).toEqual([
-      'pas de classement du parti',
-      'pas de classement du parti',
-    ]);
+    expect(card.labels.map((l) => l.value)).toEqual(['non classé', 'non classé']);
   });
 
   it('should write the identity line from the fields that exist, without inventing the others', () => {

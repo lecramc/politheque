@@ -57,4 +57,30 @@ describe('Feature: hub Partis (fiches, comparaison et grands débats)', () => {
       "Ces partis n'ont pas encore de fiche détaillée sur Polithèque (programme et positions)."
     );
   });
+
+  it('should give every party the same short line with both classifications, classified or not', () => {
+    const withEtiquettes = catalogFactory({
+      parties: catalog.parties,
+      etiquettes: {
+        ...catalog.etiquettes,
+        parties: [
+          {
+            id: 'alpha',
+            name: 'Alpha',
+            ministry: { bloc: 'Gauche', nuance: 'SOC', note: '', sources: [] },
+            ministryNullReason: null,
+            press: { label: 'Gauche', note: '', scholars: [], sources: [] },
+            pressNullReason: null,
+          },
+        ],
+      },
+    });
+    const { labelsInlineByParty } = partiesViewModel()(
+      stateBuilder().withCatalog(withEtiquettes).build()
+    );
+    expect(labelsInlineByParty).toEqual({
+      alpha: 'Ministère : Gauche · Presse et politistes : Gauche',
+      zeta: 'Ministère : non classé · Presse et politistes : non classé',
+    });
+  });
 });

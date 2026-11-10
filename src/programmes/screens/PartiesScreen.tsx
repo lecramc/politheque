@@ -75,7 +75,7 @@ export default function PartiesScreen() {
             }}
           >
             {vm.candidatesEntry ? (
-              <Button variant="primary" fullWidth={false} href={vm.candidatesEntry.href}>
+              <Button variant="secondary" fullWidth={false} href={vm.candidatesEntry.href}>
                 {vm.candidatesEntry.label}
               </Button>
             ) : null}
@@ -102,6 +102,7 @@ export default function PartiesScreen() {
                   party={party}
                   first={index === 0}
                   subtitle={[founded, candidate].filter(Boolean).join(' · ')}
+                  detail={vm.labelsInlineByParty[party.id]}
                 />
               );
             })}

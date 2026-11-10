@@ -1,5 +1,6 @@
 import { createSelector } from 'reselect';
 
+import { labelLines, labelsInline } from '@/src/programmes/models/etiquettes.service';
 import {
   candidatesEntry,
   OTHER_PARTIES_NOTE,
@@ -12,6 +13,13 @@ export const partiesViewModel = () =>
     status,
     // Ordre alphabétique : aucune hiérarchie implicite entre les partis.
     parties: [...(catalog?.parties ?? [])].sort((a, b) => a.name.localeCompare(b.name, 'fr')),
+    /** Les deux classements, en une ligne courte, pour chaque parti (même forme pour les dix). */
+    labelsInlineByParty: Object.fromEntries(
+      (catalog?.parties ?? []).map((party) => [
+        party.id,
+        labelsInline(labelLines(catalog?.etiquettes.parties.find((e) => e.id === party.id))),
+      ])
+    ),
     // Les neuf grands débats : leurs adresses `/debats/[id]` ne changent pas.
     debates: (catalog?.themes ?? []).map((theme) => ({
       id: theme.id,

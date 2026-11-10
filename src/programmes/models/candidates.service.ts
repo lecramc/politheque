@@ -117,6 +117,18 @@ export function candidatesIntro(faq: FaqEntry[]): string {
     : `${base}.`;
 }
 
+/** Chapô de la page : ce qu'on attend et ce que la page montre en attendant, sans date ni jargon. */
+export const CANDIDATES_PAGE_INTRO =
+  "La liste officielle sera publiée par le Conseil constitutionnel une fois vérifiées les 500 signatures d'élus que chaque candidat doit réunir. En attendant, voici les candidatures annoncées publiquement.";
+
+/** Note en petit : la date limite calculée de la FAQ ; rien si la donnée manque (jamais une date saisie ici). */
+export function candidatesDeadlineNote(faq: FaqEntry[]): string | null {
+  const deadline = faq.find((q) => q.id === SPONSORSHIP_FAQ_ID)?.calculated?.[0];
+  return deadline
+    ? `Date limite de dépôt des parrainages : ${calculatedDateText(deadline)} (date calculée, à confirmer par le décret de convocation).`
+    : null;
+}
+
 /** Règle d'affichage, identique pour tous les candidats. */
 export const candidatesRule = (lastVerified: string): string =>
   `Candidatures déclarées ou annoncées publiquement, attestées par au moins deux sources ; mise à jour le ${formatLongDate(lastVerified)}.`;

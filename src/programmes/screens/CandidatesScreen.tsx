@@ -36,6 +36,9 @@ export default function CandidatesScreen() {
         <Text variant="title">Les candidats à l'élection présidentielle 2027</Text>
         <Text style={{ fontSize: 17, lineHeight: 26 }}>{vm.intro}</Text>
         <Text style={{ fontSize: 14, color: colors.text.secondary }}>{vm.rule}</Text>
+        {vm.deadlineNote ? (
+          <Text style={{ fontSize: 14, color: colors.text.secondary }}>{vm.deadlineNote}</Text>
+        ) : null}
       </View>
 
       <View style={{ gap: effects.spacing.sm }}>

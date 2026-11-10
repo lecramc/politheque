@@ -53,10 +53,10 @@ export default function PartyProgrammeScreen() {
   return (
     <TabPanel id="programme" style={{ gap: effects.spacing.lg }}>
       {meta ? <SeoHead meta={meta} /> : null}
-      {/* Phrase datée et autonome, même gabarit pour les dix partis (audit SEO § 5.1). */}
-      {vm.summary ? (
+      {/* Candidature seulement : l'état du programme est dit une fois, par la carte dessous. */}
+      {vm.intro ? (
         <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
-          {vm.summary}
+          {vm.intro}
         </Text>
       ) : null}
       {vm.programmeNotice ? <ProgrammeNotice notice={vm.programmeNotice} /> : null}
@@ -77,12 +77,6 @@ export default function PartyProgrammeScreen() {
             <StatusChip label={candidacy.statusLabel} />
           </View>
           <Text style={{ fontSize: 16, lineHeight: 25 }}>{candidacy.candidate}</Text>
-          {/* Programme non publié : l'encart ci-dessus le dit, une seule fois. */}
-          {vm.programmeNotice?.state !== 'non-publie' ? (
-            <Text style={{ fontSize: 15, color: colors.text.secondary }}>
-              {firstSentence(candidacy.programmeStatus)}
-            </Text>
-          ) : null}
         </View>
       ) : null}
 

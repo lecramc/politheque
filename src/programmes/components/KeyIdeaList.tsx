@@ -28,11 +28,6 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
     <View style={{ gap: effects.spacing.sm }}>
       <View style={{ gap: effects.spacing.xxs }}>
         <SectionTitle>Ce qu'il propose</SectionTitle>
-        {keyIdeas.programmeLine ? (
-          <Text style={{ fontSize: 16, color: colors.text.secondary }}>
-            {keyIdeas.programmeLine}
-          </Text>
-        ) : null}
       </View>
       <View {...tv('grid-2')} role="list" style={{ gap: effects.spacing.sm }}>
         {keyIdeas.items.map((item) => (

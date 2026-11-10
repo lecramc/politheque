@@ -53,9 +53,11 @@ export default function HomeScreen() {
         </View>
 
         {vm.candidatesLink ? (
-          <TextLink href={vm.candidatesLink.href} standalone>
-            {vm.candidatesLink.label}
-          </TextLink>
+          <TaskCard
+            title={vm.candidatesLink.label}
+            icon="list-outline"
+            href={vm.candidatesLink.href}
+          />
         ) : null}
 
         <View style={{ gap: effects.spacing.xs }}>

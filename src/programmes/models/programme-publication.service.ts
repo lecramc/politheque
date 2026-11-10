@@ -1,4 +1,5 @@
 import type { Candidacy, Measure, Source, ThemeId } from '@/src/programmes/models/programme.model';
+import { partyHref } from '@/src/programmes/models/seo/party-sections';
 
 /** Même mention partout où les mesures d'un parti sont listées. */
 export const NOT_PUBLISHED = 'Programme 2027 pas encore publié';
@@ -44,24 +45,67 @@ export const publishedMeasureSources = (
 
 export type ProgrammeNotice = {
   state: 'non-publie' | 'partiel' | 'publie';
-  /** « Programme 2027 pas encore publié » seulement quand aucun programme n'est publié. */
-  title: string | null;
+  /** Toujours un titre : « Programme 2027 pas encore publié », « … publié en partie », « … publié ». */
+  title: string;
+  /** Une ligne ; le seul comptage est celui des thèmes du site (jamais le découpage du parti). */
   text: string | null;
+  /** Détail de la publication (livrets, dates…), à replier ; seulement pour un programme partiel. */
+  detail: string | null;
   sources: Source[];
+  /** Programme pas encore publié : renvoi vers l'onglet Positions, pour ne pas laisser une page vide. */
+  positionsLink: { label: string; href: string } | null;
 };
 
-/** Encart en tête de l'onglet Programme ; null quand il n'y a rien à dire (publié, sans texte). */
-export function programmeNotice(candidacy: Candidacy): ProgrammeNotice | null {
-  const publication = candidacy.programmePublication;
+const TITLES: Record<ProgrammeNotice['state'], string> = {
+  'non-publie': NOT_PUBLISHED,
+  partiel: 'Programme 2027 publié en partie',
+  publie: 'Programme 2027 publié',
+};
+
+const themesCovered = (candidacy: Candidacy, themeIds: readonly ThemeId[]) => {
+  const covered = themeIds.filter((id) => themeMeasures(candidacy, id).length > 0).length;
+  return `Ses propositions sont recensées dans ${covered} ${covered > 1 ? 'thèmes' : 'thème'} sur ${themeIds.length}.`;
+};
+
+/** Carte d'état en tête de l'onglet Programme : même gabarit (titre, ligne, sources) dans les trois états. */
+export function programmeNotice(
+  candidacy: Candidacy,
+  { partyId, themeIds }: { partyId: string; themeIds: readonly ThemeId[] }
+): ProgrammeNotice {
   const state = candidacy.programmeState;
+  const publication = candidacy.programmePublication;
+  const sources = publication?.sources ?? [];
+  const title = TITLES[state];
   if (state === 'non-publie') {
     return {
       state,
-      title: NOT_PUBLISHED,
+      title,
       text: publication?.text ?? null,
-      sources: publication?.sources ?? [],
+      detail: null,
+      sources,
+      positionsLink: {
+        label: 'En attendant, voir ses positions →',
+        href: partyHref(partyId, 'positions'),
+      },
     };
   }
-  if (!publication) return null;
-  return { state, title: null, text: publication.text, sources: publication.sources };
+  const count = themesCovered(candidacy, themeIds);
+  if (state === 'partiel') {
+    return {
+      state,
+      title,
+      text: `Le parti a publié une partie de son programme. ${count}`,
+      detail: publication?.text ?? null,
+      sources,
+      positionsLink: null,
+    };
+  }
+  return {
+    state,
+    title,
+    text: [publication?.text, count].filter(Boolean).join(' '),
+    detail: null,
+    sources,
+    positionsLink: null,
+  };
 }

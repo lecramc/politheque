@@ -15,14 +15,17 @@ import {
   sortKeyIdeasByTheme,
 } from '@/src/programmes/models/key-ideas.service';
 import { presentDossier } from '@/src/programmes/models/legal/legal-presentation';
-import { electionPhrase, partySummary } from '@/src/programmes/models/page-summary.service';
+import {
+  candidacySummary,
+  electionPhrase,
+  partySummary,
+} from '@/src/programmes/models/page-summary.service';
 import { formatLongDate, originLabel } from '@/src/programmes/models/presentation.service';
 import {
-  NOT_PUBLISHED,
   programmeNotice,
   themeProgramme,
 } from '@/src/programmes/models/programme-publication.service';
-import type { Candidacy, Source, ThemeId } from '@/src/programmes/models/programme.model';
+import type { Source, ThemeId } from '@/src/programmes/models/programme.model';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import {
   nonIndexableMeta,
@@ -46,16 +49,6 @@ import {
 import { markContentReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
 
 const sourceCountLabel = (count: number) => `${count} source${count > 1 ? 's' : ''}`;
-
-/** Une ligne sous le titre du bloc : état du programme 2027 à la date de vérification de la fiche. */
-const programmeLine = (candidacy: Candidacy | undefined, verifiedOn: string): string | null => {
-  if (!candidacy || candidacy.programmeState === 'publie') return null;
-  if (candidacy.programmeState === 'non-publie') {
-    return `${NOT_PUBLISHED} au ${verifiedOn}.`;
-  }
-  const detail = candidacy.programmeStateDetail ? ` (${candidacy.programmeStateDetail})` : '';
-  return `Programme 2027 partiel${detail} au ${verifiedOn}.`;
-};
 
 export const partyViewModel =
   (partyId: string) =>
@@ -95,7 +88,6 @@ export const partyViewModel =
           hasKeyIdeas(party, featured.id) &&
           hasKeyIdeasSection(catalog.parties, featured.id)
             ? {
-                programmeLine: programmeLine(party.candidacies[featured.id], verifiedOn),
                 items: sortKeyIdeasByTheme(
                   party.keyIdeas,
                   catalog.themes.map((t) => t.id)
@@ -166,7 +158,19 @@ export const partyViewModel =
           /** Encart en tête de l'onglet Programme (publication, ou « pas encore publié ») ; null s'il n'y a rien à dire. */
           programmeNotice:
             party && featured && party.candidacies[featured.id]
-              ? programmeNotice(party.candidacies[featured.id])
+              ? programmeNotice(party.candidacies[featured.id], {
+                  partyId: party.id,
+                  themeIds: (catalog?.themes ?? []).map((t) => t.id),
+                })
+              : null,
+          /** Chapô de l'onglet Programme : la candidature seulement (l'état du programme est dans la carte). */
+          intro:
+            party && catalog && featured
+              ? candidacySummary({
+                  party,
+                  candidacy: party.candidacies[featured.id] ?? null,
+                  electionTitle: electionPhrase(featured),
+                })
               : null,
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,
           sections,

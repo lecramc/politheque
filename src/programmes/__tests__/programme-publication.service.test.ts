@@ -5,7 +5,7 @@ import {
   programmeNotice,
   themeProgramme,
 } from '@/src/programmes/models/programme-publication.service';
-import type { Candidacy, Measure, Source } from '@/src/programmes/models/programme.model';
+import type { Candidacy, Measure, Source, ThemeId } from '@/src/programmes/models/programme.model';
 
 const source: Source = {
   title: 'Site de campagne',
@@ -70,39 +70,75 @@ describe('Feature: programme 2027 publié, partiel ou pas encore publié', () =>
   });
 });
 
-describe('Feature: encart de publication en tête de l’onglet Programme', () => {
+describe('Feature: carte d’état de l’onglet Programme, même gabarit pour les trois cas', () => {
   const publication = { text: 'Publié en partie.', date: null, sources: [source] };
+  const scope = { partyId: 'dupont', themeIds: ['economie', 'travail'] as ThemeId[] };
 
-  it('should give the same notice for a party whose programme is not published', () => {
-    expect(programmeNotice(candidacy('non-publie', { programmePublication: publication }))).toEqual(
-      {
-        state: 'non-publie',
-        title: NOT_PUBLISHED,
-        text: 'Publié en partie.',
-        sources: [source],
-      }
-    );
+  it('should give a title and the publication text for a programme that is not published', () => {
+    expect(
+      programmeNotice(candidacy('non-publie', { programmePublication: publication }), scope)
+    ).toEqual({
+      state: 'non-publie',
+      title: NOT_PUBLISHED,
+      text: 'Publié en partie.',
+      detail: null,
+      sources: [source],
+      positionsLink: {
+        label: 'En attendant, voir ses positions →',
+        href: '/partis/dupont/positions',
+      },
+    });
   });
 
-  it('should keep a notice for a non-published programme whose publication text is missing', () => {
-    expect(programmeNotice(candidacy('non-publie'))).toEqual({
-      state: 'non-publie',
+  it('should keep a card, without text, for a non-published programme whose publication text is missing', () => {
+    expect(programmeNotice(candidacy('non-publie'), scope)).toMatchObject({
       title: NOT_PUBLISHED,
       text: null,
       sources: [],
     });
   });
 
-  it('should put the publication text first for a partial programme, without a title', () => {
-    expect(programmeNotice(candidacy('partiel', { programmePublication: publication }))).toEqual({
+  it('should say a part is published in words and count the themes of the site once', () => {
+    expect(
+      programmeNotice(candidacy('partiel', { programmePublication: publication }), scope)
+    ).toEqual({
       state: 'partiel',
-      title: null,
-      text: 'Publié en partie.',
+      title: 'Programme 2027 publié en partie',
+      text: 'Le parti a publié une partie de son programme. Ses propositions sont recensées dans 1 thème sur 2.',
+      detail: 'Publié en partie.',
       sources: [source],
+      positionsLink: null,
     });
   });
 
-  it('should show nothing for a published programme without publication text', () => {
-    expect(programmeNotice(candidacy('publie'))).toBeNull();
+  it('should still give a card for a partial programme without publication text', () => {
+    expect(programmeNotice(candidacy('partiel'), scope)).toMatchObject({
+      title: 'Programme 2027 publié en partie',
+      detail: null,
+      sources: [],
+    });
+  });
+
+  it('should give a title for a published programme too, with its publication text and the count', () => {
+    expect(
+      programmeNotice(
+        candidacy('publie', {
+          programmePublication: { ...publication, text: 'Publié le 6 novembre 2026.' },
+        }),
+        scope
+      )
+    ).toMatchObject({
+      state: 'publie',
+      title: 'Programme 2027 publié',
+      text: 'Publié le 6 novembre 2026. Ses propositions sont recensées dans 1 thème sur 2.',
+      detail: null,
+      positionsLink: null,
+    });
+  });
+
+  it('should still say the count for a published programme without publication text', () => {
+    expect(programmeNotice(candidacy('publie'), scope)?.text).toBe(
+      'Ses propositions sont recensées dans 1 thème sur 2.'
+    );
   });
 });

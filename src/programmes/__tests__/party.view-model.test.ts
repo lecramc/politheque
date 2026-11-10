@@ -145,10 +145,7 @@ describe('Feature: étiquettes sous le nom du parti', () => {
 
   it('should show two lines for every party, whether or not it has classifications', () => {
     expect(labelsOf('alpha').lines.map((l) => l.value)).toEqual(['Gauche', 'Gauche']);
-    expect(labelsOf('beta').lines.map((l) => l.value)).toEqual([
-      'pas de classement du parti',
-      'pas de classement du parti',
-    ]);
+    expect(labelsOf('beta').lines.map((l) => l.value)).toEqual(['non classé', 'non classé']);
   });
 
   it('should open the same detail structure for every party', () => {
@@ -198,6 +195,7 @@ describe('Feature: onglet Programme limité au programme 2027 publié', () => {
       title: 'Programme 2027 pas encore publié',
       text: 'Texte de publication.',
       sources: [source],
+      positionsLink: { href: '/partis/gamma/positions' },
     });
     expect(vm.presidential?.sections.every((s) => s.programme?.kind === 'non-publie')).toBe(true);
     expect(vm.keyIdeas).toBeNull();
@@ -205,7 +203,12 @@ describe('Feature: onglet Programme limité au programme 2027 publié', () => {
 
   it('should put the publication text first for a partial programme and say what a theme lacks', () => {
     const vm = presidentialOf('partiel');
-    expect(vm.programmeNotice).toMatchObject({ title: null, text: 'Texte de publication.' });
+    expect(vm.programmeNotice).toMatchObject({
+      title: 'Programme 2027 publié en partie',
+      text: 'Le parti a publié une partie de son programme. Ses propositions sont recensées dans 1 thème sur 2.',
+      detail: 'Texte de publication.',
+    });
+    expect(vm.intro).toMatch(/pour l'élection présidentielle de 2027\.$/);
     const kinds = vm.presidential?.sections.map((s) => s.programme?.kind);
     expect(kinds?.[0]).toBe('mesures');
     expect(kinds?.slice(1).every((kind) => kind === 'rien')).toBe(true);

@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
-import { Icon, Text } from '@/components/Themed';
-import { Pressable } from '@/components/ui/Pressable';
+import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
 import { Card } from '@/src/programmes/components/Card';
+import { LabelsLink } from '@/src/programmes/components/LabelsLink';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { PartyLabelsDetail } from '@/src/programmes/components/PartyLabelsDetail';
 import { Sheet } from '@/src/programmes/components/Sheet';
@@ -36,19 +36,8 @@ export function OtherPartyCard({ card }: { card: OtherPartyCardData }) {
         {'Candidature : '}
         <TextLink href={card.candidateHref}>{card.candidateName}</TextLink>
       </Text>
-      <Pressable
-        onPress={() => setLabelsOpen(true)}
-        accessibilityRole="button"
-        accessibilityLabel={`${card.labels.map((l) => `${l.title} : ${l.value}`).join(' ; ')}. Voir le détail de ces classements.`}
-        style={{
-          flexDirection: 'row',
-          alignItems: 'center',
-          alignSelf: 'flex-start',
-          gap: effects.spacing.xs,
-          minHeight: 44,
-        }}
-      >
-        <View style={{ gap: effects.spacing.xxs, flexShrink: 1 }}>
+      <View>
+        <View style={{ gap: effects.spacing.xxs }}>
           {card.labels.map((line) => (
             <Text key={line.id} style={{ fontSize: 14, color: colors.text.secondary }}>
               {`${line.title} : `}
@@ -58,8 +47,8 @@ export function OtherPartyCard({ card }: { card: OtherPartyCardData }) {
             </Text>
           ))}
         </View>
-        <Icon name="information-circle-outline" variant="onGlass" size="small" />
-      </Pressable>
+        {card.detail ? <LabelsLink onPress={() => setLabelsOpen(true)} /> : null}
+      </View>
       <Text style={{ fontSize: 15, lineHeight: 22 }}>{card.description}</Text>
       <View style={{ marginTop: 'auto' }}>
         <SourceChip sources={card.sources} subject={card.name} />
@@ -68,7 +57,7 @@ export function OtherPartyCard({ card }: { card: OtherPartyCardData }) {
         <Sheet
           isOpen={labelsOpen}
           onClose={() => setLabelsOpen(false)}
-          title={`Étiquettes : ${card.name}`}
+          title={`Classements : ${card.name}`}
         >
           <PartyLabelsDetail detail={card.detail} onNavigate={() => setLabelsOpen(false)} />
         </Sheet>

@@ -9,6 +9,7 @@ import { PartyHeader } from '@/src/programmes/components/PartyHeader';
 import { PartyLabelsDetail } from '@/src/programmes/components/PartyLabelsDetail';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { Tabs } from '@/src/programmes/components/Tabs';
+import { LABELS_SHEET_TITLE } from '@/src/programmes/models/etiquettes.service';
 import { partyHref, sectionFromPath } from '@/src/programmes/models/seo/party-sections';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
@@ -82,7 +83,11 @@ export default function PartyLayout() {
         <>
           <Slot />
 
-          <Sheet isOpen={labelsOpen} onClose={() => setLabelsOpen(false)} title="Étiquettes">
+          <Sheet
+            isOpen={labelsOpen}
+            onClose={() => setLabelsOpen(false)}
+            title={LABELS_SHEET_TITLE}
+          >
             <PartyLabelsDetail detail={vm.labels.detail} onNavigate={() => setLabelsOpen(false)} />
           </Sheet>
         </>

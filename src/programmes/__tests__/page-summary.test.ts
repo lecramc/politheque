@@ -1,5 +1,9 @@
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
-import { ofParty, partySummary } from '@/src/programmes/models/page-summary.service';
+import {
+  candidacySummary,
+  ofParty,
+  partySummary,
+} from '@/src/programmes/models/page-summary.service';
 import type { Candidacy, CandidacyStatus } from '@/src/programmes/models/programme.model';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
@@ -115,6 +119,20 @@ describe('Feature: phrase de résumé des fiches partis', () => {
     expect(summaryFor(notPublished)).toBe(
       "Au 1er novembre 2026, Camille Martin est la candidate déclarée des Exemples (LXP) pour l'élection présidentielle de 2027 ; son programme 2027 n'est pas encore publié."
     );
+  });
+
+  it('should limit the on-screen intro to the candidacy, whatever the state of the programme', () => {
+    const intro = (state: Candidacy['programmeState']) =>
+      candidacySummary({
+        party,
+        candidacy: { ...candidacy('declare', 'Candidate déclarée'), programmeState: state },
+        electionTitle: "l'élection présidentielle de 2027",
+      });
+    const expected =
+      "Au 1er novembre 2026, Camille Martin est la candidate déclarée des Exemples (LXP) pour l'élection présidentielle de 2027.";
+    expect(intro('non-publie')).toBe(expected);
+    expect(intro('partiel')).toBe(expected);
+    expect(intro('publie')).toBe(expected);
   });
 
   it('should say so when the party has no candidacy', () => {
