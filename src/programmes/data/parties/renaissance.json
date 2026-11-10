@@ -20,8 +20,8 @@
     },
     {
       "id": "supprimer-l-age-legal-de-depart-a-la-retraite",
-      "title": "Supprimer l'âge légal de départ à la retraite",
-      "text": "Seule la durée de cotisation compterait, avec « une vraie décote si vous partez tôt, une vraie surcote si vous partez tard ».",
+      "title": "Remplacer l'âge légal par la durée de cotisation",
+      "text": "Remplacer l'âge légal de départ à la retraite par la durée de cotisation.",
       "measureRefs": ["travail.0"],
       "relatedQuestionIds": ["q04-retraite"]
     },
@@ -35,8 +35,8 @@
     {
       "id": "augmenter-le-salaire-des-enseignants",
       "title": "Augmenter le salaire des enseignants",
-      "text": "Revaloriser les enseignants de 200 à 500 € nets par mois en milieu de carrière, et passer sous 20 élèves par classe en primaire.",
-      "measureRefs": ["education.0", "education.1"],
+      "text": "Augmenter de 200 à 500 euros nets par mois le salaire des enseignants.",
+      "measureRefs": ["education.0"],
       "relatedQuestionIds": []
     }
   ],
@@ -62,7 +62,7 @@
           "title": "Encyclopædia Universalis – Renaissance, anc. La République en marche (LRM), parti politique",
           "url": "https://www.universalis.fr/index/renaissance-anc-la-republique-en-marche-lrm-parti-politique/",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
           "title": "Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp",
@@ -123,19 +123,13 @@
             "title": "La Grande Conversation (Terra Nova) – Macronisme, centrisme et bloc central",
             "url": "https://www.lagrandeconversation.com/app/uploads/2024/10/macronisme-centrisme-et-bloc-central-la-grande-conversation.pdf",
             "date": "2024-10",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia (en) – Renaissance (French political party)",
-            "url": "https://en.wikipedia.org/wiki/Renaissance_(French_political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "politiste"
           },
           {
             "title": "Store norske leksikon, Kjerstin Aukrust, « Renaissance »",
             "url": "https://snl.no/Renaissance",
             "date": "2024-12-20",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       }
@@ -179,7 +173,7 @@
             "title": "Encyclopædia Universalis – Renaissance, anc. La République en marche (LRM), parti politique",
             "url": "https://www.universalis.fr/index/renaissance-anc-la-republique-en-marche-lrm-parti-politique/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -191,7 +185,7 @@
             "title": "Encyclopædia Universalis – 11-29 juin 2017 : victoire de La République en marche aux élections législatives",
             "url": "https://www.universalis.fr/evenement/11-29-juin-2017-victoire-de-la-republique-en-marche-aux-elections-legislatives/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Macron marches on with absolute majority",
@@ -341,7 +335,7 @@
           "title": "Encyclopædia Universalis, « Macron Emmanuel (1977- ) »",
           "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         }
       ]
     },
@@ -355,7 +349,7 @@
             "title": "Encyclopædia Universalis, « Macron Emmanuel (1977- ) »",
             "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Élysée – Biographie d'Emmanuel Macron",
@@ -364,10 +358,10 @@
             "kind": "declaration"
           },
           {
-            "title": "Wikipédia, « Emmanuel Macron »",
-            "url": "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
-            "date": "2026-11",
-            "kind": "statistique"
+            "title": "Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp",
+            "url": "https://www.publicsenat.fr/actualites/politique/emmanuel-macron-lance-renaissance-et-met-en-garde-contre-la-division-de-son-camp",
+            "date": "2022-09-17",
+            "kind": "presse"
           }
         ]
       },
@@ -392,7 +386,7 @@
             "title": "Encyclopædia Universalis, chronologie France 2021 (31 mars 2021)",
             "url": "https://www.universalis.fr/chronologie/france/2021/15/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "LCP, « Présidence du Conseil constitutionnel : Richard Ferrand nommé, à une voix près »",
@@ -512,7 +506,7 @@
             "title": "Corpus (OpenEdition Journals), C. Bouzereau, compte rendu de D. Mayaffre, Macron ou le mystère du verbe",
             "url": "https://journals.openedition.org/corpus/6759",
             "date": "2022-02-02",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
@@ -524,7 +518,7 @@
             "title": "Corpus (OpenEdition Journals), C. Bouzereau, compte rendu de D. Mayaffre, Macron ou le mystère du verbe",
             "url": "https://journals.openedition.org/corpus/6759",
             "date": "2022-02-02",
-            "kind": "statistique"
+            "kind": "politiste"
           },
           {
             "title": "Public Sénat, « Emmanuel Macron lance Renaissance et met en garde contre « la division » de son camp »",
@@ -536,7 +530,7 @@
             "title": "Encyclopædia Universalis, « Macron Emmanuel (1977- ) »",
             "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Renaissance – site officiel (« Renaissance est un parti résolument européen »)",
@@ -572,7 +566,7 @@
             "title": "Encyclopædia Universalis, « Macron Emmanuel – La droitisation d'une présidence entravée »",
             "url": "https://www.universalis.fr/encyclopedie/emmanuel-macron/3-la-droitisation-d-une-presidence-entravee/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Politis, « Dix ans de Macronie : du « en même temps » à l'impasse »",
@@ -1212,12 +1206,30 @@
           "kind": "presse"
         }
       ],
-      "programmeStatus": "Pas de programme complet chiffré au 3 novembre 2026 ; le site de campagne attalpresident.fr présente 96 mesures (« chantiers capitaux »). Fiche fondée sur ces mesures, les déclarations du candidat (2025-2026) et les votes du groupe EPR, avec mention de la date quand la position est antérieure à 2026.",
+      "programmeStatus": "Programme présidentiel 2027 publié en partie : 96 mesures, « Mes chantiers capitaux », sur le site de campagne attalpresident.fr, sans date de publication indiquée. Le programme complet est annoncé sans date.",
       "programmeState": "partiel",
       "programmeStateDetail": "96 mesures",
+      "programmePublication": {
+        "text": "Publié en partie : 96 mesures sur le site de campagne, date de publication non indiquée ; le programme complet est annoncé sans date.",
+        "date": null,
+        "sources": [
+          {
+            "title": "Mes chantiers capitaux – Gabriel Attal Président (consulté le 10 novembre 2026)",
+            "url": "https://attalpresident.fr/programme",
+            "date": "2026-11-10",
+            "kind": "programme"
+          },
+          {
+            "title": "Présidentielle : Gabriel Attal présente son équipe de campagne et promet de ne pas faire (LCP)",
+            "url": "https://lcp.fr/actualites/presidentielle-gabriel-attal-presente-son-equipe-de-campagne-et-promet-de-ne-pas-faire",
+            "date": "2026-09-03",
+            "kind": "presse"
+          }
+        ]
+      },
       "themes": {
         "economie": {
-          "summary": "Le candidat vise un déficit sous 3 % avant 2032 sans hausse d'impôts, par 150 Md€ d'économies sur cinq ans, et une baisse du coût du travail. Il propose un investissement de 200 Md€ dans l'intelligence artificielle.",
+          "summary": "Le candidat vise un déficit public sous 3 % avant 2032 sans hausse d'impôts, avec 100 000 postes en moins dans l'État et les collectivités. Il propose un investissement de 200 Md€ dans l'intelligence artificielle.",
           "measures": [
             {
               "text": "Ramener le déficit public sous 3 % avant 2032, sans aucune hausse d'impôts pendant cinq ans.",
@@ -1231,23 +1243,6 @@
                 {
                   "title": "MoneyVox, « Attal veut 100 000 départs volontaires de fonctionnaires et “impunité budgétaire zéro” »",
                   "url": "https://www.moneyvox.fr/impot/actualites/109548/attal-veut-100-000-departs-volontaires-de-fonctionnaires-et-impunite-budgetaire-zero",
-                  "date": "2026-07-03",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Plan de 150 Md€ d'économies sur cinq ans (assurance chômage, retraites, « plan de départs volontaires dans nos administrations », simplification territoriale).",
-              "sources": [
-                {
-                  "title": "Que proposent les candidats à la présidentielle pour réduire la dette publique ?",
-                  "url": "https://www.franceinfo.fr/economie/crise/crise-de-la-dette/que-proposent-les-candidats-a-la-presidentielle-pour-reduire-la-dette-publique_8215481.html",
-                  "date": "2026-09-29",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Gabriel Attal propose 100 000 fonctionnaires en moins et « l'impunité zéro » pour les ministres dépensiers",
-                  "url": "https://acteurspublics.fr/articles/gabriel-attal-propose-100-000-fonctionnaires-en-moins-et-limpunite-zero-pour-les-ministres-depensiers/",
                   "date": "2026-07-03",
                   "kind": "presse"
                 }
@@ -1271,23 +1266,6 @@
               ]
             },
             {
-              "text": "Revenir sur les hausses du coût du travail décidées depuis 2024 (« premier engagement ») ; baisse des charges compensée par une TVA sociale ou un durcissement de l'assurance chômage.",
-              "sources": [
-                {
-                  "title": "Présidentielle 2027 : ce qu'il faut retenir du débat entre les candidats devant le Medef",
-                  "url": "https://lcp.fr/actualites/presidentielle-2027-ce-qu-il-faut-retenir-du-premier-debat-entre-les-candidats-440670",
-                  "date": "2026-08-27",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
-                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
-                  "date": "2026-10-30",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
               "text": "Investir 200 Md€ dans l'intelligence artificielle et adopter une loi de programmation économique, fiscale et énergétique sur dix ans.",
               "sources": [
                 {
@@ -1301,11 +1279,17 @@
           ]
         },
         "travail": {
-          "summary": "Le candidat propose de supprimer l'âge légal de départ en retraite au profit de la seule durée de cotisation, d'ajouter un pilier de capitalisation et de remplacer le Code du travail par une « Constitution du travail ».",
+          "summary": "Le candidat propose de remplacer l'âge légal de départ en retraite par la durée de cotisation, d'ajouter une part de capitalisation et de remplacer le Code du travail par une « Constitution du travail ».",
           "measures": [
             {
-              "text": "Supprimer l'âge légal de départ : seule la durée de cotisation compterait, avec « une vraie décote si vous partez tôt, une vraie surcote si vous partez tard », dans un « nouveau système universel » à points.",
+              "text": "Remplacer l'âge légal de départ à la retraite par la durée de cotisation.",
               "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
                 {
                   "title": "Reculer ou avancer l'âge légal, avec ou sans capitalisation : ce que proposent les principaux candidats",
                   "url": "https://www.publicsenat.fr/actualites/politique/reculer-ou-avancer-lage-legal-avec-ou-sans-capitalisation-ce-que-proposent-les-principaux-candidats-a-lelection-presidentielle-sur-les-retraites",
@@ -1338,8 +1322,14 @@
               ]
             },
             {
-              "text": "Remplacer le Code du travail par une « Constitution du travail » rédigée avec les partenaires sociaux, « structurée autour de quelques articles fondamentaux ».",
+              "text": "Remplacer le Code du travail par une « Constitution du travail ».",
               "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
                 {
                   "title": "Présidentielle : que proposent les candidats pour augmenter les salaires ?",
                   "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
@@ -1472,36 +1462,8 @@
           ]
         },
         "ecologie": {
-          "summary": "Le candidat veut « concilier écologie et économie », défend un mix nucléaire-renouvelables et propose des mesures sur l'eau, les véhicules électriques et des prix planchers agricoles. Il rejette l'accord UE-Mercosur.",
+          "summary": "Le candidat propose des mesures sur l'eau, la stabilité des prix de l'électricité et la géoénergie. En agriculture, il propose des prix planchers et des clauses miroirs.",
           "measures": [
-            {
-              "text": "Mix nucléaire et renouvelables, avec « les trois quarts » de l'énergie produits en France (2025) ; en 2024, il avait proposé la mise en chantier de 14 nouveaux réacteurs.",
-              "sources": [
-                {
-                  "title": "Attal propose une « nouvelle donne » écologique en même temps qu'économique",
-                  "url": "https://www.france24.com/fr/info-en-continu/20250721-attal-propose-une-nouvelle-donne-%C3%A9cologique-en-m%C3%AAme-temps-qu-%C3%A9conomique",
-                  "date": "2025-07-21",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Législatives anticipées : que proposent les trois blocs sur l'écologie ?",
-                  "url": "https://www.publicsenat.fr/actualites/politique/legislatives-anticipees-que-proposent-les-trois-blocs-sur-lecologie",
-                  "date": "2024-06-20",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "TVA à 5,5 % pendant cinq ans sur l'achat d'un véhicule électrique et leasing social étendu aux véhicules d'occasion.",
-              "sources": [
-                {
-                  "title": "Attal, en déplacement à Bordeaux, veut concilier « écologie » et « économie »",
-                  "url": "https://www.france24.com/fr/info-en-continu/20260505-attal-en-d%C3%A9placement-%C3%A0-bordeaux-veut-concilier-%C3%A9cologie-et-%C3%A9conomie",
-                  "date": "2026-05-05",
-                  "kind": "presse"
-                }
-              ]
-            },
             {
               "text": "Créer un ministère de l'Eau, un bouclier tarifaire sur le prix de l'eau, réparer les 500 réseaux les plus vétustes et dépister automatiquement les PFAS dans les captages.",
               "sources": [
@@ -1538,7 +1500,7 @@
           ]
         },
         "sante": {
-          "summary": "Les propositions de santé publiées au 3 novembre 2026 sont peu nombreuses. Le candidat a voté pour la loi sur l'aide à mourir.",
+          "summary": "Les propositions de santé publiées sont peu nombreuses : un assistant médical fondé sur l'IA pour chaque Français et l'équilibre des comptes de la Sécurité sociale.",
           "measures": [
             {
               "text": "Un assistant médical fondé sur l'IA pour chaque Français.",
@@ -1561,32 +1523,21 @@
                   "kind": "programme"
                 }
               ]
-            },
-            {
-              "text": "Aide à mourir : Gabriel Attal et la majorité du groupe EPR ont voté pour la loi en lecture définitive (64 pour, 18 contre, 9 abstentions, 15 juillet 2026).",
-              "sources": [
-                {
-                  "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
-                  "url": "https://datan.fr/votes/legislature-17/vote_8280",
-                  "date": "2026-07-15",
-                  "kind": "vote"
-                },
-                {
-                  "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
-                  "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
-                  "date": "2026-02-25",
-                  "kind": "presse"
-                }
-              ]
             }
           ]
         },
         "education": {
-          "summary": "L'école est un thème central du candidat, ancien ministre de l'Éducation nationale : hausse des salaires des enseignants, classes de moins de 20 élèves en primaire, retour du redoublement et d'un certificat d'études.",
+          "summary": "L'école est un thème central du candidat, ancien ministre de l'Éducation nationale : hausse des salaires des enseignants, retour du redoublement et d'un certificat d'études, groupes de niveau au collège.",
           "measures": [
             {
-              "text": "Revalorisation de 200 à 500 € nets par mois des enseignants (milieu de carrière), pour un coût évalué par son équipe à 2,5 Md€.",
+              "text": "Augmenter de 200 à 500 euros nets par mois le salaire des enseignants.",
               "sources": [
+                {
+                  "title": "Mes chantiers capitaux – Gabriel Attal Président",
+                  "url": "https://attalpresident.fr/programme",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
                 {
                   "title": "Présidentielle 2027 : que proposent les candidats pour l'école ?",
                   "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
@@ -1597,17 +1548,6 @@
                   "title": "Présidentielle : retour du certificat d'études, revalorisation des salaires… Ce que propose Gabriel Attal pour l'école",
                   "url": "https://lcp.fr/actualites/presidentielle-retour-du-certificat-d-etudes-revalorisation-des-salaires-ce-que-propose",
                   "date": "2026-08-25",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Passer sous 20 élèves par classe en primaire en profitant de la baisse démographique.",
-              "sources": [
-                {
-                  "title": "Présidentielle 2027 : que proposent les candidats pour l'école ?",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-que-proposent-les-candidats-pour-lecole",
-                  "date": "2026-08-31",
                   "kind": "presse"
                 }
               ]
@@ -1648,19 +1588,8 @@
           ]
         },
         "europe": {
-          "summary": "Le candidat soutient l'aide à l'Ukraine et propose une préférence européenne dans la défense et une politique commune de l'IA. Il refuse l'accord UE-Mercosur.",
+          "summary": "Le candidat propose une préférence européenne dans la défense et une politique commune de l'IA. Il refuse le traité UE-Mercosur.",
           "measures": [
-            {
-              "text": "Poursuite du soutien à l'Ukraine ; critique de l'annonce de Marine Le Pen d'arrêter l'aide six mois après une élection.",
-              "sources": [
-                {
-                  "title": "Le RN a « toujours défendu les intérêts de la Russie » (Gabriel Attal)",
-                  "url": "https://www.franceinfo.fr/politique/le-rn-a-toujours-defendu-les-interets-de-la-russie-gabriel-attal_8238646.html",
-                  "date": "2026-10-15",
-                  "kind": "presse"
-                }
-              ]
-            },
             {
               "text": "Préférence européenne dans la commande publique de défense, « dôme de fer » européen contre missiles et drones, fonds d'investissement pour les PME de défense.",
               "sources": [
@@ -1697,25 +1626,8 @@
           ]
         },
         "institutions": {
-          "summary": "Le candidat appelle à une « Ve République du XXIe siècle » et à une « réforme constitutionnelle profonde, pour mieux partager le pouvoir », avec des référendums réguliers et moins de parlementaires.",
+          "summary": "Le candidat propose une journée référendaire par an, des référendums locaux facilités et de « faire du maire l'élu le plus puissant de France ».",
           "measures": [
-            {
-              "text": "Réforme constitutionnelle « pour mieux partager le pouvoir », notamment avec les collectivités territoriales (à Arras, en septembre 2025, le candidat appelait déjà à « accepter de partager le pouvoir »).",
-              "sources": [
-                {
-                  "title": "Présidentielle 2027 : « Il faut une réforme constitutionnelle profonde, pour mieux partager le pouvoir », défend Gabriel Attal",
-                  "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-il-faut-une-reforme-constitutionnelle-profonde-pour-mieux-partager-le-pouvoir-defend-gabriel-attal-au-20-heures-de-france-2_8172656.html",
-                  "date": "2026-09-01",
-                  "kind": "presse"
-                },
-                {
-                  "title": "LCP, « À Arras, Gabriel Attal prône \"une nouvelle République\" en vue de l'élection présidentielle de 2027 »",
-                  "url": "https://lcp.fr/actualites/a-arras-gabriel-attal-prone-une-nouvelle-republique-en-vue-de-l-election-presidentielle",
-                  "date": "2025-09-21",
-                  "kind": "presse"
-                }
-              ]
-            },
             {
               "text": "Une journée référendaire par an et des référendums locaux facilités.",
               "sources": [
@@ -1729,23 +1641,6 @@
                   "title": "La Gazette France (dépêche AFP), « Réseaux sociaux : Attal alimente le débat sur le référendum »",
                   "url": "https://www.lagazettefrance.fr/article/reseaux-sociaux-attal-alimente-le-debat-sur-le-referendum",
                   "date": "2026-08-16",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Réduire le nombre de parlementaires et inscrire dans la Constitution un principe de « non-régression sociétale » (2025).",
-              "sources": [
-                {
-                  "title": "En meeting à Arras, Gabriel Attal appelle à une « Ve République du XXIe siècle »",
-                  "url": "https://www.franceinfo.fr/politique/gabriel-attal/en-meeting-a-arras-gabriel-attal-appelle-a-une-ve-republique-du-21e-siecle_7505410.html",
-                  "date": "2025-09-21",
-                  "kind": "presse"
-                },
-                {
-                  "title": "LCP, « À Arras, Gabriel Attal prône \"une nouvelle République\" en vue de l'élection présidentielle de 2027 »",
-                  "url": "https://lcp.fr/actualites/a-arras-gabriel-attal-prone-une-nouvelle-republique-en-vue-de-l-election-presidentielle",
-                  "date": "2025-09-21",
                   "kind": "presse"
                 }
               ]

@@ -1,0 +1,339 @@
+{
+  "electionId": "presidentielle-2027",
+  "lastVerified": "2026-11-10",
+  "parties": [
+    {
+      "id": "debout",
+      "name": "Debout !",
+      "shortName": "Debout !",
+      "foundedYear": 2025,
+      "leader": {
+        "name": "François Ruffin",
+        "role": "Président"
+      },
+      "candidateId": "francois-ruffin",
+      "description": "Mouvement lancé à Paris le 28 juin 2025 par le député de la Somme François Ruffin, ancien élu La France insoumise, comme déclinaison nationale de son parti Picardie Debout.",
+      "sources": [
+        {
+          "title": "François Ruffin lance son nouveau mouvement, « Debout », avec 2027 dans le viseur (AFP, France 24)",
+          "url": "https://www.france24.com/fr/info-en-continu/20250628-fran%C3%A7ois-ruffin-lance-son-nouveau-mouvement-debout-avec-2027-dans-le-viseur",
+          "date": "2025-06-28",
+          "kind": "presse"
+        },
+        {
+          "title": "Debout !, « Notre mouvement » (consulté)",
+          "url": "https://www.debout.fr/notre-mouvement/",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        },
+        {
+          "title": "François Ruffin : « Mon adversaire s'appelle Jordan Bardella de Monaco » (Public Sénat)",
+          "url": "https://www.publicsenat.fr/emission/bonjour-chez-vous/francois-ruffin-mon-adversaire-sappelle-jordan-bardella-de-monaco-e0",
+          "date": "2026-06-16",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "debout-la-france",
+      "name": "Debout la France",
+      "shortName": "DLF",
+      "foundedYear": 2008,
+      "leader": {
+        "name": "Nicolas Dupont-Aignan",
+        "role": "Président"
+      },
+      "candidateId": "nicolas-dupont-aignan",
+      "description": "Parti souverainiste fondé par Nicolas Dupont-Aignan, d'abord courant de l'UMP (Debout la République, 1999), devenu parti autonome en 2008 puis renommé Debout la France en 2014.",
+      "sources": [
+        {
+          "title": "Nicolas Dupont-Aignan réélu à la tête de Debout la France (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/nicolas-dupont-aignan-reelu-a-la-tete-de-debout-la-france-146978",
+          "date": "2019-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "BnF, notice de collectivité « Debout la France »",
+          "url": "https://catalogue.bnf.fr/ark:/12148/cb16590952f",
+          "date": "2023-02-17",
+          "kind": "statistique"
+        },
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Debout la France, « Statuts » (consulté)",
+          "url": "https://www.debout-la-france.fr/statuts-debout-la-france/",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        }
+      ]
+    },
+    {
+      "id": "generation-ecologie",
+      "name": "Génération écologie",
+      "shortName": "GE",
+      "foundedYear": 1990,
+      "leader": {
+        "name": "Delphine Batho",
+        "role": "Présidente"
+      },
+      "candidateId": "delphine-batho",
+      "description": "Parti écologiste fondé en 1990 par Brice Lalonde ; il est présidé par l'ancienne ministre Delphine Batho, députée des Deux-Sèvres.",
+      "sources": [
+        {
+          "title": "Encyclopédie Larousse, « Brice Lalonde » (consulté)",
+          "url": "https://www.larousse.fr/encyclopedie/personnage/Brice_Lalonde/181017",
+          "date": "2026-11-10",
+          "kind": "encyclopedie"
+        },
+        {
+          "title": "Encyclopædia Universalis, « Les Verts (France) » (consulté)",
+          "url": "https://www.universalis.fr/encyclopedie/les-verts-france/",
+          "date": "2026-11-10",
+          "kind": "encyclopedie"
+        },
+        {
+          "title": "L'ex-ministre Delphine Batho candidate à la présidentielle pour conjurer la « rikikisation » de l'écologie (AFP, ID l'Info durable)",
+          "url": "https://www.linfodurable.fr/lex-ministre-delphine-batho-candidate-la-presidentielle-pour-conjurer-la-rikikisation-de-lecologie",
+          "date": "2025-11-25",
+          "kind": "presse"
+        },
+        {
+          "title": "Génération écologie, « Qui sommes-nous ? » (consulté)",
+          "url": "https://www.generationecologie.fr/a-propos/generation-ecologie/qui-sommes-nous/",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        }
+      ]
+    },
+    {
+      "id": "les-patriotes",
+      "name": "Les Patriotes",
+      "shortName": "Les Patriotes",
+      "foundedYear": 2017,
+      "leader": {
+        "name": "Florian Philippot",
+        "role": "Président"
+      },
+      "candidateId": "florian-philippot",
+      "description": "Parti souverainiste fondé en 2017 par Florian Philippot après son départ du Front national ; son congrès fondateur s'est tenu à Arras en février 2018.",
+      "sources": [
+        {
+          "title": "Les Patriotes: What you need to know about France's newest far-right party (The Local, citant le politiste Sylvain Crépon)",
+          "url": "https://www.thelocal.fr/20180219/les-patriotes-florian-philippot-what-you-need-to-know-france-newest-far-right-party",
+          "date": "2018-02-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Philippot présente la « charte » des Patriotes en réclamant un Frexit (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/philippot-presente-la-charte-des-patriotes-en-reclamant-un-frexit-79488",
+          "date": "2017-11-07",
+          "kind": "presse"
+        },
+        {
+          "title": "« Je suis candidat » : Florian Philippot se lance pour la présidentielle de 2027 (Sud Radio)",
+          "url": "https://www.sudradio.fr/politique/je-suis-candidat-florian-philippot-se-lance-pour-la-presidentielle-de-2027",
+          "date": "2026-05-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "lutte-ouvriere",
+      "name": "Lutte ouvrière",
+      "shortName": "LO",
+      "foundedYear": 1968,
+      "leader": {
+        "name": "Nathalie Arthaud",
+        "role": "Porte-parole"
+      },
+      "candidateId": "nathalie-arthaud",
+      "description": "Organisation communiste révolutionnaire se réclamant du trotskisme, fondée en 1968 sous ce nom après la dissolution de Voix ouvrière. Elle présente un candidat à chaque élection présidentielle depuis 1974.",
+      "sources": [
+        {
+          "title": "Encyclopédie Larousse, « LO, sigle de Lutte ouvrière » (consulté)",
+          "url": "https://www.larousse.fr/encyclopedie/divers/LO/103133",
+          "date": "2026-11-10",
+          "kind": "encyclopedie"
+        },
+        {
+          "title": "Lutte ouvrière, « Qui sommes-nous ? » (consulté)",
+          "url": "https://www.lutte-ouvriere.org/portail/qui-sommes-nous/index.html",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        },
+        {
+          "title": "Face aux attaques du grand patronat […], « notre seul moyen de défense, c'est la mobilisation et la grève », affirme Nathalie Arthaud (franceinfo)",
+          "url": "https://www.franceinfo.fr/societe/manifestations/face-aux-attaques-du-grand-patronat-et-du-gouvernement-notre-seul-moyen-de-defense-c-est-la-mobilisation-et-la-greve-affirme-nathalie-arthaud_8268950.html",
+          "date": "2026-11-05",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : Nathalie Arthaud, porte-parole de Lutte ouvrière, annonce sa candidature (franceinfo)",
+          "url": "https://www.franceinfo.fr/politique/nathalie-arthaud/presidentielle-2027-nathalie-arthaud-porte-parole-de-lutte-ouvriere-annonce-sa-candidature_7665874.html",
+          "date": "2025-12-08",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "npa-revolutionnaires",
+      "name": "NPA-Révolutionnaires",
+      "shortName": "NPA-R",
+      "foundedYear": 2022,
+      "candidateId": "selma-labib",
+      "description": "Organisation anticapitaliste révolutionnaire née de la scission du Nouveau Parti anticapitaliste lors de son congrès de décembre 2022 ; elle est distincte du NPA-L'Anticapitaliste.",
+      "sources": [
+        {
+          "title": "NPA-Révolutionnaires, « À propos » (consulté)",
+          "url": "https://npa-revolutionnaires.org/a-propos",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        },
+        {
+          "title": "Législatives 2024 : entre le Nouveau parti anticapitaliste révolutionnaire ou l'anticapitaliste, quelle différence ? (Lyon Mag)",
+          "url": "https://www.lyonmag.com/article/136802/legislatives-2024-entre-le-nouveau-parti-anticapitaliste-revolutionnaire-ou-l-anticapitaliste-quelle-difference-dans-le-rhone",
+          "date": "2024-06-24",
+          "kind": "presse"
+        },
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "parti-animaliste",
+      "name": "Parti animaliste",
+      "shortName": "PA",
+      "foundedYear": 2016,
+      "leader": {
+        "role": "Direction",
+        "name": "présidence collégiale de cinq coprésidents, dont Mira Markovic"
+      },
+      "candidateId": "mira-markovic",
+      "description": "Parti fondé en 2016 et centré sur la protection des animaux, qui se dit transpartisan ; il présente pour la première fois une candidate à l'élection présidentielle.",
+      "sources": [
+        {
+          "title": "Pourquoi le Parti animaliste a-t-il accepté d'intégrer des listes de droite ? (Reporterre)",
+          "url": "https://reporterre.net/Des-sujets-ni-de-droite-ni-de-gauche-le-Parti-animaliste-fait-une-percee-aux-municipales",
+          "date": "2026-03-26",
+          "kind": "presse"
+        },
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Parti animaliste, « Le bureau » (consulté)",
+          "url": "https://parti-animaliste.fr/bureau",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        },
+        {
+          "title": "Mira Markovic représentera le Parti animaliste à la présidentielle (communiqué du Parti animaliste)",
+          "url": "https://parti-animaliste.fr/news/communique-de-presse/mira-markovic-representera-le-parti-animaliste-a-la-presidentielle",
+          "date": "2026-10-02",
+          "kind": "declaration"
+        }
+      ]
+    },
+    {
+      "id": "revolution-permanente",
+      "name": "Révolution permanente",
+      "shortName": "RP",
+      "foundedYear": 2022,
+      "candidateId": "anasse-kazib",
+      "description": "Organisation trotskiste issue d'une tendance du Nouveau Parti anticapitaliste, dont les militants ont été exclus en 2021 ; elle a tenu son congrès fondateur en décembre 2022.",
+      "sources": [
+        {
+          "title": "Congrès fondateur pour « Révolution permanente », soutenu par Rouillan et Assa Traoré (AFP, France 24)",
+          "url": "https://www.france24.com/fr/info-en-continu/20221217-congr%C3%A8s-fondateur-pour-r%C3%A9volution-permanente-soutenu-par-rouillan-et-assa-traor%C3%A9",
+          "date": "2022-12-17",
+          "kind": "presse"
+        },
+        {
+          "title": "Révolution permanente, « Bases politiques d'une nouvelle organisation révolutionnaire » (texte du congrès de fondation)",
+          "url": "https://www.revolutionpermanente.fr/Bases-politiques-d-une-nouvelle-organisation-revolutionnaire",
+          "date": "2023-01-02",
+          "kind": "declaration"
+        },
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "solution-democratique",
+      "name": "Solution démocratique",
+      "foundedYear": 2024,
+      "candidateId": "clara-egger",
+      "description": "Parti lancé en septembre 2024, issu du collectif Espoir RIC, qui fait du référendum d'initiative citoyenne et de la démocratie directe le cœur de son programme.",
+      "sources": [
+        {
+          "title": "Solution démocratique, « Qui a fondé le parti Solution Démocratique et pourquoi ? » (consulté)",
+          "url": "https://solutiondemocratique.fr/qui-sommes-nous/",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        },
+        {
+          "title": "Solution démocratique, communiqué de presse de lancement (journée internationale de la démocratie)",
+          "url": "https://solutiondemocratique.fr/communique-de-presse-lancement-a-loccasion-de-la-journee-internationale-de-la-democratie/",
+          "date": "2024-09-11",
+          "kind": "declaration"
+        },
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "date": "2026-10-14",
+          "kind": "presse"
+        }
+      ]
+    },
+    {
+      "id": "equinoxe",
+      "name": "Équinoxe",
+      "shortName": "Équinoxe",
+      "foundedYear": 2021,
+      "candidateId": "antoine-mikolajczak",
+      "description": "Parti écologiste fondé en 2021 par de jeunes actifs, favorable au nucléaire et à la sobriété ; son candidat a été désigné par un vote des adhérents.",
+      "sources": [
+        {
+          "title": "Équinoxe, « Notre histoire » (consulté)",
+          "url": "https://parti-equinoxe.fr/notre-histoire/",
+          "date": "2026-11-10",
+          "kind": "declaration"
+        },
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, classement par « famille politique », liste au 9 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Équinoxe, quand des ingénieurs pronucléaires se lancent en politique (Reporterre)",
+          "url": "https://reporterre.net/Equinoxe-quand-des-ingenieurs-pronucleaires-se-lancent-en-politique",
+          "date": "2024-05-31",
+          "kind": "presse"
+        }
+      ]
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 import { formatLongDate } from '@/src/programmes/models/presentation.service';
+import { themeMeasures } from '@/src/programmes/models/programme-publication.service';
 import type {
   Candidacy,
   Election,
@@ -53,7 +54,7 @@ export const electionPhrase = (election: Pick<Election, 'type' | 'rounds'>) =>
   `${ELECTION_NAMES[election.type]} de ${election.rounds[0]?.date.slice(0, 4) ?? ''}`.trim();
 
 const hasMeasures = (candidacy: Candidacy, themeId: ThemeId) =>
-  (candidacy.themes[themeId]?.measures.length ?? 0) > 0;
+  themeMeasures(candidacy, themeId).length > 0;
 
 /** Le libellé de statut est accordé dans les données (charte, règle 4) : il donne le genre. */
 const isFeminine = (statusLabel: string) => /^Candidate\b/.test(statusLabel);
@@ -99,9 +100,13 @@ export function partySummary({
   if (!candidacy) {
     return `${date}, aucune candidature ${ofParty(label)} n'est recensée pour ${electionTitle}.`;
   }
+  const clause = `${date}, ${candidacyClause(candidacy, label, electionTitle)} ; `;
+  if (candidacy.programmeState === 'non-publie') {
+    return `${clause}son programme 2027 n'est pas encore publié.`;
+  }
   const covered = themeIds.filter((id) => hasMeasures(candidacy, id)).length;
   return (
-    `${date}, ${candidacyClause(candidacy, label, electionTitle)} ; ` +
+    `${clause}` +
     `ses propositions sont recensées dans ${plural(covered, 'thème')} sur ${themeIds.length}.`
   );
 }

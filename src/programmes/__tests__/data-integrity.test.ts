@@ -19,6 +19,7 @@ import { editorialIssues } from '@/src/programmes/models/editorial-vocabulary';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 import {
+  hasKeyIdeas,
   hasKeyIdeasSection,
   isKeyIdeaVerified,
   KEY_IDEAS_COUNT,
@@ -80,6 +81,8 @@ const KINDS = [
   'presse',
   'statistique',
   'justice',
+  'politiste',
+  'encyclopedie',
 ];
 
 const expectValidSource = (source: Source, where: string) => {
@@ -204,7 +207,14 @@ describe('Feature: intégrité des données', () => {
         for (const id of THEME_IDS) {
           const programme = candidacy.themes[id as keyof typeof candidacy.themes];
           expect(programme, `${party.id}/${id}`).toBeDefined();
-          expect(programme.measures.length, `${party.id}/${id}`).toBeGreaterThan(0);
+          // Un programme publié couvre les neuf thèmes ; un programme partiel peut en laisser (le site
+          // affiche « Rien de publié sur ce thème ») ; un programme non publié n'a aucune mesure.
+          if (candidacy.programmeState === 'publie') {
+            expect(programme.measures.length, `${party.id}/${id}`).toBeGreaterThan(0);
+          }
+          if (candidacy.programmeState === 'non-publie') {
+            expect(programme.measures, `${party.id}/${id}`).toEqual([]);
+          }
           for (const measure of programme.measures) {
             expect(measure.sources.length, `${party.id}/${id}: ${measure.text}`).toBeGreaterThan(0);
             for (const source of measure.sources) expectValidSource(source, `${party.id}/${id}`);
@@ -212,6 +222,29 @@ describe('Feature: intégrité des données', () => {
         }
       }
     );
+
+    it('should list measures only from a published programme, and document its publication state', () => {
+      for (const [electionId, candidacy] of Object.entries(party.candidacies)) {
+        const where = `${party.id}/${electionId}`;
+        const all = Object.values(candidacy.themes).flatMap((t) => t.measures);
+        if (candidacy.programmeState === 'non-publie') {
+          expect(all, `${where}: aucune mesure sans programme publié`).toEqual([]);
+          expect(candidacy.programmePublication, where).toBeDefined();
+          expect(candidacy.programmePublication!.sources.length, where).toBeGreaterThanOrEqual(1);
+        } else {
+          expect(candidacy.programmePublication, `${where}: texte de publication`).toBeDefined();
+          // Partiel : au moins une mesure, sinon le programme serait « non publié ».
+          expect(all.length, where).toBeGreaterThan(0);
+        }
+        if (candidacy.programmePublication) {
+          expect(candidacy.programmePublication.text.length, where).toBeGreaterThan(20);
+          expect(editorialIssues(candidacy.programmePublication.text), where).toEqual([]);
+          for (const source of candidacy.programmePublication.sources) {
+            expectValidSource(source, `${where}/publication`);
+          }
+        }
+      }
+    });
 
     it('should ground every non-null stance in a non-aggregator primary or press source (charte, règle 7)', () => {
       for (const question of QUESTIONS) {
@@ -453,10 +486,12 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
   });
 
   describe('Feature: key ideas section (charter, rule 11)', () => {
+    // Un parti sans programme 2027 publié ne montre pas d'idées clés (mention à la place) : il ne compte pas.
     const incompleteParties = PARTIES.filter(
       (party) =>
-        party.keyIdeas.length !== KEY_IDEAS_COUNT ||
-        !party.keyIdeas.every((idea) => isKeyIdeaVerified(party, ELECTION, idea))
+        hasKeyIdeas(party, ELECTION) &&
+        (party.keyIdeas.length !== KEY_IDEAS_COUNT ||
+          !party.keyIdeas.every((idea) => isKeyIdeaVerified(party, ELECTION, idea)))
     );
 
     it('should show the key ideas section only if all parties have exactly 4 verified ideas', () => {
@@ -527,7 +562,14 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
     it('should reference existing measures and questions where the party has a position', () => {
       for (const idea of party.keyIdeas) {
         const where = `${party.id}/${idea.id}`;
-        expect(idea.measureRefs.length, where).toBeGreaterThan(0);
+        // Sans programme 2027 publié, il n'y a aucune mesure à référencer (et l'idée n'est pas affichée).
+        if (!hasKeyIdeas(party, ELECTION)) {
+          // Idée fondée sur une position explicite (±2) sourcée, faute de mesure 2027.
+          expect(idea.measureRefs, where).toEqual([]);
+          const stance = party.stances[idea.relatedQuestionIds[0]];
+          expect(Math.abs(stance?.stance ?? 0), where).toBe(2);
+          expect(stance.sources.length, where).toBeGreaterThan(0);
+        } else expect(idea.measureRefs.length, where).toBeGreaterThan(0);
         for (const ref of idea.measureRefs) {
           const [themeId, index] = ref.split('.');
           const measure =
@@ -542,7 +584,7 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
     });
 
     it('should cover 4 different themes, in the fixed order of the site themes', () => {
-      const keyThemes = party.keyIdeas.map(keyIdeaTheme);
+      const keyThemes = party.keyIdeas.map((idea) => keyIdeaTheme(idea, QUESTIONS));
       expect(new Set(keyThemes).size, party.id).toBe(keyThemes.length);
       const positions = keyThemes.map((theme) => THEME_ORDER.indexOf(theme));
       expect(positions, party.id).toEqual([...positions].sort((a, b) => a - b));

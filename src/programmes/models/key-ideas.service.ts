@@ -43,6 +43,8 @@ const KIND_STRENGTH: SourceKind[] = [
   'presse',
   'statistique',
   'justice',
+  'politiste',
+  'encyclopedie',
 ];
 
 /** Origine affichée : la source la plus forte, puis la plus récente. Ne réécrit pas l'âge d'une source. */
@@ -64,13 +66,27 @@ export const isKeyIdeaVerified = (party: Party, electionId: string, idea: KeyIde
     keyIdeaSources(party, electionId, idea).filter((source) => !isAggregator(source.url))
   ) === 'croisee';
 
-export const keyIdeaTheme = (idea: KeyIdea): ThemeId =>
-  idea.measureRefs[0].split('.')[0] as ThemeId;
+/**
+ * Thème d'une idée : celui de sa première mesure ; sans mesure (programme 2027 non publié), celui de
+ * sa première question liée.
+ */
+export const keyIdeaTheme = (
+  idea: KeyIdea,
+  questions: readonly { id: string; theme: ThemeId }[] = []
+): ThemeId =>
+  (idea.measureRefs[0]?.split('.')[0] as ThemeId | undefined) ??
+  questions.find((q) => q.id === idea.relatedQuestionIds[0])!.theme;
 
 /** Ordre fixe des thèmes du site, identique pour tous les partis : l'ordre ne dit rien du parti. */
-export const sortKeyIdeasByTheme = (ideas: KeyIdea[], themeOrder: readonly ThemeId[]): KeyIdea[] =>
+export const sortKeyIdeasByTheme = (
+  ideas: KeyIdea[],
+  themeOrder: readonly ThemeId[],
+  questions: readonly { id: string; theme: ThemeId }[] = []
+): KeyIdea[] =>
   [...ideas].sort(
-    (a, b) => themeOrder.indexOf(keyIdeaTheme(a)) - themeOrder.indexOf(keyIdeaTheme(b))
+    (a, b) =>
+      themeOrder.indexOf(keyIdeaTheme(a, questions)) -
+      themeOrder.indexOf(keyIdeaTheme(b, questions))
   );
 
 /** Fiche suivante dans l'ordre alphabétique ; après la dernière, on revient à la première. */
@@ -84,12 +100,24 @@ export const KEY_IDEAS_COUNT = 4;
 
 const hasFourVerifiedIdeas = (party: Party, electionId: string) =>
   party.keyIdeas.length === KEY_IDEAS_COUNT &&
-  new Set(party.keyIdeas.map(keyIdeaTheme)).size === KEY_IDEAS_COUNT &&
+  new Set(party.keyIdeas.map((idea) => keyIdeaTheme(idea))).size === KEY_IDEAS_COUNT &&
   party.keyIdeas.every((idea) => isKeyIdeaVerified(party, electionId, idea));
 
 /**
- * Même gabarit, même nombre, même règle pour tous : « Ce qu'il propose » n'est affiché que si les
- * dix fiches ont chacune 4 idées de 4 thèmes différents, toutes recoupées. Sinon, pour aucune.
+ * Les idées clés se tirent des mesures du programme 2027 : un parti dont le programme n'est pas
+ * encore publié n'en montre pas (sa fiche affiche « Programme 2027 pas encore publié » à la place).
  */
-export const hasKeyIdeasSection = (parties: Party[], electionId: string): boolean =>
-  parties.length > 0 && parties.every((party) => hasFourVerifiedIdeas(party, electionId));
+export const hasKeyIdeas = (party: Party, electionId: string): boolean =>
+  party.candidacies[electionId]?.programmeState !== 'non-publie';
+
+/**
+ * Même gabarit, même règle pour tous : « Ce qu'il propose » n'est affiché que si chaque parti dont le
+ * programme 2027 est publié (en tout ou partie) a 4 idées de 4 thèmes différents, toutes recoupées.
+ * Sinon, pour aucun ; les partis sans programme publié montrent la mention à la place.
+ */
+export const hasKeyIdeasSection = (parties: Party[], electionId: string): boolean => {
+  const concerned = parties.filter((party) => hasKeyIdeas(party, electionId));
+  return (
+    concerned.length > 0 && concerned.every((party) => hasFourVerifiedIdeas(party, electionId))
+  );
+};

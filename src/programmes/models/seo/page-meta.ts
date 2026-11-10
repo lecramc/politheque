@@ -9,6 +9,7 @@ import {
   displayName,
   stepLabel,
 } from '@/src/programmes/models/presentation.service';
+import { themeMeasures } from '@/src/programmes/models/programme-publication.service';
 import type {
   Candidacy,
   Catalog,
@@ -224,6 +225,12 @@ export function rubricMeta(kind: keyof typeof RUBRICS, catalog: Catalog): PageMe
   });
 }
 
+/** « programme 2027 en 9 thèmes, avec ses sources » ou « programme 2027 pas encore publié ». */
+const programmeClause = (candidacy: Candidacy, themeCount: number): string =>
+  candidacy.programmeState === 'non-publie'
+    ? 'programme 2027 pas encore publié'
+    : `programme 2027 en ${themeCount} ${themeCount > 1 ? 'thèmes' : 'thème'}, avec ses sources`;
+
 export type PartyPageContext = {
   party: Party;
   questionCount: number;
@@ -253,7 +260,9 @@ export function partyPageContext(party: Party, catalog: Catalog): PartyPageConte
       positions: sourcesFor('positions'),
       procedures: sourcesFor('procedures'),
     },
-    themeCount: catalog.themes.length,
+    themeCount: candidacy
+      ? catalog.themes.filter((t) => themeMeasures(candidacy, t.id).length > 0).length
+      : 0,
   };
 }
 
@@ -306,7 +315,7 @@ export function partySectionMeta(ctx: PartyPageContext, section: PartySection): 
       case 'positions':
         return `${name} : ses positions sur ${questionCount} questions, d'après ses programmes, votes et déclarations datés. Fiche vérifiée le ${date}.`;
       case 'programme':
-        return `${name} : programme 2027 en ${ctx.themeCount} thèmes, avec ses sources. ${presidential!.candidacy.candidateName} (${beforeParenthesis(presidential!.candidacy.statusLabel)}). Fiche vérifiée le ${date}.`;
+        return `${name} : ${programmeClause(presidential!.candidacy, ctx.themeCount)}. ${presidential!.candidacy.candidateName} (${beforeParenthesis(presidential!.candidacy.statusLabel)}). Fiche vérifiée le ${date}.`;
       case 'procedures':
         // Jamais de nom de personne ici : un extrait « X mis en examen » hors contexte serait trompeur.
         return `Procédures judiciaires concernant ${name}, ses dirigeants, candidats et élus nationaux : statut exact, décisions, sources. Arrêté au ${date}.`;
@@ -369,7 +378,7 @@ export function debateMeta(theme: Theme, catalog: Catalog): PageMeta {
   const sources = [
     ...theme.keyFigures.map((f) => f.source),
     ...parties
-      .flatMap((p) => p.candidacies[election!.id].themes[theme.id]?.measures ?? [])
+      .flatMap((p) => themeMeasures(p.candidacies[election!.id], theme.id))
       .flatMap((m) => m.sources),
     ...parties.flatMap((p) => questionIds.flatMap((id) => p.stances[id]?.sources ?? [])),
   ];

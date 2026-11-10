@@ -2,7 +2,10 @@ import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
+import { emptyCatalog } from '@/src/programmes/models/empty-catalog';
+import { etiquetteDetail, labelLines } from '@/src/programmes/models/etiquettes.service';
 import {
+  hasKeyIdeas,
   hasKeyIdeasSection,
   keyIdeaMeasureSources,
   keyIdeaOrigin,
@@ -14,6 +17,11 @@ import {
 import { presentDossier } from '@/src/programmes/models/legal/legal-presentation';
 import { electionPhrase, partySummary } from '@/src/programmes/models/page-summary.service';
 import { formatLongDate, originLabel } from '@/src/programmes/models/presentation.service';
+import {
+  NOT_PUBLISHED,
+  programmeNotice,
+  themeProgramme,
+} from '@/src/programmes/models/programme-publication.service';
 import type { Candidacy, Source, ThemeId } from '@/src/programmes/models/programme.model';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import {
@@ -43,7 +51,7 @@ const sourceCountLabel = (count: number) => `${count} source${count > 1 ? 's' : 
 const programmeLine = (candidacy: Candidacy | undefined, verifiedOn: string): string | null => {
   if (!candidacy || candidacy.programmeState === 'publie') return null;
   if (candidacy.programmeState === 'non-publie') {
-    return `Programme 2027 pas encore publié au ${verifiedOn}.`;
+    return `${NOT_PUBLISHED} au ${verifiedOn}.`;
   }
   const detail = candidacy.programmeStateDetail ? ` (${candidacy.programmeStateDetail})` : '';
   return `Programme 2027 partiel${detail} au ${verifiedOn}.`;
@@ -81,7 +89,11 @@ export const partyViewModel =
         const themeTitle = (id: ThemeId) => catalog?.themes.find((t) => t.id === id)?.title ?? id;
         const questionById = (id: string) => catalog?.questions.find((q) => q.id === id);
         const keyIdeas =
-          party && catalog && featured && hasKeyIdeasSection(catalog.parties, featured.id)
+          party &&
+          catalog &&
+          featured &&
+          hasKeyIdeas(party, featured.id) &&
+          hasKeyIdeasSection(catalog.parties, featured.id)
             ? {
                 programmeLine: programmeLine(party.candidacies[featured.id], verifiedOn),
                 items: sortKeyIdeasByTheme(
@@ -109,6 +121,7 @@ export const partyViewModel =
                 }),
               }
             : null;
+        const etiquette = (catalog?.etiquettes.parties ?? []).find((e) => e.id === partyId);
         const stances =
           party && catalog
             ? catalog.questions.map((question) => ({
@@ -134,7 +147,27 @@ export const partyViewModel =
                   themeIds: catalog.themes.map((t) => t.id),
                 })
               : null,
+          /** Deux lignes, toujours les mêmes, et la feuille de détail (même structure pour tous). */
+          labels: {
+            lines: labelLines(etiquette),
+            detail: etiquetteDetail(
+              etiquette ?? {
+                id: partyId,
+                name: party?.name ?? '',
+                ministry: null,
+                ministryNullReason: null,
+                press: null,
+                pressNullReason: null,
+              },
+              catalog?.etiquettes.circular ?? emptyCatalog().etiquettes.circular
+            ),
+          },
           keyIdeas,
+          /** Encart en tête de l'onglet Programme (publication, ou « pas encore publié ») ; null s'il n'y a rien à dire. */
+          programmeNotice:
+            party && featured && party.candidacies[featured.id]
+              ? programmeNotice(party.candidacies[featured.id])
+              : null,
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,
           sections,
           metaBySection,
@@ -153,7 +186,7 @@ export const partyViewModel =
                   candidacy: party.candidacies[featured.id],
                   sections: (catalog?.themes ?? []).map((theme) => ({
                     theme,
-                    programme: party.candidacies[featured.id].themes[theme.id],
+                    programme: themeProgramme(party.candidacies[featured.id], theme.id),
                   })),
                 }
               : null,

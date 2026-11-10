@@ -25,7 +25,10 @@ export type SourceKind =
   | 'proposition-de-loi' // texte déposé par le groupe
   | 'presse' // article de presse rapportant la position (à défaut de source primaire)
   | 'statistique' // données publiques (INSEE, Cour des comptes, etc.)
-  | 'justice'; // décision de justice, communiqué du parquet (Légifrance, Cour de cassation…)
+  | 'justice' // décision de justice, communiqué du parquet (Légifrance, Cour de cassation…)
+  // Ajoutés pour les étiquettes (classement des partis) : ni presse ni source officielle.
+  | 'politiste' // analyse d'un politiste ou d'un analyste d'un institut (Fondation Jean-Jaurès, Cevipof…)
+  | 'encyclopedie'; // ouvrage de référence (Larousse, Universalis)
 
 export const SOURCE_KINDS: readonly SourceKind[] = [
   'programme',
@@ -35,6 +38,8 @@ export const SOURCE_KINDS: readonly SourceKind[] = [
   'presse',
   'statistique',
   'justice',
+  'politiste',
+  'encyclopedie',
 ];
 
 export interface Source {
@@ -157,6 +162,15 @@ export interface Candidacy {
   programmeState: ProgrammeState;
   /** 30 caractères au plus, pour « partiel » (ex. « 96 mesures »). */
   programmeStateDetail?: string;
+  /**
+   * Publication du programme 2027, phrase pour le lecteur et sources. Exemples :
+   * « Programme 2027 pas encore publié ; date de publication non annoncée (vérifié le 10 novembre 2026). »
+   * « Publié en partie : 96 mesures sur le site de campagne, date de publication non indiquée. »
+   * « Publié en partie, en ligne au plus tard en octobre 2026 (d'après les archives d'Internet). »
+   * Règle éditoriale : l'onglet Programme ne montre que des mesures tirées d'un document officiel
+   * de campagne 2027 ; `non-publie` ⇒ aucune mesure.
+   */
+  programmePublication?: { text: string; date: string | null; sources: Source[] };
   themes: Record<ThemeId, PartyThemeProgramme>;
 }
 
@@ -378,6 +392,77 @@ export interface ElectionCandidates {
   withdrawn: WithdrawnCandidate[];
 }
 
+/** Classement d'un parti par le ministère de l'Intérieur (circulaire du 2 février 2026). */
+export interface MinistryLabel {
+  /** Bloc de clivage : « Extrême gauche », « Gauche », « Divers », « Centre », « Droite », « Extrême droite ». */
+  bloc: string;
+  /** Code et libellé de la nuance (« FI — La France insoumise (candidats) ; LFI (listes) »). */
+  nuance: string;
+  /** Pourquoi ce bloc : nuance propre, parti nommé dans une nuance générique, attribution constatée sur ses listes… */
+  note: string;
+  /** Sources officielles ; les décisions du Conseil d'État sont de type `justice`. */
+  sources: Source[];
+}
+
+/** Étiquette employée par la presse de référence et les politistes. */
+export interface PressLabel {
+  /** Premier segment de `Party.family` pour les dix partis à fiche. */
+  label: string;
+  /** Qui l'emploie, avec les désaccords. */
+  note: string;
+  /** Noms des politistes ou analystes qui l'emploient ; vide si seule la presse (et des encyclopédies) la reprend. */
+  scholars: string[];
+  sources: Source[];
+}
+
+/** Ce que le parti dit de ces étiquettes ou de lui-même. */
+export interface PartyStatement {
+  text: string;
+  sources: Source[];
+}
+
+/** Les deux classements d'un parti, même gabarit pour tous. `null` : aucun classement établi (raison donnée). */
+export interface PartyEtiquettes {
+  id: string;
+  name: string;
+  ministry: MinistryLabel | null;
+  ministryNullReason: string | null;
+  press: PressLabel | null;
+  pressNullReason: string | null;
+  party?: PartyStatement;
+}
+
+export interface EtiquettesFile {
+  /** Date de vérification (ISO AAAA-MM-JJ). */
+  verifiedOn: string;
+  /** Texte qui fonde le classement du ministère. */
+  circular: { title: string; nor: string; date: string; url: string };
+  parties: PartyEtiquettes[];
+}
+
+/** Parti présentant un candidat à la présidentielle 2027, sans fiche détaillée : carte courte sur la page Partis. */
+export interface OtherParty {
+  id: string;
+  name: string;
+  /** Absent quand aucune source n'établit un sigle. */
+  shortName?: string;
+  /** Absent quand aucune source n'établit l'année. */
+  foundedYear?: number;
+  /** Absent quand la direction n'est pas établie. */
+  leader?: { name: string; role: string };
+  /** Identifiant dans `candidats-2027.json`. */
+  candidateId: string;
+  /** 1-2 phrases factuelles. */
+  description: string;
+  sources: Source[];
+}
+
+export interface OtherParties {
+  electionId: string;
+  lastVerified: string;
+  parties: OtherParty[];
+}
+
 export interface Catalog {
   parties: Party[];
   elections: Election[];
@@ -395,6 +480,10 @@ export interface Catalog {
   candidates: ElectionCandidates;
   /** Journal public des corrections, du plus récent au plus ancien. */
   corrections: CorrectionEntry[];
+  /** Étiquettes (ministère de l'Intérieur, presse et politistes) des dix partis et des autres partis à candidat. */
+  etiquettes: EtiquettesFile;
+  /** Autres partis présentant un candidat à la présidentielle 2027 (cartes courtes, page Partis). */
+  otherParties: OtherParties;
   /** Procédures judiciaires : un dossier par parti, ou aucun (tous ou aucun). */
   legal: LegalDossier[];
 }

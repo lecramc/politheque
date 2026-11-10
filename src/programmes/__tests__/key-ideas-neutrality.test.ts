@@ -1,4 +1,5 @@
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
+import { hasKeyIdeas } from '@/src/programmes/models/key-ideas.service';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
@@ -9,8 +10,13 @@ const vmOf = (id: string) =>
 
 describe('Feature: neutralité de la fiche « En bref »', () => {
   it('should show « Ce qu’il propose » for the ten parties or for none', () => {
-    const shown = catalog.parties.map((p) => vmOf(p.id).keyIdeas !== null);
-    expect(new Set(shown).size).toBe(1);
+    // Un parti sans programme 2027 publié montre la mention commune à la place des idées.
+    const withProgramme = catalog.parties.filter((p) => hasKeyIdeas(p, 'presidentielle-2027'));
+    expect(new Set(withProgramme.map((p) => vmOf(p.id).keyIdeas !== null)).size).toBe(1);
+    for (const p of catalog.parties.filter((p) => !withProgramme.includes(p))) {
+      expect(vmOf(p.id).keyIdeas, p.id).toBeNull();
+      expect(vmOf(p.id).programmeNotice?.title, p.id).toBe('Programme 2027 pas encore publié');
+    }
   });
 
   it('should give every party the same fields on its key ideas', () => {

@@ -11,12 +11,14 @@ import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { KeyIdeaList } from '@/src/programmes/components/KeyIdeaList';
 import { PageSources } from '@/src/programmes/components/PageSources';
+import { ProgrammeNotice } from '@/src/programmes/components/ProgrammeNotice';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
 import { TabPanel } from '@/src/programmes/components/Tabs';
 import { firstSentence } from '@/src/programmes/models/presentation.service';
+import { NOTHING_ON_THEME } from '@/src/programmes/models/programme-publication.service';
 import { legacyTabRedirect, partyHref } from '@/src/programmes/models/seo/party-sections';
 import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
 
@@ -58,6 +60,7 @@ export default function PartyProgrammeScreen() {
           {vm.summary}
         </Text>
       ) : null}
+      {vm.programmeNotice ? <ProgrammeNotice notice={vm.programmeNotice} /> : null}
       {vm.keyIdeas ? <KeyIdeaList keyIdeas={vm.keyIdeas} partyName={party.name} /> : null}
 
       {candidacy ? (
@@ -75,17 +78,36 @@ export default function PartyProgrammeScreen() {
             <StatusChip label={candidacy.statusLabel} />
           </View>
           <Text style={{ fontSize: 16, lineHeight: 25 }}>{candidacy.candidate}</Text>
-          <Text style={{ fontSize: 15, color: colors.text.secondary }}>
-            {firstSentence(candidacy.programmeStatus)}
-          </Text>
+          {/* Programme non publié : l'encart ci-dessus le dit, une seule fois. */}
+          {vm.programmeNotice?.state !== 'non-publie' ? (
+            <Text style={{ fontSize: 15, color: colors.text.secondary }}>
+              {firstSentence(candidacy.programmeStatus)}
+            </Text>
+          ) : null}
         </View>
       ) : null}
 
-      {presidential ? (
+      {presidential && vm.programmeNotice?.state !== 'non-publie' ? (
         <View style={{ gap: effects.spacing.xs }}>
           <SectionTitle>Son programme, thème par thème</SectionTitle>
           {presidential.sections.map(({ theme, programme }) =>
-            programme ? (
+            programme?.kind === 'rien' ? (
+              <Accordion
+                key={theme.id}
+                title={theme.title}
+                subtitle={NOTHING_ON_THEME}
+                leading={<Icon name={theme.icon} variant="onGlass" size="small" />}
+                open={openTheme === theme.id}
+                onToggle={(o) => setOpenTheme(o ? theme.id : null)}
+              >
+                <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
+                  {NOTHING_ON_THEME}
+                </Text>
+                <TextLink href={`/debats/${theme.id}`} standalone>
+                  {`Le grand débat : ${theme.title}`}
+                </TextLink>
+              </Accordion>
+            ) : programme?.kind === 'mesures' ? (
               <Accordion
                 key={theme.id}
                 title={theme.title}

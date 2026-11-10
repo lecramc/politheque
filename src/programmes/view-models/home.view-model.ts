@@ -8,6 +8,7 @@ import {
   voterSubtitle,
 } from '@/src/programmes/models/home.copy';
 import { stepHref } from '@/src/programmes/models/journey.model';
+import { candidatesEntry } from '@/src/programmes/models/other-parties.service';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
 import {
   selectCatalog,
@@ -55,12 +56,15 @@ export const homeViewModel = () =>
           : []),
       ];
 
+      const entry = election && catalog ? candidatesEntry(catalog) : null;
       const first = progress.steps[0];
       const next = hydrated && progress.hasStarted ? progress.next : null;
       const lower = (title: string) => title.charAt(0).toLowerCase() + title.slice(1);
       return {
         title: HOME_COPY.title,
         tasks,
+        /** Sous les tâches : la liste complète des candidats, près de « Voter en 2027 ». */
+        candidatesLink: entry ? { href: entry.href, label: entry.label } : null,
         parties: [...(catalog?.parties ?? [])]
           .sort((a, b) => a.name.localeCompare(b.name, 'fr'))
           .map((party) => ({

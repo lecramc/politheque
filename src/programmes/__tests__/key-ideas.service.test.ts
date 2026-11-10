@@ -6,6 +6,7 @@ import {
   keyIdeaTheme,
   sortKeyIdeasByTheme,
   nextPartyInJourney,
+  hasKeyIdeas,
   hasKeyIdeasSection,
   KEY_IDEAS_COUNT,
 } from '@/src/programmes/models/key-ideas.service';
@@ -50,7 +51,7 @@ const partyWith = ({
         statusLabel: 'Candidat déclaré',
         candidate: '',
         programmeStatus: '',
-        programmeState: 'non-publie',
+        programmeState: 'partiel',
         themes,
       },
     },
@@ -233,6 +234,17 @@ describe('Feature: « Ce qu’il propose » existe pour les dix partis ou pour a
     const doubled = fullParty('b');
     doubled.keyIdeas[1] = idea({ id: 'b-bis', measureRefs: ['economie.0'] });
     expect(hasKeyIdeasSection([fullParty('a'), doubled], ELECTION)).toBe(false);
+  });
+
+  it('should leave out a party whose programme is not published: it shows the notice instead', () => {
+    const notPublished = fullParty('b');
+    notPublished.candidacies[ELECTION].programmeState = 'non-publie';
+    notPublished.candidacies[ELECTION].themes = emptyThemes();
+    notPublished.keyIdeas = notPublished.keyIdeas.map((i) => ({ ...i, measureRefs: [] }));
+    expect(hasKeyIdeasSection([fullParty('a'), notPublished], ELECTION)).toBe(true);
+    expect(hasKeyIdeasSection([notPublished], ELECTION)).toBe(false);
+    expect(hasKeyIdeas(notPublished, ELECTION)).toBe(false);
+    expect(hasKeyIdeas(fullParty('a'), ELECTION)).toBe(true);
   });
 
   it('should not be published without any party', () => {

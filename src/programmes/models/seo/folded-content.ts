@@ -1,8 +1,12 @@
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
-import type { Catalog } from '@/src/programmes/models/programme.model';
+import { themeMeasures } from '@/src/programmes/models/programme-publication.service';
+import type { Candidacy, Catalog, ThemeId } from '@/src/programmes/models/programme.model';
 import { STANCE_LEGEND_TEXT } from '@/src/programmes/models/reading-guides.copy';
 
 const PRESIDENTIAL = 'presidentielle-2027';
+
+const themeIds = (candidacy: Candidacy | undefined) =>
+  Object.keys(candidacy?.themes ?? {}) as ThemeId[];
 
 /** Longueur du fragment recherché : assez long pour être unique, assez court pour éviter les balises. */
 const SNIPPET_LENGTH = 70;
@@ -47,8 +51,10 @@ export function foldedSnippets(catalog: Catalog, path: string): string[] {
   const programme = /^\/partis\/([^/]+)\/programme-2027$/.exec(path);
   if (programme) {
     const candidacy = catalog.parties.find((p) => p.id === programme[1])?.candidacies[PRESIDENTIAL];
-    const measure = Object.values(candidacy?.themes ?? {}).flatMap((t) => t.measures)[0];
-    return measure ? [snippet(measure.text)] : [];
+    // Sans programme publié, le texte de publication tient lieu de contenu (aucune mesure listée).
+    const published = themeIds(candidacy).flatMap((id) => themeMeasures(candidacy, id))[0];
+    const text = published?.text ?? candidacy?.programmePublication?.text;
+    return text ? [snippet(text)] : [];
   }
   // Les textes des feuilles « Comment lire… » sont publiés ici, dans le HTML.
   if (path === '/methodologie') return [snippet(STANCE_LEGEND_TEXT)];

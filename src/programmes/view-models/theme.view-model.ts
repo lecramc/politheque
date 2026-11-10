@@ -3,6 +3,7 @@ import { createSelector } from 'reselect';
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { candidatesOf } from '@/src/programmes/models/election.service';
 import { debateSummary } from '@/src/programmes/models/page-summary.service';
+import { themeProgramme } from '@/src/programmes/models/programme-publication.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import { debateMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { SITE_ROUTES } from '@/src/programmes/models/seo/site-routes';
@@ -53,8 +54,18 @@ export const themeViewModel =
               ? candidatesOf(election, parties).map(({ party, candidacy }) => ({
                   party,
                   candidate: candidacy.candidate,
-                  programme: candidacy.themes[theme.id],
+                  programme: themeProgramme(candidacy, theme.id),
                 }))
+              : [],
+          /** Sources des seules mesures listées (jamais celles de données non affichées). */
+          measureSources:
+            theme && election
+              ? candidatesOf(election, parties).flatMap(({ candidacy }) => {
+                  const programme = themeProgramme(candidacy, theme.id);
+                  return programme?.kind === 'mesures'
+                    ? programme.measures.flatMap((m) => m.sources)
+                    : [];
+                })
               : [],
           // Positions : celles des partis, indépendamment du scrutin.
           questions: theme

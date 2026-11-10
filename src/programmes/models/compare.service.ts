@@ -1,8 +1,11 @@
+import {
+  themeProgramme,
+  type ThemeProgramme,
+} from '@/src/programmes/models/programme-publication.service';
 import type {
   Catalog,
   Party,
   PartyStance,
-  PartyThemeProgramme,
   Question,
   Theme,
 } from '@/src/programmes/models/programme.model';
@@ -18,7 +21,8 @@ export type CompareQuestion = {
 
 export type CompareTheme = {
   theme: Theme;
-  programmes: [PartyThemeProgramme | null, PartyThemeProgramme | null];
+  /** Mesures, « rien de publié sur ce thème » ou « programme pas encore publié » ; null sans candidature. */
+  programmes: [ThemeProgramme | null, ThemeProgramme | null];
   questions: CompareQuestion[];
 };
 
@@ -38,7 +42,7 @@ export function compareParties(catalog: Catalog, aId: string, bId: string): Comp
   if (!a || !b || a.id === b.id) return null;
   const election = catalog.elections.find((e) => e.featured);
   const programmeOf = (party: Party, theme: Theme) =>
-    (election && party.candidacies[election.id]?.themes[theme.id]) || null;
+    election ? themeProgramme(party.candidacies[election.id], theme.id) : null;
 
   const rows = catalog.questions.map((question) => ({ question }));
   const groups = stancesByTheme(rows, catalog.themes);

@@ -49,6 +49,34 @@ describe('Feature: accueil à quatre tâches', () => {
   });
 });
 
+describe('Feature: accès à la liste des candidats depuis la tâche « Voter en 2027 »', () => {
+  it('should offer the full list of candidates next to the vote task, with its count', () => {
+    const withCandidate = catalogFactory({ elections: [election] });
+    withCandidate.candidates.candidates.push({
+      id: 'jean',
+      name: 'Jean Dupont',
+      status: 'declare',
+      statusLabel: 'Candidature déclarée',
+      date: '2026-05-01',
+      affiliation: 'Sans étiquette',
+      role: '',
+      summary: '',
+      sources: [],
+    });
+    expect(vmOf(stateBuilder().withCatalog(withCandidate).build()).candidatesLink).toEqual({
+      href: '/elections/presidentielle-2027/candidats',
+      label: 'Présidentielle 2027 : 1 candidature',
+    });
+  });
+
+  it('should offer it only when an election is featured', () => {
+    const none = stateBuilder()
+      .withCatalog(catalogFactory({ elections: [electionFactory({ featured: false })] }))
+      .build();
+    expect(vmOf(none).candidatesLink).toBeNull();
+  });
+});
+
 describe('Feature: les partis en accès direct', () => {
   it('should list every party in alphabetical order, with the same link shape', () => {
     expect(vmOf().parties.map((p) => [p.name, p.href])).toEqual([

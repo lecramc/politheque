@@ -1,5 +1,10 @@
 import { createSelector } from 'reselect';
 
+import {
+  candidatesEntry,
+  OTHER_PARTIES_NOTE,
+  otherPartyCards,
+} from '@/src/programmes/models/other-parties.service';
 import { selectCatalog, selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
 
 export const partiesViewModel = () =>
@@ -14,6 +19,11 @@ export const partiesViewModel = () =>
       icon: theme.icon,
       href: `/debats/${theme.id}`,
     })),
+    /** Accès à la liste complète des candidats (le nombre est calculé). */
+    candidatesEntry: catalog ? candidatesEntry(catalog) : null,
+    /** Partis sans fiche qui présentent un candidat : cartes courtes, ordre alphabétique. */
+    otherParties: catalog ? otherPartyCards(catalog) : [],
+    otherPartiesNote: OTHER_PARTIES_NOTE,
     /** Sans paire choisie : les deux sélecteurs s'ouvrent vides. */
     compareHref: '/partis/comparer',
   }));

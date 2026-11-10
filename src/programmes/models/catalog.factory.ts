@@ -96,6 +96,17 @@ export const catalogFactory = (overrides: Partial<Catalog> = {}): Catalog => ({
     withdrawn: [],
   },
   corrections: [],
+  etiquettes: {
+    verifiedOn: '2026-11-10',
+    circular: {
+      title: 'Circulaire des nuances',
+      nor: 'INTP2602966C',
+      date: '2026-02-02',
+      url: 'https://www.legifrance.gouv.fr/circulaire/id/45645',
+    },
+    parties: [],
+  },
+  otherParties: { electionId: 'presidentielle-2027', lastVerified: '2026-11-10', parties: [] },
   legal: [],
   ...overrides,
 });

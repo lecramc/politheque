@@ -52,6 +52,12 @@ export default function HomeScreen() {
           ))}
         </View>
 
+        {vm.candidatesLink ? (
+          <TextLink href={vm.candidatesLink.href} standalone>
+            {vm.candidatesLink.label}
+          </TextLink>
+        ) : null}
+
         <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
             {HOME_COPY.partiesTitle}

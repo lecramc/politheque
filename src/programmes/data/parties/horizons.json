@@ -44,7 +44,7 @@
   "history": {
     "founded": "2021 (fondé le 9 octobre 2021 au Havre)",
     "origins": {
-      "text": "Horizons est lancé le 9 octobre 2021 au Havre par Édouard Philippe, maire de la ville et Premier ministre d'Emmanuel Macron de 2017 à 2020, quinze mois après son départ de Matignon. Le parti soutient la réélection d'Emmanuel Macron en 2022 et participe à la coalition Ensemble aux législatives de 2022, tout en restant distinct de Renaissance. Il dispose depuis 2022 d'un groupe à l'Assemblée nationale (Horizons et apparentés, puis Horizons & Indépendants depuis 2024).",
+      "text": "Horizons est lancé le 9 octobre 2021 au Havre par Édouard Philippe, maire de la ville et Premier ministre d'Emmanuel Macron de 2017 à 2020, quinze mois après son départ de Matignon. Le parti soutient la réélection d'Emmanuel Macron en 2022 et participe à la confédération Ensemble aux législatives de 2022, aux côtés de La République en marche et du MoDem, tout en restant distinct de Renaissance. Il dispose depuis 2022 d'un groupe à l'Assemblée nationale (Horizons et apparentés, puis Horizons & Indépendants depuis 2024).",
       "sources": [
         {
           "title": "L'ancien Premier ministre français Édouard Philippe lance un nouveau parti baptisé « Horizons »",
@@ -59,12 +59,6 @@
           "kind": "presse"
         },
         {
-          "title": "Wikipédia (en) – Horizons (political party)",
-          "url": "https://en.wikipedia.org/wiki/Horizons_(political_party)",
-          "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
           "title": "Datan – Groupe Horizons et apparentés (16e législature)",
           "url": "https://datan.fr/groupes/legislature-16/hor",
           "date": "2024-06",
@@ -75,6 +69,18 @@
           "url": "https://datan.fr/groupes/legislature-17/hor",
           "date": "2026-11",
           "kind": "statistique"
+        },
+        {
+          "title": "Encyclopædia Universalis, « Philippe Édouard (1970- ) »",
+          "url": "https://www.universalis.fr/encyclopedie/edouard-philippe/",
+          "date": "2026-11",
+          "kind": "encyclopedie"
+        },
+        {
+          "title": "LCP, « Législatives : la majorité présidentielle s'affiche unie et présente une première liste de candidats »",
+          "url": "https://lcp.fr/actualites/legislatives-la-majorite-presidentielle-s-affiche-unie-et-presente-une-premiere-liste-de",
+          "date": "2022-05-05",
+          "kind": "presse"
         }
       ]
     },
@@ -98,8 +104,8 @@
         ]
       },
       {
-        "title": "Classement par la presse et les encyclopédies",
-        "text": "La presse de référence et les encyclopédies classent généralement Horizons au centre droit, au sein du « bloc central » mais autonome vis-à-vis de Renaissance, avec une orientation libérale en économie.",
+        "title": "Classement par la presse",
+        "text": "La presse classe généralement Horizons au centre droit : La Libre Belgique le présente comme un « parti de centre-droit » ; dans une analyse publiée par La Grande Conversation (revue de Terra Nova, 23 octobre 2024), Yoann Taïeb écrit qu'« Horizons occupera le centre-droit ».",
         "sources": [
           {
             "title": "Horizons rêve à court terme",
@@ -108,16 +114,16 @@
             "kind": "presse"
           },
           {
-            "title": "Wikipédia (en) – Horizons (political party)",
-            "url": "https://en.wikipedia.org/wiki/Horizons_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Édouard Philippe pourra-t-il faire l'union de la droite et du centre ?",
             "url": "https://www.publicsenat.fr/emission/bonjour-chez-vous/edouard-philippe-pourra-t-il-faire-lunion-de-la-droite-et-du-centre-e0",
             "date": "2026",
             "kind": "presse"
+          },
+          {
+            "title": "Yoann Taïeb, « Macronisme, centrisme et bloc central » (La Grande Conversation, Terra Nova)",
+            "url": "https://www.lagrandeconversation.com/politique/macronisme-centrisme-et-bloc-central/",
+            "date": "2024-10-23",
+            "kind": "politiste"
           }
         ]
       }
@@ -125,7 +131,7 @@
     "timeline": [
       {
         "date": "2021-10-09",
-        "event": "Lancement d'Horizons au Havre par Édouard Philippe, devant environ 3 000 personnes.",
+        "event": "Lancement d'Horizons au Havre par Édouard Philippe, devant environ 160 maires, 600 élus locaux et une soixantaine de parlementaires.",
         "sources": [
           {
             "title": "L'ancien Premier ministre français Édouard Philippe lance un nouveau parti baptisé « Horizons »",
@@ -140,10 +146,10 @@
             "kind": "presse"
           },
           {
-            "title": "Wikipédia (en) – Horizons (political party)",
-            "url": "https://en.wikipedia.org/wiki/Horizons_(political_party)",
-            "date": "2026-11",
-            "kind": "statistique"
+            "title": "Europe 1, « L'ancien Premier ministre Édouard Philippe lance son parti, Horizons »",
+            "url": "https://www.europe1.fr/politique/lancien-premier-ministre-edouard-philippe-lance-son-parti-horizons-4070672",
+            "date": "2021-10-09",
+            "kind": "presse"
           }
         ]
       },
@@ -233,7 +239,7 @@
       }
     ],
     "whyCreated": {
-      "text": "Quinze mois après avoir quitté Matignon (juillet 2020) et retrouvé la mairie du Havre, Édouard Philippe lance Horizons le 9 octobre 2021 au Havre, devant environ 160 maires, 600 élus locaux et une soixantaine de parlementaires. Il présente le parti comme une « aventure collective » visant à construire « une nouvelle offre politique », à élargir vers la droite la base de soutien d'Emmanuel Macron, dont la réélection en 2022 est son « objectif », et à préparer une stratégie pour la France à l'horizon 2050. Le parti autorise la double appartenance, se dote d'une charte des valeurs et d'une assemblée des maires, et soutient la majorité présidentielle sans fusionner avec LREM.",
+      "text": "Quinze mois après avoir quitté Matignon et retrouvé la mairie du Havre, Édouard Philippe lance Horizons le 9 octobre 2021 au Havre, devant environ 160 maires, 600 élus locaux et une soixantaine de parlementaires. Il présente le parti comme une « aventure collective » visant à construire « une nouvelle offre politique », à élargir vers la droite la base de soutien d'Emmanuel Macron, dont la réélection en 2022 est son « objectif », et à préparer une stratégie pour la France à l'horizon 2050. Le parti s'inscrit dans une « logique de partenariat » qui autorise la double appartenance, se dote d'une charte des valeurs et d'une assemblée des maires.",
       "sources": [
         {
           "title": "Europe 1, « L'ancien Premier ministre Édouard Philippe lance son parti, Horizons »",
@@ -246,12 +252,6 @@
           "url": "https://horizonsleparti.fr/le-manifeste/",
           "date": "2021-10",
           "kind": "programme"
-        },
-        {
-          "title": "Wikipédia (en) – Horizons (political party)",
-          "url": "https://en.wikipedia.org/wiki/Horizons_(political_party)",
-          "date": "2026-11",
-          "kind": "statistique"
         }
       ]
     },
@@ -271,7 +271,7 @@
             "title": "Encyclopædia Universalis, « Philippe Édouard (1970- ) »",
             "url": "https://www.universalis.fr/encyclopedie/edouard-philippe/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "The Local, « All you need to know about France's new Prime Minister Edouard Philippe »",
@@ -321,19 +321,13 @@
       {
         "name": "Gilles Boyer",
         "role": "Député européen (depuis 2019), proche d'Édouard Philippe, codirecteur de la campagne présidentielle de 2027",
-        "background": "Collaborateur d'Alain Juppé pendant une quinzaine d'années, il est directeur de campagne de Juppé lors de la primaire de la droite et du centre de 2016. Conseiller d'Édouard Philippe à Matignon à partir de 2017, il est élu au Parlement européen en 2019 et réélu en 2024.",
+        "background": "Collaborateur d'Alain Juppé pendant une quinzaine d'années, il est directeur de campagne de Juppé lors de la primaire de la droite et du centre de 2016. Conseiller politique d'Édouard Philippe à Matignon, il est élu au Parlement européen en 2019 et réélu en 2024.",
         "sources": [
           {
             "title": "Public Sénat, « L'ex-directeur de campagne de Juppé raconte sa primaire »",
             "url": "https://www.publicsenat.fr/actualites/politique/l-ex-directeur-de-campagne-de-juppe-raconte-sa-primaire-55290",
             "date": "2017-02-17",
             "kind": "presse"
-          },
-          {
-            "title": "Wikipédia (en), « Gilles Boyer »",
-            "url": "https://en.wikipedia.org/wiki/Gilles_Boyer",
-            "date": "2026-11",
-            "kind": "statistique"
           },
           {
             "title": "Public Sénat, « Présidentielle : Édouard Philippe met en place son organigramme pour élargir au maximum le socle et dépasser Horizons »",
@@ -346,20 +340,20 @@
             "url": "https://rue89bordeaux.com/2019/05/europe-vous-et-moi-gilles-boyer-juppeiste-aux-portes-parlement-europeen/",
             "date": "2019-05",
             "kind": "presse"
+          },
+          {
+            "title": "Parlement européen, « Gilles BOYER » (fiche de député européen, 9e et 10e législatures)",
+            "url": "https://www.europarl.europa.eu/meps/fr/197577/GILLES_BOYER/home",
+            "date": "2026-11",
+            "kind": "statistique"
           }
         ]
       },
       {
         "name": "Laurent Marcangeli",
-        "role": "Président du groupe Horizons à l'Assemblée nationale (juin 2022 - janvier 2025), ministre de l'Action publique, de la Fonction publique et de la Simplification (décembre 2024 - octobre 2025)",
-        "background": "Élu député de Corse-du-Sud sous l'étiquette UMP en 2012, il est élu maire d'Ajaccio en 2014 (élection annulée, réélu en 2015) et soutient Alain Juppé à la primaire de 2016. Il quitte Les Républicains en 2018 en désaccord avec la ligne de Laurent Wauquiez, soutient la réélection d'Emmanuel Macron et est réélu député en 2022 sous l'étiquette Horizons.",
+        "role": "Président du groupe Horizons à l'Assemblée nationale (juin 2022 - janvier 2025, de nouveau à partir du 31 mars 2026), ministre de l'Action publique, de la Fonction publique et de la Simplification (décembre 2024 - octobre 2025)",
+        "background": "Élu député de Corse sous l'étiquette UMP en 2012, il est élu maire d'Ajaccio en 2014 et soutient Alain Juppé à la primaire de 2016. Il quitte Les Républicains en mars 2018 en désaccord avec la ligne de Laurent Wauquiez, rejoint Horizons en octobre 2021 et est élu député en 2022 puis en 2024.",
         "sources": [
-          {
-            "title": "Wikipédia (en), « Laurent Marcangeli »",
-            "url": "https://en.wikipedia.org/wiki/Laurent_Marcangeli",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Corse Net Infos, « Avec Laurent Marcangeli, la Corse revient au Gouvernement »",
             "url": "https://www.corsenetinfos.corsica/Avec-Laurent-Marcangeli-la-Corse-revient-au-Gouvernement_a82128.html",
@@ -376,6 +370,18 @@
             "title": "Acteurs publics, « Fonction publique : le nouveau ministre Laurent Marcangeli opte pour un discours d'apaisement »",
             "url": "https://acteurspublics.fr/articles/fonction-publique-le-nouveau-ministre-laurent-marcangeli-opte-pour-un-discours-dapaisement",
             "date": "2025-01-02",
+            "kind": "presse"
+          },
+          {
+            "title": "Corse Net Infos (AFP), « Assemblée : Laurent Marcangeli retrouve la présidence du groupe Horizons »",
+            "url": "https://www.corsenetinfos.corsica/Assemblee-Laurent-Marcangeli-retrouve-la-presidence-du-groupe-Horizons_a89973.html",
+            "date": "2026-03-31",
+            "kind": "presse"
+          },
+          {
+            "title": "Corse Net Infos, Nicole Mari, « Gouvernement Lecornu : La majorité des ministres sortants reconduits, sauf Laurent Marcangeli »",
+            "url": "https://www.corsenetinfos.corsica/Gouvernement-Lecornu-La-majorite-des-ministres-sortants-reconduits-sauf-Laurent-Marcangeli_a87048.html",
+            "date": "2025-10-05",
             "kind": "presse"
           }
         ]
@@ -396,7 +402,7 @@
             "title": "Encyclopædia Universalis, « Philippe Édouard (1970- ) »",
             "url": "https://www.universalis.fr/encyclopedie/edouard-philippe/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Europe 1, « L'ancien Premier ministre Édouard Philippe lance son parti, Horizons »",
@@ -1103,9 +1109,33 @@
           "kind": "presse"
         }
       ],
-      "programmeStatus": "Le site de campagne edouardphilippe.fr publie de « premières orientations » détaillées en quatre priorités (France « plus prospère », « plus sûre », « plus attentive à ses enfants », « plus conquérante ») ; pas de document programmatique complet daté. Fiche fondée sur ces pages, les déclarations du candidat (2025-2026) et les votes du groupe Horizons.",
+      "programmeStatus": "Programme présidentiel 2027 publié en partie : quatre priorités détaillées sur le site de campagne edouardphilippe.fr (France « plus prospère », « plus sûre », « plus attentive à ses enfants », « plus conquérante »), sans date affichée, en ligne au plus tard en octobre 2026 d'après les archives d'Internet. Aucune date n'est annoncée pour le programme complet.",
       "programmeState": "partiel",
       "programmeStateDetail": "quatre priorités",
+      "programmePublication": {
+        "text": "Publié en partie : quatre priorités détaillées sur le site de campagne, en ligne au plus tard en octobre 2026 (d'après les archives d'Internet) ; programme complet sans date annoncée.",
+        "date": "2026-10",
+        "sources": [
+          {
+            "title": "Pour une France plus prospère — Avec Édouard 2027 (consulté le 10 novembre 2026)",
+            "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+            "date": "2026-11-10",
+            "kind": "programme"
+          },
+          {
+            "title": "Pour une France plus prospère — Avec Édouard 2027, copie du 15 octobre 2026 (archives d'Internet, Wayback Machine)",
+            "url": "https://web.archive.org/web/20261015154133/https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
+            "date": "2026-10-15",
+            "kind": "programme"
+          },
+          {
+            "title": "Présidentielle 2027 : Édouard Philippe mise sur le travail et la réduction des dépenses publiques (Euronews)",
+            "url": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
+            "date": "2026-10-09",
+            "kind": "presse"
+          }
+        ]
+      },
       "themes": {
         "economie": {
           "summary": "Le candidat place le redressement des comptes publics en priorité : déficit ramené à 2 % du PIB en fin de quinquennat, sans hausse d'impôts, avec un effort concentré pour moitié sur les dépenses sociales. Il propose un « pacte fiscal » de 50 Md€ avec les entreprises.",
@@ -1139,7 +1169,7 @@
               ]
             },
             {
-              "text": "Ne remplacer qu'un fonctionnaire sur trois partant à la retraite, soit plus de 250 000 postes sur le quinquennat ; fusion ou suppression de « dizaines » d'opérateurs et d'agences.",
+              "text": "« Supprimer un tiers des fonctionnaires partant à la retraite », soit plus de 250 000 postes sur le quinquennat ; fusion ou suppression de « dizaines » d'opérateurs et d'agences.",
               "sources": [
                 {
                   "title": "Pour une France plus prospère — Avec Édouard 2027",
@@ -1498,7 +1528,7 @@
           ]
         },
         "sante": {
-          "summary": "Les propositions de santé publiées sont peu nombreuses : stabilisation des dépenses par la prévention, santé mentale à l'école. Le candidat est favorable à la loi sur l'aide à mourir, contrairement à la majorité de son groupe.",
+          "summary": "Les propositions de santé publiées sont peu nombreuses : stabilisation des dépenses par la prévention, santé mentale à l'école.",
           "measures": [
             {
               "text": "Stabiliser les dépenses de santé en « dépensant mieux » (prévention, transformations technologiques).",
@@ -1519,29 +1549,6 @@
                   "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-attentive-a-ses-enfants",
                   "date": "2026-11",
                   "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Aide à mourir : le candidat est favorable à la loi et ne reviendrait pas dessus selon Europe 1 ; le groupe Horizons a majoritairement voté contre en lecture définitive (16 pour, 18 contre, 1 abstention, 15 juillet 2026).",
-              "sources": [
-                {
-                  "title": "Fin de vie : une réforme appelée à s'imposer durablement malgré les oppositions politiques",
-                  "url": "https://www.europe1.fr/politique/fin-de-vie-une-reforme-appelee-a-simposer-durablement-malgre-les-oppositions-politiques-963783",
-                  "date": "2026-07-01",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
-                  "url": "https://datan.fr/votes/legislature-17/vote_8280",
-                  "date": "2026-07-15",
-                  "kind": "vote"
-                },
-                {
-                  "title": "Aide à mourir : qui a voté quoi à l'Assemblée nationale ? (deuxième lecture, 25/02/2026)",
-                  "url": "https://lcp.fr/actualites/aide-a-mourir-qui-a-vote-quoi-a-l-assemblee-nationale-431842",
-                  "date": "2026-02-25",
-                  "kind": "presse"
                 }
               ]
             }
@@ -1614,25 +1621,8 @@
           ]
         },
         "europe": {
-          "summary": "Le candidat soutient l'Ukraine et propose des mesures européennes sur les migrations (« verrou Schengen »), la concurrence chinoise et le numérique. Il estime que « le seul élément décisif » de la politique extérieure est « l'intérêt de la France ».",
+          "summary": "Le candidat propose des mesures européennes sur les migrations (« verrou Schengen »), la concurrence chinoise et le numérique.",
           "measures": [
-            {
-              "text": "Soutien réaffirmé à l'Ukraine : à Kyiv le 26 mai 2026, il déclare vouloir rester aux côtés de l'Ukraine « même au-delà » de la guerre et se dit favorable au déploiement de troupes européennes après un accord de paix ; soutien réaffirmé en octobre 2026.",
-              "sources": [
-                {
-                  "title": "À « L'Heure de vérité », Philippe ébauche une France à nouveau « commandée et gouvernée »",
-                  "url": "https://www.france24.com/fr/info-en-continu/20261008-a-l-heure-de-v%C3%A9rit%C3%A9-philippe-%C3%A9bauche-une-france-%C3%A0-nouveau-command%C3%A9e-et-gouvern%C3%A9e",
-                  "date": "2026-10-08",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Euronews, « Édouard Philippe a rencontré Volodymyr Zelensky à Kyiv »",
-                  "url": "https://fr.euronews.com/2026/05/26/edouard-philippe-a-rencontre-volodymyr-zelensky-a-kyiv",
-                  "date": "2026-05-26",
-                  "kind": "presse"
-                }
-              ]
-            },
             {
               "text": "« Verrou Schengen » : aucun État ne pourrait engager seul une régularisation massive au-delà d'un seuil collectif ; régime d'urgence permettant de suspendre l'enregistrement des demandes d'asile en cas d'attaque hybride ; sanctions européennes contre les passeurs.",
               "sources": [
@@ -1669,25 +1659,8 @@
           ]
         },
         "institutions": {
-          "summary": "Le candidat défend le cadre de la Ve République et le scrutin majoritaire, avec un président qui « doit présider et non gouverner ». Il prévoit de légiférer par ordonnances dès l'été 2027.",
+          "summary": "Le candidat propose d'inscrire une règle d'or budgétaire dans la Constitution par référendum et de réformer les rapports entre le garde des Sceaux, les procureurs et le Conseil supérieur de la magistrature.",
           "measures": [
-            {
-              "text": "Une vingtaine d'ordonnances présentées lors d'une session extraordinaire du Parlement en juillet 2027, pour une entrée en vigueur « dès l'automne ».",
-              "sources": [
-                {
-                  "title": "Présidentielle 2027 : Édouard Philippe mise sur le travail et la réduction des dépenses publiques",
-                  "url": "https://fr.euronews.com/2026/10/09/presidentielle-2027-edouard-philippe-mise-sur-le-travail-et-la-reduction-des-depenses-publ",
-                  "date": "2026-10-09",
-                  "kind": "presse"
-                },
-                {
-                  "title": "À « L'Heure de vérité », Philippe ébauche une France « à nouveau commandée et gouvernée »",
-                  "url": "https://www.france24.com/fr/info-en-continu/20261008-a-l-heure-de-v%C3%A9rit%C3%A9-philippe-%C3%A9bauche-une-france-%C3%A0-nouveau-command%C3%A9e-et-gouvern%C3%A9e",
-                  "date": "2026-10-08",
-                  "kind": "presse"
-                }
-              ]
-            },
             {
               "text": "Inscription d'une règle d'or budgétaire dans la Constitution par référendum.",
               "sources": [
@@ -1696,23 +1669,6 @@
                   "url": "https://www.edouardphilippe.fr/priorites/pour-une-france-plus-prospere",
                   "date": "2026-11",
                   "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Maintien du scrutin majoritaire aux législatives : le candidat s'est dit « défavorable » à la proportionnelle (mai 2025).",
-              "sources": [
-                {
-                  "title": "Édouard Philippe « défavorable » à la proportionnelle qui conduirait à une « absence de majorité »",
-                  "url": "https://www.france24.com/fr/info-en-continu/20250522-edouard-philippe-d%C3%A9favorable-%C3%A0-la-proportionnelle-qui-conduirait-%C3%A0-une-absence-de-majorit%C3%A9",
-                  "date": "2025-05-22",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Proportionnelle : François Bayrou annonce un texte avant la fin de l'année, un projet qui divise le socle commun",
-                  "url": "https://www.europe1.fr/politique/proportionnelle-francois-bayrou-annonce-un-texte-avant-la-fin-de-lannee-un-projet-qui-divise-le-socle-commun-761497",
-                  "date": "2025-06-29",
-                  "kind": "presse"
                 }
               ]
             },

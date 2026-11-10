@@ -14,60 +14,60 @@
     {
       "id": "tripler-l-impot-sur-la-fortune",
       "title": "Tripler l'impôt sur la fortune",
-      "text": "Tripler l'impôt sur la fortune et baisser l'impôt sur le revenu des tranches les plus basses.",
-      "measureRefs": ["economie.0"],
+      "text": "Tripler l'impôt sur la fortune, comme le prévoyait le programme de 2022 ; le groupe GDR, où siègent ses députés, a voté pour la taxe Zucman.",
+      "measureRefs": [],
       "relatedQuestionIds": ["q01-isf"]
     },
     {
-      "id": "faire-des-salaires-la-question-centrale",
-      "title": "Faire des salaires « la question centrale »",
-      "text": "Augmenter de 5 % les salaires et pensions inférieurs à 2 500 € net par mois, et faire des salaires « la question centrale » de 2027.",
-      "measureRefs": ["travail.5", "travail.0"],
+      "id": "augmenter-de-5-les-salaires-et-les-pensions",
+      "title": "Augmenter de 5 % les salaires et les pensions",
+      "text": "Augmenter de 5 % les salaires et pensions inférieurs à 2 500 euros net par mois.",
+      "measureRefs": [],
       "relatedQuestionIds": ["q05-smic"]
     },
     {
-      "id": "nucleaire-et-renouvelables-100-public",
-      "title": "Nucléaire et renouvelables, « 100 % public »",
-      "text": "Construire au moins six EPR, développer solaire, éolien et hydraulique, et renationaliser EDF et Engie.",
-      "measureRefs": ["ecologie.0", "ecologie.1"],
-      "relatedQuestionIds": ["q12-nucleaire", "q13-renouvelables"]
+      "id": "construire-au-moins-six-epr",
+      "title": "Construire au moins six EPR",
+      "text": "Construire au moins six EPR supplémentaires (programme de 2022), dans un mix « alliant nucléaire et renouvelables ».",
+      "measureRefs": [],
+      "relatedQuestionIds": ["q12-nucleaire"]
     },
     {
-      "id": "creer-un-revenu-etudiant-d-au-moins-850-par-mois",
-      "title": "Créer un revenu étudiant d'au moins 850 € par mois",
-      "text": "Verser aux étudiants un revenu d'au moins 850 € par mois.",
-      "measureRefs": ["education.2"],
-      "relatedQuestionIds": []
+      "id": "reguler-l-installation-des-medecins",
+      "title": "Réguler l'installation des médecins",
+      "text": "Instaurer un conventionnement sélectif à l'installation des médecins (programme de 2022), mesure votée par le groupe GDR à l'Assemblée.",
+      "measureRefs": [],
+      "relatedQuestionIds": ["q15-medecins"]
     }
   ],
   "lastVerified": "2026-11-03",
   "history": {
     "founded": "1920 (congrès de Tours, sous le nom de Section française de l'Internationale communiste, SFIC) ; nom de Parti communiste français en 1943",
     "origins": {
-      "text": "Le parti naît en décembre 1920 au congrès de Tours, lorsque la majorité des délégués de la SFIO vote, par 3 208 voix contre 1 022, l'adhésion à l'Internationale communiste (IIIe Internationale) fondée à Moscou en 1919. D'abord section française de l'Internationale communiste (SFIC), il prend le nom de Parti communiste français en 1943, après la dissolution de l'Internationale. La minorité restée fidèle à la SFIO est à l'origine de la filiation socialiste (aujourd'hui le Parti socialiste). Le PCF s'est ensuite progressivement éloigné du modèle soviétique, notamment à partir des années 1960-1970 (rejet du parti unique en 1963, abandon de la dictature du prolétariat en 1976).",
+      "text": "Le parti naît en décembre 1920 au congrès de Tours, lorsque la majorité des délégués de la SFIO vote, par 3 208 voix contre 1 022, l'adhésion à l'Internationale communiste (IIIe Internationale) fondée à Moscou en 1919. D'abord section française de l'Internationale communiste (SFIC), il devient le Parti communiste français en 1943, année de la dissolution de l'Internationale. La minorité restée fidèle à la SFIO est à l'origine de la filiation socialiste (aujourd'hui le Parti socialiste). Le PCF s'est ensuite progressivement éloigné du modèle soviétique, notamment à partir des années 1960-1970 (rejet du parti unique en 1963, abandon de la dictature du prolétariat en 1976).",
       "sources": [
         {
           "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
           "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
           "date": "2026-11",
-          "kind": "statistique"
-        },
-        {
-          "title": "Wikipédia, « Parti communiste français »",
-          "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-          "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
           "title": "Encyclopædia Universalis, Bernard Pudal, « PCF (Parti communiste français), parti politique »",
           "url": "https://www.universalis.fr/encyclopedie/pcf-parti-communiste-francais-parti-politique/",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
           "title": "Fondation Jean-Jaurès, « Décembre 1920 : la scission du congrès de Tours »",
           "url": "https://www.jean-jaures.org/publication/decembre-1920-la-scission-du-congres-de-tours/",
           "date": "2010-12-09",
+          "kind": "politiste"
+        },
+        {
+          "title": "IdRef (Agence bibliographique de l'enseignement supérieur), notice d'autorité « Parti communiste français », note historique",
+          "url": "https://www.idref.fr/026416832",
+          "date": "2026-11",
           "kind": "statistique"
         }
       ]
@@ -78,22 +78,16 @@
         "text": "Les encyclopédies de référence le présentent comme un parti communiste, né en décembre 1920 de l'adhésion de la majorité de la SFIO à l'Internationale communiste.",
         "sources": [
           {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, Bernard Pudal, « PCF (Parti communiste français), parti politique »",
             "url": "https://www.universalis.fr/encyclopedie/pcf-parti-communiste-francais-parti-politique/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       }
@@ -107,19 +101,13 @@
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, Bernard Pudal, « PCF (Parti communiste français), parti politique »",
             "url": "https://www.universalis.fr/encyclopedie/pcf-parti-communiste-francais-parti-politique/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -131,19 +119,13 @@
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « Gauche en France dans l'entre-deux-guerres (repères chronologiques) »",
             "url": "https://www.universalis.fr/encyclopedie/gauche-en-france-dans-l-entre-deux-guerres-reperes-chronologiques/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -155,13 +137,7 @@
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Archives départementales de la Somme, dossier « 0969W » (élections législatives)",
@@ -179,13 +155,7 @@
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Force ouvrière (Christophe Chiclet, L'inFO militante), « Les grèves de 1947 »",
@@ -203,19 +173,13 @@
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Fondation Jean-Jaurès, « 27 juin 1972 : la signature du Programme commun de gouvernement »",
             "url": "https://www.jean-jaures.org/publication/27-juin-1972-la-signature-du-programme-commun-de-gouvernement/",
             "date": "2010-05-20",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
@@ -227,25 +191,19 @@
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « 22-24 juin 1981 : entrée de ministres communistes dans le second cabinet Mauroy »",
             "url": "https://www.universalis.fr/evenement/22-24-juin-1981-entree-de-ministres-communistes-dans-le-second-cabinet-mauroy/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « 2-31 juillet 1984 : remplacement du Premier ministre Pierre Mauroy par Laurent Fabius »",
             "url": "https://www.universalis.fr/evenement/2-31-juillet-1984-remplacement-du-premier-ministre-pierre-mauroy-par-laurent-fabius/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -257,25 +215,19 @@
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « 1er-19 juin 1997 : victoire de l'opposition de gauche aux élections législatives et nomination de Lionel Jospin comme Premier ministre »",
             "url": "https://www.universalis.fr/evenement/1er-19-juin-1997-victoire-de-l-opposition-de-gauche-aux-elections-legislatives-et-nomination-de-lionel-jospin-comme-premier-ministre/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Fondation Jean-Jaurès, P.-E. Guigo et T. Tellier (dir.), « La gauche plurielle (1997-2002). Quelle place dans l'histoire de la Ve République ? »",
             "url": "https://www.jean-jaures.org/publication/la-gauche-plurielle-1997-2002-quelle-place-dans-lhistoire-de-la-ve-republique/",
             "date": "2024-11-18",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
@@ -299,23 +251,23 @@
       }
     ],
     "whyCreated": {
-      "text": "Le parti naît au XVIIIe congrès de la SFIO, réuni à Tours du 25 au 30 décembre 1920, lorsque la majorité des délégués vote l'adhésion à l'Internationale communiste (Komintern), fondée à Moscou en 1919, et accepte ainsi les « 21 conditions » fixées par Lénine en juillet 1920. Cette majorité réunit le Comité de la IIIe Internationale (Fernand Loriot, Boris Souvarine) et des dirigeants du « centre » de la SFIO, Marcel Cachin et Ludovic-Oscar Frossard, revenus de Moscou en août 1920 convaincus de la nécessité de l'adhésion ; son objectif déclaré est de rejoindre le mouvement bolchevique né de la révolution d'Octobre. Les décomptes diffèrent selon les sources : 3 252 mandats sur 4 763 pour l'adhésion selon Larousse, 3 208 voix contre 1 022 selon la Fondation Jean-Jaurès. La minorité menée par Léon Blum conserve la SFIO ; la majorité garde le quotidien L'Humanité et prend le nom de Section française de l'Internationale communiste (SFIC), puis de Parti communiste français en 1943.",
+      "text": "Le parti naît au XVIIIe congrès de la SFIO, réuni à Tours du 25 au 30 décembre 1920, lorsque la majorité des délégués vote l'adhésion à l'Internationale communiste (Komintern), fondée à Moscou en 1919, et accepte ainsi les « 21 conditions » fixées par Lénine en juillet 1920. Cette majorité réunit le Comité de la IIIe Internationale (Fernand Loriot, Boris Souvarine) et des dirigeants du « centre » de la SFIO, Marcel Cachin et Ludovic-Oscar Frossard, revenus de Moscou en août 1920 ; ses délégués sont décrits comme « partisans de l'adhésion au mouvement bolchevique », né de la révolution russe de 1917. Les décomptes diffèrent selon les sources : 3 252 mandats sur 4 763 pour l'adhésion selon Larousse, 3 208 voix contre 1 022 selon la Fondation Jean-Jaurès. La minorité menée par Léon Blum conserve la SFIO ; la majorité garde le quotidien L'Humanité et prend le nom de Section française de l'Internationale communiste (SFIC), puis devient le Parti communiste français en 1943, année de la dissolution de l'Internationale.",
       "sources": [
         {
           "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
           "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
           "date": "2026-11",
-          "kind": "statistique"
+          "kind": "encyclopedie"
         },
         {
           "title": "Fondation Jean-Jaurès, « Décembre 1920 : la scission du congrès de Tours »",
           "url": "https://www.jean-jaures.org/publication/decembre-1920-la-scission-du-congres-de-tours/",
           "date": "2020-12",
-          "kind": "statistique"
+          "kind": "politiste"
         },
         {
-          "title": "Wikipédia, « Congrès de Tours »",
-          "url": "https://fr.wikipedia.org/wiki/Congr%C3%A8s_de_Tours",
+          "title": "IdRef (Agence bibliographique de l'enseignement supérieur), notice d'autorité « Parti communiste français », note historique",
+          "url": "https://www.idref.fr/026416832",
           "date": "2026-11",
           "kind": "statistique"
         }
@@ -331,100 +283,88 @@
             "title": "Encyclopædia Universalis, « Cachin Marcel (1869-1958) »",
             "url": "https://www.universalis.fr/encyclopedie/marcel-cachin/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Fondation Jean-Jaurès, « Décembre 1920 : la scission du congrès de Tours »",
             "url": "https://www.jean-jaures.org/publication/decembre-1920-la-scission-du-congres-de-tours/",
             "date": "2020-12",
-            "kind": "statistique"
+            "kind": "politiste"
           },
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
       {
         "name": "Ludovic-Oscar Frossard",
-        "role": "Cofondateur et premier secrétaire général du parti (janvier 1921 - 1er janvier 1923)",
-        "background": "Secrétaire général de la SFIO de 1918 à 1920, il fait partie du « centre » qui rallie la majorité à l'adhésion à l'Internationale communiste. Désavoué par l'Internationale, il démissionne le 1er janvier 1923, revient ensuite à la SFIO puis siège avec l'Union socialiste républicaine ; plusieurs fois ministre, il est ministre des Travaux publics dans le premier gouvernement du maréchal Pétain du 16 juin au 12 juillet 1940 (dates des Archives nationales).",
+        "role": "Cofondateur et secrétaire général du parti, jusqu'à sa démission en 1922",
+        "background": "Secrétaire général de la SFIO à partir de 1918, il fait partie du « centre » qui rallie la majorité à l'adhésion à l'Internationale communiste. Il quitte le parti en 1923 et revient à la SFIO, qu'il quitte en 1935 ; député de 1928 à 1940 et plusieurs fois ministre, il est ministre des Travaux publics et des Transmissions du 16 juin au 12 juillet 1940 (dates des Archives nationales) et se range derrière Pétain en 1940.",
         "sources": [
-          {
-            "title": "Wikipédia, « Ludovic-Oscar Frossard »",
-            "url": "https://fr.wikipedia.org/wiki/Ludovic-Oscar_Frossard",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Portail EHRI (Archives nationales), « Ludovic Frossard, ministre des Travaux publics et des Transmissions du 16 juin au 12 juillet 1940 »",
             "url": "https://portal.ehri-project.eu/units/fr-002374-3w_168_3w_197-d_12_1",
             "date": "2026-11",
             "kind": "statistique"
+          },
+          {
+            "title": "Encyclopédie Larousse, « Oscar Louis, dit Ludovic Oscar Frossard »",
+            "url": "https://www.larousse.fr/encyclopedie/personnage/Oscar_Louis_dit_Ludovic_Oscar_Frossard/120477",
+            "date": "2026-11",
+            "kind": "encyclopedie"
           }
         ]
       },
       {
         "name": "Boris Souvarine",
-        "role": "Cofondateur (Comité de la IIIe Internationale), membre de la direction de l'Internationale communiste (1921-1924)",
-        "background": "Né à Kiev en 1895 et arrivé enfant en France, militant de la SFIO, il fonde avec Fernand Loriot et Pierre Monatte le comité pour l'adhésion à la IIIe Internationale et rédige, depuis la prison de la Santé, la résolution de scission votée à Tours. Opposé à la direction Staline-Kamenev-Zinoviev après la mort de Lénine, il est exclu de l'Internationale en 1924 (l'exclusion par le PCF est datée de juillet 1925 par Universalis) ; il publie en 1935 une biographie critique de Staline.",
+        "role": "Cofondateur (Comité de la IIIe Internationale), membre de la direction de l'Internationale communiste jusqu'à son exclusion en 1924",
+        "background": "Né à Kiev en 1895 et arrivé en France en 1898, militant de la SFIO, il fonde avec Fernand Loriot et Pierre Monatte le comité pour l'adhésion à la IIIe Internationale et rédige, depuis la prison de la Santé, la résolution de scission votée à Tours. Opposé à la direction Staline-Kamenev-Zinoviev après la mort de Lénine, il est exclu de l'Internationale en 1924 (l'exclusion par le PCF est datée de juillet 1925 par Universalis) ; il publie en 1935 une biographie critique de Staline.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Souvarine Boris (1895-1984) »",
             "url": "https://www.universalis.fr/encyclopedie/boris-souvarine/",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipedia (en), « Boris Souvarine »",
-            "url": "https://en.wikipedia.org/wiki/Boris_Souvarine",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
       {
         "name": "Maurice Thorez",
         "role": "Secrétaire général (1930-1964), puis président du parti (1964)",
-        "background": "Fils de mineur, mineur lui-même dès 1912 dans le Pas-de-Calais, il rejoint le mouvement communiste après la scission de Tours et entre au bureau politique en 1925 ; il prend la tête du parti en 1930 après un séjour à Moscou. Mobilisé en septembre 1939, il déserte le 4 octobre 1939, après l'interdiction du parti, et gagne l'URSS, la direction clandestine étant assurée en France par Jacques Duclos et Benoît Frachon ; il rentre en France en novembre 1944.",
+        "background": "Fils et petit-fils de mineur, il travaille dès 1912 comme trieur de pierres aux mines de Dourges ; il milite pour l'adhésion à l'Internationale communiste et entre au bureau politique en 1925 ; il devient secrétaire général en juillet 1930, après un séjour à Moscou. Mobilisé, il déserte son régiment le 4 octobre 1939, après la dissolution du parti (26 septembre 1939), et gagne l'URSS, la direction clandestine étant assurée en France par Jacques Duclos et Benoît Frachon ; il rentre en France le 19 novembre 1944.",
         "sources": [
           {
             "title": "Encyclopædia Universalis, « Thorez Maurice (1900-1964) »",
             "url": "https://www.universalis.fr/encyclopedie/maurice-thorez/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipedia (en), « Maurice Thorez »",
-            "url": "https://en.wikipedia.org/wiki/Maurice_Thorez",
-            "date": "2026-11",
-            "kind": "statistique"
+            "title": "Philippe Buton, « Thorez, Maurice (1900-1964) », in Encyclopedia of Modern Europe: Europe Since 1914, Charles Scribner's Sons",
+            "url": "https://encyclopedia.com/history/encyclopedias-almanacs-transcripts-and-maps/thorez-maurice-1900-1964",
+            "date": "2006",
+            "kind": "encyclopedie"
           }
         ]
       },
@@ -437,19 +377,7 @@
             "title": "Encyclopædia Universalis, « Marchais Georges (1920-1997) »",
             "url": "https://www.universalis.fr/encyclopedie/georges-marchais/",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipedia (en), « Georges Marchais »",
-            "url": "https://en.wikipedia.org/wiki/Georges_Marchais",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Conseil constitutionnel, décision n° 81-45 PDR du 29 avril 1981 (résultats du premier tour)",
@@ -461,21 +389,15 @@
             "title": "Fondation Jean-Jaurès, Ismail Ferhat, « Afghanistan, 1979 : les gauches françaises face à l'islam »",
             "url": "https://www.jean-jaures.org/publication/afghanistan-1979-les-gauches-francaises-face-a-lislam/",
             "date": "2020-01-09",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
       {
         "name": "Fabien Roussel",
         "role": "Secrétaire national depuis novembre 2018, candidat à la présidentielle de 2022 (2,28 %) ; candidat investi pour 2027",
-        "background": "Fils d'un journaliste de L'Humanité et militant des Jeunes communistes, il devient en 1997 conseiller de la secrétaire d'État communiste Michelle Demessine, puis collaborateur des députés Jean-Jacques Candelier et Alain Bocquet, auquel il succède comme député du Nord (2017-2024). Il prend la tête du parti au 38e congrès (Ivry-sur-Seine, novembre 2018) en portant le texte « Manifeste pour un PCF du XXIe siècle », favorable à des candidatures communistes autonomes, arrivé en tête du vote des adhérents (42,1 %).",
+        "background": "Fils d'un correspondant de L'Humanité et adhérent du Mouvement des jeunes communistes, il devient en 1997 conseiller chargé de la communication au cabinet de la secrétaire d'État Michelle Demessine, puis attaché parlementaire de députés communistes du Nord, notamment Alain Bocquet et Jean-Jacques Candelier, avant d'être lui-même député du Nord (2017-2024). Il prend la tête du parti au congrès d'Ivry-sur-Seine (novembre 2018) en portant le texte « Manifeste pour un PCF du XXIe siècle », favorable à des candidatures communistes autonomes, arrivé en tête du vote des adhérents (42,1 %).",
         "sources": [
-          {
-            "title": "Wikipedia (en), « Fabien Roussel »",
-            "url": "https://en.wikipedia.org/wiki/Fabien_Roussel",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
           {
             "title": "Public Sénat, « La transition entre Pierre Laurent et Fabien Roussel au cœur du congrès du PCF »",
             "url": "https://www.publicsenat.fr/actualites/politique/la-transition-entre-pierre-laurent-et-fabien-roussel-au-coeur-du-congres-du-pcf",
@@ -487,6 +409,18 @@
             "url": "https://www.conseil-constitutionnel.fr/decision/2022/2022195PDR.htm",
             "date": "2022-04-13",
             "kind": "statistique"
+          },
+          {
+            "title": "Sud Radio, « La biographie et le CV de Fabien Roussel »",
+            "url": "https://www.sudradio.fr/la-biographie-et-le-cv-de-fabien-roussel",
+            "date": "2026-11",
+            "kind": "presse"
+          },
+          {
+            "title": "LCP, « Fabien Roussel officiellement candidat du PCF à l'élection présidentielle de 2027 »",
+            "url": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
+            "date": "2026-09-06",
+            "kind": "presse"
           }
         ]
       }
@@ -494,55 +428,37 @@
     "thought": [
       {
         "title": "Marxisme et « bolchevisation »",
-        "text": "Le parti se réclame à l'origine du marxisme et du bolchevisme : la « bolchevisation » de 1925 introduit le marxisme-léninisme, le centralisme démocratique et les cellules d'entreprise. Les historiens et encyclopédies décrivent ensuite une « stalinisation » : installation d'une direction fidèle à Moscou autour de Maurice Thorez en 1930 et exclusion des opposants, comme Boris Souvarine.",
+        "text": "Le parti se réclame à l'origine du marxisme et du bolchevisme : la « bolchevisation » de 1925 introduit le marxisme-léninisme, le centralisme démocratique et les cellules d'entreprise. Les encyclopédies décrivent ensuite l'exclusion d'opposants, comme Boris Souvarine en 1924, l'arrivée de Maurice Thorez au secrétariat général en juillet 1930, puis une direction « mise en place par l'Internationale » au début des années 1930.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « Souvarine Boris (1895-1984) »",
             "url": "https://www.universalis.fr/encyclopedie/boris-souvarine/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
       {
         "title": "Rapport à l'URSS",
-        "text": "Rapport à l'URSS : le parti approuve le pacte germano-soviétique d'août 1939, ce qui conduit à sa dissolution en 1939 ; il s'aligne après 1947 sur le « camp » soviétique. Les encyclopédies retracent une prise de distance à partir des années 1960 (rejet du parti unique, « socialisme aux couleurs de la France »), l'abandon de la dictature du prolétariat en 1976 dans une ligne proche de l'eurocommunisme, puis, sous Robert Hue (1994), une « mutation ». Le 11 janvier 1980, depuis Moscou, Georges Marchais avait justifié l'intervention soviétique en Afghanistan, commencée fin décembre 1979.",
+        "text": "Rapport à l'URSS : après le pacte germano-soviétique du 23 août 1939, le parti refuse de désavouer l'URSS et il est dissous le 26 septembre 1939 ; il s'aligne après 1947 sur le « camp » soviétique. Les encyclopédies retracent une prise de distance à partir des années 1960 (rejet du parti unique, « socialisme aux couleurs de la France »), l'abandon de la dictature du prolétariat en 1976, une évolution rapprochée de celle des partis communistes d'Italie et d'Espagne, puis, sous Robert Hue (1994), la « voie de la rénovation ». Le 11 janvier 1980, depuis Moscou, Georges Marchais avait justifié l'intervention soviétique en Afghanistan, commencée fin décembre 1979.",
         "sources": [
           {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Wikipedia (en), « Georges Marchais »",
-            "url": "https://en.wikipedia.org/wiki/Georges_Marchais",
-            "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Fondation Jean-Jaurès, Ismail Ferhat, « Afghanistan, 1979 : les gauches françaises face à l'islam »",
             "url": "https://www.jean-jaures.org/publication/afghanistan-1979-les-gauches-francaises-face-a-lislam/",
             "date": "2020-01-09",
-            "kind": "statistique"
+            "kind": "politiste"
           }
         ]
       },
@@ -551,28 +467,22 @@
         "text": "La Résistance occupe une place centrale dans l'identité revendiquée : le parti crée le 25 mai 1941 le Front national contre l'occupant et le gouvernement de Vichy, lance ses premières actions armées en août 1941, puis fonde au début de 1942 les Francs-Tireurs et Partisans français (FTPF), dirigés par Charles Tillon.",
         "sources": [
           {
-            "title": "Wikipédia, « Parti communiste français »",
-            "url": "https://fr.wikipedia.org/wiki/Parti_communiste_fran%C3%A7ais",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
             "title": "Encyclopédie Larousse, « Parti communiste français (PCF) »",
             "url": "https://www.larousse.fr/encyclopedie/divers/PCF/114255",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           },
           {
             "title": "Encyclopædia Universalis, « Tillon Charles (1897-1993) »",
             "url": "https://www.universalis.fr/encyclopedie/charles-tillon/",
             "date": "2026-11",
-            "kind": "statistique"
+            "kind": "encyclopedie"
           }
         ]
       },
       {
         "title": "Statuts actuels et ligne depuis 2018",
-        "text": "Aujourd'hui, le parti revendique dans ses statuts un « projet révolutionnaire » visant le « dépassement » du capitalisme. Depuis 2018, la direction de Fabien Roussel défend une « affirmation » communiste par des candidatures autonomes, y compris à la présidentielle, après les campagnes communes du Front de gauche et le soutien à Jean-Luc Mélenchon en 2012 et 2017.",
+        "text": "Aujourd'hui, le parti revendique dans ses statuts un « projet révolutionnaire » visant le « dépassement » du capitalisme. Depuis 2018, la direction de Fabien Roussel défend des candidatures communistes autonomes à toutes les élections, y compris à la présidentielle.",
         "sources": [
           {
             "title": "PCF, Statuts adoptés au 39e congrès (préambule)",
@@ -585,12 +495,6 @@
             "url": "https://www.publicsenat.fr/actualites/politique/la-transition-entre-pierre-laurent-et-fabien-roussel-au-coeur-du-congres-du-pcf",
             "date": "2018-11-22",
             "kind": "presse"
-          },
-          {
-            "title": "Wikipedia (en), « Fabien Roussel »",
-            "url": "https://en.wikipedia.org/wiki/Fabien_Roussel",
-            "date": "2026-11",
-            "kind": "statistique"
           }
         ]
       }
@@ -1226,628 +1130,62 @@
           "kind": "presse"
         }
       ],
-      "programmeStatus": "Programme présidentiel 2027 non publié au 3 novembre 2026. Fiche fondée sur le programme présidentiel 2022 « La France des Jours heureux », sur la base commune adoptée au 40e congrès (juillet 2026), sur le contrat de législature du Nouveau Front populaire (2024) et sur les votes du groupe GDR. Les positions issues du programme 2022 sont signalées comme telles.",
+      "programmeStatus": "Programme présidentiel 2027 non publié au 10 novembre 2026 ; aucune date de publication n'est annoncée. Les positions de la fiche s'appuient sur le programme présidentiel 2022, la base commune du 40e congrès (juillet 2026), le contrat du Nouveau Front populaire (2024) et les votes du groupe GDR, datés.",
       "programmeState": "non-publie",
+      "programmePublication": {
+        "text": "Date de publication non annoncée (vérifié le 10 novembre 2026).",
+        "date": null,
+        "sources": [
+          {
+            "title": "Le communiste Fabien Roussel officialise sa candidature à l'élection présidentielle de 2027 pour défendre « un projet de rupture » (franceinfo)",
+            "url": "https://www.franceinfo.fr/elections/presidentielle/le-communiste-fabien-roussel-officialise-sa-candidature-a-l-election-presidentielle-de-2027-pour-defendre-un-projet-de-rupture_8179856.html",
+            "date": "2026-09-06",
+            "kind": "presse"
+          },
+          {
+            "title": "Site de campagne de Fabien Roussel, « Vivre ! » (consulté le 10 novembre 2026)",
+            "url": "https://www.fabienroussel2027.fr/",
+            "date": "2026-11-10",
+            "kind": "declaration"
+          }
+        ]
+      },
       "themes": {
         "economie": {
-          "summary": "Le PCF propose une fiscalité plus progressive visant les grandes fortunes et les grandes entreprises, la nationalisation de grandes banques et un contrôle des aides publiques aux entreprises. Le congrès de 2026 réaffirme l'imposition des grandes fortunes et la suppression des exonérations accordées aux grandes entreprises.",
-          "measures": [
-            {
-              "text": "Tripler l'impôt sur la fortune et baisser l'impôt sur le revenu des tranches inférieures (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Créer un impôt sur les sociétés progressif, plus élevé pour les groupes qui délocalisent, suppriment des emplois ou polluent (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Supprimer le CICE et les exonérations sociales et fiscales « n'ayant pour effet que de gonfler les profits » ; créer des commissions de contrôle des aides publiques (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Créer un pôle public financier par la nationalisation de BNP Paribas, de la Société générale et d'AXA (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Reporterre, « Le communiste Fabien Roussel présente un programme fort en nucléaire »",
-                  "url": "https://reporterre.net/Le-communiste-Fabien-Roussel-presente-un-programme-fort-en-nucleaire",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Lutter contre la fraude et l'évasion fiscales, avec des sanctions incluant la prison et la perte des droits civiques (déclarations de campagne 2026).",
-              "sources": [
-                {
-                  "title": "LCP, « Fabien Roussel officiellement candidat du PCF à l'élection présidentielle de 2027 »",
-                  "url": "https://lcp.fr/actualites/fabien-roussel-officiellement-candidat-du-pcf-a-l-election-presidentielle-de-2027-441389",
-                  "date": "2026-09-06",
-                  "kind": "presse"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "travail": {
-          "summary": "Le PCF place les salaires au centre de sa campagne 2027. Il défend la retraite à 60 ans à taux plein, la semaine de 32 heures et un « droit universel à l'emploi ».",
-          "measures": [
-            {
-              "text": "Porter le SMIC à 1 500 € net (1 923 € brut) et aucune pension sous 1 200 € net (programme 2022) ; faire des salaires « la question centrale » de 2027 (congrès 2026).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
-                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
-                  "date": "2026-10-30",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Retraite à 60 ans à taux plein.",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Réduire le temps de travail à 32 heures sans baisse de salaire.",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Abroger la loi El Khomri, les ordonnances Macron et la réforme de l'assurance chômage ; ouvrir le RSA aux moins de 25 ans (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Créer un service public de l'emploi garantissant un emploi ou une formation rémunérée (« sécurité d'emploi et de formation »).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Augmenter de 5 % l'ensemble des salaires et pensions inférieurs à 2 500 € net par mois et indexer tous les salaires sur l'inflation (proposition de mai 2026).",
-              "sources": [
-                {
-                  "title": "Public Sénat, « Présidentielle : que proposent les candidats pour augmenter les salaires ? »",
-                  "url": "https://www.publicsenat.fr/actualites/economie/presidentielle-que-proposent-les-candidats-pour-augmenter-les-salaires",
-                  "date": "2026-10-30",
-                  "kind": "presse"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "immigration": {
-          "summary": "Le PCF défend la régularisation des travailleurs sans papiers et des familles d'enfants scolarisés, le respect du droit d'asile et du droit du sol, et des voies légales de migration.",
-          "measures": [
-            {
-              "text": "Régulariser les travailleuses et travailleurs sans papiers ainsi que les familles dont les enfants sont scolarisés en France.",
-              "sources": [
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Ouvrir des voies légales et sécurisées pour les migrants ; renforcer les moyens de l'Ofpra et de l'Ofii ; dénoncer les accords du Touquet et de Dublin (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Refuser la remise en cause du droit du sol et du droit d'asile (congrès 2026).",
-              "sources": [
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Interdire les tests osseux pour les mineurs non accompagnés (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Instaurer le droit de vote des résidents étrangers aux élections locales et européennes (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "securite": {
-          "summary": "Le PCF propose une police de proximité, une instance indépendante de contrôle de la police et des moyens accrus pour la justice. Le groupe GDR a voté contre la loi sur la justice criminelle de 2026.",
-          "measures": [
-            {
-              "text": "Créer une police nationale de proximité de 30 000 agents (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Mettre en place le récépissé lors des contrôles d'identité pour combattre les contrôles au faciès (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Confier à une instance indépendante le contrôle de l'activité policière (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Favoriser les peines aménagées pour les personnes les moins dangereuses et lutter contre la surpopulation carcérale (congrès 2026).",
-              "sources": [
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Engager un « plan de sauvetage » de la justice (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "ecologie": {
-          "summary": "Le PCF défend un mix électrique « 100 % public et 100 % décarboné » associant nucléaire et renouvelables, la renationalisation d'EDF et d'Engie et la souveraineté alimentaire. Il s'oppose aux traités de libre-échange.",
-          "measures": [
-            {
-              "text": "Construire au moins six EPR supplémentaires et développer solaire, éolien et hydraulique (programme 2022) ; mix « alliant nucléaire et renouvelables » (congrès 2026).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Renationaliser EDF et Engie dans un pôle public de l'énergie (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Plan de 140 Md€ pour l'emploi et le climat ; rénovation énergétique de 700 000 logements par an (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Remettre en cause les accords de libre-échange et sortir l'agriculture des négociations de l'OMC (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Fonds alimentaire de 10 Md€ pour une alimentation saine à l'école (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Reporterre, « Le communiste Fabien Roussel présente un programme fort en nucléaire »",
-                  "url": "https://reporterre.net/Le-communiste-Fabien-Roussel-presente-un-programme-fort-en-nucleaire",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "sante": {
-          "summary": "Le PCF propose de renforcer l'hôpital public, de réguler l'installation des médecins et d'aller vers une prise en charge des soins à 100 % par la Sécurité sociale.",
-          "measures": [
-            {
-              "text": "Créer 100 000 emplois à l'hôpital et arrêter les fermetures de lits (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Conventionnement sélectif à l'installation : en zone dense, un médecin ne s'installe que si un autre part (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Ouvrir 12 000 places par an en études de médecine (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Rembourser les soins à 100 % par la Sécurité sociale, perte d'autonomie comprise (congrès 2026).",
-              "sources": [
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "education": {
-          "summary": "Le PCF fait de l'école une priorité : recrutements pour réduire les effectifs par classe, suppression de Parcoursup et revenu étudiant.",
-          "measures": [
-            {
-              "text": "Recruter 90 000 personnels dans l'Éducation nationale pour baisser les effectifs par classe (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Supprimer Parcoursup et la sélection à l'université (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Créer un revenu étudiant d'au moins 850 € par mois (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Conditionner une partie des aides publiques aux établissements privés à l'« inclusion sociale » (NFP 2024).",
-              "sources": [
-                {
-                  "title": "L'Étudiant, « Législatives : ce que propose le Nouveau Front populaire en matière d'éducation »",
-                  "url": "https://www.letudiant.fr/lycee/legislatives-ce-que-propose-le-nouveau-front-populaire-en-matiere-deducation.html",
-                  "date": "2024-07-08",
-                  "kind": "presse"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "europe": {
-          "summary": "Le PCF veut rompre avec les traités européens actuels pour « une Europe de peuples et de nations libres, souverains et associés » (congrès de 2026), et s'oppose à la militarisation de l'UE. Sur l'Ukraine, il appelle à une solution négociée fondée sur la neutralité du pays ; le groupe GDR a voté contre les textes de soutien de 2024 et 2025.",
-          "measures": [
-            {
-              "text": "Engager un processus de rupture avec les traités européens et mettre fin au pacte de stabilité (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Proposer un pacte européen pour le climat et l'urgence sociale de 900 Md€ par an (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Reporterre, « Le communiste Fabien Roussel présente un programme fort en nucléaire »",
-                  "url": "https://reporterre.net/Le-communiste-Fabien-Roussel-presente-un-programme-fort-en-nucleaire",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "S'opposer à la militarisation de l'UE, à une armée européenne et à l'européanisation de la force nucléaire française (congrès 2026).",
-              "sources": [
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Sortir de l'OTAN et signer le traité d'interdiction des armes nucléaires (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            },
-            {
-              "text": "Rechercher une issue diplomatique à la guerre en Ukraine « sur la base de l'indépendance et de la neutralité du pays » (congrès 2026).",
-              "sources": [
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         },
         "institutions": {
-          "summary": "Le PCF propose une « nouvelle République » mettant fin au présidentialisme, avec la proportionnelle intégrale et de nouveaux droits d'initiative citoyenne.",
-          "measures": [
-            {
-              "text": "Supprimer l'élection du président au suffrage universel et le limiter à un rôle de représentation ; investiture du gouvernement par l'Assemblée (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Abroger les articles 49.3 et 40 de la Constitution (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Instaurer la proportionnelle intégrale aux législatives.",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version intégrale, site de campagne fabienroussel2022.fr)",
-                  "url": "https://assets.nationbuilder.com/fabienroussel2022/pages/217/attachments/original/1643038967/exe_la_france_des_jours_heureux_LIVRE_stc.pdf?1643038967",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "PCF, 40e congrès (Lille, 3-5 juillet 2026) : discours de clôture de Fabien Roussel et base commune « Un communisme de conquêtes », CommunisteS n° 1095",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/42499/attachments/original/1784128307/document_1095_CommunisteS_40e_Congre%CC%80s.pdf",
-                  "date": "2026-07-15",
-                  "kind": "programme"
-                }
-              ]
-            },
-            {
-              "text": "Référendum à l'initiative d'un million de citoyens et droit de pétition de 500 000 citoyens pour inscrire un texte à l'ordre du jour (programme 2022).",
-              "sources": [
-                {
-                  "title": "Fabien Roussel, « La France des Jours heureux », programme présidentiel 2022 (version 8 pages)",
-                  "url": "https://assets.nationbuilder.com/pcf/pages/13815/attachments/original/1643123394/document_-_exe_8p_programme_stc.pdf?1643123394",
-                  "date": "2022-01",
-                  "kind": "programme"
-                },
-                {
-                  "title": "Public Sénat, « Présidentielle : Fabien Roussel présente 180 propositions pour \"une France des jours heureux\" »",
-                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-fabien-roussel-presente-180-propositions-pour-une-france-des-jours",
-                  "date": "2022-01-24",
-                  "kind": "presse"
-                }
-              ]
-            }
-          ]
+          "summary": "",
+          "measures": []
         }
       }
     }

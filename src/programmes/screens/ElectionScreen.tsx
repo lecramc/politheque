@@ -4,6 +4,7 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { useHydrated } from '@/src/core/hooks/useHydrated';
@@ -168,6 +169,17 @@ export default function ElectionScreen() {
                 {' · ordre alphabétique'}
               </Text>
             </Text>
+            {/* D'abord la liste complète, tous candidats à égalité ; puis les partis à fiche. */}
+            {vm.candidatesEntry ? (
+              <View style={{ alignSelf: 'flex-start' }}>
+                <Button variant="primary" fullWidth={false} href={vm.candidatesEntry.href}>
+                  {`Voir les ${vm.candidatesEntry.count} candidatures`}
+                </Button>
+              </View>
+            ) : null}
+            <Text style={{ fontSize: 15, color: colors.text.secondary }}>
+              Les partis suivis par Polithèque, avec leur programme et leurs positions :
+            </Text>
             <RowGroup>
               {vm.candidates.map(({ party, candidacy }, index) => (
                 <PartyRow
@@ -184,11 +196,6 @@ export default function ElectionScreen() {
               {election.candidaciesNote}{' '}
               <TextLink href="/partis/comparer">Comparer les programmes</TextLink>
             </Text>
-            {vm.contentLinks ? (
-              <TextLink href={vm.contentLinks.candidates} standalone>
-                Tous les candidats déclarés
-              </TextLink>
-            ) : null}
           </View>
 
           <PageSources

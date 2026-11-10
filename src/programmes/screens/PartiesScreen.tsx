@@ -8,6 +8,8 @@ import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { useScrollToHash } from '@/src/core/hooks/useScrollToHash';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { tv } from '@/src/core/web/tv';
+import { OtherPartyCard } from '@/src/programmes/components/OtherPartyCard';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyRow, RowGroup } from '@/src/programmes/components/PartyRow';
 import { rubricMeta } from '@/src/programmes/models/seo/page-meta';
@@ -64,7 +66,19 @@ export default function PartiesScreen() {
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
             Ce que veut chaque parti, et ce qu'ils proposent sur chaque grand débat.
           </Text>
-          <View style={{ alignSelf: 'flex-start', marginTop: effects.spacing.xs }}>
+          <View
+            style={{
+              flexDirection: 'row',
+              flexWrap: 'wrap',
+              gap: effects.spacing.sm,
+              marginTop: effects.spacing.xs,
+            }}
+          >
+            {vm.candidatesEntry ? (
+              <Button variant="primary" fullWidth={false} href={vm.candidatesEntry.href}>
+                {vm.candidatesEntry.label}
+              </Button>
+            ) : null}
             <Button variant="secondary" fullWidth={false} href={vm.compareHref}>
               Comparer deux partis
             </Button>
@@ -93,6 +107,26 @@ export default function PartiesScreen() {
             })}
           </RowGroup>
         </View>
+
+        {vm.otherParties.length > 0 ? (
+          <View style={{ gap: effects.spacing.xs }}>
+            <View style={{ gap: effects.spacing.xxs }}>
+              <Text variant="caption" headingLevel={2}>
+                Autres partis présentant un candidat en 2027
+              </Text>
+              <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
+                {vm.otherPartiesNote}
+              </Text>
+            </View>
+            <View {...tv('grid-2')} role="list" style={{ gap: effects.spacing.sm }}>
+              {vm.otherParties.map((card) => (
+                <View key={card.id} role="listitem" style={{ minWidth: 0 }}>
+                  <OtherPartyCard card={card} />
+                </View>
+              ))}
+            </View>
+          </View>
+        ) : null}
 
         <View nativeID="debats" style={{ gap: effects.spacing.xs }}>
           <View style={{ gap: effects.spacing.xxs }}>
