@@ -14,12 +14,13 @@ type Query = Record<string, string | string[] | undefined>;
 
 export const CATEGORIES: ScrutinCategory[] = [
   'texte',
-  'article-unique',
-  'censure',
-  'declaration',
-  'premiere-partie-budget',
   'resolution',
-  'autre',
+  'article-unique',
+  'partie-budget',
+  'censure',
+  'confiance',
+  'declaration',
+  'rejet-prealable',
 ];
 
 const first = (value: unknown): string | undefined => {

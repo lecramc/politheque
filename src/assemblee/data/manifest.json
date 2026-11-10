@@ -13,15 +13,17 @@
     "scrutins": "d91ab1475aaa65d8c585fe0da26efde56b4b65fd4228c306d8f7ff818b421835",
     "amo": "914411af5731d6ef20fb144ae8babc08483b1d11be9c7105b0449a1ed124384f"
   },
-  "scrutins": 286,
-  "votes": 70865,
+  "scrutins": 338,
+  "votes": 81621,
   "premier": "2024-10-08",
   "dernier": "2026-11-04",
   "versionScript": "1.0.0",
   "regles": [
-    "R1 : le titre commence par « l'ensemble » (vote sur l'ensemble d'un texte)",
-    "R2 : scrutin public solennel (code SPS)",
-    "R3 : motion de censure (code MOC)",
-    "R4 : le scrutin porte sur l'article unique d'un projet ou d'une proposition de loi (organique comprise)"
+    "R1 : vote sur l'ensemble d'un projet ou d'une proposition de loi, ou sur une proposition de résolution, quelle que soit la formulation du titre",
+    "R2 : vote sur l'article unique d'un tel texte (texte à un seul article)",
+    "R3 : motion de censure (article 49, alinéas 2 et 3)",
+    "R4 : vote de confiance sur une déclaration de politique générale (article 49, alinéa 1) ou vote sur une déclaration du Gouvernement (article 50-1)",
+    "R5 : motion de rejet préalable adoptée (elle rejette l'ensemble du texte)",
+    "R6 : vote sur une partie (première, deuxième ou troisième) d'un projet de loi de finances ou de financement de la sécurité sociale"
   ]
 }

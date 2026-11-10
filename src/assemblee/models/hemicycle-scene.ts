@@ -16,6 +16,8 @@ const ARC_GAP = 0.05;
 const LABEL_GAP = 0.11;
 const LABEL_GAP_SIDE = 0.06;
 const LABEL_STAGGER = 0.12;
+/** Intervalle (radians) laissé de chaque côté d'une frontière : fin séparateur entre deux arcs de même couleur. */
+const ARC_INSET = 0.008;
 
 export type HemicycleBox = {
   minX: number;
@@ -141,8 +143,8 @@ export const hemicycleArcs = (
       x: box.cx + radius * Math.cos(angle),
       y: box.cy - radius * Math.sin(angle),
     });
-    const from = point(box.arcRadius, start);
-    const to = point(box.arcRadius, end);
+    const from = point(box.arcRadius, start + ARC_INSET);
+    const to = point(box.arcRadius, end - ARC_INSET);
     // Sur les côtés le texte part vers l'extérieur (ancré par son bord), en haut il est centré :
     // dans les deux cas il ne touche ni l'arc ni les sièges.
     const labelAnchor = Math.cos(mid) > 0.35 ? 'start' : Math.cos(mid) < -0.35 ? 'end' : 'middle';

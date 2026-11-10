@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 
 import { t } from '@/src/assemblee/i18n/translate';
+import { ARTICLE_49_SOURCE_URL } from '@/src/assemblee/models/article-49-3';
 import {
   CATEGORIES,
   toScrutinFilters,
@@ -63,6 +64,16 @@ export const assembleeListViewModel = () =>
       status: index && manifest ? ('loaded' as const) : ('loading' as const),
       meta: index ? assembleeListMeta(index) : null,
       warning: t('list.warning'),
+      criteria: {
+        lead: t('list.criteriaLead'),
+        rules: ['R1', 'R2', 'R3', 'R4', 'R5', 'R6'].map((id) => t(`method.${id}`)),
+        excluded: t('list.criteriaExcluded'),
+      },
+      article493: {
+        text: t('notes.article493'),
+        sourceLabel: t('notes.article493Source'),
+        sourceUrl: ARTICLE_49_SOURCE_URL,
+      },
       officialListUrl: OFFICIAL_LIST_URL,
       source: manifest ? sourceNote(manifest) : null,
       years: yearsOf(all),

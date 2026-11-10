@@ -8,13 +8,15 @@ export type VoteCode = 'P' | 'C' | 'A' | 'N' | '-' | '.';
 export type ScrutinType = 'SPO' | 'SPS' | 'MOC';
 export type ScrutinCategory =
   | 'texte'
+  | 'resolution'
   | 'article-unique'
   | 'censure'
+  | 'confiance'
   | 'declaration'
-  | 'premiere-partie-budget'
-  | 'resolution'
-  | 'autre';
-export type ScrutinRule = 'R1' | 'R2' | 'R3' | 'R4';
+  | 'rejet-prealable'
+  | 'partie-budget';
+/** R1 ensemble d'un texte, R2 article unique, R3 censure, R4 déclaration du Gouvernement, R5 rejet préalable adopté, R6 partie de loi financière. */
+export type ScrutinRule = 'R1' | 'R2' | 'R3' | 'R4' | 'R5' | 'R6';
 
 export type Groupe = {
   organeRef: string;
@@ -97,6 +99,8 @@ export type ScrutinDetail = {
   delegations: number[];
   misesAuPoint: MiseAuPoint[];
   sansPlace: SansPlace[];
+  /** Cause officielle (`causePositionVote`) d'un non-votant : [indice du député, code]. PAN et PSE : présidence de séance ; MG : membre du Gouvernement. */
+  causes: [depute: number, cause: string][];
 };
 
 export type Depute = {

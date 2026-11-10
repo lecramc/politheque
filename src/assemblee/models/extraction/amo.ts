@@ -6,8 +6,12 @@ export const LEGISLATURE = '17';
 
 export type GroupMembership = { groupeRef: string; debut: string; fin: string | null };
 
+export type AssemblyMandate = { debut: string; fin: string | null };
+
 export type ActeurRecord = Depute & {
   groupes: GroupMembership[];
+  /** Mandats de député de la 17e législature (un député peut en avoir plusieurs). */
+  mandatsAssemblee: AssemblyMandate[];
   /** Place attribuée dans l'hémicycle (mandat le plus récent qui en porte une). */
   placeHemicycle: number | null;
 };
@@ -16,6 +20,12 @@ export type SittingMember = {
   acteurRef: string;
   groupeRef: string;
   placeHemicycle: number | null;
+  /**
+   * Rattachements possibles quand le jour est un jour de changement : l'open data ne donne pas
+   * l'heure. `null` = n'est plus compté (fin de mandat) ; un identifiant = groupe rejoint le
+   * lendemain. Vide hors jour de changement. Tranché ensuite sur l'effectif officiel du scrutin.
+   */
+  alternatives: (string | null)[];
 };
 
 export type GroupeIdentity = Omit<Groupe, 'medianePlace'>;
@@ -66,6 +76,9 @@ export const parseActeur = (raw: RawActeur): ActeurRecord | null => {
       ? toPlace(withPlace[withPlace.length - 1].mandature?.placeHemicycle)
       : null,
     groupes: uniqueMemberships(mandats.filter((m) => m.typeOrgane === 'GP').sort(byStartDate)),
+    mandatsAssemblee: seats.flatMap((m) =>
+      m.dateDebut ? [{ debut: m.dateDebut, fin: m.dateFin ?? null }] : []
+    ),
   };
 };
 
@@ -81,21 +94,39 @@ export const parseGroupe = (raw: RawOrgane): GroupeIdentity | null => {
   };
 };
 
-/** Députés dont un mandat de groupe couvre le jour (bornes incluses), triés par identifiant. */
-export const sittingMembers = (acteurs: ActeurRecord[], date: string): SittingMember[] =>
-  acteurs
-    .flatMap((acteur) => {
+const nextDay = (date: string): string =>
+  new Date(Date.parse(date) + 24 * 3600 * 1000).toISOString().slice(0, 10);
+
+/**
+ * Députés en fonction le jour (mandat `ASSEMBLEE` et mandat de groupe, bornes incluses), triés par
+ * identifiant. Les jours de fin de mandat ou de changement de groupe, le rattachement est listé
+ * dans `alternatives`.
+ */
+export const sittingMembers = (acteurs: ActeurRecord[], date: string): SittingMember[] => {
+  const tomorrow = nextDay(date);
+  return acteurs
+    .flatMap((acteur): SittingMember[] => {
+      const mandate = acteur.mandatsAssemblee.find(
+        (m) => m.debut <= date && (m.fin === null || m.fin >= date)
+      );
       const membership = acteur.groupes.find(
         (g) => g.debut <= date && (g.fin === null || g.fin >= date)
       );
-      return membership
-        ? [
-            {
-              acteurRef: acteur.id,
-              groupeRef: membership.groupeRef,
-              placeHemicycle: acteur.placeHemicycle,
-            },
-          ]
-        : [];
+      if (!mandate || !membership) return [];
+      const alternatives: (string | null)[] = [];
+      if (mandate.fin === date) alternatives.push(null);
+      if (membership.fin === date) {
+        const next = acteur.groupes.find((g) => g.debut === tomorrow);
+        if (next) alternatives.push(next.groupeRef);
+      }
+      return [
+        {
+          acteurRef: acteur.id,
+          groupeRef: membership.groupeRef,
+          placeHemicycle: acteur.placeHemicycle,
+          alternatives,
+        },
+      ];
     })
     .sort((a, b) => (a.acteurRef < b.acteurRef ? -1 : a.acteurRef > b.acteurRef ? 1 : 0));
+};

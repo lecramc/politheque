@@ -7,7 +7,6 @@ export type GroupRow = {
   abrev: string;
   /** Libellé officiel complet. */
   libelle: string;
-  couleurOfficielle: string;
   membres: number;
   pour: number;
   contre: number;
@@ -41,7 +40,6 @@ export const groupTable = (
         index: groupe.index,
         abrev: groupe.abrev,
         libelle: groupe.libelle,
-        couleurOfficielle: groupe.couleurOfficielle,
         membres,
         pour,
         contre,

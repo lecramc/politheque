@@ -2,6 +2,8 @@ import { rawActeurs, rawOrganes } from '@/src/assemblee/__tests__/fixtures/raw-a
 import {
   groupVote,
   GROUPE_A,
+  GROUPE_B,
+  GROUPE_C,
   motionCensure,
   rawScrutin,
   spoAmendement,
@@ -34,6 +36,56 @@ const seatOf = (dataset: Dataset, numero: number, place: number) => {
   };
 };
 
+describe('Feature: rattachement des députés sans vote un jour de changement', () => {
+  const lastDayOfDep2 = (membresA: number, groupeC: number): Dataset =>
+    build([
+      rawScrutin({
+        numero: 70,
+        date: '2025-03-20',
+        type: 'SPS',
+        titre: "l'ensemble de la proposition de loi visant à tester.",
+        groupes: [
+          groupVote(GROUPE_A, membresA, { pours: [votant('dep1', '010')] }),
+          groupVote(GROUPE_C, groupeC, {}),
+        ],
+      }),
+    ]);
+
+  it('should keep a deputy whose mandate ends that day when the official group size counts him', () => {
+    expect(lastDayOfDep2(2, 2).deputes.map((d) => d.id)).toContain('dep2');
+  });
+
+  it('should leave out a deputy whose mandate ends that day when the official group size does not count him', () => {
+    expect(lastDayOfDep2(1, 2).deputes.map((d) => d.id)).not.toContain('dep2');
+  });
+
+  const dayBeforeGroupChange = (membresA: number, membresC: number): Dataset =>
+    build([
+      rawScrutin({
+        numero: 71,
+        date: '2025-03-31',
+        type: 'SPS',
+        titre: "l'ensemble de la proposition de loi visant à tester.",
+        groupes: [
+          groupVote(GROUPE_A, membresA, { pours: [votant('dep1', '010')] }),
+          groupVote(GROUPE_B, 2, {}),
+          groupVote(GROUPE_C, membresC, {}),
+        ],
+      }),
+    ]);
+
+  it('should attach a deputy changing group the next day to the group the official sizes count him in', () => {
+    expect(seatOf(dayBeforeGroupChange(3, 1), 71, 301)).toMatchObject({
+      depute: 'dep6',
+      groupe: 'GA',
+    });
+    expect(seatOf(dayBeforeGroupChange(2, 2), 71, 301)).toMatchObject({
+      depute: 'dep6',
+      groupe: 'GC',
+    });
+  });
+});
+
 describe('Feature: extraction compacte — détail nominatif', () => {
   it('should list every place observed over the legislature, in ascending order, for every scrutin', () => {
     const dataset = build();
@@ -51,6 +103,13 @@ describe('Feature: extraction compacte — détail nominatif', () => {
     expect(seatOf(dataset, 10, 150)).toMatchObject({ vote: 'C', depute: 'dep3', groupe: 'GB' });
     expect(seatOf(dataset, 10, 151)).toMatchObject({ vote: 'A', depute: 'dep4' });
     expect(seatOf(dataset, 10, 300)).toMatchObject({ vote: 'N', depute: 'dep5', groupe: 'GC' });
+  });
+
+  it('should keep the official cause of a non-voter, by deputy index, and none for a vote', () => {
+    const dataset = build();
+    const dep5 = dataset.deputes.findIndex((d) => d.id === 'dep5');
+    expect(dataset.scrutins[0].detail.causes).toEqual([[dep5, 'PSE']]);
+    expect(dataset.scrutins[1].detail.causes).toEqual([]);
   });
 
   it('should mark a delegated vote', () => {

@@ -26,10 +26,14 @@ export const scrutinHeading = (scrutin: Pick<ScrutinSummary, 'numero' | 'date'>)
 
 /** Décompte d'une ligne de liste. Censure : l'Assemblée ne recense que les voix pour. */
 export const countsLabel = (scrutin: ScrutinSummary): string => {
-  const { pour, contre, requis } = scrutin.synthese;
+  const { pour, contre, abstentions, requis } = scrutin.synthese;
   return scrutin.type === 'MOC'
     ? t('list.countsCensure', { count: pour, requis })
-    : t('list.counts', { pour, contre });
+    : t('list.counts', {
+        pour,
+        contre,
+        abstentions: t('list.abstentions', { count: abstentions }),
+      });
 };
 
 /** La source sépare plusieurs demandeurs par des retours à la ligne. */

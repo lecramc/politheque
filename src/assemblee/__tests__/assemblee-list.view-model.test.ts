@@ -1,3 +1,4 @@
+import { PERIMETER_RULES } from '@/src/assemblee/models/extraction/perimeter';
 import {
   indexFactory,
   manifestFactory,
@@ -46,12 +47,27 @@ const vm = () =>
 
 const NONE = { categorie: 'toutes', resultat: 'tous', annee: null, recherche: '' } as const;
 
-describe('Feature: liste des grands votes', () => {
+describe('Feature: liste des votes', () => {
   it('should be loading until the index is in the store', () => {
     const empty = assembleeListViewModel()(assembleeStateBuilder().build());
     expect(empty.status).toBe('loading');
     expect(empty.meta).toBeNull();
     expect(vm().status).toBe('loaded');
+  });
+
+  it('should write the closed list of rules exactly, and say what is left out', () => {
+    const { criteria } = vm();
+    expect(criteria.rules).toEqual(PERIMETER_RULES);
+    expect(criteria.lead).toContain('règle fixe');
+    expect(criteria.lead).not.toContain('sans exception ni choix éditorial');
+    expect(criteria.excluded).toContain('amendements');
+  });
+
+  it('should recall article 49, alinéa 3, with its source', () => {
+    expect(vm().article493).toMatchObject({
+      text: expect.stringContaining("Il n'y a donc pas de vote final"),
+      sourceUrl: expect.stringContaining('conseil-constitutionnel.fr'),
+    });
   });
 
   it('should list every scrutin from the most recent, grouped by month', () => {
@@ -72,7 +88,7 @@ describe('Feature: liste des grands votes', () => {
       titre: "L'ensemble du projet de loi d'urgence pour Mayotte (première lecture).",
       resultat: 'Adopté',
       adopte: true,
-      decompte: '446 pour, 2 contre',
+      decompte: '446 pour · 2 contre · 1 abstention',
     });
   });
 

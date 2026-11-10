@@ -2,19 +2,20 @@
   "common": {
     "back": "Understand",
     "backToList": "All votes",
-    "officialTitleNote": "Official title from the Assemblée nationale, in French, reproduced as published.",
+    "officialTitleNote": "Official title from the Assemblée nationale, in French; only the first letter is capitalised.",
     "source": "Source: Assemblée nationale, open data, {licence}. Data extracted on {date}.",
-    "sourceDetail": "Latest vote published: {dernier}. SHA-256 fingerprint of the votes file: {sha}…",
+    "sourceDetail": "Latest vote included: {dernier}. SHA-256 fingerprint of the votes file: {sha}…",
     "officialListLink": "All votes on the Assemblée nationale website"
   },
   "category": {
-    "texte": "Vote on the whole of a bill",
-    "article-unique": "Vote on the single article of a bill",
+    "texte": "Vote on the whole of a text",
+    "article-unique": "Vote on a single-article text",
     "censure": "Motion of no confidence",
-    "declaration": "Government statement",
-    "premiere-partie-budget": "First part of the finance bill",
-    "resolution": "Resolution",
-    "autre": "Other solemn vote"
+    "declaration": "Government statement (article 50-1)",
+    "resolution": "Vote on a resolution",
+    "confiance": "General policy statement (article 49, paragraph 1)",
+    "rejet-prealable": "Preliminary rejection motion adopted",
+    "partie-budget": "Budget: vote on a part"
   },
   "voteType": {
     "SPO": "Ordinary public vote",
@@ -38,20 +39,25 @@
       "none": "Did not vote the motion"
     },
     "delegation": "by proxy",
-    "miseAuPoint": "Voting correction published: wished to vote {souhait}. It does not change the result.",
+    "miseAuPoint": "Voting correction published: wished {souhait}. It does not change the result.",
     "souhait": {
-      "P": "for",
-      "C": "against",
+      "P": "to vote for",
+      "C": "to vote against",
       "A": "to abstain",
-      "N": "not to vote"
+      "N": "not to take part in the vote"
+    },
+    "nonVotantCause": "Non-voter ({cause})",
+    "cause": {
+      "PAN": "President of the Assembly",
+      "PSE": "chair of the sitting",
+      "MG": "member of the Government"
     }
   },
   "list": {
-    "title": "The Assembly's major votes",
-    "lead": "Named votes of the members of the 17th legislature on bills, solemn votes and motions of no confidence, as published by the Assemblée nationale: the result, and how each group and each member voted.",
+    "title": "The Assembly's votes",
+    "lead": "Named votes of the members of the 17th legislature on bills, motions of no confidence and the other votes selected by the rule below, as published by the Assemblée nationale: the result, and how each group and each member voted.",
     "warning": "Only votes by public ballot are recorded by name; a text adopted by show of hands does not appear here.",
     "criteriaTitle": "Which votes are listed?",
-    "criteria": "A vote is published as soon as one of these rules applies, with no exception or editorial choice: it is on the whole of a text, it is on the single article of a bill, the Assembly classes it as a solemn public vote, or it is a motion of no confidence. Votes on amendments and on single articles are not included.",
     "methodLink": "Read the method: Assembly votes",
     "filters": {
       "title": "Filter the votes",
@@ -70,17 +76,23 @@
       "other": "{count} votes of {total}"
     },
     "empty": "No vote matches these filters.",
-    "counts": "{pour} for, {contre} against",
+    "counts": "{pour} for · {contre} against · {abstentions}",
     "countsCensure": {
       "one": "{count} for, {requis} required",
       "other": "{count} for, {requis} required"
+    },
+    "criteriaLead": "The list follows a fixed rule, applied by a program to every public ballot of the legislature. A vote is included when it falls under one of these cases:",
+    "criteriaExcluded": "Votes on amendments and on single articles, rejected rejection motions and other procedural motions are not included.",
+    "abstentions": {
+      "one": "{count} abstention",
+      "other": "{count} abstentions"
     }
   },
   "scrutin": {
     "pageTitle": "Vote no. {numero} of {date}",
     "type": "Type of vote",
     "category": "Category",
-    "requestedBy": "Requested by",
+    "requestedBy": "Vote requested by",
     "date": "Date",
     "resultTitle": "Result",
     "synthesisTitle": "Summary",
@@ -91,7 +103,8 @@
       "pour": "For",
       "contre": "Against",
       "abstentions": "Abstentions",
-      "nonVotants": "Non-voting"
+      "nonVotants": "Non-voting",
+      "nonVotantsVolontaires": "Voluntary non-voters"
     },
     "censureNote": "For a motion of no confidence the Assembly records only the votes in favour: other members did not vote the motion, which is not a vote against."
   },
@@ -173,28 +186,28 @@
     "licenceLine": "Assemblée nationale data reused under {licence}."
   },
   "seo": {
-    "listTitle": "Major votes of the Assemblée nationale",
-    "listDescription": "{count} votes of the 17th legislature: bills, solemn votes and motions of no confidence, with how each group and each member voted.",
+    "listTitle": "The Assemblée nationale's votes",
+    "listDescription": "{count} votes of the 17th legislature: bills, motions of no confidence and other votes selected by a fixed rule, with how each group and each member voted.",
     "scrutinTitle": "Vote no. {numero} of {date}: {titre}",
-    "scrutinDescriptionAdopted": "Vote no. {numero}. Adopted: {pour} for, {contre} against. How each group and each member voted.",
-    "scrutinDescriptionRejected": "Vote no. {numero}. Rejected: {pour} for, {contre} against. How each group and each member voted.",
+    "scrutinDescriptionAdopted": "Vote no. {numero}. Adopted: {decompte}. How each group and each member voted.",
+    "scrutinDescriptionRejected": "Vote no. {numero}. Rejected: {decompte}. How each group and each member voted.",
     "scrutinDescriptionCensureAdopted": "Vote no. {numero}. Motion adopted: {pour} for, {requis} required. How each group and each member voted.",
     "scrutinDescriptionCensureRejected": "Vote no. {numero}. Motion rejected: {pour} for, {requis} required. How each group and each member voted."
   },
   "comprendre": {
-    "cardTitle": "The Assembly's major votes",
-    "cardText": "The result, and how each group and each member voted on bills, solemn votes and motions of no confidence.",
+    "cardTitle": "The Assembly's votes",
+    "cardText": "The result, and how each group and each member voted on bills, motions of no confidence and the other votes selected by a fixed rule.",
     "cardMeta": "{count} votes"
   },
   "method": {
     "title": "Assembly votes",
-    "intro": "The page \"The Assembly's major votes\" reproduces, without writing anything, the public ballots of the 17th legislature published as open data by the Assemblée nationale.",
+    "intro": "The page \"The Assembly's votes\" reproduces, without summarising or rewriting the official titles, the public ballots of the 17th legislature published as open data by the Assemblée nationale. Only the category names and the result sentences are written by Polithèque.",
     "criteriaTitle": "Which votes are published",
-    "criteriaLead": "A vote is published if at least one of these rules applies. A program evaluates them, with no manual exception.",
-    "R1": "R1: the official title of the vote begins with \"l'ensemble\" (vote on the whole of a text).",
-    "R2": "R2: the Assembly classes the vote as a solemn public vote (code SPS).",
-    "R3": "R3: the vote is a motion of no confidence (code MOC).",
-    "R4": "R4: the vote is on the single article of a government or private member's bill (organic laws included). A vote on the single article of a resolution is not retained unless it is solemn (R2).",
+    "criteriaLead": "The list follows a fixed rule, applied by a program to every public ballot, with no manual exception. A vote is included when it falls under one of these cases:",
+    "R1": "R1: vote on the whole of a government or private member's bill, or on a resolution, however the title is worded",
+    "R2": "R2: vote on the single article of such a text (single-article text)",
+    "R3": "R3: motion of no confidence (article 49, paragraphs 2 and 3)",
+    "R4": "R4: confidence vote on a general policy statement (article 49, paragraph 1) or vote on a Government statement (article 50-1)",
     "sourceTitle": "Source and licence",
     "source": "The data comes from the \"Scrutins\" and \"Acteurs, mandats et organes\" files of the Assemblée nationale's open data (data.assemblee-nationale.fr). It is published under the Licence Ouverte / Open Licence (Etalab): the source is cited on every page, with the extraction date. Each vote page links to the Assembly's official page.",
     "limitsTitle": "Limits to be aware of",
@@ -205,6 +218,17 @@
     "limitPoint": "Voting corrections: a member may publish afterwards that they wished to vote otherwise. It is shown as such, and changes neither the result nor the counts.",
     "limitGroups": "Groups: a parliamentary group is not a party. The group shown is the one on the day of the vote.",
     "neutrality": "No attendance, loyalty or cohesion rate, no ranking, no score: the page shows votes, not a judgement on members or groups.",
-    "link": "See the Assembly's major votes"
+    "link": "See the Assembly's votes",
+    "criteriaExcluded": "Votes on amendments and on single articles, rejected rejection motions and other procedural motions are not included.",
+    "limit493": "Article 49, paragraph 3: a text adopted under this procedure is not voted on (it is deemed adopted unless a motion of no confidence is adopted); only the motions of no confidence filed in response appear. This note is repeated on paragraph 3 motions and on votes on a part of a finance bill.",
+    "limitNonVoters": "Non-voters: when the source gives the cause (chair of the sitting, member of the Government), it is shown in the table of members.",
+    "R5": "R5: preliminary rejection motion adopted (it rejects the whole text)",
+    "R6": "R6: vote on a part (first, second or third) of a finance bill or social security financing bill"
+  },
+  "notes": {
+    "article493": "When the Government makes the passing of a text a matter of its responsibility (article 49, paragraph 3), the text is deemed adopted without a vote, unless a motion of no confidence is adopted. There is therefore no final vote on that text: only the motions of no confidence filed in response appear here.",
+    "article493Source": "Constitution of 4 October 1958, article 49 (text in force)",
+    "budgetMotions": "Motions of no confidence filed on this text (article 49, paragraph 3)",
+    "budgetMotionItem": "no. {numero}: {resultat}"
   }
 }

@@ -9,7 +9,7 @@ import { Enter } from '@/components/ui/Enter';
 import { SeatMark } from '@/src/assemblee/components/SeatMark';
 import { t } from '@/src/assemblee/i18n/translate';
 import { positionLabel } from '@/src/assemblee/models/deputy-table';
-import { groupColor, GROUP_COLOR_BACKGROUNDS } from '@/src/assemblee/models/group-color';
+import { GROUP_ARC_COLOR } from '@/src/assemblee/models/group-color';
 import { hitTest, pixelToModel, type PointerKind } from '@/src/assemblee/models/hemicycle-hit';
 import { HEMICYCLE_RATIO } from '@/src/assemblee/models/hemicycle-scene';
 import type { HemicycleView } from '@/src/assemblee/view-models/scrutin.view-model';
@@ -115,7 +115,6 @@ export function Hemicycle({
   const labelSize = LABEL_PX * unitsPerPixel;
   const dimmed = highlight !== null;
   const inGroup = (groupe: number | null) => !dimmed || groupe === highlight;
-  const background = GROUP_COLOR_BACKGROUNDS[theme];
 
   const drawSeats = (visible: (groupe: number | null) => boolean) =>
     seats
@@ -163,8 +162,7 @@ export function Hemicycle({
             {dimmed ? <G opacity={DIMMED}>{drawSeats((g) => !inGroup(g))}</G> : null}
             <G>{drawSeats(inGroup)}</G>
             {arcs.map((arc) => {
-              const official = view.groupes.find((g) => g.index === arc.groupe)?.couleurOfficielle;
-              const color = groupColor(official ?? '', background).color;
+              const color = GROUP_ARC_COLOR[theme];
               const active = !dimmed || highlight === arc.groupe;
               return (
                 <G key={arc.groupe} opacity={active ? 1 : DIMMED}>

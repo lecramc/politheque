@@ -3,6 +3,7 @@ import {
   type ActeurRecord,
   type GroupeIdentity,
 } from '@/src/assemblee/models/extraction/amo';
+import { alignAbsents } from '@/src/assemblee/models/extraction/effectifs';
 import { asList } from '@/src/assemblee/models/extraction/normalize';
 import { classifyScrutin } from '@/src/assemblee/models/extraction/perimeter';
 import type { RawGroupVote, RawScrutin } from '@/src/assemblee/models/extraction/raw.model';
@@ -70,6 +71,7 @@ export const votersOf = (raw: RawScrutin): SeatMember[] =>
           vote,
           delegation: v.parDelegation === 'true',
           place: toPlace(v.numPlace),
+          ...(v.causePositionVote ? { cause: v.causePositionVote } : {}),
         })
       )
     )
@@ -168,9 +170,13 @@ export const compactDataset = (input: DatasetInput): Dataset => {
   const seatings: Seating[] = withVoters.map((s) => {
     const voted = new Set(s.voters.map((v) => v.acteurRef));
     for (const ref of voted) known(ref);
-    const absents = sittingMembers(input.acteurs, s.raw.dateScrutin).filter(
-      (m) => !voted.has(m.acteurRef)
-    );
+    const absents = alignAbsents({
+      absents: sittingMembers(input.acteurs, s.raw.dateScrutin).filter(
+        (m) => !voted.has(m.acteurRef)
+      ),
+      voterGroups: s.voters.map((v) => v.groupeRef),
+      official: new Map(groupsOf(s.raw).map((g) => [g.organeRef, num(g.nombreMembresGroupe)])),
+    });
     const { seated, unplaced } = assignSeats({
       date: s.raw.dateScrutin,
       voters: s.voters,
@@ -258,6 +264,10 @@ export const compactDataset = (input: DatasetInput): Dataset => {
       groupes: seats.map((m) => (m ? (groupIdx.get(m.groupeRef) as number) : -1)),
       delegations: seats.flatMap((m, i) => (m?.delegation ? [i] : [])),
       misesAuPoint: souhaits,
+      causes: s.voters
+        .flatMap((v) => (v.cause ? [[deputeIdx.get(v.acteurRef) as number, v.cause] as const] : []))
+        .sort((a, b) => a[0] - b[0])
+        .map(([depute, cause]) => [depute, cause]),
       sansPlace: s.unplaced
         .map((m) => ({
           depute: deputeIdx.get(m.acteurRef) as number,

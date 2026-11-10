@@ -3,13 +3,13 @@ import path from 'node:path';
 
 import manifest from '@/src/assemblee/data/manifest.json';
 import indexData from '@/src/assemblee/data/scrutins-index.json';
-import { classifyScrutin } from '@/src/assemblee/models/extraction/perimeter';
+import { classifyScrutin, PERIMETER_RULES } from '@/src/assemblee/models/extraction/perimeter';
 import type { RawScrutin } from '@/src/assemblee/models/extraction/raw.model';
 import {
+  GROUP_ARC_COLOR,
   GROUP_COLOR_BACKGROUNDS,
-  GROUP_COLOR_FALLBACK,
   contrastRatio,
-  groupColor,
+  groupArcColor,
 } from '@/src/assemblee/models/group-color';
 import type {
   DeputeDirectory,
@@ -35,6 +35,17 @@ const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
  * suivent les groupes. On le signale ici plutôt que de le corriger.
  */
 const SYNTHESIS_NON_VOTERS_GAP = new Set([1]);
+
+/**
+ * Écarts d'effectif irréductibles (« n° abrégé de groupe rattachés/officiel »). Tout écart nouveau
+ * doit être expliqué ici ou corrigé dans l'extraction.
+ *  - 5192 (26 janvier 2026) : Mme Rist reprend son mandat le 25 janvier et change de groupe le 26
+ *    et le 27 (mandat de groupe « non inscrit » d'un seul jour) ; l'Assemblée ne la compte dans
+ *    aucun groupe ce jour-là, l'open data ne permet pas de le déduire.
+ *  - 6902 (26 mai 2026) : le groupe NI compte un député de moins que ses mandats ne l'indiquent,
+ *    sans changement de mandat ce jour-là : la source ne l'explique pas.
+ */
+const IRREDUCIBLE_EFFECTIVE_GAPS: string[] = ['6902 NI 11/10', '5192 NI 11/10'];
 
 describe("Feature: intégrité des données de l'Assemblée", () => {
   it('should match the manifest counts and date range', () => {
@@ -62,7 +73,11 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
 
   it('should satisfy the perimeter rules for every published scrutin', () => {
     for (const s of index.scrutins) {
-      const raw = { titre: s.titre, typeVote: { codeTypeVote: s.type } } as RawScrutin;
+      const raw = {
+        titre: s.titre,
+        typeVote: { codeTypeVote: s.type },
+        sort: { code: s.adopte ? 'adopté' : 'rejeté' },
+      } as RawScrutin;
       const classification = classifyScrutin(raw);
       expect(classification.inclus, `scrutin ${s.numero}`).toBe(true);
       expect(s.regles, `scrutin ${s.numero}`).toEqual(classification.regles);
@@ -70,16 +85,8 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
     }
   });
 
-  it('should publish single-article votes only on bills, never on resolutions (unless solemn)', () => {
-    for (const s of index.scrutins.filter((x) => x.regles.includes('R4'))) {
-      expect(s.titre.toLowerCase().replace(/[’]/g, "'")).toMatch(
-        /^l'article unique (du projet|de la proposition) de loi/
-      );
-    }
-    const singleArticleOfResolutions = index.scrutins.filter(
-      (s) => /^l.article unique de la proposition de résolution/i.test(s.titre) && s.type !== 'SPS'
-    );
-    expect(singleArticleOfResolutions).toEqual([]);
+  it('should write the same closed list of rules in the manifest as in the code', () => {
+    expect(manifest.regles).toEqual(PERIMETER_RULES);
   });
 
   it('should have group totals equal to the synthesis for every scrutin', () => {
@@ -112,6 +119,22 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
     }
   });
 
+  it('should attach to every group exactly its official number of members, except the listed gaps', () => {
+    const gaps: string[] = [];
+    for (const s of index.scrutins) {
+      const d = details.get(s.numero)!;
+      for (const [groupeIdx, membres] of s.groupes) {
+        const attached =
+          d.groupes.filter((g) => g === groupeIdx).length +
+          d.sansPlace.filter((m) => m.groupe === groupeIdx).length;
+        if (attached !== membres) {
+          gaps.push(`${s.numero} ${index.groupes[groupeIdx].abrev} ${attached}/${membres}`);
+        }
+      }
+    }
+    expect(gaps).toEqual(IRREDUCIBLE_EFFECTIVE_GAPS);
+  });
+
   it('should keep the detail columns aligned and the places ascending', () => {
     for (const d of details.values()) {
       expect(d.votes).toHaveLength(d.places.length);
@@ -130,21 +153,26 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
   });
 
   it('should resolve every deputy and group index', () => {
+    const unresolved: string[] = [];
     for (const d of details.values()) {
       d.votes.split('').forEach((vote, i) => {
         if (vote === '.') {
-          expect([d.deputes[i], d.groupes[i]]).toEqual([-1, -1]);
-        } else {
-          expect(directory.deputes[d.deputes[i]], `scrutin ${d.numero}`).toBeDefined();
-          expect(index.groupes[d.groupes[i]], `scrutin ${d.numero}`).toBeDefined();
+          if (d.deputes[i] !== -1 || d.groupes[i] !== -1)
+            unresolved.push(`vacant ${d.numero}/${i}`);
+        } else if (!directory.deputes[d.deputes[i]] || !index.groupes[d.groupes[i]]) {
+          unresolved.push(`scrutin ${d.numero}, place ${d.places[i]}`);
         }
       });
+      for (const [depute] of d.causes) {
+        if (!directory.deputes[depute]) unresolved.push(`cause ${d.numero}/${depute}`);
+      }
       for (const m of [...d.misesAuPoint, ...d.sansPlace]) {
         expect(directory.deputes[m.depute]).toBeDefined();
       }
       for (const m of d.sansPlace) expect(index.groupes[m.groupe]).toBeDefined();
       for (const i of d.delegations) expect(d.votes[i]).not.toBe('.');
     }
+    expect(unresolved).toEqual([]);
     for (const s of index.scrutins) {
       for (const [groupeIdx] of s.groupes) expect(index.groupes[groupeIdx]).toBeDefined();
     }
@@ -192,17 +220,16 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
     expect(files).toEqual(expected);
   });
 
-  it('should give every group colour a sufficient contrast or a neutral fallback', () => {
-    for (const g of index.groupes) {
-      for (const background of Object.values(GROUP_COLOR_BACKGROUNDS)) {
-        const { color, official } = groupColor(g.couleurOfficielle, background);
-        expect(
-          contrastRatio(color, background),
-          `${g.abrev} sur ${background}`
-        ).toBeGreaterThanOrEqual(3);
-        expect(official || color === GROUP_COLOR_FALLBACK).toBe(true);
-      }
+  it('should draw every group arc in the same neutral grey, in light and in dark', () => {
+    for (const theme of ['light', 'dark'] as const) {
+      const colors = index.groupes.map((g) => groupArcColor(g, theme));
+      expect(new Set(colors), theme).toEqual(new Set([GROUP_ARC_COLOR[theme]]));
+      expect(
+        contrastRatio(GROUP_ARC_COLOR[theme], GROUP_COLOR_BACKGROUNDS[theme])
+      ).toBeGreaterThanOrEqual(3);
     }
+    // Les couleurs officielles restent dans les données : c'est la source.
+    for (const g of index.groupes) expect(g.couleurOfficielle).toMatch(/^#[0-9A-Fa-f]{6}$/);
   });
 
   it('should keep an annuaire of unique deputies, alphabetically sorted', () => {
@@ -229,14 +256,14 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
     );
     const overlaps = index.scrutins.filter(
       (s) =>
-        s.regles.includes('R4') &&
+        s.regles.includes('R2') &&
         !s.regles.includes('R1') &&
         s.dossier &&
         wholeTextDossiers.has(s.dossier.uid)
     );
     if (overlaps.length > 0) {
       console.info(
-        `R4 et R1 sur le même dossier : ${overlaps.map((s) => s.numero).join(', ')} (signalé, non exclu)`
+        `R2 et R1 sur le même dossier : ${overlaps.map((s) => s.numero).join(', ')} (signalé, non exclu)`
       );
     }
     // Les deux scrutins sont publiés : le signalement ne retire rien du périmètre.

@@ -66,8 +66,8 @@ describe('Feature: entrée vers les votes de l’Assemblée depuis Comprendre', 
       )
       .build();
     expect(vmOf(state).assemblee).toEqual({
-      title: "Les grands votes de l'Assemblée",
-      text: 'Le résultat, le vote de chaque groupe et de chaque député sur les textes de loi, les scrutins solennels et les motions de censure.',
+      title: "Les votes de l'Assemblée",
+      text: 'Le résultat, le vote de chaque groupe et de chaque député sur les textes de loi, les motions de censure et les autres scrutins retenus par une règle fixe.',
       href: '/assemblee',
       meta: '2 scrutins',
     });

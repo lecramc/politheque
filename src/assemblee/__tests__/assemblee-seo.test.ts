@@ -60,7 +60,7 @@ describe('Feature: SEO des pages Assemblée', () => {
     expect(meta.title.startsWith('Scrutin n° 580 du 22 janvier 2025 : ')).toBe(true);
     expect(meta.title.length).toBeLessThanOrEqual(TITLE_MAX);
     expect(meta.description).toBe(
-      'Scrutin n° 580. Adopté : 446 pour, 2 contre. Vote de chaque groupe et de chaque député.'
+      'Scrutin n° 580. Adopté : 446 pour · 2 contre · 1 abstention. Vote de chaque groupe et de chaque député.'
     );
     expect(meta.path).toBe('/assemblee/scrutins/580');
     expect(meta.robots).toBe('index, follow');

@@ -65,6 +65,25 @@ const scrutins = [
     date: '2026-07-06',
     groupes: [[0, 2, 2, 0, 0, 0]],
   }),
+  scrutinFactory({
+    numero: 7980,
+    type: 'MOC',
+    categorie: 'censure',
+    adopte: false,
+    date: '2026-07-07',
+    titre:
+      "la motion de censure déposée en application de l'article 49, alinéa 3, de la Constitution par Mme X et 90 députés.",
+    dossier: { uid: 'DL2', url: 'https://www.assemblee-nationale.fr/dyn/17/dossiers/DL2' },
+    groupes: [[0, 2, 2, 0, 0, 0]],
+  }),
+  scrutinFactory({
+    numero: 7981,
+    categorie: 'partie-budget',
+    date: '2026-07-08',
+    adopte: false,
+    dossier: { uid: 'DL2', url: 'https://www.assemblee-nationale.fr/dyn/17/dossiers/DL2' },
+  }),
+  scrutinFactory({ numero: 7982, categorie: 'partie-budget', date: '2026-07-09', dossier: null }),
 ];
 const detail = detailFactory({
   numero: 580,
@@ -161,6 +180,49 @@ describe('Feature: page d’un scrutin', () => {
     ]);
   });
 
+  it('should explain article 49, alinéa 3, with its source, on a third-alinea motion and on a part of a finance bill only', () => {
+    const note = vm().scrutin(7980)!.article493;
+    expect(note).toEqual({
+      text: expect.stringContaining('considéré comme adopté sans vote'),
+      sourceLabel: 'Constitution du 4 octobre 1958, article 49 (texte en vigueur)',
+      sourceUrl: expect.stringContaining('conseil-constitutionnel.fr'),
+    });
+    expect(vm().scrutin(7981)!.article493).toEqual(note);
+    expect(vm().scrutin(7979)!.article493).toBeNull();
+    expect(vm().scrutin(580)!.article493).toBeNull();
+  });
+
+  it('should list the third-alinea motions of the same official file on a part of a finance bill, with their result', () => {
+    expect(vm().scrutin(7981)!.motionsDeCensure).toEqual([
+      { numero: 7980, href: '/assemblee/scrutins/7980', label: 'n° 7980 : Rejetée' },
+    ]);
+    expect(vm().scrutin(7982)!.motionsDeCensure).toEqual([]);
+    expect(vm().scrutin(580)!.motionsDeCensure).toEqual([]);
+  });
+
+  it('should show voluntary non-voters only when there are some', () => {
+    const ids = (numero: number) =>
+      vm()
+        .scrutin(numero)!
+        .synthese.map((s) => s.id);
+    expect(ids(580)).not.toContain('nonVotantsVolontaires');
+    const withVoluntary = base()
+      .withIndex(
+        indexFactory({
+          groupes,
+          scrutins: [
+            scrutinFactory({
+              numero: 1,
+              synthese: { ...scrutinFactory().synthese, nonVotantsVolontaires: 2 },
+            }),
+          ],
+        })
+      )
+      .build();
+    const synth = vm(withVoluntary).scrutin(1)!.synthese;
+    expect(synth.at(-1)).toMatchObject({ id: 'nonVotantsVolontaires', value: 2 });
+  });
+
   it('should pre-render the group table in seat order, with an alphabetical option', () => {
     const page = vm().scrutin(580)!;
     expect(page.groups('places').rows.map((r) => r.abrev)).toEqual(['LFI-NFP', 'RN']);
@@ -197,7 +259,7 @@ describe('Feature: page d’un scrutin', () => {
     expect(vm().scrutin(580)!.meta).toMatchObject({
       robots: 'index, follow',
       description:
-        'Scrutin n° 580. Adopté : 3 pour, 1 contre. Vote de chaque groupe et de chaque député.',
+        'Scrutin n° 580. Adopté : 3 pour · 1 contre · 1 abstention. Vote de chaque groupe et de chaque député.',
     });
   });
 });
@@ -247,6 +309,27 @@ describe('Feature: détail par député', () => {
     if (hemicycle.status !== 'ready') throw new Error('hémicycle non prêt');
     return hemicycle;
   };
+
+  it('should use one single order of the groups: the table, the filter chips and the diagram follow the same choice', () => {
+    const swapped = [
+      { ...groupes[0], medianePlace: 100 },
+      { ...groupes[1], medianePlace: 600 },
+    ];
+    const state = base()
+      .withIndex(indexFactory({ groupes: swapped, scrutins }))
+      .withDetail(detail)
+      .withDeputes(directory)
+      .build();
+    const page = vm(state).scrutin(580)!;
+    if (page.hemicycle.status !== 'ready') throw new Error('hémicycle non prêt');
+    for (const order of ['places', 'alphabetique'] as const) {
+      expect(page.hemicycle.groupes(order).map((g) => g.abrev)).toEqual(
+        page.groups(order).rows.map((r) => r.abrev)
+      );
+    }
+    expect(page.hemicycle.groupes('places').map((g) => g.abrev)).toEqual(['RN', 'LFI-NFP']);
+    expect(page.hemicycle.groupes('alphabetique').map((g) => g.abrev)).toEqual(['LFI-NFP', 'RN']);
+  });
 
   it('should sum the votes in a single accessible label, not one stop per seat', () => {
     expect(ready().ariaLabel).toBe(

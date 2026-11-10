@@ -239,6 +239,7 @@ export default function MethodologyScreen() {
             {`• ${rule}`}
           </Text>
         ))}
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.assemblee.criteriaExcluded}</Text>
         <Text variant="display" headingLevel={3}>
           {vm.assemblee.sourceTitle}
         </Text>
@@ -256,6 +257,9 @@ export default function MethodologyScreen() {
             {`• ${limit}`}
           </Text>
         ))}
+        <TextLink href={vm.assemblee.article493Source.href} size={16} standalone>
+          {vm.assemblee.article493Source.label}
+        </TextLink>
         <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.assemblee.neutrality}</Text>
         <TextLink href={vm.assemblee.link.href} size={16} standalone>
           {vm.assemblee.link.label}

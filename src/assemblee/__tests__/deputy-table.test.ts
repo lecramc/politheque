@@ -72,6 +72,30 @@ describe('Feature: tableau des députés', () => {
   });
 });
 
+describe('Feature: cause d’un non-vote', () => {
+  const withCause = (cause: string) =>
+    deputyRows({ detail: { ...detail, causes: [[3, cause]] }, deputes, groupes, censure: false });
+
+  it('should say why a deputy did not take part, when the source gives the cause', () => {
+    expect(withCause('MG').find((r) => r.vote === 'N')!.position).toBe(
+      'Non-votant (membre du Gouvernement)'
+    );
+    expect(withCause('PSE').find((r) => r.vote === 'N')!.position).toBe(
+      'Non-votant (présidence de séance)'
+    );
+    expect(withCause('PAN').find((r) => r.vote === 'N')!.position).toBe(
+      "Non-votant (présidence de l'Assemblée)"
+    );
+  });
+
+  it('should keep a plain « non-votant » without a known cause', () => {
+    expect(withCause('XYZ').find((r) => r.vote === 'N')!.position).toBe('Non-votant');
+    expect(
+      deputyRows({ detail, deputes, groupes, censure: false }).find((r) => r.vote === 'N')!.position
+    ).toBe('Non-votant');
+  });
+});
+
 describe('Feature: ordre des positions', () => {
   it('should list positions in a fixed order, whatever the order of the rows', () => {
     expect(orderedPositions(['-', 'N', 'A', 'C', 'P'], false)).toEqual(['P', 'C', 'A', 'N', '-']);

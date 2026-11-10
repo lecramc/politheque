@@ -12,7 +12,7 @@ import { scrutinFactory } from '@/src/assemblee/models/scrutin.factory';
 describe('Feature: libellés d’un scrutin', () => {
   it('should name every category in plain words', () => {
     expect(categoryLabel('texte')).toBe("Vote sur l'ensemble d'un texte");
-    expect(categoryLabel('article-unique')).toBe("Vote sur l'article unique d'un texte");
+    expect(categoryLabel('article-unique')).toBe('Vote sur un texte à un seul article');
     expect(categoryLabel('censure')).toBe('Motion de censure');
   });
 
@@ -43,7 +43,15 @@ describe('Feature: libellés d’un scrutin', () => {
 
   it('should show for and against, and for a censure motion only the votes for against the required majority', () => {
     const synthese = { ...scrutinFactory().synthese, pour: 446, contre: 2, requis: 225 };
-    expect(countsLabel(scrutinFactory({ synthese }))).toBe('446 pour, 2 contre');
+    expect(countsLabel(scrutinFactory({ synthese }))).toBe('446 pour · 2 contre · 1 abstention');
+    expect(
+      countsLabel(
+        scrutinFactory({ synthese: { ...synthese, pour: 152, contre: 5, abstentions: 110 } })
+      )
+    ).toBe('152 pour · 5 contre · 110 abstentions');
+    expect(
+      countsLabel(scrutinFactory({ synthese: { ...synthese, pour: 3, contre: 0, abstentions: 0 } }))
+    ).toBe('3 pour · 0 contre · 0 abstention');
     expect(
       countsLabel(
         scrutinFactory({ type: 'MOC', synthese: { ...synthese, pour: 132, requis: 289 } })

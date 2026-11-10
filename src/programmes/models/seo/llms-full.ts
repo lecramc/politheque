@@ -189,22 +189,23 @@ function candidatesText(catalog: Catalog): string[] {
  * Texte intégral pour les moteurs de réponse : fiches des partis (ordre alphabétique, même gabarit
  * pour tous) et guide « Comprendre ». Généré à partir des données du catalogue, jamais saisi.
  */
-/** Assemblée : seulement le critère de sélection et la source, pas les 286 scrutins. */
+/** Assemblée : seulement la règle de sélection, la note sur l'article 49 et la source, pas chaque scrutin. */
 function assembleeText(): string[] {
   const manifest = buildStaticManifest();
   return [
     '',
-    '# Assemblée nationale : les grands votes',
+    "# Assemblée nationale : les votes de l'Assemblée",
     '',
     `Page : ${absoluteUrl('/assemblee')}`,
     '',
     t('list.warning'),
     '',
     t('method.criteriaLead'),
-    `- ${t('method.R1')}`,
-    `- ${t('method.R2')}`,
-    `- ${t('method.R3')}`,
-    `- ${t('method.R4')}`,
+    ...['R1', 'R2', 'R3', 'R4', 'R5', 'R6'].map((id) => `- ${t(`method.${id}`)}`),
+    '',
+    t('method.criteriaExcluded'),
+    '',
+    t('notes.article493'),
     '',
     `Source : Assemblée nationale, open data (${manifest.sources.scrutins}), ${manifest.licence}. Données extraites le ${formatLongDate(manifest.extraitLe)}.`,
     '',

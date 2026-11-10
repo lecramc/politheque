@@ -6,6 +6,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
+import { Article493Note } from '@/src/assemblee/components/Article493Note';
 import { DataSourceNote } from '@/src/assemblee/components/DataSourceNote';
 import { DeputyVotesTable } from '@/src/assemblee/components/DeputyVotesTable';
 import { GroupVotesTable } from '@/src/assemblee/components/GroupVotesTable';
@@ -133,7 +134,9 @@ export default function ScrutinScreen() {
 
   const { hemicycle } = page;
   const highlighted =
-    hemicycle.status === 'ready' ? hemicycle.groupes.find((g) => g.index === highlight) : undefined;
+    hemicycle.status === 'ready'
+      ? hemicycle.groupes(order).find((g) => g.index === highlight)
+      : undefined;
   const card = {
     backgroundColor: colors.surface.primary,
     borderWidth: 1,
@@ -197,6 +200,17 @@ export default function ScrutinScreen() {
           >
             {t('scrutin.censureNote')}
           </Text>
+        ) : null}
+        {page.article493 ? <Article493Note note={page.article493} /> : null}
+        {page.motionsDeCensure.length ? (
+          <View style={{ gap: effects.spacing.xs }}>
+            <Text variant="label">{t('notes.budgetMotions')}</Text>
+            {page.motionsDeCensure.map((motion) => (
+              <TextLink key={motion.numero} href={motion.href} standalone>
+                {motion.label}
+              </TextLink>
+            ))}
+          </View>
         ) : null}
         <View
           role="group"
@@ -321,7 +335,7 @@ export default function ScrutinScreen() {
 
       {hemicycle.status === 'ready' ? (
         <Section title={t('deputies.title')}>
-          <DeputyVotesTable view={hemicycle} />
+          <DeputyVotesTable view={hemicycle} order={order} />
         </Section>
       ) : null}
 

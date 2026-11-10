@@ -40,14 +40,23 @@ const CENSURE_ORDER: VoteCode[] = ['P', '-', 'N'];
 export const orderedPositions = (present: VoteCode[], censure: boolean): VoteCode[] =>
   (censure ? CENSURE_ORDER : ORDER).filter((code) => present.includes(code));
 
-export const positionLabel = (vote: VoteCode, censure: boolean): string =>
-  vote === '-' && censure ? t('vote.censure.none') : t(`vote.${VOTE_KEYS[vote]}`);
+/** Causes de non-vote que la source nomme (`causePositionVote`) ; les autres codes ne sont pas affichés. */
+const KNOWN_CAUSES = new Set(['PAN', 'PSE', 'MG']);
+
+export const positionLabel = (vote: VoteCode, censure: boolean, cause?: string): string => {
+  if (vote === '-' && censure) return t('vote.censure.none');
+  if (vote === 'N' && cause && KNOWN_CAUSES.has(cause)) {
+    return t('vote.nonVotantCause', { cause: t(`vote.cause.${cause}`) });
+  }
+  return t(`vote.${VOTE_KEYS[vote]}`);
+};
 
 const searchable = (text: string) => normalizeTitle(text).normalize('NFD').replace(/\p{M}/gu, '');
 
 /** Un député par ligne, ordre alphabétique : jamais classé selon son vote ni son groupe. */
 export const deputyRows = ({ detail, deputes, groupes, censure }: Input): DeputyRow[] => {
   const mises = new Map(detail.misesAuPoint.map((m) => [m.depute, m.souhait]));
+  const causes = new Map(detail.causes);
   const delegated = new Set(detail.delegations);
   const row = (
     deputeIndex: number,
@@ -64,7 +73,7 @@ export const deputyRows = ({ detail, deputes, groupes, censure }: Input): Deputy
       groupe: groupes[groupeIndex].abrev,
       groupeIndex,
       vote,
-      position: positionLabel(vote, censure),
+      position: positionLabel(vote, censure, causes.get(deputeIndex)),
       delegation,
       miseAuPoint: souhait
         ? t('vote.miseAuPoint', { souhait: t(`vote.souhait.${souhait}`) })

@@ -8,6 +8,8 @@ export type SeatMember = {
   delegation: boolean;
   /** Numéro de place donné par le vote ; null quand l'open data n'en donne pas. */
   place: number | null;
+  /** Cause officielle d'un non-vote (`causePositionVote`), quand la source la donne. */
+  cause?: string;
 };
 
 export type SeatedMember = SeatMember & { place: number };
@@ -40,7 +42,7 @@ const candidatePlaces = (
 export const assignSeats = (input: {
   date: string;
   voters: SeatMember[];
-  absents: SittingMember[];
+  absents: Omit<SittingMember, 'alternatives'>[];
   history: SeatHistory;
   /** Place attribuée par le mandat, pour un vote sans numéro de place. */
   hemicyclePlaces?: Record<string, number | null>;

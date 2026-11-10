@@ -35,7 +35,7 @@ describe('Feature: extraction compacte — résumé d’un scrutin', () => {
       date: '2025-03-10',
       type: 'SPS',
       categorie: 'texte',
-      regles: ['R1', 'R2'],
+      regles: ['R1'],
       titre: 'l’ensemble du projet de loi relatif à la simplification (première lecture).',
       adopte: true,
       demandeur: 'Conférence des Présidents',

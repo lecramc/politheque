@@ -1,3 +1,4 @@
+import { PERIMETER_RULES } from '@/src/assemblee/models/extraction/perimeter';
 import { manifestFactory } from '@/src/assemblee/models/scrutin.factory';
 import { assembleeStateBuilder } from '@/src/assemblee/store/state-builder';
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
@@ -46,13 +47,21 @@ describe('Feature: section « Votes de l’Assemblée » de la méthodologie', (
         .build()
     ).assemblee;
 
-  it('should describe the four selection rules mechanically', () => {
-    expect(section().rules).toEqual([
-      "R1 : le titre officiel du scrutin commence par « l'ensemble » (vote sur l'ensemble d'un texte).",
-      "R2 : l'Assemblée classe le scrutin comme scrutin public solennel (code SPS).",
-      'R3 : le scrutin est une motion de censure (code MOC).',
-      "R4 : le scrutin porte sur l'article unique d'un projet ou d'une proposition de loi (organique comprise). Un vote sur l'article unique d'une proposition de résolution n'est pas retenu, sauf s'il est solennel (R2).",
-    ]);
+  it('should write the closed list of selection rules exactly as the extraction applies it', () => {
+    expect(section().rules).toEqual(PERIMETER_RULES);
+    expect(section().criteriaExcluded).toContain('amendements');
+    expect(section().criteriaExcluded).toContain('articles isolés');
+  });
+
+  it('should explain article 49, alinéa 3, and the cause of a non-vote among the limits', () => {
+    const limits = section().limits.join(' ');
+    expect(limits).toContain('Article 49, alinéa 3');
+    expect(limits).toContain('considéré comme adopté');
+    expect(section().article493Source).toEqual({
+      label: 'Constitution du 4 octobre 1958, article 49 (texte en vigueur)',
+      href: expect.stringContaining('conseil-constitutionnel.fr'),
+    });
+    expect(limits).toContain('Non-votants');
   });
 
   it('should name the source, the licence and the extraction date', () => {

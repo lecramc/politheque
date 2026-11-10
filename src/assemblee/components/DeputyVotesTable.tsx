@@ -8,6 +8,7 @@ import { TextInput } from '@/components/ui/TextInput';
 import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
 import { t } from '@/src/assemblee/i18n/translate';
 import { orderedPositions, positionLabel } from '@/src/assemblee/models/deputy-table';
+import type { GroupeOrder } from '@/src/assemblee/models/groupe-order';
 import type { VoteCode } from '@/src/assemblee/models/scrutin.model';
 import type { SeatGlyph } from '@/src/assemblee/models/seat-view';
 import type { HemicycleView } from '@/src/assemblee/view-models/scrutin.view-model';
@@ -30,7 +31,7 @@ const MIN_WIDTH = 520;
  * Position officielle en toutes lettres avec sa forme ; vote par délégation dans sa colonne ;
  * mise au point présentée comme telle, sans effet sur la position affichée.
  */
-export function DeputyVotesTable({ view }: { view: Ready }) {
+export function DeputyVotesTable({ view, order }: { view: Ready; order: GroupeOrder }) {
   const { colors, effects, fonts } = useTheme();
   const [recherche, setRecherche] = useState('');
   const [groupe, setGroupe] = useState<number | null>(null);
@@ -97,11 +98,13 @@ export function DeputyVotesTable({ view }: { view: Ready }) {
         t('deputies.filterGroup'),
         <>
           {chip('tous', t('deputies.all'), groupe === null, () => setGroupe(null))}
-          {view.groupes.map((g) =>
-            chip(String(g.index), g.abrev, groupe === g.index, () =>
-              setGroupe(groupe === g.index ? null : g.index)
-            )
-          )}
+          {view
+            .groupes(order)
+            .map((g) =>
+              chip(String(g.index), g.abrev, groupe === g.index, () =>
+                setGroupe(groupe === g.index ? null : g.index)
+              )
+            )}
         </>
       )}
       {filterGroup(

@@ -6,6 +6,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
+import { Article493Note } from '@/src/assemblee/components/Article493Note';
 import { DataSourceNote } from '@/src/assemblee/components/DataSourceNote';
 import { ScrutinFilters } from '@/src/assemblee/components/ScrutinFilters';
 import { t } from '@/src/assemblee/i18n/translate';
@@ -66,7 +67,7 @@ function Row({ row, first }: { row: ScrutinRow; first: boolean }) {
 }
 
 /**
- * `/assemblee` : les grands votes de la 17e législature, du plus récent au plus ancien, par mois.
+ * `/assemblee` : les votes de la 17e législature, du plus récent au plus ancien, par mois.
  * Le HTML pré-rendu est la liste entière ; les filtres viennent de l'adresse, lue après
  * l'hydratation (comme `/partis/comparer`).
  */
@@ -137,11 +138,19 @@ export default function AssembleeScreen() {
         <Text style={{ fontSize: 16, lineHeight: 24 }}>{vm.warning}</Text>
       </View>
 
+      <Article493Note note={vm.article493} />
+
       <View style={{ gap: effects.spacing.xs }}>
         <Text variant="caption" headingLevel={2}>
           {t('list.criteriaTitle')}
         </Text>
-        <Text style={{ fontSize: 16, lineHeight: 25 }}>{t('list.criteria')}</Text>
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.criteria.lead}</Text>
+        {vm.criteria.rules.map((rule) => (
+          <Text key={rule} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+            {`• ${rule}`}
+          </Text>
+        ))}
+        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.criteria.excluded}</Text>
         <TextLink href="/methodologie#votes-assemblee" standalone>
           {t('list.methodLink')}
         </TextLink>

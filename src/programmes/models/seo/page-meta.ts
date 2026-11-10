@@ -1,6 +1,6 @@
 import { buildStaticIndex } from '@/src/assemblee/gateways/static-assemblee.gateway';
 import { t } from '@/src/assemblee/i18n/translate';
-import { capitalizeTitle } from '@/src/assemblee/models/scrutin-labels';
+import { capitalizeTitle, countsLabel } from '@/src/assemblee/models/scrutin-labels';
 import type { ScrutinIndex, ScrutinSummary } from '@/src/assemblee/models/scrutin.model';
 import { APP_NAME } from '@/src/core/config/app';
 import { buildCandidateList } from '@/src/programmes/models/candidates.service';
@@ -590,7 +590,7 @@ export function assembleeListMeta(index: ScrutinIndex): PageMeta {
 
 /** Une page par scrutin : titre officiel tronqué, jamais réécrit ; description factuelle. */
 export function scrutinMeta(scrutin: ScrutinSummary): PageMeta {
-  const { pour, contre, requis } = scrutin.synthese;
+  const { pour, requis } = scrutin.synthese;
   const date = formatLongDate(scrutin.date);
   const motion = scrutin.type === 'MOC';
   const outcome = scrutin.adopte ? 'Adopted' : 'Rejected';
@@ -608,7 +608,12 @@ export function scrutinMeta(scrutin: ScrutinSummary): PageMeta {
   );
   return make({
     title: brandTitle(core),
-    description: t(descriptionKey, { numero: scrutin.numero, pour, contre, requis }),
+    description: t(descriptionKey, {
+      numero: scrutin.numero,
+      pour,
+      requis,
+      decompte: countsLabel(scrutin),
+    }),
     path,
     breadcrumb: [
       ...ASSEMBLEE_CRUMBS,

@@ -51,6 +51,21 @@ describe('Feature: arc des groupes autour de l’hémicycle', () => {
     }
   });
 
+  it('should leave a thin gap between two neighbouring arcs, since they share one neutral colour', () => {
+    const box = hemicycleBox(layout);
+    const endpoints = (path: string) => {
+      const [, x1, y1, , , , , , , x2, y2] = path.split(' ').map(Number);
+      const angle = (x: number, y: number) => Math.atan2(box.cy - y, x - box.cx);
+      return { from: angle(x1, y1), to: angle(x2, y2) };
+    };
+    for (let i = 1; i < arcs.length; i += 1) {
+      const previous = endpoints(arcs[i - 1].path);
+      const next = endpoints(arcs[i].path);
+      // le tracé va de `start` (droite de l'image) à `end` (gauche) : le début de l'un suit la fin du précédent
+      expect(next.from - previous.to).toBeGreaterThan(0.005);
+    }
+  });
+
   it('should give a drawable path and a label position outside the outer row', () => {
     const box = hemicycleBox(layout);
     for (const arc of arcs) {

@@ -114,3 +114,32 @@ describe('Feature: députés en fonction un jour donné', () => {
     expect(sittingMembers(acteurs, '2025-03-21').map((m) => m.acteurRef)).not.toContain('dep2');
   });
 });
+
+describe('Feature: députés dont le rattachement est incertain un jour de changement', () => {
+  const acteurs = rawActeurs().flatMap((a) => parseActeur(a) ?? []);
+  const on = (date: string, id: string) =>
+    sittingMembers(acteurs, date).find((m) => m.acteurRef === id);
+
+  it('should flag a deputy whose Assembly mandate ends that day as possibly not counted', () => {
+    expect(on('2025-03-20', 'dep2')).toMatchObject({ groupeRef: GROUPE_A, alternatives: [null] });
+    expect(on('2025-03-19', 'dep2')?.alternatives).toEqual([]);
+  });
+
+  it('should offer the group joined the next day as an alternative on the last day of a group', () => {
+    expect(on('2025-03-31', 'dep6')).toMatchObject({
+      groupeRef: GROUPE_C,
+      alternatives: [GROUPE_A],
+    });
+  });
+
+  it('should ignore a deputy whose Assembly mandate does not cover the day, even with a group', () => {
+    const lapsed = parseActeur(
+      rawActeur({
+        id: 'dep10',
+        groupes: [{ groupe: GROUPE_A, debut: '2024-07-01' }],
+        mandat: { debut: '2024-07-01', fin: '2025-01-10' },
+      })
+    );
+    expect(sittingMembers([lapsed!], '2025-03-10')).toEqual([]);
+  });
+});

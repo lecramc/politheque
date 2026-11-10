@@ -2,13 +2,18 @@ import { createSelector } from 'reselect';
 
 import { t } from '@/src/assemblee/i18n/translate';
 import {
+  ARTICLE_49_SOURCE_URL,
+  censureMotionsOnSameText,
+  needsArticle493Note,
+} from '@/src/assemblee/models/article-49-3';
+import {
   deputyRows,
   filterDeputyRows,
   type DeputyFilters,
   type DeputyRow,
 } from '@/src/assemblee/models/deputy-table';
 import { groupTable } from '@/src/assemblee/models/group-table';
-import type { GroupeOrder } from '@/src/assemblee/models/groupe-order';
+import { orderGroupes, type GroupeOrder } from '@/src/assemblee/models/groupe-order';
 import { hemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
 import { hemicycleArcs, hemicycleBox } from '@/src/assemblee/models/hemicycle-scene';
 import {
@@ -58,7 +63,7 @@ export type HemicycleView =
       arcs: ReturnType<typeof hemicycleArcs>;
       censure: boolean;
       /** Groupes présents ce jour-là, pour le filtre du tableau des députés. */
-      groupes: { index: number; abrev: string; libelle: string; couleurOfficielle: string }[];
+      groupes: (order: GroupeOrder) => { index: number; abrev: string; libelle: string }[];
       rows: DeputyRow[];
       filter: (filters: DeputyFilters) => DeputyRow[];
     };
@@ -102,12 +107,10 @@ const buildHemicycle = (
     unseated,
     arcs: hemicycleArcs(layout, detail, groupes),
     censure,
-    groupes: [...present].map((index) => ({
-      index,
-      abrev: groupes[index].abrev,
-      libelle: groupes[index].libelle,
-      couleurOfficielle: groupes[index].couleurOfficielle,
-    })),
+    groupes: (order) =>
+      orderGroupes(groupes, order)
+        .filter((groupe) => present.has(groupe.index))
+        .map(({ index, abrev, libelle }) => ({ index, abrev, libelle })),
     rows,
     filter: (filters) => filterDeputyRows(rows, filters),
   };
@@ -170,10 +173,30 @@ export const scrutinViewModel = ({ dispatch }: { dispatch: AppDispatch }) =>
             resultat: scrutinResultSentence(scrutin),
             decompte: countsLabel(scrutin),
             censure,
-            synthese: (censure ? SYNTHESIS_CENSURE : SYNTHESIS_STANDARD).map((id) => ({
+            synthese: [
+              ...(censure ? SYNTHESIS_CENSURE : SYNTHESIS_STANDARD),
+              ...(scrutin.synthese.nonVotantsVolontaires > 0
+                ? (['nonVotantsVolontaires'] as const)
+                : []),
+            ].map((id) => ({
               id,
               label: t(`scrutin.synthesis.${id}`),
               value: scrutin.synthese[id],
+            })),
+            article493: needsArticle493Note(scrutin)
+              ? {
+                  text: t('notes.article493'),
+                  sourceLabel: t('notes.article493Source'),
+                  sourceUrl: ARTICLE_49_SOURCE_URL,
+                }
+              : null,
+            motionsDeCensure: censureMotionsOnSameText(scrutin, index.scrutins).map((motion) => ({
+              numero: motion.numero,
+              href: `/assemblee/scrutins/${motion.numero}`,
+              label: t('notes.budgetMotionItem', {
+                numero: motion.numero,
+                resultat: resultLabel(motion),
+              }),
             })),
             groups: (order: GroupeOrder) => groupTable(scrutin, index.groupes, order),
             delegations: scrutin.delegations,

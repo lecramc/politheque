@@ -1,4 +1,4 @@
-// Extraction des grands votes de l'Assemblée nationale (17e législature) depuis l'open data officiel.
+// Extraction des votes de l'Assemblée nationale (17e législature) depuis l'open data officiel.
 //
 //   node scripts/assemblee-scrutins.mjs [--download] [--check] [--from <dossier>] [--date AAAA-MM-JJ]
 //   npm run assemblee:update   # = --download puis écriture des fichiers
@@ -278,16 +278,22 @@ const amoZip = path.join(dir, 'amo.zip');
 unzipOnce(scrutinsZip, path.join(dir, 'scrutins'));
 unzipOnce(amoZip, path.join(dir, 'amo'));
 
-const { classifyScrutin, PERIMETER_RULES } = await load(
+const { classifyScrutin, isUnclassifiedSolemn, PERIMETER_RULES } = await load(
   '/src/assemblee/models/extraction/perimeter.ts'
 );
 const { parseActeur, parseGroupe } = await load('/src/assemblee/models/extraction/amo.ts');
 const { compactDataset } = await load('/src/assemblee/models/extraction/compact.ts');
 const { resolveUpdatedAt } = await load('/src/assemblee/models/extraction/updated-at.ts');
 
-const rawScrutins = readJsonDir(path.join(dir, 'scrutins/json'))
-  .map((file) => file.scrutin)
-  .filter((raw) => classifyScrutin(raw).inclus);
+const allScrutins = readJsonDir(path.join(dir, 'scrutins/json')).map((file) => file.scrutin);
+const unclassified = allScrutins.filter(isUnclassifiedSolemn);
+if (unclassified.length) {
+  fail(
+    `${unclassified.length} scrutin(s) solennel(s) ou motion(s) que la liste fermée ne reconnaît pas :\n` +
+      unclassified.map((raw) => `  - n° ${raw.numero} : ${raw.titre}`).join('\n')
+  );
+}
+const rawScrutins = allScrutins.filter((raw) => classifyScrutin(raw).inclus);
 const acteurs = readJsonDir(path.join(dir, 'amo/json/acteur'))
   .map((file) => parseActeur(file.acteur))
   .filter(Boolean);

@@ -2,19 +2,20 @@
   "common": {
     "back": "Comprendre",
     "backToList": "Tous les scrutins",
-    "officialTitleNote": "Titre officiel de l'Assemblée nationale, reproduit tel quel.",
+    "officialTitleNote": "Titre officiel de l'Assemblée nationale ; seule la première lettre est mise en majuscule.",
     "source": "Source : Assemblée nationale, open data, {licence}. Données extraites le {date}.",
-    "sourceDetail": "Dernier scrutin publié : {dernier}. Empreinte SHA-256 du fichier des scrutins : {sha}…",
+    "sourceDetail": "Dernier scrutin retenu : {dernier}. Empreinte SHA-256 du fichier des scrutins : {sha}…",
     "officialListLink": "Tous les scrutins sur le site de l'Assemblée nationale"
   },
   "category": {
     "texte": "Vote sur l'ensemble d'un texte",
-    "article-unique": "Vote sur l'article unique d'un texte",
+    "article-unique": "Vote sur un texte à un seul article",
     "censure": "Motion de censure",
-    "declaration": "Déclaration du Gouvernement",
-    "premiere-partie-budget": "Première partie du projet de loi de finances",
-    "resolution": "Proposition de résolution",
-    "autre": "Autre scrutin solennel"
+    "declaration": "Déclaration du Gouvernement (article 50-1)",
+    "resolution": "Vote sur une proposition de résolution",
+    "confiance": "Déclaration de politique générale (article 49, alinéa 1)",
+    "rejet-prealable": "Motion de rejet préalable adoptée",
+    "partie-budget": "Budget : vote sur une partie"
   },
   "voteType": {
     "SPO": "Scrutin public ordinaire",
@@ -38,20 +39,25 @@
       "none": "N'a pas voté la motion"
     },
     "delegation": "par délégation",
-    "miseAuPoint": "Mise au point publiée : souhaitait voter {souhait}. Elle ne modifie pas le résultat.",
+    "miseAuPoint": "Mise au point publiée : souhaitait {souhait}. Elle ne modifie pas le résultat.",
     "souhait": {
-      "P": "pour",
-      "C": "contre",
+      "P": "voter pour",
+      "C": "voter contre",
       "A": "s'abstenir",
-      "N": "ne pas voter"
+      "N": "ne pas prendre part au vote"
+    },
+    "nonVotantCause": "Non-votant ({cause})",
+    "cause": {
+      "PAN": "présidence de l'Assemblée",
+      "PSE": "présidence de séance",
+      "MG": "membre du Gouvernement"
     }
   },
   "list": {
-    "title": "Les grands votes de l'Assemblée",
-    "lead": "Les votes nominatifs des députés de la 17e législature sur les textes de loi, les scrutins solennels et les motions de censure, tels que l'Assemblée nationale les publie : le résultat, le vote de chaque groupe et de chaque député.",
+    "title": "Les votes de l'Assemblée",
+    "lead": "Les votes nominatifs des députés de la 17e législature sur les textes de loi, les motions de censure et les autres scrutins retenus par la règle ci-dessous, tels que l'Assemblée nationale les publie : le résultat, le vote de chaque groupe et de chaque député.",
     "warning": "Seuls les votes par scrutin public sont enregistrés nominativement ; un texte adopté à main levée n'apparaît pas ici.",
     "criteriaTitle": "Quels scrutins figurent ici ?",
-    "criteria": "Un scrutin est publié dès que l'une de ces règles s'applique, sans exception ni choix éditorial : il porte sur l'ensemble d'un texte, il porte sur l'article unique d'un projet ou d'une proposition de loi, l'Assemblée le classe comme scrutin public solennel, ou c'est une motion de censure. Les votes sur des amendements et sur des articles isolés ne sont pas repris.",
     "methodLink": "Lire la méthode : votes de l'Assemblée",
     "filters": {
       "title": "Filtrer les scrutins",
@@ -70,17 +76,23 @@
       "other": "{count} scrutins sur {total}"
     },
     "empty": "Aucun scrutin ne correspond à ces filtres.",
-    "counts": "{pour} pour, {contre} contre",
+    "counts": "{pour} pour · {contre} contre · {abstentions}",
     "countsCensure": {
       "one": "{count} voix pour, {requis} requises",
       "other": "{count} voix pour, {requis} requises"
+    },
+    "criteriaLead": "La liste suit une règle fixe, appliquée par programme à tous les scrutins publics de la législature. Est repris tout scrutin qui relève de l’un de ces cas :",
+    "criteriaExcluded": "Les votes sur les amendements et sur les articles isolés, les motions de rejet rejetées et les autres motions de procédure ne sont pas repris.",
+    "abstentions": {
+      "one": "{count} abstention",
+      "other": "{count} abstentions"
     }
   },
   "scrutin": {
     "pageTitle": "Scrutin n° {numero} du {date}",
     "type": "Type de vote",
     "category": "Catégorie",
-    "requestedBy": "Demandé par",
+    "requestedBy": "Scrutin demandé par",
     "date": "Date",
     "resultTitle": "Résultat",
     "synthesisTitle": "Synthèse",
@@ -91,7 +103,8 @@
       "pour": "Pour",
       "contre": "Contre",
       "abstentions": "Abstentions",
-      "nonVotants": "Non-votants"
+      "nonVotants": "Non-votants",
+      "nonVotantsVolontaires": "Non-votants volontaires"
     },
     "censureNote": "Pour une motion de censure, l'Assemblée ne recense que les voix pour : les autres députés n'ont pas voté la motion, ce qui n'est pas un vote contre."
   },
@@ -173,28 +186,28 @@
     "licenceLine": "Données de l'Assemblée nationale réutilisées sous {licence}."
   },
   "seo": {
-    "listTitle": "Les grands votes de l'Assemblée nationale",
-    "listDescription": "{count} scrutins de la 17e législature : textes de loi, scrutins solennels et motions de censure, avec le vote de chaque groupe et de chaque député.",
+    "listTitle": "Les votes de l'Assemblée nationale",
+    "listDescription": "{count} scrutins de la 17e législature retenus par une règle fixe : textes de loi, motions de censure, avec le vote de chaque groupe et de chaque député.",
     "scrutinTitle": "Scrutin n° {numero} du {date} : {titre}",
-    "scrutinDescriptionAdopted": "Scrutin n° {numero}. Adopté : {pour} pour, {contre} contre. Vote de chaque groupe et de chaque député.",
-    "scrutinDescriptionRejected": "Scrutin n° {numero}. Rejeté : {pour} pour, {contre} contre. Vote de chaque groupe et de chaque député.",
+    "scrutinDescriptionAdopted": "Scrutin n° {numero}. Adopté : {decompte}. Vote de chaque groupe et de chaque député.",
+    "scrutinDescriptionRejected": "Scrutin n° {numero}. Rejeté : {decompte}. Vote de chaque groupe et de chaque député.",
     "scrutinDescriptionCensureAdopted": "Scrutin n° {numero}. Motion adoptée : {pour} voix pour, {requis} requises. Vote de chaque groupe et de chaque député.",
     "scrutinDescriptionCensureRejected": "Scrutin n° {numero}. Motion rejetée : {pour} voix pour, {requis} requises. Vote de chaque groupe et de chaque député."
   },
   "comprendre": {
-    "cardTitle": "Les grands votes de l'Assemblée",
-    "cardText": "Le résultat, le vote de chaque groupe et de chaque député sur les textes de loi, les scrutins solennels et les motions de censure.",
+    "cardTitle": "Les votes de l'Assemblée",
+    "cardText": "Le résultat, le vote de chaque groupe et de chaque député sur les textes de loi, les motions de censure et les autres scrutins retenus par une règle fixe.",
     "cardMeta": "{count} scrutins"
   },
   "method": {
     "title": "Votes de l'Assemblée",
-    "intro": "La page « Les grands votes de l'Assemblée » reprend, sans rien rédiger, les scrutins publics de la 17e législature publiés en open data par l'Assemblée nationale.",
+    "intro": "La page « Les votes de l'Assemblée » reprend, sans résumer ni réécrire les titres officiels, les scrutins publics de la 17e législature publiés en open data par l'Assemblée nationale. Seuls les noms des catégories et les phrases de résultat sont rédigés par Polithèque.",
     "criteriaTitle": "Quels scrutins sont publiés",
-    "criteriaLead": "Un scrutin est publié si au moins une de ces règles s'applique. Elles sont évaluées par un programme, sans exception manuelle.",
-    "R1": "R1 : le titre officiel du scrutin commence par « l'ensemble » (vote sur l'ensemble d'un texte).",
-    "R2": "R2 : l'Assemblée classe le scrutin comme scrutin public solennel (code SPS).",
-    "R3": "R3 : le scrutin est une motion de censure (code MOC).",
-    "R4": "R4 : le scrutin porte sur l'article unique d'un projet ou d'une proposition de loi (organique comprise). Un vote sur l'article unique d'une proposition de résolution n'est pas retenu, sauf s'il est solennel (R2).",
+    "criteriaLead": "La liste suit une règle fixe, appliquée par programme à tous les scrutins publics, sans exception manuelle. Est repris tout scrutin qui relève de l’un de ces cas :",
+    "R1": "R1 : vote sur l'ensemble d'un projet ou d'une proposition de loi, ou sur une proposition de résolution, quelle que soit la formulation du titre",
+    "R2": "R2 : vote sur l'article unique d'un tel texte (texte à un seul article)",
+    "R3": "R3 : motion de censure (article 49, alinéas 2 et 3)",
+    "R4": "R4 : vote de confiance sur une déclaration de politique générale (article 49, alinéa 1) ou vote sur une déclaration du Gouvernement (article 50-1)",
     "sourceTitle": "Source et licence",
     "source": "Les données viennent des fichiers « Scrutins » et « Acteurs, mandats et organes » de l'open data de l'Assemblée nationale (data.assemblee-nationale.fr). Elles sont publiées sous Licence Ouverte / Open Licence (Etalab) : source citée sur chaque page, avec la date d'extraction. Chaque page de scrutin renvoie à la page officielle de l'Assemblée.",
     "limitsTitle": "Limites à connaître",
@@ -205,6 +218,17 @@
     "limitPoint": "Mises au point : un député peut publier après coup qu'il souhaitait voter autrement. Elle est affichée comme telle, et ne modifie ni le résultat ni les décomptes.",
     "limitGroups": "Groupes : un groupe parlementaire n'est pas un parti. Le groupe affiché est celui du jour du scrutin.",
     "neutrality": "Aucun taux de présence, de loyauté ou de cohésion, aucun classement, aucun score : la page montre les votes, pas un jugement sur les députés ou les groupes.",
-    "link": "Voir les grands votes de l'Assemblée"
+    "link": "Voir les votes de l'Assemblée",
+    "criteriaExcluded": "Les votes sur les amendements et sur les articles isolés, les motions de rejet rejetées et les autres motions de procédure ne sont pas repris.",
+    "limit493": "Article 49, alinéa 3 : un texte adopté par cette procédure n'est pas voté (il est considéré comme adopté, sauf si une motion de censure est adoptée) ; seules les motions de censure déposées en réponse apparaissent. Cette note est rappelée sur les motions de l'alinéa 3 et sur les votes sur une partie d'une loi de finances.",
+    "limitNonVoters": "Non-votants : quand la source en donne la cause (présidence de séance, membre du Gouvernement), elle est affichée dans le tableau des députés.",
+    "R5": "R5 : motion de rejet préalable adoptée (elle rejette l'ensemble du texte)",
+    "R6": "R6 : vote sur une partie (première, deuxième ou troisième) d'un projet de loi de finances ou de financement de la sécurité sociale"
+  },
+  "notes": {
+    "article493": "Quand le Gouvernement engage sa responsabilité sur un texte (article 49, alinéa 3), le texte est considéré comme adopté sans vote, sauf si une motion de censure est adoptée. Il n'y a donc pas de vote final sur ce texte : seules les motions de censure déposées en réponse apparaissent ici.",
+    "article493Source": "Constitution du 4 octobre 1958, article 49 (texte en vigueur)",
+    "budgetMotions": "Motions de censure déposées sur ce texte (article 49, alinéa 3)",
+    "budgetMotionItem": "n° {numero} : {resultat}"
   }
 }
