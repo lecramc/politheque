@@ -1,8 +1,10 @@
 // Extraction des votes de l'Assemblée nationale (17e législature) depuis l'open data officiel.
 //
-//   node scripts/assemblee-scrutins.mjs [--download] [--check] [--from <dossier>] [--date AAAA-MM-JJ]
+//   node scripts/assemblee-scrutins.mjs [--download] [--check] [--guard] [--from <dossier>] [--date AAAA-MM-JJ]
 //   npm run assemblee:update   # = --download puis écriture des fichiers
 //   npm run assemblee:check    # régénère en mémoire et compare au commité (exit ≠ 0 en cas d'écart)
+//   --guard : avant d'écrire, échoue (exit ≠ 0, rien d'écrit) si le nombre de scrutins baisse ou si
+//             le nombre de votes sans place augmente par rapport aux fichiers commités.
 //
 // Sources (Licence Ouverte / Open Licence, Etalab) :
 //   - Scrutins.json.zip  : tous les scrutins de la législature
@@ -216,6 +218,21 @@ const buildOutputs = ({ dataset, meta, sha, resolveUpdatedAt, rules }) => {
   return { outputs, summaries, manifest };
 };
 
+/** Volumes des fichiers actuellement sur disque (les données commitées), avant toute écriture. */
+const readBaseline = () => {
+  const indexFile = path.join(DATA_DIR, 'scrutins-index.json');
+  if (!fs.existsSync(indexFile)) return { scrutins: 0, unplaced: 0 };
+  const index = JSON.parse(fs.readFileSync(indexFile, 'utf8'));
+  let unplaced = 0;
+  for (const { numero } of index.scrutins) {
+    const detailFile = path.join(SCRUTINS_DIR, `${numero}.json`);
+    if (fs.existsSync(detailFile)) {
+      unplaced += JSON.parse(fs.readFileSync(detailFile, 'utf8')).sansPlace.length;
+    }
+  }
+  return { scrutins: index.scrutins.length, unplaced };
+};
+
 const orphans = () =>
   fs.existsSync(SCRUTINS_DIR)
     ? fs.readdirSync(SCRUTINS_DIR).map((f) => path.join(SCRUTINS_DIR, f))
@@ -284,6 +301,7 @@ const { classifyScrutin, isUnclassifiedSolemn, PERIMETER_RULES } = await load(
 const { parseActeur, parseGroupe } = await load('/src/assemblee/models/extraction/amo.ts');
 const { compactDataset } = await load('/src/assemblee/models/extraction/compact.ts');
 const { resolveUpdatedAt } = await load('/src/assemblee/models/extraction/updated-at.ts');
+const { findRegressions } = await load('/src/assemblee/models/extraction/regressions.ts');
 
 const allScrutins = readJsonDir(path.join(dir, 'scrutins/json')).map((file) => file.scrutin);
 const unclassified = allScrutins.filter(isUnclassifiedSolemn);
@@ -310,6 +328,19 @@ const result = buildOutputs({
   rules: PERIMETER_RULES,
 });
 report(result, dataset);
+
+if (has('--guard')) {
+  const problems = findRegressions({
+    before: readBaseline(),
+    after: { scrutins: dataset.scrutins.length, unplaced: dataset.unplaced.length },
+  });
+  if (problems.length) {
+    fail(
+      `garde-fou : régression par rapport aux données commitées, rien n'est écrit.\n  - ${problems.join('\n  - ')}`
+    );
+  }
+  console.log('\nassemblee : garde-fou OK (pas de régression).');
+}
 
 if (has('--check')) {
   const differences = [];

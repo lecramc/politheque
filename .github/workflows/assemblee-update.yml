@@ -38,8 +38,10 @@ jobs:
         env:
           HUSKY: '0'
 
+      # --guard : échec, sans rien écrire, si le nombre de scrutins baisse ou si le nombre de votes
+      # sans place (70 aujourd'hui, collisions de sièges de la source) augmente.
       - name: Télécharger et régénérer les données
-        run: npm run assemblee:update
+        run: node scripts/assemblee-scrutins.mjs --download --guard
 
       - name: Tests du domaine
         run: npx vitest run src/assemblee
