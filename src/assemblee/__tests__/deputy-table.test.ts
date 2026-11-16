@@ -180,6 +180,7 @@ describe('Feature: chercher un député', () => {
       countLabel: '5 députés',
       showAllLabel: 'Afficher les 5 députés',
       filterCount: 0,
+      emptyLabel: 'Aucun député ne correspond à ces critères.',
     });
   });
 
@@ -194,5 +195,22 @@ describe('Feature: chercher un député', () => {
     expect(deputySearch(rows, none, true).rows).toHaveLength(5);
     expect(deputySearch(rows, { ...none, groupe: 1, vote: 'C' }, false).filterCount).toBe(2);
     expect(deputySearch(rows, { ...none, recherche: 'x' }, false).filterCount).toBe(0);
+  });
+});
+
+describe('Feature: retrouver un député choisi par sa circonscription', () => {
+  const rows = deputyRows({ detail, deputes, groupes, censure: false });
+  const none = { recherche: '', groupe: null, vote: null };
+
+  it('should show only the chosen deputy, without anything typed', () => {
+    const found = deputySearch(rows, { ...none, depute: 'PA1' }, false);
+    expect(found.visible).toBe(true);
+    expect(found.rows.map((r) => r.id)).toEqual(['PA1']);
+  });
+
+  it('should say that a deputy who did not sit at the time of this vote has no line', () => {
+    const found = deputySearch(rows, { ...none, depute: 'PA99' }, false);
+    expect(found.rows).toEqual([]);
+    expect(found.emptyLabel).toBe("Ce député ne siégeait pas à l'Assemblée lors de ce vote.");
   });
 });

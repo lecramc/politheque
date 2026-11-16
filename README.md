@@ -38,6 +38,12 @@ Les données sont dans [`src/programmes/data/`](src/programmes/data/) (JSON). La
 recherche et de codage est dans [`docs/`](docs/) : briefs de recherche, codage des positions,
 méthode du questionnaire.
 
+Les votes de l'hémicycle (`src/assemblee/data/`, `public/donnees/assemblee/`) sont mis à jour
+automatiquement chaque jour depuis l'open data de l'Assemblée nationale par le workflow
+[`assemblee-update`](.github/workflows/assemblee-update.yml) : il ne commite que si des scrutins
+ou des députés ont changé, après réussite des tests. Déclenchement manuel possible (onglet
+Actions, « Run workflow ») ou en local avec `npm run assemblee:update`.
+
 Certains documents de travail ne sont pas publiés (brouillons sur les procédures judiciaires
 avant relecture juridique, maquettes, notes internes). Sans eux, un test de comparaison avec les
 brouillons judiciaires est simplement sauté.

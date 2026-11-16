@@ -1,0 +1,52 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Polithèque//Voter 2027//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Voter en 2027 — Polithèque
+BEGIN:VEVENT
+UID:presidentielle-2027-s-inscrire-1@politheque.revaamp.com
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+SUMMARY:Élection présidentielle 2027 : Date limite d'inscription
+DESCRIPTION:Date calculée. Sixième vendredi précédant le scrutin (code 
+ électoral\, article L17)\, appliqué au premier tour du 18 avril 2027. D
+ émarches et sources : https://politheque.revaamp.com/elections/presidenti
+ elle-2027/voter
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:presidentielle-2027-s-inscrire-2@politheque.revaamp.com
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+SUMMARY:Élection présidentielle 2027 : Date limite dans les cas dérogato
+ ires
+DESCRIPTION:Date calculée. Dixième jour précédant le premier tour (code
+  électoral\, articles L30 à L32)\, appliqué au premier tour du 18 avril
+  2027. Démarches et sources : https://politheque.revaamp.com/elections/pr
+ esidentielle-2027/voter
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:presidentielle-2027-tour-1@politheque.revaamp.com
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+SUMMARY:Élection présidentielle 2027 : 1er tour
+DESCRIPTION:Jour du scrutin. Démarches et sources : https://politheque.rev
+ aamp.com/elections/presidentielle-2027/voter
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:presidentielle-2027-tour-2@politheque.revaamp.com
+DTSTAMP:20261108T000000Z
+DTSTART;VALUE=DATE:20270502
+DTEND;VALUE=DATE:20270503
+SUMMARY:Élection présidentielle 2027 : 2nd tour
+DESCRIPTION:Jour du scrutin. Démarches et sources : https://politheque.rev
+ aamp.com/elections/presidentielle-2027/voter
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

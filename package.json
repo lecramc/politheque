@@ -2,7 +2,7 @@
   "name": "travee",
   "type": "module",
   "main": "expo-router/entry",
-  "version": "0.26.0",
+  "version": "0.26.1",
   "scripts": {
     "start": "expo start",
     "android": "expo run:android",
@@ -17,6 +17,7 @@
     "prepare": "husky",
     "build:web": "expo export --platform web && node scripts/postexport.mjs",
     "typecheck": "tsc --noEmit",
+    "agenda:build": "node scripts/agenda.mjs",
     "affaires:promote": "node scripts/promote-affaires.mjs",
     "affaires:echeances": "node scripts/affaires-echeances.mjs",
     "assemblee:update": "node scripts/assemblee-scrutins.mjs --download",

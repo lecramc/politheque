@@ -188,7 +188,9 @@ describe('Feature: extraction compacte — détail nominatif', () => {
       nom: 'Nom-dep1',
       alpha: 'Nom-dep1',
       departement: 'Nord',
+      numDepartement: '59',
       circonscription: 3,
+      enExercice: true,
     });
   });
 

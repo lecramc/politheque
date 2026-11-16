@@ -29,7 +29,7 @@ describe('Feature: accueil à quatre tâches', () => {
       ['situer', '/me-situer'],
       ['partis', '/partis'],
       ['comparer', '/partis/comparer'],
-      ['voter', '/elections/presidentielle-2027'],
+      ['voter', '/elections/presidentielle-2027/voter'],
     ]);
   });
 

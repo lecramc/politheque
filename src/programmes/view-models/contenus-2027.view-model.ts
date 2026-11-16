@@ -9,6 +9,7 @@ import { lexiconGroups } from '@/src/programmes/models/lexicon.service';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { maxIsoDate } from '@/src/programmes/models/seo/dates';
 import { faqMeta, lexiconMeta, voterMeta } from '@/src/programmes/models/seo/page-meta';
+import { AGENDA_COPY, AGENDA_PATH } from '@/src/programmes/models/voter-calendar.copy';
 import { selectCatalog, selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
 
 export const lexiconViewModel = () =>
@@ -60,6 +61,7 @@ export const voterViewModel = () =>
       voter: voter && voter.sections.length ? voter : null,
       electionHref: CONTENUS_2027_PATHS.election,
       faqHref: CONTENUS_2027_PATHS.faq,
+      agenda: { href: AGENDA_PATH, label: AGENDA_COPY.button },
       lesson: voter
         ? (relatedLessons(catalog?.guide ?? [], [voter.guideSectionId])[0] ?? null)
         : null,
