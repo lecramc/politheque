@@ -1,3 +1,7 @@
+import { buildStaticIndex } from '@/src/assemblee/gateways/static-assemblee.gateway';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
+import { capitalizeTitle, countsLabel } from '@/src/assemblee/models/scrutin-labels';
+import type { ScrutinIndex, ScrutinSummary } from '@/src/assemblee/models/scrutin.model';
 import { APP_NAME } from '@/src/core/config/app';
 import { buildCandidateList } from '@/src/programmes/models/candidates.service';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
@@ -574,6 +578,55 @@ export function correctionsMeta(): PageMeta {
   });
 }
 
+const ASSEMBLEE_CRUMBS: Breadcrumb = [
+  HOME,
+  { name: 'Comprendre', path: '/comprendre' },
+  { name: COPY.list.title, path: '/assemblee' },
+];
+
+/** `/assemblee` : la liste, sans filtre (les filtres sont lus côté client, jamais indexés). */
+export function assembleeListMeta(index: ScrutinIndex): PageMeta {
+  return make({
+    title: brandTitle(COPY.seo.listTitle),
+    description: COPY.seo.listDescription(index.scrutins.length),
+    path: '/assemblee',
+    breadcrumb: ASSEMBLEE_CRUMBS,
+    kind: 'collection',
+    pattern: '/assemblee',
+    name: COPY.seo.listTitle,
+  });
+}
+
+/** Une page par scrutin : titre officiel tronqué, jamais réécrit ; description factuelle. */
+export function scrutinMeta(scrutin: ScrutinSummary): PageMeta {
+  const { pour, requis } = scrutin.synthese;
+  const date = formatLongDate(scrutin.date);
+  const motion = scrutin.type === 'MOC';
+  const { seo } = COPY;
+  const path = `/assemblee/scrutins/${scrutin.numero}`;
+  const core = clampText(
+    seo.scrutinTitle(scrutin.numero, date, capitalizeTitle(scrutin.titre)),
+    TITLE_MAX
+  );
+  const description = motion
+    ? (scrutin.adopte
+        ? seo.scrutinDescriptionCensureAdopted
+        : seo.scrutinDescriptionCensureRejected)(scrutin.numero, pour, requis)
+    : (scrutin.adopte ? seo.scrutinDescriptionAdopted : seo.scrutinDescriptionRejected)(
+        scrutin.numero,
+        countsLabel(scrutin)
+      );
+  return make({
+    title: brandTitle(core),
+    description,
+    path,
+    breadcrumb: [...ASSEMBLEE_CRUMBS, { name: COPY.scrutin.pageTitle(scrutin.numero, date), path }],
+    kind: 'webpage',
+    pattern: '/assemblee/scrutins/[numero]',
+    name: core,
+  });
+}
+
 /** Passeport, résultats, parcours, 404, contenus introuvables : jamais indexés. */
 export function nonIndexableMeta(
   title: string,
@@ -641,6 +694,12 @@ export function allPageMetas(catalog: Catalog): PageMeta[] {
         return methodologyMeta();
       case '/corrections':
         return correctionsMeta();
+      case '/assemblee':
+        return assembleeListMeta(buildStaticIndex());
+      case '/assemblee/scrutins/[numero]':
+        return scrutinMeta(
+          buildStaticIndex().scrutins.find((s) => String(s.numero) === path.split('/')[3])!
+        );
       case '/partis/[id]': {
         const party = catalog.parties.find((p) => p.id === id)!;
         return partyAliasMeta(partyPageContext(party, catalog));

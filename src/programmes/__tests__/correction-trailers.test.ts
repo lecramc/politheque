@@ -127,6 +127,21 @@ describe('Feature: lecture des trailers de correction', () => {
     ).toMatchObject({ ok: true, corrections: [] });
   });
 
+  it('should require a trailer when the generated data of the Assemblée change, « aucune » for a routine refresh', () => {
+    const staged = [
+      'src/assemblee/data/scrutins-index.json',
+      'public/donnees/assemblee/v1/scrutins/580.json',
+    ];
+    expect(resolve('build: données de l’Assemblée\n', staged)).toMatchObject({ ok: false });
+    expect(resolve(message('Correction-publique: aucune'), staged)).toMatchObject({
+      ok: true,
+      optOut: true,
+      corrections: [],
+    });
+    // aucune page à déduire automatiquement : les pages se citent explicitement
+    expect(pagesForDataPath(staged[0])).toEqual([]);
+  });
+
   it('should reject pages that are not indexable pages of the route registry', () => {
     const result = resolve(message(line('correction', '/partis/inconnu')));
     expect(result).toMatchObject({ ok: false });

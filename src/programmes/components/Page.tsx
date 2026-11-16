@@ -44,15 +44,16 @@ type Href = '/' | '/comprendre' | '/partis' | '/me-situer';
 type NavItem = { href: Href; label: string; icon: string; matches: (pathname: string) => boolean };
 
 /**
- * Trois rubriques. Les débats (`/debats/[id]`) vivent dans Partis ; l'élection est la pastille de
- * l'en-tête, hors rubrique.
+ * Trois rubriques. Les débats (`/debats/[id]`) vivent dans Partis ; les votes de l'Assemblée
+ * (`/assemblee*`) dans Comprendre ; l'élection est la pastille de l'en-tête, hors rubrique.
  */
 const NAV: NavItem[] = [
   {
     href: '/comprendre',
     label: 'Comprendre',
     icon: 'book-outline',
-    matches: (p) => p.startsWith('/comprendre') || p.startsWith('/passeport'),
+    matches: (p) =>
+      p.startsWith('/comprendre') || p.startsWith('/passeport') || p.startsWith('/assemblee'),
   },
   {
     href: '/partis',

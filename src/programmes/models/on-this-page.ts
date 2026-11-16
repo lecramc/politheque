@@ -18,4 +18,5 @@ export const METHODOLOGY_ANCHORS: OnThisPageItem[] = [
   { id: 'niveaux-de-source', label: 'Les niveaux de source' },
   { id: 'regles', label: 'Nos règles' },
   { id: 'comment-lire', label: 'Comment lire les pages' },
+  { id: 'votes-assemblee', label: "Votes de l'Assemblée" },
 ];

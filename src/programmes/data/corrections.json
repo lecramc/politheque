@@ -1,5 +1,12 @@
 [
   {
+    "id": "2026-11-16-nouvelle-page-les-votes-de-l-assemblee-338-scrut",
+    "date": "2026-11-16",
+    "kind": "ajout",
+    "pages": ["/assemblee"],
+    "summary": "Nouvelle page « Les votes de l'Assemblée » : 338 scrutins publics de la 17e législature, avec le vote de chaque groupe et de chaque député, d'après l'open data de l'Assemblée nationale (Licence Ouverte) extrait le 10 novembre 2026."
+  },
+  {
     "id": "2026-11-10-les-references-a-wikipedia-ont-ete-retirees-des",
     "date": "2026-11-10",
     "kind": "retrait",

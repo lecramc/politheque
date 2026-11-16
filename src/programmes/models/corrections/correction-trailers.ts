@@ -71,9 +71,14 @@ export function parseCorrectionTrailers(message: string): ParsedTrailers {
   return result;
 }
 
+/** Données générées de l'Assemblée nationale (open data) : le trailer est exigé, `aucune` si ordinaire. */
+const ASSEMBLEE_DATA_DIRS = ['src/assemblee/data/', 'public/donnees/assemblee/'];
+
 /** Fichiers de données dont la modification change ce que le lecteur voit. */
 export const isDataFile = (file: string) =>
-  file.startsWith(DATA_DIR) && file !== JOURNAL_FILE && /\.(json|ts)$/.test(file);
+  file !== JOURNAL_FILE &&
+  /\.(json|ts)$/.test(file) &&
+  (file.startsWith(DATA_DIR) || ASSEMBLEE_DATA_DIRS.some((dir) => file.startsWith(dir)));
 
 /** Pages concernées par un fichier de données ([] pour un fichier de code ou d'index). */
 export function pagesForDataPath(file: string): string[] {

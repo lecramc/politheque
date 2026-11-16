@@ -19,6 +19,8 @@
     "typecheck": "tsc --noEmit",
     "affaires:promote": "node scripts/promote-affaires.mjs",
     "affaires:echeances": "node scripts/affaires-echeances.mjs",
+    "assemblee:update": "node scripts/assemblee-scrutins.mjs --download",
+    "assemblee:check": "node scripts/assemblee-scrutins.mjs --check",
     "corrections:add": "node scripts/corrections.mjs --add",
     "corrections:check": "node scripts/corrections.mjs --check",
     "corrections:backfill": "node scripts/corrections.mjs --backfill --since 2026-11-03",

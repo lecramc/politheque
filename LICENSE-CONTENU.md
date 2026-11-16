@@ -12,6 +12,15 @@ Texte complet : https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr
 « Polithèque — https://politheque.revaamp.com », avec la date de consultation et, si possible,
 le lien vers la page reprise. Indiquez si vous avez modifié le contenu.
 
+## Données de l'Assemblée nationale
+
+Les scrutins publics de l'Assemblée nationale (`src/assemblee/data/`, `public/donnees/assemblee/`)
+sont extraits de l'open data de l'Assemblée nationale (data.assemblee-nationale.fr), publié sous
+**Licence Ouverte / Open Licence (Etalab)**. Ils restent sous cette licence, avec la mention
+« Source : Assemblée nationale, open data, Licence Ouverte » et la date d'extraction, reprises sur
+chaque page : ils ne sont pas placés sous CC BY-SA. Les fichiers sont dérivés mécaniquement (sélection,
+compactage), sans rien rédiger.
+
 ## Ce qui n'est pas couvert
 
 - Les extraits et citations de sources tierces (presse, programmes, documents officiels) restent

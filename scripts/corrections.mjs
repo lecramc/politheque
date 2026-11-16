@@ -36,10 +36,15 @@ const fail = (title, lines = []) => {
 };
 
 // Chemin rapide du hook : aucune donnée touchée, aucun trailer → rien à charger.
+// Données concernées : le contenu rédigé (`src/programmes/data/`, hors journal) et les données
+// générées de l'Assemblée (`src/assemblee/data/`, `public/donnees/assemblee/`) : un rafraîchissement
+// ordinaire s'écrit `Correction-publique: aucune`, un changement de logique qui modifie des chiffres
+// déjà publiés exige une entrée au journal.
+const DATA_PREFIXES = ['src/programmes/data/', 'src/assemblee/data/', 'public/donnees/assemblee/'];
 if (has('--from-message')) {
   const message = fs.readFileSync(valueOf('--from-message'), 'utf8');
   const touchesData = stagedFiles().some(
-    (f) => f.startsWith('src/programmes/data/') && f !== JOURNAL
+    (f) => DATA_PREFIXES.some((prefix) => f.startsWith(prefix)) && f !== JOURNAL
   );
   if (!touchesData && !/^Correction-publique:/m.test(message)) process.exit(0);
 }
