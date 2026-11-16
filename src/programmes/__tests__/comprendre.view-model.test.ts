@@ -59,7 +59,7 @@ describe('Feature: Comprendre avec le suivi de lecture', () => {
 });
 
 describe('Feature: entrée vers les votes de l’Assemblée depuis Comprendre', () => {
-  it('should offer a card to the Assemblée votes, with the number of scrutins published', () => {
+  it('should offer a card to the Assemblée votes, with the number of votes published', () => {
     const state = assembleeStateBuilder(ready().build())
       .withIndex(
         indexFactory({ scrutins: [scrutinFactory({ numero: 1 }), scrutinFactory({ numero: 2 })] })
@@ -67,9 +67,9 @@ describe('Feature: entrée vers les votes de l’Assemblée depuis Comprendre', 
       .build();
     expect(vmOf(state).assemblee).toEqual({
       title: "Les votes de l'Assemblée",
-      text: 'Le résultat, le vote de chaque groupe et de chaque député sur les textes de loi, les motions de censure et les autres scrutins retenus par une règle fixe.',
+      text: 'Le résultat, le vote de chaque groupe et de chaque député sur les lois, le budget et les motions de censure.',
       href: '/assemblee',
-      meta: '2 scrutins',
+      meta: '2 votes',
     });
   });
 

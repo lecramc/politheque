@@ -125,9 +125,20 @@ describe('Feature: SEO des pages Assemblée', () => {
       "L'ensemble du projet de loi d'urgence pour Mayotte (première lecture)."
     );
     expect(snippets).toContain('22 janvier 2025');
-    expect(snippets).toContain(
-      'Adopté : 446 pour, 2 contre, 110 abstentions. Majorité requise : 225 voix.'
-    );
+    expect(snippets).toContain('Adopté');
+    expect(snippets).toContain('446 pour · 2 contre · 110 abstentions');
     expect(snippets).toContain('La France insoumise - NFP');
+  });
+
+  it('should require the sentence of a censure motion in the prerendered HTML', () => {
+    const motion = scrutinFactory({
+      type: 'MOC',
+      categorie: 'censure',
+      adopte: false,
+      synthese: { ...scrutinFactory().synthese, pour: 132, requis: 289 },
+    });
+    expect(assembleeFoldedSnippets(motion, [])).toContain(
+      'Motion rejetée : le Gouvernement reste en place.'
+    );
   });
 });

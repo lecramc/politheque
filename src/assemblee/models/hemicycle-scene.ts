@@ -12,6 +12,15 @@ const BOX_HEIGHT = 1.62;
 const BOX_TOP = 1.5;
 export const HEMICYCLE_RATIO = BOX_WIDTH / BOX_HEIGHT;
 
+/**
+ * Cadre serré, sans la place des étiquettes de groupe : sur écran étroit le schéma occupe toute la
+ * largeur et les sièges sont près de deux fois plus grands. Même constance du rapport.
+ */
+const COMPACT_WIDTH = 2.36;
+const COMPACT_HEIGHT = 1.28;
+const COMPACT_TOP = 1.18;
+export const HEMICYCLE_RATIO_COMPACT = COMPACT_WIDTH / COMPACT_HEIGHT;
+
 const ARC_GAP = 0.05;
 const LABEL_GAP = 0.11;
 const LABEL_GAP_SIDE = 0.06;
@@ -32,15 +41,20 @@ export type HemicycleBox = {
   arcRadius: number;
 };
 
-export const hemicycleBox = (layout: HemicycleLayout): HemicycleBox => {
+export const hemicycleBox = (
+  layout: HemicycleLayout,
+  { labels = true }: { labels?: boolean } = {}
+): HemicycleBox => {
   const cx = layout.width / 2;
   const cy = layout.height - layout.seatRadius;
+  const width = labels ? BOX_WIDTH : COMPACT_WIDTH;
+  const height = labels ? BOX_HEIGHT : COMPACT_HEIGHT;
   return {
-    minX: cx - BOX_WIDTH / 2,
-    minY: cy - BOX_TOP,
-    width: BOX_WIDTH,
-    height: BOX_HEIGHT,
-    ratio: HEMICYCLE_RATIO,
+    minX: cx - width / 2,
+    minY: cy - (labels ? BOX_TOP : COMPACT_TOP),
+    width,
+    height,
+    ratio: labels ? HEMICYCLE_RATIO : HEMICYCLE_RATIO_COMPACT,
     cx,
     cy,
     arcRadius: 1 + layout.seatRadius + ARC_GAP,

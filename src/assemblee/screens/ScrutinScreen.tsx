@@ -3,21 +3,23 @@ import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
-import { Icon, Text } from '@/components/Themed';
+import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { Article493Note } from '@/src/assemblee/components/Article493Note';
 import { DataSourceNote } from '@/src/assemblee/components/DataSourceNote';
-import { DeputyVotesTable } from '@/src/assemblee/components/DeputyVotesTable';
-import { GroupVotesTable } from '@/src/assemblee/components/GroupVotesTable';
+import { DeputySearch } from '@/src/assemblee/components/DeputySearch';
+import { GroupVotes } from '@/src/assemblee/components/GroupVotes';
 import { Hemicycle } from '@/src/assemblee/components/Hemicycle';
 import { HemicycleLegend } from '@/src/assemblee/components/HemicycleLegend';
-import { t } from '@/src/assemblee/i18n/translate';
-import { positionLabel } from '@/src/assemblee/models/deputy-table';
+import { VerdictBlock } from '@/src/assemblee/components/VerdictBlock';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import type { GroupeOrder } from '@/src/assemblee/models/groupe-order';
-import { HEMICYCLE_RATIO } from '@/src/assemblee/models/hemicycle-scene';
+import { HEMICYCLE_RATIO, HEMICYCLE_RATIO_COMPACT } from '@/src/assemblee/models/hemicycle-scene';
 import { scrutinViewModel } from '@/src/assemblee/view-models/scrutin.view-model';
+import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { Accordion } from '@/src/programmes/components/Accordion';
 import { Page } from '@/src/programmes/components/Page';
 
 const MEASURE = 680;
@@ -34,23 +36,10 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function Fact({ label, children }: { label: string; children: React.ReactNode }) {
-  const { colors } = useTheme();
-  return (
-    <View style={{ gap: 1 }}>
-      <Text variant="label">{label}</Text>
-      {typeof children === 'string' ? (
-        <Text style={{ fontSize: 16, lineHeight: 23, color: colors.text.primary }}>{children}</Text>
-      ) : (
-        children
-      )}
-    </View>
-  );
-}
-
 /**
  * Emplacement du schéma, aux dimensions exactes de l'hémicycle : le pré-rendu et le premier rendu
- * client sont identiques, et la mise en page ne bouge pas quand le détail arrive.
+ * client sont identiques, et la mise en page ne bouge pas quand le détail arrive. Deux cadres, un
+ * par taille d'écran (cadre serré sur mobile, cadre avec étiquettes ensuite), choisis par CSS.
  */
 function HemicyclePlaceholder({
   loading,
@@ -62,11 +51,11 @@ function HemicyclePlaceholder({
   onRetry: () => void;
 }) {
   const { colors, effects } = useTheme();
-  return (
+  const frame = (ratio: number) => (
     <View
       style={{
         width: '100%',
-        aspectRatio: HEMICYCLE_RATIO,
+        aspectRatio: ratio,
         alignItems: 'center',
         justifyContent: 'center',
         gap: effects.spacing.xs,
@@ -79,36 +68,46 @@ function HemicyclePlaceholder({
     >
       {loading ? (
         <Text style={{ fontSize: 15, color: colors.text.secondary, textAlign: 'center' }}>
-          {t('hemicycle.loading')}
+          {COPY.hemicycle.loading}
         </Text>
       ) : (
         <>
           <Text role="alert" style={{ fontSize: 15, textAlign: 'center' }}>
-            {t('hemicycle.error')}
+            {COPY.hemicycle.error}
           </Text>
-          <TextLink href={officialUrl}>{t('hemicycle.errorLink')}</TextLink>
+          <TextLink href={officialUrl}>{COPY.hemicycle.errorLink}</TextLink>
           <Pressable
             onPress={onRetry}
             accessibilityRole="button"
             style={{ minHeight: 44, justifyContent: 'center' }}
           >
             <Text style={{ color: colors.tint, textDecorationLine: 'underline' }}>
-              {t('hemicycle.retry')}
+              {COPY.hemicycle.retry}
             </Text>
           </Pressable>
         </>
       )}
     </View>
   );
+  return (
+    <>
+      <Only below="md">{frame(HEMICYCLE_RATIO_COMPACT)}</Only>
+      <Only from="md">{frame(HEMICYCLE_RATIO)}</Only>
+    </>
+  );
 }
 
-/** `/assemblee/scrutins/[numero]` : un scrutin, son résultat, le vote de chaque groupe et de chaque député. */
+/**
+ * `/assemblee/scrutins/[numero]` : un vote. Dans l'ordre : l'en-tête, le titre officiel, le
+ * verdict, le vote des groupes, l'hémicycle, la recherche d'un député, les détails du vote, puis
+ * les autres votes sur le texte, les notes et la source.
+ */
 export default function ScrutinScreen() {
   const { numero: raw } = useLocalSearchParams<{ numero: string }>();
   const numero = Number(raw);
   const vm = useViewModel(scrutinViewModel);
   const page = vm.scrutin(numero);
-  const { colors, effects, fonts } = useTheme();
+  const { colors, effects } = useTheme();
   const [order, setOrder] = useState<GroupeOrder>('places');
   const [highlight, setHighlight] = useState<number | null>(null);
 
@@ -122,11 +121,11 @@ export default function ScrutinScreen() {
     return (
       <Page
         loading={vm.status !== 'loaded'}
-        title={t('list.title')}
-        back={{ label: t('common.backToList'), href: '/assemblee' }}
+        title={COPY.list.title}
+        back={{ label: COPY.common.backToList, href: '/assemblee' }}
       >
         <TextLink href="/assemblee" standalone>
-          {t('common.backToList')}
+          {COPY.common.backToList}
         </TextLink>
       </Page>
     );
@@ -149,95 +148,20 @@ export default function ScrutinScreen() {
     <Page
       meta={page.meta}
       loading={vm.status !== 'loaded'}
-      back={{ label: t('common.backToList'), href: '/assemblee' }}
+      back={{ label: COPY.common.backToList, href: '/assemblee' }}
     >
       <View style={{ gap: effects.spacing.xs }}>
         <Text variant="caption">{page.heading}</Text>
         <Text variant="title" style={{ fontSize: 24, lineHeight: 31 }}>
           {page.titre}
         </Text>
-        <Text style={{ fontSize: 14, color: colors.text.secondary }}>
-          {t('common.officialTitleNote')}
-        </Text>
+        <Text style={{ fontSize: 14, color: colors.text.secondary }}>{page.titleNote}</Text>
       </View>
 
-      <View style={{ gap: effects.spacing.sm }}>
-        <Fact label={t('scrutin.date')}>{page.date}</Fact>
-        <Fact label={t('scrutin.category')}>{page.categorie}</Fact>
-        <Fact label={t('scrutin.type')}>{page.type}</Fact>
-        {page.demandeurs.length ? (
-          <Fact label={t('scrutin.requestedBy')}>
-            <View style={{ gap: 2 }}>
-              {page.demandeurs.map((demandeur) => (
-                <Text key={demandeur} style={{ fontSize: 16, lineHeight: 23 }}>
-                  {demandeur}
-                </Text>
-              ))}
-            </View>
-          </Fact>
-        ) : null}
-      </View>
+      <VerdictBlock verdict={page.verdict} />
 
-      <Section title={t('scrutin.resultTitle')}>
-        <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: effects.spacing.xs }}>
-          <Icon
-            name={page.adopte ? 'checkmark-circle-outline' : 'close-circle-outline'}
-            variant="secondary"
-            size="medium"
-          />
-          <Text style={{ ...fonts.bold, fontSize: 18, lineHeight: 26, flex: 1, maxWidth: MEASURE }}>
-            {page.resultat}
-          </Text>
-        </View>
-        {page.censure ? (
-          <Text
-            style={{
-              fontSize: 15,
-              lineHeight: 23,
-              color: colors.text.secondary,
-              maxWidth: MEASURE,
-            }}
-          >
-            {t('scrutin.censureNote')}
-          </Text>
-        ) : null}
-        {page.article493 ? <Article493Note note={page.article493} /> : null}
-        {page.motionsDeCensure.length ? (
-          <View style={{ gap: effects.spacing.xs }}>
-            <Text variant="label">{t('notes.budgetMotions')}</Text>
-            {page.motionsDeCensure.map((motion) => (
-              <TextLink key={motion.numero} href={motion.href} standalone>
-                {motion.label}
-              </TextLink>
-            ))}
-          </View>
-        ) : null}
-        <View
-          role="group"
-          aria-label={t('scrutin.synthesisTitle')}
-          style={[
-            card,
-            {
-              flexDirection: 'row',
-              flexWrap: 'wrap',
-              padding: effects.spacing.sm,
-              gap: effects.spacing.md,
-            },
-          ]}
-        >
-          {page.synthese.map((item) => (
-            <View key={item.id} style={{ minWidth: 96, gap: 1 }}>
-              <Text plainDigits style={{ ...fonts.bold, fontSize: 22, lineHeight: 28 }}>
-                {item.value}
-              </Text>
-              <Text variant="label">{item.label}</Text>
-            </View>
-          ))}
-        </View>
-      </Section>
-
-      <Section title={t('groups.title')}>
-        <GroupVotesTable
+      <Section title={COPY.groups.title}>
+        <GroupVotes
           table={page.groups(order)}
           order={order}
           onOrderChange={setOrder}
@@ -247,35 +171,17 @@ export default function ScrutinScreen() {
         />
       </Section>
 
-      <Section title={t('hemicycle.title')}>
-        <Text
-          style={{ fontSize: 15, lineHeight: 23, color: colors.text.secondary, maxWidth: MEASURE }}
-        >
-          {[
-            page.delegations > 0
-              ? t('hemicycle.delegationsCount', { count: page.delegations })
-              : null,
-            page.misesAuPoint > 0
-              ? t('hemicycle.misesAuPointCount', { count: page.misesAuPoint })
-              : null,
-          ]
-            .filter(Boolean)
-            .join(' ')}
-        </Text>
+      <Section title={COPY.hemicycle.title}>
         {hemicycle.status === 'ready' ? (
           <>
             <Hemicycle view={hemicycle} highlight={highlight} onHighlight={setHighlight} />
-            <HemicycleLegend censure={hemicycle.censure} />
+            <HemicycleLegend entries={hemicycle.legend} />
             {highlighted ? (
               <View
                 aria-live="polite"
                 style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }}
               >
-                <Text style={{ fontSize: 14 }}>
-                  {t('hemicycle.highlighted', {
-                    groupe: `${highlighted.libelle} (${highlighted.abrev})`,
-                  })}
-                </Text>
+                <Text style={{ fontSize: 14 }}>{COPY.hemicycle.highlighted(highlighted.name)}</Text>
                 <Pressable
                   onPress={() => setHighlight(null)}
                   accessibilityRole="button"
@@ -284,7 +190,7 @@ export default function ScrutinScreen() {
                   <Text
                     style={{ color: colors.tint, textDecorationLine: 'underline', fontSize: 14 }}
                   >
-                    {t('hemicycle.clearHighlight')}
+                    {COPY.hemicycle.clearHighlight}
                   </Text>
                 </Pressable>
               </View>
@@ -300,31 +206,31 @@ export default function ScrutinScreen() {
         <Text
           style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary, maxWidth: MEASURE }}
         >
-          {t('hemicycle.mention')}
+          {COPY.hemicycle.mention}
         </Text>
         {hemicycle.status === 'ready' ? (
           <>
-            <Text
-              style={{
-                fontSize: 14,
-                lineHeight: 21,
-                color: colors.text.secondary,
-                maxWidth: MEASURE,
-              }}
-            >
-              {t('hemicycle.hint')}
-            </Text>
-            {hemicycle.unseated.length ? (
+            <Only below="md">
+              <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+                {COPY.hemicycle.hintTouch}
+              </Text>
+            </Only>
+            <Only from="md">
+              <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+                {COPY.hemicycle.hintHover}
+              </Text>
+            </Only>
+            {hemicycle.unseatedLines.length ? (
               <View style={{ gap: effects.spacing.xs }}>
                 <Text variant="caption" headingLevel={3}>
-                  {t('hemicycle.unseatedTitle')}
+                  {COPY.hemicycle.unseatedTitle}
                 </Text>
                 <Text style={{ fontSize: 14, color: colors.text.secondary, maxWidth: MEASURE }}>
-                  {t('hemicycle.unseatedNote')}
+                  {COPY.hemicycle.unseatedNote}
                 </Text>
-                {hemicycle.unseated.map((m) => (
-                  <Text key={`${m.depute.id}-${m.vote}`} style={{ fontSize: 15 }}>
-                    {`${m.depute.nom} (${m.groupe}) : ${positionLabel(m.vote, hemicycle.censure)}${m.delegation ? ` · ${t('vote.delegation')}` : ''}`}
+                {hemicycle.unseatedLines.map((line) => (
+                  <Text key={line} style={{ fontSize: 15 }}>
+                    {line}
                   </Text>
                 ))}
               </View>
@@ -334,15 +240,47 @@ export default function ScrutinScreen() {
       </Section>
 
       {hemicycle.status === 'ready' ? (
-        <Section title={t('deputies.title')}>
-          <DeputyVotesTable view={hemicycle} order={order} />
+        <Section title={COPY.deputies.title}>
+          <DeputySearch view={hemicycle} order={order} />
         </Section>
       ) : null}
 
+      <Accordion title={COPY.details.title} headingLevel={2}>
+        <View style={{ gap: effects.spacing.sm }}>
+          {page.details.map((fact) => (
+            <View key={fact.id} style={{ gap: 1 }}>
+              <Text variant="label">{fact.label}</Text>
+              {fact.values.map((value) => (
+                <Text
+                  key={value}
+                  plainDigits
+                  style={{ fontSize: 16, lineHeight: 23, color: colors.text.primary }}
+                >
+                  {value}
+                </Text>
+              ))}
+            </View>
+          ))}
+          {page.glossary.map((line) => (
+            <Text
+              key={line}
+              style={{
+                fontSize: 14,
+                lineHeight: 21,
+                color: colors.text.secondary,
+                maxWidth: MEASURE,
+              }}
+            >
+              {line}
+            </Text>
+          ))}
+        </View>
+      </Accordion>
+
       {page.autresVotes.length ? (
-        <Section title={t('others.title')}>
+        <Section title={COPY.others.title}>
           <Text style={{ fontSize: 15, color: colors.text.secondary, maxWidth: MEASURE }}>
-            {t('others.lead')}
+            {COPY.others.lead}
           </Text>
           <View style={card}>
             {page.autresVotes.map((other, index) => (
@@ -366,14 +304,14 @@ export default function ScrutinScreen() {
             ))}
           </View>
           {page.dossierUrl ? (
-            <TextLink href={page.dossierUrl}>{t('others.dossier')}</TextLink>
+            <TextLink href={page.dossierUrl}>{COPY.others.dossier}</TextLink>
           ) : null}
         </Section>
       ) : null}
 
       {page.citations.length ? (
-        <Section title={t('cited.title')}>
-          <Text style={{ fontSize: 15, color: colors.text.secondary }}>{t('cited.note')}</Text>
+        <Section title={COPY.cited.title}>
+          <Text style={{ fontSize: 15, color: colors.text.secondary }}>{COPY.cited.note}</Text>
           {page.citations.map((citation) => (
             <TextLink key={citation.href} href={citation.href} standalone>
               {citation.label}
@@ -382,16 +320,28 @@ export default function ScrutinScreen() {
         </Section>
       ) : null}
 
-      <Section title={t('source.title')}>
+      {page.article493 ? <Article493Note note={page.article493} /> : null}
+      {page.motionsDeCensure.length ? (
+        <View style={{ gap: effects.spacing.xs }}>
+          <Text variant="label">{COPY.notes.budgetMotions}</Text>
+          {page.motionsDeCensure.map((motion) => (
+            <TextLink key={motion.numero} href={motion.href} standalone>
+              {motion.label}
+            </TextLink>
+          ))}
+        </View>
+      ) : null}
+
+      <Section title={COPY.source.title}>
         <TextLink href={page.sourceUrl} standalone>
-          {t('source.official')}
+          {COPY.source.official}
         </TextLink>
         <DataSourceNote source={page.source} />
         <Text style={{ fontSize: 14, color: colors.text.secondary }}>
-          {t('source.licenceLine', { licence: page.source.licence })}
+          {COPY.source.licenceLine(page.source.licence)}
         </Text>
         <TextLink href="/methodologie#votes-assemblee" standalone>
-          {t('list.methodLink')}
+          {COPY.list.methodLink}
         </TextLink>
       </Section>
     </Page>

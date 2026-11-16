@@ -4,12 +4,7 @@ import {
   detailFactory,
   groupeFactory,
 } from '@/src/assemblee/models/scrutin.factory';
-import {
-  describeVotes,
-  seatViews,
-  voteLabel,
-  type SeatViewInput,
-} from '@/src/assemblee/models/seat-view';
+import { describeVotes, seatViews, type SeatViewInput } from '@/src/assemblee/models/seat-view';
 
 const deputes = [
   deputeFactory({ id: 'PA1', civ: 'M.', prenom: 'Jean', nom: 'Durand' }),
@@ -54,14 +49,16 @@ describe('Feature: sièges affichables', () => {
     expect(seat.x).toBeGreaterThan(0);
   });
 
-  it('should pick a distinct shape per vote, never the colour alone', () => {
+  it('should pick a distinct shape per vote, never the colour alone, and draw « ne prend pas part au vote » like « n’a pas voté »', () => {
     const { seats } = seatViews(input());
     const glyph = (place: number) => seats.find((s) => s.place === place)!.glyph;
     expect(glyph(1)).toBe('disc');
     expect(glyph(2)).toBe('disc-slash');
     expect(glyph(3)).toBe('ring');
-    expect(glyph(4)).toBe('dot');
+    expect(glyph(4)).toBe('dashed');
     expect(glyph(5)).toBe('none');
+    // La fusion est visuelle : la position reste celle de la source.
+    expect(seats.find((s) => s.place === 4)!.vote).toBe('N');
   });
 
   it('should leave a vacant seat without deputy nor group', () => {
@@ -95,26 +92,12 @@ describe('Feature: sièges affichables', () => {
   });
 });
 
-describe('Feature: libellés de position', () => {
-  it('should word each position as the source does', () => {
-    expect(voteLabel('P')).toBe('pour');
-    expect(voteLabel('C')).toBe('contre');
-    expect(voteLabel('A')).toBe('abstention');
-    expect(voteLabel('N')).toBe('non-votant');
-    expect(voteLabel('-')).toBe('pas de vote enregistré');
-    expect(voteLabel('.')).toBe('siège vacant');
-  });
-
-  it('should never say « contre » nor « absent » for a deputy who did not vote a censure motion', () => {
-    expect(voteLabel('-', { censure: true })).toBe("n'a pas voté la motion");
-    expect(voteLabel('P', { censure: true })).toBe('pour');
-  });
-});
-
 describe('Feature: description accessible', () => {
   it('should summarize the counts in a single accessible label', () => {
     const detail = input({ votes: 'PPCAN', sansPlace: [] }).detail;
-    expect(describeVotes(detail)).toBe('2 pour, 1 contre, 1 abstention, 1 non-votant');
+    expect(describeVotes(detail)).toBe(
+      '2 pour, 1 contre, 1 abstention, 1 ne prend pas part au vote'
+    );
   });
 
   it('should count the unseated deputies and the vacant seats, and use plurals', () => {
@@ -123,9 +106,7 @@ describe('Feature: description accessible', () => {
       votes: 'PPA--.',
       sansPlace: [{ depute: 0, groupe: 0, vote: 'A', delegation: false }],
     });
-    expect(describeVotes(detail)).toBe(
-      '2 pour, 2 abstentions, 2 sans vote enregistré, 1 siège vacant'
-    );
+    expect(describeVotes(detail)).toBe("2 pour, 2 abstentions, 2 n'ont pas voté, 1 siège vacant");
   });
 
   it('should word the label of a censure motion without « contre »', () => {

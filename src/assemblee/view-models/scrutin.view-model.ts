@@ -1,32 +1,34 @@
 import { createSelector } from 'reselect';
 
-import { t } from '@/src/assemblee/i18n/translate';
 import {
   ARTICLE_49_SOURCE_URL,
   censureMotionsOnSameText,
   needsArticle493Note,
 } from '@/src/assemblee/models/article-49-3';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import {
   deputyRows,
-  filterDeputyRows,
+  deputySearch,
+  orderedPositions,
+  positionLabel,
   type DeputyFilters,
   type DeputyRow,
 } from '@/src/assemblee/models/deputy-table';
-import { groupTable } from '@/src/assemblee/models/group-table';
+import { groupName, groupTable } from '@/src/assemblee/models/group-table';
 import { orderGroupes, type GroupeOrder } from '@/src/assemblee/models/groupe-order';
 import { hemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
+import { legendEntries } from '@/src/assemblee/models/hemicycle-legend';
 import { hemicycleArcs, hemicycleBox } from '@/src/assemblee/models/hemicycle-scene';
+import { scrutinDetails } from '@/src/assemblee/models/scrutin-details';
 import {
   capitalizeTitle,
   categoryLabel,
-  countsLabel,
-  requesters,
   resultLabel,
-  scrutinHeading,
+  scrutinReference,
   voteTypeLabel,
 } from '@/src/assemblee/models/scrutin-labels';
 import { citingParties, otherVotesOnSameText } from '@/src/assemblee/models/scrutin-links';
-import { scrutinResultSentence } from '@/src/assemblee/models/scrutin-result';
+import { scrutinVerdict } from '@/src/assemblee/models/scrutin-verdict';
 import type {
   Depute,
   Groupe,
@@ -57,27 +59,32 @@ export type HemicycleView =
       /** Un seul libellé résumé : l'hémicycle est une image, pas 577 arrêts de tabulation. */
       ariaLabel: string;
       layout: ReturnType<typeof hemicycleLayout>;
+      /** Cadre avec la place des étiquettes de groupe (écran large). */
       box: ReturnType<typeof hemicycleBox>;
+      /** Cadre serré, sans étiquettes : pleine largeur sur écran étroit. */
+      compactBox: ReturnType<typeof hemicycleBox>;
       seats: ReturnType<typeof seatViews>['seats'];
       unseated: ReturnType<typeof seatViews>['unseated'];
+      /** Une ligne par député sans siège identifiable : « Nom (SIGLE) : position ». */
+      unseatedLines: string[];
       arcs: ReturnType<typeof hemicycleArcs>;
       censure: boolean;
-      /** Groupes présents ce jour-là, pour le filtre du tableau des députés. */
-      groupes: (order: GroupeOrder) => { index: number; abrev: string; libelle: string }[];
+      legend: ReturnType<typeof legendEntries>;
+      /** Phrase affichée au survol d'un siège ; null pour un siège vacant. */
+      tooltipOf: (place: number) => string | null;
+      /** Groupes présents ce jour-là (un seul ordre sur toute la page). */
+      groupes: (order: GroupeOrder) => {
+        index: number;
+        abrev: string;
+        libelle: string;
+        name: string;
+      }[];
+      /** Positions présentes, dans leur ordre fixe, pour le filtre des députés. */
+      positions: { code: DeputyRow['vote']; label: string }[];
       rows: DeputyRow[];
-      filter: (filters: DeputyFilters) => DeputyRow[];
+      /** Chercher un député : la liste n'apparaît qu'une fois une recherche ou un filtre posés. */
+      search: (filters: DeputyFilters, requested: boolean) => ReturnType<typeof deputySearch>;
     };
-
-const SYNTHESIS_STANDARD = [
-  'votants',
-  'exprimes',
-  'requis',
-  'pour',
-  'contre',
-  'abstentions',
-  'nonVotants',
-] as const;
-const SYNTHESIS_CENSURE = ['votants', 'requis', 'pour', 'nonVotants'] as const;
 
 const buildHemicycle = (
   scrutin: ScrutinSummary,
@@ -95,24 +102,47 @@ const buildHemicycle = (
     ...detail.groupes.filter((g) => g >= 0),
     ...detail.sansPlace.map((m) => m.groupe),
   ]);
+  const seatByPlace = new Map(seats.map((seat) => [seat.place, seat]));
   return {
     status: 'ready',
-    ariaLabel: t('hemicycle.label', {
-      numero: scrutin.numero,
-      resume: describeVotes(detail, { censure }),
-    }),
+    ariaLabel: COPY.hemicycle.label(scrutin.numero, describeVotes(detail, { censure })),
     layout,
     box: hemicycleBox(layout),
+    compactBox: hemicycleBox(layout, { labels: false }),
     seats,
     unseated,
+    unseatedLines: unseated.map(
+      (m) =>
+        `${m.depute.nom} (${m.groupe}) : ${positionLabel(m.vote, censure)}${m.delegation ? ` · ${COPY.vote.delegation}` : ''}`
+    ),
     arcs: hemicycleArcs(layout, detail, groupes),
     censure,
+    legend: legendEntries(censure),
+    tooltipOf: (place) => {
+      const seat = seatByPlace.get(place);
+      return seat?.depute
+        ? COPY.hemicycle.tooltip(
+            seat.depute.nom,
+            seat.groupe ?? '',
+            positionLabel(seat.vote, censure)
+          )
+        : null;
+    },
     groupes: (order) =>
       orderGroupes(groupes, order)
         .filter((groupe) => present.has(groupe.index))
-        .map(({ index, abrev, libelle }) => ({ index, abrev, libelle })),
+        .map(({ index, abrev, libelle }) => ({
+          index,
+          abrev,
+          libelle,
+          name: groupName({ abrev, libelle }),
+        })),
+    positions: orderedPositions(
+      rows.map((row) => row.vote),
+      censure
+    ).map((code) => ({ code, label: positionLabel(code, censure) })),
     rows,
-    filter: (filters) => filterDeputyRows(rows, filters),
+    search: (filters, requested) => deputySearch(rows, filters, requested),
   };
 };
 
@@ -158,49 +188,33 @@ export const scrutinViewModel = ({ dispatch }: { dispatch: AppDispatch }) =>
           const scrutin = index?.scrutins.find((s) => s.numero === numero);
           if (!index || !manifest || !scrutin) return null;
           const censure = scrutin.type === 'MOC';
+          const reference = scrutinReference(numero);
           return {
             numero,
             meta: scrutinMeta(scrutin),
-            heading: scrutinHeading(scrutin),
+            /** Ligne d'en-tête : date · type de vote. */
+            heading: COPY.scrutin.header(formatLongDate(scrutin.date), voteTypeLabel(scrutin.type)),
+            reference,
+            /** Mention en petit sous le titre : la référence, et d'où vient le titre. */
+            titleNote: COPY.scrutin.titleNote(reference),
             titre: capitalizeTitle(scrutin.titre),
             dateIso: scrutin.date,
-            date: formatLongDate(scrutin.date),
-            categorie: categoryLabel(scrutin.categorie),
-            type: voteTypeLabel(scrutin.type),
-            demandeurs: requesters(scrutin.demandeur),
-            adopte: scrutin.adopte,
-            resultatCourt: resultLabel(scrutin),
-            resultat: scrutinResultSentence(scrutin),
-            decompte: countsLabel(scrutin),
             censure,
-            synthese: [
-              ...(censure ? SYNTHESIS_CENSURE : SYNTHESIS_STANDARD),
-              ...(scrutin.synthese.nonVotantsVolontaires > 0
-                ? (['nonVotantsVolontaires'] as const)
-                : []),
-            ].map((id) => ({
-              id,
-              label: t(`scrutin.synthesis.${id}`),
-              value: scrutin.synthese[id],
-            })),
+            verdict: scrutinVerdict(scrutin),
+            ...scrutinDetails(scrutin),
             article493: needsArticle493Note(scrutin)
               ? {
-                  text: t('notes.article493'),
-                  sourceLabel: t('notes.article493Source'),
+                  text: COPY.notes.article493,
+                  sourceLabel: COPY.notes.article493Source,
                   sourceUrl: ARTICLE_49_SOURCE_URL,
                 }
               : null,
             motionsDeCensure: censureMotionsOnSameText(scrutin, index.scrutins).map((motion) => ({
               numero: motion.numero,
               href: `/assemblee/scrutins/${motion.numero}`,
-              label: t('notes.budgetMotionItem', {
-                numero: motion.numero,
-                resultat: resultLabel(motion),
-              }),
+              label: COPY.notes.budgetMotionItem(motion.numero, resultLabel(motion)),
             })),
             groups: (order: GroupeOrder) => groupTable(scrutin, index.groupes, order),
-            delegations: scrutin.delegations,
-            misesAuPoint: scrutin.misesAuPoint,
             autresVotes: otherVotesOnSameText(scrutin, index.scrutins).map((other) => ({
               numero: other.numero,
               href: `/assemblee/scrutins/${other.numero}`,
@@ -212,10 +226,7 @@ export const scrutinViewModel = ({ dispatch }: { dispatch: AppDispatch }) =>
             dossierUrl: scrutin.dossier?.url ?? null,
             citations: catalog
               ? citingParties(catalog, numero).map((citation) => ({
-                  label: t('cited.item', {
-                    partie: citation.name,
-                    onglet: partySectionLabel(citation.section),
-                  }),
+                  label: COPY.cited.item(citation.name, partySectionLabel(citation.section)),
                   href: partyHref(citation.partyId, citation.section),
                 }))
               : [],

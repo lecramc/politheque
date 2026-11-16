@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect';
 
-import { t } from '@/src/assemblee/i18n/translate';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { selectAssembleeIndex } from '@/src/assemblee/store/assemblee.selector';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { stepHref, type JourneyStepId } from '@/src/programmes/models/journey.model';
@@ -74,12 +74,10 @@ export const comprendreViewModel = () =>
         progressHref: '/passeport',
         /** Carte d'entrée vers les votes de l'Assemblée : hors parcours, elle ne compte pas dans la lecture. */
         assemblee: {
-          title: t('comprendre.cardTitle'),
-          text: t('comprendre.cardText'),
+          title: COPY.comprendre.cardTitle,
+          text: COPY.comprendre.cardText,
           href: '/assemblee',
-          meta: assembleeIndex
-            ? t('comprendre.cardMeta', { count: assembleeIndex.scrutins.length })
-            : null,
+          meta: assembleeIndex ? COPY.comprendre.cardMeta(assembleeIndex.scrutins.length) : null,
         },
         /** Lien sobre vers le lexique : hors parcours, il ne compte pas dans la progression. */
         lexicon: {

@@ -1,8 +1,9 @@
 import { createSelector } from 'reselect';
 
-import { t } from '@/src/assemblee/i18n/translate';
 import { ARTICLE_49_SOURCE_URL } from '@/src/assemblee/models/article-49-3';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import {
+  activeFilterCount,
   CATEGORIES,
   toScrutinFilters,
   yearsOf,
@@ -15,9 +16,11 @@ import {
 } from '@/src/assemblee/models/scrutin-filters';
 import {
   capitalizeTitle,
+  categoryHelp,
   categoryLabel,
   countsLabel,
   resultLabel,
+  scrutinReference,
 } from '@/src/assemblee/models/scrutin-labels';
 import type { ScrutinSummary } from '@/src/assemblee/models/scrutin.model';
 import { OFFICIAL_LIST_URL, sourceNote } from '@/src/assemblee/models/source-note';
@@ -28,9 +31,14 @@ import {
 import { formatLongDate } from '@/src/programmes/models/seo/dates';
 import { assembleeListMeta } from '@/src/programmes/models/seo/page-meta';
 
+/** Votes affichés d'abord (le HTML pré-rendu n'en contient pas davantage), puis par tranches. */
+export const LIST_PAGE_SIZE = 20;
+
 export type ScrutinRow = {
   numero: number;
   href: string;
+  /** Référence discrète : « Scrutin n° 9759 ». */
+  reference: string;
   dateIso: string;
   date: string;
   categorie: string;
@@ -43,6 +51,7 @@ export type ScrutinRow = {
 const toRow = (s: ScrutinSummary): ScrutinRow => ({
   numero: s.numero,
   href: `/assemblee/scrutins/${s.numero}`,
+  reference: scrutinReference(s.numero),
   dateIso: s.date,
   date: formatLongDate(s.date),
   categorie: categoryLabel(s.categorie),
@@ -53,9 +62,9 @@ const toRow = (s: ScrutinSummary): ScrutinRow => ({
 });
 
 /**
- * `/assemblee` : la liste complète, du plus récent au plus ancien, groupée par mois. Les filtres
- * (catégorie, résultat, année, titre) viennent de l'adresse, lue côté client : le HTML pré-rendu
- * est la liste entière. Aucun classement, aucun score.
+ * `/assemblee` : les votes, du plus récent au plus ancien, groupés par mois, vingt à la fois. Les
+ * filtres (type de vote, résultat, année, titre) viennent de l'adresse, lue côté client ; ils
+ * s'appliquent à toute la liste, pas à la page affichée. Aucun classement, aucun score.
  */
 export const assembleeListViewModel = () =>
   createSelector([selectAssembleeIndex, selectAssembleeManifest], (index, manifest) => {
@@ -63,15 +72,17 @@ export const assembleeListViewModel = () =>
     return {
       status: index && manifest ? ('loaded' as const) : ('loading' as const),
       meta: index ? assembleeListMeta(index) : null,
-      warning: t('list.warning'),
+      lead: COPY.list.lead,
+      warning: COPY.list.warning,
       criteria: {
-        lead: t('list.criteriaLead'),
-        rules: ['R1', 'R2', 'R3', 'R4', 'R5', 'R6'].map((id) => t(`method.${id}`)),
-        excluded: t('list.criteriaExcluded'),
+        title: COPY.list.criteriaTitle,
+        lead: COPY.list.criteriaLead,
+        rules: COPY.method.rules,
+        excluded: COPY.list.criteriaExcluded,
       },
       article493: {
-        text: t('notes.article493'),
-        sourceLabel: t('notes.article493Source'),
+        text: COPY.notes.article493,
+        sourceLabel: COPY.notes.article493Source,
         sourceUrl: ARTICLE_49_SOURCE_URL,
       },
       officialListUrl: OFFICIAL_LIST_URL,
@@ -80,13 +91,22 @@ export const assembleeListViewModel = () =>
       categories: CATEGORIES.filter((c) => all.some((s) => s.categorie === c)).map((id) => ({
         id,
         label: categoryLabel(id),
+        help: categoryHelp(id),
       })),
-      list: (filters: ListFilters) => {
-        const shown = sortByMostRecent(filterScrutins(all, toScrutinFilters(filters)));
+      /** « Filtrer » ou « Filtrer · 2 » : le nombre de filtres actifs de la feuille. */
+      filterButton: (filters: ListFilters) => {
+        const active = activeFilterCount(filters);
+        return { label: COPY.list.filters.button(active), active: active > 0 };
+      },
+      list: (filters: ListFilters, limit: number = LIST_PAGE_SIZE) => {
+        const matching = sortByMostRecent(filterScrutins(all, toScrutinFilters(filters)));
+        const left = matching.length - limit;
         return {
-          count: shown.length,
+          count: matching.length,
           total: all.length,
-          months: groupByMonth(shown).map((month) => ({
+          countLabel: COPY.list.count(matching.length, all.length),
+          moreLabel: left > 0 ? COPY.list.more(Math.min(LIST_PAGE_SIZE, left)) : null,
+          months: groupByMonth(matching.slice(0, limit)).map((month) => ({
             mois: month.mois,
             libelle: capitalizeTitle(month.libelle),
             rows: month.scrutins.map(toRow),

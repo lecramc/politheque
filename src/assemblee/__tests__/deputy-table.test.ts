@@ -1,13 +1,17 @@
 import {
   deputyRows,
+  deputySearch,
   filterDeputyRows,
   orderedPositions,
+  positionLabel,
+  shouldListDeputies,
 } from '@/src/assemblee/models/deputy-table';
 import {
   deputeFactory,
   detailFactory,
   groupeFactory,
 } from '@/src/assemblee/models/scrutin.factory';
+import type { VoteCode } from '@/src/assemblee/models/scrutin.model';
 
 const deputes = [
   deputeFactory({ id: 'PA1', prenom: 'Jean', nom: 'Durand', alpha: 'Durand' }),
@@ -55,9 +59,27 @@ describe('Feature: tableau des députés', () => {
     const jean = rows.find((r) => r.id === 'PA1')!;
     expect(jean.vote).toBe('P');
     expect(jean.miseAuPoint).toBe(
-      'Mise au point publiée : souhaitait voter contre. Elle ne modifie pas le résultat.'
+      'Correction après le vote : souhaitait voter contre. Le résultat ne change pas.'
     );
     expect(rows.find((r) => r.id === 'PA2')!.miseAuPoint).toBeNull();
+  });
+
+  it('should word each position in plain words', () => {
+    expect(['P', 'C', 'A', 'N', '-', '.'].map((v) => positionLabel(v as VoteCode, false))).toEqual([
+      'Pour',
+      'Contre',
+      'Abstention',
+      'Ne prend pas part au vote',
+      "N'a pas voté",
+      'Siège vacant',
+    ]);
+  });
+
+  it('should write a second line per deputy: position, group, and « vote confié à un collègue » only when it applies', () => {
+    expect(rows.find((r) => r.id === 'PA1')!.details).toBe('Pour · GA');
+    expect(rows.find((r) => r.id === 'PA2')!.details).toBe(
+      'Contre · GA · vote confié à un collègue'
+    );
   });
 
   it('should include the deputies without an identifiable seat', () => {
@@ -78,21 +100,23 @@ describe('Feature: cause d’un non-vote', () => {
 
   it('should say why a deputy did not take part, when the source gives the cause', () => {
     expect(withCause('MG').find((r) => r.vote === 'N')!.position).toBe(
-      'Non-votant (membre du Gouvernement)'
+      'Ne prend pas part au vote (membre du Gouvernement)'
     );
     expect(withCause('PSE').find((r) => r.vote === 'N')!.position).toBe(
-      'Non-votant (présidence de séance)'
+      'Ne prend pas part au vote (présidence de séance)'
     );
     expect(withCause('PAN').find((r) => r.vote === 'N')!.position).toBe(
-      "Non-votant (présidence de l'Assemblée)"
+      "Ne prend pas part au vote (présidence de l'Assemblée)"
     );
   });
 
-  it('should keep a plain « non-votant » without a known cause', () => {
-    expect(withCause('XYZ').find((r) => r.vote === 'N')!.position).toBe('Non-votant');
+  it('should keep a plain « ne prend pas part au vote » without a known cause', () => {
+    expect(withCause('XYZ').find((r) => r.vote === 'N')!.position).toBe(
+      'Ne prend pas part au vote'
+    );
     expect(
       deputyRows({ detail, deputes, groupes, censure: false }).find((r) => r.vote === 'N')!.position
-    ).toBe('Non-votant');
+    ).toBe('Ne prend pas part au vote');
   });
 });
 
@@ -123,5 +147,52 @@ describe('Feature: filtres du tableau des députés', () => {
   it('should combine criteria and keep the alphabetical order', () => {
     expect(filterDeputyRows(rows, { groupe: 0, vote: 'P' }).map((r) => r.id)).toEqual(['PA1']);
     expect(filterDeputyRows(rows, {})).toHaveLength(5);
+  });
+});
+
+describe('Feature: quand afficher la liste des députés', () => {
+  const none = { recherche: '', groupe: null, vote: null };
+
+  it('should keep the list hidden at first: a citizen searches a name rather than reads 574 lines', () => {
+    expect(shouldListDeputies(none, false)).toBe(false);
+  });
+
+  it('should show it as soon as something is typed, or a filter is chosen, or the citizen asks for it', () => {
+    expect(shouldListDeputies({ ...none, recherche: 'du' }, false)).toBe(true);
+    expect(shouldListDeputies({ ...none, groupe: 2 }, false)).toBe(true);
+    expect(shouldListDeputies({ ...none, vote: 'C' }, false)).toBe(true);
+    expect(shouldListDeputies(none, true)).toBe(true);
+  });
+
+  it('should not count blank spaces as a search', () => {
+    expect(shouldListDeputies({ ...none, recherche: '   ' }, false)).toBe(false);
+  });
+});
+
+describe('Feature: chercher un député', () => {
+  const rows = deputyRows({ detail, deputes, groupes, censure: false });
+  const none = { recherche: '', groupe: null, vote: null };
+
+  it('should offer to show all the deputies, without listing them, at first', () => {
+    expect(deputySearch(rows, none, false)).toEqual({
+      visible: false,
+      rows: [],
+      countLabel: '5 députés',
+      showAllLabel: 'Afficher les 5 députés',
+      filterCount: 0,
+    });
+  });
+
+  it('should list the matching deputies as soon as a name is typed', () => {
+    const found = deputySearch(rows, { ...none, recherche: 'durand' }, false);
+    expect(found.visible).toBe(true);
+    expect(found.rows.map((r) => r.id)).toEqual(['PA1']);
+    expect(found.countLabel).toBe('1 député');
+  });
+
+  it('should list everybody on request, and count the group and position filters of the sheet', () => {
+    expect(deputySearch(rows, none, true).rows).toHaveLength(5);
+    expect(deputySearch(rows, { ...none, groupe: 1, vote: 'C' }, false).filterCount).toBe(2);
+    expect(deputySearch(rows, { ...none, recherche: 'x' }, false).filterCount).toBe(0);
   });
 });

@@ -58,5 +58,11 @@ export const toScrutinFilters = (filters: ListFilters): ScrutinFilters => ({
   ...(filters.annee ? { du: `${filters.annee}-01-01`, au: `${filters.annee}-12-31` } : {}),
 });
 
+/** Filtres de la feuille « Filtrer » (la recherche a son propre champ à côté du bouton). */
+export const activeFilterCount = (filters: ListFilters): number =>
+  [filters.categorie !== 'toutes', filters.resultat !== 'tous', filters.annee !== null].filter(
+    Boolean
+  ).length;
+
 export const yearsOf = (scrutins: ScrutinSummary[]): string[] =>
   [...new Set(scrutins.map((s) => s.date.slice(0, 4)))].sort();

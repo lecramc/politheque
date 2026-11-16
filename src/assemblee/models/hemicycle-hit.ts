@@ -1,12 +1,18 @@
 import type { HemicycleSeat } from '@/src/assemblee/models/hemicycle-layout';
 import type { ArcSegment, HemicycleBox } from '@/src/assemblee/models/hemicycle-scene';
 
-export type Hit = { kind: 'seat'; place: number } | { kind: 'arc'; groupe: number } | null;
+export type Hit =
+  | { kind: 'seat'; place: number }
+  | { kind: 'arc'; groupe: number }
+  | { kind: 'group'; groupe: number }
+  | null;
 export type HitScene = {
   box: HemicycleBox;
   seats: HemicycleSeat[];
   seatRadius: number;
   arcs: ArcSegment[];
+  /** Indice du groupe du siège (null : siège vacant ou député sans groupe identifiable). */
+  groupOf: (place: number) => number | null;
 };
 export type PointerKind = 'fine' | 'coarse';
 
@@ -26,10 +32,12 @@ const ARC_BAND_INNER = 0.07;
 const ARC_BAND_OUTER = 0.3;
 /** Distance maximale à un siège, en rayons de siège (pointeur fin seulement). */
 const SEAT_REACH = 1.6;
+/** Rayon d'un appui du doigt, en unités du schéma (un doigt couvre une quarantaine de pixels). */
+const TOUCH_REACH = 0.3;
 
 /**
- * Ce qui se trouve sous le pointeur. Un pointeur fin (souris) trouve un siège ; un doigt ne le
- * peut pas (les sièges font quelques pixels) et ne trouve qu'un segment d'arc de groupe.
+ * Ce qui se trouve sous le pointeur. Un pointeur fin (souris) trouve un siège, ou un segment
+ * d'arc. Un doigt ne vise pas un siège : il obtient le groupe du siège le plus proche.
  */
 export const hitTest = (
   scene: HitScene,
@@ -37,6 +45,17 @@ export const hitTest = (
   pointer: PointerKind
 ): Hit => {
   const { box } = scene;
+  if (pointer === 'coarse') {
+    let nearest: { groupe: number; distance: number } | null = null;
+    for (const seat of scene.seats) {
+      const groupe = scene.groupOf(seat.place);
+      const distance = Math.hypot(seat.x - point.x, seat.y - point.y);
+      if (groupe !== null && distance <= TOUCH_REACH && (!nearest || distance < nearest.distance)) {
+        nearest = { groupe, distance };
+      }
+    }
+    return nearest ? { kind: 'group', groupe: nearest.groupe } : null;
+  }
   if (pointer === 'fine') {
     let best: { place: number; distance: number } | null = null;
     for (const seat of scene.seats) {

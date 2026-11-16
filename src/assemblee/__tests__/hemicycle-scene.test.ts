@@ -1,6 +1,7 @@
 import { hemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
 import {
   HEMICYCLE_RATIO,
+  HEMICYCLE_RATIO_COMPACT,
   hemicycleArcs,
   hemicycleBox,
 } from '@/src/assemblee/models/hemicycle-scene';
@@ -168,5 +169,33 @@ describe('Feature: cadre de l’hémicycle', () => {
       const box = hemicycleBox(large);
       expect(seat.x + large.seatRadius).toBeLessThanOrEqual(box.minX + box.width);
     }
+  });
+});
+
+describe('Feature: cadre serré de l’hémicycle sur écran étroit', () => {
+  const compact = (l = layout) => hemicycleBox(l, { labels: false });
+
+  it('should keep every seat and the whole arc, without the room the labels take', () => {
+    const box = compact();
+    for (const seat of layout.seats) {
+      expect(seat.x - layout.seatRadius).toBeGreaterThanOrEqual(box.minX);
+      expect(seat.x + layout.seatRadius).toBeLessThanOrEqual(box.minX + box.width);
+      expect(seat.y - layout.seatRadius).toBeGreaterThanOrEqual(box.minY);
+      expect(seat.y + layout.seatRadius).toBeLessThanOrEqual(box.minY + box.height);
+    }
+    expect(box.minX).toBeLessThanOrEqual(box.cx - box.arcRadius);
+    expect(box.minX + box.width).toBeGreaterThanOrEqual(box.cx + box.arcRadius);
+    expect(box.minY).toBeLessThanOrEqual(box.cy - box.arcRadius);
+  });
+
+  it('should be much narrower than the framed-with-labels box, so the seats are bigger at the same width', () => {
+    expect(compact().width).toBeLessThan(hemicycleBox(layout).width * 0.7);
+    expect(compact().ratio).toBe(HEMICYCLE_RATIO_COMPACT);
+    expect(compact().ratio).toBeLessThan(HEMICYCLE_RATIO);
+  });
+
+  it('should keep one aspect ratio whatever the number of seats', () => {
+    const large = hemicycleLayout(Array.from({ length: 580 }, (_, i) => i + 1));
+    expect(compact(large).ratio).toBe(HEMICYCLE_RATIO_COMPACT);
   });
 });

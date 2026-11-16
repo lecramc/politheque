@@ -1,4 +1,4 @@
-import { t } from '@/src/assemblee/i18n/translate';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import type { AssembleeManifest } from '@/src/assemblee/models/scrutin.model';
 import { formatLongDate } from '@/src/programmes/models/seo/dates';
 
@@ -9,10 +9,10 @@ export const officialScrutinUrl = (numero: number): string => `${OFFICIAL_LIST_U
 
 /** Mention de source, de licence et de date d'extraction (liste, scrutins, méthode). */
 export const sourceNote = (manifest: AssembleeManifest) => ({
-  line: t('common.source', { licence: manifest.licence, date: formatLongDate(manifest.extraitLe) }),
-  detail: t('common.sourceDetail', {
-    dernier: formatLongDate(manifest.dernier),
-    sha: manifest.sha256.scrutins.slice(0, 12),
-  }),
+  line: COPY.common.source(manifest.licence, formatLongDate(manifest.extraitLe)),
+  detail: COPY.common.sourceDetail(
+    formatLongDate(manifest.dernier),
+    manifest.sha256.scrutins.slice(0, 12)
+  ),
   licence: manifest.licence,
 });

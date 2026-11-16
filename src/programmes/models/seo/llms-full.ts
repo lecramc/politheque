@@ -1,5 +1,5 @@
 import { buildStaticManifest } from '@/src/assemblee/gateways/static-assemblee.gateway';
-import { t } from '@/src/assemblee/i18n/translate';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { APP_NAME } from '@/src/core/config/app';
 import {
   buildCandidateList,
@@ -215,14 +215,14 @@ function assembleeText(): string[] {
     '',
     `Page : ${absoluteUrl('/assemblee')}`,
     '',
-    t('list.warning'),
+    COPY.list.warning,
     '',
-    t('method.criteriaLead'),
-    ...['R1', 'R2', 'R3', 'R4', 'R5', 'R6'].map((id) => `- ${t(`method.${id}`)}`),
+    COPY.method.criteriaLead,
+    ...COPY.method.rules.map((rule) => `- ${rule}`),
     '',
-    t('method.criteriaExcluded'),
+    COPY.method.criteriaExcluded,
     '',
-    t('notes.article493'),
+    COPY.notes.article493,
     '',
     `Source : Assemblée nationale, open data (${manifest.sources.scrutins}), ${manifest.licence}. Données extraites le ${formatLongDate(manifest.extraitLe)}.`,
     '',

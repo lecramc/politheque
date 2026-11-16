@@ -1,4 +1,4 @@
-import { t } from '@/src/assemblee/i18n/translate';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { normalizeTitle } from '@/src/assemblee/models/extraction/normalize';
 import type { Depute, Groupe, ScrutinDetail, VoteCode } from '@/src/assemblee/models/scrutin.model';
 
@@ -13,6 +13,8 @@ export type DeputyRow = {
   /** Position officielle en toutes lettres. */
   position: string;
   delegation: boolean;
+  /** Seconde ligne d'une rangée : position · sigle · « vote confié à un collègue » le cas échéant. */
+  details: string;
   /** Phrase de la source quand le député a publié une mise au point ; elle ne change pas `vote`. */
   miseAuPoint: string | null;
   /** Clé de tri : nom de famille. */
@@ -24,7 +26,7 @@ type Input = { detail: ScrutinDetail; deputes: Depute[]; groupes: Groupe[]; cens
 
 const collator = new Intl.Collator('fr', { sensitivity: 'base' });
 
-const VOTE_KEYS: Record<VoteCode, string> = {
+const VOTE_KEYS: Record<VoteCode, 'P' | 'C' | 'A' | 'N' | 'none' | 'vacant'> = {
   P: 'P',
   C: 'C',
   A: 'A',
@@ -44,11 +46,11 @@ export const orderedPositions = (present: VoteCode[], censure: boolean): VoteCod
 const KNOWN_CAUSES = new Set(['PAN', 'PSE', 'MG']);
 
 export const positionLabel = (vote: VoteCode, censure: boolean, cause?: string): string => {
-  if (vote === '-' && censure) return t('vote.censure.none');
+  if (vote === '-' && censure) return COPY.vote.censureNone;
   if (vote === 'N' && cause && KNOWN_CAUSES.has(cause)) {
-    return t('vote.nonVotantCause', { cause: t(`vote.cause.${cause}`) });
+    return COPY.vote.nonVotantCause(COPY.vote.cause[cause]);
   }
-  return t(`vote.${VOTE_KEYS[vote]}`);
+  return COPY.vote[VOTE_KEYS[vote]];
 };
 
 const searchable = (text: string) => normalizeTitle(text).normalize('NFD').replace(/\p{M}/gu, '');
@@ -67,17 +69,18 @@ export const deputyRows = ({ detail, deputes, groupes, censure }: Input): Deputy
     const depute = deputes[deputeIndex];
     const souhait = mises.get(deputeIndex);
     const nom = `${depute.prenom} ${depute.nom}`;
+    const groupe = groupes[groupeIndex].abrev;
+    const position = positionLabel(vote, censure, causes.get(deputeIndex));
     return {
       id: depute.id,
       nom,
-      groupe: groupes[groupeIndex].abrev,
+      groupe,
       groupeIndex,
       vote,
-      position: positionLabel(vote, censure, causes.get(deputeIndex)),
+      position,
       delegation,
-      miseAuPoint: souhait
-        ? t('vote.miseAuPoint', { souhait: t(`vote.souhait.${souhait}`) })
-        : null,
+      details: [position, groupe, ...(delegation ? [COPY.vote.delegation] : [])].join(' · '),
+      miseAuPoint: souhait ? COPY.vote.miseAuPoint(COPY.vote.souhait[souhait]) : null,
       tri: depute.alpha || depute.nom,
       recherche: searchable(nom),
     };
@@ -95,6 +98,35 @@ export const deputyRows = ({ detail, deputes, groupes, censure }: Input): Deputy
 };
 
 export type DeputyFilters = { recherche?: string; groupe?: number | null; vote?: VoteCode | null };
+
+/**
+ * La liste n'est pas affichée d'office (574 lignes) : elle apparaît dès qu'on tape un nom, qu'on
+ * choisit un filtre, ou qu'on la demande.
+ */
+export const shouldListDeputies = (filters: DeputyFilters, requested: boolean): boolean =>
+  requested ||
+  (filters.recherche ?? '').trim() !== '' ||
+  (filters.groupe ?? null) !== null ||
+  (filters.vote ?? null) !== null;
+
+/**
+ * « Chercher un député » : ce que l'écran affiche. Tant que rien n'est tapé ni filtré, aucune
+ * ligne (juste le bouton « Afficher les N députés ») ; ensuite les députés qui correspondent, par
+ * ordre alphabétique. `filterCount` : filtres de la feuille (groupe, position), pas la recherche.
+ */
+export const deputySearch = (rows: DeputyRow[], filters: DeputyFilters, requested: boolean) => {
+  const visible = shouldListDeputies(filters, requested);
+  const found = visible ? filterDeputyRows(rows, filters) : [];
+  return {
+    visible,
+    rows: found,
+    countLabel: COPY.deputies.count(visible ? found.length : rows.length),
+    showAllLabel: COPY.deputies.showAll(rows.length),
+    filterCount: [(filters.groupe ?? null) !== null, (filters.vote ?? null) !== null].filter(
+      Boolean
+    ).length,
+  };
+};
 
 export const filterDeputyRows = (rows: DeputyRow[], filters: DeputyFilters): DeputyRow[] => {
   const words = searchable(filters.recherche ?? '')

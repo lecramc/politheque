@@ -1,5 +1,5 @@
 import { buildStaticIndex } from '@/src/assemblee/gateways/static-assemblee.gateway';
-import { t } from '@/src/assemblee/i18n/translate';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { assembleeFoldedSnippets } from '@/src/assemblee/models/seo/assemblee-folded-content';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { themeMeasures } from '@/src/programmes/models/programme-publication.service';
@@ -41,7 +41,7 @@ export function foldedSnippets(catalog: Catalog, path: string): string[] {
   }
   // Assemblée : la liste porte l'avertissement « main levée », une page de scrutin son titre, sa
   // date, son résultat et son premier groupe (le détail par député, lui, se charge côté client).
-  if (path === '/assemblee') return [t('list.warning')];
+  if (path === '/assemblee') return [COPY.list.warning];
   const scrutin = /^\/assemblee\/scrutins\/(\d+)$/.exec(path);
   if (scrutin) {
     const index = buildStaticIndex();

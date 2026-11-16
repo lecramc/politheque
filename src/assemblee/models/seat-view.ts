@@ -2,7 +2,7 @@ import type { HemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
 import type { Depute, Groupe, ScrutinDetail, VoteCode } from '@/src/assemblee/models/scrutin.model';
 
 /** Forme du siège : la teinte ne porte jamais seule l'information. */
-export type SeatGlyph = 'disc' | 'disc-slash' | 'ring' | 'dot' | 'dashed' | 'none';
+export type SeatGlyph = 'disc' | 'disc-slash' | 'ring' | 'dashed' | 'none';
 
 export type SeatDepute = { id: string; nom: string };
 
@@ -35,30 +35,18 @@ export type SeatViewInput = {
   censure: boolean;
 };
 
-const GLYPHS: Record<VoteCode, SeatGlyph> = {
+/**
+ * Une forme par position. « Ne prend pas part au vote » et « n'a pas voté » se dessinent de la
+ * même façon (légende à quatre entrées) : seule la forme fusionne, jamais les décomptes.
+ */
+export const SEAT_GLYPHS: Record<VoteCode, SeatGlyph> = {
   P: 'disc',
   C: 'disc-slash',
   A: 'ring',
-  N: 'dot',
+  N: 'dashed',
   '-': 'dashed',
   '.': 'none',
 };
-
-const LABELS: Record<VoteCode, string> = {
-  P: 'pour',
-  C: 'contre',
-  A: 'abstention',
-  N: 'non-votant',
-  '-': 'pas de vote enregistré',
-  '.': 'siège vacant',
-};
-
-/**
- * Libellé d'une position. Pour une motion de censure l'Assemblée ne recense que les « pour » :
- * les autres députés « n'ont pas voté la motion », jamais « contre » ni « absent ».
- */
-export const voteLabel = (vote: VoteCode, options: { censure?: boolean } = {}): string =>
-  vote === '-' && options.censure ? "n'a pas voté la motion" : LABELS[vote];
 
 const nameOf = (depute: Depute): SeatDepute => ({
   id: depute.id,
@@ -81,7 +69,7 @@ export const seatViews = (
       x: seat.x,
       y: seat.y,
       vote,
-      glyph: GLYPHS[vote],
+      glyph: SEAT_GLYPHS[vote],
       depute: depute === -1 ? null : nameOf(deputes[depute]),
       groupe: groupe === -1 ? null : groupes[groupe].abrev,
       groupeIndex: groupe === -1 ? null : groupe,
@@ -114,11 +102,10 @@ export const describeVotes = (
     counts.P > 0 && `${counts.P} pour`,
     counts.C > 0 && `${counts.C} contre`,
     counts.A > 0 && plural(counts.A, 'abstention'),
-    counts.N > 0 && plural(counts.N, 'non-votant'),
+    counts.N > 0 &&
+      `${counts.N} ${counts.N > 1 ? 'ne prennent pas part' : 'ne prend pas part'} au vote`,
     counts['-'] > 0 &&
-      (options.censure
-        ? `${counts['-']} ${counts['-'] > 1 ? "n'ont" : "n'a"} pas voté la motion`
-        : `${counts['-']} sans vote enregistré`),
+      `${counts['-']} ${counts['-'] > 1 ? "n'ont" : "n'a"} pas voté${options.censure ? ' la motion' : ''}`,
     counts['.'] > 0 && plural(counts['.'], 'siège vacant', 'sièges vacants'),
   ];
   return parts.filter(Boolean).join(', ');

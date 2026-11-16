@@ -17,7 +17,14 @@ const detail = detailFactory({
   groupes: places.map((_, i) => (i < 20 ? 0 : 1)),
 });
 const arcs = hemicycleArcs(layout, detail, groupes);
-const scene = { box, seats: layout.seats, seatRadius: layout.seatRadius, arcs };
+const groupOfPlace = new Map(places.map((place, i) => [place, i < 20 ? 0 : 1]));
+const scene = {
+  box,
+  seats: layout.seats,
+  seatRadius: layout.seatRadius,
+  arcs,
+  groupOf: (place: number) => groupOfPlace.get(place) ?? null,
+};
 
 describe('Feature: pointeur sur l’hémicycle', () => {
   it('should convert a pixel inside the drawing to schema coordinates', () => {
@@ -42,21 +49,34 @@ describe('Feature: pointeur sur l’hémicycle', () => {
     expect(hitTest(scene, { x: box.minX, y: box.minY }, 'fine')).toBeNull();
   });
 
-  it('should not treat seats as touch targets: a coarse pointer only picks arc segments', () => {
+  it('should not aim at a seat with a finger: a coarse pointer picks the group of the nearest seat', () => {
     const seat = layout.seats[7];
-    expect(hitTest(scene, { x: seat.x, y: seat.y }, 'coarse')).toBeNull();
+    const hit = hitTest(scene, { x: seat.x + layout.seatRadius * 2, y: seat.y }, 'coarse');
+    expect(hit).toEqual({ kind: 'group', groupe: scene.groupOf(seat.place) });
+    const other = layout.seats[35];
+    expect(hitTest(scene, { x: other.x, y: other.y }, 'coarse')).toEqual({
+      kind: 'group',
+      groupe: scene.groupOf(other.place),
+    });
+    expect(scene.groupOf(seat.place)).not.toBe(scene.groupOf(other.place));
   });
 
-  it('should pick the group of an arc segment, for a fine or a coarse pointer', () => {
+  it('should pick the group of an arc segment with a fine pointer', () => {
     const arc = arcs[0];
     const mid = (arc.start + arc.end) / 2;
     const r = box.arcRadius;
     const point = { x: box.cx + r * Math.cos(mid), y: box.cy - r * Math.sin(mid) };
-    expect(hitTest(scene, point, 'coarse')).toEqual({ kind: 'arc', groupe: arc.groupe });
     expect(hitTest(scene, point, 'fine')).toEqual({ kind: 'arc', groupe: arc.groupe });
   });
 
-  it('should find nothing in the empty space under the arc', () => {
+  it('should find nothing in the empty space under the arc, nor far from the seats', () => {
     expect(hitTest(scene, { x: box.cx, y: box.cy }, 'coarse')).toBeNull();
+    expect(hitTest(scene, { x: box.minX, y: box.minY }, 'coarse')).toBeNull();
+  });
+
+  it('should ignore seats without a group when looking for the nearest group', () => {
+    const empty = { ...scene, groupOf: () => null };
+    const seat = layout.seats[7];
+    expect(hitTest(empty, { x: seat.x, y: seat.y }, 'coarse')).toBeNull();
   });
 });

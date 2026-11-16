@@ -8,8 +8,8 @@ export type Classification =
 
 /**
  * Règle publique du périmètre : une liste fermée, évaluée par programme sur tous les scrutins
- * publics. Reprise telle quelle sur la page et dans la méthode (ne la modifier qu'avec les textes
- * de `locales/*\/assemblee.json`). Les amendements, les articles isolés, les motions de rejet
+ * publics. Reprise telle quelle, mot pour mot, sur la page et dans la méthode (`COPY.method.rules`
+ * lit cette liste : une seule source). Les amendements, les articles isolés, les motions de rejet
  * rejetées et les autres motions de procédure n'en font pas partie.
  */
 export const PERIMETER_RULES: string[] = [

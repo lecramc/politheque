@@ -1,17 +1,15 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { LayoutChangeEvent, Platform, View } from 'react-native';
+import { LayoutChangeEvent, Platform, useWindowDimensions, View } from 'react-native';
 import Svg, { G, Path, Text as SvgText } from 'react-native-svg';
 
+import { layout as siteLayout } from '@/components/layout';
 import { duration } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { SeatMark } from '@/src/assemblee/components/SeatMark';
-import { t } from '@/src/assemblee/i18n/translate';
-import { positionLabel } from '@/src/assemblee/models/deputy-table';
 import { GROUP_ARC_COLOR } from '@/src/assemblee/models/group-color';
 import { hitTest, pixelToModel, type PointerKind } from '@/src/assemblee/models/hemicycle-hit';
-import { HEMICYCLE_RATIO } from '@/src/assemblee/models/hemicycle-scene';
 import type { HemicycleView } from '@/src/assemblee/view-models/scrutin.view-model';
 import { paint } from '@/src/core/web/svg-paint';
 
@@ -20,16 +18,18 @@ type Ready = Extract<HemicycleView, { status: 'ready' }>;
 /** Taille des abréviations de groupe, en pixels réels (le schéma est mis à l'échelle). */
 const LABEL_PX = 12;
 const DIMMED = 0.18;
+/** Sous cette largeur : cadre serré pleine largeur, sans étiquettes de groupe (les groupes sont nommés au-dessus). */
+const NARROW_BELOW = siteLayout.breakpoint.md;
 
 /**
  * Hémicycle schématique : sièges rangés selon leur numéro de place officiel (ce n'est pas le
  * plan exact de la salle). Une image pour les technologies d'assistance (`role="img"`, un seul
- * `aria-label` résumé) : le tableau des députés est l'alternative complète. Arc extérieur par
- * groupe, toujours avec l'abréviation en texte.
+ * `aria-label` résumé) : la liste des députés est l'alternative complète.
  *
- * Interaction : un pointeur fin (souris) survole ou clique un siège pour voir le député ; un doigt
- * ne peut pas viser un siège de quelques pixels, il touche un segment d'arc pour mettre en
- * évidence les sièges du groupe. Mouvement réduit : l'apparition est instantanée.
+ * Écran étroit : le schéma prend toute la largeur (sièges plus grands), sans étiquettes ; toucher
+ * l'hémicycle met en évidence le groupe le plus proche, sans viser un siège. Écran large : arc
+ * étiqueté, survol d'un siège pour voir le député, clic pour l'épingler. Mouvement réduit :
+ * l'apparition est instantanée.
  */
 export function Hemicycle({
   view,
@@ -40,18 +40,27 @@ export function Hemicycle({
   highlight: number | null;
   onHighlight: (groupe: number | null) => void;
 }) {
-  const { colors, theme } = useTheme();
-  const { box, layout, seats, arcs } = view;
-  const [size, setSize] = useState({ width: 343, height: 343 / HEMICYCLE_RATIO });
+  const { colors, fonts, theme } = useTheme();
+  const { width: screenWidth } = useWindowDimensions();
+  const compact = screenWidth < NARROW_BELOW;
+  const box = compact ? view.compactBox : view.box;
+  const { layout, seats, arcs } = view;
+  const [size, setSize] = useState({ width: 343, height: 343 / box.ratio });
   const [hover, setHover] = useState<{ place: number; pinned: boolean } | null>(null);
   const pointerKind = useRef<PointerKind>(Platform.OS === 'web' ? 'fine' : 'coarse');
   const wrap = useRef<View>(null);
 
-  const scene = useMemo(
-    () => ({ box, seats: layout.seats, seatRadius: layout.seatRadius, arcs }),
-    [box, layout, arcs]
-  );
   const bySeatPlace = useMemo(() => new Map(seats.map((s) => [s.place, s])), [seats]);
+  const scene = useMemo(
+    () => ({
+      box,
+      seats: layout.seats,
+      seatRadius: layout.seatRadius,
+      arcs,
+      groupOf: (place: number) => bySeatPlace.get(place)?.groupeIndex ?? null,
+    }),
+    [box, layout, arcs, bySeatPlace]
+  );
 
   const hoverAt = useCallback(
     (px: number, py: number, pin: boolean) => {
@@ -62,7 +71,7 @@ export function Hemicycle({
         else if (pin) setHover(null);
         return;
       }
-      if (pin && hit?.kind === 'arc') {
+      if (pin && (hit?.kind === 'arc' || hit?.kind === 'group')) {
         onHighlight(highlight === hit.groupe ? null : hit.groupe);
         return;
       }
@@ -126,12 +135,11 @@ export function Hemicycle({
           cy={seat.y}
           r={layout.seatRadius}
           glyph={seat.glyph}
-          delegation={seat.delegation}
           vote={colors.vote}
         />
       ));
 
-  const hovered = hover ? bySeatPlace.get(hover.place) : null;
+  const tooltip = hover && !compact ? view.tooltipOf(hover.place) : null;
   const tooltipWidth = 190;
   const hoveredSeat = hover ? layout.seats.find((s) => s.place === hover.place) : null;
   const tipX = hoveredSeat ? ((hoveredSeat.x - box.minX) / box.width) * size.width : 0;
@@ -149,7 +157,7 @@ export function Hemicycle({
         if (native.locationX === undefined || native.locationY === undefined) return;
         hoverAt(native.locationX, native.locationY, true);
       }}
-      style={{ width: '100%', aspectRatio: HEMICYCLE_RATIO, position: 'relative' }}
+      style={{ width: '100%', aspectRatio: box.ratio, position: 'relative' }}
     >
       {/* Le dessin ne reçoit aucun événement : le cadre seul les reçoit (position relative à lui). */}
       <View pointerEvents="none" style={{ width: '100%', height: '100%' }}>
@@ -173,24 +181,26 @@ export function Hemicycle({
                     strokeLinecap="butt"
                     {...paint({ stroke: color })}
                   />
-                  <SvgText
-                    x={arc.labelX}
-                    y={arc.labelY}
-                    fontSize={labelSize}
-                    textAnchor={arc.labelAnchor}
-                    alignmentBaseline="middle"
-                    fontWeight={active && dimmed ? 'bold' : 'normal'}
-                    {...paint({ fill: colors.text.primary })}
-                  >
-                    {arc.abrev}
-                  </SvgText>
+                  {compact ? null : (
+                    <SvgText
+                      x={arc.labelX}
+                      y={arc.labelY}
+                      fontSize={labelSize}
+                      fontFamily={(active && dimmed ? fonts.bold : fonts.medium).fontFamily}
+                      textAnchor={arc.labelAnchor}
+                      alignmentBaseline="middle"
+                      {...paint({ fill: colors.text.primary })}
+                    >
+                      {arc.abrev}
+                    </SvgText>
+                  )}
                 </G>
               );
             })}
           </Svg>
         </Enter>
       </View>
-      {hovered?.depute ? (
+      {tooltip ? (
         <View
           pointerEvents="none"
           style={{
@@ -206,11 +216,7 @@ export function Hemicycle({
           }}
         >
           <Text style={{ fontSize: 14, lineHeight: 19, color: colors.text.primary }}>
-            {t('hemicycle.tooltip', {
-              nom: hovered.depute.nom,
-              groupe: hovered.groupe ?? '',
-              position: positionLabel(hovered.vote, view.censure),
-            })}
+            {tooltip}
           </Text>
         </View>
       ) : null}

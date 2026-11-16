@@ -1,5 +1,5 @@
 import { buildStaticIndex } from '@/src/assemblee/gateways/static-assemblee.gateway';
-import { t } from '@/src/assemblee/i18n/translate';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { capitalizeTitle, countsLabel } from '@/src/assemblee/models/scrutin-labels';
 import type { ScrutinIndex, ScrutinSummary } from '@/src/assemblee/models/scrutin.model';
 import { APP_NAME } from '@/src/core/config/app';
@@ -581,19 +581,19 @@ export function correctionsMeta(): PageMeta {
 const ASSEMBLEE_CRUMBS: Breadcrumb = [
   HOME,
   { name: 'Comprendre', path: '/comprendre' },
-  { name: t('list.title'), path: '/assemblee' },
+  { name: COPY.list.title, path: '/assemblee' },
 ];
 
 /** `/assemblee` : la liste, sans filtre (les filtres sont lus côté client, jamais indexés). */
 export function assembleeListMeta(index: ScrutinIndex): PageMeta {
   return make({
-    title: brandTitle(t('seo.listTitle')),
-    description: t('seo.listDescription', { count: index.scrutins.length }),
+    title: brandTitle(COPY.seo.listTitle),
+    description: COPY.seo.listDescription(index.scrutins.length),
     path: '/assemblee',
     breadcrumb: ASSEMBLEE_CRUMBS,
     kind: 'collection',
     pattern: '/assemblee',
-    name: t('seo.listTitle'),
+    name: COPY.seo.listTitle,
   });
 }
 
@@ -602,32 +602,25 @@ export function scrutinMeta(scrutin: ScrutinSummary): PageMeta {
   const { pour, requis } = scrutin.synthese;
   const date = formatLongDate(scrutin.date);
   const motion = scrutin.type === 'MOC';
-  const outcome = scrutin.adopte ? 'Adopted' : 'Rejected';
-  const descriptionKey = motion
-    ? `seo.scrutinDescriptionCensure${outcome}`
-    : `seo.scrutinDescription${outcome}`;
+  const { seo } = COPY;
   const path = `/assemblee/scrutins/${scrutin.numero}`;
   const core = clampText(
-    t('seo.scrutinTitle', {
-      numero: scrutin.numero,
-      date,
-      titre: capitalizeTitle(scrutin.titre),
-    }),
+    seo.scrutinTitle(scrutin.numero, date, capitalizeTitle(scrutin.titre)),
     TITLE_MAX
   );
+  const description = motion
+    ? (scrutin.adopte
+        ? seo.scrutinDescriptionCensureAdopted
+        : seo.scrutinDescriptionCensureRejected)(scrutin.numero, pour, requis)
+    : (scrutin.adopte ? seo.scrutinDescriptionAdopted : seo.scrutinDescriptionRejected)(
+        scrutin.numero,
+        countsLabel(scrutin)
+      );
   return make({
     title: brandTitle(core),
-    description: t(descriptionKey, {
-      numero: scrutin.numero,
-      pour,
-      requis,
-      decompte: countsLabel(scrutin),
-    }),
+    description,
     path,
-    breadcrumb: [
-      ...ASSEMBLEE_CRUMBS,
-      { name: t('scrutin.pageTitle', { numero: scrutin.numero, date }), path },
-    ],
+    breadcrumb: [...ASSEMBLEE_CRUMBS, { name: COPY.scrutin.pageTitle(scrutin.numero, date), path }],
     kind: 'webpage',
     pattern: '/assemblee/scrutins/[numero]',
     name: core,

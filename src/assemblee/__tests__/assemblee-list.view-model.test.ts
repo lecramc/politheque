@@ -84,7 +84,8 @@ describe('Feature: liste des votes', () => {
       href: '/assemblee/scrutins/10',
       dateIso: '2025-01-22',
       date: '22 janvier 2025',
-      categorie: "Vote sur l'ensemble d'un texte",
+      categorie: 'Texte entier',
+      reference: 'Scrutin n° 10',
       titre: "L'ensemble du projet de loi d'urgence pour Mayotte (première lecture).",
       resultat: 'Adopté',
       adopte: true,
@@ -94,7 +95,7 @@ describe('Feature: liste des votes', () => {
 
   it('should word a censure motion by its votes for and the required majority', () => {
     const row = vm().list(NONE).months[0].rows[1];
-    expect(row).toMatchObject({ resultat: 'Rejetée', decompte: '132 voix pour, 289 requises' });
+    expect(row).toMatchObject({ resultat: 'Rejetée', decompte: '132 pour · 289 nécessaires' });
   });
 
   it('should filter by category, result, year and title', () => {
@@ -126,7 +127,98 @@ describe('Feature: liste des votes', () => {
   it('should be indexable and carry the warning about votes by show of hands', () => {
     expect(vm().meta?.robots).toBe('index, follow');
     expect(vm().warning).toBe(
-      "Seuls les votes par scrutin public sont enregistrés nominativement ; un texte adopté à main levée n'apparaît pas ici."
+      "Les votes à main levée ne sont pas enregistrés nom par nom : ils n'apparaissent pas ici."
     );
+  });
+
+  it('should open with a two-sentence lead that says what is on the page', () => {
+    expect(vm().lead).toBe(
+      'Comment les députés ont voté sur les lois, le budget et les motions de censure depuis 2024. Pour chaque vote : le résultat, et le choix de chaque groupe et de chaque député.'
+    );
+    expect(vm().criteria.title).toBe('Quels votes figurent ici ?');
+  });
+});
+
+describe('Feature: liste des votes, par pages de vingt', () => {
+  const many = Array.from({ length: 45 }, (_, i) =>
+    scrutinFactory({
+      numero: 100 + i,
+      date: `2025-01-${String((i % 28) + 1).padStart(2, '0')}`,
+      titre:
+        i % 2 === 0 ? "l'ensemble du projet de loi pair." : "l'ensemble du projet de loi impair.",
+      adopte: i % 2 === 0,
+    })
+  );
+  const big = () =>
+    assembleeListViewModel()(
+      assembleeStateBuilder()
+        .withIndex(indexFactory({ scrutins: many }))
+        .withManifest(manifestFactory())
+        .build()
+    );
+  const rowsOf = (list: ReturnType<ReturnType<typeof big>['list']>) =>
+    list.months.flatMap((m) => m.rows);
+
+  it('should show the 20 most recent votes first, and offer 20 more', () => {
+    const list = big().list(NONE);
+    expect(rowsOf(list)).toHaveLength(20);
+    expect(list.moreLabel).toBe('Voir 20 votes de plus');
+    expect(rowsOf(list)[0].dateIso >= rowsOf(list)[19].dateIso).toBe(true);
+  });
+
+  it('should show the next twenty, then only what is left, then no button', () => {
+    const second = big().list(NONE, 40);
+    expect(rowsOf(second)).toHaveLength(40);
+    expect(second.moreLabel).toBe('Voir 5 votes de plus');
+    const all = big().list(NONE, 60);
+    expect(rowsOf(all)).toHaveLength(45);
+    expect(all.moreLabel).toBeNull();
+  });
+
+  it('should apply the filters to the whole list, not to the visible page', () => {
+    const list = big().list({ ...NONE, resultat: 'adopte' });
+    expect(list.count).toBe(23);
+    expect(rowsOf(list)).toHaveLength(20);
+    expect(list.moreLabel).toBe('Voir 3 votes de plus');
+    expect(big().list({ ...NONE, recherche: 'impair' }).count).toBe(22);
+  });
+
+  it('should count the votes in the word of the page, and say « sur N » only when filtered', () => {
+    expect(big().list(NONE).countLabel).toBe('45 votes');
+    expect(big().list({ ...NONE, resultat: 'adopte' }).countLabel).toBe('23 votes sur 45');
+    expect(big().list({ ...NONE, recherche: 'zzz' }).countLabel).toBe('0 vote sur 45');
+  });
+
+  it('should list the first page only in the prerendered HTML: the default is twenty', () => {
+    expect(rowsOf(big().list(NONE))).toHaveLength(20);
+  });
+});
+
+describe('Feature: feuille de filtres de la liste', () => {
+  it('should give each category its short label and its one-line help, in the order of the sheet', () => {
+    expect(vm().categories).toEqual([
+      {
+        id: 'texte',
+        label: 'Texte entier',
+        help: 'Vote final sur une loi ou une résolution, tous articles réunis.',
+      },
+      {
+        id: 'censure',
+        label: 'Censure du Gouvernement',
+        help: 'Les députés votent pour renverser le Gouvernement.',
+      },
+    ]);
+  });
+
+  it('should label the button with the number of active filters', () => {
+    expect(vm().filterButton(NONE)).toEqual({ label: 'Filtrer', active: false });
+    expect(vm().filterButton({ ...NONE, categorie: 'censure' })).toEqual({
+      label: 'Filtrer · 1',
+      active: true,
+    });
+    expect(vm().filterButton({ ...NONE, categorie: 'censure', annee: '2025' }).label).toBe(
+      'Filtrer · 2'
+    );
+    expect(vm().filterButton({ ...NONE, recherche: 'budget' }).label).toBe('Filtrer');
   });
 });

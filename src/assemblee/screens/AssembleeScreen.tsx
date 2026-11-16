@@ -4,12 +4,13 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
+import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { Article493Note } from '@/src/assemblee/components/Article493Note';
 import { DataSourceNote } from '@/src/assemblee/components/DataSourceNote';
 import { ScrutinFilters } from '@/src/assemblee/components/ScrutinFilters';
-import { t } from '@/src/assemblee/i18n/translate';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import {
   filtersToParams,
   parseFilterParams,
@@ -17,9 +18,11 @@ import {
 } from '@/src/assemblee/models/filter-params';
 import {
   assembleeListViewModel,
+  LIST_PAGE_SIZE,
   type ScrutinRow,
 } from '@/src/assemblee/view-models/assemblee-list.view-model';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { Accordion } from '@/src/programmes/components/Accordion';
 import { Page } from '@/src/programmes/components/Page';
 
 const NO_FILTER: ListFilters = {
@@ -59,17 +62,20 @@ function Row({ row, first }: { row: ScrutinRow; first: boolean }) {
             />
             <Text style={{ ...fonts.bold, fontSize: 14 }}>{row.resultat}</Text>
           </View>
-          <Text style={{ fontSize: 14, color: colors.text.secondary }}>{row.decompte}</Text>
+          <Text plainDigits style={{ fontSize: 14, color: colors.text.secondary }}>
+            {row.decompte}
+          </Text>
         </View>
+        <Text style={{ fontSize: 12, color: colors.text.secondary }}>{row.reference}</Text>
       </Pressable>
     </Link>
   );
 }
 
 /**
- * `/assemblee` : les votes de la 17e législature, du plus récent au plus ancien, par mois.
- * Le HTML pré-rendu est la liste entière ; les filtres viennent de l'adresse, lue après
- * l'hydratation (comme `/partis/comparer`).
+ * `/assemblee` : les votes depuis 2024, du plus récent au plus ancien, par mois, vingt à la fois.
+ * Le HTML pré-rendu ne contient que les vingt premiers ; les filtres viennent de l'adresse, lue
+ * après l'hydratation (comme `/partis/comparer`), et s'appliquent à toute la liste.
  */
 export default function AssembleeScreen() {
   const vm = useViewModel(assembleeListViewModel);
@@ -77,6 +83,7 @@ export default function AssembleeScreen() {
   const router = useRouter();
   const { colors, effects } = useTheme();
   const [filters, setFilters] = useState<ListFilters>(NO_FILTER);
+  const [limit, setLimit] = useState(LIST_PAGE_SIZE);
   const written = useRef<string | null>(null);
   const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -85,6 +92,7 @@ export default function AssembleeScreen() {
     const fromUrl = parseFilterParams(params);
     if (JSON.stringify(filtersToParams(fromUrl)) === written.current) return;
     setFilters(fromUrl);
+    setLimit(LIST_PAGE_SIZE);
   }, [params.categorie, params.resultat, params.annee, params.q]);
 
   useEffect(
@@ -96,6 +104,7 @@ export default function AssembleeScreen() {
 
   const change = (next: ListFilters) => {
     setFilters(next);
+    setLimit(LIST_PAGE_SIZE);
     const query = filtersToParams({ ...next, recherche: next.recherche.trim() });
     written.current = JSON.stringify(query);
     if (timer.current) clearTimeout(timer.current);
@@ -106,7 +115,7 @@ export default function AssembleeScreen() {
     }, URL_DELAY);
   };
 
-  const { months, count, total } = vm.list(filters);
+  const { months, countLabel, moreLabel } = vm.list(filters, limit);
   const card = {
     backgroundColor: colors.surface.primary,
     borderWidth: 1,
@@ -119,59 +128,57 @@ export default function AssembleeScreen() {
     <Page
       meta={vm.meta}
       loading={vm.status !== 'loaded'}
-      back={{ label: t('common.back'), href: '/comprendre' }}
+      back={{ label: COPY.common.back, href: '/comprendre' }}
     >
       <View style={{ gap: 6 }}>
-        <Text variant="title">{t('list.title')}</Text>
-        <Text style={{ color: colors.text.secondary, fontSize: 17 }}>{t('list.lead')}</Text>
+        <Text variant="title">{COPY.list.title}</Text>
+        <Text style={{ color: colors.text.secondary, fontSize: 17 }}>{vm.lead}</Text>
       </View>
 
       <View
         role="note"
         style={{
-          gap: effects.spacing.xs,
-          padding: effects.spacing.md,
+          padding: effects.spacing.sm,
           borderRadius: effects.borderRadius.small,
           backgroundColor: colors.tintSoft,
         }}
       >
-        <Text style={{ fontSize: 16, lineHeight: 24 }}>{vm.warning}</Text>
+        <Text style={{ fontSize: 15, lineHeight: 22 }}>{vm.warning}</Text>
       </View>
 
-      <Article493Note note={vm.article493} />
-
-      <View style={{ gap: effects.spacing.xs }}>
-        <Text variant="caption" headingLevel={2}>
-          {t('list.criteriaTitle')}
-        </Text>
-        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.criteria.lead}</Text>
-        {vm.criteria.rules.map((rule) => (
-          <Text key={rule} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
-            {`• ${rule}`}
-          </Text>
-        ))}
-        <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.criteria.excluded}</Text>
-        <TextLink href="/methodologie#votes-assemblee" standalone>
-          {t('list.methodLink')}
-        </TextLink>
-        <TextLink href={vm.officialListUrl} standalone>
-          {t('common.officialListLink')}
-        </TextLink>
-      </View>
+      <Accordion title={vm.criteria.title} headingLevel={2}>
+        <View style={{ gap: effects.spacing.xs }}>
+          <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.criteria.lead}</Text>
+          {vm.criteria.rules.map((rule) => (
+            <Text key={rule} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+              {`• ${rule}`}
+            </Text>
+          ))}
+          <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.criteria.excluded}</Text>
+          <Article493Note note={vm.article493} />
+          <TextLink href="/methodologie#votes-assemblee" standalone>
+            {COPY.list.methodLink}
+          </TextLink>
+          <TextLink href={vm.officialListUrl} standalone>
+            {COPY.common.officialListLink}
+          </TextLink>
+        </View>
+      </Accordion>
 
       <ScrutinFilters
         filters={filters}
         onChange={change}
         categories={vm.categories}
         years={vm.years}
+        button={vm.filterButton(filters)}
       />
 
       <Text aria-live="polite" style={{ fontSize: 14, color: colors.text.secondary }}>
-        {t('list.count', { count, total })}
+        {countLabel}
       </Text>
 
       {months.length === 0 ? (
-        <Text style={{ fontSize: 16, color: colors.text.secondary }}>{t('list.empty')}</Text>
+        <Text style={{ fontSize: 16, color: colors.text.secondary }}>{COPY.list.empty}</Text>
       ) : (
         months.map((month) => (
           <View key={month.mois} style={{ gap: effects.spacing.xs }}>
@@ -186,6 +193,12 @@ export default function AssembleeScreen() {
           </View>
         ))
       )}
+
+      {moreLabel ? (
+        <Button variant="secondary" onPress={() => setLimit(limit + LIST_PAGE_SIZE)}>
+          {moreLabel}
+        </Button>
+      ) : null}
 
       {vm.source ? <DataSourceNote source={vm.source} /> : null}
     </Page>

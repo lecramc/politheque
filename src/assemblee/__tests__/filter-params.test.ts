@@ -1,4 +1,9 @@
-import { filtersToParams, parseFilterParams, yearsOf } from '@/src/assemblee/models/filter-params';
+import {
+  activeFilterCount,
+  filtersToParams,
+  parseFilterParams,
+  yearsOf,
+} from '@/src/assemblee/models/filter-params';
 import { scrutinFactory } from '@/src/assemblee/models/scrutin.factory';
 
 describe('Feature: filtres de la liste dans l’adresse', () => {
@@ -51,5 +56,15 @@ describe('Feature: filtres de la liste dans l’adresse', () => {
       scrutinFactory({ date: '2025-04-10' }),
     ];
     expect(yearsOf(scrutins)).toEqual(['2024', '2025', '2026']);
+  });
+
+  it('should count the filters of the sheet, not the search field next to the button', () => {
+    const none = { categorie: 'toutes', resultat: 'tous', annee: null, recherche: '' } as const;
+    expect(activeFilterCount(none)).toBe(0);
+    expect(activeFilterCount({ ...none, recherche: 'budget' })).toBe(0);
+    expect(activeFilterCount({ ...none, categorie: 'censure' })).toBe(1);
+    expect(
+      activeFilterCount({ categorie: 'texte', resultat: 'adopte', annee: '2025', recherche: '' })
+    ).toBe(3);
   });
 });

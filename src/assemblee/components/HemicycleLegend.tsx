@@ -4,44 +4,27 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
-import { t } from '@/src/assemblee/i18n/translate';
-import { orderedPositions, positionLabel } from '@/src/assemblee/models/deputy-table';
-import type { VoteCode } from '@/src/assemblee/models/scrutin.model';
-import type { SeatGlyph } from '@/src/assemblee/models/seat-view';
-
-const GLYPH: Record<Exclude<VoteCode, '.'>, SeatGlyph> = {
-  P: 'disc',
-  C: 'disc-slash',
-  A: 'ring',
-  N: 'dot',
-  '-': 'dashed',
-};
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
+import type { LegendEntry } from '@/src/assemblee/models/hemicycle-legend';
 
 /**
- * Légende textuelle des formes. Motion de censure : l'Assemblée ne recense que les voix pour, il
- * n'y a ni « contre » ni abstention à légender.
+ * Légende textuelle des formes : quatre entrées (pour, contre, abstention, n'a pas voté), deux
+ * pour une motion de censure. Le repère de délégation n'est pas sur le schéma.
  */
-export function HemicycleLegend({ censure }: { censure: boolean }) {
+export function HemicycleLegend({ entries }: { entries: LegendEntry[] }) {
   const { colors, effects } = useTheme();
-  const codes = orderedPositions(['P', 'C', 'A', 'N', '-'], censure) as Exclude<VoteCode, '.'>[];
   return (
     <View
       role="group"
-      aria-label={t('legend.title')}
+      aria-label={COPY.legend.title}
       style={{ flexDirection: 'row', flexWrap: 'wrap', columnGap: effects.spacing.md, rowGap: 6 }}
     >
-      {codes.map((code) => (
-        <View key={code} style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-          <VoteGlyph glyph={GLYPH[code]} size={18} />
-          <Text style={{ fontSize: 14, color: colors.text.primary }}>
-            {positionLabel(code, censure)}
-          </Text>
+      {entries.map((entry) => (
+        <View key={entry.code} style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+          <VoteGlyph glyph={entry.glyph} size={18} />
+          <Text style={{ fontSize: 14, color: colors.text.primary }}>{entry.label}</Text>
         </View>
       ))}
-      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
-        <VoteGlyph glyph="disc" delegation size={18} />
-        <Text style={{ fontSize: 14, color: colors.text.primary }}>{t('legend.delegation')}</Text>
-      </View>
     </View>
   );
 }

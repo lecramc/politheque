@@ -1,0 +1,312 @@
+import { PERIMETER_RULES } from '@/src/assemblee/models/extraction/perimeter';
+import type { ScrutinCategory, ScrutinType } from '@/src/assemblee/models/scrutin.model';
+
+/**
+ * Tous les textes du domaine « Assemblée » : le site est en français uniquement, les textes sont
+ * des constantes ou des fonctions typées (testées), jamais des clés à résoudre.
+ *
+ * Vocabulaire : « vote » partout ; « scrutin n° » ne sert que de référence. Pas de jargon sans
+ * explication : le test des textes liste les termes à ne pas laisser dans les libellés visibles.
+ */
+
+/** Français : 0 et 1 au singulier. */
+export const pluralize = (count: number, one: string, other: string): string =>
+  count <= 1 ? one : other;
+
+export const COPY = {
+  common: {
+    back: 'Comprendre',
+    backToList: 'Tous les votes',
+    source: (licence: string, date: string) =>
+      `Source : Assemblée nationale, open data, ${licence}. Données extraites le ${date}.`,
+    sourceDetail: (dernier: string, sha: string) =>
+      `Dernier scrutin retenu : ${dernier}. Empreinte SHA-256 du fichier des scrutins : ${sha}…`,
+    officialListLink: "Tous les votes sur le site de l'Assemblée nationale",
+  },
+  category: {
+    texte: 'Texte entier',
+    'article-unique': 'Texte à un seul article',
+    censure: 'Censure du Gouvernement',
+    declaration: 'Déclaration du Gouvernement',
+    resolution: 'Résolution',
+    confiance: 'Vote de confiance',
+    'rejet-prealable': 'Rejet préalable',
+    'partie-budget': 'Budget : une partie',
+  } satisfies Record<ScrutinCategory, string>,
+  /** Une ligne d'aide par catégorie (feuille de filtres). */
+  categoryHelp: {
+    texte: 'Vote final sur une loi ou une résolution, tous articles réunis.',
+    'article-unique': "Le texte ne compte qu'un article : le vote porte sur cet article.",
+    censure: 'Les députés votent pour renverser le Gouvernement.',
+    declaration: 'Le Gouvernement présente sa politique, les députés votent ensuite.',
+    resolution: "Texte où l'Assemblée donne un avis, sans valeur de loi.",
+    confiance:
+      "Le Premier ministre présente sa politique générale et demande la confiance de l'Assemblée.",
+    'rejet-prealable':
+      "Une motion adoptée écarte le texte : l'Assemblée le rejette sans l'examiner article par article.",
+    'partie-budget':
+      "Vote sur une partie du budget de l'État ou de la Sécurité sociale (recettes, dépenses ou équilibre).",
+  } satisfies Record<ScrutinCategory, string>,
+  voteType: {
+    SPO: 'Vote public',
+    SPS: 'Vote solennel',
+    MOC: 'Motion de censure',
+  } satisfies Record<ScrutinType, string>,
+  voteTypeDetail: {
+    SPO: 'Vote public : le choix de chaque député est publié',
+    SPS: "Vote solennel : annoncé à l'avance, sur un texte important",
+    MOC: 'Motion de censure',
+  } satisfies Record<ScrutinType, string>,
+  requesterGloss: {
+    'Conférence des Présidents': "(réunion qui organise les travaux de l'Assemblée)",
+  } as Record<string, string>,
+  result: {
+    adopte: 'Adopté',
+    rejete: 'Rejeté',
+    adoptee: 'Adoptée',
+    rejetee: 'Rejetée',
+  },
+  vote: {
+    P: 'Pour',
+    C: 'Contre',
+    A: 'Abstention',
+    N: 'Ne prend pas part au vote',
+    none: "N'a pas voté",
+    vacant: 'Siège vacant',
+    censureNone: "N'a pas voté la motion",
+    delegation: 'vote confié à un collègue',
+    miseAuPoint: (souhait: string) =>
+      `Correction après le vote : souhaitait ${souhait}. Le résultat ne change pas.`,
+    souhait: {
+      P: 'voter pour',
+      C: 'voter contre',
+      A: "s'abstenir",
+      N: 'ne pas prendre part au vote',
+    },
+    nonVotantCause: (cause: string) => `Ne prend pas part au vote (${cause})`,
+    cause: {
+      PAN: "présidence de l'Assemblée",
+      PSE: 'présidence de séance',
+      MG: 'membre du Gouvernement',
+    } as Record<string, string>,
+  },
+  list: {
+    title: "Les votes de l'Assemblée",
+    lead: 'Comment les députés ont voté sur les lois, le budget et les motions de censure depuis 2024. Pour chaque vote : le résultat, et le choix de chaque groupe et de chaque député.',
+    warning:
+      "Les votes à main levée ne sont pas enregistrés nom par nom : ils n'apparaissent pas ici.",
+    criteriaTitle: 'Quels votes figurent ici ?',
+    methodLink: "Lire la méthode : votes de l'Assemblée",
+    filters: {
+      title: 'Filtrer les votes',
+      button: (active: number) => (active > 0 ? `Filtrer · ${active}` : 'Filtrer'),
+      category: 'Type de vote',
+      allCategories: 'Tous les types',
+      result: 'Résultat',
+      allResults: 'Tous',
+      period: 'Période',
+      allPeriods: 'Depuis 2024',
+      search: 'Rechercher un vote',
+      searchPlaceholder: 'Un mot du titre',
+      reset: 'Effacer les filtres',
+    },
+    count: (count: number, total: number) =>
+      count === total
+        ? `${total} ${pluralize(total, 'vote', 'votes')}`
+        : `${count} ${pluralize(count, 'vote', 'votes')} sur ${total}`,
+    more: (count: number) => `Voir ${count} ${pluralize(count, 'vote', 'votes')} de plus`,
+    empty: 'Aucun vote ne correspond à ces filtres.',
+    counts: (pour: number, contre: number, abstentions: string) =>
+      `${pour} pour · ${contre} contre · ${abstentions}`,
+    countsCensure: (count: number, requis: number) =>
+      `${count} pour · ${requis} ${pluralize(requis, 'nécessaire', 'nécessaires')}`,
+    criteriaLead:
+      'La liste suit une règle fixe, appliquée par programme à tous les scrutins publics de la législature. Est repris tout scrutin qui relève de l’un de ces cas :',
+    criteriaExcluded:
+      'Les votes sur les amendements et sur les articles isolés, les motions de rejet rejetées et les autres motions de procédure ne sont pas repris.',
+    abstentions: (count: number) => `${count} ${pluralize(count, 'abstention', 'abstentions')}`,
+  },
+  verdict: {
+    threshold: (requis: number) => `Il fallait ${requis} voix pour l'adopter.`,
+    censureHeadline: (adopte: boolean) =>
+      adopte
+        ? 'Motion adoptée : le Gouvernement est renversé.'
+        : 'Motion rejetée : le Gouvernement reste en place.',
+    censureDetail: (pour: number, requis: number) =>
+      `${pour} ${pluralize(pour, "député l'a votée", "députés l'ont votée")}. Il en fallait ${requis} (la majorité des membres de l'Assemblée) pour renverser le Gouvernement.`,
+    censureNote:
+      "Seuls les votes « pour » sont comptés. Ne pas voter la motion n'est pas voter contre.",
+  },
+  scrutin: {
+    pageTitle: (numero: number, date: string) => `Scrutin n° ${numero} du ${date}`,
+    reference: (numero: number) => `Scrutin n° ${numero}`,
+    titleNote: (reference: string) =>
+      `${reference}. Titre officiel de l'Assemblée nationale ; seule la première lettre est mise en majuscule.`,
+    header: (date: string, type: string) => `${date} · ${type}`,
+  },
+  details: {
+    title: 'Détails du vote',
+    type: 'Type de vote',
+    requestedBy: 'Scrutin demandé par',
+    votants: 'Ont voté',
+    exprimes: 'Votes pour ou contre (sans les abstentions)',
+    requis: 'Voix nécessaires pour adopter',
+    nonVotants: 'Ne prennent pas part au vote (par exemple la présidence de séance)',
+    nonVotantsVolontaires: 'Ont choisi de ne pas prendre part au vote',
+    delegations: 'Votes confiés à un collègue',
+    misesAuPoint: 'Corrections après le vote',
+    glossaryDelegation:
+      'Vote confié à un collègue : le député absent a chargé un collègue de voter pour lui.',
+    glossaryMiseAuPoint:
+      "Correction après le vote : le député indique qu'il voulait voter autrement ; le résultat ne change pas.",
+  },
+  groups: {
+    lineTitle: (name: string, members: number) =>
+      `${name} · ${members} ${pluralize(members, 'député', 'députés')}`,
+    nonInscrits: 'Non-inscrits : députés sans groupe',
+    said: {
+      pour: (n: number) => `${n} pour`,
+      contre: (n: number) => `${n} contre`,
+      abstention: (n: number) => `${n} ${pluralize(n, 'abstention', 'abstentions')}`,
+      nonVotant: (n: number) =>
+        `${n} ${pluralize(n, 'ne prend pas part au vote', 'ne prennent pas part au vote')}`,
+      none: (n: number) => `${n} ${pluralize(n, "n'a pas voté", "n'ont pas voté")}`,
+      censureVoted: (n: number) => `${n} ${pluralize(n, 'a', 'ont')} voté la motion`,
+      censureNot: (n: number) => `${n} ${pluralize(n, "ne l'a pas votée", "ne l'ont pas votée")}`,
+    },
+    title: 'Vote de chaque groupe',
+    tableToggle: 'Voir le tableau chiffré',
+    caption: "Vote de chaque groupe au jour du vote, selon les décomptes de l'Assemblée nationale.",
+    group: 'Groupe',
+    members: 'Membres',
+    pour: 'Pour',
+    contre: 'Contre',
+    abstention: 'Abstentions',
+    nonVotant: 'Ne prennent pas part au vote',
+    noVote: "N'ont pas voté",
+    censureVoted: 'Ont voté la motion',
+    censureNot: "N'ont pas voté la motion",
+    sortPlaces: 'Ordre des places',
+    sortAlpha: 'Ordre alphabétique',
+    sortLabel: 'Ordre des groupes',
+    note: "Un groupe n'est pas un parti : ses députés ne sont pas tous du même parti.",
+    select: (groupe: string) => `Mettre en évidence les sièges du groupe ${groupe} sur le schéma`,
+    selectedHint: 'Sièges en évidence sur le schéma, plus bas.',
+  },
+  hemicycle: {
+    title: "L'hémicycle",
+    loading: 'Chargement du détail par député',
+    error: "Le détail par député n'a pas pu être chargé.",
+    errorLink: "Voir ce vote sur le site de l'Assemblée nationale",
+    retry: 'Réessayer',
+    label: (numero: number, resume: string) =>
+      `Hémicycle de l'Assemblée nationale au scrutin n° ${numero} : ${resume}.`,
+    mention: 'Schéma simplifié : les sièges sont placés selon leur numéro officiel.',
+    hintTouch: 'Touchez un groupe pour voir ses sièges.',
+    hintHover: 'Survolez un siège pour voir le député.',
+    clearHighlight: 'Retirer la mise en évidence',
+    highlighted: (groupe: string) => `Sièges du groupe ${groupe} en évidence.`,
+    unseatedTitle: 'Députés sans siège identifiable ce jour-là',
+    unseatedNote:
+      "L'open data ne permet pas de savoir quel siège ces députés occupaient ce jour-là : leur position est listée ici, sans être placée sur le schéma.",
+    tooltip: (nom: string, groupe: string, position: string) => `${nom}, ${groupe} : ${position}`,
+  },
+  legend: {
+    title: 'Légende',
+  },
+  deputies: {
+    title: 'Chercher un député',
+    search: 'Nom ou prénom',
+    searchPlaceholder: 'Par exemple : Martin',
+    showAll: (count: number) => `Afficher les ${count} députés`,
+    hideAll: 'Masquer la liste',
+    filterButton: (active: number) => (active > 0 ? `Filtrer · ${active}` : 'Filtrer'),
+    filterTitle: 'Filtrer les députés',
+    filterGroup: 'Groupe',
+    filterPosition: 'Position',
+    allGroups: 'Tous les groupes',
+    allPositions: 'Toutes les positions',
+    reset: 'Effacer les filtres',
+    none: 'Aucun député ne correspond à ces critères.',
+    count: (count: number) => `${count} ${pluralize(count, 'député', 'députés')}`,
+    listLabel: 'Vote de chaque député, par ordre alphabétique',
+  },
+  others: {
+    title: 'Autres votes sur ce texte',
+    lead: 'Autres votes de la liste portant sur le même texte.',
+    dossier: "Toutes les étapes de ce texte, sur le site de l'Assemblée nationale",
+  },
+  cited: {
+    title: 'Ce vote est cité dans',
+    item: (partie: string, onglet: string) => `${partie}, onglet ${onglet}`,
+    note: 'Fiches de Polithèque dont les sources citent ce vote.',
+  },
+  source: {
+    title: 'Source et licence',
+    official: "Page officielle de ce vote sur le site de l'Assemblée nationale",
+    licenceLine: (licence: string) =>
+      `Données de l'Assemblée nationale réutilisées sous ${licence}.`,
+  },
+  seo: {
+    listTitle: "Les votes de l'Assemblée nationale",
+    listDescription: (count: number) =>
+      `${count} votes depuis les élections de 2024, retenus par une règle fixe : textes de loi, motions de censure, avec le vote de chaque groupe et de chaque député.`,
+    scrutinTitle: (numero: number, date: string, titre: string) =>
+      `Scrutin n° ${numero} du ${date} : ${titre}`,
+    scrutinDescriptionAdopted: (numero: number, decompte: string) =>
+      `Scrutin n° ${numero}. Adopté : ${decompte}. Vote de chaque groupe et de chaque député.`,
+    scrutinDescriptionRejected: (numero: number, decompte: string) =>
+      `Scrutin n° ${numero}. Rejeté : ${decompte}. Vote de chaque groupe et de chaque député.`,
+    scrutinDescriptionCensureAdopted: (numero: number, pour: number, requis: number) =>
+      `Scrutin n° ${numero}. Motion adoptée : ${pour} voix pour, ${requis} requises. Vote de chaque groupe et de chaque député.`,
+    scrutinDescriptionCensureRejected: (numero: number, pour: number, requis: number) =>
+      `Scrutin n° ${numero}. Motion rejetée : ${pour} voix pour, ${requis} requises. Vote de chaque groupe et de chaque député.`,
+  },
+  comprendre: {
+    cardTitle: "Les votes de l'Assemblée",
+    cardText:
+      'Le résultat, le vote de chaque groupe et de chaque député sur les lois, le budget et les motions de censure.',
+    cardMeta: (count: number) => `${count} votes`,
+  },
+  method: {
+    title: "Votes de l'Assemblée",
+    intro:
+      "La page « Les votes de l'Assemblée » reprend, sans résumer ni réécrire les titres officiels, les scrutins publics de la 17e législature publiés en open data par l'Assemblée nationale. Seuls les noms des catégories et les phrases de résultat sont rédigés par Polithèque.",
+    criteriaTitle: 'Quels scrutins sont publiés',
+    criteriaLead:
+      'La liste suit une règle fixe, appliquée par programme à tous les scrutins publics, sans exception manuelle. Est repris tout scrutin qui relève de l’un de ces cas :',
+    rules: PERIMETER_RULES,
+    sourceTitle: 'Source et licence',
+    source:
+      "Les données viennent des fichiers « Scrutins » et « Acteurs, mandats et organes » de l'open data de l'Assemblée nationale (data.assemblee-nationale.fr). Elles sont publiées sous Licence Ouverte / Open Licence (Etalab) : source citée sur chaque page, avec la date d'extraction. Chaque page de scrutin renvoie à la page officielle de l'Assemblée.",
+    limitsTitle: 'Limites à connaître',
+    limitHand:
+      "À main levée : seuls les votes par scrutin public sont enregistrés nominativement. Un texte adopté à main levée n'apparaît pas.",
+    limitSchema:
+      "Schéma : les sièges sont rangés selon leur numéro de place officiel ; ce n'est pas le plan exact de l'hémicycle, que l'Assemblée ne publie pas sous forme de coordonnées.",
+    limitCensure:
+      "Motions de censure : l'Assemblée ne recense que les voix pour ; les autres députés n'ont pas voté la motion, ce qui n'est pas un vote contre.",
+    limitDelegation:
+      "Délégations : un député peut voter par délégation d'un collègue ; la page l'indique sans l'interpréter.",
+    limitPoint:
+      "Mises au point : un député peut publier après coup qu'il souhaitait voter autrement. Elle est affichée comme telle, et ne modifie ni le résultat ni les décomptes.",
+    limitGroups:
+      "Groupes : un groupe parlementaire n'est pas un parti. Le groupe affiché est celui du jour du scrutin.",
+    neutrality:
+      'Aucun taux de présence, de loyauté ou de cohésion, aucun classement, aucun score : la page montre les votes, pas un jugement sur les députés ou les groupes.',
+    link: "Voir les votes de l'Assemblée",
+    criteriaExcluded:
+      'Les votes sur les amendements et sur les articles isolés, les motions de rejet rejetées et les autres motions de procédure ne sont pas repris.',
+    limit493:
+      "Article 49, alinéa 3 : un texte adopté par cette procédure n'est pas voté (il est considéré comme adopté, sauf si une motion de censure est adoptée) ; seules les motions de censure déposées en réponse apparaissent. Cette note est rappelée sur les motions de l'alinéa 3 et sur les votes sur une partie d'une loi de finances.",
+    limitNonVoters:
+      'Non-votants : quand la source en donne la cause (présidence de séance, membre du Gouvernement), elle est affichée dans la liste des députés.',
+  },
+  notes: {
+    article493:
+      "Quand le Gouvernement engage sa responsabilité sur un texte (article 49, alinéa 3), le texte est considéré comme adopté sans vote, sauf si une motion de censure est adoptée. Il n'y a donc pas de vote final sur ce texte : seules les motions de censure déposées en réponse apparaissent ici.",
+    article493Source: 'Constitution du 4 octobre 1958, article 49 (texte en vigueur)',
+    budgetMotions: 'Motions de censure déposées sur ce texte (article 49, alinéa 3)',
+    budgetMotionItem: (numero: number, resultat: string) => `n° ${numero} : ${resultat}`,
+  },
+};

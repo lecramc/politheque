@@ -137,47 +137,86 @@ describe('Feature: page d’un scrutin', () => {
     expect(vm().scrutin(1)).toBeNull();
   });
 
-  it('should show the header with the official title, date, category, type of vote and requesters', () => {
+  it('should open with one header line (date · type of vote), the official title and a small reference', () => {
     const page = vm().scrutin(580)!;
     expect(page).toMatchObject({
-      heading: 'Scrutin n° 580 du 22 janvier 2025',
+      heading: '22 janvier 2025 · Vote solennel',
+      reference: 'Scrutin n° 580',
       titre: "L'ensemble du projet de loi d'urgence pour Mayotte (première lecture).",
       dateIso: '2025-01-22',
-      categorie: "Vote sur l'ensemble d'un texte",
-      type: 'Scrutin public solennel',
-      demandeurs: ['Président du groupe "A"', 'Présidente du groupe "B"'],
       sourceUrl: 'https://www.assemblee-nationale.fr/dyn/17/scrutins/580',
     });
   });
 
-  it('should state the result in one factual sentence', () => {
-    expect(vm().scrutin(580)!.resultat).toBe(
-      'Adopté : 3 pour, 1 contre, 1 abstention. Majorité requise : 3 voix.'
-    );
+  it('should give the verdict right after the title: one word, the counts, what was needed', () => {
+    expect(vm().scrutin(580)!.verdict).toMatchObject({
+      kind: 'standard',
+      headline: 'Adopté',
+      counts: '3 pour · 1 contre · 1 abstention',
+      threshold: "Il fallait 3 voix pour l'adopter.",
+    });
   });
 
-  it('should word a censure motion without « contre » and say what the source records', () => {
+  it('should word a censure motion by what it decided, without « contre »', () => {
     const page = vm().scrutin(7979)!;
-    expect(page.resultat).toBe(
-      "Motion rejetée : 2 voix pour, 2 requises (majorité des membres de l'Assemblée)."
-    );
+    expect(page.verdict).toMatchObject({
+      kind: 'censure',
+      headline: 'Motion rejetée : le Gouvernement reste en place.',
+      detail:
+        "2 députés l'ont votée. Il en fallait 2 (la majorité des membres de l'Assemblée) pour renverser le Gouvernement.",
+    });
     expect(page.censure).toBe(true);
-    expect(page.synthese.map((s) => s.id)).not.toContain('contre');
+    expect(page.details.map((d) => d.id)).not.toContain('votants');
     expect(vm().scrutin(580)!.censure).toBe(false);
   });
 
-  it('should give the synthesis counts of the Assemblée', () => {
-    const synth = vm().scrutin(580)!.synthese;
-    expect(synth.find((s) => s.id === 'pour')).toMatchObject({ label: 'Pour', value: 3 });
-    expect(synth.map((s) => s.id)).toEqual([
-      'votants',
-      'exprimes',
-      'requis',
-      'pour',
-      'contre',
-      'abstentions',
-      'nonVotants',
+  it('should fold the technical facts into the details of the vote, in plain words', () => {
+    const { details } = vm().scrutin(580)!;
+    expect(details.map((d) => [d.id, d.label])).toEqual([
+      ['type', 'Type de vote'],
+      ['demandeur', 'Scrutin demandé par'],
+      ['votants', 'Ont voté'],
+      ['exprimes', 'Votes pour ou contre (sans les abstentions)'],
+      ['requis', 'Voix nécessaires pour adopter'],
+      ['nonVotants', 'Ne prennent pas part au vote (par exemple la présidence de séance)'],
+      ['delegations', 'Votes confiés à un collègue'],
+      ['misesAuPoint', 'Corrections après le vote'],
     ]);
+    expect(details.find((d) => d.id === 'type')!.values).toEqual([
+      "Vote solennel : annoncé à l'avance, sur un texte important",
+    ]);
+    expect(details.find((d) => d.id === 'demandeur')!.values).toEqual([
+      'Président du groupe "A"',
+      'Présidente du groupe "B"',
+    ]);
+    expect(details.find((d) => d.id === 'votants')!.values).toEqual(['5']);
+  });
+
+  it('should count the delegations and the corrections in the details, with their definition', () => {
+    const page = vm(
+      base()
+        .withIndex(
+          indexFactory({
+            groupes,
+            scrutins: [scrutinFactory({ numero: 9, delegations: 201, misesAuPoint: 5 })],
+          })
+        )
+        .build()
+    ).scrutin(9)!;
+    expect(page.details.find((d) => d.id === 'delegations')!.values).toEqual(['201']);
+    expect(page.details.find((d) => d.id === 'misesAuPoint')!.values).toEqual(['5']);
+    expect(page.glossary).toEqual([
+      'Vote confié à un collègue : le député absent a chargé un collègue de voter pour lui.',
+      "Correction après le vote : le député indique qu'il voulait voter autrement ; le résultat ne change pas.",
+    ]);
+  });
+
+  it('should leave the votants out of the details of a censure motion, which would repeat the votes for', () => {
+    expect(
+      vm()
+        .scrutin(7979)!
+        .details.map((d) => d.id)
+    ).toEqual(['type', 'requis', 'nonVotants', 'delegations', 'misesAuPoint']);
   });
 
   it('should explain article 49, alinéa 3, with its source, on a third-alinea motion and on a part of a finance bill only', () => {
@@ -204,7 +243,7 @@ describe('Feature: page d’un scrutin', () => {
     const ids = (numero: number) =>
       vm()
         .scrutin(numero)!
-        .synthese.map((s) => s.id);
+        .details.map((d) => d.id);
     expect(ids(580)).not.toContain('nonVotantsVolontaires');
     const withVoluntary = base()
       .withIndex(
@@ -219,8 +258,14 @@ describe('Feature: page d’un scrutin', () => {
         })
       )
       .build();
-    const synth = vm(withVoluntary).scrutin(1)!.synthese;
-    expect(synth.at(-1)).toMatchObject({ id: 'nonVotantsVolontaires', value: 2 });
+    const details = vm(withVoluntary).scrutin(1)!.details;
+    expect(details.find((d) => d.id === 'nonVotantsVolontaires')).toMatchObject({
+      label: 'Ont choisi de ne pas prendre part au vote',
+      values: ['2'],
+    });
+    expect(details.map((d) => d.id).indexOf('nonVotantsVolontaires')).toBe(
+      details.map((d) => d.id).indexOf('nonVotants') + 1
+    );
   });
 
   it('should pre-render the group table in seat order, with an alphabetical option', () => {
@@ -333,13 +378,90 @@ describe('Feature: détail par député', () => {
 
   it('should sum the votes in a single accessible label, not one stop per seat', () => {
     expect(ready().ariaLabel).toBe(
-      "Hémicycle de l'Assemblée nationale au scrutin n° 580 : 1 pour, 1 contre, 1 abstention, 1 non-votant, 1 sans vote enregistré."
+      "Hémicycle de l'Assemblée nationale au scrutin n° 580 : 1 pour, 1 contre, 1 abstention, 1 ne prend pas part au vote, 1 n'a pas voté."
     );
+  });
+
+  it('should legend four shapes, and two for a censure motion', () => {
+    expect(ready().legend.map((e) => e.label)).toEqual([
+      'Pour',
+      'Contre',
+      'Abstention',
+      "N'a pas voté",
+    ]);
+    const motion = base()
+      .withDetail(
+        detailFactory({
+          ...detail,
+          numero: 7979,
+          votes: 'PC',
+          places: [1, 2],
+          deputes: [0, 1],
+          groupes: [0, 0],
+          delegations: [],
+        })
+      )
+      .withDeputes(directory)
+      .build();
+    const view = vm(motion).scrutin(7979)!.hemicycle;
+    if (view.status !== 'ready') throw new Error('hémicycle non prêt');
+    expect(view.legend.map((e) => e.label)).toEqual(['Pour', "N'a pas voté la motion"]);
+  });
+
+  it('should name the groups with one template, in the one order of the page', () => {
+    expect(ready().groupes('places')[0]).toMatchObject({
+      index: 0,
+      name: 'La France insoumise (LFI-NFP)',
+    });
+    expect(
+      ready()
+        .groupes('alphabetique')
+        .map((g) => g.name)
+    ).toEqual(
+      ready()
+        .groupes('alphabetique')
+        .map((g) => `${g.libelle} (${g.abrev})`)
+    );
+  });
+
+  it('should offer the positions of the filter in a fixed order, in words', () => {
+    expect(ready().positions).toEqual([
+      { code: 'P', label: 'Pour' },
+      { code: 'C', label: 'Contre' },
+      { code: 'A', label: 'Abstention' },
+      { code: 'N', label: 'Ne prend pas part au vote' },
+      { code: '-', label: "N'a pas voté" },
+    ]);
+  });
+
+  it('should write the tooltip of a seat, and the lines of the deputies without a seat', () => {
+    const view = ready();
+    expect(view.tooltipOf(2)).toBe('Anne Martin, RN : Contre');
+    expect(view.tooltipOf(99)).toBeNull();
+    const withUnseated = base()
+      .withDetail({
+        ...detail,
+        sansPlace: [{ depute: 4, groupe: 0, vote: 'C', delegation: true }],
+      })
+      .withDeputes(directory)
+      .build();
+    const page = vm(withUnseated).scrutin(580)!.hemicycle;
+    if (page.status !== 'ready') throw new Error('hémicycle non prêt');
+    expect(page.unseatedLines).toEqual([
+      'Zoé Zanetti (LFI-NFP) : Contre · vote confié à un collègue',
+    ]);
+  });
+
+  it('should give a tight box for narrow screens: no room kept around the arc for the labels', () => {
+    const view = ready();
+    expect(view.compactBox.width).toBeLessThan(view.box.width);
+    expect(view.compactBox.ratio).toBeLessThan(view.box.ratio);
+    expect(view.compactBox.cx).toBe(view.box.cx);
   });
 
   it('should give one seat per place with a shape for each position', () => {
     const { seats } = ready();
-    expect(seats.map((s) => s.glyph)).toEqual(['disc', 'disc-slash', 'ring', 'dot', 'dashed']);
+    expect(seats.map((s) => s.glyph)).toEqual(['disc', 'disc-slash', 'ring', 'dashed', 'dashed']);
   });
 
   it('should list the deputies alphabetically with the group of the day', () => {
@@ -356,6 +478,8 @@ describe('Feature: détail par député', () => {
   it('should filter the deputies', () => {
     const page = vm(base().withDetail(detail).withDeputes(directory).build()).scrutin(580)!;
     if (page.hemicycle.status !== 'ready') throw new Error();
-    expect(page.hemicycle.filter({ recherche: 'martin' }).map((r) => r.id)).toEqual(['PA2']);
+    expect(page.hemicycle.search({ recherche: 'martin' }, false).rows.map((r) => r.id)).toEqual([
+      'PA2',
+    ]);
   });
 });
