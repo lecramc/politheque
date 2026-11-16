@@ -24,15 +24,17 @@ import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { Only } from '@/src/core/components/Only';
-import { APP_NAME } from '@/src/core/config/app';
+import { APP_NAME, REPORT_EMAIL } from '@/src/core/config/app';
 import { tv } from '@/src/core/web/tv';
 import { Breadcrumb } from '@/src/programmes/components/Breadcrumb';
 import { ElectionChip } from '@/src/programmes/components/ElectionChip';
 import { Logo, Tricolore } from '@/src/programmes/components/Logo';
 import { RailLayout } from '@/src/programmes/components/RailLayout';
+import { ReportError } from '@/src/programmes/components/ReportError';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { PageSkeleton } from '@/src/programmes/components/Skeleton';
 import { hasReachedEnd } from '@/src/programmes/models/reach-end.service';
+import { buildReportLinks } from '@/src/programmes/models/report-error.service';
 import {
   nonIndexableMeta,
   type Breadcrumb as BreadcrumbTrail,
@@ -246,6 +248,15 @@ export function Page({
     meta === undefined && !loading
       ? nonIndexableMeta(title ?? APP_NAME, canonicalPath(pathname))
       : meta;
+  const reportLinks =
+    loading || !headMeta
+      ? null
+      : buildReportLinks({
+          pathname: canonicalPath(pathname),
+          title: headMeta.title,
+          indexable: headMeta.robots === 'index, follow',
+          email: REPORT_EMAIL,
+        });
   const trail = breadcrumb ?? headMeta?.breadcrumb ?? [];
   const showTabBar = !focus;
   // Sans rail, une page `object` est une colonne de lecture centrée (voir `RailLayout`).
@@ -462,6 +473,7 @@ export function Page({
               </View>
             </Enter>
           )}
+          {reportLinks ? <ReportError links={reportLinks} /> : null}
         </View>
         <View
           {...tv('container', 'no-print')}
