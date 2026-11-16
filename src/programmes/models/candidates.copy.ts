@@ -10,7 +10,7 @@ export const CANDIDATE_PROGRAMME_LABELS: Record<CandidateProgrammeState, string>
 
 /** Libellés des liens sortants de chaque entrée. */
 export const CANDIDATE_LINK_LABELS = {
-  officialSite: 'Site officiel',
+  officialSite: 'Site de campagne ou du parti',
   programme: 'Lire le programme',
   hatvp: 'Fiche HATVP',
 } as const;
