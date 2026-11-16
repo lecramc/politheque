@@ -1,0 +1,84 @@
+# Mise à jour quotidienne des votes de l'Assemblée nationale (open data officiel).
+#
+# Le script réécrit toujours manifest.json (date d'extraction, empreintes des zips) : ce fichier
+# change donc chaque jour même sans nouveau vote. On ne commite que si autre chose a changé
+# (scrutins, index, députés) ; sinon on annule la seule variation du manifeste et on termine
+# sans commit. Le préfixe `build:` n'entraîne ni bump de version ni entrée de CHANGELOG.
+name: Mise à jour des votes de l'Assemblée
+
+on:
+  schedule:
+    # 05:30 UTC = 06:30 ou 07:30 à Paris (tôt le matin, toute l'année)
+    - cron: '30 5 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: assemblee-update
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Installer les dépendances
+        run: npm ci
+        env:
+          HUSKY: '0'
+
+      - name: Télécharger et régénérer les données
+        run: npm run assemblee:update
+
+      - name: Tests du domaine
+        run: npx vitest run src/assemblee
+
+      - name: Vérifier le périmètre des changements
+        id: changes
+        run: |
+          changed="$(git status --porcelain | cut -c4-)"
+          if [ -z "$changed" ]; then
+            echo "Aucun changement."
+            echo "commit=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          # Fichiers modifiés hors du périmètre autorisé (.cache est ignoré par git)
+          outside="$(echo "$changed" | grep -v -e '^src/assemblee/data/' -e '^public/donnees/assemblee/' || true)"
+          if [ -n "$outside" ]; then
+            echo "::error::Fichiers modifiés hors de src/assemblee/data/ et public/donnees/assemblee/ :"
+            echo "$outside"
+            exit 1
+          fi
+
+          # Changements réels : tout sauf le manifeste (seuls date et empreintes y varient)
+          substantive="$(echo "$changed" | grep -v '^src/assemblee/data/manifest.json$' || true)"
+          if [ -z "$substantive" ]; then
+            echo "Seul le manifeste a changé (date d'extraction) : pas de commit."
+            git checkout -- src/assemblee/data/manifest.json
+            echo "commit=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "commit=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commiter et pousser
+        if: steps.changes.outputs.commit == 'true'
+        run: |
+          date="$(TZ=Europe/Paris date +%F)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/assemblee/data public/donnees/assemblee
+          git commit -m "build: hémicycle — votes de l'Assemblée au ${date}"
+          git pull --rebase origin main
+          git push origin HEAD:main
