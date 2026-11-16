@@ -87,6 +87,13 @@ describe('Feature: view-model de la page « Comment voter »', () => {
     expect(vm.lesson).toMatchObject({ id: 'comment-voter', href: '/comprendre/comment-voter' });
   });
 
+  it('should offer the calendar file next to the summary', () => {
+    expect(voterViewModel()(real).agenda).toEqual({
+      href: '/agenda-presidentielle-2027.ics',
+      label: 'Ajouter les dates à mon agenda',
+    });
+  });
+
   it('should list the sources of the summary and of every section', () => {
     const vm = voterViewModel()(real);
     expect(vm.allSources.length).toBeGreaterThan(vm.sections.length);
@@ -108,6 +115,7 @@ describe('Feature: liens de la page élection vers les contenus 2027', () => {
       voter: '/elections/presidentielle-2027/voter',
       faq: '/elections/presidentielle-2027/questions',
       candidates: '/elections/presidentielle-2027/candidats',
+      agenda: expect.objectContaining({ href: '/agenda-presidentielle-2027.ics' }),
     });
   });
 

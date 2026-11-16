@@ -33,6 +33,10 @@ describe('Feature: page de l’élection (dates, puis comment voter, puis candid
     expect(vm.voteGuide.href).toBe('/comprendre/comment-voter');
   });
 
+  it('should offer the calendar file from the election page', () => {
+    expect(vmOf().contentLinks?.agenda.href).toBe('/agenda-presidentielle-2027.ics');
+  });
+
   it('should point to the full list of declared candidates from the candidacies section', () => {
     expect(vmOf().contentLinks?.candidates).toBe('/elections/presidentielle-2027/candidats');
   });

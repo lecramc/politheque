@@ -1,6 +1,6 @@
 import { useLocalSearchParams } from 'expo-router';
 import React, { useState } from 'react';
-import { View } from 'react-native';
+import { Linking, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
@@ -146,6 +146,16 @@ export default function ElectionScreen() {
             ))}
             {vm.contentLinks ? (
               <>
+                <View style={{ alignSelf: 'flex-start' }}>
+                  <Button
+                    variant="secondary"
+                    fullWidth={false}
+                    icon="calendar-outline"
+                    onPress={() => Linking.openURL(vm.contentLinks!.agenda.href)}
+                  >
+                    {vm.contentLinks.agenda.label}
+                  </Button>
+                </View>
                 <TextLink href={vm.contentLinks.voter} standalone>
                   Tout savoir pour voter
                 </TextLink>

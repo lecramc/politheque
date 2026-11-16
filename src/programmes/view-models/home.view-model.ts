@@ -1,5 +1,6 @@
 import { createSelector } from 'reselect';
 
+import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { electionFacts } from '@/src/programmes/models/election.service';
 import {
   HOME_COPY,
@@ -49,7 +50,11 @@ export const homeViewModel = () =>
                 id: 'voter' as const,
                 ...TASK_COPY.voter,
                 subtitle: voterSubtitle(facts.firstRound, facts.registrationDeadline),
-                href: `/elections/${election.id}`,
+                // Un clic : la page « Comment voter » quand elle existe pour cette élection.
+                href:
+                  catalog?.voter.electionId === election.id
+                    ? CONTENUS_2027_PATHS.voter
+                    : `/elections/${election.id}`,
                 primary: false,
               },
             ]
