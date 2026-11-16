@@ -53,6 +53,7 @@ const catalog: Catalog = catalogFactory({
         role: 'Judoka',
         summary: 'Annonce sa candidature.',
         sources: [source(1), source(2)],
+        programme: { state: 'non-publie' },
       },
     ],
     withdrawn: [

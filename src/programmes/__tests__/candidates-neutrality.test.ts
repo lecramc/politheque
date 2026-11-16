@@ -59,7 +59,7 @@ describe('Feature: intégrité des données des autres candidats', () => {
   it('should use valid statuses and ISO dates, and no id shared with a party', () => {
     for (const c of candidates.candidates) {
       expect(['declare', 'intention', 'investi', 'designe'], c.id).toContain(c.status);
-      expect(c.date, c.id).toMatch(ISO_DAY_OR_MONTH);
+      if (c.date !== null) expect(c.date, c.id).toMatch(ISO_DAY_OR_MONTH);
       expect(
         catalog.parties.map((p) => p.id),
         c.id

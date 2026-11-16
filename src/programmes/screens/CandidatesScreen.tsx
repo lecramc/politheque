@@ -6,11 +6,13 @@ import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
 import { useScrollToHash } from '@/src/core/hooks/useScrollToHash';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
+import { ExternalLink } from '@/src/programmes/components/ExternalLink';
 import { MoreText } from '@/src/programmes/components/MoreText';
 import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
+import { CANDIDATE_LINK_LABELS } from '@/src/programmes/models/candidates.copy';
 import { withdrawalLabel } from '@/src/programmes/models/candidates.service';
 import { formatPartialDate } from '@/src/programmes/models/seo/dates';
 import { candidatesViewModel } from '@/src/programmes/view-models/candidates.view-model';
@@ -39,6 +41,7 @@ export default function CandidatesScreen() {
         {vm.deadlineNote ? (
           <Text style={{ fontSize: 14, color: colors.text.secondary }}>{vm.deadlineNote}</Text>
         ) : null}
+        <Text style={{ fontSize: 14, color: colors.text.secondary }}>{vm.sponsorshipNote}</Text>
       </View>
 
       <View style={{ gap: effects.spacing.sm }}>
@@ -74,12 +77,42 @@ export default function CandidatesScreen() {
                   <Text style={{ fontSize: 14, color: colors.text.secondary }}>
                     {formatPartialDate(entry.date)}
                   </Text>
-                ) : null}
+                ) : (
+                  <Text style={{ fontSize: 14, color: colors.text.secondary }}>
+                    {entry.dateNote}
+                  </Text>
+                )}
               </View>
               <Text style={{ fontSize: 15, color: colors.text.secondary }}>
                 {entry.role ? `${entry.affiliation} · ${entry.role}` : entry.affiliation}
               </Text>
               <Text style={{ fontSize: 16, lineHeight: 25 }}>{entry.summary}</Text>
+              <Text style={{ fontSize: 15 }}>
+                {entry.programme.label}
+                {entry.programme.href ? (
+                  <>
+                    {' · '}
+                    <ExternalLink href={entry.programme.href} newTab>
+                      {CANDIDATE_LINK_LABELS.programme}
+                    </ExternalLink>
+                  </>
+                ) : null}
+              </Text>
+              {entry.officialSiteHref || entry.hatvpHref ? (
+                <Text style={{ fontSize: 15 }}>
+                  {entry.officialSiteHref ? (
+                    <ExternalLink href={entry.officialSiteHref} newTab>
+                      {CANDIDATE_LINK_LABELS.officialSite}
+                    </ExternalLink>
+                  ) : null}
+                  {entry.officialSiteHref && entry.hatvpHref ? ' · ' : null}
+                  {entry.hatvpHref ? (
+                    <ExternalLink href={entry.hatvpHref} newTab>
+                      {CANDIDATE_LINK_LABELS.hatvp}
+                    </ExternalLink>
+                  ) : null}
+                </Text>
+              ) : null}
               {entry.programmeHref ? (
                 <TextLink href={entry.programmeHref} standalone>
                   Programme et positions

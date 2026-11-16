@@ -62,6 +62,7 @@ describe('Feature: accès à la liste des candidats depuis la tâche « Voter en
       role: '',
       summary: '',
       sources: [],
+      programme: { state: 'non-publie' },
     });
     expect(vmOf(stateBuilder().withCatalog(withCandidate).build()).candidatesLink).toEqual({
       href: '/elections/presidentielle-2027/candidats',

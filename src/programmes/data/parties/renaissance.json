@@ -1209,6 +1209,9 @@
       "programmeStatus": "Programme présidentiel 2027 publié en partie : 96 mesures, « Mes chantiers capitaux », sur le site de campagne attalpresident.fr, sans date de publication indiquée. Le programme complet est annoncé sans date.",
       "programmeState": "partiel",
       "programmeStateDetail": "96 mesures",
+      "officialSite": "https://attalpresident.fr/",
+      "programmeUrl": "https://attalpresident.fr/programme",
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=attal-gabriel",
       "programmePublication": {
         "text": "Publié en partie : 96 mesures sur le site de campagne, date de publication non indiquée ; le programme complet est annoncé sans date.",
         "date": null,

@@ -1,3 +1,4 @@
+import { DATE_NOT_FOUND } from '@/src/programmes/models/candidates.copy';
 import {
   buildCandidateList,
   withdrawalLabel,
@@ -20,6 +21,7 @@ const other = (overrides: Partial<DeclaredCandidate> = {}): DeclaredCandidate =>
   affiliation: 'Sans étiquette',
   role: 'Judoka',
   summary: 'Annonce sa candidature.',
+  programme: { state: 'non-publie' },
   sources: [
     { title: 'Source A', url: 'https://a.example/1', date: '2026-11-09', kind: 'presse' },
     { title: 'Source B', url: 'https://b.example/1', date: '2026-11-09', kind: 'presse' },
@@ -93,9 +95,54 @@ describe('Feature: candidats des dix partis dans la même liste', () => {
         role: null,
         summary: 'Jean-Luc Mélenchon a déclaré sa candidature.',
         programmeHref: '/partis/lfi/programme-2027',
+        dateNote: DATE_NOT_FOUND,
+        officialSiteHref: null,
+        hatvpHref: null,
+        programme: { label: 'Programme 2027 publié', href: null },
         sources: [],
       },
     ]);
+  });
+
+  it('should take the site, programme link and HATVP page from the candidacy of a party', () => {
+    const base = party('lfi', 'La France insoumise', 'Jean-Luc Mélenchon');
+    const candidacy = base.candidacies[ELECTION];
+    const withLinks = {
+      ...base,
+      candidacies: {
+        [ELECTION]: {
+          ...candidacy,
+          programmeState: 'partiel' as const,
+          officialSite: 'https://campagne.example/',
+          programmeUrl: 'https://campagne.example/programme',
+          hatvp: 'https://www.hatvp.fr/fiche-nominative/?declarant=x-y',
+        },
+      },
+    };
+    const [entry] = buildCandidateList([withLinks], [], ELECTION);
+    expect(entry).toMatchObject({
+      officialSiteHref: 'https://campagne.example/',
+      hatvpHref: 'https://www.hatvp.fr/fiche-nominative/?declarant=x-y',
+      programme: {
+        label: 'Programme 2027 publié en partie',
+        href: 'https://campagne.example/programme',
+      },
+    });
+  });
+
+  it('should not link a programme that is not published, even if a URL is still present', () => {
+    const base = party('lfi', 'La France insoumise', 'Jean-Luc Mélenchon');
+    const candidacy = {
+      ...base.candidacies[ELECTION],
+      programmeState: 'non-publie' as const,
+      programmeUrl: 'https://x.example/',
+    };
+    const [entry] = buildCandidateList(
+      [{ ...base, candidacies: { [ELECTION]: candidacy } }],
+      [],
+      ELECTION
+    );
+    expect(entry.programme.href).toBeNull();
   });
 
   it('should ignore a party without candidacy for this election', () => {
@@ -247,5 +294,74 @@ describe('Feature: date de retrait', () => {
   it('should write « en » before a month and « le » before a full date', () => {
     expect(withdrawalLabel('2026-09')).toBe('Retrait en septembre 2026');
     expect(withdrawalLabel('2026-07-07')).toBe('Retrait le 7 juillet 2026');
+  });
+});
+
+describe('Feature: site officiel, programme 2027 et HATVP de chaque candidat', () => {
+  it('should expose the official site of a candidate, or nothing when there is none', () => {
+    const [withSite, without] = buildCandidateList(
+      [],
+      [
+        other({ id: 'a', name: 'Anne Aaa', officialSite: 'https://anne.example/' }),
+        other({ id: 'b', name: 'Bob Bbb' }),
+      ],
+      ELECTION
+    );
+    expect(withSite.officialSiteHref).toBe('https://anne.example/');
+    expect(without.officialSiteHref).toBeNull();
+  });
+
+  it('should expose the HATVP page of a candidate, or nothing when there is none', () => {
+    const [withPage, without] = buildCandidateList(
+      [],
+      [
+        other({
+          id: 'a',
+          name: 'Anne Aaa',
+          hatvp: 'https://www.hatvp.fr/fiche-nominative/?declarant=aaa-anne',
+        }),
+        other({ id: 'b', name: 'Bob Bbb' }),
+      ],
+      ELECTION
+    );
+    expect(withPage.hatvpHref).toBe('https://www.hatvp.fr/fiche-nominative/?declarant=aaa-anne');
+    expect(without.hatvpHref).toBeNull();
+  });
+
+  it('should link a published programme 2027 and label the state of the others without link', () => {
+    const entries = buildCandidateList(
+      [],
+      [
+        other({
+          id: 'a',
+          name: 'Anne Aaa',
+          programme: { state: 'publie', url: 'https://a.example/programme' },
+        }),
+        other({
+          id: 'b',
+          name: 'Bob Bbb',
+          programme: { state: 'partiel', url: 'https://b.example/priorites' },
+        }),
+        other({ id: 'c', name: 'Carl Ccc', programme: { state: 'non-publie' } }),
+        other({ id: 'd', name: 'Dora Ddd', programme: { state: 'inconnu' } }),
+      ],
+      ELECTION
+    );
+    expect(entries.map((e) => e.programme)).toEqual([
+      { label: 'Programme 2027 publié', href: 'https://a.example/programme' },
+      { label: 'Programme 2027 publié en partie', href: 'https://b.example/priorites' },
+      { label: 'Programme 2027 pas encore publié', href: null },
+      { label: 'Programme 2027 : aucune information trouvée', href: null },
+    ]);
+  });
+
+  it('should say the announcement date was not found, only when there is none', () => {
+    const [dated, undated] = buildCandidateList(
+      [],
+      [other({ id: 'a', name: 'Anne Aaa' }), other({ id: 'b', name: 'Bob Bbb', date: null })],
+      ELECTION
+    );
+    expect(dated.dateNote).toBeNull();
+    expect(undated.dateNote).toBe("Date d'annonce non retrouvée");
   });
 });

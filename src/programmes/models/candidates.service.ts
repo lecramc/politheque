@@ -1,6 +1,11 @@
+import {
+  CANDIDATE_PROGRAMME_LABELS,
+  DATE_NOT_FOUND,
+} from '@/src/programmes/models/candidates.copy';
 import { calculatedDateText } from '@/src/programmes/models/contenus-2027';
 import type {
   CandidacyStatus,
+  CandidateProgrammeState,
   DeclaredCandidate,
   DeclaredCandidateStatus,
   FaqEntry,
@@ -30,13 +35,26 @@ export type CandidateEntry = {
   statusLabel: string;
   /** Date du statut (annonce, investiture ou désignation). */
   date: string | null;
+  /** « Date d'annonce non retrouvée » quand Mon Nov 16 21:38:23 CET 2026 est absente. */
+  dateNote: string | null;
   affiliation: string;
   role: string | null;
   summary: string;
   /** Lien « Programme et positions » : seulement pour les candidats des fiches de partis. */
   programmeHref: string | null;
+  /** Site de campagne, ou à défaut du mouvement ou du parti. */
+  officialSiteHref: string | null;
+  /** Fiche nominative sur le site de la HATVP, si elle existe. */
+  hatvpHref: string | null;
+  /** État du programme 2027 officiel ; `href` seulement s'il est publié (en tout ou partie). */
+  programme: { label: string; href: string | null };
   sources: Source[];
 };
+
+const programmeOf = (state: CandidateProgrammeState, url?: string) => ({
+  label: CANDIDATE_PROGRAMME_LABELS[state],
+  href: (state === 'publie' || state === 'partiel') && url ? url : null,
+});
 
 const fromParty = (party: Party, electionId: string): CandidateEntry[] => {
   const candidacy = party.candidacies[electionId];
@@ -47,10 +65,14 @@ const fromParty = (party: Party, electionId: string): CandidateEntry[] => {
           name: candidacy.candidateName,
           statusLabel: UNIFORM_STATUS_LABELS[candidacy.status],
           date: candidacy.candidateDate ?? null,
+          dateNote: candidacy.candidateDate ? null : DATE_NOT_FOUND,
           affiliation: party.name,
           role: null,
           summary: candidacy.candidateSummary ?? candidacy.candidate,
           programmeHref: partyHref(party.id, 'programme'),
+          officialSiteHref: candidacy.officialSite ?? null,
+          hatvpHref: candidacy.hatvp ?? null,
+          programme: programmeOf(candidacy.programmeState, candidacy.programmeUrl),
           // Sources du statut de candidature, jamais celles du programme.
           sources: candidacy.candidateSources ?? [],
         },
@@ -63,10 +85,14 @@ const fromOther = (c: DeclaredCandidate): CandidateEntry => ({
   name: c.name,
   statusLabel: UNIFORM_STATUS_LABELS[c.status],
   date: c.date,
+  dateNote: c.date ? null : DATE_NOT_FOUND,
   affiliation: c.affiliation,
   role: c.role || null,
   summary: c.summary,
   programmeHref: null,
+  officialSiteHref: c.officialSite ?? null,
+  hatvpHref: c.hatvp ?? null,
+  programme: programmeOf(c.programme.state, c.programme.url),
   sources: c.sources,
 });
 
@@ -102,7 +128,7 @@ export function buildCandidateList(
   );
 }
 
-const SPONSORSHIP_FAQ_ID = 'parrainages';
+export const SPONSORSHIP_FAQ_ID = 'parrainages';
 
 /**
  * Phrase de contexte : la date limite des parrainages vient de la date calculée de la FAQ ; si elle

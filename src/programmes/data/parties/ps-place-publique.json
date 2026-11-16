@@ -1360,10 +1360,18 @@
       ],
       "programmeStatus": "Programme présidentiel 2027 non publié au 10 novembre 2026 ; aucune date de publication n'est annoncée. Les positions de la fiche s'appuient sur les déclarations de Raphaël Glucksmann, le programme européen PS–Place publique de 2024 et les votes du groupe Socialistes, datés.",
       "programmeState": "non-publie",
+      "officialSite": "https://glucks2027.fr/",
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=glucksmann-raphael-16012",
       "programmePublication": {
-        "text": "Date de publication non annoncée (vérifié le 10 novembre 2026).",
+        "text": "Une première partie, « Révolution écologique : les premiers 100 jours », a été présentée le 9 novembre 2026 ; programme complet : date non annoncée (vérifié le 16 novembre 2026).",
         "date": null,
         "sources": [
+          {
+            "title": "« Révolution écologique : les premiers 100 jours », livret première partie, site de campagne de Raphaël Glucksmann (consulté le 16 novembre 2026)",
+            "url": "https://glucks2027.fr/revolution-ecologique/",
+            "date": "2026-11-16",
+            "kind": "programme"
+          },
           {
             "title": "« Les emmerdes commencent » : les huit défis que Raphaël Glucksmann va devoir relever après sa victoire à la primaire (franceinfo)",
             "url": "https://www.franceinfo.fr/elections/presidentielle/les-emmerdes-commencent-les-huit-defis-que-raphael-glucksmann-va-devoir-relever-apres-sa-victoire-a-la-primaire-de-la-gauche_8234041.html",
