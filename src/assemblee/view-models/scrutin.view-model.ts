@@ -7,6 +7,12 @@ import {
 } from '@/src/assemblee/models/article-49-3';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import {
+  circonscriptionsOf,
+  departementChoices,
+  departements,
+  type CirconscriptionRow,
+} from '@/src/assemblee/models/constituencies';
+import {
   deputyRows,
   deputySearch,
   orderedPositions,
@@ -84,6 +90,11 @@ export type HemicycleView =
       rows: DeputyRow[];
       /** Chercher un député : la liste n'apparaît qu'une fois une recherche ou un filtre posés. */
       search: (filters: DeputyFilters, requested: boolean) => ReturnType<typeof deputySearch>;
+      /** Trouver son député : département (nom ou numéro), puis circonscriptions. Aucune adresse. */
+      constituency: {
+        choices: (query: string, requested: boolean) => ReturnType<typeof departementChoices>;
+        circonscriptions: (code: string) => CirconscriptionRow[];
+      };
     };
 
 const buildHemicycle = (
@@ -98,6 +109,7 @@ const buildHemicycle = (
   const layout = hemicycleLayout(detail.places);
   const { seats, unseated } = seatViews({ layout, detail, deputes, groupes, censure });
   const rows = deputyRows({ detail, deputes, groupes, censure });
+  const allDepartements = departements(deputes);
   const present = new Set([
     ...detail.groupes.filter((g) => g >= 0),
     ...detail.sansPlace.map((m) => m.groupe),
@@ -143,6 +155,10 @@ const buildHemicycle = (
     ).map((code) => ({ code, label: positionLabel(code, censure) })),
     rows,
     search: (filters, requested) => deputySearch(rows, filters, requested),
+    constituency: {
+      choices: (query, requested) => departementChoices(allDepartements, query, requested),
+      circonscriptions: (code) => circonscriptionsOf(deputes, code),
+    },
   };
 };
 

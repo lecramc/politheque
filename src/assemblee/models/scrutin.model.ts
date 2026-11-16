@@ -110,7 +110,11 @@ export type Depute = {
   nom: string;
   alpha: string;
   departement: string;
+  /** Code officiel du département : « 59 », « 2A », « 971 », « 999 » (Français établis hors de France). */
+  numDepartement: string;
   circonscription: number;
+  /** Mandat de député ouvert à la date d'extraction (pas de date de fin). */
+  enExercice: boolean;
 };
 export type DeputeDirectory = { deputes: Depute[] };
 

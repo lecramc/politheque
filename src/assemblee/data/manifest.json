@@ -4,19 +4,19 @@
     "amo": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip"
   },
   "licence": "Licence Ouverte / Open Licence (Etalab)",
-  "extraitLe": "2026-11-10",
+  "extraitLe": "2026-11-16",
   "publieLe": {
-    "scrutins": "2026-11-10",
-    "amo": "2026-11-10"
+    "scrutins": "2026-11-16",
+    "amo": "2026-11-16"
   },
   "sha256": {
-    "scrutins": "d91ab1475aaa65d8c585fe0da26efde56b4b65fd4228c306d8f7ff818b421835",
-    "amo": "914411af5731d6ef20fb144ae8babc08483b1d11be9c7105b0449a1ed124384f"
+    "scrutins": "118632d1862398e85003be00312c59f39a741fa5e1bfa4bebe1ee611f7d6d492",
+    "amo": "57e780b032eed7e5cd4a329d0f101ec12d24cf3e1c27fcf7a0fb2c688d42525a"
   },
-  "scrutins": 338,
-  "votes": 81621,
+  "scrutins": 340,
+  "votes": 81870,
   "premier": "2024-10-08",
-  "dernier": "2026-11-04",
+  "dernier": "2026-11-12",
   "versionScript": "1.0.0",
   "regles": [
     "R1 : vote sur l'ensemble d'un projet ou d'une proposition de loi, ou sur une proposition de résolution, quelle que soit la formulation du titre",

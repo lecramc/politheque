@@ -230,8 +230,28 @@ export const compactDataset = (input: DatasetInput): Dataset => {
   }
   const deputes: Depute[] = [...referenced]
     .map((ref) => {
-      const { id, civ, prenom, nom, alpha, departement, circonscription } = known(ref);
-      return { id, civ, prenom, nom, alpha, departement, circonscription };
+      const {
+        id,
+        civ,
+        prenom,
+        nom,
+        alpha,
+        departement,
+        numDepartement,
+        circonscription,
+        enExercice,
+      } = known(ref);
+      return {
+        id,
+        civ,
+        prenom,
+        nom,
+        alpha,
+        departement,
+        numDepartement,
+        circonscription,
+        enExercice,
+      };
     })
     .sort(compareDeputes);
   const deputeIdx = new Map(deputes.map((d, i) => [d.id, i]));

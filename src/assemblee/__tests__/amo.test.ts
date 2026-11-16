@@ -14,7 +14,7 @@ describe('Feature: lecture des acteurs de l’open data', () => {
         nom: 'Dupont',
         prenom: 'Anne',
         groupes: [{ groupe: GROUPE_A, debut: '2024-07-01' }],
-        mandat: { debut: '2024-07-01', place: '063', circo: '12' },
+        mandat: { debut: '2024-07-01', place: '063', circo: '12', numDepartement: '2A' },
       })
     );
     expect(acteur).toMatchObject({
@@ -24,9 +24,21 @@ describe('Feature: lecture des acteurs de l’open data', () => {
       nom: 'Dupont',
       alpha: 'Dupont',
       departement: 'Nord',
+      numDepartement: '2A',
       circonscription: 12,
       placeHemicycle: 63,
     });
+  });
+
+  it('should flag a député whose mandate is open as sitting, and one whose mandate ended as not', () => {
+    const sitting = parseActeur(
+      rawActeur({ id: 'a', groupes: [], mandat: { debut: '2024-07-01' } })
+    );
+    const left = parseActeur(
+      rawActeur({ id: 'b', groupes: [], mandat: { debut: '2024-07-01', fin: '2025-03-01' } })
+    );
+    expect(sitting?.enExercice).toBe(true);
+    expect(left?.enExercice).toBe(false);
   });
 
   it('should ignore a person without a 17th legislature mandate', () => {

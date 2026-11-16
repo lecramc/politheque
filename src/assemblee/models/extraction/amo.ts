@@ -71,7 +71,9 @@ export const parseActeur = (raw: RawActeur): ActeurRecord | null => {
     nom: ident.nom,
     alpha: ident.alpha,
     departement: latest.election?.lieu?.departement ?? '',
+    numDepartement: latest.election?.lieu?.numDepartement ?? '',
     circonscription: Number.parseInt(latest.election?.lieu?.numCirco ?? '', 10) || 0,
+    enExercice: latest.dateFin == null,
     placeHemicycle: withPlace.length
       ? toPlace(withPlace[withPlace.length - 1].mandature?.placeHemicycle)
       : null,

@@ -475,6 +475,14 @@ describe('Feature: détail par député', () => {
     ]);
   });
 
+  it('should let a citizen find a député through the département and the circonscription', () => {
+    const { constituency } = ready();
+    expect(constituency.choices('nord', false).items).toEqual([{ code: '59', label: 'Nord (59)' }]);
+    expect(constituency.circonscriptions('59')).toEqual([
+      expect.objectContaining({ label: '3e circonscription', deputeId: 'PA1', nom: 'Jean Durand' }),
+    ]);
+  });
+
   it('should filter the deputies', () => {
     const page = vm(base().withDetail(detail).withDeputes(directory).build()).scrutin(580)!;
     if (page.hemicycle.status !== 'ready') throw new Error();
