@@ -249,7 +249,8 @@ export function Page({
       ? nonIndexableMeta(title ?? APP_NAME, canonicalPath(pathname))
       : meta;
   const reportLinks =
-    loading || !headMeta
+    // Pas pendant le questionnaire (`focus`) : l'écran reste sans distraction.
+    loading || focus || !headMeta
       ? null
       : buildReportLinks({
           pathname: canonicalPath(pathname),

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Linking, Platform, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
@@ -19,11 +19,44 @@ export function ReportError({ links }: { links: ReportLinks }) {
       <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
         {links.mailto ? (
           <>
-            <TextLink href={links.mailto}>{REPORT_COPY.emailLabel}</TextLink> ·{' '}
+            <ExternalLink href={links.mailto}>{REPORT_COPY.emailLabel}</ExternalLink> ·{' '}
           </>
         ) : null}
-        <TextLink href={links.github}>{REPORT_COPY.githubLabel}</TextLink>
+        <ExternalLink href={links.github} newTab>
+          {REPORT_COPY.githubLabel}
+        </ExternalLink>
       </Text>
     </View>
+  );
+}
+
+/**
+ * Lien sortant (mailto:, GitHub) : un vrai <a href> sur le web, car le `Link` du routeur réécrit
+ * les adresses et perdrait le préremplissage (`?title=…&body=…`). Même style que `TextLink`.
+ */
+function ExternalLink({
+  href,
+  newTab = false,
+  children,
+}: {
+  href: string;
+  newTab?: boolean;
+  children: string;
+}) {
+  const { colors, fonts } = useTheme();
+  return (
+    <Text
+      {...tv('text-link')}
+      role="link"
+      {...(Platform.OS === 'web'
+        ? {
+            href,
+            ...(newTab ? { hrefAttrs: { target: '_blank', rel: 'noopener' } } : {}),
+          }
+        : { onPress: () => Linking.openURL(href) })}
+      style={{ ...fonts.regular, color: colors.tint, textDecorationLine: 'underline' }}
+    >
+      {children}
+    </Text>
   );
 }
