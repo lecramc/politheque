@@ -6,6 +6,7 @@ import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextInput } from '@/components/ui/TextInput';
 import { ChoiceRow } from '@/src/assemblee/components/ChoiceRow';
+import { ConstituencyFinder } from '@/src/assemblee/components/ConstituencyFinder';
 import { FilterButton } from '@/src/assemblee/components/FilterButton';
 import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
@@ -31,10 +32,12 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
   const [vote, setVote] = useState<VoteCode | null>(null);
   const [requested, setRequested] = useState(false);
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [depute, setDepute] = useState<string | null>(null);
+  const [finderOpen, setFinderOpen] = useState(false);
 
   const result = useMemo(
-    () => view.search({ recherche, groupe, vote }, requested),
-    [view, recherche, groupe, vote, requested]
+    () => view.search({ recherche, groupe, vote, depute }, requested),
+    [view, recherche, groupe, vote, depute, requested]
   );
   const filterLabel = COPY.deputies.filterButton(result.filterCount);
 
@@ -47,7 +50,10 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
             label={COPY.deputies.search}
             placeholder={COPY.deputies.searchPlaceholder}
             value={recherche}
-            onChangeText={setRecherche}
+            onChangeText={(text) => {
+              setRecherche(text);
+              setDepute(null);
+            }}
             autoCapitalize="none"
             autoCorrect={false}
             accessibilityLabel={COPY.deputies.search}
@@ -60,13 +66,34 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
         />
       </View>
 
+      <Pressable
+        onPress={() => setFinderOpen((open) => !open)}
+        accessibilityRole="button"
+        accessibilityState={{ expanded: finderOpen }}
+        style={{ alignSelf: 'flex-start', minHeight: 44, justifyContent: 'center' }}
+      >
+        <Text style={{ color: colors.tint, textDecorationLine: 'underline' }}>
+          {finderOpen ? COPY.constituency.close : COPY.constituency.open}
+        </Text>
+      </Pressable>
+      {finderOpen ? (
+        <ConstituencyFinder
+          constituency={view.constituency}
+          onPick={(id) => {
+            setDepute(id);
+            setRecherche('');
+            setFinderOpen(false);
+          }}
+        />
+      ) : null}
+
       {result.visible ? (
         <>
           <Text aria-live="polite" style={{ fontSize: 14, color: colors.text.secondary }}>
             {result.countLabel}
           </Text>
           {result.rows.length === 0 ? (
-            <Text style={{ color: colors.text.secondary }}>{COPY.deputies.none}</Text>
+            <Text style={{ color: colors.text.secondary }}>{result.emptyLabel}</Text>
           ) : (
             <View
               role="list"

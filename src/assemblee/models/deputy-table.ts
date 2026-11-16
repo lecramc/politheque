@@ -97,7 +97,13 @@ export const deputyRows = ({ detail, deputes, groupes, censure }: Input): Deputy
   );
 };
 
-export type DeputyFilters = { recherche?: string; groupe?: number | null; vote?: VoteCode | null };
+export type DeputyFilters = {
+  recherche?: string;
+  groupe?: number | null;
+  vote?: VoteCode | null;
+  /** Député choisi depuis sa circonscription : on n'affiche que lui. */
+  depute?: string | null;
+};
 
 /**
  * La liste n'est pas affichée d'office (574 lignes) : elle apparaît dès qu'on tape un nom, qu'on
@@ -105,6 +111,7 @@ export type DeputyFilters = { recherche?: string; groupe?: number | null; vote?:
  */
 export const shouldListDeputies = (filters: DeputyFilters, requested: boolean): boolean =>
   requested ||
+  (filters.depute ?? null) !== null ||
   (filters.recherche ?? '').trim() !== '' ||
   (filters.groupe ?? null) !== null ||
   (filters.vote ?? null) !== null;
@@ -122,6 +129,7 @@ export const deputySearch = (rows: DeputyRow[], filters: DeputyFilters, requeste
     rows: found,
     countLabel: COPY.deputies.count(visible ? found.length : rows.length),
     showAllLabel: COPY.deputies.showAll(rows.length),
+    emptyLabel: filters.depute ? COPY.deputies.notInVote : COPY.deputies.none,
     filterCount: [(filters.groupe ?? null) !== null, (filters.vote ?? null) !== null].filter(
       Boolean
     ).length,
@@ -134,6 +142,7 @@ export const filterDeputyRows = (rows: DeputyRow[], filters: DeputyFilters): Dep
     .filter(Boolean);
   return rows.filter(
     (r) =>
+      (filters.depute == null || r.id === filters.depute) &&
       (filters.groupe == null || r.groupeIndex === filters.groupe) &&
       (filters.vote == null || r.vote === filters.vote) &&
       words.every((word) => r.recherche.includes(word))

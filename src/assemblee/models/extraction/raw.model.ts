@@ -76,7 +76,13 @@ export type RawMandat = {
   dateDebut: string | null;
   dateFin: string | null;
   organes?: { organeRef: string } | null;
-  election?: { lieu?: { departement?: string | null; numCirco?: string | null } | null } | null;
+  election?: {
+    lieu?: {
+      departement?: string | null;
+      numDepartement?: string | null;
+      numCirco?: string | null;
+    } | null;
+  } | null;
   mandature?: { placeHemicycle?: string | null } | null;
 };
 

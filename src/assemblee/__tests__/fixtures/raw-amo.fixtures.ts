@@ -13,7 +13,13 @@ type ActeurOptions = {
   prenom?: string;
   groupes: GroupMembership[];
   /** Mandat de député de la 17e législature. */
-  mandat: { debut: string; fin?: string | null; place?: string | null; circo?: string };
+  mandat: {
+    debut: string;
+    fin?: string | null;
+    place?: string | null;
+    circo?: string;
+    numDepartement?: string;
+  };
 };
 
 const gpMandat = (id: string, g: GroupMembership, i: number): RawMandat => ({
@@ -53,7 +59,13 @@ export const rawActeur = (o: ActeurOptions): RawActeur => ({
         typeOrgane: 'ASSEMBLEE',
         dateDebut: o.mandat.debut,
         dateFin: o.mandat.fin ?? null,
-        election: { lieu: { departement: 'Nord', numCirco: o.mandat.circo ?? '3' } },
+        election: {
+          lieu: {
+            departement: 'Nord',
+            numDepartement: o.mandat.numDepartement ?? '59',
+            numCirco: o.mandat.circo ?? '3',
+          },
+        },
         mandature: { placeHemicycle: o.mandat.place ?? null },
       },
       ...o.groupes.map((g, i) => gpMandat(o.id, g, i)),

@@ -54,7 +54,9 @@ export const deputeFactory = (data: Partial<Depute> = {}): Depute => ({
   nom: 'Dupont',
   alpha: 'Dupont',
   departement: 'Nord',
+  numDepartement: '59',
   circonscription: 3,
+  enExercice: true,
   ...data,
 });
 
