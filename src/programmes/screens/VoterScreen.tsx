@@ -1,8 +1,9 @@
 import React from 'react';
-import { View } from 'react-native';
+import { Linking, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import Button from '@/components/ui/Button';
 import { TextLink } from '@/components/ui/TextLink';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { CalculatedDateNote } from '@/src/programmes/components/CalculatedDateNote';
@@ -39,6 +40,16 @@ export default function VoterScreen() {
               }}
             >
               <Text style={{ fontSize: 17, lineHeight: 26 }}>{voter.summary}</Text>
+            </View>
+            <View style={{ alignSelf: 'flex-start', marginTop: effects.spacing.xs }}>
+              <Button
+                variant="primary"
+                fullWidth={false}
+                icon="calendar-outline"
+                onPress={() => Linking.openURL(vm.agenda.href)}
+              >
+                {vm.agenda.label}
+              </Button>
             </View>
             <SourceChip sources={voter.summarySources} subject={voter.title} />
             <Text style={{ fontSize: 14, color: colors.text.secondary }}>

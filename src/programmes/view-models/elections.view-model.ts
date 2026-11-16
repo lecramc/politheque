@@ -12,6 +12,7 @@ import { candidatesEntry } from '@/src/programmes/models/other-parties.service';
 import { readingMinutes } from '@/src/programmes/models/presentation.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import { electionMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
+import { AGENDA_COPY, AGENDA_PATH } from '@/src/programmes/models/voter-calendar.copy';
 import { selectCatalog, selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
 import { markContentReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
 
@@ -52,6 +53,7 @@ export const electionViewModel =
                 voter: CONTENUS_2027_PATHS.voter,
                 faq: CONTENUS_2027_PATHS.faq,
                 candidates: CONTENUS_2027_PATHS.candidates,
+                agenda: { href: AGENDA_PATH, label: AGENDA_COPY.button },
               }
             : null,
         /** Accès en tête de la section « Les candidatures » : la liste complète, avant les partis à fiche. */
