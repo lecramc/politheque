@@ -1,10 +1,11 @@
 import React from 'react';
-import { Linking, Platform, View } from 'react-native';
+import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
 import { tv } from '@/src/core/web/tv';
+import { ExternalLink } from '@/src/programmes/components/ExternalLink';
 import { REPORT_COPY } from '@/src/programmes/models/report-error.copy';
 import type { ReportLinks } from '@/src/programmes/models/report-error.service';
 
@@ -27,36 +28,5 @@ export function ReportError({ links }: { links: ReportLinks }) {
         </ExternalLink>
       </Text>
     </View>
-  );
-}
-
-/**
- * Lien sortant (mailto:, GitHub) : un vrai <a href> sur le web, car le `Link` du routeur réécrit
- * les adresses et perdrait le préremplissage (`?title=…&body=…`). Même style que `TextLink`.
- */
-function ExternalLink({
-  href,
-  newTab = false,
-  children,
-}: {
-  href: string;
-  newTab?: boolean;
-  children: string;
-}) {
-  const { colors, fonts } = useTheme();
-  return (
-    <Text
-      {...tv('text-link')}
-      role="link"
-      {...(Platform.OS === 'web'
-        ? {
-            href,
-            ...(newTab ? { hrefAttrs: { target: '_blank', rel: 'noopener' } } : {}),
-          }
-        : { onPress: () => Linking.openURL(href) })}
-      style={{ ...fonts.regular, color: colors.tint, textDecorationLine: 'underline' }}
-    >
-      {children}
-    </Text>
   );
 }

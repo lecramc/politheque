@@ -1,6 +1,6 @@
 {
   "electionId": "presidentielle-2027",
-  "lastVerified": "2026-11-09",
+  "lastVerified": "2026-11-16",
   "candidates": [
     {
       "id": "nathalie-arthaud",
@@ -24,7 +24,11 @@
           "date": "2026-10-11",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://www.nathalie-arthaud.info/",
+      "programme": {
+        "state": "non-publie"
+      }
     },
     {
       "id": "delphine-batho",
@@ -48,7 +52,13 @@
           "date": "2026-10-14",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://delphinebatho.fr/",
+      "programme": {
+        "state": "partiel",
+        "url": "https://delphinebatho.fr/priorites/"
+      },
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=batho-delphine"
     },
     {
       "id": "olivier-becht",
@@ -72,7 +82,13 @@
           "date": "2026-10-14",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://becht2027.fr/",
+      "programme": {
+        "state": "partiel",
+        "url": "https://becht2027.fr/projet-france/"
+      },
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=becht-olivier"
     },
     {
       "id": "xavier-bertrand",
@@ -96,7 +112,12 @@
           "date": "2026-08-27",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://www.nousfrance.fr/",
+      "programme": {
+        "state": "non-publie"
+      },
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=bertrand-xavier"
     },
     {
       "id": "karim-bouamrane",
@@ -120,7 +141,11 @@
           "date": "2026-06-09",
           "kind": "presse"
         }
-      ]
+      ],
+      "programme": {
+        "state": "inconnu"
+      },
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=bouamrane-karim-18983"
     },
     {
       "id": "juan-branco",
@@ -144,7 +169,10 @@
           "date": "2026-11-09",
           "kind": "presse"
         }
-      ]
+      ],
+      "programme": {
+        "state": "inconnu"
+      }
     },
     {
       "id": "nicolas-dupont-aignan",
@@ -168,7 +196,13 @@
           "date": "2026-10-14",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://www.dupontaignan.fr/",
+      "programme": {
+        "state": "partiel",
+        "url": "https://www.dupontaignan.fr/actualite/presentation-du-projet-economique-2027/"
+      },
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=dupont-aignan-nicolas"
     },
     {
       "id": "sylvain-durif",
@@ -192,7 +226,10 @@
           "date": "2026-10-21",
           "kind": "presse"
         }
-      ]
+      ],
+      "programme": {
+        "state": "inconnu"
+      }
     },
     {
       "id": "clara-egger",
@@ -222,7 +259,12 @@
           "date": "2026-11-09",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://solutiondemocratique.fr/",
+      "programme": {
+        "state": "publie",
+        "url": "https://solutiondemocratique.fr/wp-content/uploads/2026/11/Programme-de-Solution-Democratique-a-lelection-presidentielle-2027.pdf"
+      }
     },
     {
       "id": "anasse-kazib",
@@ -246,7 +288,12 @@
           "date": "2026-07-20",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://anasse2027.fr/",
+      "programme": {
+        "state": "partiel",
+        "url": "https://anasse2027.fr/programme"
+      }
     },
     {
       "id": "selma-labib",
@@ -276,7 +323,11 @@
           "date": "2026-06-29",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://npa-revolutionnaires.org/campagnes-presidentielles",
+      "programme": {
+        "state": "non-publie"
+      }
     },
     {
       "id": "francis-lalanne",
@@ -300,7 +351,10 @@
           "date": "2026-08-19",
           "kind": "presse"
         }
-      ]
+      ],
+      "programme": {
+        "state": "inconnu"
+      }
     },
     {
       "id": "mira-markovic",
@@ -324,7 +378,11 @@
           "date": "2026-10-03",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://parti-animaliste.fr/mira-markovic-2027",
+      "programme": {
+        "state": "non-publie"
+      }
     },
     {
       "id": "antoine-mikolajczak",
@@ -354,7 +412,12 @@
           "date": "2026-11-09",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://parti-equinoxe.fr/",
+      "programme": {
+        "state": "partiel",
+        "url": "https://parti-equinoxe.fr/programme-2027/"
+      }
     },
     {
       "id": "florian-philippot",
@@ -378,7 +441,11 @@
           "date": "2026-05-09",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://les-patriotes.fr/",
+      "programme": {
+        "state": "non-publie"
+      }
     },
     {
       "id": "gilles-platret",
@@ -402,7 +469,11 @@
           "date": "2026-10-14",
           "kind": "presse"
         }
-      ]
+      ],
+      "programme": {
+        "state": "inconnu"
+      },
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=platret-gilles"
     },
     {
       "id": "natacha-polony",
@@ -426,7 +497,10 @@
           "date": "2026-10-14",
           "kind": "presse"
         }
-      ]
+      ],
+      "programme": {
+        "state": "inconnu"
+      }
     },
     {
       "id": "teddy-riner",
@@ -450,7 +524,10 @@
           "date": "2026-11-09",
           "kind": "presse"
         }
-      ]
+      ],
+      "programme": {
+        "state": "non-publie"
+      }
     },
     {
       "id": "francois-ruffin",
@@ -480,7 +557,114 @@
           "date": "2026-09-18",
           "kind": "presse"
         }
-      ]
+      ],
+      "officialSite": "https://nouspresident.fr/",
+      "programme": {
+        "state": "partiel",
+        "url": "https://nouspresident.fr/notre-programme/"
+      },
+      "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=ruffin-francois"
+    },
+    {
+      "id": "francois-asselineau",
+      "name": "François Asselineau",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": null,
+      "affiliation": "Union populaire républicaine (UPR)",
+      "role": "Président de l'UPR",
+      "summary": "François Asselineau, président de l'UPR, est candidat à l'élection présidentielle et recherche les parrainages d'élus.",
+      "sources": [
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, liste au 9 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-09",
+          "kind": "presse"
+        },
+        {
+          "title": "Élection présidentielle 2027 : qui sont les candidats déclarés ou presque ? (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/election-presidentielle-2027-qui-sont-les-candidats-declares-ou-presque",
+          "date": "2026-10-14",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : parrainez François Asselineau en ligne directe ! (UPR)",
+          "url": "https://upr.fr/actualites/presidentielle-2027-parrainez-francois-asselineau-en-ligne-directe",
+          "date": "2026-11-13",
+          "kind": "declaration"
+        }
+      ],
+      "officialSite": "https://upr.fr/",
+      "programme": {
+        "state": "non-publie"
+      }
+    },
+    {
+      "id": "bernard-cazeneuve",
+      "name": "Bernard Cazeneuve",
+      "status": "intention",
+      "statusLabel": "Intention de candidature annoncée",
+      "date": "2026-04-28",
+      "affiliation": "La Convention",
+      "role": "Ancien Premier ministre",
+      "summary": "Bernard Cazeneuve s'est dit le 28 avril 2026 « prêt à être candidat », puis a fait part de sa « volonté pleine et entière » de l'être, sans déclaration formelle.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027 : Bernard Cazeneuve annonce sa candidature (Europe 1, d'après Le Figaro)",
+          "url": "https://www.europe1.fr/politique/presidentielle-2027-bernard-cazeneuve-annonce-sa-candidature-le-barrage-a-jean-luc-melenchon-se-precise-929339",
+          "date": "2026-04-29",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : Bernard Cazeneuve fait part de sa « volonté pleine et entière » d'être candidat (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-bernard-cazeneuve-fait-part-de-sa-volonte-pleine-et-entiere-d-etre",
+          "date": "2026-05-19",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : « L'objectif » de Bernard Cazeneuve est de « devenir président de la République » (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-l-objectif-de-bernard-cazeneuve-est-de-devenir-president-de-la",
+          "date": "2026-07-30",
+          "kind": "presse"
+        }
+      ],
+      "officialSite": "https://www.la-convention.fr/",
+      "programme": {
+        "state": "non-publie"
+      }
+    },
+    {
+      "id": "jean-lassalle",
+      "name": "Jean Lassalle",
+      "status": "intention",
+      "statusLabel": "Intention de candidature annoncée",
+      "date": "2026-07-10",
+      "affiliation": "Résistons !",
+      "role": "Ancien député des Pyrénées-Atlantiques",
+      "summary": "Jean Lassalle a lancé le 10 juillet 2026 une cagnotte pour financer une nouvelle candidature, qu'il conditionne au résultat de cette collecte.",
+      "sources": [
+        {
+          "title": "Présidentielle : Jean Lassalle lance une cagnotte pour financer sa candidature (Europe 1)",
+          "url": "https://www.europe1.fr/politique/presidentielle-jean-lassalle-lance-une-cagnotte-pour-financer-sa-candidature-970134",
+          "date": "2026-07-10",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : Jean Lassalle lance une cagnotte pour pouvoir être de nouveau candidat à l'élection (franceinfo)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/presidentielle-2027-jean-lassalle-lance-une-cagnotte-pour-pouvoir-etre-de-nouveau-candidat-a-l-election_8102522.html",
+          "date": "2026-07-15",
+          "kind": "presse"
+        },
+        {
+          "title": "Jean Lassalle lance une cagnotte pour être candidat à la présidentielle de 2027 (ICI Béarn Bigorre)",
+          "url": "https://www.ici.fr/emissions/l-invite-de-la-redaction-de-ici-bearn-bigorre/jean-lassalle-lance-une-cagnotte-pour-etre-candidat-a-la-presidentielle-de-2027-2094458",
+          "date": "2026-07-10",
+          "kind": "presse"
+        }
+      ],
+      "programme": {
+        "state": "inconnu"
+      }
     }
   ],
   "withdrawn": [

@@ -33,6 +33,7 @@ const catalogWith = (parties: OtherParty[]): Catalog => {
           role: '',
           summary: '',
           sources: [],
+          programme: { state: 'non-publie' },
         },
       ],
     },

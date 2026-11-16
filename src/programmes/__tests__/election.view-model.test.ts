@@ -53,6 +53,7 @@ describe('Feature: page de l’élection (dates, puis comment voter, puis candid
       role: '',
       summary: '',
       sources: [],
+      programme: { state: 'non-publie' },
     });
     const vm = electionViewModel('presidentielle-2027')({ dispatch: vi.fn() })(
       stateBuilder().withCatalog(withCandidate).build()

@@ -41,6 +41,7 @@ describe('Feature: hub Partis (fiches, comparaison et grands débats)', () => {
           role: '',
           summary: '',
           sources: [],
+          programme: { state: 'non-publie' },
         })),
       },
     });

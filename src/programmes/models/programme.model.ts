@@ -121,6 +121,9 @@ export type CandidacyStatus = 'declare' | 'investi' | 'designe' | 'annonce' | 'p
 /** État du programme présidentiel : liste fermée, affichée en une ligne sous « Ce qu'il propose ». */
 export type ProgrammeState = 'publie' | 'partiel' | 'non-publie';
 
+/** Pour un candidat hors des dix partis : `inconnu` quand ni site ni information fiable n'existent. */
+export type CandidateProgrammeState = ProgrammeState | 'inconnu';
+
 /** `thème.index` : désigne `candidacies[élection].themes[thème].measures[index]`. */
 export type MeasureRef = `${ThemeId}.${number}`;
 
@@ -171,6 +174,12 @@ export interface Candidacy {
    * de campagne 2027 ; `non-publie` ⇒ aucune mesure.
    */
   programmePublication?: { text: string; date: string | null; sources: Source[] };
+  /** Site de campagne, ou à défaut du mouvement ou du parti (URL vérifiée, https). */
+  officialSite?: string;
+  /** Programme officiel 2027 en ligne ; seulement si `programmeState` n'est pas `non-publie`. */
+  programmeUrl?: string;
+  /** Fiche nominative du candidat sur le site de la HATVP, si elle existe. */
+  hatvp?: string;
   themes: Record<ThemeId, PartyThemeProgramme>;
 }
 
@@ -365,14 +374,20 @@ export interface DeclaredCandidate {
   status: DeclaredCandidateStatus;
   /** Libellé uniforme (« Candidature déclarée »). */
   statusLabel: string;
-  /** Date du statut (ISO AAAA-MM-JJ, ou AAAA-MM si seul le mois est établi). */
-  date: string;
+  /** Date du statut (ISO AAAA-MM-JJ, ou AAAA-MM si seul le mois est établi) ; `null` si elle n'est pas retrouvée. */
+  date: string | null;
   /** Parti, mouvement ou « Sans étiquette ». */
   affiliation: string;
   /** Fonction, telle que décrite par les sources ; chaîne vide si aucune source n'en donne. */
   role: string;
   summary: string;
   sources: Source[];
+  /** Site de campagne, ou à défaut du mouvement ou du parti (URL vérifiée, https) ; absent si aucun. */
+  officialSite?: string;
+  /** État du programme 2027 officiel ; le lien n'existe que s'il est publié (en tout ou partie). */
+  programme: { state: CandidateProgrammeState; url?: string };
+  /** Fiche nominative sur le site de la HATVP ; absente si aucune fiche en ligne. */
+  hatvp?: string;
 }
 
 export interface WithdrawnCandidate {

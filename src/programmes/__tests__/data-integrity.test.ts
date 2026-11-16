@@ -699,3 +699,79 @@ describe('Feature: intégrité des contenus 2027 (lexique, FAQ, comment voter)',
     expect(catalog.voter.id).toBe(voter.id);
   });
 });
+
+describe('Feature: sites officiels, programmes 2027 et fiches HATVP des candidats', () => {
+  const catalog = buildStaticCatalog();
+  const ELECTION = catalog.candidates.electionId;
+  const HATVP_FICHE = /^https:\/\/www\.hatvp\.fr\/fiche-nominative\/\?declarant=[a-z0-9-]+$/;
+  const STATES = ['publie', 'partiel', 'non-publie', 'inconnu'];
+
+  type Campaign = {
+    id: string;
+    officialSite?: string;
+    programmeState: string;
+    programmeUrl?: string;
+    hatvp?: string;
+  };
+  const campaigns: Campaign[] = [
+    ...catalog.candidates.candidates.map((c) => ({
+      id: c.id,
+      officialSite: c.officialSite,
+      programmeState: c.programme.state,
+      programmeUrl: c.programme.url,
+      hatvp: c.hatvp,
+    })),
+    ...catalog.parties.flatMap((p) => {
+      const candidacy = p.candidacies[ELECTION];
+      return candidacy
+        ? [
+            {
+              id: p.id,
+              officialSite: candidacy.officialSite,
+              programmeState: candidacy.programmeState,
+              programmeUrl: candidacy.programmeUrl,
+              hatvp: candidacy.hatvp,
+            },
+          ]
+        : [];
+    }),
+  ];
+
+  it('should cover every candidate of the page, whether or not a party sheet exists', () => {
+    const parties = catalog.parties.filter((p) => p.candidacies[ELECTION]).length;
+    expect(campaigns).toHaveLength(parties + catalog.candidates.candidates.length);
+  });
+
+  it('should give only https addresses, never an encyclopedia or aggregator', () => {
+    for (const c of campaigns) {
+      for (const url of [c.officialSite, c.programmeUrl, c.hatvp].filter(Boolean) as string[]) {
+        expect(url, c.id).toMatch(/^https:\/\//);
+        expect(isAggregator(url), `${c.id}: ${url}`).toBe(false);
+        expect(url, c.id).not.toMatch(/wikip[ée]dia/i);
+      }
+    }
+  });
+
+  it('should use a known programme state and link the programme only when it is published', () => {
+    for (const c of campaigns) {
+      expect(STATES, c.id).toContain(c.programmeState);
+      if (c.programmeState === 'publie' || c.programmeState === 'partiel') {
+        expect(c.programmeUrl, c.id).toBeTruthy();
+      } else {
+        expect(c.programmeUrl, c.id).toBeUndefined();
+      }
+    }
+  });
+
+  it('should point to a named HATVP page, never to the namesake Jean-Paul Legendre', () => {
+    for (const c of campaigns.filter((x) => x.hatvp)) {
+      expect(c.hatvp, c.id).toMatch(HATVP_FICHE);
+      expect(c.hatvp, c.id).not.toContain('legendre-jean-paul');
+    }
+  });
+
+  it('should leave a candidate without date only when the announcement date was not found (François Asselineau)', () => {
+    const undated = catalog.candidates.candidates.filter((c) => c.date === null);
+    expect(undated.map((c) => c.id)).toEqual(['francois-asselineau']);
+  });
+});

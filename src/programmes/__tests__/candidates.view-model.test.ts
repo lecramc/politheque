@@ -21,6 +21,7 @@ const riner: DeclaredCandidate = {
   role: 'Judoka',
   summary: 'Annonce sa candidature.',
   sources: [source(1), source(2)],
+  programme: { state: 'non-publie' },
 };
 const lfi = partyFactory({
   id: 'lfi',
@@ -118,5 +119,29 @@ describe('Feature: view-model de la page des candidats', () => {
       path: '/elections/presidentielle-2027/candidats',
       robots: 'index, follow',
     });
+  });
+
+  it('should state the sponsorship rules and reuse the sourced deadline FAQ as a source', () => {
+    const legifrance = {
+      title: 'Loi n° 62-1292 du 6 novembre 1962 (Légifrance)',
+      url: 'https://www.legifrance.gouv.fr/loda/id/JORFTEXT000000684037',
+      date: '2026-11-08',
+      kind: 'statistique' as const,
+    };
+    const vm = vmOf({
+      faq: [
+        {
+          id: 'parrainages',
+          question: '',
+          answer: '',
+          related: [],
+          sources: [legifrance],
+          lastVerified: '2026-11-08',
+        },
+      ],
+    });
+    expect(vm.sponsorshipNote).toContain('au moins deux fois par semaine');
+    expect(vm.sponsorshipNote).toContain('liste officielle des candidats');
+    expect(vm.allSources.map((s) => s.url)).toContain(legifrance.url);
   });
 });

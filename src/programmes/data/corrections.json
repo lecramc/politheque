@@ -1,5 +1,33 @@
 [
   {
+    "id": "2026-11-16-pour-chaque-candidat-site-officiel-etat-du-progr",
+    "date": "2026-11-16",
+    "kind": "ajout",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Pour chaque candidat : site officiel, état du programme 2027 avec lien quand il est publié, fiche HATVP, et rappel des règles de parrainage (loi du 6 novembre 1962, article 3)."
+  },
+  {
+    "id": "2026-11-16-raphael-glucksmann-une-premiere-partie-de-son-pr",
+    "date": "2026-11-16",
+    "kind": "mise-a-jour",
+    "pages": ["/partis/ps-place-publique"],
+    "summary": "Raphaël Glucksmann : une première partie de son programme (« les 100 premiers jours ») a été présentée le 9 novembre 2026 ; programme complet : date non annoncée."
+  },
+  {
+    "id": "2026-11-16-eric-zemmour-candidature-officialisee-le-10-nove",
+    "date": "2026-11-16",
+    "kind": "mise-a-jour",
+    "pages": ["/partis/reconquete", "/elections/presidentielle-2027/candidats"],
+    "summary": "Éric Zemmour : candidature officialisée le 10 novembre 2026 au journal de 20 heures de TF1 (20 Minutes avec AFP, La Dépêche du Midi). Son programme reste non publié : cinq priorités sont en ligne sur son site."
+  },
+  {
+    "id": "2026-11-16-candidats-ajoutes-francois-asselineau-upr-candid",
+    "date": "2026-11-16",
+    "kind": "ajout",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Candidats ajoutés : François Asselineau (UPR, candidat déclaré, date d'annonce non retrouvée), Bernard Cazeneuve et Jean Lassalle (intentions de candidature), avec leurs sources."
+  },
+  {
     "id": "2026-11-16-nouvelle-page-les-votes-de-l-assemblee-338-scrut",
     "date": "2026-11-16",
     "kind": "ajout",

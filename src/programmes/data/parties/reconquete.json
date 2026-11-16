@@ -1095,12 +1095,24 @@
   "candidacies": {
     "presidentielle-2027": {
       "candidateName": "Éric Zemmour",
-      "status": "annonce",
-      "statusLabel": "Candidature annoncée",
-      "candidate": "Éric Zemmour a déclaré le 17 septembre 2026 sur BFMTV : « Je serai candidat à l'élection présidentielle » (LCP, 17 septembre 2026) ; selon Public Sénat (18 septembre 2026), il ne s'agissait « pas encore d'une déclaration de candidature officielle », attendue à l'automne.",
-      "candidateDate": "2026-09-17",
-      "candidateSummary": "Éric Zemmour a annoncé le 17 septembre 2026 sur BFMTV qu'il serait candidat à l'élection présidentielle.",
+      "status": "declare",
+      "statusLabel": "Candidat déclaré",
+      "candidate": "Éric Zemmour a officialisé sa candidature le 10 novembre 2026 au journal de 20 heures de TF1 (20 Minutes avec AFP, 10 novembre 2026 ; La Dépêche du Midi, 11 novembre 2026), après avoir annoncé le 17 septembre 2026 sur BFMTV : « Je serai candidat à l'élection présidentielle » (LCP, 17 septembre 2026).",
+      "candidateDate": "2026-11-10",
+      "candidateSummary": "Éric Zemmour a officialisé sa candidature le 10 novembre 2026 au journal de 20 heures de TF1, après avoir annoncé le 17 septembre 2026 sur BFMTV qu'il serait candidat.",
       "candidateSources": [
+        {
+          "title": "Présidentielle 2027 : Éric Zemmour officialise sa candidature à l'Élysée (20 Minutes, AFP)",
+          "url": "https://www.20minutes.fr/politique/4262075-20261110-presidentielle-2027-eric-zemmour-officialise-candidature",
+          "date": "2026-11-10",
+          "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : Eric Zemmour officialise sa candidature, le président de Reconquête veut « conserver une France française » (La Dépêche du Midi)",
+          "url": "https://www.ladepeche.fr/2026/11/11/presidentielle-2027-eric-zemmour-officialise-sa-candidature-le-president-de-reconquete-veut-conserver-une-france-francaise-13646887.php",
+          "date": "2026-11-11",
+          "kind": "presse"
+        },
         {
           "title": "Présidentielle 2027 : Éric Zemmour officialise sa candidature (LCP)",
           "url": "https://lcp.fr/actualites/presidentielle-2027-eric-zemmour-officialise-sa-candidature-441871",
@@ -1116,10 +1128,17 @@
       ],
       "programmeStatus": "Programme présidentiel 2027 non publié au 10 novembre 2026 ; aucune date de publication n'est annoncée. Une consultation, « Le programme pour la France », est ouverte sans date de clôture. Les positions de la fiche s'appuient sur le programme présidentiel 2022, le chiffrage « Budget 2027 » publié par Sarah Knafo et les déclarations d'Éric Zemmour, datés.",
       "programmeState": "non-publie",
+      "officialSite": "https://www.ericzemmour.fr/",
       "programmePublication": {
-        "text": "Date de publication non annoncée (vérifié le 10 novembre 2026).",
+        "text": "Cinq priorités publiées sur son site de campagne ; programme complet non publié (vérifié le 16 novembre 2026).",
         "date": null,
         "sources": [
+          {
+            "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour (consulté le 16 novembre 2026)",
+            "url": "https://www.ericzemmour.fr/priorites",
+            "date": "2026-11-16",
+            "kind": "programme"
+          },
           {
             "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",
             "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
