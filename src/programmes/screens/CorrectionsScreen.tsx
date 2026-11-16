@@ -53,7 +53,8 @@ export default function CorrectionsScreen() {
           ))}
         </View>
         <Text style={{ fontSize: 16, lineHeight: 25 }}>
-          Un moyen de signaler une erreur arrivera prochainement.
+          Une erreur ? Le lien « Signaler une erreur » figure en bas de chaque page de contenu ;
+          chaque signalement est vérifié avant toute correction.
         </Text>
       </View>
 
