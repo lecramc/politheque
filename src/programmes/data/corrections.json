@@ -1,5 +1,31 @@
 [
   {
+    "id": "2026-11-18-fiches-partis-les-effectifs-de-groupe-ecrits-a-l",
+    "date": "2026-11-18",
+    "kind": "mise-a-jour",
+    "pages": ["/partis"],
+    "summary": "Fiches partis : les effectifs de groupe, écrits à la main d'après un agrégateur (Datan), sont remplacés par un encart « À l'Assemblée » calculé depuis les données officielles de l'Assemblée nationale, avec la date de mise à jour."
+  },
+  {
+    "id": "2026-11-18-lexique-commission-mixte-paritaire-pour-une-prop",
+    "date": "2026-11-18",
+    "kind": "correction",
+    "pages": ["/comprendre/lexique"],
+    "summary": "Lexique, commission mixte paritaire : pour une proposition de loi, elle peut aussi être convoquée par les présidents des deux assemblées agissant ensemble (article 45 de la Constitution)."
+  },
+  {
+    "id": "2026-11-18-guide-le-vote-des-lois-la-navette-la-cmp-la-majo",
+    "date": "2026-11-18",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/comprendre/institutions",
+      "/comprendre/pouvoirs-du-president",
+      "/comprendre/budget-dette",
+      "/comprendre/lexique"
+    ],
+    "summary": "Guide : le vote des lois, la navette, la CMP, la majorité absolue, le 49.3 et la motion de censure sont expliqués une seule fois, dans « Comment une loi est votée à l'Assemblée » ; les autres leçons et le lexique y renvoient. Aucun fait retiré."
+  },
+  {
     "id": "2026-11-18-composition-de-l-assemblee-corrigee-neuf-deputes",
     "date": "2026-11-18",
     "kind": "correction",
