@@ -341,12 +341,6 @@
             "kind": "statistique"
           },
           {
-            "title": "Datan – Les élections européennes de 2024",
-            "url": "https://datan.fr/elections/europeennes-2024",
-            "date": "2024-06",
-            "kind": "statistique"
-          },
-          {
             "title": "Retour sur les élections européennes 2024",
             "url": "https://ufe.org/article-feed/retour-sur-les-elections-europeennes-2024/",
             "date": "2024-06",
@@ -756,14 +750,14 @@
           "kind": "presse"
         },
         {
-          "title": "Datan, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
-          "url": "https://datan.fr/votes/legislature-17/vote_3300",
+          "title": "Assemblée nationale, scrutin n° 3300 du 31 octobre 2025 : « Instaurer la taxe Zucman sur les patrimoines supérieurs à 100 millions d'euros » (PLF 2026)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/3300",
           "date": "2025-10-31",
           "kind": "vote"
         },
         {
-          "title": "Datan, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
-          "url": "https://datan.fr/votes/legislature-17/vote_8860",
+          "title": "Assemblée nationale, scrutin n° 8860 du 16 octobre 2026 : amendement n° 471 (M. Bouloux, SOC) après l'article 4 du PLF 2027 instaurant un prélèvement plancher de 2 % sur les patrimoines nets supérieurs à 100 M€",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8860",
           "date": "2026-10-16",
           "kind": "vote"
         }
@@ -821,14 +815,14 @@
       "justification": "Le groupe Socialistes s'est majoritairement abstenu sur la loi de juin 2026 (2 juin 2026 : 37 abstentions, 18 contre, 1 pour) et en première lecture (16 avril 2026 : 8 abstentions). Pas de position de Raphaël Glucksmann identifiée sur l'assurance chômage.",
       "sources": [
         {
-          "title": "Datan, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
-          "url": "https://datan.fr/votes/legislature-17/vote_7260",
+          "title": "Assemblée nationale, scrutin n° 7260 du 2 juin 2026 : ensemble du projet de loi portant transposition de l'avenant n° 3 au protocole d'accord relatif à l'assurance chômage (deuxième lecture), adopté 353 pour, 114 contre, 37 abstentions",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7260",
           "date": "2026-06-02",
           "kind": "vote"
         },
         {
-          "title": "Datan, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
-          "url": "https://datan.fr/votes/legislature-17/vote_6283",
+          "title": "Assemblée nationale, scrutin n° 6283 du 16 avril 2026 : amendements de suppression de l'article unique du projet de loi sur l'assurance chômage (première lecture)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/6283",
           "date": "2026-04-16",
           "kind": "vote"
         }
@@ -887,8 +881,8 @@
           "kind": "proposition-de-loi"
         },
         {
-          "title": "Datan – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
-          "url": "https://datan.fr/votes/legislature-17/vote_1263",
+          "title": "Assemblée nationale – « Restaurer l'autorité de l'État », amendement de suppression n° 1 de l'article unique (peines planchers) (vote n° 1263)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1263",
           "date": "2025-04-03",
           "kind": "vote"
         },
@@ -941,8 +935,8 @@
       "justification": "Le groupe Socialistes a voté unanimement contre la loi Duplomb (scrutin n° 2957 du 8 juillet 2025 : 0 pour, 65 contre).",
       "sources": [
         {
-          "title": "Datan – Vote final, proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (vote n° 2957)",
-          "url": "https://datan.fr/votes/legislature-17/vote_2957",
+          "title": "Assemblée nationale – Vote final, proposition de loi visant à lever les contraintes à l'exercice du métier d'agriculteur (vote n° 2957)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2957",
           "date": "2025-07-08",
           "kind": "vote"
         }
@@ -953,14 +947,14 @@
       "justification": "La PPL est portée par le député PS Guillaume Garot, et le groupe a voté très majoritairement l'article 1er (vote n° 1214 : 50 pour, 1 contre) et le texte entier (vote n° 1607 : 26 pour, 1 contre). Raphaël Glucksmann ne s'est pas exprimé sur ce point.",
       "sources": [
         {
-          "title": "Datan – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
-          "url": "https://datan.fr/votes/legislature-17/vote_1214",
+          "title": "Assemblée nationale – Vote n° 1214 du 02/04/2025, amendement n° 55 de M. Garot (rédaction de l'article 1er : autorisation d'installation des médecins par l'ARS), PPL transpartisane contre les déserts médicaux, adopté par 155 voix contre 85",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1214",
           "date": "2025-04-02",
           "kind": "vote"
         },
         {
-          "title": "Datan – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
-          "url": "https://datan.fr/votes/legislature-17/vote_1607",
+          "title": "Assemblée nationale – Vote n° 1607 du 07/05/2025, PPL transpartisane contre les déserts médicaux, ensemble du texte en première lecture (99 pour, 9 contre, 10 abstentions)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1607",
           "date": "2025-05-07",
           "kind": "vote"
         },
@@ -977,8 +971,8 @@
       "justification": "Le groupe Socialistes a voté très majoritairement pour la loi en lecture définitive (vote n° 8280 : 57 pour, 6 abstentions, 4 contre). Raphaël Glucksmann ne s'est pas exprimé sur le maintien de la loi.",
       "sources": [
         {
-          "title": "Datan – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
-          "url": "https://datan.fr/votes/legislature-17/vote_8280",
+          "title": "Assemblée nationale – Proposition de loi créant un droit à l'aide à mourir, lecture définitive (vote n° 8280)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8280",
           "date": "2026-07-15",
           "kind": "vote"
         },
@@ -1019,14 +1013,14 @@
           "kind": "presse"
         },
         {
-          "title": "Datan, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
-          "url": "https://datan.fr/votes/legislature-16/vote_3461",
+          "title": "Assemblée nationale, scrutin n° 3461 du 12 mars 2024 : déclaration du Gouvernement sur l'accord de sécurité franco-ukrainien (art. 50-1)",
+          "url": "https://www.assemblee-nationale.fr/dyn/16/scrutins/3461",
           "date": "2024-03-12",
           "kind": "vote"
         },
         {
-          "title": "Datan, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
-          "url": "https://datan.fr/votes/legislature-17/vote_988",
+          "title": "Assemblée nationale, scrutin n° 988 du 12 mars 2025 : proposition de résolution européenne appelant au renforcement du soutien à l'Ukraine",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/988",
           "date": "2025-03-12",
           "kind": "vote"
         }
@@ -1109,14 +1103,14 @@
       "justification": "Pas de position publique claire et sourcée à ce jour du candidat : le groupe Socialistes a voté la nationalisation d'ArcelorMittal France aux deux lectures (27 novembre 2025 : 28 pour, 1 abstention ; 11 juin 2026 : 25 pour), mais Raphaël Glucksmann ne s'est pas prononcé publiquement sur ce texte.",
       "sources": [
         {
-          "title": "Datan, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
-          "url": "https://datan.fr/votes/legislature-17/vote_4438",
+          "title": "Assemblée nationale, scrutin n° 4438 du 27 novembre 2025 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (première lecture)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4438",
           "date": "2025-11-27",
           "kind": "vote"
         },
         {
-          "title": "Datan, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
-          "url": "https://datan.fr/votes/legislature-17/vote_7380",
+          "title": "Assemblée nationale, scrutin n° 7380 du 11 juin 2026 : ensemble de la proposition de loi visant à la nationalisation d'ArcelorMittal France (deuxième lecture)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/7380",
           "date": "2026-06-11",
           "kind": "vote"
         }
@@ -1139,20 +1133,20 @@
       "justification": "Le groupe Socialistes s'est partagé : TVA à 5,5 % sur l'abonnement d'électricité en 2025 (17 pour, 14 abstentions, 1 contre), puis, le 2 novembre 2026, abstention majoritaire sur l'amendement LFI (1 pour, 2 abstentions) et vote contre l'amendement RN (2 contre). Pas de déclaration de Raphaël Glucksmann sur la TVA de l'électricité.",
       "sources": [
         {
-          "title": "Datan, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
-          "url": "https://datan.fr/votes/legislature-17/vote_4041",
+          "title": "Assemblée nationale, scrutin n° 4041 du 20 novembre 2025 : amendement n° 599 (M. Maurel, GDR), TVA à 5,5 % sur l'abonnement d'électricité (PLF 2026), adopté",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4041",
           "date": "2025-11-20",
           "kind": "vote"
         },
         {
-          "title": "Datan, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
-          "url": "https://datan.fr/votes/legislature-17/vote_9485",
+          "title": "Assemblée nationale, scrutin n° 9485 du 2 novembre 2026 : amendement n° I-286 (M. Laisney, LFI) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité jusqu'à 36 kVA, adopté",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9485",
           "date": "2026-11-02",
           "kind": "vote"
         },
         {
-          "title": "Datan, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
-          "url": "https://datan.fr/votes/legislature-17/vote_9489",
+          "title": "Assemblée nationale, scrutin n° 9489 du 2 novembre 2026 : amendement n° I-749 (M. Tanguy, RN) après l'article 16 du PLF 2027, TVA à 5,5 % sur l'électricité, rejeté",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/9489",
           "date": "2026-11-02",
           "kind": "vote"
         }
@@ -1169,8 +1163,8 @@
           "kind": "presse"
         },
         {
-          "title": "Datan – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
-          "url": "https://datan.fr/votes/legislature-15/vote_4296",
+          "title": "Assemblée nationale – Vote n° 4296 (XVe législature), suppression de l'article 1er de la PPL de légalisation du cannabis",
+          "url": "https://www.assemblee-nationale.fr/dyn/15/scrutins/4296",
           "date": "2022-01-13",
           "kind": "vote"
         }
@@ -1181,14 +1175,14 @@
       "justification": "Le groupe Socialistes a voté contre la suppression des ZFE le 28 mai 2025 (0 pour, 1 abstention, 17 contre) et pour la suppression de l'article abrogeant les ZFE le 8 octobre 2026 (20 pour, 0 contre) ; Gérard Leseul a qualifié l'abrogation d'« impasse ». Pas de déclaration de Raphaël Glucksmann.",
       "sources": [
         {
-          "title": "Datan – Vote n° 2190, article 15 ter (suppression des ZFE)",
-          "url": "https://datan.fr/votes/legislature-17/vote_2190",
+          "title": "Assemblée nationale – Vote n° 2190, article 15 ter (suppression des ZFE)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/2190",
           "date": "2025-05-28",
           "kind": "vote"
         },
         {
-          "title": "Datan – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
-          "url": "https://datan.fr/votes/legislature-17/vote_8613",
+          "title": "Assemblée nationale – Vote n° 8613, amendement de suppression de l'article unique, PPL abrogeant les ZFE-m",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/8613",
           "date": "2026-10-08",
           "kind": "vote"
         },
@@ -1289,8 +1283,8 @@
       "justification": "Le groupe Socialistes a voté contre la proposition de loi Attal (13 mai 2025 : 0 pour, 62 contre). Pas de déclaration de Raphaël Glucksmann sur l'excuse de minorité.",
       "sources": [
         {
-          "title": "Datan – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
-          "url": "https://datan.fr/votes/legislature-17/vote_1624",
+          "title": "Assemblée nationale – Vote n° 1624, PPL justice des mineurs (texte de la CMP)",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/1624",
           "date": "2025-05-13",
           "kind": "vote"
         },

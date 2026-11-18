@@ -11,6 +11,7 @@ export const AGGREGATOR_DOMAINS: readonly string[] = [
   'casier-politique.fr',
   'poligraph.fr',
   'lacampagne2027.com',
+  'datan.fr',
 ];
 
 export const isAggregator = (url: string) => AGGREGATOR_DOMAINS.includes(domainOf(url));

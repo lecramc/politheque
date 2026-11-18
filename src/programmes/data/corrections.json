@@ -1,5 +1,12 @@
 [
   {
+    "id": "2026-11-18-fiches-partis-les-sources-de-votes-qui-renvoyaie",
+    "date": "2026-11-18",
+    "kind": "mise-a-jour",
+    "pages": ["/partis"],
+    "summary": "Fiches partis : les sources de votes qui renvoyaient vers un agrégateur (Datan) pointent désormais vers les pages officielles des scrutins de l'Assemblée nationale (33 votes vérifiés) ; résultats européens et fiche de députée sourcés officiellement."
+  },
+  {
     "id": "2026-11-18-fiches-partis-les-effectifs-de-groupe-ecrits-a-l",
     "date": "2026-11-18",
     "kind": "mise-a-jour",

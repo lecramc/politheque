@@ -23,6 +23,7 @@ describe('Feature: domaines agrégateurs (pistes, jamais sources)', () => {
       'casier-politique.fr',
       'poligraph.fr',
       'lacampagne2027.com',
+      'datan.fr',
     ]);
   });
 });
