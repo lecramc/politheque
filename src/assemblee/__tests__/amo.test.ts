@@ -41,6 +41,42 @@ describe('Feature: lecture des acteurs de l’open data', () => {
     expect(left?.enExercice).toBe(false);
   });
 
+  it('should flag as sitting a député whose open mandate has a closed twin starting the same day (minister back)', () => {
+    const acteur = parseActeur(
+      rawActeur({
+        id: 'a',
+        groupes: [],
+        mandat: { debut: '2024-07-07' },
+        autresMandats: [{ debut: '2024-07-07', fin: '2024-10-21' }],
+      })
+    );
+    expect(acteur?.enExercice).toBe(true);
+  });
+
+  it('should flag as sitting a député who has a closed mandate starting later than his open one', () => {
+    const acteur = parseActeur(
+      rawActeur({
+        id: 'a',
+        groupes: [],
+        mandat: { debut: '2024-07-07' },
+        autresMandats: [{ debut: '2024-08-01', fin: '2025-01-23' }],
+      })
+    );
+    expect(acteur?.enExercice).toBe(true);
+  });
+
+  it('should take the constituency from the open mandate', () => {
+    const acteur = parseActeur(
+      rawActeur({
+        id: 'a',
+        groupes: [],
+        mandat: { debut: '2024-07-07', circo: '7' },
+        autresMandats: [{ debut: '2024-08-01', fin: '2025-01-23', circo: '9' }],
+      })
+    );
+    expect(acteur?.circonscription).toBe(7);
+  });
+
   it('should ignore a person without a 17th legislature mandate', () => {
     const raw = rawActeur({
       id: 'x',

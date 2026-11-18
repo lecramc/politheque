@@ -61,7 +61,10 @@ export const parseActeur = (raw: RawActeur): ActeurRecord | null => {
   const mandats = asList(raw.mandats?.mandat).filter((m) => m.legislature === LEGISLATURE);
   const seats = mandats.filter((m) => m.typeOrgane === 'ASSEMBLEE').sort(byStartDate);
   if (seats.length === 0) return null;
-  const latest = seats[seats.length - 1];
+  // Un ministre revenu garde un mandat clos de même début à côté du mandat rouvert : le mandat en
+  // cours prime, quel que soit l'ordre des mandats.
+  const open = seats.filter((m) => m.dateFin == null);
+  const latest = open.length ? open[open.length - 1] : seats[seats.length - 1];
   const withPlace = seats.filter((m) => toPlace(m.mandature?.placeHemicycle) !== null);
   const ident = raw.etatCivil.ident;
   return {
@@ -73,7 +76,7 @@ export const parseActeur = (raw: RawActeur): ActeurRecord | null => {
     departement: latest.election?.lieu?.departement ?? '',
     numDepartement: latest.election?.lieu?.numDepartement ?? '',
     circonscription: Number.parseInt(latest.election?.lieu?.numCirco ?? '', 10) || 0,
-    enExercice: latest.dateFin == null,
+    enExercice: open.length > 0,
     placeHemicycle: withPlace.length
       ? toPlace(withPlace[withPlace.length - 1].mandature?.placeHemicycle)
       : null,

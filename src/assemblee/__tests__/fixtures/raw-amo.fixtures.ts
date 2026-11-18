@@ -20,6 +20,8 @@ type ActeurOptions = {
     circo?: string;
     numDepartement?: string;
   };
+  /** Mandats de député supplémentaires de la 17e législature (ex. doublon clos d'un ministre revenu). */
+  autresMandats?: { debut: string; fin?: string | null; circo?: string }[];
 };
 
 const gpMandat = (id: string, g: GroupMembership, i: number): RawMandat => ({
@@ -68,6 +70,19 @@ export const rawActeur = (o: ActeurOptions): RawActeur => ({
         },
         mandature: { placeHemicycle: o.mandat.place ?? null },
       },
+      ...(o.autresMandats ?? []).map(
+        (m, i): RawMandat => ({
+          uid: `PM-AUTRE-${o.id}-${i}`,
+          legislature: '17',
+          typeOrgane: 'ASSEMBLEE',
+          dateDebut: m.debut,
+          dateFin: m.fin ?? null,
+          election: {
+            lieu: { departement: 'Nord', numDepartement: '59', numCirco: m.circo ?? '3' },
+          },
+          mandature: { placeHemicycle: null },
+        })
+      ),
       ...o.groupes.map((g, i) => gpMandat(o.id, g, i)),
       // autre type d'organe : ignoré
       {
