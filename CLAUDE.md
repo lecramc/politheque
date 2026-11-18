@@ -69,6 +69,9 @@ Les tests `src/programmes/__tests__/data-integrity.test.ts` font respecter la ch
   alimentée par `src/programmes/data/affaires/` généré depuis `prive/docs/affaires/` par
   `npm run affaires:promote` (règle 5 de la charte).
 - Pas de backend : site statique (`npm run build:web` → `dist/`), aucune réponse n'est envoyée.
+- Hémicycle (`/assemblee`) : votes de la 17e législature tirés de l'open data de l'Assemblée. Mis à jour chaque matin par le workflow `.github/workflows/assemblee-update.yml` (commit `build:` du bot seulement si des scrutins ou députés changent ; garde-fou `--guard` : échec si les scrutins baissent ou si les votes sans place augmentent). À la main : `npm run assemblee:update`.
+- « Signaler une erreur » en bas de chaque page de contenu indexable (pas pendant le questionnaire) : issue GitHub préremplie. Lien e-mail prévu mais désactivé (`REPORT_EMAIL = null` dans `src/core/config/app.ts`, choix de l'éditeur). Liens sortants : composant `ExternalLink` (le `Link` du routeur réécrit les URL).
+- Agenda du vote : `public/agenda-presidentielle-2027.ics`, régénéré par `npm run agenda:build` quand `voter-2027.json` ou les dates des tours changent (un test échoue sinon).
 
 ---
 
