@@ -214,3 +214,15 @@ describe('Feature: onglet Programme limité au programme 2027 publié', () => {
     expect(kinds?.slice(1).every((kind) => kind === 'rien')).toBe(true);
   });
 });
+
+describe("Feature: entrée vers les votes de l'Assemblée sur la fiche", () => {
+  it('should give every party the same link to the general page, without claiming a group', () => {
+    const expected = {
+      href: '/assemblee',
+      label: "Comment votent les groupes à l'Assemblée nationale",
+      note: "Un groupe n'est pas un parti : la page présente tous les groupes, sans les rattacher à un parti.",
+    };
+    expect(vmOf('alpha').assembleeLink).toEqual(expected);
+    expect(vmOf('sans-histoire').assembleeLink).toEqual(expected);
+  });
+});

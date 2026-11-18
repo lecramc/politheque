@@ -131,3 +131,9 @@ export type AssembleeManifest = {
   versionScript: string;
   regles: string[];
 };
+
+/** Composition de l'Assemblée à la date d'extraction (manifeste) : [indice du groupe dans l'index, députés en exercice]. */
+export type Composition = {
+  sieges: [groupeIdx: number, count: number][];
+  total: number;
+};

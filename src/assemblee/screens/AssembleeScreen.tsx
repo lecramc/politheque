@@ -8,6 +8,7 @@ import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { Article493Note } from '@/src/assemblee/components/Article493Note';
+import { AssembleeOverview } from '@/src/assemblee/components/AssembleeOverview';
 import { DataSourceNote } from '@/src/assemblee/components/DataSourceNote';
 import { ScrutinFilters } from '@/src/assemblee/components/ScrutinFilters';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
@@ -134,6 +135,8 @@ export default function AssembleeScreen() {
         <Text variant="title">{COPY.list.title}</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>{vm.lead}</Text>
       </View>
+
+      <AssembleeOverview />
 
       <View
         role="note"

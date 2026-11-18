@@ -95,6 +95,14 @@ export default function PartyPositionsScreen() {
           </View>
         ))}
       </View>
+      <View style={{ gap: effects.spacing.xxs }}>
+        <TextLink href={vm.assembleeLink.href} standalone>
+          {`${vm.assembleeLink.label} →`}
+        </TextLink>
+        <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+          {vm.assembleeLink.note}
+        </Text>
+      </View>
       <PageSources
         sources={vm.sourcesBySection['positions']}
         verifiedOn={vm.verifiedOn}

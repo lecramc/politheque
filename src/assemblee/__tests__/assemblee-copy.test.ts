@@ -20,6 +20,7 @@ const VISIBLE = [
   'others',
   'cited',
   'source',
+  'overview',
   'comprendre',
 ] as const;
 

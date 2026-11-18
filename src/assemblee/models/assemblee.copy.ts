@@ -281,10 +281,63 @@ export const COPY = {
     scrutinDescriptionCensureRejected: (numero: number, pour: number, requis: number) =>
       `Scrutin n° ${numero}. Motion rejetée : ${pour} voix pour, ${requis} requises. Vote de chaque groupe et de chaque député.`,
   },
+  overview: {
+    sitting: {
+      title: "Qui siège aujourd'hui",
+      lead: (date: string) =>
+        `Les députés en exercice au ${date}, groupe par groupe, de la gauche à la droite de l'hémicycle.`,
+      majority: (seats: number) => `Majorité absolue : ${seats} sièges`,
+      noMajority: (seats: number) =>
+        `Aucun groupe n'a la majorité absolue ; le plus grand compte ${seats} ${pluralize(seats, 'siège', 'sièges')}.`,
+      hasMajority: (name: string, seats: number) =>
+        `Le groupe ${name} a la majorité absolue, avec ${seats} sièges.`,
+      vacant: (count: number) =>
+        `${count} ${pluralize(count, 'siège vacant', 'sièges vacants')} dans les données`,
+      seats: (count: number) => `${count} ${pluralize(count, 'siège', 'sièges')}`,
+      chartLabel: (total: number, groups: number) =>
+        `Hémicycle : ${total} députés en exercice répartis en ${groups} groupes, détaillés dans la liste sous le schéma.`,
+      note: "Schéma simplifié : les sièges sont regroupés par groupe, sans reproduire le plan exact de la salle. Un groupe n'est pas un parti.",
+      listLabel: 'Effectif de chaque groupe',
+    },
+    grid: {
+      title: 'Qui vote quoi sur les grands votes',
+      lead: (count: number) =>
+        `Les ${count} derniers votes sur un texte entier, une motion de censure, une confiance ou une déclaration du Gouvernement. Pour chaque vote, la position de chaque groupe.`,
+      note: 'Position majoritaire des députés du groupe qui ont voté ; le détail député par député est dans chaque vote.',
+      shared:
+        "Partagé : aucune position n'atteint la moitié des députés du groupe qui ont voté. Pour une motion de censure, seuls les votes « pour » sont comptés.",
+      group: 'Groupe',
+      open: (title: string) => `Voir le vote : ${title}`,
+      cell: (group: string, position: string) => `${group} : ${position}`,
+      position: {
+        pour: 'Pour',
+        contre: 'Contre',
+        abstention: 'Abstention',
+        partage: 'Partagé',
+        absent: 'Absent',
+        motionNon: "N'a pas voté la motion",
+        sansDepute: 'Sans député',
+      },
+      caption: 'Position majoritaire de chaque groupe sur les derniers grands votes.',
+    },
+    law: {
+      title: 'Comment une loi est votée',
+      text: "Du dépôt du texte au vote final : les étapes, et le rôle de l'Assemblée et du Sénat.",
+      cta: 'Lire : comment une loi est votée',
+    },
+    allVotes: {
+      title: 'Tous les votes',
+    },
+  },
+  /** Lien depuis la fiche d'un parti : le même pour tous, sans rattacher de groupe à un parti. */
+  partyLink: {
+    label: "Comment votent les groupes à l'Assemblée nationale",
+    note: "Un groupe n'est pas un parti : la page présente tous les groupes, sans les rattacher à un parti.",
+  },
   comprendre: {
-    cardTitle: "Les votes de l'Assemblée",
+    cardTitle: "L'Assemblée : qui vote quoi",
     cardText:
-      'Le résultat, le vote de chaque groupe et de chaque député sur les lois, le budget et les motions de censure.',
+      "Qui siège aujourd'hui, la position de chaque groupe sur les grands votes, puis tous les votes : le résultat, le vote de chaque groupe et de chaque député.",
     cardMeta: (count: number) => `${count} votes`,
   },
   method: {

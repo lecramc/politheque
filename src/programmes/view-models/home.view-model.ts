@@ -3,6 +3,7 @@ import { createSelector } from 'reselect';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { electionFacts } from '@/src/programmes/models/election.service';
 import {
+  ASSEMBLEE_LINK_COPY,
   HOME_COPY,
   situerSubtitle,
   TASK_COPY,
@@ -69,6 +70,11 @@ export const homeViewModel = () =>
         title: HOME_COPY.title,
         tasks,
         /** Sous les tâches : la liste complète des candidats, près de « Voter en 2027 ». */
+        assembleeLink: {
+          href: '/assemblee',
+          label: ASSEMBLEE_LINK_COPY.label,
+          subtitle: ASSEMBLEE_LINK_COPY.subtitle,
+        },
         candidatesLink: entry ? { href: entry.href, label: entry.label } : null,
         parties: [...(catalog?.parties ?? [])]
           .sort((a, b) => a.name.localeCompare(b.name, 'fr'))

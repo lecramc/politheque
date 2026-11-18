@@ -120,3 +120,13 @@ describe('Feature: carte « Le parcours »', () => {
     });
   });
 });
+
+describe("Feature: entrée vers les votes de l'Assemblée", () => {
+  it('should offer one link below the tasks, whatever the catalog holds', () => {
+    expect(vmOf().assembleeLink).toEqual({
+      href: '/assemblee',
+      label: 'Ce que votent les députés',
+      subtitle: 'Qui siège, qui vote quoi, tous les votes',
+    });
+  });
+});

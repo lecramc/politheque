@@ -29,6 +29,13 @@ export const TASK_COPY = {
   voter: { title: 'Voter en 2027', icon: 'calendar-outline' },
 } as const;
 
+/** Entrée vers les votes de l'Assemblée, sous les tâches : hors des quatre tâches. */
+export const ASSEMBLEE_LINK_COPY = {
+  label: 'Ce que votent les députés',
+  subtitle: 'Qui siège, qui vote quoi, tous les votes',
+  icon: 'albums-outline',
+} as const;
+
 /** « 31 affirmations · 5 min · rien n'est envoyé » : le nombre vient du catalogue. */
 export const situerSubtitle = (questionCount: number) =>
   `${questionCount} affirmations · 5 min · rien n'est envoyé`;

@@ -1,6 +1,7 @@
 import { Platform } from 'react-native';
 
 import {
+  buildStaticComposition,
   buildStaticIndex,
   buildStaticManifest,
   StaticAssembleeGateway,
@@ -25,6 +26,7 @@ export const store = createStore({
     assemblee: {
       index: buildStaticIndex(),
       manifest: buildStaticManifest(),
+      composition: buildStaticComposition(),
       details: {},
       deputes: { status: 'idle' },
     },

@@ -13,7 +13,7 @@ import { Card } from '@/src/programmes/components/Card';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { TaskCard } from '@/src/programmes/components/TaskCard';
-import { HOME_COPY } from '@/src/programmes/models/home.copy';
+import { ASSEMBLEE_LINK_COPY, HOME_COPY } from '@/src/programmes/models/home.copy';
 import { homeMeta } from '@/src/programmes/models/seo/page-meta';
 import { selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
 import { homeViewModel } from '@/src/programmes/view-models/home.view-model';
@@ -59,6 +59,13 @@ export default function HomeScreen() {
             href={vm.candidatesLink.href}
           />
         ) : null}
+
+        <TaskCard
+          title={vm.assembleeLink.label}
+          subtitle={vm.assembleeLink.subtitle}
+          icon={ASSEMBLEE_LINK_COPY.icon}
+          href={vm.assembleeLink.href}
+        />
 
         <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>

@@ -1,8 +1,10 @@
+import composition from '@/src/assemblee/data/composition.json';
 import manifest from '@/src/assemblee/data/manifest.json';
 import indexData from '@/src/assemblee/data/scrutins-index.json';
 import type { AssembleeGateway } from '@/src/assemblee/gateways/assemblee.gateway';
 import type {
   AssembleeManifest,
+  Composition,
   DeputeDirectory,
   ScrutinDetail,
   ScrutinIndex,
@@ -12,6 +14,7 @@ const DATA_PATH = '/donnees/assemblee/v1';
 
 /** Index et manifeste embarqués dans le bundle (pré-rendu, SEO) ; détails et députés servis en fichiers. */
 export const buildStaticIndex = (): ScrutinIndex => indexData as unknown as ScrutinIndex;
+export const buildStaticComposition = (): Composition => composition as unknown as Composition;
 export const buildStaticManifest = (): AssembleeManifest =>
   manifest as unknown as AssembleeManifest;
 

@@ -1,5 +1,6 @@
 import { createSelector } from 'reselect';
 
+import { COPY as ASSEMBLEE_COPY } from '@/src/assemblee/models/assemblee.copy';
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
 import { emptyCatalog } from '@/src/programmes/models/empty-catalog';
@@ -47,6 +48,8 @@ import {
   selectFeaturedElection,
 } from '@/src/programmes/store/programmes.selector';
 import { markContentReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
+
+const ASSEMBLEE_PARTY_LINK = ASSEMBLEE_COPY.partyLink;
 
 const sourceCountLabel = (count: number) => `${count} source${count > 1 ? 's' : ''}`;
 
@@ -172,6 +175,8 @@ export const partyViewModel =
                   electionTitle: electionPhrase(featured),
                 })
               : null,
+          /** Même lien, vers la page générale, pour les dix partis. */
+          assembleeLink: { href: '/assemblee', ...ASSEMBLEE_PARTY_LINK },
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,
           sections,
           metaBySection,

@@ -66,8 +66,8 @@ describe('Feature: entrée vers les votes de l’Assemblée depuis Comprendre', 
       )
       .build();
     expect(vmOf(state).assemblee).toEqual({
-      title: "Les votes de l'Assemblée",
-      text: 'Le résultat, le vote de chaque groupe et de chaque député sur les lois, le budget et les motions de censure.',
+      title: "L'Assemblée : qui vote quoi",
+      text: "Qui siège aujourd'hui, la position de chaque groupe sur les grands votes, puis tous les votes : le résultat, le vote de chaque groupe et de chaque député.",
       href: '/assemblee',
       meta: '2 votes',
     });

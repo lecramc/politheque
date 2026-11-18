@@ -17,7 +17,7 @@
 // testée sur des fixtures ; ce script n'orchestre que les entrées-sorties. Sortie déterministe :
 // deux exécutions sur les mêmes zips donnent les mêmes octets.
 //
-// Écrit : src/assemblee/data/{manifest,scrutins-index}.json,
+// Écrit : src/assemblee/data/{manifest,scrutins-index,composition}.json,
 //         public/donnees/assemblee/v1/{deputes.json,scrutins/<numero>.json}
 import { execFileSync } from 'node:child_process';
 import crypto from 'node:crypto';
@@ -165,7 +165,7 @@ const readPrevious = () => {
   return previous;
 };
 
-const buildOutputs = ({ dataset, meta, sha, resolveUpdatedAt, rules }) => {
+const buildOutputs = ({ dataset, meta, sha, resolveUpdatedAt, rules, composition }) => {
   const previous = readPrevious();
   const outputs = new Map();
 
@@ -184,6 +184,7 @@ const buildOutputs = ({ dataset, meta, sha, resolveUpdatedAt, rules }) => {
     summaries.map((s) => JSON.stringify(s)).join(',\n') +
     '\n]}\n';
   outputs.set(path.join(DATA_DIR, 'scrutins-index.json'), indexText);
+  outputs.set(path.join(DATA_DIR, 'composition.json'), JSON.stringify(composition) + '\n');
 
   for (const { detail } of dataset.scrutins) {
     outputs.set(path.join(SCRUTINS_DIR, `${detail.numero}.json`), JSON.stringify(detail) + '\n');
@@ -300,6 +301,7 @@ const { classifyScrutin, isUnclassifiedSolemn, PERIMETER_RULES } = await load(
 );
 const { parseActeur, parseGroupe } = await load('/src/assemblee/models/extraction/amo.ts');
 const { compactDataset } = await load('/src/assemblee/models/extraction/compact.ts');
+const { currentComposition } = await load('/src/assemblee/models/extraction/composition.ts');
 const { resolveUpdatedAt } = await load('/src/assemblee/models/extraction/updated-at.ts');
 const { findRegressions } = await load('/src/assemblee/models/extraction/regressions.ts');
 
@@ -320,9 +322,11 @@ const groupes = readJsonDir(path.join(dir, 'amo/json/organe'))
   .filter(Boolean);
 
 const dataset = compactDataset({ scrutins: rawScrutins, acteurs, groupes });
+const meta = sourceMeta(dir);
 const result = buildOutputs({
   dataset,
-  meta: sourceMeta(dir),
+  meta,
+  composition: currentComposition({ acteurs, groupes: dataset.groupes, date: meta.extraitLe }),
   sha: { scrutins: sha256(scrutinsZip), amo: sha256(amoZip) },
   resolveUpdatedAt,
   rules: PERIMETER_RULES,

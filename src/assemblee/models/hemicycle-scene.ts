@@ -111,7 +111,7 @@ const boundaryBetween = (left: Block, right: Block): number => {
  */
 export const hemicycleArcs = (
   layout: HemicycleLayout,
-  detail: ScrutinDetail,
+  detail: Pick<ScrutinDetail, 'places' | 'groupes'>,
   groupes: Groupe[]
 ): ArcSegment[] => {
   const angleOf = new Map(layout.seats.map((seat) => [seat.place, seat.angle]));

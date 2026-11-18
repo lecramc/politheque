@@ -2,6 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import type {
   AssembleeManifest,
+  Composition,
   DeputeDirectory,
   ScrutinDetail,
   ScrutinIndex,
@@ -20,6 +21,8 @@ export type AssembleeState = {
   /** Préchargés dans le bundle (comme le catalogue) : le pré-rendu contient déjà le texte des pages. */
   index: ScrutinIndex | null;
   manifest: AssembleeManifest | null;
+  /** Composition de l'Assemblée à l'extraction (embarquée, comme l'index). */
+  composition: Composition | null;
   details: Record<number, Resource<ScrutinDetail>>;
   deputes: Resource<DeputeDirectory>;
 };
@@ -27,6 +30,7 @@ export type AssembleeState = {
 const initialState: AssembleeState = {
   index: null,
   manifest: null,
+  composition: null,
   details: {},
   deputes: { status: 'idle' },
 };

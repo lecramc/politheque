@@ -1,5 +1,6 @@
 import type {
   AssembleeManifest,
+  Composition,
   DeputeDirectory,
   ScrutinDetail,
   ScrutinIndex,
@@ -15,6 +16,7 @@ export const assembleeStateBuilder = (state: AppState = initial()) => {
   return {
     withIndex: (index: ScrutinIndex) => next({ index }),
     withManifest: (manifest: AssembleeManifest) => next({ manifest }),
+    withComposition: (composition: Composition) => next({ composition }),
     withDetail: (detail: ScrutinDetail) =>
       next({
         details: {
