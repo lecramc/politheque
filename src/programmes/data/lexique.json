@@ -8,7 +8,7 @@
       "Depuis la révision constitutionnelle du 23 juillet 2008, le 49.3 peut être utilisé sans limite pour les lois de finances et les lois de financement de la sécurité sociale, et pour un seul autre texte par session.",
       "Selon l'Assemblée nationale, il a été utilisé 23 fois sous la XVIe législature. En décembre 2024, une motion de censure déposée après un 49.3 sur le budget de la Sécurité sociale pour 2025 a été adoptée, et le gouvernement de Michel Barnier a démissionné."
     ],
-    "related": ["budget-dette", "pouvoirs-du-president"],
+    "related": ["comment-une-loi-est-votee", "budget-dette"],
     "sources": [
       {
         "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 49)",
@@ -34,7 +34,7 @@
       "Un député ne peut signer plus de trois motions de ce type par session ordinaire. Les motions déposées en réponse à un 49.3 ne comptent pas dans cette limite.",
       "Selon la fiche de l'Assemblée nationale mise à jour en décembre 2024, deux motions de censure ont été adoptées depuis 1958 : en 1962 et le 4 décembre 2024."
     ],
-    "related": ["institutions", "budget-dette"],
+    "related": ["comment-une-loi-est-votee", "institutions"],
     "sources": [
       {
         "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 49 et 50)",
@@ -64,7 +64,7 @@
     "more": [
       "La décision est prise après délibération du Conseil des ministres. Le vote a lieu par scrutin public, à la majorité absolue des suffrages exprimés."
     ],
-    "related": ["institutions"],
+    "related": ["comment-une-loi-est-votee"],
     "sources": [
       {
         "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 49 et 50)",
@@ -341,7 +341,7 @@
       "Pour être élu président au premier tour, il faut la majorité absolue des suffrages exprimés.",
       "Une motion de censure doit être adoptée à la majorité absolue des membres qui composent l'Assemblée, et pas seulement des présents."
     ],
-    "related": ["pouvoirs-du-president", "election-presidentielle"],
+    "related": ["comment-une-loi-est-votee", "pouvoirs-du-president", "election-presidentielle"],
     "sources": [
       {
         "title": "Code électoral, articles LO119 à LO122 (composition de l'Assemblée nationale et durée du mandat des députés)",
@@ -420,7 +420,7 @@
       "À chaque lecture, seuls les articles qui n'ont pas encore été adoptés dans les mêmes termes sont discutés.",
       "Si les deux assemblées restent en désaccord, le Premier ministre peut réunir une commission mixte paritaire. En dernier recours, le gouvernement peut demander à l'Assemblée nationale de statuer définitivement."
     ],
-    "related": ["institutions", "pouvoirs-du-president"],
+    "related": ["comment-une-loi-est-votee"],
     "sources": [
       {
         "title": "Fiche de synthèse n° 46 : La procédure législative",
@@ -451,7 +451,7 @@
       "Elle se réunit normalement après deux lectures dans chaque assemblée, ou une seule si le gouvernement a engagé la « procédure accélérée ».",
       "Si elle échoue, le gouvernement peut, après une nouvelle lecture, donner le dernier mot à l'Assemblée nationale (« lecture définitive »)."
     ],
-    "related": ["institutions"],
+    "related": ["comment-une-loi-est-votee"],
     "sources": [
       {
         "title": "Lexique de l'Assemblée nationale",
@@ -659,7 +659,7 @@
       "Un groupe peut se déclarer d'opposition ; il bénéficie alors de droits spécifiques (article 51-1 de la Constitution). Les groupes qui ne se déclarent pas d'opposition, sauf le plus nombreux, sont dits « minoritaires ».",
       "Les groupes sont distincts juridiquement des partis politiques."
     ],
-    "related": ["institutions", "classement-des-partis"],
+    "related": ["comment-une-loi-est-votee", "classement-des-partis"],
     "sources": [
       {
         "title": "Fiche de synthèse : Les groupes politiques",

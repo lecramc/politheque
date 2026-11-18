@@ -54,7 +54,7 @@
         ],
         "more": [
           "Il prépare la plupart des projets de loi et le budget. Il fait appliquer les lois avec des décrets.",
-          "Le gouvernement est « responsable » devant l'Assemblée nationale. Si la majorité absolue des députés (289 sur 577) vote une « motion de censure », le gouvernement doit démissionner."
+          "Le gouvernement est « responsable » devant l'Assemblée nationale : elle peut le renverser en votant une « motion de censure »."
         ],
         "sources": [
           {
@@ -73,7 +73,7 @@
         "more": [
           "L'Assemblée nationale compte 577 députés, élus directement par les citoyens pour 5 ans. Elle seule peut renverser le gouvernement. Elle seule peut être dissoute par le président.",
           "Le Sénat compte 348 sénateurs, élus pour 6 ans par environ 160 000 « grands électeurs », surtout des élus locaux (on dit « suffrage indirect »). Il est renouvelé par moitié tous les 3 ans. Il représente les collectivités territoriales. Il ne peut pas être dissous.",
-          "Une loi doit être votée dans les mêmes termes par les deux chambres. En cas de désaccord persistant, le gouvernement peut en général donner le « dernier mot » à l'Assemblée nationale."
+          "Une loi doit être votée dans les mêmes termes par les deux chambres. Pour en savoir plus, voir la leçon « Comment une loi est votée à l'Assemblée »."
         ],
         "sources": [
           {
@@ -175,7 +175,7 @@
         ],
         "more": [
           "Le budget de l'État et celui de la Sécurité sociale doivent aussi être votés chaque année par le Parlement.",
-          "Concrètement : un président peut annoncer une mesure, mais elle ne s'applique que si le Parlement l'adopte. Le gouvernement peut faire adopter un texte sans vote avec l'article 49.3. Il s'expose alors à une motion de censure."
+          "Concrètement : un président peut annoncer une mesure, mais elle ne s'applique que si le Parlement l'adopte. Pour en savoir plus, voir la leçon « Comment une loi est votée à l'Assemblée »."
         ],
         "sources": [
           {
@@ -188,12 +188,6 @@
             "title": "Texte intégral de la Constitution (article 34)",
             "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
             "date": "2026-11-03",
-            "kind": "statistique"
-          },
-          {
-            "title": "Fiche de synthèse n°64 : La mise en cause de la responsabilité du Gouvernement",
-            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
-            "date": "2026-11-09",
             "kind": "statistique"
           }
         ]
@@ -242,11 +236,13 @@
       },
       {
         "heading": "Pourquoi la majorité à l'Assemblée compte autant",
-        "paragraphs": ["La majorité absolue à l'Assemblée nationale, c'est 289 députés sur 577."],
+        "paragraphs": [
+          "Quand le président a une majorité de députés qui le soutient, il est le principal moteur de la politique du pays."
+        ],
         "more": [
-          "Quand le président a une majorité de députés qui le soutient, il est le principal moteur de la politique du pays.",
           "Quand la majorité des députés est opposée au président, il nomme en pratique un Premier ministre qu'elle accepte, car elle peut renverser le gouvernement. C'est la « cohabitation ». Le pouvoir passe alors en grande partie au gouvernement. Le président garde ses pouvoirs propres et un rôle important en défense et en affaires étrangères.",
-          "Il y a eu trois cohabitations : 1986, 1993 et 1997."
+          "Il y a eu trois cohabitations : 1986, 1993 et 1997.",
+          "Pour en savoir plus, voir la leçon « Comment une loi est votée à l'Assemblée »."
         ],
         "sources": [
           {
@@ -263,8 +259,8 @@
           "Le 9 juin 2024, le président Emmanuel Macron a dissous l'Assemblée nationale. Des élections législatives anticipées ont eu lieu les 30 juin et 7 juillet 2024."
         ],
         "more": [
-          "À l'issue du second tour, aucun bloc n'a obtenu la majorité absolue de 289 sièges. Le Nouveau Front populaire est arrivé en tête en nombre de sièges, devant la coalition présidentielle Ensemble puis le Rassemblement national et ses alliés.",
-          "Depuis, les gouvernements successifs doivent chercher des soutiens texte par texte, ou utiliser l'article 49.3. En décembre 2024, une motion de censure a été adoptée contre le gouvernement de Michel Barnier, qui a démissionné. Le 8 septembre 2025, l'Assemblée a refusé sa confiance au gouvernement de François Bayrou, qui a démissionné.",
+          "À l'issue du second tour, aucun bloc n'a obtenu la majorité absolue. Le Nouveau Front populaire est arrivé en tête en nombre de sièges, devant la coalition présidentielle Ensemble puis le Rassemblement national et ses alliés.",
+          "Depuis, les gouvernements successifs doivent chercher des soutiens texte par texte, ou utiliser l'article 49.3. Deux sont tombés : celui de Michel Barnier, renversé par une motion de censure en décembre 2024, et celui de François Bayrou, à qui l'Assemblée a refusé sa confiance le 8 septembre 2025.",
           "À l'automne 2026, l'Assemblée examine le budget 2027 présenté par le gouvernement de Sébastien Lecornu, qui n'y dispose pas d'une majorité."
         ],
         "sources": [
@@ -1699,7 +1695,9 @@
         ],
         "more": [
           "Le Parlement a 70 jours pour voter le PLF et 50 jours pour le PLFSS (articles 47 et 47-1 de la Constitution). S'il ne s'est pas prononcé à temps, le gouvernement peut mettre le texte en vigueur par ordonnance.",
-          "Pour le PLF 2027, déposé le 1er octobre 2026, le délai de 70 jours se termine le 17 décembre 2026 à minuit, selon LCP. Ce délai ne part pas forcément du jour du dépôt. Le 4 novembre 2026, l'Assemblée nationale a rejeté le texte en première lecture."
+          "Pour le PLF 2027, déposé le 1er octobre 2026, le délai de 70 jours se termine le 17 décembre 2026 à minuit, selon LCP. Ce délai ne part pas forcément du jour du dépôt. Le 4 novembre 2026, l'Assemblée nationale a rejeté le texte en première lecture.",
+          "Le gouvernement peut faire adopter le PLF et le PLFSS sans vote des députés avec l'article 49.3, sans limite pour ces deux textes (contre un seul autre texte par session). Les députés peuvent alors le renverser par une motion de censure.",
+          "En décembre 2024, le gouvernement de Michel Barnier a été renversé après un 49.3 sur le budget de la Sécurité sociale pour 2025. Pour en savoir plus, voir la leçon « Comment une loi est votée à l'Assemblée »."
         ],
         "sources": [
           {
@@ -1725,20 +1723,7 @@
             "url": "https://www.assemblee-nationale.fr/dyn/17/dossiers/plf_2027",
             "date": "2026-11-09",
             "kind": "statistique"
-          }
-        ]
-      },
-      {
-        "heading": "Le « 49.3 »",
-        "paragraphs": [
-          "L'article 49, alinéa 3 de la Constitution permet au Premier ministre de faire adopter un texte sans vote des députés."
-        ],
-        "more": [
-          "En échange, il met en jeu la survie de son gouvernement : les députés ont 24 heures pour déposer une motion de censure. Si elle est votée par la majorité absolue des membres composant l'Assemblée (289 députés quand les 577 sièges sont pourvus), le texte est rejeté et le gouvernement doit démissionner. Sinon, le texte est considéré comme adopté.",
-          "Il peut être utilisé sans limite pour les budgets (PLF et PLFSS), et pour un seul autre texte par session.",
-          "En décembre 2024, le gouvernement de Michel Barnier a été renversé après un 49.3 sur le budget de la Sécurité sociale pour 2025."
-        ],
-        "sources": [
+          },
           {
             "title": "Fiche de synthèse n°64 : La mise en cause de la responsabilité du Gouvernement",
             "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
