@@ -1,6 +1,6 @@
 import { votePalette } from '@/components/vote-colors';
 import index from '@/src/assemblee/data/scrutins-index.json';
-import { colorDistance, contrastRatio } from '@/src/assemblee/models/group-color';
+import { colorDistance, contrastRatio } from '@/src/core/utils/color-contrast';
 
 /** Fonds les plus défavorables de chaque thème (crème soutenu, bleu nuit élevé). */
 const GROUP_COLOR_BACKGROUNDS = { light: '#F6F2EA', dark: '#161E33' } as const;

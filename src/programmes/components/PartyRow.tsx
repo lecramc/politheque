@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
   gridTopRule: { borderTopWidth: 1 },
 });
 
-/** Ligne dense d'une liste de partis : anneau, nom, une ligne de contexte, chevron. */
+/** Ligne dense d'une liste de partis : bande de couleur, pastille, nom, une ligne de contexte, chevron. */
 export function PartyRow({
   party,
   subtitle,
@@ -54,6 +54,17 @@ export function PartyRow({
           borderColor: colors.surface.border.primary,
         }}
       >
+        {/* Bande de la couleur du parti sur le bord gauche : même repère pour les dix partis. */}
+        <View
+          style={{
+            position: 'absolute',
+            left: 0,
+            top: 0,
+            bottom: 0,
+            width: 4,
+            backgroundColor: party.color,
+          }}
+        />
         <PartyDot color={party.color} size={36} label={party.shortName} />
         <View style={{ flex: 1, minWidth: 0, gap: effects.spacing.xxs }}>
           <Text style={{ ...fonts.bold, fontSize: 16 }}>{party.name}</Text>

@@ -1,5 +1,5 @@
 import assembleeIndex from '@/src/assemblee/data/scrutins-index.json';
-import { colorDistance } from '@/src/assemblee/models/group-color';
+import { colorDistance } from '@/src/core/utils/color-contrast';
 import { PARTIES } from '@/src/programmes/data/parties';
 
 /** Groupe dont les députés forment l'essentiel du parti ; `null` : aucun groupe à l'Assemblée. */

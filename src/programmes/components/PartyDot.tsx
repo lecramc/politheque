@@ -4,10 +4,13 @@ import { StyleSheet, View } from 'react-native';
 import { theme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { registerStyle, useColorStyle } from '@/components/webTheme';
+import { initialTextColor } from '@/src/programmes/models/party-dot-colors';
 
 /**
- * Pastille de parti : un anneau de la couleur d'identification autour de l'initiale.
- * Jamais d'aplat, pour ne pas se confondre avec les couleurs d'interface.
+ * Pastille de parti : un disque plein de la couleur d'identification, l'initiale écrite dessus en
+ * blanc ou quasi-noir selon le meilleur contraste. Un contour fin garde visibles les couleurs
+ * claires sur fond crème et les sombres sur fond nuit. Sous 20 px : disque plein sans initiale.
+ * La couleur n'est jamais la seule information : le nom du parti est toujours écrit à côté.
  */
 export function PartyDot({
   color,
@@ -19,46 +22,34 @@ export function PartyDot({
   label?: string;
 }) {
   const c = useColorStyle();
-  const ring = Math.max(2, Math.round(size / 9));
   return (
     <View
       style={[
-        styles.outer,
-        registerStyle({ borderRadius: size }),
+        styles.disc,
+        registerStyle({
+          width: size,
+          height: size,
+          borderRadius: size / 2,
+          backgroundColor: color,
+        }),
         c((p) => ({ borderColor: p.surface.border.tertiary })),
       ]}
     >
-      <View
-        style={[
-          styles.inner,
-          registerStyle({
-            width: size,
-            height: size,
-            borderRadius: size / 2,
-            borderWidth: ring,
-            borderColor: color,
-          }),
-          c((p) => ({ backgroundColor: p.surface.primary })),
-        ]}
-      >
-        {label && size >= 20 ? (
-          <Text
-            style={[
-              styles.initial,
-              registerStyle({ fontSize: size * 0.38 }),
-              c((p) => ({ color: p.text.primary })),
-            ]}
-          >
-            {label.slice(0, 1)}
-          </Text>
-        ) : null}
-      </View>
+      {label && size >= 20 ? (
+        <Text
+          style={[
+            styles.initial,
+            registerStyle({ fontSize: size * 0.38, color: initialTextColor(color) }),
+          ]}
+        >
+          {label.slice(0, 1)}
+        </Text>
+      ) : null}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  outer: { padding: 1, borderWidth: 1 },
-  inner: { alignItems: 'center', justifyContent: 'center' },
+  disc: { alignItems: 'center', justifyContent: 'center', borderWidth: 1 },
   initial: { ...theme.fonts.bold },
 });

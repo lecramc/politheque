@@ -1,10 +1,6 @@
-import {
-  colorDistance,
-  contrastRatio,
-  GROUP_FALLBACK_COLOR,
-  groupColor,
-} from '@/src/assemblee/models/group-color';
+import { GROUP_FALLBACK_COLOR, groupColor } from '@/src/assemblee/models/group-color';
 import { groupeFactory } from '@/src/assemblee/models/scrutin.factory';
+import { colorDistance, contrastRatio } from '@/src/core/utils/color-contrast';
 
 describe('Feature: couleurs des groupes', () => {
   it('should compute the WCAG contrast ratio', () => {

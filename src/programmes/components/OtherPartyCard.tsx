@@ -14,7 +14,7 @@ import type { OtherPartyCard as OtherPartyCardData } from '@/src/programmes/mode
 
 /**
  * Carte courte d'un parti présentant un candidat, sans fiche détaillée. Même gabarit pour tous :
- * pastille neutre (jamais de couleur de parti), nom, candidat, les deux étiquettes, description.
+ * pastille neutre (ces partis n'ont pas de couleur d'identification établie), nom, candidat, les deux étiquettes, description.
  */
 export function OtherPartyCard({ card }: { card: OtherPartyCardData }) {
   const { colors, effects, fonts } = useTheme();

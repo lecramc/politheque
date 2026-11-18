@@ -40,6 +40,16 @@ export function PartyHeader({
           {party.name}
         </Text>
       </View>
+      {/* Filet de la couleur du parti, sobre ; le contour garde visibles les couleurs claires. */}
+      <View
+        style={{
+          height: 5,
+          borderRadius: 3,
+          backgroundColor: party.color,
+          borderWidth: 1,
+          borderColor: colors.surface.border.tertiary,
+        }}
+      />
       <View>
         {/* Deux classements côte à côte, toujours les deux lignes ; le lien ouvre la feuille. */}
         <View style={{ gap: effects.spacing.xs }}>
