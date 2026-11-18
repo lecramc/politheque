@@ -11,6 +11,7 @@ import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { KeyIdeaList } from '@/src/programmes/components/KeyIdeaList';
 import { PageSources } from '@/src/programmes/components/PageSources';
+import { PartyAssembleeCard } from '@/src/programmes/components/PartyAssembleeCard';
 import { ProgrammeNotice } from '@/src/programmes/components/ProgrammeNotice';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
@@ -129,6 +130,8 @@ export default function PartyProgrammeScreen() {
           )}
         </View>
       ) : null}
+
+      {vm.assemblee ? <PartyAssembleeCard panel={vm.assemblee} /> : null}
 
       <PageSources
         sources={vm.sourcesBySection['programme']}

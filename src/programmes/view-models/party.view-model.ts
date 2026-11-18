@@ -1,6 +1,11 @@
 import { createSelector } from 'reselect';
 
-import { COPY as ASSEMBLEE_COPY } from '@/src/assemblee/models/assemblee.copy';
+import { partyAssemblee } from '@/src/assemblee/models/party-assemblee';
+import {
+  selectAssembleeComposition,
+  selectAssembleeIndex,
+  selectAssembleeManifest,
+} from '@/src/assemblee/store/assemblee.selector';
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
 import { emptyCatalog } from '@/src/programmes/models/empty-catalog';
@@ -49,16 +54,21 @@ import {
 } from '@/src/programmes/store/programmes.selector';
 import { markContentReadUsecase } from '@/src/programmes/usecases/reading-progress.usecase';
 
-const ASSEMBLEE_PARTY_LINK = ASSEMBLEE_COPY.partyLink;
-
 const sourceCountLabel = (count: number) => `${count} source${count > 1 ? 's' : ''}`;
 
 export const partyViewModel =
   (partyId: string) =>
   ({ dispatch }: { dispatch: AppDispatch }) =>
     createSelector(
-      [selectCatalog, selectCatalogStatus, selectFeaturedElection],
-      (catalog, status, featured) => {
+      [
+        selectCatalog,
+        selectCatalogStatus,
+        selectFeaturedElection,
+        selectAssembleeIndex,
+        selectAssembleeComposition,
+        selectAssembleeManifest,
+      ],
+      (catalog, status, featured, assembleeIndex, composition, manifest) => {
         const party = catalog?.parties.find((p) => p.id === partyId) ?? null;
         const featuredId = featured?.id ?? null;
         const legalPublished = !!catalog && hasLegalSection(catalog);
@@ -175,8 +185,16 @@ export const partyViewModel =
                   electionTitle: electionPhrase(featured),
                 })
               : null,
-          /** Même lien, vers la page générale, pour les dix partis. */
-          assembleeLink: { href: '/assemblee', ...ASSEMBLEE_PARTY_LINK },
+          /** Encart « À l'Assemblée » : le groupe officiel du parti (sigle de `colorSource`), même forme pour les dix. */
+          assemblee:
+            party && assembleeIndex && composition && manifest
+              ? partyAssemblee({
+                  groupe: party.colorSource.groupe,
+                  index: assembleeIndex,
+                  composition,
+                  manifest,
+                })
+              : null,
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,
           sections,
           metaBySection,

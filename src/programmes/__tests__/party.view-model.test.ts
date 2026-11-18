@@ -1,3 +1,10 @@
+import {
+  groupeFactory,
+  indexFactory,
+  manifestFactory,
+  scrutinFactory,
+} from '@/src/assemblee/models/scrutin.factory';
+import { assembleeStateBuilder } from '@/src/assemblee/store/state-builder';
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
 import {
   legalDossierFactory,
@@ -215,14 +222,52 @@ describe('Feature: onglet Programme limité au programme 2027 publié', () => {
   });
 });
 
-describe("Feature: entrée vers les votes de l'Assemblée sur la fiche", () => {
-  it('should give every party the same link to the general page, without claiming a group', () => {
-    const expected = {
-      href: '/assemblee',
-      label: "Comment votent les groupes à l'Assemblée nationale",
-      note: "Un groupe n'est pas un parti : la page présente tous les groupes, sans les rattacher à un parti.",
+describe("Feature: encart « À l'Assemblée » de la fiche", () => {
+  const groupes = [
+    groupeFactory({
+      organeRef: 'PO1',
+      abrev: 'DX',
+      libelle: 'Droite',
+      couleurOfficielle: '#112233',
+    }),
+  ];
+  const assemblee = assembleeStateBuilder(stateBuilder().withCatalog(catalog).build())
+    .withIndex(
+      indexFactory({
+        groupes,
+        scrutins: [scrutinFactory({ numero: 3, groupes: [[0, 20, 10, 2, 0, 0]] })],
+      })
+    )
+    .withComposition({ sieges: [[0, 33]], total: 33 })
+    .withManifest(manifestFactory({ extraitLe: '2026-11-18' }))
+    .build();
+  const panelOf = (id: string) => partyViewModel(id)({ dispatch: vi.fn() })(assemblee).assemblee;
+
+  it('should show the group of the party, taken from its colour source, with its official count', () => {
+    const grouped = catalogFactory({
+      parties: [
+        partyFactory({
+          id: 'alpha',
+          colorSource: { groupe: 'DX', text: '', source: null },
+        }),
+      ],
+    });
+    const state = {
+      ...assemblee,
+      programmes: stateBuilder().withCatalog(grouped).build().programmes,
     };
-    expect(vmOf('alpha').assembleeLink).toEqual(expected);
-    expect(vmOf('sans-histoire').assembleeLink).toEqual(expected);
+    const panel = partyViewModel('alpha')({ dispatch: vi.fn() })(state).assemblee;
+    expect(panel).toMatchObject({ kind: 'group', name: 'Droite (DX)', count: '33 députés' });
+  });
+
+  it('should say there is no group for a party without one', () => {
+    expect(panelOf('alpha')).toMatchObject({
+      kind: 'none',
+      text: "Pas de groupe à l'Assemblée nationale",
+    });
+  });
+
+  it('should show nothing while the Assemblée data is not loaded', () => {
+    expect(vmOf('alpha').assemblee).toBeNull();
   });
 });

@@ -332,6 +332,15 @@ describe('Feature: intégrité des données', () => {
     it('should state when it was last verified', () => {
       expect(party.lastVerified).toMatch(/^\d{4}-\d{2}-\d{2}$/);
     });
+
+    it("should leave the group's size to the official Assemblée data, never a hand-written count", () => {
+      expect(party.description, party.id).not.toMatch(/\d+\s+députés?/);
+      expect(JSON.stringify(party), party.id).not.toMatch(/selon Datan/);
+    });
+
+    it("should never source a group's size from Datan (an aggregator)", () => {
+      expect(JSON.stringify(party), party.id).not.toMatch(/datan\.fr\/groupes/);
+    });
   });
 });
 

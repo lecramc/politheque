@@ -13,7 +13,7 @@
     }
   },
   "family": "Centre droit (presse de référence et analystes ; bloc « centre » du nuancier du ministère de l'Intérieur ; aucune prise de position du parti sur cette étiquette n'est connue)",
-  "description": "Horizons est le parti fondé le 9 octobre 2021 au Havre par Édouard Philippe, Premier ministre de 2017 à 2020 et maire du Havre, qui le préside. À l'Assemblée, il dispose du groupe Horizons & Indépendants, qui compte 35 députés (novembre 2026, selon Datan). Aux européennes de 2024, Horizons figurait sur la liste « Besoin d'Europe » conduite par Valérie Hayer (14,60 %). Édouard Philippe a annoncé sa candidature à la présidentielle dès septembre 2024.",
+  "description": "Horizons est le parti fondé le 9 octobre 2021 au Havre par Édouard Philippe, Premier ministre de 2017 à 2020 et maire du Havre, qui le préside. À l'Assemblée, il dispose du groupe Horizons & Indépendants. Aux européennes de 2024, Horizons figurait sur la liste « Besoin d'Europe » conduite par Valérie Hayer (14,60 %). Édouard Philippe a annoncé sa candidature à la présidentielle dès septembre 2024.",
   "foundedYear": 2021,
   "leader": {
     "name": "Édouard Philippe",
@@ -66,18 +66,6 @@
           "url": "https://www.europe1.fr/politique/au-havre-edouard-philippe-va-lancer-son-parti-sous-loeil-mefiant-de-lrem-4070401",
           "date": "2021-10-09",
           "kind": "presse"
-        },
-        {
-          "title": "Datan – Groupe Horizons et apparentés (16e législature)",
-          "url": "https://datan.fr/groupes/legislature-16/hor",
-          "date": "2024-06",
-          "kind": "statistique"
-        },
-        {
-          "title": "Datan – Groupe Horizons & Indépendants (17e législature)",
-          "url": "https://datan.fr/groupes/legislature-17/hor",
-          "date": "2026-11",
-          "kind": "statistique"
         },
         {
           "title": "Encyclopædia Universalis, « Philippe Édouard (1970- ) »",
@@ -163,24 +151,6 @@
         ]
       },
       {
-        "date": "2022-06",
-        "event": "Législatives : Horizons, membre de la coalition Ensemble, forme le 28 juin 2022 le groupe « Horizons et apparentés » (30 députés, dont 2 apparentés, au 29 juin 2022).",
-        "sources": [
-          {
-            "title": "Datan – Groupe Horizons et apparentés (16e législature)",
-            "url": "https://datan.fr/groupes/legislature-16/hor",
-            "date": "2024-06",
-            "kind": "statistique"
-          },
-          {
-            "title": "Quelle est la composition de l'Assemblée nationale en 2022 ?",
-            "url": "https://lcp.fr/assemblee-nationale/quelle-est-la-composition-de-l-assemblee-nationale-en-2022-207735",
-            "date": "2022-06",
-            "kind": "presse"
-          }
-        ]
-      },
-      {
         "date": "2024-06-09",
         "event": "Européennes : Horizons participe à la liste « Besoin d'Europe » conduite par Valérie Hayer, qui obtient 14,60 % et 13 sièges.",
         "sources": [
@@ -200,24 +170,6 @@
             "title": "Retour sur les élections européennes 2024",
             "url": "https://ufe.org/article-feed/retour-sur-les-elections-europeennes-2024/",
             "date": "2024-06",
-            "kind": "presse"
-          }
-        ]
-      },
-      {
-        "date": "2024-07",
-        "event": "Après les législatives anticipées, création le 18 juillet 2024 du groupe « Horizons & Indépendants » à l'Assemblée (31 députés à sa formation).",
-        "sources": [
-          {
-            "title": "Datan – Groupe Horizons & Indépendants (17e législature)",
-            "url": "https://datan.fr/groupes/legislature-17/hor",
-            "date": "2026-11",
-            "kind": "statistique"
-          },
-          {
-            "title": "Groupes à l'Assemblée : les gagnants et les perdants depuis les législatives de 2024",
-            "url": "https://lcp.fr/actualites/groupes-a-l-assemblee-les-gagnants-et-les-perdants-depuis-les-legislatives-de-2024",
-            "date": "2025-07",
             "kind": "presse"
           }
         ]

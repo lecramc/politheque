@@ -13,7 +13,7 @@
     }
   },
   "family": "Gauche radicale (la plupart des politistes ; « populisme de gauche » pour d'autres, dont Manuel Cervera-Marzal ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse cette étiquette)",
-  "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est parue le 6 novembre 2026.",
+  "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI siège à l'Assemblée au sein du groupe LFI-NFP. Une nouvelle édition de son programme, « L'Avenir en commun », est parue le 6 novembre 2026.",
   "foundedYear": 2016,
   "leader": {
     "name": "Manuel Bompard",
@@ -213,12 +213,6 @@
             "url": "https://www.publicsenat.fr/actualites/politique/melenchon-et-les-elus-insoumis-arrivent-a-l-assemblee-en-porte-voix-du-pays-75038",
             "date": "2017-06-20",
             "kind": "presse"
-          },
-          {
-            "title": "Datan, « La France insoumise » (groupe, 15e législature)",
-            "url": "https://datan.fr/groupes/legislature-15/fi",
-            "date": "2026-11",
-            "kind": "vote"
           }
         ]
       },

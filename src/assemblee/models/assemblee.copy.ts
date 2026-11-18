@@ -332,10 +332,17 @@ export const COPY = {
       title: 'Tous les votes',
     },
   },
-  /** Lien depuis la fiche d'un parti : le même pour tous, sans rattacher de groupe à un parti. */
-  partyLink: {
-    label: "Comment votent les groupes à l'Assemblée nationale",
-    note: "Un groupe n'est pas un parti : la page présente tous les groupes, sans les rattacher à un parti.",
+  /** Encart « À l'Assemblée » d'une fiche parti : le même pour les dix partis. */
+  partyPanel: {
+    title: "À l'Assemblée",
+    none: "Pas de groupe à l'Assemblée nationale",
+    count: (count: number) => `${count} ${pluralize(count, 'député', 'députés')}`,
+    updated: (date: string) => `Effectif officiel au ${date}, selon l'Assemblée nationale.`,
+    note: 'Un groupe peut réunir des élus de plusieurs partis.',
+    votesTitle: 'Qui vote quoi sur les grands votes',
+    votesLabel: (group: string) =>
+      `Position majoritaire du groupe ${group} sur les derniers grands votes`,
+    all: "Tous les votes de l'Assemblée",
   },
   comprendre: {
     cardTitle: "L'Assemblée : qui vote quoi",
