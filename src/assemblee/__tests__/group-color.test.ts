@@ -1,13 +1,12 @@
 import {
   colorDistance,
   contrastRatio,
-  GROUP_ARC_COLOR,
-  GROUP_COLOR_BACKGROUNDS,
-  groupArcColor,
+  GROUP_FALLBACK_COLOR,
+  groupColor,
 } from '@/src/assemblee/models/group-color';
 import { groupeFactory } from '@/src/assemblee/models/scrutin.factory';
 
-describe('Feature: couleurs neutres des groupes', () => {
+describe('Feature: couleurs des groupes', () => {
   it('should compute the WCAG contrast ratio', () => {
     expect(contrastRatio('#000000', '#FFFFFF')).toBeCloseTo(21, 5);
     expect(contrastRatio('#FFFFFF', '#FFFFFF')).toBeCloseTo(1, 5);
@@ -19,29 +18,18 @@ describe('Feature: couleurs neutres des groupes', () => {
     expect(colorDistance('#313567', '#000000')).toBeGreaterThan(20);
   });
 
-  it('should draw every group arc in the same neutral colour, whatever its official colour', () => {
-    for (const theme of ['light', 'dark'] as const) {
-      const colors = ['#C00D0D', '#313567', '#FFD96F', '', '#3367A7'].map((couleurOfficielle) =>
-        groupArcColor(groupeFactory({ couleurOfficielle }), theme)
-      );
-      expect(new Set(colors)).toEqual(new Set([GROUP_ARC_COLOR[theme]]));
+  it('should give each group its official Assembly colour, the same rule for all groups', () => {
+    for (const couleurOfficielle of ['#C00D0D', '#313567', '#FFD96F', '#B5E2F9']) {
+      expect(groupColor(groupeFactory({ couleurOfficielle }))).toBe(couleurOfficielle);
     }
   });
 
-  it('should keep the neutral arc colour readable on its background (3:1 at least)', () => {
-    expect(
-      contrastRatio(GROUP_ARC_COLOR.light, GROUP_COLOR_BACKGROUNDS.light)
-    ).toBeGreaterThanOrEqual(3);
-    expect(
-      contrastRatio(GROUP_ARC_COLOR.dark, GROUP_COLOR_BACKGROUNDS.dark)
-    ).toBeGreaterThanOrEqual(3);
-  });
-
-  it('should be a grey: no hue that could recall a group or a party', () => {
-    for (const color of Object.values(GROUP_ARC_COLOR)) {
-      const value = Number.parseInt(color.slice(1), 16);
-      const [r, g, b] = [(value >> 16) & 255, (value >> 8) & 255, value & 255];
-      expect(Math.max(r, g, b) - Math.min(r, g, b)).toBeLessThanOrEqual(8);
+  it('should fall back on a neutral grey when the official colour is missing or malformed', () => {
+    for (const couleurOfficielle of ['', 'rouge', '#12']) {
+      expect(groupColor(groupeFactory({ couleurOfficielle }))).toBe(GROUP_FALLBACK_COLOR);
     }
+    const value = Number.parseInt(GROUP_FALLBACK_COLOR.slice(1), 16);
+    const channels = [(value >> 16) & 255, (value >> 8) & 255, value & 255];
+    expect(Math.max(...channels) - Math.min(...channels)).toBeLessThanOrEqual(16);
   });
 });

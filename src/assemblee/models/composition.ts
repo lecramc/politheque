@@ -1,4 +1,5 @@
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
+import { groupColor } from '@/src/assemblee/models/group-color';
 import { groupName } from '@/src/assemblee/models/group-table';
 import { orderGroupes } from '@/src/assemblee/models/groupe-order';
 import { hemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
@@ -18,6 +19,8 @@ export type CompositionRow = {
   /** Indice du groupe dans l'index. */
   index: number;
   abrev: string;
+  /** Couleur officielle du groupe à l'Assemblée. */
+  color: string;
   libelle: string;
   /** « Nom (SIGLE) » : le même gabarit pour tous les groupes. */
   name: string;
@@ -50,6 +53,7 @@ export const compositionSummary = (
       return {
         index: groupe.index,
         abrev: groupe.abrev,
+        color: groupColor(groupe),
         libelle: groupe.libelle,
         name: groupName(groupe),
         sieges,
@@ -79,6 +83,8 @@ export type CompositionSeat = {
   y: number;
   angle: number;
   groupe: number;
+  /** Couleur officielle du groupe à l'Assemblée. */
+  color: string;
 };
 
 export type CompositionScene = {
@@ -108,6 +114,7 @@ export const compositionScene = (rows: CompositionRow[], groupes: Groupe[]): Com
       y: seat.y,
       angle: seat.angle,
       groupe: byPlace[seat.place - 1],
+      color: groupColor(groupes[byPlace[seat.place - 1]]),
     })),
     arcs: hemicycleArcs(layout, { places, groupes: byPlace }, groupes),
   };

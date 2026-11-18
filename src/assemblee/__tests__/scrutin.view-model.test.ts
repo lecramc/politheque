@@ -24,6 +24,7 @@ const groupes = [
     organeRef: 'PO1',
     abrev: 'LFI-NFP',
     libelle: 'La France insoumise',
+    couleurOfficielle: '#C00D0D',
     medianePlace: 600,
   }),
   groupeFactory({
@@ -372,7 +373,8 @@ describe('Feature: détail par député', () => {
         page.groups(order).rows.map((r) => r.abrev)
       );
     }
-    expect(page.hemicycle.groupes('places').map((g) => g.abrev)).toEqual(['RN', 'LFI-NFP']);
+    expect(page.hemicycle.groupes('places').map((g) => g.abrev)).toEqual(['LFI-NFP', 'RN']);
+    expect(page.hemicycle.groupes('places')[0].color).toBe('#C00D0D');
     expect(page.hemicycle.groupes('alphabetique').map((g) => g.abrev)).toEqual(['LFI-NFP', 'RN']);
   });
 

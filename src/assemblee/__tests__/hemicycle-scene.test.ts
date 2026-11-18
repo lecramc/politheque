@@ -10,8 +10,8 @@ import { detailFactory, groupeFactory } from '@/src/assemblee/models/scrutin.fac
 const places = Array.from({ length: 40 }, (_, i) => i + 1);
 const layout = hemicycleLayout(places);
 const groupes = [
-  groupeFactory({ organeRef: 'A', abrev: 'A', libelle: 'Groupe A' }),
-  groupeFactory({ organeRef: 'B', abrev: 'B', libelle: 'Groupe B' }),
+  groupeFactory({ organeRef: 'A', abrev: 'A', libelle: 'Groupe A', couleurOfficielle: '#C00D0D' }),
+  groupeFactory({ organeRef: 'B', abrev: 'B', libelle: 'Groupe B', couleurOfficielle: '#B5E2F9' }),
   groupeFactory({ organeRef: 'C', abrev: 'NI', libelle: 'Non inscrit' }),
   groupeFactory({ organeRef: 'D', abrev: 'D', libelle: 'Groupe D' }),
 ];
@@ -29,6 +29,10 @@ describe('Feature: arc des groupes autour de l’hémicycle', () => {
 
   it('should draw one segment per cohesive group and none for a scattered group', () => {
     expect(arcs.map((a) => a.abrev)).toEqual(['A', 'B', 'D']);
+  });
+
+  it('should colour each segment with the official colour of its group', () => {
+    expect(arcs.map((a) => a.color)).toEqual(['#C00D0D', '#B5E2F9', groupes[3].couleurOfficielle]);
   });
 
   it('should always carry the abbreviation and official label of the group as text', () => {

@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { LayoutChangeEvent, Platform, useWindowDimensions, View } from 'react-native';
-import Svg, { G, Path, Text as SvgText } from 'react-native-svg';
+import Svg, { G, Text as SvgText } from 'react-native-svg';
 
 import { layout as siteLayout } from '@/components/layout';
 import { duration } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
+import { GroupArcPath } from '@/src/assemblee/components/GroupArcPath';
 import { SeatMark } from '@/src/assemblee/components/SeatMark';
-import { GROUP_ARC_COLOR } from '@/src/assemblee/models/group-color';
 import { hitTest, pixelToModel, type PointerKind } from '@/src/assemblee/models/hemicycle-hit';
 import type { HemicycleView } from '@/src/assemblee/view-models/scrutin.view-model';
 import { paint } from '@/src/core/web/svg-paint';
@@ -22,8 +22,11 @@ const DIMMED = 0.18;
 const NARROW_BELOW = siteLayout.breakpoint.md;
 
 /**
- * Hémicycle schématique : sièges rangés selon leur numéro de place officiel (ce n'est pas le
- * plan exact de la salle). Une image pour les technologies d'assistance (`role="img"`, un seul
+ * Hémicycle schématique : sièges rangés groupe par groupe, dans l'ordre du plan officiel de
+ * l'Assemblée (ce n'est pas le plan exact de la salle). Deux codages indépendants : la couleur
+ * officielle du groupe est sur l'arc extérieur (cerné d'un contour fin) et le vote est dans la
+ * forme du siège (disque, barré, anneau, pointillé), sans couleur de groupe sur le siège : les
+ * deux informations ne se brouillent pas, et chacune se lit sans l'autre. Une image pour les technologies d'assistance (`role="img"`, un seul
  * `aria-label` résumé) : la liste des députés est l'alternative complète.
  *
  * Écran étroit : le schéma prend toute la largeur (sièges plus grands), sans étiquettes ; toucher
@@ -40,7 +43,7 @@ export function Hemicycle({
   highlight: number | null;
   onHighlight: (groupe: number | null) => void;
 }) {
-  const { colors, fonts, theme } = useTheme();
+  const { colors, fonts } = useTheme();
   const { width: screenWidth } = useWindowDimensions();
   const compact = screenWidth < NARROW_BELOW;
   const box = compact ? view.compactBox : view.box;
@@ -170,17 +173,10 @@ export function Hemicycle({
             {dimmed ? <G opacity={DIMMED}>{drawSeats((g) => !inGroup(g))}</G> : null}
             <G>{drawSeats(inGroup)}</G>
             {arcs.map((arc) => {
-              const color = GROUP_ARC_COLOR[theme];
               const active = !dimmed || highlight === arc.groupe;
               return (
                 <G key={arc.groupe} opacity={active ? 1 : DIMMED}>
-                  <Path
-                    d={arc.path}
-                    fill="none"
-                    strokeWidth={0.035}
-                    strokeLinecap="butt"
-                    {...paint({ stroke: color })}
-                  />
+                  <GroupArcPath arc={arc} />
                   {compact ? null : (
                     <SvgText
                       x={arc.labelX}

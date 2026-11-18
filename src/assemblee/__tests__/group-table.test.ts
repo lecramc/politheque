@@ -35,6 +35,15 @@ describe('Feature: tableau des groupes d’un scrutin', () => {
     expect(rows.map((r) => r.abrev)).toEqual(['LFI-NFP', 'RN']);
   });
 
+  it('should give each row the official colour of its group', () => {
+    const coloured = [
+      groupeFactory({ abrev: 'LFI-NFP', medianePlace: 600, couleurOfficielle: '#C00D0D' }),
+      groupeFactory({ abrev: 'RN', medianePlace: 100, couleurOfficielle: '#313567' }),
+    ];
+    const { rows } = groupTable(scrutin, coloured, 'places');
+    expect(rows.map((r) => r.color)).toEqual(['#C00D0D', '#313567']);
+  });
+
   it('should offer an alphabetical order on the official label', () => {
     const { rows } = groupTable(scrutin, groupes, 'alphabetique');
     expect(rows.map((r) => r.libelle)).toEqual(

@@ -5,6 +5,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
 import { CompositionChart } from '@/src/assemblee/components/CompositionChart';
+import { GroupSwatch } from '@/src/assemblee/components/GroupSwatch';
 import { MajorVotesGrid } from '@/src/assemblee/components/MajorVotesGrid';
 import { assembleeOverviewViewModel } from '@/src/assemblee/view-models/assemblee-overview.view-model';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
@@ -49,14 +50,17 @@ export function AssembleeOverview() {
                 role="listitem"
                 style={{
                   flexDirection: 'row',
-                  alignItems: 'baseline',
+                  alignItems: 'center',
                   gap: 10,
                   paddingVertical: 8,
                   borderTopWidth: index === 0 ? 0 : 1,
                   borderColor: colors.surface.border.primary,
                 }}
               >
-                <Text style={{ ...fonts.bold, fontSize: 15, width: 76 }}>{row.abrev}</Text>
+                <View style={{ width: 92, flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                  <GroupSwatch color={row.color} />
+                  <Text style={{ ...fonts.bold, fontSize: 15 }}>{row.abrev}</Text>
+                </View>
                 <Text style={{ fontSize: 15, flex: 1, minWidth: 0 }}>{row.libelle}</Text>
                 <Text plainDigits style={{ fontSize: 15 }}>
                   {row.seatsLabel}

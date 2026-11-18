@@ -13,7 +13,7 @@ import { catalogFactory } from '@/src/programmes/models/catalog.factory';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
 
 const groupes = [
-  groupeFactory({ organeRef: 'PO1', abrev: 'DR', libelle: 'Droite', medianePlace: 100 }),
+  groupeFactory({ organeRef: 'PO1', abrev: 'DX', libelle: 'Droite', medianePlace: 100 }),
   groupeFactory({ organeRef: 'PO2', abrev: 'GA', libelle: 'Gauche', medianePlace: 500 }),
 ];
 const scrutins = [
@@ -61,7 +61,7 @@ describe('Feature: vue d’ensemble de l’Assemblée', () => {
     expect(sitting?.lead).toMatch(/17 novembre 2026/);
     expect(sitting?.rows.map((r) => [r.abrev, r.seatsLabel])).toEqual([
       ['GA', '20 sièges'],
-      ['DR', '30 sièges'],
+      ['DX', '30 sièges'],
     ]);
     expect(sitting?.vacant).toBe('527 sièges vacants dans les données');
     expect(sitting?.scene.seats).toHaveLength(50);

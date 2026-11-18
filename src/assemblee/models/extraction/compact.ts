@@ -14,6 +14,7 @@ import {
   type SeatMember,
   type SeatedMember,
 } from '@/src/assemblee/models/extraction/seats';
+import { compareGroupesLeftToRight } from '@/src/assemblee/models/groupe-order';
 import type {
   Depute,
   Groupe,
@@ -33,7 +34,7 @@ export type DatasetInput = {
 };
 
 export type Dataset = {
-  /** Groupes dans l'ordre des places (de la gauche à la droite de l'image). */
+  /** Groupes dans l'ordre officiel de la salle (de la gauche à la droite). */
   groupes: Groupe[];
   /** Annuaire trié : les détails y renvoient par indice. */
   deputes: Depute[];
@@ -190,7 +191,7 @@ export const compactDataset = (input: DatasetInput): Dataset => {
     (a, b) => a - b
   );
 
-  // 3. Groupes : ceux ventilés ou occupés, ordonnés par médiane des places (gauche → droite).
+  // 3. Groupes : ceux ventilés ou occupés, ordonnés de la gauche à la droite selon le plan officiel (médiane des places pour les groupes inconnus de la référence).
   const placesByGroup = new Map<string, number[]>();
   for (const s of seatings) {
     for (const v of s.voters) {
@@ -212,12 +213,7 @@ export const compactDataset = (input: DatasetInput): Dataset => {
       if (!identity) throw new Error(`Groupe ${ref} absent de l'annuaire des organes`);
       return { ...identity, medianePlace: median(placesByGroup.get(ref) ?? []) };
     })
-    .sort(
-      (a, b) =>
-        b.medianePlace - a.medianePlace ||
-        compareText(a.abrev, b.abrev) ||
-        compareText(a.organeRef, b.organeRef)
-    );
+    .sort(compareGroupesLeftToRight);
   const groupIdx = new Map(groupes.map((g, i) => [g.organeRef, i]));
 
   // 4. Annuaire des députés référencés.

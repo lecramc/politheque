@@ -1,4 +1,5 @@
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
+import { groupColor } from '@/src/assemblee/models/group-color';
 import { orderGroupes, type GroupeOrder } from '@/src/assemblee/models/groupe-order';
 import type { Groupe, ScrutinSummary } from '@/src/assemblee/models/scrutin.model';
 
@@ -10,6 +11,8 @@ export type GroupRow = {
   /** Indice du groupe dans l'index (lien avec le schéma et le détail par député). */
   index: number;
   abrev: string;
+  /** Couleur officielle du groupe à l'Assemblée. */
+  color: string;
   /** Libellé officiel complet. */
   libelle: string;
   /** « Nom (SIGLE) » : le même gabarit pour tous les groupes. */
@@ -87,6 +90,7 @@ export const groupTable = (
       return {
         index: groupe.index,
         abrev: groupe.abrev,
+        color: groupColor(groupe),
         libelle: groupe.libelle,
         name,
         title: COPY.groups.lineTitle(name, membres),

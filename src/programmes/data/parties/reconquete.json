@@ -3,6 +3,11 @@
   "name": "Reconquête",
   "shortName": "REC",
   "color": "#1F1F3D",
+  "colorSource": {
+    "groupe": null,
+    "text": "Couleur propre au parti, aucun groupe à l'Assemblée",
+    "source": null
+  },
   "family": "Extrême droite (presse de référence et nombreux politistes ; « droite radicale » pour d'autres, dont Gilles Ivaldi ; Éric Zemmour conteste ce classement)",
   "description": "Reconquête est le parti fondé le 5 décembre 2021 par Éric Zemmour, qui le préside. Éric Zemmour a obtenu 7,07 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; la liste conduite par Marion Maréchal a recueilli 5,47 % aux européennes de 2024, mais quatre des cinq eurodéputés élus ont été exclus ou ont quitté le parti en juin 2024, Sarah Knafo restant sa seule élue au Parlement européen. Reconquête n'a pas de groupe à l'Assemblée nationale.",
   "foundedYear": 2021,

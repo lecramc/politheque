@@ -26,6 +26,7 @@ export const partyFactory = (
     name: 'Parti test',
     shortName: 'PT',
     color: '#888888',
+    colorSource: { groupe: null, text: 'Couleur propre au parti', source: null },
     family: 'Test',
     description: '',
     foundedYear: 2000,

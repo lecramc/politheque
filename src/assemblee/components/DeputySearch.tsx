@@ -181,6 +181,7 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
             <ChoiceRow
               key={g.index}
               label={g.name}
+              color={g.color}
               selected={groupe === g.index}
               onPress={() => setGroupe(g.index)}
             />

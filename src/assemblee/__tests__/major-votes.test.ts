@@ -61,7 +61,7 @@ describe('Feature: titre court d’un vote', () => {
 });
 
 const groupes = [
-  groupeFactory({ organeRef: 'PO1', abrev: 'DR', libelle: 'Droite', medianePlace: 100 }),
+  groupeFactory({ organeRef: 'PO1', abrev: 'DX', libelle: 'Droite', medianePlace: 100 }),
   groupeFactory({ organeRef: 'PO2', abrev: 'GA', libelle: 'Gauche', medianePlace: 500 }),
 ];
 
@@ -127,7 +127,7 @@ describe('Feature: grille « qui vote quoi » des grands votes', () => {
     const grid = majorVotesGrid(
       indexFactory({ groupes, scrutins: [vote(1, '2025-01-01'), vote(2, '2025-01-02')] })
     );
-    expect(grid.rows.map((r) => r.abrev)).toEqual(['GA', 'DR']);
+    expect(grid.rows.map((r) => r.abrev)).toEqual(['GA', 'DX']);
     expect(grid.rows[0]).toMatchObject({ libelle: 'Gauche' });
     expect(grid.rows[0].cells.map((c) => [c.kind, c.label])).toEqual([
       ['contre', 'Contre'],
@@ -143,7 +143,7 @@ describe('Feature: grille « qui vote quoi » des grands votes', () => {
         scrutins: [vote(1, '2025-01-01', { groupes: [[0, 20, 10, 2, 0, 0]] })],
       })
     );
-    expect(grid.rows.map((r) => r.abrev)).toEqual(['DR']);
+    expect(grid.rows.map((r) => r.abrev)).toEqual(['DX']);
     const both = majorVotesGrid(
       indexFactory({
         groupes,
@@ -157,6 +157,16 @@ describe('Feature: grille « qui vote quoi » des grands votes', () => {
       'contre',
       'sansDepute',
     ]);
+  });
+
+  it('should give each row the official colour of its group', () => {
+    const grid = majorVotesGrid(
+      indexFactory({
+        groupes: [groupeFactory({ abrev: 'RN', medianePlace: 1, couleurOfficielle: '#313567' })],
+        scrutins: [vote(1, '2025-01-01')],
+      })
+    );
+    expect(grid.rows.map((r) => r.color)).toEqual(['#313567']);
   });
 
   it('should give a glyph to positions that have one and text to all of them', () => {

@@ -3,6 +3,11 @@
   "name": "Nouvelle Énergie",
   "shortName": "NE",
   "color": "#1D257A",
+  "colorSource": {
+    "groupe": null,
+    "text": "Couleur propre au parti, aucun groupe à l'Assemblée",
+    "source": null
+  },
   "family": "Droite (presse de référence : droite libérale ; pas de classement académique dédié ; le mouvement se définit comme « une droite libre, indépendante et fière d'assumer une vision libérale »)",
   "description": "Nouvelle Énergie est le parti fondé à Cannes par David Lisnard (association déclarée en septembre 2014) et déployé au niveau national à partir de juin 2021 ; il est présidé par David Lisnard, maire de Cannes depuis 2014 et président de l'Association des maires de France (AMF) depuis novembre 2021. Il n'a pas de groupe parlementaire : la députée Alexandra Martin, élue en 2024 sous la double étiquette Droite républicaine et Nouvelle Énergie, siège au groupe Droite républicaine, et plusieurs sénateurs s'en réclament, souvent en double appartenance. David Lisnard a quitté Les Républicains et confirmé sa candidature à la présidentielle le 31 mars 2026.",
   "foundedYear": 2014,

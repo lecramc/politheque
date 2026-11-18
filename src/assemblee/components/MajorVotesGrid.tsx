@@ -5,17 +5,19 @@ import { ScrollView, View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { GroupSwatch } from '@/src/assemblee/components/GroupSwatch';
 import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
 import type { assembleeOverviewViewModel } from '@/src/assemblee/view-models/assemblee-overview.view-model';
 
 type Grid = NonNullable<ReturnType<ReturnType<typeof assembleeOverviewViewModel>>['grid']>;
 
-const FIRST_COLUMN = 84;
+const FIRST_COLUMN = 112;
 const COLUMN = 148;
 
 /**
  * « Qui vote quoi » : un groupe par ligne (de la gauche à la droite), un grand vote par colonne.
- * Chaque case dit la position en toutes lettres avec une forme : la couleur ne porte rien. Sur
+ * Chaque case dit la position en toutes lettres avec une forme ; la pastille devant le sigle est
+ * la couleur officielle du groupe (jamais la seule information : le sigle est écrit). Sur
  * mobile le tableau défile horizontalement, seul ; la colonne des groupes reste en place.
  */
 export function MajorVotesGrid({ grid }: { grid: Grid }) {
@@ -118,7 +120,10 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
                   stickyStyle,
                 ]}
               >
-                <Text style={{ ...fonts.bold, fontSize: 14 }}>{row.abrev}</Text>
+                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                  <GroupSwatch color={row.color} />
+                  <Text style={{ ...fonts.bold, fontSize: 14 }}>{row.abrev}</Text>
+                </View>
               </View>
               {row.cells.map((cell, i) => (
                 <View

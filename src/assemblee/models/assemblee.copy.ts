@@ -186,7 +186,7 @@ export const COPY = {
     noVote: "N'ont pas voté",
     censureVoted: 'Ont voté la motion',
     censureNot: "N'ont pas voté la motion",
-    sortPlaces: 'Ordre des places',
+    sortPlaces: "Ordre de l'hémicycle",
     sortAlpha: 'Ordre alphabétique',
     sortLabel: 'Ordre des groupes',
     note: "Un groupe n'est pas un parti : ses députés ne sont pas tous du même parti.",
@@ -201,7 +201,8 @@ export const COPY = {
     retry: 'Réessayer',
     label: (numero: number, resume: string) =>
       `Hémicycle de l'Assemblée nationale au scrutin n° ${numero} : ${resume}.`,
-    mention: 'Schéma simplifié : les sièges sont placés selon leur numéro officiel.',
+    mention:
+      "Schéma simplifié : les groupes sont rangés dans l'ordre du plan officiel de l'Assemblée, sans reproduire la place exacte de chaque député. Non-inscrits (NI) : places dispersées dans la salle, regroupés ici à droite du schéma.",
     hintTouch: 'Touchez un groupe pour voir ses sièges.',
     hintHover: 'Survolez un siège pour voir le député.',
     clearHighlight: 'Retirer la mise en évidence',
@@ -213,6 +214,8 @@ export const COPY = {
   },
   legend: {
     title: 'Légende',
+    groupColors:
+      "Trait extérieur : la couleur officielle de chaque groupe à l'Assemblée nationale. Le sigle est toujours écrit.",
   },
   deputies: {
     title: 'Chercher un député',
@@ -285,7 +288,7 @@ export const COPY = {
     sitting: {
       title: "Qui siège aujourd'hui",
       lead: (date: string) =>
-        `Les députés en exercice au ${date}, groupe par groupe, dans l'ordre où ils siègent dans la salle.`,
+        `Les députés en exercice au ${date}, groupe par groupe, de la gauche à la droite de l'hémicycle, selon le plan officiel de l'Assemblée.`,
       majority: (seats: number) => `Majorité absolue : ${seats} sièges`,
       noMajority: (seats: number) =>
         `Aucun groupe n'a la majorité absolue ; le plus grand compte ${seats} ${pluralize(seats, 'siège', 'sièges')}.`,
@@ -296,7 +299,7 @@ export const COPY = {
       seats: (count: number) => `${count} ${pluralize(count, 'siège', 'sièges')}`,
       chartLabel: (total: number, groups: number) =>
         `Hémicycle : ${total} députés en exercice répartis en ${groups} groupes, détaillés dans la liste sous le schéma.`,
-      note: "Schéma simplifié : les sièges sont regroupés par groupe, sans reproduire le plan exact de la salle. Un groupe n'est pas un parti.",
+      note: "Schéma simplifié : les sièges sont regroupés par groupe, sans reproduire le plan exact de la salle. Chaque groupe porte sa couleur officielle à l'Assemblée ; le sigle est toujours écrit. Non-inscrits (NI) : places dispersées dans la salle. Un groupe n'est pas un parti.",
       listLabel: 'Effectif de chaque groupe',
     },
     grid: {
@@ -355,7 +358,7 @@ export const COPY = {
     limitHand:
       "À main levée : seuls les votes par scrutin public sont enregistrés nominativement. Un texte adopté à main levée n'apparaît pas.",
     limitSchema:
-      "Schéma : les sièges sont rangés selon leur numéro de place officiel ; ce n'est pas le plan exact de l'hémicycle, que l'Assemblée ne publie pas sous forme de coordonnées.",
+      "Schéma : les groupes sont rangés d'un seul tenant dans l'ordre du plan officiel de l'Assemblée ; ce n'est pas le plan exact de l'hémicycle, que l'Assemblée ne publie pas sous forme de coordonnées.",
     limitCensure:
       "Motions de censure : l'Assemblée ne recense que les voix pour ; les autres députés n'ont pas voté la motion, ce qui n'est pas un vote contre.",
     limitDelegation:
@@ -364,8 +367,13 @@ export const COPY = {
       "Mises au point : un député peut publier après coup qu'il souhaitait voter autrement. Elle est affichée comme telle, et ne modifie ni le résultat ni les décomptes.",
     limitGroups:
       "Groupes : un groupe parlementaire n'est pas un parti. Le groupe affiché est celui du jour du scrutin.",
+    orderTitle: "D'où vient cet ordre",
+    order:
+      "Les groupes sont rangés de la gauche à la droite de l'hémicycle selon le plan officiel de l'Assemblée nationale (assemblee-nationale.fr/dyn/vos-deputes/hemicycle, consulté le 18 novembre 2026) : LFI-NFP, GDR, ECOS, SOC, LIOT, DEM, EPR, HOR, DR, UDR, RN. Les non-inscrits (NI) viennent toujours en dernier, avec la mention « places dispersées dans la salle ». Les numéros de place de l'open data ne suivent pas cette disposition : ils ne servent pas à ordonner les groupes.",
+    colors:
+      "Couleurs : chaque groupe est dessiné de la couleur officielle que lui donne l'Assemblée nationale (plan de l'hémicycle, assemblee-nationale.fr/dyn/vos-deputes/hemicycle, consulté le 18 novembre 2026), la même règle pour tous. La couleur n'est jamais la seule information : le sigle est toujours écrit.",
     neutrality:
-      'Aucun taux de présence, de loyauté ou de cohésion, aucun classement, aucun score : la page montre les votes, pas un jugement sur les députés ou les groupes.',
+      "Aucun taux de présence, de loyauté ou de cohésion, aucun classement, aucun score : la page montre les votes, pas un jugement sur les députés ou les groupes. Les couleurs sont celles de l'institution, pas un choix de Polithèque.",
     link: "Voir les votes de l'Assemblée",
     criteriaExcluded:
       'Les votes sur les amendements et sur les articles isolés, les motions de rejet rejetées et les autres motions de procédure ne sont pas repris.',

@@ -2,7 +2,16 @@
   "id": "horizons",
   "name": "Horizons",
   "shortName": "HOR",
-  "color": "#1B3D8F",
+  "color": "#B5E2F9",
+  "colorSource": {
+    "groupe": "HOR",
+    "text": "Couleur du groupe HOR à l'Assemblée nationale",
+    "source": {
+      "title": "Assemblée nationale, plan de l'hémicycle (couleurs officielles des groupes)",
+      "url": "https://www.assemblee-nationale.fr/dyn/vos-deputes/hemicycle",
+      "date": "2026-11-18"
+    }
+  },
   "family": "Centre droit (presse de référence et analystes ; bloc « centre » du nuancier du ministère de l'Intérieur ; aucune prise de position du parti sur cette étiquette n'est connue)",
   "description": "Horizons est le parti fondé le 9 octobre 2021 au Havre par Édouard Philippe, Premier ministre de 2017 à 2020 et maire du Havre, qui le préside. À l'Assemblée, il dispose du groupe Horizons & Indépendants, qui compte 35 députés (novembre 2026, selon Datan). Aux européennes de 2024, Horizons figurait sur la liste « Besoin d'Europe » conduite par Valérie Hayer (14,60 %). Édouard Philippe a annoncé sa candidature à la présidentielle dès septembre 2024.",
   "foundedYear": 2021,

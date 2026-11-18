@@ -4,6 +4,7 @@ import { ScrollView, View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { GroupSwatch } from '@/src/assemblee/components/GroupSwatch';
 import { VoteBar } from '@/src/assemblee/components/VoteBar';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import {
@@ -65,9 +66,21 @@ export function GroupVotes({
 
   const content = (row: GroupRow, selected: boolean) => (
     <View style={{ gap: 2 }}>
-      <Text style={{ ...fonts.semibold, fontSize: 16, lineHeight: 22, color: colors.text.primary }}>
-        {row.title}
-      </Text>
+      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+        <GroupSwatch color={row.color} />
+        <Text
+          style={{
+            ...fonts.semibold,
+            fontSize: 16,
+            lineHeight: 22,
+            color: colors.text.primary,
+            flex: 1,
+            minWidth: 0,
+          }}
+        >
+          {row.title}
+        </Text>
+      </View>
       <VoteBar segments={row.bar} />
       <Text plainDigits style={{ fontSize: 15, lineHeight: 22, color: colors.text.primary }}>
         {row.sentence}
@@ -180,9 +193,19 @@ export function GroupVotes({
                   borderColor: colors.surface.border.primary,
                 }}
               >
-                <Text role="rowheader" style={{ flex: 1, minWidth: 0, fontSize: 15 }}>
-                  {row.name}
-                </Text>
+                <View
+                  role="rowheader"
+                  style={{
+                    flex: 1,
+                    minWidth: 0,
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    gap: 8,
+                  }}
+                >
+                  <GroupSwatch color={row.color} />
+                  <Text style={{ flex: 1, minWidth: 0, fontSize: 15 }}>{row.name}</Text>
+                </View>
                 {columns.map((column) => (
                   <Text
                     key={column.id}

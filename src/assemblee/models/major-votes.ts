@@ -1,4 +1,5 @@
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
+import { groupColor } from '@/src/assemblee/models/group-color';
 import { groupName } from '@/src/assemblee/models/group-table';
 import { orderGroupes } from '@/src/assemblee/models/groupe-order';
 import { sortByMostRecent } from '@/src/assemblee/models/scrutin-filters';
@@ -109,6 +110,8 @@ export const MAJOR_VOTES_LEGEND: {
 export type MajorVoteRow = {
   index: number;
   abrev: string;
+  /** Couleur officielle du groupe à l'Assemblée. */
+  color: string;
   libelle: string;
   name: string;
   cells: MajorVoteCell[];
@@ -144,6 +147,7 @@ export const majorVotesGrid = (index: ScrutinIndex, limit = MAJOR_VOTES_COUNT): 
       (groupe): MajorVoteRow => ({
         index: groupe.index,
         abrev: groupe.abrev,
+        color: groupColor(groupe),
         libelle: groupe.libelle,
         name: groupName(groupe),
         cells: votes.map((vote): MajorVoteCell => {

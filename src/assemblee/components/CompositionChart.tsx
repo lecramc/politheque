@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { LayoutChangeEvent, useWindowDimensions, View } from 'react-native';
-import Svg, { Circle, G, Path, Text as SvgText } from 'react-native-svg';
+import Svg, { Circle, G, Text as SvgText } from 'react-native-svg';
 
 import { layout as siteLayout } from '@/components/layout';
 import { useTheme } from '@/components/ThemeContext';
+import { GroupArcPath } from '@/src/assemblee/components/GroupArcPath';
 import type { CompositionScene } from '@/src/assemblee/models/composition';
-import { GROUP_ARC_COLOR } from '@/src/assemblee/models/group-color';
 import { paint } from '@/src/core/web/svg-paint';
 
 /** Taille des abréviations de groupe, en pixels réels (le schéma est mis à l'échelle). */
@@ -13,12 +13,13 @@ const LABEL_PX = 12;
 const NARROW_BELOW = siteLayout.breakpoint.md;
 
 /**
- * Hémicycle de la composition actuelle : mêmes sièges, mêmes arcs gris neutres et mêmes
- * abréviations que l'hémicycle d'un vote, tous les groupes traités de la même façon. Une image
+ * Hémicycle de la composition actuelle : mêmes arcs et mêmes abréviations que l'hémicycle d'un
+ * vote, les sièges remplis de la couleur officielle de leur groupe (contour fin pour les couleurs
+ * claires), tous les groupes traités de la même façon. Une image
  * pour les technologies d'assistance ; la liste sous le schéma en est l'alternative complète.
  */
 export function CompositionChart({ scene, label }: { scene: CompositionScene; label: string }) {
-  const { colors, fonts, theme } = useTheme();
+  const { colors, fonts } = useTheme();
   const { width: screenWidth } = useWindowDimensions();
   const compact = screenWidth < NARROW_BELOW;
   const box = compact ? scene.compactBox : scene.box;
@@ -47,19 +48,14 @@ export function CompositionChart({ scene, label }: { scene: CompositionScene; la
               cx={seat.x}
               cy={seat.y}
               r={scene.layout.seatRadius * 0.9}
-              {...paint({ fill: colors.text.secondary })}
+              strokeWidth={0.006}
+              {...paint({ fill: seat.color, stroke: colors.surface.border.tertiary })}
             />
           ))}
         </G>
         {scene.arcs.map((arc) => (
           <G key={arc.groupe}>
-            <Path
-              d={arc.path}
-              fill="none"
-              strokeWidth={0.035}
-              strokeLinecap="butt"
-              {...paint({ stroke: GROUP_ARC_COLOR[theme] })}
-            />
+            <GroupArcPath arc={arc} />
             {compact ? null : (
               <SvgText
                 x={arc.labelX}

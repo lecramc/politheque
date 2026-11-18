@@ -1,5 +1,12 @@
 [
   {
+    "id": "2026-11-18-couleurs-des-partis-alignees-sur-les-couleurs-of",
+    "date": "2026-11-18",
+    "kind": "mise-a-jour",
+    "pages": ["/assemblee", "/partis"],
+    "summary": "Couleurs des partis alignées sur les couleurs officielles des groupes de l'Assemblée nationale ; ordre des groupes selon le plan officiel."
+  },
+  {
     "id": "2026-11-18-nouvelle-lecon-comment-une-loi-est-votee-a-l-ass",
     "date": "2026-11-18",
     "kind": "ajout",

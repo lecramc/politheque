@@ -2,7 +2,16 @@
   "id": "pcf",
   "name": "Parti communiste français",
   "shortName": "PCF",
-  "color": "#DD0000",
+  "color": "#830E21",
+  "colorSource": {
+    "groupe": "GDR",
+    "text": "Couleur du groupe GDR à l'Assemblée nationale",
+    "source": {
+      "title": "Assemblée nationale, plan de l'hémicycle (couleurs officielles des groupes)",
+      "url": "https://www.assemblee-nationale.fr/dyn/vos-deputes/hemicycle",
+      "date": "2026-11-18"
+    }
+  },
   "family": "Gauche (communiste ; parti communiste selon les ouvrages de référence ; bloc « gauche » du nuancier du ministère de l'Intérieur ; le parti se réclame du communisme)",
   "description": "Le Parti communiste français a été fondé en 1920 au congrès de Tours ; il est dirigé depuis 2018 par Fabien Roussel et a tenu son 40e congrès à Lille du 3 au 5 juillet 2026. Fabien Roussel a obtenu 2,28 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste de la Gauche unie, soutenue par le PCF, 2,36 % aux européennes de 2024. Membre du Nouveau Front populaire en 2024, le PCF siège à l'Assemblée au sein du groupe Gauche démocrate et républicaine (GDR), qui compte 17 députés (novembre 2026, selon Datan), dont des élus ultramarins non communistes. Fabien Roussel a été investi candidat par un vote des adhérents en septembre 2026.",
   "foundedYear": 1920,

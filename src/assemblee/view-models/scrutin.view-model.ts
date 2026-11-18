@@ -20,11 +20,13 @@ import {
   type DeputyFilters,
   type DeputyRow,
 } from '@/src/assemblee/models/deputy-table';
+import { groupColor } from '@/src/assemblee/models/group-color';
 import { groupName, groupTable } from '@/src/assemblee/models/group-table';
 import { orderGroupes, type GroupeOrder } from '@/src/assemblee/models/groupe-order';
 import { hemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
 import { legendEntries } from '@/src/assemblee/models/hemicycle-legend';
 import { hemicycleArcs, hemicycleBox } from '@/src/assemblee/models/hemicycle-scene';
+import { groupedSeating } from '@/src/assemblee/models/hemicycle-seating';
 import { scrutinDetails } from '@/src/assemblee/models/scrutin-details';
 import {
   capitalizeTitle,
@@ -82,6 +84,8 @@ export type HemicycleView =
       groupes: (order: GroupeOrder) => {
         index: number;
         abrev: string;
+        /** Couleur officielle du groupe à l'Assemblée. */
+        color: string;
         libelle: string;
         name: string;
       }[];
@@ -104,10 +108,12 @@ const buildHemicycle = (
   groupes: Groupe[]
 ): HemicycleView => {
   const censure = scrutin.type === 'MOC';
-  // Les numéros de place sont les mêmes pour tous les scrutins de la législature : la géométrie
-  // ne bouge pas d'un scrutin à l'autre.
-  const layout = hemicycleLayout(detail.places);
-  const { seats, unseated } = seatViews({ layout, detail, deputes, groupes, censure });
+  // Schéma simplifié : sièges renumérotés groupe par groupe, dans l'ordre officiel de la salle
+  // (les numéros de place réels ne suivent pas l'angle). Même effectif de sièges d'un scrutin à
+  // l'autre, donc même géométrie.
+  const seating = { ...detail, ...groupedSeating(detail, groupes) };
+  const layout = hemicycleLayout(seating.places);
+  const { seats, unseated } = seatViews({ layout, detail: seating, deputes, groupes, censure });
   const rows = deputyRows({ detail, deputes, groupes, censure });
   const allDepartements = departements(deputes);
   const present = new Set([
@@ -127,7 +133,7 @@ const buildHemicycle = (
       (m) =>
         `${m.depute.nom} (${m.groupe}) : ${positionLabel(m.vote, censure)}${m.delegation ? ` · ${COPY.vote.delegation}` : ''}`
     ),
-    arcs: hemicycleArcs(layout, detail, groupes),
+    arcs: hemicycleArcs(layout, seating, groupes),
     censure,
     legend: legendEntries(censure),
     tooltipOf: (place) => {
@@ -143,11 +149,12 @@ const buildHemicycle = (
     groupes: (order) =>
       orderGroupes(groupes, order)
         .filter((groupe) => present.has(groupe.index))
-        .map(({ index, abrev, libelle }) => ({
-          index,
-          abrev,
-          libelle,
-          name: groupName({ abrev, libelle }),
+        .map((groupe) => ({
+          index: groupe.index,
+          abrev: groupe.abrev,
+          color: groupColor(groupe),
+          libelle: groupe.libelle,
+          name: groupName(groupe),
         })),
     positions: orderedPositions(
       rows.map((row) => row.vote),

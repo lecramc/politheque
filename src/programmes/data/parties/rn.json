@@ -2,7 +2,16 @@
   "id": "rn",
   "name": "Rassemblement national",
   "shortName": "RN",
-  "color": "#0D378A",
+  "color": "#313567",
+  "colorSource": {
+    "groupe": "RN",
+    "text": "Couleur du groupe RN à l'Assemblée nationale",
+    "source": {
+      "title": "Assemblée nationale, plan de l'hémicycle (couleurs officielles des groupes)",
+      "url": "https://www.assemblee-nationale.fr/dyn/vos-deputes/hemicycle",
+      "date": "2026-11-18"
+    }
+  },
   "family": "Extrême droite (presse de référence, encyclopédies et nombreux politistes ; « droite radicale » ou « national-populisme » pour d'autres politistes ; bloc « extrême droite » du nuancier du ministère de l'Intérieur, rattachement jugé sans erreur manifeste d'appréciation par le Conseil d'État le 11 mars 2024 pour les sénatoriales de 2023 ; le parti récuse ce terme et se présente comme « national » et « patriote »)",
   "description": "Le Rassemblement national a été fondé en 1972 sous le nom de Front national et renommé en 2018 ; il est présidé par Jordan Bardella, réélu le 24 octobre 2026 au congrès d'Orléans. Marine Le Pen a obtenu 23,15 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) ; aux européennes de 2024, la liste conduite par Jordan Bardella a obtenu 31,37 %, et le groupe RN compte 121 députés (novembre 2026, selon Datan). Condamnée en appel le 7 juillet 2026, notamment à une peine d'inéligibilité, Marine Le Pen s'est pourvue en cassation. Voir la section Procédures judiciaires.",
   "foundedYear": 1972,

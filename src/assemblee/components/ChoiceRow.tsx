@@ -4,6 +4,7 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { GroupSwatch } from '@/src/assemblee/components/GroupSwatch';
 
 /**
  * Un choix unique dans une feuille de filtres : libellé, ligne d'aide, coche quand il est choisi.
@@ -12,11 +13,14 @@ import { Pressable } from '@/components/ui/Pressable';
 export function ChoiceRow({
   label,
   help,
+  color,
   selected,
   onPress,
 }: {
   label: string;
   help?: string;
+  /** Couleur officielle d'un groupe : pastille devant le libellé, qui reste écrit. */
+  color?: string;
   selected: boolean;
   onPress: () => void;
 }) {
@@ -39,6 +43,7 @@ export function ChoiceRow({
         backgroundColor: selected ? colors.tintSoft : 'transparent',
       }}
     >
+      {color ? <GroupSwatch color={color} /> : null}
       <View style={{ flex: 1, gap: 2 }}>
         <Text style={selected ? { ...fonts.bold, color: colors.tint } : undefined}>{label}</Text>
         {help ? (

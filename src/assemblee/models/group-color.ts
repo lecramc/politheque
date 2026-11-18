@@ -1,22 +1,20 @@
 import type { Groupe } from '@/src/assemblee/models/scrutin.model';
 
 /**
- * Couleur de l'arc des groupes : un seul gris neutre pour tous, en clair comme en sombre. Les
- * couleurs officielles de l'Assemblée restent dans les données (c'est la source) mais ne
- * s'affichent nulle part : un traitement égal pour tous les groupes, sans règle de contraste qui
- * en colorerait certains et pas d'autres. Les groupes se lisent par leur abréviation et par les
- * séparateurs entre arcs.
+ * Couleur d'un groupe : la couleur officielle de l'Assemblée nationale (plan de l'hémicycle,
+ * assemblee-nationale.fr/dyn/vos-deputes/hemicycle, consulté le 18 novembre 2026), pour tous les
+ * groupes sans exception : ce sont les couleurs de l'institution, pas un choix éditorial. Elles
+ * viennent des données (`couleurOfficielle`). Les couleurs claires (HOR, SOC, LIOT) restent
+ * lisibles grâce à un contour fin ; l'abréviation du groupe est toujours écrite à côté : la
+ * couleur n'est jamais la seule information.
  */
-export const GROUP_ARC_COLOR = { light: '#6B6B6B', dark: '#A8A8A8' } as const;
+export const GROUP_FALLBACK_COLOR = '#8D949A';
 
-/** Fonds les plus défavorables de chaque thème (crème soutenu, bleu nuit élevé). */
-export const GROUP_COLOR_BACKGROUNDS = { light: '#F6F2EA', dark: '#161E33' } as const;
+const HEX_COLOR = /^#[0-9A-Fa-f]{6}$/;
 
-/** Toujours la même couleur : la couleur officielle du groupe n'est jamais utilisée. */
-export const groupArcColor = (
-  _groupe: Pick<Groupe, 'couleurOfficielle'>,
-  theme: 'light' | 'dark'
-): string => GROUP_ARC_COLOR[theme];
+/** Couleur officielle du groupe ; gris neutre si elle manque ou n'est pas un `#RRGGBB`. */
+export const groupColor = (groupe: Pick<Groupe, 'couleurOfficielle'>): string =>
+  HEX_COLOR.test(groupe.couleurOfficielle) ? groupe.couleurOfficielle : GROUP_FALLBACK_COLOR;
 
 const channels = (hex: string): [number, number, number] => {
   const value = Number.parseInt(hex.slice(1), 16);

@@ -2,7 +2,16 @@
   "id": "lfi",
   "name": "La France insoumise",
   "shortName": "LFI",
-  "color": "#CC2443",
+  "color": "#C00D0D",
+  "colorSource": {
+    "groupe": "LFI-NFP",
+    "text": "Couleur du groupe LFI-NFP à l'Assemblée nationale",
+    "source": {
+      "title": "Assemblée nationale, plan de l'hémicycle (couleurs officielles des groupes)",
+      "url": "https://www.assemblee-nationale.fr/dyn/vos-deputes/hemicycle",
+      "date": "2026-11-18"
+    }
+  },
   "family": "Gauche radicale (la plupart des politistes ; « populisme de gauche » pour d'autres, dont Manuel Cervera-Marzal ; bloc « extrême gauche » du nuancier du ministère de l'Intérieur depuis les municipales de 2026, jugé sans erreur manifeste par le Conseil d'État le 27 février 2026 ; LFI récuse cette étiquette)",
   "description": "La France insoumise est un mouvement lancé le 10 février 2016 pour soutenir la candidature de Jean-Luc Mélenchon ; il est coordonné par Manuel Bompard. Jean-Luc Mélenchon a obtenu 21,95 % des suffrages exprimés au premier tour de la présidentielle 2022 (Conseil constitutionnel) et la liste conduite par Manon Aubry 9,89 % aux européennes de 2024. Membre du Nouveau Front populaire aux législatives de 2024, LFI compte 70 députés dans le groupe LFI-NFP (novembre 2026, selon Datan). Une nouvelle édition de son programme, « L'Avenir en commun », est parue le 6 novembre 2026.",
   "foundedYear": 2016,

@@ -96,9 +96,29 @@ describe('Feature: textes de l’interface Assemblée', () => {
 
   it('should give the hints under the diagram: touch on a phone, hover on a computer', () => {
     expect(COPY.hemicycle.mention).toBe(
-      'Schéma simplifié : les sièges sont placés selon leur numéro officiel.'
+      "Schéma simplifié : les groupes sont rangés dans l'ordre du plan officiel de l'Assemblée, sans reproduire la place exacte de chaque député. Non-inscrits (NI) : places dispersées dans la salle, regroupés ici à droite du schéma."
     );
     expect(COPY.hemicycle.hintTouch).toBe('Touchez un groupe pour voir ses sièges.');
     expect(COPY.hemicycle.hintHover).toBe('Survolez un siège pour voir le député.');
+  });
+
+  it('should say where the order and the colours of the groups come from, with the source and its date', () => {
+    expect(COPY.method.orderTitle).toBe("D'où vient cet ordre");
+    expect(COPY.method.order).toContain(
+      'LFI-NFP, GDR, ECOS, SOC, LIOT, DEM, EPR, HOR, DR, UDR, RN'
+    );
+    expect(COPY.method.order).toContain('places dispersées dans la salle');
+    for (const text of [COPY.method.order, COPY.method.colors]) {
+      expect(text).toContain('assemblee-nationale.fr/dyn/vos-deputes/hemicycle');
+      expect(text).toContain('18 novembre 2026');
+    }
+    expect(COPY.method.colors).toContain('la même règle pour tous');
+    expect(COPY.method.neutrality).not.toMatch(/gris/);
+  });
+
+  it('should phrase the sitting sentence on the official plan', () => {
+    expect(COPY.overview.sitting.lead('1 janvier 2026')).toContain(
+      "de la gauche à la droite de l'hémicycle, selon le plan officiel de l'Assemblée"
+    );
   });
 });

@@ -5,12 +5,8 @@ import manifest from '@/src/assemblee/data/manifest.json';
 import indexData from '@/src/assemblee/data/scrutins-index.json';
 import { classifyScrutin, PERIMETER_RULES } from '@/src/assemblee/models/extraction/perimeter';
 import type { RawScrutin } from '@/src/assemblee/models/extraction/raw.model';
-import {
-  GROUP_ARC_COLOR,
-  GROUP_COLOR_BACKGROUNDS,
-  contrastRatio,
-  groupArcColor,
-} from '@/src/assemblee/models/group-color';
+import { groupColor } from '@/src/assemblee/models/group-color';
+import { OFFICIAL_GROUPE_ORDER } from '@/src/assemblee/models/groupe-order';
 import type {
   DeputeDirectory,
   ScrutinDetail,
@@ -220,16 +216,30 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
     expect(files).toEqual(expected);
   });
 
-  it('should draw every group arc in the same neutral grey, in light and in dark', () => {
-    for (const theme of ['light', 'dark'] as const) {
-      const colors = index.groupes.map((g) => groupArcColor(g, theme));
-      expect(new Set(colors), theme).toEqual(new Set([GROUP_ARC_COLOR[theme]]));
-      expect(
-        contrastRatio(GROUP_ARC_COLOR[theme], GROUP_COLOR_BACKGROUNDS[theme])
-      ).toBeGreaterThanOrEqual(3);
+  it("should give every group its official Assembly colour (plan de l'hémicycle, consulté le 18/11/2026)", () => {
+    const OFFICIAL_COLORS: Record<string, string> = {
+      'LFI-NFP': '#C00D0D',
+      GDR: '#830E21',
+      ECOS: '#77AA79',
+      SOC: '#F5B4CE',
+      LIOT: '#FFD96F',
+      DEM: '#F07E26',
+      EPR: '#7B4591',
+      HOR: '#B5E2F9',
+      DR: '#8CB0DC',
+      UDR: '#3367A7',
+      RN: '#313567',
+      NI: '#8D949A',
+    };
+    for (const g of index.groupes) {
+      expect(g.couleurOfficielle, g.abrev).toBe(OFFICIAL_COLORS[g.abrev]);
+      expect(groupColor(g)).toBe(g.couleurOfficielle);
     }
-    // Les couleurs officielles restent dans les données : c'est la source.
-    for (const g of index.groupes) expect(g.couleurOfficielle).toMatch(/^#[0-9A-Fa-f]{6}$/);
+  });
+
+  it("should list the groups in the Assembly's official order, non-inscrits last", () => {
+    const abrevs = [...new Set(index.groupes.map((g) => g.abrev))];
+    expect(abrevs).toEqual([...OFFICIAL_GROUPE_ORDER, 'NI']);
   });
 
   it('should keep an annuaire of unique deputies, alphabetically sorted', () => {

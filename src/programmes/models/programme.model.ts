@@ -183,13 +183,27 @@ export interface Candidacy {
   themes: Record<ThemeId, PartyThemeProgramme>;
 }
 
+/**
+ * Origine de la couleur d'un parti : celle de son groupe à l'Assemblée nationale (page officielle
+ * datée) ou, sans groupe, une couleur propre au parti.
+ */
+export interface PartyColorSource {
+  /** Abréviation du groupe dont la couleur est reprise ; `null` : aucun groupe à l'Assemblée. */
+  groupe: string | null;
+  text: string;
+  /** Page officielle datée ; `null` pour une couleur propre au parti. */
+  source: { title: string; url: string; date: string } | null;
+}
+
 /** Fiche permanente d'un parti : identité, histoire, positions. Indépendante d'un scrutin. */
 export interface Party {
   id: string;
   name: string;
   shortName: string;
-  /** Couleur d'identification (pastille), pas de connotation. */
+  /** Couleur d'identification (pastille), pas de connotation : celle du groupe à l'Assemblée. */
   color: string;
+  /** D'où vient la couleur (testé par l'intégrité des données). */
+  colorSource: PartyColorSource;
   /** Famille politique telle que décrite par la science politique / presse de référence. */
   family: string;
   description: string;

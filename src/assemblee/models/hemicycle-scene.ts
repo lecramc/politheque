@@ -1,3 +1,4 @@
+import { groupColor } from '@/src/assemblee/models/group-color';
 import type { HemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
 import type { Groupe, ScrutinDetail } from '@/src/assemblee/models/scrutin.model';
 
@@ -67,6 +68,8 @@ export type ArcSegment = {
   /** Abréviation officielle, toujours affichée en texte à côté de la couleur. */
   abrev: string;
   libelle: string;
+  /** Couleur officielle du groupe à l'Assemblée (contour fin à prévoir : certaines sont claires). */
+  color: string;
   /** Radians, de 0 (droite de l'image, place 1) à π (gauche). */
   start: number;
   end: number;
@@ -169,6 +172,7 @@ export const hemicycleArcs = (
       groupe: block.groupe,
       abrev: groupes[block.groupe].abrev,
       libelle: groupes[block.groupe].libelle,
+      color: groupColor(groupes[block.groupe]),
       start,
       end,
       path: `M ${round(from.x)} ${round(from.y)} A ${box.arcRadius} ${box.arcRadius} 0 0 0 ${round(to.x)} ${round(to.y)}`,
