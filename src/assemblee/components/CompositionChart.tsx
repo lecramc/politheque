@@ -23,7 +23,9 @@ export function CompositionChart({ scene, label }: { scene: CompositionScene; la
   const { width: screenWidth } = useWindowDimensions();
   const compact = screenWidth < NARROW_BELOW;
   const box = compact ? scene.compactBox : scene.box;
-  const [width, setWidth] = useState(343);
+  // Estimation de départ proche de la largeur réelle (colonne de lecture, gouttières de 16 px) :
+  // si la mesure n'arrive pas après l'hydratation, les étiquettes gardent une taille juste.
+  const [width, setWidth] = useState(() => Math.max(280, Math.min(screenWidth - 32, 768)));
   const onLayout = (e: LayoutChangeEvent) => {
     if (e.nativeEvent.layout.width > 0) setWidth(e.nativeEvent.layout.width);
   };

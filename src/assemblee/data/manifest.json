@@ -6,11 +6,11 @@
   "licence": "Licence Ouverte / Open Licence (Etalab)",
   "extraitLe": "2026-11-18",
   "publieLe": {
-    "scrutins": "2026-11-17",
+    "scrutins": "2026-11-18",
     "amo": "2026-11-18"
   },
   "sha256": {
-    "scrutins": "0b65aaf4758e3289479550a7a21ff0d6ac0ada5376021b888b89a0be967b5530",
+    "scrutins": "1de242925329f91a9958a138cb81f0493545e2abab88ca2c42939f4da5dd8020",
     "amo": "72fc4387b03f8fcf094a5d2112cb32a9ce0eb413b9eef372cb0c40e81d17c2e2"
   },
   "scrutins": 342,
