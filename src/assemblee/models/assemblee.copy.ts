@@ -285,7 +285,7 @@ export const COPY = {
     sitting: {
       title: "Qui siège aujourd'hui",
       lead: (date: string) =>
-        `Les députés en exercice au ${date}, groupe par groupe, de la gauche à la droite de l'hémicycle.`,
+        `Les députés en exercice au ${date}, groupe par groupe, dans l'ordre où ils siègent dans la salle.`,
       majority: (seats: number) => `Majorité absolue : ${seats} sièges`,
       noMajority: (seats: number) =>
         `Aucun groupe n'a la majorité absolue ; le plus grand compte ${seats} ${pluralize(seats, 'siège', 'sièges')}.`,

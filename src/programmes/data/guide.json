@@ -309,6 +309,379 @@
     ]
   },
   {
+    "id": "comment-une-loi-est-votee",
+    "title": "Comment une loi est votée à l'Assemblée",
+    "icon": "document-text-outline",
+    "summary": "Une loi est proposée par le Gouvernement ou par des parlementaires, puis votée par l'Assemblée nationale et le Sénat. Voici les étapes, les façons de voter et les règles à connaître.",
+    "lastVerified": "2026-11-18",
+    "blocks": [
+      {
+        "heading": "Qui propose une loi",
+        "paragraphs": [
+          "Une loi peut venir de deux côtés :\n- du Gouvernement : c'est un « projet de loi » ;\n- d'un ou plusieurs députés ou sénateurs : c'est une « proposition de loi »."
+        ],
+        "more": [
+          "Article 39 de la Constitution : « L'initiative des lois appartient concurremment au Premier ministre et aux membres du Parlement. »",
+          "Avant d'être déposé, un projet de loi reçoit l'avis du Conseil d'État, puis il est adopté en Conseil des ministres.",
+          "Un parlementaire ne peut pas proposer une mesure qui diminuerait les ressources publiques, ou qui créerait ou augmenterait une dépense publique (article 40 de la Constitution). Le Gouvernement n'a pas cette limite."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (articles 39 et 40)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°46 : La procédure législative",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°47 : L'initiative gouvernementale",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-initiative-gouvernementale",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°48 : L'initiative parlementaire",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-initiative-parlementaire",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "Le parcours d'un texte à l'Assemblée",
+        "paragraphs": [
+          "Un texte passe par plusieurs étapes :\n- la commission : un groupe de députés spécialisés l'étudie et peut le modifier ;\n- la séance publique : tous les députés peuvent en débattre dans l'hémicycle ;\n- les amendements : ce sont des propositions de modification, votées une par une ;\n- le vote sur l'ensemble : l'Assemblée adopte ou rejette le texte entier."
+        ],
+        "more": [
+          "L'Assemblée compte huit commissions permanentes. Celle qui examine le texte désigne un « rapporteur », chargé de le présenter.",
+          "En séance, la discussion porte sur le texte adopté par la commission. Exception : pour une révision de la Constitution ou un budget, elle porte d'abord sur le texte du Gouvernement (article 42 de la Constitution).",
+          "Les députés et le Gouvernement peuvent déposer des amendements (article 44). L'Assemblée vote chaque amendement, puis chaque article, puis l'ensemble du texte.",
+          "Avant la discussion, les députés peuvent voter une « motion de rejet préalable ». Si elle est adoptée, le texte est rejeté sans que ses articles soient examinés. C'est rare."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (articles 42, 43 et 44)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°46 : La procédure législative",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°49 : L'examen des textes en commission",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-examen-des-textes-en-commission",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°50 : La séance plénière",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-seance-pleniere",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°51 : L'exercice du droit d'amendement",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-exercice-du-droit-d-amendement",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "La navette avec le Sénat",
+        "paragraphs": [
+          "Une loi doit être adoptée dans les mêmes termes par l'Assemblée nationale et par le Sénat. Le texte fait donc des allers-retours entre les deux : c'est la « navette »."
+        ],
+        "more": [
+          "Chaque passage dans une assemblée s'appelle une « lecture ». À chaque lecture, seuls les articles sur lesquels les deux assemblées ne sont pas encore d'accord restent en discussion.",
+          "Si le désaccord persiste après deux lectures dans chaque assemblée, une commission mixte paritaire (CMP) peut être réunie. Elle compte 7 députés et 7 sénateurs et cherche un texte de compromis. Une seule lecture suffit si le Gouvernement a engagé la « procédure accélérée ».",
+          "La CMP est convoquée par le Premier ministre ou, pour une proposition de loi, par les présidents des deux assemblées ensemble.",
+          "Si la CMP échoue, ou si son texte n'est pas adopté, le Gouvernement peut, après une nouvelle lecture dans chaque assemblée, demander à l'Assemblée nationale de statuer définitivement. C'est le « dernier mot » de l'Assemblée (article 45 de la Constitution)."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (article 45)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°46 : La procédure législative",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "La procédure législative (fiche du Sénat)",
+            "url": "https://www.senat.fr/role/fiche/procedure_leg.html",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "Promulgation et Conseil constitutionnel",
+        "paragraphs": [
+          "Une fois la loi définitivement adoptée, le président de la République la promulgue : il la signe pour qu'elle puisse s'appliquer. Elle est ensuite publiée au Journal officiel."
+        ],
+        "more": [
+          "Le président a 15 jours pour promulguer la loi (article 10 de la Constitution).",
+          "Avant la promulgation, la loi peut être envoyée au Conseil constitutionnel par le président de la République, le Premier ministre, le président de l'Assemblée nationale, le président du Sénat, 60 députés ou 60 sénateurs (article 61).",
+          "Le Conseil a un mois pour décider, ou huit jours en cas d'urgence à la demande du Gouvernement. Pendant ce temps, le délai de promulgation est suspendu.",
+          "Si le Conseil juge certains articles contraires à la Constitution, ces articles ne peuvent pas être promulgués. Le reste de la loi peut l'être."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (articles 10 et 61)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°46 : La procédure législative",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-procedure-legislative",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "Comment les députés votent",
+        "paragraphs": [
+          "Le plus souvent, les députés votent à main levée. Le président de séance annonce le résultat, mais le vote de chaque député n'est ni enregistré ni publié.",
+          "Lors d'un « scrutin public », le vote de chaque député est enregistré et publié, nom par nom. C'est le seul cas où l'on sait qui a voté quoi : la page « Hémicycle » du site s'appuie sur ces scrutins."
+        ],
+        "more": [
+          "Chaque député peut voter « pour », « contre » ou s'abstenir.",
+          "Un scrutin public a lieu sur décision du président de séance, ou de droit à la demande du Gouvernement, de la commission chargée du texte ou d'un président de groupe.",
+          "Pour les textes les plus importants, la Conférence des présidents peut organiser un « vote solennel » : un scrutin public fixé à l'avance, en général le mardi après-midi après les questions au Gouvernement, pour que le plus grand nombre de députés soit présent (article 65-1 du Règlement de l'Assemblée).",
+          "Sous la XVIe législature (2022-2024), il y a eu 4 105 scrutins publics, dont 71 votes solennels.",
+          "Le vote est personnel (article 27 de la Constitution). Un député absent peut confier son vote à un collègue dans des cas prévus par la loi, notamment : maladie, accident ou événement familial grave, mission confiée par le Gouvernement, travaux d'une assemblée internationale, force majeure. Un député ne peut recevoir qu'une seule délégation.",
+          "Sauf exception, un vote est valable quel que soit le nombre de députés présents. Un texte ou un amendement est adopté s'il a plus de « pour » que de « contre » : les abstentions ne comptent pas."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (article 27)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°56 : Les votes à l'Assemblée nationale",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/les-votes-a-l-assemblee-nationale",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°50 : La séance plénière",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-seance-pleniere",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Scrutins publics de la XVIIe législature",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Règlement de l'Assemblée nationale (article 65-1)",
+            "url": "https://www.assemblee-nationale.fr/dyn/17/divers/texte_reference/02_reglement_assemblee_nationale",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "Les groupes politiques",
+        "paragraphs": [
+          "À l'Assemblée, les députés se rassemblent en groupes selon leurs affinités politiques. Il faut au moins 15 députés pour former un groupe."
+        ],
+        "more": [
+          "Les groupes organisent le travail. Les places dans les commissions sont réparties selon leur taille. En général, ils se réunissent chaque semaine pendant les sessions pour fixer leur position sur les textes et choisir leurs orateurs.",
+          "Un député ne peut appartenir qu'à un seul groupe. Il peut aussi y être « apparenté », ou ne siéger dans aucun : il est alors « non inscrit ».",
+          "Les présidents de groupe siègent à la Conférence des présidents, qui prépare l'ordre du jour. Ils peuvent demander un scrutin public.",
+          "Les groupes d'opposition et les groupes minoritaires ont des droits particuliers (article 51-1 de la Constitution). Par exemple, ils fixent l'ordre du jour d'une journée par mois."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (article 51-1)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°8 : Les groupes politiques",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/deputes-groupes-parlementaires/les-groupes-politiques",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Les groupes politiques",
+            "url": "https://www.assemblee-nationale.fr/dyn/les-groupes-politiques",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "La majorité absolue : 289 députés sur 577",
+        "paragraphs": [
+          "L'Assemblée nationale compte 577 députés. La majorité absolue, c'est plus de la moitié d'entre eux : 289 députés.",
+          "Depuis les élections législatives des 30 juin et 7 juillet 2024, aucun groupe n'a cette majorité. Le 18 novembre 2026, le groupe le plus nombreux compte 121 députés."
+        ],
+        "more": [
+          "Ce seuil compte surtout pour la motion de censure, qui doit réunir la majorité des membres de l'Assemblée. Pour un vote ordinaire, il suffit d'avoir plus de « pour » que de « contre ».",
+          "La majorité absolue se calcule sur les sièges occupés : quand des sièges sont vacants, le seuil baisse d'autant.",
+          "Le 18 novembre 2026, l'Assemblée compte 11 groupes et 11 députés non inscrits. Effectifs, apparentés compris, par ordre alphabétique : Droite républicaine 46 ; Écologiste et social 39 ; Ensemble pour la République 90 ; Gauche démocrate et républicaine 17 ; Horizons & Indépendants 35 ; La France insoumise - Nouveau Front populaire 70 ; Les Démocrates 37 ; Libertés, indépendants, outre-mer et territoires 24 ; Rassemblement national 121 ; Socialistes et apparentés 67 ; Union des droites pour la République 17."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (article 24)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°3 : L'élection des députés",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/deputes-groupes-parlementaires/l-election-des-deputes",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Effectif des groupes politiques, XVIIe législature",
+            "url": "https://www2.assemblee-nationale.fr/instances/liste/groupes_politiques/effectif",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°56 : Les votes à l'Assemblée nationale",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/les-votes-a-l-assemblee-nationale",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Dissolution de l'Assemblée nationale, en application de l'article 12 de la Constitution",
+            "url": "https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/dissolution-de-l-assemblee-nationale-en-application-de-l-article-12-de-la-constitution",
+            "date": "2024-06-09",
+            "kind": "statistique"
+          },
+          {
+            "title": "Résultats des élections législatives 2024 : le Nouveau Front populaire en tête, suivi par le camp présidentiel, le RN trébuche",
+            "url": "https://www.publicsenat.fr/actualites/politique/resultat-des-legislatives-2024-le-nouveau-front-populaire-en-tete-suivi-par-le-camp-presidentiel-le-rn-trebuche",
+            "date": "2024-07-07",
+            "kind": "presse"
+          }
+        ]
+      },
+      {
+        "heading": "Le « 49.3 » et la motion de censure",
+        "paragraphs": [
+          "L'article 49, alinéa 3 de la Constitution permet au Premier ministre de faire adopter un texte sans vote des députés. En échange, ceux-ci peuvent tenter de renverser le gouvernement par une motion de censure."
+        ],
+        "more": [
+          "Une motion de censure doit être signée par au moins un dixième des députés (58 quand les 577 sièges sont pourvus). Après un 49.3, elle doit être déposée dans les 24 heures.",
+          "Le vote a lieu au moins 48 heures après le dépôt. Seuls les votes favorables sont comptés. La motion est adoptée si elle réunit la majorité absolue des membres de l'Assemblée : 289 voix quand les 577 sièges sont pourvus.",
+          "Si la motion est adoptée, le texte est rejeté et le gouvernement doit démissionner. Sinon, le texte est considéré comme adopté.",
+          "Le 49.3 peut être utilisé sans limite pour les lois de finances et de financement de la sécurité sociale, et pour un seul autre texte par session.",
+          "Les députés peuvent aussi déposer une motion de censure sans 49.3 (article 49, alinéa 2). Chacun ne peut alors en signer plus de trois par session ordinaire.",
+          "Une motion de censure a été adoptée en 1962, puis le 4 décembre 2024, après un 49.3 sur le budget de la Sécurité sociale pour 2025."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (articles 49 et 50)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°64 : La mise en cause de la responsabilité du Gouvernement",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°56 : Les votes à l'Assemblée nationale",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/les-votes-a-l-assemblee-nationale",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "La confiance (49.1) et les déclarations (50-1)",
+        "paragraphs": [
+          "Avec l'article 49, alinéa 1, le Premier ministre demande à l'Assemblée sa confiance sur son programme ou sur une déclaration de politique générale. Si elle la refuse, le gouvernement doit démissionner.",
+          "Avec l'article 50-1, le Gouvernement fait devant une assemblée une déclaration sur un sujet précis. Elle peut être suivie d'un vote, qui ne met pas en jeu son existence."
+        ],
+        "more": [
+          "Pour la confiance, il suffit d'avoir plus de « pour » que de « contre » parmi les députés qui votent.",
+          "Le 8 septembre 2025, l'Assemblée a refusé sa confiance au gouvernement de François Bayrou, qui a démissionné."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (articles 49, 50 et 50-1)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°64 : La mise en cause de la responsabilité du Gouvernement",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/evaluation-politiques-publiques-controle-gouvernement/la-mise-en-cause-de-la-responsabilite-du-gouvernement",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°56 : Les votes à l'Assemblée nationale",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/les-votes-a-l-assemblee-nationale",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Vote de confiance : l'Assemblée nationale a désapprouvé la déclaration de politique générale du Gouvernement",
+            "url": "https://www.assemblee-nationale.fr/dyn/actualites-accueil-hub/vote-de-confiance-l-assemblee-nationale-a-desapprouve-la-declaration-de-politique-generale-du-gouvernement",
+            "date": "2025-09-08",
+            "kind": "statistique"
+          }
+        ]
+      },
+      {
+        "heading": "Le budget : des règles à part",
+        "paragraphs": [
+          "Chaque année, le Parlement vote la loi de finances (le budget de l'État) et la loi de financement de la sécurité sociale, avec des délais fixés par la Constitution."
+        ],
+        "more": [
+          "Ces deux textes sont toujours examinés d'abord par l'Assemblée nationale (article 39 de la Constitution).",
+          "Le Parlement a 70 jours pour se prononcer sur le projet de loi de finances et 50 jours pour celui de la sécurité sociale. Passé ce délai, le Gouvernement peut les mettre en vigueur par ordonnance (articles 47 et 47-1).",
+          "Pour en savoir plus, voir la leçon « Le budget et la dette en bref »."
+        ],
+        "sources": [
+          {
+            "title": "Texte intégral de la Constitution (articles 39, 47 et 47-1)",
+            "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          },
+          {
+            "title": "Fiche de synthèse n°53 : L'examen parlementaire des lois de finances",
+            "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-examen-parlementaire-des-lois-de-finances",
+            "date": "2026-11-18",
+            "kind": "statistique"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "id": "election-presidentielle",
     "title": "Comment se déroule l'élection présidentielle",
     "icon": "calendar-outline",

@@ -56,7 +56,13 @@ export const JOURNEY_GUIDE_IDS: Record<
   string[]
 > = {
   'les-bases': ['gauche-droite', 'classement-des-partis', 'desinformation'],
-  'les-institutions': ['institutions', 'pouvoirs-du-president', 'union-europeenne', 'budget-dette'],
+  'les-institutions': [
+    'institutions',
+    'pouvoirs-du-president',
+    'comment-une-loi-est-votee',
+    'union-europeenne',
+    'budget-dette',
+  ],
   'presidentielle-2027': ['election-presidentielle', 'comment-voter'],
 };
 
