@@ -475,13 +475,17 @@ export function Page({
                   children
                 ) : (
                   <RailLayout rail={rail} railOnMobile={railOnMobile}>
-                    <View style={{ gap: effects.spacing.lg }}>{children}</View>
+                    <View style={{ gap: effects.spacing.lg }}>
+                      {children}
+                      {/* Page à rail : « Signaler » sous la colonne de contenu, pas sous le rail. */}
+                      {rail && reportLinks ? <ReportError links={reportLinks} /> : null}
+                    </View>
                   </RailLayout>
                 )}
               </View>
             </Enter>
           )}
-          {reportLinks ? (
+          {reportLinks && !(rail && template !== 'hub') ? (
             <ReportError
               links={reportLinks}
               column={solo ? 'solo' : narrow ? 'list-col' : undefined}

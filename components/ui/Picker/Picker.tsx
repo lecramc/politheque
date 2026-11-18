@@ -83,6 +83,8 @@ export default function Picker({ value, options, onChange, disabled = false, sty
               alignItems: 'center',
               justifyContent: 'center',
               zIndex: 1,
+              // Zone de toucher : 40 px + la marge du conteneur ≈ 44 px recommandés.
+              minHeight: effects.sizes.button.small,
               paddingVertical: effects.spacing.xs,
             }}
           >
