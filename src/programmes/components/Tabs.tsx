@@ -13,7 +13,7 @@ import {
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
 import { duration, useMotion } from '@/components/motion';
-import { useTheme } from '@/components/ThemeContext';
+import { theme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { Pressable } from '@/components/ui/Pressable';
@@ -126,7 +126,7 @@ export function Tabs<T extends string>({
                 alignItems: 'center',
                 justifyContent: 'space-between',
                 gap: effects.spacing.xs,
-                paddingHorizontal: 18,
+                paddingHorizontal: effects.spacing.smd,
                 borderTopWidth: index === 0 ? 0 : 1,
                 borderLeftWidth: 4,
                 borderTopColor: colors.surface.border.primary,
@@ -272,7 +272,7 @@ export function Tabs<T extends string>({
               style={{
                 minHeight: 48,
                 justifyContent: 'center',
-                paddingHorizontal: 14,
+                paddingHorizontal: effects.spacing.sm,
                 borderBottomWidth: 3,
                 borderColor: active && !measured ? colors.tint : 'transparent',
               }}
@@ -346,7 +346,7 @@ const styles = StyleSheet.create({
   wrapLabel: {
     minHeight: 48,
     justifyContent: 'center',
-    paddingHorizontal: 2,
+    paddingHorizontal: theme.effects.spacing.xxs,
     borderBottomWidth: 3,
   },
 });

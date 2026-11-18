@@ -37,7 +37,7 @@ function DebateRow({
           alignItems: 'center',
           gap: effects.spacing.smd,
           minHeight: 56,
-          paddingVertical: 10,
+          paddingVertical: effects.spacing.sm,
           paddingHorizontal: effects.spacing.md,
           borderTopWidth: first ? 0 : 1,
           borderColor: colors.surface.border.primary,

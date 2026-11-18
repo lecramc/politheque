@@ -14,12 +14,20 @@ import type { LegendEntry } from '@/src/assemblee/models/hemicycle-legend';
 export function HemicycleLegend({ entries }: { entries: LegendEntry[] }) {
   const { colors, effects } = useTheme();
   return (
-    <View role="group" aria-label={COPY.legend.title} style={{ gap: 6 }}>
+    <View role="group" aria-label={COPY.legend.title} style={{ gap: effects.spacing.xs }}>
       <View
-        style={{ flexDirection: 'row', flexWrap: 'wrap', columnGap: effects.spacing.md, rowGap: 6 }}
+        style={{
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          columnGap: effects.spacing.md,
+          rowGap: effects.spacing.xs,
+        }}
       >
         {entries.map((entry) => (
-          <View key={entry.code} style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+          <View
+            key={entry.code}
+            style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
+          >
             <VoteGlyph glyph={entry.glyph} size={18} />
             <Text style={{ fontSize: 14, color: colors.text.primary }}>{entry.label}</Text>
           </View>

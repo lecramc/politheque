@@ -61,7 +61,11 @@ export function PassportCover({
               <Pressable
                 accessibilityRole="link"
                 accessibilityLabel={`${stamp.title}, ${stamp.state === 'stamped' ? 'tampon obtenu' : 'tampon à obtenir'}`}
-                style={{ alignItems: 'center', gap: 6, padding: 4 }}
+                style={{
+                  alignItems: 'center',
+                  gap: effects.spacing.xs,
+                  padding: effects.spacing.xxs,
+                }}
               >
                 <Stamp
                   state={stamp.state}

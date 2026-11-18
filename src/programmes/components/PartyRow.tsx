@@ -5,6 +5,7 @@ import { StyleSheet, View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
+import { useMarkOutline } from '@/src/core/hooks/useMarkOutline';
 import { tv } from '@/src/core/web/tv';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import type { Party } from '@/src/programmes/models/programme.model';
@@ -38,6 +39,7 @@ export function PartyRow({
   first?: boolean;
 }) {
   const { colors, effects, fonts } = useTheme();
+  const outline = useMarkOutline(party.color);
   return (
     <Link href={partyHref(party.id, section) as never} asChild>
       <Pressable
@@ -46,9 +48,9 @@ export function PartyRow({
         style={{
           flexDirection: 'row',
           alignItems: 'center',
-          gap: 12,
+          gap: effects.spacing.sm,
           minHeight: 64,
-          paddingVertical: 10,
+          paddingVertical: effects.spacing.sm,
           paddingHorizontal: effects.spacing.md,
           borderTopWidth: first ? 0 : 1,
           borderColor: colors.surface.border.primary,
@@ -63,6 +65,8 @@ export function PartyRow({
             bottom: 0,
             width: 4,
             backgroundColor: party.color,
+            borderRightWidth: 1,
+            borderRightColor: outline,
           }}
         />
         <PartyDot color={party.color} size={36} label={party.shortName} />

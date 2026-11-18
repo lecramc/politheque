@@ -100,7 +100,7 @@ export function AxisChart({
 
   return (
     <View
-      style={{ gap: 16, alignItems: 'center' }}
+      style={{ gap: effects.spacing.smd, alignItems: 'center' }}
       accessible
       accessibilityRole="image"
       accessibilityLabel={`Carte des positions. ${summary}`}
@@ -145,7 +145,7 @@ export function AxisChart({
               top: (1 - toRatio(p.position.societal!)) * size - 8,
               flexDirection: 'row',
               alignItems: 'center',
-              gap: 3,
+              gap: effects.spacing.xxs,
               zIndex: p.isUser ? 2 : 1,
             }}
           >
@@ -177,13 +177,20 @@ export function AxisChart({
         ))}
       </View>
       <Text style={[caption, { textAlign: 'center' }]}>↓ {soc?.negativePole}</Text>
-      <View style={{ width: size, flexDirection: 'row', justifyContent: 'space-between', gap: 12 }}>
+      <View
+        style={{
+          width: size,
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          gap: effects.spacing.sm,
+        }}
+      >
         <Text style={[caption, { flex: 1 }]}>← {eco?.negativePole}</Text>
         <Text style={[caption, { flex: 1, textAlign: 'right' }]}>{eco?.positivePole} →</Text>
       </View>
 
       {eu && showEurope ? (
-        <View style={{ width: size, gap: 6, marginTop: 8 }}>
+        <View style={{ width: size, gap: effects.spacing.xs, marginTop: effects.spacing.xs }}>
           <Text style={{ ...fonts.bold, fontSize: 14 }}>{eu.label}</Text>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
             <Text style={caption}>{eu.negativePole}</Text>

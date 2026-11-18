@@ -1,8 +1,8 @@
 import React from 'react';
 import { Path } from 'react-native-svg';
 
-import { useTheme } from '@/components/ThemeContext';
 import type { ArcSegment } from '@/src/assemblee/models/hemicycle-scene';
+import { useMarkOutline } from '@/src/core/hooks/useMarkOutline';
 import { paint } from '@/src/core/web/svg-paint';
 
 /** Épaisseur du trait de couleur et du contour fin qui l'entoure, en unités du schéma. */
@@ -15,7 +15,7 @@ const OUTLINE_WIDTH = 0.066;
  * le groupe ; la forme du siège (hors composition) porte le vote.
  */
 export function GroupArcPath({ arc }: { arc: ArcSegment }) {
-  const { colors } = useTheme();
+  const outline = useMarkOutline(arc.color);
   return (
     <>
       <Path
@@ -23,7 +23,7 @@ export function GroupArcPath({ arc }: { arc: ArcSegment }) {
         fill="none"
         strokeWidth={OUTLINE_WIDTH}
         strokeLinecap="butt"
-        {...paint({ stroke: colors.surface.border.tertiary })}
+        {...paint({ stroke: outline })}
       />
       <Path
         d={arc.path}

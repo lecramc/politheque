@@ -36,7 +36,7 @@ export function ScrutinFilters({
   const [open, setOpen] = useState(false);
 
   const group = (label: string, choices: React.ReactNode) => (
-    <View role="radiogroup" aria-label={label} style={{ gap: 6 }}>
+    <View role="radiogroup" aria-label={label} style={{ gap: effects.spacing.xs }}>
       <Text variant="label">{label}</Text>
       {choices}
     </View>

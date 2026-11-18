@@ -2,7 +2,7 @@ import { Link, useLocalSearchParams, usePathname, useRouter } from 'expo-router'
 import React, { useEffect, useState } from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import { useTheme } from '@/components/ThemeContext';
+import { theme, useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
@@ -149,6 +149,10 @@ export default function PartyProgrammeScreen() {
 }
 
 const styles = StyleSheet.create({
-  measure: { gap: 6, paddingTop: 10, borderTopWidth: 1 },
+  measure: {
+    gap: theme.effects.spacing.xs,
+    paddingTop: theme.effects.spacing.sm,
+    borderTopWidth: 1,
+  },
   measureText: { fontSize: 16, lineHeight: 24 },
 });

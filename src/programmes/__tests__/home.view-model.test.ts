@@ -67,6 +67,7 @@ describe('Feature: accès à la liste des candidats depuis la tâche « Voter en
     expect(vmOf(stateBuilder().withCatalog(withCandidate).build()).candidatesLink).toEqual({
       href: '/elections/presidentielle-2027/candidats',
       label: 'Présidentielle 2027 : 1 candidature',
+      subtitle: 'Qui se présente, programme, sources',
     });
   });
 

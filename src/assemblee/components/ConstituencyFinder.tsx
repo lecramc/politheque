@@ -68,7 +68,11 @@ export function ConstituencyFinder({
               {COPY.constituency.none}
             </Text>
           ) : (
-            <View role="list" aria-label={COPY.constituency.listLabel} style={{ gap: 6 }}>
+            <View
+              role="list"
+              aria-label={COPY.constituency.listLabel}
+              style={{ gap: effects.spacing.xs }}
+            >
               {choices.items.map((item) => (
                 <ChoiceRow
                   key={item.code}
@@ -91,7 +95,7 @@ export function ConstituencyFinder({
           </Pressable>
         )
       ) : (
-        <View style={{ gap: 6 }}>
+        <View style={{ gap: effects.spacing.xs }}>
           {chosen ? <Text style={{ ...fonts.semibold }}>{chosen.label}</Text> : null}
           <View role="list" aria-label={COPY.constituency.title}>
             {rows.map((row, i) => (
@@ -99,8 +103,8 @@ export function ConstituencyFinder({
                 key={row.numero}
                 role="listitem"
                 style={{
-                  gap: 2,
-                  paddingVertical: 8,
+                  gap: effects.spacing.xxs,
+                  paddingVertical: effects.spacing.xs,
                   borderTopWidth: i === 0 ? 0 : 1,
                   borderColor: colors.surface.border.primary,
                 }}

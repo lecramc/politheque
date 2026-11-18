@@ -37,7 +37,12 @@ export function SeparatingQuestions({ items }: { items: SeparatingItem[] }) {
           {parties.map((party) => (
             <View
               key={party.id}
-              style={{ width: CELL, flexDirection: 'row', gap: 6, alignItems: 'center' }}
+              style={{
+                width: CELL,
+                flexDirection: 'row',
+                gap: effects.spacing.xs,
+                alignItems: 'center',
+              }}
             >
               <PartyDot color={party.color} size={24} label={party.shortName} />
               <Text style={{ ...fonts.bold, fontSize: 14, flexShrink: 1 }} numberOfLines={1}>

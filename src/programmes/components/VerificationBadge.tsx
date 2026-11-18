@@ -25,8 +25,8 @@ export function VerificationBadge({ sources }: { sources: Source[] }) {
         borderStyle: level === 'croisee' ? 'solid' : 'dashed',
         borderColor: colors.text.secondary,
         borderRadius: effects.borderRadius.round,
-        paddingHorizontal: 8,
-        paddingVertical: 2,
+        paddingHorizontal: effects.spacing.xs,
+        paddingVertical: effects.spacing.xxs,
       }}
     >
       <Text style={{ fontSize: 12, color: colors.text.secondary }}>

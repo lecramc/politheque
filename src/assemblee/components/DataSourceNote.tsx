@@ -7,9 +7,9 @@ import type { sourceNote } from '@/src/assemblee/models/source-note';
 
 /** Source, licence, date d'extraction : sur la liste, chaque scrutin et la méthode. */
 export function DataSourceNote({ source }: { source: ReturnType<typeof sourceNote> }) {
-  const { colors } = useTheme();
+  const { colors, effects } = useTheme();
   return (
-    <View style={{ gap: 2 }}>
+    <View style={{ gap: effects.spacing.xxs }}>
       <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
         {source.line}
       </Text>

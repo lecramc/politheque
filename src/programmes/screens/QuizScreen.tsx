@@ -113,7 +113,7 @@ export default function QuizScreen() {
                 {vm.index + 1}/{vm.total}
               </Text>
             </Arc>
-            <View style={{ flex: 1, gap: 6 }}>
+            <View style={{ flex: 1, gap: effects.spacing.xs }}>
               <Text variant="caption">{vm.themeTitle}</Text>
             </View>
           </View>
@@ -155,7 +155,7 @@ export default function QuizScreen() {
                       alignItems: 'center',
                       gap: effects.spacing.smd,
                       minHeight: 56,
-                      paddingHorizontal: 14,
+                      paddingHorizontal: effects.spacing.sm,
                       borderRadius: effects.borderRadius.small,
                       borderWidth: 1.5,
                       borderColor: selected ? colors.tint : colors.surface.border.tertiary,
@@ -227,9 +227,9 @@ export default function QuizScreen() {
               style={{
                 flexDirection: 'row',
                 alignItems: 'center',
-                gap: 12,
+                gap: effects.spacing.sm,
                 minHeight: 56,
-                padding: 14,
+                padding: effects.spacing.sm,
                 borderRadius: effects.borderRadius.small,
                 backgroundColor: colors.surface.primary,
                 borderWidth: 1,
@@ -247,7 +247,7 @@ export default function QuizScreen() {
                   width: 50,
                   height: 30,
                   borderRadius: effects.borderRadius.round,
-                  padding: 3,
+                  padding: effects.spacing.xxs,
                   backgroundColor: vm.important ? colors.tint : colors.surface.border.tertiary,
                   transitionProperty: 'backgroundColor',
                   transitionDuration: ms(duration.open),
@@ -268,7 +268,13 @@ export default function QuizScreen() {
               </Animated.View>
             </Pressable>
 
-            <View style={{ flexDirection: 'row', justifyContent: 'space-between', gap: 12 }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                justifyContent: 'space-between',
+                gap: effects.spacing.sm,
+              }}
+            >
               {vm.canGoBack ? (
                 <Pressable onPress={back} style={{ minHeight: 44, justifyContent: 'center' }}>
                   <Text style={{ color: colors.tint, ...fonts.bold }}>‹ Précédente</Text>

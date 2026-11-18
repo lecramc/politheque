@@ -41,7 +41,7 @@ export default function GuideScreen() {
           gap: effects.spacing.xs,
           minHeight: 52,
           paddingHorizontal: effects.spacing.md,
-          paddingVertical: 10,
+          paddingVertical: effects.spacing.sm,
           borderTopWidth: index === 0 ? 0 : 1,
           borderColor: colors.surface.border.primary,
         }}
@@ -59,7 +59,7 @@ export default function GuideScreen() {
     </Link>
   );
 
-  const box = { gap: 0 };
+  const box = { gap: effects.spacing.none };
   const card = {
     backgroundColor: colors.surface.primary,
     borderWidth: 1,
@@ -73,7 +73,7 @@ export default function GuideScreen() {
       {/* Pleine largeur du conteneur (comme /partis) : trois chapitres de 357 px chacun dès 1024 px,
           au lieu de trois colonnes de 235 px dans une colonne de 768 px. */}
       <View style={{ gap: effects.spacing.lg }}>
-        <View style={{ gap: 6 }}>
+        <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title">Comprendre</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
             {`${vm.reading.total} leçons courtes, à lire dans l'ordre ou au choix.`}
@@ -94,7 +94,7 @@ export default function GuideScreen() {
             aria-valuemin={0}
             aria-valuemax={vm.reading.total}
             aria-valuenow={vm.reading.readCount}
-            style={{ flexDirection: 'row', gap: 4 }}
+            style={{ flexDirection: 'row', gap: effects.spacing.xxs }}
           >
             {Array.from({ length: vm.reading.total }, (_, i) => (
               <View
@@ -161,7 +161,7 @@ export default function GuideScreen() {
             accessibilityRole="link"
             style={{
               ...card,
-              gap: 4,
+              gap: effects.spacing.xxs,
               padding: effects.spacing.md,
             }}
           >

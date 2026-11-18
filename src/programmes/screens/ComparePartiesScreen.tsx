@@ -120,7 +120,7 @@ function ThemeBlock({ block, names }: { block: CompareTheme; names: [string, str
                 <Text style={{ fontSize: 16, lineHeight: 24 }}>{programme.summary}</Text>
                 <MoreText label="En savoir plus">
                   {programme.measures.map((measure) => (
-                    <View key={measure.text} style={{ gap: 6 }}>
+                    <View key={measure.text} style={{ gap: effects.spacing.xs }}>
                       <Text style={{ fontSize: 15, lineHeight: 23 }}>{measure.text}</Text>
                       <SourceChip sources={measure.sources} subject={measure.text} />
                     </View>
@@ -229,7 +229,7 @@ export default function ComparePartiesScreen() {
         style={{
           minHeight: 44,
           justifyContent: 'center',
-          paddingHorizontal: 14,
+          paddingHorizontal: effects.spacing.sm,
           borderRadius: effects.borderRadius.round,
           borderWidth: 1.5,
           borderColor: active ? colors.tint : colors.surface.border.tertiary,

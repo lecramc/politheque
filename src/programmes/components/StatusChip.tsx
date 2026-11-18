@@ -12,8 +12,8 @@ export function StatusChip({ label }: { label: string }) {
       style={{
         alignSelf: 'flex-start',
         maxWidth: '100%',
-        paddingHorizontal: 8,
-        paddingVertical: 2,
+        paddingHorizontal: effects.spacing.xs,
+        paddingVertical: effects.spacing.xxs,
         borderRadius: effects.borderRadius.round,
         backgroundColor: colors.tintSoft,
       }}

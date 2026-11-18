@@ -43,7 +43,7 @@ export function Hemicycle({
   highlight: number | null;
   onHighlight: (groupe: number | null) => void;
 }) {
-  const { colors, fonts } = useTheme();
+  const { colors, effects, fonts } = useTheme();
   const { width: screenWidth } = useWindowDimensions();
   const compact = screenWidth < NARROW_BELOW;
   const box = compact ? view.compactBox : view.box;
@@ -204,8 +204,8 @@ export function Hemicycle({
             width: tooltipWidth,
             left: Math.min(Math.max(tipX - tooltipWidth / 2, 0), size.width - tooltipWidth),
             top: tipY < 70 ? tipY + 14 : tipY - 62,
-            padding: 8,
-            borderRadius: 8,
+            padding: effects.spacing.xs,
+            borderRadius: effects.borderRadius.xs,
             borderWidth: 1,
             borderColor: colors.surface.border.tertiary,
             backgroundColor: colors.surface.primary,

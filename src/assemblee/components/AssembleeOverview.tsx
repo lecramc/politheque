@@ -37,7 +37,7 @@ export function AssembleeOverview() {
               padding: effects.spacing.sm,
               borderRadius: effects.borderRadius.small,
               backgroundColor: colors.tintSoft,
-              gap: 2,
+              gap: effects.spacing.xxs,
             }}
           >
             <Text style={{ ...fonts.bold, fontSize: 16 }}>{vm.sitting.majority}</Text>
@@ -50,19 +50,28 @@ export function AssembleeOverview() {
                 role="listitem"
                 style={{
                   flexDirection: 'row',
-                  alignItems: 'center',
-                  gap: 10,
-                  paddingVertical: 8,
+                  alignItems: 'flex-start',
+                  gap: effects.spacing.sm,
+                  paddingVertical: effects.spacing.xs,
                   borderTopWidth: index === 0 ? 0 : 1,
                   borderColor: colors.surface.border.primary,
                 }}
               >
-                <View style={{ width: 92, flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-                  <GroupSwatch color={row.color} />
-                  <Text style={{ ...fonts.bold, fontSize: 15 }}>{row.abrev}</Text>
+                <View
+                  style={{
+                    width: 92,
+                    flexDirection: 'row',
+                    alignItems: 'flex-start',
+                    gap: effects.spacing.xs,
+                  }}
+                >
+                  <GroupSwatch color={row.color} lineHeight={22} />
+                  <Text style={{ ...fonts.bold, fontSize: 15, lineHeight: 22 }}>{row.abrev}</Text>
                 </View>
-                <Text style={{ fontSize: 15, flex: 1, minWidth: 0 }}>{row.libelle}</Text>
-                <Text plainDigits style={{ fontSize: 15 }}>
+                <Text style={{ fontSize: 15, lineHeight: 22, flex: 1, minWidth: 0 }}>
+                  {row.libelle}
+                </Text>
+                <Text plainDigits style={{ fontSize: 15, lineHeight: 22 }}>
                   {row.seatsLabel}
                 </Text>
               </View>

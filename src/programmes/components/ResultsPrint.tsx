@@ -86,7 +86,7 @@ export function ResultsPrint({
         <View
           key={question.id}
           {...tv('print-avoid')}
-          style={{ gap: effects.spacing.xxs, borderTopWidth: 1, paddingTop: 6 }}
+          style={{ gap: effects.spacing.xxs, borderTopWidth: 1, paddingTop: effects.spacing.xs }}
         >
           <Text style={{ ...fonts.bold, ...small }}>
             {index + 1}. {question.statement}

@@ -34,7 +34,7 @@ export function ElectionChip() {
           minWidth: CHIP_MIN_WIDTH,
           alignItems: 'center',
           justifyContent: 'center',
-          paddingHorizontal: 12,
+          paddingHorizontal: effects.spacing.sm,
           borderRadius: effects.borderRadius.round,
           borderWidth: 1.5,
           borderColor: colors.tintBorder,

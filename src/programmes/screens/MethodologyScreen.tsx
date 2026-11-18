@@ -116,7 +116,7 @@ export default function MethodologyScreen() {
   const vm = useViewModel(methodologyViewModel);
   return (
     <Page meta={META} back={{ label: 'Retour', href: '/' }}>
-      <View style={{ gap: 6 }}>
+      <View style={{ gap: effects.spacing.xs }}>
         <Text variant="title">Méthodologie</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
           Comment les informations sont choisies, vérifiées et présentées.
@@ -172,13 +172,13 @@ export default function MethodologyScreen() {
         <Text variant="caption" headingLevel={2}>
           Les niveaux de source
         </Text>
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.sm }}>
           <SourceChip sources={EXAMPLE.croisee} />
           <Text style={{ flex: 1, fontSize: 15 }}>
             Recoupée : au moins 2 sites différents, dont un indépendant du parti
           </Text>
         </View>
-        <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.sm }}>
           <SourceChip sources={EXAMPLE.unique} />
           <Text style={{ flex: 1, fontSize: 15 }}>Source unique : une seule source trouvée</Text>
         </View>
@@ -217,7 +217,10 @@ export default function MethodologyScreen() {
               </Text>
             ))}
             {guide.bullets?.map((bullet) => (
-              <Text key={bullet} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+              <Text
+                key={bullet}
+                style={{ fontSize: 16, lineHeight: 25, paddingLeft: effects.spacing.xs }}
+              >
                 {`• ${bullet}`}
               </Text>
             ))}
@@ -235,7 +238,10 @@ export default function MethodologyScreen() {
         </Text>
         <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.assemblee.criteriaLead}</Text>
         {vm.assemblee.rules.map((rule) => (
-          <Text key={rule} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+          <Text
+            key={rule}
+            style={{ fontSize: 16, lineHeight: 25, paddingLeft: effects.spacing.xs }}
+          >
             {`• ${rule}`}
           </Text>
         ))}
@@ -253,7 +259,10 @@ export default function MethodologyScreen() {
           {vm.assemblee.limitsTitle}
         </Text>
         {vm.assemblee.limits.map((limit) => (
-          <Text key={limit} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+          <Text
+            key={limit}
+            style={{ fontSize: 16, lineHeight: 25, paddingLeft: effects.spacing.xs }}
+          >
             {`• ${limit}`}
           </Text>
         ))}

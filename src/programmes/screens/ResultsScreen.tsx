@@ -185,7 +185,7 @@ export default function ResultsScreen() {
         style={{
           minHeight: 44,
           justifyContent: 'center',
-          paddingHorizontal: 12,
+          paddingHorizontal: effects.spacing.sm,
           borderRadius: effects.borderRadius.round,
           borderWidth: 1.5,
           borderColor: active ? colors.tint : colors.surface.border.tertiary,
@@ -230,7 +230,10 @@ export default function ResultsScreen() {
           <ReadingGuide label="Comment lire ces résultats" anchor={GUIDE_ANCHORS.results}>
             <Text style={{ fontSize: 16, lineHeight: 25 }}>{RESULTS_GUIDE_INTRO}</Text>
             {howToReadBullets(MIN_COMPARED, vm.margin).map((bullet) => (
-              <Text key={bullet} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+              <Text
+                key={bullet}
+                style={{ fontSize: 16, lineHeight: 25, paddingLeft: effects.spacing.xs }}
+              >
                 {`• ${bullet}`}
               </Text>
             ))}
@@ -288,7 +291,7 @@ export default function ResultsScreen() {
                   style={{
                     minHeight: 44,
                     justifyContent: 'center',
-                    paddingHorizontal: 14,
+                    paddingHorizontal: effects.spacing.sm,
                     borderRadius: effects.borderRadius.round,
                     borderWidth: 1.5,
                     borderColor:

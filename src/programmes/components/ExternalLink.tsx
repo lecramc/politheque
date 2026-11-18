@@ -13,10 +13,13 @@ import { tv } from '@/src/core/web/tv';
 export function ExternalLink({
   href,
   newTab = false,
+  size,
   children,
 }: {
   href: string;
   newTab?: boolean;
+  /** Taille de police ; omise, celle du composant `Text` (16). */
+  size?: number;
   children: string;
 }) {
   const { colors, fonts } = useTheme();
@@ -30,7 +33,12 @@ export function ExternalLink({
             ...(newTab ? { hrefAttrs: { target: '_blank', rel: 'noopener' } } : {}),
           }
         : { onPress: () => Linking.openURL(href) })}
-      style={{ ...fonts.regular, color: colors.tint, textDecorationLine: 'underline' }}
+      style={{
+        ...fonts.regular,
+        color: colors.tint,
+        textDecorationLine: 'underline',
+        ...(size ? { fontSize: size } : null),
+      }}
     >
       {children}
     </Text>

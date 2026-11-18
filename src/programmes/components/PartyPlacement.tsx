@@ -102,7 +102,9 @@ function PlacementRow({ item }: { item: AxisContribution }) {
             gap: effects.spacing.sm,
           }}
         >
-          <Text style={{ ...stanceStyle, width: STANCE_COLUMN, paddingTop: 2 }}>{label}</Text>
+          <Text style={{ ...stanceStyle, width: STANCE_COLUMN, paddingTop: effects.spacing.xxs }}>
+            {label}
+          </Text>
           <Text style={{ ...statementStyle, flex: 1 }}>{question.statement}</Text>
           {chip ? <View style={{ alignSelf: 'flex-start' }}>{chip}</View> : null}
         </View>

@@ -111,13 +111,13 @@ export default function PartyHistoryScreen() {
               borderColor: colors.tintBorder,
               marginLeft: 6,
               gap: effects.spacing.smd,
-              paddingVertical: 4,
+              paddingVertical: effects.spacing.xxs,
             }}
           >
             {history.timeline.map((item) => (
               <View
                 key={item.date + item.event}
-                style={{ paddingLeft: 16, gap: effects.spacing.xxs }}
+                style={{ paddingLeft: effects.spacing.smd, gap: effects.spacing.xxs }}
               >
                 <View
                   style={{

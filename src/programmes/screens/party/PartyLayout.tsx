@@ -40,6 +40,7 @@ export default function PartyLayout() {
   return (
     <Page
       meta={null}
+      reportMeta={vm.metaBySection?.[section]}
       article
       breadcrumb={vm.metaBySection?.[section]?.breadcrumb}
       loading={vm.status !== 'loaded'}

@@ -29,10 +29,18 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
     <View style={{ gap: effects.spacing.xs }}>
       <View
         role="group"
-        style={{ flexDirection: 'row', flexWrap: 'wrap', columnGap: effects.spacing.md, rowGap: 6 }}
+        style={{
+          flexDirection: 'row',
+          flexWrap: 'wrap',
+          columnGap: effects.spacing.md,
+          rowGap: effects.spacing.xs,
+        }}
       >
         {grid.legend.map((entry) => (
-          <View key={entry.kind} style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+          <View
+            key={entry.kind}
+            style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
+          >
             {entry.glyph ? (
               <VoteGlyph glyph={entry.glyph} size={18} />
             ) : (
@@ -65,7 +73,7 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
               style={[
                 {
                   width: FIRST_COLUMN,
-                  padding: 10,
+                  padding: effects.spacing.sm,
                   justifyContent: 'flex-end',
                   backgroundColor: colors.surface.primary,
                 },
@@ -80,7 +88,7 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
                   <Pressable
                     accessibilityRole="link"
                     accessibilityLabel={grid.open(column.fullTitle)}
-                    style={{ flex: 1, gap: 4, padding: 10 }}
+                    style={{ flex: 1, gap: effects.spacing.xxs, padding: effects.spacing.sm }}
                   >
                     <Text style={{ fontSize: 12, color: colors.text.secondary }}>
                       {column.date}
@@ -88,7 +96,13 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
                     <Text numberOfLines={6} style={{ fontSize: 13, lineHeight: 18 }}>
                       {column.title}
                     </Text>
-                    <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+                    <View
+                      style={{
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: effects.spacing.xxs,
+                      }}
+                    >
                       <Icon
                         name={column.adopte ? 'checkmark-circle-outline' : 'close-circle-outline'}
                         variant="secondary"
@@ -113,16 +127,22 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
                 style={[
                   {
                     width: FIRST_COLUMN,
-                    padding: 10,
+                    padding: effects.spacing.sm,
                     justifyContent: 'center',
                     backgroundColor: colors.surface.primary,
                   },
                   stickyStyle,
                 ]}
               >
-                <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-                  <GroupSwatch color={row.color} />
-                  <Text style={{ ...fonts.bold, fontSize: 14 }}>{row.abrev}</Text>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'flex-start',
+                    gap: effects.spacing.xs,
+                  }}
+                >
+                  <GroupSwatch color={row.color} lineHeight={20} />
+                  <Text style={{ ...fonts.bold, fontSize: 14, lineHeight: 20 }}>{row.abrev}</Text>
                 </View>
               </View>
               {row.cells.map((cell, i) => (
@@ -133,11 +153,11 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
                   style={{
                     width: COLUMN,
                     minHeight: 48,
-                    paddingHorizontal: 10,
-                    paddingVertical: 8,
+                    paddingHorizontal: effects.spacing.sm,
+                    paddingVertical: effects.spacing.xs,
                     flexDirection: 'row',
                     alignItems: 'center',
-                    gap: 8,
+                    gap: effects.spacing.xs,
                   }}
                 >
                   {cell.glyph ? (

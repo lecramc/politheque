@@ -114,7 +114,7 @@ export default function GuideSectionScreen() {
     >
       {section ? (
         <>
-          <View style={{ gap: 6 }}>
+          <View style={{ gap: effects.spacing.xs }}>
             <Text style={{ color: colors.text.secondary }}>
               {vm.minutes} min · {vm.blocks.length} parties
             </Text>

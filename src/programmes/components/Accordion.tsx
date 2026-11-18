@@ -35,9 +35,9 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: baseTheme.effects.spacing.sm,
     minHeight: 56,
-    paddingVertical: 12,
+    paddingVertical: baseTheme.effects.spacing.sm,
   },
   // Carte : l'anneau de focus intérieur suit le rayon de la carte (pas d'angles vifs).
   headerCard: {
@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     borderRadius: baseTheme.effects.borderRadius.small,
   },
   texts: { flex: 1, gap: baseTheme.effects.spacing.xxs },
-  stanceBelow: { alignSelf: 'flex-start', marginTop: 6 },
+  stanceBelow: { alignSelf: 'flex-start', marginTop: baseTheme.effects.spacing.xs },
   body: { paddingBottom: baseTheme.effects.spacing.md, gap: baseTheme.effects.spacing.sm },
   bodyCard: { paddingHorizontal: baseTheme.effects.spacing.md },
   hidden: { display: 'none' },

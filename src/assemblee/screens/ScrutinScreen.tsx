@@ -179,7 +179,12 @@ export default function ScrutinScreen() {
             {highlighted ? (
               <View
                 aria-live="polite"
-                style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 8 }}
+                style={{
+                  flexDirection: 'row',
+                  flexWrap: 'wrap',
+                  alignItems: 'center',
+                  gap: effects.spacing.xs,
+                }}
               >
                 <Text style={{ fontSize: 14 }}>{COPY.hemicycle.highlighted(highlighted.name)}</Text>
                 <Pressable
@@ -289,7 +294,7 @@ export default function ScrutinScreen() {
                   large
                   accessibilityRole="link"
                   style={{
-                    gap: 3,
+                    gap: effects.spacing.xxs,
                     padding: effects.spacing.sm,
                     borderTopWidth: index === 0 ? 0 : 1,
                     borderColor: colors.surface.border.primary,

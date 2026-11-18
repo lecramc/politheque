@@ -30,7 +30,7 @@ export function Sheet({
             justifyContent: 'space-between',
             paddingHorizontal: effects.spacing.md,
             paddingVertical: effects.spacing.sm,
-            gap: 12,
+            gap: effects.spacing.sm,
           }}
         >
           <Text style={{ ...fonts.display, fontSize: 20, flex: 1, color: colors.text.strong }}>

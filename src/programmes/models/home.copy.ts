@@ -33,8 +33,11 @@ export const TASK_COPY = {
 export const ASSEMBLEE_LINK_COPY = {
   label: 'Ce que votent les députés',
   subtitle: 'Qui siège, qui vote quoi, tous les votes',
-  icon: 'albums-outline',
+  icon: 'people-circle-outline',
 } as const;
+
+/** Sous-titre de la carte « Présidentielle 2027 : les N candidatures ». */
+export const CANDIDATES_LINK_COPY = { subtitle: 'Qui se présente, programme, sources' } as const;
 
 /** « 31 affirmations · 5 min · rien n'est envoyé » : le nombre vient du catalogue. */
 export const situerSubtitle = (questionCount: number) =>

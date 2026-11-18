@@ -25,7 +25,7 @@ export default function CorrectionsScreen() {
 
   return (
     <Page meta={vm.meta} loading={vm.status !== 'loaded'} back={{ label: 'Retour', href: '/' }}>
-      <View style={{ gap: 6 }}>
+      <View style={{ gap: effects.spacing.xs }}>
         <Text variant="title">Journal des corrections</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>
           Toutes les modifications de fond du contenu, datées, de la plus récente à la plus

@@ -111,15 +111,17 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
                   key={`${row.id}-${i}`}
                   role="listitem"
                   style={{
-                    gap: 2,
-                    paddingVertical: 10,
+                    gap: effects.spacing.xxs,
+                    paddingVertical: effects.spacing.sm,
                     paddingHorizontal: effects.spacing.md,
                     borderTopWidth: i === 0 ? 0 : 1,
                     borderColor: colors.surface.border.primary,
                   }}
                 >
                   <Text style={{ ...fonts.semibold, fontSize: 16, lineHeight: 22 }}>{row.nom}</Text>
-                  <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                  <View
+                    style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
+                  >
                     <VoteGlyph glyph={SEAT_GLYPHS[row.vote]} size={16} />
                     <Text
                       style={{
@@ -171,7 +173,11 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
         title={COPY.deputies.filterTitle}
       >
         <Text variant="label">{COPY.deputies.filterGroup}</Text>
-        <View role="radiogroup" aria-label={COPY.deputies.filterGroup} style={{ gap: 6 }}>
+        <View
+          role="radiogroup"
+          aria-label={COPY.deputies.filterGroup}
+          style={{ gap: effects.spacing.xs }}
+        >
           <ChoiceRow
             label={COPY.deputies.allGroups}
             selected={groupe === null}
@@ -188,7 +194,11 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
           ))}
         </View>
         <Text variant="label">{COPY.deputies.filterPosition}</Text>
-        <View role="radiogroup" aria-label={COPY.deputies.filterPosition} style={{ gap: 6 }}>
+        <View
+          role="radiogroup"
+          aria-label={COPY.deputies.filterPosition}
+          style={{ gap: effects.spacing.xs }}
+        >
           <ChoiceRow
             label={COPY.deputies.allPositions}
             selected={vote === null}

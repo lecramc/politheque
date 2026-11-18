@@ -43,9 +43,9 @@ function Row({ row, first }: { row: ScrutinRow; first: boolean }) {
         large
         accessibilityRole="link"
         style={{
-          gap: 4,
+          gap: effects.spacing.xxs,
           paddingHorizontal: effects.spacing.md,
-          paddingVertical: 12,
+          paddingVertical: effects.spacing.sm,
           borderTopWidth: first ? 0 : 1,
           borderColor: colors.surface.border.primary,
         }}
@@ -54,8 +54,15 @@ function Row({ row, first }: { row: ScrutinRow; first: boolean }) {
           {`${row.date} · ${row.categorie}`}
         </Text>
         <Text style={{ fontSize: 16, lineHeight: 23 }}>{row.titre}</Text>
-        <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 10 }}>
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+        <View
+          style={{
+            flexDirection: 'row',
+            flexWrap: 'wrap',
+            alignItems: 'center',
+            gap: effects.spacing.sm,
+          }}
+        >
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xxs }}>
             <Icon
               name={row.adopte ? 'checkmark-circle-outline' : 'close-circle-outline'}
               variant="secondary"
@@ -131,7 +138,7 @@ export default function AssembleeScreen() {
       loading={vm.status !== 'loaded'}
       back={{ label: COPY.common.back, href: '/comprendre' }}
     >
-      <View style={{ gap: 6 }}>
+      <View style={{ gap: effects.spacing.xs }}>
         <Text variant="title">{COPY.list.title}</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>{vm.lead}</Text>
       </View>
@@ -153,7 +160,10 @@ export default function AssembleeScreen() {
         <View style={{ gap: effects.spacing.xs }}>
           <Text style={{ fontSize: 16, lineHeight: 25 }}>{vm.criteria.lead}</Text>
           {vm.criteria.rules.map((rule) => (
-            <Text key={rule} style={{ fontSize: 16, lineHeight: 25, paddingLeft: 8 }}>
+            <Text
+              key={rule}
+              style={{ fontSize: 16, lineHeight: 25, paddingLeft: effects.spacing.xs }}
+            >
               {`• ${rule}`}
             </Text>
           ))}

@@ -61,7 +61,7 @@ export default function ElectionScreen() {
         accessibilityRole="button"
         style={{
           ...(width ? { width } : null),
-          padding: 14,
+          padding: effects.spacing.sm,
           gap: effects.spacing.xxs,
           borderRadius: effects.borderRadius.small,
           borderWidth: 1,

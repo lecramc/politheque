@@ -32,40 +32,43 @@ export default function HomeScreen() {
   const { colors, effects, fonts } = useTheme();
 
   return (
-    <Page meta={meta} loading={status !== 'loaded'} template="hub">
+    <Page meta={meta} loading={status !== 'loaded'} template="hub" narrow>
       <View {...tv('list-col')} style={{ gap: effects.spacing.lg }}>
         <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title">{vm.title}</Text>
           <Text style={{ color: colors.text.secondary, fontSize: 17 }}>{HOME_COPY.lead}</Text>
         </View>
 
-        <View {...tv('grid-2')} style={{ gap: effects.spacing.sm }}>
-          {vm.tasks.map((task) => (
+        <View style={{ gap: effects.spacing.sm }}>
+          <View {...tv('grid-2')} style={{ gap: effects.spacing.sm }}>
+            {vm.tasks.map((task) => (
+              <TaskCard
+                key={task.id}
+                title={task.title}
+                subtitle={task.subtitle}
+                icon={task.icon}
+                href={task.href}
+                primary={task.primary}
+              />
+            ))}
+          </View>
+
+          {vm.candidatesLink ? (
             <TaskCard
-              key={task.id}
-              title={task.title}
-              subtitle={task.subtitle}
-              icon={task.icon}
-              href={task.href}
-              primary={task.primary}
+              title={vm.candidatesLink.label}
+              subtitle={vm.candidatesLink.subtitle}
+              icon="list-outline"
+              href={vm.candidatesLink.href}
             />
-          ))}
-        </View>
+          ) : null}
 
-        {vm.candidatesLink ? (
           <TaskCard
-            title={vm.candidatesLink.label}
-            icon="list-outline"
-            href={vm.candidatesLink.href}
+            title={vm.assembleeLink.label}
+            subtitle={vm.assembleeLink.subtitle}
+            icon={ASSEMBLEE_LINK_COPY.icon}
+            href={vm.assembleeLink.href}
           />
-        ) : null}
-
-        <TaskCard
-          title={vm.assembleeLink.label}
-          subtitle={vm.assembleeLink.subtitle}
-          icon={ASSEMBLEE_LINK_COPY.icon}
-          href={vm.assembleeLink.href}
-        />
+        </View>
 
         <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
@@ -86,10 +89,10 @@ export default function HomeScreen() {
                     style={{
                       flexDirection: 'row',
                       alignItems: 'center',
-                      gap: 8,
+                      gap: effects.spacing.xs,
                       minHeight: 44,
-                      paddingLeft: 8,
-                      paddingRight: 14,
+                      paddingLeft: effects.spacing.xs,
+                      paddingRight: effects.spacing.sm,
                       borderRadius: effects.borderRadius.round,
                       borderWidth: 1,
                       borderColor: colors.surface.border.primary,

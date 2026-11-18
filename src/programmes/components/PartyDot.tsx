@@ -3,7 +3,8 @@ import { StyleSheet, View } from 'react-native';
 
 import { theme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
-import { registerStyle, useColorStyle } from '@/components/webTheme';
+import { registerStyle } from '@/components/webTheme';
+import { useMarkOutline } from '@/src/core/hooks/useMarkOutline';
 import { initialTextColor } from '@/src/programmes/models/party-dot-colors';
 
 /**
@@ -21,7 +22,7 @@ export function PartyDot({
   size?: number;
   label?: string;
 }) {
-  const c = useColorStyle();
+  const outline = useMarkOutline(color);
   return (
     <View
       style={[
@@ -31,8 +32,8 @@ export function PartyDot({
           height: size,
           borderRadius: size / 2,
           backgroundColor: color,
+          borderColor: outline,
         }),
-        c((p) => ({ borderColor: p.surface.border.tertiary })),
       ]}
     >
       {label && size >= 20 ? (

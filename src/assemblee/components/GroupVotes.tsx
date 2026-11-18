@@ -3,6 +3,7 @@ import { ScrollView, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
+import Picker from '@/components/ui/Picker';
 import { Pressable } from '@/components/ui/Pressable';
 import { GroupSwatch } from '@/src/assemblee/components/GroupSwatch';
 import { VoteBar } from '@/src/assemblee/components/VoteBar';
@@ -41,33 +42,10 @@ export function GroupVotes({
 }) {
   const { colors, effects, fonts } = useTheme();
 
-  const orderChip = (id: GroupeOrder, label: string) => {
-    const active = order === id;
-    return (
-      <Pressable
-        key={id}
-        onPress={() => onOrderChange(id)}
-        accessibilityRole="button"
-        accessibilityState={{ selected: active }}
-        style={{
-          minHeight: 44,
-          justifyContent: 'center',
-          paddingHorizontal: 14,
-          borderRadius: effects.borderRadius.round,
-          borderWidth: 1.5,
-          borderColor: active ? colors.tint : colors.surface.border.tertiary,
-          backgroundColor: active ? colors.tintSoft : 'transparent',
-        }}
-      >
-        <Text style={active ? { ...fonts.bold, color: colors.tint } : undefined}>{label}</Text>
-      </Pressable>
-    );
-  };
-
   const content = (row: GroupRow, selected: boolean) => (
-    <View style={{ gap: 2 }}>
-      <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-        <GroupSwatch color={row.color} />
+    <View style={{ gap: effects.spacing.xxs }}>
+      <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: effects.spacing.xs }}>
+        <GroupSwatch color={row.color} lineHeight={22} />
         <Text
           style={{
             ...fonts.semibold,
@@ -97,13 +75,15 @@ export function GroupVotes({
 
   return (
     <View style={{ gap: effects.spacing.sm }}>
-      <View
-        role="group"
-        aria-label={COPY.groups.sortLabel}
-        style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}
-      >
-        {orderChip('places', COPY.groups.sortPlaces)}
-        {orderChip('alphabetique', COPY.groups.sortAlpha)}
+      <View role="group" aria-label={COPY.groups.sortLabel}>
+        <Picker
+          value={order}
+          onChange={(value) => onOrderChange(value as GroupeOrder)}
+          options={[
+            { value: 'places', label: COPY.groups.sortPlaces },
+            { value: 'alphabetique', label: COPY.groups.sortAlpha },
+          ]}
+        />
       </View>
 
       <View
@@ -119,7 +99,7 @@ export function GroupVotes({
         {table.rows.map((row, index) => {
           const selected = highlight === row.index;
           const rowStyle = {
-            paddingVertical: 10,
+            paddingVertical: effects.spacing.sm,
             paddingHorizontal: effects.spacing.md,
             borderTopWidth: index === 0 ? 0 : 1,
             borderColor: colors.surface.border.primary,
@@ -164,7 +144,11 @@ export function GroupVotes({
           <View role="table" aria-label={COPY.groups.caption} style={{ minWidth: TABLE_MIN_WIDTH }}>
             <View
               role="row"
-              style={{ flexDirection: 'row', paddingVertical: 8, paddingHorizontal: 12 }}
+              style={{
+                flexDirection: 'row',
+                paddingVertical: effects.spacing.xs,
+                paddingHorizontal: effects.spacing.sm,
+              }}
             >
               <Text role="columnheader" variant="label" style={{ flex: 1, minWidth: 0 }}>
                 {COPY.groups.group}
@@ -187,8 +171,8 @@ export function GroupVotes({
                 style={{
                   flexDirection: 'row',
                   alignItems: 'center',
-                  paddingVertical: 8,
-                  paddingHorizontal: 12,
+                  paddingVertical: effects.spacing.xs,
+                  paddingHorizontal: effects.spacing.sm,
                   borderTopWidth: 1,
                   borderColor: colors.surface.border.primary,
                 }}
@@ -200,7 +184,7 @@ export function GroupVotes({
                     minWidth: 0,
                     flexDirection: 'row',
                     alignItems: 'center',
-                    gap: 8,
+                    gap: effects.spacing.xs,
                   }}
                 >
                   <GroupSwatch color={row.color} />

@@ -167,7 +167,10 @@ export default function ThemeScreen() {
               <ScrollView
                 horizontal
                 showsHorizontalScrollIndicator={false}
-                contentContainerStyle={{ gap: effects.spacing.sm, paddingRight: 16 }}
+                contentContainerStyle={{
+                  gap: effects.spacing.sm,
+                  paddingRight: effects.spacing.smd,
+                }}
               >
                 {theme.keyFigures.map((figure) => (
                   <View key={figure.label} style={{ width: 230 }}>
@@ -236,9 +239,9 @@ export default function ThemeScreen() {
                           style={{
                             flexDirection: 'row',
                             alignItems: 'center',
-                            gap: 6,
+                            gap: effects.spacing.xs,
                             minHeight: 44,
-                            paddingHorizontal: 10,
+                            paddingHorizontal: effects.spacing.sm,
                             borderRadius: effects.borderRadius.round,
                             borderWidth: 1.5,
                             borderColor: active ? colors.tint : colors.surface.border.tertiary,
@@ -254,8 +257,14 @@ export default function ThemeScreen() {
                   {compared.length === 2 ? (
                     <View style={{ flexDirection: 'row', gap: effects.spacing.sm }}>
                       {compared.map(({ party, programme }) => (
-                        <Card key={party.id} style={{ flex: 1, padding: 12 }}>
-                          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 6 }}>
+                        <Card key={party.id} style={{ flex: 1, padding: effects.spacing.sm }}>
+                          <View
+                            style={{
+                              flexDirection: 'row',
+                              alignItems: 'center',
+                              gap: effects.spacing.xs,
+                            }}
+                          >
                             <PartyDot color={party.color} size={24} label={party.shortName} />
                             <Text style={{ ...fonts.bold, flex: 1 }}>{displayName(party)}</Text>
                           </View>
@@ -342,11 +351,20 @@ const styles = StyleSheet.create({
   text13: { fontSize: 13 },
   detail: { fontSize: 14, lineHeight: 20 },
   heading16: { ...baseTheme.fonts.bold, fontSize: 16 },
-  measure: { gap: 6, paddingTop: 10, borderTopWidth: 1 },
+  measure: {
+    gap: baseTheme.effects.spacing.xs,
+    paddingTop: baseTheme.effects.spacing.sm,
+    borderTopWidth: 1,
+  },
   figureCard: { minWidth: 0, flex: 1 },
   figureValue: { ...baseTheme.fonts.displayBold, fontSize: 28, lineHeight: 34 },
   pushDown: { marginTop: 'auto' },
   debate: { gap: baseTheme.effects.spacing.xxs },
   question: { gap: baseTheme.effects.spacing.xs },
-  option: { fontSize: 15, lineHeight: 23, paddingVertical: 6, borderTopWidth: 1 },
+  option: {
+    fontSize: 15,
+    lineHeight: 23,
+    paddingVertical: baseTheme.effects.spacing.xs,
+    borderTopWidth: 1,
+  },
 });

@@ -4,6 +4,7 @@ import { StyleSheet, View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
+import { useMarkOutline } from '@/src/core/hooks/useMarkOutline';
 import { tv } from '@/src/core/web/tv';
 import { LabelsLink } from '@/src/programmes/components/LabelsLink';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
@@ -32,6 +33,7 @@ export function PartyHeader({
   onOpenLabels: () => void;
 }) {
   const { colors, effects, fonts } = useTheme();
+  const outline = useMarkOutline(party.color);
   return (
     <View style={{ gap: effects.spacing.sm }}>
       <View style={{ flexDirection: 'row', gap: effects.spacing.smd, alignItems: 'center' }}>
@@ -47,7 +49,7 @@ export function PartyHeader({
           borderRadius: 3,
           backgroundColor: party.color,
           borderWidth: 1,
-          borderColor: colors.surface.border.tertiary,
+          borderColor: outline,
         }}
       />
       <View>

@@ -37,3 +37,13 @@ export const colorDistance = (a: string, b: string): number => {
   const [l2, a2, b2] = lab(b);
   return Math.hypot(l1 - l2, a1 - a2, b1 - b2);
 };
+
+/** Sous ce rapport de contraste (WCAG), une couleur se confond avec son fond. */
+export const LOW_CONTRAST = 1.8;
+
+/**
+ * Faut-il un contour plus marqué autour d'une marque de couleur officielle ? Oui si, sur l'un des
+ * fonds (clair ou sombre), son contraste est sous `LOW_CONTRAST`. La couleur elle-même ne change jamais.
+ */
+export const needsStrongOutline = (color: string, backgrounds: readonly string[]): boolean =>
+  backgrounds.some((background) => contrastRatio(color, background) < LOW_CONTRAST);

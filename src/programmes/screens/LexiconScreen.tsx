@@ -49,7 +49,12 @@ export default function LexiconScreen() {
           <TextLink
             key={group.anchor}
             href={`${CONTENUS_2027_PATHS.lexicon}#${group.anchor}`}
-            style={{ ...fonts.bold, fontSize: 17, paddingVertical: 8, paddingHorizontal: 4 }}
+            style={{
+              ...fonts.bold,
+              fontSize: 17,
+              paddingVertical: effects.spacing.xs,
+              paddingHorizontal: effects.spacing.xxs,
+            }}
           >
             {group.letter}
           </TextLink>

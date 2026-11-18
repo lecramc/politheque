@@ -8,17 +8,20 @@ import type { Breadcrumb as BreadcrumbTrail } from '@/src/programmes/models/seo/
 
 /** Fil d'Ariane visible (desktop) : même liste que le BreadcrumbList du JSON-LD. */
 export function Breadcrumb({ trail }: { trail: BreadcrumbTrail }) {
-  const { colors } = useTheme();
+  const { colors, effects } = useTheme();
   return (
     <View
       role="navigation"
       aria-label="Fil d'Ariane"
-      style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}
+      style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}
     >
       {trail.map((crumb, index) => {
         const last = index === trail.length - 1;
         return (
-          <View key={`${index}-${crumb.path}`} style={{ flexDirection: 'row', gap: 6 }}>
+          <View
+            key={`${index}-${crumb.path}`}
+            style={{ flexDirection: 'row', gap: effects.spacing.xs }}
+          >
             {last ? (
               <Text aria-current="page" style={{ fontSize: 14, color: colors.text.secondary }}>
                 {crumb.name}

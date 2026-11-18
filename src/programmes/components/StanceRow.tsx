@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
 import { layout } from '@/components/layout';
-import { useTheme } from '@/components/ThemeContext';
+import { theme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { tv } from '@/src/core/web/tv';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
@@ -83,8 +83,8 @@ export function StanceColumnHead({
 }
 
 const styles = StyleSheet.create({
-  row: { gap: 6 },
+  row: { gap: theme.effects.spacing.xs },
   cell: { alignSelf: 'flex-start', width: layout.stanceCell.base },
-  head: { flexDirection: 'row', alignItems: 'center', paddingVertical: 6 },
+  head: { flexDirection: 'row', alignItems: 'center', paddingVertical: theme.effects.spacing.xs },
   headLeft: { flex: 1 },
 });

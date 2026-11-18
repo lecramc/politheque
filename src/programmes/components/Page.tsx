@@ -212,6 +212,8 @@ export function Page({
   meta,
   breadcrumb,
   article = false,
+  narrow = false,
+  reportMeta,
   onReachEnd,
 }: {
   /**
@@ -230,6 +232,10 @@ export function Page({
   breadcrumb?: BreadcrumbTrail;
   /** Contenu éditorial autonome (guide, fiche, débat, élection) : balise <article>. */
   article?: boolean;
+  /** Page `hub` dont le contenu est une colonne de lecture centrée (`list-col`) : le bloc « Signaler » la suit. */
+  narrow?: boolean;
+  /** Avec `meta={null}` (fiche parti) : métadonnées de l'onglet affiché, pour « Signaler une erreur ». */
+  reportMeta?: PageMeta;
   children: ReactNode;
   loading?: boolean;
   back?: { label: string; href: string };
@@ -248,14 +254,15 @@ export function Page({
     meta === undefined && !loading
       ? nonIndexableMeta(title ?? APP_NAME, canonicalPath(pathname))
       : meta;
+  const reportSource = headMeta ?? reportMeta;
   const reportLinks =
     // Pas pendant le questionnaire (`focus`) : l'écran reste sans distraction.
-    loading || focus || !headMeta
+    loading || focus || !reportSource
       ? null
       : buildReportLinks({
           pathname: canonicalPath(pathname),
-          title: headMeta.title,
-          indexable: headMeta.robots === 'index, follow',
+          title: reportSource.title,
+          indexable: reportSource.robots === 'index, follow',
           email: REPORT_EMAIL,
         });
   const trail = breadcrumb ?? headMeta?.breadcrumb ?? [];
@@ -409,7 +416,7 @@ export function Page({
           {...tv('no-print')}
           style={{
             backgroundColor: colors.tintSoft,
-            paddingVertical: 6,
+            paddingVertical: effects.spacing.xs,
             paddingHorizontal: effects.spacing.md,
           }}
         >
@@ -474,7 +481,12 @@ export function Page({
               </View>
             </Enter>
           )}
-          {reportLinks ? <ReportError links={reportLinks} /> : null}
+          {reportLinks ? (
+            <ReportError
+              links={reportLinks}
+              column={solo ? 'solo' : narrow ? 'list-col' : undefined}
+            />
+          ) : null}
         </View>
         <View
           {...tv('container', 'no-print')}
@@ -518,9 +530,12 @@ const styles = StyleSheet.create({
     paddingLeft: layout.gutter.base,
     paddingRight: layout.gutter.base,
   },
-  mainPadding: { paddingTop: 28, paddingBottom: 20 },
-  footerPadding: { paddingTop: 0, paddingBottom: 20 },
-  footerRule: { paddingTop: 20 },
+  mainPadding: { paddingTop: theme.effects.spacing.lg, paddingBottom: theme.effects.spacing.md },
+  footerPadding: {
+    paddingTop: theme.effects.spacing.none,
+    paddingBottom: theme.effects.spacing.md,
+  },
+  footerRule: { paddingTop: theme.effects.spacing.md },
   footerText: { textAlign: 'center' },
   pad: { height: 16 },
   padWithTabBar: { height: TAB_BAR_HEIGHT + 16 },
@@ -534,7 +549,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    gap: 12,
+    gap: theme.effects.spacing.sm,
   },
   headerButton: { minHeight: 44, minWidth: 44, justifyContent: 'center' },
   // Extrémités de l'en-tête : même `flex: 1`, donc la rubrique du milieu est sur l'axe de la page.
@@ -560,5 +575,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderTopWidth: StyleSheet.hairlineWidth,
   },
-  tabItem: { flex: 1, alignItems: 'center', justifyContent: 'flex-start', gap: 1, paddingTop: 3 },
+  tabItem: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    gap: 1,
+    paddingTop: theme.effects.spacing.xxs,
+  },
 });
