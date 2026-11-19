@@ -260,7 +260,7 @@
         ],
         "more": [
           "À l'issue du second tour, aucun bloc n'a obtenu la majorité absolue. Le Nouveau Front populaire est arrivé en tête en nombre de sièges, devant la coalition présidentielle Ensemble puis le Rassemblement national et ses alliés.",
-          "Depuis, les gouvernements successifs doivent chercher des soutiens texte par texte, ou utiliser l'article 49.3. Deux sont tombés : celui de Michel Barnier, renversé par une motion de censure en décembre 2024, et celui de François Bayrou, à qui l'Assemblée a refusé sa confiance le 8 septembre 2025.",
+          "Depuis, les gouvernements successifs doivent chercher des soutiens texte par texte, ou utiliser l'article 49.3. Deux ont été renversés par l'Assemblée : celui de Michel Barnier, renversé par une motion de censure en décembre 2024, et celui de François Bayrou, à qui l'Assemblée a refusé sa confiance le 8 septembre 2025.",
           "À l'automne 2026, l'Assemblée examine le budget 2027 présenté par le gouvernement de Sébastien Lecornu, qui n'y dispose pas d'une majorité."
         ],
         "sources": [
@@ -357,7 +357,7 @@
           "L'Assemblée compte huit commissions permanentes. Celle qui examine le texte désigne un « rapporteur », chargé de le présenter.",
           "En séance, la discussion porte sur le texte adopté par la commission. Exception : pour une révision de la Constitution ou un budget, elle porte d'abord sur le texte du Gouvernement (article 42 de la Constitution).",
           "Les députés et le Gouvernement peuvent déposer des amendements (article 44). L'Assemblée vote chaque amendement, puis chaque article, puis l'ensemble du texte.",
-          "Avant la discussion, les députés peuvent voter une « motion de rejet préalable ». Si elle est adoptée, le texte est rejeté sans que ses articles soient examinés. C'est rare."
+          "Avant la discussion, les députés peuvent voter une « motion de rejet préalable ». Si elle est adoptée, le texte est rejeté sans que ses articles soient examinés."
         ],
         "sources": [
           {
@@ -454,7 +454,7 @@
         "heading": "Comment les députés votent",
         "paragraphs": [
           "Le plus souvent, les députés votent à main levée. Le président de séance annonce le résultat, mais le vote de chaque député n'est ni enregistré ni publié.",
-          "Lors d'un « scrutin public », le vote de chaque député est enregistré et publié, nom par nom. C'est le seul cas où l'on sait qui a voté quoi : la page « Hémicycle » du site s'appuie sur ces scrutins."
+          "Lors d'un « scrutin public », le vote de chaque député est enregistré et publié, nom par nom. C'est le seul cas où l'on sait qui a voté quoi : la page « Les votes de l'Assemblée » du site s'appuie sur ces scrutins."
         ],
         "more": [
           "Chaque député peut voter « pour », « contre » ou s'abstenir.",
@@ -506,11 +506,11 @@
           "Les groupes organisent le travail. Les places dans les commissions sont réparties selon leur taille. En général, ils se réunissent chaque semaine pendant les sessions pour fixer leur position sur les textes et choisir leurs orateurs.",
           "Un député ne peut appartenir qu'à un seul groupe. Il peut aussi y être « apparenté », ou ne siéger dans aucun : il est alors « non inscrit ».",
           "Les présidents de groupe siègent à la Conférence des présidents, qui prépare l'ordre du jour. Ils peuvent demander un scrutin public.",
-          "Les groupes d'opposition et les groupes minoritaires ont des droits particuliers (article 51-1 de la Constitution). Par exemple, ils fixent l'ordre du jour d'une journée par mois."
+          "Les groupes d'opposition et les groupes minoritaires ont des droits particuliers (article 51-1 de la Constitution). Par exemple, un jour de séance par mois est réservé à un ordre du jour arrêté à leur initiative (article 48, alinéa 5)."
         ],
         "sources": [
           {
-            "title": "Texte intégral de la Constitution (article 51-1)",
+            "title": "Texte intégral de la Constitution (articles 48 et 51-1)",
             "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
             "date": "2026-11-18",
             "kind": "statistique"

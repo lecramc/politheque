@@ -86,7 +86,9 @@ export default function GuideScreen() {
             <Text plainDigits style={{ color: colors.text.secondary, fontSize: 15 }}>
               {vm.reading.label}
             </Text>
-            <TextLink href={vm.progressHref}>Ma progression</TextLink>
+            <TextLink href={vm.progressHref} standalone>
+              Ma progression
+            </TextLink>
           </View>
           <View
             role="progressbar"

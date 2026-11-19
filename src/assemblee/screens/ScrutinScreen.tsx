@@ -20,6 +20,7 @@ import { scrutinViewModel } from '@/src/assemblee/view-models/scrutin.view-model
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
+import { ExternalLink } from '@/src/programmes/components/ExternalLink';
 import { Page } from '@/src/programmes/components/Page';
 
 const MEASURE = 680;
@@ -75,7 +76,7 @@ function HemicyclePlaceholder({
           <Text role="alert" style={{ fontSize: 15, textAlign: 'center' }}>
             {COPY.hemicycle.error}
           </Text>
-          <TextLink href={officialUrl}>{COPY.hemicycle.errorLink}</TextLink>
+          <ExternalLink href={officialUrl}>{COPY.hemicycle.errorLink}</ExternalLink>
           <Pressable
             onPress={onRetry}
             accessibilityRole="button"
@@ -309,7 +310,7 @@ export default function ScrutinScreen() {
             ))}
           </View>
           {page.dossierUrl ? (
-            <TextLink href={page.dossierUrl}>{COPY.others.dossier}</TextLink>
+            <ExternalLink href={page.dossierUrl}>{COPY.others.dossier}</ExternalLink>
           ) : null}
         </Section>
       ) : null}
@@ -338,9 +339,9 @@ export default function ScrutinScreen() {
       ) : null}
 
       <Section title={COPY.source.title}>
-        <TextLink href={page.sourceUrl} standalone>
+        <ExternalLink href={page.sourceUrl} standalone>
           {COPY.source.official}
-        </TextLink>
+        </ExternalLink>
         <DataSourceNote source={page.source} />
         <Text style={{ fontSize: 14, color: colors.text.secondary }}>
           {COPY.source.licenceLine(page.source.licence)}

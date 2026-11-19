@@ -1,4 +1,5 @@
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
+import { groupColor } from '@/src/assemblee/models/group-color';
 import {
   majorVotesGrid,
   type MajorVoteCell,
@@ -81,7 +82,7 @@ export const partyAssemblee = ({
   return {
     kind: 'group',
     title: copy.title,
-    color: row?.color ?? found.couleurOfficielle,
+    color: groupColor(found),
     name,
     count: copy.count(seats),
     updatedLine: copy.updated(formatLongDate(manifest.extraitLe)),

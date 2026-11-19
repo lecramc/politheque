@@ -23,13 +23,18 @@ export const layoutCss: string = [
   '/* Polithèque : mise en page desktop (généré depuis components/layout.ts) */',
 
   // Typographie : retours à la ligne soignés ; les titres (déclarés après) l'emportent avec balance.
-  ':root [dir="auto"] {\n  text-wrap: pretty;\n}',
-  ':root [role="heading"] {\n  text-wrap: balance;\n}',
+  // `text-wrap-style` et non le raccourci `text-wrap` : celui-ci remet aussi `white-space` à « wrap »
+  // et annulait `numberOfLines={1}` (ellipse) sur tout le site.
+  ':root [dir="auto"] {\n  text-wrap-style: pretty;\n}',
+  ':root [role="heading"] {\n  text-wrap-style: balance;\n}',
 
   // Liens texte (composant TextLink) : zone cliquable plus haute sans changer l'interligne,
   // survol par un soulignement plus épais, anneau de focus de la couleur du texte.
   rule(['text-link'], 'padding-block: 3px;'),
   rule(['text-link-block'], 'display: inline-block;'),
+  // Pointeur grossier (doigt) : un lien seul sur sa ligne a une zone d'au moins 44 px de haut, le
+  // texte restant centré, donc sans changer son apparence (WCAG 2.5.8 / 2.5.5).
+  `@media (pointer: coarse) {\n${rule(['text-link-block'], 'display: inline-flex; align-items: center; min-height: 44px;')}\n}`,
   `${sel('text-link')}:hover {\n  text-decoration-thickness: 2px;\n}`,
   `${sel('text-link')}:focus-visible {\n  outline: 2px solid currentColor;\n  outline-offset: 2px;\n  border-radius: 4px;\n}`,
 
@@ -59,6 +64,7 @@ export const layoutCss: string = [
   rule(['only-from-md'], 'display: flex;'),
   rule(['colhead'], 'display: flex;'),
   rule(['scroll-pad'], 'height: 16px;'),
+  rule(['header-slot-end'], 'flex: 1 1 0%;'),
   rule(['page-scroll'], 'scroll-padding-bottom: 16px;'),
   rule(
     ['container'],

@@ -210,7 +210,7 @@ export interface Party {
   /** Année de fondation ; `history.founded` reste le détail. */
   foundedYear: number;
   leader: { name: string; role: LeaderRole };
-  /** Exactement 4 idées, triées dans l'ordre des thèmes du site (même règle pour tous les partis). */
+  /** De 2 à 4 idées recoupées, triées dans l'ordre des thèmes du site (même règle pour tous les partis). */
   keyIdeas: KeyIdea[];
   /** Date à laquelle les données de ce parti ont été vérifiées pour la dernière fois. */
   lastVerified: string;

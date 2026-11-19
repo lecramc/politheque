@@ -5,7 +5,8 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:Voter en 2027 — Polithèque
 BEGIN:VEVENT
-UID:presidentielle-2027-s-inscrire-1@politheque.revaamp.com
+UID:presidentielle-2027-date-limite-d-inscription-2027-03-12@politheque.rev
+ aamp.com
 DTSTAMP:20261108T000000Z
 DTSTART;VALUE=DATE:20270312
 DTEND;VALUE=DATE:20270313
@@ -17,7 +18,8 @@ DESCRIPTION:Date calculée. Sixième vendredi précédant le scrutin (code
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:presidentielle-2027-s-inscrire-2@politheque.revaamp.com
+UID:presidentielle-2027-date-limite-dans-les-cas-derogatoires-2027-04-08@po
+ litheque.revaamp.com
 DTSTAMP:20261108T000000Z
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
@@ -30,7 +32,7 @@ DESCRIPTION:Date calculée. Dixième jour précédant le premier tour (code
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:presidentielle-2027-tour-1@politheque.revaamp.com
+UID:presidentielle-2027-1er-tour-2027-04-18@politheque.revaamp.com
 DTSTAMP:20261108T000000Z
 DTSTART;VALUE=DATE:20270418
 DTEND;VALUE=DATE:20270419
@@ -40,7 +42,7 @@ DESCRIPTION:Jour du scrutin. Démarches et sources : https://politheque.rev
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:presidentielle-2027-tour-2@politheque.revaamp.com
+UID:presidentielle-2027-2nd-tour-2027-05-02@politheque.revaamp.com
 DTSTAMP:20261108T000000Z
 DTSTART;VALUE=DATE:20270502
 DTEND;VALUE=DATE:20270503

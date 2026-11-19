@@ -129,7 +129,10 @@ export const deputySearch = (rows: DeputyRow[], filters: DeputyFilters, requeste
     rows: found,
     countLabel: COPY.deputies.count(visible ? found.length : rows.length),
     showAllLabel: COPY.deputies.showAll(rows.length),
-    emptyLabel: filters.depute ? COPY.deputies.notInVote : COPY.deputies.none,
+    emptyLabel:
+      filters.depute && !rows.some((r) => r.id === filters.depute)
+        ? COPY.deputies.notInVote
+        : COPY.deputies.none,
     filterCount: [(filters.groupe ?? null) !== null, (filters.vote ?? null) !== null].filter(
       Boolean
     ).length,

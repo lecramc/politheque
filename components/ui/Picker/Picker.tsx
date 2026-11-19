@@ -38,6 +38,7 @@ export default function Picker({ value, options, onChange, disabled = false, sty
 
   return (
     <View
+      role="radiogroup"
       onLayout={(e: LayoutChangeEvent) => setContainerWidth(e.nativeEvent.layout.width)}
       style={[
         {
@@ -47,7 +48,7 @@ export default function Picker({ value, options, onChange, disabled = false, sty
           borderWidth: 1,
           borderRadius: effects.borderRadius.round,
           padding: CONTAINER_PADDING,
-          opacity: disabled ? 0.5 : 1,
+          opacity: disabled ? effects.opacity.disabled : 1,
         },
         style,
       ]}
@@ -59,9 +60,9 @@ export default function Picker({ value, options, onChange, disabled = false, sty
             {
               position: 'absolute',
               top: CONTAINER_PADDING,
+              bottom: CONTAINER_PADDING,
               left: CONTAINER_PADDING,
               width: segmentWidth,
-              height: '100%',
               backgroundColor: colors.surface.primary,
               borderRadius: effects.borderRadius.round,
             },
@@ -77,6 +78,8 @@ export default function Picker({ value, options, onChange, disabled = false, sty
           <Pressable
             key={opt.value}
             disabled={disabled}
+            accessibilityRole="radio"
+            accessibilityState={{ selected, disabled }}
             onPress={() => onChange(opt.value)}
             style={{
               flex: 1,

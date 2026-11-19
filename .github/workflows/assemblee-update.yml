@@ -27,24 +27,32 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+          # Le jeton n'est pas laissé dans la configuration git pendant les étapes qui exécutent du
+          # code du dépôt ou des dépendances ; il n'est fourni qu'au push, explicitement.
+          persist-credentials: false
 
       - uses: actions/setup-node@v4
         with:
           node-version: 22
           cache: npm
 
+      # Aucun script d'installation : l'extraction n'utilise que vite (+ vite-tsconfig-paths), vitest
+      # et la commande système `unzip` ; le seul script `prepare` (husky) est inutile ici.
       - name: Installer les dépendances
-        run: npm ci
-        env:
-          HUSKY: '0'
+        run: npm ci --ignore-scripts
+
+      - name: Mémoriser le commit de départ
+        id: base
+        run: echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       # --guard : échec, sans rien écrire, si le nombre de scrutins baisse ou si le nombre de votes
       # sans place (70 aujourd'hui, collisions de sièges de la source) augmente.
       - name: Télécharger et régénérer les données
         run: node scripts/assemblee-scrutins.mjs --download --guard
 
-      - name: Tests du domaine
-        run: npx vitest run src/assemblee
+      # Suite complète : les données de l'Assemblée sont lues par d'autres pages (fiches partis, etc.).
+      - name: Tests
+        run: npx vitest run
 
       - name: Vérifier le périmètre des changements
         id: changes
@@ -76,11 +84,28 @@ jobs:
 
       - name: Commiter et pousser
         if: steps.changes.outputs.commit == 'true'
+        env:
+          BASE_SHA: ${{ steps.base.outputs.sha }}
+          REMOTE: https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
         run: |
+          set -euo pipefail
           date="$(TZ=Europe/Paris date +%F)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/assemblee/data public/donnees/assemblee
           git commit -m "build: hémicycle — votes de l'Assemblée au ${date}" -m "Correction-publique: aucune"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          git fetch "$REMOTE" main
+          if [ "$(git rev-parse FETCH_HEAD)" != "$BASE_SHA" ]; then
+            # main a avancé pendant l'extraction. Si le script, ses dépendances ou les données de
+            # l'Assemblée ont changé entre-temps, ces données viennent d'un ancien script : on
+            # n'y touche pas, la prochaine exécution repartira de l'état à jour.
+            stale="$(git diff --name-only "$BASE_SHA" FETCH_HEAD -- scripts/assemblee-scrutins.mjs src/assemblee/models package.json package-lock.json src/assemblee/data public/donnees/assemblee || true)"
+            if [ -n "$stale" ]; then
+              echo "::error::main a changé pendant l'extraction (fichiers liés à l'extraction) : rien n'est poussé, relancer le workflow."
+              echo "$stale"
+              exit 1
+            fi
+            git rebase FETCH_HEAD
+          fi
+          git push "$REMOTE" HEAD:main

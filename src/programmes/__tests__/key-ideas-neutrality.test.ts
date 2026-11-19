@@ -9,10 +9,10 @@ const vmOf = (id: string) =>
   partyViewModel(id)({ dispatch: vi.fn() })(stateBuilder().withCatalog(catalog).build());
 
 describe('Feature: neutralité de la fiche « En bref »', () => {
-  it('should show « Ce qu’il propose » for the ten parties or for none', () => {
+  it('should show « Ce qu’il propose » for every party with a published programme', () => {
     // Un parti sans programme 2027 publié montre la mention commune à la place des idées.
     const withProgramme = catalog.parties.filter((p) => hasKeyIdeas(p, 'presidentielle-2027'));
-    expect(new Set(withProgramme.map((p) => vmOf(p.id).keyIdeas !== null)).size).toBe(1);
+    for (const p of withProgramme) expect(vmOf(p.id).keyIdeas, p.id).not.toBeNull();
     for (const p of catalog.parties.filter((p) => !withProgramme.includes(p))) {
       expect(vmOf(p.id).keyIdeas, p.id).toBeNull();
       expect(vmOf(p.id).programmeNotice?.title, p.id).toBe('Programme 2027 pas encore publié');

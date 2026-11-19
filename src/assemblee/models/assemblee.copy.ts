@@ -203,6 +203,9 @@ export const COPY = {
       `Hémicycle de l'Assemblée nationale au scrutin n° ${numero} : ${resume}.`,
     mention:
       "Schéma simplifié : les groupes sont rangés dans l'ordre du plan officiel de l'Assemblée, sans reproduire la place exacte de chaque député. Non-inscrits (NI) : places dispersées dans la salle, regroupés ici à droite du schéma.",
+    labelsWide: 'Le sigle de chaque groupe est écrit autour du schéma.',
+    labelsSmall:
+      'Sur un petit écran, les sigles ne sont pas écrits sur le schéma : la liste des groupes, sous le schéma, donne le sigle et la couleur de chacun.',
     hintTouch: 'Touchez un groupe pour voir ses sièges.',
     hintHover: 'Survolez un siège pour voir le député.',
     clearHighlight: 'Retirer la mise en évidence',
@@ -215,7 +218,7 @@ export const COPY = {
   legend: {
     title: 'Légende',
     groupColors:
-      "Trait extérieur : la couleur officielle de chaque groupe à l'Assemblée nationale. Le sigle est toujours écrit.",
+      "Trait extérieur : la couleur officielle de chaque groupe à l'Assemblée nationale.",
   },
   deputies: {
     title: 'Chercher un député',
@@ -299,16 +302,16 @@ export const COPY = {
       seats: (count: number) => `${count} ${pluralize(count, 'siège', 'sièges')}`,
       chartLabel: (total: number, groups: number) =>
         `Hémicycle : ${total} députés en exercice répartis en ${groups} groupes, détaillés dans la liste sous le schéma.`,
-      note: "Schéma simplifié : les sièges sont regroupés par groupe, sans reproduire le plan exact de la salle. Chaque groupe porte sa couleur officielle à l'Assemblée ; le sigle est toujours écrit. Non-inscrits (NI) : places dispersées dans la salle. Un groupe n'est pas un parti.",
+      note: "Schéma simplifié : les sièges sont regroupés par groupe, sans reproduire le plan exact de la salle. Chaque groupe porte sa couleur officielle à l'Assemblée. Non-inscrits (NI) : places dispersées dans la salle. Un groupe n'est pas un parti.",
       listLabel: 'Effectif de chaque groupe',
     },
     grid: {
       title: 'Qui vote quoi sur les grands votes',
       lead: (count: number) =>
         `Les ${count} derniers votes sur un texte entier, une motion de censure, une confiance ou une déclaration du Gouvernement. Pour chaque vote, la position de chaque groupe.`,
-      note: 'Position majoritaire des députés du groupe qui ont voté ; le détail député par député est dans chaque vote.',
+      note: 'Position majoritaire du groupe ; la règle exacte est ci-dessous, le détail député par député est dans chaque vote.',
       shared:
-        "Partagé : aucune position n'atteint la moitié des députés du groupe qui ont voté. Pour une motion de censure, seuls les votes « pour » sont comptés.",
+        "Partagé : pour un vote ordinaire, aucune position n'atteint la moitié des députés du groupe qui ont voté (pour, contre ou abstention). Pour une motion de censure, seuls les votes « pour » existent : le groupe est « pour » si au moins la moitié de ses membres l'ont votée, « partagé » sinon ; ne pas voter la motion n'est pas voter contre.",
       group: 'Groupe',
       open: (title: string) => `Voir le vote : ${title}`,
       cell: (group: string, position: string) => `${group} : ${position}`,
@@ -365,7 +368,7 @@ export const COPY = {
     limitHand:
       "À main levée : seuls les votes par scrutin public sont enregistrés nominativement. Un texte adopté à main levée n'apparaît pas.",
     limitSchema:
-      "Schéma : les groupes sont rangés d'un seul tenant dans l'ordre du plan officiel de l'Assemblée ; ce n'est pas le plan exact de l'hémicycle, que l'Assemblée ne publie pas sous forme de coordonnées.",
+      "Schéma : les groupes sont rangés d'un seul tenant dans l'ordre du plan officiel de l'Assemblée ; c'est un schéma simplifié, pas le plan exact de la salle (consultable sur le site de l'Assemblée).",
     limitCensure:
       "Motions de censure : l'Assemblée ne recense que les voix pour ; les autres députés n'ont pas voté la motion, ce qui n'est pas un vote contre.",
     limitDelegation:
@@ -378,7 +381,7 @@ export const COPY = {
     order:
       "Les groupes sont rangés de la gauche à la droite de l'hémicycle selon le plan officiel de l'Assemblée nationale (assemblee-nationale.fr/dyn/vos-deputes/hemicycle, consulté le 18 novembre 2026) : LFI-NFP, GDR, ECOS, SOC, LIOT, DEM, EPR, HOR, DR, UDR, RN. Les non-inscrits (NI) viennent toujours en dernier, avec la mention « places dispersées dans la salle ». Les numéros de place de l'open data ne suivent pas cette disposition : ils ne servent pas à ordonner les groupes.",
     colors:
-      "Couleurs : chaque groupe est dessiné de la couleur officielle que lui donne l'Assemblée nationale (plan de l'hémicycle, assemblee-nationale.fr/dyn/vos-deputes/hemicycle, consulté le 18 novembre 2026), la même règle pour tous. La couleur n'est jamais la seule information : le sigle est toujours écrit.",
+      "Couleurs : chaque groupe est dessiné de la couleur officielle que lui donne l'Assemblée nationale (plan de l'hémicycle, assemblee-nationale.fr/dyn/vos-deputes/hemicycle, consulté le 18 novembre 2026), la même règle pour tous. La couleur n'est jamais la seule information : le sigle de chaque groupe est écrit autour du schéma sur grand écran, et dans la liste des groupes sous le schéma sur petit écran.",
     neutrality:
       "Aucun taux de présence, de loyauté ou de cohésion, aucun classement, aucun score : la page montre les votes, pas un jugement sur les députés ou les groupes. Les couleurs sont celles de l'institution, pas un choix de Polithèque.",
     link: "Voir les votes de l'Assemblée",
@@ -391,7 +394,7 @@ export const COPY = {
   },
   notes: {
     article493:
-      "Quand le Gouvernement engage sa responsabilité sur un texte (article 49, alinéa 3), le texte est considéré comme adopté sans vote, sauf si une motion de censure est adoptée. Il n'y a donc pas de vote final sur ce texte : seules les motions de censure déposées en réponse apparaissent ici.",
+      "Quand le Gouvernement engage sa responsabilité sur un texte (article 49, alinéa 3), ce texte est considéré comme adopté sans vote, sauf si une motion de censure est adoptée. Un texte adopté ainsi n'a pas de vote final : seules les motions de censure déposées en réponse sont votées. Les autres votes sur un texte (une partie, un article) ont lieu normalement.",
     article493Source: 'Constitution du 4 octobre 1958, article 49 (texte en vigueur)',
     budgetMotions: 'Motions de censure déposées sur ce texte (article 49, alinéa 3)',
     budgetMotionItem: (numero: number, resultat: string) => `n° ${numero} : ${resultat}`,

@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { LayoutChangeEvent, Platform, useWindowDimensions, View } from 'react-native';
+import { LayoutChangeEvent, Platform, View } from 'react-native';
 import Svg, { G, Text as SvgText } from 'react-native-svg';
 
-import { layout as siteLayout } from '@/components/layout';
 import { duration } from '@/components/motion';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Enter } from '@/components/ui/Enter';
 import { GroupArcPath } from '@/src/assemblee/components/GroupArcPath';
 import { SeatMark } from '@/src/assemblee/components/SeatMark';
+import { useCompactChart } from '@/src/assemblee/components/useCompactChart';
 import { hitTest, pixelToModel, type PointerKind } from '@/src/assemblee/models/hemicycle-hit';
 import type { HemicycleView } from '@/src/assemblee/view-models/scrutin.view-model';
 import { paint } from '@/src/core/web/svg-paint';
@@ -18,8 +18,6 @@ type Ready = Extract<HemicycleView, { status: 'ready' }>;
 /** Taille des abréviations de groupe, en pixels réels (le schéma est mis à l'échelle). */
 const LABEL_PX = 12;
 const DIMMED = 0.18;
-/** Sous cette largeur : cadre serré pleine largeur, sans étiquettes de groupe (les groupes sont nommés au-dessus). */
-const NARROW_BELOW = siteLayout.breakpoint.md;
 
 /**
  * Hémicycle schématique : sièges rangés groupe par groupe, dans l'ordre du plan officiel de
@@ -29,7 +27,7 @@ const NARROW_BELOW = siteLayout.breakpoint.md;
  * deux informations ne se brouillent pas, et chacune se lit sans l'autre. Une image pour les technologies d'assistance (`role="img"`, un seul
  * `aria-label` résumé) : la liste des députés est l'alternative complète.
  *
- * Écran étroit : le schéma prend toute la largeur (sièges plus grands), sans étiquettes ; toucher
+ * Écran étroit : le schéma prend toute la largeur (sièges plus grands), sans étiquettes (les sigles sont dans la liste des groupes) ; toucher
  * l'hémicycle met en évidence le groupe le plus proche, sans viser un siège. Écran large : arc
  * étiqueté, survol d'un siège pour voir le député, clic pour l'épingler. Mouvement réduit :
  * l'apparition est instantanée.
@@ -44,11 +42,12 @@ export function Hemicycle({
   onHighlight: (groupe: number | null) => void;
 }) {
   const { colors, effects, fonts } = useTheme();
-  const { width: screenWidth } = useWindowDimensions();
-  const compact = screenWidth < NARROW_BELOW;
+  const { compact, estimatedWidth } = useCompactChart();
   const box = compact ? view.compactBox : view.box;
   const { layout, seats, arcs } = view;
-  const [size, setSize] = useState({ width: 343, height: 343 / box.ratio });
+  const [measured, setMeasured] = useState<{ width: number; height: number } | null>(null);
+  // Tant que `onLayout` n'a rien mesuré : largeur estimée, pour des étiquettes toujours à la bonne taille.
+  const size = measured ?? { width: estimatedWidth, height: estimatedWidth / box.ratio };
   const [hover, setHover] = useState<{ place: number; pinned: boolean } | null>(null);
   const pointerKind = useRef<PointerKind>(Platform.OS === 'web' ? 'fine' : 'coarse');
   const wrap = useRef<View>(null);
@@ -120,7 +119,7 @@ export function Hemicycle({
 
   const onLayout = (e: LayoutChangeEvent) => {
     const { width, height } = e.nativeEvent.layout;
-    if (width > 0) setSize({ width, height });
+    if (width > 0) setMeasured({ width, height });
   };
 
   const unitsPerPixel = box.width / size.width;

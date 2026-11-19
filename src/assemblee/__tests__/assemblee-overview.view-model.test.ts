@@ -70,7 +70,7 @@ describe('Feature: vue d’ensemble de l’Assemblée', () => {
   it('should give the grid of the major votes with the method note under it', () => {
     const { grid } = assembleeOverviewViewModel()(base().build());
     expect(grid?.note).toBe(
-      'Position majoritaire des députés du groupe qui ont voté ; le détail député par député est dans chaque vote.'
+      'Position majoritaire du groupe ; la règle exacte est ci-dessous, le détail député par député est dans chaque vote.'
     );
     expect(grid?.columns.map((c) => c.numero)).toEqual([5]);
     expect(grid?.rows.map((r) => r.cells.map((c) => c.label))).toEqual([['Contre'], ['Pour']]);

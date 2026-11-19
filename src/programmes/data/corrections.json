@@ -1,5 +1,75 @@
 [
   {
+    "id": "2026-11-19-idees-cles-chaque-fiche-affiche-desormais-les-id",
+    "date": "2026-11-19",
+    "kind": "mise-a-jour",
+    "pages": ["/partis"],
+    "summary": "Idées clés : chaque fiche affiche désormais les idées clés recoupées par deux sources, de deux à quatre, selon la même règle pour tous ; une phrase l'indique quand il y en a moins de quatre."
+  },
+  {
+    "id": "2026-11-19-lexique-commission-mixte-paritaire-la-correction",
+    "date": "2026-11-19",
+    "kind": "correction",
+    "pages": ["/comprendre/lexique"],
+    "summary": "Lexique, commission mixte paritaire : la correction annoncée le 18 novembre (convocation possible par les présidents des deux assemblées pour une proposition de loi, article 45) n'avait pas été publiée ; elle l'est désormais."
+  },
+  {
+    "id": "2026-11-19-lecons-la-motion-de-rejet-prealable-n-est-plus-d",
+    "date": "2026-11-19",
+    "kind": "correction",
+    "pages": ["/comprendre/comment-une-loi-est-votee", "/comprendre/pouvoirs-du-president"],
+    "summary": "Leçons : la motion de rejet préalable n'est plus dite « rare » (douze adoptées sous la XVIIe législature) ; le jour de séance réservé aux groupes d'opposition relève de l'article 48, alinéa 5 ; « deux gouvernements renversés par l'Assemblée » au lieu de « tombés »."
+  },
+  {
+    "id": "2026-11-19-eric-zemmour-precision-retablie-sur-l-annonce-du",
+    "date": "2026-11-19",
+    "kind": "ajout",
+    "pages": ["/partis/reconquete"],
+    "summary": "Éric Zemmour : précision rétablie sur l'annonce du 17 septembre 2026, que Public Sénat ne présentait « pas encore » comme une déclaration de candidature officielle ; l'officialisation reste datée du 10 novembre 2026."
+  },
+  {
+    "id": "2026-11-19-jean-lassalle-resume-date-et-complete-il-disait",
+    "date": "2026-11-19",
+    "kind": "mise-a-jour",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Jean Lassalle : résumé daté et complété. Il disait le 8 octobre 2026 ne pas avoir pris sa décision ; franceinfo le range au 17 novembre 2026 parmi les candidats déclarés. Statut « intention » inchangé, faute de déclaration publique de sa part."
+  },
+  {
+    "id": "2026-11-19-bernard-cazeneuve-le-resume-indique-desormais-qu",
+    "date": "2026-11-19",
+    "kind": "correction",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Bernard Cazeneuve : le résumé indique désormais qu'Europe 1 a présenté ses propos du 28 avril 2026 comme une annonce de candidature, alors que Public Sénat et LCP écrivaient en juillet qu'il ne s'était pas déclaré officiellement. Statut inchangé."
+  },
+  {
+    "id": "2026-11-19-florian-philippot-et-bernard-cazeneuve-programme",
+    "date": "2026-11-19",
+    "kind": "mise-a-jour",
+    "pages": ["/elections/presidentielle-2027/candidats"],
+    "summary": "Florian Philippot et Bernard Cazeneuve : programme affiché « publié en partie » au lieu de « non publié » (projet des Patriotes, édition 2026-2027 ; lettre aux Français du 15 juillet 2026), selon la règle appliquée à tous les candidats."
+  },
+  {
+    "id": "2026-11-19-marine-le-pen-site-officiel-de-campagne-ajoute-m",
+    "date": "2026-11-19",
+    "kind": "ajout",
+    "pages": ["/partis/rn"],
+    "summary": "Marine Le Pen : site officiel de campagne ajouté (marinelepen.com, édité par le Rassemblement national), comme pour les neuf autres candidatures des fiches partis."
+  },
+  {
+    "id": "2026-11-19-raphael-glucksmann-programme-2027-affiche-publie",
+    "date": "2026-11-19",
+    "kind": "correction",
+    "pages": ["/partis/ps-place-publique/programme-2027"],
+    "summary": "Raphaël Glucksmann : programme 2027 affiché « publié en partie » au lieu de « non publié au 10 novembre », ce qui contredisait la première partie présentée le 9 novembre 2026. Ses dix-neuf mesures sont ajoutées dans sept thèmes, avec deux sources de presse."
+  },
+  {
+    "id": "2026-11-19-eric-zemmour-programme-2027-desormais-affiche-pu",
+    "date": "2026-11-19",
+    "kind": "mise-a-jour",
+    "pages": ["/partis/reconquete/programme-2027"],
+    "summary": "Éric Zemmour : programme 2027 désormais affiché « publié en partie » au lieu de « pas encore publié ». Ses cinq priorités, en ligne sur son site de campagne au plus tard le 10 novembre 2026, sont détaillées en quatorze mesures dans cinq thèmes."
+  },
+  {
     "id": "2026-11-18-fiches-partis-les-sources-de-votes-qui-renvoyaie",
     "date": "2026-11-18",
     "kind": "mise-a-jour",

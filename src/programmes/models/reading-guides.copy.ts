@@ -53,7 +53,7 @@ export const readingGuideSections = (
 ): ReadingGuideSection[] => [
   {
     anchor: GUIDE_ANCHORS.keyIdeas,
-    title: 'Lire « Ce qu’il propose » : les 4 idées',
+    title: 'Lire « Ce qu’il propose » : les idées clés',
     paragraphs: [KEY_IDEAS_GUIDE_TEXT],
   },
   {

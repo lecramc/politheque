@@ -21,32 +21,32 @@
   },
   "keyIdeas": [
     {
-      "id": "taxer-les-plus-gros-heritages",
-      "title": "Taxer les plus gros héritages",
-      "text": "Taxer « les 1 % les plus gros » héritages et reverser environ 15 milliards d'euros aux salariés par une baisse des prélèvements sur les salaires.",
-      "measureRefs": [],
-      "relatedQuestionIds": ["q25-successions"]
+      "id": "investir-200-milliards-d-euros-publics",
+      "title": "Investir 200 milliards d'euros publics en cinq ans",
+      "text": "Investir 200 milliards d'euros d'argent public sur le quinquennat, financés d'abord par une contribution exceptionnelle sur les plus hauts patrimoines estimée à 50 milliards.",
+      "measureRefs": ["economie.0", "economie.1"],
+      "relatedQuestionIds": ["q01-isf"]
     },
     {
-      "id": "porter-le-smic-a-1-700-net",
-      "title": "Porter le SMIC à 1 700 € net",
-      "text": "Revaloriser le salaire minimum à 1 700 euros net par mois.",
-      "measureRefs": [],
-      "relatedQuestionIds": ["q05-smic"]
+      "id": "louer-un-million-de-voitures-electriques",
+      "title": "Louer un million de voitures électriques",
+      "text": "Un leasing social de 1 million de voitures électriques sur cinq ans, à 100 euros par mois sans apport, dont 100 000 d'abord pour les soignants en zone rurale.",
+      "measureRefs": ["ecologie.0"],
+      "relatedQuestionIds": []
     },
     {
-      "id": "developper-les-energies-renouvelables",
-      "title": "Développer les énergies renouvelables",
-      "text": "Développer l'éolien et le solaire pour rattraper le retard français, aux côtés du nucléaire : « La France a besoin des deux ».",
-      "measureRefs": [],
-      "relatedQuestionIds": ["q13-renouvelables"]
+      "id": "taxer-les-superprofits-petroliers-en-europe",
+      "title": "Taxer les superprofits pétroliers en Europe",
+      "text": "Défendre une taxe européenne sur les superprofits pétroliers et gaziers et négocier un « grand emprunt écologique européen ».",
+      "measureRefs": ["europe.0", "europe.1"],
+      "relatedQuestionIds": []
     },
     {
-      "id": "renforcer-l-aide-a-l-ukraine-et-la-defense-europee",
-      "title": "Renforcer l'aide à l'Ukraine et la défense européenne",
-      "text": "Financer l'aide à l'Ukraine par les avoirs russes gelés et un fonds européen de défense par un emprunt commun.",
-      "measureRefs": [],
-      "relatedQuestionIds": ["q18-ukraine", "q20-defense-europe"]
+      "id": "inscrire-la-republique-ecologique-dans-la-constitution",
+      "title": "Inscrire la « République écologique » dans la Constitution",
+      "text": "Déclarer l'« état d'urgence écologique » et inscrire à l'article 1er de la Constitution que la République est aussi « écologique ».",
+      "measureRefs": ["institutions.0"],
+      "relatedQuestionIds": []
     }
   ],
   "lastVerified": "2026-11-03",
@@ -996,7 +996,7 @@
         },
         {
           "title": "Assemblée nationale – Commission des affaires culturelles et de l'éducation, compte rendu n° 16 du 20/11/2024 : examen de la PPL n° 418 visant à refonder le financement public des établissements privés sous contrat afin de garantir la mixité sociale (article unique rejeté)",
-          "url": "https://questions.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/comptes-rendus/cion-cedu/l17cion-cedu2425016_compte-rendu.pdf",
           "date": "2024-11-20",
           "kind": "declaration"
         }
@@ -1314,7 +1314,7 @@
       "sources": [
         {
           "title": "Assemblée nationale, scrutin public n° 4745 du 11 décembre 2025 sur l'ensemble de la proposition de loi pour retrouver la confiance et l'équilibre dans les rapports locatifs, adopté",
-          "url": "https://questions.assemblee-nationale.fr/dyn/17/scrutins/4745",
+          "url": "https://www.assemblee-nationale.fr/dyn/17/scrutins/4745",
           "date": "2025-12-11",
           "kind": "vote"
         },
@@ -1361,13 +1361,15 @@
           "kind": "presse"
         }
       ],
-      "programmeStatus": "Programme présidentiel 2027 non publié au 10 novembre 2026 ; aucune date de publication n'est annoncée. Les positions de la fiche s'appuient sur les déclarations de Raphaël Glucksmann, le programme européen PS–Place publique de 2024 et les votes du groupe Socialistes, datés.",
-      "programmeState": "non-publie",
+      "programmeStatus": "Programme présidentiel 2027 publié en partie : première partie, « Révolution écologique : les premiers 100 jours », présentée le 9 novembre 2026 avec Yannick Jadot ; une seconde partie, consacrée à la biodiversité, l'eau, l'agriculture et la pêche, l'alimentation, les pollutions et la santé, est annoncée « dans quelques semaines », sans date. Les positions de la fiche s'appuient aussi sur les déclarations de Raphaël Glucksmann, le programme européen PS–Place publique de 2024 et les votes du groupe Socialistes, datés.",
+      "programmeState": "partiel",
+      "programmeStateDetail": "première partie",
       "officialSite": "https://glucks2027.fr/",
+      "programmeUrl": "https://glucks2027.fr/revolution-ecologique/",
       "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=glucksmann-raphael-16012",
       "programmePublication": {
-        "text": "Une première partie, « Révolution écologique : les premiers 100 jours », a été présentée le 9 novembre 2026 ; programme complet : date non annoncée (vérifié le 16 novembre 2026).",
-        "date": null,
+        "text": "Publié en partie : première partie, « Révolution écologique : les premiers 100 jours », présentée le 9 novembre 2026 ; la seconde partie est annoncée sans date.",
+        "date": "2026-11-09",
         "sources": [
           {
             "title": "« Révolution écologique : les premiers 100 jours », livret première partie, site de campagne de Raphaël Glucksmann (consulté le 16 novembre 2026)",
@@ -1392,45 +1394,423 @@
             "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
             "date": "2026-11-09",
             "kind": "presse"
+          },
+          {
+            "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+            "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+            "date": "2026-11-10",
+            "kind": "presse"
           }
         ]
       },
       "themes": {
         "economie": {
-          "summary": "",
-          "measures": []
+          "summary": "La première partie du programme prévoit 200 milliards d'euros d'argent public sur cinq ans, financés d'abord par une contribution exceptionnelle sur les plus hauts patrimoines et une fiscalité sur l'aérien.",
+          "measures": [
+            {
+              "text": "Investir 200 milliards d'euros d'argent public sur la durée du quinquennat, avec pour objectifs la neutralité carbone en 2050 et la stabilisation de la dette à l'horizon 2032.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Créer une « contribution exceptionnelle pour l'investissement climatique » sur les plus hauts patrimoines, prélevée une seule année, qui rapporterait 50 milliards d'euros affectés à un fonds pour la transition climatique.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Supprimer dès les 100 premiers jours les exonérations fiscales sur le carburant des vols intérieurs et augmenter la taxe sur les billets d'avion ; cibler les jets privés et les yachts.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Verser un chèque énergie de 500 euros à six millions de familles et de 200 euros à dix millions de familles des classes moyennes.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Doubler le plafond du livret A et le fusionner avec le LDDS dans un « Livret de souveraineté écologique et sociale » rémunéré à 2,5 %, pour prêter aux collectivités à taux bas.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
         },
         "travail": {
-          "summary": "",
-          "measures": []
+          "summary": "Une mesure porte sur le travail par fortes chaleurs.",
+          "measures": [
+            {
+              "text": "Ouvrir des discussions avec les partenaires sociaux pour adapter les conditions de travail aux chaleurs extrêmes.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "immigration": {
           "summary": "",
           "measures": []
         },
         "securite": {
-          "summary": "",
-          "measures": []
+          "summary": "Une mesure porte sur la sécurité civile face aux canicules et aux incendies.",
+          "measures": [
+            {
+              "text": "Allouer 1 milliard d'euros d'investissement à la sécurité civile dès juin 2027 et créer un fonds d'indemnisation pour avancer le paiement des dommages aux sinistrés.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "ecologie": {
-          "summary": "",
-          "measures": []
+          "summary": "Les « 100 premiers jours » visent la sortie des énergies fossiles : véhicules électriques et pompes à chaleur à prix social, renouvelables et nucléaire existant, transports du quotidien.",
+          "measures": [
+            {
+              "text": "Leasing social : 1 million de voitures électriques sur cinq ans, à 100 euros par mois sans apport, dont 100 000 mises tout de suite à la disposition des auxiliaires de vie et des professionnels du soin en zone rurale.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Un million de pompes à chaleur à 1 euro par jour, en priorité pour les logements chauffés au fioul et au gaz ou les plus exposés aux fortes chaleurs.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Au moins doubler d'ici 2035 les capacités installées de production d'énergie renouvelable, par un contrat entre l'État et les régions, et prolonger les réacteurs nucléaires existants.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Moratoire sur les hausses de taxes sur l'électricité, dont le prix ne devra pas augmenter plus vite que l'inflation.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Transports du quotidien : 5 000 lignes de covoiturage d'ici 2035 et un « Pass Mobilité Durable Jeunes » à 1 euro par jour pour les moins de 25 ans.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            }
+          ]
         },
         "sante": {
           "summary": "",
           "measures": []
         },
         "education": {
-          "summary": "",
-          "measures": []
+          "summary": "Une mesure porte sur la rénovation des bâtiments scolaires.",
+          "measures": [
+            {
+              "text": "Viser la rénovation de 4 000 écoles primaires chaque année et de plus de 2 800 collèges et lycées.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "europe": {
-          "summary": "",
-          "measures": []
+          "summary": "Le programme renvoie une partie du financement et de la politique commerciale à l'échelle européenne.",
+          "measures": [
+            {
+              "text": "Défendre une taxe européenne sur les superprofits pétroliers et gaziers.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Négocier avec les partenaires européens un « grand emprunt écologique européen ».",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Renforcer le mécanisme d'ajustement carbone aux frontières et le devoir de vigilance, et imposer des « mesures miroirs » dans les accords commerciaux.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "institutions": {
-          "summary": "",
-          "measures": []
+          "summary": "Le programme prévoit d'inscrire l'écologie dans la Constitution et une loi de programmation pluriannuelle.",
+          "measures": [
+            {
+              "text": "Déclarer l'« état d'urgence écologique » et inscrire à l'article 1er de la Constitution que la République est aussi « écologique ».",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Adopter une loi de programmation écologique, sur le modèle de la loi de programmation militaire, qui s'impose chaque année aux lois de finances.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Raphaël Glucksmann met 200 milliards sur la table et invite le Sénat à voter en faveur d'une future République écologique (Public Sénat)",
+                  "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-raphael-glucksmann-met-200-milliards-sur-la-table-et-invite-le-senat-a-voter-en-faveur-dune-future-republique-ecologique",
+                  "date": "2026-11-09",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle : Glucksmann prévoit 200 milliards d'investissements pour sa « révolution écologique » (L'info durable, avec l'AFP)",
+                  "url": "https://www.linfodurable.fr/presidentielle-glucksmann-prevoit-200-milliards-dinvestissements-pour-sa-revolution-ecologique-0",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Passer à l'électrique les flottes de véhicules des administrations de l'État ; les ministres devront privilégier le train plutôt que l'avion.",
+              "sources": [
+                {
+                  "title": "« Révolution écologique : les premiers 100 jours », livret, première partie (Raphaël Glucksmann et Yannick Jadot)",
+                  "url": "https://glucks2027.fr/wp-content/uploads/2026/11/livret_progr_revolution_ecologique_2027.pdf",
+                  "date": "2026-11-09",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         }
       }
     }

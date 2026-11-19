@@ -1,10 +1,12 @@
 import React, { useRef, useState } from 'react';
 import {
+  Platform,
   StyleProp,
   StyleSheet,
   Text,
   TextInput as RNTextInput,
   TextInputProps,
+  TextStyle,
   View,
   ViewStyle,
 } from 'react-native';
@@ -26,8 +28,6 @@ type TextInputProps2 = TextInputProps & {
   containerStyle?: StyleProp<ViewStyle>;
   size?: SizeKey;
   spacingY?: 'none' | 'sm' | 'md';
-  // Opt-in: highlight the focus border with the brand tint (e.g. OTP code field).
-  focusAccent?: boolean;
 };
 
 const SIZE_PRESETS: Record<
@@ -41,17 +41,18 @@ const SIZE_PRESETS: Record<
   xl: { minHeight: 62, fontSize: 18, paddingV: 14, paddingH: 18, iconSize: 24 },
 };
 
+// Le contour d'un champ est un contrôle : `border.tertiary` (>= 3:1, WCAG 1.4.11), pas un filet.
 function getVariantColors(colors: any, variant: 'primary' | 'secondary' | 'glass' | 'plain') {
   switch (variant) {
     case 'primary':
       return {
         backgroundColor: colors.surface.primary,
-        defaultBorderColor: colors.surface.border.primary,
+        defaultBorderColor: colors.surface.border.tertiary,
       };
     case 'glass':
       return {
         backgroundColor: colors.surface.glass,
-        defaultBorderColor: colors.surface.border.primary,
+        defaultBorderColor: colors.surface.border.tertiary,
       };
     case 'plain':
       return { backgroundColor: 'transparent', defaultBorderColor: 'transparent' };
@@ -59,7 +60,7 @@ function getVariantColors(colors: any, variant: 'primary' | 'secondary' | 'glass
     default:
       return {
         backgroundColor: colors.surface.secondary,
-        defaultBorderColor: colors.surface.border.primary,
+        defaultBorderColor: colors.surface.border.tertiary,
       };
   }
 }
@@ -77,7 +78,6 @@ export const TextInput: React.FC<TextInputProps2> = ({
   accessibilityLabel,
   size = 'md',
   spacingY = 'none',
-  focusAccent = false,
   ...props
 }) => {
   const { colors, effects, systemColors } = useTheme();
@@ -91,10 +91,9 @@ export const TextInput: React.FC<TextInputProps2> = ({
   const palette = variant === 'glass' ? systemColors : colors;
   const { backgroundColor, defaultBorderColor } = getVariantColors(palette, variant);
 
+  // Focus : un seul anneau, celui du champ (couleur de marque, trait épais) ; pas d'anneau du navigateur en plus.
   const dynamicBorderColor = isFocused
-    ? focusAccent
-      ? colors.tint
-      : palette.surface.border.secondary
+    ? colors.tint
     : error
       ? palette.accent.error
       : isPlain
@@ -127,12 +126,11 @@ export const TextInput: React.FC<TextInputProps2> = ({
 
   const boxedContainerStyle: ViewStyle = {
     backgroundColor,
-    borderWidth: focusAccent && isFocused ? 1.5 : StyleSheet.hairlineWidth,
+    borderWidth: isFocused ? 2 : 1,
     borderColor: dynamicBorderColor,
     borderRadius: effects.borderRadius.input,
-    ...(isFocused
-      ? { shadowColor: colors.shadow.color, ...effects.shadow.sm, elevation: 2 }
-      : { shadowOpacity: 0, elevation: 0 }),
+    shadowOpacity: 0,
+    elevation: 0,
   };
 
   const spacingMap = { none: 0, sm: effects.spacing.sm, md: effects.spacing.md } as const;
@@ -184,6 +182,7 @@ export const TextInput: React.FC<TextInputProps2> = ({
               color: disabled ? palette.text.disabled : palette.text.primary,
               fontSize: preset.fontSize,
             },
+            webNoOutline,
             style,
           ]}
           placeholderTextColor={palette.text.secondary}
@@ -204,6 +203,9 @@ export const TextInput: React.FC<TextInputProps2> = ({
     </View>
   );
 };
+
+// Web : l'anneau de focus est dessiné par le conteneur (bordure) ; le champ n'ajoute pas le sien.
+const webNoOutline = (Platform.OS === 'web' ? { outlineStyle: 'none' } : {}) as TextStyle;
 
 const styles = StyleSheet.create({
   wrapper: { width: '100%' },

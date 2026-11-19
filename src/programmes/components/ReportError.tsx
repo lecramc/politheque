@@ -36,7 +36,7 @@ export function ReportError({
             ·{' '}
           </>
         ) : null}
-        <ExternalLink href={links.github} newTab size={14}>
+        <ExternalLink href={links.github} newTab standalone size={14}>
           {REPORT_COPY.githubLabel}
         </ExternalLink>
       </Text>

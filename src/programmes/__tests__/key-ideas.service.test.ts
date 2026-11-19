@@ -1,3 +1,4 @@
+import { keyIdeasNote } from '@/src/programmes/models/key-ideas.copy';
 import {
   keyIdeaMeasureSources,
   keyIdeaOrigin,
@@ -6,9 +7,11 @@ import {
   keyIdeaTheme,
   sortKeyIdeasByTheme,
   nextPartyInJourney,
+  displayedKeyIdeas,
   hasKeyIdeas,
   hasKeyIdeasSection,
   KEY_IDEAS_COUNT,
+  KEY_IDEAS_MIN,
 } from '@/src/programmes/models/key-ideas.service';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import { emptyThemes } from '@/src/programmes/models/party.factory';
@@ -192,7 +195,7 @@ describe('Feature: fiche suivante du parcours', () => {
   });
 });
 
-describe('Feature: « Ce qu’il propose » existe pour les dix partis ou pour aucun', () => {
+describe('Feature: « Ce qu’il propose » de 2 à 4 idées recoupées, décidé parti par parti', () => {
   const programme = source('https://parti.fr/p', 'programme');
   const press = source('https://journal.fr/a', 'presse');
   const THEMES = ['economie', 'travail', 'immigration', 'securite'] as const;
@@ -212,28 +215,45 @@ describe('Feature: « Ce qu’il propose » existe pour les dix partis ou pour a
     };
   };
 
-  it('should require exactly 4 ideas', () => {
+  it('should bound the section between 2 and 4 ideas', () => {
+    expect(KEY_IDEAS_MIN).toBe(2);
     expect(KEY_IDEAS_COUNT).toBe(4);
   });
 
-  it('should be published when every party has 4 verified ideas in 4 different themes', () => {
-    expect(hasKeyIdeasSection([fullParty('a'), fullParty('b')], ELECTION)).toBe(true);
+  it.each([2, 3, 4])('should be published with %i verified ideas', (count) => {
+    const party = fullParty('a', count);
+    expect(hasKeyIdeasSection(party, ELECTION)).toBe(true);
+    expect(displayedKeyIdeas(party, ELECTION)).toHaveLength(count);
   });
 
-  it('should be published for none when one party has fewer than 4 ideas', () => {
-    expect(hasKeyIdeasSection([fullParty('a'), fullParty('b', 3)], ELECTION)).toBe(false);
+  it('should not be published with fewer than 2 verified ideas, without affecting another party', () => {
+    const one = fullParty('a', 1);
+    expect(hasKeyIdeasSection(one, ELECTION)).toBe(false);
+    expect(hasKeyIdeasSection(fullParty('b', 2), ELECTION)).toBe(true);
   });
 
-  it('should be published for none when one idea is below the source threshold', () => {
-    const weak = fullParty('b');
-    weak.candidacies[ELECTION].themes.economie.measures = [{ text: 'M', sources: [programme] }];
-    expect(hasKeyIdeasSection([fullParty('a'), weak], ELECTION)).toBe(false);
+  it('should display only the verified ideas, and count them toward the minimum', () => {
+    const party = fullParty('a', 3);
+    party.candidacies[ELECTION].themes.economie.measures = [{ text: 'M', sources: [programme] }];
+    expect(displayedKeyIdeas(party, ELECTION).map((i) => i.id)).toEqual([
+      'a-travail',
+      'a-immigration',
+    ]);
+    expect(hasKeyIdeasSection(party, ELECTION)).toBe(true);
+    party.candidacies[ELECTION].themes.travail.measures = [{ text: 'M', sources: [programme] }];
+    expect(hasKeyIdeasSection(party, ELECTION)).toBe(false);
   });
 
-  it('should be published for none when two ideas share a theme', () => {
+  it('should not be published when two ideas share a theme', () => {
     const doubled = fullParty('b');
     doubled.keyIdeas[1] = idea({ id: 'b-bis', measureRefs: ['economie.0'] });
-    expect(hasKeyIdeasSection([fullParty('a'), doubled], ELECTION)).toBe(false);
+    expect(hasKeyIdeasSection(doubled, ELECTION)).toBe(false);
+  });
+
+  it('should not be published for more than 4 ideas', () => {
+    const party = fullParty('a');
+    party.keyIdeas.push(idea({ id: 'a-extra', measureRefs: ['travail.0'] }));
+    expect(hasKeyIdeasSection(party, ELECTION)).toBe(false);
   });
 
   it('should leave out a party whose programme is not published: it shows the notice instead', () => {
@@ -241,13 +261,22 @@ describe('Feature: « Ce qu’il propose » existe pour les dix partis ou pour a
     notPublished.candidacies[ELECTION].programmeState = 'non-publie';
     notPublished.candidacies[ELECTION].themes = emptyThemes();
     notPublished.keyIdeas = notPublished.keyIdeas.map((i) => ({ ...i, measureRefs: [] }));
-    expect(hasKeyIdeasSection([fullParty('a'), notPublished], ELECTION)).toBe(true);
-    expect(hasKeyIdeasSection([notPublished], ELECTION)).toBe(false);
+    expect(hasKeyIdeasSection(notPublished, ELECTION)).toBe(false);
+    expect(displayedKeyIdeas(notPublished, ELECTION)).toEqual([]);
     expect(hasKeyIdeas(notPublished, ELECTION)).toBe(false);
     expect(hasKeyIdeas(fullParty('a'), ELECTION)).toBe(true);
   });
+});
 
-  it('should not be published without any party', () => {
-    expect(hasKeyIdeasSection([], ELECTION)).toBe(false);
+describe('Feature: phrase sous « Ce qu’il propose »', () => {
+  it('should state the number of verified ideas below 4, with the same text for everyone', () => {
+    expect(keyIdeasNote(2)).toBe(
+      '2 idées clés recoupées par deux sources ; les autres propositions publiées figurent thème par thème ci-dessous.'
+    );
+    expect(keyIdeasNote(3)).toMatch(/^3 idées clés recoupées/);
+  });
+
+  it('should say nothing with 4 ideas', () => {
+    expect(keyIdeasNote(4)).toBeNull();
   });
 });

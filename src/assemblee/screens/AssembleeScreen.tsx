@@ -24,6 +24,7 @@ import {
 } from '@/src/assemblee/view-models/assemblee-list.view-model';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
+import { ExternalLink } from '@/src/programmes/components/ExternalLink';
 import { Page } from '@/src/programmes/components/Page';
 
 const NO_FILTER: ListFilters = {
@@ -172,9 +173,9 @@ export default function AssembleeScreen() {
           <TextLink href="/methodologie#votes-assemblee" standalone>
             {COPY.list.methodLink}
           </TextLink>
-          <TextLink href={vm.officialListUrl} standalone>
+          <ExternalLink href={vm.officialListUrl} standalone>
             {COPY.common.officialListLink}
-          </TextLink>
+          </ExternalLink>
         </View>
       </Accordion>
 

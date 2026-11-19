@@ -13,11 +13,14 @@ import { tv } from '@/src/core/web/tv';
 export function ExternalLink({
   href,
   newTab = false,
+  standalone = false,
   size,
   children,
 }: {
   href: string;
   newTab?: boolean;
+  /** Seul sur sa ligne : zone cliquable d'au moins 44 px sur écran tactile (comme `TextLink`). */
+  standalone?: boolean;
   /** Taille de police ; omise, celle du composant `Text` (16). */
   size?: number;
   children: string;
@@ -25,7 +28,7 @@ export function ExternalLink({
   const { colors, fonts } = useTheme();
   return (
     <Text
-      {...tv('text-link')}
+      {...tv('text-link', ...(standalone ? ['text-link-block'] : []))}
       role="link"
       {...(Platform.OS === 'web'
         ? {

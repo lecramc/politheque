@@ -444,7 +444,8 @@
       ],
       "officialSite": "https://les-patriotes.fr/",
       "programme": {
-        "state": "non-publie"
+        "state": "partiel",
+        "url": "https://les-patriotes.fr/projetpourlafrance/"
       }
     },
     {
@@ -607,7 +608,7 @@
       "date": "2026-04-28",
       "affiliation": "La Convention",
       "role": "Ancien Premier ministre",
-      "summary": "Bernard Cazeneuve s'est dit le 28 avril 2026 « prêt à être candidat », puis a fait part de sa « volonté pleine et entière » de l'être, sans déclaration formelle.",
+      "summary": "Bernard Cazeneuve s'est dit le 28 avril 2026 « prêt à être candidat », ce qu'Europe 1 a présenté comme une annonce de candidature, puis a publié le 15 juillet 2026 une « lettre aux Français » exposant son projet, sans s'être déclaré officiellement candidat selon Public Sénat et LCP.",
       "sources": [
         {
           "title": "Présidentielle 2027 : Bernard Cazeneuve annonce sa candidature (Europe 1, d'après Le Figaro)",
@@ -626,11 +627,18 @@
           "url": "https://lcp.fr/actualites/presidentielle-2027-l-objectif-de-bernard-cazeneuve-est-de-devenir-president-de-la",
           "date": "2026-07-30",
           "kind": "presse"
+        },
+        {
+          "title": "Présidentielle 2027 : « La candidature de Bernard Cazeneuve traduit la difficulté de notre personnel politique à se renouveler », selon Bruno Cautrès (Public Sénat)",
+          "url": "https://www.publicsenat.fr/actualites/politique/presidentielle-2027-la-candidature-de-bernard-cazeneuve-traduit-la-difficulte-de-notre-personnel-politique-a-se-renouveler-selon-bruno-cautres",
+          "date": "2026-07-17",
+          "kind": "presse"
         }
       ],
       "officialSite": "https://www.la-convention.fr/",
       "programme": {
-        "state": "non-publie"
+        "state": "partiel",
+        "url": "https://assets.nationbuilder.com/laconvention/pages/2515/attachments/original/1784151599/Auxfrancaisversionfinale1507.pdf"
       }
     },
     {
@@ -641,7 +649,7 @@
       "date": "2026-07-10",
       "affiliation": "Résistons !",
       "role": "Ancien député des Pyrénées-Atlantiques",
-      "summary": "Jean Lassalle a lancé le 10 juillet 2026 une cagnotte pour financer une nouvelle candidature, qu'il conditionne au résultat de cette collecte.",
+      "summary": "Jean Lassalle a lancé le 10 juillet 2026 une cagnotte pour financer une nouvelle candidature, qu'il conditionnait au résultat de cette collecte, et disait le 8 octobre 2026 ne pas avoir « encore pris la décision », franceinfo le rangeant au 17 novembre 2026 parmi les candidats déclarés.",
       "sources": [
         {
           "title": "Présidentielle : Jean Lassalle lance une cagnotte pour financer sa candidature (Europe 1)",
@@ -659,6 +667,18 @@
           "title": "Jean Lassalle lance une cagnotte pour être candidat à la présidentielle de 2027 (ICI Béarn Bigorre)",
           "url": "https://www.ici.fr/emissions/l-invite-de-la-redaction-de-ici-bearn-bigorre/jean-lassalle-lance-une-cagnotte-pour-etre-candidat-a-la-presidentielle-de-2027-2094458",
           "date": "2026-07-10",
+          "kind": "presse"
+        },
+        {
+          "title": "Jean Lassalle : « Agriculteurs, reprenez vos rêves. Parce que les rêves, ça permet de sortir du cauchemar » (Pleinchamp)",
+          "url": "https://www.pleinchamp.com/actualite/jean-lassalle-agriculteurs-reprenez-vos-reves.-parce-que-les-reves-ca-permet-de-sortir-du-cauchemar",
+          "date": "2026-10-08",
+          "kind": "presse"
+        },
+        {
+          "title": "PORTRAITS. Qui sont les candidats (déjà) déclarés à l'élection présidentielle de 2027 ? (franceinfo, liste au 17 novembre 2026)",
+          "url": "https://www.franceinfo.fr/elections/presidentielle/portraits-qui-sont-les-candidats-declares-a-l-election-presidentielle-de-2027_8208032.html",
+          "date": "2026-11-17",
           "kind": "presse"
         }
       ],

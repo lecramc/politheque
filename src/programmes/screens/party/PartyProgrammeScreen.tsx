@@ -26,7 +26,7 @@ import { partyViewModel } from '@/src/programmes/view-models/party.view-model';
  * Onglet « Programme » : /partis/[id]/programme-2027, adresse de l'onglet par défaut. `/partis/[id]`
  * rend le même écran, avec un canonical vers cette adresse (alias, jamais indexé).
  *
- * Ordre : « Ce qu'il propose » (les 4 idées), la candidature (texte entier), le programme thème par
+ * Ordre : « Ce qu'il propose » (2 à 4 idées recoupées), la candidature (texte entier), le programme thème par
  * thème, puis les sources. Les anciens liens `?onglet=` sont redirigés (effet, jamais au rendu).
  */
 export default function PartyProgrammeScreen() {

@@ -344,10 +344,13 @@ export function Page({
           <View style={styles.headerSlot}>
             {back ? (
               <>
-                <Only below="md">
+                <Only below="md" style={styles.headerBackSlot}>
                   <Link href={back.href as never} asChild>
-                    <Pressable accessibilityRole="link" style={styles.headerButton}>
-                      <Text style={{ ...fonts.bold, color: colors.tint, fontSize: 16 }}>
+                    <Pressable accessibilityRole="link" style={styles.headerBack}>
+                      <Text
+                        numberOfLines={1}
+                        style={{ ...fonts.bold, color: colors.tint, fontSize: 16 }}
+                      >
                         ‹ {back.label}
                       </Text>
                     </Pressable>
@@ -402,7 +405,7 @@ export function Page({
               </TextLink>
             </Only>
           ) : null}
-          <View style={[styles.headerSlot, styles.headerSlotEnd]}>
+          <View {...tv('header-slot-end')} style={[styles.headerSlot, styles.headerSlotEnd]}>
             {focus ? null : <ElectionChip />}
             {focus && back ? <Only below="md">{methodologyLink}</Only> : methodologyLink}
           </View>
@@ -557,8 +560,19 @@ const styles = StyleSheet.create({
   },
   headerButton: { minHeight: 44, minWidth: 44, justifyContent: 'center' },
   // Extrémités de l'en-tête : même `flex: 1`, donc la rubrique du milieu est sur l'axe de la page.
-  headerSlot: { flex: 1, flexDirection: 'row', alignItems: 'center' },
-  headerSlotEnd: { justifyContent: 'flex-end', gap: theme.effects.spacing.sm },
+  // Lien retour : peut rétrécir (libellé tronqué par une ellipse) au lieu de passer sous la pastille.
+  headerBackSlot: { flexShrink: 1, minWidth: 0 },
+  headerBack: { minHeight: 44, minWidth: 44, flexShrink: 1, justifyContent: 'center' },
+  headerSlot: { flex: 1, minWidth: 0, flexDirection: 'row', alignItems: 'center' },
+  // Mobile : l'extrémité droite garde sa largeur (pastille + info), le lien retour prend le reste ;
+  // dès 768 px, les deux extrémités reprennent la même largeur (voir `header-slot-end`).
+  headerSlotEnd: {
+    flexGrow: 0,
+    flexShrink: 0,
+    flexBasis: 'auto',
+    justifyContent: 'flex-end',
+    gap: theme.effects.spacing.sm,
+  },
   desktopNav: {
     flexDirection: 'row',
     gap: theme.effects.spacing.xxs,

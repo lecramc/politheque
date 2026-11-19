@@ -34,8 +34,8 @@ describe('Feature: feuille CSS responsive', () => {
   });
 
   it('should balance headings and keep paragraphs free of orphan words', () => {
-    expect(layoutCss).toMatch(/:root \[role="heading"\]\s*{[^}]*text-wrap: balance;/);
-    expect(layoutCss).toMatch(/:root \[dir="auto"\]\s*{[^}]*text-wrap: pretty;/);
+    expect(layoutCss).toMatch(/:root \[role="heading"\]\s*{[^}]*text-wrap-style: balance;/);
+    expect(layoutCss).toMatch(/:root \[dir="auto"\]\s*{[^}]*text-wrap-style: pretty;/);
   });
 
   it('should give text links a hover, a focus ring in the text colour and a taller hit area', () => {
@@ -65,6 +65,20 @@ describe('Feature: feuille CSS responsive', () => {
 
   it('should fix the stance cell width at 152px from 768px', () => {
     expect(layoutCss).toContain(`width: ${layout.stanceCell.md}px;`);
+  });
+
+  it('should not reset white-space through the text-wrap shorthand (it breaks single-line ellipsis)', () => {
+    expect(layoutCss).not.toMatch(/text-wrap:/);
+  });
+
+  it('should give a standalone text link a 44px touch target on a coarse pointer', () => {
+    const coarse = layoutCss.split('@media (pointer: coarse)')[1].split('\n}')[0];
+    expect(coarse).toMatch(/\[data-tv~="text-link-block"\][^}]*min-height: 44px;/);
+  });
+
+  it('should give the header ends the same width from 768px, and let the right end keep its content width below', () => {
+    const md = layoutCss.split(`@media (min-width: ${layout.breakpoint.md}px)`)[1];
+    expect(md).toMatch(/\[data-tv~="header-slot-end"\][^}]*flex: 1 1 0%;/);
   });
 
   it('should hide the bottom bar from 768px', () => {

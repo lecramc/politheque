@@ -18,7 +18,7 @@ import type { PartyViewModel } from '@/src/programmes/view-models/party.view-mod
 type KeyIdeas = NonNullable<PartyViewModel['keyIdeas']>;
 type KeyIdeaItem = KeyIdeas['items'][number];
 
-/** « Ce qu'il propose » : 4 idées dans l'ordre des thèmes du site, sans numéro ni classement. */
+/** « Ce qu'il propose » : de 2 à 4 idées dans l'ordre des thèmes du site, sans numéro ni classement. */
 export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; partyName: string }) {
   const { colors, effects, fonts } = useTheme();
   const [openId, setOpenId] = useState<string | null>(null);
@@ -78,9 +78,14 @@ export function KeyIdeaList({ keyIdeas, partyName }: { keyIdeas: KeyIdeas; party
           </View>
         ))}
       </View>
+      {keyIdeas.note ? (
+        <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
+          {keyIdeas.note}
+        </Text>
+      ) : null}
       <ReadingGuide anchor={GUIDE_ANCHORS.keyIdeas}>
         <Text style={{ fontSize: 16, lineHeight: 25 }}>{KEY_IDEAS_GUIDE_TEXT}</Text>
-        <TextLink href="/methodologie">Comment ces 4 idées sont choisies</TextLink>
+        <TextLink href="/methodologie">Comment ces idées sont choisies</TextLink>
       </ReadingGuide>
       <Sheet isOpen={!!open} onClose={() => setOpenId(null)} title={open?.title ?? ''}>
         {open ? <IdeaSheetBody item={open} partyName={partyName} /> : null}

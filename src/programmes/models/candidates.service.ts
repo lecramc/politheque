@@ -1,13 +1,13 @@
 import {
   CANDIDATE_PROGRAMME_LABELS,
+  CANDIDATE_STATUS_LABELS,
+  CANDIDATES_COPY,
   DATE_NOT_FOUND,
 } from '@/src/programmes/models/candidates.copy';
 import { calculatedDateText } from '@/src/programmes/models/contenus-2027';
 import type {
-  CandidacyStatus,
   CandidateProgrammeState,
   DeclaredCandidate,
-  DeclaredCandidateStatus,
   FaqEntry,
   Party,
   Source,
@@ -17,16 +17,9 @@ import { partyHref } from '@/src/programmes/models/seo/party-sections';
 
 /**
  * Libellé de statut commun à tous les candidats de la page, tiré du code de statut et jamais du
- * libellé propre à chaque fiche : même formulation, sans accord, pour les 10 partis comme pour les autres.
+ * libellé propre à chaque fiche (textes dans `candidates.copy.ts`).
  */
-export const UNIFORM_STATUS_LABELS: Record<CandidacyStatus | DeclaredCandidateStatus, string> = {
-  declare: 'Candidature déclarée',
-  annonce: 'Candidature annoncée',
-  intention: 'Intention de candidature annoncée',
-  investi: 'Investiture par son parti',
-  designe: 'Désignation par son parti',
-  pressenti: 'Candidature envisagée',
-};
+export const UNIFORM_STATUS_LABELS = CANDIDATE_STATUS_LABELS;
 
 /** Un candidat dans la liste : même gabarit pour tous, d'où qu'il vienne. */
 export type CandidateEntry = {
@@ -35,7 +28,7 @@ export type CandidateEntry = {
   statusLabel: string;
   /** Date du statut (annonce, investiture ou désignation). */
   date: string | null;
-  /** « Date d'annonce non retrouvée » quand Mon Nov 16 21:38:23 CET 2026 est absente. */
+  /** « Date d'annonce non retrouvée » quand la date est absente. */
   dateNote: string | null;
   affiliation: string;
   role: string | null;
@@ -135,30 +128,26 @@ export const SPONSORSHIP_FAQ_ID = 'parrainages';
  * manque, la clause est omise (jamais une date saisie ici).
  */
 export function candidatesIntro(faq: FaqEntry[]): string {
-  const base =
-    'La liste officielle des candidats sera publiée par le Conseil constitutionnel après le dépôt des 500 parrainages';
+  const base = CANDIDATES_COPY.introBase;
   const deadline = faq.find((q) => q.id === SPONSORSHIP_FAQ_ID)?.calculated?.[0];
   return deadline
-    ? `${base}, possible jusqu'au ${calculatedDateText(deadline)} (date calculée, à confirmer par le décret de convocation).`
+    ? CANDIDATES_COPY.introWithDeadline(base, calculatedDateText(deadline))
     : `${base}.`;
 }
 
-/** Chapô de la page : ce qu'on attend et ce que la page montre en attendant, sans date ni jargon. */
-export const CANDIDATES_PAGE_INTRO =
-  "La liste officielle sera publiée par le Conseil constitutionnel une fois vérifiées les 500 signatures d'élus que chaque candidat doit réunir. En attendant, voici les candidatures annoncées publiquement.";
+/** Chapô de la page : ce qu'on attend et ce que la page montre en attendant (texte dans `candidates.copy.ts`). */
+export const CANDIDATES_PAGE_INTRO = CANDIDATES_COPY.pageIntro;
 
 /** Note en petit : la date limite calculée de la FAQ ; rien si la donnée manque (jamais une date saisie ici). */
 export function candidatesDeadlineNote(faq: FaqEntry[]): string | null {
   const deadline = faq.find((q) => q.id === SPONSORSHIP_FAQ_ID)?.calculated?.[0];
-  return deadline
-    ? `Date limite de dépôt des parrainages : ${calculatedDateText(deadline)} (date calculée, à confirmer par le décret de convocation).`
-    : null;
+  return deadline ? CANDIDATES_COPY.deadlineNote(calculatedDateText(deadline)) : null;
 }
 
 /** Règle d'affichage, identique pour tous les candidats. */
 export const candidatesRule = (lastVerified: string): string =>
-  `Candidatures déclarées ou annoncées publiquement, attestées par au moins deux sources ; mise à jour le ${formatLongDate(lastVerified)}.`;
+  CANDIDATES_COPY.rule(formatLongDate(lastVerified));
 
 /** « Retrait le 7 juillet 2026 » ou, si seul le mois est établi, « Retrait en septembre 2026 ». */
 export const withdrawalLabel = (date: string): string =>
-  `Retrait ${/^\d{4}-\d{2}$/.test(date) ? 'en' : 'le'} ${formatPartialDate(date)}`;
+  CANDIDATES_COPY.withdrawal(/^\d{4}-\d{2}$/.test(date) ? 'en' : 'le', formatPartialDate(date));

@@ -1,5 +1,6 @@
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
 import type { CorrectionEntry } from '@/src/programmes/models/corrections/corrections.model';
+import { keyIdeasNote } from '@/src/programmes/models/key-ideas.copy';
 import { emptyThemes, partyFactory } from '@/src/programmes/models/party.factory';
 import type {
   Candidacy,
@@ -197,12 +198,23 @@ describe('Feature: « Ce qu’il propose »', () => {
     expect(first.relatedStances).toEqual([{ questionId: 'q1', label: 'Impôt minimum', stance: 2 }]);
   });
 
-  it('should show the section for none of the parties when one idea is below the threshold', () => {
+  it('should keep the section for the other parties when one party has fewer than 2 verified ideas', () => {
     const weak = partyOf('beta', 'Beta');
-    weak.candidacies[ELECTION].themes.economie.measures = [{ text: 'M', sources: [programme] }];
+    for (const theme of ['economie', 'travail', 'immigration'] as const)
+      weak.candidacies[ELECTION].themes[theme].measures = [{ text: 'M', sources: [programme] }];
     const catalog = catalogOf([partyOf('alpha', 'Alpha'), weak]);
-    expect(vmOf(catalog, 'alpha').keyIdeas).toBeNull();
+    expect(vmOf(catalog, 'alpha').keyIdeas?.items).toHaveLength(4);
     expect(vmOf(catalog, 'beta').keyIdeas).toBeNull();
+  });
+
+  it('should show only the verified ideas, with the common note stating their number', () => {
+    const partial = partyOf('beta', 'Beta');
+    for (const theme of ['economie', 'travail'] as const)
+      partial.candidacies[ELECTION].themes[theme].measures = [{ text: 'M', sources: [programme] }];
+    const catalog = catalogOf([partyOf('alpha', 'Alpha'), partial]);
+    expect(vmOf(catalog, 'beta').keyIdeas?.items).toHaveLength(2);
+    expect(vmOf(catalog, 'beta').keyIdeas?.note).toBe(keyIdeasNote(2));
+    expect(vmOf(catalog, 'alpha').keyIdeas?.note).toBeNull();
   });
 
   it('should leave the state of the programme to the notice, never repeat it above the ideas', () => {

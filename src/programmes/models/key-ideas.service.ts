@@ -96,12 +96,9 @@ export const nextPartyInJourney = (parties: Party[], currentId: string): Party =
   return ordered[(index + 1) % ordered.length];
 };
 
+/** Une fiche montre de 2 à 4 idées clés : chacune recoupée, de thèmes distincts. */
+export const KEY_IDEAS_MIN = 2;
 export const KEY_IDEAS_COUNT = 4;
-
-const hasFourVerifiedIdeas = (party: Party, electionId: string) =>
-  party.keyIdeas.length === KEY_IDEAS_COUNT &&
-  new Set(party.keyIdeas.map((idea) => keyIdeaTheme(idea))).size === KEY_IDEAS_COUNT &&
-  party.keyIdeas.every((idea) => isKeyIdeaVerified(party, electionId, idea));
 
 /**
  * Les idées clés se tirent des mesures du programme 2027 : un parti dont le programme n'est pas
@@ -110,14 +107,21 @@ const hasFourVerifiedIdeas = (party: Party, electionId: string) =>
 export const hasKeyIdeas = (party: Party, electionId: string): boolean =>
   party.candidacies[electionId]?.programmeState !== 'non-publie';
 
+/** Les idées affichées : seulement celles qui sont recoupées (charte, règle 11), jamais les autres. */
+export const displayedKeyIdeas = (party: Party, electionId: string): KeyIdea[] =>
+  hasKeyIdeas(party, electionId)
+    ? party.keyIdeas.filter((idea) => isKeyIdeaVerified(party, electionId, idea))
+    : [];
+
 /**
- * Même gabarit, même règle pour tous : « Ce qu'il propose » n'est affiché que si chaque parti dont le
- * programme 2027 est publié (en tout ou partie) a 4 idées de 4 thèmes différents, toutes recoupées.
- * Sinon, pour aucun ; les partis sans programme publié montrent la mention à la place.
+ * Même règle pour tous, décidée parti par parti : « Ce qu'il propose » s'affiche si le parti a de 2 à
+ * 4 idées recoupées de thèmes distincts. En dessous de 2, la rubrique manque à ce parti seulement.
  */
-export const hasKeyIdeasSection = (parties: Party[], electionId: string): boolean => {
-  const concerned = parties.filter((party) => hasKeyIdeas(party, electionId));
+export const hasKeyIdeasSection = (party: Party, electionId: string): boolean => {
+  const ideas = displayedKeyIdeas(party, electionId);
   return (
-    concerned.length > 0 && concerned.every((party) => hasFourVerifiedIdeas(party, electionId))
+    ideas.length >= KEY_IDEAS_MIN &&
+    ideas.length <= KEY_IDEAS_COUNT &&
+    new Set(ideas.map((idea) => keyIdeaTheme(idea))).size === ideas.length
   );
 };

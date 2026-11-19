@@ -65,7 +65,7 @@ describe('Feature: liste des votes', () => {
 
   it('should recall article 49, alinéa 3, with its source', () => {
     expect(vm().article493).toMatchObject({
-      text: expect.stringContaining("Il n'y a donc pas de vote final"),
+      text: expect.stringContaining("Un texte adopté ainsi n'a pas de vote final"),
       sourceUrl: expect.stringContaining('conseil-constitutionnel.fr'),
     });
   });

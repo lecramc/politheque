@@ -190,9 +190,10 @@ Elles complètent les règles ci-dessus et portent sur tous les champs texte aff
 11. **Idées clés** (`keyIdeas`, bloc « Ce qu'il propose » de l'onglet « En bref »). C'est le seul endroit
     d'une fiche où l'on choisit ; le choix est encadré par les règles suivantes, appliquées de la même
     façon aux dix partis.
-    - **Même gabarit, même nombre, même règle** : exactement 4 idées par parti, dans 4 thèmes
-      différents. Si une fiche n'a pas 4 idées valides, le bloc n'est affiché pour aucun parti (il
-      existe pour les dix ou pour aucun).
+    - **Même gabarit, même règle** : de 2 à 4 idées par parti, chacune recoupée (voir « Sources »),
+      dans des thèmes différents. Seules les idées recoupées sont affichées. Un parti dont le programme
+      est publié (en tout ou partie) mais qui a moins de 2 idées recoupées n'a pas le bloc, sans que
+      cela le retire aux autres. Sous 4 idées, une phrase commune indique le nombre d'idées recoupées.
     - **Matière** : uniquement des mesures déjà présentes dans `candidacies.presidentielle-2027.themes`
       (`measureRefs`). Aucune reformulation n'ajoute un chiffre, une date ou une mesure.
     - **Formulation dans les termes du parti** : titre de 60 caractères au plus, au verbe à
@@ -203,7 +204,7 @@ Elles complètent les règles ci-dessus et portent sur tous les champs texte aff
       d'après la fiche (« premier acte », « question centrale », thèmes « mis en avant », titre du
       programme) ; sinon une mesure liée à une question où sa position est explicite (`±2`) ; à
       égalité, la source la plus forte (règle 2), puis la plus récente.
-    - **Ordre** : les 4 idées sont toujours triées dans l'ordre fixe des thèmes du site
+    - **Ordre** : les idées sont toujours triées dans l'ordre fixe des thèmes du site
       (`themes.json`), identique pour tous les partis. Pas de numéro, pas de classement : l'ordre ne dit
       rien du parti.
     - **Sources** : au moins 2 sources de domaines enregistrables distincts, dont au moins une

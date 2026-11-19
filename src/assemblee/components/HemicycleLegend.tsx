@@ -6,6 +6,7 @@ import { Text } from '@/components/Themed';
 import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import type { LegendEntry } from '@/src/assemblee/models/hemicycle-legend';
+import { Only } from '@/src/core/components/Only';
 
 /**
  * Légende : les formes (le vote), puis une ligne pour la couleur (le groupe). Quatre entrées (pour, contre, abstention, n'a pas voté), deux
@@ -36,6 +37,16 @@ export function HemicycleLegend({ entries }: { entries: LegendEntry[] }) {
       <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
         {COPY.legend.groupColors}
       </Text>
+      <Only from="md">
+        <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+          {COPY.hemicycle.labelsWide}
+        </Text>
+      </Only>
+      <Only below="md">
+        <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+          {COPY.hemicycle.labelsSmall}
+        </Text>
+      </Only>
     </View>
   );
 }

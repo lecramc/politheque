@@ -52,8 +52,12 @@ export function MajorVotesGrid({ grid }: { grid: Grid }) {
           </View>
         ))}
       </View>
+      {/* Zone défilante : nom accessible et accès au clavier (flèches) pour voir toutes les colonnes. */}
       <ScrollView
         horizontal
+        role="region"
+        aria-label={grid.caption}
+        tabIndex={0}
         contentContainerStyle={{ minWidth: '100%' }}
         style={{
           borderWidth: 1,

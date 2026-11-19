@@ -213,4 +213,12 @@ describe('Feature: retrouver un député choisi par sa circonscription', () => {
     expect(found.rows).toEqual([]);
     expect(found.emptyLabel).toBe("Ce député ne siégeait pas à l'Assemblée lors de ce vote.");
   });
+
+  it('should not claim the deputy was absent when another filter hides them', () => {
+    const present = rows.find((r) => r.id === 'PA1')!;
+    const other = (['C', 'P', 'N', 'A'] as const).find((v) => v !== present.vote)!;
+    const found = deputySearch(rows, { ...none, depute: 'PA1', vote: other }, false);
+    expect(found.rows).toEqual([]);
+    expect(found.emptyLabel).toBe('Aucun député ne correspond à ces critères.');
+  });
 });

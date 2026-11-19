@@ -10,8 +10,9 @@ import type { AppDispatch } from '@/src/core/store/create-store';
 import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
 import { emptyCatalog } from '@/src/programmes/models/empty-catalog';
 import { etiquetteDetail, labelLines } from '@/src/programmes/models/etiquettes.service';
+import { keyIdeasNote } from '@/src/programmes/models/key-ideas.copy';
 import {
-  hasKeyIdeas,
+  displayedKeyIdeas,
   hasKeyIdeasSection,
   keyIdeaMeasureSources,
   keyIdeaOrigin,
@@ -95,14 +96,11 @@ export const partyViewModel =
         const themeTitle = (id: ThemeId) => catalog?.themes.find((t) => t.id === id)?.title ?? id;
         const questionById = (id: string) => catalog?.questions.find((q) => q.id === id);
         const keyIdeas =
-          party &&
-          catalog &&
-          featured &&
-          hasKeyIdeas(party, featured.id) &&
-          hasKeyIdeasSection(catalog.parties, featured.id)
+          party && catalog && featured && hasKeyIdeasSection(party, featured.id)
             ? {
+                note: keyIdeasNote(displayedKeyIdeas(party, featured.id).length),
                 items: sortKeyIdeasByTheme(
-                  party.keyIdeas,
+                  displayedKeyIdeas(party, featured.id),
                   catalog.themes.map((t) => t.id)
                 ).map((idea) => {
                   const sources = keyIdeaSources(party, featured.id, idea);

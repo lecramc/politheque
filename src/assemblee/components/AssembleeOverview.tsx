@@ -7,7 +7,9 @@ import { TextLink } from '@/components/ui/TextLink';
 import { CompositionChart } from '@/src/assemblee/components/CompositionChart';
 import { GroupSwatch } from '@/src/assemblee/components/GroupSwatch';
 import { MajorVotesGrid } from '@/src/assemblee/components/MajorVotesGrid';
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { assembleeOverviewViewModel } from '@/src/assemblee/view-models/assemblee-overview.view-model';
+import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Card } from '@/src/programmes/components/Card';
 
@@ -79,6 +81,12 @@ export function AssembleeOverview() {
           </View>
           {vm.sitting.vacant ? <Text style={small}>{vm.sitting.vacant}</Text> : null}
           <Text style={small}>{vm.sitting.note}</Text>
+          <Only from="md">
+            <Text style={small}>{COPY.hemicycle.labelsWide}</Text>
+          </Only>
+          <Only below="md">
+            <Text style={small}>{COPY.hemicycle.labelsSmall}</Text>
+          </Only>
         </View>
       ) : null}
 

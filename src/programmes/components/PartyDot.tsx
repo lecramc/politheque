@@ -25,6 +25,7 @@ export function PartyDot({
   const outline = useMarkOutline(color);
   return (
     <View
+      aria-hidden
       style={[
         styles.disc,
         registerStyle({

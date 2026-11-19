@@ -19,10 +19,12 @@ import { editorialIssues } from '@/src/programmes/models/editorial-vocabulary';
 import { splitIdeals } from '@/src/programmes/models/ideals.service';
 import { JOURNEY_GUIDE_IDS } from '@/src/programmes/models/journey.model';
 import {
+  displayedKeyIdeas,
   hasKeyIdeas,
   hasKeyIdeasSection,
   isKeyIdeaVerified,
   KEY_IDEAS_COUNT,
+  KEY_IDEAS_MIN,
   keyIdeaSources,
   keyIdeaTheme,
 } from '@/src/programmes/models/key-ideas.service';
@@ -496,25 +498,24 @@ describe('Feature: intégrité des idées clés, des libellés courts et de l’
 
   describe('Feature: key ideas section (charter, rule 11)', () => {
     // Un parti sans programme 2027 publié ne montre pas d'idées clés (mention à la place) : il ne compte pas.
-    const incompleteParties = PARTIES.filter(
-      (party) =>
-        hasKeyIdeas(party, ELECTION) &&
-        (party.keyIdeas.length !== KEY_IDEAS_COUNT ||
-          !party.keyIdeas.every((idea) => isKeyIdeaVerified(party, ELECTION, idea)))
-    );
+    const concerned = PARTIES.filter((party) => hasKeyIdeas(party, ELECTION));
 
-    it('should show the key ideas section only if all parties have exactly 4 verified ideas', () => {
-      expect(hasKeyIdeasSection(PARTIES, ELECTION)).toBe(incompleteParties.length === 0);
+    it('should show the section to every party with a published programme, with 2 to 4 verified ideas', () => {
+      for (const party of concerned) {
+        expect(displayedKeyIdeas(party, ELECTION).length, party.id).toBeGreaterThanOrEqual(
+          KEY_IDEAS_MIN
+        );
+        expect(hasKeyIdeasSection(party, ELECTION), party.id).toBe(true);
+      }
     });
 
-    it('should hide the key ideas section while some parties are incomplete', () => {
-      const names = incompleteParties.map(
-        (p) => `${p.id} (${p.keyIdeas.length}/${KEY_IDEAS_COUNT})`
-      );
-      expect(
-        hasKeyIdeasSection(PARTIES, ELECTION),
-        `Section masquée, partis incomplets : ${names.join(', ')}`
-      ).toBe(incompleteParties.length === 0);
+    it('should publish only verified ideas: no declared idea is silently dropped', () => {
+      for (const party of concerned) {
+        expect(displayedKeyIdeas(party, ELECTION), party.id).toHaveLength(party.keyIdeas.length);
+        for (const idea of party.keyIdeas) {
+          expect(isKeyIdeaVerified(party, ELECTION, idea), `${party.id}/${idea.id}`).toBe(true);
+        }
+      }
     });
   });
 

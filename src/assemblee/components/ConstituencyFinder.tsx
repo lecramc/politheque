@@ -5,10 +5,10 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextInput } from '@/components/ui/TextInput';
-import { TextLink } from '@/components/ui/TextLink';
 import { ChoiceRow } from '@/src/assemblee/components/ChoiceRow';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import type { HemicycleView } from '@/src/assemblee/view-models/scrutin.view-model';
+import { ExternalLink } from '@/src/programmes/components/ExternalLink';
 
 type Ready = Extract<HemicycleView, { status: 'ready' }>;
 
@@ -136,7 +136,7 @@ export function ConstituencyFinder({
 
       <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
         {COPY.constituency.help}{' '}
-        <TextLink href={COPY.constituency.helpUrl}>{COPY.constituency.helpLink}</TextLink>
+        <ExternalLink href={COPY.constituency.helpUrl}>{COPY.constituency.helpLink}</ExternalLink>
       </Text>
       <Text style={{ fontSize: 13, lineHeight: 19, color: colors.text.secondary }}>
         {COPY.constituency.privacy}

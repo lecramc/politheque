@@ -29,7 +29,8 @@ export function ElectionChip() {
         aria-current={active ? 'page' : undefined}
         hoverStyle={{ backgroundColor: colors.surface.hover }}
         style={{
-          minHeight: 36,
+          // 44 px : cible tactile minimale.
+          minHeight: 44,
           // Largeur réservée : « 2027 » (statique) devient « 2027 · J-n » sans décaler la navigation.
           minWidth: CHIP_MIN_WIDTH,
           alignItems: 'center',

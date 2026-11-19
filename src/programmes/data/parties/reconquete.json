@@ -17,32 +17,18 @@
   },
   "keyIdeas": [
     {
-      "id": "economiser-140-milliards-par-an",
-      "title": "Économiser 140 milliards d'euros par an",
-      "text": "Réaliser « au minimum » 140 milliards d'euros d'économies par an, selon le chiffrage « Budget 2027 » publié par Sarah Knafo.",
-      "measureRefs": [],
+      "id": "supprimer-la-csg",
+      "title": "Supprimer la CSG",
+      "text": "Supprimer la CSG, présentée comme « 10 % de hausse de revenus pour tous les actifs », dans sa priorité « Dépenser moins pour taxer moins ».",
+      "measureRefs": ["economie.0"],
       "relatedQuestionIds": ["q02-depenses"]
     },
     {
-      "id": "supprimer-le-regroupement-familial",
-      "title": "Supprimer le regroupement familial",
-      "text": "Supprimer le regroupement familial et limiter l'asile à une centaine de personnes par an (programme de 2022) ; Éric Zemmour défend la « remigration ».",
-      "measureRefs": [],
+      "id": "arreter-l-immigration-legale-et-illegale",
+      "title": "Arrêter l'immigration légale et illégale",
+      "text": "Viser l'« immigration négative » : arrêter l'immigration légale et illégale et « remigrer » les étrangers en situation irrégulière, délinquants et chômeurs de longue durée.",
+      "measureRefs": ["immigration.0", "immigration.1"],
       "relatedQuestionIds": ["q07-immigration"]
-    },
-    {
-      "id": "construire-au-moins-14-reacteurs-epr2",
-      "title": "Construire au moins 14 réacteurs EPR2",
-      "text": "Construire au moins 14 nouveaux réacteurs EPR2 d'ici 2050 (programme de 2022).",
-      "measureRefs": [],
-      "relatedQuestionIds": ["q12-nucleaire"]
-    },
-    {
-      "id": "faire-primer-les-lois-nationales-sur-les-traites",
-      "title": "Faire primer les lois nationales sur les traités",
-      "text": "Réviser l'article 55 de la Constitution pour que les lois nationales nouvelles priment sur les textes internationaux antérieurs (programme de 2022).",
-      "measureRefs": [],
-      "relatedQuestionIds": ["q19-droit-europeen"]
     }
   ],
   "lastVerified": "2026-11-03",
@@ -1102,7 +1088,7 @@
       "candidateName": "Éric Zemmour",
       "status": "declare",
       "statusLabel": "Candidat déclaré",
-      "candidate": "Éric Zemmour a officialisé sa candidature le 10 novembre 2026 au journal de 20 heures de TF1 (20 Minutes avec AFP, 10 novembre 2026 ; La Dépêche du Midi, 11 novembre 2026), après avoir annoncé le 17 septembre 2026 sur BFMTV : « Je serai candidat à l'élection présidentielle » (LCP, 17 septembre 2026).",
+      "candidate": "Éric Zemmour a officialisé sa candidature le 10 novembre 2026 au journal de 20 heures de TF1 (20 Minutes avec AFP, 10 novembre 2026 ; La Dépêche du Midi, 11 novembre 2026), après avoir annoncé le 17 septembre 2026 sur BFMTV : « Je serai candidat à l'élection présidentielle » (LCP, 17 septembre 2026) ; Public Sénat précisait alors qu'il ne s'agissait « pas encore d'une déclaration de candidature officielle » (18 septembre 2026).",
       "candidateDate": "2026-11-10",
       "candidateSummary": "Éric Zemmour a officialisé sa candidature le 10 novembre 2026 au journal de 20 heures de TF1, après avoir annoncé le 17 septembre 2026 sur BFMTV qu'il serait candidat.",
       "candidateSources": [
@@ -1131,23 +1117,31 @@
           "kind": "presse"
         }
       ],
-      "programmeStatus": "Programme présidentiel 2027 non publié au 10 novembre 2026 ; aucune date de publication n'est annoncée. Une consultation, « Le programme pour la France », est ouverte sans date de clôture. Les positions de la fiche s'appuient sur le programme présidentiel 2022, le chiffrage « Budget 2027 » publié par Sarah Knafo et les déclarations d'Éric Zemmour, datés.",
-      "programmeState": "non-publie",
+      "programmeStatus": "Programme présidentiel 2027 publié en partie : cinq priorités détaillées sur le site de campagne ericzemmour.fr (« L'immigration négative, maintenant ! », « Préférence nationale : Français d'abord », « Fin du laxisme : retour à l'ordre », « Dépenser moins pour taxer moins », « Une meilleure école pour vos enfants »), sans date affichée, en ligne au plus tard le 10 novembre 2026 d'après les archives d'Internet. Aucune date n'est annoncée pour le programme complet ; une consultation, « Le programme pour la France », est ouverte sans date de clôture. Les positions de la fiche s'appuient aussi sur le programme présidentiel 2022, le chiffrage « Budget 2027 » publié par Sarah Knafo et les déclarations d'Éric Zemmour, datés.",
+      "programmeState": "partiel",
+      "programmeStateDetail": "cinq priorités",
       "officialSite": "https://www.ericzemmour.fr/",
+      "programmeUrl": "https://www.ericzemmour.fr/priorites",
       "programmePublication": {
-        "text": "Cinq priorités publiées sur son site de campagne ; programme complet non publié (vérifié le 16 novembre 2026).",
-        "date": null,
+        "text": "Publié en partie : cinq priorités détaillées sur le site de campagne, en ligne au plus tard le 10 novembre 2026 (d'après les archives d'Internet) ; programme complet sans date annoncée.",
+        "date": "2026-11-10",
         "sources": [
           {
-            "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour (consulté le 16 novembre 2026)",
+            "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour (consulté le 19 novembre 2026)",
             "url": "https://www.ericzemmour.fr/priorites",
-            "date": "2026-11-16",
+            "date": "2026-11-19",
             "kind": "programme"
           },
           {
-            "title": "Éric Zemmour officialise sa candidature à la présidentielle 2027 (Public Sénat)",
-            "url": "https://www.publicsenat.fr/actualites/politique/eric-zemmour-officialise-sa-candidature-a-la-presidentielle-2027",
-            "date": "2026-09-18",
+            "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour, copie du 10 novembre 2026 (archives d'Internet, Wayback Machine)",
+            "url": "https://web.archive.org/web/20261110195916/https://www.ericzemmour.fr/priorites",
+            "date": "2026-11-10",
+            "kind": "programme"
+          },
+          {
+            "title": "Présidentielle 2027 : Eric Zemmour officialise sa candidature, le président de Reconquête veut « conserver une France française » (La Dépêche du Midi)",
+            "url": "https://www.ladepeche.fr/2026/11/11/presidentielle-2027-eric-zemmour-officialise-sa-candidature-le-president-de-reconquete-veut-conserver-une-france-francaise-13646887.php",
+            "date": "2026-11-11",
             "kind": "presse"
           },
           {
@@ -1160,32 +1154,209 @@
       },
       "themes": {
         "economie": {
-          "summary": "",
-          "measures": []
+          "summary": "Sa priorité « Dépenser moins pour taxer moins » réunit trois baisses de prélèvements : CSG, taxes sur les carburants, droits de succession et impôt sur la fortune.",
+          "measures": [
+            {
+              "text": "Supprimer la CSG, présentée comme « 10 % de hausse de revenus pour tous les actifs ».",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Baisser de 40 centimes les taxes sur les carburants.",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Mettre fin aux droits de succession et à l'impôt sur la fortune.",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "travail": {
           "summary": "",
           "measures": []
         },
         "immigration": {
-          "summary": "",
-          "measures": []
+          "summary": "Deux de ses cinq priorités portent sur l'immigration : « L'immigration négative, maintenant ! » et « Préférence nationale : Français d'abord ».",
+          "measures": [
+            {
+              "text": "Arrêter l'immigration légale et illégale en « reprenant le contrôle de nos frontières », au nom de l'« immigration négative ».",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Eric Zemmour officialise sa candidature, le président de Reconquête veut « conserver une France française » (La Dépêche du Midi)",
+                  "url": "https://www.ladepeche.fr/2026/11/11/presidentielle-2027-eric-zemmour-officialise-sa-candidature-le-president-de-reconquete-veut-conserver-une-france-francaise-13646887.php",
+                  "date": "2026-11-11",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "« Remigrer » les étrangers en situation irrégulière, délinquants et chômeurs de longue durée.",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                },
+                {
+                  "title": "Présidentielle 2027 : Eric Zemmour officialise sa candidature, le président de Reconquête veut « conserver une France française » (La Dépêche du Midi)",
+                  "url": "https://www.ladepeche.fr/2026/11/11/presidentielle-2027-eric-zemmour-officialise-sa-candidature-le-president-de-reconquete-veut-conserver-une-france-francaise-13646887.php",
+                  "date": "2026-11-11",
+                  "kind": "presse"
+                },
+                {
+                  "title": "Présidentielle 2027 : Éric Zemmour officialise sa candidature à l'Élysée (20 Minutes, AFP)",
+                  "url": "https://www.20minutes.fr/politique/4262075-20261110-presidentielle-2027-eric-zemmour-officialise-candidature",
+                  "date": "2026-11-10",
+                  "kind": "presse"
+                }
+              ]
+            },
+            {
+              "text": "Réserver aux Français les aides sociales non contributives, les allocations familiales et le logement social (« Préférence nationale : Français d'abord »).",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Supprimer l'aide médicale de l'État (AME).",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "securite": {
-          "summary": "",
-          "measures": []
+          "summary": "Sa priorité « Fin du laxisme : retour à l'ordre » porte sur les peines et les prisons.",
+          "measures": [
+            {
+              "text": "Instaurer des peines plancher et une « loi anti-casseurs ».",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Mettre fin aux aménagements de peine et à « l'excuse de minorité ».",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Prélever les amendes sur les salaires et les aides sociales.",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Construire 100 000 places de prison en 24 mois.",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "ecologie": {
           "summary": "",
           "measures": []
         },
         "sante": {
-          "summary": "",
-          "measures": []
+          "summary": "Une mesure de santé figure dans sa priorité « Préférence nationale : Français d'abord ».",
+          "measures": [
+            {
+              "text": "Agir contre les déserts médicaux pour faciliter l'accès aux soins et « rendre le pouvoir aux soignants à l'hôpital ».",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "education": {
-          "summary": "",
-          "measures": []
+          "summary": "Sa priorité « Une meilleure école pour vos enfants » vise à « rétablir l'exigence, le mérite et la transmission ».",
+          "measures": [
+            {
+              "text": "Mettre fin au collège unique et instaurer des « examens exigeants à chaque cycle ».",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            },
+            {
+              "text": "Replacer les « savoirs fondamentaux » au cœur de l'école et « chasser l'idéologie ».",
+              "sources": [
+                {
+                  "title": "« Nos priorités pour les Français », site de campagne d'Éric Zemmour",
+                  "url": "https://www.ericzemmour.fr/priorites",
+                  "date": "2026-11",
+                  "kind": "programme"
+                }
+              ]
+            }
+          ]
         },
         "europe": {
           "summary": "",

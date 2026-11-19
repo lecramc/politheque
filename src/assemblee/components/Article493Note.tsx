@@ -3,7 +3,7 @@ import { View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
-import { TextLink } from '@/components/ui/TextLink';
+import { ExternalLink } from '@/src/programmes/components/ExternalLink';
 
 export type Article493 = { text: string; sourceLabel: string; sourceUrl: string };
 
@@ -21,9 +21,9 @@ export function Article493Note({ note }: { note: Article493 }) {
       }}
     >
       <Text style={{ fontSize: 16, lineHeight: 24 }}>{note.text}</Text>
-      <TextLink href={note.sourceUrl} standalone>
+      <ExternalLink href={note.sourceUrl} standalone>
         {note.sourceLabel}
-      </TextLink>
+      </ExternalLink>
     </View>
   );
 }

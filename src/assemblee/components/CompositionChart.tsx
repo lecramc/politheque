@@ -1,16 +1,44 @@
 import React, { useState } from 'react';
-import { LayoutChangeEvent, useWindowDimensions, View } from 'react-native';
+import { LayoutChangeEvent, View } from 'react-native';
 import Svg, { Circle, G, Text as SvgText } from 'react-native-svg';
 
-import { layout as siteLayout } from '@/components/layout';
 import { useTheme } from '@/components/ThemeContext';
 import { GroupArcPath } from '@/src/assemblee/components/GroupArcPath';
+import { useCompactChart } from '@/src/assemblee/components/useCompactChart';
 import type { CompositionScene } from '@/src/assemblee/models/composition';
+import { useMarkOutline } from '@/src/core/hooks/useMarkOutline';
 import { paint } from '@/src/core/web/svg-paint';
 
 /** Taille des abréviations de groupe, en pixels réels (le schéma est mis à l'échelle). */
 const LABEL_PX = 12;
-const NARROW_BELOW = siteLayout.breakpoint.md;
+/** Contour d'un siège, en pixels réels : assez épais pour les couleurs pâles ou sombres. */
+const OUTLINE_PX = 1.5;
+
+/** Siège plein de la couleur du groupe, cerné selon `useMarkOutline` (plus marqué si la couleur se confond avec le fond). */
+function FilledSeat({
+  cx,
+  cy,
+  r,
+  color,
+  strokeWidth,
+}: {
+  cx: number;
+  cy: number;
+  r: number;
+  color: string;
+  strokeWidth: number;
+}) {
+  const outline = useMarkOutline(color);
+  return (
+    <Circle
+      cx={cx}
+      cy={cy}
+      r={r}
+      strokeWidth={strokeWidth}
+      {...paint({ fill: color, stroke: outline })}
+    />
+  );
+}
 
 /**
  * Hémicycle de la composition actuelle : mêmes arcs et mêmes abréviations que l'hémicycle d'un
@@ -20,14 +48,13 @@ const NARROW_BELOW = siteLayout.breakpoint.md;
  */
 export function CompositionChart({ scene, label }: { scene: CompositionScene; label: string }) {
   const { colors, fonts } = useTheme();
-  const { width: screenWidth } = useWindowDimensions();
-  const compact = screenWidth < NARROW_BELOW;
+  const { compact, estimatedWidth } = useCompactChart();
   const box = compact ? scene.compactBox : scene.box;
-  // Estimation de départ proche de la largeur réelle (colonne de lecture, gouttières de 16 px) :
-  // si la mesure n'arrive pas après l'hydratation, les étiquettes gardent une taille juste.
-  const [width, setWidth] = useState(() => Math.max(280, Math.min(screenWidth - 32, 768)));
+  // Tant que la mesure n'est pas arrivée : largeur estimée, les étiquettes gardent une taille juste.
+  const [measured, setMeasured] = useState<number | null>(null);
+  const width = measured ?? estimatedWidth;
   const onLayout = (e: LayoutChangeEvent) => {
-    if (e.nativeEvent.layout.width > 0) setWidth(e.nativeEvent.layout.width);
+    if (e.nativeEvent.layout.width > 0) setMeasured(e.nativeEvent.layout.width);
   };
   const labelSize = LABEL_PX * (box.width / width);
 
@@ -45,13 +72,13 @@ export function CompositionChart({ scene, label }: { scene: CompositionScene; la
       >
         <G>
           {scene.seats.map((seat) => (
-            <Circle
+            <FilledSeat
               key={seat.place}
               cx={seat.x}
               cy={seat.y}
               r={scene.layout.seatRadius * 0.9}
-              strokeWidth={0.006}
-              {...paint({ fill: seat.color, stroke: colors.surface.border.tertiary })}
+              color={seat.color}
+              strokeWidth={OUTLINE_PX * (box.width / width)}
             />
           ))}
         </G>

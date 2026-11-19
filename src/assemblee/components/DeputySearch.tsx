@@ -1,5 +1,5 @@
-import React, { useMemo, useState } from 'react';
-import { View } from 'react-native';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { Text as RNText, View } from 'react-native';
 
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
@@ -34,6 +34,13 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
   const [sheetOpen, setSheetOpen] = useState(false);
   const [depute, setDepute] = useState<string | null>(null);
   const [finderOpen, setFinderOpen] = useState(false);
+
+  // Après le choix d'un député dans la liste du département, le focus va au résultat (le champ de
+  // recherche du département vient de disparaître : sans cela il retombe sur la page).
+  const resultRef = useRef<RNText>(null);
+  useEffect(() => {
+    if (depute !== null) resultRef.current?.focus?.();
+  }, [depute]);
 
   const result = useMemo(
     () => view.search({ recherche, groupe, vote, depute }, requested),
@@ -82,6 +89,8 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
           onPick={(id) => {
             setDepute(id);
             setRecherche('');
+            setGroupe(null);
+            setVote(null);
             setFinderOpen(false);
           }}
         />
@@ -89,7 +98,12 @@ export function DeputySearch({ view, order }: { view: Ready; order: GroupeOrder 
 
       {result.visible ? (
         <>
-          <Text aria-live="polite" style={{ fontSize: 14, color: colors.text.secondary }}>
+          <Text
+            ref={resultRef}
+            tabIndex={-1}
+            aria-live="polite"
+            style={{ fontSize: 14, color: colors.text.secondary }}
+          >
             {result.countLabel}
           </Text>
           {result.rows.length === 0 ? (

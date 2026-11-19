@@ -40,29 +40,33 @@ export function PartyAssembleeCard({ panel }: { panel: PartyAssembleePanel }) {
         {`${panel.note} ${panel.updatedLine}`}
       </Text>
       {panel.votes.length > 0 ? (
-        <View role="list" aria-label={panel.votesLabel} style={{ gap: effects.spacing.sm }}>
+        <View style={{ gap: effects.spacing.sm }}>
           <Text variant="label">{panel.votesTitle}</Text>
-          {panel.votes.map((vote) => (
-            <View
-              key={vote.numero}
-              role="listitem"
-              style={{ gap: effects.spacing.xxs, paddingTop: effects.spacing.xs }}
-            >
-              <View style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}>
-                {vote.position.glyph ? <VoteGlyph glyph={vote.position.glyph} size={18} /> : null}
-                {!vote.position.glyph && vote.position.symbol ? (
-                  <Text aria-hidden style={{ fontSize: 16, lineHeight: 18 }}>
-                    {vote.position.symbol}
-                  </Text>
-                ) : null}
-                <Text style={{ ...fonts.bold, fontSize: 15 }}>{vote.position.label}</Text>
+          <View role="list" aria-label={panel.votesLabel} style={{ gap: effects.spacing.sm }}>
+            {panel.votes.map((vote) => (
+              <View
+                key={vote.numero}
+                role="listitem"
+                style={{ gap: effects.spacing.xxs, paddingTop: effects.spacing.xs }}
+              >
+                <View
+                  style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
+                >
+                  {vote.position.glyph ? <VoteGlyph glyph={vote.position.glyph} size={18} /> : null}
+                  {!vote.position.glyph && vote.position.symbol ? (
+                    <Text aria-hidden style={{ fontSize: 16, lineHeight: 18 }}>
+                      {vote.position.symbol}
+                    </Text>
+                  ) : null}
+                  <Text style={{ ...fonts.bold, fontSize: 15 }}>{vote.position.label}</Text>
+                </View>
+                <TextLink href={vote.href}>{vote.title}</TextLink>
+                <Text style={{ fontSize: 13, color: colors.text.secondary }}>
+                  {`${vote.date} · ${vote.resultat}`}
+                </Text>
               </View>
-              <TextLink href={vote.href}>{vote.title}</TextLink>
-              <Text style={{ fontSize: 13, color: colors.text.secondary }}>
-                {`${vote.date} · ${vote.resultat}`}
-              </Text>
-            </View>
-          ))}
+            ))}
+          </View>
         </View>
       ) : null}
       <TextLink href={panel.all.href} standalone>

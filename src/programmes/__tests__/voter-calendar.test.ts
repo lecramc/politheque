@@ -52,6 +52,23 @@ describe('Feature: dates clés à l’agenda', () => {
     expect(new Set(events.map((e) => e.uid)).size).toBe(events.length);
   });
 
+  it('should keep the same id for an event when the order of the dates changes', () => {
+    const election = catalog.elections.find((e) => e.id === catalog.voter.electionId)!;
+    const reordered = {
+      ...catalog.voter,
+      sections: catalog.voter.sections.map((section) => ({
+        ...section,
+        calculated: [...(section.calculated ?? [])].reverse(),
+      })),
+    };
+    const reversedElection = { ...election, rounds: [...election.rounds].reverse() };
+    const idOf = (list: typeof events) => new Map(list.map((e) => [e.title, e.uid]));
+    expect(idOf(voterCalendarEvents(reversedElection, reordered, 'https://x.test/voter'))).toEqual(
+      idOf(events)
+    );
+    for (const e of events) expect(e.uid).toContain(e.date);
+  });
+
   it('should build events from the election and the voter guide', () => {
     const election = catalog.elections.find((e) => e.id === catalog.voter.electionId)!;
     expect(voterCalendarEvents(election, catalog.voter, 'https://x.test/voter')).toHaveLength(4);

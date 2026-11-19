@@ -121,4 +121,27 @@ describe('Feature: textes de l’interface Assemblée', () => {
       "de la gauche à la droite de l'hémicycle, selon le plan officiel de l'Assemblée"
     );
   });
+
+  it('should describe both rules of the shared position in the grid: ordinary votes and censure motions', () => {
+    expect(COPY.overview.grid.shared).toContain('pour un vote ordinaire');
+    expect(COPY.overview.grid.shared).toContain('des députés du groupe qui ont voté');
+    expect(COPY.overview.grid.shared).toContain('motion de censure');
+    expect(COPY.overview.grid.shared).toContain('au moins la moitié de ses membres');
+    expect(COPY.overview.grid.note).not.toContain('qui ont voté');
+  });
+
+  it('should word the article 49.3 note so that it stays true next to a vote on a part of a finance bill', () => {
+    expect(COPY.notes.article493).toContain('Un texte adopté ainsi');
+    expect(COPY.notes.article493).not.toContain("Il n'y a donc pas de vote final sur ce texte");
+    expect(COPY.notes.article493).toContain('ont lieu normalement');
+  });
+
+  it('should only promise the written abbreviation where the diagram shows it, and point to the list on a small screen', () => {
+    expect(COPY.legend.groupColors).not.toContain('toujours écrit');
+    expect(COPY.overview.sitting.note).not.toContain('toujours écrit');
+    expect(COPY.hemicycle.labelsWide).toContain('autour du schéma');
+    expect(COPY.hemicycle.labelsSmall).toContain('petit écran');
+    expect(COPY.hemicycle.labelsSmall).toContain('liste des groupes');
+    expect(COPY.method.colors).not.toMatch(/le sigle est toujours écrit\.$/);
+  });
 });

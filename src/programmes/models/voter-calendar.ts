@@ -19,6 +19,20 @@ export interface VoterCalendar {
 
 const UID_DOMAIN = SITE_URL.replace(/^https?:\/\//, '');
 
+/**
+ * Identifiant stable d'un événement : dérivé de l'élection, du libellé et de la date, jamais de la
+ * position dans la liste (réordonner les données ne change aucun identifiant).
+ */
+const stableUid = (electionId: string, label: string, date: string): string => {
+  const slug = label
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+  return `${electionId}-${slug}-${date}@${UID_DOMAIN}`;
+};
+
 /** Dates déjà sourcées : tours de l'élection puis dates calculées du guide, par ordre de calendrier. */
 export function voterCalendarEvents(
   election: Election,
@@ -26,15 +40,15 @@ export function voterCalendarEvents(
   pageUrl: string
 ): CalendarEvent[] {
   const details = `${AGENDA_COPY.detailsPrefix} ${pageUrl}`;
-  const rounds = election.rounds.map((round, index) => ({
-    uid: `${election.id}-tour-${index + 1}@${UID_DOMAIN}`,
+  const rounds = election.rounds.map((round) => ({
+    uid: stableUid(election.id, round.label, round.date),
     date: round.date,
     title: `${election.title} : ${round.label}`,
     description: `${AGENDA_COPY.roundDescription} ${details}`,
   }));
   const calculated = voter.sections.flatMap((section) =>
-    (section.calculated ?? []).map((item, index) => ({
-      uid: `${election.id}-${section.id}-${index + 1}@${UID_DOMAIN}`,
+    (section.calculated ?? []).map((item) => ({
+      uid: stableUid(election.id, item.label, item.date),
       date: item.date,
       title: `${election.title} : ${item.label}`,
       description: `${AGENDA_COPY.calculatedPrefix} ${item.rule} ${details}`,
