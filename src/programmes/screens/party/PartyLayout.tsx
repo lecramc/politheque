@@ -54,6 +54,7 @@ export default function PartyLayout() {
               party={party}
               labels={vm.labels.lines}
               identityLine={vm.identityLine}
+              assemblee={vm.assembleeLine}
               compareHref={`/partis/comparer?a=${party.id}`}
               onOpenLabels={() => setLabelsOpen(true)}
             />
