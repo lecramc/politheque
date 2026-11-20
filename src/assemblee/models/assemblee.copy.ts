@@ -126,6 +126,37 @@ export const COPY = {
       'Les votes sur les amendements et sur les articles isolés, les motions de rejet rejetées et les autres motions de procédure ne sont pas repris.',
     abstentions: (count: number) => `${count} ${pluralize(count, 'abstention', 'abstentions')}`,
   },
+  /** « Les mots à connaître » : une phrase par mot, et l'entrée du lexique qui le développe. */
+  words: {
+    title: 'Les mots à connaître',
+    more: 'Lire la suite dans le lexique',
+    terms: [
+      {
+        term: 'Scrutin',
+        definition:
+          "Un scrutin est un vote ; à l'Assemblée, chaque vote public est enregistré député par député.",
+        lexiconId: 'scrutin-public',
+      },
+      {
+        term: 'Pour, contre, abstention',
+        definition:
+          'Un député peut approuver le texte (pour), le rejeter (contre) ou voter sans prendre parti (abstention).',
+        lexiconId: 'abstention',
+      },
+      {
+        term: 'Majorité absolue',
+        definition:
+          "C'est plus de la moitié des voix : 289 sièges sur 577 à l'Assemblée nationale.",
+        lexiconId: 'majorite-absolue',
+      },
+      {
+        term: 'Groupe',
+        definition:
+          'Un groupe réunit au moins 15 députés selon leurs affinités politiques, et ses membres votent souvent ensemble.',
+        lexiconId: 'groupe-parlementaire',
+      },
+    ],
+  },
   verdict: {
     threshold: (requis: number) => `Il fallait ${requis} voix pour l'adopter.`,
     censureHeadline: (adopte: boolean) =>
@@ -240,6 +271,7 @@ export const COPY = {
   },
   constituency: {
     open: 'Trouver mon député par département',
+    loading: 'Chargement de la liste des députés',
     close: 'Fermer',
     title: 'Mon député par département',
     search: 'Département (nom ou numéro)',

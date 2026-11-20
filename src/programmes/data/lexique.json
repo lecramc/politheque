@@ -930,5 +930,91 @@
       }
     ],
     "lastVerified": "2026-11-08"
+  },
+  {
+    "id": "abstention",
+    "term": "Abstention",
+    "definition": "À l'Assemblée nationale, s'abstenir est l'une des trois positions possibles d'un député, avec « pour » et « contre » : il vote, mais sans approuver ni rejeter le texte.",
+    "more": [
+      "Les députés ont le choix entre trois positions de vote : « pour », « contre » et « abstention »."
+    ],
+    "related": ["comment-une-loi-est-votee"],
+    "sources": [
+      {
+        "title": "Les votes à l'Assemblée nationale (fiche de synthèse)",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/les-votes-a-l-assemblee-nationale",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-20"
+  },
+  {
+    "id": "lecture",
+    "term": "Lecture (première lecture, lecture définitive)",
+    "definition": "Une lecture est l'examen d'un projet ou d'une proposition de loi par une assemblée. Un texte est examiné successivement par l'Assemblée nationale et le Sénat, parfois plusieurs fois : on parle de première, de deuxième lecture, etc.",
+    "more": [
+      "Quand les deux assemblées ne s'accordent pas, une commission mixte paritaire peut chercher un compromis. Sans accord, le texte peut faire l'objet d'une nouvelle lecture.",
+      "En cas de désaccord persistant, le Gouvernement peut demander à l'Assemblée nationale de statuer définitivement : c'est la lecture définitive."
+    ],
+    "related": ["comment-une-loi-est-votee"],
+    "sources": [
+      {
+        "title": "Lexique de l'Assemblée nationale (« Lecture » et « Commission mixte paritaire »)",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-20"
+  },
+  {
+    "id": "scrutin-public-solennel",
+    "term": "Scrutin public solennel",
+    "definition": "Un scrutin public solennel est un vote public dont la Conférence des présidents fixe le moment, en général pour le vote d'ensemble d'un texte important, afin que le plus grand nombre de députés soient présents.",
+    "more": [
+      "Ces votes ont généralement lieu le mardi après-midi, après les questions au Gouvernement (article 65-1 du Règlement de l'Assemblée nationale).",
+      "Dans un scrutin public, la position de chaque député est enregistrée et publiée, contrairement au vote à main levée."
+    ],
+    "related": ["comment-une-loi-est-votee"],
+    "sources": [
+      {
+        "title": "Les votes à l'Assemblée nationale (fiche de synthèse)",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/les-votes-a-l-assemblee-nationale",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      },
+      {
+        "title": "Lexique de l'Assemblée nationale (« Scrutin public »)",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-20"
+  },
+  {
+    "id": "scrutin-public",
+    "term": "Scrutin public (vote des députés)",
+    "definition": "Un scrutin public est un vote par voie électronique, demandé notamment par le Gouvernement, le président de séance, la commission saisie du texte ou un président de groupe. Contrairement au vote à main levée, ses résultats sont publiés au Journal officiel.",
+    "more": [
+      "Dans un scrutin public, la position de chaque député est enregistrée : « pour », « contre » ou « abstention »."
+    ],
+    "related": ["comment-une-loi-est-votee"],
+    "sources": [
+      {
+        "title": "Lexique de l'Assemblée nationale (« Scrutin public »)",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      },
+      {
+        "title": "Les votes à l'Assemblée nationale (fiche de synthèse)",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/les-votes-a-l-assemblee-nationale",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-20"
   }
 ]

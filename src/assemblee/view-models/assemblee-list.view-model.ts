@@ -3,6 +3,11 @@ import { createSelector } from 'reselect';
 import { ARTICLE_49_SOURCE_URL } from '@/src/assemblee/models/article-49-3';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import {
+  circonscriptionsOf,
+  departementChoices,
+  departements,
+} from '@/src/assemblee/models/constituencies';
+import {
   activeFilterCount,
   CATEGORIES,
   toScrutinFilters,
@@ -27,7 +32,10 @@ import { OFFICIAL_LIST_URL, sourceNote } from '@/src/assemblee/models/source-not
 import {
   selectAssembleeIndex,
   selectAssembleeManifest,
+  selectDeputes,
 } from '@/src/assemblee/store/assemblee.selector';
+import { loadDeputesUsecase } from '@/src/assemblee/usecases/load-deputes.usecase';
+import type { AppDispatch } from '@/src/core/store/create-store';
 import { formatLongDate } from '@/src/programmes/models/seo/dates';
 import { assembleeListMeta } from '@/src/programmes/models/seo/page-meta';
 
@@ -66,52 +74,77 @@ const toRow = (s: ScrutinSummary): ScrutinRow => ({
  * filtres (type de vote, résultat, année, titre) viennent de l'adresse, lue côté client ; ils
  * s'appliquent à toute la liste, pas à la page affichée. Aucun classement, aucun score.
  */
-export const assembleeListViewModel = () =>
-  createSelector([selectAssembleeIndex, selectAssembleeManifest], (index, manifest) => {
-    const all = index?.scrutins ?? [];
-    return {
-      status: index && manifest ? ('loaded' as const) : ('loading' as const),
-      meta: index ? assembleeListMeta(index) : null,
-      lead: COPY.list.lead,
-      warning: COPY.list.warning,
-      criteria: {
-        title: COPY.list.criteriaTitle,
-        lead: COPY.list.criteriaLead,
-        rules: COPY.method.rules,
-        excluded: COPY.list.criteriaExcluded,
-      },
-      article493: {
-        text: COPY.notes.article493,
-        sourceLabel: COPY.notes.article493Source,
-        sourceUrl: ARTICLE_49_SOURCE_URL,
-      },
-      officialListUrl: OFFICIAL_LIST_URL,
-      source: manifest ? sourceNote(manifest) : null,
-      years: yearsOf(all),
-      categories: CATEGORIES.filter((c) => all.some((s) => s.categorie === c)).map((id) => ({
-        id,
-        label: categoryLabel(id),
-        help: categoryHelp(id),
-      })),
-      /** « Filtrer » ou « Filtrer · 2 » : le nombre de filtres actifs de la feuille. */
-      filterButton: (filters: ListFilters) => {
-        const active = activeFilterCount(filters);
-        return { label: COPY.list.filters.button(active), active: active > 0 };
-      },
-      list: (filters: ListFilters, limit: number = LIST_PAGE_SIZE) => {
-        const matching = sortByMostRecent(filterScrutins(all, toScrutinFilters(filters)));
-        const left = matching.length - limit;
-        return {
-          count: matching.length,
-          total: all.length,
-          countLabel: COPY.list.count(matching.length, all.length),
-          moreLabel: left > 0 ? COPY.list.more(Math.min(LIST_PAGE_SIZE, left)) : null,
-          months: groupByMonth(matching.slice(0, limit)).map((month) => ({
-            mois: month.mois,
-            libelle: capitalizeTitle(month.libelle),
-            rows: month.scrutins.map(toRow),
+export const assembleeListViewModel = ({ dispatch }: { dispatch: AppDispatch }) =>
+  createSelector(
+    [selectAssembleeIndex, selectAssembleeManifest, selectDeputes],
+    (index, manifest, directory) => {
+      const all = index?.scrutins ?? [];
+      const deputes = directory.status === 'loaded' ? directory.data.deputes : null;
+      const allDepartements = deputes ? departements(deputes) : [];
+      return {
+        /** Trouver son député : disponible une fois l'annuaire chargé (côté client), null avant. */
+        constituency: deputes
+          ? {
+              choices: (query: string, requested: boolean) =>
+                departementChoices(allDepartements, query, requested),
+              circonscriptions: (code: string) => circonscriptionsOf(deputes, code),
+            }
+          : null,
+        loadDeputes: () => {
+          void dispatch(loadDeputesUsecase());
+        },
+        status: index && manifest ? ('loaded' as const) : ('loading' as const),
+        meta: index ? assembleeListMeta(index) : null,
+        lead: COPY.list.lead,
+        warning: COPY.list.warning,
+        criteria: {
+          title: COPY.list.criteriaTitle,
+          lead: COPY.list.criteriaLead,
+          rules: COPY.method.rules,
+          excluded: COPY.list.criteriaExcluded,
+        },
+        article493: {
+          text: COPY.notes.article493,
+          sourceLabel: COPY.notes.article493Source,
+          sourceUrl: ARTICLE_49_SOURCE_URL,
+        },
+        words: {
+          title: COPY.words.title,
+          moreLabel: COPY.words.more,
+          terms: COPY.words.terms.map(({ term, definition, lexiconId }) => ({
+            term,
+            definition,
+            href: `/comprendre/lexique#${lexiconId}`,
           })),
-        };
-      },
-    };
-  });
+        },
+        officialListUrl: OFFICIAL_LIST_URL,
+        source: manifest ? sourceNote(manifest) : null,
+        years: yearsOf(all),
+        categories: CATEGORIES.filter((c) => all.some((s) => s.categorie === c)).map((id) => ({
+          id,
+          label: categoryLabel(id),
+          help: categoryHelp(id),
+        })),
+        /** « Filtrer » ou « Filtrer · 2 » : le nombre de filtres actifs de la feuille. */
+        filterButton: (filters: ListFilters) => {
+          const active = activeFilterCount(filters);
+          return { label: COPY.list.filters.button(active), active: active > 0 };
+        },
+        list: (filters: ListFilters, limit: number = LIST_PAGE_SIZE) => {
+          const matching = sortByMostRecent(filterScrutins(all, toScrutinFilters(filters)));
+          const left = matching.length - limit;
+          return {
+            count: matching.length,
+            total: all.length,
+            countLabel: COPY.list.count(matching.length, all.length),
+            moreLabel: left > 0 ? COPY.list.more(Math.min(LIST_PAGE_SIZE, left)) : null,
+            months: groupByMonth(matching.slice(0, limit)).map((month) => ({
+              mois: month.mois,
+              libelle: capitalizeTitle(month.libelle),
+              rows: month.scrutins.map(toRow),
+            })),
+          };
+        },
+      };
+    }
+  );

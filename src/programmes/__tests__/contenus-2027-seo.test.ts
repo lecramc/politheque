@@ -25,9 +25,14 @@ const typesOf = (meta: Parameters<typeof graphOf>[0]) => graphOf(meta).map((n) =
 
 describe('Feature: contenus 2027 dans le registre des routes', () => {
   it('should list the lexicon, the FAQ and the voting page as indexable, dated with the latest verification', () => {
-    for (const path of [LEXICON, FAQ, VOTER]) {
+    const lastmods = [
+      [LEXICON, '2026-11-20'],
+      [FAQ, '2026-11-08'],
+      [VOTER, '2026-11-08'],
+    ];
+    for (const [path, lastmod] of lastmods) {
       const url = urls.find((u) => u.path === path);
-      expect(url, path).toMatchObject({ indexable: true, lastmod: '2026-11-08' });
+      expect(url, path).toMatchObject({ indexable: true, lastmod });
     }
   });
 

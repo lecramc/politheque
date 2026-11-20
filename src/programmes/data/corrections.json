@@ -1,5 +1,12 @@
 [
   {
+    "id": "2026-11-20-lexique-ajout-des-termes-abstention-lecture-scru",
+    "date": "2026-11-20",
+    "kind": "ajout",
+    "pages": ["/comprendre/lexique"],
+    "summary": "Lexique : ajout des termes Abstention, Lecture, Scrutin public solennel et Scrutin public, sourcés sur assemblee-nationale.fr"
+  },
+  {
     "id": "2026-11-19-idees-cles-chaque-fiche-affiche-desormais-les-id",
     "date": "2026-11-19",
     "kind": "mise-a-jour",

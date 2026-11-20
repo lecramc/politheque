@@ -1,11 +1,15 @@
 import { PERIMETER_RULES } from '@/src/assemblee/models/extraction/perimeter';
 import {
+  deputeFactory,
+  directoryFactory,
   indexFactory,
   manifestFactory,
   scrutinFactory,
 } from '@/src/assemblee/models/scrutin.factory';
 import { assembleeStateBuilder } from '@/src/assemblee/store/state-builder';
+import { loadDeputesUsecase } from '@/src/assemblee/usecases/load-deputes.usecase';
 import { assembleeListViewModel } from '@/src/assemblee/view-models/assemblee-list.view-model';
+import lexicon from '@/src/programmes/data/lexique.json';
 
 const scrutins = [
   scrutinFactory({
@@ -37,8 +41,8 @@ const scrutins = [
   }),
 ];
 
-const vm = () =>
-  assembleeListViewModel()(
+const vm = (dispatch = vi.fn()) =>
+  assembleeListViewModel({ dispatch })(
     assembleeStateBuilder()
       .withIndex(indexFactory({ scrutins }))
       .withManifest(manifestFactory({ extraitLe: '2026-11-10', licence: 'Licence Ouverte' }))
@@ -49,7 +53,7 @@ const NONE = { categorie: 'toutes', resultat: 'tous', annee: null, recherche: ''
 
 describe('Feature: liste des votes', () => {
   it('should be loading until the index is in the store', () => {
-    const empty = assembleeListViewModel()(assembleeStateBuilder().build());
+    const empty = assembleeListViewModel({ dispatch: vi.fn() })(assembleeStateBuilder().build());
     expect(empty.status).toBe('loading');
     expect(empty.meta).toBeNull();
     expect(vm().status).toBe('loaded');
@@ -150,7 +154,7 @@ describe('Feature: liste des votes, par pages de vingt', () => {
     })
   );
   const big = () =>
-    assembleeListViewModel()(
+    assembleeListViewModel({ dispatch: vi.fn() })(
       assembleeStateBuilder()
         .withIndex(indexFactory({ scrutins: many }))
         .withManifest(manifestFactory())
@@ -220,5 +224,42 @@ describe('Feature: feuille de filtres de la liste', () => {
       'Filtrer · 2'
     );
     expect(vm().filterButton({ ...NONE, recherche: 'budget' }).label).toBe('Filtrer');
+  });
+
+  it('should give four words to know, each pointing to its entry of the lexicon', () => {
+    const { words } = vm();
+    expect(words.terms.map((w) => w.term)).toEqual([
+      'Scrutin',
+      'Pour, contre, abstention',
+      'Majorité absolue',
+      'Groupe',
+    ]);
+    for (const word of words.terms) {
+      expect(word.definition.length).toBeGreaterThan(20);
+      const id = word.href.replace('/comprendre/lexique#', '');
+      expect(lexicon.map((t) => t.id)).toContain(id);
+    }
+  });
+
+  it("should offer to find one's deputy only once the directory of deputies is loaded", () => {
+    expect(vm().constituency).toBeNull();
+    const state = assembleeStateBuilder()
+      .withIndex(indexFactory({ scrutins }))
+      .withManifest(manifestFactory())
+      .withDeputes(directoryFactory([deputeFactory({ id: 'PA9', prenom: 'Jean', nom: 'Durand' })]))
+      .build();
+    const { constituency } = assembleeListViewModel({ dispatch: vi.fn() })(state);
+    expect(constituency!.choices('nord', false).items).toEqual([
+      { code: '59', label: 'Nord (59)' },
+    ]);
+    expect(constituency!.circonscriptions('59')[0]).toMatchObject({ nom: 'Jean Durand' });
+  });
+
+  it('should load the directory of deputies on demand', () => {
+    const dispatch = vi.fn();
+    vm(dispatch).loadDeputes();
+    expect(dispatch).toHaveBeenCalledTimes(1);
+    expect(typeof dispatch.mock.calls[0][0]).toBe('function');
+    expect(loadDeputesUsecase.pending.type).toBe('assemblee/loadDeputes/pending');
   });
 });
