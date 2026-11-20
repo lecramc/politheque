@@ -29,13 +29,6 @@ export const TASK_COPY = {
   voter: { title: 'Voter en 2027', icon: 'calendar-outline' },
 } as const;
 
-/** Entrée vers les votes de l'Assemblée, sous les tâches : hors des quatre tâches. */
-export const ASSEMBLEE_LINK_COPY = {
-  label: 'Ce que votent les députés',
-  subtitle: 'Qui siège, qui vote quoi, tous les votes',
-  icon: 'people-circle-outline',
-} as const;
-
 /** Sous-titre de la carte « Présidentielle 2027 : les N candidatures ». */
 export const CANDIDATES_LINK_COPY = { subtitle: 'Qui se présente, programme, sources' } as const;
 

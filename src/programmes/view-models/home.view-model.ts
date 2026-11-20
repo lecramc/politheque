@@ -1,9 +1,11 @@
 import { createSelector } from 'reselect';
 
+import { latestMajorVoteGrid } from '@/src/assemblee/models/latest-major-vote';
+import { selectAssembleeIndex } from '@/src/assemblee/store/assemblee.selector';
 import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { electionFacts } from '@/src/programmes/models/election.service';
+import { HOME_VOTE_COPY } from '@/src/programmes/models/home-vote.copy';
 import {
-  ASSEMBLEE_LINK_COPY,
   CANDIDATES_LINK_COPY,
   HOME_COPY,
   situerSubtitle,
@@ -27,8 +29,14 @@ import {
  */
 export const homeViewModel = () =>
   createSelector(
-    [selectCatalog, selectFeaturedElection, selectProgressStatus, selectJourneyProgress],
-    (catalog, election, progressStatus, progress) => {
+    [
+      selectCatalog,
+      selectFeaturedElection,
+      selectProgressStatus,
+      selectJourneyProgress,
+      selectAssembleeIndex,
+    ],
+    (catalog, election, progressStatus, progress, assembleeIndex) => {
       const hydrated = progressStatus === 'ready';
       const facts = election ? electionFacts(election) : null;
       const tasks = [
@@ -63,6 +71,7 @@ export const homeViewModel = () =>
           : []),
       ];
 
+      const latestVote = assembleeIndex ? latestMajorVoteGrid(assembleeIndex) : null;
       const entry = election && catalog ? candidatesEntry(catalog) : null;
       const first = progress.steps[0];
       const next = hydrated && progress.hasStarted ? progress.next : null;
@@ -70,12 +79,21 @@ export const homeViewModel = () =>
       return {
         title: HOME_COPY.title,
         tasks,
+        /**
+         * Après les tâches : le plus récent des grands votes (règle fixe, même source que la grille de
+         * `/assemblee`). Les données sont embarquées : le bandeau est dans le HTML statique.
+         */
+        latestVote: latestVote
+          ? {
+              title: HOME_VOTE_COPY.title,
+              method: HOME_VOTE_COPY.method,
+              grid: latestVote,
+              vote: { label: HOME_VOTE_COPY.openVote, href: latestVote.columns[0].href },
+              allVotes: { label: HOME_VOTE_COPY.allVotes, href: HOME_VOTE_COPY.allVotesHref },
+              law: { label: HOME_VOTE_COPY.law, href: HOME_VOTE_COPY.lawHref },
+            }
+          : null,
         /** Sous les tâches : la liste complète des candidats, près de « Voter en 2027 ». */
-        assembleeLink: {
-          href: '/assemblee',
-          label: ASSEMBLEE_LINK_COPY.label,
-          subtitle: ASSEMBLEE_LINK_COPY.subtitle,
-        },
         candidatesLink: entry
           ? { href: entry.href, label: entry.label, subtitle: CANDIDATES_LINK_COPY.subtitle }
           : null,

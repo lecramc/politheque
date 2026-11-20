@@ -6,6 +6,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
+import { MajorVotesGrid } from '@/src/assemblee/components/MajorVotesGrid';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { appSelector } from '@/src/core/store/create-store';
 import { tv } from '@/src/core/web/tv';
@@ -13,7 +14,7 @@ import { Card } from '@/src/programmes/components/Card';
 import { Page } from '@/src/programmes/components/Page';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { TaskCard } from '@/src/programmes/components/TaskCard';
-import { ASSEMBLEE_LINK_COPY, HOME_COPY } from '@/src/programmes/models/home.copy';
+import { HOME_COPY } from '@/src/programmes/models/home.copy';
 import { homeMeta } from '@/src/programmes/models/seo/page-meta';
 import { selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
 import { homeViewModel } from '@/src/programmes/view-models/home.view-model';
@@ -61,14 +62,30 @@ export default function HomeScreen() {
               href={vm.candidatesLink.href}
             />
           ) : null}
-
-          <TaskCard
-            title={vm.assembleeLink.label}
-            subtitle={vm.assembleeLink.subtitle}
-            icon={ASSEMBLEE_LINK_COPY.icon}
-            href={vm.assembleeLink.href}
-          />
         </View>
+
+        {vm.latestVote ? (
+          <View style={{ gap: effects.spacing.xs }}>
+            <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+              {vm.latestVote.title}
+            </Text>
+            <MajorVotesGrid grid={vm.latestVote.grid} />
+            <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
+              {vm.latestVote.method}
+            </Text>
+            <View style={{ flexDirection: 'row', flexWrap: 'wrap', columnGap: effects.spacing.md }}>
+              <TextLink href={vm.latestVote.vote.href} standalone>
+                {vm.latestVote.vote.label}
+              </TextLink>
+              <TextLink href={vm.latestVote.allVotes.href} standalone>
+                {vm.latestVote.allVotes.label}
+              </TextLink>
+              <TextLink href={vm.latestVote.law.href} standalone>
+                {vm.latestVote.law.label}
+              </TextLink>
+            </View>
+          </View>
+        ) : null}
 
         <View style={{ gap: effects.spacing.xs }}>
           <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
