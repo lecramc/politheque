@@ -23,6 +23,10 @@ describe('Feature: définition du parcours', () => {
     expect(buildJourney(catalogFactory()).map((s) => s.index)).toEqual([1, 2, 3, 4, 5, 6]);
   });
 
+  it('should open the institutions chapter with the lesson on how a law is voted', () => {
+    expect(stepOf('les-institutions').items[0].key).toBe('guide:comment-une-loi-est-votee');
+  });
+
   it('should put every guide section of the step, in order', () => {
     expect(stepOf('les-bases').items.map((i) => i.key)).toEqual([
       'guide:gauche-droite',
@@ -30,6 +34,7 @@ describe('Feature: définition du parcours', () => {
       'guide:desinformation',
     ]);
     expect(stepOf('les-institutions').items.map((i) => i.key)).toEqual([
+      'guide:comment-une-loi-est-votee',
       'guide:institutions',
       'guide:pouvoirs-du-president',
       'guide:union-europeenne',

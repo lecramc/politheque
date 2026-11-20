@@ -57,9 +57,9 @@ export const JOURNEY_GUIDE_IDS: Record<
 > = {
   'les-bases': ['gauche-droite', 'classement-des-partis', 'desinformation'],
   'les-institutions': [
+    'comment-une-loi-est-votee',
     'institutions',
     'pouvoirs-du-president',
-    'comment-une-loi-est-votee',
     'union-europeenne',
     'budget-dette',
   ],
