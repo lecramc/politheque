@@ -187,7 +187,7 @@ export default function AssembleeScreen() {
     <Page
       meta={vm.meta}
       loading={vm.status !== 'loaded'}
-      back={{ label: COPY.common.back, href: '/comprendre' }}
+      back={{ label: COPY.common.back, href: '/' }}
     >
       <View style={{ gap: effects.spacing.xs }}>
         <Text variant="title">{COPY.list.title}</Text>

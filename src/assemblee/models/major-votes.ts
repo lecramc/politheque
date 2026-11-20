@@ -4,6 +4,7 @@ import { groupName } from '@/src/assemblee/models/group-table';
 import { orderGroupes } from '@/src/assemblee/models/groupe-order';
 import { sortByMostRecent } from '@/src/assemblee/models/scrutin-filters';
 import { capitalizeTitle, resultLabel } from '@/src/assemblee/models/scrutin-labels';
+import { scrutinShortTitle } from '@/src/assemblee/models/scrutin-nature';
 import type {
   GroupeDecompte,
   ScrutinCategory,
@@ -117,7 +118,8 @@ export type MajorVotesGrid = { columns: MajorVoteColumn[]; rows: MajorVoteRow[] 
 const toColumn = (s: ScrutinSummary): MajorVoteColumn => ({
   numero: s.numero,
   href: `/assemblee/scrutins/${s.numero}`,
-  title: shortTitle(s.titre),
+  // Titre court mécanique (« Amendement n° 749 au projet de loi de finances… ») ; à défaut, l'officiel.
+  title: shortTitle(scrutinShortTitle(s.titre) ?? s.titre),
   fullTitle: capitalizeTitle(s.titre),
   dateIso: s.date,
   date: formatLongDate(s.date),

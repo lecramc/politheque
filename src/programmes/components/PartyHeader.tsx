@@ -78,7 +78,7 @@ export function PartyHeader({
         <Text style={{ fontSize: 16, color: colors.text.secondary }}>{identityLine}</Text>
       </View>
       {assemblee ? (
-        <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 6 }}>
+        <View style={{ flexDirection: 'row', alignItems: 'flex-start', gap: 6 }}>
           {assemblee.color ? (
             <View
               style={{
@@ -88,15 +88,19 @@ export function PartyHeader({
                 backgroundColor: assemblee.color,
                 borderWidth: 1,
                 borderColor: groupOutline,
+                marginTop: 3,
               }}
             />
           ) : null}
-          <Text style={{ fontSize: 14, lineHeight: 20, color: colors.text.secondary }}>
+          <Text style={{ flex: 1, fontSize: 14, lineHeight: 20, color: colors.text.secondary }}>
             {assemblee.lead}
+            {assemblee.link ? (
+              <>
+                {' '}
+                <TextLink href={assemblee.link.href}>{assemblee.link.label}</TextLink>
+              </>
+            ) : null}
           </Text>
-          {assemblee.link ? (
-            <TextLink href={assemblee.link.href}>{assemblee.link.label}</TextLink>
-          ) : null}
         </View>
       ) : null}
       {/* Même action, même place, pour les dix partis. Aucun compteur de procédures. */}

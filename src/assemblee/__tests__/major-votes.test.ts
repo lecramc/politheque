@@ -116,7 +116,8 @@ describe('Feature: grille « qui vote quoi » des grands votes', () => {
     expect(grid.columns[0]).toMatchObject({
       numero: 9,
       href: '/assemblee/scrutins/9',
-      title: "L'ensemble du projet de loi X",
+      title: 'Le projet de loi X',
+      fullTitle: "L'ensemble du projet de loi X.",
       dateIso: '2025-03-10',
       resultat: 'Rejeté',
       adopte: false,

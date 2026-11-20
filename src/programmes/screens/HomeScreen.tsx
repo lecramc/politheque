@@ -6,7 +6,7 @@ import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
-import { MajorVotesGrid } from '@/src/assemblee/components/MajorVotesGrid';
+import { SingleVoteGroups } from '@/src/assemblee/components/SingleVoteGroups';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { appSelector } from '@/src/core/store/create-store';
 import { tv } from '@/src/core/web/tv';
@@ -72,14 +72,11 @@ export default function HomeScreen() {
             <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
               {vm.latestVote.title}
             </Text>
-            <MajorVotesGrid grid={vm.latestVote.grid} />
+            <SingleVoteGroups grid={vm.latestVote.grid} />
             <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
               {vm.latestVote.method}
             </Text>
             <View style={{ flexDirection: 'row', flexWrap: 'wrap', columnGap: effects.spacing.md }}>
-              <TextLink href={vm.latestVote.vote.href} standalone>
-                {vm.latestVote.vote.label}
-              </TextLink>
               <TextLink href={vm.latestVote.allVotes.href} standalone>
                 {vm.latestVote.allVotes.label}
               </TextLink>

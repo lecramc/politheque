@@ -578,11 +578,8 @@ export function correctionsMeta(): PageMeta {
   });
 }
 
-const ASSEMBLEE_CRUMBS: Breadcrumb = [
-  HOME,
-  { name: 'Comprendre', path: '/comprendre' },
-  { name: COPY.list.title, path: '/assemblee' },
-];
+// « Assemblée » est une rubrique de la navigation : la page se rattache à l'accueil.
+const ASSEMBLEE_CRUMBS: Breadcrumb = [HOME, { name: COPY.list.title, path: '/assemblee' }];
 
 /** `/assemblee` : la liste, sans filtre (les filtres sont lus côté client, jamais indexés). */
 export function assembleeListMeta(index: ScrutinIndex): PageMeta {

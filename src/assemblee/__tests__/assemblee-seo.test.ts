@@ -90,12 +90,8 @@ describe('Feature: SEO des pages Assemblée', () => {
     expect(list.description.length).toBeLessThanOrEqual(DESCRIPTION_MAX);
   });
 
-  it('should trail the breadcrumb through Comprendre', () => {
-    expect(assembleeListMeta(index).breadcrumb.map((b) => b.path)).toEqual([
-      '/',
-      '/comprendre',
-      '/assemblee',
-    ]);
+  it('should hang the breadcrumb from the home page, Assemblée being a navigation section', () => {
+    expect(assembleeListMeta(index).breadcrumb.map((b) => b.path)).toEqual(['/', '/assemblee']);
     expect(scrutinMeta(scrutinFactory({ numero: 7 })).breadcrumb.at(-1)?.path).toBe(
       '/assemblee/scrutins/7'
     );
