@@ -16,6 +16,7 @@ import { VerdictBlock } from '@/src/assemblee/components/VerdictBlock';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import type { GroupeOrder } from '@/src/assemblee/models/groupe-order';
 import { HEMICYCLE_RATIO, HEMICYCLE_RATIO_COMPACT } from '@/src/assemblee/models/hemicycle-scene';
+import { NATURE_COPY } from '@/src/assemblee/models/scrutin-nature.copy';
 import { scrutinViewModel } from '@/src/assemblee/view-models/scrutin.view-model';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
@@ -153,13 +154,33 @@ export default function ScrutinScreen() {
     >
       <View style={{ gap: effects.spacing.xs }}>
         <Text variant="caption">{page.heading}</Text>
+        {page.nature ? (
+          <Text variant="label">{page.stage ? `${page.nature} · ${page.stage}` : page.nature}</Text>
+        ) : null}
         <Text variant="title" style={{ fontSize: 24, lineHeight: 31 }}>
-          {page.titre}
+          {page.shortTitle ?? page.titre}
         </Text>
+        {page.shortTitle ? (
+          <View style={{ gap: 1 }}>
+            <Text variant="label">{NATURE_COPY.officialTitleLabel}</Text>
+            <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
+              {page.titre}
+            </Text>
+          </View>
+        ) : null}
         <Text style={{ fontSize: 14, color: colors.text.secondary }}>{page.titleNote}</Text>
       </View>
 
       <VerdictBlock verdict={page.verdict} />
+
+      <View style={{ gap: effects.spacing.xs }}>
+        <Text variant="label">{NATURE_COPY.helpTitle}</Text>
+        {page.helpLinks.map((link) => (
+          <TextLink key={link.href} href={link.href} standalone>
+            {link.label}
+          </TextLink>
+        ))}
+      </View>
 
       <Section title={COPY.groups.title}>
         <GroupVotes

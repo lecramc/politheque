@@ -54,3 +54,10 @@ export const requesters = (demandeur: string | null): string[] =>
       const gloss = COPY.requesterGloss[name];
       return gloss ? `${name} ${gloss}` : name;
     });
+
+export {
+  scrutinHelpLinks,
+  scrutinNature,
+  scrutinShortTitle,
+  scrutinStage,
+} from '@/src/assemblee/models/scrutin-nature';

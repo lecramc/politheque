@@ -32,7 +32,11 @@ import {
   capitalizeTitle,
   categoryLabel,
   resultLabel,
+  scrutinHelpLinks,
+  scrutinNature,
   scrutinReference,
+  scrutinShortTitle,
+  scrutinStage,
   voteTypeLabel,
 } from '@/src/assemblee/models/scrutin-labels';
 import { citingParties, otherVotesOnSameText } from '@/src/assemblee/models/scrutin-links';
@@ -221,6 +225,11 @@ export const scrutinViewModel = ({ dispatch }: { dispatch: AppDispatch }) =>
             /** Mention en petit sous le titre : la référence, et d'où vient le titre. */
             titleNote: COPY.scrutin.titleNote(reference),
             titre: capitalizeTitle(scrutin.titre),
+            /** Nature, étape et titre court tirés du titre officiel ; null sans règle applicable. */
+            nature: scrutinNature(scrutin.titre),
+            stage: scrutinStage(scrutin.titre),
+            shortTitle: scrutinShortTitle(scrutin.titre),
+            helpLinks: scrutinHelpLinks(scrutin),
             dateIso: scrutin.date,
             censure,
             verdict: scrutinVerdict(scrutin),
