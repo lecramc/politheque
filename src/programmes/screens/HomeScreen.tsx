@@ -41,10 +41,14 @@ export default function HomeScreen() {
         </View>
 
         <View style={{ gap: effects.spacing.sm }}>
+          <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+            {HOME_COPY.tasksTitle}
+          </Text>
           <View {...tv('grid-2')} style={{ gap: effects.spacing.sm }}>
             {vm.tasks.map((task) => (
               <TaskCard
                 key={task.id}
+                kicker={task.kicker}
                 title={task.title}
                 subtitle={task.subtitle}
                 icon={task.icon}
@@ -52,16 +56,15 @@ export default function HomeScreen() {
                 primary={task.primary}
               />
             ))}
+            {vm.candidatesLink ? (
+              <TaskCard
+                title={vm.candidatesLink.label}
+                subtitle={vm.candidatesLink.subtitle}
+                icon="list-outline"
+                href={vm.candidatesLink.href}
+              />
+            ) : null}
           </View>
-
-          {vm.candidatesLink ? (
-            <TaskCard
-              title={vm.candidatesLink.label}
-              subtitle={vm.candidatesLink.subtitle}
-              icon="list-outline"
-              href={vm.candidatesLink.href}
-            />
-          ) : null}
         </View>
 
         {vm.latestVote ? (

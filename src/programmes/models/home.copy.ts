@@ -4,7 +4,8 @@
  */
 export const HOME_COPY = {
   title: 'Comprendre la politique française, sans parti pris',
-  lead: 'Dix partis, le même traitement. Chaque information est sourcée et datée.',
+  lead: 'Les institutions, les dix partis, les votes à l’Assemblée. Chaque information est sourcée et datée.',
+  tasksTitle: 'Par où commencer ?',
   partiesTitle: 'Les dix partis',
   partiesNote: 'Ordre alphabétique.',
   journeyTitle: 'Pour commencer',
@@ -14,19 +15,31 @@ export const HOME_COPY = {
   progressLabel: 'Ma progression',
 } as const;
 
+/**
+ * Points d'entrée de l'accueil : une rubrique (`kicker`, comme dans la navigation), un verbe
+ * d'action, une ligne, une icône. « Comparer deux partis » est fusionné dans « Partis ».
+ */
 export const TASK_COPY = {
-  situer: { title: 'Me situer', icon: 'compass-outline' },
+  comprendre: {
+    kicker: 'Comprendre',
+    title: 'Comprendre les institutions et les lois',
+    subtitle: 'Qui décide quoi, comment une loi est votée',
+    icon: 'book-outline',
+  },
   partis: {
-    title: 'Ce que veut chaque parti',
-    subtitle: 'Programme, positions, histoire',
+    kicker: 'Partis',
+    title: 'Découvrir ce que veut chaque parti',
+    subtitle: 'Programme, positions, histoire, comparaison',
     icon: 'people-outline',
   },
-  comparer: {
-    title: 'Comparer deux partis',
-    subtitle: 'Côte à côte, sujet par sujet',
-    icon: 'git-compare-outline',
+  assemblee: {
+    kicker: 'Assemblée',
+    title: 'Voir qui vote quoi à l’Assemblée',
+    subtitle: 'Les grands votes, groupe par groupe, et votre député',
+    icon: 'business-outline',
   },
-  voter: { title: 'Voter en 2027', icon: 'calendar-outline' },
+  situer: { kicker: 'Me situer', title: 'Me situer', icon: 'compass-outline' },
+  voter: { kicker: '2027', title: 'Préparer le vote en 2027', icon: 'calendar-outline' },
 } as const;
 
 /** Sous-titre de la carte « Présidentielle 2027 : les N candidatures ». */

@@ -8,12 +8,15 @@ import { Pressable } from '@/components/ui/Pressable';
 
 /** Une tâche de l'accueil : icône, titre, une ligne. `primary` : la tâche d'engagement, en aplat. */
 export function TaskCard({
+  kicker,
   title,
   subtitle,
   icon,
   href,
   primary = false,
 }: {
+  /** Nom de la rubrique, comme dans la navigation. */
+  kicker?: string;
   title: string;
   subtitle?: string;
   icon: string;
@@ -52,6 +55,19 @@ export function TaskCard({
           <Icon name={icon} variant={primary ? 'onColor' : 'onGlass'} />
         </View>
         <View style={{ flex: 1, gap: effects.spacing.xxs }}>
+          {kicker ? (
+            <Text
+              style={{
+                ...fonts.bold,
+                fontSize: 13,
+                textTransform: 'uppercase',
+                letterSpacing: 0.6,
+                color: primary ? colors.text.onColor : colors.tint,
+              }}
+            >
+              {kicker}
+            </Text>
+          ) : null}
           <Text style={{ ...fonts.displayBold, fontSize: 18, color: text }}>{title}</Text>
           {subtitle ? (
             <Text
