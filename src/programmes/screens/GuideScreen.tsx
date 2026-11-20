@@ -135,7 +135,7 @@ export default function GuideScreen() {
                       title: item.title,
                       href: item.href,
                       read: item.read,
-                      meta: item.minutes ? `${item.minutes} min` : null,
+                      meta: item.minutes ? `${item.minutes} min` : item.meta,
                     },
                     index
                   )
@@ -155,29 +155,6 @@ export default function GuideScreen() {
             )}
           </View>
         </View>
-
-        {/* Les votes de l'Assemblée : hors parcours (aucune progression, aucune opinion mesurée). */}
-        <Link href={vm.assemblee.href as never} asChild>
-          <Pressable
-            large
-            accessibilityRole="link"
-            style={{
-              ...card,
-              gap: effects.spacing.xxs,
-              padding: effects.spacing.md,
-            }}
-          >
-            <Text style={{ ...fonts.displayBold, fontSize: 18 }}>{vm.assemblee.title}</Text>
-            <Text style={{ color: colors.text.secondary, fontSize: 15, lineHeight: 22 }}>
-              {vm.assemblee.text}
-            </Text>
-            {vm.assemblee.meta ? (
-              <Text style={{ color: colors.text.secondary, fontSize: 14 }}>
-                {vm.assemblee.meta}
-              </Text>
-            ) : null}
-          </Pressable>
-        </Link>
 
         <TextLink href={vm.lexicon.href} standalone>
           {vm.lexicon.label}

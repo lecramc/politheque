@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
+import { LAW_JOURNEY, LAW_JOURNEY_ID } from '@/src/programmes/models/law-journey.copy';
 import {
   firstSentence,
   GUIDE_GROUPS,
@@ -69,6 +70,8 @@ export const guideSectionViewModel =
           block,
           keyPoint: firstSentence(block.paragraphs[0] ?? ''),
         })),
+        /** Frise du parcours d'une loi : sur cette leçon seulement. */
+        timeline: sectionId === LAW_JOURNEY_ID ? LAW_JOURNEY : null,
         allSources: (section?.blocks ?? []).flatMap((b) => b.sources),
         next: sections.find((s) => s.id === nextId) ?? null,
         markRead: () => dispatch(markContentReadUsecase(contentKey.guide(sectionId))),

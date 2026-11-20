@@ -16,6 +16,36 @@ import {
 
 const CHAPTERS: JourneyStepId[] = ['les-bases', 'les-institutions', 'presidentielle-2027'];
 
+type ChapterItem = {
+  key: string;
+  title: string;
+  href: string;
+  minutes: number | null;
+  meta: string | null;
+  read: boolean;
+};
+
+/** L'accès à l'Assemblée suit la leçon d'ouverture des institutions ; hors parcours, jamais « lu ». */
+const withAssemblee = (
+  chapter: JourneyStepId,
+  items: ChapterItem[],
+  assemblee: { title: string; href: string; meta: string | null }
+): ChapterItem[] =>
+  chapter === 'les-institutions'
+    ? [
+        ...items.slice(0, 1),
+        {
+          key: 'assemblee',
+          title: assemblee.title,
+          href: assemblee.href,
+          minutes: null,
+          meta: assemblee.meta,
+          read: false,
+        },
+        ...items.slice(1),
+      ]
+    : items;
+
 const NUMBER_WORDS = [
   'zéro',
   'un',
@@ -63,6 +93,13 @@ export const comprendreViewModel = () =>
       const guideRead = guide.filter((s) => hydrated && isRead(entries, `guide:${s.id}`)).length;
       const countOf = (id: JourneyStepId) => (hydrated ? stepOf(id).readCount : 0);
 
+      const assemblee = {
+        title: COPY.comprendre.cardTitle,
+        text: COPY.comprendre.cardText,
+        href: '/assemblee',
+        meta: assembleeIndex ? COPY.comprendre.cardMeta(assembleeIndex.scrutins.length) : null,
+      };
+
       return {
         status,
         reading: {
@@ -73,12 +110,7 @@ export const comprendreViewModel = () =>
         },
         progressHref: '/passeport',
         /** Carte d'entrée vers les votes de l'Assemblée : hors parcours, elle ne compte pas dans la lecture. */
-        assemblee: {
-          title: COPY.comprendre.cardTitle,
-          text: COPY.comprendre.cardText,
-          href: '/assemblee',
-          meta: assembleeIndex ? COPY.comprendre.cardMeta(assembleeIndex.scrutins.length) : null,
-        },
+        assemblee,
         /** Lien sobre vers le lexique : hors parcours, il ne compte pas dans la progression. */
         lexicon: {
           href: CONTENUS_2027_PATHS.lexicon,
@@ -90,13 +122,18 @@ export const comprendreViewModel = () =>
             id,
             number: index + 1,
             title: step.title,
-            items: step.items.map((item) => ({
-              key: item.key,
-              title: item.title,
-              href: item.href,
-              minutes: item.kind === 'guide' ? minutesOf(item.key.slice('guide:'.length)) : null,
-              read: hydrated && isRead(entries, item.key),
-            })),
+            items: withAssemblee(
+              id,
+              step.items.map((item) => ({
+                key: item.key,
+                title: item.title,
+                href: item.href,
+                minutes: item.kind === 'guide' ? minutesOf(item.key.slice('guide:'.length)) : null,
+                meta: null as string | null,
+                read: hydrated && isRead(entries, item.key),
+              })),
+              assemblee
+            ),
           };
         }),
         then: [

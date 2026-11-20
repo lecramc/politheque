@@ -9,6 +9,7 @@ import type {
 
 export const GUIDE_SECTION_IDS = [
   'institutions',
+  'comment-une-loi-est-votee',
   'pouvoirs-du-president',
   'election-presidentielle',
   'comment-voter',

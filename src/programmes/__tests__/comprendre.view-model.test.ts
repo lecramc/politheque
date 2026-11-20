@@ -27,13 +27,13 @@ describe('Feature: Comprendre avec le suivi de lecture', () => {
     ]);
   });
 
-  it('should tick the lessons read and count them over the nine lessons', () => {
+  it('should tick the lessons read and count them over the ten lessons', () => {
     const vm = vmOf(
       ready().withEntries({ 'guide:gauche-droite': D, 'guide:institutions': D }).build()
     );
     expect(vm.chapters[0].items[0].read).toBe(true);
     expect(vm.chapters[0].items[1].read).toBe(false);
-    expect(vm.reading).toMatchObject({ readCount: 2, total: 9, label: '2 sur 9', visible: true });
+    expect(vm.reading).toMatchObject({ readCount: 2, total: 10, label: '2 sur 10', visible: true });
   });
 
   it('should show nothing read before the local progress is loaded, so the first render matches the static page', () => {
@@ -41,7 +41,7 @@ describe('Feature: Comprendre avec le suivi de lecture', () => {
       stateBuilder().withCatalog(catalog).withEntries({ 'guide:gauche-droite': D }).build()
     );
     expect(vm.chapters[0].items[0].read).toBe(false);
-    expect(vm.reading).toMatchObject({ readCount: 0, label: '0 sur 9' });
+    expect(vm.reading).toMatchObject({ readCount: 0, label: '0 sur 10' });
   });
 
   it('should list what comes next: the ten sheets, the nine debates and the questionnaire', () => {
@@ -73,9 +73,19 @@ describe('Feature: entrée vers les votes de l’Assemblée depuis Comprendre', 
     });
   });
 
-  it('should not count the Assemblée votes as a lesson of the reading', () => {
-    expect(vmOf().reading.total).toBe(9);
-    expect(vmOf().chapters.flatMap((c) => c.items.map((i) => i.href))).not.toContain('/assemblee');
+  it('should place the Assemblée card right after the law lesson, at the top of the institutions chapter', () => {
+    const items = vmOf().chapters[1].items;
+    expect(items.slice(0, 2).map((i) => i.href)).toEqual([
+      '/comprendre/comment-une-loi-est-votee',
+      '/assemblee',
+    ]);
+  });
+
+  it('should not count the Assemblée votes as a lesson of the reading, nor mark it read', () => {
+    const vm = vmOf(ready().withEntries({ 'guide:comment-une-loi-est-votee': D }).build());
+    expect(vm.reading.total).toBe(10);
+    expect(vm.reading.readCount).toBe(1);
+    expect(vm.chapters[1].items[1]).toMatchObject({ href: '/assemblee', read: false });
   });
 });
 
@@ -83,7 +93,7 @@ describe('Feature: lien vers le lexique depuis Comprendre', () => {
   it('should link to the lexicon without counting it as a lesson of the reading', () => {
     const vm = vmOf();
     expect(vm.lexicon.href).toBe('/comprendre/lexique');
-    expect(vm.reading.total).toBe(9);
+    expect(vm.reading.total).toBe(10);
     expect(vm.chapters.flatMap((c) => c.items.map((i) => i.href))).not.toContain(vm.lexicon.href);
   });
 });

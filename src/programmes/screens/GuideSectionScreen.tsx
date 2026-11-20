@@ -10,6 +10,7 @@ import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { GuideParagraph } from '@/src/programmes/components/GuideParagraph';
+import { LawJourney } from '@/src/programmes/components/LawJourney';
 import { MoreText } from '@/src/programmes/components/MoreText';
 import { Page } from '@/src/programmes/components/Page';
 import { PageSources } from '@/src/programmes/components/PageSources';
@@ -133,6 +134,8 @@ export default function GuideSectionScreen() {
               {section.summary}
             </Text>
           </View>
+
+          {vm.timeline ? <LawJourney steps={vm.timeline} /> : null}
 
           <View style={{ gap: effects.spacing.sm }}>
             {vm.blocks.map(({ block, keyPoint }, index) => (
