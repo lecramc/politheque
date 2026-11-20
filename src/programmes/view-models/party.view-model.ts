@@ -2,6 +2,7 @@ import { createSelector } from 'reselect';
 
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { partyAssemblee } from '@/src/assemblee/models/party-assemblee';
+import { partyAssembleeLine } from '@/src/assemblee/models/party-assemblee-line';
 import { stanceVotes } from '@/src/assemblee/models/stance-votes';
 import {
   selectAssembleeComposition,
@@ -29,6 +30,7 @@ import {
   electionPhrase,
   partySummary,
 } from '@/src/programmes/models/page-summary.service';
+import { positionsPreview } from '@/src/programmes/models/positions-preview.service';
 import { formatLongDate, originLabel } from '@/src/programmes/models/presentation.service';
 import {
   programmeNotice,
@@ -47,6 +49,7 @@ import {
   availableSections,
   hasLegalSection,
   PARTY_SECTIONS,
+  partyHref,
   type PartySection,
 } from '@/src/programmes/models/seo/party-sections';
 import { stancesByTheme } from '@/src/programmes/models/stances-by-theme.service';
@@ -142,6 +145,22 @@ export const partyViewModel =
                   : [],
               }))
             : [];
+        const assembleePanel =
+          party && assembleeIndex && composition && manifest
+            ? partyAssemblee({
+                groupe: party.colorSource.groupe,
+                index: assembleeIndex,
+                composition,
+                manifest,
+              })
+            : null;
+        const notice =
+          party && featured && party.candidacies[featured.id]
+            ? programmeNotice(party.candidacies[featured.id], {
+                partyId: party.id,
+                themeIds: (catalog?.themes ?? []).map((t) => t.id),
+              })
+            : null;
         return {
           status,
           party,
@@ -177,12 +196,14 @@ export const partyViewModel =
           },
           keyIdeas,
           /** Encart en tête de l'onglet Programme (publication, ou « pas encore publié ») ; null s'il n'y a rien à dire. */
-          programmeNotice:
-            party && featured && party.candidacies[featured.id]
-              ? programmeNotice(party.candidacies[featured.id], {
-                  partyId: party.id,
-                  themeIds: (catalog?.themes ?? []).map((t) => t.id),
-                })
+          programmeNotice: notice,
+          /** Programme non publié : 3 à 5 positions, même règle pour tous (voir `positionsPreview`). */
+          positionsPreview:
+            party && catalog && notice?.state === 'non-publie'
+              ? {
+                  ...positionsPreview(stances, catalog.themes),
+                  all: { label: 'Toutes ses positions', href: partyHref(party.id, 'positions') },
+                }
               : null,
           /** Chapô de l'onglet Programme : la candidature seulement (l'état du programme est dans la carte). */
           intro:
@@ -194,15 +215,9 @@ export const partyViewModel =
                 })
               : null,
           /** Encart « À l'Assemblée » : le groupe officiel du parti (sigle de `colorSource`), même forme pour les dix. */
-          assemblee:
-            party && assembleeIndex && composition && manifest
-              ? partyAssemblee({
-                  groupe: party.colorSource.groupe,
-                  index: assembleeIndex,
-                  composition,
-                  manifest,
-                })
-              : null,
+          assemblee: assembleePanel,
+          /** Ligne d'en-tête, visible sur les 4 onglets. */
+          assembleeLine: assembleePanel ? partyAssembleeLine(assembleePanel) : null,
           nextParty: party && catalog ? nextPartyInJourney(catalog.parties, party.id) : null,
           sections,
           metaBySection,

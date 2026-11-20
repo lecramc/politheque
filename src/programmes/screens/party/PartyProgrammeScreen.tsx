@@ -16,6 +16,7 @@ import { ProgrammeNotice } from '@/src/programmes/components/ProgrammeNotice';
 import { SectionTitle } from '@/src/programmes/components/SectionTitle';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
+import { StanceBadge } from '@/src/programmes/components/StanceBadge';
 import { StatusChip } from '@/src/programmes/components/StatusChip';
 import { TabPanel } from '@/src/programmes/components/Tabs';
 import { firstSentence } from '@/src/programmes/models/presentation.service';
@@ -61,6 +62,30 @@ export default function PartyProgrammeScreen() {
         </Text>
       ) : null}
       {vm.programmeNotice ? <ProgrammeNotice notice={vm.programmeNotice} /> : null}
+      {vm.positionsPreview ? (
+        <View style={{ gap: effects.spacing.xs }}>
+          <SectionTitle>{vm.positionsPreview.title}</SectionTitle>
+          <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+            {vm.positionsPreview.rule}
+          </Text>
+          {vm.positionsPreview.items.map(({ question, stance }) => (
+            <Accordion
+              key={question.id}
+              title={question.statement}
+              titleWeight="regular"
+              stance={<StanceBadge stance={stance?.stance ?? null} />}
+              leading={null}
+              subtitle={undefined}
+            >
+              <Text style={{ fontSize: 16, lineHeight: 24 }}>{stance?.justification}</Text>
+              {stance?.sources.length ? <SourceChip sources={stance.sources} /> : null}
+            </Accordion>
+          ))}
+          <TextLink href={vm.positionsPreview.all.href} standalone>
+            {vm.positionsPreview.all.label}
+          </TextLink>
+        </View>
+      ) : null}
       {vm.keyIdeas ? <KeyIdeaList keyIdeas={vm.keyIdeas} partyName={party.name} /> : null}
 
       {candidacy ? (

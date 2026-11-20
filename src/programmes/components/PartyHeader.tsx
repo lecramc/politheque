@@ -4,6 +4,8 @@ import { StyleSheet, View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
+import { TextLink } from '@/components/ui/TextLink';
+import type { PartyAssembleeLine } from '@/src/assemblee/models/party-assemblee-line';
 import { useMarkOutline } from '@/src/core/hooks/useMarkOutline';
 import { tv } from '@/src/core/web/tv';
 import { LabelsLink } from '@/src/programmes/components/LabelsLink';
@@ -22,6 +24,7 @@ export function PartyHeader({
   labels,
   identityLine,
   compareHref,
+  assemblee,
   onOpenLabels,
 }: {
   party: Party;
@@ -30,10 +33,13 @@ export function PartyHeader({
   identityLine: string;
   /** « Comparer avec… » : l'outil s'ouvre avec ce parti en premier, le second est à choisir. */
   compareHref: string;
+  /** « À l'Assemblée : groupe X · N députés · voir ses votes », sur les 4 onglets. */
+  assemblee: PartyAssembleeLine | null;
   onOpenLabels: () => void;
 }) {
   const { colors, effects, fonts } = useTheme();
   const outline = useMarkOutline(party.color);
+  const groupOutline = useMarkOutline(assemblee?.color ?? party.color);
   return (
     <View style={{ gap: effects.spacing.sm }}>
       <View style={{ flexDirection: 'row', gap: effects.spacing.smd, alignItems: 'center' }}>
@@ -71,6 +77,28 @@ export function PartyHeader({
         <LabelsLink onPress={onOpenLabels} />
         <Text style={{ fontSize: 16, color: colors.text.secondary }}>{identityLine}</Text>
       </View>
+      {assemblee ? (
+        <View style={{ flexDirection: 'row', flexWrap: 'wrap', alignItems: 'center', gap: 6 }}>
+          {assemblee.color ? (
+            <View
+              style={{
+                width: 14,
+                height: 14,
+                borderRadius: 7,
+                backgroundColor: assemblee.color,
+                borderWidth: 1,
+                borderColor: groupOutline,
+              }}
+            />
+          ) : null}
+          <Text style={{ fontSize: 14, lineHeight: 20, color: colors.text.secondary }}>
+            {assemblee.lead}
+          </Text>
+          {assemblee.link ? (
+            <TextLink href={assemblee.link.href}>{assemblee.link.label}</TextLink>
+          ) : null}
+        </View>
+      ) : null}
       {/* Même action, même place, pour les dix partis. Aucun compteur de procédures. */}
       <View style={{ alignSelf: 'flex-start' }}>
         <Button variant="secondary" fullWidth={false} href={compareHref}>
