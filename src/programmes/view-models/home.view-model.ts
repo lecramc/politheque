@@ -23,7 +23,7 @@ import {
 } from '@/src/programmes/store/programmes.selector';
 
 /**
- * Accueil : quatre tâches, les dix partis en accès direct (ordre alphabétique, même forme pour
+ * Accueil : cinq points d'entrée (les quatre rubriques et « Voter en 2027 »), les dix partis en accès direct (ordre alphabétique, même forme pour
  * tous) et une carte « Le parcours ». La progression n'est lue qu'après l'hydratation : le HTML
  * statique et le premier rendu client sont identiques. Les réponses au questionnaire ne sont jamais lues.
  */
@@ -39,19 +39,16 @@ export const homeViewModel = () =>
     (catalog, election, progressStatus, progress, assembleeIndex) => {
       const hydrated = progressStatus === 'ready';
       const facts = election ? electionFacts(election) : null;
+      // Même forme et même poids pour chaque entrée, dans l'ordre de la navigation.
       const tasks = [
+        { id: 'comprendre' as const, ...TASK_COPY.comprendre, href: '/comprendre', primary: false },
+        { id: 'partis' as const, ...TASK_COPY.partis, href: '/partis', primary: false },
+        { id: 'assemblee' as const, ...TASK_COPY.assemblee, href: '/assemblee', primary: false },
         {
           id: 'situer' as const,
           ...TASK_COPY.situer,
           subtitle: situerSubtitle(catalog?.questions.length ?? 0),
           href: '/me-situer',
-          primary: true,
-        },
-        { id: 'partis' as const, ...TASK_COPY.partis, href: '/partis', primary: false },
-        {
-          id: 'comparer' as const,
-          ...TASK_COPY.comparer,
-          href: '/partis/comparer',
           primary: false,
         },
         ...(election && facts

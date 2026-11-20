@@ -33,6 +33,7 @@ import { RailLayout } from '@/src/programmes/components/RailLayout';
 import { ReportError } from '@/src/programmes/components/ReportError';
 import { SeoHead } from '@/src/programmes/components/SeoHead';
 import { PageSkeleton } from '@/src/programmes/components/Skeleton';
+import { BOTTOM_NAV, NAV } from '@/src/programmes/models/navigation';
 import { hasReachedEnd } from '@/src/programmes/models/reach-end.service';
 import { buildReportLinks } from '@/src/programmes/models/report-error.service';
 import {
@@ -40,42 +41,6 @@ import {
   type Breadcrumb as BreadcrumbTrail,
   type PageMeta,
 } from '@/src/programmes/models/seo/page-meta';
-
-type Href = '/' | '/comprendre' | '/partis' | '/me-situer';
-
-type NavItem = { href: Href; label: string; icon: string; matches: (pathname: string) => boolean };
-
-/**
- * Trois rubriques. Les débats (`/debats/[id]`) vivent dans Partis ; les votes de l'Assemblée
- * (`/assemblee*`) dans Comprendre ; l'élection est la pastille de l'en-tête, hors rubrique.
- */
-const NAV: NavItem[] = [
-  {
-    href: '/comprendre',
-    label: 'Comprendre',
-    icon: 'book-outline',
-    matches: (p) =>
-      p.startsWith('/comprendre') || p.startsWith('/passeport') || p.startsWith('/assemblee'),
-  },
-  {
-    href: '/partis',
-    label: 'Partis',
-    icon: 'people-outline',
-    matches: (p) => p.startsWith('/partis') || p.startsWith('/debats'),
-  },
-  {
-    href: '/me-situer',
-    label: 'Me situer',
-    icon: 'compass-outline',
-    matches: (p) => p.startsWith('/me-situer'),
-  },
-];
-
-/** Barre du bas en mobile : l'accueil, puis les trois rubriques. */
-const BOTTOM_NAV: NavItem[] = [
-  { href: '/', label: 'Accueil', icon: 'home-outline', matches: (p) => p === '/' || p === '' },
-  ...NAV,
-];
 
 /** Largeur max du contenu en natif et sous 768 px (au-delà, la CSS `container` prend le relais). */
 const BASE_MAX_WIDTH = 760;

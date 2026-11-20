@@ -29,29 +29,50 @@ const catalog = catalogFactory({
 });
 const vmOf = (state = stateBuilder().withCatalog(catalog).build()) => homeViewModel()(state);
 
-describe('Feature: accueil à quatre tâches', () => {
-  it('should offer the four tasks in a fixed order, each to its own page', () => {
+describe("Feature: accueil à cinq points d'entrée", () => {
+  it('should offer the four rubriques then the vote, in the navigation order, each to its own page', () => {
     expect(vmOf().tasks.map((t) => [t.id, t.href])).toEqual([
-      ['situer', '/me-situer'],
+      ['comprendre', '/comprendre'],
       ['partis', '/partis'],
-      ['comparer', '/partis/comparer'],
+      ['assemblee', '/assemblee'],
+      ['situer', '/me-situer'],
       ['voter', '/elections/presidentielle-2027/voter'],
     ]);
   });
 
+  it('should give every entry a rubrique, an action title, a line and an icon', () => {
+    for (const task of vmOf().tasks) {
+      expect(task.kicker).toBeTruthy();
+      expect(task.title).toBeTruthy();
+      expect(task.subtitle).toBeTruthy();
+      expect(task.icon).toMatch(/-outline$/);
+    }
+  });
+
+  it('should highlight no entry over the others', () => {
+    expect(vmOf().tasks.some((t) => t.primary)).toBe(false);
+  });
+
   it('should word the questionnaire task from the real question count, and promise nothing is sent', () => {
-    expect(vmOf().tasks[0].subtitle).toBe("3 affirmations · 5 min · rien n'est envoyé");
+    const situer = vmOf().tasks.find((t) => t.id === 'situer');
+    expect(situer?.subtitle).toBe("3 affirmations · 5 min · rien n'est envoyé");
   });
 
   it('should word the vote task with the two dates a voter needs', () => {
-    expect(vmOf().tasks[3].subtitle).toBe("1er tour le 18 avril · s'inscrire jusqu'au 12 mars");
+    const voter = vmOf().tasks.find((t) => t.id === 'voter');
+    expect(voter?.subtitle).toBe("1er tour le 18 avril · s'inscrire jusqu'au 12 mars");
   });
 
   it('should drop the vote task when no election is featured', () => {
     const none = stateBuilder()
       .withCatalog(catalogFactory({ elections: [electionFactory({ featured: false })] }))
       .build();
-    expect(vmOf(none).tasks.map((t) => t.id)).toEqual(['situer', 'partis', 'comparer']);
+    expect(vmOf(none).tasks.map((t) => t.id)).toEqual([
+      'comprendre',
+      'partis',
+      'assemblee',
+      'situer',
+    ]);
   });
 });
 
