@@ -28,7 +28,6 @@ import { ResultsPrint } from '@/src/programmes/components/ResultsPrint';
 import { SeparatingQuestions } from '@/src/programmes/components/SeparatingQuestions';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { STANCE_LABEL } from '@/src/programmes/components/StanceBadge';
 import { StanceLegend } from '@/src/programmes/components/StanceLegend';
 import {
   decodeAnswers,
@@ -39,6 +38,7 @@ import { chartLegend } from '@/src/programmes/models/chart-legend.service';
 import { MIN_AXIS_COUNT, MIN_COMPARED } from '@/src/programmes/models/matching.service';
 import type { Party, Source } from '@/src/programmes/models/programme.model';
 import { GUIDE_ANCHORS, RESULTS_GUIDE_INTRO } from '@/src/programmes/models/reading-guides.copy';
+import { answerLabel } from '@/src/programmes/models/results-recap.service';
 import { howToReadBullets, RESULTS_INTRO, TIED_LABEL } from '@/src/programmes/models/results.copy';
 import { nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
@@ -414,7 +414,7 @@ export default function ResultsScreen() {
               headingLevel={3}
               title={question.statement}
               titleWeight="regular"
-              subtitle={`Vous : ${STANCE_LABEL[String(userValue)]}${important ? ' (compte double)' : ''}`}
+              subtitle={`Vous : ${answerLabel(userValue)}${important ? ' (compte double)' : ''}`}
             >
               {positions.map(({ party, stance }) => (
                 <PartyStanceRow key={party.id} party={party} stance={stance} />

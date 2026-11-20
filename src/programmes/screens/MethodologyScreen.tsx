@@ -4,14 +4,18 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Icon, Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
+import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
+import { MAJOR_VOTES_LEGEND } from '@/src/assemblee/models/major-votes';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { OnThisPage } from '@/src/programmes/components/OnThisPage';
 import { Page } from '@/src/programmes/components/Page';
 import { RowGroup } from '@/src/programmes/components/PartyRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
+import { StanceLegend } from '@/src/programmes/components/StanceLegend';
 import { METHODOLOGY_ANCHORS } from '@/src/programmes/models/on-this-page';
 import type { Source } from '@/src/programmes/models/programme.model';
+import { GUIDE_ANCHORS } from '@/src/programmes/models/reading-guides.copy';
 import { methodologyMeta } from '@/src/programmes/models/seo/page-meta';
 import { methodologyViewModel } from '@/src/programmes/view-models/methodology.view-model';
 
@@ -216,6 +220,35 @@ export default function MethodologyScreen() {
                 {paragraph}
               </Text>
             ))}
+            {guide.anchor === GUIDE_ANCHORS.positions ? (
+              <>
+                <StanceLegend />
+                <View
+                  role="group"
+                  aria-label="Légende des votes de l'Assemblée"
+                  style={{
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    columnGap: effects.spacing.md,
+                    rowGap: effects.spacing.xs,
+                  }}
+                >
+                  {MAJOR_VOTES_LEGEND.map((entry) => (
+                    <View
+                      key={entry.kind}
+                      style={{
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: effects.spacing.xs,
+                      }}
+                    >
+                      {entry.glyph ? <VoteGlyph glyph={entry.glyph} size={24} /> : null}
+                      <Text style={{ fontSize: 15 }}>{entry.label}</Text>
+                    </View>
+                  ))}
+                </View>
+              </>
+            ) : null}
             {guide.bullets?.map((bullet) => (
               <Text
                 key={bullet}

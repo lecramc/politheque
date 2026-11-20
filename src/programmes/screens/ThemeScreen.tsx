@@ -9,6 +9,7 @@ import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { useColorStyle } from '@/components/webTheme';
 import { MajorVotesGrid } from '@/src/assemblee/components/MajorVotesGrid';
+import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { scrollToId } from '@/src/core/web/browser-actions';
@@ -196,6 +197,63 @@ export default function ThemeScreen() {
             ) : null}
           </View>
 
+          {vm.questions.length > 0 ? (
+            <View nativeID="pour-contre">
+              {/* Ouvert par défaut : c'est la réponse à « et les partis, qu'en pensent-ils ? ». */}
+              <Accordion headingLevel={2} title="Qui est pour, qui est contre ?" defaultOpen>
+                {vm.questions.map(({ question, groups }) => (
+                  <View key={question.id} style={styles.question}>
+                    <Text style={styles.heading16}>{question.statement}</Text>
+                    <Text style={[styles.text14, c((p) => ({ color: p.text.secondary }))]}>
+                      {question.help}
+                    </Text>
+                    {groups.map((group) => (
+                      <View
+                        key={String(group.stance)}
+                        role="group"
+                        aria-label={group.label}
+                        style={styles.stanceGroup}
+                      >
+                        <View style={styles.stanceGroupTitle}>
+                          <VoteGlyph glyph={group.glyph} size={20} />
+                          <Text style={styles.heading16}>{group.label}</Text>
+                        </View>
+                        {group.items.map(({ party, stance }) => (
+                          <PartyStanceRow
+                            key={party.id}
+                            party={party}
+                            stance={stance}
+                            href={partyHref(party.id, 'positions')}
+                          />
+                        ))}
+                      </View>
+                    ))}
+                  </View>
+                ))}
+              </Accordion>
+            </View>
+          ) : null}
+
+          {vm.assembleeVotes ? (
+            <View nativeID="votes-assemblee" style={{ gap: effects.spacing.sm }}>
+              <Text variant="caption" headingLevel={2}>
+                {vm.assembleeVotes.title}
+              </Text>
+              <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
+                {vm.assembleeVotes.method}
+              </Text>
+              <MajorVotesGrid grid={vm.assembleeVotes.grid} />
+              <TextLink href={vm.assembleeVotes.all.href} standalone>
+                {`${vm.assembleeVotes.all.label} →`}
+              </TextLink>
+              {vm.assembleeVotes.law ? (
+                <TextLink href={vm.assembleeVotes.law.href} standalone>
+                  {`${vm.assembleeVotes.law.label} →`}
+                </TextLink>
+              ) : null}
+            </View>
+          ) : null}
+
           <View nativeID="partis" style={{ gap: effects.spacing.sm }}>
             <Text variant="caption" headingLevel={2}>
               Ce que proposent les partis{vm.election ? ` · ${vm.election.title}` : ''}
@@ -282,26 +340,6 @@ export default function ThemeScreen() {
             </TabPanel>
           </View>
 
-          {vm.assembleeVotes ? (
-            <View nativeID="votes-assemblee" style={{ gap: effects.spacing.sm }}>
-              <Text variant="caption" headingLevel={2}>
-                {vm.assembleeVotes.title}
-              </Text>
-              <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
-                {vm.assembleeVotes.method}
-              </Text>
-              <MajorVotesGrid grid={vm.assembleeVotes.grid} />
-              <TextLink href={vm.assembleeVotes.all.href} standalone>
-                {`${vm.assembleeVotes.all.label} →`}
-              </TextLink>
-              {vm.assembleeVotes.law ? (
-                <TextLink href={vm.assembleeVotes.law.href} standalone>
-                  {`${vm.assembleeVotes.law.label} →`}
-                </TextLink>
-              ) : null}
-            </View>
-          ) : null}
-
           <View nativeID="aller-plus-loin" style={{ gap: effects.spacing.sm }}>
             <Text variant="caption" headingLevel={2}>
               Pour aller plus loin
@@ -324,26 +362,6 @@ export default function ThemeScreen() {
                 Options présentées sans ordre de préférence.
               </Text>
             </Accordion>
-            {vm.questions.length > 0 ? (
-              <Accordion headingLevel={3} title="Qui est pour, qui est contre ?">
-                {vm.questions.map(({ question, positions }) => (
-                  <View key={question.id} style={styles.question}>
-                    <Text style={styles.heading16}>{question.statement}</Text>
-                    <Text style={[styles.text14, c((p) => ({ color: p.text.secondary }))]}>
-                      {question.help}
-                    </Text>
-                    {positions.map(({ party, stance }) => (
-                      <PartyStanceRow
-                        key={party.id}
-                        party={party}
-                        stance={stance}
-                        href={partyHref(party.id, 'positions')}
-                      />
-                    ))}
-                  </View>
-                ))}
-              </Accordion>
-            ) : null}
           </View>
 
           <PageSources
@@ -382,7 +400,13 @@ const styles = StyleSheet.create({
   figureValue: { ...baseTheme.fonts.displayBold, fontSize: 28, lineHeight: 34 },
   pushDown: { marginTop: 'auto' },
   debate: { gap: baseTheme.effects.spacing.xxs },
-  question: { gap: baseTheme.effects.spacing.xs },
+  question: { gap: baseTheme.effects.spacing.sm },
+  stanceGroup: { gap: baseTheme.effects.spacing.xs },
+  stanceGroupTitle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: baseTheme.effects.spacing.xs,
+  },
   option: {
     fontSize: 15,
     lineHeight: 23,

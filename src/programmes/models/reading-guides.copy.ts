@@ -9,7 +9,7 @@ import { howToReadBullets } from '@/src/programmes/models/results.copy';
 
 /** Explication longue de la légende, dans « Comment lire cette page » (une seule fois par page). */
 export const STANCE_LEGEND_TEXT =
-  'Rond plein : position nette. Contour : position nuancée. Rond en pointillés : pas de position claire dans les sources. Une seule couleur pour toutes les positions : le sens se lit dans le symbole et le libellé, jamais dans la couleur.';
+  'Rond plein : Pour. Rond barré : Contre. Les mêmes formes en contour disent Plutôt pour et Plutôt contre. Rond en contour marqué d’un signe égal : Mitigé. Rond en pointillés : pas de position claire dans les sources. Ces formes sont aussi celles des votes de l’Assemblée, où l’anneau épais est l’abstention et le demi-rond un groupe partagé. Le sens se lit dans la forme et dans le mot, jamais dans la couleur seule.';
 
 export const positionsGuideParagraphs = (questionCount: number, partyCount: number) =>
   [

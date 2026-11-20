@@ -53,11 +53,6 @@ export function PartyAssembleeCard({ panel }: { panel: PartyAssembleePanel }) {
                   style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
                 >
                   {vote.position.glyph ? <VoteGlyph glyph={vote.position.glyph} size={18} /> : null}
-                  {!vote.position.glyph && vote.position.symbol ? (
-                    <Text aria-hidden style={{ fontSize: 16, lineHeight: 18 }}>
-                      {vote.position.symbol}
-                    </Text>
-                  ) : null}
                   <Text style={{ ...fonts.bold, fontSize: 15 }}>{vote.position.label}</Text>
                 </View>
                 <TextLink href={vote.href}>{vote.title}</TextLink>

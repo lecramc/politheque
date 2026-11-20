@@ -1,8 +1,9 @@
 import type { HemicycleLayout } from '@/src/assemblee/models/hemicycle-layout';
 import type { Depute, Groupe, ScrutinDetail, VoteCode } from '@/src/assemblee/models/scrutin.model';
+import { STANCE_SCALE_ENTRIES, type ScaleGlyph } from '@/src/programmes/models/stance-scale';
 
-/** Forme du siège : la teinte ne porte jamais seule l'information. */
-export type SeatGlyph = 'disc' | 'disc-slash' | 'ring' | 'dashed' | 'none';
+/** Forme du siège : celles de la grammaire pour / contre (`stance-scale.ts`) ; la teinte ne porte jamais seule l'information. */
+export type SeatGlyph = ScaleGlyph | 'none';
 
 export type SeatDepute = { id: string; nom: string };
 
@@ -40,11 +41,11 @@ export type SeatViewInput = {
  * même façon (légende à quatre entrées) : seule la forme fusionne, jamais les décomptes.
  */
 export const SEAT_GLYPHS: Record<VoteCode, SeatGlyph> = {
-  P: 'disc',
-  C: 'disc-slash',
-  A: 'ring',
-  N: 'dashed',
-  '-': 'dashed',
+  P: STANCE_SCALE_ENTRIES.pour.glyph,
+  C: STANCE_SCALE_ENTRIES.contre.glyph,
+  A: STANCE_SCALE_ENTRIES.abstention.glyph,
+  N: STANCE_SCALE_ENTRIES.absent.glyph,
+  '-': STANCE_SCALE_ENTRIES.absent.glyph,
   '.': 'none',
 };
 

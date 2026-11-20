@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import Svg, { Circle, Line } from 'react-native-svg';
+import Svg, { Circle, Line, Path } from 'react-native-svg';
 
 import { useTheme } from '@/components/ThemeContext';
 import type { SeatGlyph } from '@/src/assemblee/models/seat-view';
@@ -9,9 +9,11 @@ import { paint } from '@/src/core/web/svg-paint';
 type VoteColors = ReturnType<typeof useTheme>['colors']['vote'];
 
 /**
- * Un siège, à l'intérieur d'un `<Svg>` : la forme porte la position autant que la teinte.
- * disque plein = pour · disque clair barré = contre · anneau = abstention · contour pointillé =
- * n'a pas voté (ou ne prend pas part au vote) · rien = siège vacant.
+ * Une marque de la grammaire pour / contre (`stance-scale.ts`), à l'intérieur d'un `<Svg>` : la
+ * forme porte la position autant que la teinte. disque plein = pour · disque barré = contre ·
+ * mêmes formes en contour = plutôt pour / plutôt contre · contour et « = » = mitigé · anneau
+ * épais = abstention · demi-disque = partagé · contour pointillé = n'a pas voté (ou ne prend pas
+ * part au vote, ou pas de position claire) · rien = siège vacant.
  */
 export function SeatMark({
   cx,
@@ -46,6 +48,76 @@ export function SeatMark({
             y2={cy - r * 0.62}
             strokeWidth={r * 0.34}
             {...paint({ stroke: vote.contreMark })}
+          />
+        </>
+      ) : null}
+      {glyph === 'disc-outline' ? (
+        <Circle
+          cx={cx}
+          cy={cy}
+          r={r * 0.84}
+          strokeWidth={r * 0.24}
+          {...paint({ fill: 'none', stroke: vote.pour })}
+        />
+      ) : null}
+      {glyph === 'outline-slash' ? (
+        <>
+          <Circle
+            cx={cx}
+            cy={cy}
+            r={r * 0.84}
+            strokeWidth={r * 0.24}
+            {...paint({ fill: 'none', stroke: vote.contreMark })}
+          />
+          <Line
+            x1={cx - r * 0.56}
+            y1={cy + r * 0.56}
+            x2={cx + r * 0.56}
+            y2={cy - r * 0.56}
+            strokeWidth={r * 0.26}
+            {...paint({ stroke: vote.contreMark })}
+          />
+        </>
+      ) : null}
+      {glyph === 'outline-equal' ? (
+        <>
+          <Circle
+            cx={cx}
+            cy={cy}
+            r={r * 0.84}
+            strokeWidth={r * 0.24}
+            {...paint({ fill: 'none', stroke: vote.abstention })}
+          />
+          <Line
+            x1={cx - r * 0.4}
+            y1={cy - r * 0.2}
+            x2={cx + r * 0.4}
+            y2={cy - r * 0.2}
+            strokeWidth={r * 0.18}
+            {...paint({ stroke: vote.abstention })}
+          />
+          <Line
+            x1={cx - r * 0.4}
+            y1={cy + r * 0.2}
+            x2={cx + r * 0.4}
+            y2={cy + r * 0.2}
+            strokeWidth={r * 0.18}
+            {...paint({ stroke: vote.abstention })}
+          />
+        </>
+      ) : null}
+      {glyph === 'half' ? (
+        <>
+          <Path
+            d={`M ${cx} ${cy - r * 0.84} A ${r * 0.84} ${r * 0.84} 0 0 0 ${cx} ${cy + r * 0.84} Z`}
+            {...paint({ fill: vote.abstention })}
+          />
+          <Circle
+            cx={cx}
+            cy={cy}
+            r={r * 0.84}
+            strokeWidth={r * 0.24}
+            {...paint({ fill: 'none', stroke: vote.abstention })}
           />
         </>
       ) : null}

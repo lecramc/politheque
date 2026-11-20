@@ -33,13 +33,7 @@ export function StanceVotes({ votes }: { votes: StanceVote[] }) {
           style={{ gap: effects.spacing.xxs }}
         >
           <View style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}>
-            {vote.position.glyph ? (
-              <VoteGlyph glyph={vote.position.glyph} size={18} />
-            ) : vote.position.symbol ? (
-              <Text aria-hidden style={{ fontSize: 16, lineHeight: 18 }}>
-                {vote.position.symbol}
-              </Text>
-            ) : null}
+            {vote.position.glyph ? <VoteGlyph glyph={vote.position.glyph} size={18} /> : null}
             <Text style={{ ...fonts.bold, fontSize: 15 }}>{vote.position.label}</Text>
             <Text style={{ fontSize: 13, color: colors.text.secondary, flexShrink: 1 }}>
               {`· ${vote.groupName}`}
