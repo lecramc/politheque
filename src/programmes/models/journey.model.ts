@@ -63,7 +63,7 @@ export const JOURNEY_GUIDE_IDS: Record<
     'union-europeenne',
     'budget-dette',
   ],
-  'presidentielle-2027': ['election-presidentielle', 'comment-voter'],
+  'presidentielle-2027': ['election-presidentielle'],
 };
 
 const STEP_DEFINITIONS: Record<

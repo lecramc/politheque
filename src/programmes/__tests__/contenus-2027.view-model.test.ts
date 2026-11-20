@@ -3,7 +3,6 @@ import { catalogFactory, electionFactory } from '@/src/programmes/models/catalog
 import type { LexiconEntry } from '@/src/programmes/models/programme.model';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
 import {
-  faqViewModel,
   lexiconViewModel,
   voterViewModel,
 } from '@/src/programmes/view-models/contenus-2027.view-model';
@@ -28,6 +27,22 @@ const entry = (id: string, term: string, related: string[] = []): LexiconEntry =
 const loaded = (overrides = {}) => stateBuilder().withCatalog(catalogFactory(overrides)).build();
 
 describe('Feature: view-model du lexique', () => {
+  it('should resolve the voting page cited by a term', () => {
+    const vm = lexiconViewModel()(
+      loaded({
+        lexicon: [entry('a', 'Article', ['voter-2027'])],
+        voter: { ...catalogFactory().voter, title: 'Comment voter en 2027' },
+      })
+    );
+    expect(vm.groups[0].items[0].lessons).toEqual([
+      {
+        id: 'voter-2027',
+        title: 'Comment voter en 2027',
+        href: '/elections/presidentielle-2027/voter',
+      },
+    ]);
+  });
+
   it('should be loading, without meta, before the catalog is loaded', () => {
     const vm = lexiconViewModel()(stateBuilder().build());
     expect(vm).toMatchObject({ status: 'idle', meta: null, groups: [], count: 0 });
@@ -54,37 +69,23 @@ describe('Feature: view-model du lexique', () => {
   });
 });
 
-describe('Feature: view-model de la FAQ', () => {
-  const real = stateBuilder().withCatalog(buildStaticCatalog()).build();
-
-  it('should expose a plain-language note for each calculated date', () => {
-    const vm = faqViewModel()(real);
-    const item = vm.items.find((i) => i.entry.id === 'decret-de-convocation')!;
-    expect(item.calculated).toEqual([
-      expect.objectContaining({ text: 'dimanche 7 février 2027', rule: expect.any(String) }),
-    ]);
-    expect(vm.items.find((i) => i.entry.id === 'quand-vote-t-on')!.calculated).toEqual([]);
-  });
-
-  it('should link to the election page and the voting page', () => {
-    const vm = faqViewModel()(real);
-    expect(vm.electionHref).toBe('/elections/presidentielle-2027');
-    expect(vm.voterHref).toBe('/elections/presidentielle-2027/voter');
-    expect(vm.meta?.path).toBe('/elections/presidentielle-2027/questions');
-  });
-});
-
 describe('Feature: view-model de la page « Comment voter »', () => {
   const real = stateBuilder().withCatalog(buildStaticCatalog()).build();
 
-  it('should expose every section with its calculated dates, and the matching lesson', () => {
+  it('should expose every section with its calculated dates, who can vote first', () => {
     const vm = voterViewModel()(real);
-    expect(vm.sections).toHaveLength(7);
-    expect(vm.sections[0].calculated.map((c) => c.text)).toEqual([
+    expect(vm.sections).toHaveLength(9);
+    expect(vm.sections[0].section.id).toBe('qui-peut-voter');
+    expect(vm.sections[1].calculated.map((c) => c.text)).toEqual([
       'vendredi 12 mars 2027',
       'jeudi 8 avril 2027',
     ]);
-    expect(vm.lesson).toMatchObject({ id: 'comment-voter', href: '/comprendre/comment-voter' });
+  });
+
+  it('should link to the questions (end of the presidential lesson) and the election page', () => {
+    const vm = voterViewModel()(real);
+    expect(vm.faqHref).toBe('/comprendre/election-presidentielle#questions');
+    expect(vm.electionHref).toBe('/elections/presidentielle-2027');
   });
 
   it('should offer the calendar file next to the summary', () => {
@@ -113,7 +114,7 @@ describe('Feature: liens de la page élection vers les contenus 2027', () => {
   it('should point to the voting page and the FAQ for the presidential election', () => {
     expect(vmOf('presidentielle-2027').contentLinks).toEqual({
       voter: '/elections/presidentielle-2027/voter',
-      faq: '/elections/presidentielle-2027/questions',
+      faq: '/comprendre/election-presidentielle#questions',
       candidates: '/elections/presidentielle-2027/candidats',
       agenda: expect.objectContaining({ href: '/agenda-presidentielle-2027.ics' }),
     });

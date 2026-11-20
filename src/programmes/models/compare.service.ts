@@ -84,3 +84,11 @@ export function parseCompareParams(
   const b = known(params.b);
   return [a, b && b !== a ? b : null];
 }
+
+/** Lit `?theme=` : seul un thème connu ouvre le filtre, sinon tous les sujets restent affichés. */
+export function parseCompareTheme(
+  theme: string | undefined,
+  themeIds: readonly string[]
+): string | null {
+  return theme && themeIds.includes(theme) ? theme : null;
+}

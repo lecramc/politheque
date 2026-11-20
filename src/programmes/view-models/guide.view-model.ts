@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
+import { faqOfLesson, faqSection, FAQ_ANCHOR } from '@/src/programmes/models/contenus-2027';
 import { LAW_JOURNEY, LAW_JOURNEY_ID } from '@/src/programmes/models/law-journey.copy';
 import {
   firstSentence,
@@ -63,7 +64,9 @@ export const guideSectionViewModel =
       return {
         status,
         section,
-        meta: section ? guideSectionMeta(section) : null,
+        meta: section
+          ? guideSectionMeta(section, faqOfLesson(sectionId, catalog?.faq ?? []))
+          : null,
         notFoundMeta: nonIndexableMeta('Section introuvable', `/comprendre/${sectionId}`),
         minutes: section ? minutesOf(section) : 0,
         blocks: (section?.blocks ?? []).map((block) => ({
@@ -72,7 +75,15 @@ export const guideSectionViewModel =
         })),
         /** Frise du parcours d'une loi : sur cette leçon seulement. */
         timeline: sectionId === LAW_JOURNEY_ID ? LAW_JOURNEY : null,
-        allSources: (section?.blocks ?? []).flatMap((b) => b.sources),
+        /** Questions-réponses : section finale de la leçon sur la présidentielle, sinon null. */
+        faq:
+          catalog && faqOfLesson(sectionId, catalog.faq).length > 0
+            ? { ...faqSection(catalog), anchor: FAQ_ANCHOR }
+            : null,
+        allSources: [
+          ...(section?.blocks ?? []).flatMap((b) => b.sources),
+          ...faqOfLesson(sectionId, catalog?.faq ?? []).flatMap((q) => q.sources),
+        ],
         next: sections.find((s) => s.id === nextId) ?? null,
         markRead: () => dispatch(markContentReadUsecase(contentKey.guide(sectionId))),
       };

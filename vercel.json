@@ -143,6 +143,28 @@
       ]
     },
     {
+      "source": "/comprendre/comment-voter",
+      "destination": "https://politheque.revaamp.com/elections/presidentielle-2027/voter",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
+      "source": "/elections/presidentielle-2027/questions",
+      "destination": "https://politheque.revaamp.com/comprendre/election-presidentielle#questions",
+      "permanent": true,
+      "has": [
+        {
+          "type": "host",
+          "value": "travee-ebon.vercel.app"
+        }
+      ]
+    },
+    {
       "source": "/partis/:id((?!comparer$)[^/]+)\\.html",
       "destination": "https://politheque.revaamp.com/partis/:id/programme-2027",
       "permanent": true,
@@ -283,6 +305,16 @@
       "source": "/elections",
       "destination": "/elections/presidentielle-2027",
       "permanent": false
+    },
+    {
+      "source": "/comprendre/comment-voter",
+      "destination": "/elections/presidentielle-2027/voter",
+      "permanent": true
+    },
+    {
+      "source": "/elections/presidentielle-2027/questions",
+      "destination": "/comprendre/election-presidentielle#questions",
+      "permanent": true
     },
     {
       "source": "/partis/:id((?!comparer$)[^/]+)\\.html",

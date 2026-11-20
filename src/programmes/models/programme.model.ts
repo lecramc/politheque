@@ -337,7 +337,7 @@ export interface LexiconEntry {
   /** Définition courte, visible. */
   definition: string;
   more: string[];
-  /** Identifiants de leçons du guide. */
+  /** Identifiants de leçons du guide, ou `voter-2027` (page « Comment voter »). */
   related: string[];
   sources: Source[];
   lastVerified: string;
@@ -366,13 +366,12 @@ export interface VoterSection {
   sources: Source[];
 }
 
-/** Page « Comment voter » d'une élection : le détail de la leçon `guideSectionId`. */
+/** Page « Comment voter » d'une élection : la page de référence (inscription, procuration, pièce d'identité…). */
 export interface VoterGuide {
   id: string;
   title: string;
   summary: string;
   summarySources: Source[];
-  guideSectionId: string;
   electionId: string;
   lastVerified: string;
   sections: VoterSection[];

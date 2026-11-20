@@ -97,11 +97,6 @@ export function buildLlmsTxt(catalog: Catalog, urls: SiteUrl[]): string {
     '',
     ...catalog.elections.flatMap((e) => link(e.title, `/elections/${e.id}`, e.summary)),
     ...link(
-      'Présidentielle 2027 : questions-réponses',
-      CONTENUS_2027_PATHS.faq,
-      `${catalog.faq.length} questions sur les dates, l'inscription, les candidatures et le scrutin, avec réponse courte et sources.`
-    ),
-    ...link(
       'Comment voter à la présidentielle 2027',
       CONTENUS_2027_PATHS.voter,
       "s'inscrire, vérifier son bureau de vote, procuration, vote depuis l'étranger, jour du scrutin."

@@ -9,7 +9,6 @@ import {
   voteSteps,
 } from '@/src/programmes/models/election.service';
 import { candidatesEntry } from '@/src/programmes/models/other-parties.service';
-import { readingMinutes } from '@/src/programmes/models/presentation.service';
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import { electionMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { AGENDA_COPY, AGENDA_PATH } from '@/src/programmes/models/voter-calendar.copy';
@@ -61,13 +60,5 @@ export const electionViewModel =
           election && catalog && catalog.voter.electionId === election.id
             ? candidatesEntry(catalog)
             : null,
-        voteGuide: {
-          href: '/comprendre/comment-voter',
-          minutes: readingMinutes(
-            (catalog?.guide ?? [])
-              .find((s) => s.id === 'comment-voter')
-              ?.blocks.flatMap((b) => [b.heading, ...b.paragraphs, ...(b.more ?? [])]) ?? []
-          ),
-        },
       };
     });

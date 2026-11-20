@@ -1,5 +1,9 @@
 import { catalogFactory } from '@/src/programmes/models/catalog.factory';
-import { compareParties, parseCompareParams } from '@/src/programmes/models/compare.service';
+import {
+  compareParties,
+  parseCompareParams,
+  parseCompareTheme,
+} from '@/src/programmes/models/compare.service';
 import { emptyThemes, partyFactory } from '@/src/programmes/models/party.factory';
 import type { Candidacy, Question } from '@/src/programmes/models/programme.model';
 
@@ -141,5 +145,16 @@ describe('Feature: choix des partis dans le lien', () => {
     expect(parseCompareParams({}, ['rn', 'lfi'])).toEqual([null, null]);
     expect(parseCompareParams({ a: 'rn', b: 'rn' }, ['rn', 'lfi'])).toEqual(['rn', null]);
     expect(parseCompareParams({ a: 'x', b: 'lfi' }, ['rn', 'lfi'])).toEqual([null, 'lfi']);
+  });
+});
+
+describe('Feature: thème ouvert par le lien', () => {
+  it('should read a known theme from ?theme=', () => {
+    expect(parseCompareTheme('retraites', ['economie', 'retraites'])).toBe('retraites');
+  });
+
+  it('should ignore a missing or unknown theme: all subjects stay open', () => {
+    expect(parseCompareTheme(undefined, ['economie'])).toBeNull();
+    expect(parseCompareTheme('inconnu', ['economie'])).toBeNull();
   });
 });

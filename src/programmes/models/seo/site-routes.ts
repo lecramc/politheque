@@ -4,6 +4,7 @@ import {
 } from '@/src/assemblee/gateways/static-assemblee.gateway';
 import { SITE_URL } from '@/src/core/config/app';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
+import { faqOfLesson } from '@/src/programmes/models/contenus-2027';
 import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
 import type { Catalog, Party } from '@/src/programmes/models/programme.model';
 import { maxIsoDate } from '@/src/programmes/models/seo/dates';
@@ -27,7 +28,6 @@ export type RoutePattern =
   | '/partis/[id]/procedures-judiciaires'
   | '/partis/comparer'
   | '/elections/[id]'
-  | '/elections/presidentielle-2027/questions'
   | '/elections/presidentielle-2027/voter'
   | '/elections/presidentielle-2027/candidats'
   | '/debats/[id]'
@@ -133,7 +133,12 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
   '/comprendre/[id]': {
     params: (c) => c.guide.map((s) => ({ id: s.id })),
     indexable: true,
-    lastmod: (c, p) => c.guide.find((s) => s.id === p.id)?.lastVerified ?? null,
+    // La leçon sur la présidentielle porte aussi les questions-réponses : leurs dates comptent.
+    lastmod: (c, p) =>
+      maxIsoDate([
+        c.guide.find((s) => s.id === p.id)?.lastVerified,
+        ...faqOfLesson(p.id, c.faq).map((q) => q.lastVerified),
+      ]),
   },
   // Une seule page pour les termes (pas de page par terme : contenu trop mince).
   '/comprendre/lexique': fixed(true, (c) => maxIsoDate(c.lexicon.map((t) => t.lastVerified))),
@@ -163,9 +168,6 @@ export const SITE_ROUTES: Record<RoutePattern, RouteDefinition> = {
         ...c.parties.filter((party) => party.candidacies[p.id]).map((party) => party.lastVerified),
       ]),
   },
-  '/elections/presidentielle-2027/questions': fixed(true, (c) =>
-    maxIsoDate(c.faq.map((q) => q.lastVerified))
-  ),
   '/elections/presidentielle-2027/voter': fixed(true, (c) => maxIsoDate([c.voter.lastVerified])),
   '/elections/presidentielle-2027/candidats': fixed(true, (c) =>
     maxIsoDate([c.candidates.lastVerified])

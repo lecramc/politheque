@@ -164,9 +164,6 @@ export default function ElectionScreen() {
                 </TextLink>
               </>
             ) : null}
-            <TextLink href={vm.voteGuide.href} standalone>
-              {`La leçon « Comment voter » (${vm.voteGuide.minutes} min)`}
-            </TextLink>
             <TextLink href="/comprendre/election-presidentielle" standalone>
               Comment se déroule l'élection présidentielle
             </TextLink>

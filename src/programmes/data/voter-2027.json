@@ -22,10 +22,30 @@
       "kind": "statistique"
     }
   ],
-  "guideSectionId": "comment-voter",
   "electionId": "presidentielle-2027",
-  "lastVerified": "2026-11-08",
+  "lastVerified": "2026-11-09",
   "sections": [
+    {
+      "id": "qui-peut-voter",
+      "title": "Qui peut voter ?",
+      "paragraphs": [
+        "Pour voter à l'élection présidentielle, il faut être de nationalité française, avoir au moins 18 ans la veille du scrutin, jouir de ses droits civils et politiques et être inscrit sur une liste électorale."
+      ],
+      "sources": [
+        {
+          "title": "Liste électorale : inscription d'office à 18 ans si le recensement citoyen a été fait à 16 ans",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1961",
+          "date": "2025-11-28",
+          "kind": "statistique"
+        },
+        {
+          "title": "Listes électorales : en cas de première inscription",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F1367",
+          "date": "2026-03-03",
+          "kind": "statistique"
+        }
+      ]
+    },
     {
       "id": "s-inscrire",
       "title": "S'inscrire sur les listes électorales",
@@ -231,10 +251,7 @@
         "Votre bureau de vote est indiqué sur votre carte électorale et sur le service en ligne de vérification. Pour l'élection présidentielle, il est ouvert de 8 heures à 19 heures ; le préfet peut prolonger jusqu'à 20 heures au plus.",
         "Avant de voter à l'urne, le passage par l'isoloir est obligatoire."
       ],
-      "more": [
-        "Les horaires exacts de votre bureau sont donnés par votre mairie.",
-        "Un vote blanc (enveloppe vide ou bulletin sans nom) et un vote nul (bulletin déchiré ou annoté) sont comptés parmi les votants, mais pas parmi les suffrages exprimés."
-      ],
+      "more": ["Les horaires exacts de votre bureau sont donnés par votre mairie."],
       "sources": [
         {
           "title": "Élections politiques : déroulement du scrutin",
@@ -246,6 +263,36 @@
           "title": "Vérifier votre inscription électorale et votre bureau de vote",
           "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/1?idFicheParent=N47",
           "date": "2026-06-18",
+          "kind": "statistique"
+        }
+      ]
+    },
+    {
+      "id": "vote-blanc-nul",
+      "title": "Vote blanc et vote nul",
+      "paragraphs": [
+        "Un vote blanc, c'est une enveloppe vide ou un bulletin sans nom. Un vote nul, c'est par exemple un bulletin déchiré ou annoté."
+      ],
+      "more": [
+        "Depuis une loi de 2014, les votes blancs sont comptés à part. Mais les votes blancs et nuls ne font pas partie des « suffrages exprimés ». Ce sont uniquement les suffrages exprimés qui servent à calculer les résultats."
+      ],
+      "sources": [
+        {
+          "title": "Élections politiques : déroulement du scrutin",
+          "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34852/5_3",
+          "date": "2025-10-13",
+          "kind": "statistique"
+        },
+        {
+          "title": "Loi n° 2014-172 du 21 février 2014 visant à reconnaître le vote blanc aux élections",
+          "url": "https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000028636783",
+          "date": "2014-02-21",
+          "kind": "statistique"
+        },
+        {
+          "title": "Sept questions sur le vote blanc (vie-publique.fr)",
+          "url": "https://www.vie-publique.fr/questions-reponses/23932-7-questions-sur-le-vote-blanc",
+          "date": "2026-04-16",
           "kind": "statistique"
         }
       ]

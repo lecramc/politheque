@@ -27,10 +27,6 @@ export function foldedSnippets(catalog: Catalog, path: string): string[] {
     const more = catalog.lexicon.flatMap((t) => t.more)[0];
     return more ? [snippet(more)] : [];
   }
-  if (path === CONTENUS_2027_PATHS.faq) {
-    const more = catalog.faq.flatMap((q) => q.more ?? [])[0];
-    return more ? [snippet(more)] : [];
-  }
   if (path === CONTENUS_2027_PATHS.voter) {
     const more = catalog.voter.sections.flatMap((s) => s.more ?? [])[0];
     return more ? [snippet(more)] : [];
@@ -53,7 +49,10 @@ export function foldedSnippets(catalog: Catalog, path: string): string[] {
     const more = catalog.guide
       .find((s) => s.id === guide[1])
       ?.blocks.flatMap((b) => b.more ?? [])[0];
-    return more ? [snippet(more)] : [];
+    // La leçon sur la présidentielle porte aussi les questions-réponses (détails repliés compris).
+    const faqMore =
+      path === CONTENUS_2027_PATHS.faqLesson ? catalog.faq.flatMap((q) => q.more ?? [])[0] : null;
+    return [more, faqMore].flatMap((text) => (text ? [snippet(text)] : []));
   }
   const debate = /^\/debats\/([^/]+)$/.exec(path);
   if (debate) {

@@ -20,6 +20,8 @@ rubrique d'actualité, pas le sujet du site.
 | Me situer  | `/me-situer`, `/me-situer/resultats`         | Questionnaire de positionnement : positions **des partis** (pas d'un scrutin)                                                                                                                                                                                           |
 | Méthode    | `/methodologie`                              | Charte, calculs, corrections                                                                                                                                                                                                                                            |
 
+**Une seule page par sujet (fusions de novembre 2026).** Comment voter : `/elections/presidentielle-2027/voter` seule (la leçon `/comprendre/comment-voter` redirige, 301). Règles de la présidentielle et questions-réponses : la leçon `/comprendre/election-presidentielle`, dont la section finale `#questions` porte la FAQ (`/elections/presidentielle-2027/questions` redirige, 301). Comparer deux partis : `/partis/comparer` seul, `?a=&b=&theme=` (noindex). Les grands débats ouvrent `/partis` (ancre `#debats`).
+
 ## Modèle de données
 
 ```

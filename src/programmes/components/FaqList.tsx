@@ -4,45 +4,47 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
-import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { CalculatedDateNote } from '@/src/programmes/components/CalculatedDateNote';
 import { GuideParagraph } from '@/src/programmes/components/GuideParagraph';
 import { MoreText } from '@/src/programmes/components/MoreText';
-import { Page } from '@/src/programmes/components/Page';
-import { PageSources } from '@/src/programmes/components/PageSources';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
+import type { CalculatedNote, LessonLink } from '@/src/programmes/models/contenus-2027';
+import type { FaqEntry } from '@/src/programmes/models/programme.model';
 import { formatLongDate } from '@/src/programmes/models/seo/dates';
-import { faqViewModel } from '@/src/programmes/view-models/contenus-2027.view-model';
 
-/** Questions-réponses : la réponse courte est visible, le détail replié, les dates calculées signalées. */
-export default function FaqScreen() {
-  const vm = useViewModel(faqViewModel);
+type FaqItem = { entry: FaqEntry; lessons: LessonLink[]; calculated: CalculatedNote[] };
+
+/**
+ * Questions-réponses (section finale de la leçon sur la présidentielle) : la réponse courte est
+ * visible, le détail replié, les dates calculées signalées.
+ */
+export function FaqList({
+  anchor,
+  items,
+  verifiedOn,
+}: {
+  anchor: string;
+  items: FaqItem[];
+  verifiedOn: string | null;
+}) {
   const { colors, effects } = useTheme();
-
   return (
-    <Page
-      meta={vm.meta}
-      article
-      loading={vm.status !== 'loaded'}
-      back={{ label: 'Présidentielle 2027', href: vm.electionHref }}
-    >
+    <View nativeID={anchor} style={{ gap: effects.spacing.md }}>
       <View style={{ gap: effects.spacing.xs }}>
-        <Text variant="title">{`Présidentielle 2027 : ${vm.items.length} questions-réponses`}</Text>
-        <Text style={{ fontSize: 17, lineHeight: 26 }}>
-          Une réponse courte à chaque question, avec ses sources officielles. Les dates déduites
-          d'une règle sont signalées « date calculée ».
+        <Text variant="title" headingLevel={2} style={{ fontSize: 24, lineHeight: 30 }}>
+          Questions fréquentes
         </Text>
-        {vm.verifiedOn ? (
+        <Text style={{ fontSize: 17, lineHeight: 26 }}>
+          {`${items.length} questions, une réponse courte à chacune, avec ses sources officielles. Les dates déduites d'une règle sont signalées « date calculée ».`}
+        </Text>
+        {verifiedOn ? (
           <Text style={{ fontSize: 14, color: colors.text.secondary }}>
-            {`Vérifié le ${formatLongDate(vm.verifiedOn)}`}
+            {`Vérifié le ${formatLongDate(verifiedOn)}`}
           </Text>
         ) : null}
-        <TextLink href={vm.voterHref} standalone>
-          Comment voter : le guide détaillé
-        </TextLink>
       </View>
 
-      {vm.items.map(({ entry, lessons, calculated }) => (
+      {items.map(({ entry, lessons, calculated }) => (
         <View
           key={entry.id}
           nativeID={entry.id}
@@ -53,7 +55,7 @@ export default function FaqScreen() {
             borderColor: colors.surface.border.primary,
           }}
         >
-          <Text variant="display" headingLevel={2}>
+          <Text variant="display" headingLevel={3}>
             {entry.question}
           </Text>
           <Text style={{ fontSize: 17, lineHeight: 27 }}>{entry.answer}</Text>
@@ -80,8 +82,6 @@ export default function FaqScreen() {
           <SourceChip sources={entry.sources} subject={entry.question} />
         </View>
       ))}
-
-      <PageSources sources={vm.allSources} />
-    </Page>
+    </View>
   );
 }

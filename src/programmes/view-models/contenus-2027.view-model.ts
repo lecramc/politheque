@@ -8,7 +8,7 @@ import {
 import { lexiconGroups } from '@/src/programmes/models/lexicon.service';
 import type { Source } from '@/src/programmes/models/programme.model';
 import { maxIsoDate } from '@/src/programmes/models/seo/dates';
-import { faqMeta, lexiconMeta, voterMeta } from '@/src/programmes/models/seo/page-meta';
+import { lexiconMeta, voterMeta } from '@/src/programmes/models/seo/page-meta';
 import { AGENDA_COPY, AGENDA_PATH } from '@/src/programmes/models/voter-calendar.copy';
 import { selectCatalog, selectCatalogStatus } from '@/src/programmes/store/programmes.selector';
 
@@ -24,26 +24,8 @@ export const lexiconViewModel = () =>
         ...group,
         items: group.entries.map((entry) => ({
           entry,
-          lessons: relatedLessons(catalog?.guide ?? [], entry.related),
+          lessons: relatedLessons(catalog?.guide ?? [], entry.related, catalog?.voter),
         })),
-      })),
-      allSources: entries.flatMap((e) => e.sources),
-    };
-  });
-
-export const faqViewModel = () =>
-  createSelector([selectCatalog, selectCatalogStatus], (catalog, status) => {
-    const entries = catalog?.faq ?? [];
-    return {
-      status,
-      meta: catalog ? faqMeta(catalog) : null,
-      electionHref: CONTENUS_2027_PATHS.election,
-      voterHref: CONTENUS_2027_PATHS.voter,
-      verifiedOn: maxIsoDate(entries.map((e) => e.lastVerified)),
-      items: entries.map((entry) => ({
-        entry,
-        lessons: relatedLessons(catalog?.guide ?? [], entry.related),
-        calculated: calculatedNotes(entry.calculated),
       })),
       allSources: entries.flatMap((e) => e.sources),
     };
@@ -62,9 +44,6 @@ export const voterViewModel = () =>
       electionHref: CONTENUS_2027_PATHS.election,
       faqHref: CONTENUS_2027_PATHS.faq,
       agenda: { href: AGENDA_PATH, label: AGENDA_COPY.button },
-      lesson: voter
-        ? (relatedLessons(catalog?.guide ?? [], [voter.guideSectionId])[0] ?? null)
-        : null,
       sections: (voter?.sections ?? []).map((section) => ({
         section,
         calculated: calculatedNotes(section.calculated),

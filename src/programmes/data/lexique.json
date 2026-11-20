@@ -383,7 +383,7 @@
     "more": [
       "Les résultats de l'élection présidentielle (y compris la majorité absolue nécessaire au premier tour) sont calculés sur les suffrages exprimés."
     ],
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Élections politiques : déroulement du scrutin",
@@ -401,7 +401,7 @@
     "more": [
       "Les votes blancs et nuls sont comptés parmi les votants, mais pas parmi les suffrages exprimés."
     ],
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Élections politiques : déroulement du scrutin",
@@ -765,7 +765,7 @@
     "term": "Suffrage universel direct",
     "definition": "Le suffrage est universel quand tous les citoyens majeurs jouissant de leurs droits civils et politiques peuvent voter. Il est direct quand les électeurs choisissent eux-mêmes l'élu, comme pour le président de la République.",
     "more": ["La Constitution précise que le suffrage est « toujours universel, égal et secret »."],
-    "related": ["election-presidentielle", "comment-voter"],
+    "related": ["election-presidentielle", "voter-2027"],
     "sources": [
       {
         "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (articles 3 et 6)",
@@ -883,7 +883,7 @@
       "Le mandataire peut être inscrit dans une autre commune, mais il vote dans le bureau du mandant. En France, il ne peut détenir qu'une seule procuration établie en France.",
       "La demande se fait sur Maprocuration, puis par une vérification d'identité au commissariat ou à la gendarmerie. Depuis un décret du 3 novembre 2025, elle peut se faire entièrement en ligne avec une identité numérique certifiée France Identité."
     ],
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Vote par procuration - En France",
@@ -908,7 +908,7 @@
       "Depuis le 1er juillet 2026, la date limite est la même en ligne, en mairie et par courrier.",
       "Les jeunes qui ont fait leur recensement citoyen sont inscrits d'office à 18 ans."
     ],
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Code électoral, article L17",

@@ -51,7 +51,7 @@ function DebateRow({
   );
 }
 
-/** Partis : les fiches, « Comparer deux partis » et les grands débats (ancre `#debats`). */
+/** Partis : introduction, les grands débats (ancre `#debats`), puis les fiches et « Comparer deux partis ». */
 export default function PartiesScreen() {
   const vm = useViewModel(partiesViewModel);
   const meta = useViewModel(metaViewModel);
@@ -83,6 +83,22 @@ export default function PartiesScreen() {
               Comparer deux partis
             </Button>
           </View>
+        </View>
+
+        <View nativeID="debats" style={{ gap: effects.spacing.xs }}>
+          <View style={{ gap: effects.spacing.xxs }}>
+            <Text variant="caption" headingLevel={2}>
+              Les grands débats
+            </Text>
+            <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
+              Pour chaque débat : les enjeux, les chiffres clés et ce que propose chaque parti.
+            </Text>
+          </View>
+          <RowGroup grid>
+            {vm.debates.map((debate, index) => (
+              <DebateRow key={debate.id} debate={debate} first={index === 0} />
+            ))}
+          </RowGroup>
         </View>
 
         <View style={{ gap: effects.spacing.xs }}>
@@ -128,22 +144,6 @@ export default function PartiesScreen() {
             </View>
           </View>
         ) : null}
-
-        <View nativeID="debats" style={{ gap: effects.spacing.xs }}>
-          <View style={{ gap: effects.spacing.xxs }}>
-            <Text variant="caption" headingLevel={2}>
-              Les grands débats
-            </Text>
-            <Text style={{ color: colors.text.secondary, fontSize: 15 }}>
-              Pour chaque débat : les enjeux, les chiffres clés et ce que propose chaque parti.
-            </Text>
-          </View>
-          <RowGroup grid>
-            {vm.debates.map((debate, index) => (
-              <DebateRow key={debate.id} debate={debate} first={index === 0} />
-            ))}
-          </RowGroup>
-        </View>
       </View>
     </Page>
   );

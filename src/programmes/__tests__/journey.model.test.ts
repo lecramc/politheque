@@ -59,18 +59,14 @@ describe('Feature: définition du parcours', () => {
   it('should add the featured election to the presidential step', () => {
     expect(stepOf('presidentielle-2027').items.map((i) => i.key)).toEqual([
       'guide:election-presidentielle',
-      'guide:comment-voter',
       'election:presidentielle-2027',
     ]);
-    expect(stepOf('presidentielle-2027').items[2].title).toBe('Les candidatures 2027');
+    expect(stepOf('presidentielle-2027').items[1].title).toBe('Les candidatures 2027');
   });
 
   it('should drop the election item when no election is featured', () => {
     const catalog = catalogFactory({ elections: [electionFactory({ featured: false })] });
-    expect(stepOf('presidentielle-2027', catalog).items.map((i) => i.kind)).toEqual([
-      'guide',
-      'guide',
-    ]);
+    expect(stepOf('presidentielle-2027', catalog).items.map((i) => i.kind)).toEqual(['guide']);
   });
 
   it('should link a single-content step directly to its content', () => {

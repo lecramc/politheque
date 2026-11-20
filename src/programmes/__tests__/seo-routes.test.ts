@@ -227,7 +227,7 @@ describe('Feature: contenu replié attendu dans le HTML', () => {
 
   it('should expect one folded fragment on guide, debate and programme pages', () => {
     for (const path of [
-      '/comprendre/comment-voter',
+      '/comprendre/institutions',
       '/debats/economie',
       '/partis/rn/programme-2027',
     ]) {

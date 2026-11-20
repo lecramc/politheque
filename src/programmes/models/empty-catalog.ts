@@ -15,7 +15,6 @@ export const emptyCatalog = (): Catalog => ({
     title: '',
     summary: '',
     summarySources: [],
-    guideSectionId: '',
     electionId: '',
     lastVerified: '',
     sections: [],

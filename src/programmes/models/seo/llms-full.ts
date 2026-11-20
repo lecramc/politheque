@@ -141,7 +141,7 @@ function faqText(catalog: Catalog): string[] {
   const lines = [
     '## Présidentielle 2027 : questions-réponses',
     '',
-    `Page : ${absoluteUrl(CONTENUS_2027_PATHS.faq)}`,
+    `Page : ${absoluteUrl(CONTENUS_2027_PATHS.faqLesson)} (section « Questions fréquentes »)`,
   ];
   for (const entry of catalog.faq) {
     lines.push('', `### ${entry.question}`, '', entry.answer, ...(entry.more ?? []));
