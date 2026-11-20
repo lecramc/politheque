@@ -1,18 +1,16 @@
 import { Link, useLocalSearchParams } from 'expo-router';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Platform, ScrollView, StyleSheet, View } from 'react-native';
 
 import { theme as baseTheme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
-import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { useColorStyle } from '@/components/webTheme';
 import { MajorVotesGrid } from '@/src/assemblee/components/MajorVotesGrid';
 import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
-import { scrollToId } from '@/src/core/web/browser-actions';
 import { tv } from '@/src/core/web/tv';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { Card } from '@/src/programmes/components/Card';
@@ -23,17 +21,14 @@ import { PageSources } from '@/src/programmes/components/PageSources';
 import { PartyDot } from '@/src/programmes/components/PartyDot';
 import { PartyStanceRow } from '@/src/programmes/components/PartyStanceRow';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
-import { TabPanel, Tabs } from '@/src/programmes/components/Tabs';
 import { figureColumns, splitFigure } from '@/src/programmes/models/key-figure.service';
 import { DEBATE_ANCHORS } from '@/src/programmes/models/on-this-page';
-import { displayName, firstSentence } from '@/src/programmes/models/presentation.service';
+import { firstSentence } from '@/src/programmes/models/presentation.service';
 import type { ThemeProgramme } from '@/src/programmes/models/programme-publication.service';
 import type { KeyFigure, Party } from '@/src/programmes/models/programme.model';
 import { partyLinkLabel } from '@/src/programmes/models/seo/page-meta';
 import { partyHref } from '@/src/programmes/models/seo/party-sections';
 import { themeViewModel } from '@/src/programmes/view-models/theme.view-model';
-
-type Mode = 'tous' | 'comparer';
 
 /** Le sous-titre d'un parti : première phrase du résumé, ou la mention qui en tient lieu. */
 const programmeSubtitle = (programme: ThemeProgramme) =>
@@ -98,22 +93,11 @@ function KeyFigureCard({ figure }: { figure: KeyFigure }) {
 }
 
 export default function ThemeScreen() {
-  const { id, comparer } = useLocalSearchParams<{ id: string; comparer?: string }>();
+  const { id } = useLocalSearchParams<{ id: string }>();
   const vm = useViewModel(themeViewModel(id));
-  const { colors, effects, fonts } = useTheme();
+  const { colors, effects } = useTheme();
   const c = useColorStyle();
-  const [mode, setMode] = useState<Mode>('tous');
-  const [selected, setSelected] = useState<string[]>([]);
   const theme = vm.theme;
-
-  // Lien « Comparer avec un autre parti » (fiche parti) : comparaison ouverte, ce parti choisi.
-  // Lu après l'hydratation : le HTML statique ne connaît pas la requête.
-  useEffect(() => {
-    if (!comparer || !vm.comparisons.some((c) => c.party.id === comparer)) return;
-    setMode('comparer');
-    setSelected([comparer]);
-    scrollToId('partis');
-  }, [comparer, vm.comparisons.length]);
 
   if (vm.status === 'loaded' && !theme) {
     return (
@@ -123,13 +107,6 @@ export default function ThemeScreen() {
     );
   }
 
-  const toggleSelected = (partyId: string) =>
-    setSelected((current) =>
-      current.includes(partyId)
-        ? current.filter((x) => x !== partyId)
-        : [...current, partyId].slice(-2)
-    );
-  const compared = vm.comparisons.filter((c) => selected.includes(c.party.id));
   return (
     <Page
       meta={vm.meta}
@@ -158,7 +135,7 @@ export default function ThemeScreen() {
             ) : null}
           </View>
 
-          <OnThisPage items={DEBATE_ANCHORS} onAction={() => setMode('comparer')} />
+          <OnThisPage items={DEBATE_ANCHORS} />
 
           <View nativeID="chiffres-cles" style={{ gap: effects.spacing.xs }}>
             <Text variant="caption" headingLevel={2}>
@@ -258,86 +235,25 @@ export default function ThemeScreen() {
             <Text variant="caption" headingLevel={2}>
               Ce que proposent les partis{vm.election ? ` · ${vm.election.title}` : ''}
             </Text>
-            <Tabs
-              tabs={[
-                { id: 'tous', label: 'Tous (A-Z)' },
-                { id: 'comparer', label: 'Comparer deux partis' },
-              ]}
-              value={mode}
-              onChange={setMode}
-            />
-            <TabPanel id={mode} style={{ gap: effects.spacing.sm }}>
-              {mode === 'tous' ? (
-                vm.comparisons.map(({ party, candidate, programme }) =>
-                  programme ? (
-                    <Accordion
-                      key={party.id}
-                      title={party.name}
-                      subtitle={programmeSubtitle(programme)}
-                      leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
-                    >
-                      <Text style={[styles.text14, c((p) => ({ color: p.text.secondary }))]}>
-                        {candidate.split(' (')[0]}
-                      </Text>
-                      <ProgrammeDetail programme={programme} party={party} />
-                    </Accordion>
-                  ) : null
-                )
-              ) : (
-                <>
-                  <Text style={{ color: colors.text.secondary }}>Choisissez deux partis :</Text>
-                  <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: effects.spacing.xs }}>
-                    {vm.comparisons.map(({ party }) => {
-                      const active = selected.includes(party.id);
-                      return (
-                        <Pressable
-                          key={party.id}
-                          onPress={() => toggleSelected(party.id)}
-                          accessibilityRole="checkbox"
-                          accessibilityState={{ checked: active }}
-                          aria-checked={active}
-                          style={{
-                            flexDirection: 'row',
-                            alignItems: 'center',
-                            gap: effects.spacing.xs,
-                            minHeight: 44,
-                            paddingHorizontal: effects.spacing.sm,
-                            borderRadius: effects.borderRadius.round,
-                            borderWidth: 1.5,
-                            borderColor: active ? colors.tint : colors.surface.border.tertiary,
-                            backgroundColor: active ? colors.tintSoft : colors.surface.primary,
-                          }}
-                        >
-                          <PartyDot color={party.color} size={14} />
-                          <Text style={active ? fonts.bold : undefined}>{displayName(party)}</Text>
-                        </Pressable>
-                      );
-                    })}
-                  </View>
-                  {compared.length === 2 ? (
-                    <View style={{ flexDirection: 'row', gap: effects.spacing.sm }}>
-                      {compared.map(({ party, programme }) => (
-                        <Card key={party.id} style={{ flex: 1, padding: effects.spacing.sm }}>
-                          <View
-                            style={{
-                              flexDirection: 'row',
-                              alignItems: 'center',
-                              gap: effects.spacing.xs,
-                            }}
-                          >
-                            <PartyDot color={party.color} size={24} label={party.shortName} />
-                            <Text style={{ ...fonts.bold, flex: 1 }}>{displayName(party)}</Text>
-                          </View>
-                          {programme ? (
-                            <ProgrammeDetail programme={programme} party={party} />
-                          ) : null}
-                        </Card>
-                      ))}
-                    </View>
-                  ) : null}
-                </>
-              )}
-            </TabPanel>
+            {vm.comparisons.map(({ party, candidate, programme }) =>
+              programme ? (
+                <Accordion
+                  key={party.id}
+                  title={party.name}
+                  subtitle={programmeSubtitle(programme)}
+                  leading={<PartyDot color={party.color} size={32} label={party.shortName} />}
+                >
+                  <Text style={[styles.text14, c((p) => ({ color: p.text.secondary }))]}>
+                    {candidate.split(' (')[0]}
+                  </Text>
+                  <ProgrammeDetail programme={programme} party={party} />
+                </Accordion>
+              ) : null
+            )}
+            {/* Un seul comparateur sur le site : il s'ouvre sur ce thème. */}
+            <TextLink href={`/partis/comparer?theme=${theme.id}`} standalone>
+              Comparer deux partis sur ce thème →
+            </TextLink>
           </View>
 
           <View nativeID="aller-plus-loin" style={{ gap: effects.spacing.sm }}>

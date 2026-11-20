@@ -13,8 +13,8 @@ describe('Feature: sommaires « Sur cette page »', () => {
     }
   });
 
-  it('should keep the debate summary short and lead to the comparison', () => {
+  it('should keep the debate summary short, the comparison living in the single comparator', () => {
     expect(DEBATE_ANCHORS.length).toBeLessThanOrEqual(5);
-    expect(DEBATE_ANCHORS.some((item) => item.action === 'compare')).toBe(true);
+    expect(DEBATE_ANCHORS.some((item) => item.action === 'compare')).toBe(false);
   });
 });
