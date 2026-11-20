@@ -4,24 +4,18 @@ import { StyleSheet, View } from 'react-native';
 import { theme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { useColorStyle } from '@/components/webTheme';
+import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
 import type { Stance } from '@/src/programmes/models/programme.model';
 import { STANCE_LABEL, STANCE_SHORT_LABEL } from '@/src/programmes/models/stance-labels';
+import { glyphOfStance } from '@/src/programmes/models/stance-scale';
 
 export { STANCE_LABEL, STANCE_SHORT_LABEL };
 
-const STANCE_SIGN: Record<string, string> = {
-  '2': '+',
-  '1': '+',
-  '0': '=',
-  '-1': '−',
-  '-2': '−',
-  null: '?',
-};
-
 /**
- * Position pour / contre : un rond avec « + » ou « − » et le libellé. Une seule teinte (tint) :
- * rond plein = position nette, contour = « plutôt », mitigée ou inconnue. L'intensité dit la force
- * de la position, jamais son sens : pas de vert / rouge. Le sens n'est jamais porté par la couleur.
+ * Position pour / contre : la forme de la grammaire commune (`stance-scale.ts`, la même que celle
+ * des votes de l'Assemblée) et le libellé. Pour = disque plein, Contre = disque barré, « plutôt » =
+ * les mêmes formes en contour, Mitigé = contour et « = », pas de position claire = pointillés.
+ * Couleurs `colors.vote` (ni vert ni rouge) ; le sens n'est jamais porté par la couleur seule.
  *
  * - `inline` : largeur du contenu (feuille de justification, sous une affirmation).
  * - `cell` : remplit la cellule fixe que lui donne son parent ; le rond est collé à gauche, le
@@ -50,27 +44,8 @@ export function StanceBadge({
       aria-label={STANCE_LABEL[key]}
       style={variant === 'cell' ? styles.rootCell : styles.root}
     >
-      <View
-        aria-hidden
-        style={[
-          styles.circle,
-          unknown ? styles.circleDashed : null,
-          c((p) => ({
-            borderColor: unknown ? p.text.secondary : p.tint,
-            backgroundColor: strong ? p.tint : 'transparent',
-          })),
-        ]}
-      >
-        <Text
-          style={[
-            styles.sign,
-            c((p) => ({
-              color: strong ? p.text.onColor : unknown ? p.text.secondary : p.tint,
-            })),
-          ]}
-        >
-          {STANCE_SIGN[key]}
-        </Text>
+      <View style={styles.mark}>
+        <VoteGlyph glyph={glyphOfStance(stance)} size={24} />
       </View>
       <Text
         aria-hidden
@@ -101,18 +76,7 @@ const styles = StyleSheet.create({
     flexShrink: 1,
     width: '100%',
   },
-  circle: {
-    width: 24,
-    height: 24,
-    borderRadius: theme.effects.borderRadius.round,
-    flexShrink: 0,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 2,
-    borderStyle: 'solid',
-  },
-  circleDashed: { borderStyle: 'dashed' },
-  sign: { ...theme.fonts.bold, fontSize: 16, lineHeight: 18 },
+  mark: { width: 24, height: 24, flexShrink: 0 },
   label: { ...theme.fonts.regular, fontSize: 15, flexShrink: 1 },
   labelStrong: { ...theme.fonts.bold, fontSize: 15, flexShrink: 1 },
 });

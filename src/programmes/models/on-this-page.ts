@@ -8,6 +8,7 @@ export type OnThisPageItem = { id: string; label: string; action?: 'compare' };
 
 export const DEBATE_ANCHORS: OnThisPageItem[] = [
   { id: 'chiffres-cles', label: 'Chiffres clés' },
+  { id: 'pour-contre', label: 'Qui est pour, qui est contre ?' },
   { id: 'partis', label: 'Ce que proposent les partis' },
   // Ouvre l'onglet « Comparer deux partis » puis fait défiler jusqu'aux partis.
   { id: 'partis', label: 'Comparer deux partis', action: 'compare' },

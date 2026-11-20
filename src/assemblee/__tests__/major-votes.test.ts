@@ -176,14 +176,14 @@ describe('Feature: grille « qui vote quoi » des grands votes', () => {
     expect(grid.rows[0].cells[0]).toMatchObject({ glyph: 'disc-slash', label: 'Contre' });
   });
 
-  it('should give a text symbol to the shared position, and explain every position in a legend', () => {
+  it('should give the shared position a half-disc, and explain every position in a legend', () => {
     const grid = majorVotesGrid(
       indexFactory({
         groupes,
         scrutins: [vote(1, '2025-01-01', { groupes: [[0, 20, 4, 4, 4, 0]] })],
       })
     );
-    expect(grid.rows[0].cells[0]).toMatchObject({ kind: 'partage', glyph: null, symbol: '◐' });
+    expect(grid.rows[0].cells[0]).toMatchObject({ kind: 'partage', glyph: 'half' });
     expect(MAJOR_VOTES_LEGEND.map((e) => e.label)).toEqual([
       'Pour',
       'Contre',

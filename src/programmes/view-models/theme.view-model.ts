@@ -12,6 +12,7 @@ import { themeProgramme } from '@/src/programmes/models/programme-publication.se
 import { contentKey } from '@/src/programmes/models/reading-progress.model';
 import { debateMeta, nonIndexableMeta } from '@/src/programmes/models/seo/page-meta';
 import { SITE_ROUTES } from '@/src/programmes/models/seo/site-routes';
+import { groupByStance } from '@/src/programmes/models/stance-scale';
 import {
   selectCatalog,
   selectCatalogStatus,
@@ -98,13 +99,14 @@ export const themeViewModel =
           questions: theme
             ? (catalog?.questions ?? [])
                 .filter((q) => q.theme === theme.id)
-                .map((question) => ({
-                  question,
-                  positions: parties.map((party) => ({
+                .map((question) => {
+                  const positions = parties.map((party) => ({
                     party,
                     stance: party.stances[question.id] ?? null,
-                  })),
-                }))
+                  }));
+                  // Les partis regroupés par réponse, alphabétique dans chaque groupe, sans décompte.
+                  return { question, positions, groups: groupByStance(positions) };
+                })
             : [],
         };
       }

@@ -39,13 +39,7 @@ export function MajorVotesGrid({ grid }: { grid: VotesGridView }) {
             key={entry.kind}
             style={{ flexDirection: 'row', alignItems: 'center', gap: effects.spacing.xs }}
           >
-            {entry.glyph ? (
-              <VoteGlyph glyph={entry.glyph} size={18} />
-            ) : (
-              <Text aria-hidden style={{ fontSize: 16, lineHeight: 18 }}>
-                {entry.symbol}
-              </Text>
-            )}
+            {entry.glyph ? <VoteGlyph glyph={entry.glyph} size={18} /> : null}
             <Text style={{ fontSize: 14 }}>{entry.label}</Text>
           </View>
         ))}
@@ -162,13 +156,7 @@ export function MajorVotesGrid({ grid }: { grid: VotesGridView }) {
                     gap: effects.spacing.xs,
                   }}
                 >
-                  {cell.glyph ? (
-                    <VoteGlyph glyph={cell.glyph} size={18} />
-                  ) : cell.symbol ? (
-                    <Text aria-hidden style={{ fontSize: 16, lineHeight: 18 }}>
-                      {cell.symbol}
-                    </Text>
-                  ) : null}
+                  {cell.glyph ? <VoteGlyph glyph={cell.glyph} size={18} /> : null}
                   <Text style={{ fontSize: 14, flexShrink: 1 }}>{cell.label}</Text>
                 </View>
               ))}

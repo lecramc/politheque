@@ -13,6 +13,7 @@ import type {
 } from '@/src/assemblee/models/scrutin.model';
 import type { SeatGlyph } from '@/src/assemblee/models/seat-view';
 import { formatLongDate } from '@/src/programmes/models/seo/dates';
+import { STANCE_SCALE_ENTRIES } from '@/src/programmes/models/stance-scale';
 
 /** « Grands votes » : le texte entier, la censure, la confiance, la déclaration du Gouvernement. */
 export const MAJOR_CATEGORIES: ScrutinCategory[] = ['texte', 'censure', 'confiance', 'declaration'];
@@ -29,12 +30,12 @@ export type CellKind =
   | 'sansDepute';
 
 const GLYPHS: Record<CellKind, SeatGlyph | null> = {
-  pour: 'disc',
-  contre: 'disc-slash',
-  abstention: 'ring',
-  partage: null,
-  absent: 'dashed',
-  motionNon: 'dashed',
+  pour: STANCE_SCALE_ENTRIES.pour.glyph,
+  contre: STANCE_SCALE_ENTRIES.contre.glyph,
+  abstention: STANCE_SCALE_ENTRIES.abstention.glyph,
+  partage: STANCE_SCALE_ENTRIES.partage.glyph,
+  absent: STANCE_SCALE_ENTRIES.absent.glyph,
+  motionNon: STANCE_SCALE_ENTRIES.absent.glyph,
   sansDepute: null,
 };
 
@@ -88,23 +89,17 @@ export type MajorVoteCell = {
   kind: CellKind;
   label: string;
   glyph: SeatGlyph | null;
-  /** Repère en texte quand la position n'a pas de forme de siège. */
-  symbol: string | null;
 };
 
-const SYMBOLS: Partial<Record<CellKind, string>> = { partage: '◐' };
-
-/** Légende de la grille : une forme ou un repère, et le mot, pour chaque position possible. */
+/** Légende de la grille : la forme de l'échelle commune et le mot, pour chaque position possible. */
 export const MAJOR_VOTES_LEGEND: {
   kind: CellKind;
   label: string;
   glyph: SeatGlyph | null;
-  symbol: string | null;
 }[] = (['pour', 'contre', 'abstention', 'partage', 'absent'] as const).map((kind) => ({
   kind,
   label: COPY.overview.grid.position[kind],
   glyph: GLYPHS[kind],
-  symbol: SYMBOLS[kind] ?? null,
 }));
 
 export type MajorVoteRow = {
@@ -151,7 +146,7 @@ export const votesGrid = (index: ScrutinIndex, scrutins: ScrutinSummary[]): Majo
         cells: votes.map((vote): MajorVoteCell => {
           const decompte = vote.groupes.find((row) => row[0] === groupe.index);
           const kind = decompte ? groupPosition(decompte, vote.type) : 'sansDepute';
-          return { kind, label: labels[kind], glyph: GLYPHS[kind], symbol: SYMBOLS[kind] ?? null };
+          return { kind, label: labels[kind], glyph: GLYPHS[kind] };
         }),
       })
     );
