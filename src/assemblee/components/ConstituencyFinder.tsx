@@ -7,10 +7,14 @@ import { Pressable } from '@/components/ui/Pressable';
 import { TextInput } from '@/components/ui/TextInput';
 import { ChoiceRow } from '@/src/assemblee/components/ChoiceRow';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
-import type { HemicycleView } from '@/src/assemblee/view-models/scrutin.view-model';
+import type { departementChoices } from '@/src/assemblee/models/constituencies';
+import type { CirconscriptionRow } from '@/src/assemblee/models/constituencies';
 import { ExternalLink } from '@/src/programmes/components/ExternalLink';
 
-type Ready = Extract<HemicycleView, { status: 'ready' }>;
+export type Constituency = {
+  choices: (query: string, requested: boolean) => ReturnType<typeof departementChoices>;
+  circonscriptions: (code: string) => CirconscriptionRow[];
+};
 
 /**
  * « Trouver mon député » : on choisit son département (en tapant son nom ou son numéro, ou dans la
@@ -22,8 +26,9 @@ export function ConstituencyFinder({
   constituency,
   onPick,
 }: {
-  constituency: Ready['constituency'];
-  onPick: (deputeId: string) => void;
+  constituency: Constituency;
+  /** Sans `onPick` (page de la liste), le nom du député est affiché sans lien. */
+  onPick?: (deputeId: string) => void;
 }) {
   const { colors, effects, fonts } = useTheme();
   const [query, setQuery] = useState('');
@@ -110,7 +115,9 @@ export function ConstituencyFinder({
                 }}
               >
                 <Text style={{ fontSize: 14, color: colors.text.secondary }}>{row.label}</Text>
-                {row.deputeId ? (
+                {row.deputeId && !onPick ? (
+                  <Text style={{ ...fonts.semibold }}>{row.nom}</Text>
+                ) : row.deputeId && onPick ? (
                   <Pressable
                     onPress={() => onPick(row.deputeId!)}
                     accessibilityRole="button"

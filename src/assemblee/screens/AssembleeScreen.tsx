@@ -9,6 +9,10 @@ import { Pressable } from '@/components/ui/Pressable';
 import { TextLink } from '@/components/ui/TextLink';
 import { Article493Note } from '@/src/assemblee/components/Article493Note';
 import { AssembleeOverview } from '@/src/assemblee/components/AssembleeOverview';
+import {
+  ConstituencyFinder,
+  type Constituency,
+} from '@/src/assemblee/components/ConstituencyFinder';
 import { DataSourceNote } from '@/src/assemblee/components/DataSourceNote';
 import { ScrutinFilters } from '@/src/assemblee/components/ScrutinFilters';
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
@@ -35,6 +39,52 @@ const NO_FILTER: ListFilters = {
 };
 const URL_KEYS = ['categorie', 'resultat', 'annee', 'q'] as const;
 const URL_DELAY = 250;
+
+/** « Chercher mon député » : replié ; l'annuaire des députés n'est chargé qu'à l'ouverture. */
+function DeputyFinder({
+  constituency,
+  onOpen,
+}: {
+  constituency: Constituency | null;
+  onOpen: () => void;
+}) {
+  const { colors, effects } = useTheme();
+  const [open, setOpen] = useState(false);
+  return (
+    <View style={{ gap: effects.spacing.xs }}>
+      <Pressable
+        onPress={() => {
+          if (!open) onOpen();
+          setOpen(!open);
+        }}
+        accessibilityRole="button"
+        accessibilityState={{ expanded: open }}
+        style={{
+          minHeight: 48,
+          justifyContent: 'center',
+          paddingHorizontal: effects.spacing.md,
+          borderWidth: 1,
+          borderColor: colors.tintBorder,
+          borderRadius: effects.borderRadius.small,
+          backgroundColor: colors.tintSoft,
+        }}
+      >
+        <Text style={{ color: colors.tint, fontSize: 16 }}>
+          {open ? COPY.constituency.close : COPY.constituency.open}
+        </Text>
+      </Pressable>
+      {open ? (
+        constituency ? (
+          <ConstituencyFinder constituency={constituency} />
+        ) : (
+          <Text aria-live="polite" style={{ color: colors.text.secondary }}>
+            {COPY.constituency.loading}
+          </Text>
+        )
+      ) : null}
+    </View>
+  );
+}
 
 function Row({ row, first }: { row: ScrutinRow; first: boolean }) {
   const { colors, effects, fonts } = useTheme();
@@ -90,7 +140,7 @@ export default function AssembleeScreen() {
   const vm = useViewModel(assembleeListViewModel);
   const params = useLocalSearchParams<Record<(typeof URL_KEYS)[number], string>>();
   const router = useRouter();
-  const { colors, effects } = useTheme();
+  const { colors, effects, fonts } = useTheme();
   const [filters, setFilters] = useState<ListFilters>(NO_FILTER);
   const [limit, setLimit] = useState(LIST_PAGE_SIZE);
   const written = useRef<string | null>(null);
@@ -142,6 +192,29 @@ export default function AssembleeScreen() {
       <View style={{ gap: effects.spacing.xs }}>
         <Text variant="title">{COPY.list.title}</Text>
         <Text style={{ color: colors.text.secondary, fontSize: 17 }}>{vm.lead}</Text>
+      </View>
+
+      <DeputyFinder constituency={vm.constituency} onOpen={vm.loadDeputes} />
+
+      <View
+        role="note"
+        aria-label={vm.words.title}
+        style={{
+          gap: effects.spacing.xs,
+          padding: effects.spacing.sm,
+          borderRadius: effects.borderRadius.small,
+          backgroundColor: colors.surface.secondary,
+        }}
+      >
+        <Text variant="label" headingLevel={2}>
+          {vm.words.title}
+        </Text>
+        {vm.words.terms.map((word) => (
+          <Text key={word.term} style={{ fontSize: 15, lineHeight: 22 }}>
+            <Text style={{ ...fonts.bold, fontSize: 15, lineHeight: 22 }}>{`${word.term} : `}</Text>
+            {word.definition} <TextLink href={word.href as never}>{vm.words.moreLabel}</TextLink>
+          </Text>
+        ))}
       </View>
 
       <AssembleeOverview />
