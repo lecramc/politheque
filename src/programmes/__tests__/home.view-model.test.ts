@@ -1,3 +1,9 @@
+import {
+  groupeFactory,
+  indexFactory,
+  scrutinFactory,
+} from '@/src/assemblee/models/scrutin.factory';
+import { assembleeStateBuilder } from '@/src/assemblee/store/state-builder';
 import { catalogFactory, electionFactory } from '@/src/programmes/models/catalog.factory';
 import { partyFactory } from '@/src/programmes/models/party.factory';
 import { stateBuilder } from '@/src/programmes/store/state-builder';
@@ -122,12 +128,52 @@ describe('Feature: carte « Le parcours »', () => {
   });
 });
 
-describe("Feature: entrée vers les votes de l'Assemblée", () => {
-  it('should offer one link below the tasks, whatever the catalog holds', () => {
-    expect(vmOf().assembleeLink).toEqual({
-      href: '/assemblee',
-      label: 'Ce que votent les députés',
-      subtitle: 'Qui siège, qui vote quoi, tous les votes',
+describe("Feature: bandeau « dernier grand vote à l'Assemblée »", () => {
+  const groupes = [
+    groupeFactory({ organeRef: 'PO1', abrev: 'DX', libelle: 'Droite', medianePlace: 100 }),
+    groupeFactory({ organeRef: 'PO2', abrev: 'GA', libelle: 'Gauche', medianePlace: 500 }),
+  ];
+  const withVotes = (scrutins: ReturnType<typeof scrutinFactory>[]) =>
+    assembleeStateBuilder(stateBuilder().withCatalog(catalog).build())
+      .withIndex(indexFactory({ groupes, scrutins }))
+      .build();
+
+  it('should have no banner without Assemblée data or without a major vote', () => {
+    expect(vmOf().latestVote).toBeNull();
+    expect(vmOf(withVotes([scrutinFactory({ categorie: 'resolution' })])).latestVote).toBeNull();
+  });
+
+  it('should show the most recent major vote, ignoring other kinds of votes', () => {
+    const state = withVotes([
+      scrutinFactory({ numero: 1, date: '2026-10-01', adopte: false }),
+      scrutinFactory({
+        numero: 2,
+        date: '2026-11-10',
+        adopte: true,
+        groupes: [
+          [0, 20, 15, 0, 0, 0],
+          [1, 20, 0, 15, 0, 0],
+        ],
+      }),
+      scrutinFactory({ numero: 3, date: '2026-11-15', categorie: 'resolution' }),
+    ]);
+    const { latestVote } = vmOf(state);
+    expect(latestVote?.grid.columns.map((c) => [c.numero, c.resultat])).toEqual([[2, 'Adopté']]);
+    expect(latestVote?.grid.rows.map((r) => r.abrev).sort()).toEqual(['DX', 'GA']);
+  });
+
+  it('should state the rule and link to the vote, to all votes and to the lesson', () => {
+    const { latestVote } = vmOf(withVotes([scrutinFactory({ numero: 7 })]));
+    expect(latestVote).toMatchObject({
+      title: "Dernier grand vote à l'Assemblée",
+      vote: { label: 'Voir le détail du vote', href: '/assemblee/scrutins/7' },
+      allVotes: { label: 'Tous les votes', href: '/assemblee' },
+      law: { label: 'Comment une loi est votée', href: '/comprendre/comment-une-loi-est-votee' },
     });
+    expect(latestVote?.method).toMatch(/^Le plus récent des grands votes/);
+  });
+
+  it('should no longer offer a separate card to the Assemblée', () => {
+    expect(vmOf()).not.toHaveProperty('assembleeLink');
   });
 });
