@@ -1016,5 +1016,79 @@
       }
     ],
     "lastVerified": "2026-11-20"
+  },
+  {
+    "id": "amendement",
+    "term": "Amendement",
+    "definition": "Un amendement est une proposition de modification d'un projet ou d'une proposition de loi en discussion : il ajoute, supprime ou modifie une disposition du texte.",
+    "more": [
+      "Le droit d'amendement appartient aux députés, aux sénateurs et au Gouvernement ; il s'exerce en séance ou en commission (article 44 de la Constitution).",
+      "Un amendement ne peut porter que sur un seul article du texte (article 98 du Règlement de l'Assemblée nationale). Chaque amendement est mis aux voix ; il peut l'être par scrutin public, ce qui permet de savoir comment chaque député a voté."
+    ],
+    "related": ["comment-une-loi-est-votee"],
+    "sources": [
+      {
+        "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 44)",
+        "url": "https://www.conseil-constitutionnel.fr/le-bloc-de-constitutionnalite/texte-integral-de-la-constitution-du-4-octobre-1958-en-vigueur",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      },
+      {
+        "title": "Lexique de l'Assemblée nationale (« Amendement »)",
+        "url": "https://www2.assemblee-nationale.fr/decouvrir-l-assemblee/folder/lexique",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 51 : L'exercice du droit d'amendement (Assemblée nationale)",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-exercice-du-droit-d-amendement",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-20"
+  },
+  {
+    "id": "article-de-loi",
+    "term": "Article (d'un texte de loi)",
+    "definition": "Un projet ou une proposition de loi est découpé en articles. En séance, l'Assemblée examine les articles un par un, avec les amendements qui s'y rattachent, avant de se prononcer sur l'ensemble du texte.",
+    "more": [
+      "La discussion en séance suit plusieurs phases : présentation du texte, éventuelle motion de rejet préalable, discussion générale, puis discussion des articles et des amendements.",
+      "Un amendement ne peut porter que sur un seul article. Les articles adoptés dans les mêmes termes par l'Assemblée et le Sénat sont dits « conformes » et ne peuvent plus être modifiés."
+    ],
+    "related": ["comment-une-loi-est-votee"],
+    "sources": [
+      {
+        "title": "Fiche de synthèse n° 50 : La séance plénière (Assemblée nationale)",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-seance-pleniere",
+        "date": "2025-10-30",
+        "kind": "statistique"
+      },
+      {
+        "title": "Fiche de synthèse n° 51 : L'exercice du droit d'amendement (Assemblée nationale)",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/l-exercice-du-droit-d-amendement",
+        "date": "2026-11-20",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-20"
+  },
+  {
+    "id": "motion-de-rejet-prealable",
+    "term": "Motion de rejet préalable",
+    "definition": "La motion de rejet préalable vise à faire reconnaître qu'un texte est contraire à la Constitution ou qu'il n'y a pas lieu d'en débattre. Elle est examinée avant la discussion générale ; si elle est adoptée, le texte est rejeté.",
+    "more": [
+      "Elle ne peut pas être déposée sur certains textes, notamment ceux examinés en procédure simplifiée, les propositions de résolution de l'article 34-1 de la Constitution et les textes inscrits lors d'une journée réservée à l'opposition ou à un groupe minoritaire."
+    ],
+    "related": ["comment-une-loi-est-votee"],
+    "sources": [
+      {
+        "title": "Fiche de synthèse n° 50 : La séance plénière (Assemblée nationale)",
+        "url": "https://www.assemblee-nationale.fr/dyn/synthese/fonctionnement-assemblee-nationale/travail-legislatif/la-seance-pleniere",
+        "date": "2025-10-30",
+        "kind": "statistique"
+      }
+    ],
+    "lastVerified": "2026-11-20"
   }
 ]

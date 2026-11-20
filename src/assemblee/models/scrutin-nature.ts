@@ -93,8 +93,13 @@ const natureLexicon = (nature: ScrutinNature | null, titre: string) => {
           : ('loi-de-finances' as const),
       ];
     case 'Texte entier':
-    case 'Article':
       return ['projet-et-proposition-de-loi' as const];
+    case 'Article':
+      return ['article-de-loi' as const, 'projet-et-proposition-de-loi' as const];
+    case 'Amendement':
+      return ['amendement' as const];
+    case 'Motion de rejet':
+      return ['motion-de-rejet-prealable' as const];
     case 'Déclaration du Gouvernement':
       return /politique générale/.test(titre) ? ['question-de-confiance' as const] : [];
     default:

@@ -24,6 +24,9 @@ export const NATURE_COPY = {
   /** Libellé du lien, par identifiant de `lexique.json`. */
   lexicon: {
     'motion-de-censure': 'Motion de censure',
+    amendement: 'Amendement',
+    'article-de-loi': 'Article d’un texte de loi',
+    'motion-de-rejet-prealable': 'Motion de rejet préalable',
     'question-de-confiance': 'Question de confiance',
     'loi-de-finances': 'Loi de finances',
     plfss: 'Loi de financement de la Sécurité sociale',
