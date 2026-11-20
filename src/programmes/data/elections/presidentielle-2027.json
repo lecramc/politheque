@@ -77,6 +77,6 @@
       ]
     }
   ],
-  "guideSectionIds": ["election-presidentielle", "comment-voter", "pouvoirs-du-president"],
+  "guideSectionIds": ["election-presidentielle", "pouvoirs-du-president"],
   "candidaciesNote": "Cette liste présente les candidatures des partis suivis par le site ; la page dédiée recense les autres candidatures, déclarées ou annoncées, attestées par au moins deux sources. La liste officielle sera publiée par le Conseil constitutionnel après la validation des parrainages."
 }

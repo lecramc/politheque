@@ -93,11 +93,6 @@ export default function VoterScreen() {
             <TextLink href={vm.faqHref} standalone>
               Les questions fréquentes sur la présidentielle 2027
             </TextLink>
-            {vm.lesson ? (
-              <TextLink href={vm.lesson.href} standalone>
-                {`La leçon « ${vm.lesson.title} »`}
-              </TextLink>
-            ) : null}
             <TextLink href={vm.electionHref} standalone>
               Dates et candidatures de l'élection
             </TextLink>

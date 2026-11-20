@@ -6,7 +6,7 @@ import { buildLlmsFullTxt } from '@/src/programmes/models/seo/llms-full';
 import {
   allPageMetas,
   DESCRIPTION_MAX,
-  faqMeta,
+  guideSectionMeta,
   lexiconMeta,
   TITLE_MAX,
   voterMeta,
@@ -15,8 +15,11 @@ import { expandRoutes } from '@/src/programmes/models/seo/site-routes';
 
 const catalog = buildStaticCatalog();
 const urls = expandRoutes(catalog);
+/** La FAQ est la section finale de la leçon sur la présidentielle : une seule adresse. */
+const faqMeta = (c: typeof catalog) =>
+  guideSectionMeta(c.guide.find((s) => s.id === 'election-presidentielle')!, c.faq);
 const LEXICON = '/comprendre/lexique';
-const FAQ = '/elections/presidentielle-2027/questions';
+const FAQ = '/comprendre/election-presidentielle';
 const VOTER = '/elections/presidentielle-2027/voter';
 
 const graphOf = (meta: { jsonLd: { '@graph': { '@type': unknown }[] } | null }) =>
@@ -24,11 +27,11 @@ const graphOf = (meta: { jsonLd: { '@graph': { '@type': unknown }[] } | null }) 
 const typesOf = (meta: Parameters<typeof graphOf>[0]) => graphOf(meta).map((n) => n['@type']);
 
 describe('Feature: contenus 2027 dans le registre des routes', () => {
-  it('should list the lexicon, the FAQ and the voting page as indexable, dated with the latest verification', () => {
+  it('should list the lexicon, the presidential lesson (with its FAQ) and the voting page as indexable, dated with the latest verification', () => {
     const lastmods = [
       [LEXICON, '2026-11-20'],
-      [FAQ, '2026-11-08'],
-      [VOTER, '2026-11-08'],
+      [FAQ, '2026-11-09'],
+      [VOTER, '2026-11-09'],
     ];
     for (const [path, lastmod] of lastmods) {
       const url = urls.find((u) => u.path === path);
@@ -55,7 +58,6 @@ describe('Feature: métadonnées des contenus 2027', () => {
 
   it('should state the counts in the titles', () => {
     expect(lexiconMeta(catalog).title).toContain(`${catalog.lexicon.length} mots expliqués`);
-    expect(faqMeta(catalog).title).toContain(`${catalog.faq.length} questions-réponses`);
     expect(voterMeta(catalog).title).toContain('Comment voter');
   });
 
@@ -82,11 +84,7 @@ describe('Feature: métadonnées des contenus 2027', () => {
       '/comprendre',
       LEXICON,
     ]);
-    expect(faqMeta(catalog).breadcrumb.map((b) => b.path)).toEqual([
-      '/',
-      '/elections/presidentielle-2027',
-      FAQ,
-    ]);
+    expect(faqMeta(catalog).breadcrumb.map((b) => b.path)).toEqual(['/', '/comprendre', FAQ]);
     expect(voterMeta(catalog).breadcrumb.map((b) => b.path)).toEqual([
       '/',
       '/elections/presidentielle-2027',
@@ -152,7 +150,7 @@ describe('Feature: neutralité des contenus 2027', () => {
 });
 
 describe('Feature: contenus 2027 pour les moteurs de réponse', () => {
-  it('should list the three pages in llms.txt', () => {
+  it('should list the lexicon, the presidential lesson and the voting page in llms.txt', () => {
     const llms = buildLlmsTxt(catalog, urls);
     for (const path of [LEXICON, FAQ, VOTER]) expect(llms).toContain(`(${SITE_URL}${path})`);
   });
@@ -174,8 +172,10 @@ describe('Feature: contenus 2027 pour les moteurs de réponse', () => {
   });
 
   it('should expect one folded fragment on each of the three pages', () => {
-    for (const path of [LEXICON, FAQ, VOTER]) {
+    for (const path of [LEXICON, VOTER]) {
       expect(foldedSnippets(catalog, path), path).toHaveLength(1);
     }
+    // La leçon sur la présidentielle : un détail replié de la leçon, un des questions-réponses.
+    expect(foldedSnippets(catalog, FAQ)).toHaveLength(2);
   });
 });

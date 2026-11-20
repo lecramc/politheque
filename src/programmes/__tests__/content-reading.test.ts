@@ -51,6 +51,6 @@ describe('Feature: marquage à la lecture', () => {
     expect(selectReadIds(store.getState())).toEqual(['institutions']);
     const rows = guideViewModel()(store.getState()).groups.flatMap((g) => g.rows);
     expect(rows.find((r) => r.section.id === 'institutions')?.read).toBe(true);
-    expect(rows.find((r) => r.section.id === 'comment-voter')?.read).toBe(false);
+    expect(rows.find((r) => r.section.id === 'election-presidentielle')?.read).toBe(false);
   });
 });

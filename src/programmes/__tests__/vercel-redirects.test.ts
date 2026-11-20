@@ -52,6 +52,8 @@ describe('Feature: redirections des adresses retirées (spec § 1.2)', () => {
     ['/parcours/presidentielle-2027', '/comprendre#presidentielle-2027'],
     ['/parcours/me-situer', '/me-situer'],
     ['/debats', '/partis#debats'],
+    ['/comprendre/comment-voter', '/elections/presidentielle-2027/voter'],
+    ['/elections/presidentielle-2027/questions', '/comprendre/election-presidentielle#questions'],
   ])('should redirect %s to %s with a 301', (from, to) => {
     expect(find(from)).toMatchObject({ destination: to, permanent: true });
   });
@@ -82,6 +84,8 @@ describe('Feature: redirections des adresses retirées (spec § 1.2)', () => {
       '/elections/presidentielle-2027',
       '/comprendre',
       '/comprendre/institutions',
+      '/comprendre/election-presidentielle',
+      '/elections/presidentielle-2027/voter',
       '/passeport',
       '/me-situer',
       '/me-situer/resultats',
@@ -183,6 +187,12 @@ describe('Feature: bascule vers politheque.revaamp.com', () => {
       permanent: true,
     });
     expect(findOld('/parcours/les-bases')?.destination).toBe(`${NEW}/comprendre#les-bases`);
+    expect(findOld('/comprendre/comment-voter')?.destination).toBe(
+      `${NEW}/elections/presidentielle-2027/voter`
+    );
+    expect(findOld('/elections/presidentielle-2027/questions')?.destination).toBe(
+      `${NEW}/comprendre/election-presidentielle#questions`
+    );
     for (const bare of ['/partis/rn', '/partis/rn/', '/partis/rn.html']) {
       expect(findOld(bare)?.destination, bare).toBe(`${NEW}/partis/rn/programme-2027`);
     }

@@ -1,5 +1,16 @@
 [
   {
+    "id": "2026-11-20-une-seule-page-pour-voter-qui-peut-voter-et-le-v",
+    "date": "2026-11-20",
+    "kind": "mise-a-jour",
+    "pages": [
+      "/elections/presidentielle-2027/voter",
+      "/comprendre/election-presidentielle",
+      "/comprendre/lexique"
+    ],
+    "summary": "Une seule page pour voter : « Qui peut voter » et le vote blanc de l'ancienne leçon rejoignent la page « Comment voter », la leçon est retirée. Les questions-réponses deviennent la section finale de la leçon sur la présidentielle."
+  },
+  {
     "id": "2026-11-20-sous-chaque-position-d-un-parti-le-vote-de-son-g",
     "date": "2026-11-20",
     "kind": "ajout",
@@ -616,7 +627,7 @@
     "id": "2026-11-09-c-est-la-demande-d-inscription-qui-doit-etre-dep",
     "date": "2026-11-09",
     "kind": "correction",
-    "pages": ["/comprendre/comment-voter"],
+    "pages": ["/elections/presidentielle-2027/voter"],
     "summary": "C'est la demande d'inscription qui doit être déposée au plus tard le 12 mars 2027. Conditions pour voter alignées sur la loi. La pièce d'identité n'a pas toujours de photo. Ajout du formulaire papier de procuration ; dates de sources corrigées."
   },
   {
@@ -830,7 +841,7 @@
     "id": "2026-11-09-date-limite-d-inscription-au-plus-tard-le-vendre",
     "date": "2026-11-09",
     "kind": "correction",
-    "pages": ["/comprendre/comment-voter", "/elections/presidentielle-2027", "/"],
+    "pages": ["/elections/presidentielle-2027/voter", "/elections/presidentielle-2027", "/"],
     "summary": "Date limite d'inscription : « au plus tard le vendredi 12 mars 2027 » (le 12 mars inclus) au lieu de « avant ». Procuration : il n'existe pas de date limite légale, il est conseillé de faire la démarche le plus tôt possible."
   },
   {
@@ -844,7 +855,7 @@
     "id": "2026-11-09-nouvelle-page-20-questions-reponses-sur-la-presi",
     "date": "2026-11-09",
     "kind": "ajout",
-    "pages": ["/elections/presidentielle-2027/questions", "/elections/presidentielle-2027"],
+    "pages": ["/comprendre/election-presidentielle", "/elections/presidentielle-2027"],
     "summary": "Nouvelle page : 20 questions-réponses sur la présidentielle 2027 (dates, inscription, candidatures, scrutin), avec réponse courte, sources officielles et dates calculées signalées."
   },
   {
@@ -858,7 +869,7 @@
     "id": "2026-11-08-resumes-du-guide-ramenes-a-deux-phrases-la-phras",
     "date": "2026-11-08",
     "kind": "mise-a-jour",
-    "pages": ["/comprendre/election-presidentielle", "/comprendre/comment-voter"],
+    "pages": ["/comprendre/election-presidentielle", "/elections/presidentielle-2027/voter"],
     "summary": "Résumés du guide ramenés à deux phrases : la phrase sur les élections législatives passe dans « En savoir plus », la date limite d'inscription est dite en une phrase."
   },
   {
@@ -888,7 +899,7 @@
       "/comprendre/institutions",
       "/comprendre/pouvoirs-du-president",
       "/comprendre/election-presidentielle",
-      "/comprendre/comment-voter",
+      "/elections/presidentielle-2027/voter",
       "/comprendre/gauche-droite",
       "/comprendre/classement-des-partis",
       "/comprendre/union-europeenne",

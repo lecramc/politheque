@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 
 import type { AppDispatch } from '@/src/core/store/create-store';
+import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
 import { JOURNEY_COPY, summaryLabel } from '@/src/programmes/models/journey.copy';
 import { stepHref, type JourneyStepId } from '@/src/programmes/models/journey.model';
 import { computeJourneyProgress } from '@/src/programmes/models/journey.service';
@@ -74,7 +75,7 @@ export const passportViewModel =
             title: JOURNEY_COPY.whatNowTitle,
             text: JOURNEY_COPY.whatNowText,
             label: JOURNEY_COPY.whatNowLabel,
-            href: '/comprendre/comment-voter',
+            href: CONTENUS_2027_PATHS.voter,
           },
           celebrations,
           celebrationsShown: (ids: JourneyStepId[]) =>

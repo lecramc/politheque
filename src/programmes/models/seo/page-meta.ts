@@ -4,7 +4,7 @@ import { capitalizeTitle, countsLabel } from '@/src/assemblee/models/scrutin-lab
 import type { ScrutinIndex, ScrutinSummary } from '@/src/assemblee/models/scrutin.model';
 import { APP_NAME } from '@/src/core/config/app';
 import { buildCandidateList } from '@/src/programmes/models/candidates.service';
-import { CONTENUS_2027_PATHS } from '@/src/programmes/models/contenus-2027';
+import { CONTENUS_2027_PATHS, faqOfLesson } from '@/src/programmes/models/contenus-2027';
 import { dossierLastmod } from '@/src/programmes/models/legal/legal-dates';
 import type { LegalDossier } from '@/src/programmes/models/legal/legal.model';
 import { partySectionSources } from '@/src/programmes/models/party-sources.service';
@@ -18,12 +18,13 @@ import type {
   Candidacy,
   Catalog,
   Election,
+  FaqEntry,
   GuideSection,
   Party,
   Source,
   Theme,
 } from '@/src/programmes/models/programme.model';
-import { formatLongDate } from '@/src/programmes/models/seo/dates';
+import { formatLongDate, maxIsoDate } from '@/src/programmes/models/seo/dates';
 import {
   articleNode,
   breadcrumbNode,
@@ -402,7 +403,8 @@ export function debateMeta(theme: Theme, catalog: Catalog): PageMeta {
   });
 }
 
-export function guideSectionMeta(section: GuideSection): PageMeta {
+/** `faq` : les questions-réponses que la leçon porte en section finale (leçon sur la présidentielle). */
+export function guideSectionMeta(section: GuideSection, faq: FaqEntry[] = []): PageMeta {
   const path = `/comprendre/${section.id}`;
   const description = clampText(section.summary, DESCRIPTION_MAX);
   return make({
@@ -413,8 +415,9 @@ export function guideSectionMeta(section: GuideSection): PageMeta {
     kind: 'article',
     pattern: '/comprendre/[id]',
     name: section.title,
-    dateModified: section.lastVerified ?? null,
-    sources: section.blocks.flatMap((b) => b.sources),
+    dateModified: maxIsoDate([section.lastVerified, ...faq.map((q) => q.lastVerified)]),
+    sources: [...section.blocks.flatMap((b) => b.sources), ...faq.flatMap((q) => q.sources)],
+    ...(faq.length ? { extraNodes: [faqPageNode(path, faq)] } : {}),
   });
 }
 
@@ -471,21 +474,6 @@ const featuredElectionCrumb = (catalog: Catalog) => {
     path: CONTENUS_2027_PATHS.election,
   };
 };
-
-export function faqMeta(catalog: Catalog): PageMeta {
-  const path = CONTENUS_2027_PATHS.faq;
-  const count = catalog.faq.length;
-  return make({
-    title: brandTitle(`Présidentielle 2027 : ${count} questions-réponses`),
-    description: `Dates, inscription, parrainages, procuration, second tour : ${count} questions sur la présidentielle 2027, avec une réponse courte et ses sources officielles.`,
-    path,
-    breadcrumb: [HOME, featuredElectionCrumb(catalog), { name: 'Questions-réponses', path }],
-    kind: 'webpage',
-    pattern: '/elections/presidentielle-2027/questions',
-    name: `Présidentielle 2027 : ${count} questions-réponses`,
-    extraNodes: [faqPageNode(path, catalog.faq)],
-  });
-}
 
 export function voterMeta(catalog: Catalog): PageMeta {
   const path = CONTENUS_2027_PATHS.voter;
@@ -673,13 +661,14 @@ export function allPageMetas(catalog: Catalog): PageMeta[] {
       case '/comprendre':
         return rubricMeta('comprendre', catalog);
       case '/comprendre/[id]':
-        return guideSectionMeta(catalog.guide.find((s) => s.id === id)!);
+        return guideSectionMeta(
+          catalog.guide.find((s) => s.id === id)!,
+          faqOfLesson(id, catalog.faq)
+        );
       case '/debats/[id]':
         return debateMeta(catalog.themes.find((t) => t.id === id)!, catalog);
       case '/comprendre/lexique':
         return lexiconMeta(catalog);
-      case '/elections/presidentielle-2027/questions':
-        return faqMeta(catalog);
       case '/elections/presidentielle-2027/voter':
         return voterMeta(catalog);
       case '/elections/presidentielle-2027/candidats':

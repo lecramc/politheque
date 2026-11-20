@@ -53,7 +53,7 @@
     "id": "qui-peut-voter",
     "question": "Qui peut voter à l'élection présidentielle ?",
     "answer": "Il faut être de nationalité française, avoir au moins 18 ans la veille du scrutin, jouir de ses droits civils et politiques, et être inscrit sur une liste électorale (d'une commune ou d'un consulat).",
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Texte intégral de la Constitution du 4 octobre 1958 en vigueur (article 3)",
@@ -89,7 +89,7 @@
         "rule": "Dixième jour précédant le premier tour (code électoral, articles L30 à L32), appliqué au premier tour du 18 avril 2027."
       }
     ],
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Code électoral, article L17",
@@ -116,7 +116,7 @@
     "id": "verifier-inscription",
     "question": "Comment savoir si je suis inscrit et où je vote ?",
     "answer": "Le service en ligne « Vérifier votre inscription électorale et votre bureau de vote », sur service-public.fr, indique la commune d'inscription, le bureau de vote et les procurations enregistrées. On s'y connecte avec FranceConnect.",
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Vérifier votre inscription électorale et votre bureau de vote",
@@ -131,7 +131,7 @@
     "id": "jeunes-18-ans",
     "question": "J'aurai 18 ans avant le scrutin : suis-je inscrit automatiquement ?",
     "answer": "Oui, si vous avez fait votre recensement citoyen à 16 ans : l'Insee vous inscrit d'office dans la commune du recensement. Sinon, il faut faire la démarche. Si vous avez 18 ans entre les deux tours, vous ne pouvez voter qu'au second tour.",
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Liste électorale : inscription d'office à 18 ans si le recensement citoyen a été fait à 16 ans",
@@ -156,7 +156,7 @@
       "En France, un électeur ne peut détenir qu'une seule procuration établie en France.",
       "Aucune date limite n'est fixée, mais il est conseillé de faire la démarche le plus tôt possible."
     ],
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Vote par procuration - En France",
@@ -181,7 +181,7 @@
       "Dans les communes de moins de 1 000 habitants, la pièce d'identité n'est pas obligatoire, mais le président du bureau de vote peut demander de prouver son identité.",
       "La carte électorale n'est pas une pièce d'identité."
     ],
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Élections : papiers d'identité à présenter pour voter",
@@ -202,7 +202,7 @@
     "id": "horaires",
     "question": "À quelle heure ouvrent les bureaux de vote ?",
     "answer": "Pour l'élection présidentielle, les bureaux de vote sont ouverts de 8 heures à 19 heures. Le préfet peut avancer l'ouverture ou retarder la fermeture, sans dépasser 20 heures. Les horaires exacts de votre bureau sont donnés par votre mairie.",
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Élections politiques : déroulement du scrutin",
@@ -421,7 +421,7 @@
     "id": "francais-etranger",
     "question": "Peut-on voter depuis l'étranger ?",
     "answer": "Oui, si vous êtes inscrit sur une liste électorale consulaire, au plus tard le sixième vendredi avant le scrutin. Pour la présidentielle, on vote à l'urne au consulat ou à l'ambassade, ou par procuration. On ne peut pas être inscrit à la fois dans une commune et dans un consulat.",
-    "related": ["comment-voter"],
+    "related": ["voter-2027"],
     "sources": [
       {
         "title": "Vote d'un Français installé à l'étranger",

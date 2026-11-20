@@ -7,8 +7,10 @@ import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
 import { Only } from '@/src/core/components/Only';
+import { useScrollToHash } from '@/src/core/hooks/useScrollToHash';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
+import { FaqList } from '@/src/programmes/components/FaqList';
 import { GuideParagraph } from '@/src/programmes/components/GuideParagraph';
 import { LawJourney } from '@/src/programmes/components/LawJourney';
 import { MoreText } from '@/src/programmes/components/MoreText';
@@ -27,6 +29,7 @@ export default function GuideSectionScreen() {
   const { colors, effects, fonts } = useTheme();
   const [openIndex, setOpenIndex] = useState(0);
   const section = vm.section;
+  useScrollToHash(vm.status === 'loaded');
 
   if (vm.status === 'loaded' && !section) {
     return (
@@ -161,6 +164,10 @@ export default function GuideSectionScreen() {
               </Accordion>
             ))}
           </View>
+
+          {vm.faq ? (
+            <FaqList anchor={vm.faq.anchor} items={vm.faq.items} verifiedOn={vm.faq.verifiedOn} />
+          ) : null}
 
           {vm.next ? (
             <Only below="lg" style={{ gap: effects.spacing.xs }}>

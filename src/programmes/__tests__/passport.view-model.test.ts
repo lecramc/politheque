@@ -76,7 +76,7 @@ describe('Feature: passeport du citoyen', () => {
   it('should point to how to vote', () => {
     expect(vmOf().whatNow).toMatchObject({
       label: 'Comment voter',
-      href: '/comprendre/comment-voter',
+      href: '/elections/presidentielle-2027/voter',
     });
   });
 

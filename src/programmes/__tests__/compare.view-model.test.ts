@@ -36,4 +36,11 @@ describe('Feature: écran « Comparer deux partis »', () => {
     expect(vm().linkFor('rn', null)).toBe('/partis/comparer?a=rn');
     expect(vm().linkFor(null, null)).toBe('/partis/comparer');
   });
+
+  it('should write the link that opens on a theme, with or without a pair', () => {
+    expect(vm().linkFor(null, null, 'economie')).toBe('/partis/comparer?theme=economie');
+    expect(vm().linkFor('rn', 'lfi', 'economie')).toBe(
+      '/partis/comparer?a=rn&b=lfi&theme=economie'
+    );
+  });
 });

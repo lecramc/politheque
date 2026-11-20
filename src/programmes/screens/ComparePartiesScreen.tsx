@@ -17,7 +17,11 @@ import { ReadingGuide } from '@/src/programmes/components/ReadingGuide';
 import { Sheet } from '@/src/programmes/components/Sheet';
 import { SourceChip } from '@/src/programmes/components/SourceChip';
 import { StanceBadge } from '@/src/programmes/components/StanceBadge';
-import { parseCompareParams, type CompareTheme } from '@/src/programmes/models/compare.service';
+import {
+  parseCompareParams,
+  parseCompareTheme,
+  type CompareTheme,
+} from '@/src/programmes/models/compare.service';
 import { displayName } from '@/src/programmes/models/presentation.service';
 import { COMPARE_GUIDE_TEXT, GUIDE_ANCHORS } from '@/src/programmes/models/reading-guides.copy';
 import { compareViewModel } from '@/src/programmes/view-models/compare.view-model';
@@ -189,7 +193,7 @@ function ThemeBlock({ block, names }: { block: CompareTheme; names: [string, str
  */
 export default function ComparePartiesScreen() {
   const vm = useViewModel(compareViewModel);
-  const params = useLocalSearchParams<{ a?: string; b?: string }>();
+  const params = useLocalSearchParams<{ a?: string; b?: string; theme?: string }>();
   const router = useRouter();
   const { colors, effects, fonts } = useTheme();
   const [a, setA] = useState<string | null>(null);
@@ -203,6 +207,12 @@ export default function ComparePartiesScreen() {
     setA(fromA);
     setB(fromB);
   }, [params.a, params.b, ids.length]);
+
+  // `?theme=` ouvre la comparaison sur un thème (lien depuis un débat), lu après l'hydratation.
+  useEffect(() => {
+    if (ids.length === 0) return;
+    setThemeFilter(parseCompareTheme(params.theme, vm.themeIds));
+  }, [params.theme, ids.length]);
 
   const choose = (nextA: string | null, nextB: string | null) => {
     setA(nextA);

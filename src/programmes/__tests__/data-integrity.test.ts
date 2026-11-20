@@ -13,6 +13,7 @@ import themes from '@/src/programmes/data/themes.json';
 import voter from '@/src/programmes/data/voter-2027.json';
 import { buildStaticCatalog } from '@/src/programmes/gateways/static-programme.gateway';
 import { isAggregator } from '@/src/programmes/models/aggregators';
+import { VOTER_PAGE_ID } from '@/src/programmes/models/contenus-2027';
 import { validateJournal } from '@/src/programmes/models/corrections/corrections.service';
 import { partyLastUpdate } from '@/src/programmes/models/corrections/party-last-update';
 import { editorialIssues } from '@/src/programmes/models/editorial-vocabulary';
@@ -664,10 +665,10 @@ describe('Feature: intégrité des contenus 2027 (lexique, FAQ, comment voter)',
   });
 
   it('should only relate to existing guide sections', () => {
+    // `voter-2027` désigne la page « Comment voter », qui n'est plus une leçon du guide.
     for (const entry of [...lexicon, ...faq]) {
-      for (const id of entry.related) expect(guideIds, entry.id).toContain(id);
+      for (const id of entry.related) expect([...guideIds, VOTER_PAGE_ID], entry.id).toContain(id);
     }
-    expect(guideIds).toContain(voter.guideSectionId);
   });
 
   it('should link the voter page to the featured election', () => {

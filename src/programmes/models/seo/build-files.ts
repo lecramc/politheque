@@ -25,13 +25,12 @@ export function buildSeoFiles() {
       indexable: u.indexable,
       canonicalPath: u.canonicalPath,
       mustContain: foldedSnippets(catalog, u.path),
-      // Pages de contenu (motifs dynamiques indexables, lexique, FAQ, comment voter) : au moins un <h2>.
+      // Pages de contenu (motifs dynamiques indexables, lexique, comment voter) : au moins un <h2>.
       content:
         u.indexable &&
         (u.pattern.includes('[') ||
           [
             CONTENUS_2027_PATHS.lexicon,
-            CONTENUS_2027_PATHS.faq,
             CONTENUS_2027_PATHS.voter,
             CONTENUS_2027_PATHS.candidates,
           ].includes(u.path as never)),

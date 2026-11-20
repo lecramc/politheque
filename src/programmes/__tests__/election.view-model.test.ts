@@ -27,10 +27,10 @@ describe('Feature: page de l’élection (dates, puis comment voter, puis candid
     expect(vmOf().dates.map((d) => d.date)).toEqual(['2027-03-12', '2027-04-18', '2027-05-02']);
   });
 
-  it('should explain how to vote in three gestures and point to the guide for the detail', () => {
+  it('should explain how to vote in three gestures and point to the voting page for the detail', () => {
     const vm = vmOf();
     expect(vm.voteSteps).toHaveLength(3);
-    expect(vm.voteGuide.href).toBe('/comprendre/comment-voter');
+    expect(vm.contentLinks?.voter).toBe('/elections/presidentielle-2027/voter');
   });
 
   it('should offer the calendar file from the election page', () => {
