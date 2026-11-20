@@ -4,19 +4,19 @@
     "amo": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip"
   },
   "licence": "Licence Ouverte / Open Licence (Etalab)",
-  "extraitLe": "2026-11-18",
+  "extraitLe": "2026-11-20",
   "publieLe": {
-    "scrutins": "2026-11-18",
-    "amo": "2026-11-18"
+    "scrutins": "2026-11-19",
+    "amo": "2026-11-20"
   },
   "sha256": {
-    "scrutins": "1de242925329f91a9958a138cb81f0493545e2abab88ca2c42939f4da5dd8020",
-    "amo": "72fc4387b03f8fcf094a5d2112cb32a9ce0eb413b9eef372cb0c40e81d17c2e2"
+    "scrutins": "9564ad7bbe5f3df41f46e6a6bf652eb6807667fa62c9ad91a059d5f91a7f8092",
+    "amo": "5e55b70c7a0f5d1a23eef5f908d463cf8c313e49330e3298a6fbbe9b48016f84"
   },
-  "scrutins": 342,
-  "votes": 82545,
+  "scrutins": 361,
+  "votes": 86393,
   "premier": "2024-10-08",
-  "dernier": "2026-11-17",
+  "dernier": "2026-11-19",
   "versionScript": "1.0.0",
   "regles": [
     "R1 : vote sur l'ensemble d'un projet ou d'une proposition de loi, ou sur une proposition de résolution, quelle que soit la formulation du titre",
@@ -24,6 +24,7 @@
     "R3 : motion de censure (article 49, alinéas 2 et 3)",
     "R4 : vote de confiance sur une déclaration de politique générale (article 49, alinéa 1) ou vote sur une déclaration du Gouvernement (article 50-1)",
     "R5 : motion de rejet préalable adoptée (elle rejette l'ensemble du texte)",
-    "R6 : vote sur une partie (première, deuxième ou troisième) d'un projet de loi de finances ou de financement de la sécurité sociale"
+    "R6 : vote sur une partie (première, deuxième ou troisième) d'un projet de loi de finances ou de financement de la sécurité sociale",
+    "R7 : scrutin cité en source sur une fiche du site (position d'un parti), quelle que soit sa nature"
   ]
 }

@@ -32,6 +32,7 @@ export const COPY = {
     confiance: 'Vote de confiance',
     'rejet-prealable': 'Rejet préalable',
     'partie-budget': 'Budget : une partie',
+    cite: 'Vote cité sur une fiche parti',
   } satisfies Record<ScrutinCategory, string>,
   /** Une ligne d'aide par catégorie (feuille de filtres). */
   categoryHelp: {
@@ -46,6 +47,7 @@ export const COPY = {
       "Une motion adoptée écarte le texte : l'Assemblée le rejette sans l'examiner article par article.",
     'partie-budget':
       "Vote sur une partie du budget de l'État ou de la Sécurité sociale (recettes, dépenses ou équilibre).",
+    cite: "Vote cité comme source sur la fiche d'un parti : un amendement, un article ou un autre vote.",
   } satisfies Record<ScrutinCategory, string>,
   voteType: {
     SPO: 'Vote public',
@@ -345,6 +347,20 @@ export const COPY = {
     votesTitle: 'Qui vote quoi sur les grands votes',
     votesLabel: (group: string) =>
       `Position majoritaire du groupe ${group} sur les derniers grands votes`,
+    all: "Tous les votes de l'Assemblée",
+  },
+  /** Sous chaque position d'un parti (onglet Positions) : le vote de son groupe sur les scrutins cités. */
+  stanceVotes: {
+    title: "À l'Assemblée",
+    note: "Votes du groupe à l'Assemblée, tirés des données officielles. Un groupe peut réunir des élus de plusieurs partis ; la position retenue est celle de la majorité des membres qui ont voté.",
+    listLabel: (group: string) => `Vote du groupe ${group}`,
+  },
+  /** Sur un débat : ce qu'a voté l'Assemblée sur les scrutins cités par les fiches des partis. */
+  themeVotes: {
+    title: "Ce qu'a voté l'Assemblée sur ce sujet",
+    method:
+      'Les votes cités en source sur les fiches des partis pour ce débat. Dans chaque case, la position de la majorité des membres du groupe qui ont voté.',
+    caption: 'Position majoritaire de chaque groupe sur les votes cités pour ce débat.',
     all: "Tous les votes de l'Assemblée",
   },
   comprendre: {

@@ -271,3 +271,54 @@ describe("Feature: encart « À l'Assemblée » de la fiche", () => {
     expect(vmOf('alpha').assemblee).toBeNull();
   });
 });
+
+describe("Feature: le vote du groupe sous chaque position d'un parti", () => {
+  const cite = (numero: number) => ({
+    stance: 1 as const,
+    justification: '',
+    sources: [
+      {
+        title: 'Scrutin',
+        url: `https://www.assemblee-nationale.fr/dyn/17/scrutins/${numero}`,
+        date: '2026-11-10',
+        kind: 'vote' as const,
+      },
+    ],
+  });
+  const index = indexFactory({
+    groupes: [groupeFactory({ abrev: 'GA', libelle: 'Groupe A' })],
+    scrutins: [scrutinFactory({ numero: 7, groupes: [[0, 20, 0, 15, 0, 0]] })],
+  });
+  const vm = (groupe: string | null, stances = { q1: cite(7), q2: cite(99) }) => {
+    const party = partyFactory({
+      id: 'a',
+      colorSource: { groupe, text: '', source: null },
+      stances,
+    });
+    return partyViewModel('a')({ dispatch: vi.fn() })(
+      assembleeStateBuilder(
+        stateBuilder()
+          .withCatalog(catalogFactory({ parties: [party] }))
+          .build()
+      )
+        .withIndex(index)
+        .build()
+    );
+  };
+
+  it('should give, per question, the votes of the group of the party on its cited scrutins', () => {
+    const items = vm('GA').stancesByTheme.flatMap((group) => group.items);
+    const votes = (id: string) => items.find((item) => item.question.id === id)?.votes;
+    expect(votes('q1')?.map((v) => [v.numero, v.position.label, v.detail])).toEqual([
+      [7, 'Contre', "15 contre · 5 n'ont pas voté"],
+    ]);
+    expect(votes('q2')).toEqual([]);
+    expect(votes('q3')).toEqual([]);
+  });
+
+  it('should explain the method once, only when at least one vote is shown', () => {
+    expect(vm('GA').stanceVotesNote).toMatch(/^Votes du groupe à l'Assemblée, tirés des données/);
+    expect(vm(null).stanceVotesNote).toBeNull();
+    expect(vm('GA', { q1: cite(99), q2: cite(98) }).stanceVotesNote).toBeNull();
+  });
+});

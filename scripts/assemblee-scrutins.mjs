@@ -299,6 +299,7 @@ unzipOnce(amoZip, path.join(dir, 'amo'));
 const { classifyScrutin, isUnclassifiedSolemn, PERIMETER_RULES } = await load(
   '/src/assemblee/models/extraction/perimeter.ts'
 );
+const { citedScrutinNumbers } = await load('/src/assemblee/models/extraction/cited.ts');
 const { parseActeur, parseGroupe } = await load('/src/assemblee/models/extraction/amo.ts');
 const { compactDataset } = await load('/src/assemblee/models/extraction/compact.ts');
 const { currentComposition } = await load('/src/assemblee/models/extraction/composition.ts');
@@ -313,7 +314,15 @@ if (unclassified.length) {
       unclassified.map((raw) => `  - n° ${raw.numero} : ${raw.titre}`).join('\n')
   );
 }
-const rawScrutins = allScrutins.filter((raw) => classifyScrutin(raw).inclus);
+// R7 : scrutins cités en source sur les fiches des partis.
+const PARTIES_DIR = path.join(root, 'src/programmes/data/parties');
+const cited = citedScrutinNumbers(
+  fs
+    .readdirSync(PARTIES_DIR)
+    .filter((f) => f.endsWith('.json'))
+    .map((f) => JSON.parse(fs.readFileSync(path.join(PARTIES_DIR, f), 'utf8')))
+);
+const rawScrutins = allScrutins.filter((raw) => classifyScrutin(raw, cited).inclus);
 const acteurs = readJsonDir(path.join(dir, 'amo/json/acteur'))
   .map((file) => parseActeur(file.acteur))
   .filter(Boolean);
@@ -321,7 +330,7 @@ const groupes = readJsonDir(path.join(dir, 'amo/json/organe'))
   .map((file) => parseGroupe(file.organe))
   .filter(Boolean);
 
-const dataset = compactDataset({ scrutins: rawScrutins, acteurs, groupes });
+const dataset = compactDataset({ scrutins: rawScrutins, acteurs, groupes, cited });
 const meta = sourceMeta(dir);
 const result = buildOutputs({
   dataset,

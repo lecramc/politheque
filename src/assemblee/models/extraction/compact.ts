@@ -31,6 +31,8 @@ export type DatasetInput = {
   scrutins: RawScrutin[];
   acteurs: ActeurRecord[];
   groupes: GroupeIdentity[];
+  /** Numéros de scrutins cités en source sur les fiches des partis (règle R7). */
+  cited?: ReadonlySet<number>;
 };
 
 export type Dataset = {
@@ -137,7 +139,7 @@ type Seating = {
 
 export const compactDataset = (input: DatasetInput): Dataset => {
   const included = input.scrutins
-    .map((raw) => ({ raw, ...classifyScrutin(raw) }))
+    .map((raw) => ({ raw, ...classifyScrutin(raw, input.cited) }))
     .filter((s) => s.inclus)
     .sort((a, b) => num(a.raw.numero) - num(b.raw.numero));
   const acteurs = new Map(input.acteurs.map((a) => [a.id, a]));

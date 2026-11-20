@@ -5,6 +5,7 @@ import { View } from 'react-native';
 import { useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import { TextLink } from '@/components/ui/TextLink';
+import { StanceVotes } from '@/src/assemblee/components/StanceVotes';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { Accordion } from '@/src/programmes/components/Accordion';
 import { PageSources } from '@/src/programmes/components/PageSources';
@@ -44,6 +45,11 @@ export default function PartyPositionsScreen() {
       <View style={{ gap: effects.spacing.xs }}>
         <SectionTitle>Positions sur {vm.stances.length} questions</SectionTitle>
       </View>
+      {vm.stanceVotesNote ? (
+        <Text style={{ fontSize: 14, lineHeight: 21, color: colors.text.secondary }}>
+          {vm.stanceVotesNote}
+        </Text>
+      ) : null}
       <StanceLegend />
       <ReadingGuide anchor={GUIDE_ANCHORS.positions}>
         {positionsGuideParagraphs(vm.stances.length, vm.partyCount).map((paragraph) => (
@@ -79,7 +85,7 @@ export default function PartyPositionsScreen() {
             <TextLink href={`/debats/${group.theme.id}`} standalone>
               {`Le grand débat : ${group.theme.title}`}
             </TextLink>
-            {group.items.map(({ question, stance }) => (
+            {group.items.map(({ question, stance, votes }) => (
               <Accordion
                 key={question.id}
                 title={question.statement}
@@ -90,6 +96,7 @@ export default function PartyPositionsScreen() {
               >
                 <Text style={{ fontSize: 16, lineHeight: 24 }}>{stance?.justification}</Text>
                 {stance?.sources.length ? <SourceChip sources={stance.sources} /> : null}
+                <StanceVotes votes={votes} />
               </Accordion>
             ))}
           </View>

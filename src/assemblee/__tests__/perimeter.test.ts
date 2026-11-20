@@ -192,7 +192,7 @@ describe('Feature: périmètre — parties des lois financières', () => {
 
 describe('Feature: périmètre — règle écrite, liste fermée', () => {
   it('should publish one sentence per rule, in the order of the rule codes', () => {
-    expect(PERIMETER_RULES).toHaveLength(6);
+    expect(PERIMETER_RULES).toHaveLength(7);
     PERIMETER_RULES.forEach((rule, i) => expect(rule.startsWith(`R${i + 1} : `)).toBe(true));
   });
 
@@ -207,5 +207,27 @@ describe('Feature: périmètre — règle écrite, liste fermée', () => {
     expect(
       isUnclassifiedSolemn(withTitle("l'ensemble de l'amendement truc.", { type: 'SPO' }))
     ).toBe(true);
+  });
+});
+
+describe('Feature: périmètre — R7, scrutin cité en source sur une fiche du site', () => {
+  it('should include a scrutin cited by a party stance, whatever its nature', () => {
+    const amendement = { ...spoAmendement(), numero: '3300' } as RawScrutin;
+    expect(classifyScrutin(amendement, new Set([3300]))).toMatchObject({
+      inclus: true,
+      regles: ['R7'],
+      categorie: 'cite',
+    });
+    expect(classifyScrutin(amendement, new Set([1]))).toMatchObject({ inclus: false });
+    expect(classifyScrutin(amendement)).toMatchObject({ inclus: false });
+  });
+
+  it('should keep R1 to R6 first for a cited scrutin', () => {
+    const whole = { ...withTitle("l'ensemble de la proposition de loi X."), numero: '5' };
+    expect(classifyScrutin(whole as RawScrutin, new Set([5]))).toMatchObject({ regles: ['R1'] });
+  });
+
+  it('should state R7 in the public list of rules', () => {
+    expect(PERIMETER_RULES.at(-1)).toMatch(/^R7 : scrutin cité en source/);
   });
 });

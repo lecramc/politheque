@@ -131,14 +131,12 @@ const toColumn = (s: ScrutinSummary): MajorVoteColumn => ({
 });
 
 /**
- * Les derniers grands votes en colonnes (du plus récent au plus ancien), les groupes en lignes
- * (de la gauche à la droite, comme l'hémicycle), la position majoritaire de chaque groupe dans
- * chaque case. Même règle pour tous les groupes ; aucun score ni classement.
+ * Des votes en colonnes (du plus récent au plus ancien), les groupes en lignes (de la gauche à la
+ * droite, comme l'hémicycle), la position majoritaire de chaque groupe dans chaque case. Même
+ * règle pour tous les groupes ; aucun score ni classement.
  */
-export const majorVotesGrid = (index: ScrutinIndex, limit = MAJOR_VOTES_COUNT): MajorVotesGrid => {
-  const votes = sortByMostRecent(
-    index.scrutins.filter((s) => MAJOR_CATEGORIES.includes(s.categorie))
-  ).slice(0, limit);
+export const votesGrid = (index: ScrutinIndex, scrutins: ScrutinSummary[]): MajorVotesGrid => {
+  const votes = sortByMostRecent(scrutins);
   const labels = COPY.overview.grid.position;
   const present = new Set(votes.flatMap((v) => v.groupes.map((row) => row[0])));
   const rows = orderGroupes(index.groupes, 'places')
@@ -159,3 +157,24 @@ export const majorVotesGrid = (index: ScrutinIndex, limit = MAJOR_VOTES_COUNT): 
     );
   return { columns: votes.map(toColumn), rows };
 };
+
+/** Les derniers grands votes : la grille de `votesGrid` sur les votes de `MAJOR_CATEGORIES`. */
+export const majorVotesGrid = (index: ScrutinIndex, limit = MAJOR_VOTES_COUNT): MajorVotesGrid =>
+  votesGrid(
+    index,
+    sortByMostRecent(index.scrutins.filter((s) => MAJOR_CATEGORIES.includes(s.categorie))).slice(
+      0,
+      limit
+    )
+  );
+
+/** Grille prête à afficher par `MajorVotesGrid` : colonnes, lignes, légende et libellés d'accessibilité. */
+export const votesGridView = (grid: MajorVotesGrid, caption: string) => ({
+  ...grid,
+  caption,
+  groupHeader: COPY.overview.grid.group,
+  legend: MAJOR_VOTES_LEGEND,
+  open: COPY.overview.grid.open,
+  cellLabel: COPY.overview.grid.cell,
+});
+export type VotesGridView = ReturnType<typeof votesGridView>;

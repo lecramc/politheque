@@ -7,9 +7,7 @@ import { Icon, Text } from '@/components/Themed';
 import { Pressable } from '@/components/ui/Pressable';
 import { GroupSwatch } from '@/src/assemblee/components/GroupSwatch';
 import { VoteGlyph } from '@/src/assemblee/components/SeatMark';
-import type { assembleeOverviewViewModel } from '@/src/assemblee/view-models/assemblee-overview.view-model';
-
-type Grid = NonNullable<ReturnType<ReturnType<typeof assembleeOverviewViewModel>>['grid']>;
+import type { VotesGridView } from '@/src/assemblee/models/major-votes';
 
 const FIRST_COLUMN = 112;
 const COLUMN = 148;
@@ -20,7 +18,7 @@ const COLUMN = 148;
  * la couleur officielle du groupe (jamais la seule information : le sigle est écrit). Sur
  * mobile le tableau défile horizontalement, seul ; la colonne des groupes reste en place.
  */
-export function MajorVotesGrid({ grid }: { grid: Grid }) {
+export function MajorVotesGrid({ grid }: { grid: VotesGridView }) {
   const { colors, effects, fonts } = useTheme();
   const border = colors.surface.border.primary;
   const stickyStyle = { position: 'sticky', left: 0, zIndex: 1 } as never;

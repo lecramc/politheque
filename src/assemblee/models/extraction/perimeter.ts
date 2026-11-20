@@ -19,6 +19,7 @@ export const PERIMETER_RULES: string[] = [
   'R4 : vote de confiance sur une déclaration de politique générale (article 49, alinéa 1) ou vote sur une déclaration du Gouvernement (article 50-1)',
   "R5 : motion de rejet préalable adoptée (elle rejette l'ensemble du texte)",
   "R6 : vote sur une partie (première, deuxième ou troisième) d'un projet de loi de finances ou de financement de la sécurité sociale",
+  "R7 : scrutin cité en source sur une fiche du site (position d'un parti), quelle que soit sa nature",
 ];
 
 const BILL = '(?:projet|proposition) de loi\\b';
@@ -49,9 +50,19 @@ const EXCLUDED: Classification = { inclus: false, regles: [], categorie: null };
 /**
  * Classe un scrutin sur sa nature : le type de vote pour les motions de censure (champ
  * structuré), la tête du titre normalisé pour le reste (l'open data ne porte la nature du vote
- * que dans le titre). Jamais de cas par cas.
+ * que dans le titre). Jamais de cas par cas. R7 vient en dernier : un scrutin cité par une fiche
+ * parti entre quelle que soit sa nature.
  */
-export const classifyScrutin = (raw: RawScrutin): Classification => {
+export const classifyScrutin = (
+  raw: RawScrutin,
+  cited: ReadonlySet<number> = new Set()
+): Classification => {
+  const byNature = classifyByNature(raw);
+  if (byNature.inclus) return byNature;
+  return cited.has(Number(raw.numero)) ? classified('R7', 'cite') : byNature;
+};
+
+const classifyByNature = (raw: RawScrutin): Classification => {
   if (raw.typeVote.codeTypeVote === 'MOC') return classified('R3', 'censure');
   const title = normalizeTitle(raw.titre);
   if (PART_OF_FINANCE_BILL.test(title)) return classified('R6', 'partie-budget');
@@ -76,7 +87,7 @@ export const classifyScrutin = (raw: RawScrutin): Classification => {
  * sans figurer dans la liste fermée. À corriger dans la liste, jamais à ignorer.
  */
 export const isUnclassifiedSolemn = (raw: RawScrutin): boolean => {
-  if (classifyScrutin(raw).inclus) return false;
+  if (classifyByNature(raw).inclus) return false;
   const solemn = ['SPS', 'MOC'].includes(raw.typeVote.codeTypeVote);
   return solemn || normalizeTitle(raw.titre).startsWith("l'ensemble");
 };

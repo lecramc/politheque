@@ -3,6 +3,7 @@ import {
   MAJOR_VOTES_LEGEND,
   majorVotesGrid,
   shortTitle,
+  votesGrid,
   type CellKind,
 } from '@/src/assemblee/models/major-votes';
 import {
@@ -190,5 +191,19 @@ describe('Feature: grille « qui vote quoi » des grands votes', () => {
       'Partagé',
       'Absent',
     ]);
+  });
+});
+
+describe('Feature: grille « qui vote quoi » sur des votes choisis', () => {
+  it('should show the given scrutins whatever their category, newest first, with the same rows', () => {
+    const scrutins = [
+      vote(1, '2025-01-01', { categorie: 'cite' }),
+      vote(2, '2025-01-02', { categorie: 'article-unique' }),
+    ];
+    const index = indexFactory({ groupes, scrutins });
+    const grid = votesGrid(index, scrutins);
+    expect(grid.columns.map((c) => c.numero)).toEqual([2, 1]);
+    expect(grid.rows.map((r) => r.abrev)).toEqual(['GA', 'DX']);
+    expect(votesGrid(index, [])).toEqual({ columns: [], rows: [] });
   });
 });

@@ -6,7 +6,9 @@ import { theme as baseTheme, useTheme } from '@/components/ThemeContext';
 import { Text } from '@/components/Themed';
 import Button from '@/components/ui/Button';
 import { Pressable } from '@/components/ui/Pressable';
+import { TextLink } from '@/components/ui/TextLink';
 import { useColorStyle } from '@/components/webTheme';
+import { MajorVotesGrid } from '@/src/assemblee/components/MajorVotesGrid';
 import { Only } from '@/src/core/components/Only';
 import { useViewModel } from '@/src/core/hooks/useViewModel';
 import { scrollToId } from '@/src/core/web/browser-actions';
@@ -279,6 +281,26 @@ export default function ThemeScreen() {
               )}
             </TabPanel>
           </View>
+
+          {vm.assembleeVotes ? (
+            <View nativeID="votes-assemblee" style={{ gap: effects.spacing.sm }}>
+              <Text variant="caption" headingLevel={2}>
+                {vm.assembleeVotes.title}
+              </Text>
+              <Text style={{ fontSize: 15, lineHeight: 22, color: colors.text.secondary }}>
+                {vm.assembleeVotes.method}
+              </Text>
+              <MajorVotesGrid grid={vm.assembleeVotes.grid} />
+              <TextLink href={vm.assembleeVotes.all.href} standalone>
+                {`${vm.assembleeVotes.all.label} →`}
+              </TextLink>
+              {vm.assembleeVotes.law ? (
+                <TextLink href={vm.assembleeVotes.law.href} standalone>
+                  {`${vm.assembleeVotes.law.label} →`}
+                </TextLink>
+              ) : null}
+            </View>
+          ) : null}
 
           <View nativeID="aller-plus-loin" style={{ gap: effects.spacing.sm }}>
             <Text variant="caption" headingLevel={2}>

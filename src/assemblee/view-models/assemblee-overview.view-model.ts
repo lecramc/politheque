@@ -2,7 +2,7 @@ import { createSelector } from 'reselect';
 
 import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { compositionScene, compositionSummary } from '@/src/assemblee/models/composition';
-import { MAJOR_VOTES_LEGEND, majorVotesGrid } from '@/src/assemblee/models/major-votes';
+import { majorVotesGrid, votesGridView } from '@/src/assemblee/models/major-votes';
 import {
   selectAssembleeComposition,
   selectAssembleeIndex,
@@ -49,12 +49,7 @@ export const assembleeOverviewViewModel = () =>
                 lead: gridCopy.lead(grid.columns.length),
                 note: gridCopy.note,
                 shared: gridCopy.shared,
-                groupHeader: gridCopy.group,
-                caption: gridCopy.caption,
-                legend: MAJOR_VOTES_LEGEND,
-                open: gridCopy.open,
-                cellLabel: gridCopy.cell,
-                ...grid,
+                ...votesGridView(grid, gridCopy.caption),
               }
             : null,
         law: catalog?.guide.some((section) => section.id === LAW_LESSON_ID)

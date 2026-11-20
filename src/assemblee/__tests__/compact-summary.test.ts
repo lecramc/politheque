@@ -9,9 +9,13 @@ import { parseActeur, parseGroupe } from '@/src/assemblee/models/extraction/amo'
 import { compactDataset } from '@/src/assemblee/models/extraction/compact';
 import type { RawScrutin } from '@/src/assemblee/models/extraction/raw.model';
 
-const build = (scrutins: RawScrutin[] = [spsEnsemble(), motionCensure()]) =>
+const build = (
+  scrutins: RawScrutin[] = [spsEnsemble(), motionCensure()],
+  cited?: ReadonlySet<number>
+) =>
   compactDataset({
     scrutins,
+    cited,
     acteurs: rawActeurs().flatMap((a) => parseActeur(a) ?? []),
     groupes: rawOrganes().flatMap((o) => parseGroupe(o) ?? []),
   });
@@ -26,6 +30,12 @@ describe('Feature: extraction compacte — résumé d’un scrutin', () => {
   it('should only keep the scrutins inside the perimeter', () => {
     const dataset = build([spoAmendement(), spsEnsemble(), spoArticleUniqueLoi()]);
     expect(dataset.scrutins.map((s) => s.summary.numero)).toEqual([10, 40]);
+  });
+
+  it('should keep a scrutin cited by a party stance as rule R7, whatever its nature', () => {
+    const dataset = build([spoAmendement(), spsEnsemble()], new Set([30]));
+    expect(dataset.scrutins.map((s) => s.summary.numero)).toEqual([10, 30]);
+    expect(dataset.scrutins[1].summary).toMatchObject({ regles: ['R7'], categorie: 'cite' });
   });
 
   it('should carry the official title untouched, the date, the type, the rules and the category', () => {

@@ -1,5 +1,12 @@
 [
   {
+    "id": "2026-11-20-sous-chaque-position-d-un-parti-le-vote-de-son-g",
+    "date": "2026-11-20",
+    "kind": "ajout",
+    "pages": ["/assemblee", "/partis"],
+    "summary": "Sous chaque position d'un parti, le vote de son groupe à l'Assemblée sur les scrutins cités en source ; sur chaque débat, la position de chaque groupe sur ces votes. Nouvelle règle publique R7 : les scrutins cités sur une fiche sont extraits des données officielles."
+  },
+  {
     "id": "2026-11-19-idees-cles-chaque-fiche-affiche-desormais-les-id",
     "date": "2026-11-19",
     "kind": "mise-a-jour",

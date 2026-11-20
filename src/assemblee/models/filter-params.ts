@@ -21,6 +21,7 @@ export const CATEGORIES: ScrutinCategory[] = [
   'confiance',
   'declaration',
   'rejet-prealable',
+  'cite',
 ];
 
 const first = (value: unknown): string | undefined => {

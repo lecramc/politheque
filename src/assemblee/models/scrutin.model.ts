@@ -14,9 +14,10 @@ export type ScrutinCategory =
   | 'confiance'
   | 'declaration'
   | 'rejet-prealable'
-  | 'partie-budget';
-/** R1 ensemble d'un texte, R2 article unique, R3 censure, R4 déclaration du Gouvernement, R5 rejet préalable adopté, R6 partie de loi financière. */
-export type ScrutinRule = 'R1' | 'R2' | 'R3' | 'R4' | 'R5' | 'R6';
+  | 'partie-budget'
+  | 'cite';
+/** R1 ensemble d'un texte, R2 article unique, R3 censure, R4 déclaration du Gouvernement, R5 rejet préalable adopté, R6 partie de loi financière, R7 scrutin cité en source sur une fiche parti. */
+export type ScrutinRule = 'R1' | 'R2' | 'R3' | 'R4' | 'R5' | 'R6' | 'R7';
 
 export type Groupe = {
   organeRef: string;

@@ -1,5 +1,10 @@
 import { createSelector } from 'reselect';
 
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
+import { votesGrid, votesGridView } from '@/src/assemblee/models/major-votes';
+import { themeVotes } from '@/src/assemblee/models/theme-votes';
+import { selectAssembleeIndex } from '@/src/assemblee/store/assemblee.selector';
+import { LAW_LESSON_ID } from '@/src/assemblee/view-models/assemblee-overview.view-model';
 import type { AppDispatch } from '@/src/core/store/create-store';
 import { candidatesOf } from '@/src/programmes/models/election.service';
 import { debateSummary } from '@/src/programmes/models/page-summary.service';
@@ -24,8 +29,8 @@ export const themeViewModel =
   (themeId: string) =>
   ({ dispatch }: { dispatch: AppDispatch }) =>
     createSelector(
-      [selectCatalog, selectCatalogStatus, selectFeaturedElection],
-      (catalog, status, election) => {
+      [selectCatalog, selectCatalogStatus, selectFeaturedElection, selectAssembleeIndex],
+      (catalog, status, election, assembleeIndex) => {
         const theme = catalog?.themes.find((t) => t.id === themeId) ?? null;
         const parties = [...(catalog?.parties ?? [])].sort((a, b) =>
           a.name.localeCompare(b.name, 'fr')
@@ -34,9 +39,31 @@ export const themeViewModel =
         const index = themes.findIndex((t) => t.id === themeId);
         const candidates = election ? candidatesOf(election, parties) : [];
         const date = catalog ? SITE_ROUTES['/debats/[id]'].lastmod(catalog, { id: themeId }) : null;
+        const questionIds = (catalog?.questions ?? [])
+          .filter((q) => q.theme === themeId)
+          .map((q) => q.id);
+        const cited =
+          assembleeIndex && catalog ? themeVotes(questionIds, catalog.parties, assembleeIndex) : [];
+        const votesCopy = COPY.themeVotes;
         return {
           status,
           theme,
+          /** « Ce qu'a voté l'Assemblée » : les scrutins cités par les fiches des partis sur ce débat ; null sans vote. */
+          assembleeVotes:
+            assembleeIndex && cited.length > 0
+              ? {
+                  title: votesCopy.title,
+                  method: votesCopy.method,
+                  grid: votesGridView(votesGrid(assembleeIndex, cited), votesCopy.caption),
+                  all: { label: votesCopy.all, href: '/assemblee' },
+                  law: catalog?.guide.some((section) => section.id === LAW_LESSON_ID)
+                    ? {
+                        label: COPY.overview.law.cta,
+                        href: `/comprendre/${LAW_LESSON_ID}`,
+                      }
+                    : null,
+                }
+              : null,
           meta: theme && catalog ? debateMeta(theme, catalog) : null,
           /** Phrase datée sous le titre, même gabarit pour les neuf débats (audit SEO § 5.1). */
           summary:

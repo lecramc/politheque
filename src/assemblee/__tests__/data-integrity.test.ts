@@ -3,6 +3,7 @@ import path from 'node:path';
 
 import manifest from '@/src/assemblee/data/manifest.json';
 import indexData from '@/src/assemblee/data/scrutins-index.json';
+import { citedScrutinNumbers } from '@/src/assemblee/models/extraction/cited';
 import { classifyScrutin, PERIMETER_RULES } from '@/src/assemblee/models/extraction/perimeter';
 import type { RawScrutin } from '@/src/assemblee/models/extraction/raw.model';
 import { groupColor } from '@/src/assemblee/models/group-color';
@@ -12,6 +13,7 @@ import type {
   ScrutinDetail,
   ScrutinIndex,
 } from '@/src/assemblee/models/scrutin.model';
+import { PARTIES } from '@/src/programmes/data/parties';
 
 const index = indexData as unknown as ScrutinIndex;
 const PUBLIC_DIR = path.join(process.cwd(), 'public/donnees/assemblee/v1');
@@ -40,8 +42,24 @@ const SYNTHESIS_NON_VOTERS_GAP = new Set([1]);
  *    aucun groupe ce jour-là, l'open data ne permet pas de le déduire.
  *  - 6902 (26 mai 2026) : le groupe NI compte un député de moins que ses mandats ne l'indiquent,
  *    sans changement de mandat ce jour-là : la source ne l'explique pas.
+ *  - 9485 et 9489 (2 novembre 2026, scrutins cités en source, règle R7) : M. Fruchon passe du
+ *    groupe DR au groupe LIOT le 31 octobre selon ses mandats ; le scrutin le compte encore à DR.
+ *
+ * Écart récent : dans les `RECENT_GAP_DAYS` jours qui précèdent l'extraction, un écart d'un seul
+ * député est admis (un changement de groupe paraît dans les scrutins avant d'être inscrit dans les
+ * mandats, ou l'inverse). Exemple : le 19 novembre 2026, LIOT passe de 24 à 23 membres entre deux
+ * scrutins du même jour, sans mandat modifié dans l'extraction du 20 novembre. Au-delà, l'écart
+ * doit figurer dans la liste ci-dessous.
  */
-const IRREDUCIBLE_EFFECTIVE_GAPS: string[] = ['6902 NI 11/10', '5192 NI 11/10'];
+const RECENT_GAP_DAYS = 15;
+const IRREDUCIBLE_EFFECTIVE_GAPS: string[] = [
+  '9489 LIOT 24/23',
+  '9489 DR 46/47',
+  '9485 LIOT 24/23',
+  '9485 DR 46/47',
+  '6902 NI 11/10',
+  '5192 NI 11/10',
+];
 
 describe("Feature: intégrité des données de l'Assemblée", () => {
   it('should match the manifest counts and date range', () => {
@@ -70,11 +88,12 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
   it('should satisfy the perimeter rules for every published scrutin', () => {
     for (const s of index.scrutins) {
       const raw = {
+        numero: String(s.numero),
         titre: s.titre,
         typeVote: { codeTypeVote: s.type },
         sort: { code: s.adopte ? 'adopté' : 'rejeté' },
       } as RawScrutin;
-      const classification = classifyScrutin(raw);
+      const classification = classifyScrutin(raw, citedScrutinNumbers(PARTIES));
       expect(classification.inclus, `scrutin ${s.numero}`).toBe(true);
       expect(s.regles, `scrutin ${s.numero}`).toEqual(classification.regles);
       expect(s.categorie, `scrutin ${s.numero}`).toBe(classification.categorie);
@@ -123,7 +142,9 @@ describe("Feature: intégrité des données de l'Assemblée", () => {
         const attached =
           d.groupes.filter((g) => g === groupeIdx).length +
           d.sansPlace.filter((m) => m.groupe === groupeIdx).length;
-        if (attached !== membres) {
+        const recent =
+          Date.parse(manifest.extraitLe) - Date.parse(s.date) <= RECENT_GAP_DAYS * 86_400_000;
+        if (attached !== membres && !(recent && Math.abs(attached - membres) === 1)) {
           gaps.push(`${s.numero} ${index.groupes[groupeIdx].abrev} ${attached}/${membres}`);
         }
       }

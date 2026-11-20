@@ -2,8 +2,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 
 import index from '@/src/assemblee/data/scrutins-index.json';
+import { citedScrutinNumbers } from '@/src/assemblee/models/extraction/cited';
 import { classifyScrutin, isUnclassifiedSolemn } from '@/src/assemblee/models/extraction/perimeter';
 import type { RawScrutin } from '@/src/assemblee/models/extraction/raw.model';
+import { PARTIES } from '@/src/programmes/data/parties';
 
 /**
  * Contrôle du périmètre contre l'open data complet (9 793 scrutins de la 17e législature) :
@@ -37,7 +39,8 @@ const readAll = (): RawScrutin[] =>
 describeWithSource('Feature: périmètre contre l’open data complet', () => {
   const all = dir ? readAll() : [];
   const published = new Set(index.scrutins.map((s) => s.numero));
-  const recomputed = all.filter((raw) => classifyScrutin(raw).inclus);
+  const cited = citedScrutinNumbers(PARTIES);
+  const recomputed = all.filter((raw) => classifyScrutin(raw, cited).inclus);
 
   it('should recompute exactly the published list: no missing scrutin, no intruder', () => {
     const recomputedNumbers = new Set(recomputed.map((raw) => Number(raw.numero)));

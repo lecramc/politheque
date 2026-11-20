@@ -1,6 +1,8 @@
 import { createSelector } from 'reselect';
 
+import { COPY } from '@/src/assemblee/models/assemblee.copy';
 import { partyAssemblee } from '@/src/assemblee/models/party-assemblee';
+import { stanceVotes } from '@/src/assemblee/models/stance-votes';
 import {
   selectAssembleeComposition,
   selectAssembleeIndex,
@@ -130,6 +132,14 @@ export const partyViewModel =
             ? catalog.questions.map((question) => ({
                 question,
                 stance: party.stances[question.id] ?? null,
+                /** Vote du groupe du parti sur les scrutins cités en source de cette position. */
+                votes: assembleeIndex
+                  ? stanceVotes({
+                      stance: party.stances[question.id] ?? null,
+                      groupe: party.colorSource.groupe,
+                      index: assembleeIndex,
+                    })
+                  : [],
               }))
             : [];
         return {
@@ -216,6 +226,10 @@ export const partyViewModel =
                 }
               : null,
           stances,
+          /** Note de méthode unique de l'onglet Positions, seulement si au moins un vote s'affiche. */
+          stanceVotesNote: stances.some((item) => item.votes.length > 0)
+            ? COPY.stanceVotes.note
+            : null,
           partyCount: catalog?.parties.length ?? 0,
           /** Mêmes groupes, dans le même ordre (celui des thèmes), pour les dix partis. */
           stancesByTheme: catalog ? stancesByTheme(stances, catalog.themes) : [],
