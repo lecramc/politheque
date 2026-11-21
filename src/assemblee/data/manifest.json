@@ -4,14 +4,14 @@
     "amo": "https://data.assemblee-nationale.fr/static/openData/repository/17/amo/tous_acteurs_mandats_organes_xi_legislature/AMO30_tous_acteurs_tous_mandats_tous_organes_historique.json.zip"
   },
   "licence": "Licence Ouverte / Open Licence (Etalab)",
-  "extraitLe": "2026-11-20",
+  "extraitLe": "2026-11-21",
   "publieLe": {
-    "scrutins": "2026-11-19",
-    "amo": "2026-11-20"
+    "scrutins": "2026-11-21",
+    "amo": "2026-11-21"
   },
   "sha256": {
-    "scrutins": "9564ad7bbe5f3df41f46e6a6bf652eb6807667fa62c9ad91a059d5f91a7f8092",
-    "amo": "5e55b70c7a0f5d1a23eef5f908d463cf8c313e49330e3298a6fbbe9b48016f84"
+    "scrutins": "3384e4c8cbddf1f03d88727885e127c900c1763033bf16fb5944c612b4b3ac6f",
+    "amo": "a1a5ce029bd6e62c9ccd0f842629152fbf7227b76b6f0b3c46c722cc757b6ca5"
   },
   "scrutins": 361,
   "votes": 86393,
