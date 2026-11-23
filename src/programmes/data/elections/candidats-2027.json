@@ -1,6 +1,6 @@
 {
   "electionId": "presidentielle-2027",
-  "lastVerified": "2026-11-16",
+  "lastVerified": "2026-11-23",
   "candidates": [
     {
       "id": "nathalie-arthaud",
@@ -565,6 +565,33 @@
         "url": "https://nouspresident.fr/notre-programme/"
       },
       "hatvp": "https://www.hatvp.fr/fiche-nominative/?declarant=ruffin-francois"
+    },
+    {
+      "id": "dominique-de-villepin",
+      "name": "Dominique de Villepin",
+      "status": "declare",
+      "statusLabel": "Candidature déclarée",
+      "date": "2026-11-20",
+      "affiliation": "La France humaniste",
+      "role": "Ancien Premier ministre, fondateur de La France humaniste",
+      "summary": "Dominique de Villepin a déclaré sa candidature le 20 novembre 2026, lors d'une conférence de presse à la Maison de l'Amérique latine, à Paris.",
+      "sources": [
+        {
+          "title": "Présidentielle 2027: Dominique de Villepin officiellement candidat à l'Élysée (LCP)",
+          "url": "https://lcp.fr/actualites/presidentielle-2027-dominique-de-villepin-officiellement-candidat-a-l-elysee-445372",
+          "date": "2026-11-20",
+          "kind": "presse"
+        },
+        {
+          "title": "Dominique de Villepin annonce sa candidature (AFP, via Le Matin)",
+          "url": "https://www.lematin.ch/story/france-dominique-de-villepin-annonce-sa-candidature-a-la-presidentielle-103670654",
+          "date": "2026-11-20",
+          "kind": "presse"
+        }
+      ],
+      "programme": {
+        "state": "non-publie"
+      }
     },
     {
       "id": "francois-asselineau",
